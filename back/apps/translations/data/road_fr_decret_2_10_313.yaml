@@ -1,0 +1,16 @@
+# /ma/decret/2-10-313 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+language: fr
+text: /ma/decret/2-10-313
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [6], wrong: 'doit être reçu par Pautorité chargée', right: 'doit être reçu par l’autorité chargée'}      # p. 1720: «P» for «l’»
+  - {arts: [6], wrong: 'dispositions du 4f alinéa', right: 'dispositions du 4e alinéa'}      # p. 1720: 4ᵉ (superscript e) read «4f»
+  - {arts: [6], wrong: 'la contravention lransmel à Pautorité', right: 'la contravention transmet à l’autorité'}      # p. 1720: «lransmel» for «transmet», «P» for «l’»
+  - {arts: [6], wrong: '+ l''original du procès verbal', right: '• l''original du procès verbal'}      # p. 1720: the page's bullet is «•», not «+»
+  - {arts: [6], wrong: '+ copie du récépissé visé à l’article 5 ci-dessus :', right: '• copie du récépissé visé à l’article 5 ci-dessus ;'}      # p. 1720: bullet «•»; the item ends with «;», not «:»
+  - {arts: [6], wrong: '+ le document retenu.', right: '• le document retenu.'}      # p. 1720: bullet «•»
+  - {arts: [6], wrong: 'prévu au Î% alinéa du présent article', right: 'prévu au 1er alinéa du présent article'}      # p. 1721: 1ᵉʳ (superscript er) read «Î%»
+notes:
+  - {art: 6, page: 1720, what: 'The article runs on to p. 1721 col. 1 (from «L’autorité visée ci-dessus est :» to «non paiement de l’amende.»). The French is the 2010 wording (15 days, no distance rule), while the site''s Arabic beside it is the SGG consolidation of 2025-07-06 (30 days, «سند ملكيتها», the 50 km paragraphs): the two no longer say the same thing; the French should be shown as the original 2010 text, not as the translation of the current Arabic.'}
+checked: [6]

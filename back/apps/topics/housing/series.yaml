@@ -1,0 +1,27 @@
+# Housing in numbers (H15 of the housing plan). Who owns and who rents in the towns, from the census: 2004 and 2014 as
+# the housing ministry's «RGPH 2014 – volet habitat» prints them (p. 12; owners are owners and co-owners plus those
+# buying), 2024 from the HCP's census results (slide 31). Each file was fetched and checked against its text on 20 Oct
+# 2026. The census counts households, so a year is the census's, never a year in between.
+
+files:
+  mhpv2014: {title: 'RGPH 2014 – Principaux résultats relatifs au secteur de l’Habitat', url: 'https://www.matnuhpv.gov.ma/wp-content/uploads/2019/12/RGPH-HABITAT.pdf', path: sources/mhpv/rgph2014_habitat.pdf, sha256: 24a1d629691152285976f537e549e6081dace42ace00926aff8cc86b72de1942}
+  hcp2024: {title: 'RGPH 2024 – Principaux résultats (HCP, 17 décembre 2024)', url: 'https://hcp.ma/file/242665', path: sources/hcp/hcp_rgph2024_principaux_resultats.pdf, sha256: 368fe28f02e73a50441229d7ccb6c1df0175ea6b5fb56a91c1f4194b10615758}
+
+series:
+  - key: tenure
+    title: {ar: 'الأسر الحضرية: ملاك ومكترون', fr: 'Ménages urbains : propriétaires et locataires'}
+    lead:
+      ar: 'نسبة الأسر بالوسط الحضري، حسب الإحصاء العام للسكان والسكنى.'
+      fr: 'Part des ménages urbains, selon le recensement général de la population et de l’habitat.'
+    table: 'الإحصاء العام للسكان والسكنى 2004 و2014 و2024'
+    unit: percent
+    lines:
+      - {key: owners, label: {ar: ملاك, fr: Propriétaires}}
+      - {key: renters, label: {ar: مكترون, fr: Locataires}}
+    years:
+      - {year: 2004, owners: 56.8, renters: 29.2, from: mhpv2014, page: 12}
+      - {year: 2014, owners: 61.9, renters: 27.3, from: mhpv2014, page: 12}
+      - {year: 2024, owners: 61.5, renters: 28.0, from: hcp2024, page: 31}
+    notes:
+      - {ar: 'في المغرب كله سنة 2024: 69.4% ملاك و19.7% مكترون؛ وفي البادية 3.2% فقط يكترون.', fr: 'Pour tout le Maroc en 2024 : 69,4 % de propriétaires et 19,7 % de locataires ; à la campagne, 3,2 % seulement louent.'}
+      - {ar: 'الباقي سكن وظيفي أو مجاني أو غير مصرح به.', fr: 'Le reste : logement de fonction, logé gratuitement ou non déclaré.'}

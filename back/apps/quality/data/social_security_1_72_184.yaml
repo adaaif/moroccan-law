@@ -1,0 +1,14 @@
+# The social security dahir (1.72.184) as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned around
+# («ثالثة» for «ثلاثة»), a word cut in two («ج سيم»), a letter moved («والي لز مه» for «ولا يلزمه»). Each was read
+# against the page's image on 20 Oct 2026 (T1 of the work plan): the 11 articles the work topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/social_security_1_72_184.yaml`; a reload of the text applies them again.
+text: /ma/dahir/1-72-184
+document: sources/adala/social_security_1_72_184.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [15], wrong: وإعلان اته, right: وإعلاناته}   # split, p. 13
+  - {arts: [46-bis], wrong: السنوات الثالث, right: السنوات الثلاث}   # turn, p. 30
+  - {arts: [46-bis], wrong: الا ختياري, right: الاختياري}   # split, p. 30
+  - {arts: [55], wrong: ثالثة آلاف, right: ثلاثة آلاف}   # turn, p. 35
+  - {arts: [56], wrong: ثالثة ألاف, right: ثلاثة ألاف}   # turn, p. 35
+  - {arts: [56], wrong: وأربعين يوما من, right: وأربعين يوما من غير أن يتجاوز %70.}   # missing, p. 35

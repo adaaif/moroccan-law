@@ -1,0 +1,20 @@
+[Unit]
+Description=law: the month's edition of the database, written under OPEN_DATA_DIR (export_open_data)
+After=docker.service
+
+[Service]
+Type=oneshot
+User=@USER@
+WorkingDirectory=@ROOT@/app/back
+EnvironmentFile=@ROOT@/.env
+# manage.py falls back to the development settings: production's are named here, should .env not name them (a line
+# in .env still wins: systemd lets EnvironmentFile= override Environment=).
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+# The whole corpus read a chunk at a time and written as files: at the lowest priority, readers first.
+Nice=19
+IOSchedulingClass=idle
+ExecStart=@ROOT@/venv/bin/python manage.py export_open_data

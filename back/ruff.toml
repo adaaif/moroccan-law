@@ -1,0 +1,54 @@
+# Ruff, the backend's linter (tools/ci/backend.sh lint). The rules were chosen one by one on the code as it stood
+# on 13 Nov 2026: a rule whose findings were real was kept and its findings fixed; a rule that fought the house style
+# in bulk was left out, each with its reason and the count of what it would find once the others were fixed
+# (`ruff check --statistics --select <code>`).
+target-version = "py313"
+line-length = 120
+
+[lint]
+select = [
+    "E", "W",     # pycodestyle
+    "F",          # pyflakes: unused and undefined names
+    "B",          # bugbear: likely bugs
+    "BLE",        # a broad `except` is marked `# noqa: BLE001` with its reason
+    "UP",         # the Python 3.13 spellings
+    "DJ",         # Django
+    "C4",         # comprehensions
+    "PIE", "T10", "RUF",
+    "S",          # security (bandit), less the rules below
+    "PT",         # pytest style, less the rules below
+]
+ignore = [
+    "E501",    # lines run past 120 columns where a sentence or a pattern reads better whole (2,382 lines)
+    "E731",    # a small local function as a named lambda is house style (39)
+    "C408",    # dict(key=value) is house style for keyword-like rows (28)
+    "B905",    # zip(..., strict=) on 54 calls whose inputs have one length by construction would add noise
+    "DJ008",   # 35 models show in the admin by their columns; a __str__ would change what its pages say
+    "RUF001", "RUF002", "RUF003",   # the code reads Arabic and scanned text: its 828 lookalike characters are meant
+    "RUF005",  # [a] + rest reads as well as [a, *rest] (26); the fix is unsafe where an operand is not a list
+    "RUF012",  # Django's and DRF's class attributes are lists by design (Meta, permission_classes: 350)
+    "RUF022",  # a package's __all__ lists its names module by module, one line a module (5)
+    "PT006",   # every multi-name parametrize is written 'a, b' (25), which pytest reads the same
+    "PT018",   # `assert a and b` is how the tests state one expectation (932)
+    "S110", "S112",   # a deliberate `except: pass` is already marked BLE001 with its reason
+    "S310",    # every urlopen reads an http(s) address the code builds itself (14)
+    "S311",    # `random` draws samples and seeds; tokens and codes come from `secrets`
+    "S603", "S607",   # tesseract and ffmpeg run by name with a list of arguments, never a shell (S602 stays)
+    "I001",    # the sorter rewraps every long import one name a line (102 files, +841 lines): it comes with the formatter
+]
+
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]          # a package re-exports its modules' names, so its importers keep working
+"**/tests/**" = [
+    "S",       # tests hold fixed passwords, asserts and their own files
+    "F811",    # a fixture imported from another test module is redefined by the parameter that asks for it
+]
+"conftest.py" = ["S"]
+"apps/sources/tests/test_remarks.py" = ["B005"]   # remarks.strip is the module's function, not str.strip
+# Development data: one password for made-up accounts, SQL built from fixed table names.
+"apps/discussion/management/commands/seed_load_test.py" = ["S106", "S608"]
+
+# Not checked in CI until the project decides whether to adopt a formatter. These settings match the house style,
+# so `ruff format --diff` measures what adopting it would change.
+[format]
+quote-style = "single"

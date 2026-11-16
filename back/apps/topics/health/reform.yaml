@@ -1,0 +1,68 @@
+# What changes in health (S11 of the health review): one item per change, its stage said first, its dated official
+# record. Stages: in_force, coming, bill, announced. Checked against the BO on 27 Oct 2026; each item is followed on its
+# own («تابع»). A bill's line is never the topic's next date.
+
+- key: cnops-2027
+  title: {ar: 'الكنوبس إلى الضمان الاجتماعي، ونسخ تأمين الطلبة (القانون 54.23)', fr: 'La CNOPS vers la CNSS, l’AMO étudiante abrogée (loi 54.23)'}
+  stage: coming
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-27'
+  line: {ar: 'من فاتح فبراير 2027: الضمان الاجتماعي كيدبر تأمين الموظفين، وقانون تأمين الطلبة كيتنسخ، واللي كانت الدولة كتخلص عليهم كيدوزو لأمو تضامن.', fr: 'Dès le 1er février 2027 : la CNSS gère l’assurance des fonctionnaires, l’AMO étudiante est abrogée, ceux dont l’État payait la cotisation passent à l’AMO Tadamon.'}
+  timeline:
+    - date: '2026-01-29'
+      text: {ar: 'نشر القانون 54.23 في الجريدة الرسمية: يغير القانون 65.00 ويتممه، وينقل إلى الصندوق الوطني للضمان الاجتماعي مستخدمي الصندوق الوطني لمنظمات الاحتياط الاجتماعي وأملاكه وأرشيفه، وينسخ القانون 116.12؛ ويدخل حيز التنفيذ بعد اثني عشر شهرا من فاتح الشهر الموالي لنشره.', fr: 'Publication de la loi 54.23 au BO : elle modifie la loi 65.00, transfère à la CNSS le personnel, les biens et les archives de la CNOPS, abroge la loi 116.12, et entre en vigueur douze mois après le 1er du mois suivant sa publication.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7478', fr: 'BO n° 7478'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7478_Ar.pdf'}
+      cites: [/ma/loi/54-23/art_19, /ma/loi/54-23/art_6, /ma/loi/54-23/art_13]
+    - date: '2027-02-01'
+      short: {ar: 'الضمان الاجتماعي كيدبر تأمين الموظفين', fr: 'La CNSS gère l’assurance des fonctionnaires'}
+      text: {ar: 'دخول القانون 54.23 حيز التنفيذ: يحل الضمان الاجتماعي محل الصندوق الوطني لمنظمات الاحتياط الاجتماعي، ويستفيد الطلبة الذين كانت الدولة تؤدي عنهم المساهمة تلقائيا من أمو تضامن، ويغطى الطلبة الأجانب، ويمدد سن تغطية الأولاد الذين يتابعون دراستهم من 26 إلى 30 سنة.', fr: 'Entrée en vigueur de la loi 54.23 : la CNSS succède à la CNOPS ; les étudiants dont l’État payait la cotisation passent d’office à l’AMO Tadamon ; les étudiants étrangers sont couverts ; l’âge de couverture des enfants qui étudient passe de 26 à 30 ans.'}
+      source: {name: {ar: 'القانون 54.23، المادة 19', fr: 'Loi 54.23, art. 19'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7478_Ar.pdf'}
+      cites: [/ma/loi/54-23/art_10, /ma/loi/54-23/art_14, /ma/loi/54-23/art_15, /ma/loi/54-23/art_1]
+
+- key: medicine-prices-2026
+  title: {ar: 'أثمنة الأدوية: قواعد جديدة (المرسوم 2.25.631)', fr: 'Le prix des médicaments : de nouvelles règles (décret 2.25.631)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'نافذ منذ 6 غشت 2026: قواعد جديدة لتحديد ثمن الدوا، واتفاقيات لتخفيض الأدوية الغالية؛ والأثمنة الجديدة نشرها قرار فـ15 أكتوبر 2026.', fr: 'En vigueur depuis le 6 août 2026 : de nouvelles règles de prix, des conventions de baisse pour les médicaments coûteux ; les nouveaux prix publiés par arrêté le 15 octobre 2026.'}
+  timeline:
+    - date: '2026-08-06'
+      text: {ar: 'نشر المرسوم 2.25.631 في الجريدة الرسمية: يغير المرسوم 2.13.852 المتعلق بشروط وكيفيات تحديد سعر بيع الأدوية للعموم، ويجيز اتفاقيات مع المصنعين لتخفيض أثمنة الأدوية ذات الأثر المالي الكبير.', fr: 'Publication du décret 2.25.631 au BO : il modifie le décret 2.13.852 sur la fixation du prix public des médicaments et permet des conventions de baisse avec les fabricants pour les médicaments à fort impact financier.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7532', fr: 'BO n° 7532'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7532_Ar.pdf'}
+      cites: [/ma/decret/2-25-631/art_1, /ma/decret/2-25-631/art_4]
+    - date: '2026-10-15'
+      text: {ar: 'نشر قرار وزير الصحة رقم 2157.26 الذي يحدد في ملحقه الأثمنة الجديدة للبيع للعموم وللمستشفيات.', fr: 'Publication de l’arrêté n° 2157-26 qui fixe en annexe les nouveaux prix publics et hospitaliers.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7552', fr: 'BO n° 7552'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7552_Ar.pdf'}
+
+- key: pharmacy-2026
+  title: {ar: 'مدونة الأدوية والصيدلة: اليقظة الدوائية والإذن المشروط (القانون 27.26)', fr: 'Le code du médicament : pharmacovigilance et autorisation conditionnelle (loi 27.26)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'نافذ منذ 16 يوليوز 2026: نظام وطني لليقظة الدوائية، وإذن مشروط بعرض دواء فالسوق لحاجة طبية؛ بعض الأحكام كتسنا نصوص التطبيق.', fr: 'En vigueur depuis le 16 juillet 2026 : un système national de pharmacovigilance, une autorisation conditionnelle de mise sur le marché ; certaines dispositions attendent leurs textes d’application.'}
+  timeline:
+    - date: '2026-07-16'
+      text: {ar: 'نشر القانون 27.26 في الجريدة الرسمية: يحدث نظاما وطنيا لليقظة الدوائية، ويجيز إذنا مشروطا بالعرض في السوق؛ ويعمل بأحكام المواد 6 و8 المكررة و131 المكررة من تاريخ نشر نصوصها التطبيقية.', fr: 'Publication de la loi 27.26 au BO : système national de pharmacovigilance, autorisation conditionnelle de mise sur le marché ; les articles 6, 8 bis et 131 bis s’appliquent dès la publication de leurs textes.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7526', fr: 'BO n° 7526'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7526_Ar.pdf'}
+      cites: [/ma/loi/27-26/art_2, /ma/loi/27-26/art_4, /ma/loi/27-26/art_7]
+
+# The 2027 finance bill's line for this topic (the finance-bill review, P11): a bill, never law; its way through
+# Parliament is the tax topic's (/topics/tax/reform/lf-2027).
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: الصحة', fr: 'Le projet de loi de finances 2027 : la santé'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: 5.400 منصب لوزارة الصحة، والمراكز الاستشفائية ديال خمس جهات كتدخل للمجموعات الصحية الترابية من فاتح يناير 2027.', fr: 'Un projet, pas une loi : 5 400 postes pour la Santé ; les centres hospitaliers de cinq régions rejoignent les groupements sanitaires territoriaux dès le 1er janvier 2027.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26: مادته 21 تحدث 5.400 منصب لوزارة الصحة والحماية الاجتماعية، ومادته 12 تحذف مصالح الدولة المسيرة بصورة مستقلة للمراكز الاستشفائية في خمس جهات، ومادته 30 تأذن بالالتزام مقدما بـ800 مليون درهم لحساب الصيدلية المركزية.', fr: 'Dépôt du projet 60.26 : son art. 21 crée 5 400 postes à la Santé, son art. 12 supprime les SEGMA hospitaliers de cinq régions, son art. 30 autorise 800 MDH d’engagements anticipés pour la pharmacie centrale.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-PLF2027-fr.pdf'}
+      cites: [/ma/projet-loi/60-26/art_21, /ma/projet-loi/60-26/art_12, /ma/projet-loi/60-26/art_30]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}

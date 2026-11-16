@@ -1,0 +1,136 @@
+/* The search page's answer (30 Oct 2026, drawn again). Loaded with the page, never in the first load.
+   Two voices: the reader's words in the interface's type, the law's in Markazi and the stamp's violet; people in the
+   conversation's teal. Every colour a token; a topic's own as --t. */
+
+/* The question said again: the reader's words on the line, the law's words under the everyday ones, a bracket between. */
+.sa-said { display: flex; flex-direction: column; gap: 10px; padding: 6px 2px 2px; }
+.sa-said .line { margin: 0; display: flex; flex-wrap: wrap; align-items: flex-start; gap: 18px 0.36em;
+  font-size: var(--text-h3); line-height: 1.4; font-weight: 600; color: var(--color-ink); }
+@media (min-width: 640px) { .sa-said .line { font-size: var(--text-h2); line-height: 1.3; } }
+.sa-said .g { display: inline-flex; flex-direction: column; align-items: center; max-width: 100%; }
+.sa-said .top { display: inline-flex; flex-direction: column; }
+.sa-said .w { padding-inline: 3px; color: var(--color-ink); }
+.sa-said .br { position: relative; height: 10px; margin-top: 4px; border: 2px solid var(--color-stamp-line); border-top: 0;
+  border-radius: 0 0 10px 10px; }
+.sa-said .br::after { content: ""; position: absolute; inset-inline-start: calc(50% - 1px); bottom: -8px; width: 2px; height: 8px;
+  background: var(--color-stamp-line); }
+.sa-said .l { margin-top: 10px; padding-inline: 4px; text-align: center; font-family: var(--font-law); font-size: 1.375rem; line-height: 1.35;
+  font-weight: 700; color: var(--color-stamp); }
+@media (min-width: 640px) { .sa-said .l { font-size: 1.625rem; } }
+.sa-said .cap { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+@media (prefers-reduced-motion: no-preference) {
+  .sa-said .br { transform-origin: 50% 0; animation: sa-draw 460ms cubic-bezier(.2, .7, .3, 1) both; animation-delay: calc(var(--i, 0) * 160ms + 120ms); }
+  .sa-said .br::after { animation: sa-show 200ms linear both; animation-delay: calc(var(--i, 0) * 160ms + 520ms); }
+  .sa-said .l { animation: sa-rise 420ms cubic-bezier(.2, .7, .3, 1) both; animation-delay: calc(var(--i, 0) * 160ms + 560ms); }
+}
+@keyframes sa-draw { from { transform: scaleX(0); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes sa-show { from { opacity: 0; } to { opacity: 1; } }
+@keyframes sa-rise { from { transform: translateY(-6px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+/* The topic's answer: its moment and its one line on the topic's pale tone, then the articles on the sheet. */
+.sa-ans { overflow: hidden; border-radius: var(--radius-card); background: var(--color-sheet);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--t) 28%, transparent); }
+.sa-ans .top { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; padding: 18px 20px 20px;
+  background: color-mix(in srgb, var(--t) 11%, var(--color-sheet)); }
+@media (min-width: 640px) { .sa-ans .top { padding: 22px 28px 24px; } }
+.sa-ans .sit { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: color-mix(in srgb, var(--t) 70%, var(--color-ink)); }
+.sa-ans .fig { margin: 2px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; color: color-mix(in srgb, var(--t) 78%, var(--color-ink)); }
+.sa-ans .fig b { font-size: var(--text-display); line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.sa-ans .fig > span { font-size: var(--text-lead); font-weight: 600; }
+.sa-law .b.fr { font-size: var(--text-lead); line-height: 1.6; text-align: start; }
+.sa-ans .lead { margin: 0; max-width: 30ch; font-size: var(--text-h2); line-height: 1.3; font-weight: 700; color: var(--color-ink); text-wrap: balance; }
+.sa-ans .acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.sa-ans .go, .sa-ans .also { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: var(--radius-control);
+  font-weight: 600; text-decoration: none; }
+/* A step towards the ink: the road's and the tax's ochres hold white words at 5 : 1 (light), dark ones (dark). */
+.sa-ans .go { background: color-mix(in srgb, var(--t) 82%, var(--color-ink)); color: var(--color-on-stamp); }
+.sa-ans .go:hover { background: color-mix(in srgb, var(--t) 68%, var(--color-ink)); color: var(--color-on-stamp); }
+.sa-ans .also { background: var(--color-sheet); color: var(--color-ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--t) 40%, transparent); }
+.sa-ans .also svg { color: var(--t); }
+.sa-ans .also:hover { color: var(--color-ink); box-shadow: inset 0 0 0 2px var(--t); }
+.sa-ans a:focus-visible, .sa-people a:focus-visible, .sa-topic a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+
+.sa-law { padding: 6px 20px 8px; }
+@media (min-width: 640px) { .sa-law { padding-inline: 28px; } }
+.sa-law h3 { margin: 12px 0 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.sa-law ol { margin: 0; padding: 0; list-style: none; }
+.sa-law li + li { border-top: 1px solid var(--color-rule-soft); }
+.sa-law a { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 0 14px; align-items: start; padding: 14px 0; color: var(--color-ink);
+  text-decoration: none; }
+.sa-law .b { font-family: var(--font-law); font-size: var(--text-law); line-height: 1.75; display: -webkit-box; -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; overflow: hidden; }
+.sa-law a:hover .b { color: var(--color-stamp-deep); }
+
+/* An article's number in the margin, as the law page sets it: the word small, the number large; a long one smaller. */
+.sa-n { display: flex; flex-direction: column; align-items: center; text-align: center; font-family: var(--font-law); font-size: 2rem; line-height: 1;
+  font-weight: 700; color: var(--color-stamp); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.sa-n small { margin-bottom: 4px; font-size: 0.875rem; font-weight: 600; color: var(--color-ink-soft); }
+/* A label that is a word («الوحيدة», «والستون») stays whole (HM42: «الوحيد / ة» was cut); a number may still break. */
+.sa-n.long { font-size: 1.125rem; line-height: 1.2; overflow-wrap: normal; }
+a:hover > .sa-n { color: var(--color-stamp-deep); }
+
+/* An article the words found, its number in the same margin. */
+.sa-found { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 0 14px; align-items: start; color: var(--color-ink); text-decoration: none; }
+.sa-found .body { display: flex; min-width: 0; flex-direction: column; gap: 4px; }
+.sa-under { margin-inline-start: calc(3.5rem + 14px); }
+/* A phone keeps the law's lines their width: a narrower margin. */
+@media (max-width: 639px) {
+  .sa-found, .sa-law a { grid-template-columns: 2.75rem minmax(0, 1fr); gap: 0 10px; }
+  .sa-n { font-size: 1.625rem; }
+  .sa-n.long { font-size: 1rem; }
+  .sa-under { margin-inline-start: calc(2.75rem + 10px); }
+}
+
+/* «سولو قبلك»: each question and its best answer as the conversation draws them. */
+.sa-people { display: flex; flex-direction: column; gap: 12px; }
+.sa-people .head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.sa-people h2 { margin: 0; font-size: var(--text-h3); line-height: 1.35; font-weight: 700; color: var(--color-ink); }
+.sa-people .head a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; color: var(--color-talk); }
+.sa-people ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.sa-ex { display: flex; flex-direction: column; gap: 8px; padding: 16px; border-radius: var(--radius-card); background: var(--color-sheet);
+  color: var(--color-ink); text-decoration: none; }
+.sa-ex:hover { color: var(--color-ink); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--color-talk) 45%, transparent); }
+.sa-ex .q { align-self: flex-start; max-width: 36rem; padding: 10px 16px; border-radius: 18px; border-end-start-radius: 6px;
+  background: var(--color-paper); font-size: var(--text-lead); line-height: 1.5; font-weight: 600; }
+.sa-ex .a { align-self: flex-end; max-width: 36rem; margin-inline-start: 24px; padding: 10px 16px; border-radius: 18px; border-end-end-radius: 6px;
+  background: var(--color-talk); color: var(--color-sheet); line-height: 1.7; display: -webkit-box; -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; overflow: hidden; }
+.sa-ex .none { align-self: flex-end; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.sa-ex .meta { align-self: flex-end; display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.sa-ex .meta .yes { font-weight: 600; color: var(--color-in-force); }
+.sa-people .note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* The topic: its window in the arch, its name, its guides, its words of the law. */
+.sa-topic { display: flex; flex-direction: column; gap: 14px; padding: 16px 18px 18px; border-radius: var(--radius-card); background: var(--color-sheet);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--t) 28%, transparent); }
+.sa-topic .face { display: flex; align-items: flex-end; gap: 14px; color: var(--color-ink); text-decoration: none; }
+.sa-topic .nm { display: flex; min-width: 0; flex-direction: column; }
+.sa-topic .nm small { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.sa-topic .nm b { font-size: var(--text-lead); line-height: 1.35; font-weight: 700; }
+.sa-topic .open { margin-top: 2px; font-size: var(--text-meta); font-weight: 500; color: var(--color-stamp); }
+.sa-topic .face:hover .open { color: var(--color-stamp-deep); }
+.sa-topic .guides { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.sa-topic .guides li + li { border-top: 1px solid var(--color-rule-soft); }
+.sa-topic .guides a { display: flex; align-items: center; min-height: 44px; padding: 6px 0; color: var(--color-ink); text-decoration: none; }
+.sa-topic .guides a::before { content: ""; flex-shrink: 0; width: 8px; height: 8px; margin-inline-end: 10px; border-radius: 50%; background: var(--t); }
+.sa-topic .guides a:hover { color: var(--color-stamp); }
+.sa-topic .words { display: flex; flex-direction: column; gap: 8px; }
+.sa-topic .words h3 { margin: 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.sa-topic .words ul { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* The texts the words found, under their own heading once an answer stands above them. */
+.sa-texts { display: flex; flex-direction: column; gap: 2px; padding-top: 6px; }
+.sa-texts h2 { margin: 0; font-size: var(--text-h3); line-height: 1.35; font-weight: 700; color: var(--color-ink); }
+.sa-texts p { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* No door names the question (HM8 of the hard-moment review): the nearest moments, asked back first. */
+.sa-near { display: flex; flex-direction: column; gap: 10px; }
+.sa-near h2 { margin: 0; font-size: var(--text-h3); font-weight: 700; }
+.sa-near > p { margin: 0; color: var(--color-ink-soft); }
+.sa-near ul { margin: 0; padding: 0 16px; list-style: none; border-radius: 18px; background: var(--color-sheet); }
+.sa-near li + li { border-top: 1px solid var(--color-rule); }
+.sa-near a { display: flex; align-items: center; gap: 12px; min-height: 56px; padding-block: 12px; text-decoration: none; color: var(--color-ink); }
+.sa-near svg { color: var(--t, var(--color-stamp)); flex: none; }
+.sa-near a > span { display: flex; flex-direction: column; min-width: 0; }
+.sa-near a b { font-weight: 600; }
+.sa-near a span span { font-size: var(--text-meta); color: var(--color-ink-soft); }

@@ -1,0 +1,109 @@
+# The Labour Code (law 65.99) read against the pages of the file it came from, the Ministry of Justice's PDF (Adala,
+# sources/adala/labour_65_99.pdf), on 10 Nov 2026. Its text was set word by word against the Bulletin's own pages
+# (BO 5167 of 8 December 2003, from p. 3969: `witness_pages`), which found 153 small differences in 585 witnessed
+# articles; each was then read on the printed page of the Ministry's file by two reading helpers (crops at 300 to 660
+# dpi, one-dot differences read twice). 91 are the text layer's slips, put right below, nearly all «لا» turned into
+# «ال»: «ثالثة أشهر» for «ثلاثة أشهر» (15 times), «على خالف ذلك» for «خلاف», «شغال» for «شغلا», «مشغال» for «مشغلا»,
+# «عمال بالمادة» for «عملا». Article 477 ran the other way: the site said «شخص ثلاث» where the page prints «ثالث», a
+# third person. One more, article 354's «العالوة», was seen on the same page line.
+# 48 were the Bulletin reading's own slips, spacing or a hamza's seat, and 14 are places where the file prints the
+# site's words and the Bulletin's reading is another real word (or the Ministry's own edition misprints: «تشغليهم» in
+# arts 24, 379, 509 and 527, «لأجراء» in art. 126): left as the file prints them, listed in the review's notes (kept
+# outside the repository).
+# Applied by `manage.py apply_page_reading <this file>`; a reload of the text applies them again.
+text: /ma/loi/65-99
+document: sources/adala/labour_65_99.pdf
+read_on: '2026-11-10'
+fixes:
+  - {arts: [4], wrong: "أعلاه، مشغال في", right: "أعلاه، مشغلا في"}   # p. 11
+  - {arts: [4], wrong: "يهيئها لالتجار فيها.\nتستثنى", right: "يهيئها للاتجار فيها.\nتستثنى"}   # p. 11
+  - {arts: [6], wrong: "أدائه.\nيعد مشغال كل", right: "أدائه.\nيعد مشغلا كل"}   # p. 12
+  - {arts: [8], wrong: "أجر، شغال لحساب", right: "أجر، شغلا لحساب"}   # p. 12
+  - {arts: [9], wrong: "حيث الساللة،", right: "حيث السلالة،"}   # p. 13
+  - {arts: [26], wrong: "الأجير وصال عن", right: "الأجير وصلا عن"}   # p. 19
+  - {arts: [33], wrong: "كان محال له.\nيستوجب", right: "كان محلا له.\nيستوجب"}   # p. 21
+  - {arts: [36], wrong: "أو عمال بمقتضيات", right: "أو عملا بمقتضيات"}   # p. 21
+  - {arts: [64], wrong: "المبررة التخاذه،", right: "المبررة لاتخاذه،"}   # p. 29
+  - {arts: [77], wrong: "عليه إخالؤها وإرجاعها", right: "عليه إخلاؤها وإرجاعها"}   # p. 34
+  - {arts: [77], wrong: "أقصاه ثالثة أشهر", right: "أقصاه ثلاثة أشهر"}   # p. 34
+  - {arts: [87], wrong: "بصفته مشغال،", right: "بصفته مشغلا،"}   # p. 38
+  - {arts: [105], wrong: "الأدنى ألجور باقي", right: "الأدنى لأجور باقي"}   # p. 42
+  - {arts: [109], wrong: "أقصاه ثالثة أشهر.", right: "أقصاه ثلاثة أشهر."}   # p. 44
+  - {arts: [116], wrong: "المحدد إلنهائها بشهر", right: "المحدد لإنهائها بشهر"}   # p. 45
+  - {arts: [146], wrong: "إشهار استغاللي،", right: "إشهار استغلالي،"}   # p. 53
+  - {arts: [148], wrong: "عقود والدة الأحداث", right: "عقود ولادة الأحداث"}   # p. 53
+  - {arts: [160], wrong: "من إبالغها قرار", right: "من إبلاغها قرار"}   # p. 56
+  - {arts: [167], wrong: "تعرضهم ألضرار،", right: "تعرضهم لأضرار،"}   # p. 58
+  - {arts: [172], wrong: "أدناه.\nيعتبر شغال ليليا", right: "أدناه.\nيعتبر شغلا ليليا"}   # p. 59
+  - {arts: [172], wrong: "صباحا.\nيعتبر شغال ليليا", right: "صباحا.\nيعتبر شغلا ليليا"}   # p. 59
+  - {arts: [173], wrong: "فيها متواصال أو", right: "فيها متواصلا أو"}   # p. 59
+  - {arts: [174], wrong: "للنساء ولألحداث،", right: "للنساء وللأحداث،"}   # p. 60
+  - {arts: [189], wrong: "اليومية الستدراك ساعات", right: "اليومية لاستدراك ساعات"}   # p. 64
+  - {arts: [189], wrong: "السنة الستدراك الساعات", right: "السنة لاستدراك الساعات"}   # p. 64
+  - {arts: [190], wrong: "ما، شغال متقطعا", right: "ما، شغلا متقطعا"}   # p. 65
+  - {arts: [192], wrong: "الأيام الثالثة التي", right: "الأيام الثلاثة التي"}   # p. 65
+  - {arts: [195], wrong: "للعموم، وإغالقها ،", right: "للعموم، وإغلاقها ،"}   # p. 66
+  - {arts: [195], wrong: "الفتح والإغالق،", right: "الفتح والإغلاق،"}   # p. 66
+  - {arts: [195], wrong: "عن ثالثة أرباع", right: "عن ثلاثة أرباع"}   # p. 66
+  - {arts: [203], wrong: "مدة الثالثة أيام", right: "مدة الثلاثة أيام"}   # p. 68
+  - {arts: [219], wrong: "لمدة ثالثة عشر", right: "لمدة ثلاثة عشر"}   # p. 72
+  - {arts: [270], wrong: "إجازته الثالثة،", right: "إجازته الثلاثة،"}   # p. 85
+  - {arts: [272], wrong: "فترة ثالثة مائة", right: "فترة ثلاثة مائة"}   # p. 85
+  - {arts: [273], wrong: "على خالف ذلك.", right: "على خلاف ذلك."}   # p. 85
+  - {arts: [276], wrong: "على خالف ذلك", right: "على خلاف ذلك"}   # p. 86
+  - {arts: [277], wrong: "على خالف ذلك.\nيمكن", right: "على خلاف ذلك.\nيمكن"}   # p. 87
+  - {arts: [281], wrong: "مياه الفضالت،", right: "مياه الفضلات،"}   # p. 88
+  - {arts: [285], wrong: "تكون الساللم متينة،", right: "تكون السلالم متينة،"}   # p. 89
+  - {arts: [289], wrong: "دخولها، إعالنا سهل", right: "دخولها، إعلانا سهل"}   # p. 90
+  - {arts: [289], wrong: "أي حموالت من", right: "أي حمولات من"}   # p. 90
+  - {arts: [293], wrong: "سبق اطالعهم بكيفية", right: "سبق اطلاعهم بكيفية"}   # p. 91
+  - {arts: [294], wrong: "خصوصيا، وتتالءم والمقتضيات", right: "خصوصيا، وتتلاءم والمقتضيات"}   # p. 91
+  - {arts: [305], wrong: "بالشغل خالف ذلك.", right: "بالشغل خلاف ذلك."}   # p. 94
+  - {arts: [326], wrong: "جميع التسهيالت التي", right: "جميع التسهيلات التي"}   # p. 98
+  - {arts: [327], wrong: "من ثالثة أسابيع،", right: "من ثلاثة أسابيع،"}   # p. 98
+  - {arts: [335], wrong: "وعدم إطالعه على", right: "وعدم إطلاعه على"}   # p. 100
+  - {arts: [339], wrong: "كل ثالثة أشهر،", right: "كل ثلاثة أشهر،"}   # p. 102
+  - {arts: [347], wrong: "ظل عاطال اليوم", right: "ظل عاطلا اليوم"}   # p. 104
+  - {arts: [347], wrong: "ظل عاطال خلال", right: "ظل عاطلا خلال"}   # p. 104
+  - {arts: [353], wrong: "تتطلب شغال استثنائيا.", right: "تتطلب شغلا استثنائيا."}   # p. 105
+  - {arts: [354], wrong: "الأشهر الثالثة السابقة", right: "الأشهر الثلاثة السابقة"}   # p. 106
+  - {arts: [361], wrong: "أداه فعال.\nتكرر", right: "أداه فعلا.\nتكرر"}   # p. 108
+  - {arts: [367], wrong: "يؤدون شغال يتعذر", right: "يؤدون شغلا يتعذر"}   # p. 109
+  - {arts: [392], wrong: "على خالف ذلك.\nغير", right: "على خلاف ذلك.\nغير"}   # p. 116
+  - {arts: [408], wrong: "مناسبة، والقتناء قطع", right: "مناسبة، ولاقتناء قطع"}   # p. 119
+  - {arts: [409], wrong: "ودواب، وأعالف،", right: "ودواب، وأعلاف،"}   # p. 120
+  - {arts: [411], wrong: "تسجيل عالماتها النقابية،", right: "تسجيل علاماتها النقابية،"}   # p. 120
+  - {arts: [436], wrong: "إلى الئحته الانتخابية،", right: "إلى لائحته الانتخابية،"}   # p. 127
+  - {arts: [450], wrong: "تساوت الئحتان في", right: "تساوت لائحتان في"}   # p. 131
+  - {arts: [450], wrong: "تساوت الئحتان عددا", right: "تساوت لائحتان عددا"}   # p. 131
+  - {arts: [451], wrong: "أجل ثالثة أشهر", right: "أجل ثلاثة أشهر"}   # p. 132
+  - {arts: [452], wrong: "إجراؤها عمال بالمادة", right: "إجراؤها عملا بالمادة"}   # p. 132
+  - {arts: [455], wrong: "مهمتهم إبالغها إلى", right: "مهمتهم إبلاغها إلى"}   # p. 133
+  - {arts: [458], wrong: "طيلة ثالثة أشهر", right: "طيلة ثلاثة أشهر"}   # p. 133
+  - {arts: [462], wrong: "أماكن إللصاق البيانات", right: "أماكن لإلصاق البيانات"}   # p. 135
+  - {arts: [462], wrong: "عليها فني فس المواد؛\n-", right: "عليها في نفس المواد؛\n-"}   # p. 135
+  - {arts: [462], wrong: "للأجراء بالإطالع عليه", right: "للأجراء بالإطلاع عليه"}   # p. 135
+  - {arts: [472], wrong: "نفس التسهيالت والحماية", right: "نفس التسهيلات والحماية"}   # p. 138
+  - {arts: [473], wrong: "كوسيلة إلضعاف دور", right: "كوسيلة لإضعاف دور"}   # p. 138
+  - {arts: [477], wrong: "شخص ثلاث يسمى", right: "شخص ثالث يسمى"}   # p. 139
+  - {arts: [481], wrong: "مدتها ثالثة أشهر.\nيمكن", right: "مدتها ثلاثة أشهر.\nيمكن"}   # p. 140
+  - {arts: [500], wrong: "496؛\n- ثالثة أشهر", right: "496؛\n- ثلاثة أشهر"}   # p. 144
+  - {arts: [502], wrong: "شهر؛\n- ثالثة أيام", right: "شهر؛\n- ثلاثة أيام"}   # p. 145
+  - {arts: [522], wrong: "ذات العالقة بقضايا", right: "ذات العلاقة بقضايا"}   # p. 149
+  - {arts: [528], wrong: "التقاعد، عمال بالمادة", right: "التقاعد، عملا بالمادة"}   # p. 152
+  - {arts: [533], wrong: "مطبقة فعال،", right: "مطبقة فعلا،"}   # p. 153
+  - {arts: [539], wrong: "في ثالثة نظائر،", right: "في ثلاثة نظائر،"}   # p. 156
+  - {arts: [542], wrong: "الامتثال لألوامر الموجهة", right: "الامتثال للأوامر الموجهة"}   # p. 157
+  - {arts: [543], wrong: "المشغل أجال لهذه", right: "المشغل أجلا لهذه"}   # p. 157
+  - {arts: [551], wrong: "كل خالف بسبب", right: "كل خلاف بسبب"}   # p. 159
+  - {arts: [556], wrong: "أجل ثالثة أيام،", right: "أجل ثلاثة أيام،"}   # p. 160
+  - {arts: [562], wrong: "كل التسهيالت والمستندات", right: "كل التسهيلات والمستندات"}   # p. 161
+  - {arts: [562], wrong: "ذات العالقة بالنزاع،", right: "ذات العلاقة بالنزاع،"}   # p. 161
+  - {arts: [563], wrong: "أجل ثالثة أيام.", right: "أجل ثلاثة أيام."}   # p. 161
+  - {arts: [567], wrong: "بقي خالف بشأن", right: "بقي خلاف بشأن"}   # p. 162
+  - {arts: [571], wrong: "كل التسهيالت والمستندات", right: "كل التسهيلات والمستندات"}   # p. 164
+  - {arts: [571], wrong: "ذات العالقة بالنزاع،", right: "ذات العلاقة بالنزاع،"}   # p. 164
+  - {arts: [572], wrong: "القانون، فني زاعات الشغل", right: "القانون، في نزاعات الشغل"}   # p. 164
+  - {arts: [586], wrong: "316-66 الصادرفي 8", right: "316-الصادر في 8"}   # p. 167
+  - {arts: [586], wrong: "تبعا لغالء المعيشة", right: "تبعا لغلاء المعيشة"}   # p. 167
+  - {arts: [354], wrong: "العالوة", right: "العلاوة"}   # p. 106, the same line as «الثلاثة»

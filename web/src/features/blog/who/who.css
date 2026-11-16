@@ -1,0 +1,40 @@
+/* «من يكتب القواعد التي نعيش بها؟»: its own charts. The bands: the King's dahirs in the amber of a seal, Parliament in
+   ink, the Government in the bars' grey, the ministers in the source's violet (the story), other bodies in paper. */
+.bp-bands { display: flex; flex-direction: column; gap: 8px; }
+.bp-bands svg { cursor: crosshair; }
+.bp-bands path.band { stroke: var(--color-sheet); stroke-width: 0.5; }
+.bp-bands path.band-king { fill: var(--color-amended); }
+.bp-bands path.band-parliament { fill: var(--color-ink); }
+.bp-bands path.band-government { fill: var(--bp-bar); }
+.bp-bands path.band-ministers { fill: var(--color-stamp); }
+.bp-bands path.band-others { fill: var(--bp-sheet-a); }
+.bp-bands rect.band-pick { fill: none; stroke: var(--color-ink); stroke-width: 2; }
+.bp-bands text.band-label { font-size: 14px; font-weight: 600; fill: var(--color-ink); }
+.bp-bands text.band-label.on-dark { fill: var(--color-on-stamp); }
+
+/* The ministries, ranked. */
+.bp-rank { display: flex; flex-direction: column; gap: 4px; margin: 4px 0 0; padding: 0; list-style: none; }
+.bp-rank li { display: grid; grid-template-columns: 10rem minmax(0, 1fr); align-items: center; gap: 12px; min-height: 30px; }
+.bp-rank-name { font-size: var(--text-meta); line-height: 1.35; }
+.bp-rank-bar { display: flex; align-items: center; gap: 8px; }
+.bp-rank-bar i { height: 14px; width: calc(var(--w) * (100% - 4rem)); min-width: 2px; border-radius: 2px; background: var(--bp-bar); }
+.bp-rank li.is-hi .bp-rank-bar i { background: var(--color-stamp); }
+.bp-rank li.is-other .bp-rank-name { color: var(--color-ink-soft); }
+.bp-rank-bar b { font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+@media (max-width: 639px) { .bp-rank li { grid-template-columns: 7.5rem minmax(0, 1fr); } }
+
+/* A decade a row, cut by kind. */
+.bp-dec { display: flex; flex-direction: column; gap: 6px; }
+.bp-dec-row { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); align-items: center; gap: 10px; }
+.bp-dec-label { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.bp-dec-bar { display: flex; gap: 2px; height: 26px; width: calc(var(--w) * 100%); min-width: 4px; }
+.bp-dec-bar .seg { min-width: 2px; padding: 0; border: 0; font: inherit; font-size: var(--text-meta); font-weight: 600; cursor: pointer;
+  color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.seg.seg-hi { background: var(--color-stamp); color: var(--color-on-stamp); }
+.seg.seg-other { background: var(--bp-sheet-a); }
+.seg.seg-0, .seg.seg-1 { background: var(--color-ink); color: var(--color-sheet); }
+.seg.seg-2 { background: var(--bp-bar); }
+.seg.seg-3 { background: var(--bp-sheet-b); }
+.bp-kept-key .seg { display: inline-block; width: 12px; height: 12px; border-radius: 2px; }
+.bp-kept-key { display: flex; flex-wrap: wrap; gap: 6px 16px; padding-top: 4px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-kept-key span { display: inline-flex; align-items: center; gap: 6px; }

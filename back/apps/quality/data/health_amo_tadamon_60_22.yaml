@@ -1,0 +1,15 @@
+# Law 60.22 (AMO for those able to pay contributions who have no paid activity: «AMO Achamil») as the SGG's consolidated
+# file prints it, where our text (the SGG version and the machine version built on it) reads it wrong: the SGG's two
+# footnotes on law 21.24 glued into the middle of art. 7, the heading of Part III glued at the end of art. 5, stray «(((»
+# from the footnote marks. Each was read against the page images on 2026-10-27 (the health review, S4): arts 3–7,
+# the articles the health topic cites. Art. 3 reads as printed. Part III's heading («شروط تخويل الحق في الاستفادة من
+# الخدمات ووقفه») is missing from art. 6's headings: a heading fix can only mend words, not add a line.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_tadamon_60_22.yaml`; a reload of the text applies them again.
+text: /ma/loi/60-22
+document: sources/sgg_consolidated/60_22.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [4], wrong: "المادة 3 أعلاه.\n(((", right: "المادة 3 أعلاه."}   # footnote marks glued in, p. 3
+  - {arts: [5], wrong: "تسجيله فيه.\nشروط تخويل الحق في الاستفادة من الخدمات ووقفه", right: "تسجيله فيه."}   # Part III's heading glued in, p. 3
+  - {arts: [6], wrong: "مبالغ الاشتراكات.\n(((", right: "مبالغ الاشتراكات."}   # footnote marks glued in, p. 3
+  - {arts: [7], wrong: "هذا القانون.\n1 تنص المادة الثانية من القانون رقم 21.24 بسن أحكام خاصة تتعلق بنظام التأمين الإجباري الأساسي عن المرض الخاص بالأشخاص القادرين على تحمل واجبات الاشتراك الذين لا يزاولون أي نشاط مأجور أو غير مأجور الصادر بتنفيذه الظهير الشريف رقم 1.24.34بتاريخ 18 من محرم 1446 (24 يوليو 2024) على أنه خلافا لأحكام المادة 5 من القانون السالف الذكر رقم 60.22 يسري أثر التسجيل بالنسبة للمؤمنين المعنيين بالإعفاء المنصوص عليهم في المادة الأولى أعلاه ابتداء من فاتح يناير .2024» 2 تنص المادة الأولى من القانون رقم 21.24 السالف الذكرعلى أنه: ّاستثناء من أحكام الفقرة الأولى من المادة 7 من القانون رقم 60.22 المتعلق بنظام التأمين الإجباري الأساسي عن المرض الخاص بالأشخاص القادرين على تحمل واجبات الاشتراك الذين لا يزاولون أي نشاط مأجور أو غير مأجور، وإلى غاية متم الشهر الثالث الموالي للشهر الذي ينشر فيه هذا القانون بالجريدة الرسمية، يعفى من قضاء مدة التدريب المنصوص عليها في المادة المذكورة المؤمنون الذين كانوا يستفيدون في تاريخ 30 نوفمبر 2023 من نظام التأمين الإجباري الأساسي عن المرض الخاص بالأشخاص غير القادرين على تحمل واجبات الاشتراك المنصوص عليه في الكتاب الثالث من القانون رقم 65.00 المتعلق بالتأمين الإجباري الأساسي عن المرض.» كما أنه طبقا للمادة الثالثة من القانون رقم 21.24 السالف الذكر، يستفيد المؤمنون المعنيون بالإعفاء المذكور من استرجاع المصاريف عن الخدمات المضمونة برسم نظام التأمين الإجباري الأساسي عن المرض أو من تحملها من قبل الهيئة المكلفة بالتدبير، التي تمت لفائدتهم منذ فاتح يناير 2024 إلى متم شهر نونبر .2024 غير أنه", right: "هذا القانون.\nغير أنه"}   # the SGG's footnotes 1–2 on law 21.24 glued between the paragraphs, pp. 3–4

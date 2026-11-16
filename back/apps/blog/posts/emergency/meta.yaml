@@ -1,0 +1,28 @@
+# «حالة الطوارئ الصحية: 33 مرسوما بعد الإعلان»: the blog's twenty-seventh post (S10 of the first-principles review,
+# 6 Nov 2026: «Yes», to publish in March 2027, seven years on; built 7 Nov 2026). The decree-law, the declaration and
+# every decree that extended the emergency, each read in its first article as printed (figures.json, manage.py
+# blog_figures emergency): its number, the day the Bulletin printed it, and the day and hour it carried the emergency
+# to. A person checks every date on its page before the post is published.
+slug: emergency
+number: 27
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "حالة الطوارئ الصحية: إعلان و33 مرسوما، من مارس 2020 إلى فبراير 2023"
+  fr: "L’état d’urgence sanitaire : une déclaration et 33 décrets, de mars 2020 à février 2023"
+lead:
+  ar: "في 24 مارس 2020 نشرت الجريدة الرسمية مرسوما بقانون يحدد أحكام حالة الطوارئ الصحية، ومرسوما يعلنها في سائر التراب الوطني إلى 20 أبريل. ثم مددتها 33 مرسوما، شهرا بعد شهر، حتى 28 فبراير 2023 في الساعة السادسة مساء: قرابة ثلاث سنوات. ومخالفة أوامر السلطات تعاقب بالحبس من شهر إلى ثلاثة أشهر وبغرامة من 300 إلى 1.300 درهم، أو بمصالحة بـ300 درهم تؤدى في الحين."
+  fr: "Le 24 mars 2020, le Bulletin officiel publie un décret-loi édictant les dispositions de l’état d’urgence sanitaire, et un décret qui le déclare sur tout le territoire jusqu’au 20 avril. Puis 33 décrets l’ont prolongé, mois après mois, jusqu’au 28 février 2023 à six heures du soir : près de trois ans. Enfreindre les ordres des autorités est puni d’un à trois mois de prison et d’une amende de 300 à 1 300 dirhams, ou d’une transaction de 300 dirhams payée sur-le-champ."
+
+# The texts: a decree that extends the emergency, or that changes such a decree's term.
+extends_re: "بتمديد مدة سريان مفعول حالة الطوارئ الصحية|بتغيير المرسوم رقم 2\\.21\\.507"
+declaration: {akn: /akn/ma/act/decret/2-20-293, number: "2.20.293", issue: 6867, bis: true, page: 1783}
+decree_law: {akn: /akn/ma/act/decret-loi/2-20-292, number: "2.20.292", issue: 6867, bis: true, page: 1782,
+             art2: "ويمكن تمديد مدة سريان مفعول حالة الطوارئ الصحية وفق الكيفيات المنصوص عليها في الفقرة الأولى أعلاه",
+             art4: "يعاقب على مخالفة أحكام الفقرة السابقة بالحبس من شهر إلى ثلاثة أشهر وبغرامة تتراوح بين 300 و 1300 درهم أو بإحدى هاتين العقوبتين، وذلك دون الإخلال بالعقوبة الجنائية الأشد"}
+settlement: {akn: /akn/ma/act/decret-loi/2-20-503, number: "2.20.503", issue: 6906, bis: true, page: 4306,
+             words: "يمكن أن تكون المخالفات لأحكام الفقرة الأولى من المادة الرابعة أعلاه موضوع مصالحة تتم بأداء غرامة تصالحية جزافية قدرها ثلاثمائة (300) درهم يؤديها المخالف فورا"}
+on_the_spot: {akn: /akn/ma/act/decret/2-20-572, number: "2.20.572", issue: 6908, page: 4379,
+              words: "إذا لم يتأت للمخالف أداء الغرامة بمكان معاينة المخالفة أمكن للضابط أو العون محرر المحضر منحه مهلة للأداء داخل أجل لا يتعدى 24 ساعة من تاريخ معاينة المخالفة"}
+ratified: {akn: /akn/ma/act/loi/23-20, number: "23.20", issue: 6887, page: 3336}

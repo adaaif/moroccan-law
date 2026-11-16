@@ -1,0 +1,18 @@
+# Decree 2.22.797 (AMO for those unable to pay contributions: «AMO Tadamon», applying law 65.00) as the SGG's consolidated
+# file prints it, where our text (its SGG version and the machine version) reads it wrong: ligatures turned («عمال» for
+# «عملا», «خالف» for «خلاف», «الست فادته» for «لاستفادته»), a comma moved before the law's number, two words run into one
+# («الرضع» for «المرض مع»), the list's dashes dropped. Read against the page images on 2026-10-27 (
+# the health review, S4): arts 1, 3, 5 and 15, the articles the health topic cites (art. 15 reads as printed).
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_tadamon_2_22_797.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-22-797
+document: sources/sgg_consolidated/2_22_797.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [1], wrong: "رقم ،65.00 يعتبر", right: "رقم 65.00، يعتبر"}   # comma moved, p. 2
+  - {arts: [1], wrong: "عمال بأحكام", right: "عملا بأحكام"}   # ligature turned, p. 2
+  - {arts: [3], wrong: "خالف ذلك", right: "خلاف ذلك"}   # ligature turned, p. 3
+  - {arts: [3], wrong: "الطلب الست فادته", right: "الطلب لاستفادته"}   # ligature turned, word cut, p. 3
+  - {arts: [3], wrong: "إلكترونية :\nبتسجيله", right: "إلكترونية :\n- بتسجيله"}   # list dash dropped, p. 3
+  - {arts: [3], wrong: "الاشتراك ؛\nبعدم استيفائه", right: "الاشتراك ؛\n- بعدم استيفائه"}   # list dash dropped, p. 3
+  - {arts: [3], wrong: "عن الرضع إخباره", right: "عن المرض مع إخباره"}   # two words run into one, p. 3
+  - {arts: [5], wrong: "رقم ،65.00 يتم", right: "رقم 65.00، يتم"}   # comma moved, p. 4

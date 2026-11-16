@@ -1,0 +1,100 @@
+# «السرعة في الجريدة الرسمية»: the blog's twenty-second post (S22 of the first-principles review, 6 Nov 2026: «Yes»;
+# built 7 Nov 2026). Every speed the Bulletin wrote for a road, from the cars its 1913 news pages timed to the 2010
+# code, each read on its page; and the ministers' orders that set a limit section by section, counted (figures.json).
+# Officials are named only before 1956 (C2 as recommended). A person checks every quote on its page before the post is
+# published.
+slug: speed
+number: 22
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "السرعة في الجريدة الرسمية: من 12 كلم في الساعة فوق القناطر إلى 120 في الطريق السيار"
+  fr: "La vitesse au Bulletin officiel : de 12 km/h sur les ponts à 120 sur l’autoroute"
+lead:
+  ar: "في 1913، نشرت الجريدة الرسمية أن سيارة قطعت الطريق من آسفي إلى مراكش في خمس ساعات، بـ35 كيلومترا في الساعة. وفي 1923 كتب قرار وزيري أول حدود للسرعة، حسب وزن العربة. وفي 1924 حدد قرار السرعة في 12 كيلومترا في الساعة فوق قناطر طريق فاس تازة. ثم كتب الوزراء حدا لكل مقطع من الطريق، حتى 120 كيلومترا في الساعة بين الدار البيضاء والرباط سنة 1983. ومنذ 2010، تحدد مدونة السير 60 في المدن و100 خارجها و120 في الطريق السيار."
+  fr: "En 1913, le Bulletin officiel rapportait qu’une automobile avait relié Safi à Marrakech en cinq heures, à 35 kilomètres à l’heure. En 1923, un arrêté viziriel écrit les premières limites de vitesse, selon le poids du véhicule. En 1924, un arrêté limite la vitesse à 12 kilomètres à l’heure sur les ponts de la route de Fès à Taza. Puis les ministres ont fixé une limite par tronçon, jusqu’à 120 km/h entre Casablanca et Rabat en 1983. Depuis 2010, le code de la route fixe 60 en ville, 100 hors agglomération et 120 sur l’autoroute."
+
+# The speeds, in time. `kind`: news (the Bulletin's news pages, 1913), rule (a text). `edition` fr: the 1924 order is in
+# the French edition (BO 615), whose words are quoted as printed. `marks`: the other speeds the same text writes. `words`:
+# as printed (the 1913 and 1923 pages' spelling kept). Each day is its issue's (figures.json).
+eras:
+  - key: y1913
+    year: 1913
+    kmh: 35
+    kind: news
+    issue: 17
+    page: 123
+    words: "اجتاز اتوموبيل كبير مع اربعة ركاب المسافة بين اسفي ومراكش في خمس ساعات فاطعا بالساعة 35 كيلومترو"
+  - key: y1923
+    year: 1923
+    kmh: 40
+    marks: [35, 25, 15]
+    kind: rule
+    issue: 513
+    page: 183
+    words: "عربات الاطوميل التي يتجاوز مجموع ثقلها مع محمولها ثلاثة آلاف كيلو لا يمكنها ان تجاوز بسيرها اقصى السرعة المبينة اسفله مع مراعاة طبقتها"
+  - key: y1924
+    year: 1924
+    kmh: 12
+    kind: rule
+    edition: fr
+    issue: 615
+    page: 1219
+    words: "Jusqu’à nouvel ordre la vitesse des véhicules de toute nature est limitée à douze kilomètres à l’heure à la traversée des ponts désignés ci-après et sur cent mètres de part et d’autre des extrémités de ces ouvrages"
+  - key: y1939
+    year: 1939
+    kmh: 50
+    kind: rule
+    issue: 1388
+    page: 1059
+    words: "كل عربة اطوموبيلية جارة لعربة اخرى لا يجوز على اي حال كان ان تتعدى سرعتها خمسين كيلومترا في الساعة"
+  - key: y1961
+    year: 1961
+    kmh: 60
+    kind: rule
+    issue: 2562
+    page: 3047
+    akn: /akn/ma/act/arrete/583-61
+    words: "تقدر أقصى حد سرعة السيارات بستين كيلومترا في الساعة (60 كلم) في الطريق الرئيسية رقم 9 الذاهبة من الجديدة الى مراكش"
+  - key: y1963
+    year: 1963
+    kmh: 100
+    kind: rule
+    issue: 2642
+    page: 1380
+    akn: /akn/ma/act/arrete/249-63
+    words: "لا يمكن للسيارات التى يقل مجموع حمولتها عن 3.500 كيلو غرام أو يعادلها أن تتجاوز سرعتها القصوى 100 كيلومتر في الساعة"
+  - key: y1983
+    year: 1983
+    kmh: 120
+    kind: rule
+    issue: 3713
+    page: 1736
+    akn: /akn/ma/act/arrete/1411-83
+    words: "تحدد السرعة القصوى للسيارات بمائة وعشرين كيلومترا في الساعة على الطريق رقم 36 الموصلة من الدار البيضاء الى الرباط"
+  - key: y2010
+    year: 2010
+    kmh: 120
+    marks: [100, 60]
+    kind: rule
+    issue: 5878
+    page: 4436
+    akn: /akn/ma/act/decret/2-10-420
+    words: "يجب على كل سائق ألا يتجاوز على الطريق السيار السرعة القصوى المحددة في 120 كيلومترا في الساعة بالنسبة للدراجات النارية وللمركبات التي لا يفوق وزنها الإجمالي المأذون به محملة … 3.500 كيلوغرام"
+# The 1914 dahir that first let the authorities fix a speed (no number), as printed.
+first_rule: {issue: 76, page: 436, words: "ويمكن للحكومة ان تحدد مقدار سرعة العربات او الدواب تحديدا صريحا في الجهات التي تعينها"}
+
+# The ministers' orders that set a limit on a road section: an order of the Arabic general edition whose article fixes a
+# speed («تحدد/تقدر … السرعة» with a number of kilometres an hour), from the first after independence to the code.
+orders: {from: 1956, to: 2009}
+
+# The limits since the code (decree 2.10.420, BO 5878, pp. 4435–4436), each by its article.
+today:
+  - {key: town, kmh: 60, art: "15", page: 4435}
+  - {key: road, kmh: 100, art: "17", page: 4435}
+  - {key: motorway, kmh: 120, art: "18", page: 4436}
+  - {key: trucks, kmh: 90, art: "17", page: 4436}
+  - {key: novice, kmh: 90, art: "16", page: 4435}
+  - {key: walkers, kmh: 30, art: "13", page: 4435}
+code: {akn: /akn/ma/act/decret/2-10-420, issue: 5878, number: "2.10.420"}

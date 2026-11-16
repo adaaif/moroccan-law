@@ -1,0 +1,27 @@
+# «15 يوما: الأجل المفضل في القانون المغربي»: the blog's twenty-third post (S17 of the first-principles review, 6
+# Nov 2026: «Yes»; built 7 Nov 2026). Every deadline the law in force writes, counted (figures.json, manage.py
+# blog_figures deadlines): a number of hours, days, weeks, months or years after a word that makes it a limit («أجل»,
+# «خلال», «داخل» …), in digits or in words, in every text of law the site has read no repeal for. Ages, exam lengths and
+# terms of office are left out by that word. A person checks every example on its page before the post is published.
+slug: deadlines
+number: 23
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "15 يوما: الأجل المفضل في القانون المغربي"
+  fr: "Quinze jours : le délai préféré de la loi marocaine"
+lead:
+  ar: "عددنا كل أجل في نصوص القانون القائمة: «داخل أجل خمسة عشر يوما»، «خلال ستة أشهر»، «في أجل لا يتعدى ثلاثين يوما». أكثرها 15 يوما، ثم 30 يوما، ثم ستة أشهر، ثم ثلاثة أشهر. ويعدّ القانون بالساعات أيضا: 24 ساعة لأداء أجر العامل باليوم بعد فصله."
+  fr: "Nous avons compté chaque délai des textes de loi en vigueur : « dans un délai de quinze jours », « dans les six mois », « dans un délai n’excédant pas trente jours ». Le plus fréquent : 15 jours, puis trente jours, six mois, trois mois. La loi compte aussi en heures : 24 heures pour payer le salaire d’un ouvrier à la journée après son licenciement."
+
+# The texts of law read, and the words that make a number a limit (within three words before it: «في أجل لا يتجاوز ستة
+# أشهر»). «لا يتجاوز» alone is left out: it is mostly an age («لا يتجاوز سنه 45 سنة»).
+rules: [law, organic_law, dahir, decree, decree_law, order]
+limit_words: "أجل|اجل|آجال|خلال|داخل|ظرف|مهلة"
+
+# Where each deadline's example comes from: the first of these laws, in this order, whose words carry it (the laws people
+# meet: the family, work, renting, buying, the courts, the road, information).
+examples: [/akn/ma/act/loi/70-03, /akn/ma/act/loi/65-99, /akn/ma/act/loi/67-12, /akn/ma/act/loi/31-08, /akn/ma/act/loi/58-25,
+           /akn/ma/act/loi/22-01, /akn/ma/act/loi/52-05, /akn/ma/act/loi/31-13, /akn/ma/act/loi/49-16, /akn/ma/act/loi/15-95,
+           /akn/ma/act/loi/39-08, /akn/ma/act/loi/112-12]

@@ -1,0 +1,21 @@
+# The health topic's papers (S13 of the health review): each list is what an article names, item by item. Ticks
+# stay on the reader's phone.
+
+- key: refund-file
+  title: {ar: 'ملف التعويض', fr: 'Le dossier de remboursement'}
+  lead:
+    ar: 'ما يطلبه المرسوم 2.05.733 لإرجاع المصاريف، وأجل إيداعه.'
+    fr: 'Ce que le décret 2.05.733 demande pour le remboursement, et son délai de dépôt.'
+  cites: [/ma/decret/2-05-733/art_11, /ma/decret/2-05-733/art_12]
+  items:
+    - label: {ar: 'ورقة العلاجات موقعة من الطبيب أو المهنيين الذين عالجوك', fr: 'La feuille de soins signée par le ou les praticiens'}
+      cites: [/ma/decret/2-05-733/art_11]
+    - label: {ar: 'وثائق الإثبات المطلوبة للمصاريف التي أديتها', fr: 'Les justificatifs des frais payés'}
+      cites: [/ma/decret/2-05-733/art_11]
+    - label: {ar: 'الوصفة واضحة، بتاريخها وتوقيع الطبيب وختمه واسمه وعنوانه', fr: 'L’ordonnance lisible, datée, signée, avec cachet, nom et adresse du médecin'}
+      cites: [/ma/loi/17-04/art_34]
+    - label: {ar: 'أودعته داخل الشهرين المواليين لأول عمل طبي، أو ستين يوما بعد نهاية علاج متواصل', fr: 'Déposé dans les deux mois du premier acte, ou soixante jours après la fin d’un traitement continu'}
+      note: {ar: 'بعدها يسقط الحق، إلا في حالة قوة قاهرة', fr: 'Après, le droit tombe, sauf force majeure'}
+      cites: [/ma/decret/2-05-733/art_12]
+    - label: {ar: 'إذا كنت حاملا: صرحت بالحمل ستة أشهر على الأقل قبل الولادة المتوقعة', fr: 'Si vous êtes enceinte : grossesse déclarée au moins six mois avant la date prévue'}
+      cites: [/ma/decret/2-05-733/art_13]

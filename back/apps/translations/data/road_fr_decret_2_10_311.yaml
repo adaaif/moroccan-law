@@ -1,0 +1,13 @@
+# /ma/decret/2-10-311 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+# Strings holding a line break are double-quoted ("\n" is the break in our body); all others single-quoted.
+language: fr
+text: /ma/decret/2-10-311
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [3], wrong: 'GENERAUX Le candidat sourd', right: 'Le candidat sourd'}      # p. 1715: «GENERAUX» is the page's «TEXTES GENERAUX» banner glued to the 3rd paragraph
+  - {arts: [22], wrong: 'des quittances. établissant Fe paiement', right: 'des quittances établissant le paiement'}      # p. 1717: «Fe» for «le»; the mark after «quittances» is a speck, not a full stop
+  - {arts: [22], wrong: "provinciaux relevant.\ndu ministère", right: 'provinciaux relevant du ministère'}      # p. 1717 col. 2: one paragraph; a speck at the line end became a full stop and a paragraph break
+notes:
+  - {art: 22, page: 1717, what: 'The site has no Arabic head for art. 22 (art.sh prints NOT FOUND); the French itself is whole, from «Le ministère public compétent» to «prévus au présent article.»'}
+checked: [3, 7, 22]

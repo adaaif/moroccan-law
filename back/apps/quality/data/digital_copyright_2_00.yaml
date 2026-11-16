@@ -1,0 +1,16 @@
+# The digital topic's texts (27 Oct 2026), where our reading differs from the page.
+# Law 2.00 on copyright, the SGG's consolidation (samples/sgg_consolidated/2_00.pdf): «الاستشهاد» split in art. 14 and
+# «فعلا» read «فعال» in art. 62, unambiguous from their sentences. Applied by `manage.py apply_page_reading apps/quality/data/digital_copyright_2_00.yaml`.
+text: /ma/loi/2-00
+document: samples/sgg_consolidated/2_00.pdf
+read_on: '2026-10-27'
+fixes:
+- arts: [14]
+  wrong: 'مكافأة الا ستشهاد بمصنف'
+  right: 'مكافأة الاستشهاد بمصنف'
+- arts: [14]
+  wrong: 'وأن يكون الا ستشهاد قد استعمل'
+  right: 'وأن يكون الاستشهاد قد استعمل'
+- arts: [62]
+  wrong: 'التي لحقت به فعال بالإضافة'
+  right: 'التي لحقت به فعلا بالإضافة'

@@ -1,0 +1,10 @@
+# Decree 2.23.350 on the housing aid as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (2 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/housing_aid_2_23_350.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-23-350
+document: sources/adala/housing_aid_2_23_350.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [4], wrong: بنسخة من رخصة السكن, right: بنسخة من رخصة السكن مسلمة ابتداء من فاتح يناير 2023.}   # missing, p. 4
+  - {arts: [8], wrong: يناير ،2024 إلى, right: يناير 2024، إلى}   # moved, p. 6

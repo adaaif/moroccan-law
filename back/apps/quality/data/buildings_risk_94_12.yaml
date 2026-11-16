@@ -1,0 +1,17 @@
+# Law 94.12 on buildings threatening ruin as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (8 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/buildings_risk_94_12.yaml`; a reload of the text applies them again.
+text: /ma/loi/94-12
+document: sources/adala/buildings_risk_94_12.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [2, 5, 9, 17, 52], wrong: آلي للسقوط, right: آيل للسقوط}   # moved, pp. 3, 5, 8, 10, 28
+  - {arts: [2], wrong: يمكن النهيارها, right: يمكن لانهيارها}   # turn, p. 3
+  - {arts: [3], wrong: المباني على مالكها, right: المباني على ملاكها}   # moved, p. 4
+  - {arts: [4], wrong: البناية آلية للسقوط, right: البناية آيلة للسقوط}   # moved, p. 4
+  - {arts: [4], wrong: لتدعي م وصيانة, right: لتدعيم وصيانة}   # split, p. 5
+  - {arts: [9], wrong: عمال بمقتضيات, right: عملا بمقتضيات}   # turn, p. 7
+  - {arts: [17], wrong: المالكين ولا قاطنين والمارة, right: المالكين والقاطنين والمارة}   # turn, p. 10
+  - {arts: [19], wrong: إمكاني ا تهم الذاتية, right: إمكانياتهم الذاتية}   # split, p. 11
+  - {arts: [19], wrong: الضرورية إليوائهم مؤقتا, right: الضرورية لإيوائهم مؤقتا}   # turn, p. 11

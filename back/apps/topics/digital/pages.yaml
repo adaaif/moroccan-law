@@ -1,0 +1,228 @@
+# The digital topic's pages (the digital review): your data and its rights, the offences online side by side,
+# the right to information, copyright and its terms, the electronic signature, a company's duties, and what people
+# believe. Every fact names its articles, as the site holds them on 27 Oct 2026.
+
+- key: data
+  title: {ar: 'معطياتك الشخصية وحقوقك', fr: 'Vos données personnelles et vos droits'}
+  lead:
+    ar: 'القانون 09.08 يحمي كل معلومة تتعلق بشخص يمكن التعرف عليه، بما فيها الصوت والصورة، وكل من يعالجها ملزم بقواعده.'
+    fr: 'La loi 09.08 protège toute information relative à une personne identifiable, voix et image comprises, et lie quiconque la traite.'
+  cites: [/ma/loi/9-08/art_1]
+  sections:
+    - title: {ar: 'حقوقك جنبا إلى جنب', fr: 'Vos droits côte à côte'}
+      table:
+        head: [{ar: 'الحق', fr: 'Le droit'}, {ar: 'ما يعطيك', fr: 'Ce qu’il vous donne'}, {ar: 'الأجل', fr: 'Le délai'}]
+        rows:
+          - [{ar: 'الإخبار', fr: 'L’information'}, {ar: 'هوية المسؤول، الغاية، المرسل إليهم، حقوقك', fr: 'L’identité du responsable, la finalité, les destinataires, vos droits'}, {ar: 'عند الجمع', fr: 'À la collecte'}]
+          - [{ar: 'الولوج', fr: 'L’accès'}, {ar: 'تأكيد المعالجة ونسخة مفهومة من معطياتك، بلا مقابل', fr: 'La confirmation du traitement et une copie intelligible, gratuitement'}, {ar: 'على الفور', fr: 'Sans délai'}]
+          - [{ar: 'التصحيح والمسح', fr: 'Rectification et effacement'}, {ar: 'تحيين أو تصحيح أو مسح أو إغلاق الولوج، بلا مقابل', fr: 'Mise à jour, correction, effacement ou verrouillage, gratuitement'}, {ar: '10 أيام كاملة', fr: '10 jours francs'}]
+          - [{ar: 'التعرض', fr: 'L’opposition'}, {ar: 'لسبب مشروع، وبلا مصاريف على الاستقراء التجاري', fr: 'Pour motif légitime, et sans frais contre la prospection'}, {ar: '—', fr: '—'}]
+      cites: [/ma/loi/9-08/art_5, /ma/loi/9-08/art_7, /ma/loi/9-08/art_8, /ma/loi/9-08/art_9]
+      tool: tools/letter
+    - title: {ar: 'الرضى', fr: 'Le consentement'}
+      facts:
+        - text: {ar: 'لا تعالج معطياتك إلا برضاك الذي لا يترك مجالا للشك، إلا إذا كانت المعالجة ضرورية لالتزام قانوني، أو لتنفيذ عقد أنت طرف فيه، أو لمصلحة حيوية، أو لمهمة عامة، أو لمصلحة مشروعة.', fr: 'Vos données ne sont traitées qu’avec votre consentement indubitable, sauf si le traitement est nécessaire à une obligation légale, à un contrat dont vous êtes partie, à un intérêt vital, à une mission publique ou à un intérêt légitime.'}
+          cites: [/ma/loi/9-08/art_4]
+        - text: {ar: 'الرسائل الإشهارية بالهاتف أو البريد الإلكتروني ممنوعة بلا رضاك المسبق.', fr: 'La prospection par téléphone ou courriel est interdite sans votre consentement préalable.'}
+          cites: [/ma/loi/9-08/art_10]
+    - title: {ar: 'إذا رفضوا', fr: 'S’ils refusent'}
+      facts:
+        - text: {ar: 'تودع طلبك لدى اللجنة الوطنية لمراقبة حماية المعطيات، التي تتلقى الشكايات وتحقق وتأمر بالتصحيح أو تحيل على وكيل الملك.', fr: 'Vous saisissez la CNDP, qui reçoit les plaintes, enquête, ordonne la rectification ou saisit le procureur.'}
+          cites: [/ma/loi/9-08/art_8, /ma/loi/9-08/art_28]
+          more: journeys/cndp
+        - text: {ar: 'رفض حقوق الولوج أو التصحيح أو التعرض غرامته من 20.000 إلى 200.000 درهم عن كل مخالفة.', fr: 'Refuser les droits d’accès, de rectification ou d’opposition coûte 20 000 à 200 000 DH par infraction.'}
+          cites: [/ma/loi/9-08/art_53]
+
+- key: offences
+  title: {ar: 'اللي كيوقع فالأنترنت: الجرائم والعقوبات', fr: 'Ce qui arrive en ligne : infractions et peines'}
+  lead:
+    ar: 'ما تكتبه النصوص عن كل فعل: العقوبة كما تطبعها، وهل الشكاية شرط، وأجل التقادم. المحكمة هي التي تكيف الأفعال وتحكم.'
+    fr: 'Ce qu’écrivent les textes de chaque acte : la peine telle qu’ils l’impriment, si la plainte est nécessaire, la prescription. Le tribunal qualifie et juge.'
+  cites: [/ma/dahir/1-59-413/art_607-3]
+  sections:
+    - title: {ar: 'جنبا إلى جنب', fr: 'Côte à côte'}
+      table:
+        head: [{ar: 'الفعل', fr: 'L’acte'}, {ar: 'الحبس', fr: 'Prison'}, {ar: 'الغرامة (درهم)', fr: 'Amende (DH)'}, {ar: 'التقادم', fr: 'Prescription'}]
+        rows:
+          - [{ar: 'الدخول إلى نظام معلوماتي بالاحتيال', fr: 'Accès frauduleux à un système'}, {ar: '1–3 أشهر', fr: '1–3 mois'}, {ar: '2.000–10.000', fr: '2 000–10 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'تغيير المعطيات أو حذفها، عرقلة النظام', fr: 'Modifier ou effacer des données, entraver'}, {ar: '1–3 سنوات', fr: '1–3 ans'}, {ar: '10.000–200.000', fr: '10 000–200 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'النصب', fr: 'Escroquerie'}, {ar: '1–5 سنوات', fr: '1–5 ans'}, {ar: '500–5.000', fr: '500–5 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'الابتزاز بالتهديد بالفضيحة', fr: 'Chantage à la révélation'}, {ar: '1–5 سنوات', fr: '1–5 ans'}, {ar: '200–2.000', fr: '200–2 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'نشر كلام خاص أو صورة في مكان خاص', fr: 'Diffusion de propos privés ou d’image en lieu privé'}, {ar: '6 أشهر–3 سنوات', fr: '6 mois–3 ans'}, {ar: '2.000–20.000', fr: '2 000–20 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'مونطاج أو ادعاءات كاذبة للتشهير', fr: 'Montage ou fausses allégations pour diffamer'}, {ar: '1–3 سنوات', fr: '1–3 ans'}, {ar: '2.000–20.000', fr: '2 000–20 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'التحرش الجنسي بالرسائل', fr: 'Harcèlement sexuel par messages'}, {ar: '1–6 أشهر', fr: '1–6 mois'}, {ar: '2.000–10.000', fr: '2 000–10 000'}, {ar: '4 سنوات', fr: '4 ans'}]
+          - [{ar: 'القذف في حق فرد (قانون الصحافة)', fr: 'Diffamation envers un particulier (presse)'}, {ar: '—', fr: '—'}, {ar: '10.000–100.000', fr: '10 000–100 000'}, {ar: '6 أشهر', fr: '6 mois'}]
+          - [{ar: 'السب في حق فرد (قانون الصحافة)', fr: 'Injure envers un particulier (presse)'}, {ar: '—', fr: '—'}, {ar: '10.000–50.000', fr: '10 000–50 000'}, {ar: '6 أشهر', fr: '6 mois'}]
+      cites: [/ma/dahir/1-59-413/art_607-3, /ma/dahir/1-59-413/art_607-6, /ma/dahir/1-59-413/art_540, /ma/dahir/1-59-413/art_538, /ma/dahir/1-59-413/art_447-1, /ma/dahir/1-59-413/art_447-2, /ma/dahir/1-59-413/art_503-1-1, /ma/loi/88-13/art_85, /ma/loi/88-13/art_101, /ma/loi/22-01/art_5]
+      tool: tools/offence
+    - title: {ar: 'متى تشتد العقوبة', fr: 'Quand la peine s’aggrave'}
+      facts:
+        - text: {ar: 'نشر الصور والكلام الخاص أو المونطاج: من سنة إلى خمس سنوات في العود، أو من الزوج أو الطليق أو الخاطب أو الأصول أو الفروع أو من له سلطة، أو ضد امرأة بسبب جنسها أو ضد قاصر.', fr: 'Images et propos privés ou montage : un à cinq ans en récidive, par un conjoint, ex-conjoint, fiancé, ascendant, descendant ou personne ayant autorité, ou contre une femme en raison de son sexe ou un mineur.'}
+          cites: [/ma/dahir/1-59-413/art_447-3]
+        - text: {ar: 'التحرش: تضاعف العقوبة إذا كان الفاعل زميلا في العمل أو مكلفا بحفظ النظام.', fr: 'Harcèlement : la peine est doublée pour un collègue ou une personne chargée de l’ordre.'}
+          cites: [/ma/dahir/1-59-413/art_503-1-1]
+        - text: {ar: 'محاولة الجرائم المعلوماتية يعاقب عليها كالجريمة التامة.', fr: 'La tentative des délits informatiques est punie comme l’infraction consommée.'}
+          cites: [/ma/dahir/1-59-413/art_607-8]
+    - title: {ar: 'الشكاية', fr: 'La plainte'}
+      facts:
+        - text: {ar: 'الشكاية إلى وكيل الملك أو الشرطة القضائية، ويخبرك وكيل الملك بالمآل داخل خمسة عشر يوما من قراره.', fr: 'La plainte au procureur ou à la police judiciaire ; le procureur vous informe de la suite dans les quinze jours de sa décision.'}
+          cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_21]
+          more: checklists/complaint
+        - text: {ar: 'في القذف أو السب في حق فرد، لا متابعة إلا بشكايتك، وداخل ستة أشهر من النشر.', fr: 'Pour la diffamation ou l’injure envers un particulier, pas de poursuite sans votre plainte, dans les six mois de la publication.'}
+          cites: [/ma/loi/88-13/art_99, /ma/loi/88-13/art_101]
+
+- key: info
+  title: {ar: 'الحق في الحصول على المعلومات', fr: 'Le droit d’accès à l’information'}
+  lead:
+    ar: 'القانون 31.13، نافذ منذ 12 مارس 2019: كل معلومة عامة عند الإدارات والبرلمان والمحاكم والجماعات الترابية والمؤسسات العمومية، مجانا، إلا ما يستثنيه القانون.'
+    fr: 'La loi 31.13, en vigueur depuis le 12 mars 2019 : toute information publique détenue par les administrations, le Parlement, les tribunaux, les collectivités et les établissements publics, gratuitement, sauf exceptions légales.'
+  cites: [/ma/loi/31-13/art_2, /ma/loi/31-13/art_30]
+  sections:
+    - title: {ar: 'الطريق والآجال', fr: 'Le chemin et ses délais'}
+      table:
+        head: [{ar: 'المرحلة', fr: 'L’étape'}, {ar: 'الأجل', fr: 'Le délai'}]
+        rows:
+          - [{ar: 'جواب الإدارة', fr: 'Réponse de l’administration'}, {ar: '20 يوم عمل من تسلم الطلب، و20 أخرى بإشعار معلل', fr: '20 jours ouvrables dès réception, 20 de plus sur avis motivé'}]
+          - [{ar: 'الحالة المستعجلة', fr: 'Urgence'}, {ar: '3 أيام', fr: '3 jours'}]
+          - [{ar: 'الشكاية إلى الرئيس', fr: 'Réclamation au chef'}, {ar: 'داخل 20 يوم عمل؛ ويجيب داخل 15 يوما', fr: 'Sous 20 jours ouvrables ; réponse sous 15 jours'}]
+          - [{ar: 'الشكاية إلى اللجنة', fr: 'Plainte à la commission'}, {ar: 'داخل 30 يوما؛ وتجيب داخل 30 يوما', fr: 'Sous 30 jours ; réponse sous 30 jours'}]
+          - [{ar: 'المحكمة الإدارية', fr: 'Tribunal administratif'}, {ar: 'داخل 60 يوما من جواب اللجنة', fr: 'Sous 60 jours de la réponse de la commission'}]
+      cites: [/ma/loi/31-13/art_16, /ma/loi/31-13/art_17, /ma/loi/31-13/art_19, /ma/loi/31-13/art_20, /ma/loi/31-13/art_21]
+      tool: tools/info
+    - title: {ar: 'ما يستثنى', fr: 'Ce qui est excepté'}
+      facts:
+        - text: {ar: 'الدفاع الوطني وأمن الدولة، والحياة الخاصة والمعطيات الشخصية، وما يضر بالعلاقات الخارجية أو السياسة النقدية والاقتصادية، وغيرها مما تعدده المادة 7.', fr: 'La défense nationale et la sûreté de l’État, la vie privée et les données personnelles, ce qui nuirait aux relations extérieures ou à la politique monétaire et économique, et le reste de l’article 7.'}
+          cites: [/ma/loi/31-13/art_7]
+        - text: {ar: 'كل رفض مكتوب ومعلل يذكر الاستثناء أو مرجع المعلومة المنشورة.', fr: 'Tout refus est écrit et motivé, citant l’exception ou la référence de l’information publiée.'}
+          cites: [/ma/loi/31-13/art_18]
+    - title: {ar: 'المجانية', fr: 'La gratuité'}
+      facts:
+        - text: {ar: 'الحصول على المعلومات مجاني، إلا الخدمات المؤدى عنها بنص، ويتحمل الطالب تكاليف النسخ والإرسال.', fr: 'L’accès est gratuit, hors services payants prévus par un texte ; le demandeur supporte les frais de copie et d’envoi.'}
+          cites: [/ma/loi/31-13/art_5]
+        - text: {ar: 'للأجنبي المقيم بصفة قانونية نفس الحق.', fr: 'L’étranger en résidence régulière a le même droit.'}
+          cites: [/ma/loi/31-13/art_4]
+
+- key: copyright
+  title: {ar: 'حقوق المؤلف', fr: 'Le droit d’auteur'}
+  lead:
+    ar: 'القانون 2.00 كما غيره القانون 13.26 (2026): المصنف محمي بمجرد إبداعه، والحقوق المعنوية لا تتقادم.'
+    fr: 'La loi 2.00 telle que modifiée par la loi 13.26 (2026) : l’œuvre est protégée dès sa création, et le droit moral est imprescriptible.'
+  cites: [/ma/loi/2-00/art_3, /ma/loi/2-00/art_25]
+  sections:
+    - title: {ar: 'مدة الحماية', fr: 'La durée de protection'}
+      table:
+        head: [{ar: 'المصنف', fr: 'L’œuvre'}, {ar: 'محمي حتى', fr: 'Protégée jusqu’à'}]
+        rows:
+          - [{ar: 'مصنف مؤلف واحد', fr: 'Œuvre d’un auteur'}, {ar: 'حياته و70 سنة بعد وفاته', fr: 'Sa vie et 70 ans après sa mort'}]
+          - [{ar: 'مصنف مشترك', fr: 'Œuvre de collaboration'}, {ar: 'حياة آخر المؤلفين و70 سنة بعد وفاته', fr: 'La vie du dernier auteur et 70 ans après'}]
+          - [{ar: 'مجهول الاسم أو باسم مستعار', fr: 'Anonyme ou pseudonyme'}, {ar: '70 سنة من نهاية سنة أول نشر', fr: '70 ans après la fin de l’année de première publication'}]
+          - [{ar: 'جماعي أو سمعي بصري', fr: 'Collective ou audiovisuelle'}, {ar: '70 سنة من نهاية سنة أول نشر', fr: '70 ans après la fin de l’année de première publication'}]
+          - [{ar: 'الفنون التطبيقية', fr: 'Arts appliqués'}, {ar: '70 سنة من نهاية سنة أول نشر', fr: '70 ans après la fin de l’année de première publication'}]
+      cites: [/ma/loi/2-00/art_25, /ma/loi/2-00/art_26, /ma/loi/2-00/art_27, /ma/loi/2-00/art_28, /ma/loi/2-00/art_29]
+      tool: tools/copyright
+    - title: {ar: 'ما يسمح به القانون', fr: 'Ce que la loi permet'}
+      facts:
+        - text: {ar: 'نسخة لاستعمالك الشخصي فقط، إلا الكتاب كاملا والمصنف الموسيقي في شكل توليفة وقواعد البيانات الرقمية.', fr: 'Une copie à usage strictement personnel, sauf un livre entier, une œuvre musicale sous forme graphique et les bases de données numériques.'}
+          cites: [/ma/loi/2-00/art_12]
+        - text: {ar: 'الاستشهاد بذكر المصدر واسم المؤلف، والاستعمال للتوضيح في التعليم.', fr: 'La citation avec la source et l’auteur, l’illustration pour l’enseignement.'}
+          cites: [/ma/loi/2-00/art_14, /ma/loi/2-00/art_15]
+    - title: {ar: 'بعد انقضاء الحماية', fr: 'Après la protection'}
+      facts:
+        - text: {ar: 'منذ القانون 13.26، الاستغلال التجاري لمصنف انقضت حمايته يخضع لترخيص من المكتب المغربي لحقوق المؤلف ولمستحقات جزافية.', fr: 'Depuis la loi 13.26, l’exploitation commerciale d’une œuvre dont la protection a expiré requiert l’autorisation du BMDA et une redevance forfaitaire.'}
+          cites: [/ma/loi/2-00/art_1-7, /ma/loi/13-26/art_2]
+    - title: {ar: 'إذا خرقوا حقك', fr: 'En cas d’atteinte'}
+      facts:
+        - text: {ar: 'المحكمة تأمر بالإيقاف والحجز؛ والتعويض عن الضرر والأرباح، أو تعويض محدد سلفا من 5.000 إلى 25.000 درهم.', fr: 'Le tribunal ordonne la cessation et la saisie ; réparation et profits, ou une indemnité forfaitaire de 5 000 à 25 000 DH.'}
+          cites: [/ma/loi/2-00/art_61, /ma/loi/2-00/art_62]
+          more: journeys/copyright
+        - text: {ar: 'الخرق المتعمد للاستغلال التجاري: من شهرين إلى ستة أشهر وغرامة من 10.000 إلى 100.000 درهم.', fr: 'L’atteinte délibérée à but commercial : deux à six mois et 10 000 à 100 000 DH.'}
+          cites: [/ma/loi/2-00/art_64]
+
+- key: esign
+  title: {ar: 'التوقيع والوثيقة الإلكترونية', fr: 'Signature et document électroniques'}
+  lead:
+    ar: 'قانون الالتزامات والعقود يعطي الوثيقة الإلكترونية قوة الورق، والقانون 43.20 (نافذ منذ يناير 2023 بنص تطبيقه) ينظم التوقيع والختم وخدمات الثقة.'
+    fr: 'Le DOC donne au document électronique la force du papier, et la loi 43.20 (en vigueur depuis janvier 2023 avec son décret) organise la signature, le cachet et les services de confiance.'
+  cites: [/ma/code/doc/art_417-1, /ma/loi/43-20/art_84]
+  sections:
+    - title: {ar: 'المستويات الثلاثة', fr: 'Les trois niveaux'}
+      table:
+        head: [{ar: 'التوقيع', fr: 'Signature'}, {ar: 'ما هو', fr: 'Ce qu’elle est'}, {ar: 'قيمته', fr: 'Sa valeur'}]
+        rows:
+          - [{ar: 'بسيط', fr: 'Simple'}, {ar: 'معطيات إلكترونية مرتبطة بأخرى يستعملها الموقع', fr: 'Des données électroniques jointes à d’autres, utilisées par le signataire'}, {ar: 'لا يرفض أمام القضاء لمجرد أنه إلكتروني', fr: 'Pas rejetée en justice du seul fait qu’elle est électronique'}]
+          - [{ar: 'متقدم', fr: 'Avancée'}, {ar: 'خاص بصاحبه، يحدد هويته، تحت مراقبته، على شهادة إلكترونية', fr: 'Propre au signataire, l’identifie, sous son contrôle, sur un certificat'}, {ar: 'نفس الشيء', fr: 'De même'}]
+          - [{ar: 'مؤهل', fr: 'Qualifiée'}, {ar: 'متقدم، بآلية مؤهلة وشهادة مؤهلة من مقدم معتمد', fr: 'Avancée, par un dispositif qualifié et un certificat qualifié d’un prestataire agréé'}, {ar: 'مع الختم الزمني المؤهل: قوة الوثيقة المصادق على توقيعها وذات التاريخ الثابت', fr: 'Avec l’horodatage qualifié : la force d’un acte à signature légalisée et date certaine'}]
+      cites: [/ma/loi/43-20/art_5, /ma/loi/43-20/art_6, /ma/loi/43-20/art_7, /ma/loi/43-20/art_9, /ma/code/doc/art_417-3]
+    - title: {ar: 'الوثيقة الإلكترونية', fr: 'Le document électronique'}
+      facts:
+        - text: {ar: 'للوثيقة المحررة على دعامة إلكترونية نفس قوة إثبات الورق، إذا أمكن التعرف على صاحبها وحفظت بما يضمن تماميتها.', fr: 'Le document électronique a la force probante du papier si son auteur peut être identifié et s’il est conservé dans des conditions qui garantissent son intégrité.'}
+          cites: [/ma/code/doc/art_417-1]
+        - text: {ar: 'التوقيع الإلكتروني يستعمل وسيلة تعريف موثوقا بها تضمن ارتباطه بالوثيقة.', fr: 'La signature électronique utilise un procédé fiable d’identification garantissant son lien avec l’acte.'}
+          cites: [/ma/code/doc/art_417-2]
+
+- key: company
+  title: {ar: 'إلا كنتي كتجمع المعطيات', fr: 'Si vous collectez des données'}
+  lead:
+    ar: 'ما يلزم به القانون 09.08 كل مقاولة أو جمعية أو تطبيق يعالج معطيات الناس، والقانون 05.20 الهيئات ومقدمي الخدمات الرقمية.'
+    fr: 'Ce que la loi 09.08 impose à toute entreprise, association ou application qui traite des données, et la loi 05.20 aux organismes et prestataires numériques.'
+  cites: [/ma/loi/9-08/art_12]
+  sections:
+    - title: {ar: 'الواجبات والعقوبات', fr: 'Obligations et sanctions'}
+      table:
+        head: [{ar: 'الواجب', fr: 'L’obligation'}, {ar: 'إذا خولف', fr: 'Si elle est violée'}]
+        rows:
+          - [{ar: 'التصريح المسبق أو الإذن', fr: 'Déclaration ou autorisation préalable'}, {ar: 'غرامة 10.000–100.000 درهم', fr: '10 000–100 000 DH'}]
+          - [{ar: 'احترام حقوق الولوج والتصحيح والتعرض', fr: 'Respect des droits d’accès, rectification, opposition'}, {ar: 'غرامة 20.000–200.000 درهم عن كل مخالفة', fr: '20 000–200 000 DH par infraction'}]
+          - [{ar: 'جمع نزيه ولغاية مصرح بها', fr: 'Collecte loyale pour la finalité déclarée'}, {ar: 'حبس 3 أشهر–سنة و20.000–200.000 درهم', fr: '3 mois–1 an et 20 000–200 000 DH'}]
+          - [{ar: 'موافقة صريحة للمعطيات الحساسة', fr: 'Accord exprès pour les données sensibles'}, {ar: 'حبس 6 أشهر–سنتين و50.000–300.000 درهم', fr: '6 mois–2 ans et 50 000–300 000 DH'}]
+      cites: [/ma/loi/9-08/art_52, /ma/loi/9-08/art_53, /ma/loi/9-08/art_54, /ma/loi/9-08/art_57]
+    - title: {ar: 'المعطيات خارج المغرب', fr: 'Les données hors du Maroc'}
+      facts:
+        - text: {ar: 'لا تنقل إلا لدولة تضمن حماية كافية، واللجنة الوطنية تعد لائحة هذه الدول.', fr: 'Elles ne sont transférées que vers un pays offrant une protection suffisante, dont la CNDP dresse la liste.'}
+          cites: [/ma/loi/9-08/art_43]
+    - title: {ar: 'الأمن السيبراني', fr: 'La cybersécurité'}
+      facts:
+        - text: {ar: 'كل هيئة تضع سياسة لأمن نظمها، وتبلغ السلطة الوطنية فور علمها بحادث؛ ومقدمو الخدمات الرقمية بالحوادث ذات الوقع البالغ.', fr: 'Chaque organisme met en place une politique de sécurité et avise l’autorité nationale dès qu’il a connaissance d’un incident ; les prestataires numériques, des incidents à impact significatif.'}
+          cites: [/ma/loi/5-20/art_4, /ma/loi/5-20/art_8, /ma/loi/5-20/art_33]
+          more: journeys/company
+
+- key: beliefs
+  title: {ar: 'شنو كيقولو الناس، وشنو كيقول القانون', fr: 'Ce que l’on croit, ce que dit la loi'}
+  lead:
+    ar: 'أفكار شائعة عن الأنترنت والمعطيات والمحتوى، وما تكتبه النصوص.'
+    fr: 'Des idées répandues sur internet, les données et les contenus, et ce qu’écrivent les textes.'
+  cites: [/ma/dahir/1-59-413/art_447-1]
+  sections:
+    - title: {ar: '«اللي سجل مكالمة خاصة ولا صور واحد فدارو ما عندو حتى مشكل»', fr: '«Enregistrer un appel privé ou filmer quelqu’un chez lui, ce n’est rien»'}
+      facts:
+        - text: {ar: 'التقاط أو تسجيل أو نشر كلام خاص، أو صورة شخص في مكان خاص، دون موافقته: الحبس من ستة أشهر إلى ثلاث سنوات.', fr: 'Capter, enregistrer ou diffuser des propos privés, ou l’image d’une personne en lieu privé, sans son accord : six mois à trois ans.'}
+          cites: [/ma/dahir/1-59-413/art_447-1]
+    - title: {ar: '«التشهير فالفيسبوك ماشي صحافة، ما فيه عقوبة»', fr: '«Diffamer sur Facebook n’est pas puni»'}
+      facts:
+        - text: {ar: 'قانون الصحافة يعاقب على القذف المنشور بالوسائل الإلكترونية بغرامة من 10.000 إلى 100.000 درهم، والقانون الجنائي على الادعاءات الكاذبة للتشهير بالحبس من سنة إلى ثلاث سنوات.', fr: 'Le code de la presse punit la diffamation publiée par voie électronique de 10 000 à 100 000 DH ; le code pénal, les allégations fausses pour diffamer, d’un à trois ans.'}
+          cites: [/ma/loi/88-13/art_72, /ma/loi/88-13/art_85, /ma/dahir/1-59-413/art_447-2]
+          more: journeys/defamed
+    - title: {ar: '«نقدر نشكي على السب فالأنترنت فوقما بغيت»', fr: '«On peut se plaindre d’une injure en ligne quand on veut»'}
+      facts:
+        - text: {ar: 'جرائم قانون الصحافة تتقادم بستة أشهر كاملة من يوم النشر.', fr: 'Les délits du code de la presse se prescrivent par six mois révolus à compter de la publication.'}
+          cites: [/ma/loi/88-13/art_101]
+    - title: {ar: '«الشركة عندها نمرتي، يعني تقدر تصيفط ليا الإشهار»', fr: '«L’entreprise a mon numéro, elle peut m’envoyer de la publicité»'}
+      facts:
+        - text: {ar: 'الاستقراء المباشر بالهاتف أو البريد الإلكتروني ممنوع بلا رضى مسبق.', fr: 'La prospection directe par téléphone ou courriel est interdite sans consentement préalable.'}
+          cites: [/ma/loi/9-08/art_10]
+          more: pages/data
+    - title: {ar: '«الإدارة ما ملزماش تعطيني المعلومة»', fr: '«L’administration n’est pas tenue de répondre»'}
+      facts:
+        - text: {ar: 'تجيب داخل عشرين يوم عمل، وكل رفض مكتوب ومعلل.', fr: 'Elle répond dans les vingt jours ouvrables, et tout refus est écrit et motivé.'}
+          cites: [/ma/loi/31-13/art_16, /ma/loi/31-13/art_18]
+          more: tools/info
+    - title: {ar: '«إلا سالات مدة الحماية، الاستغلال التجاري فابور»', fr: '«Une œuvre du domaine public s’exploite gratuitement»'}
+      facts:
+        - text: {ar: 'الاستغلال التجاري لمصنف انقضت حمايته يخضع لترخيص المكتب المغربي لحقوق المؤلف ولمستحقات.', fr: 'L’exploitation commerciale d’une œuvre dont la protection a expiré requiert l’autorisation du BMDA et une redevance.'}
+          cites: [/ma/loi/2-00/art_1-7]
+          more: tools/copyright
+    - title: {ar: '«التوقيع الإلكتروني ما عندو قيمة أمام المحكمة»', fr: '«La signature électronique ne vaut rien devant le juge»'}
+      facts:
+        - text: {ar: 'الوثيقة الإلكترونية لها قوة الورق، والتوقيع الإلكتروني البسيط أو المتقدم لا يرفض لمجرد أنه إلكتروني.', fr: 'Le document électronique a la force du papier, et une signature électronique simple ou avancée n’est pas rejetée du seul fait qu’elle est électronique.'}
+          cites: [/ma/code/doc/art_417-1, /ma/loi/43-20/art_7]
+          more: pages/esign

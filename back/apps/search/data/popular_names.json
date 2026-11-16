@@ -1,0 +1,24 @@
+{
+  "about": "Names people give texts (row 2 of the reader-experience review), searched with the text's title so «code de la route», «قانون التعمير» or «droits d'auteur» find the law: the everyday Arabic name and the usual French title. Codes get theirs from corpus.services.codes.NAMES. Written by Claude from each text's own title; for a person's review. Keyed by the text's address.",
+  "texts": {
+    "/akn/ma/act/loi/2-00": ["droits d'auteur et droits voisins", "قانون حقوق المؤلف"],
+    "/akn/ma/act/loi/12-90": ["urbanisme", "قانون التعمير"],
+    "/akn/ma/act/loi/36-21": ["état civil", "قانون الحالة المدنية"],
+    "/akn/ma/act/loi/31-08": ["protection du consommateur", "قانون حماية المستهلك"],
+    "/akn/ma/act/loi/18-00": ["copropriété des immeubles bâtis", "قانون الملكية المشتركة"],
+    "/akn/ma/act/loi/25-90": ["lotissements groupes d'habitations et morcellements", "قانون التجزئات العقارية"],
+    "/akn/ma/act/loi/7-81": ["expropriation pour cause d'utilité publique", "قانون نزع الملكية"],
+    "/akn/ma/act/loi/39-08": ["code des droits réels", "مدونة الحقوق العينية"],
+    "/akn/ma/act/loi/17-04": ["code du médicament et de la pharmacie", "مدونة الأدوية والصيدلة"],
+    "/akn/ma/act/loi/104-12": ["liberté des prix et de la concurrence", "قانون المنافسة"],
+    "/akn/ma/act/loi/86-12": ["partenariat public-privé", "contrats de partenariat public-privé"],
+    "/akn/ma/act/loi-organique/02-12": ["nomination aux fonctions supérieures", "التعيين في المناصب العليا"],
+    "/akn/ma/act/loi/66-23": ["profession d'avocat", "قانون المحاماة", "مهنة المحاماة"],
+    "/akn/ma/act/dahir/constitution-1962": ["Constitution du Royaume du Maroc de 1962", "دستور المملكة المغربية لسنة 1962", "دستور 1962", "constitution 1962"],
+    "/akn/ma/act/dahir/1-70-177": ["Constitution du Royaume du Maroc de 1970", "دستور المملكة المغربية لسنة 1970", "دستور 1970", "constitution 1970"],
+    "/akn/ma/act/dahir/1-72-061": ["Constitution du Royaume du Maroc de 1972", "دستور المملكة المغربية لسنة 1972", "دستور 1972", "constitution 1972"],
+    "/akn/ma/act/dahir/1-92-155": ["Constitution du Royaume du Maroc de 1992", "دستور المملكة المغربية لسنة 1992", "دستور 1992", "constitution 1992"],
+    "/akn/ma/act/dahir/1-96-157": ["Constitution du Royaume du Maroc de 1996", "دستور المملكة المغربية لسنة 1996", "دستور 1996", "constitution 1996"],
+    "/akn/ma/act/dahir/1-11-91": ["Constitution du Royaume du Maroc de 2011", "دستور المملكة المغربية لسنة 2011", "دستور 2011", "constitution 2011"]
+  }
+}

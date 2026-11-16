@@ -1,0 +1,193 @@
+# The work topic's pages (T5, T7, T12–T13, T15 of the work plan): facts, each on its articles, and the official
+# services by name and link (`links`: cited and linked, never copied). A page says whom it is for (`for`).
+
+- key: new-job
+  for: [company, farm, guard]
+  title: {ar: 'بديت خدمة جديدة', fr: 'Je commence un nouveau travail'}
+  lead:
+    ar: 'العقد، وفترة التجربة، وما يسلمه لك المشغل، وما تحتفظ به من أول يوم.'
+    fr: 'Le contrat, la période d’essai, ce que l’employeur vous remet, ce qu’il faut garder dès le premier jour.'
+  sections:
+    - title: {ar: العقد, fr: Le contrat}
+      facts:
+        - text: {ar: 'يبرم عقد الشغل لمدة غير محددة، أو لمدة محددة، أو لإنجاز شغل معين. ولا يبرم العقد محدد المدة إلا في حالات يحددها القانون: إحلال أجير محل آخر، أو تزايد مؤقت في نشاط المقاولة، أو شغل موسمي، أو قطاعات وحالات استثنائية يحددها مرسوم.', fr: 'Le contrat est conclu pour une durée indéterminée, déterminée, ou pour un travail déterminé. Le contrat à durée déterminée n’est possible que dans les cas prévus : remplacement d’un salarié, accroissement temporaire d’activité, travail saisonnier, ou secteurs et cas exceptionnels fixés par décret.'}
+          cites: [/ma/loi/65-99/art_16, /ma/decret/2-19-793/art_1]
+        - text: {ar: 'إذا كتب العقد، يحرر في نظيرين يوقعهما الأجير والمشغل مع المصادقة على الإمضاء، ويسلم أحدهما للأجير. ويمكن إثبات العقد، مكتوبا أو لا، بجميع وسائل الإثبات.', fr: 'S’il est écrit, le contrat est établi en deux exemplaires signés et légalisés, dont un est remis au salarié. Écrit ou non, il se prouve par tous moyens.'}
+          cites: [/ma/loi/65-99/art_15, /ma/loi/65-99/art_18]
+        - text: {ar: 'يصبح العقد المحدد المدة، عند فتح مقاولة أو إطلاق منتوج جديد، غير محدد المدة بعد سنة مجددة مرة واحدة. وفي الفلاحة، بعد ستة أشهر مجددة على ألا يتجاوز المجموع سنتين.', fr: 'Conclu à l’ouverture d’une entreprise ou au lancement d’un produit, le contrat à durée déterminée devient à durée indéterminée après un an renouvelé une fois ; en agriculture, après des contrats de six mois ne dépassant pas deux ans au total.'}
+          cites: [/ma/loi/65-99/art_17]
+    - title: {ar: فترة التجربة, fr: La période d’essai}
+      facts:
+        - text: {ar: 'في العقد غير محدد المدة: ثلاثة أشهر للأطر، وشهر ونصف للمستخدمين، وخمسة عشر يوما للعمال، تجدد مرة واحدة. وبعد أسبوع من الشغل، لا تنهى إلا بإخطار يومين أو ثمانية أيام، إلا لخطأ جسيم.', fr: 'Pour un contrat à durée indéterminée : trois mois pour les cadres, un mois et demi pour les employés, quinze jours pour les ouvriers, renouvelable une fois. Après une semaine de travail, on n’y met fin qu’avec un préavis de deux ou huit jours, sauf faute grave.'}
+          cites: [/ma/loi/65-99/art_13, /ma/loi/65-99/art_14]
+    - title: {ar: ما يسلمه لك المشغل, fr: Ce que l’employeur vous remet}
+      facts:
+        - text: {ar: 'بطاقة شغل، تجدد كلما تغيرت صفتك، وورقة أداء عند كل أداء.', fr: 'Une carte de travail, renouvelée à chaque changement de fonction, et un bulletin de paie à chaque paiement.'}
+          cites: [/ma/loi/65-99/art_23, /ma/loi/65-99/art_370]
+        - text: {ar: 'وعليه أن يسجلك في الصندوق الوطني للضمان الاجتماعي.', fr: 'Il doit aussi vous immatriculer à la CNSS.'}
+          cites: [/ma/dahir/1-72-184/art_15]
+  next: [checklists/proof, journeys/not-declared]
+
+- key: leave
+  for: [company, farm, guard]
+  title: {ar: 'الكونجي والعطل', fr: 'Congés et jours fériés'}
+  lead:
+    ar: 'العطلة السنوية المؤدى عنها، والراحة الأسبوعية، وأيام الأعياد، ورخص المناسبات العائلية.'
+    fr: 'Le congé annuel payé, le repos hebdomadaire, les jours fériés et les absences pour événements familiaux.'
+  sections:
+    - title: {ar: العطلة السنوية, fr: Le congé annuel}
+      facts:
+        - text: {ar: 'بعد ستة أشهر من الشغل المتصل: يوم ونصف من الشغل الفعلي عن كل شهر، ويومان لمن هم دون 18 سنة. ويزاد يوم ونصف عن كل خمس سنوات من الأقدمية، دون أن تتجاوز العطلة ثلاثين يوما.', fr: 'Après six mois de service continu : un jour et demi ouvrable par mois, deux jours pour les moins de 18 ans. Un jour et demi s’ajoute par période de cinq ans d’ancienneté, sans dépasser trente jours.'}
+          cites: [/ma/loi/65-99/art_231, /ma/loi/65-99/art_232]
+        - text: {ar: 'كل اتفاق على التنازل عن العطلة، ولو مقابل تعويض، باطل. وعند انتهاء العقد قبل الاستفادة منها، يؤدى تعويض عنها، ويحسب كل شهر بدأ شهرا كاملا.', fr: 'Tout accord pour renoncer au congé, même contre une indemnité, est nul. Si le contrat prend fin avant le congé, une indemnité compensatrice est due ; tout mois commencé compte pour entier.'}
+          cites: [/ma/loi/65-99/art_242, /ma/loi/65-99/art_251]
+      tool: tools/pay
+    - title: {ar: الراحة والأعياد, fr: Repos et fêtes}
+      facts:
+        - text: {ar: 'راحة أسبوعية إلزامية لا تقل عن أربع وعشرين ساعة. ويمنع تشغيل الأجراء في أيام الأعياد المؤدى عنها التي يحددها نص تنظيمي.', fr: 'Un repos hebdomadaire obligatoire d’au moins 24 heures. Il est interdit d’occuper les salariés les jours de fête payés fixés par voie réglementaire.'}
+          cites: [/ma/loi/65-99/art_205, /ma/loi/65-99/art_217]
+    - title: {ar: المناسبات العائلية, fr: Événements familiaux}
+      facts:
+        - text: {ar: 'زواج الأجير أربعة أيام، وزواج أحد أبنائه يومان، ووفاة زوجه أو أحد أبنائه أو أصوله ثلاثة أيام، وولادة ثلاثة أيام للأب.', fr: 'Mariage du salarié : quatre jours ; mariage d’un enfant : deux jours ; décès du conjoint, d’un enfant ou d’un ascendant : trois jours ; naissance : trois jours pour le père.'}
+          cites: [/ma/loi/65-99/art_274, /ma/loi/65-99/art_269]
+
+- key: guards
+  for: [guard]
+  title: {ar: 'السيكيريتي والنظافة', fr: 'Gardiennage et nettoyage'}
+  lead:
+    ar: 'حراس شركات الحراسة خرجوا من نظام «ساعات الحضور» بالقانون 032.26 المنشور في 16 يوليوز 2026.'
+    fr: 'Les gardiens des sociétés de gardiennage sortent du régime des heures de présence par la loi 032.26, publiée le 16 juillet 2026.'
+  sections:
+    - title: {ar: ما تغير, fr: Ce qui a changé}
+      facts:
+        - text: {ar: 'كانت المادة 193 تعد ساعات بعض الأشغال المتقطعة، ومنها الحراسة، ساعات حضور لا ساعات شغل فعلي. ومنذ القانون 032.26، يستثنى من ذلك الحراس الذين تربطهم عقود شغل بمقاولات تمارس أعمال الحراسة، فتطبق عليهم مدة الشغل العادية.', fr: 'L’article 193 comptait les heures de certains travaux intermittents, dont le gardiennage, comme des heures de présence et non de travail effectif. Depuis la loi 032.26, les gardiens liés par un contrat à une entreprise de gardiennage en sont exclus : la durée normale du travail s’applique à eux.'}
+          cites: [/ma/loi/65-99/art_193, /ma/loi/32-26/art_1, /ma/loi/65-99/art_184]
+        - text: {ar: 'يعمل بالقانون من تاريخ نشره. وللمقاولات أجل أقصاه تسعة أشهر من نشره، فيما يخص عقود الشغل الناشئة عن عقود الحراسة التي أبرمتها قبله.', fr: 'La loi s’applique dès sa publication. Les entreprises ont neuf mois au plus, pour les contrats de travail nés de contrats de gardiennage conclus avant elle.'}
+          cites: [/ma/loi/32-26/art_2]
+    - title: {ar: المناولة, fr: La sous-traitance}
+      facts:
+        - text: {ar: 'من يشتغل لدى مقاولة تقدم خدماتها لمؤسسة أخرى أجير لدى مقاولته، وتطبق عليه مدونة الشغل كاملة: الحد الأدنى للأجر، والتصريح في الضمان الاجتماعي، والعطل.', fr: 'Qui travaille pour une entreprise prestataire est le salarié de cette entreprise, et le Code du travail s’applique entier : salaire minimum, déclaration à la CNSS, congés.'}
+          cites: [/ma/loi/65-99/art_356, /ma/dahir/1-72-184/art_15, /ma/loi/65-99/art_231]
+      tool: tools/pay
+  next: [journeys/unpaid, pages/where]
+
+- key: strike
+  title: {ar: 'الإضراب', fr: 'La grève'}
+  lead:
+    ar: 'القانون التنظيمي 97.15 نافذ منذ 24 شتنبر 2025، ويسري على القطاعين العام والخاص.'
+    fr: 'La loi organique 97.15 est en vigueur depuis le 24 septembre 2025, dans le public comme dans le privé.'
+  sections:
+    - title: {ar: الحق وحدوده, fr: Le droit et ses limites}
+      facts:
+        - text: {ar: 'الإضراب حق يضمنه الدستور، وكل تنازل عنه باطل. ويعد العامل المضرب في توقف مؤقت عن العمل لا يؤدى عنه أجر. ويمنع أي إجراء تمييزي بسبب ممارسة الإضراب وفق القانون.', fr: 'La grève est un droit garanti par la Constitution, et toute renonciation est nulle. Le gréviste est en arrêt temporaire de travail non rémunéré. Toute mesure discriminatoire pour fait de grève légale est interdite.'}
+          cites: [/ma/loi-organique/97-15/art_1, /ma/loi-organique/97-15/art_6, /ma/loi-organique/97-15/art_9]
+    - title: {ar: 'في المقاولة', fr: 'Dans l’entreprise'}
+      facts:
+        - text: {ar: 'تدعو إلى الإضراب نقابة أكثر تمثيلا، أو لجنة إضراب يوقع محضرها 25% على الأقل من الأجراء في جمع عام يحضره 35% منهم.', fr: 'La grève est déclenchée par un syndicat le plus représentatif, ou par un comité de grève dont le procès-verbal est signé par au moins 25 % des salariés, réunis en assemblée générale avec 35 % de présents.'}
+          cites: [/ma/loi-organique/97-15/art_12]
+        - text: {ar: 'لا يدعى إلى الإضراب بسبب ملف مطلبي إلا بعد خمسة عشر يوما من التوصل به، قابلة للتمديد مرة واحدة، أو سبعة أيام في القضايا الخلافية. ويبلغ قرار الإضراب خمسة أيام على الأقل قبل تنفيذه. وتحسب الآجال كاملة.', fr: 'La grève pour un cahier revendicatif n’est possible qu’après quinze jours suivant sa réception, prorogeables une fois, ou sept jours pour un différend. La décision est notifiée au moins cinq jours avant. Les délais sont francs.'}
+          cites: [/ma/loi-organique/97-15/art_13, /ma/loi-organique/97-15/art_14, /ma/loi-organique/97-15/art_32]
+      tool: tools/dates
+    - title: {ar: 'ما لم يصدر بعد', fr: 'Ce qui n’est pas encore publié'}
+      facts:
+        - text: {ar: 'النصوص التنظيمية التي يحيل عليها القانون، ومنها كيفيات لجنة الإضراب والحد الأدنى من الخدمة، لم تنشر بعد في الجريدة الرسمية إلى 20 أكتوبر 2026.', fr: 'Les textes d’application auxquels la loi renvoie, dont les modalités du comité de grève et le service minimum, n’étaient pas publiés au Bulletin officiel au 20 octobre 2026.'}
+          cites: [/ma/loi-organique/97-15/art_12, /ma/loi-organique/97-15/art_21]
+
+- key: civil-servants
+  for: [state]
+  title: {ar: 'الموظفون', fr: 'Les fonctionnaires'}
+  lead:
+    ar: 'الموظف لا تحكمه مدونة الشغل بل النظام الأساسي العام للوظيفة العمومية، ونزاعاته أمام المحاكم الإدارية.'
+    fr: 'Le fonctionnaire ne relève pas du Code du travail mais du statut général de la fonction publique ; ses litiges vont aux juridictions administratives.'
+  sections:
+    - title: {ar: قانونك, fr: Votre loi}
+      facts:
+        - text: {ar: 'النظام الأساسي العام للوظيفة العمومية (الظهير 1.58.008) يحدد حقوق الموظف وواجباته ورخصه. ومتن يحمل نصه كما جمعته بوابة عدالة.', fr: 'Le statut général de la fonction publique (dahir 1.58.008) fixe les droits, obligations et congés du fonctionnaire. 3adala en tient le texte consolidé par Adala.'}
+          cites: [/ma/dahir/1-58-008/art_1]
+        - text: {ar: 'قانون الإضراب يسري على القطاع العام كذلك، ويستثني فئات منها الموظفون المخول لهم حمل السلاح.', fr: 'La loi sur la grève s’applique aussi au secteur public, sauf certaines catégories, dont les agents habilités à porter une arme.'}
+          cites: [/ma/loi-organique/97-15/art_4, /ma/loi-organique/97-15/art_22]
+        - text: {ar: 'من فاتح فبراير 2027، يدبر الصندوق الوطني للضمان الاجتماعي التأمين الإجباري عن المرض للقطاع العام بدل الصندوق الوطني لمنظمات الاحتياط الاجتماعي (القانون 54.23).', fr: 'À partir du 1er février 2027, la CNSS gère l’assurance maladie obligatoire du secteur public à la place de la CNOPS (loi 54.23).'}
+          cites: [/ma/loi/54-23/art_1, /ma/loi/54-23/art_19]
+
+- key: self-employed
+  for: [self]
+  title: {ar: 'الخدمة بوحدك', fr: 'Travailler à son compte'}
+  lead:
+    ar: 'مدونة الشغل لا تحكم من يعمل لحسابه. له نظام المقاول الذاتي، والتأمين عن المرض والتقاعد الخاصان بالمهنيين والعمال المستقلين.'
+    fr: 'Le Code du travail ne régit pas qui travaille à son compte. Il relève du statut d’auto-entrepreneur, et de l’assurance maladie et de la retraite des indépendants.'
+  sections:
+    - title: {ar: النصوص, fr: Les textes}
+      facts:
+        - text: {ar: 'نظام المقاول الذاتي: القانون 114.13.', fr: 'Le statut d’auto-entrepreneur : loi 114.13.'}
+          cites: [/ma/loi/114-13/art_1]
+        - text: {ar: 'التأمين الإجباري الأساسي عن المرض للمهنيين والعمال المستقلين: القانون 98.15. ونظام المعاشات لفائدتهم: القانون 99.15.', fr: 'L’assurance maladie obligatoire des professionnels et indépendants : loi 98.15 ; leur régime de pensions : loi 99.15.'}
+          cites: [/ma/loi/98-15/art_1, /ma/loi/99-15/art_1]
+
+- key: where
+  title: {ar: 'فين نمشي؟', fr: 'Où aller ?'}
+  lead:
+    ar: 'الطريق قصير ومجاني في أغلبه: مفتش الشغل قبل القاضي، والمساعدة القضائية بحكم القانون، والأجر ينفذ رغم الاستئناف.'
+    fr: 'Le chemin est court et le plus souvent gratuit : l’inspecteur avant le juge, l’assistance judiciaire de plein droit, le salaire exécutoire malgré l’appel.'
+  sections:
+    - title: {ar: مفتش الشغل, fr: L’inspecteur du travail}
+      facts:
+        - text: {ar: 'يسهر الأعوان المكلفون بتفتيش الشغل على تطبيق القانون، ويقدمون المعلومات للمشغلين والأجراء، ويجرون محاولات الصلح في نزاعات الشغل الفردية. والاتفاق الموقع عندهم والمصادق عليه نهائي.', fr: 'Les agents de l’inspection du travail veillent à l’application de la loi, informent employeurs et salariés, et tentent la conciliation dans les conflits individuels. L’accord signé devant eux et légalisé est définitif.'}
+          cites: [/ma/loi/65-99/art_532, /ma/loi/65-99/art_41, /ma/loi/58-25/art_313]
+        - text: {ar: 'العاملة أو العامل المنزلي، والمشغل، يتوجهان أولا إلى مفتش الشغل.', fr: 'Le travailleur domestique et son employeur s’adressent d’abord à l’inspecteur du travail.'}
+          cites: [/ma/loi/19-12/art_22]
+    - title: {ar: الصندوق الوطني للضمان الاجتماعي, fr: La CNSS}
+      facts:
+        - text: {ar: 'للأيام غير المصرح بها، وطلب التعويضات. ولمفتشي الصندوق ومراقبيه مراقبة المشغلين.', fr: 'Pour les jours non déclarés et les demandes de prestations. Ses inspecteurs et contrôleurs vérifient les employeurs.'}
+          cites: [/ma/dahir/1-72-184/art_16]
+    - title: {ar: المحكمة, fr: Le tribunal}
+      facts:
+        - text: {ar: 'تختص المحكمة الابتدائية بنزاعات الشغل الفردية وحوادث الشغل والضمان الاجتماعي، والمسطرة فيها شفوية. وتبدأ الجلسة بمحاولة صلح.', fr: 'Le tribunal de première instance connaît des conflits individuels, des accidents du travail et de la sécurité sociale ; la procédure y est orale et l’audience s’ouvre par une tentative de conciliation.'}
+          cites: [/ma/loi/58-25/art_33, /ma/loi/58-25/art_96, /ma/loi/58-25/art_315]
+        - text: {ar: 'يستفيد الأجير أو ذوو حقوقه من المساعدة القضائية بحكم القانون أمام كل المحاكم، ولا يلزمه محام. والحكم بالأداءات المترتبة عن عقد الشغل ينفذ رغم الاستئناف.', fr: 'Le salarié ou ses ayants droit bénéficient de plein droit de l’assistance judiciaire devant toutes les juridictions, sans obligation d’avocat. Le jugement sur les sommes dues au titre du contrat est exécutoire malgré l’appel.'}
+          cites: [/ma/loi/58-25/art_311, /ma/loi/58-25/art_314, /ma/loi/58-25/art_322]
+    - title: {ar: الموظفون, fr: Les fonctionnaires}
+      facts:
+        - text: {ar: 'نزاعات الموظفين أمام المحاكم الإدارية، وشكاياتهم ضد الإدارة يمكن أن تقدم إلى مؤسسة الوسيط.', fr: 'Les litiges des fonctionnaires relèvent des juridictions administratives ; leurs plaintes contre l’administration peuvent aller au Médiateur.'}
+  # The CNSS's call centre (3939) shows only with the official page that gives it (the road's rule, C1 of
+  # the road-signposted review): cnss.ma's page could not be fetched and kept on 26 Oct 2026, so it waits for its page.
+  links:
+    - name: {ar: 'المديريات الجهوية والإقليمية للشغل (مفتشيات الشغل)', fr: 'Directions régionales et provinciales (inspections du travail)'}
+      url: https://miepeec.gov.ma/directions-regionales/
+      note: {ar: وزارة التشغيل, fr: Ministère de l’Emploi}
+    - name: {ar: 'حسابك في الضمان الاجتماعي (Ma CNSS)', fr: 'Votre espace CNSS (Ma CNSS)'}
+      url: https://www.macnss.ma/
+      note: {ar: 'أيامك وأجورك المصرح بها', fr: 'Vos jours et salaires déclarés'}
+    - name: {ar: 'طلبات التعويضات (تعويضاتي)', fr: 'Demandes de prestations (Taawidaty)'}
+      url: https://taawidaty.cnss.ma/
+    - name: {ar: 'موعد في وكالة الضمان الاجتماعي', fr: 'Rendez-vous dans une agence CNSS'}
+      url: https://cnss.rdv.gov.ma/
+    - name: {ar: 'محاكي الوزارة للتعويض عن الفصل', fr: 'Le simulateur du ministère pour les indemnités de licenciement'}
+      url: https://miepeec.gov.ma/simulation/?lang=ar
+    - name: {ar: 'مسطرة التعويض عن فقدان الشغل على إداراتي', fr: 'La procédure de l’indemnité pour perte d’emploi sur idarati'}
+      url: https://www.idarati.ma/idarati-procedures/procedures/procedure/ccae907c-8c8e-4db1-8b58-3627bb132b7b
+    - name: {ar: 'الوكالة الوطنية لإنعاش التشغيل والكفاءات', fr: 'ANAPEC'}
+      url: https://www.anapec.ma/
+      note: {ar: 'التسجيل كطالب شغل شرط للتعويض عن فقدان الشغل', fr: 'L’inscription comme demandeur d’emploi conditionne l’indemnité pour perte d’emploi'}
+
+- key: employers
+  title: {ar: 'أنا مشغّل', fr: 'Je suis employeur'}
+  lead:
+    ar: 'نفس المواد، من الجهة الأخرى: ما يفرضه القانون على المشغل الصغير وعلى الأسرة التي تشغل عاملا منزليا.'
+    fr: 'Les mêmes articles, de l’autre côté : ce que la loi impose au petit employeur et à la famille qui emploie un travailleur domestique.'
+  sections:
+    - title: {ar: حقوق المشغل كذلك, fr: Les droits de l’employeur aussi}
+      facts:
+        - text: {ar: 'فترة التجربة تنهى دون تعويض، والخطأ الجسيم للأجير يبرر الفصل دون إخطار ولا تعويض. والمادة 40 تعدد الأخطاء الجسيمة للمشغل، ومنها العنف والتحرش الجنسي، وتعد مغادرة الأجير بسببها فصلا تعسفيا.', fr: 'La période d’essai prend fin sans indemnité, et la faute grave du salarié justifie un licenciement sans préavis ni indemnité. L’article 40 énumère les fautes graves de l’employeur, dont la violence et le harcèlement sexuel ; le départ du salarié pour l’une d’elles vaut licenciement abusif.'}
+          cites: [/ma/loi/65-99/art_13, /ma/loi/65-99/art_39, /ma/loi/65-99/art_61, /ma/loi/65-99/art_40]
+  next: [checklists/employer-hire, checklists/employer-home]
+  links:
+    - name: {ar: 'نموذج عقد العاملة أو العامل المنزلي', fr: 'Le modèle de contrat du travailleur domestique'}
+      url: https://miepeec.gov.ma/wp-content/uploads/2020/01/Contrat_2018_Ar.doc
+      note: {ar: وزارة التشغيل, fr: Ministère de l’Emploi}
+
+- key: numbers
+  title: {ar: 'الشغل بالأرقام', fr: 'Le travail en chiffres'}
+  lead:
+    ar: 'الحد الأدنى للأجر من مراسيمه في الجريدة الرسمية، والبطالة من المندوبية السامية للتخطيط. لكل رقم ملفه وصفحته.'
+    fr: 'Le salaire minimum d’après ses décrets au Bulletin officiel, le chômage d’après le HCP. Chaque chiffre avec son fichier et sa page.'
+  series: [minimum-wage, unemployment]

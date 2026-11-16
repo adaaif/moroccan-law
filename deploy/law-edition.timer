@@ -1,0 +1,9 @@
+[Unit]
+Description=law: export_open_data on the first day of each month at 00:10, before the night's jobs
+
+[Timer]
+OnCalendar=*-*-01 00:10:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

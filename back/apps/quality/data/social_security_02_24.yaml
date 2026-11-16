@@ -1,0 +1,8 @@
+# Law 02.24 changing the social security dahir, where the OCR read an English word into art. 55's number of days and
+# the page's second reading had no witness. The words BO 7383 (3 Mar 2025) prints, checked against the page image
+# (p. 1525) on 20 Oct 2026 (T3 of the work plan): the pension tool cites art. 55.
+text: /ma/loi/2-24
+document: BO 7383 (sgg_bo), p. 1525
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: وmovement مائتين, right: ومائتين}

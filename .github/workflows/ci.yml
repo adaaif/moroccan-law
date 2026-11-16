@@ -1,0 +1,416 @@
+# What must pass before a change lands, on every push and pull request, in under ten minutes. Each job runs one
+# script of tools/ci, the same script a developer runs on their machine (docs/ci.md), so a red job is reproduced with
+# one command. Jobs whose files did not change are skipped; `gate`, the last job, is the one check a branch rule
+# requires. No secret is used: nothing here reaches a server or a paid API. The runner's image is named by its
+# version, as an action is by its commit: `ubuntu-latest` moves to the next Ubuntu on GitHub's day, not ours.
+name: CI
+
+on:
+  push:
+    # Dependabot's branches are checked through their pull requests.
+    branches-ignore: ['dependabot/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # A newer push to the same branch or pull request cancels the run before it. On the default branch every commit
+  # keeps its run, so its history says which commit broke what.
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != format('refs/heads/{0}', github.event.repository.default_branch) }}
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PYTHON_VERSION: '3.13'   # the server's
+  NODE_VERSION: '22'
+
+jobs:
+  changes:
+    name: What changed
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      back: ${{ steps.parts.outputs.back }}
+      web: ${{ steps.parts.outputs.web }}
+      crates: ${{ steps.parts.outputs.crates }}
+      search: ${{ steps.parts.outputs.search }}
+      smoke: ${{ steps.parts.outputs.smoke }}
+      private: ${{ steps.parts.outputs.private }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Which parts changed
+        id: parts
+        env:
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          # Only the private repository holds the publishing gate's word list.
+          PRIVATE: ${{ hashFiles('tools/publish/private-words.txt') != '' }}
+        run: |
+          # The commit to compare with: a pull request's base (its merge commit's first parent), a push's previous
+          # tip, or where a new branch left the default branch. Without one (a run by hand, a first push, a
+          # force-push whose old tip is gone), every part counts as changed.
+          base=
+          case "$EVENT" in
+            pull_request) base=$(git rev-parse HEAD^1) ;;
+            push)
+              if [ "${BEFORE//0/}" != "" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+                base=$BEFORE
+              else
+                base=$(git merge-base HEAD "origin/$DEFAULT_BRANCH" 2>/dev/null || true)
+              fi ;;
+          esac
+          if [ -z "$base" ] || [ "$base" = "$(git rev-parse HEAD)" ]; then
+            all=true files=
+            echo "Nothing to compare with: every part counts as changed."
+          else
+            all=false files=$(git diff --name-only --no-renames "$base" HEAD)
+            echo "Compared with $base: $(grep -c . <<<"$files" || true) files changed."
+            echo "$files"
+          fi
+          # The workflows and the scripts every job runs count as everything.
+          if grep -qE '^(\.github/|tools/ci/)' <<<"$files"; then all=true; fi
+
+          {
+            echo '| Part | Changed |'
+            echo '|---|---|'
+          } >> "$GITHUB_STEP_SUMMARY"
+          part() {   # part <name> <paths, as an extended regular expression>
+            local changed=false
+            if [ "$all" = true ] || grep -qE "$2" <<<"$files"; then changed=true; fi
+            echo "$1=$changed" >> "$GITHUB_OUTPUT"
+            echo "| $1 | $changed |" >> "$GITHUB_STEP_SUMMARY"
+          }
+          # The backend's tests also read web/ (the topics' rules, the routes, the brand) and deploy/ (nginx).
+          part back   '^(back/|crates/|deploy/|web/(src|public|scripts)/)'
+          # The web's tests also read the shared vectors in crates/, the blog's posts and the topics' rates in back/.
+          part web    '^(web/|crates/|back/apps/(blog|topics)/)'
+          part crates '^crates/'
+          # The three apps whose tests need ParadeDB, and what those tests stand on: the law's rows, the
+          # assistants' sign-in, the settings and the tests' own setup.
+          part search '^(back/apps/(search|mcp|topics|corpus|oauth)/|back/config/|back/conftest\.py$|back/requirements/|crates/)'
+          part smoke  '^(back/|crates/|web/)'
+          echo "private=$PRIVATE" >> "$GITHUB_OUTPUT"
+
+  workflows:
+    name: Workflows (actionlint)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # actionlint 1.7.12, with shellcheck reading every run block.
+      - run: >-
+          docker run --rm -v "$PWD:/repo" -w /repo
+          rhysd/actionlint@sha256:b1934ee5f1c509618f2508e6eb47ee0d3520686341fec936f3b79331f9315667 -color
+
+  wheel:
+    name: ma_law wheel
+    needs: changes
+    # Every job that runs Python takes it from here.
+    if: >-
+      needs.changes.outputs.back == 'true' || needs.changes.outputs.search == 'true' ||
+      needs.changes.outputs.smoke == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/wheel
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+  backend:
+    name: Backend (ruff, checks, tests, sample)
+    needs: [changes, wheel]
+    if: needs.changes.outputs.back == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: tools/ci/backend.sh all
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/backend.sh all 2>&1 | tee "$RUNNER_TEMP/reports/backend.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: backend
+          command: tools/ci/backend.sh all
+          status: ${{ job.status }}
+
+  search:
+    name: Search (ParadeDB)
+    needs: [changes, wheel]
+    if: needs.changes.outputs.search == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    services:
+      paradedb:
+        # The image the server runs (deploy/compose.yml), by its digest.
+        image: paradedb/paradedb@sha256:c552094b6b68dcb0a4e7a3969963d801eaec02490db4d2dd032dcb096bc86cf8
+        env:
+          POSTGRES_USER: law
+          POSTGRES_PASSWORD: law
+          POSTGRES_DB: law
+        ports:
+          - 127.0.0.1:5432:5432
+        options: >-
+          --health-cmd "pg_isready -U law" --health-interval 5s --health-timeout 5s --health-retries 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: tools/ci/search.sh
+        env:
+          TEST_DATABASE_URL: postgres://law:law@127.0.0.1:5432/law
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/search.sh 2>&1 | tee "$RUNNER_TEMP/reports/search.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: search
+          command: TEST_DATABASE_URL=postgres://law:law@127.0.0.1:5432/law tools/ci/search.sh
+          status: ${{ job.status }}
+
+  web:
+    name: Web (eslint, types, tests, build, budget, renderer)
+    needs: changes
+    if: needs.changes.outputs.web == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/web-env
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: tools/ci/web.sh all
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/web.sh all 2>&1 | tee "$RUNNER_TEMP/reports/web.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: web
+          command: tools/ci/web.sh all
+          status: ${{ job.status }}
+
+  smoke:
+    name: Smoke (the site on the sample, in a browser)
+    needs: [changes, wheel]
+    if: needs.changes.outputs.smoke == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: ./.github/actions/web-env
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          browser: 'true'
+      - name: tools/ci/smoke.sh
+        env:
+          # A failed run keeps its folder here: the services' logs and a screenshot of each step the browser took.
+          TMPDIR: ${{ runner.temp }}/smoke
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports" "$TMPDIR"
+          tools/ci/smoke.sh 2>&1 | tee "$RUNNER_TEMP/reports/smoke.log"
+      - name: The failed run's logs and screenshots, into the reports
+        if: failure()
+        run: |
+          for kept in "$RUNNER_TEMP"/smoke/smoke.*/; do
+            [ -d "$kept" ] || continue
+            mkdir -p "$RUNNER_TEMP/reports/smoke"
+            cp -R "$kept"*.log "$kept"shots "$RUNNER_TEMP/reports/smoke/" 2>/dev/null || true
+          done
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: smoke
+          command: tools/ci/smoke.sh
+          status: ${{ job.status }}
+
+  crates:
+    name: Rust crates
+    needs: changes
+    if: needs.changes.outputs.crates == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Cargo's downloads and the last build
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: |
+            ~/.cargo/registry/index
+            ~/.cargo/registry/cache
+            ~/.cargo/git/db
+            crates/target
+          key: cargo-test-${{ runner.os }}-${{ hashFiles('crates/Cargo.lock') }}
+          restore-keys: cargo-test-${{ runner.os }}-
+      - name: cargo test --locked
+        working-directory: crates
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          rustc --version
+          cargo test --locked 2>&1 | tee "$RUNNER_TEMP/reports/crates.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: crates
+          command: (cd crates && cargo test --locked)
+          status: ${{ job.status }}
+
+  secrets:
+    name: Secrets (gitleaks, the whole history)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      # gitleaks 8.30.1, with its default rules and the allowance in .gitleaks.toml; findings are printed redacted.
+      - run: >-
+          docker run --rm -v "$PWD:/repo"
+          zricethezav/gitleaks@sha256:c00b6bd0aeb3071cbcb79009cb16a60dd9e0a7c60e2be9ab65d25e6bc8abbb7f
+          git /repo --config /repo/.gitleaks.toml --redact --no-banner --verbose
+
+  licences:
+    name: Licences and names (reuse lint, names.py)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      # reuse 6.3.0: every file has a licence and a copyright line (REUSE.toml), and every licence its text.
+      - run: >-
+          docker run --rm -v "$PWD:/data"
+          fsfe/reuse@sha256:2748d04c2adeb747c9a44831bc99a9cbfd7bf7ff6fc371a4b63204944e3e47b6 lint
+      # No earlier name of the project in the public tree (docs/rules.md, «Names»): git and the standard library only.
+      - name: tools/ci/names.py
+        run: tools/ci/names.py
+
+  publish-gate:
+    name: Publishing gate (private repository)
+    needs: changes
+    if: needs.changes.outputs.private == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: tools/ci/publish-gate.sh
+        env:
+          PYTHON: python3   # the scanner needs only the standard library
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/publish-gate.sh 2>&1 | tee "$RUNNER_TEMP/reports/publish-gate.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: publish-gate
+          command: tools/ci/publish-gate.sh
+          status: ${{ job.status }}
+
+  cla:
+    name: Contributor agreement
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read   # the description, and the author's earlier pull requests
+    steps:
+      - name: The agreement's line in the description, or an earlier merged pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.pull_request.number }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+          ASSOCIATION: ${{ github.event.pull_request.author_association }}
+        run: |
+          # The line CONTRIBUTING.md asks for, word for word: change both together.
+          line='I have read CLA.md and I agree to it for this contribution and my later ones.'
+          case "$ASSOCIATION" in
+            OWNER|MEMBER) echo "$AUTHOR belongs to the project: no agreement is asked."; exit 0 ;;
+          esac
+          if [ "$AUTHOR" = 'dependabot[bot]' ]; then echo "Dependabot's updates need no agreement."; exit 0; fi
+          # The description as it is now, not as the event saw it: after an edit, re-running this job is enough.
+          body=$(gh api "repos/$REPO/pulls/$NUMBER" --jq '.body // ""')
+          if tr -d '\r' <<<"$body" | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | grep -qxF -- "$line"; then
+            echo "The description holds the agreement's line."
+            exit 0
+          fi
+          merged=$(gh pr list --repo "$REPO" --author "$AUTHOR" --state merged --limit 1 --json number --jq length)
+          if [ "$merged" -gt 0 ]; then
+            echo "$AUTHOR agreed in an earlier pull request, which was merged."
+            exit 0
+          fi
+          echo "::error title=Contributor agreement::Add this line to the description, then re-run this job: $line"
+          {
+            echo '### The contributor agreement'
+            echo
+            echo 'A first pull request says that its author agrees to CLA.md'
+            echo '(CONTRIBUTING.md, "The contributor agreement").'
+            echo 'Add this line to the description, on a line of its own, then re-run this job:'
+            echo
+            echo "    $line"
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  gate:
+    # The one check a branch rule requires. It runs whatever happened before it, and fails when a job it needs
+    # failed or was cancelled; a job skipped because its files did not change counts as passed.
+    name: gate
+    if: always()
+    needs: [changes, workflows, wheel, backend, search, web, smoke, crates, secrets, licences, publish-gate, cla]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Every job passed, or was skipped
+        env:
+          NEEDS: ${{ toJSON(needs) }}
+        run: |
+          {
+            echo '| Job | Result |'
+            echo '|---|---|'
+            jq -r 'to_entries[] | "| \(.key) | \(.value.result) |"' <<<"$NEEDS"
+          } >> "$GITHUB_STEP_SUMMARY"
+          bad=$(jq -r '[to_entries[] | select(.value.result == "failure" or .value.result == "cancelled") | .key]
+                       | join(", ")' <<<"$NEEDS")
+          if [ -n "$bad" ]; then
+            echo "::error title=gate::Did not pass: $bad"
+            exit 1
+          fi
+          echo "Every job passed, or was skipped because its files did not change."

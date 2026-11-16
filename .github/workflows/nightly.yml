@@ -1,0 +1,262 @@
+# Every night, and by hand: the checks that depend on the world outside the repository (new security advisories,
+# the compiler the browser's reader was built with, the search engine's image) and those too slow for every push
+# (the query-loop survey, coverage). They live here so that an advisory published overnight never turns an unrelated
+# push red: a red night is read and fixed in a change of its own (docs/ci.md).
+name: Nightly
+
+on:
+  schedule:
+    # 02:23 UTC, every night, away from the top of the hour, when GitHub's queues are longest. On a public repository
+    # the runners cost nothing. A private copy spends its account's minutes on every job (about 50 a night): switch
+    # this workflow off in its settings (Actions) and run it by hand.
+    - cron: '23 2 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # A run by hand waits for the night's to finish rather than cancelling it.
+  group: nightly-${{ github.ref }}
+  cancel-in-progress: false
+
+defaults:
+  run:
+    shell: bash
+
+env:
+  PYTHON_VERSION: '3.13'   # the server's
+  NODE_VERSION: '22'
+  # The tools' versions, pinned: an update is a change to this file, checked like any other.
+  PIP_AUDIT_VERSION: '2.10.1'
+  CARGO_AUDIT_VERSION: '0.23.0'
+
+jobs:
+  audit-python:
+    name: Audit the Python packages (pip-audit)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: pip-audit on the hashed lock
+        run: |
+          python -m venv "$RUNNER_TEMP/audit"
+          "$RUNNER_TEMP/audit/bin/pip" install --quiet "pip-audit==$PIP_AUDIT_VERSION"
+          "$RUNNER_TEMP/audit/bin/pip-audit" --strict --disable-pip --require-hashes -r back/requirements/lock.txt
+
+  audit-web:
+    name: Audit the web's packages (npm audit)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/web-env
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Known advisories, high and critical
+        working-directory: web
+        run: npm audit --audit-level=high
+      - name: The registry's signatures on the installed packages
+        working-directory: web
+        run: npm audit signatures
+
+  audit-rust:
+    name: Audit the crates (cargo audit)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: cargo-audit, if an earlier night built this version
+        id: tool
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cargo/bin/cargo-audit
+          key: cargo-audit-${{ runner.os }}-${{ env.CARGO_AUDIT_VERSION }}
+      - name: Build cargo-audit from its locked sources
+        if: steps.tool.outputs.cache-hit != 'true'
+        run: cargo install cargo-audit --locked --version "$CARGO_AUDIT_VERSION"
+      - name: cargo audit on Cargo.lock
+        working-directory: crates
+        run: cargo audit
+
+  wasm:
+    name: The browser's reader, rebuilt from its source
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      # The compiler and wasm-pack the committed reader (web/src/shared/wasm/ma_law) was built with: the same two
+      # rebuild it byte for byte. After changing either, run crates/build.sh with the new pair and commit its files.
+      RUSTUP_TOOLCHAIN: '1.99.1'
+      WASM_PACK_VERSION: '0.15.0'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: The compiler the committed reader was built with
+        run: rustup toolchain install "$RUSTUP_TOOLCHAIN" --profile minimal --target wasm32-unknown-unknown
+      - name: wasm-pack, if an earlier night built this version
+        id: tool
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ~/.cargo/bin/wasm-pack
+          key: wasm-pack-${{ runner.os }}-${{ env.WASM_PACK_VERSION }}-rust-${{ env.RUSTUP_TOOLCHAIN }}
+      - name: Build wasm-pack from its locked sources
+        if: steps.tool.outputs.cache-hit != 'true'
+        run: cargo install wasm-pack --locked --version "$WASM_PACK_VERSION"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Rebuild into the committed folder
+        run: npm --prefix web run build:wasm
+      # A change to crates/ without its rebuild, or a rebuild with another compiler, fails here: run crates/build.sh
+      # with this job's versions and commit the files it writes.
+      - name: The rebuilt files are the committed ones, byte for byte
+        run: |
+          git status --porcelain -- web/src/shared/wasm/ma_law/
+          git diff --exit-code --stat -- web/src/shared/wasm/ma_law/
+          test -z "$(git status --porcelain -- web/src/shared/wasm/ma_law/)"
+      - name: The rebuilt reader answers every shared vector
+        run: node web/scripts/check-ma-law.mjs
+
+  wheel:
+    name: ma_law wheel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/wheel
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+  search:
+    name: Search (ParadeDB)
+    needs: wheel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    services:
+      paradedb:
+        # The image the server runs (deploy/compose.yml), by its digest.
+        image: paradedb/paradedb@sha256:c552094b6b68dcb0a4e7a3969963d801eaec02490db4d2dd032dcb096bc86cf8
+        env:
+          POSTGRES_USER: law
+          POSTGRES_PASSWORD: law
+          POSTGRES_DB: law
+        ports:
+          - 127.0.0.1:5432:5432
+        options: >-
+          --health-cmd "pg_isready -U law" --health-interval 5s --health-timeout 5s --health-retries 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: tools/ci/search.sh
+        env:
+          TEST_DATABASE_URL: postgres://law:law@127.0.0.1:5432/law
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/search.sh 2>&1 | tee "$RUNNER_TEMP/reports/search.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: search
+          command: TEST_DATABASE_URL=postgres://law:law@127.0.0.1:5432/law tools/ci/search.sh
+          status: ${{ job.status }}
+
+  loops:
+    name: Query loops, against the kept list
+    needs: wheel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: tools/ci/loops.sh
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/loops.sh 2>&1 | tee "$RUNNER_TEMP/reports/loops.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: loops
+          command: tools/ci/loops.sh
+          status: ${{ job.status }}
+
+  coverage:
+    name: Coverage, above its floor
+    needs: wheel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - name: tools/ci/coverage.sh
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports"
+          tools/ci/coverage.sh 2>&1 | tee "$RUNNER_TEMP/reports/coverage.log"
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: coverage
+          command: tools/ci/coverage.sh
+          status: ${{ job.status }}
+          keep: always
+
+  smoke:
+    name: Smoke (the site on the sample, in a browser)
+    needs: wheel
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: ./.github/actions/back-env
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+      - uses: ./.github/actions/web-env
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          browser: 'true'
+      - name: tools/ci/smoke.sh
+        env:
+          # A failed run keeps its folder here: the services' logs and a screenshot of each step the browser took.
+          TMPDIR: ${{ runner.temp }}/smoke
+        run: |
+          mkdir -p "$RUNNER_TEMP/reports" "$TMPDIR"
+          tools/ci/smoke.sh 2>&1 | tee "$RUNNER_TEMP/reports/smoke.log"
+      - name: The failed run's logs and screenshots, into the reports
+        if: failure()
+        run: |
+          for kept in "$RUNNER_TEMP"/smoke/smoke.*/; do
+            [ -d "$kept" ] || continue
+            mkdir -p "$RUNNER_TEMP/reports/smoke"
+            cp -R "$kept"*.log "$kept"shots "$RUNNER_TEMP/reports/smoke/" 2>/dev/null || true
+          done
+      - uses: ./.github/actions/report
+        if: ${{ !cancelled() }}
+        with:
+          name: smoke
+          command: tools/ci/smoke.sh
+          status: ${{ job.status }}

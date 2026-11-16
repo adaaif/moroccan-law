@@ -1,0 +1,222 @@
+# «القانون يعرف البرقية، ولا يعرف واتساب»: the blog's nineteenth post (S16 of the first-principles review, 6 Nov
+# 2026: «Yes»; built 7 Nov 2026). The counts are in figures.json (manage.py blog_figures whatsapp): the texts of law
+# whose Arabic carries each word, and the Bulletin's pages that print each network's name, counted on the search copy
+# since the scan reads every article and every page. Every quote below was read on its printed page; a person checks
+# each against the page's image before the post is published.
+slug: whatsapp
+number: 19
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "القانون يعرف البرقية، ولا يعرف واتساب"
+  fr: "La loi connaît le télégramme, pas WhatsApp"
+lead:
+  ar: "ما زالت نصوص القانون تكتب «البرقية» و«الفاكس» و«التلكس» و«الآلة الكاتبة». وفي 2023 طلب مرسوم الصفقات العمومية من كل متنافس رقم فاكسه. أما «واتساب» و«تيك توك» و«فيسبوك»، فلم يكتبها قط ظهير ولا قانون ولا مرسوم ولا قرار وزير: دخلت الجريدة الرسمية في آراء المجالس وتقاريرها، وفي كلام قيل على الهواء نقلته الهيأة العليا للاتصال السمعي البصري."
+  fr: "Les textes de loi écrivent encore « télégramme », « télécopie », « télex » et « machine à écrire ». En 2023, le décret sur les marchés publics demandait encore à chaque concurrent son numéro de fax. « WhatsApp », « TikTok » et « Facebook », eux, n’ont jamais été écrits par un dahir, une loi, un décret ou un arrêté : ils sont entrés au Bulletin officiel par les avis et les rapports des conseils, et par des paroles dites à l’antenne que la HACA a citées."
+
+# The texts of law: dahirs, laws, organic laws, decree-laws, decrees and orders (not the decisions of a council or a
+# regulator, the reports, the opinions). A text counts when any of its Arabic versions (as printed, or as amended) carries
+# the word; the Arabic a model translated from the official French (BO 7410 and the Protectorate's French-only texts) does
+# not count. «Standing»: not marked repealed in what the site has read.
+rules: [dahir, law, organic_law, decree_law, decree, order]
+
+# The machines the law still writes, each as Postgres reads a regular expression. «برقية» alone is also a family name
+# («الخليل برقية» delegates a minister's signature in 2025), so only its forms with an article or a preposition count, and
+# «برقيات»; «البرق» (also lightning) does not.
+machines:
+  - key: telegram
+    ar: "البرقية"
+    fr: "le télégramme"
+    re: "(^|[^ء-ي])(ال|وال|بال|لل)(برقية|برقيات)|(^|[^ء-ي])(ب|و|ل)?برقيات|(^|[^ء-ي])ببرقية|(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?(تلغراف|تلغرافية|تلغرافي|تلغرافيا)"
+    # The 1980s' peak: each new post office opened by an order that lists «العمليات البريدية والتلغرافية والتليفونية».
+    example: {akn: /akn/ma/act/loi/3-23, art: "2", issue: 7437, page: 6973, date: "2025-09-08", number: "03.23",
+              words: "كما له أن يأمر بنشر برقيات البحث على الصعيد الوطني في حق الأشخاص المشتبه في ارتكابهم جنح معاقب عليها بعقوبات حبسية"}
+  - key: typewriter
+    ar: "الآلة الكاتبة"
+    fr: "la machine à écrire"
+    re: "الآلة الكاتبة|الالة الكاتبة|الآلات الكاتبة|الالات الكاتبة|آلة كاتبة|الة كاتبة|آلات كاتبة|الات كاتبة"
+    example: {akn: /akn/ma/act/dahir/1-06-64, issue: 5732, page: 2395, date: "2009-05-07", number: "1.06.64",
+              words: "يعد المصدر بيان الفاتورة الأورومتوسطية منسوخا على الآلة الكاتبة، أو بالكتابة بحروف طباعة"}
+  - key: fax
+    ar: "الفاكس"
+    fr: "le fax"
+    re: "(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?(فاكس|ناسوخ)([^ء-ي]|$)"
+    example: {akn: /akn/ma/act/decret/2-22-431, art: "29", issue: 7176, page: 2885, date: "2023-03-09", number: "2.22.431",
+              words: "الاسم العائلي والشخصي للمتنافس ومحل سكناه وكذا أرقام الهاتف والفاكس والعنوان الإلكتروني للمتنافس"}
+  - key: telex
+    ar: "التلكس"
+    fr: "le télex"
+    re: "(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?تلكس([^ء-ي]|$)"
+    example: {akn: /akn/ma/act/dahir/1-10-62, issue: 6410, bis: true, page: 9160, date: "2015-11-05", number: "1.10.62",
+              words: "يتيح استبدال أوامر الدفع البريدية المرسلة على ركيزة ورقية أو بالبرق أو بالتلكس بأوامر بريدية تنقلها الشبكة الإلكترونية"}
+
+# The words the law has for the new means, counted the same way.
+generics:
+  - {key: internet, re: "(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?(أنترنيت|انترنيت|إنترنت|انترنت|أنترنت|إنترنيت)([^ء-ي]|$)"}
+  - {key: email, re: "البريد الإلكتروني|البريد الالكتروني|بريد إلكتروني|بريد الكتروني"}
+  - {key: social, re: "(شبكات|شبكة|مواقع|موقع|وسائل|وسيلة|منصات|منصة|وسائط|تطبيقات|حسابات|صفحات) التواصل الاجتماعي"}
+
+# The networks, in the order and with the share of Moroccans aged 16 to 64 who used each at the start of 2023, as the
+# Economic, Social and Environmental Council printed them (its opinion «من أجل بيئة رقمية دامجة توفر الحماية للأطفال», BO
+# 7354, 21 Nov 2024, p. 8037, chart 2, citing We Are Social and Meltwater); YouTube is not in that chart. `ar` is the
+# chart's own spelling. `first`: the first page of the Bulletin that prints the name, read on the page; `kind`: what
+# printed it (opinion: a council's opinion; report: a report; quote: a regulator's decision quoting words said on air).
+cese: {issue: 7354, page: 8037, title_page: 8032, date: "2024-11-21"}
+apps:
+  - key: facebook
+    ar: "فيسبوك"
+    fr: "Facebook"
+    pct: "61.70"
+    re: "فيسبوك|فايسبوك|فيس بوك|فايس بوك|[Ff]acebook"
+    first: {issue: 6344, page: 1826, date: "2015-03-19", kind: opinion, by: cese}
+  - key: instagram
+    ar: "انستغرام"
+    fr: "Instagram"
+    pct: "57.40"
+    re: "انستغرام|إنستغرام|انستجرام|إنستجرام|انستاغرام|إنستاغرام|انستقرام|إنستقرام|[Ii]nstagram"
+    first: {issue: 6769, page: 2005, date: "2019-04-15", kind: quote, by: haca}
+  - key: whatsapp
+    ar: "واتساب"
+    fr: "WhatsApp"
+    pct: "55.40"
+    re: "واتساب|واتس اب|واتس آب|[Ww]hats ?[Aa]pp"
+    first: {issue: 6544, page: 457, date: "2017-02-16", kind: quote, by: haca}
+  - key: messenger
+    ar: "مسنجر"
+    fr: "Messenger"
+    pct: "44.70"
+    re: "(^|[^ء-ي])(ال|و)?(مسنجر|ماسنجر)([^ء-ي]|$)|[Mm]essenger"
+    first: {issue: 7354, page: 8037, date: "2024-11-21", kind: opinion, by: cese}
+  - key: tiktok
+    ar: "تيكتوك"
+    fr: "TikTok"
+    pct: "37.10"
+    re: "تيك توك|تيكتوك|[Tt]ik ?[Tt]ok"
+    first: {issue: 7218, page: 6229, date: "2023-08-03", kind: opinion, by: cese}
+  - key: snapchat
+    ar: "سنابشات"
+    fr: "Snapchat"
+    pct: "31.50"
+    re: "سناب شات|سنابشات|[Ss]napchat"
+    first: {issue: 7342, bis: true, page: 7078, date: "2024-10-10", kind: report, by: competition}
+  - key: telegram_app
+    ar: "تيلغرام"
+    fr: "Telegram"
+    pct: "29.70"
+    re: "تيليغرام|تيلغرام|تليغرام|تيليجرام|[Tt]elegram"
+    first: {issue: 7003, bis: true, page: 5276, date: "2021-07-12", kind: report, by: cndh}
+  - key: twitter
+    ar: "تويتر"
+    fr: "Twitter"
+    pct: "21.50"
+    re: "(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?تويتر([^ء-ي]|$)|[Tt]witter"
+    first: {issue: 6422, bis: true, page: 9988, date: "2015-12-17", kind: report, by: bam}
+  - key: linkedin
+    ar: "لينكدين"
+    fr: "LinkedIn"
+    pct: "19.40"
+    re: "لينكد ?إن|لينكدين|[Ll]inked ?[Ii]n"
+    first: {issue: 6738, bis: true, page: 10001, date: "2018-12-27", kind: report, by: bam}
+  - key: pinterest
+    ar: "بينتيريست"
+    fr: "Pinterest"
+    pct: "18.40"
+    re: "بينتيريست|بينترست|[Pp]interest"
+    first: {issue: 7354, page: 8037, date: "2024-11-21", kind: opinion, by: cese}
+  - key: youtube
+    ar: "يوتيوب"
+    fr: "YouTube"
+    re: "(^|[^ء-ي])(ال|وال|بال|لل|و|ب|ل)?(يوتيوب|يوتوب)([^ء-ي]|$)|[Yy]ou[Tt]ube"
+    first: {issue: 6344, page: 1826, date: "2015-03-19", kind: opinion, by: cese}
+  - key: chatgpt
+    ar: "ChatGPT"
+    fr: "ChatGPT"
+    re: "ChatGPT|شات جي بي تي"
+    first: {issue: 7254, bis: true, page: 10783, date: "2023-12-07", kind: opinion, by: cese}
+
+# What our copy shows that the Bulletin does not: left out of the counts, each read on its page. `swallowed`: report
+# pages the cutter filed under the order printed before them (the order's own pages do not carry the word); `misread`: a
+# word the reading put where the page prints a name; `name`: a person called Messenger; `telegraph`: the 1957 post office
+# below, the telegraph's «التيليغرام». Any other text of law or page
+# that carries a network's name is listed in figures.json's `checks` for a person to read.
+not_law:
+  - {akn: /akn/ma/act/arrete/394-19, words: [facebook, twitter, youtube], why: swallowed, issue: 6778}
+  - {akn: /akn/ma/act/arrete/3266-21, words: [facebook], why: swallowed, issue: 7070}
+  - {akn: /akn/ma/act/arrete/463-24, words: [facebook], why: swallowed, issue: 7281}
+  - {akn: /akn/ma/act/arrete/1681-24, words: [facebook, instagram], why: swallowed, issue: 7322}
+  - {akn: /akn/ma/act/dahir/1-69-349, words: [twitter], why: misread, issue: 3026, page: 2659}
+not_pages:
+  - {word: twitter, issue: 3026, page: 2659, why: misread}
+  - {word: messenger, issue: 5724, page: 1541, why: misread}
+  - {word: messenger, issue: 7232, page: 7433, why: name}
+  - {word: telegram_app, issue: 2357, page: 2829, why: telegraph}
+
+# The two pages cut out for the post, as printed, and where they stand on the page's image (shares of the image; ratio:
+# the image's height over its width).
+clippings:
+  - key: facebook
+    issue: 6344
+    page: 1826
+    words: "على تقديم شهادات حول بعض الممارسات سواء عن طريق وسائل ليست بعد مؤطَّرة بنصوص قانونية تحيط بمختلف جوانبها (الفايسبوك واليوتيوب)"
+    title_page: 1809
+    crop: {left: 0.5201, top: 0.4958, right: 0.9806, bottom: 0.5648, ratio: 1.4154}
+  - key: whatsapp
+    issue: 6544
+    page: 457
+    number: "39.16"
+    words: "ونا نقطع عليه الماء والضوء والواتساب والتليفون"
+    title_page: 456
+    crop: {left: 0.5201, top: 0.1350, right: 0.9787, bottom: 0.1611, ratio: 1.4154}
+
+# The other firsts' words, as printed (Instagram's are a guest's words on a radio show about women: not quoted; Snapchat's
+# and the 2024 table's are a chart's numbers).
+words:
+  twitter: "قام البنك، بتاريخ 16 دجنبر 2014، بإنشاء حساب تويتر"
+  linkedin: "انخرط بنك المغرب أيضا في موقع Linkedin"
+  telegram_app: "لجأ العديد من المدرسين إلى التدريس عبر وسائل التواصل الاجتماعي، كالواتساب والفايسبوك وتيليغرام واليوتيوب"
+  tiktok: "وقَّعت عدة منصات (\"ميتا\" و\"غوغل\" و\"تويتر\" و\"تيك توك\" و\"ميكروسوفت\" وغيرها) … على مدونةٍ لقواعد السلوك الجيد"
+  chatgpt: "منصة ChatGPT تتم تعبئتها بكمية هامة من المعطيات وتستعمل Microsoft Azure لتقديم خدماتها"
+# Before the app: the only «التيليغرام» the Bulletin printed before 2021 is a Meknes post office.
+telegraph: {issue: 2357, page: 2829, date: "1957-12-27", words: "مكتب البريد والتيليغرام والتلفون"}
+
+# The Mediator's complaints and grievances by the way they reached it, as its annual reports print them: 2019–2023 from
+# the 2023 report (BO 7364 bis, 27 Dec 2024, p. 10208; «**» where a way did not exist yet), 2024 from the 2024 report
+# (BO 7423 bis, 22 Jul 2025, p. 5422), which counts the files registered (7.948) rather than everything received
+# (12.346 in 2023).
+mediator:
+  reports:
+    - {year: 2023, issue: 7364, bis: true, page: 10208, date: "2024-12-27"}
+    - {year: 2024, issue: 7423, bis: true, page: 5422, date: "2025-07-22"}
+  years:
+    - {year: 2019, fax: 129, total: 12061}
+    - {year: 2020, fax: 145, total: 8055}
+    - {year: 2021, fax: 116, total: 8142}
+    - {year: 2022, fax: 46, whatsapp: 8, total: 8259}
+    - {year: 2023, fax: 12, whatsapp: 24, total: 12346}
+    - {year: 2024, fax: 11, whatsapp: 88, total: 7948, files: true}
+
+# How the law says it without naming it, as printed.
+naming:
+  formula:
+    akn: /akn/ma/act/loi-organique/53-25
+    art: "1"
+    issue: 7478
+    page: 789
+    date: "2026-01-29"
+    number: "53.25"
+    phrase: "شبكات البث المفتوح"
+    words: "كل شخص أقدم، بأي وسيلة بما في ذلك شبكات التواصل الاجتماعي أو شبكات البث المفتوح أو أدوات الذكاء الاصطناعي أو أي منصة إلكترونية أو تطبيق يعتمد على الأنترنيت أو الأنظمة المعلوماتية، بنشر أو إذاعة أو نقل أو بث أو توزيع أخبار زائفة أو إشاعات"
+    parts:
+      - "شبكات التواصل الاجتماعي"
+      - "شبكات البث المفتوح"
+      - "أدوات الذكاء الاصطناعي"
+      - "أي منصة إلكترونية"
+      - "تطبيق يعتمد على الأنترنيت"
+      - "الأنظمة المعلوماتية"
+  group: {akn: /akn/ma/act/arrete/2026/47-26, art: "9", issue: 7524, page: 4245, date: "2026-07-09", number: "47.26",
+          words: "شريطة أن يتم ذلك بين المترشح وأي زميل له على حدة، وليس في إطار مجموعة محدثة في تطبيقات التواصل الاجتماعي"}
+  doctor: {akn: /akn/ma/act/decret/2-21-225, art: "26", issue: 7002, page: 5171, date: "2021-07-08", number: "2.21.225",
+           words: "عندما يحدث الطبيب موقعا إلكترونيا أو أي فضاء رقمي آخر، على شبكات التواصل الاجتماعي لأغراض مهنية، يخبر بذلك المجلس الجهوي المعني"}
+  council: {issue: 7354, page: 8034, date: "2024-11-21",
+            words: "ملاءمة الإطار القانوني الوطني مع المعايير الدولية المتعلقة بحقوق الطفل، لا سيما بما يواكب الديناميات المطردة للبيئة الرقمية"}

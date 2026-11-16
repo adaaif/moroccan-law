@@ -1,0 +1,24 @@
+# The road's papers (U2 of the road tools review): what a stop asks to see, item by item from law 52.05 art. 103 —
+# not showing one has the vehicle stopped on the spot, and 72 hours later in the pound (art. 104, the impound
+# journey) — and the triangle the decree has the driver set out in a breakdown. Ticks stay on the reader's phone.
+
+- key: carry
+  title: {ar: 'حضّر راسك: ما يكون معك في السيارة', fr: 'Ce qui doit être dans la voiture'}
+  lead:
+    ar: 'ما لا تدلي به عند المراقبة يوقف المركبة في المكان (المادة 103)، وإن لم تنته المخالفة داخل 72 ساعة فالمحجز.'
+    fr: 'Ce que vous ne présentez pas au contrôle fait immobiliser le véhicule sur place (art. 103) ; si l’infraction n’a pas cessé dans les 72 heures, c’est la fourrière.'
+  cites: [/ma/loi/52-05/art_103, /ma/loi/52-05/art_104]
+  items:
+    - label: {ar: رخصة السياقة, fr: Le permis de conduire}
+      cites: [/ma/loi/52-05/art_103]
+    - label: {ar: شهادة التسجيل أو سند الملكية, fr: Le certificat d’immatriculation ou le titre de propriété}
+      note: {ar: «البطاقة الرمادية», fr: la « carte grise »}
+      cites: [/ma/loi/52-05/art_103]
+    - label: {ar: الوثيقة التي تثبت المراقبة التقنية, fr: Le document qui prouve le contrôle technique}
+      cites: [/ma/loi/52-05/art_103]
+    - label: {ar: شهادة التأمين, fr: L’attestation d’assurance}
+      note: {ar: 'من لم يقدمها يعاقب بغرامة من 200 إلى 400 درهم، وتوقف المركبة', fr: 'qui ne la présente pas paie une amende de 200 à 400 dirhams, et le véhicule est immobilisé'}
+      cites: [/ma/loi/52-05/art_103, /ma/loi/17-99/art_126, /ma/loi/17-99/art_130]
+    - label: {ar: معدة التشوير القبلي (المثلث), fr: Le dispositif de pré-signalisation (le triangle)}
+      when: {ar: 'عند العطب أو سقوط الحمولة، على 50 مترا على الأقل خلف المركبة', fr: 'en cas de panne ou de chute du chargement, à 50 mètres au moins derrière le véhicule'}
+      cites: [/ma/decret/2-10-420/art_94-bis]

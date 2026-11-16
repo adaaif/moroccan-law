@@ -1,0 +1,501 @@
+# «حياتك بأعمار القانون»: the blog's sixteenth post (S9 of the first-principles review, 6 Nov 2026: «Yes»; built 7
+# Nov 2026). Every age is read in its article as the corpus holds it (7 Nov 2026), and its page is the Bulletin's: where
+# the site holds a code only as Adala's consolidation (the family code, the labour code, the road code, the CNSS dahir,
+# the voters' and the domestic workers' laws), the article was found on the issue that printed it, its words matched on
+# the page's text. An age a later law wrote is that law's page (the moped at 14 by law 116.14, the minor's prison and
+# the debtor's at 60 by law 03.23). A person checks every age on its page before the post is published.
+slug: ages
+number: 16
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "حياتك بأعمار القانون"
+  fr: "Votre vie aux âges de la loi"
+lead:
+  ar: "من الولادة إلى الخامسة والستين، تكتب القوانين المغربية أعمارا تبدأ عندها أشياء وتنتهي أخرى. قرأنا 35 منها في 14 نصا، كل سن في مادتها وعلى صفحتها من الجريدة الرسمية. 28 منها قبل السادسة والعشرين، وواحدة فقط بين 26 و54. وسبعة أعمار تغيرت منذ 1957."
+  fr: "De la naissance à 65 ans, les lois marocaines écrivent des âges où des choses commencent et d’autres finissent. Nous en avons lu 35 dans 14 textes, chaque âge dans son article et sur sa page du Bulletin officiel. 28 tombent avant 26 ans, un seul entre 26 et 54. Et sept âges ont changé depuis 1957."
+
+# The texts, by the name a reader knows them by, and the word their articles go by.
+laws:
+  family: {ar: "مدونة الأسرة", fr: "Code de la famille", art: article}
+  labour: {ar: "مدونة الشغل", fr: "Code du travail", art: article}
+  road: {ar: "مدونة السير", fr: "Code de la route", art: article}
+  cpp: {ar: "المسطرة الجنائية", fr: "Procédure pénale", art: article}
+  penal: {ar: "القانون الجنائي", fr: "Code pénal", art: chapter}
+  idcard: {ar: "قانون البطاقة الوطنية", fr: "Loi sur la carte nationale", art: article}
+  school: {ar: "القانون الإطار للتربية والتكوين", fr: "Loi-cadre sur l’éducation", art: article}
+  school2000: {ar: "قانون إلزامية التعليم الأساسي", fr: "Loi sur l’enseignement fondamental obligatoire", art: article}
+  civil: {ar: "مرسوم الحالة المدنية", fr: "Décret sur l’état civil", art: article}
+  military: {ar: "قانون الخدمة العسكرية", fr: "Loi sur le service militaire", art: article}
+  voters: {ar: "قانون اللوائح الانتخابية", fr: "Loi sur les listes électorales", art: article}
+  domestic: {ar: "قانون العمال المنزليين", fr: "Loi sur les travailleurs domestiques", art: article}
+  cnss: {ar: "ظهير الضمان الاجتماعي", fr: "Dahir sur la sécurité sociale", art: chapter}
+  pensions: {ar: "قانون سن تقاعد الموظفين", fr: "Loi sur l’âge de retraite des fonctionnaires", art: article}
+  pensions1971: {ar: "قانون حد سن الموظفين (1971)", fr: "Loi sur la limite d’âge des fonctionnaires (1971)", art: chapter}
+  status1957: {ar: "مدونة الأحوال الشخصية (1957)", fr: "Code du statut personnel (1957)", art: chapter}
+  status1958: {ar: "مدونة الأحوال الشخصية، الكتاب الرابع (1958)", fr: "Code du statut personnel, livre IV (1958)", art: chapter}
+  majority1992: {ar: "القانون 13.92", fr: "Loi 13-92", art: single}
+  majority2003: {ar: "القانون 63.02", fr: "Loi 63-02", art: single}
+  penal1963: {ar: "القانون الجنائي كما نشر في 1963", fr: "Code pénal tel que publié en 1963", art: chapter}
+  cpp2025: {ar: "القانون 03.23 (المسطرة الجنائية)", fr: "Loi 03-23 (procédure pénale)", art: article}
+  road2016: {ar: "القانون 116.14 (مدونة السير)", fr: "Loi 116-14 (code de la route)", art: article}
+
+# The ages. `age`: where the age stands on the line of a life; `side`: whether something starts there (start) or ends
+# there (end); `from`/`to`: the years it holds for a reader (no `to`: for life); `echo`: an end shown on the line whose
+# rule is already named at its start (left out of «what holds for you»). `ref`: the Bulletin's issue and printed page
+# where the article's words are, `akn` the text's address on the site; `article_in`: the code whose article an amending
+# law wrote, where the reader finds it today.
+ages:
+  - key: birth
+    age: 0
+    side: start
+    from: 0
+    to: 1
+    law: civil
+    art: "40"
+    ref: {issue: 7210, page: 5504, akn: /akn/ma/act/decret/2-22-04}
+    text:
+      ar: "يُتمَّم التصريح بالولادة في الحالة المدنية داخل 30 يوما، وداخل سنة للمغاربة المقيمين بالخارج."
+      fr: "La déclaration de naissance est complétée à l’état civil dans les 30 jours, dans l’année pour les Marocains résidant à l’étranger."
+  - key: school
+    age: 4
+    side: start
+    from: 4
+    to: 16
+    law: school
+    art: "19"
+    ref: {issue: 6805, page: 5629, akn: /akn/ma/act/loi/51-17}
+    text:
+      ar: "يبلغ الطفل سن التمدرس، إلى تمام 16 سنة؛ والتعليم المدرسي إلزامي على الدولة والأسرة."
+      fr: "L’enfant atteint l’âge de la scolarité, jusqu’à 16 ans révolus ; l’école est obligatoire pour l’État et pour la famille."
+  - key: custody7
+    age: 7
+    side: end
+    from: 0
+    to: 7
+    law: family
+    art: "175"
+    ref: {issue: 5184, page: 436, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "لا يُسقط زواجُ الأم الحاضنة حضانتَها."
+      fr: "le remariage de la mère qui a la garde ne la lui fait pas perdre."
+  - key: front
+    age: 10
+    side: end
+    from: 0
+    to: 10
+    law: road
+    art: "99"
+    ref: {issue: 5824, page: 2186, akn: /akn/ma/act/loi/52-05}
+    text:
+      ar: "يُخصم من رخصة السائق نقطة إن أركب الطفل في المقاعد الأمامية."
+      fr: "le conducteur perd un point s’il installe l’enfant à l’avant."
+  - key: discern
+    age: 12
+    side: start
+    from: 12
+    to: 18
+    law: family
+    art: "214"
+    ref: {issue: 5184, page: 438, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "يصير «صغيرا مميزا» في مدونة الأسرة."
+      fr: "Il devient un « mineur doué de discernement » pour le code de la famille."
+  - key: criminal12
+    age: 12
+    side: start
+    from: 12
+    to: 18
+    law: cpp
+    art: "458"
+    ref: {issue: 5078, page: 445, akn: /akn/ma/act/loi/22-01}
+    text:
+      ar: "تبدأ مسؤوليته الجنائية، ناقصة إلى 18 سنة؛ وقبلها لا مسؤولية جنائية."
+      fr: "Sa responsabilité pénale commence, atténuée jusqu’à 18 ans ; avant, il n’en a aucune."
+  - key: prints
+    age: 12
+    side: start
+    from: 12
+    law: idcard
+    art: "5"
+    ref: {issue: 6907, page: 4313, akn: /akn/ma/act/loi/4-20}
+    text:
+      ar: "تحمل بطاقته الوطنية بصمتي أصبعين."
+      fr: "Sa carte nationale porte les empreintes de deux doigts."
+  - key: moped
+    age: 14
+    side: start
+    from: 14
+    law: road2016
+    art: "11"
+    article_in: /akn/ma/act/loi/52-05
+    ref: {issue: 6490, page: 5867, akn: /akn/ma/act/loi/116-14}
+    text:
+      ar: "يجتاز امتحان رخصة الدراجة بمحرك (الصنف AM)."
+      fr: "Il peut passer le permis du cyclomoteur (catégorie AM)."
+  - key: prison14
+    age: 14
+    side: end
+    from: 0
+    to: 14
+    law: cpp2025
+    art: "473"
+    article_in: /akn/ma/act/loi/22-01
+    ref: {issue: 7437, page: 6996, akn: /akn/ma/act/loi/3-23}
+    text:
+      ar: "لا يودع في السجن ولو مؤقتا، في جناية."
+      fr: "il ne peut être mis en prison, même provisoirement, pour un crime."
+  - key: work
+    age: 15
+    side: start
+    from: 15
+    law: labour
+    art: "143"
+    ref: {issue: 5167, page: 4018, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "يمكن أن يُشغَّل: لا تشغيل للأحداث قبل 15 سنة كاملة."
+      fr: "Il peut être embauché : pas d’emploi des mineurs avant 15 ans révolus."
+  - key: choose
+    age: 15
+    side: start
+    from: 15
+    to: 18
+    law: family
+    art: "166"
+    ref: {issue: 5184, page: 435, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "إذا انفصل أبواه، يختار من يحضنه: أباه أو أمه."
+      fr: "Si ses parents se séparent, il choisit qui a sa garde : son père ou sa mère."
+  - key: idcard
+    age: 16
+    side: start
+    from: 16
+    law: idcard
+    art: "2"
+    ref: {issue: 6907, page: 4312, akn: /akn/ma/act/loi/4-20}
+    text:
+      ar: "البطاقة الوطنية واجبة عليه؛ ومن لم يطلبها غرامة من 300 إلى 400 درهم (المادة 15)."
+      fr: "La carte nationale devient obligatoire ; ne pas la demander coûte 300 à 400 dirhams d’amende (article 15)."
+  - key: light
+    age: 16
+    side: start
+    from: 16
+    law: road
+    art: "11"
+    ref: {issue: 5824, page: 2170, akn: /akn/ma/act/loi/52-05}
+    text:
+      ar: "يجتاز امتحان رخصة الدراجة النارية الخفيفة (الصنف A1)."
+      fr: "Il peut passer le permis de la motocyclette légère (catégorie A1)."
+  - key: emancipate
+    age: 16
+    side: start
+    from: 16
+    to: 18
+    law: family
+    art: "218"
+    ref: {issue: 5184, page: 439, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "يجوز أن يطلب من المحكمة ترشيده قبل سن الرشد."
+      fr: "Il peut demander au tribunal son émancipation avant la majorité."
+  - key: delegates
+    age: 16
+    side: start
+    from: 16
+    law: labour
+    art: "438"
+    ref: {issue: 5167, page: 4092, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "ينتخب مندوبي الأجراء، إن قضى ستة أشهر في المؤسسة."
+      fr: "Il vote aux élections des délégués des salariés, après six mois dans l’entreprise."
+  - key: night
+    age: 16
+    side: end
+    from: 15
+    to: 16
+    law: labour
+    art: "172"
+    ref: {issue: 5167, page: 4024, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "لا يُشغَّل في أي شغل ليلي."
+      fr: "aucun travail de nuit."
+  - key: prison16
+    age: 16
+    side: end
+    from: 0
+    to: 16
+    law: cpp2025
+    art: "473"
+    article_in: /akn/ma/act/loi/22-01
+    ref: {issue: 7437, page: 6996, akn: /akn/ma/act/loi/3-23}
+    text:
+      ar: "لا يودع في السجن ولو مؤقتا، في جنحة."
+      fr: "il ne peut être mis en prison, même provisoirement, pour un délit."
+  - key: school-end
+    age: 16
+    side: end
+    from: 4
+    to: 16
+    echo: true
+    law: school
+    art: "19"
+    ref: {issue: 6805, page: 5629, akn: /akn/ma/act/loi/51-17}
+    text:
+      ar: "سن التمدرس."
+      fr: "l’âge de la scolarité."
+  - key: majority
+    age: 18
+    side: start
+    from: 18
+    law: family
+    art: "209"
+    ref: {issue: 5184, page: 438, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "سن الرشد القانوني: كامل الأهلية لمباشرة حقوقه وتحمل التزاماته."
+      fr: "La majorité légale : pleine capacité d’exercer ses droits et d’assumer ses obligations."
+  - key: marriage
+    age: 18
+    side: start
+    from: 18
+    law: family
+    art: "19"
+    ref: {issue: 5184, page: 423, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "أهلية الزواج، للفتى والفتاة سواء؛ ودونها بإذن معلل من قاضي الأسرة (المادة 20)."
+      fr: "La capacité de se marier, pour le garçon comme pour la fille ; avant, sur autorisation motivée du juge de la famille (article 20)."
+  - key: criminal18
+    age: 18
+    side: start
+    from: 18
+    law: cpp
+    art: "458"
+    ref: {issue: 5078, page: 445, akn: /akn/ma/act/loi/22-01}
+    text:
+      ar: "الرشد الجنائي: مسؤولية جنائية كاملة."
+      fr: "La majorité pénale : pleine responsabilité pénale."
+  - key: vote
+    age: 18
+    side: start
+    from: 18
+    law: voters
+    art: "3"
+    ref: {issue: 5991, page: 5257, akn: /akn/ma/act/loi/57-11}
+    text:
+      ar: "يُقيَّد في اللوائح الانتخابية العامة، ببلوغه سن الرشد."
+      fr: "Il est inscrit sur les listes électorales générales, à sa majorité."
+  - key: car
+    age: 18
+    side: start
+    from: 18
+    law: road
+    art: "11"
+    ref: {issue: 5824, page: 2170, akn: /akn/ma/act/loi/52-05}
+    text:
+      ar: "يجتاز امتحان رخصة السيارة (الصنف B) والدراجة النارية (A)."
+      fr: "Il peut passer le permis de la voiture (catégorie B) et de la moto (A)."
+  - key: domestic
+    age: 18
+    side: start
+    from: 18
+    law: domestic
+    art: "6"
+    ref: {issue: 6493, page: 6176, akn: /akn/ma/act/loi/19-12}
+    text:
+      ar: "يمكن أن يُشغَّل عاملا منزليا."
+      fr: "Il peut être employé comme travailleur domestique."
+  - key: mines
+    age: 18
+    side: end
+    from: 15
+    to: 18
+    law: labour
+    art: "179"
+    ref: {issue: 5167, page: 4026, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "لا يُشغَّل في المقالع ولا في أغوار المناجم."
+      fr: "pas de travail dans les carrières ni au fond des mines."
+  - key: military
+    age: 19
+    side: start
+    from: 19
+    to: 25
+    law: military
+    art: "4"
+    ref: {issue: 6746, bis: true, page: 240, akn: /akn/ma/act/loi/44-18}
+    text:
+      ar: "سن الاستدعاء للخدمة العسكرية؛ وهي واجبة إلى 25 سنة."
+      fr: "L’âge d’appel au service militaire, obligatoire jusqu’à 25 ans."
+  - key: candidate
+    age: 20
+    side: start
+    from: 20
+    law: labour
+    art: "439"
+    ref: {issue: 5167, page: 4092, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "يترشح لانتخاب مندوبي الأجراء، إن كان مغربيا واشتغل سنة في المؤسسة."
+      fr: "Il peut se porter candidat délégué des salariés, s’il est marocain et a un an dans l’entreprise."
+  - key: truck
+    age: 21
+    side: start
+    from: 21
+    law: road
+    art: "11"
+    ref: {issue: 5824, page: 2170, akn: /akn/ma/act/loi/52-05}
+    text:
+      ar: "يجتاز امتحان رخصة الشاحنة والحافلة (الصنفان C وD)."
+      fr: "Il peut passer le permis du camion et de l’autocar (catégories C et D)."
+  - key: support
+    age: 25
+    side: end
+    from: 18
+    to: 25
+    law: family
+    art: "198"
+    ref: {issue: 5184, page: 437, akn: /akn/ma/act/loi/70-03}
+    text:
+      ar: "نفقة الأب واجبة لولده الذي يتابع دراسته."
+      fr: "le père doit l’entretien à l’enfant qui poursuit ses études."
+  - key: military-end
+    age: 25
+    side: end
+    from: 19
+    to: 25
+    echo: true
+    law: military
+    art: "4"
+    ref: {issue: 6746, bis: true, page: 240, akn: /akn/ma/act/loi/44-18}
+    text:
+      ar: "الخدمة العسكرية واجبة."
+      fr: "le service militaire est obligatoire."
+  - key: recall
+    age: 40
+    side: end
+    from: 25
+    to: 40
+    law: military
+    art: "4"
+    ref: {issue: 6746, bis: true, page: 240, akn: /akn/ma/act/loi/44-18}
+    text:
+      ar: "يمكن أن يُستدعى للخدمة العسكرية من أُعفي منها ثم زال سبب إعفائه."
+      fr: "celui qui en était dispensé peut être appelé au service militaire si la raison de la dispense disparaît."
+  - key: miners
+    age: 55
+    side: start
+    from: 55
+    law: labour
+    art: "526"
+    ref: {issue: 5167, page: 4116, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "يحال على التقاعد أجير المنجم الذي اشتغل خمس سنوات على الأقل في باطن الأرض."
+      fr: "Le mineur qui a travaillé au moins cinq ans au fond part à la retraite."
+  - key: retire
+    age: 60
+    side: start
+    from: 60
+    law: labour
+    art: "526"
+    ref: {issue: 5167, page: 4116, akn: /akn/ma/act/loi/65-99}
+    text:
+      ar: "يحال الأجير على التقاعد؛ ويمكن أن يستمر في الشغل بقرار من السلطة الحكومية المكلفة بالشغل، بطلب من المشغل وبموافقته."
+      fr: "Le salarié part à la retraite ; il peut continuer sur décision de l’autorité chargée du travail, à la demande de l’employeur et avec son accord."
+  - key: pension
+    age: 60
+    side: start
+    from: 60
+    law: cnss
+    art: "53"
+    ref: {issue: 3121, page: 2185, akn: /akn/ma/act/dahir/1-72-184}
+    text:
+      ar: "راتب الشيخوخة من الضمان الاجتماعي لمن توقف عن كل نشاط مأجور؛ وفي 55 لعمال المناجم."
+      fr: "La pension de vieillesse de la sécurité sociale, pour qui a cessé toute activité salariée ; à 55 ans pour les mineurs."
+  - key: debt
+    age: 60
+    side: start
+    from: 60
+    law: cpp2025
+    art: "637"
+    article_in: /akn/ma/act/loi/22-01
+    ref: {issue: 7437, page: 7004, akn: /akn/ma/act/loi/3-23}
+    text:
+      ar: "ينتهي تنفيذ الإكراه البدني عليه، أي الحبس من أجل دين."
+      fr: "La contrainte par corps, la prison pour dette, prend fin."
+  - key: civil
+    age: 63
+    side: start
+    from: 63
+    law: pensions
+    art: "1"
+    ref: {issue: 6495, bis: true, page: 6445, akn: /akn/ma/act/loi/72-14}
+    text:
+      ar: "يحال الموظف على التقاعد؛ وفي 65 الأستاذ الباحث والسفير."
+      fr: "Le fonctionnaire part à la retraite ; à 65 ans l’enseignant-chercheur et l’ambassadeur."
+  - key: medical
+    age: 65
+    side: start
+    from: 65
+    law: road
+    art: "14"
+    ref: {issue: 5824, page: 2171, akn: /akn/ma/act/loi/52-05}
+    text:
+      ar: "يجدد صاحب رخصة السياقة فحصه الطبي كل سنتين، لا كل عشر سنوات."
+      fr: "Le titulaire du permis renouvelle sa visite médicale tous les deux ans, et non plus tous les dix ans."
+
+# Seven ages that moved, each step with the text that wrote it, read on its page. Majority: 21 in book IV of the 1958 code
+# (chapter 137), 20 by law 13.92, 18 by law 63.02 (the family code of 2004 keeps it, art. 209). The girl's marriage: 15 in
+# the 1957 code (chapter 8; the boy's 18), 18 for both in 2004. Criminal majority: 16 in the penal code as printed in
+# 1963 (chapter 140), 18 in the criminal procedure of 2003 (art. 458). No prison for a minor: under 12 in 2003 (art.
+# 473), under 14 for a crime and 16 for an offence by law 03.23 (2025). School: 6 to 15 by law 04.00 (2000), 4 to 16 by
+# the framework law (2019). The civil servant's retirement: 60 by law 012.71 (1971), 63 by law 72.14 (2016).
+moves:
+  - key: majority
+    steps:
+      - {age: 21, year: 1958, law: status1958, art: "137", ref: {issue: 2363, page: 302, akn: /akn/ma/act/dahir/1-58-019}}
+      - {age: 20, year: 1992, law: majority1992, ref: {issue: 4155, page: 700, akn: /akn/ma/act/loi/13-92}}
+      - {age: 18, year: 2003, law: majority2003, ref: {issue: 5093, page: 1000, akn: /akn/ma/act/loi/63-02}}
+  - key: marriage
+    steps:
+      - {age: 15, year: 1957, law: status1957, art: "8", ref: {issue: 2354, page: 2633, akn: /akn/ma/act/dahir/1-57-343}}
+      - {age: 18, year: 2004, law: family, art: "19", ref: {issue: 5184, page: 423, akn: /akn/ma/act/loi/70-03}}
+  - key: criminal
+    steps:
+      - {age: 16, year: 1963, law: penal1963, art: "140", ref: {issue: 2640, bis: true, page: 1265}}
+      - {age: 18, year: 2003, law: cpp, art: "458", ref: {issue: 5078, page: 445, akn: /akn/ma/act/loi/22-01}}
+  - key: prison
+    steps:
+      - {age: 12, year: 2003, law: cpp, art: "473", ref: {issue: 5078, page: 450, akn: /akn/ma/act/loi/22-01}}
+      - {age: 14, year: 2025, law: cpp2025, art: "473", ref: {issue: 7437, page: 6996, akn: /akn/ma/act/loi/3-23}}
+  - key: school-start
+    steps:
+      - {age: 6, year: 2000, law: school2000, art: "1", ref: {issue: 4798, page: 1183, akn: /akn/ma/act/loi/4-00}}
+      - {age: 4, year: 2019, law: school, art: "19", ref: {issue: 6805, page: 5629, akn: /akn/ma/act/loi/51-17}}
+  - key: school-end
+    steps:
+      - {age: 15, year: 2000, law: school2000, art: "1", ref: {issue: 4798, page: 1183, akn: /akn/ma/act/loi/4-00}}
+      - {age: 16, year: 2019, law: school, art: "19", ref: {issue: 6805, page: 5629, akn: /akn/ma/act/loi/51-17}}
+  - key: civil
+    steps:
+      - {age: 60, year: 1971, law: pensions1971, art: "1", ref: {issue: 3087, bis: true, page: 3403}}
+      - {age: 63, year: 2016, law: pensions, art: "1", ref: {issue: 6495, bis: true, page: 6445, akn: /akn/ma/act/loi/72-14}}
+
+# The family code's own words on the marriage age, from its preamble (BO 5184, p. 420).
+equal:
+  ar: "مساواة المرأة بالرجل بالنسبة لسن الزواج، بتوحيده في ثمان عشرة سنة"
+  fr: "l’égalité de la femme et de l’homme quant à l’âge du mariage, fixé pour les deux à dix-huit ans"
+  ref: {issue: 5184, page: 420, akn: /akn/ma/act/loi/70-03}
+
+# The civil servant's retirement by year of birth (law 72.14, art. 1), and the day of birth the law gives one whose
+# certificate names no day and month (art. 2: 31 December).
+retire:
+  steps:
+    - {born: 1956, age: 60, before: true}
+    - {born: 1957, age: 60.5}
+    - {born: 1958, age: 61}
+    - {born: 1959, age: 61.5}
+    - {born: 1960, age: 62}
+    - {born: 1961, age: 62.5}
+    - {born: 1962, age: 63, after: true}
+  unknown_day:
+    ar: "يعتبر 31 ديسمبر من السنة يوم وشهر ازدياد الموظفين والمستخدمين وذوي حقوقهم الذين يكون يوم وشهر ازديادهم غير محدد في رسوم الولادة أو الوثائق التي تقوم مقامها"
+    fr: "Le 31 décembre de l’année est le jour et le mois de naissance des fonctionnaires, des agents et de leurs ayants droit dont l’acte de naissance, ou la pièce qui en tient lieu, ne précise pas le jour et le mois de naissance."
+    ref: {issue: 6495, bis: true, page: 6446, akn: /akn/ma/act/loi/72-14}

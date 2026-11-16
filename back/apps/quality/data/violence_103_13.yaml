@@ -1,0 +1,30 @@
+# Law 103.13 on violence against women as Adala's PDF of 29 Aug 2024 prints it (the text of BO 6655, 12 Mar 2018),
+# where the text layer misreads it. Read against the page images on 20 Oct 2026 (F2 of the family plan).
+text: /ma/loi/103-13
+document: sources/adala/violence_103_13.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [2], wrong: التفصيالت, right: التفصيلات}
+  - {arts: [2, 5], wrong: ثالثة, right: ثلاثة}
+  - {arts: [2, 5], wrong: كافال, right: كافلا}
+  - {arts: [2], wrong: ولا جراحون, right: والجراحون}
+  - {arts: [2], wrong: ومالحظو, right: وملاحظو}
+  - {arts: [4], wrong: الوالية, right: الولاية}
+  - {arts: [4], wrong: بالسالح, right: بالسلاح}
+  - {arts: [4], wrong: لالنتحار, right: للانتحار}
+  - {arts: [4], wrong: النتحاره, right: لانتحاره}
+  - {arts: [5], wrong: زميال, right: زميلا}
+  - {arts: [5], wrong: العالقة, right: العلاقة}
+  - {arts: [5], wrong: وألثار, right: ولآثار}
+  - {arts: [9, 10, 14], wrong: خاليا, right: خلايا}
+  - {arts: [10], wrong: وبا لمصالح, right: وبالمصالح}
+  # «ال» read as a lone «لا».
+  - {arts: [5], wrong: بلا مؤاخذة, right: بالمؤاخذة}
+  - {arts: [10], wrong: ولا مرافقة, right: والمرافقة}
+  - {arts: [14, 16], wrong: ولا مع يقات, right: والمعيقات}
+  - {arts: [1], wrong: بغض المس, right: بغرض المس}
+  - {arts: [5], wrong: وآلثار, right: ولآثار}
+  - {arts: [5], wrong: وبا لمستحقات, right: وبالمستحقات}
+  - {arts: [5], wrong: حدا التنفيذ, right: حدا لتنفيذ}
+  # A line the layer turned around: «… طرفا مدنيا يمكن لل ،».
+  - {arts: [7], wrong: 'جمعيات المعلن أنها ذات منفعة عامة أن تنتصب طرفا مدنيا يمكن لل ،', right: 'يمكن للجمعيات المعلن أنها ذات منفعة عامة أن تنتصب طرفا مدنيا،'}

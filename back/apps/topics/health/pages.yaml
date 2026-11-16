@@ -1,0 +1,318 @@
+# The health topic's pages (the health review, S12, S14, S16): the patient's rights from the code of medical
+# ethics (decree 2.21.225, already on the site), the regimes, AMO Tadamon said honestly, the public hospital, medicines, a
+# birth, beliefs, organ donation and disability. Every fact names its articles, as the site holds them on 27 Oct 2026.
+
+- key: rights
+  title: {ar: 'حقوقك عند الطبيب', fr: 'Vos droits chez le médecin'}
+  lead:
+    ar: 'مدونة أخلاقيات مهنة الطب (المرسوم 2.21.225) تكتب ما يجب على الطبيب نحوك: الإسعاف، والسر، والإخبار بالتشخيص والمخاطر والتكلفة، والموافقة، والملف الطبي.'
+    fr: 'Le code de déontologie médicale (décret 2.21.225) écrit ce que le médecin vous doit : le secours, le secret, l’information sur le diagnostic, les risques et le coût, le consentement, le dossier.'
+  sections:
+    - title: {ar: 'أن تفهم', fr: 'Comprendre'}
+      facts:
+        - text: {ar: 'ما عدا حالات الاستعجال أو الاستحالة، يخبرك الطبيب إخبارا صادقا، بلغة واضحة تناسب فهمك: بالتشخيص الكامل، وبالفحوصات الواجب إجراؤها ومخاطرها، وبخطة العلاج المرتقبة وتكلفتها.', fr: 'Sauf urgence ou impossibilité, le médecin vous informe loyalement, dans une langue claire adaptée à votre compréhension : du diagnostic complet, des examens et de leurs risques, du plan de soins envisagé et de son coût.'}
+          cites: [/ma/decret/2-21-225/art_40]
+        - text: {ar: 'ولك أن ترفض أن تخبر؛ يكتب الرفض ويوقع عليه ويدون في ملفك، ولك أن تسحبه في كل حين.', fr: 'Vous pouvez refuser d’être informé ; ce refus est écrit, signé et versé au dossier, et vous pouvez le retirer à tout moment.'}
+          cites: [/ma/decret/2-21-225/art_41]
+    - title: {ar: 'أن توافق أو ترفض', fr: 'Consentir ou refuser'}
+      facts:
+        - text: {ar: 'يحصل الطبيب في كل الأحوال على موافقتك قبل كل تدخل وقائي أو تشخيصي أو علاجي، مكتوبة أو ضمنية، ولك أن تتراجع عنها في أية لحظة.', fr: 'Le médecin recueille dans tous les cas votre consentement avant tout acte préventif, diagnostique ou thérapeutique, écrit ou tacite ; vous pouvez le retirer à tout moment.'}
+          cites: [/ma/decret/2-21-225/art_42]
+        - text: {ar: 'وللقاصر يحصل على موافقة الأبوين أو النائب الشرعي، ويأخذ رأي القاصر بعين الاعتبار قدر الإمكان؛ وفي الاستعجال يقدم العلاج الضروري.', fr: 'Pour un mineur, il recueille le consentement des parents ou du représentant légal et tient compte autant que possible de l’avis du mineur ; en urgence, il donne les soins nécessaires.'}
+          cites: [/ma/decret/2-21-225/art_43]
+    - title: {ar: 'السر', fr: 'Le secret'}
+      facts:
+        - text: {ar: 'يلتزم الطبيب بكتمان السر المهني حماية لمصالحك، ويشمل كل ما علمه أو رآه أو اطلع عليه بمناسبة مهنته، لا ما بحت به فقط.', fr: 'Le médecin est tenu au secret dans votre intérêt ; il couvre tout ce qu’il a appris, vu ou constaté dans l’exercice de sa profession, pas seulement ce que vous lui avez confié.'}
+          cites: [/ma/decret/2-21-225/art_11]
+    - title: {ar: 'الملف والطبيب الذي تختاره', fr: 'Le dossier et le médecin de votre choix'}
+      facts:
+        - text: {ar: 'تطلع على العناصر الموضوعية في ملفك، بنفسك أو بواسطة طبيب، وتحصل على نسخة منه على نفقتك.', fr: 'Vous consultez les éléments objectifs de votre dossier, vous-même ou par un médecin, et en obtenez copie à vos frais.'}
+          cites: [/ma/decret/2-21-225/art_49]
+        - text: {ar: 'وإذا اخترت طبيبا آخر، يوافيه طبيبك بكل ما يلزم لمواصلة العلاج، ولا سيما ملفك الكامل.', fr: 'Si vous choisissez un autre médecin, le vôtre lui transmet ce qu’il faut pour poursuivre les soins, notamment votre dossier complet.'}
+          cites: [/ma/decret/2-21-225/art_14]
+    - title: {ar: 'الشهادة والأتعاب', fr: 'Certificats et honoraires'}
+      facts:
+        - text: {ar: 'يحرر الطبيب الشهادات والتقارير طبقا لما عاينه، ويمنع عليه منح تقرير متحيز أو شهادة مجاملة.', fr: 'Le médecin établit certificats et rapports d’après ses constatations ; il ne peut délivrer de rapport tendancieux ni de certificat de complaisance.'}
+          cites: [/ma/decret/2-21-225/art_52]
+        - text: {ar: 'ويمنع عليه المطالبة بمبلغ جزافي مقابل نجاعة علاج، أو بأتعاب جزافية تغطي في الوقت نفسه الخدمات والأدوية أو الأجهزة.', fr: 'Il ne peut réclamer de somme forfaitaire pour l’efficacité d’un traitement, ni d’honoraires forfaitaires couvrant à la fois soins, médicaments ou appareils.'}
+          cites: [/ma/decret/2-21-225/art_55]
+    - title: {ar: 'في الخطر', fr: 'En danger'}
+      facts:
+        - text: {ar: 'كل طبيب، كيفما كان قطاعه، يسعف المريض أو الجريح في خطر وشيك، إلا لقوة قاهرة.', fr: 'Tout médecin, quel que soit son secteur, secourt le malade ou blessé en danger imminent, sauf force majeure.'}
+          cites: [/ma/decret/2-21-225/art_9]
+
+- key: regimes
+  title: {ar: 'شكون مغطي، وعند من؟', fr: 'Qui est couvert, et auprès de qui ?'}
+  lead:
+    ar: 'القانون 65.00 يريد التغطية للجميع: بالمساهمة لمن يستطيع، وبالتضامن لمن لا يستطيع. كل نظام بقانونه، وكلها اليوم لدى الضمان الاجتماعي ما عدا الموظفين حتى 31 يناير 2027.'
+    fr: 'La loi 65.00 veut couvrir tout le monde : par la cotisation qui peut, par la solidarité qui ne peut pas. Chaque régime a sa loi ; tous sont à la CNSS, sauf les fonctionnaires jusqu’au 31 janvier 2027.'
+  cites: [/ma/loi/65-00/art_1]
+  sections:
+    - title: {ar: 'العائلة معك', fr: 'Votre famille avec vous'}
+      facts:
+        - text: {ar: 'يشمل التأمين، إضافة إلى المؤمن، زوجه أو زوجاته، والأولاد المتكفل بهم حتى 21 سنة، والأطفال المكفولين، بشرط ألا يستفيدوا من تأمين آخر؛ ويمكن تمديد السن إلى 26 سنة للأولاد الذين يتابعون دراسات عليا، بما يثبت ذلك.', fr: 'L’assurance couvre, outre l’assuré, son ou ses conjoints, les enfants à charge jusqu’à 21 ans et les enfants recueillis en kafala, s’ils n’ont pas d’autre assurance ; l’âge peut être porté à 26 ans pour les enfants en études supérieures, sur justificatif.'}
+          cites: [/ma/loi/65-00/art_5, /ma/loi/116-12/art_29]
+        - text: {ar: 'ومن فاتح فبراير 2027، يمدد السن إلى 30 سنة للأولاد غير المتزوجين الذين يتابعون دراستهم في التعليم العالي أو التكوين المهني.', fr: 'Dès le 1er février 2027, l’âge est porté à 30 ans pour les enfants non mariés en enseignement supérieur ou en formation professionnelle.'}
+          cites: [/ma/loi/54-23/art_1, /ma/loi/54-23/art_19]
+    - title: {ar: 'الأجراء', fr: 'Les salariés'}
+      facts:
+        - text: {ar: 'في الضمان الاجتماعي: 70% من التعريفة المرجعية الوطنية، و90% للأمراض الخطيرة أو الطويلة أو الباهظة في المستشفيات العمومية.', fr: 'À la CNSS : 70 % du tarif national de référence, 90 % pour les maladies graves, longues ou coûteuses à l’hôpital public.'}
+          cites: [/ma/decret/2-05-737/art_2]
+        - text: {ar: 'المشغل الذي لم يسجل مأجوريه يعاقب بغرامة 1.000 درهم عن كل أجير، ويحتفظ الأجراء بحق اللجوء إلى القضاء.', fr: 'L’employeur qui n’immatricule pas ses salariés encourt 1 000 DH d’amende par salarié ; les salariés gardent le droit d’agir en justice.'}
+          cites: [/ma/loi/65-00/art_131]
+    - title: {ar: 'الموظفون', fr: 'Les fonctionnaires'}
+      facts:
+        - text: {ar: 'في الصندوق الوطني لمنظمات الاحتياط الاجتماعي: 80% في العلاج الخارجي، و90% في الاستشفاء ترتفع إلى 100% في المستشفيات العمومية، و70% من الثمن العمومي للأدوية المقبول إرجاع مصاريفها.', fr: 'À la CNOPS : 80 % en ambulatoire, 90 % à l’hôpital porté à 100 % à l’hôpital public, 70 % du prix public des médicaments remboursables.'}
+          cites: [/ma/decret/2-05-736/art_1]
+        - text: {ar: 'ومن فاتح فبراير 2027 ينتقل تدبير هذا التأمين إلى الصندوق الوطني للضمان الاجتماعي.', fr: 'Dès le 1er février 2027, la gestion de cette assurance passe à la CNSS.'}
+          cites: [/ma/loi/54-23/art_19, /ma/loi/54-23/art_6]
+    - title: {ar: 'من لا يستطيع الأداء', fr: 'Qui ne peut pas cotiser'}
+      facts:
+        - text: {ar: 'أمو تضامن: تؤدي الدولة الاشتراك، ويدبره الضمان الاجتماعي، لمن مؤشره تحت العتبة 9,3264284.', fr: 'L’AMO Tadamon : l’État paie la cotisation, la CNSS gère, pour qui a un indice sous le seuil de 9,3264284.'}
+          cites: [/ma/decret/2-22-797/art_1, /ma/decret/2-22-923/art_1]
+          more: pages/tadamon
+    - title: {ar: 'من يستطيع ولا يشتغل', fr: 'Qui peut cotiser sans travailler'}
+      facts:
+        - text: {ar: 'أمو الشامل: اشتراك شهري من 144 إلى 1.164 درهما حسب المؤشر، يسري التسجيل من فاتح الشهر الموالي، ثم ثلاثة أشهر من التدريب.', fr: 'L’AMO Achamil : de 144 à 1 164 DH par mois selon l’indice ; effet le 1er du mois suivant, puis trois mois de stage.'}
+          cites: [/ma/loi/60-22/art_3, /ma/loi/60-22/art_4, /ma/decret/2-23-690/art_6, /ma/loi/60-22/art_5, /ma/loi/60-22/art_7]
+    - title: {ar: 'المستقلون', fr: 'Les indépendants'}
+      facts:
+        - text: {ar: 'نظام القانون 98.15: ثلاثة أشهر من التدريب، والتصريح بكل تغيير داخل ثلاثين يوما.', fr: 'Le régime de la loi 98.15 : trois mois de stage, tout changement déclaré sous trente jours.'}
+          cites: [/ma/loi/98-15/art_13, /ma/loi/98-15/art_9]
+    - title: {ar: 'الطلبة', fr: 'Les étudiants'}
+      facts:
+        - text: {ar: 'حتى 31 يناير 2027 تأمين الطلبة (القانون 116.12). ومن فاتح فبراير 2027 ينسخ، ويستفيد تلقائيا من أمو تضامن الطلبة الذين كانت الدولة تؤدي عنهم المساهمة، ويغطى الطلبة الأجانب.', fr: 'Jusqu’au 31 janvier 2027, l’AMO des étudiants (loi 116.12). Dès le 1er février 2027, elle est abrogée ; les étudiants dont l’État payait la cotisation passent d’office à l’AMO Tadamon, et les étudiants étrangers sont couverts.'}
+          cites: [/ma/loi/54-23/art_13, /ma/loi/54-23/art_14, /ma/loi/54-23/art_15]
+
+- key: tadamon
+  title: {ar: 'أمو تضامن: الدخول، والبقاء، والتوقف', fr: 'L’AMO Tadamon : y entrer, y rester, la perdre'}
+  lead:
+    ar: 'التأمين الذي تؤدي الدولة اشتراكه عن من لا يستطيع، ويدبره الضمان الاجتماعي. تدخله بطلب، وتبقى فيه ما دام مؤشرك تحت العتبة، ويتوقف إذا تجاوزها.'
+    fr: 'L’assurance dont l’État paie la cotisation pour qui ne peut pas, gérée par la CNSS. On y entre sur demande, on y reste tant que l’indice est sous le seuil, elle s’arrête au-delà.'
+  sections:
+    - title: {ar: 'الدخول', fr: 'Y entrer'}
+      facts:
+        - text: {ar: 'يقدم الطلب لدى السلطة الإدارية المحلية بملء استمارة يمكن تحميلها من الموقع المعد لذلك، أو إلكترونيا عبر الموقع نفسه؛ ويحدد نموذج الاستمارة بقرار مشترك.', fr: 'La demande se dépose auprès de l’autorité administrative locale en remplissant un formulaire téléchargeable sur le site dédié, ou en ligne sur ce site ; le modèle est fixé par arrêté conjoint.'}
+          cites: [/ma/decret/2-22-797/art_3]
+        - text: {ar: 'والعتبة التي يجب أن يكون مؤشرك تحتها محددة بمرسوم: 9,3264284.', fr: 'Le seuil sous lequel doit se trouver votre indice est fixé par décret : 9,3264284.'}
+          cites: [/ma/decret/2-22-923/art_1]
+        - text: {ar: 'والذين كانوا يستفيدون من نظام المساعدة الطبية (راميد) انتقلوا إليه بكيفية تلقائية، دون طلب.', fr: 'Les bénéficiaires du RAMED y sont passés d’office, sans demande.'}
+          cites: [/ma/loi/27-22/art_8]
+    - title: {ar: 'في المستشفى العمومي', fr: 'À l’hôpital public'}
+      facts:
+        - text: {ar: 'يتحمل الضمان الاجتماعي مباشرة مصاريف خدماتك في المؤسسات الصحية العمومية، وتتحمل الدولة الجزء الباقي في الخدمات المحددة بنص تنظيمي.', fr: 'La CNSS prend en charge directement vos soins dans les établissements publics ; l’État paie la part restante pour les prestations fixées par voie réglementaire.'}
+          cites: [/ma/loi/65-00/art_120-bis]
+        - text: {ar: 'وإذا توفرت لدى المستشفيات العمومية معطيات مرضك الخطير، تحدد وضعيتك على أساسها دون وثائق أو مراقبة طبية.', fr: 'Si les hôpitaux publics disposent des données de votre maladie grave, votre situation est établie sur cette base, sans pièces ni contrôle.'}
+          cites: [/ma/decret/2-22-797/art_15]
+    - title: {ar: 'التوقف', fr: 'L’arrêt'}
+      facts:
+        - text: {ar: 'يتحقق بشكل دوري من بقاء مؤشرك تحت العتبة، وتخبر وزارة الداخلية الضمان الاجتماعي بمن لم يعد كذلك، فيوقف استفادته؛ وتتوقف أيضا إذا صرت خاضعا لنظام آخر.', fr: 'Il est vérifié périodiquement que votre indice reste sous le seuil ; l’Intérieur signale à la CNSS ceux qui ne le sont plus, et elle suspend leur bénéfice ; il cesse aussi si vous relevez d’un autre régime.'}
+          cites: [/ma/decret/2-22-797/art_5]
+          more: journeys/tadamon-lost
+        - text: {ar: 'كل غش أو تصريح كاذب للاستفادة من هذا النظام يعرض صاحبه لعقوبات القانون الجنائي، مع إرجاع مصاريف الخدمات.', fr: 'Toute fraude ou fausse déclaration pour bénéficier de ce régime expose aux peines du code pénal, avec remboursement des prestations.'}
+          cites: [/ma/loi/65-00/art_142]
+    - title: {ar: 'ما لا نقوله', fr: 'Ce que nous ne disons pas'}
+      facts:
+        - text: {ar: 'لا يوجد رقم رسمي منشور عن عدد من توقفت استفادتهم من أمو تضامن؛ لذلك لا ننقل أرقام الصحافة هنا.', fr: 'Aucun chiffre officiel publié ne dit combien ont perdu l’AMO Tadamon ; nous ne reprenons donc pas ceux de la presse.'}
+
+- key: hospital
+  title: {ar: 'المستشفى العمومي: من يؤدي ماذا', fr: 'L’hôpital public : qui paie quoi'}
+  lead:
+    ar: 'ما تؤديه في المستشفى العمومي يتوقف على تغطيتك؛ ويعفي المرسوم 2.99.80 من الأداء من لا تسمح قدراته، ومن له مجانية بنص، ومرضى البرامج الصحية المحددة.'
+    fr: 'Ce que vous payez à l’hôpital public dépend de votre couverture ; le décret 2.99.80 exonère qui n’en a pas les moyens, qui bénéficie de la gratuité par un texte, et les malades des programmes de santé listés.'
+  sections:
+    - title: {ar: 'من يعفى', fr: 'Qui est exonéré'}
+      facts:
+        - text: {ar: 'يعفى من أداء مجموع أو بعض التعريفات: من لا تسمح قدراته المادية بتحملها، ومن يستفيد من مجانية العلاج والاستشفاء بموجب نص قانوني، والمصابون بأمراض مدرجة في برامج صحية تحدد قائمتها بقرار لوزير الصحة.', fr: 'Sont exonérés de tout ou partie des tarifs : qui n’en a pas les moyens, qui bénéficie de la gratuité des soins par un texte, et les malades des programmes de santé dont la liste est fixée par arrêté du ministre.'}
+          cites: [/ma/decret/2-99-80/art_2]
+    - title: {ar: 'حسب تغطيتك', fr: 'Selon votre couverture'}
+      facts:
+        - text: {ar: 'أمو تضامن: تحمل مباشر من الضمان الاجتماعي، والدولة تؤدي الباقي في الخدمات المحددة.', fr: 'AMO Tadamon : prise en charge directe par la CNSS, l’État paie le reste pour les prestations listées.'}
+          cites: [/ma/loi/65-00/art_120-bis]
+        - text: {ar: 'الأجراء: 90% للأمراض الخطيرة أو الطويلة أو الباهظة في المستشفيات العمومية.', fr: 'Salariés : 90 % pour les maladies graves, longues ou coûteuses à l’hôpital public.'}
+          cites: [/ma/decret/2-05-737/art_2]
+        - text: {ar: 'الموظفون: 100% للاستشفاء والعمليات في المستشفيات العمومية.', fr: 'Fonctionnaires : 100 % pour l’hospitalisation et la chirurgie à l’hôpital public.'}
+          cites: [/ma/decret/2-05-736/art_1]
+
+- key: medicines
+  title: {ar: 'الدواء: الثمن، والوصفة، والحراسة', fr: 'Le médicament : le prix, l’ordonnance, la garde'}
+  lead:
+    ar: 'التعريفة المرجعية للتعويض هي الثمن العمومي للدواء، والثمن يحدد وفق المرسوم 2.13.852 كما غيره المرسوم 2.25.631 في غشت 2026؛ وعامل العمالة أو الإقليم يحدد أوقات الصيدليات والحراسة.'
+    fr: 'Le tarif de référence du remboursement est le prix public du médicament, fixé selon le décret 2.13.852 modifié par le décret 2.25.631 en août 2026 ; le gouverneur fixe les horaires des pharmacies et la garde.'
+  sections:
+    - title: {ar: 'الثمن', fr: 'Le prix'}
+      facts:
+        - text: {ar: 'بالنسبة للأدوية، التعريفة المرجعية الوطنية للتعويض هي الثمن العمومي للأدوية.', fr: 'Pour les médicaments, le tarif national de référence est le prix public.'}
+          cites: [/ma/loi/65-00/art_12]
+        - text: {ar: 'غير المرسوم 2.25.631 (الجريدة الرسمية 7532، 6 غشت 2026) قواعد تحديد ثمن البيع للعموم، وأجاز اتفاقيات لتخفيض أثمنة الأدوية ذات الأثر المالي الكبير.', fr: 'Le décret 2.25.631 (BO 7532, 6 août 2026) a modifié les règles du prix public de vente et permis des conventions de baisse pour les médicaments à fort impact financier.'}
+          cites: [/ma/decret/2-25-631/art_1, /ma/decret/2-25-631/art_4]
+          more: reform/medicine-prices-2026
+    - title: {ar: 'الوصفة', fr: 'L’ordonnance'}
+      facts:
+        - text: {ar: 'يتأكد الصيدلي قبل التسليم من أن الوصفة واضحة، وتحمل تاريخها وتوقيع محررها بخط يده وختمه واسمه وصفته وعنوانه، واسم الطفل وسنه إذا كان دون 12 سنة.', fr: 'Avant de délivrer, le pharmacien vérifie que l’ordonnance est lisible et porte sa date, la signature manuscrite, le cachet, le nom, la qualité et l’adresse du prescripteur, et le nom et l’âge d’un enfant de moins de 12 ans.'}
+          cites: [/ma/loi/17-04/art_34]
+    - title: {ar: 'صيدلية الحراسة', fr: 'La pharmacie de garde'}
+      facts:
+        - text: {ar: 'يحدد عامل العمالة أو الإقليم أوقات فتح الصيدليات وإغلاقها وكيفيات الحراسة، باقتراح من المجلس الجهوي لهيئة الصيادلة.', fr: 'Le gouverneur de la préfecture ou de la province fixe les horaires d’ouverture et de fermeture des pharmacies et les modalités de garde, sur proposition du conseil régional de l’Ordre des pharmaciens.'}
+          cites: [/ma/loi/17-04/art_111]
+
+- key: birth
+  title: {ar: 'الحمل والولادة: التأمين', fr: 'La grossesse et l’accouchement : l’assurance'}
+  lead:
+    ar: 'يصرح بالحمل الذي عوين طبيا ستة أشهر على الأقل قبل التاريخ المتوقع للولادة، ويشمل الحق في الخدمات مضاعفات الحمل والولادة وتوابعها.'
+    fr: 'La grossesse constatée médicalement se déclare au moins six mois avant la date prévue de l’accouchement ; le droit aux prestations couvre les complications de la grossesse et de l’accouchement et leurs suites.'
+  sections:
+    - title: {ar: 'التصريح', fr: 'La déclaration'}
+      facts:
+        - text: {ar: 'يجب إبلاغ حالات الحمل التي تمت معاينتها طبيا إلى الهيئة المكلفة بالتدبير ستة أشهر على الأقل قبل التاريخ المتوقع للولادة، ويشمل الحق في الخدمات المضاعفات المحتملة للحمل والولادة وتوابعها.', fr: 'Les grossesses constatées médicalement sont déclarées à l’organisme gestionnaire au moins six mois avant la date prévue ; le droit aux prestations couvre les complications éventuelles de la grossesse et de l’accouchement et leurs suites.'}
+          cites: [/ma/decret/2-05-733/art_13]
+    - title: {ar: 'التتبع الطبي للحمل والولادة', fr: 'Le suivi médical de la grossesse et de l’accouchement'}
+      facts:
+        - text: {ar: 'تستفيد المرأة الحامل التي يتطور حملها بشكل عادي من أربع استشارات قبل الولادة، عند طبيب أو قابلة مختصة في التوليد.', fr: 'La femme enceinte dont la grossesse évolue normalement bénéficie de quatre consultations prénatales, chez un médecin ou une sage-femme.'}
+          cites: [/ma/arrete/2519-05/art_2, /ma/arrete/2519-05/art_3]
+        - text: {ar: 'تتم الولادة داخل مؤسسة صحية عمومية أو خاصة، وبعدها ثلاث استشارات: عند نهاية الاستشفاء، وبعد ثمانية أيام، وبين اليوم الأربعين واليوم الخمسين بعد الولادة.', fr: 'L’accouchement a lieu dans un établissement de santé public ou privé, suivi de trois consultations : à la sortie, après huit jours, et entre le quarantième et le cinquantième jour après l’accouchement.'}
+          cites: [/ma/arrete/2519-05/art_9, /ma/arrete/2519-05/art_10]
+        - text: {ar: 'تدون معطيات الحمل والولادة وتتبعهما في «الدفتر الصحي للمرأة»، تحتفظ به المرأة ويسجل فيه الطبيب أو القابلة كل خدمة.', fr: 'Les données de la grossesse, de l’accouchement et du suivi sont notées dans le « carnet de santé de la femme », qu’elle garde et où le médecin ou la sage-femme inscrit chaque prestation.'}
+          cites: [/ma/arrete/2519-05/art_11]
+    - title: {ar: 'في المستشفى العمومي', fr: 'À l’hôpital public'}
+      facts:
+        - text: {ar: 'المرأة المقبلة على الولادة التي تحضر في حالة استعجال تستقبل وتفحص وتقبل للاستشفاء ولو لم يكن هناك سرير فارغ، ولا يشرع في الفوترة إلا بعد الالتزام بالتكفل بها.', fr: 'La femme sur le point d’accoucher qui arrive en urgence est accueillie, examinée et hospitalisée même sans lit libre ; la facturation ne commence qu’après l’engagement de la prise en charge.'}
+          cites: [/ma/arrete/456-11/art_42]
+    - title: {ar: 'ما لم نجده', fr: 'Ce que nous n’avons pas trouvé'}
+      facts:
+        - text: {ar: 'مجانية الولادة في المستشفيات العمومية سياسة أعلنتها وزارة الصحة، ولم نجد نصا قانونيا ينص عليها؛ ننتظر أن يتحقق منها شخص قبل أن نقول أكثر.', fr: 'La gratuité de l’accouchement à l’hôpital public est une politique annoncée par le ministère ; nous n’avons pas trouvé de texte qui la prévoie, et attendons qu’une personne le vérifie.'}
+
+- key: beliefs
+  title: {ar: 'ما يقال، وما يقوله القانون', fr: 'Ce qu’on entend, et ce que dit la loi'}
+  lead:
+    ar: 'جمل تتردد عن الصحة والتأمين، وكل واحدة بجانب ما تقوله النصوص.'
+    fr: 'Des phrases qu’on entend sur la santé et l’assurance, chacune à côté de ce que disent les textes.'
+  sections:
+    - title: {ar: '«المصحة عندها الحق تطلب شيك ضمان»', fr: '« La clinique peut exiger un chèque de garantie »'}
+      facts:
+        - text: {ar: 'في التحمل، يمنع على المصحة أن تطلب ضمانة نقدية أو شيكا، ما عدا المبلغ الباقي عليك، وتسلمك وصلا؛ والمخالفة غرامتها من 10.000 إلى 50.000 درهم.', fr: 'En prise en charge, la clinique ne peut exiger ni garantie ni chèque, hormis votre part, et remet un reçu ; l’infraction coûte de 10 000 à 50 000 DH d’amende.'}
+          cites: [/ma/loi/131-13/art_75, /ma/loi/131-13/art_115]
+    - title: {ar: '«الكنوبس تحيد»', fr: '« La CNOPS est supprimée »'}
+      facts:
+        - text: {ar: 'القانون 54.23 يدخل حيز التنفيذ بعد اثني عشر شهرا من فاتح الشهر الموالي لنشره (29 يناير 2026): فاتح فبراير 2027. ومن بعده يدبر الضمان الاجتماعي تأمين الموظفين، وتستمر الاتفاقيات مع التعاضديات لمدة يحددها مرسوم.', fr: 'La loi 54.23 entre en vigueur douze mois après le 1er du mois suivant sa publication (29 janvier 2026) : le 1er février 2027. Ensuite la CNSS gère l’assurance des fonctionnaires ; les conventions avec les mutuelles continuent pour une durée fixée par décret.'}
+          cites: [/ma/loi/54-23/art_19, /ma/loi/54-23/art_12]
+    - title: {ar: '«راميد مازال خدام»', fr: '« Le RAMED existe toujours »'}
+      facts:
+        - text: {ar: 'حل محله نظام التأمين الإجباري الأساسي عن المرض الخاص بغير القادرين على تحمل واجبات الاشتراك، أي أمو تضامن، الذي يدبره الضمان الاجتماعي.', fr: 'Il a été remplacé par le régime d’AMO des personnes ne pouvant cotiser, l’AMO Tadamon, géré par la CNSS.'}
+          cites: [/ma/loi/27-22/art_8, /ma/decret/2-22-797/art_1]
+    - title: {ar: '«الطبيب ما يقدرش يقول ليا الثمن»', fr: '« Le médecin ne peut pas dire le prix »'}
+      facts:
+        - text: {ar: 'يخبرك بخطة العلاج المرتقبة وتكلفتها، إلا في الاستعجال أو الاستحالة.', fr: 'Il vous informe du plan de soins et de son coût, sauf urgence ou impossibilité.'}
+          cites: [/ma/decret/2-21-225/art_40]
+    - title: {ar: '«ورقة العلاج نصيفطها فاش ما بغيت»', fr: '« J’envoie la feuille de soins quand je veux »'}
+      facts:
+        - text: {ar: 'داخل شهرين من أول عمل طبي، أو ستين يوما من نهاية علاج متواصل؛ وإلا سقط الحق إلا لقوة قاهرة.', fr: 'Dans les deux mois du premier acte, ou soixante jours après la fin d’un traitement continu ; sinon le droit tombe, sauf force majeure.'}
+          cites: [/ma/decret/2-05-733/art_12]
+    - title: {ar: '«الشهادة الطبية نجيبها فاش ما بغيت»', fr: '« Le certificat médical, quand je veux »'}
+      facts:
+        - text: {ar: 'تخبر مشغلك خلال 48 ساعة، والشهادة إذا تجاوز الغياب أربعة أيام.', fr: 'Vous prévenez l’employeur sous 48 heures, et le certificat au-delà de quatre jours d’absence.'}
+          cites: [/ma/loi/65-99/art_271]
+
+- key: donation
+  title: {ar: 'التبرع بالأعضاء', fr: 'Le don d’organes'}
+  lead:
+    ar: 'التبرع عمل مجاني لا يؤدى عنه أجر؛ يعبر المتبرع الحي عن موافقته أمام رئيس المحكمة الابتدائية، ولكل راشد أن يسجل قبوله أو رفضه للأخذ من أعضائه بعد وفاته.'
+    fr: 'Le don est gratuit et ne se paie jamais ; le donneur vivant consent devant le président du tribunal de première instance, et tout majeur peut enregistrer son accord ou son refus d’un prélèvement après sa mort.'
+  sections:
+    - title: {ar: 'مجاني دائما', fr: 'Toujours gratuit'}
+      facts:
+        - text: {ar: 'التبرع بعضو بشري أو الإيصاء به عمل مجاني لا يمكن أن يؤدى عنه أجر أو أن يكون محل معاملة تجارية؛ ولا تستحق إلا مصاريف العمليات والاستشفاء المتصلة بها.', fr: 'Le don ou le legs d’un organe est gratuit : il ne peut être rémunéré ni faire l’objet d’une transaction ; seuls les frais des opérations et de l’hospitalisation sont dus.'}
+          cites: [/ma/loi/16-98/art_5]
+        - text: {ar: 'ولا يجوز إلا لغرض علاجي أو علمي.', fr: 'Il n’est permis que dans un but thérapeutique ou scientifique.'}
+          cites: [/ma/loi/16-98/art_3]
+    - title: {ar: 'المتبرع الحي', fr: 'Le donneur vivant'}
+      facts:
+        - text: {ar: 'يعبر المتبرع عن موافقته أمام رئيس المحكمة الابتدائية، أو قاض يعينه، يساعده طبيبان يشرحان له أبعاد التبرع.', fr: 'Le donneur consent devant le président du tribunal de première instance, ou un juge qu’il désigne, assisté de deux médecins qui lui expliquent la portée du don.'}
+          cites: [/ma/loi/16-98/art_10]
+        - text: {ar: 'ولا يجوز الأخذ من قاصر أو من راشد تحت الحماية القانونية، إلا الخلايا الجذعية المكونة للدم لفائدة أخيه أو أخته بشروط مشددة.', fr: 'Aucun prélèvement sur un mineur ou un majeur protégé, sauf des cellules souches hématopoïétiques au profit d’un frère ou d’une sœur, à des conditions strictes.'}
+          cites: [/ma/loi/16-98/art_11]
+    - title: {ar: 'بعد الوفاة', fr: 'Après la mort'}
+      facts:
+        - text: {ar: 'لكل راشد كامل الأهلية أن يعبر في حياته عن ترخيصه أو منعه أخذ أعضائه بعد مماته؛ يسجل تصريحه بلا صوائر لدى رئيس المحكمة الابتدائية لمحل إقامته.', fr: 'Tout majeur capable peut exprimer de son vivant son accord ou son refus d’un prélèvement après sa mort ; sa déclaration est enregistrée sans frais auprès du président du tribunal de première instance de son domicile.'}
+          cites: [/ma/loi/16-98/art_13, /ma/loi/16-98/art_14]
+        - text: {ar: 'ومن لم يعبر عن رفضه، يمكن الأخذ منه في مستشفيات عمومية معتمدة، إلا إذا اعترض الزوج، ثم الأصول، ثم الفروع.', fr: 'Chez qui n’a pas exprimé de refus, le prélèvement est possible dans les hôpitaux publics agréés, sauf opposition du conjoint, à défaut des ascendants, à défaut des descendants.'}
+          cites: [/ma/loi/16-98/art_16]
+
+- key: disability
+  title: {ar: 'بطاقة شخص في وضعية إعاقة', fr: 'La carte de personne en situation de handicap'}
+  lead:
+    ar: 'تطبيقا للقانون الإطار 97.13، تمنح السلطة الحكومية المكلفة بالأشخاص في وضعية إعاقة بطاقة خاصة، بطلب في منصة إلكترونية وتقييم من لجنة طبية.'
+    fr: 'En application de la loi-cadre 97.13, l’autorité chargée des personnes en situation de handicap délivre une carte, sur demande en ligne et après évaluation par une commission médicale.'
+  sections:
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      facts:
+        - text: {ar: 'يقدم الطلب بتعبئة استمارة في المنصة الإلكترونية، مرفقا بنسخة من البطاقة الوطنية، وبعقد الازدياد للقاصر، وبالتقرير الطبي.', fr: 'La demande se fait en remplissant un formulaire sur la plateforme en ligne, avec la copie de la CNIE, l’acte de naissance pour un mineur, et le rapport médical.'}
+          cites: [/ma/decret/2-22-1075/art_3, /ma/decret/2-22-1075/art_4]
+    - title: {ar: 'التقييم', fr: 'L’évaluation'}
+      facts:
+        - text: {ar: 'تقيم لجنة طبية على المستوى الترابي القدرات استنادا إلى التقرير الطبي، ولها أن تستدعي المعني، بحضور أبويه أو أحد أقاربه عند الاقتضاء؛ ويقيم أيضا مستوى المشاركة الاجتماعية وعوامل المحيط.', fr: 'Une commission médicale territoriale évalue les capacités sur la base du rapport médical et peut convoquer l’intéressé, avec ses parents ou un proche au besoin ; la participation sociale et les facteurs d’environnement sont aussi évalués.'}
+          cites: [/ma/decret/2-22-1075/art_5, /ma/decret/2-22-1075/art_2]
+    - title: {ar: 'القانون الإطار', fr: 'La loi-cadre'}
+      facts:
+        - text: {ar: 'البطاقة تمنح تطبيقا للمادة 23 من القانون الإطار 97.13 المتعلق بحماية حقوق الأشخاص في وضعية إعاقة والنهوض بها.', fr: 'La carte est délivrée en application de l’article 23 de la loi-cadre 97.13 relative à la protection et à la promotion des droits des personnes en situation de handicap.'}
+          cites: [/ma/decret/2-22-1075/art_1, /ma/loi/97-13/art_23]
+
+# The long-illness list (S19's finder reads it): order 2518-05's annex, its 41 illnesses as the BO printed them (read
+# by Haiku from BO 5384's scan; to be read against the page image, S4), and its article 2's costly treatments.
+- key: illnesses
+  title: {ar: 'لائحة الأمراض الطويلة والمكلفة', fr: 'La liste des maladies longues et coûteuses'}
+  lead:
+    ar: 'الأمراض الخطيرة والأمراض التي يترتب عنها عجز يتطلب علاجا طويل الأمد أو باهظ الثمن، التي تخول الإعفاء الكلي أو الجزئي من الجزء الباقي على عاتق المؤمن، كما يحددها قرار وزير الصحة رقم 2518.05.'
+    fr: 'Les maladies graves ou invalidantes nécessitant des soins de longue durée ou particulièrement coûteux, qui ouvrent droit à l’exonération totale ou partielle de la part de l’assuré, telles que les fixe l’arrêté n° 2518-05.'
+  cites: [/ma/arrete/2518-05/art_1, /ma/arrete/2518-05/annex, /ma/loi/65-00/art_9]
+  sections:
+    - title: {ar: 'الأمراض الطويلة (41)', fr: 'Les maladies de longue durée (41)'}
+      table:
+        head: [{ar: 'رقم', fr: 'N°'}, {ar: 'بالعربية', fr: 'En arabe'}, {ar: 'بالفرنسية', fr: 'En français'}]
+        cites: [/ma/arrete/2518-05/annex]
+        rows:
+          - ['1', 'نزيف أو إقفار بالدماغ أو بالنخاع الشوكي', 'Accident vasculaire cérébral ou médullaire ischémique ou hémorragique']
+          - ['2', 'الأورام الخبيثة للنسيج اللمفاوي أو لمكونات الدم ( سرطان الدم )', 'Affections malignes du tissu lymphatique ou hématopoïétique']
+          - ['3', 'فقر الدم الحلدسي المزمن و الشديد', 'Anémies hémolytiques chroniques sévères']
+          - ['4', 'ضمور النخاع العظمي الحاد', 'Aplasies médullaires sévères']
+          - ['5', 'الإعتلالات المزمنة للشرايين', 'Artériopathies chroniques']
+          - ['6', 'مرض الربو الشديد', 'Asthme sévère']
+          - ['7', 'إعتلالات القلب الخلقية', 'Cardiopathies congénitales']
+          - ['8', 'تشمع الكبد', 'Cirrhoses du foie']
+          - ['9', 'داء السكري المعتمد على الأنسولين و داء السكري غير المعتمد على الأنسولين', 'Diabète insulinodépendant et diabète non insulinodépendant']
+          - ['10', 'مرض الصرع الحاد', 'Epilepsie grave']
+          - ['11', 'حالة العجز العقلي', 'Etat de déficit mental']
+          - ['12', 'الحالات الحادة للأمراض العصبية العضلية', 'Formes graves des affections neurologiques et neuromusculaires']
+          - ['13', 'الزرق المزمن', 'Glaucome chronique']
+          - ['14', 'ارتفاع ضغط دم الحاد', 'Hypertension artérielle sévère']
+          - ['15', 'عوز القلب', 'Insuffisance cardiaque']
+          - ['16', 'الإعتلالات الكلوية الشديدة', 'Insuffisance rénale aiguë']
+          - ['17', 'العوز الكلوي المزمن و النهائي', 'Insuffisance rénale chronique terminale']
+          - ['18', 'العوز التنفسي المزمن و الخطير', 'Insuffisance respiratoire chronique grave']
+          - ['19', 'الداء الحاد المنتفر', 'Lupus érythémateux aigu disséminé']
+          - ['20', 'مرض الشرايين التاجية', 'Maladie coronaire']
+          - ['21', 'داء كرون متطور', 'Maladie de Crohn évolutive']
+          - ['22', 'مرض باركنسون', 'Maladie de Parkinson']
+          - ['23', 'أمراض الكبد المزمنة المتطورة (إلتهاب الكبد الوبائي ب ، س)', 'Maladies chroniques actives du foie (hépatites B et C)']
+          - ['24', 'خلل تنسج النخاع العظمي الشديد', 'Myélodysplasies sévères']
+          - ['25', 'الأمراض النفروباتية الخطرة', 'Néphropathies graves']
+          - ['26', 'إلتهاب المفاصل الرثياني المتطور و الشديد', 'Polyarthrite rhumatoïde évolutive grave']
+          - ['27', 'أمراض الذهان', 'Psychoses']
+          - ['28', 'إلتهاب نزيفي متطور للمستقيم و القولون', 'Rectocolite hémorragique évolutive']
+          - ['29', 'إعتلال الشبكية الناتجة عن داء السكري', 'Rétinopathie diabétique']
+          - ['30', 'تصلب الجلد الشامل و المتطور', 'Sclérodermie généralisée évolutive']
+          - ['31', 'مرض التصلب المنتثر', 'Sclérose en plaques']
+          - ['32', 'التهاب المفاصل الفقارية القسطية الشديد', 'Spondylarthrite ankylosante grave']
+          - ['33', 'مرض نقص المناعة المكتسبة "السيدا" (الإيدز)', 'Syndrome d''immunodéficience acquise (SIDA)']
+          - ['34', 'المتلازمة انكلائية', 'Syndromes néphrotiques']
+          - ['35', 'اضطرابات خطرة للشخصية', 'Troubles graves de la personnalité']
+          - ['36', 'اختلالات الإرقاء الوراثية', 'Troubles héréditaires de l''hémostase']
+          - ['37', 'اضطرابات العقلية و/أو إضطرابات الشخصية الناتجة عن تلف أو خلل وظيفي أو تلف مادي', 'Troubles mentaux et/ou de personnalité dus à une lésion, à un dysfonctionnement cérébral ou à une lésion physique']
+          - ['38', 'إضطرابات الدائمة لنبضات القلب أو التوصيلية', 'Troubles permanents du rythme et de la conductivité']
+          - ['39', 'الأورام الخبيثة', 'Tumeurs malignes']
+          - ['40', 'اعتلالات صمامات القلب الرثوية', 'Valvulopathies rhumatismales']
+          - ['41', 'التهابات وعائية', 'Vascularites']
+    - title: {ar: 'العلاجات الباهظة الثمن', fr: 'Les soins particulièrement coûteux'}
+      facts:
+        - text: {ar: 'الأمراض التي تتطلب زرع الكلي أو الكبد أو القلب أو عدسة العين أو النخاع العظمي؛ واعتلالات صمامات القلب؛ واعتلالات القلب الخلقية؛ ومرض الشرايين التاجية؛ والأمراض التي تتطلب وضع جهاز تنظيم ضربات القلب؛ والاعتلالات المزمنة للشرايين.', fr: 'Les maladies nécessitant une greffe de rein, de foie, de cœur, de cornée ou de moelle osseuse ; les valvulopathies ; les cardiopathies congénitales ; la maladie coronaire ; les maladies nécessitant un stimulateur cardiaque ; les artériopathies chroniques.'}
+          cites: [/ma/arrete/2518-05/art_2]

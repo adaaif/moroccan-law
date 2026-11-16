@@ -1,0 +1,11 @@
+# Law 08.12 on the national order of doctors as Adala's consolidated PDF prints it, where the PDF's text layer misreads
+# it: a lam-alef turned («عمال» for «عملا»), a word cut in two and misread («لمهن يي» for «لمهنيي»). Each was read
+# against the page's image on 27 Oct 2026 (the health review, S4): the 2 articles the health topic cites (73, 74);
+# 74 reads as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_doctors_order_8_12.yaml`; a reload of the text applies them again.
+text: /ma/loi/8-12
+document: sources/adala/doctors_order_08_12.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [73], wrong: "عمال بالمادة", right: "عملا بالمادة"}   # turned lam-alef, p. 33
+  - {arts: [73], wrong: "لمهن يي", right: "لمهنيي"}   # word cut in two, p. 33

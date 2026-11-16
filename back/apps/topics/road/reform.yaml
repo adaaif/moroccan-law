@@ -1,0 +1,101 @@
+# What changed on the road in 2025–2026, and what is coming (R16 of the road plan): one item per change, its stage said
+# first, the day it applies from (not only the day it was published), its BO record, and the articles it changed.
+# Stages: in_force (law in force), coming (law, not yet in force), bill (in parliament), announced (said, no text).
+# Checked against the BO issues the site read on 20 Oct 2026. There is no government bill to change the code today.
+
+- key: fines-2025
+  title: {ar: 'استرجاع الوثائق المحتفظ بها (المرسوم 2.24.655)', fr: 'Récupérer les documents retenus (décret 2-24-655)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: نص لم يدخل حيز التنفيذ, fr: Texte pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ فاتح ماي 2025: الوثيقة المحتفظ بها تسترجع داخل ثلاثين يوما، من محل السكنى إذا كان يبعد بخمسين كيلومترا على الأقل.', fr: 'En vigueur depuis le 1er mai 2025 : le document retenu se récupère dans les trente jours, au lieu de résidence s’il est à cinquante kilomètres au moins.'}
+  timeline:
+    - date: '2025-05-01'
+      text: {ar: 'نشر المرسوم 2.24.655 الذي غير المرسوم 2.10.313 بشأن الغرامات التصالحية والجزافية.', fr: 'Publication du décret 2-24-655, qui modifie le décret 2-10-313 sur les amendes transactionnelles et forfaitaires.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7400', fr: 'BO n° 7400'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7400_Ar.pdf'}
+      cites: [/ma/decret/2-24-655/art_1, /ma/decret/2-10-313/art_6]
+
+- key: victims-2026
+  title: {ar: 'تعويض ضحايا حوادث السير (القانون 70.24)', fr: 'L’indemnisation des victimes (loi 70-24)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 29 يناير 2026 للحوادث الواقعة منذ ذلك اليوم: جدول جديد، والحد الأدنى للأجر يرتفع كل فاتح يناير حتى 2029، والمركبات الكهربائية مشمولة. وأحكام طلبات التعويض والتقادم السابقة باقية حتى صدور نصين تنظيميين.', fr: 'En vigueur depuis le 29 janvier 2026 pour les accidents survenus depuis : un nouveau barème, un salaire minimum qui monte chaque 1er janvier jusqu’en 2029, les véhicules électriques couverts. Les anciennes règles sur les demandes et la prescription restent jusqu’à deux textes d’application.'}
+  timeline:
+    - date: '2026-01-29'
+      text: {ar: 'نشر القانون 70.24 الذي غير الظهير الشريف 1.84.177 وتممه، مع جدول الرساميل الجديد.', fr: 'Publication de la loi 70-24, qui modifie et complète le dahir 1-84-177, avec le nouveau barème des capitaux.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7478', fr: 'BO n° 7478'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7478_Ar.pdf'}
+      cites: [/ma/loi/70-24/art_1, /ma/loi/70-24/art_5, /ma/loi/70-24/art_7, /ma/loi/70-24/art_8]
+    - date: '2027-01-29'
+      text: {ar: 'آخر أجل لصدور النصوص التنظيمية التي ينص عليها الظهير كما غيره القانون 70.24 (سنة من نشره).', fr: 'Échéance des textes d’application prévus par le dahir tel que modifié par la loi 70-24 (un an après sa publication).'}
+      cites: [/ma/loi/70-24/art_8]
+
+- key: registration-2026
+  title: {ar: 'تسجيل المركبات والصفائح (القرار 640.26)', fr: 'L’immatriculation et les plaques (arrêté 640-26)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 3 غشت 2026. الصفائح القديمة صالحة حتى أول نقل للملكية، وحتى 31 دجنبر 2026 للمركبات المسجلة بالمغرب التي تسير في الجولان الدولي. والدراجات بمحرك الخفيفة تدخل القواعد الجديدة في فاتح يناير 2027.', fr: 'En vigueur depuis le 3 août 2026. Les anciennes plaques restent valables jusqu’à la première mutation, et jusqu’au 31 décembre 2026 pour les véhicules immatriculés au Maroc qui circulent à l’international. Les cyclomoteurs et quadricycles légers entrent dans les nouvelles règles le 1er janvier 2027.'}
+  timeline:
+    - date: '2026-08-03'
+      text: {ar: 'نشر القرار 640.26 الذي غير قرار تسجيل المركبات 2711.10 وتممه.', fr: 'Publication de l’arrêté 640-26, qui modifie et complète l’arrêté 2711-10 sur l’immatriculation.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7531', fr: 'BO n° 7531'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7531_Ar.pdf'}
+      cites: [/ma/arrete/640-26/art_1, /ma/arrete/640-26/art_4]
+    - date: '2026-12-31'
+      text: {ar: 'آخر يوم لصلاحية الصفائح القديمة للمركبات المسجلة بالمغرب المستعملة في الجولان الدولي.', fr: 'Dernier jour de validité des anciennes plaques des véhicules immatriculés au Maroc utilisés à l’international.'}
+      cites: [/ma/arrete/640-26/art_4]
+    - date: '2027-01-01'
+      text: {ar: 'تدخل حيز التنفيذ المقتضيات المتعلقة بالدراجات بمحرك والدراجات ثلاثية ورباعية العجلات الخفيفة بمحرك.', fr: 'Entrée en vigueur des dispositions sur les cyclomoteurs et les tricycles et quadricycles légers à moteur.'}
+      cites: [/ma/arrete/640-26/art_4, /ma/arrete/640-26/art_5]
+
+- key: rules-2026
+  title: {ar: 'التروتينيت والخوذة والمثلث (المرسوم 2.25.145)', fr: 'Trottinettes, casque et triangle (décret 2-25-145)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 24 غشت 2026: التروتينيت بمحرك 25 كلم/س على الأكثر وخارج المدينة غير في ممرات الدراجات، والخوذة لراكبي الدراجات والتروتينيت، ولا سماعات على الدراجات، وأضواء الاستغاثة والمثلث على 50 مترا عند العطب.', fr: 'En vigueur depuis le 24 août 2026 : trottinette à moteur à 25 km/h au plus et, hors agglomération, sur piste cyclable seulement ; casque pour cyclistes et trottinettes ; pas d’écouteurs à deux-roues ; feux de détresse et triangle à 50 mètres en cas de panne.'}
+  timeline:
+    - date: '2026-08-24'
+      text: {ar: 'نشر المرسوم 2.25.145 الذي غير مرسوم قواعد السير 2.10.420 وتممه.', fr: 'Publication du décret 2-25-145, qui modifie et complète le décret 2-10-420 sur les règles de circulation.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7537', fr: 'BO n° 7537'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7537_Ar.pdf'}
+      cites: [/ma/decret/2-25-145/art_1, /ma/decret/2-10-420/art_19, /ma/decret/2-10-420/art_110, /ma/decret/2-10-420/art_9, /ma/decret/2-10-420/art_94-bis]
+
+- key: vehicles-2026
+  title: {ar: 'المركبات والتروتينيت (المرسوم 2.24.393)', fr: 'Les véhicules et les trottinettes (décret 2-24-393)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 24 غشت 2026، غير أن مقتضياته المتعلقة بمركبة التنقل الشخصي بمحرك والدراجة بدوس مساعد لا تدخل حيز التنفيذ إلا بعد ستة أشهر، أي في 24 فبراير 2027.', fr: 'En vigueur depuis le 24 août 2026 ; ses dispositions sur les engins de déplacement personnel motorisés et les vélos à pédalage assisté n’entrent en vigueur que six mois plus tard, le 24 février 2027.'}
+  timeline:
+    - date: '2026-08-24'
+      text: {ar: 'نشر المرسوم 2.24.393 الذي غير مرسوم المركبات 2.10.421.', fr: 'Publication du décret 2-24-393, qui modifie le décret 2-10-421 sur les véhicules.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7537', fr: 'BO n° 7537'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7537_Ar.pdf'}
+      cites: [/ma/decret/2-24-393/art_1, /ma/decret/2-24-393/art_4]
+    - date: '2027-02-24'
+      text: {ar: 'تدخل حيز التنفيذ المقتضيات المتعلقة بمركبة التنقل الشخصي بمحرك والدراجة بدوس مساعد.', fr: 'Entrée en vigueur des dispositions sur les engins de déplacement personnel motorisés et les vélos à pédalage assisté.'}
+      cites: [/ma/decret/2-24-393/art_4]
+
+# The 2027 finance bill's line for this topic (the finance-bill review, P11, P13): a bill, never law; its way
+# through Parliament is the tax topic's (/topics/tax/reform/lf-2027).
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: الطوموبيل الغالية', fr: 'Le projet de loi de finances 2027 : la voiture chère'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: واجب التمبر عند أول تسجيل ديال طوموبيل قيمتها 400.000 درهم فما فوق: 5% ثم 12% ثم 18% ثم 25% فوق مليون (اليوم 5 و10 و15 و20%)، من 2027. هكا صادق عليه مجلس النواب فالقراءة الأولى؛ المشروع كما أودع كان كاتب 6% و24%.', fr: 'Un projet, pas une loi : le droit de timbre à la première immatriculation d’une voiture de 400 000 DH ou plus : 5 %, 12 %, 18 %, puis 25 % au-delà d’un million (5, 10, 15 et 20 % aujourd’hui), dès 2027. C’est ce que la Chambre des représentants a adopté en première lecture ; le projet déposé écrivait 6 % et 24 %.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26؛ مادته 7 كتبدل المادة 252-I-C من المدونة العامة للضرائب، من فاتح يناير 2027.', fr: 'Dépôt du projet de loi de finances 60.26 ; son article 7 modifie l’article 252-I-C du CGI, dès le 1er janvier 2027.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/code/cgi/art_252, /ma/projet-loi/60-26/art_7]
+    - date: '2026-11-12'
+      text: {ar: 'لجنة المالية بمجلس النواب بدلات الجدول بالإجماع: 5% من 400.000 حتى 600.000 درهم (المشروع كان كاتب 6%)، و25% فوق مليون (كان كاتب 24%)؛ 12% و18% بقاو.', fr: 'La commission des finances de la Chambre des représentants modifie le barème à l’unanimité : 5 % de 400 000 à 600 000 DH (le projet écrivait 6 %), 25 % au-delà d’un million (il écrivait 24 %) ; 12 % et 18 % restent.'}
+      source: {name: {ar: 'مجلس النواب، تقرير لجنة المالية حول المشروع، الجزء الثاني، ص. 770', fr: 'Chambre des représentants, rapport de la commission des finances sur le projet, deuxième partie, p. 770'}, url: 'https://www.chambredesrepresentants.ma/sites/default/files/2emepUP2.pdf#page=770', file: sources/parliament/plf2027/2emepUP2.pdf, sha256: f983ee219d6e93524606f9b34cd91edfdae03e2331da04113dfb978a141831ca}
+      cites: [/ma/code/cgi/art_252]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}

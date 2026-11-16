@@ -1,0 +1,12 @@
+# The programs and libraries the backend needs from the system, beside its Python packages: Debian's and Ubuntu's
+# package names, one a line. CI installs exactly this list (.github/actions/back-env), and so does a new machine:
+#
+#   sudo apt-get install --no-install-recommends $(sed 's/#.*//' back/requirements/apt.txt)
+#
+# On another system install the same three things under its own names (macOS: brew install fribidi tesseract
+# tesseract-lang ffmpeg). The tests that need one of them say so with `@pytest.mark.needs(...)` (back/conftest.py).
+libfribidi0          # Pillow shapes Arabic and sets it right to left with it: the share pictures
+tesseract-ocr        # a scan's orientation and an article's place on its printed page (it brings its `osd` data)
+tesseract-ocr-ara
+tesseract-ocr-fra
+ffmpeg               # a voice note converted to AAC

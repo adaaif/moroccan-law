@@ -1,0 +1,23 @@
+# The digital topic's texts (27 Oct 2026), where our reading differs from the page.
+# The press code 88.13, Adala's file as published in 2016 (sources/adala/press_88_13.pdf): the layer turned «لا» and
+# split or glued «أو»; each word is unambiguous from the words around it (not read on the page image). Applied by `manage.py apply_page_reading
+# apps/quality/data/digital_press_88_13.yaml`.
+text: /ma/loi/88-13
+document: sources/adala/press_88_13.pdf
+read_on: '2026-10-27'
+fixes:
+- arts: [72]
+  wrong: 'أو أثارت الفزع بين النام،'
+  right: 'أو أثارت الفزع بين الناس،'
+- arts: [83]
+  wrong: 'التي نسبت إليه أ وإليها:'
+  right: 'التي نسبت إليه أو إليها؛'
+- arts: [83]
+  wrong: 'مباشرة أوعن طريق النقل'
+  right: 'مباشرة أو عن طريق النقل'
+- arts: [83]
+  wrong: 'إلى شخص أ وهيئة لم يعينها أولم يحددها'
+  right: 'إلى شخص أو هيئة لم يعينها أو لم يحددها'
+- arts: [99]
+  wrong: 'الأفراد المنصوص علهم في المادة 85'
+  right: 'الأفراد المنصوص عليهم في المادة 85'

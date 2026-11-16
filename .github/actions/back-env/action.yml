@@ -1,0 +1,42 @@
+# The backend's environment, the same in every job that runs Python: the system packages of back/requirements/apt.txt,
+# the hashed lock installed into back/.venv (the path tools/ci's scripts use by default) and the ma_law wheel that
+# this run's `wheel` job built.
+name: Backend environment
+description: The system packages, Python, back/requirements/lock.txt with its hashes in back/.venv, and this run's ma_law wheel.
+inputs:
+  python-version:
+    description: The Python version, the server's.
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Python, with pip's downloads cached by the lock
+      uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+      with:
+        python-version: ${{ inputs.python-version }}
+        cache: pip
+        cache-dependency-path: back/requirements/lock.txt
+
+    # What the tests need from the system (share pictures, a scan's orientation, a voice note's conversion). The list
+    # is the repository's own; under CI a test run stops at once when one of them is missing (back/conftest.py).
+    - name: The system packages of back/requirements/apt.txt
+      shell: bash
+      run: |
+        packages=$(sed 's/#.*//' back/requirements/apt.txt)
+        sudo apt-get update --quiet
+        # shellcheck disable=SC2086  # one word a package
+        sudo apt-get install --yes --quiet --no-install-recommends $packages
+
+    - name: The ma_law wheel of this run
+      uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+      with:
+        name: ma-law-wheel
+        path: ${{ runner.temp }}/wheel
+
+    - name: The locked packages and ma_law into back/.venv
+      shell: bash
+      run: |
+        python -m venv back/.venv
+        back/.venv/bin/pip install --quiet --require-hashes --no-deps -r back/requirements/lock.txt
+        back/.venv/bin/pip install --quiet --no-deps "$RUNNER_TEMP"/wheel/ma_law-*.whl
+        back/.venv/bin/python -c 'import ma_law, sys; print("ma_law on Python", sys.version.split()[0])'

@@ -1,0 +1,2167 @@
+{
+  "topics": {
+    "title": "Thèmes",
+    "lead": "Le droit marocain selon ce que vous vivez : choisissez un thème pour trouver les situations courantes, les textes qui les régissent et ce qui a changé récemment.",
+    "all": "Tous les thèmes",
+    "situations": "Situations",
+    "laws": "Les textes essentiels",
+    "recent": "Changé récemment",
+    "recentLead": "Textes parus ces six derniers mois",
+    "recentNone": "Aucun texte sur ce thème ces six derniers mois.",
+    "onAdala": "sur le portail Adala",
+    "hint": "Votre question semble porter sur :",
+    "open": "Ouvrir le thème",
+    "guides": "Guides pas à pas",
+    "words": "Les mots qui ouvrent la loi",
+    "questions": "Discussion",
+    "discussed": "Les plus discutés",
+    "allQuestions": "Toutes les questions",
+    "whole": "Toute la loi",
+    "tabs": {
+      "laws": "Les textes",
+      "guides": "Les guides",
+      "words": "Les mots de la loi",
+      "questions": "Discussion",
+      "recent": "Le nouveau"
+    },
+    "talkOpen": "Entrer dans la discussion du thème",
+    "talkWaiting": "Question en attente de réponse",
+    "talkComments_zero": "Pas encore de commentaire",
+    "talkComments_one": "1 commentaire",
+    "talkComments_other": "{{count}} commentaires",
+    "talkModerators": "Modération : {{names}}"
+  },
+  "library": {
+    "title": "Bibliothèque",
+    "lead": "Pour qui cherche les archives : textes essentiels, numéros du Bulletin officiel, loi de finances, outils de recherche.",
+    "specimenTitle": "Comment lire un article dans 3adala",
+    "specimen": "Le texte de l'article tel qu'il a paru, avec une marque qui dit d'où il vient : ✓ pour le texte tel que publié au Bulletin officiel, ↻ pour le texte mis à jour. Touchez la marque pour voir la page d'origine.",
+    "tools": "Outils",
+    "issuesLead": "Tous les numéros du Bulletin officiel lus par 3adala",
+    "wordsLead": "Le sens des mots du droit",
+    "checkLead": "Collez un contrat ou un jugement : nous lisons chaque renvoi",
+    "dataLead": "Tous les textes de 3adala, à télécharger et réutiliser",
+    "lead2": "Les textes que l’on cherche, les numéros du Bulletin officiel, et des outils pour travailler sur la loi.",
+    "issuesLead2_one": "un numéro, avec ses textes et ses pages",
+    "issuesLead2_other": "{{count}} numéros, chacun avec ses textes et ses pages",
+    "wordsLead2": "Le sens de chaque mot, et où la loi l’emploie",
+    "checkLead2": "Collez un contrat ou un jugement : chaque référence est lue",
+    "dataLead2": "La base de données entière, et une API pour vos programmes, sur demande",
+    "dataSoon": "Toutes les données que nous préparons, à télécharger et à réutiliser",
+    "shelfLine": "Dans 3adala aujourd’hui : {{held}} sur {{total}}.",
+    "thisWeek": "Cette semaine au Bulletin officiel",
+    "yearNote": "Chaque trait est un numéro, aussi haut que ses textes sont nombreux.",
+    "allIssues": "Tous les numéros de {{year}}",
+    "markPrinted": "Le texte tel que publié au Bulletin officiel : la marque ouvre la page où il est imprimé.",
+    "markConsolidated": "Le texte après modifications : assemblé par 3adala à partir des textes qui l’ont changé, chacun ouvrant sa page.",
+    "markPage": "Chaque article indique, en bas, la page où il est imprimé.",
+    "findLabel": "Numéro ou nom d’un texte",
+    "findHint": "7551, Code du travail…",
+    "find": "Rechercher"
+  },
+  "me": {
+    "title": "Moi",
+    "accountLead": "Votre compte, vos contributions, vos notifications",
+    "signInLead": "Pas besoin de compte pour lire ou suivre. Connectez-vous pour poser une question, répondre, et recevoir un message quand ce que vous suivez change.",
+    "savedCount_one": "1 article gardé sur cet appareil",
+    "savedCount_other": "{{count}} articles gardés sur cet appareil",
+    "savedNone": "Gardez un article : il sera ici, même sans connexion.",
+    "following": "Ce que je suis",
+    "followingLead": "Les textes, thèmes et questions que vous suivez",
+    "mine": "Mes questions et contributions",
+    "mineLead": "Ce que vous avez écrit dans les discussions",
+    "followingCount_one": "une chose",
+    "followingCount_other": "{{count}} choses",
+    "followingNone": "Suivez une loi ou un thème pour savoir quand il change",
+    "corrections": "Nos corrections",
+    "correctionsLead": "Chaque mot corrigé dans les textes, et où",
+    "reading": "La lecture",
+    "readingLead": "Sur cet appareil",
+    "about": "À propos de 3adala",
+    "aboutLead": "Qui le fait, d’où vient le texte, comment nous écrire",
+    "more": "Pages"
+  },
+  "explain": {
+    "inArabic": "En arabe",
+    "newForYou": "Nouveau pour vous",
+    "newKicker": "Nouveau texte",
+    "reviewed": "relu par une personne",
+    "short": "En bref",
+    "registers": "Langue",
+    "register": {
+      "ar": "Arabe simple",
+      "darija": "Darija",
+      "fr": "Français"
+    },
+    "outdated": "Cette explication a été écrite sur une version antérieure de l'article, qui a changé depuis.",
+    "checkedOn": "Vérifiée par un relecteur le {{date}}",
+    "editors_one": "Écrite par {{count}} personne",
+    "editors_other": "Écrite par {{count}} personnes",
+    "helpfulCount_one": "Utile pour {{count}} personne",
+    "helpfulCount_other": "Utile pour {{count}} personnes",
+    "more": "Sources et historique",
+    "notLaw": "Une explication écrite par des personnes pour comprendre, pas le texte de loi.",
+    "fromDiscussion": "Dans les discussions : l'explication d'un lecteur",
+    "nameless": "Sans nom",
+    "verified": "profession vérifiée",
+    "toDiscussion": "Voir la discussion",
+    "none": "Pas encore d'explication dans cette langue.",
+    "aboutWord": "Le sens du mot",
+    "toText": "Ouvrir le texte",
+    "waiting": "Cette explication attend qu'une personne la relise avant que les lecteurs la voient.",
+    "sources": "S'appuie sur",
+    "helpful": "Utile",
+    "check": "Relue : juste telle quelle",
+    "signIn": "Connectez-vous pour écrire ou améliorer cette explication.",
+    "closed": "L'écriture n'est pas encore ouverte. Vous pouvez lire.",
+    "improve": "Améliorer cette explication",
+    "write": "Écrire la première explication",
+    "rules": "Expliquez ce que dit l'article avec des mots simples, sans avis sur le cas de quelqu'un. Citez chaque article sur lequel vous vous appuyez. L'intelligence artificielle lit chaque changement, puis une personne le relit avant les lecteurs ; d'ici là, l'explication relue reste affichée.",
+    "headline": "Une ligne en mots simples : qu'est-ce que ce texte change, et pour qui ?",
+    "body": "Explication ({{register}})",
+    "sourcesField": "Adresses des articles sur lesquels elle s'appuie, une par ligne",
+    "note": "Qu'avez-vous changé ? (facultatif)",
+    "publish": "Publier",
+    "history_one": "Historique : {{count}} version",
+    "history_other": "Historique : {{count}} versions",
+    "errors": {
+      "body": {
+        "required": "Écrivez l'explication.",
+        "too_long": "4000 caractères au plus."
+      },
+      "headline": {
+        "too_long": "200 caractères au plus."
+      },
+      "sources": {
+        "not_found": "Une adresse n'est ni un article ni un texte de 3adala.",
+        "too_many": "12 adresses au plus."
+      },
+      "email": {
+        "not_proven": "Confirmez d'abord votre e-mail."
+      },
+      "discussion": {
+        "closed": "L'écriture n'est pas encore ouverte."
+      },
+      "account": {
+        "paused": "L'écriture est suspendue sur votre compte.",
+        "day_limit": "Cinq contributions aujourd’hui : c’est la limite de la première semaine. Revenez demain."
+      },
+      "consent": {
+        "required": "Acceptez d'abord que l'intelligence artificielle lise ce que vous écrivez."
+      }
+    },
+    "whole": "Lire l’explication en entier",
+    "less": "Moins",
+    "bill": "Au Parlement : le projet de loi de finances {{year}}",
+    "billLine": "Ce qui changerait pour vous ? Un projet, pas une loi",
+    "pendingMine": "Votre modification attend qu'une personne la relise. D'ici là, les lecteurs voient la version relue.",
+    "pendingOther": "Une modification attend la relecture",
+    "reportTitle": "Signaler cette explication",
+    "state": {
+      "waiting": "en attente de relecture",
+      "unchecked": "jamais relue",
+      "removed": "retirée par un relecteur (règle {{n}})",
+      "reports_one": "{{count}} signalement",
+      "reports_other": "{{count}} signalements"
+    }
+  },
+  "search": {
+    "exact": "Nous avons cherché les mots entre guillemets tels quels, à la suite et dans cet ordre :",
+    "exactNone": "Aucun texte ne contient ces mots tels quels, à la suite et dans cet ordre :",
+    "exactLoose": "Les chercher sans guillemets",
+    "exactTip": "Pour trouver des mots tels quels et dans leur ordre, mettez-les entre guillemets :",
+    "exactExample": "\"force majeure\"",
+    "partialHidden": "Aucun article ne réunit tous les mots de votre question. Le thème et ses mots, ci-dessus, sont plus proches de ce que vous cherchez.",
+    "partialShow": "Voir des textes qui contiennent certains mots",
+    "nearest": "Vouliez-vous dire :",
+    "nearestHelp": "Aucune réponse ne nomme votre situation dans vos mots. Les situations les plus proches de votre question :",
+    "partialNearest": "Les textes qui contiennent certains de vos mots viennent après ces situations.",
+    "flipped": "Nous avons ouvert la loi n° {{to}} ; la question disait {{from}}.",
+    "partlyRepealed": "abrogé en partie",
+    "statusUnknown": "en vigueur ? pas encore établi",
+    "more_one": "et 1 autre article",
+    "more_other": "et {{count}} autres articles",
+    "lawWords": "Les mots du droit de ce thème",
+    "foundIt": "Avez-vous trouvé la réponse ?",
+    "foundYes": "Oui",
+    "foundNo": "Non",
+    "foundThanks": "Merci, cela nous aide à améliorer la recherche.",
+    "arabiziLong": "Écrit en lettres latines ; nous avons cherché",
+    "spellingLong": "Rien pour ce que vous avez tapé ; résultats pour",
+    "changes": "Modifie {{article}} de « {{text}} »",
+    "adds": "Ajoute {{article}} à « {{text}} »",
+    "changesMore_one": "et 1 autre article",
+    "changesMore_other": "et {{count}} autres articles",
+    "meaningLong": "Aucun article ne contient les mots de votre question tels quels ; voici les plus proches de son sens.",
+    "outside": "Aucun texte ne réunit les mots de votre question, et nous n’y avons reconnu aucun thème du droit. 3adala ne contient que le droit marocain : ses textes et ses articles.",
+    "foreign": "3adala ne contient que le droit marocain. Voici ce que nous y avons trouvé avec vos mots.",
+    "noWord": "Aucun mot de votre question ne figure dans les textes de 3adala :",
+    "byTopic": "Ou entrez par un thème",
+    "meaningShow_one": "Voir le texte le plus proche par le sens",
+    "meaningShow_other": "Voir les {{count}} textes les plus proches par le sens",
+    "answerHead": "Ce que dit la loi",
+    "answerWhy": "Trouvé par les mots de votre question et par son sens ; lisez l’article entier avant de vous y fier.",
+    "answerRead": "Lire l’article entier",
+    "byMeaning": "Trouvé par le sens",
+    "doorFrom": "Dans {{name}}",
+    "waiting": "Nous cherchons dans tous les textes, article par article…",
+    "waitingSlow": "Cela peut prendre quelques secondes.",
+    "waitingMaybe": "En attendant, c’est peut-être ce que vous cherchez",
+    "otherFolded_one": "Autres textes avec ces mots ({{count}})",
+    "otherFolded_other": "Autres textes avec ces mots ({{count}})",
+    "arabicText": "Le texte arabe (seul officiel)",
+    "filteredOut": "Aucun texte ne contient ces mots avec ces filtres.",
+    "clearFilters": "Retirer les filtres",
+    "byMeaningOnly": "Vos mots ne figurent tels quels dans aucun texte : voici les plus proches par le sens, des résultats approchés.",
+    "notInCorpusLong": "Pas encore dans 3adala, qui ajoute le Bulletin officiel numéro après numéro, du plus récent au plus ancien.",
+    "notLoadedLong": "Ce texte est connu par les textes qui l'ont modifié ou cité ; son contenu n'est pas encore dans le corpus.",
+    "citationFound": "Dans le corpus",
+    "repealed": "Ce texte est abrogé.",
+    "citation": "Référence",
+    "filters": "Filtrer les résultats",
+    "allTypes": "Tous les textes",
+    "types": {
+      "laws": "Lois",
+      "dahirs": "Dahirs",
+      "decrees": "Décrets",
+      "orders": "Arrêtés",
+      "decisions": "Décisions"
+    },
+    "year": "Année",
+    "allYears": "Toutes",
+    "withRepealed": "Avec les textes abrogés",
+    "everydayLong": "Recherché avec les mots de la loi :",
+    "repairedLong": "La recherche a été tapée sur un clavier non arabe ; résultats pour",
+    "someWords": "Aucun texte ne contient tous les mots ; voici ceux qui en contiennent certains.",
+    "titleMatch": "Les mots sont dans le titre du texte.",
+    "nothingFor": "Aucun résultat pour",
+    "tips": "Des mots, une référence telle qu'on l'écrit, un numéro de texte ou de BO :",
+    "pages": "Pages de résultats",
+    "pageOf": "{{page}} sur {{pages}}",
+    "heading": "Rechercher dans 3adala",
+    "filterButton": "Filtrer",
+    "otherTexts": "Autres textes où figurent ces mots",
+    "asked": "Recherché :"
+  },
+  "words": {
+    "leadIndex": "Les mots qui ouvrent la loi, par thème de la vie, et où la loi les emploie. Leur sens s’ajoute quand des personnes l’écrivent et qu’une autre le vérifie.",
+    "lead": "Les mots qui ouvrent le droit, par thème de la vie. Chaque mot a sa page : son sens, écrit par des personnes et relu, et où la loi l’emploie.",
+    "reading": "Les mots des pages de textes",
+    "notYet": "Le sens de ce mot n'est pas encore écrit.",
+    "where": "Où la loi l’emploie",
+    "nowhere": "Aucun article trouvé.",
+    "searchAll": "Le chercher dans tous les textes",
+    "index": "Les thèmes",
+    "lead2": "Les mots qui ouvrent la loi, par thème de la vie : le sens de chacun, écrit par des lecteurs et vérifié, et où la loi l’emploie.",
+    "readingLead": "Les mots que vous lisez sur les pages des textes dans 3adala.",
+    "whereOnly": "Où la loi l’emploie"
+  },
+  "guide": {
+    "hasGuide": "Guide pas à pas",
+    "articles_one": "{{count}} article à lire d’abord",
+    "articles_other": "{{count}} articles à lire d’abord",
+    "steps": "Pas à pas",
+    "deadlines": "Les délais à ne pas manquer",
+    "documents": "Les documents",
+    "where": "Où aller",
+    "costs": "Ce que cela coûte",
+    "help": "Qui peut vous aider",
+    "helpLegalAid": "L'assistance judiciaire : si vous ne pouvez pas payer un avocat et les frais du procès, vous pouvez la demander. Renseignez-vous au tribunal de première instance le plus proche.",
+    "helpLawyer": "Pour votre cas, c'est un avocat qui donne un conseil. Vous pouvez aussi poser votre question dans les discussions, où les gens se répondent entre eux.",
+    "ask": "Demander dans les discussions"
+  },
+  "follow": {
+    "do": "Suivre",
+    "on": "Suivi",
+    "hint": "Nous vous le disons dans « Moi » quand cela change",
+    "fresh": "Du nouveau dans ce que vous suivez",
+    "back": "Moi",
+    "title": "Ce que je suis",
+    "lead": "Suivez une loi, un article ou un thème : nous vous disons ici quand il change, par quel texte, et dans quel Bulletin officiel.",
+    "letters": "Nous vous écrivons aussi quand quelque chose que vous suivez change.",
+    "noAccount": "Ce que vous suivez est gardé sur cet appareil. Avec un compte, vous recevez un message quand cela change.",
+    "createAccount": "Créer un compte",
+    "none": "Vous ne suivez rien pour l’instant.",
+    "howTo": "Ouvrez une loi, un article ou un thème, et touchez « Suivre ».",
+    "toCodes": "Les lois que l’on consulte le plus",
+    "toTopics": "Les thèmes",
+    "kind": {
+      "text": "Loi",
+      "article": "Article",
+      "topic": "Thème",
+      "reform": "Réforme",
+      "place": "Commune",
+      "where": "Pays ou ville"
+    },
+    "newCount_one": "nouveau",
+    "newCount_other": "{{count}} nouveaux",
+    "new": "Nouveau",
+    "by": "{{type}} n° {{number}}",
+    "changed": "a modifié",
+    "repealed": "a abrogé",
+    "thisArticle": "cet article",
+    "article": "l’article {{n}}",
+    "articles": "les articles {{list}}",
+    "wholeText": "le texte",
+    "unsettled": "pas encore vérifié",
+    "from": "en vigueur à partir du {{date}}",
+    "more_one": "et une autre modification",
+    "more_other": "et {{count}} autres modifications",
+    "quiet": "Aucun texte lu par 3adala ne l’a modifié depuis sa publication.",
+    "quietTopic": "Aucun nouveau texte sur ce thème ces six derniers mois."
+  },
+  "week": {
+    "title": "Cette semaine au Bulletin officiel",
+    "span": "Du {{from}} au {{to}}",
+    "issues_one": "un numéro",
+    "issues_other": "{{count}} numéros",
+    "nav": "Les semaines",
+    "prev": "Semaine précédente",
+    "next": "Semaine suivante",
+    "people": "Ce qui concerne tout le monde",
+    "noneTold": "Nos rédacteurs n’ont pas encore écrit de titre simple pour les textes de cette semaine. Ils sont tous ci-dessous.",
+    "read": "Lire le texte",
+    "rest": "Tous les textes de la semaine",
+    "restLead": "Pour les spécialistes : chaque texte de la partie générale, et ce qu’il modifie.",
+    "changes": "Modifie :",
+    "special": "Et {{count}} textes dans la partie annonces, numéro {{issue}}"
+  },
+  "share": {
+    "picture": "Image à partager",
+    "shape": "Format de l’image",
+    "post": "Publication",
+    "story": "Story",
+    "alt": "Image à partager : le texte, sa source au Bulletin officiel et son lien sur 3adala",
+    "send": "Partager",
+    "keep": "Enregistrer l’image",
+    "noShare": "Votre téléphone ne partage pas d’image d’ici : enregistrez-la, puis envoyez-la.",
+    "note": "Chaque image nomme le texte, sa source au Bulletin officiel et son lien, et sépare les mots des gens du texte de la loi."
+  },
+  "corrections": {
+    "title": "Nos corrections",
+    "lead": "Nous lisons les textes d’Adala et du SGG dans leurs fichiers, où certaines lettres liées s’inversent : « ثالثة أشهر » pour « ثلاثة أشهر », « ألم الأم » pour « لأم الأم ». Notre programme propose chaque correction ; elle n’est appliquée qu’après qu’une personne l’a comparée au texte imprimé. Voici tout ce qui a été corrigé, et où.",
+    "count": {
+      "applied": "corrections appliquées",
+      "waiting": "propositions en attente",
+      "reports_open": "signalements en attente",
+      "reports_fixed": "signalements corrigés"
+    },
+    "howToReport": "Vous avez trouvé une erreur ? Sous chaque article, touchez « ⋯ » puis « Signaler une erreur ». Nous lisons chaque signalement.",
+    "waiting": "À décider ({{count}})",
+    "checkFirst": "Comparez chaque proposition à la page imprimée avant de l’appliquer. Ce que vous appliquez le reste quand le texte est rechargé.",
+    "apply": "Appliquer",
+    "reject": "Écarter",
+    "applied": "Ce qui a été corrigé",
+    "none": "Aucune correction appliquée pour l’instant.",
+    "was": "Avant",
+    "now": "Après",
+    "source": {
+      "proofread": "Proposé par le correcteur : un mot que le Bulletin officiel n’imprime pas",
+      "context": "Proposé par le correcteur : deux mots que le Bulletin officiel n’imprime jamais côte à côte",
+      "report": "Signalé par un lecteur",
+      "review": "Trouvé par une personne en lisant",
+      "page": "Lu sur l’image de la page",
+      "split": "Proposé par le correcteur : un mot coupé en deux par une espace",
+      "witness": "D’après la seconde lecture de la page",
+      "reading": "D’après la lecture de la page elle-même"
+    },
+    "evidence_one": "la forme correcte figure une fois au Bulletin officiel",
+    "evidence_other": "la forme correcte figure {{count}} fois au Bulletin officiel",
+    "pairEvidence_one": "l’expression correcte figure une fois au Bulletin officiel",
+    "pairEvidence_other": "l’expression correcte figure {{count}} fois au Bulletin officiel",
+    "more": "Voir {{count}} autres corrections",
+    "places": "Endroits modifiés sur la page : {{count}}"
+  },
+  "missing": {
+    "title": "Page introuvable",
+    "lead": "Son adresse a peut-être changé, ou 3adala n’a pas encore ce texte. Cherchez-le :",
+    "start": "Ou commencez par",
+    "offline": "Connexion impossible",
+    "offlineLead": "Vérifiez votre connexion puis réessayez. Les articles enregistrés restent dans « Mes articles ».",
+    "serverDown": "Le problème vient de chez nous, pas de votre connexion",
+    "serverDownLead": "Nous ne pouvons pas répondre pour l’instant. Réessayez dans un moment ; vos articles gardés restent dans « Mes articles ».",
+    "retry": "Réessayer",
+    "home": "Accueil",
+    "limitTitle": "Vous avez beaucoup lu aujourd’hui",
+    "limitLead": "3adala donne 3000 articles et pages par jour à chaque connexion, pour qu’on ne copie pas toute la loi d’un coup. La lecture reprend après minuit, heure du Maroc. Ce que vous avez enregistré reste dans « Mes enregistrements ».",
+    "checkLead": "3adala donne 3000 articles et pages par jour à chaque connexion, pour qu’on ne copie pas toute la loi d’un coup. Si vous lisez, la vérification de Cloudflare montrant que vous êtes une personne vous donne une journée de lecture à vous.",
+    "checkFailed": "La vérification n’a pas abouti. Réessayez.",
+    "checkLoading": "Chargement de la vérification…"
+  },
+  "about": {
+    "title": "À propos de 3adala",
+    "lead": "3adala met en ligne le droit marocain tel que publié au Bulletin officiel, texte par texte et article par article, chaque article relié à la page où il a été imprimé. Gratuit, sans compte pour lire.",
+    "demo": "3adala n’en est qu’à ses débuts : aucun spécialiste n’a encore relu ses thèmes et ses outils. Qui a écrit chaque chose, et qui l’a relue, est dit plus bas.",
+    "specimenTitle": "De la page à l’article",
+    "specimenLead": "Voici une page du Bulletin officiel telle qu’imprimée, et son article dans 3adala. Chaque article ouvre sa page : comparez vous-même.",
+    "printed": "Tel qu’imprimé",
+    "ours": "Dans 3adala",
+    "caption": "Bulletin officiel n° {{issue}}, {{date}}, page {{page}}. Touchez-la pour la voir en entier.",
+    "openPage": "La page entière",
+    "openArticle": "L’article dans 3adala",
+    "stepsTitle": "Le chemin d’un texte",
+    "stepsLead": "Du Bulletin officiel à votre écran, en quatre étapes.",
+    "steps": {
+      "take": {
+        "t": "Recueillir",
+        "d": "Le Bulletin officiel depuis le site du Secrétariat général du gouvernement, son nouveau numéro chaque matin ; des textes consolidés du SGG et du portail « Adala » du ministère de la Justice ; le Code général des impôts tel que publié par la DGI ; les projets de loi depuis le Parlement. Chaque fichier est gardé tel quel, avec son empreinte ; rien ne vient d’une base de données privée."
+      },
+      "read": {
+        "t": "Lire",
+        "d": "L’intelligence artificielle lit les images des pages du Bulletin officiel, depuis son premier numéro, en 1913. Nous ne faisons pas confiance au texte caché du fichier : nous lisons l’image et le comparons, et dans les anciens numéros un second lecteur témoigne. Chaque page dit comment elle a été lue. L’intelligence artificielle peut se tromper : le Bulletin officiel fait foi."
+      },
+      "cut": {
+        "t": "Découper et relier",
+        "d": "Chaque texte est découpé article par article et reçoit une adresse fixe ; chaque article est relié à sa page, chaque modification au numéro qui l’a apportée. Le texte consolidé est une version de lecture, non officielle ; une modification que nous n’avons pas tranchée est dite non tranchée."
+      },
+      "fix": {
+        "t": "Corriger",
+        "d": "Quand nous trouvons une erreur de lecture, nous la corrigeons, et publions les dernières corrections avec leur place et leur preuve. Vous voyez une erreur ? Signalez-la depuis l’article même."
+      }
+    },
+    "figuresOn": "Chiffres au {{date}}",
+    "figures": {
+      "issues": "numéros du Bulletin officiel",
+      "pages": "pages lues",
+      "texts": "textes",
+      "articles": "articles",
+      "corrections": "corrections"
+    },
+    "whoTitle": "Qui a écrit quoi",
+    "whoLead": "Ici, et ici seulement, nous disons qui a écrit ce que vous lisez dans 3adala, et si un spécialiste l’a relu. Nous ne le répétons pas sur chaque page.",
+    "who": {
+      "law": {
+        "t": "Le texte de loi",
+        "d": "Du Bulletin officiel : lu par l’intelligence artificielle sur l’image des pages, ou pris d’un fichier officiel consolidé. L’intelligence artificielle peut se tromper sur des mots, surtout dans les anciens numéros : chaque article ouvre sa page imprimée, qui fait foi. Nous ne changeons pas un mot du texte, sauf pour corriger une lecture, et c’est publié.",
+        "s": "Fait foi : le Bulletin officiel"
+      },
+      "translated": {
+        "t": "Les textes traduits",
+        "d": "Des textes que l’édition française du Bulletin officiel a publiés, et dont nous n’avons trouvé aucun texte arabe publié : l’intelligence artificielle les a traduits en arabe. Chacun porte la mention « Traduction non officielle du français », et son texte français, à côté de chaque article, fait foi.",
+        "s": "Traduction non officielle"
+      },
+      "explain": {
+        "t": "« En bref »",
+        "d": "L’explication d’un article en mots simples : écrite par des personnes, elle ne paraît qu’après relecture. Aucun programme ne l’écrit.",
+        "none": "Aucune explication publiée encore",
+        "n": "Explications publiées : {{n}}"
+      },
+      "topics": {
+        "t": "Les thèmes et les outils",
+        "d": "Les portes, les parcours, les listes, les situations et les calculateurs : nous les avons écrits à partir des articles de loi, avec l’aide de l’intelligence artificielle, et chacun vous mène à ses articles. Les calculateurs comptent d’après les articles cités à côté de chaque chiffre ; ce qui est notre lecture d’un article, l’outil le dit lui-même. Aucun spécialiste ne les a encore relus ; quand un spécialiste en relit un, son nom et la date de sa relecture y paraissent.",
+        "s": "Pas encore relus par un spécialiste"
+      },
+      "blog": {
+        "t": "Le blog",
+        "d": "Des articles tirés des chiffres du Bulletin officiel : le code les compte dans la base de 3adala, et chaque article explique comment il a compté. Un article qu’une personne n’a pas encore relu et signé porte « Brouillon ».",
+        "s": "Brouillons jusqu’à signature"
+      },
+      "talk": {
+        "t": "La discussion",
+        "d": "Écrite par des personnes, en leur nom. L’intelligence artificielle la lit avant publication, pour vérifier les règles seulement, et n’y écrit rien.",
+        "s": "Démonstration"
+      },
+      "search": {
+        "t": "La recherche",
+        "d": "N’écrit rien : elle comprend vos mots et classe les articles avec une intelligence artificielle qui tourne sur notre serveur, sans envoyer votre question à aucune société.",
+        "s": "Sur notre serveur"
+      }
+    },
+    "yoursTitle": "À vous de prendre et de vérifier",
+    "yours": {
+      "data": {
+        "t": "Données et API",
+        "d": "La base de données entière, et une API pour vos programmes, sur demande",
+        "soon": "Bientôt : toutes les données que nous préparons, à télécharger"
+      },
+      "ai": {
+        "t": "3adala dans ChatGPT, Claude et Gemini",
+        "d": "Ajoutez 3adala à votre assistant, sans compte : il lit la loi dans 3adala et la cite"
+      },
+      "corrections": {
+        "t": "Ce que nous avons corrigé",
+        "d": "Les dernières corrections, avec leur place et leur preuve"
+      },
+      "open": {
+        "t": "Contribuer",
+        "d": "Un mot tranché en dix secondes, ou le code."
+      },
+      "rules": {
+        "t": "Règles de la discussion",
+        "d": "Les sept règles, et le chemin de ce qui s’écrit"
+      },
+      "privacy": {
+        "t": "Ce que nous gardons, et combien de temps",
+        "d": "Ce qui nous parvient, et quand nous l’effaçons"
+      }
+    },
+    "cite": "Si vous reprenez un texte, citez le Bulletin officiel, son numéro et sa date (article 6 de la loi 31.13).",
+    "writeTitle": "Nous écrire",
+    "write": "Une erreur dans un article ? Touchez ⋯ à côté de son numéro, puis « Signaler une erreur » : elle parvient à qui la corrige, avec sa place exacte. Sous un texte lu sur les images des pages, un bouton « Erreur de lecture ? » le permet aussi.",
+    "mail": "Pour le reste :",
+    "bulk": "Les textes de 3adala se lisent, ils ne se copient pas en bloc : le site donne 3000 articles par jour à chaque adresse. Pour toutes les données, la page « Données et API » dit comment.",
+    "address": "3adala se trouve à l’adresse 3adala.com. C’est un site privé, qui ne relève d’aucune administration ; ce n’est pas le portail Adala du ministère de la Justice, dont nous reprenons certains textes mis à jour en le citant comme source."
+  },
+  "reading": {
+    "found_zero": "Aucun article ne contient « {{q}} »",
+    "found_one": "« {{q}} » dans 1 article",
+    "found_other": "« {{q}} » dans {{count}} articles",
+    "findFailed": "La recherche a échoué. Réessayez.",
+    "range": "Articles {{from}}-{{to}}",
+    "rangeOne": "Article {{from}}",
+    "together_one": "1 article avec l’expression telle que tapée, en tête",
+    "together_other": "{{count}} articles avec l’expression telle que tapée, en tête"
+  },
+  "corpus": {
+    "showImage": "Afficher l’image de la page (environ 80 Ko)",
+    "lit": "{{label}} est encadré sur la page",
+    "wholePage": "La page entière",
+    "zoomArticle": "Agrandir l’article",
+    "fileOf": {
+      "adala": "Fichier du portail Adala, ministère de la Justice",
+      "sgg_consolidated": "Fichier du Secrétariat général du gouvernement",
+      "dgi": "Fichier de la Direction générale des impôts"
+    },
+    "layerRepaired": "Couche texte du fichier, ses mots corrigés comme dans les articles",
+    "openFile": "Ouvrir le fichier tel que publié (PDF)",
+    "imageWhole": "Ouvrir l’image pour l’agrandir",
+    "zoomOpen": "Ouvrir la page en plein écran",
+    "close": "Fermer",
+    "zoomIn": "Agrandir",
+    "zoomOut": "Réduire",
+    "zoomHint": "Deux doigts ou double appui pour zoomer ; glissez pour tourner",
+    "pageOfFile": {
+      "adala": "Page {{page}} du fichier d’Adala",
+      "sgg": "Page {{page}} du fichier du SGG",
+      "dgi": "Page {{page}} du fichier de la DGI",
+      "bill": "Page {{page}} du fichier du projet"
+    },
+    "pageNav": "Navigation entre les pages",
+    "image": "La page imprimée",
+    "imageAlt": "Image de la page {{page}} du Bulletin officiel",
+    "ocrText": "Le texte lu",
+    "readBy": "Lu par {{engine}}",
+    "readByColumns": "Lu par {{engine}}, colonne par colonne",
+    "readByTurned": "Lu par {{engine}}, page redressée",
+    "layerOnly": "Couche texte du fichier",
+    "noText": "Pas encore de texte pour cette page.",
+    "textsOnPage": "Sur cette page :",
+    "checkLetters": "Lettres lues : {{share}} % de celles de la couche texte du fichier",
+    "checkAmounts": "{{inLayer}} des {{read}} montants lus figurent dans la couche texte du fichier",
+    "suspect": "Mots peut-être mal lus :",
+    "backTo": "Retour à"
+  },
+  "eras": {
+    "title": "Au fil du temps",
+    "current": " (en vigueur)"
+  },
+  "constitution": {
+    "adopted": "Adoptée par référendum le {{referendum}}, promulguée par le dahir n° {{dahir}} du {{signed}}.",
+    "adoptedUnnumbered": "Adoptée par référendum le {{referendum}}, promulguée par un dahir du {{signed}}.",
+    "readPreamble": "Lire tout le préambule",
+    "titles": "Les titres de la Constitution",
+    "articles_one": "{{count}} article",
+    "articles_other": "{{count}} articles",
+    "history": "Son histoire en bref",
+    "historyTitle": "Les constitutions du Maroc",
+    "historyLead": "Six constitutions depuis l'indépendance. Ce qui suit vient de leurs seuls textes, et chaque phrase mène à l'article qui le dit.",
+    "adoptedOn": "Adoptée par référendum le {{referendum}}, publiée le {{published}}",
+    "readCurrent": "Lire la Constitution",
+    "readOld": "Lire le texte tel que promulgué",
+    "lineage": "Dans les autres constitutions",
+    "lineageHere": "Cet article",
+    "lineageSame": "Même texte",
+    "lineageChanged": "Ce qui a changé",
+    "lineageChangedFrom": "Ce qui a changé depuis {{year}}",
+    "lineageNone": "Sans équivalent dans la Constitution de {{year}}",
+    "lineageAlone": "Pas encore rapproché d'un article de la Constitution de {{year}}.",
+    "lineageDraft": "Rapprochements faits par 3adala d'après le sens et les mots des articles.",
+    "lineageYear": "Constitution de {{year}}"
+  },
+  "issues": {
+    "frenchYear_one": "Un numéro de l’édition française : {{texts}} que l’arabe n’a pas publiés.",
+    "frenchYear_other": "{{count}} numéros de l’édition française : {{texts}} que l’arabe n’a pas publiés.",
+    "frenchLine_one": ", et un numéro de l’édition française : {{texts}} que l’arabe n’a pas publiés.",
+    "frenchLine_other": ", et {{count}} numéros de l’édition française : {{texts}} que l’arabe n’a pas publiés.",
+    "years": "Les années",
+    "volume_one": "{{year}} : un numéro",
+    "volume_other": "{{year}} : {{count}} numéros",
+    "lead_one": "Un numéro lu par 3adala.",
+    "lead_other": "{{count, n}} numéros lus par 3adala, de {{from}} à {{to}}, chacun avec ses textes et ses pages.",
+    "yearLine_one": "un numéro, {{texts}}",
+    "yearLine_other": "{{count}} numéros, {{texts}}",
+    "issuesCount_one": "un numéro",
+    "issuesCount_other": "{{count}} numéros",
+    "byNumber": "Numéro",
+    "open": "Ouvrir",
+    "notRead": "Le numéro {{number}} n’est pas encore dans 3adala.",
+    "leadPlain": "Chaque numéro lu par 3adala, du plus récent au plus ancien."
+  },
+  "data": {
+    "addressTitle": "Chaque article a une adresse",
+    "addressLead": "Une adresse fixe : elle ouvre l’article sur le site, y répond dans l’API, et l’intègre dans votre page.",
+    "examples": "Exemples",
+    "ex": {
+      "65_99": "Code du travail, art. 53",
+      "31_13": "Droit d’accès à l’information",
+      "1_11_91": "Constitution, art. 27"
+    },
+    "parts": {
+      "country": {
+        "t": "Le pays",
+        "d": "le Maroc"
+      },
+      "kind": {
+        "t": "Le type de texte"
+      },
+      "number": {
+        "t": "Son numéro",
+        "d": "tel qu’imprimé ({{printed}}), un tiret pour le point"
+      },
+      "article": {
+        "t": "L’article",
+        "d": "ou annex pour l’annexe, preamble pour le préambule"
+      }
+    },
+    "kinds": {
+      "loi": "loi",
+      "decret": "décret",
+      "dahir": "dahir",
+      "arrete": "arrêté",
+      "decision": "décision",
+      "loi-organique": "loi organique",
+      "decret-loi": "décret-loi",
+      "code": "code",
+      "convention": "convention",
+      "texte": "texte"
+    },
+    "uses": {
+      "site": "Sur le site",
+      "date": "Tel qu’à une date",
+      "embed": "À intégrer",
+      "api": "Dans l’API : les mots de l’article et sa page"
+    },
+    "licenceTitle": "La licence",
+    "officialTexts": "Les textes officiels",
+    "free": "Libres",
+    "licenceTexts": "Les textes officiels publiés au Bulletin officiel ne sont pas protégés par le droit d’auteur (article 8 de la loi n° 2-00), et se réutilisent en citant leur source et sa date (article 6 de la loi n° 31-13).",
+    "ourWork": "Ce qu’ajoute 3adala",
+    "licenceOurs": "Le découpage en articles, les adresses fixes, les renvois, les modifications : sous licence Open Database License (ODbL 1.0). Citez 3adala.com et la source du texte, le numéro du Bulletin officiel et sa date ; une base que vous en dérivez et publiez se partage sous la même licence.",
+    "licenceNot": "Et l’édition n’est pas officielle : seul fait foi ce qui est publié au Bulletin officiel.",
+    "embedTitle": "Intégrer un article",
+    "embedLead": "Sous chaque article, le bouton « Intégrer » donne un code à coller dans votre page (site d’information, page de cours) : l’article y paraît avec sa référence et son lien vers 3adala.",
+    "embedNote": "L’article intégré est une page de 3adala : il compte dans la lecture du jour de son lecteur, comme tout article du site.",
+    "privacyLink": "Ce que nous gardons, et combien de temps",
+    "try": "Essayer",
+    "hide": "Masquer",
+    "whole": "La réponse entière",
+    "failed": "La requête a échoué.",
+    "preview": "Aperçu",
+    "copy": "Copier",
+    "copied": "Copié",
+    "soon": {
+      "tag": "Bientôt",
+      "lead": "Toutes les données que nous préparons dans 3adala seront bientôt disponibles, à télécharger et à réutiliser.",
+      "title": "Ce qu’elles contiendront",
+      "holds": [
+        "Chaque texte, article par article, en arabe et dans sa version française officielle quand elle existe.",
+        "Pour chaque article, le numéro du Bulletin officiel et la page où il a paru.",
+        "Les versions de chaque texte dans le temps, et quel texte modifie quel autre.",
+        "Une adresse stable pour chaque texte et chaque article."
+      ],
+      "licence": "Elles seront sous licence Open Database License (ODbL 1.0) : vous les réutilisez en citant 3adala.com et la source de chaque texte, et une base que vous en dérivez et publiez se partage sous la même licence. Les textes officiels, eux, sont libres (article 8 de la loi n° 2-00).",
+      "licenceLink": "Le texte de la licence"
+    }
+  },
+  "issue": {
+    "more_one": "et un autre texte",
+    "more_other": "et {{count}} autres textes",
+    "french": "Bulletin officiel, édition française",
+    "frenchTexts": "Textes que l’édition arabe n’a pas publiés",
+    "printedWithin": "Ce numéro ({{asked}}) a été imprimé dans le numéro {{cover}} : une seule couverture porte plusieurs numéros ; voici ses pages et ses textes.",
+    "frenchNote": "Ce numéro de l’édition française contient des textes que l’édition arabe du Bulletin officiel n’a pas publiés, traduits en arabe depuis leur texte officiel français, en traduction non officielle. Ses autres textes sont dans les numéros de l’édition arabe des mêmes semaines.",
+    "fewer": "Moins",
+    "older": "Numéro précédent",
+    "newer": "Numéro suivant"
+  },
+  "proposed": {
+    "band": "Le {{bill}} propose de modifier cet article",
+    "bandAdded": "Le {{bill}} propose d'ajouter cet article",
+    "from": "à partir du {{date}} s'il est voté",
+    "open": "Voir la modification proposée",
+    "title": "Ce que propose le {{bill}}",
+    "article": "{{article}} du projet",
+    "when": "S'appliquerait, une fois voté par le Parlement et publié, à partir du {{date}}.",
+    "diff": "L'article tel qu'il est aujourd'hui, et ce que le projet propose d'en retirer et d'y ajouter",
+    "wording": "3adala n'a pas placé cette modification dans l'article automatiquement. Voici les mots du projet tel que déposé :",
+    "notLaw": "Le projet n'est pas une loi : le Parlement peut le modifier avant de le voter, et l'article affiché plus haut est le droit d'aujourd'hui.",
+    "whole": "Le projet en entier",
+    "loading": "Chargement…",
+    "stages": {
+      "filed": "Déposé au Parlement",
+      "representatives": "Voté par la Chambre des représentants",
+      "councillors": "Voté par la Chambre des conseillers",
+      "second_reading": "En seconde lecture"
+    },
+    "billNote": "Ceci est un projet de loi, pas une loi. Le gouvernement l'a déposé au Parlement ; la Chambre des représentants et la Chambre des conseillers peuvent le modifier avant de le voter. Il ne devient loi qu'une fois voté et publié au Bulletin officiel ; le texte publié prend alors sa place dans 3adala.",
+    "notLaw2": "pas encore une loi",
+    "whatIsThis": "Qu'est-ce que c'est ?",
+    "fromPartial": "à partir du {{date}} pour une partie, s’il est voté",
+    "whenPartial": "Cette date ne vise qu’une partie de la modification. Voici comment le projet écrit sa date d’effet :"
+  },
+  "quality": {
+    "report": "Signaler une erreur",
+    "reportRow": "Erreur de lecture ?",
+    "comparePage": "Comparer avec la page",
+    "reportTitle": "Erreur dans {{label}}",
+    "kind": "Type d'erreur",
+    "kinds": {
+      "reading": "Mot ou nombre erroné",
+      "link": "Lien erroné",
+      "missing": "Quelque chose manque",
+      "other": "Autre"
+    },
+    "quote": "Les mots concernés",
+    "message": "Ce qui est juste, ou ce que vous avez remarqué",
+    "send": "Envoyer",
+    "privacy": "Rien n'est conservé sur vous.",
+    "sent": "Signalement reçu. Une personne le vérifie avant toute correction.",
+    "empty": "Indiquez les mots concernés ou une remarque.",
+    "failed": "Le signalement n'est pas parti. Réessayez dans un instant.",
+    "reading": {
+      "confirmed": "Lue et confirmée par le texte du PDF",
+      "layer": "Texte tiré du fichier numérique lui-même, pas d’une image",
+      "unconfirmed": "Lue, non confirmée par le PDF : voir la page",
+      "scan": "Lue sur l'image de la page",
+      "short": "Lue sur l'image de la page, des lignes peuvent manquer : voir la page",
+      "none": "Pas encore lue"
+    },
+    "title": "Qualité de lecture",
+    "lead": "Comment chaque page du numéro du {{date}} a été lue, et si le texte du PDF lui-même confirme la lecture.",
+    "vouched": "pages confirmées par le PDF",
+    "textsFound": "textes trouvés parmi ceux du sommaire",
+    "openReports": "signalements ouverts",
+    "pages": "Les pages",
+    "suspect": "mots peut-être mal lus",
+    "legend": {
+      "confirmed": "lue et confirmée par le PDF",
+      "layer": "texte du PDF",
+      "unconfirmed": "non confirmée par le PDF",
+      "scan": "lue sur l'image",
+      "short": "des lignes peuvent manquer",
+      "none": "pas lue"
+    },
+    "notFoundTitle": "Au sommaire mais introuvables dans les pages",
+    "notFoundLead": "Le sommaire du numéro les cite mais leur début n'a pas été trouvé dans les pages : ils ne sont pas encore dans le corpus. Ils seront vérifiés et ajoutés.",
+    "of": "{{a}} sur {{b}}"
+  },
+  "auth": {
+    "signInTitle": "Connexion à votre compte",
+    "login": "Nom d'utilisateur ou adresse e-mail",
+    "password": "Mot de passe",
+    "showPassword": "Afficher le mot de passe",
+    "hidePassword": "Masquer le mot de passe",
+    "signIn": "Se connecter",
+    "signingIn": "Connexion…",
+    "noAccount": "Pas encore de compte ?",
+    "createAccount": "Créer un compte",
+    "registerTitle": "Créer votre compte",
+    "username": "Nom d'utilisateur",
+    "usernameHint": "Lettres et chiffres, sans @. Il sert à vous connecter.",
+    "email": "Adresse e-mail",
+    "displayName": "Nom affiché",
+    "displayNameHint": "Facultatif. C'est le nom que les autres verront.",
+    "passwordHint": "Au moins 8 caractères, pas uniquement des chiffres.",
+    "register": "Créer le compte",
+    "registering": "Création du compte…",
+    "haveAccount": "Vous avez déjà un compte ?",
+    "goSignIn": "Se connecter",
+    "signInWithEmail": "Se connecter avec cette adresse",
+    "wrongCredentials": "Nom d'utilisateur ou mot de passe incorrect.",
+    "sessionEnded": "Votre session a pris fin sur cet appareil. Reconnectez-vous.",
+    "tooMany": "Trop de tentatives. Attendez une minute, puis réessayez.",
+    "network": "Le serveur est injoignable. Vérifiez votre connexion, puis réessayez.",
+    "forgot": "Mot de passe oublié ?",
+    "forgotTitle": "Un nouveau mot de passe",
+    "forgotLede": "Saisissez votre nom d'utilisateur ou l'adresse de votre compte : nous vous envoyons un lien pour choisir un nouveau mot de passe.",
+    "forgotSend": "Envoyer le lien",
+    "forgotSending": "Envoi…",
+    "forgotSent": "Lien envoyé à {{to}}. Il est valable 3 heures, une seule fois.",
+    "forgotSentAccount": "Lien envoyé à l'adresse de ce compte. Il est valable 3 heures, une seule fois.",
+    "forgotSpam": "Rien après quelques minutes ? Regardez dans les indésirables (spam), puis renvoyez-le.",
+    "forgotAgain": "Renvoyer le lien",
+    "forgotSentAgain": "Renvoyé",
+    "backToSignIn": "Retour à la connexion",
+    "useSuggestion": "Utiliser",
+    "didYouMean": "Vouliez-vous dire",
+    "fixIt": "Oui, corriger",
+    "keepMine": "Non, c'est bien mon adresse",
+    "resetTitle": "Choisissez un nouveau mot de passe",
+    "resetFor": "Pour le compte",
+    "resetChecking": "Vérification du lien…",
+    "newPassword": "Nouveau mot de passe",
+    "resetSave": "Enregistrer et se connecter",
+    "resetSaving": "Enregistrement…",
+    "resetDone": "Votre mot de passe a changé et vous êtes connecté. Vos autres appareils ont été déconnectés.",
+    "resetAsk": "Demander un nouveau lien",
+    "goAccount": "Aller à votre compte",
+    "google": "Continuer avec Google",
+    "or": "ou",
+    "googleTitle": "Connexion avec Google",
+    "googleWorking": "Vérification de votre compte Google…",
+    "googleSignupTitle": "Nouveau compte avec Google",
+    "googleSignupLead": "Google a confirmé votre adresse. Il reste à choisir un nom d’utilisateur pour votre compte 3adala :",
+    "googleUsernameHint": "Lettres et chiffres, sans @. Il accompagne ce que vous écrivez : choisissez-en un qui ne vous identifie pas, si vous le souhaitez. Nous ne reprenons pas votre nom chez Google.",
+    "googleCreate": "Créer le compte et entrer",
+    "googleCancelled": "La connexion avec Google n’a pas abouti. Réessayez quand vous voulez.",
+    "googleStale": "Cette tentative a expiré. Revenez à la page de connexion et appuyez de nouveau sur « Continuer avec Google ».",
+    "googleBack": "Retour à la connexion"
+  },
+  "errors": {
+    "registration": {
+      "closed": "Les inscriptions sont fermées pour le moment."
+    },
+    "follows": {
+      "too_many": "Vous suivez déjà le plus qu’un compte peut suivre. Arrêtez d’en suivre un pour en suivre un autre."
+    },
+    "username": {
+      "username_taken": "Ce nom est déjà pris. Choisissez-en un autre.",
+      "held": "Un nom d'utilisateur ne contient ni numéro de téléphone, ni adresse, ni lien, ni insulte : il figure à côté de tout ce que vous écrivez. Choisissez-en un autre.",
+      "reserved": "Un nom d'utilisateur ne commence pas par demo-, load- ou deleted- : ils sont gardés pour des comptes que le site crée. Choisissez-en un autre.",
+      "invalid": "Lettres, chiffres, . - et _ uniquement, sans @.",
+      "min_length": "Au moins 3 caractères.",
+      "max_length": "30 caractères au plus.",
+      "required": "Saisissez un nom d'utilisateur.",
+      "blank": "Saisissez un nom d'utilisateur."
+    },
+    "email": {
+      "email_taken": "Cette adresse a déjà un compte. Connectez-vous plutôt que d'en créer un nouveau.",
+      "invalid": "Cette adresse n'est pas valide.",
+      "required": "Saisissez votre adresse e-mail.",
+      "blank": "Saisissez votre adresse e-mail.",
+      "typo": "Le fournisseur de cette adresse semble mal orthographié.",
+      "disposable": "Adresse jetable : impossible d'y récupérer votre compte. Utilisez votre adresse habituelle.",
+      "unreachable": "Cette adresse contient une faute de frappe : nous n'y envoyons rien.",
+      "not_sent": "Le code n'a pas pu partir. Réessayez dans un instant.",
+      "too_many_codes": "Trop de codes demandés. Attendez une heure.",
+      "too_many_today": "Cette adresse a reçu assez de codes aujourd'hui. Réessayez demain.",
+      "max_length": "Une adresse fait 254 caractères au plus.",
+      "already_proven": "Votre adresse est confirmée.",
+      "not_proven": "Confirmez d'abord votre adresse.",
+      "unproven": "Confirmez l’adresse de votre compte avant de demander l’accès."
+    },
+    "password": {
+      "password_too_short": "Au moins 8 caractères.",
+      "password_entirely_numeric": "Pas uniquement des chiffres.",
+      "password_too_common": "Mot de passe trop courant. Choisissez-en un autre.",
+      "password_too_similar": "Trop proche de votre nom ou de votre adresse.",
+      "required": "Saisissez un mot de passe.",
+      "blank": "Saisissez un mot de passe.",
+      "invalid": "Mot de passe incorrect.",
+      "locked_one": "Trop de mots de passe erronés. Attendez 1 minute, ou demandez un nouveau mot de passe.",
+      "locked_other": "Trop de mots de passe erronés. Attendez {{count}} minutes, ou demandez un nouveau mot de passe."
+    },
+    "display_name": {
+      "max_length": "40 caractères au plus.",
+      "held": "Le nom affiché ne contient ni numéro de téléphone, ni adresse, ni lien, ni insulte : il figure à côté de tout ce que vous écrivez. Choisissez-en un autre."
+    },
+    "unknown": "Une erreur est survenue. Réessayez.",
+    "login": {
+      "wrong": "Nom d'utilisateur ou mot de passe incorrect.",
+      "typo": "Aucun compte avec cette adresse, et son fournisseur semble mal orthographié.",
+      "no_email": "Aucun compte avec cette adresse. Vérifiez-la, ou saisissez votre nom d'utilisateur.",
+      "no_username": "Aucun compte à ce nom. Essayez votre adresse.",
+      "unreachable": "L'adresse de ce compte contient une faute de frappe : nous n'y envoyons rien. Si vous êtes connecté sur un autre appareil, changez-la depuis votre compte.",
+      "not_sent": "Le message n'a pas pu partir. Réessayez dans un instant.",
+      "required": "Saisissez votre nom d'utilisateur ou votre adresse.",
+      "max_length": "Trop long pour un nom d'utilisateur ou une adresse.",
+      "locked_one": "Trop de mots de passe erronés. Attendez 1 minute, ou demandez un nouveau mot de passe.",
+      "locked_other": "Trop de mots de passe erronés. Attendez {{count}} minutes, ou demandez un nouveau mot de passe.",
+      "disabled": "Ce compte est suspendu.",
+      "check": "Beaucoup de mauvais mots de passe ont été essayés sur ce compte. Confirmez que vous êtes une personne, et nous vérifions le vôtre.",
+      "staff": "Ce compte s'ouvre avec son mot de passe seulement : ni lien par e-mail, ni connexion avec Google."
+    },
+    "link": {
+      "dead": "Ce lien ne fonctionne plus : il a déjà servi, il a plus de 3 heures, ou vous vous êtes connecté depuis."
+    },
+    "new_password": {
+      "password_too_short": "Au moins 8 caractères.",
+      "password_entirely_numeric": "Pas uniquement des chiffres.",
+      "password_too_common": "Mot de passe trop courant. Choisissez-en un autre.",
+      "password_too_similar": "Trop proche de votre nom ou de votre adresse.",
+      "required": "Saisissez le nouveau mot de passe.",
+      "blank": "Saisissez le nouveau mot de passe."
+    },
+    "code": {
+      "invalid": "Code erroné ou expiré."
+    },
+    "google": {
+      "invalid": "Impossible de vérifier votre compte Google. Réessayez.",
+      "off": "La connexion avec Google n’est pas disponible pour le moment.",
+      "no_email": "Ce compte Google n’a pas d’adresse e-mail.",
+      "email_unverified": "Votre adresse n’est pas confirmée chez Google. Confirmez-la, puis revenez.",
+      "other": "Cette adresse est liée à un autre compte Google. Connectez-vous avec le mot de passe."
+    },
+    "window": {
+      "invalid": "De 1 à 80 articles par demande."
+    },
+    "from": {
+      "invalid": "Le rang de l'article de départ n'est pas valide."
+    },
+    "count": {
+      "invalid": "De 1 à 80 articles par demande."
+    },
+    "on": {
+      "invalid": "Cette date n'est pas valide."
+    },
+    "reading": {
+      "not_reached": "Vous n'avez pas atteint la limite de lecture du jour : aucune vérification n'est nécessaire."
+    },
+    "picture": {
+      "busy": "Nous dessinons d’autres images en ce moment. Réessayez dans un instant."
+    },
+    "access": {
+      "closed": "Les demandes d’accès ne sont pas reçues en ce moment.",
+      "live": "Votre compte a déjà un accès : pas besoin d’une nouvelle demande.",
+      "none": "Votre compte n’a pas d’accès en cours.",
+      "no_api": "Votre accès ne comprend pas l’API."
+    },
+    "request": {
+      "open": "Une demande attend déjà sa réponse : n’en envoyez pas d’autre.",
+      "too_soon": "Votre dernière demande n’a pas été acceptée. Vous pourrez demander à nouveau à partir du {{on}}.",
+      "none": "Aucune question n’attend votre réponse.",
+      "decided": "Cette demande a déjà été décidée.",
+      "throttled": "Trop d’essais. Attendez un peu, puis réessayez."
+    },
+    "terms": {
+      "required": "Acceptez les conditions pour envoyer votre demande.",
+      "stale": "Les conditions ont changé depuis que vous avez ouvert la page. Relisez-les, puis renvoyez.",
+      "invalid": "Acceptez les conditions pour envoyer votre demande."
+    },
+    "consent": {
+      "required": "Acceptez que vos réponses soient gardées pour envoyer votre demande."
+    },
+    "wants": {
+      "required": "Choisissez l’API ou la base de données, ou les deux."
+    },
+    "wants_api": {
+      "invalid": "Choisissez l’API ou la base de données, ou les deux."
+    },
+    "wants_data": {
+      "invalid": "Choisissez l’API ou la base de données, ou les deux."
+    },
+    "name": {
+      "required": "Écrivez votre nom ou celui de l’organisme.",
+      "too_long": "120 caractères au plus.",
+      "invalid": "Écrivez votre nom ou celui de l’organisme."
+    },
+    "kind": {
+      "required": "Dites qui vous êtes.",
+      "invalid": "Choisissez dans la liste."
+    },
+    "purpose": {
+      "required": "Dites-nous ce que vous ferez ou étudierez.",
+      "too_long": "600 caractères au plus.",
+      "invalid": "Dites-nous ce que vous ferez ou étudierez."
+    },
+    "runs_at": {
+      "too_long": "200 caractères au plus.",
+      "invalid": "Cette adresse n’est pas valide."
+    },
+    "volume": {
+      "required": "Dites combien il vous faut.",
+      "invalid": "Choisissez dans la liste."
+    },
+    "commercial": {
+      "required": "Dites-nous si cela vous rapporte de l’argent.",
+      "invalid": "Choisissez oui ou non."
+    },
+    "answer": {
+      "required": "Écrivez votre réponse.",
+      "too_long": "600 caractères au plus.",
+      "invalid": "Écrivez votre réponse."
+    },
+    "keys": {
+      "full": "Vous avez deux clés, le maximum. Mettez fin à l’une pour en créer une autre."
+    },
+    "key": {
+      "not_found": "Cette clé n’existe pas, ou a déjà pris fin.",
+      "invalid": "Clé non valide.",
+      "ended": "Cette clé a pris fin.",
+      "expired": "L’accès de cette clé a pris fin.",
+      "required": "Une clé est requise.",
+      "minute": "Limite de la minute atteinte. Attendez un peu.",
+      "calls": "Limite de requêtes du jour atteinte.",
+      "articles": "Limite d’articles du jour atteinte."
+    },
+    "open_data": {
+      "closed": "La base de données est fermée en ce moment.",
+      "request": "Connectez-vous pour télécharger ce fichier.",
+      "no_access": "Votre accès ne comprend pas la base de données.",
+      "daily": "Vous avez pris aujourd’hui autant de fichiers qu’un accès peut en prendre en un jour. Revenez demain."
+    },
+    "ticket": {
+      "invalid": "Le lien de téléchargement a expiré. Demandez-le à nouveau.",
+      "expired": "Le lien de téléchargement a expiré. Demandez-le à nouveau."
+    },
+    "file": {
+      "invalid": "Ce fichier n’est pas dans l’édition."
+    },
+    "edition": {
+      "unknown": "Cette édition n’existe pas."
+    }
+  },
+  "shelf": {
+    "title": "Les textes essentiels",
+    "lead": "Les textes les plus recherchés. Quand l'un n'est pas encore dans 3adala, nous le disons et vous envoyons vers son texte sur Adala, le portail du ministère de la Justice.",
+    "count": "Dans 3adala aujourd'hui : {{held}} sur {{total}}.",
+    "notYet": "Pas encore dans 3adala.",
+    "titleOnly": "Seul son titre est dans 3adala.",
+    "onAdala": "Le lire sur Adala",
+    "held": "Dans 3adala",
+    "later": "Pas encore dans 3adala",
+    "laterCount": "Et {{count}} autres textes pas encore dans 3adala, avec le lien vers leur texte sur Adala.",
+    "homeLead": "Les textes que l’on cherche le plus",
+    "spinesNote": "Chaque dos est aussi large que le texte a d’articles. Les dos en pointillés ne sont pas encore dans 3adala et ouvrent le texte sur Adala.",
+    "adala": "Adala"
+  },
+  "wordMeans": {
+    "bo": "La publication où le Secrétariat général du gouvernement publie les textes juridiques. Le texte tel que publié fait foi.",
+    "constitution": "Le texte suprême : droits et libertés, qui fait les lois et comment. La Constitution actuelle date de 2011.",
+    "organic_law": "Loi qui complète la Constitution dans les domaines qu'elle désigne ; promulguée après contrôle de la Cour constitutionnelle.",
+    "law": "Texte voté par le Parlement, promulgué par dahir et publié au Bulletin officiel.",
+    "code": "Loi qui réunit les règles de tout un domaine : Code de la famille, Code du travail, Code de la route.",
+    "dahir": "Décision du Roi : soit il promulgue une loi votée par le Parlement, soit il règle lui-même une matière.",
+    "promulgation": "Le dahir qui ordonne l'exécution d'une loi votée par le Parlement ; la loi porte sa date.",
+    "decree_law": "Décret pris par le gouvernement dans le domaine de la loi entre deux sessions du Parlement, soumis ensuite à sa ratification.",
+    "decree": "Texte du Chef du gouvernement, pris pour appliquer une loi ou régler une matière hors du domaine de la loi.",
+    "order": "Texte d'un ou plusieurs ministres, le plus souvent pour appliquer une loi ou un décret.",
+    "decision": "Décision d'une autorité ou d'une juridiction, comme celles de la Cour constitutionnelle sur la conformité des lois.",
+    "circular": "Instructions d'une administration à ses services pour expliquer un texte ou son application. Elle ne crée pas de règle nouvelle.",
+    "convention": "Accord entre le Maroc et un autre État ou une organisation, publié au Bulletin officiel après ratification.",
+    "in_force": "S'applique aujourd'hui.",
+    "none_found": "3adala a lu ce que le Bulletin officiel a publié après ce texte sans trouver de texte qui l'abroge expressément. Cela ne veut pas dire qu'il s'applique encore : il a pu épuiser ses effets, être abrogé implicitement, ou l'être dans un numéro pas encore lu. « En vigueur » est dit d'un texte qu'un portail officiel publie à jour, ou paru depuis 2019 et dont la suite a été lue.",
+    "amended": "Des textes publiés depuis en ont changé des articles ; la page du texte donne chaque changement, sa date et le texte qui l'a fait.",
+    "repealed": "Supprimé par un texte postérieur : il ne s'applique plus. 3adala le garde pour qui a besoin du texte tel qu'il était.",
+    "not_yet_in_force": "Publié, mais applicable à une date ultérieure fixée par le texte lui-même ou par un autre.",
+    "as_published": "Le texte tel qu'imprimé au Bulletin officiel, sans les modifications venues après.",
+    "consolidated": "Le texte tel qu'il est aujourd'hui, avec les modifications venues après lui. Version de lecture : seul fait foi ce qui a paru au Bulletin officiel."
+  },
+  "marks": {
+    "label": "Les mots de votre recherche dans ce texte",
+    "words": "Vos mots :",
+    "previous": "Article précédent qui les contient",
+    "next": "Article suivant qui les contient",
+    "hide": "Masquer",
+    "meaning": "Trouvé par le sens : vos mots n’y figurent pas",
+    "notHere": "absents de cet article",
+    "count_one": "un article les contient",
+    "count_other": "{{count}} articles les contiennent"
+  },
+  "homeWeek": {
+    "kicker": "Cette semaine au",
+    "kickerLast": "Dernière semaine parue au",
+    "name": "Bulletin officiel",
+    "issue": "Numéro",
+    "more_one": "Et un autre texte dans le numéro",
+    "more_other": "Et {{count}} autres textes dans le numéro",
+    "also": "Et le numéro {{issue}}",
+    "andMore_one": "et un autre texte",
+    "andMore_other": "et {{count}} autres textes"
+  },
+  "week2": {
+    "peopleLead": "Ce que nos rédacteurs ont expliqué simplement des textes de la semaine, avec le texte tel que publié.",
+    "general_zero": "aucun texte général",
+    "general_one": "1 texte général",
+    "general_other": "{{count}} textes généraux",
+    "specialCount_one": "et 1 texte particulier",
+    "specialCount_other": "et {{count}} textes particuliers",
+    "daysLabel": "Les jours de la semaine, et les numéros parus",
+    "today": "aujourd’hui",
+    "topics": "Les textes de la semaine concernent :",
+    "toc": "Sommaire de la semaine",
+    "tocLead": "Les textes généraux dans l’ordre du Bulletin, avec la page de chacun.",
+    "issue": "N° {{number}}",
+    "pages": "pages {{from}}–{{to}}",
+    "toldMark": "Expliqué simplement",
+    "special_one": "Et dans la partie particulière (annonces et avis), 1 texte.",
+    "special_other": "Et dans la partie particulière (annonces et avis), {{count}} textes.",
+    "empty": "Le Bulletin officiel n’a pas paru cette semaine.",
+    "groups": {
+      "constitution": "Constitution",
+      "organic_law": "Lois organiques",
+      "law": "Lois",
+      "dahir": "Dahirs",
+      "decree_law": "Décrets-lois",
+      "decree": "Décrets",
+      "order": "Arrêtés",
+      "decision": "Décisions",
+      "circular": "Circulaires",
+      "convention": "Conventions",
+      "bill": "Projets de loi",
+      "other": "Autres textes"
+    }
+  },
+  "lib2": {
+    "plaque": "La bibliothèque garde <b>{{issues}}</b> du Bulletin officiel, du {{from}} au {{to}}, avec <b>{{texts}}</b> et <b>{{articles}}</b>.",
+    "issuesN_zero": "aucun numéro",
+    "issuesN_one": "1 numéro",
+    "issuesN_other": "{{n}} numéros",
+    "textsN_zero": "aucun texte",
+    "textsN_one": "1 texte",
+    "textsN_other": "{{n}} textes",
+    "articlesN_zero": "aucun article",
+    "articlesN_one": "1 article",
+    "articlesN_other": "{{n}} articles",
+    "wordsN_zero": "aucun mot",
+    "wordsN_one": "1 mot",
+    "wordsN_other": "{{n}} mots",
+    "findLabel": "Chercher dans la bibliothèque",
+    "findHint": "7551, Code du travail, 65.99",
+    "findNote": "Un numéro ouvre ce numéro du Bulletin ; le reste est cherché dans les textes.",
+    "case": "Les rayons de la bibliothèque",
+    "held": "{{held}} sur {{total}} dans 3adala",
+    "bulletin": "Le Bulletin officiel, décennie par décennie",
+    "bulletinLead": "Un volume par décennie, sa hauteur selon ses numéros",
+    "allIssues": "Tous les numéros, année par année",
+    "decade": "{{from}}–{{to}} : {{issues}}",
+    "tools": "Les outils de la bibliothèque",
+    "onDevice": "Sur votre appareil"
+  },
+  "bo2": {
+    "noteFrench": "Une case en pointillés est un numéro de l’édition française : des textes que l’édition arabe n’a pas publiés, traduits en arabe depuis leur texte officiel français, en traduction non officielle.",
+    "note": "Chaque case violette est un numéro paru ce jour-là, son numéro sous le jour. Touchez-la pour l’ouvrir.",
+    "cell": "{{date}} : numéro {{issue}}, {{texts}}"
+  },
+  "lex": {
+    "find": "Chercher un mot",
+    "findHint": "pension, bail, auto-entrepreneur…",
+    "topic": "Page du thème",
+    "shown_zero": "Aucun mot ne correspond",
+    "shown_one": "1 mot correspond",
+    "shown_other": "{{count}} mots correspondent",
+    "total_zero": "",
+    "total_one": "1 mot",
+    "total_other": "{{count}} mots",
+    "none": "Aucun mot ici ne ressemble à « {{q}} »."
+  },
+  "check2": {
+    "private": "Le document ne quitte pas votre appareil",
+    "marked": "Le document et ses références",
+    "edit": "Modifier le texte",
+    "again": "Vérifier à nouveau",
+    "sum": "Le document contient {{found}} :",
+    "toMark": "Aller à la référence {{n}} dans le document",
+    "sampleStart": "Par exemple :"
+  },
+  "home2": {
+    "lately": "Récemment",
+    "title": "Ce qui a changé, ce qui vient",
+    "lead": "La loi change : ce qui arrive bientôt, et ce qui a changé ces jours-ci, chacun avec son thème et sa date.",
+    "today": "Aujourd’hui",
+    "bill": "Projet",
+    "newText": "Nouveau texte",
+    "changing": "quelque chose y a changé récemment ou va changer",
+    "in_one": "demain",
+    "in_other": "dans {{count}} jours",
+    "ago_one": "hier",
+    "ago_other": "il y a {{count}} jours"
+  },
+  "search2": {
+    "said": "Votre question, et sous vos mots ceux qu’emploie la loi",
+    "saidLaw": "dans les mots de la loi :",
+    "answerOpen": "Lire toute la réponse",
+    "people": "Déjà demandé",
+    "peopleNote": "Des réponses de lecteurs, pas le texte de la loi.",
+    "peopleAll": "Toutes les questions : {{name}}",
+    "accepted": "Utile à l’auteur de la question",
+    "noAnswer": "Pas encore de réponse",
+    "answers_one": "{{count}} réponse",
+    "answers_other": "{{count}} réponses",
+    "wordsArticles": "Les articles qui portent les mots de la loi de ce thème",
+    "texts": "Dans les textes"
+  },
+  "topics2": {
+    "lead": "{{moments}} que vivent les gens, dans {{topics}} thèmes, chacune dite avec leurs mots et suivie de la réponse de la loi en une ligne.",
+    "moments_one": "{{count}} situation",
+    "moments_other": "{{count}} situations",
+    "more_one": "et une autre situation",
+    "more_other": "et {{count}} autres situations",
+    "changes": "Change le {{date}} :",
+    "jump": "Les thèmes de cette page"
+  },
+  "landing": {
+    "back": "Retour à « {{title}} »",
+    "missing": "L’article {{number}} n’est pas dans ce texte : sa numérotation a peut-être changé. Voici le début du texte ; le sommaire en donne tous les articles.",
+    "failed": "Ces articles n’ont pas pu être chargés. Vérifiez votre connexion.",
+    "retry": "Réessayer",
+    "noneSince": ", sans modification depuis dans ce que nous avons lu jusqu’au n° {{number}}"
+  },
+  "sizes": {
+    "0": "Petit texte",
+    "1": "Texte moyen",
+    "2": "Grand texte"
+  },
+  "saved": {
+    "title": "Mes articles",
+    "lead": "Les articles gardés sur cet appareil, en entier, à lire même sans connexion. Sans compte ; rien ne quitte votre appareil.",
+    "read": "Lire l'article",
+    "on": "Gardé le {{date}}",
+    "forget": "Retirer de mes articles",
+    "empty": "Aucun article gardé pour l'instant.",
+    "howTo": "Touchez « Garder » sous un article : il sera ici, même hors connexion.",
+    "first": "Ouvrir les lois les plus consultées",
+    "onPhone": "Enregistré sur ce téléphone, lisible sans connexion",
+    "onDevice": "Enregistré sur cet appareil, lisible sans connexion"
+  },
+  "install": {
+    "title": "Ajouter 3adala à l’écran d’accueil",
+    "ios": "Pour ajouter 3adala à l’écran : bouton Partager, puis « Sur l’écran d’accueil ».",
+    "add": "Ajouter",
+    "no": "Non merci"
+  },
+  "account": {
+    "me": "Moi",
+    "settings": "Réglages",
+    "displayName": "Nom affiché",
+    "language": "Langue du site",
+    "save": "Enregistrer",
+    "saving": "Enregistrement…",
+    "saved": "Enregistré.",
+    "signOutTitle": "Déconnexion",
+    "signOutHint": "Vous quittez cet appareil seulement ; vos autres appareils restent connectés.",
+    "signOut": "Se déconnecter",
+    "signinTitle": "Adresse et mot de passe",
+    "signinAs": "Vous vous connectez avec",
+    "proven": "confirmée",
+    "unproven": "non confirmée",
+    "changeEmail": "Changer d'adresse",
+    "newEmail": "Nouvelle adresse",
+    "currentPassword": "Mot de passe actuel",
+    "newPassword": "Nouveau mot de passe",
+    "emailChanged": "Adresse changée. Un code pour la confirmer a été envoyé à {{email}}.",
+    "emailChangedNoCode": "Adresse changée, mais le code n'a pas pu partir. Redemandez-le :",
+    "changePassword": "Changer le mot de passe",
+    "passwordChanged": "Mot de passe changé. Vos autres appareils sont déconnectés ; celui-ci reste connecté.",
+    "appsTitle": "Applications connectées",
+    "appsUse_one": "{{count}} appel ce mois-ci",
+    "appsUse_other": "{{count}} appels ce mois-ci",
+    "appsLast": "dernier usage le {{date}}",
+    "appsEnd": "Déconnecter",
+    "appsNone": "Aucun assistant n'est connecté à votre compte.",
+    "appsHow": "Connecter ChatGPT ou Claude",
+    "noPassword": "Votre compte s’ouvre avec Google et n’a pas de mot de passe. Pour entrer aussi avec un mot de passe, choisissez-en un par le lien que nous envoyons à votre adresse :",
+    "setPassword": "Choisir un mot de passe"
+  },
+  "history": {
+    "articleHistory": "Historique de l’article · {{count}}",
+    "gone": "supprimé",
+    "issue": "Bulletin officiel n° {{number}}, page {{page}}",
+    "latest": "Dernière version",
+    "new": "ajouté",
+    "newArticle": "Article nouveau dans cette version",
+    "of": " de ",
+    "onDate": "Le texte tel qu’il était le",
+    "show": "Afficher",
+    "shown": "Affichée",
+    "since": "Ce qui a changé depuis la version du {{date}}",
+    "sources": {
+      "sgg": "selon le SGG",
+      "reading": "lu par 3adala dans le texte modificatif",
+      "adala": "selon Adala",
+      "dgi": "selon la DGI"
+    },
+    "verbs": {
+      "modified": "modifié ou complété",
+      "added": "ajouté",
+      "replaced": "abrogé et remplacé",
+      "repealed": "abrogé",
+      "words": "des termes remplacés"
+    },
+    "whatChanged": "Ce qui a changé dans cette version",
+    "missing": "Modification pas encore intégrée à ce texte : {{by}}. Les mots ci-dessus sont ceux d'avant ; « Son historique » indique le numéro qui l'a publiée."
+  },
+  "memorandum": {
+    "title": "Exposé des motifs",
+    "source": "Le projet tel que déposé à la Chambre des représentants (PDF)",
+    "what": "La note du gouvernement jointe au projet : un texte officiel qui en donne les raisons, sans faire partie de la loi.",
+    "more": "Lire l'exposé en entier ({{count}} paragraphes)",
+    "less": "Masquer la suite",
+    "parliament": "Au Parlement",
+    "bill": "Le projet tel que déposé à la Chambre des représentants (PDF)",
+    "billPage": "La page du projet sur le site de la Chambre"
+  },
+  "places": {
+    "title": "Pays et villes",
+    "leadShort": "Chaque pays et chaque ville du Maroc que le Bulletin officiel a nommés, et chaque article qui les nomme.",
+    "lead": "Chaque pays et chaque ville du Maroc que le Bulletin officiel a nommés depuis {{year}}, dans {{texts}} textes : {{countries}} pays, {{cities}} villes et {{communes}} communes. Tapez un nom ou touchez la carte : vous trouvez chaque article qui le nomme.",
+    "find": "Chercher un pays ou une ville",
+    "findHint": "France, Sénégal, Tanger, casa…",
+    "nothing": "Aucun pays ni aucune ville ne s’appelle « {{q}} »",
+    "world": "Le monde au Bulletin officiel",
+    "worldHow": "Chaque cachet est un pays ; sa taille, le nombre de textes qui le nomment depuis 1913.",
+    "worldMap": "Carte du monde : chaque pays selon le nombre de textes qui le nomment",
+    "morocco": "Le Maroc au Bulletin officiel",
+    "moroccoHow": "Chaque point est une ville ; sa taille, le nombre de textes qui la nomment.",
+    "moroccoMap": "Carte du Maroc : chaque ville selon le nombre de textes qui la nomment",
+    "units": "Régions, préfectures et provinces",
+    "regions": "Régions",
+    "provinces": "Préfectures et provinces",
+    "source": "Compté par le code dans les textes arabes du Bulletin officiel tels que publiés, texte par texte et article par article, sans intelligence artificielle. Noms : la liste des Nations unies et le décret du recensement 2.24.1009 (BO 7356). Carte : Natural Earth, édition marocaine ; positions : GeoNames (CC BY 4.0).",
+    "kind": {
+      "country": "Pays",
+      "gone": "Pays disparu",
+      "region": "Région",
+      "province": "Préfecture ou province",
+      "city": "Ville",
+      "commune": "Commune"
+    },
+    "named_zero": "Cité dans aucun texte",
+    "named_one": "Cité dans un texte, en {{year}}",
+    "named_other": "Cité dans {{texts}} textes depuis {{year}}",
+    "never": "Jamais cité dans les textes que 3adala a lus.",
+    "firstShort": "Première fois : {{date}}, « {{form}} »",
+    "open_zero": "Ouvrir la page",
+    "open_one": "Ouvrir l’article",
+    "open_other": "Voir tous les articles",
+    "yearBar_zero": "{{year}} : aucun texte",
+    "yearBar_one": "{{year}} : un texte, {{share}} pour mille",
+    "yearBar_other": "{{year}} : {{texts}} textes, {{share}} pour mille",
+    "share": {
+      "over": "{{name}} au Bulletin officiel",
+      "texts_zero": "",
+      "texts_one": "texte au Bulletin officiel",
+      "texts_other": "textes au Bulletin officiel",
+      "first": "Première fois en {{year}}",
+      "peak_zero": "",
+      "peak_one": "Année record : {{year}}",
+      "peak_other": "Année record : {{year}}, {{count}} textes",
+      "source": "Le Bulletin officiel depuis 1913, lu par 3adala",
+      "site": "قانون · 3adala.com/places/{{slug}}"
+    },
+    "eci": "Conventions internationales {{number}}",
+    "inTitle": "Dans le titre du texte",
+    "kinds": {
+      "studies": "Équivalence des diplômes",
+      "missions": "Ambassades et consulats",
+      "finance": "Loi de finances",
+      "loan": "Prêts et garanties",
+      "treaty": "Accords",
+      "customs": "Douane et commerce",
+      "people": "Nationalité et séjour",
+      "transport": "Transports",
+      "land": "Foncier et expropriation",
+      "territory": "Découpage territorial",
+      "courts": "Tribunaux",
+      "water": "Eau et électricité",
+      "schools": "Enseignement",
+      "health": "Santé",
+      "economy": "Économie et impôts",
+      "other": "Autres textes"
+    },
+    "with": "Avec un autre lieu",
+    "withHint": "Et un autre lieu ?",
+    "withOn": "Avec : {{name}}",
+    "withClear": "Retirer le second lieu",
+    "became": "devenu",
+    "population": "· {{people}} habitants au recensement de 2024.",
+    "sharePicture": "Image à partager",
+    "years": "Année par année",
+    "yearsHow": "Chaque barre est une année : sur mille textes publiés au Bulletin cette année-là, combien le nomment. Touchez une année pour voir ses textes, puis une autre pour choisir l’intervalle.",
+    "first": "La première fois au Bulletin officiel",
+    "firstForm": "« {{form}} », {{date}}. Trouvé par le code ; à lire sur sa page imprimée.",
+    "spellings": "Comment le nom a été écrit",
+    "articles": "Les articles qui le citent",
+    "filters": "Filtrer les articles",
+    "type": "Type de texte",
+    "allTypes": "Tous les types",
+    "titleOnly": "Dans le titre seulement",
+    "clear": "Retirer les filtres",
+    "yearsOn": "De {{from}} à {{to}}",
+    "noneHere": "Aucun article avec ces filtres",
+    "noneHereLead": "Retirez un choix ou prenez d’autres années.",
+    "more": "Voir plus",
+    "near": "Lieux proches dans le droit",
+    "libLead": "Chaque pays et chaque ville que le Bulletin a nommés depuis 1913, sur la carte, et chaque article qui les cite.",
+    "doorCount_zero": "cité dans aucun texte",
+    "doorCount_one": "cité dans un texte du Bulletin officiel",
+    "doorCount_other": "cité dans {{texts}} textes du Bulletin officiel"
+  },
+  "blogLinks": {
+    "name": "3adala en chiffres",
+    "lead": "Nous comptons ce que publie le Bulletin officiel, nous le dessinons et nous disons comment nous avons compté.",
+    "all": "Tous les articles",
+    "more": "D’autres articles",
+    "number": "Numéro {{n}}",
+    "draft": "Brouillon"
+  },
+  "new3": {
+    "special": "Textes particuliers",
+    "specialLead": "Des décisions qui visent une personne, un lieu ou une société : nominations, délégations de signature, autorisations, équivalences de diplômes, expropriations…",
+    "pages_one": "1 page",
+    "pages_other": "{{count}} pages",
+    "specialCount_one": "1 texte particulier",
+    "specialCount_other": "{{count}} textes particuliers",
+    "paperLabel": "Les pages des numéros de la semaine, de la première à la dernière, colorées selon ce qu’elles contiennent",
+    "paper": {
+      "law": "Dahirs et lois",
+      "decree": "Décrets",
+      "order": "Arrêtés et décisions",
+      "special": "Textes particuliers",
+      "front": "Couverture et sommaire"
+    },
+    "index": "Cette semaine",
+    "pageRange": "pages {{range}}",
+    "applies": "Applique :",
+    "readAll": "La liste complète dans le texte",
+    "texts_one": "texte",
+    "texts_other": "textes",
+    "noIssuer": "auteur non nommé",
+    "numbered": "n° {{number}}",
+    "unfold_one": "Voir l’autre texte",
+    "unfold_other": "Voir les {{count}} autres",
+    "fold": "Replier"
+  },
+  "connect": {
+    "title": "Connecter un assistant à votre compte",
+    "asks": "{{name}} demande à lire 3adala avec votre compte",
+    "known": "Un assistant que 3adala connaît",
+    "selfNamed": "Ce nom est celui que l'application se donne : regardez le domaine.",
+    "loopback": "Un programme qui tourne sur cet ordinateur demande l'accès. N'autorisez que si vous venez de le lancer.",
+    "can": "Il pourra :",
+    "canSearch": "chercher dans la loi et en lire les articles, en arabe et dans leur traduction française officielle",
+    "canBulletin": "lire ce que le Bulletin officiel a publié",
+    "canCheck": "vérifier des références à des textes",
+    "never": "Il ne voit jamais votre adresse e-mail, vos articles enregistrés, vos suivis ni vos messages.",
+    "limits": "Jusqu'à 20 appels par minute, 300 par jour et 600 articles par jour.",
+    "signInFirst": "Connectez-vous d'abord, puis répondez.",
+    "prove": "Confirmez d'abord votre adresse {{email}} : saisissez le code que nous y avons envoyé.",
+    "code": "Code",
+    "proveIt": "Confirmer",
+    "sendCode": "Envoyer un nouveau code",
+    "codeSent": "Nouveau code envoyé. Regardez aussi dans les indésirables.",
+    "as": "Connecté en tant que",
+    "allow": "Autoriser",
+    "deny": "Refuser",
+    "goesTo": "La réponse retourne à {{host}}.",
+    "leaving": "Retour vers {{name}}…",
+    "mismatch": "L'adresse de retour ne correspond pas à celle que nous avons affichée : nous n'y envoyons pas la réponse.",
+    "loading": "Vérification de la demande…",
+    "expired": "Cette demande a expiré (dix minutes) ou a déjà reçu une réponse. Retournez dans votre assistant et reconnectez-le.",
+    "retry": "Retournez dans ChatGPT ou Claude et relancez la connexion.",
+    "howTo": "Comment connecter un assistant à 3adala",
+    "errors": {
+      "none": "Aucune demande de connexion ici. La connexion commence dans votre assistant (ChatGPT ou Claude).",
+      "redirect": "L'adresse de retour de cette demande n'est pas celle de l'application : nous n'y envoyons rien.",
+      "client_invalid": "Nous ne reconnaissons pas l'application qui demande la connexion.",
+      "client_unreachable": "Impossible de lire la fiche de l'application qui demande la connexion. Réessayez dans un instant.",
+      "client_required": "Demande incomplète : l'application n'est pas indiquée.",
+      "client_unlisted": "3adala ne lit les fiches d'application que chez ChatGPT et Claude. Cette application doit d'abord s'enregistrer auprès de 3adala, puis refaire la demande.",
+      "busy": "Trop de demandes de connexion depuis votre adresse cette minute. Attendez une minute, puis relancez la connexion depuis votre assistant.",
+      "response_type": "Cette application demande un mode de connexion que 3adala ne propose pas : nous ne lui envoyons rien.",
+      "pkce": "Cette demande n'a pas la protection qu'exige 3adala (PKCE S256) : nous ne lui envoyons rien.",
+      "resource": "Cette application demande l'accès à un autre service que le serveur MCP de 3adala : nous ne lui envoyons rien.",
+      "scope": "Cette application demande des droits que 3adala ne propose pas (seulement la lecture de la loi) : nous ne lui envoyons rien."
+    },
+    "noAccount": "Aucun compte n'est nécessaire pour lire 3adala depuis votre assistant. Retournez dans votre assistant, ajoutez 3adala à nouveau et choisissez « Sign in when needed » ou « No sign-in » pour la connexion."
+  },
+  "ai": {
+    "title": "3adala dans ChatGPT, Claude et Gemini",
+    "lede": "Ajoutez 3adala à votre assistant, sans compte : quand vous lui posez une question, il lit la loi dans 3adala, l'article en arabe et dans sa traduction française officielle, la page du Bulletin officiel d'où il vient, et s'il est en vigueur. Il le cite avec son lien.",
+    "addressTitle": "L'adresse de 3adala pour les assistants",
+    "addressLede": "C'est l'adresse à coller dans votre assistant quand vous ajoutez 3adala :",
+    "copy": "Copier",
+    "copied": "Copié",
+    "needs": "Aucun compte n'est nécessaire : l'adresse suffit.",
+    "account": "Votre compte",
+    "claude1": "Dans Claude : Customize → Connectors (claude.ai/customize/connectors) → Add custom connector.",
+    "claude2": "Nommez-le « 3adala » et collez l'adresse ci-dessus. Si Claude demande l'authentification (Authentication), choisissez « Sign in when needed » ou « No sign-in » ; s'il affiche Advanced settings, laissez-les vides. Puis Add.",
+    "claude3": "Dans une conversation : + → Connectors, puis activez 3adala.",
+    "claudeFree": "Avec l'offre gratuite de Claude, un connecteur personnalisé est possible.",
+    "chatgpt1": "Dans ChatGPT : Paramètres → Apps (ou Connectors) → Advanced, et activez le Developer mode.",
+    "chatgpt2": "Créez une app avec l'adresse ci-dessus et choisissez « No authentication ».",
+    "chatgptPlans": "Toutes les offres de ChatGPT ne permettent pas d'ajouter une app par son adresse ; l'offre gratuite non. Quand 3adala sera dans l'annuaire des apps de ChatGPT, tout le monde y aura accès.",
+    "gemini1": "Dans Gemini sur le web (gemini.google.com) : Settings → Connected Apps → Add a custom app.",
+    "gemini2": "Collez l'adresse ci-dessus, puis Next, et suivez les instructions.",
+    "geminiWhere": "Pour l'instant, Google ne l'ouvre qu'aux personnes aux États-Unis, avec un compte personnel, en anglais et avec Keep Activity activé. Ajouté sur le web, il fonctionne aussi dans l'application mobile.",
+    "terminalTitle": "Dans le terminal",
+    "toolsTitle": "Ce que l'assistant peut faire",
+    "tools": {
+      "search": "chercher dans la loi en arabe, en français ou en darija, ou par une référence comme « art. 53 du Code du travail ».",
+      "fetch": "lire un article entier avec sa source, son statut et ce qui l'a modifié, le sommaire d'un texte ou un numéro du Bulletin officiel.",
+      "read_articles": "lire jusqu'à 20 articles à la suite, tels qu'ils étaient à une date choisie.",
+      "check_references": "vérifier des références : existent-elles, sont-elles en vigueur, ont-elles changé.",
+      "get_bulletin": "montrer ce que le Bulletin officiel a publié cette semaine ou dans un numéro donné."
+    },
+    "never": "Sans compte, 3adala ne sait pas qui vous êtes : des appels de votre assistant, il garde des comptes par jour (combien d'appels, quels outils, combien d'articles), sans adresse ni personne, et les mots de ses recherches entrent dans le journal de recherche, comme les vôtres. L'assistant n'écrit rien dans 3adala.",
+    "limits": "Par adresse qui appelle directement : 30 appels par minute et 1 000 par jour. Les utilisateurs de Claude et de ChatGPT partagent une limite large par heure, et chaque utilisateur de ChatGPT a la sienne : 150 appels par heure.",
+    "notAdvice": "3adala donne à votre assistant le texte de la loi et sa source, pas un avis. La réponse de l'assistant est la sienne : ouvrez l'article qu'il cite pour vérifier, et consultez un professionnel pour votre situation.",
+    "endTitle": "Arrêter",
+    "end": "Retirez 3adala des connecteurs de votre assistant (Connectors, Apps ou Connected Apps) quand vous voulez.",
+    "endLink": "Applications connectées",
+    "privacy": "Ce que nous en gardons :",
+    "privacyLink": "Confidentialité",
+    "ask": "Posez votre question sur le droit marocain : l'assistant lit 3adala et cite les articles avec leurs liens.",
+    "endAccount": "Si vous l'aviez connecté avec votre compte 3adala, déconnectez-le aussi depuis votre compte :"
+  },
+  "situations": {
+    "title": "Selon votre situation",
+    "lead": "Des situations de la vie courante, chacune avec les textes qui la régissent et les articles à lire d'abord, chacun en une phrase.",
+    "readFirst": "Articles à lire d'abord",
+    "notYet": "Autres textes qui régissent cette situation, pas encore dans 3adala",
+    "notAdvice": "Information générale pour trouver les textes, pas un avis sur votre situation. Pour votre cas, consultez un avocat ou un service compétent."
+  },
+  "new": {
+    "title": "Nouveautés du Bulletin officiel",
+    "lead": "Les numéros de la dernière semaine, du {{from}} au {{to}}.",
+    "allIssues": "Tous les numéros",
+    "special": "Et d'autres textes particuliers ({{count}})",
+    "home": "Cette semaine",
+    "all": "Toutes les nouveautés",
+    "homeLead": "Les numéros de la dernière semaine"
+  },
+  "onBefore": {
+    "lead": "Nous n’avons pas ce texte tel qu’il était le {{on}} ; la plus ancienne version que nous ayons est celle du {{from}}, affichée ici.",
+    "between": "L’ont modifié entre ces deux dates, dans ce que nous avons lu :"
+  },
+  "wordNote": {
+    "told": "Une explication écrite par des personnes et vérifiée par un relecteur, pas le texte de la loi.",
+    "page": "La page du mot"
+  },
+  "articleUse": {
+    "cites": "Pour l’appliquer :",
+    "more_one": "et 1 autre",
+    "more_other": "et {{count}} autres",
+    "fewer": "moins",
+    "stale": "à revoir",
+    "bill": "projet, pas une loi",
+    "show": {
+      "open": "Montrer l’article",
+      "label": "{{label}} en plein écran",
+      "back": "Retour à la lecture",
+      "bigger": "Agrandir le texte",
+      "smaller": "Réduire le texte",
+      "inForce": "en vigueur aujourd’hui",
+      "inForceAmended": "en vigueur aujourd’hui, tel que modifié",
+      "printed": "Tel que le Bulletin officiel l’a imprimé, page {{page}}",
+      "qr": "Scannez le code pour lire le même article sur votre téléphone",
+      "awake": "L’écran reste allumé tant que l’article est affiché."
+    },
+    "compute": {
+      "title": "Calculer avec cet article",
+      "lead": {
+        "severance": "Votre ancienneté et votre salaire éclairent la ligne de l’article qui s’applique, le montant à côté.",
+        "notice": "Votre catégorie et votre ancienneté éclairent la ligne du tableau qui s’applique.",
+        "scale": "Votre revenu éclaire les tranches du barème qu’il atteint, l’impôt à côté de chacune."
+      },
+      "years": "Ancienneté en années",
+      "yearsHint": "par exemple 7, ou 7,5 pour sept ans et demi",
+      "wage": "Salaire mensuel brut (DH)",
+      "wageHint": "moyenne des 52 dernières semaines",
+      "optional": "facultatif : pour l’indemnité de préavis",
+      "income": "Revenu net imposable (DH)",
+      "incomeHint": "après frais professionnels et retenues (article 59)",
+      "per": "Revenu",
+      "perOf": {
+        "month": "par mois",
+        "year": "par an"
+      },
+      "who": "Votre catégorie",
+      "cat": {
+        "cadre": "Cadre ou assimilé",
+        "employee": "Employé ou ouvrier"
+      },
+      "band": "{{hours}} heures",
+      "bandFig": "{{span}} : {{hours}} heures",
+      "notReached": "non atteinte par votre ancienneté",
+      "dh": "{{amount}} DH",
+      "dhYear": "{{amount}} DH par an",
+      "severanceTotal": "Indemnité de licenciement : {{hours}} heures × {{hourly}} DH de l’heure",
+      "hourly": "L’heure de salaire est le salaire mensuel divisé par {{hours}} heures, comme le compte l’outil de fin de contrat et le simulateur du ministère de l’Emploi.",
+      "floored": "Elle a été portée au salaire minimum horaire d’aujourd’hui, {{smig}} DH (article 56).",
+      "underSix": "L’indemnité de licenciement n’est due qu’après six mois de travail (article 52).",
+      "wholeEnd": "Tout ce qui est dû à la fin du contrat (préavis, congé, dommages)",
+      "noticeTotal": "Si le préavis n’est pas accordé, l’indemnité qui le remplace (article 51 du Code du travail)",
+      "slice": "{{base}} DH × {{rate}} %",
+      "exempt": "{{base}} DH exonérés",
+      "scaleTotal": "L’impôt selon ce barème, soit {{month}} DH par mois",
+      "scaleNote": "Avant la déduction pour charges de famille (article 74). À partir du salaire brut, l’outil calcule tout.",
+      "full": "L’outil complet :",
+      "yearsN_one": "1 an",
+      "yearsN_other": "{{count}} ans",
+      "months_one": "1 mois",
+      "months_other": "{{count}} mois",
+      "days_one": "1 jour",
+      "days_other": "{{count}} jours",
+      "and": " et "
+    }
+  },
+  "famous": {
+    "of": "— {{name}}",
+    "knownAs": "Connu dans le débat public sous le nom de",
+    "and": " et ",
+    "frenchNote": "Traduction officielle ; le texte arabe fait foi.",
+    "changed": "Modifié par :",
+    "proposed": "Un projet de loi propose de le modifier ; ce n'est pas encore la loi :",
+    "citedBy": "Y renvoient :",
+    "citedMore_one": "et {{count}} autre",
+    "citedMore_other": "et {{count}} autres",
+    "read": "Lire l'article en entier",
+    "whichCode": "{{number}} dans ces textes :",
+    "elsewhere": "{{number}} dans d'autres textes :",
+    "moreCodes_one": "et {{count}} autre",
+    "moreCodes_other": "et {{count}} autres",
+    "maybe": "Vouliez-vous dire",
+    "maybeEnd": " ?"
+  },
+  "lib3": {
+    "booksN_zero": "aucun code",
+    "booksN_one": "1 code ou loi de base",
+    "booksN_other": "{{n}} codes et lois de base",
+    "pagesN_zero": "aucune page",
+    "pagesN_one": "1 page",
+    "pagesN_other": "{{n}} pages",
+    "find": {
+      "label": "Un numéro du BO, d’un texte, une date ou le nom d’un code",
+      "hint": "6501, 65.99, 19/09/2016, Code du travail",
+      "open": "Ouvrir",
+      "examples": "Exemples",
+      "reference": "Une référence"
+    },
+    "issue": {
+      "bulletin": "Bulletin officiel",
+      "open": "Ouvrir le numéro",
+      "openPage": "Ouvrir la page {{page}}",
+      "through": "à {{n}}",
+      "french": "édition française",
+      "pagesOnly": "ses pages seules, {{pages}}",
+      "pagesOnlyShort": "ses pages seules",
+      "pageAt": "Page {{page}} : sa page {{at}} sur {{pages}}",
+      "pageOut": "La page {{page}} n’est pas dans ce numéro : ses pages vont de {{from}} à {{to}}.",
+      "pageFind": "Ouvert à la page {{page}}.",
+      "dateOk": "✓ La date est celle du numéro",
+      "dateOther": "Ce numéro a paru le {{was}}, pas le {{said}}.",
+      "cover": "Le n° {{n}} a paru sous la même couverture que les n° {{range}}.",
+      "nowhere": "N° {{n}} : introuvable en arabe, où que ce soit en ligne.",
+      "past": "Le n° {{n}} n’est pas encore dans 3adala : le dernier lu est plus ancien.",
+      "missing": "Le n° {{n}} n’est pas encore dans 3adala."
+    },
+    "day": {
+      "on": "Le {{day}} :",
+      "none": "Aucun numéro le {{day}}. Les plus proches :",
+      "before": "avant",
+      "after": "après"
+    },
+    "year": {
+      "said": "{{year}} : {{issues}}, du n° {{from}} au n° {{to}}, {{texts}}",
+      "go": "Voir l’année"
+    },
+    "kind": {
+      "law": "loi",
+      "dahir": "dahir",
+      "decree": "décret",
+      "decision": "arrêté du Chef du gouvernement",
+      "order": "arrêté",
+      "text": "texte"
+    },
+    "part": {
+      "kind": "{{kind}}",
+      "year": "numéroté en {{year}}",
+      "seq": "son rang dans l’année",
+      "billSeq": "n° du projet",
+      "billYear": "année du projet, {{year}}",
+      "orderSeq": "n° de l’arrêté",
+      "orderYear": "année {{year}}"
+    },
+    "number": {
+      "law": "Loi n° {{n}} : son projet porte le n° {{a}} de {{year}}, pas l’année de la loi.",
+      "other": "{{kind}} n° {{n}}, numéroté en {{year}}.",
+      "search": "Pas parmi les codes : chercher « {{q}} » dans les textes"
+    },
+    "search": {
+      "said": "Chercher « {{q}} » dans les textes",
+      "go": "Chercher"
+    },
+    "cur": {
+      "consolidated": "mis à jour au {{date}}",
+      "printed": "tel que publié en {{year}}",
+      "stale": "et une modification enregistrée après"
+    },
+    "codes": {
+      "title": "Les codes et lois de base",
+      "lead_zero": "",
+      "lead_one": "Un texte, dans 3adala.",
+      "lead_other": "{{n}} textes en neuf branches, tous dans 3adala. Chaque livre est couché pour qu’on lise son nom, aussi épais que ses articles, et le texte général de chaque branche est à la base de sa pile."
+    },
+    "replaced": "{{name}}, remplacé, {{years}}",
+    "card": {
+      "of": "Fiche : {{name}}",
+      "reads": "Vous lirez",
+      "consolidated": "mis à jour par {{who}} au {{date}}",
+      "last": "Dernière modification",
+      "issue": "BO {{n}}",
+      "none": "Aucune modification enregistrée",
+      "mind": "Attention",
+      "stale": "Un texte entré en vigueur le {{date}}, après cette version, l’a modifié : elle ne l’intègre peut-être pas encore.",
+      "french": "En français",
+      "frenchTo": "Texte officiel, BO {{n}}, mis à jour au {{date}}",
+      "frenchAs": "Texte officiel, BO {{n}} ({{date}})",
+      "parts": "Ses parties",
+      "cite": "Pour le citer",
+      "copy": "Copier la référence",
+      "copied": "Copiée",
+      "read": "Lire : {{name}}",
+      "figures": "La loi de finances en chiffres",
+      "inParts_zero": "",
+      "inParts_one": "en 1 partie",
+      "inParts_other": "en {{n}} parties",
+      "changes_zero": "",
+      "changes_one": "modifié par 1 texte",
+      "changes_other": "modifié par {{n}} textes en tout"
+    },
+    "compiler": {
+      "adala": "le portail Adala",
+      "sgg": "le SGG",
+      "dgi": "la DGI",
+      "machine": "3adala, d’après les textes modificatifs"
+    },
+    "bulletin": {
+      "lead_zero": "Chaque trait est un numéro, aussi haut que ses textes, à la même échelle pour toutes les années.",
+      "lead_one": "Chaque trait est un numéro, aussi haut que ses textes, à la même échelle pour toutes les années. S’y ajoute 1 numéro de l’édition française (1912–1925) aux textes que l’arabe n’a pas publiés.",
+      "lead_other": "Chaque trait est un numéro, aussi haut que ses textes, à la même échelle pour toutes les années. S’y ajoutent {{n}} numéros de l’édition française (1912–1925) aux textes que l’arabe n’a pas publiés.",
+      "all": "Tous les numéros, année par année",
+      "blog": "3adala en chiffres : ce que nous avons compté dans le Bulletin"
+    },
+    "strata": {
+      "frenchN_zero": "",
+      "frenchN_one": "1 numéro en français",
+      "frenchN_other": "{{n}} numéros en français",
+      "frenchOnly": "en français",
+      "keyArabic": "un numéro en arabe",
+      "keyFrench": "l’édition française, 1912–1925",
+      "keyPages": "un numéro gardé en pages seules",
+      "mark1912": "n° 1, en français",
+      "mark1913": "premier numéro en arabe",
+      "mark1956": "l’indépendance",
+      "mark1996": "deux numéros par semaine"
+    },
+    "bo": {
+      "lead_zero": "",
+      "lead_one": "1 numéro gardé par 3adala.",
+      "lead_other": "{{n}} numéros gardés par 3adala, de {{from}} à {{to}} : chacun avec ses textes et ses pages, et ceux dont les textes ne sont pas encore découpés avec leurs pages.",
+      "pagesOnlyN_zero": "",
+      "pagesOnlyN_one": "1 numéro en pages seules",
+      "pagesOnlyN_other": "{{n}} numéros en pages seules",
+      "notePages": "Une case grise est un numéro dont 3adala garde les pages sans en avoir encore découpé les textes, ou un rapport sans texte."
+    },
+    "tools": {
+      "places": "Chaque pays et chaque ville nommés au Bulletin officiel depuis 1913"
+    }
+  },
+  "lib5": {
+    "lead": "Les numéros du Bulletin officiel depuis 1913, et les codes et lois que l’on demande chaque jour.",
+    "tabs": {
+      "label": "Les deux salles de la bibliothèque",
+      "codes": "Codes et lois",
+      "codesSub": "{{texts}} sur {{n}} rayons",
+      "boSub": "Dernier numéro : {{n}}, {{date}}"
+    },
+    "codesLead": "Le livre en couleur est le texte général de chaque rayon ; à côté, les lois du même domaine. Chaque nom ouvre son texte.",
+    "detail": "Avec les numéros",
+    "before": "Avant : {{name}} ({{years}})"
+  },
+  "lib4": {
+    "find": {
+      "label": "Écrivez ce que vous savez du texte ou du numéro : un nom, un numéro, une date, une référence copiée",
+      "hint": "Par exemple : CPC ou 65.99",
+      "reading": "Lecture en cours…",
+      "search": "« {{q}} » dans les mots de tous les textes",
+      "unsure": "Nous ne sommes pas sûrs de ce que vous visez : choisissez. « Ouvrir » n’ouvre que ce dont nous sommes sûrs."
+    },
+    "k": {
+      "article": "article",
+      "issue": "numéro",
+      "issueFr": "numéro (fr.)",
+      "year": "année",
+      "month": "mois",
+      "search": "chercher",
+      "maybe": "peut-être",
+      "dahirLaw": "dahir"
+    },
+    "go": {
+      "read": "Lire",
+      "open": "Ouvrir",
+      "openArticle": "Ouvrir"
+    },
+    "und": {
+      "issue": "BO n° {{n}}",
+      "frenchIssue": "édition française, n° {{n}}",
+      "page": "page {{n}}",
+      "newest": "les derniers numéros",
+      "yearOrIssue": "l’année {{n}}, ou le n° {{n}}",
+      "law": "n° {{a}} de {{year}} : l’année du projet, pas celle de la loi",
+      "numbered": "{{kind}} numéroté en {{year}}",
+      "readAs": "lu : {{q}}",
+      "short": "sigle",
+      "finance": "loi de finances {{year}}",
+      "bill": "projet de loi de finances {{year}}",
+      "article": "article {{n}}",
+      "promulgated": "promulgué par le dahir {{n}}",
+      "signed": "signé le {{day}}",
+      "estimate": "mois hégirien estimé",
+      "yearOf": "{{kind}} de {{year}}"
+    },
+    "issue": {
+      "frenchEdition": "Édition française (traduction officielle)",
+      "frenchMissing": "C’est une référence à l’édition française. Son n° {{n}} n’est pas encore dans 3adala.",
+      "frenchPage": "Sa page {{page}} n’est pas une page de l’édition arabe.",
+      "sameArabic": "Le même numéro dans l’édition arabe",
+      "itsPages": "pages {{range}}",
+      "thatDay": "paru ce jour-là",
+      "followed": "premier numéro paru après ce jour"
+    },
+    "month": {
+      "said": "{{issues}}, n° {{range}}",
+      "none": "aucun numéro lu pour ce mois"
+    },
+    "text": {
+      "signed": "signé le {{day}}",
+      "repealed": "abrogé",
+      "partly": "abrogé en partie",
+      "bill": "projet de loi, pas encore une loi",
+      "promulgated": "promulgué par le dahir que vous citez",
+      "maybe": "Peut-être celui-ci",
+      "card": "Sa fiche : ses parties, sa référence",
+      "cited_zero": "",
+      "cited_one": "cité par 1 texte",
+      "cited_other": "cité par {{n}} textes",
+      "issue": "BO {{n}}"
+    },
+    "former": {
+      "replaced": "Le Code du statut personnel a été remplacé par le Code de la famille en 2004",
+      "elsewhere": "C’est son nom au Maroc",
+      "freedoms": "Les dahirs du 15 novembre 1958 : associations, rassemblements publics, presse (remplacé par la loi 88.13)",
+      "courts": "La loi qui les a créés ; la loi 38.15 sur l’organisation judiciaire les régit aujourd’hui"
+    },
+    "article": {
+      "at": "Le texte s’ouvre à cet article",
+      "none": "Pas d’article {{n}} dans ce texte : il s’ouvre à son début"
+    },
+    "note": {
+      "notHeld": "Aucun texte n° {{n}} dans ce que nous avons lu du Bulletin officiel.",
+      "notHeldKind": "{{kind}} n° {{n}} : pas dans ce que nous avons lu du Bulletin officiel.",
+      "no_text_that_day": "Aucun texte signé le {{day}} dans ce que nous avons lu. Sa date est peut-être illisible dans son numéro.",
+      "near_day": "Aucun texte signé ce jour-là. Le plus proche, le {{day}} :",
+      "moreThatDay_zero": "",
+      "moreThatDay_one": "Et 1 autre texte signé ce jour-là.",
+      "moreThatDay_other": "Et {{n}} autres textes signés ce jour-là.",
+      "no_text_that_year": "Aucun texte de {{year}} avec ces mots dans son titre.",
+      "no_finance_law": "Loi de finances {{year}} introuvable.",
+      "no_bill": "3adala n’a pas de projet de loi de finances pour {{year}}."
+    },
+    "newest": {
+      "title": "Les derniers numéros du Bulletin officiel",
+      "holds": "{{texts}} en {{pages}}",
+      "bare": "(aucun texte juridique, {{pages}})",
+      "asked": "Le site du SGG a été consulté le {{day}} : aucun numéro après le {{n}}.",
+      "askedAhead": "Le site du SGG a été consulté le {{day}} : sa liste finit au n° {{n}}, lu la nuit prochaine.",
+      "all": "Toute la semaine"
+    },
+    "index": {
+      "lead_zero": "",
+      "lead_one": "Un texte.",
+      "lead_other": "{{n}} textes en neuf branches, le texte général de chacune en premier. Le nom ouvre le texte, le bout de la ligne sa fiche.",
+      "updated": "à jour au {{year}}",
+      "printed": "tel que publié en {{year}}",
+      "stale": "une modification manque",
+      "staleNote": "Un texte modifié depuis, sans que la modification soit encore dans ce que vous lirez."
+    },
+    "bo": {
+      "tabIssues": "Ses numéros",
+      "tabTexts": "Ses lois et ses dahirs",
+      "signed": "{{what}} y ont été signés",
+      "and": " et ",
+      "mostCited": "Les textes de {{year}} les plus cités",
+      "all": "Toutes les lois et tous les dahirs signés en {{year}} ({{n}})",
+      "filter": "Un mot du titre ou un numéro",
+      "more": "Afficher {{n}} de plus sur {{rest}}",
+      "none": "Aucun texte avec ce mot.",
+      "noTexts": "Nous n’avons lu ni loi ni dahir signé cette année-là.",
+      "others": "En {{year}} aussi : {{decrees}} et {{orders}}.",
+      "searchThem": "Les chercher",
+      "citedBy": "cité par {{n}}",
+      "lawsN_zero": "",
+      "lawsN_one": "1 loi",
+      "lawsN_other": "{{n}} lois",
+      "dahirsN_zero": "",
+      "dahirsN_one": "1 dahir",
+      "dahirsN_other": "{{n}} dahirs",
+      "decreesN_zero": "aucun décret",
+      "decreesN_one": "1 décret",
+      "decreesN_other": "{{n}} décrets",
+      "ordersN_zero": "aucun arrêté",
+      "ordersN_one": "1 arrêté ou décision",
+      "ordersN_other": "{{n}} arrêtés et décisions"
+    },
+    "bare": {
+      "title": "Son sommaire, tel qu’imprimé",
+      "said": "Ce numéro est gardé par ses pages : aucun texte juridique n’en a été tiré.",
+      "page": "page {{page}}"
+    }
+  },
+  "access": {
+    "line": "Licence ouverte, accès sur demande",
+    "lead": "La base de données entière, une nouvelle édition chaque mois, et une API qui répond à vos programmes sur chaque texte et chaque article. Vous les demandez depuis votre compte ; nous répondons sous {{days}} jours ouvrables. L’accès est gratuit.",
+    "retry": "Réessayer",
+    "door": {
+      "title": "L’accès",
+      "free": "Gratuit",
+      "what": "Ce que vous demandez",
+      "whatD": "L’API, la base de données, ou les deux",
+      "when": "La réponse",
+      "whenD": "Sous {{days}} jours ouvrables, par e-mail",
+      "how": "D’où",
+      "howD": "Depuis votre compte, adresse confirmée",
+      "ask": "Demander l’accès",
+      "askAgain": "Demander à nouveau",
+      "open": "Les fichiers de la base de données sont ouverts à tous en ce moment : ils sont plus bas, sans demande. L’API, elle, demande une clé : faites-en la demande."
+    },
+    "states": {
+      "waiting": "Vous avez envoyé votre demande le {{date}} ; elle attend notre réponse, sous {{days}} jours ouvrables.",
+      "more": "Nous vous avons posé une question sur votre demande, et attendons votre réponse :",
+      "declined": "Nous n’avons pas accepté votre demande : {{reason}}",
+      "againOn": "Vous pourrez demander à nouveau à partir du {{date}}.",
+      "againNow": "Vous pouvez demander à nouveau dès maintenant.",
+      "live": "Vous avez accès à {{granted}} jusqu’au {{date}}.",
+      "ended": "Votre accès a pris fin : {{reason}}",
+      "toAccount": "Votre demande, sur votre page d’accès"
+    },
+    "granted": {
+      "api": "l’API",
+      "data": "la base de données",
+      "both": "l’API et la base de données"
+    },
+    "reasons": {
+      "unclear": {
+        "t": "Usage peu clair",
+        "d": "nous ne voyons pas assez ce que vous ferez des données."
+      },
+      "identity": {
+        "t": "Qui demande ?",
+        "d": "nous ne pouvons pas savoir qui demande."
+      },
+      "scope": {
+        "t": "Plus que nécessaire",
+        "d": "vous demandez plus que l’usage décrit n’en a besoin."
+      },
+      "terms": {
+        "t": "Contraire aux conditions",
+        "d": "l’usage décrit enfreint les conditions d’accès."
+      },
+      "later": {
+        "t": "Pas maintenant",
+        "d": "nous n’ouvrons pas de nouvel accès pour le moment."
+      }
+    },
+    "ended": {
+      "asked": "vous y avez mis fin.",
+      "terms": "il a été utilisé contre les conditions d’accès.",
+      "leaked": "une de ses clés est apparue là où d’autres peuvent la lire.",
+      "unused": "il n’était plus utilisé.",
+      "expired": "sa date de fin est passée.",
+      "account": "le compte a été supprimé."
+    },
+    "ask": {
+      "title": "Ce que vous pouvez demander",
+      "api": {
+        "t": "L’API",
+        "d": "Pour un programme qui interroge 3adala en marchant : il cherche dans la loi, lit un texte ou des articles par leur adresse, vérifie des renvois et suit ce qui change. Chaque réponse porte sa source au Bulletin officiel et son lien.",
+        "more": "Les six lectures"
+      },
+      "data": {
+        "t": "La base de données entière",
+        "d": "Tous les textes dans toutes leurs versions, le français officiel, les modifications et les numéros du Bulletin officiel : une nouvelle édition le premier de chaque mois, à télécharger et à utiliser chez vous.",
+        "more": "Les fichiers"
+      }
+    },
+    "how": {
+      "title": "Comment demander, et comment nous décidons",
+      "steps": [
+        "Vous êtes connecté à votre compte, adresse confirmée.",
+        "Vous répondez à six questions : qui vous êtes, ce que vous ferez, ce que vous demandez, où cela tournera, combien, et si cela vous rapporte de l’argent. Et vous acceptez les conditions.",
+        "Nous lisons votre demande et répondons sous {{days}} jours ouvrables, par e-mail : nous l’acceptons, vous posons une question, ou la refusons en disant pourquoi.",
+        "Acceptée, vous créez votre clé depuis votre page d’accès, et y téléchargez les éditions de la base."
+      ],
+      "yes": "Acceptés par principe",
+      "yesList": [
+        "L’étude et la recherche",
+        "L’enseignement",
+        "Le journalisme",
+        "Les projets citoyens",
+        "Les organismes publics",
+        "Les produits qui citent la source et y renvoient"
+      ],
+      "no": "Une demande peut être refusée pour l’une de cinq raisons",
+      "again": "Une demande refusée, vous pouvez demander à nouveau 30 jours plus tard.",
+      "sizes": "Trois tailles",
+      "cols": {
+        "size": "Taille",
+        "minute": "Requêtes par minute",
+        "calls": "Requêtes par jour",
+        "articles": "Articles par jour"
+      },
+      "size": {
+        "try": {
+          "t": "Essai",
+          "d": "Pour essayer et construire"
+        },
+        "app": {
+          "t": "Application",
+          "d": "Pour un service ouvert au public"
+        },
+        "partner": {
+          "t": "Partenaire",
+          "d": "Pour qui a besoin de plus"
+        }
+      },
+      "agreed": "Sur accord",
+      "sizesNote": "La taille est fixée quand la demande est acceptée, et peut être plus petite que celle demandée. Vos limites sont sur votre page d’accès.",
+      "free": "L’accès est gratuit, quelle que soit sa taille."
+    },
+    "api": {
+      "title": "L’API",
+      "lead": "Six lectures stables, qui répondent en JSON. La clé part avec chaque requête dans l’en-tête X-Api-Key ; remplacez $API_KEY par la vôtre.",
+      "reads": {
+        "search": "La recherche dans la loi : les textes et articles les plus proches de ce que vous écrivez, en arabe, en français ou en darija.",
+        "texts": "Un texte ou un article par son adresse sur le site, ou un numéro du Bulletin officiel : ses mots, sa source et son état aujourd’hui.",
+        "articles": "Des articles qui se suivent, 20 au plus, tels qu’à une date (on), et dans le français officiel (french).",
+        "references": "Une liste de renvois, comme « article 53 de la loi n° 65-99 » : le texte existe-t-il, a-t-il changé depuis une date.",
+        "bulletin": "Les derniers numéros du Bulletin officiel, ou un numéro avec ses textes.",
+        "changes": "Ce qui a changé depuis un jour, sur 366 jours au plus : les textes publiés et les textes modifiés, les plus récents d’abord, 200 par page."
+      },
+      "openapi": "La description complète de l’API, en OpenAPI : chaque lecture, ses paramètres, ses réponses et ses erreurs.",
+      "notes": {
+        "key": {
+          "t": "La clé sur votre serveur",
+          "d": "Gardez la clé sur votre serveur, jamais dans une page web ni dans une application que les gens téléchargent. L’API ne répond pas à un navigateur qui l’appelle depuis un autre site (pas de CORS) : appelez-la depuis votre serveur."
+        },
+        "errors": {
+          "t": "Les erreurs",
+          "d": "Toute requête refusée a la même forme : {\"errors\": [{\"field\": …, \"code\": …}]}. Sans clé, 401 key.required ; une clé terminée, 401 key.ended ; un accès sans l’API, 403 access.no_api."
+        },
+        "limits": {
+          "t": "Les limites",
+          "d": "Chaque réponse donne vos limites dans l’en-tête RateLimit-Policy, et ce qu’il en reste dans RateLimit. Au-delà, une réponse 429, et Retry-After dit combien de secondes attendre."
+        },
+        "cite": {
+          "t": "La source",
+          "d": "Chaque réponse porte le numéro du Bulletin officiel, sa date et le lien de l’article sur 3adala : montrez-les avec ce que vous montrez. Une version consolidée n’est pas officielle, et un projet de loi n’est pas la loi."
+        }
+      }
+    },
+    "edition": {
+      "title": "La base de données",
+      "lead": "Édition du {{date}}. Une nouvelle édition est construite le premier de chaque mois.",
+      "none": "La première édition de la base de données est en préparation ; elle paraîtra ici une fois construite.",
+      "date": "Date de l’édition",
+      "texts": "Textes",
+      "articles": "Articles",
+      "versions": "Versions",
+      "share": "{{n}} des {{of}} textes de 3adala aujourd’hui",
+      "files": {
+        "texts_jsonl_gz": "Chaque texte sur une ligne : son adresse, son type et son numéro, sa source (numéro, date, page et empreinte du fichier), sa version d’aujourd’hui avec son type et ses articles, ce qu’il modifie et ce qu’il cite.",
+        "versions_jsonl_gz": "Les versions antérieures de chaque texte, la plus ancienne d’abord, chacune avec son type, ses articles et ses pages.",
+        "french_jsonl_gz": "Le texte français officiel là où le Bulletin officiel l’a publié, avec son numéro et ses pages.",
+        "changes_jsonl_gz": "Chaque modification que nous avons lue : quel texte modifie quel article, et à partir de quand.",
+        "issues_jsonl_gz": "Les numéros du Bulletin officiel : l’adresse de chacun, ses pages, l’empreinte de son fichier et son lien officiel.",
+        "aliases_jsonl_gz": "Les anciennes adresses, et ce qu’elles sont devenues.",
+        "akn_zip": "Chaque texte en Akoma Ntoso (XML) : ses articles, sans leurs titres ni leurs renvois.",
+        "manifest_json": "La liste des fichiers, avec la taille et l’empreinte de chacun.",
+        "README_md": "Le guide de l’édition : ce qu’elle contient et comment la lire.",
+        "schema_json": "La forme de chaque ligne de chaque fichier (JSON Schema).",
+        "CHANGELOG_md": "Ce qui a changé d’une édition à l’autre.",
+        "LICENCE_txt": "La licence."
+      },
+      "toHolders": "Pour les titulaires d’un accès",
+      "open": "Ouvrir",
+      "get": "Télécharger",
+      "hash": "L’empreinte de l’édition",
+      "hashD": "L’empreinte SHA-256 du fichier manifest.json, qui contient celle de chaque fichier.",
+      "check": "Chacun peut vérifier la copie qu’il a : calculer l’empreinte de chaque fichier et la comparer à celle de manifest.json, et celle de manifest.json à celle-ci.",
+      "earlier": "Les éditions précédentes",
+      "holders": "Les fichiers se téléchargent avec un accès qui comprend la base de données : depuis sa page d’accès, ou avec sa clé.",
+      "account": "Votre page d’accès"
+    },
+    "form": {
+      "title": "Demander l’accès",
+      "lead": "Six questions, puis nous répondons sous {{days}} jours ouvrables, par e-mail. L’accès est gratuit.",
+      "unproven": "L’adresse de votre compte n’est pas encore confirmée : une demande n’est acceptée qu’après.",
+      "prove": "Confirmer votre adresse",
+      "back": "Données et API",
+      "who": "Qui vous êtes",
+      "name": "Le nom",
+      "nameHint": "Votre nom, ou celui de l’organisme au nom duquel vous demandez.",
+      "kind": "Vous êtes",
+      "kinds": {
+        "person": "Une personne",
+        "school": "Une université ou une école",
+        "newsroom": "Une rédaction",
+        "association": "Une association",
+        "public": "Un organisme public",
+        "company": "Une entreprise"
+      },
+      "purpose": "Ce que vous ferez ou étudierez",
+      "purposeLabel": "Décrivez votre travail",
+      "purposeHint": "En quelques phrases : ce que vous construisez ou étudiez, pour qui, et comment vous montrez les textes.",
+      "left": "Encore {{n}} caractères",
+      "wants": "Ce que vous demandez",
+      "wantsHint": "L’un au moins.",
+      "wantsApi": "L’API",
+      "wantsData": "La base de données entière",
+      "runsAt": "Où cela tournera",
+      "optional": "Facultatif",
+      "runsAtLabel": "L’adresse",
+      "runsAtHint": "L’adresse de votre site ou de votre application, s’il en a une.",
+      "volume": "Combien",
+      "volumeHint": "À peu près : la taille est fixée quand la demande est acceptée.",
+      "volumes": {
+        "small": "Quelques centaines de requêtes par jour, ou une copie par mois",
+        "medium": "Quelques milliers de requêtes par jour",
+        "large": "Davantage"
+      },
+      "commercial": "Cela vous rapporte-t-il de l’argent ?",
+      "commercialHint": "Une vente, un abonnement ou de la publicité.",
+      "yes": "Oui",
+      "no": "Non",
+      "agree": "Les conditions, et ce que nous gardons",
+      "terms": "J’ai lu les conditions et je les accepte",
+      "keep": "Ce que nous gardons",
+      "keepText": [
+        "Nous gardons vos six réponses, notre décision, et le nombre de requêtes et d’articles de votre accès chaque jour, jamais ce que vous demandez : tant que votre accès dure et douze mois après, six mois si la demande n’est pas acceptée.",
+        "Seules les personnes qui font fonctionner le site les lisent. Vous les lisez sur la page « Mon accès » et dans la copie de vos données personnelles, et vous pouvez en demander la correction."
+      ],
+      "consent": "J’accepte que mes réponses soient gardées pour cela.",
+      "privacy": "Ce que nous gardons, et combien de temps",
+      "send": "Envoyer la demande",
+      "sending": "Envoi…"
+    },
+    "terms": {
+      "title": "Conditions d’accès",
+      "version": "Version du {{date}}",
+      "lead": "Ces conditions régissent l’accès à l’API et à la base de données. Leur date est leur version ; elle est gardée avec chaque demande.",
+      "lines": [
+        "Citez 3adala.com, le numéro du Bulletin officiel et sa date pour ce que vous montrez, avec un lien vers l’adresse de l’article.",
+        "Là où un texte est une version consolidée, une traduction ou un projet de loi, dites lequel : chaque enregistrement porte son type. Seul le texte publié au Bulletin officiel est officiel.",
+        "Ne changez jamais les mots de la loi.",
+        "Gardez votre clé sur un serveur, et pour vous : jamais dans une page web ni dans une application que les gens téléchargent.",
+        "Ne revendez pas l’accès brut, et ne partagez pas votre clé.",
+        "Le Bulletin publie des personnes nommées dans des décisions individuelles ; ce que vous faites de ces noms relève de votre responsabilité, au titre de la loi n° 09-08.",
+        "Chaque accès a ses limites (requêtes par minute, requêtes et articles par jour) ; elles sont sur la page « Mon accès ».",
+        "Un accès peut prendre fin pour un manquement à ces conditions ; la raison est dite. Vous pouvez mettre fin au vôtre à tout moment.",
+        "Sans garantie : les données peuvent contenir des erreurs ; le Bulletin officiel prévaut.",
+        "La base de données est sous Open Database License 1.0 (citer la source, et la même licence pour une base que vous en dérivez et publiez) ; ces conditions régissent le service et ne restreignent jamais cette licence. Les textes officiels eux-mêmes sont libres (loi n° 2-00, article 8) et se réutilisent avec leur source et leur date, sans altération (loi n° 31-13, article 6)."
+      ],
+      "odbl": "Le texte de la licence"
+    }
+  }
+}

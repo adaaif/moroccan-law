@@ -1,0 +1,10 @@
+# Law 49.16 on commercial leases as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (2 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/commercial_lease_49_16.yaml`; a reload of the text applies them again.
+text: /ma/loi/49-16
+document: sources/adala/commercial_lease_49_16.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [26], wrong: يمنحه أجال لإلفراغ, right: يمنحه أجلا للإفراغ}   # turn, p. 14
+  - {arts: [28], wrong: اعتبر متنازال عن, right: اعتبر متنازلا عن}   # turn, p. 15

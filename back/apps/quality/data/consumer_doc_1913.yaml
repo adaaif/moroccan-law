@@ -1,0 +1,16 @@
+# The DOC's articles on the hidden defects (549–575) as Adala's PDF prints them, where its text layer misreads them, read
+# against the page images on 24 Oct 2026 (A4 of the consumer plan: law 31.08 art. 65 sends every consumer sale there).
+# Not a correction: art. 573 sends to «الفصل 533» where 553's notice is meant; the BO prints it so (law 40.24, BO 7328,
+# 22 Aug 2024), and the site keeps the law's words. Applied by `manage.py apply_page_reading apps/quality/data/consumer_doc_1913.yaml`.
+text: /ma/code/doc
+document: sources/adala/doc_1913.pdf
+read_on: '2026-10-24'
+fixes:
+  - {arts: [549], wrong: 'أما العيوب التي تنقص نقصا على التسامح فيها، فال تخول الضمان.  يسيرا من القيمة أو الانتفاع، وتلك التي جرى العرف ويضمن البائع أيضا', right: "أما العيوب التي تنقص نقصا يسيرا من القيمة أو الانتفاع، وتلك التي جرى العرف على التسامح فيها، فلا تخول الضمان.\nويضمن البائع أيضا"}   # p. 121: two lines out of order, «فلا»
+  - {arts: [550], wrong: 'في طبيعته، ، فإن البائع لا يضمن العيوب الخفية إلا إذا التزم بذلك صراحة أو إذا  كالثمار في قشورها', right: 'في طبيعته، كالثمار في قشورها، فإن البائع لا يضمن العيوب الخفية إلا إذا التزم بذلك صراحة أو إذا كان العرف المحلي يفرض عليه هذا الضمان.'}   # p. 121: the example back in its place, the last clause the layer lost at its footnote mark
+  - {arts: [554], wrong: 'كان موجودا فعال عند تسلمه', right: 'كان موجودا فعلا عند تسلمه'}   # p. 122: «فعلا»
+  - {arts: [554], wrong: 'على بيع الشيء السلطة المختصة في مكان وجوده، وذلك بعد قيامه بإثبات حالته على نحو  بحضور ممثل ما ذكر.', right: 'على بيع الشيء بحضور ممثل السلطة المختصة في مكان وجوده، وذلك بعد قيامه بإثبات حالته على نحو ما ذكر.'}   # p. 122: «بحضور ممثل» back in its line
+  - {arts: [556], wrong: 'قد اشترط وجودها صراحة أو كان', right: 'قد اشترط وجودها صراحة أو كان عرف التجارة يقتضيها.'}   # p. 123: the last words, lost at footnote mark 151
+  - {arts: [560], wrong: 'على أساس خلوه من العيب ثم تقويمه  يحصل إنقاص الثمن بتقويم المبيع عند البيع على الحالة التي يوجد عليها.', right: 'يحصل إنقاص الثمن بتقويم المبيع عند البيع على أساس خلوه من العيب ثم تقويمه على الحالة التي يوجد عليها.'}   # p. 124: the line split at footnote mark 152
+notes: []
+checked: [549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 569, 570, 571, 572, 573]

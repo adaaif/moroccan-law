@@ -1,0 +1,12 @@
+# /ma/dahir/1-11-91 (French) as the BO, édition de traduction officielle n° 5964 bis (30 Jul 2011) prints it: what
+# Tesseract got wrong, seen on the page images on 25 Oct 2026 (C9 of the constitution review). Not yet read whole.
+language: fr
+text: /ma/dahir/1-11-91
+document: issues/bo_fr/BO_5964-bis_fr.pdf
+read_on: '2026-10-25'
+fixes:
+  - {arts: [180], wrong: "\nDécision du Conseil Constitutionnel n° 815-2011 du 12 chaabane 1432 (14 juillet 2011) proclamant les résultats du référendum sur le projet de la Constitution qui a eu lieu le vendredi 28 rejeb 1432 (1€ juiliet 2011).\nVoir le texte de la décision dans l'édition générale du « Bulletin officiel » n° 5964 bis du 28 chaabane 1432 (30 juillet 2011) pagé 3628.", right: ""}      # p. 1928: the Council's decision, printed across under the columns
+  - {arts: [176], wrong: "Particle 51", right: "l'article 51"}      # p. 1928
+  - {arts: [166], wrong: "déloyales ct des", right: "déloyales et des"}      # p. 1927
+  - {arts: [166], wrong: "économique.et de monopole", right: "économique et de monopole"}
+  - {arts: [4], wrong: "à cing branches", right: "à cinq branches"}      # p. 1904

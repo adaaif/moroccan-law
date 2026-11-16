@@ -1,0 +1,109 @@
+# What changed for the consumer, and what is coming (N2 of the consumer plan): one item per change, its stage
+# first, the day it applies from, its BO record and the articles it changed. Stages: in_force, coming, bill, announced.
+# Checked against the BO issues the site read on 24 Oct 2026. A revision of law 31.08 (online platforms, sales, free
+# credit) has been spoken of by the minister in the press; no official text or bill was found, so it is not listed
+# (official sources only).
+
+- key: court-2020
+  title: {ar: 'المحكمة المختصة في نزاعات الاستهلاك (القانون 78.20)', fr: 'Le tribunal compétent pour les litiges de consommation (loi 78-20)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: نص لم يدخل حيز التنفيذ, fr: Texte pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-24'
+  line: {ar: 'نافذ منذ 21 دجنبر 2020: المحكمة الابتدائية وحدها، في مدينة المستهلك أو مكان الضرر، رغم أي شرط مخالف.', fr: 'En vigueur depuis le 21 décembre 2020 : le tribunal de première instance seul, dans la ville du consommateur ou au lieu du dommage, malgré toute clause contraire.'}
+  timeline:
+    - date: '2020-12-21'
+      text: {ar: 'نشر القانون 78.20 الذي غير المادة 202 من القانون 31.08.', fr: 'Publication de la loi 78-20, qui modifie l’article 202 de la loi 31-08.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 6945', fr: 'BO n° 6945'}, url: 'https://www.sgg.gov.ma/BO/bo_ar/2020/BO_6945_Ar.pdf'}
+      cites: [/ma/loi/78-20/art_1, /ma/loi/31-08/art_202]
+
+- key: prices-2022
+  title: {ar: 'حرية الأسعار والمنافسة (القانون 40.21)', fr: 'La liberté des prix et de la concurrence (loi 40-21)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-24'
+  line: {ar: 'نافذ منذ 15 دجنبر 2022: تغيير خمس عشرة مادة من القانون 104.12، منها ما يخص مجلس المنافسة ومساطره.', fr: 'En vigueur depuis le 15 décembre 2022 : quinze articles de la loi 104-12 modifiés, dont ceux sur le Conseil de la concurrence et ses procédures.'}
+  timeline:
+    - date: '2022-12-15'
+      text: {ar: 'نشر القانون 40.21 الذي غير وتمم القانون 104.12.', fr: 'Publication de la loi 40-21, qui modifie et complète la loi 104-12.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7152', fr: 'BO n° 7152'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2022/BO_7152_Ar.pdf'}
+      cites: [/ma/loi/40-21/art_1]
+    - date: '2023-05-23'
+      text: {ar: 'المرسوم 2.23.273 يغير المرسوم 2.14.652 الذي يطبق القانون 104.12.', fr: 'Le décret 2-23-273 modifie le décret 2-14-652 d’application de la loi 104-12.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7197 مكرر', fr: 'BO n° 7197 bis'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7197-bis_Ar.pdf'}
+
+- key: bags-2023
+  title: {ar: 'الأكياس البلاستيكية (القانون 57.18 وقراراته)', fr: 'Les sacs en plastique (loi 57-18 et ses arrêtés)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-24'
+  line: {ar: 'نافذ: منع صنع الأكياس البلاستيكية وحيازتها وتسويقها منذ القانون 57.18 (2020)، والخصائص التقنية للأكياس المسموح بها في قرارات 2023 و2024.', fr: 'En vigueur : interdiction de fabriquer, détenir et commercialiser des sacs en plastique depuis la loi 57-18 (2020) ; les caractéristiques des sacs autorisés dans les arrêtés de 2023 et 2024.'}
+  timeline:
+    - date: '2020-01-06'
+      text: {ar: 'نشر القانون 57.18 الذي غير عنوان القانون 77.15 وتسع من مواده.', fr: 'Publication de la loi 57-18, qui modifie le titre et neuf articles de la loi 77-15.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 6845', fr: 'BO n° 6845'}, url: 'https://www.sgg.gov.ma/BO/bo_ar/2020/BO_6845_Ar.pdf'}
+      cites: [/ma/loi/57-18/art_1, /ma/loi/57-18/art_2]
+    - date: '2020-12-17'
+      text: {ar: 'المرسوم 2.20.641 يغير المرسوم 2.16.174.', fr: 'Le décret 2-20-641 modifie le décret 2-16-174.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 6944', fr: 'BO n° 6944'}, url: 'https://www.sgg.gov.ma/BO/bo_ar/2020/BO_6944_Ar.pdf'}
+      cites: [/ma/decret/2-20-641/art_1]
+    - date: '2023-04-24'
+      text: {ar: 'قرارات الخصائص التقنية للأكياس (492.23 و501.23 وغيرها).', fr: 'Les arrêtés sur les caractéristiques techniques des sacs (492-23, 501-23 et d’autres).'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7189', fr: 'BO n° 7189'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7189_Ar.pdf'}
+      cites: [/ma/arrete/492-23/art_1, /ma/arrete/501-23/art_1]
+    - date: '2024-02-19'
+      text: {ar: 'قرارات سجلات المصنعين والمستوردين (503.24 وغيره).', fr: 'Les arrêtés sur les registres des fabricants et importateurs (503-24 et d’autres).'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7275', fr: 'BO n° 7275'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7275_Ar.pdf'}
+      cites: [/ma/arrete/503-24/art_1]
+
+- key: medicines-2026
+  title: {ar: 'سعر بيع الأدوية للعموم (المرسوم 2.25.631)', fr: 'Le prix public des médicaments (décret 2-25-631)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-24'
+  line: {ar: 'نشر في 6 غشت 2026: تغيير قواعد تحديد سعر الأدوية في المرسوم 2.13.852 (المواد 1 و3 و4 و5 و10، ونسخ المواد 7 و11 و14 و15 و18 و19 و22 وتعويضها).', fr: 'Publié le 6 août 2026 : les règles de fixation du prix des médicaments du décret 2-13-852 modifiées (art. 1, 3, 4, 5 et 10 ; art. 7, 11, 14, 15, 18, 19 et 22 remplacés).'}
+  timeline:
+    - date: '2026-08-06'
+      text: {ar: 'نشر المرسوم 2.25.631 الذي غير وتمم المرسوم 2.13.852.', fr: 'Publication du décret 2-25-631, qui modifie et complète le décret 2-13-852.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7532', fr: 'BO n° 7532'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7532_Ar.pdf'}
+      cites: [/ma/decret/2-25-631/art_1, /ma/decret/2-25-631/art_2]
+
+- key: federations-2024
+  title: {ar: 'الإذن الخاص بالتقاضي لجامعات المستهلك', fr: 'L’autorisation d’ester des fédérations de consommateurs'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-24'
+  line: {ar: 'إذنان لثلاث سنوات: للجامعة الوطنية لجمعيات المستهلك (قرار 11 نونبر 2022، لا يجد «قانون» تجديده)، وللجامعة المغربية لحقوق المستهلك (قرار 23 فبراير 2024).', fr: 'Deux autorisations de trois ans : la Fédération nationale des associations du consommateur (arrêté du 11 novembre 2022, 3adala n’en trouve pas le renouvellement) et la Fédération marocaine des droits du consommateur (arrêté du 23 février 2024).'}
+  timeline:
+    - date: '2023-01-02'
+      text: {ar: 'نشر القرار 3094.22 بمنح الإذن الخاص بالتقاضي للجامعة الوطنية لجمعيات المستهلك لمدة ثلاث سنوات.', fr: 'Publication de l’arrêté 3094-22 accordant pour trois ans l’autorisation d’ester à la Fédération nationale des associations du consommateur.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7157', fr: 'BO n° 7157'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7157_Ar.pdf'}
+      cites: [/ma/arrete/3094-22/art_1]
+    - date: '2024-04-08'
+      text: {ar: 'نشر القرار 504.24 بمنح الإذن الخاص بالتقاضي للجامعة المغربية لحقوق المستهلك لمدة ثلاث سنوات.', fr: 'Publication de l’arrêté 504-24 accordant pour trois ans l’autorisation d’ester à la Fédération marocaine des droits du consommateur.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7289', fr: 'BO n° 7289'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7289_Ar.pdf'}
+      cites: [/ma/arrete/504-24/art_1, /ma/loi/31-08/art_157]
+
+# The 2027 finance bill's line for this topic (the finance-bill review, P11, P13): a bill, never law; its way
+# through Parliament is the tax topic's (/topics/tax/reform/lf-2027).
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: اللحم والدخان', fr: 'Le projet de loi de finances 2027 : viande et tabac'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: استيراد المواشي الحية ولحومها معفي بصفة دائمة من رسم الاستيراد والقيمة المضافة (والإعفاء ماشي ثمن)؛ والضريبة على السجائر كتطلع كل عام حتى 2031، والسيجارة الإلكترونية 100 درهم للوحدة. مجلس النواب صادق عليه فالقراءة الأولى، وزاد: استيراد المواشي كيدوز بإجراءات كتحددها الإدارة، والضريبة على السيكار وعلى سائل السيجارة الإلكترونية كتطلع.', fr: 'Un projet, pas une loi : l’importation du bétail vivant et de ses viandes exonérée durablement du droit d’importation et de la TVA (une exonération n’est pas un prix) ; la taxe sur les cigarettes monte chaque année jusqu’en 2031, la cigarette électronique à 100 DH l’unité. La Chambre des représentants l’a adopté en première lecture, et ajouté : l’importation du bétail suit des procédures que l’administration fixe, et la taxe sur les cigares et sur le liquide de cigarette électronique augmente.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26: المادة 3 (مدونة الجمارك، الفصل 164) والمادة 7 (المدونة العامة للضرائب، المادة 123) للمواشي واللحوم، والمادة 5 للدخان والسيجارة الإلكترونية.', fr: 'Dépôt du projet de loi de finances 60.26 : l’article 3 (code des douanes, art. 164) et l’article 7 (CGI, art. 123) pour le bétail et les viandes, l’article 5 pour le tabac et la cigarette électronique.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/projet-loi/60-26/art_3, /ma/projet-loi/60-26/art_5, /ma/code/cgi/art_123]
+    - date: '2026-11-12'
+      text: {ar: 'لجنة المالية بمجلس النواب خلات الإعفاء ديال استيراد المواشي ولحومها وزادت بلي كيدوز «وفق إجراءات مؤطرة تحددها الإدارة» (22 مع، 17 ضد)، وما قبلاتش ثلاثة ديال التعديلات كانت باغية تحيدو ولا تحدو فالزمان. وزادت بالإجماع: السيكار 1.125 درهم لكل 1.000 وحدة عوض 750 و50% عوض 35%، وسائل السيجارة الإلكترونية 10 و20 درهم لكل 10 ملل عوض 5 و10.', fr: 'La commission des finances de la Chambre des représentants garde l’exonération du bétail et de ses viandes à l’importation et ajoute qu’elle se fait « selon des procédures encadrées que l’administration fixe » (22 pour, 17 contre) ; elle écarte trois amendements qui la supprimaient ou la limitaient dans le temps. Elle ajoute à l’unanimité : les cigares à 1 125 DH les 1 000 unités au lieu de 750 et 50 % au lieu de 35 %, le liquide de cigarette électronique à 10 et 20 DH les 10 ml au lieu de 5 et 10.'}
+      source: {name: {ar: 'مجلس النواب، تقرير لجنة المالية حول المشروع، الجزء الثاني، ص. 727', fr: 'Chambre des représentants, rapport de la commission des finances sur le projet, deuxième partie, p. 727'}, url: 'https://www.chambredesrepresentants.ma/sites/default/files/2emepUP2.pdf#page=727', file: sources/parliament/plf2027/2emepUP2.pdf, sha256: f983ee219d6e93524606f9b34cd91edfdae03e2331da04113dfb978a141831ca}
+      cites: [/ma/projet-loi/60-26/art_3, /ma/projet-loi/60-26/art_5]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}

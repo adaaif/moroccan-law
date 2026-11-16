@@ -1,0 +1,22 @@
+[Unit]
+Description=law: the law's pages drawn by the app's components for Django (127.0.0.1:8043)
+After=network-online.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@ROOT@/app/web
+# node alone: dist-ssr/entry-server.js carries its packages (web/vite.config.ts). A page that fails to draw is sent with
+# its head alone (apps/corpus/services/heads.py), and so is every page while this is down.
+ExecStart=/usr/bin/node scripts/ssr-server.mjs
+Environment=SSR_PORT=8043 NODE_ENV=production
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+MemoryMax=768M
+Nice=5
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

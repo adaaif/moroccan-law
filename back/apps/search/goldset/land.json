@@ -1,0 +1,865 @@
+{
+ "about": "The land topic's questions (the land review, M18, 26 Oct 2026): people's words in Darija, Arabic, French and Latin letters, each with the articles that answer it. Written by the session from the articles the site holds; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "شريت أرض بعقد عند المحامي واش صحيح",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "شريت أرض بعقد عرفي",
+   "expect": [
+    "/ma/loi/39-08/art_4",
+    "/ma/loi/39-08/art_3"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "واش بيع الأرض خاصو يكون عند الموثق",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "الوعد بالبيع العقاري خاصو محرر رسمي",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "arabic",
+   "theme": "deed"
+  },
+  {
+   "q": "هل يجوز تحرير عقد بيع عقار من طرف محام",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "arabic",
+   "theme": "deed"
+  },
+  {
+   "q": "شكل عقد بيع العقار تحت طائلة البطلان",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "arabic",
+   "theme": "deed"
+  },
+  {
+   "q": "la vente d'un terrain doit-elle être faite par acte authentique",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "french",
+   "theme": "deed"
+  },
+  {
+   "q": "chrit ard b3a9d 3orfi",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "latin",
+   "theme": "deed"
+  },
+  {
+   "q": "البيع ما كيتسجلش فالرسم العقاري واش صحيح بيناتنا",
+   "expect": [
+    "/ma/code/land-registration/art_67"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "متى ينتج البيع أثره في العقار المحفظ",
+   "expect": [
+    "/ma/code/land-registration/art_67",
+    "/ma/code/land-registration/art_66"
+   ],
+   "lang": "arabic",
+   "theme": "deed"
+  },
+  {
+   "q": "عقد بيع أرض غير محفظة واش كيثبت الملكية",
+   "expect": [
+    "/ma/loi/39-08/art_3"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "الوكالة لبيع العقار خاصها محرر رسمي",
+   "expect": [
+    "/ma/loi/39-08/art_4"
+   ],
+   "lang": "darija",
+   "theme": "deed"
+  },
+  {
+   "q": "حزت الأرض عشر سنين",
+   "expect": [
+    "/ma/loi/39-08/art_250"
+   ],
+   "lang": "darija",
+   "theme": "possession"
+  },
+  {
+   "q": "شحال خاص من عام باش الحيازة تولي ملكية",
+   "expect": [
+    "/ma/loi/39-08/art_250",
+    "/ma/loi/39-08/art_251"
+   ],
+   "lang": "darija",
+   "theme": "possession"
+  },
+  {
+   "q": "مدة الحيازة بين الأقارب",
+   "expect": [
+    "/ma/loi/39-08/art_251"
+   ],
+   "lang": "arabic",
+   "theme": "possession"
+  },
+  {
+   "q": "شروط الحيازة الاستحقاقية",
+   "expect": [
+    "/ma/loi/39-08/art_240",
+    "/ma/loi/39-08/art_239"
+   ],
+   "lang": "arabic",
+   "theme": "possession"
+  },
+  {
+   "q": "واش الأرض المحفظة كتكسب بالحيازة",
+   "expect": [
+    "/ma/loi/39-08/art_261"
+   ],
+   "lang": "darija",
+   "theme": "possession"
+  },
+  {
+   "q": "ما لا يكتسب بالحيازة",
+   "expect": [
+    "/ma/loi/39-08/art_261"
+   ],
+   "lang": "arabic",
+   "theme": "possession"
+  },
+  {
+   "q": "الحيازة بين الشركاء في الإرث",
+   "expect": [
+    "/ma/loi/39-08/art_255"
+   ],
+   "lang": "arabic",
+   "theme": "possession"
+  },
+  {
+   "q": "الملكية العدلية",
+   "expect": [
+    "/ma/loi/39-08/art_3",
+    "/ma/loi/39-08/art_240"
+   ],
+   "lang": "arabic",
+   "theme": "possession"
+  },
+  {
+   "q": "prescription acquisitive terrain non immatriculé dix ans",
+   "expect": [
+    "/ma/loi/39-08/art_250"
+   ],
+   "lang": "french",
+   "theme": "possession"
+  },
+  {
+   "q": "7azt l2ard 10 snin",
+   "expect": [
+    "/ma/loi/39-08/art_250"
+   ],
+   "lang": "latin",
+   "theme": "possession"
+  },
+  {
+   "q": "واش الأجنبي يقدر يكسب أرض بالحيازة",
+   "expect": [
+    "/ma/loi/39-08/art_239"
+   ],
+   "lang": "darija",
+   "theme": "possession"
+  },
+  {
+   "q": "بغيت نحفظ أرضي شنو الإجراءات",
+   "expect": [
+    "/ma/code/land-registration/art_13",
+    "/ma/code/land-registration/art_14"
+   ],
+   "lang": "darija",
+   "theme": "registration"
+  },
+  {
+   "q": "مطلب التحفيظ",
+   "expect": [
+    "/ma/code/land-registration/art_13"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "واش التحفيظ إجباري",
+   "expect": [
+    "/ma/code/land-registration/art_6",
+    "/ma/code/land-registration/art_7"
+   ],
+   "lang": "darija",
+   "theme": "registration"
+  },
+  {
+   "q": "هل يمكن سحب مطلب التحفيظ",
+   "expect": [
+    "/ma/code/land-registration/art_6"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "نشر ملخص مطلب التحفيظ في الجريدة الرسمية",
+   "expect": [
+    "/ma/code/land-registration/art_17"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "التحديد في مسطرة التحفيظ",
+   "expect": [
+    "/ma/code/land-registration/art_17",
+    "/ma/code/land-registration/art_18",
+    "/ma/code/land-registration/art_19"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "شنو هو الرسم العقاري",
+   "expect": [
+    "/ma/code/land-registration/art_62",
+    "/ma/code/land-registration/art_1"
+   ],
+   "lang": "darija",
+   "theme": "registration"
+  },
+  {
+   "q": "الرسم العقاري نهائي ولا يقبل الطعن",
+   "expect": [
+    "/ma/code/land-registration/art_62"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "immatriculation foncière réquisition",
+   "expect": [
+    "/ma/code/land-registration/art_13"
+   ],
+   "lang": "french",
+   "theme": "registration"
+  },
+  {
+   "q": "n7affed l2ard dyali",
+   "expect": [
+    "/ma/code/land-registration/art_13"
+   ],
+   "lang": "latin",
+   "theme": "registration"
+  },
+  {
+   "q": "نظير الرسم العقاري",
+   "expect": [
+    "/ma/code/land-registration/art_58"
+   ],
+   "lang": "arabic",
+   "theme": "registration"
+  },
+  {
+   "q": "جاري حفظ أرضي فيها جزء ديالي",
+   "expect": [
+    "/ma/code/land-registration/art_24"
+   ],
+   "lang": "darija",
+   "theme": "opposition"
+  },
+  {
+   "q": "أجل التعرض على مطلب التحفيظ",
+   "expect": [
+    "/ma/code/land-registration/art_24",
+    "/ma/code/land-registration/art_27"
+   ],
+   "lang": "arabic",
+   "theme": "opposition"
+  },
+  {
+   "q": "كيفاش نتعرض على التحفيظ",
+   "expect": [
+    "/ma/code/land-registration/art_25",
+    "/ma/code/land-registration/art_24"
+   ],
+   "lang": "darija",
+   "theme": "opposition"
+  },
+  {
+   "q": "التعرض خارج الأجل",
+   "expect": [
+    "/ma/code/land-registration/art_29"
+   ],
+   "lang": "arabic",
+   "theme": "opposition"
+  },
+  {
+   "q": "الرسوم القضائية للتعرض",
+   "expect": [
+    "/ma/code/land-registration/art_32"
+   ],
+   "lang": "arabic",
+   "theme": "opposition"
+  },
+  {
+   "q": "opposition à une réquisition d'immatriculation délai",
+   "expect": [
+    "/ma/code/land-registration/art_24",
+    "/ma/code/land-registration/art_27"
+   ],
+   "lang": "french",
+   "theme": "opposition"
+  },
+  {
+   "q": "شي واحد حفظ أرضي باسمو",
+   "expect": [
+    "/ma/code/land-registration/art_24",
+    "/ma/code/land-registration/art_64"
+   ],
+   "lang": "darija",
+   "theme": "opposition"
+  },
+  {
+   "q": "3ta3rd 3la ta7fid",
+   "expect": [
+    "/ma/code/land-registration/art_24"
+   ],
+   "lang": "latin",
+   "theme": "opposition"
+  },
+  {
+   "q": "زوروا عليا الرسم العقاري",
+   "expect": [
+    "/ma/loi/39-08/art_2"
+   ],
+   "lang": "darija",
+   "theme": "fraud"
+  },
+  {
+   "q": "أجل دعوى إبطال تقييد بسبب التدليس",
+   "expect": [
+    "/ma/loi/39-08/art_2"
+   ],
+   "lang": "arabic",
+   "theme": "fraud"
+  },
+  {
+   "q": "الاستيلاء على عقارات الغير",
+   "expect": [
+    "/ma/loi/39-08/art_2",
+    "/ma/code/land-registration/art_64"
+   ],
+   "lang": "arabic",
+   "theme": "fraud"
+  },
+  {
+   "q": "التقييد الاحتياطي",
+   "expect": [
+    "/ma/code/land-registration/art_85"
+   ],
+   "lang": "arabic",
+   "theme": "fraud"
+  },
+  {
+   "q": "مدة صلاحية التقييد الاحتياطي",
+   "expect": [
+    "/ma/code/land-registration/art_86"
+   ],
+   "lang": "arabic",
+   "theme": "fraud"
+  },
+  {
+   "q": "صندوق التأمينات التحفيظ تعويض المتضرر",
+   "expect": [
+    "/ma/code/land-registration/art_64",
+    "/ma/code/land-registration/art_100"
+   ],
+   "lang": "arabic",
+   "theme": "fraud"
+  },
+  {
+   "q": "inscription frauduleuse titre foncier quatre ans",
+   "expect": [
+    "/ma/loi/39-08/art_2"
+   ],
+   "lang": "french",
+   "theme": "fraud"
+  },
+  {
+   "q": "الورثة بغاو يقسمو الأرض",
+   "expect": [
+    "/ma/loi/39-08/art_313",
+    "/ma/loi/39-08/art_27"
+   ],
+   "lang": "darija",
+   "theme": "partition"
+  },
+  {
+   "q": "واش نقدر نجبر الورثة يقسمو",
+   "expect": [
+    "/ma/loi/39-08/art_27"
+   ],
+   "lang": "darija",
+   "theme": "partition"
+  },
+  {
+   "q": "القسمة البتية وقسمة المهايأة",
+   "expect": [
+    "/ma/loi/39-08/art_313"
+   ],
+   "lang": "arabic",
+   "theme": "partition"
+  },
+  {
+   "q": "شروط القسمة",
+   "expect": [
+    "/ma/loi/39-08/art_314"
+   ],
+   "lang": "arabic",
+   "theme": "partition"
+  },
+  {
+   "q": "الغبن في القسمة الرضائية",
+   "expect": [
+    "/ma/loi/39-08/art_315"
+   ],
+   "lang": "arabic",
+   "theme": "partition"
+  },
+  {
+   "q": "القسمة القضائية خبير المسح الطبوغرافي",
+   "expect": [
+    "/ma/loi/39-08/art_317"
+   ],
+   "lang": "arabic",
+   "theme": "partition"
+  },
+  {
+   "q": "بيع العقار المشاع بالمزاد إذا تعذرت القسمة",
+   "expect": [
+    "/ma/loi/39-08/art_318"
+   ],
+   "lang": "arabic",
+   "theme": "partition"
+  },
+  {
+   "q": "partage d'un terrain entre héritiers",
+   "expect": [
+    "/ma/loi/39-08/art_313",
+    "/ma/loi/39-08/art_27"
+   ],
+   "lang": "french",
+   "theme": "partition"
+  },
+  {
+   "q": "l9isma dyal l2ard bin lwarata",
+   "expect": [
+    "/ma/loi/39-08/art_313"
+   ],
+   "lang": "latin",
+   "theme": "partition"
+  },
+  {
+   "q": "خويا باع نصيبو من الأرض لواحد براني",
+   "expect": [
+    "/ma/loi/39-08/art_292"
+   ],
+   "lang": "darija",
+   "theme": "preemption"
+  },
+  {
+   "q": "أجل الشفعة",
+   "expect": [
+    "/ma/loi/39-08/art_304"
+   ],
+   "lang": "arabic",
+   "theme": "preemption"
+  },
+  {
+   "q": "شروط الشفعة",
+   "expect": [
+    "/ma/loi/39-08/art_293"
+   ],
+   "lang": "arabic",
+   "theme": "preemption"
+  },
+  {
+   "q": "الشفعة في عقار في طور التحفيظ",
+   "expect": [
+    "/ma/loi/39-08/art_305"
+   ],
+   "lang": "arabic",
+   "theme": "preemption"
+  },
+  {
+   "q": "كيفاش نطلب الشفعة",
+   "expect": [
+    "/ma/loi/39-08/art_306"
+   ],
+   "lang": "darija",
+   "theme": "preemption"
+  },
+  {
+   "q": "واش كاينة الشفعة فالبيع بالمزاد",
+   "expect": [
+    "/ma/loi/39-08/art_302"
+   ],
+   "lang": "darija",
+   "theme": "preemption"
+  },
+  {
+   "q": "délai du droit de préemption",
+   "expect": [
+    "/ma/loi/39-08/art_304"
+   ],
+   "lang": "french",
+   "theme": "preemption"
+  },
+  {
+   "q": "chouf3a chhal men nhar",
+   "expect": [
+    "/ma/loi/39-08/art_304"
+   ],
+   "lang": "latin",
+   "theme": "preemption"
+  },
+  {
+   "q": "رخصة البناء ما جاوبونيش",
+   "expect": [
+    "/ma/loi/12-90/art_48"
+   ],
+   "lang": "darija",
+   "theme": "permit"
+  },
+  {
+   "q": "شحال كتبقى صالحة رخصة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_49"
+   ],
+   "lang": "darija",
+   "theme": "permit"
+  },
+  {
+   "q": "شكون كيعطي رخصة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_41"
+   ],
+   "lang": "darija",
+   "theme": "permit"
+  },
+  {
+   "q": "متى يجب الحصول على رخصة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_40"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "سكوت رئيس المجلس الجماعي عن طلب رخصة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_48"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "رخصة السكن",
+   "expect": [
+    "/ma/loi/12-90/art_55"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "شهادة المطابقة",
+   "expect": [
+    "/ma/loi/12-90/art_55"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "واش خاصني مهندس معماري باش نبني",
+   "expect": [
+    "/ma/loi/12-90/art_50"
+   ],
+   "lang": "darija",
+   "theme": "permit"
+  },
+  {
+   "q": "مذكرة المعلومات التعميرية",
+   "expect": [
+    "/ma/decret/2-18-577/art_6",
+    "/ma/decret/2-18-577/art_7"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "أجل دراسة ملفات رخص البناء",
+   "expect": [
+    "/ma/decret/2-18-577/art_18"
+   ],
+   "lang": "arabic",
+   "theme": "permit"
+  },
+  {
+   "q": "permis de construire délai de réponse",
+   "expect": [
+    "/ma/loi/12-90/art_48"
+   ],
+   "lang": "french",
+   "theme": "permit"
+  },
+  {
+   "q": "permis d'habiter",
+   "expect": [
+    "/ma/loi/12-90/art_55"
+   ],
+   "lang": "french",
+   "theme": "permit"
+  },
+  {
+   "q": "ro5sat lbni",
+   "expect": [
+    "/ma/loi/12-90/art_40",
+    "/ma/loi/12-90/art_41"
+   ],
+   "lang": "latin",
+   "theme": "permit"
+  },
+  {
+   "q": "بنيت بلا رخصة شحال الغرامة",
+   "expect": [
+    "/ma/loi/12-90/art_71"
+   ],
+   "lang": "darija",
+   "theme": "infraction"
+  },
+  {
+   "q": "مخالفات التعمير",
+   "expect": [
+    "/ma/loi/12-90/art_64"
+   ],
+   "lang": "arabic",
+   "theme": "infraction"
+  },
+  {
+   "q": "هدم البناء المخالف",
+   "expect": [
+    "/ma/loi/12-90/art_68",
+    "/ma/loi/12-90/art_70"
+   ],
+   "lang": "arabic",
+   "theme": "infraction"
+  },
+  {
+   "q": "العود في مخالفة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_80",
+    "/ma/loi/12-90/art_71"
+   ],
+   "lang": "arabic",
+   "theme": "infraction"
+  },
+  {
+   "q": "construction sans permis amende",
+   "expect": [
+    "/ma/loi/12-90/art_71"
+   ],
+   "lang": "french",
+   "theme": "infraction"
+  },
+  {
+   "q": "أرضي فتصميم التهيئة مخصصة لمدرسة",
+   "expect": [
+    "/ma/loi/12-90/art_28"
+   ],
+   "lang": "darija",
+   "theme": "plan"
+  },
+  {
+   "q": "آثار تصميم التهيئة على الملكية",
+   "expect": [
+    "/ma/loi/12-90/art_28"
+   ],
+   "lang": "arabic",
+   "theme": "plan"
+  },
+  {
+   "q": "terrain réservé plan d'aménagement dix ans",
+   "expect": [
+    "/ma/loi/12-90/art_28"
+   ],
+   "lang": "french",
+   "theme": "plan"
+  },
+  {
+   "q": "بغيت نقسم البقعة بيني وبين خويا",
+   "expect": [
+    "/ma/loi/25-90/art_58"
+   ],
+   "lang": "darija",
+   "theme": "subdivision"
+  },
+  {
+   "q": "الإذن بتقسيم العقار",
+   "expect": [
+    "/ma/loi/25-90/art_58"
+   ],
+   "lang": "arabic",
+   "theme": "subdivision"
+  },
+  {
+   "q": "تعريف التجزئة العقارية",
+   "expect": [
+    "/ma/loi/25-90/art_1"
+   ],
+   "lang": "arabic",
+   "theme": "subdivision"
+  },
+  {
+   "q": "lotissement autorisation",
+   "expect": [
+    "/ma/loi/25-90/art_1",
+    "/ma/loi/25-90/art_2"
+   ],
+   "lang": "french",
+   "theme": "subdivision"
+  },
+  {
+   "q": "الدولة بغات تاخذ ليا الأرض",
+   "expect": [
+    "/ma/loi/7-81/art_1",
+    "/ma/loi/7-81/art_6"
+   ],
+   "lang": "darija",
+   "theme": "expropriation"
+  },
+  {
+   "q": "التعويض عن نزع الملكية",
+   "expect": [
+    "/ma/loi/7-81/art_20"
+   ],
+   "lang": "arabic",
+   "theme": "expropriation"
+  },
+  {
+   "q": "مقرر التخلي",
+   "expect": [
+    "/ma/loi/7-81/art_7",
+    "/ma/loi/7-81/art_10"
+   ],
+   "lang": "arabic",
+   "theme": "expropriation"
+  },
+  {
+   "q": "أجل الملاحظات على مشروع مقرر التخلي",
+   "expect": [
+    "/ma/loi/7-81/art_10"
+   ],
+   "lang": "arabic",
+   "theme": "expropriation"
+  },
+  {
+   "q": "الحيازة في نزع الملكية المحكمة الإدارية",
+   "expect": [
+    "/ma/loi/7-81/art_18",
+    "/ma/loi/7-81/art_24"
+   ],
+   "lang": "arabic",
+   "theme": "expropriation"
+  },
+  {
+   "q": "تجديد إعلان المنفعة العامة",
+   "expect": [
+    "/ma/loi/7-81/art_7"
+   ],
+   "lang": "arabic",
+   "theme": "expropriation"
+  },
+  {
+   "q": "expropriation indemnité calcul",
+   "expect": [
+    "/ma/loi/7-81/art_20"
+   ],
+   "lang": "french",
+   "theme": "expropriation"
+  },
+  {
+   "q": "naz3 lmilkiya ta3wid",
+   "expect": [
+    "/ma/loi/7-81/art_20"
+   ],
+   "lang": "latin",
+   "theme": "expropriation"
+  },
+  {
+   "q": "حق المرأة في الأرض السلالية",
+   "expect": [
+    "/ma/loi/62-17/art_6",
+    "/ma/loi/62-17/art_16"
+   ],
+   "lang": "arabic",
+   "theme": "collective"
+  },
+  {
+   "q": "الطعن في توزيع أراضي الجموع",
+   "expect": [
+    "/ma/loi/62-17/art_16"
+   ],
+   "lang": "arabic",
+   "theme": "collective"
+  },
+  {
+   "q": "واش أرض الجموع كتتباع",
+   "expect": [
+    "/ma/loi/62-17/art_15"
+   ],
+   "lang": "darija",
+   "theme": "collective"
+  },
+  {
+   "q": "جماعة النواب",
+   "expect": [
+    "/ma/loi/62-17/art_9"
+   ],
+   "lang": "arabic",
+   "theme": "collective"
+  },
+  {
+   "q": "terres collectives droits des femmes",
+   "expect": [
+    "/ma/loi/62-17/art_6"
+   ],
+   "lang": "french",
+   "theme": "collective"
+  }
+ ]
+}

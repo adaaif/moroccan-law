@@ -1,0 +1,14 @@
+-r base.txt
+
+# Testing
+pytest>=8.0
+pytest-django>=4.8
+pytest-xdist>=3.5
+# Coverage for tools/ci/coverage.sh (it brings coverage itself)
+pytest-cov==7.1.0
+
+# Lint (back/ruff.toml): tools/ci/backend.sh lint
+ruff==0.17.5
+
+# Building the Rust module (ma_law) from ../crates: crates/build.sh, and CI
+maturin==1.15.0

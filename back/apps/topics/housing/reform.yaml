@@ -1,0 +1,138 @@
+# What changed for housing, and what is coming (H16 of the housing plan): one item per change, its stage said first,
+# its dated official record, and what circulates that is not so. Stages: in_force (law in force), coming (law, not yet
+# in force), bill (in parliament), announced (said by the government, no text). Checked against the BO and the official
+# pages on 20 Oct 2026.
+
+- key: official-deed
+  title: {ar: 'المحرر الرسمي لبيوع العقار (041.25)', fr: 'L’acte authentique pour les ventes immobilières (loi 041.25)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 16 يوليوز 2026: بيع العقار، وشقق العمارات، والبيع في طور الإنجاز، والإيجار المفضي إلى التملك، كلها في محرر رسمي، لا في محرر ثابت التاريخ.', fr: 'En vigueur depuis le 16 juillet 2026 : la vente d’un immeuble, d’un lot de copropriété, en l’état futur d’achèvement et la location-accession, toutes par acte authentique, plus par acte à date certaine.'}
+  timeline:
+    - date: '2026-07-16'
+      text: {ar: 'نشر القانون 041.25 الذي غير المادة 4 من مدونة الحقوق العينية، والمادة 12 من القانون 18.00، والفصل 618-3 من قانون الالتزامات والعقود، والمادة 4 من القانون 51.00، ونسخ الفصل 618-17.', fr: 'Publication de la loi 041.25, qui modifie l’article 4 du Code des droits réels, l’article 12 de la loi 18.00, l’article 618-3 du DOC et l’article 4 de la loi 51.00, et abroge l’article 618-17.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7526', fr: 'BO n° 7526'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7526_Ar.pdf'}
+      cites: [/ma/loi/41-25/art_1, /ma/loi/41-25/art_2, /ma/loi/41-25/art_3, /ma/loi/41-25/art_4, /ma/loi/41-25/art_5]
+
+- key: aid-60-days
+  title: {ar: 'الدعم المباشر للسكن: ستون يوما ورفع الرهن (2.26.578)', fr: 'Aide au logement : soixante jours et mainlevée (décret 2.26.578)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ فاتح أكتوبر 2026: ستون يوما بدل ثلاثين لإبرام العقد النهائي، وطلب رفع الرهن في المنصة يبت فيه داخل ثلاثين يوما.', fr: 'En vigueur depuis le 1er octobre 2026 : soixante jours au lieu de trente pour l’acte définitif, et une demande de mainlevée sur la plateforme traitée en trente jours.'}
+  timeline:
+    - date: '2025-12-16'
+      text: {ar: 'قانون المالية لسنة 2026: يمكن للمالكين على الشياع الاستفادة، ولا يفوت السكن إلا بعد رفع الرهن.', fr: 'Loi de finances 2026 : les propriétaires en indivision peuvent en bénéficier, et le logement n’est cédé qu’après la mainlevée.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7465 مكرر', fr: 'BO n° 7465 bis'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7465-bis_Ar.pdf'}
+      cites: [/ma/loi/50-25/art_8]
+    - date: '2026-10-01'
+      text: {ar: 'نشر المرسوم 2.26.578 الذي غير المرسوم 2.23.350 وتممه.', fr: 'Publication du décret 2.26.578, qui modifie et complète le décret 2.23.350.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7548', fr: 'BO n° 7548'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7548_Ar.pdf'}
+      cites: [/ma/decret/2-26-578/art_2, /ma/decret/2-23-350/art_6, /ma/decret/2-23-350/art_6-bis]
+  rumours:
+    - claim: {ar: 'الدعم ينتهي في 2026', fr: 'L’aide prend fin en 2026'}
+      truth: {ar: 'لا يحدد القانون ولا المرسوم تاريخا لانتهائه.', fr: 'Ni la loi ni le décret ne fixent de date de fin.'}
+      cites: [/ma/decret/2-23-350/art_8]
+
+- key: co-ownership-2024
+  title: {ar: 'الملكية المشتركة: التبليغ والوساطة (39.24)', fr: 'Copropriété : notification et médiation (loi 39.24)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 22 غشت 2024: الاستدعاء والقرارات تبلغ بكل وسيلة قانونية، ولا يرفع الاتحاد دعوى إلا بعد تعذر الصلح والوساطة.', fr: 'En vigueur depuis le 22 août 2024 : convocations et décisions notifiées par tout moyen légal ; le syndicat n’agit en justice qu’après l’échec de la conciliation et de la médiation.'}
+  timeline:
+    - date: '2024-08-22'
+      text: {ar: 'نشر القانون 39.24 الذي غير القانون 18.00 وتممه.', fr: 'Publication de la loi 39.24, qui modifie et complète la loi 18.00.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7328', fr: 'BO n° 7328'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7328_Ar.pdf'}
+      cites: [/ma/loi/39-24/art_1, /ma/loi/39-24/art_2, /ma/loi/18-00/art_13, /ma/loi/18-00/art_16-bis-4, /ma/loi/18-00/art_30]
+
+- key: hidden-defects
+  title: {ar: 'عيوب العقار: سنتان من التسليم (40.24)', fr: 'Vices de l’immeuble : deux ans après la livraison (loi 40.24)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 22 غشت 2024: دعوى العيب في العقار داخل سنتين من التسليم، وخمس سنوات من البيع على الأكثر.', fr: 'En vigueur depuis le 22 août 2024 : l’action pour vice d’un immeuble dans les deux ans de la livraison, et cinq ans après la vente au plus.'}
+  timeline:
+    - date: '2024-08-22'
+      text: {ar: 'نشر القانون 40.24 الذي غير الفصل 573 من قانون الالتزامات والعقود.', fr: 'Publication de la loi 40.24, qui modifie l’article 573 du DOC.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7328', fr: 'BO n° 7328'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7328_Ar.pdf'}
+      cites: [/ma/loi/40-24/art_1, /ma/loi/40-24/art_2, /ma/code/doc/art_573]
+
+- key: local-taxes-dgi
+  title: {ar: 'رسم السكن ورسم الخدمات الجماعية عند المديرية العامة للضرائب (14.25)', fr: 'Taxe d’habitation et de services communaux à la DGI (loi 14.25)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 12 يونيو 2025: المديرية العامة للضرائب تفرض الرسمين وتستخلصهما بدل الخزينة.', fr: 'En vigueur depuis le 12 juin 2025 : la DGI établit et recouvre les deux taxes à la place de la Trésorerie.'}
+  timeline:
+    - date: '2025-06-12'
+      text: {ar: 'نشر القانون 14.25 الذي غير القانون 47.06 وتممه.', fr: 'Publication de la loi 14.25, qui modifie et complète la loi 47.06.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7412', fr: 'BO n° 7412'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7412_Ar.pdf'}
+      cites: [/ma/loi/14-25/art_1, /ma/loi/14-25/art_3, /ma/loi/14-25/art_4]
+
+- key: civil-procedure
+  title: {ar: 'قانون المسطرة المدنية الجديد (58.25)', fr: 'Le nouveau Code de procédure civile (loi 58.25)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 23 غشت 2026: لا طعن بالنقض في استيفاء الكراء ومراجعته، ومحكمة النقض يمكن أن توقف تنفيذ الإفراغ، والأجل الاسترحامي لا يتعدى شهرين.', fr: 'En vigueur depuis le 23 août 2026 : pas de cassation en paiement ou révision du loyer, la Cour de cassation peut suspendre une expulsion, le délai de grâce ne dépasse pas deux mois.'}
+  timeline:
+    - date: '2026-02-23'
+      text: {ar: 'نشر القانون 58.25؛ وتعوض إحالات القانون 67.12 على قانون 1974 بمقابلاتها فيه.', fr: 'Publication de la loi 58.25 ; les renvois de la loi 67.12 au code de 1974 visent désormais ses articles correspondants.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7485', fr: 'BO n° 7485'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7485_Ar.pdf'}
+      cites: [/ma/loi/58-25/art_644]
+    - date: '2026-08-23'
+      text: {ar: 'دخول القانون حيز التنفيذ، بعد ستة أشهر من نشره.', fr: 'Entrée en vigueur, six mois après la publication.'}
+      source: {name: {ar: 'المادة 643', fr: 'Article 643'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7485_Ar.pdf'}
+      cites: [/ma/loi/58-25/art_643, /ma/loi/58-25/art_375, /ma/loi/58-25/art_383, /ma/loi/58-25/art_477]
+
+- key: programme-2026
+  title: {ar: 'البرنامج الحكومي 2026–2031: الكراء والسكن القروي', fr: 'Le programme gouvernemental 2026–2031 : location et habitat rural'}
+  stage: announced
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'معلن فقط: عرض وطني للسكن المخصص للكراء، و100.000 سكن قروي بدعم 40.000 درهم، وقانون للتعمير بالوسط القروي. لا نص بعد.', fr: 'Seulement annoncé : une offre nationale de logement locatif, 100 000 logements ruraux avec une aide de 40 000 dirhams, une loi sur l’urbanisme rural. Aucun texte encore.'}
+  timeline:
+    - date: '2026-10-19'
+      text: {ar: 'عرض البرنامج الحكومي أمام مجلسي البرلمان.', fr: 'Présentation du programme gouvernemental devant les deux chambres.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/ar/node/13050'}
+  rumours:
+    - claim: {ar: 'الكراء تجمد', fr: 'Les loyers sont gelés'}
+      truth: {ar: 'لا يوجد أي تجميد. الزيادة محدودة بالقانون 67.12: بعد ثلاث سنوات على الأقل، 8% للسكن، وللمحكمة أن تحدد حتى 50% إذا كانت الوجيبة لا تتجاوز 400 درهم.', fr: 'Aucun gel n’existe. La hausse est encadrée par la loi 67.12 : après trois ans au moins, 8 % pour l’habitation, et jusqu’à 50 % fixés par le tribunal si le loyer ne dépasse pas 400 dirhams.'}
+      cites: [/ma/loi/67-12/art_32, /ma/loi/67-12/art_34, /ma/loi/67-12/art_35]
+    - claim: {ar: 'الدعم ديال 40.000 درهم للسكن القروي بدا', fr: 'L’aide de 40 000 dirhams pour l’habitat rural a commencé'}
+      truth: {ar: 'معلن في البرنامج الحكومي فقط، ولم ينشر أي نص يحدده.', fr: 'Annoncée dans le programme seulement ; aucun texte ne la fixe.'}
+
+- key: agents
+  title: {ar: 'الوكيل العقاري (مشروع 36.17)', fr: 'L’agent immobilier (projet 36.17)'}
+  stage: announced
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'محرر ولم يودع: لا قانون ينظم السمسرة العقارية، ومشروع 36.17 ليس في البرلمان.', fr: 'Rédigé, jamais déposé : aucune loi n’encadre le courtage immobilier, et le projet 36.17 n’est pas au Parlement.'}
+  timeline:
+    - date: '2023-10-30'
+      text: {ar: 'التزام الحكومة في مجلس النواب بإعداد مشروع قانون يتعلق بتنظيم مهنة الوكيل العقاري.', fr: 'Engagement du gouvernement devant la Chambre des représentants de préparer un projet de loi sur la profession d’agent immobilier.'}
+      source: {name: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}, url: 'https://www.chambredesrepresentants.ma/ar/%D8%A7%D9%84%D8%AA%D8%B2%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9/adad-mshrw-qanwn-ytlq-btnzym-mhnt-alwkyl-alqary-ltahyl-hdhh-almhnt-wtnzymha'}
+
+# The 2027 finance bill's line for this topic (the finance-bill review, P11, P13): a bill, never law; its way
+# through Parliament is the tax topic's (/topics/tax/reform/lf-2027).
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: العقود القديمة', fr: 'Le projet de loi de finances 2027 : les actes anciens'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: عقد قديم (عرفي) ما تسجلش وتقادمو الواجبات ديالو، يقدر يتسجل بالأسعار ديال نهار التسجيل بلا ذعيرة ولا زيادات، وكل تسجيل كيعطي شهادة؛ من 2027.', fr: 'Un projet, pas une loi : un acte ancien (sous seing privé) jamais enregistré, aux droits prescrits, pourrait être enregistré aux taux du jour sans pénalité ni majoration, chaque enregistrement donnant une attestation ; dès 2027.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26؛ مادته 7 كتزيد للمادتين 133 و135 من المدونة العامة للضرائب تسجيل العقود اللي تقادمت واجباتها بلا جزاءات، وكتكمل المادة 126.', fr: 'Dépôt du projet de loi de finances 60.26 ; son article 7 ajoute aux articles 133 et 135 du CGI l’enregistrement sans sanctions des actes aux droits prescrits, et complète l’article 126.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_135, /ma/code/cgi/art_126, /ma/projet-loi/60-26/art_7]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين. النواب زادو بلي واجبات العقد القديم كتتخلص داخل الآجال العادية ديال التسجيل، محسوبة من نهار طلب التسجيل.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers. Les députés ont ajouté que les droits d’un acte ancien se paient dans les délais ordinaires d’enregistrement, comptés du jour de la demande.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}
+      cites: [/ma/code/cgi/art_128]

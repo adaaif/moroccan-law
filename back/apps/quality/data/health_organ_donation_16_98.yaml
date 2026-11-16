@@ -1,0 +1,11 @@
+# Law 16.98 on the donation, removal and transplant of human organs and tissues as Adala's consolidated PDF prints it,
+# where the PDF's text layer misreads it: a lam-alef turned («عمال» for «عملا»), a word cut in two («للمتبر عين»).
+# Each was read against the page's image on 27 Oct 2026 (the health review, S4): the 7 articles the health topic
+# cites (3, 5, 10, 11, 13, 14, 16); 3, 10, 13, 14 and 16 read as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_organ_donation_16_98.yaml`; a reload of the text applies them again.
+text: /ma/loi/16-98
+document: sources/adala/organ_donation_16_98.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [5], wrong: "عمال", right: "عملا"}   # turned lam-alef, p. 4
+  - {arts: [11], wrong: "للمتبر عين", right: "للمتبرعين"}   # word cut in two, p. 7

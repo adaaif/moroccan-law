@@ -1,0 +1,13 @@
+# The nationality code (dahir 1.58.250 of 6 Sep 1958, Adala's copy as of 27 Feb 2023), where our reading of Adala's
+# layer turns a lam-alif or a letter pair: read against the file's page images on 2026-10-27 (the papers review), the
+# articles the papers topic cites. Applied by `manage.py apply_page_reading apps/quality/data/papers_nationality_1_58_250.yaml`.
+text: /ma/dahir/1-58-250
+document: sources/adala/nationality_1_58_250.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [5], wrong: "فيهم", right: "يفهم"}   # letters turned, p. 4 of the file
+  - {arts: [7], wrong: "خالف", right: "خلاف"}   # lam-alif turned («ما لم يثبت خلاف ذلك»), p. 5
+  - {arts: [10], wrong: "العالقة", right: "العلاقة"}   # lam-alif turned, three times, p. 7
+  - {arts: [18], wrong: "فعال", right: "فعلا"}   # lam-alif turned («مقيمين فعلا»), p. 12
+  - {arts: [19], wrong: "ألم", right: "لأم"}   # lam-alif turned («ويمكن لأم المولود»), p. 13
+  - {arts: [21], wrong: "فعال", right: "فعلا"}   # lam-alif turned («يسكنون معه فعلا»), p. 15

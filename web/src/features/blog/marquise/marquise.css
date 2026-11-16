@@ -1,0 +1,124 @@
+/* «ماركيز، قرارا بعد قرار» (the fourteenth post). The Bulletin's violet is what the orders printed: the staircase, its
+   dots, Palestine's ten centimes in their ledger, the orders that «approve». Ink is the reader: the dashed line they draw.
+   Numbers that matter are set large in Readex Pro's lightest weight, as the clock post sets its time. Nothing else is
+   coloured. */
+
+.mq { --mq-price: var(--color-stamp); --mq-guess: var(--color-ink); }
+
+/* ── The drawing ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.mq-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 640px) { .mq-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.mq-hero-head { display: flex; flex-direction: column; gap: 6px; }
+.mq-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.7rem, 1.4rem + 1.2vw, 2.3rem); line-height: 1.2; text-wrap: balance; }
+.bp:lang(fr) .mq-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem); }
+.mq-how { margin: 0; font-size: var(--text-body); line-height: 1.6; color: var(--color-ink-soft); max-width: 62ch; }
+.mq-numbers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-height: 0; overflow: hidden; opacity: 0; transform: translateY(-6px);
+  transition: max-height 500ms ease, opacity 500ms ease 150ms, transform 500ms ease 150ms; }
+.mq-numbers.is-on { max-height: 12rem; opacity: 1; transform: none; }
+.mq-number { display: flex; flex-direction: column; gap: 2px; padding-top: 10px; border-top: 2px solid var(--color-ink); min-width: 0; }
+.mq-number.is-times { border-top-color: var(--mq-price); }
+.mq-number-year { font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.mq-number-value { font-weight: 200; font-size: clamp(2.2rem, 1.5rem + 3.2vw, 4.2rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mq-number.is-times .mq-number-value { color: var(--mq-price); }
+.mq-number-value small { font-size: 0.36em; font-weight: 500; letter-spacing: 0; margin-inline: 0.15em 0.35em; color: var(--color-ink-soft); }
+[dir='rtl'] .mq-number { text-align: right; }
+.mq-number-value { align-self: flex-end; }
+.bp:lang(fr) .mq-number-value { align-self: flex-start; }
+
+.mq-legend { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; padding: 0; list-style: none; font-size: var(--text-meta); }
+.mq-legend li { display: inline-flex; align-items: center; gap: 7px; }
+.mq-legend i { display: inline-block; width: 22px; height: 0; flex: none; }
+.mq-key-price { border-top: 3px solid var(--mq-price); }
+.mq-key-guess { border-top: 3px dashed var(--mq-guess); }
+.mq-key-gap { border-top: 2px dashed var(--color-ink-soft); }
+.mq-key-set, .mq-key-approve { width: 12px !important; height: 12px !important; border-radius: 50%; }
+.mq-key-set { background: var(--color-ink-soft); }
+.mq-key-approve { background: var(--mq-price); }
+
+.mq-draw { width: 100%; }
+.mq-draw svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; }
+.mq-draw svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.mq-tick { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.mq-tick.is-unit { font-weight: 600; }
+.mq-tick.is-strong { fill: var(--color-ink); font-weight: 600; }
+.mq-axis { stroke: var(--color-ink); stroke-width: 1.2; }
+.mq-rule { stroke: var(--color-rule); stroke-width: 1; }
+.mq-zone-line { stroke: var(--color-rule); stroke-width: 2; }
+.mq-zone-words { font-family: var(--font-ui); font-size: 16px; font-weight: 600; fill: var(--color-ink-soft); }
+.mq-pad { fill: transparent; cursor: crosshair; touch-action: none; }
+.mq-price { fill: none; stroke: var(--mq-price); stroke-width: 3; stroke-linejoin: round; stroke-linecap: round; }
+.mq-price.is-rest { animation: mq-draw 2200ms cubic-bezier(0.45, 0, 0.2, 1) both; }
+@keyframes mq-draw { from { stroke-dashoffset: var(--len); } to { stroke-dashoffset: 0; } }
+.mq-price-dot { fill: var(--mq-price); }
+.mq-gap { fill: none; stroke: var(--color-ink-soft); stroke-width: 1.6; stroke-dasharray: 3 5; animation: mq-in 500ms ease 2000ms both; }
+.mq-step { fill: var(--mq-price); stroke: var(--color-sheet); stroke-width: 1.5; animation: mq-in 400ms ease 2100ms both; cursor: pointer; }
+.mq-step.is-picked { fill: var(--color-sheet); stroke: var(--mq-price); stroke-width: 3; }
+@keyframes mq-in { from { opacity: 0; } to { opacity: 1; } }
+.mq-guess { fill: none; stroke: var(--mq-guess); stroke-width: 2.6; stroke-dasharray: 7 6; stroke-linecap: round; stroke-linejoin: round; }
+.mq-start { fill: var(--color-sheet); stroke: var(--mq-price); stroke-width: 3; }
+.mq-start.is-calling { animation: mq-call 1600ms ease-in-out infinite; }
+@keyframes mq-call { 0%, 100% { stroke-width: 3; } 50% { stroke-width: 9; stroke-opacity: 0.45; } }
+.mq-ref line { stroke: var(--color-ink-soft); stroke-width: 1.2; stroke-dasharray: 2 4; }
+
+.mq-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.mq-reveal { min-height: 46px; padding: 8px 20px; border: 1px solid var(--color-ink); border-radius: 999px; background: var(--color-sheet); color: var(--color-ink);
+  font: inherit; font-weight: 600; cursor: pointer; }
+.mq-reveal[data-ready] { background: var(--color-ink); color: var(--color-sheet); }
+.mq-hint { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.mq-verdict { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.7; text-wrap: pretty; }
+.bp:lang(fr) .mq-verdict { font-family: "Source Serif 4", Georgia, serif; font-size: 1.12rem; }
+.mq-switch { display: inline-flex; align-self: flex-start; padding: 3px; border-radius: 999px; background: var(--color-chip); }
+.mq-switch button { min-height: 40px; padding: 6px 16px; border: 0; border-radius: 999px; background: transparent; color: var(--color-ink); font: inherit;
+  font-size: var(--text-meta); font-weight: 600; cursor: pointer; transition: background-color 200ms; }
+.mq-switch button[aria-pressed='true'] { background: var(--color-sheet); box-shadow: 0 1px 3px rgb(30 27 44 / 0.18); }
+.mq-pick { margin: 0; min-height: 3.2em; font-size: var(--text-body); line-height: 1.75; }
+.mq-share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.mq-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.mq-share:disabled { opacity: 0.6; }
+
+/* ── A text named ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.mq-ref { font-family: var(--font-ui); font-size: var(--text-meta); line-height: 2; }
+.mq-ref > a:first-child { font-weight: 600; }
+.mq-ref-stamp { vertical-align: middle; }
+.mq-ref-page { display: inline-block; padding: 1px 9px; border-radius: 999px; background: var(--color-wash); color: var(--color-stamp); font-weight: 600;
+  text-decoration: none; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.mq-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--mq-price); font-family: var(--font-law); font-size: var(--text-law);
+  line-height: 1.75; text-wrap: pretty; }
+.bp:lang(fr) .mq-quote { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; line-height: 1.7; }
+
+/* ── Ten centimes ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.mq-ledger { display: flex; flex-direction: column; gap: 5px; font-variant-numeric: tabular-nums; }
+.mq-ledger-row { display: grid; grid-template-columns: 96px auto 1fr; align-items: center; gap: 10px; font-size: 14px; }
+.mq-ledger-day { color: var(--color-ink-soft); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mq-ledger-bar { display: flex; height: 16px; border-radius: 3px; overflow: hidden; }
+.mq-ledger-co { background: var(--color-tick); }
+.mq-ledger-pa { background: var(--mq-price); min-width: 3px; }
+.mq-ledger-sum { font-weight: 600; }
+
+/* ── Who decides ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.mq-verbs svg { display: block; overflow: visible; }
+.mq-verb.is-set { fill: var(--color-ink-soft); }
+.mq-verb.is-approve { fill: var(--mq-price); }
+.mq-verbs-gap { fill: var(--color-paper); }
+
+/* ── A month ──────────────────────────────────────────────────────────────────────────────────────────────────── */
+.mq-month { display: flex; flex-direction: column; gap: 16px; margin: 4px -16px 0; padding: 20px 16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .mq-month { margin-inline: 0; padding: 24px 26px; border-radius: var(--radius-card); } }
+@media (min-width: 1100px) { .bp-sec .mq-month { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); } }
+.mq-month-ask { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.mq-month-label { font-weight: 700; margin-inline-end: 6px; }
+.mq-chip { min-width: 52px; min-height: 44px; padding: 6px 14px; border: 1px solid var(--color-rule); border-radius: 999px; background: var(--color-sheet); color: var(--color-ink);
+  font: inherit; font-weight: 600; font-variant-numeric: tabular-nums; cursor: pointer; }
+.mq-chip[aria-pressed='true'] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+.mq-month-answer { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.mq-month-figure { display: flex; flex-direction: column; gap: 4px; padding-top: 10px; border-top: 2px solid var(--color-ink); font-size: var(--text-meta); color: var(--color-ink-soft); min-width: 0; }
+.mq-month-big { font-size: clamp(2rem, 1.5rem + 2vw, 3.2rem); font-weight: 200; line-height: 1; letter-spacing: -0.02em; color: var(--color-ink); font-variant-numeric: tabular-nums; align-self: flex-end; }
+.bp:lang(fr) .mq-month-big { align-self: flex-start; }
+.mq-month-bar { height: 10px; border-radius: 999px; background: var(--color-chip); overflow: hidden; direction: ltr; }
+.mq-month-bar i { display: block; height: 100%; background: var(--mq-price); border-radius: 999px; transition: width 500ms cubic-bezier(0.3, 1.2, 0.5, 1); }
+
+@media (prefers-reduced-motion: reduce) {
+  .mq-price.is-rest, .mq-gap, .mq-step, .mq-start.is-calling { animation: none; }
+  .mq-numbers, .mq-month-bar i, .mq-switch button { transition: none; }
+}

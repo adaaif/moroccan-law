@@ -1,0 +1,176 @@
+/* «من غرينيتش إلى غرينيتش» (the thirteenth post). One colour means one thing: gold is the hour the law adds, on the
+   clock's dial, in the grid, in the finder's face. Everything else is the blog's paper and ink, and the Bulletin's violet
+   where a source is named (and where the Bulletin dates Ramadan). The gold is checked against its neighbours: 3.1 : 1
+   on a Greenwich day in daylight, 6.6 : 1 at night. */
+
+.ck {
+  --ck-ahead: #b47206;
+  --ck-ahead-ink: #8a5300;
+  --ck-ahead-wash: #ecd3a4;
+  --ck-gold-fill: rgb(196 128 16 / 0.2);
+  --ck-gmt: #ece8e0;
+  --ck-shadow: 0 18px 40px rgb(30 27 44 / 0.12), 0 2px 6px rgb(30 27 44 / 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .ck { --ck-ahead: #e9a53f; --ck-ahead-ink: #f2be6e; --ck-ahead-wash: #5a4320;
+    --ck-gold-fill: rgb(233 165 63 / 0.26); --ck-gmt: #2e2a3a; --ck-shadow: 0 18px 40px rgb(0 0 0 / 0.45); }
+}
+:root[data-theme='dark'] .ck { --ck-ahead: #e9a53f; --ck-ahead-ink: #f2be6e; --ck-ahead-wash: #5a4320;
+  --ck-gold-fill: rgb(233 165 63 / 0.26); --ck-gmt: #2e2a3a; --ck-shadow: 0 18px 40px rgb(0 0 0 / 0.45); }
+
+/* ── The face ─────────────────────────────────────────────────────────────────────────────────────────────────── */
+.ck-face { display: block; flex: none; overflow: visible; }
+.ck-face-rim { fill: var(--color-paper); }
+.ck-face-dial { fill: var(--color-sheet); stroke: var(--color-rule); stroke-width: 1; }
+.ck-face-gold { fill: var(--ck-gold-fill); stroke: var(--ck-ahead); stroke-width: 1; stroke-opacity: 0.5; }
+.ck-tick-h { stroke: var(--color-ink); stroke-width: 3.2; stroke-linecap: round; }
+.ck-tick-m { stroke: var(--color-ink-soft); stroke-width: 1.2; stroke-linecap: round; opacity: 0.7; }
+.ck-hand-h { stroke: var(--color-ink); stroke-width: 7.5; stroke-linecap: round; }
+.ck-hand-m { stroke: var(--color-ink); stroke-width: 4.5; stroke-linecap: round; }
+.ck-hand-s line { stroke: var(--ck-ahead); stroke-width: 1.8; stroke-linecap: round; }
+.ck-hand-s circle { fill: var(--ck-ahead); }
+.ck-hand-cap { fill: var(--color-ink); stroke: var(--color-sheet); stroke-width: 1.5; }
+.ck-face.is-smooth .ck-hand-h, .ck-face.is-smooth .ck-hand-m { transition: transform 700ms cubic-bezier(0.3, 1.35, 0.5, 1); }
+.ck-face.is-smooth .ck-face-gold { animation: ck-fade 400ms ease-out; }
+.ck-face.is-unsure .ck-face-gold { fill-opacity: 0.45; stroke-dasharray: 4 3; }
+@keyframes ck-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* ── The night of 20 September 2026 ───────────────────────────────────────────────────────────────────────────── */
+.ck-hero { margin: 0 -16px; padding: 26px 16px 22px; background: var(--color-sheet); display: grid; gap: 22px; justify-items: center; }
+@media (min-width: 640px) { .ck-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 34px 36px; } }
+@media (min-width: 860px) { .ck-hero { grid-template-columns: auto minmax(0, 1fr); align-items: center; justify-items: stretch; gap: 22px 44px; } }
+.ck-hero-clock { display: flex; flex-direction: column; align-items: center; gap: 14px; width: min(100%, 320px); }
+.ck-hero-clock .ck-face { filter: drop-shadow(0 16px 26px rgb(30 27 44 / 0.14)); }
+.ck-zone { display: inline-flex; align-items: center; gap: 8px; margin: 0; padding: 5px 13px; border-radius: 999px; background: var(--color-chip);
+  color: var(--color-ink-soft); font-size: var(--text-meta); font-weight: 600; transition: background-color 500ms, color 500ms; }
+.ck-zone[data-ahead] { background: var(--ck-ahead-wash); color: var(--ck-ahead-ink); }
+.ck-zone-dot { width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+.ck-hero-words { display: flex; flex-direction: column; gap: 12px; min-width: 0; width: 100%; }
+.ck-readout { margin: 0; font-family: var(--font-ui); font-weight: 200; font-size: clamp(3.6rem, 2.6rem + 4vw, 5.6rem); line-height: 0.95;
+  letter-spacing: -0.03em; font-variant-numeric: tabular-nums; color: var(--color-ink); align-self: flex-start; }
+.ck-readout-s { font-size: 0.42em; letter-spacing: 0; color: var(--color-ink-soft); }
+.ck-roll { display: inline-block; animation: ck-roll 520ms cubic-bezier(0.2, 0.9, 0.3, 1.25); }
+@keyframes ck-roll { from { transform: translateY(-0.45em); opacity: 0; } to { transform: none; opacity: 1; } }
+.ck-when { margin: 0; font-size: var(--text-lead); font-weight: 600; line-height: 1.5; }
+.ck-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--ck-ahead); font-family: var(--font-law);
+  font-size: var(--text-law); line-height: 1.75; text-wrap: pretty; }
+.bp:lang(fr) .ck-quote { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; line-height: 1.7; }
+.ck-stamp-row { margin: 0; }
+.ck-replay { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 6px 14px 6px 12px; border-radius: 999px;
+  border: 1px solid var(--color-rule); background: var(--color-sheet); color: var(--color-ink); font: inherit; font-size: var(--text-meta); font-weight: 600; cursor: pointer; }
+.ck-replay:hover { border-color: var(--color-stamp-line); }
+
+/* ── A text named: its name, then its page as the site's stamp ─────────────────────────────────────────────────── */
+.ck-ref { font-family: var(--font-ui); font-size: var(--text-meta); line-height: 2; }
+.ck-ref > a { font-weight: 600; }
+.ck-ref-stamp { vertical-align: middle; }
+.ck-ref.is-compact { line-height: 1.7; }
+.ck-ref-page { display: inline-block; padding: 1px 9px; border-radius: 999px; background: var(--color-wash); color: var(--color-stamp); font-weight: 600;
+  text-decoration: none; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ck-ref-page:hover { box-shadow: inset 0 0 0 1px var(--color-stamp-line); }
+
+/* ── Before 1913 ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.ck-cities { margin: 4px 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px 56px; padding: 22px 12px 14px; background: var(--color-sheet);
+  border-radius: var(--radius-card); }
+.ck-city { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.ck-city .ck-face { margin-bottom: 8px; }
+.ck-city-name { margin: 0; font-weight: 700; }
+.ck-city-time { margin: 0; font-size: 1.5rem; font-weight: 300; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.ck-cities figcaption { width: 100%; text-align: center; }
+
+/* ── The century ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.ck-century { display: flex; flex-direction: column; gap: 22px; width: 100%; }
+.ck-scrolly { position: relative; width: 100%; max-width: 72rem; margin-inline: auto; }
+.ck-sticky { position: sticky; top: 0; z-index: 2; margin-inline: -16px; padding: 10px 16px 6px; background: var(--color-paper); }
+.ck-sticky-in { display: flex; flex-direction: column; gap: 8px; }
+.ck-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; padding: 0; list-style: none; font-size: var(--text-meta); }
+.ck-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.ck-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; flex: none; }
+.ck-key-ahead { background: var(--ck-ahead); }
+.ck-key-gmt { background: var(--ck-gmt); box-shadow: inset 0 0 0 1px var(--color-rule); }
+.ck-key-unknown { background: repeating-linear-gradient(135deg, var(--ck-ahead) 0 2px, var(--ck-ahead-wash) 2px 5px); }
+.ck-key-ramadan { box-shadow: inset 0 0 0 2px var(--color-stamp); }
+.ck-key-dot { background: var(--color-ink); border-radius: 50% !important; }
+.ck-key-late { background: var(--color-repealed); border-radius: 50% !important; }
+.ck-grid { position: relative; width: 100%; touch-action: pan-y; cursor: crosshair; border-radius: 4px; -webkit-tap-highlight-color: transparent; }
+.ck-grid canvas, .ck-grid svg { position: absolute; inset: 0; display: block; }
+.ck-grid svg { pointer-events: none; overflow: visible; }
+.ck-grid:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; }
+.ck-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ck-axis.is-note { fill: var(--color-ink); font-weight: 500; }
+.ck-axis-tick { stroke: var(--color-rule); stroke-width: 1; }
+.ck-tell { margin: 4px 0 0; min-height: 3.3em; font-size: var(--text-body); line-height: 1.65; }
+.ck-q-desk { display: none; }
+.ck-q-phone { width: 100%; max-width: 72rem; margin: 0 auto; }
+@media (max-width: 999px) {
+  /* A phone: the sticky picture holds the legend, the grid and a tapped day's sentence only, so the steps keep room. */
+  .ck-tell.is-hint { min-height: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+  .ck-sticky .ck-legend { font-size: 14px; gap: 2px 12px; }
+}
+@media (min-width: 1000px) { .ck-q-desk { display: block; } .ck-q-phone { display: none; } }
+.ck-tell b { font-weight: 700; }
+.ck-steps { position: relative; z-index: 1; margin: 0; padding: 0; list-style: none; }
+.ck-steps li { margin: 0 0 58vh; padding: 16px 16px 14px; background: var(--color-sheet); border-radius: var(--radius-card); display: flex; flex-direction: column; gap: 8px; }
+.ck-steps li:first-child { margin-top: 8vh; }
+.ck-steps li:last-child { margin-bottom: 26vh; }
+.ck-steps h3 { margin: 0; font-family: var(--font-law); font-size: 1.55rem; line-height: 1.25; font-weight: 700; text-wrap: balance; }
+.bp:lang(fr) .ck-steps h3 { font-family: "Source Serif 4", Georgia, serif; font-size: 1.3rem; font-weight: 600; }
+.ck-steps p { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.75; text-wrap: pretty; }
+.bp:lang(fr) .ck-steps p { font-family: "Source Serif 4", Georgia, serif; font-size: 1.05rem; line-height: 1.65; }
+.ck-steps p.ck-step-years, .ck-steps p:has(> .ck-ref) { font-family: var(--font-ui); line-height: 1.6; }
+.ck-step-years { margin: 0; align-self: flex-start; font-size: var(--text-meta) !important; font-weight: 700; color: var(--ck-ahead-ink);
+  font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+.ck-steps .ck-quote { font-size: 1.2rem; }
+@media (min-width: 1000px) {
+  .ck-scrolly { display: grid; grid-template-columns: 17.5rem minmax(0, 1fr); gap: 40px; align-items: start; }
+  .ck-steps { grid-column: 1; grid-row: 1; padding-top: 6vh; }
+  .ck-sticky { grid-column: 2; grid-row: 1; top: 14px; margin: 0; padding: 0; background: none; }
+  .ck-steps li { margin: 0 0 54vh; padding: 0 0 0; background: none; border-radius: 0; opacity: 0.38; transition: opacity 300ms; }
+  .ck-steps li.is-on { opacity: 1; }
+  .ck-steps li:first-child { margin-top: 10vh; }
+  .ck-steps li:last-child { margin-bottom: 30vh; }
+}
+.ck-share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; width: 100%; max-width: 72rem; margin-inline: auto; }
+.ck-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.ck-share:disabled { opacity: 0.6; cursor: progress; }
+
+/* ── Any day ──────────────────────────────────────────────────────────────────────────────────────────────────── */
+.ck-finder { display: flex; flex-direction: column; gap: 20px; margin: 4px -16px 0; padding: 20px 16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .ck-finder { margin-inline: 0; padding: 24px 26px; border-radius: var(--radius-card); } }
+@media (min-width: 1100px) { .bp-sec .ck-finder { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); } }
+.ck-finder-ask { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+.ck-finder-label { font-weight: 700; }
+.ck-date { min-height: 48px; padding: 6px 12px; border: 1px solid var(--color-rule); border-radius: var(--radius-control); background: var(--color-paper);
+  color: var(--color-ink); font: inherit; font-size: 1.1rem; font-variant-numeric: tabular-nums; color-scheme: light dark; }
+.ck-chips { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; }
+.ck-chip { min-height: 44px; padding: 6px 15px; border: 1px solid var(--color-rule); border-radius: 999px; background: var(--color-sheet); color: var(--color-ink);
+  font: inherit; font-size: var(--text-meta); font-weight: 500; cursor: pointer; }
+.ck-chip[aria-pressed='true'] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+.ck-finder-answer { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px 24px; align-items: center; margin: 0; padding-top: 18px;
+  border-top: 1px solid var(--color-rule); }
+@media (max-width: 479px) { .ck-finder-answer { grid-template-columns: minmax(0, 1fr); justify-items: center; } }
+.ck-finder-face { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ck-finder-time { margin: 0; font-size: 1.7rem; font-weight: 300; font-variant-numeric: tabular-nums; }
+.ck-finder-words { display: flex; flex-direction: column; gap: 6px; min-width: 0; width: 100%; }
+.ck-finder-words p { margin: 0; }
+.ck-finder-day { font-size: var(--text-lead); font-weight: 700; }
+.ck-finder-state { font-family: var(--font-law); font-size: var(--text-law); line-height: 1.6; }
+.bp:lang(fr) .ck-finder-state { font-family: "Source Serif 4", Georgia, serif; font-size: 1.15rem; }
+.ck-finder-noon { font-variant-numeric: tabular-nums; }
+.ck-finder-since { line-height: 1.9; }
+.ck-finder-zone { font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── Before or after ──────────────────────────────────────────────────────────────────────────────────────────── */
+.ck-notice svg { display: block; overflow: visible; touch-action: pan-y; }
+.ck-dot { fill: var(--color-ink); stroke: var(--color-sheet); stroke-width: 1.5; }
+.ck-dot.is-late { fill: var(--color-repealed); }
+.ck-dot.is-picked { stroke: var(--color-ink); stroke-width: 2.5; fill: var(--color-sheet); }
+.ck-dot.is-late.is-picked { stroke: var(--color-repealed); }
+.ck-zero { stroke: var(--color-ink); stroke-width: 1.5; }
+.ck-rule { stroke: var(--color-rule); stroke-width: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ck-roll, .ck-face.is-smooth .ck-face-gold { animation: none; }
+  .ck-face.is-smooth .ck-hand-h, .ck-face.is-smooth .ck-hand-m, .ck-steps li, .ck-zone { transition: none; }
+}

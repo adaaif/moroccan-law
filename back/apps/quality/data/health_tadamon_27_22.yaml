@@ -1,0 +1,8 @@
+# Law 27.22 (amending law 65.00: AMO Tadamon replaces RAMED) as BO 7147 bis (30 Nov 2022) prints it. The article the
+# health topic cites (art. 8, p. 7677) was read word by word against the page image on 27 Oct 2026 (
+# the health review, S4): it reads as printed. Kept so the reading is on record.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_tadamon_27_22.yaml`; a reload of the text applies them again.
+text: /ma/loi/27-22
+document: issues/bo_ar/BO_7147-bis_ar.pdf
+read_on: '2026-10-27'
+fixes: []

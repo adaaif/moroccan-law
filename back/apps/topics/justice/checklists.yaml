@@ -1,0 +1,101 @@
+# The justice topic's lists (the justice review): each list is what an article names, item by item. Ticks stay on the
+# reader's phone.
+
+- key: custody-rights
+  title: {ar: 'حقوق الموقوف تحت الحراسة النظرية', fr: 'Les droits de la personne gardée à vue'}
+  lead:
+    ar: 'ما يكتبه قانون المسطرة الجنائية في المواد 66 و66-2 و66-5 و67: كل حق بمادته.'
+    fr: 'Ce qu’écrit le code de procédure pénale aux articles 66, 66-2, 66-5 et 67 : chaque droit avec son article.'
+  cites: [/ma/loi/22-01/art_66-2, /ma/loi/22-01/art_67]
+  items:
+    - label: {ar: 'أن يخبر فورا وبكيفية يفهمها بسبب إيقافه', fr: 'Être informé aussitôt, de façon compréhensible, du motif de l’arrestation'}
+      cites: [/ma/loi/22-01/art_66-2]
+    - label: {ar: 'أن يخبر بحقوقه، ومنها التزام الصمت؛ والصمت ليس اعترافا', fr: 'Être informé de ses droits, dont celui de se taire ; le silence n’est pas un aveu'}
+      cites: [/ma/loi/22-01/art_66-2]
+    - label: {ar: '48 ساعة على الأكثر من ساعة الإيقاف، و24 ساعة إضافية مرة واحدة بإذن كتابي معلل', fr: '48 heures au plus dès l’arrestation, 24 de plus une seule fois sur autorisation écrite motivée'}
+      when: {ar: '48 ساعة', fr: '48 heures'}
+      cites: [/ma/loi/22-01/art_66, /ma/loi/22-01/art_66-2]
+    - label: {ar: 'الاتصال بمحام من الساعة الأولى، ثلاثين دقيقة في سرية، أو طلب محام في إطار المساعدة القضائية', fr: 'Joindre un avocat dès la première heure, trente minutes en confidentialité, ou en demander un au titre de l’assistance judiciaire'}
+      when: {ar: 'الساعة الأولى', fr: 'Première heure'}
+      cites: [/ma/loi/22-01/art_66-2]
+    - label: {ar: 'الاتصال بأحد الأقرباء، وإشعار العائلة فور الوضع تحت الحراسة ما لم يعترض', fr: 'Joindre un proche, et que la famille soit prévenue dès la garde à vue, sauf opposition'}
+      cites: [/ma/loi/22-01/art_66-2, /ma/loi/22-01/art_67]
+    - label: {ar: 'فحص طبي إذا ظهر مرض أو آثار، والتقرير يضاف إلى المحضر', fr: 'Un examen médical en cas de maladie ou de traces, le rapport joint au procès-verbal'}
+      cites: [/ma/loi/22-01/art_67]
+    - label: {ar: 'المحضر يبين يوم وساعة الإيقاف والوضع والرفع، ويوقعه أو يرفض توقيعه', fr: 'Le procès-verbal indique jour et heure de l’arrestation, du début et de la fin ; il le signe ou refuse'}
+      cites: [/ma/loi/22-01/art_67]
+    - label: {ar: 'سجل مرقم يقيد الساعات والاستنطاق والراحة والصحة والتغذية', fr: 'Un registre paginé : heures, interrogatoires, repos, santé, repas'}
+      cites: [/ma/loi/22-01/art_66-5]
+    - label: {ar: 'ظروف تحترم الكرامة، والتغذية على نفقة الدولة', fr: 'Des conditions qui respectent la dignité, les repas à la charge de l’État'}
+      cites: [/ma/loi/22-01/art_66-2]
+
+- key: claim
+  title: {ar: 'ما يتضمنه مقال الدعوى', fr: 'Ce que contient la requête'}
+  lead:
+    ar: 'البيانات التي تعددها المادة 77 من القانون 58.25 تحت طائلة عدم القبول، ومعها المادة 76.'
+    fr: 'Les mentions de l’article 77 de la loi 58.25, à peine d’irrecevabilité, avec l’article 76.'
+  cites: [/ma/loi/58-25/art_76, /ma/loi/58-25/art_77]
+  items:
+    - label: {ar: 'مقال مكتوب، مؤرخ وموقع منك أو من وكيلك أو محاميك', fr: 'Une requête écrite, datée et signée par vous, votre mandataire ou votre avocat'}
+      cites: [/ma/loi/58-25/art_76]
+    - label: {ar: 'الاسم الشخصي والعائلي لكل طرف', fr: 'Les nom et prénom de chaque partie'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'صفة وموطن أو محل إقامة كل طرف', fr: 'La qualité et le domicile ou la résidence de chaque partie'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'رقم بطاقتك الوطنية للتعريف الإلكترونية أو ما يقوم مقامها', fr: 'Le numéro de votre carte nationale électronique ou ce qui en tient lieu'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'اسم الوكيل وموطنه إن وكلت أحدا', fr: 'Le nom et le domicile du mandataire, si vous en avez un'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'اسم المحامي ورقمه الوطني وهيئته وبريده الإلكتروني، إن رفعت الدعوى بواسطته', fr: 'Le nom, numéro national, barreau et courriel de l’avocat, s’il introduit l’action'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'موجز موضوع الدعوى والوقائع والأسباب', fr: 'Un résumé de l’objet, des faits et des moyens'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'المستندات، مقابل وصل يثبت عددها ونوعها', fr: 'Les pièces, contre un récépissé qui en indique le nombre et la nature'}
+      cites: [/ma/loi/58-25/art_77]
+    - label: {ar: 'موطن للمخابرة بدائرة المحكمة، وإلا صح التبليغ بكتابة الضبط', fr: 'Un domicile élu dans le ressort, sinon les notifications au greffe sont valables'}
+      cites: [/ma/loi/58-25/art_78]
+
+- key: appeal
+  title: {ar: 'ما يتضمنه مقال الاستئناف', fr: 'Ce que contient la requête d’appel'}
+  lead:
+    ar: 'البيانات التي تعددها المادة 216 من القانون 58.25 تحت طائلة عدم القبول، داخل أجل المادة 204.'
+    fr: 'Les mentions de l’article 216 de la loi 58.25, à peine d’irrecevabilité, dans le délai de l’article 204.'
+  cites: [/ma/loi/58-25/art_216, /ma/loi/58-25/art_204]
+  items:
+    - label: {ar: 'داخل ثلاثين يوما من التبليغ', fr: 'Dans les trente jours de la notification'}
+      when: {ar: '30 يوما', fr: '30 jours'}
+      cites: [/ma/loi/58-25/art_204]
+    - label: {ar: 'اسم المستأنف والمستأنف عليه', fr: 'Les noms de l’appelant et de l’intimé'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'صفة كل منهما وموطنه، وصفة الوكلاء وموطنهم عند الاقتضاء', fr: 'La qualité et le domicile de chacun, et ceux des mandataires le cas échéant'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'رقم البطاقة الوطنية للمستأنف', fr: 'Le numéro de carte nationale de l’appelant'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'بيانات المحامي إن قدم المقال بواسطته', fr: 'Les données de l’avocat, s’il dépose la requête'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'موضوع الطلب والوقائع والوسائل المثارة', fr: 'L’objet, les faits et les moyens soulevés'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'المستندات التي تريد استعمالها', fr: 'Les pièces que vous voulez produire'}
+      cites: [/ma/loi/58-25/art_216]
+    - label: {ar: 'نسخ مشهود بمطابقتها بعدد المستأنف عليهم', fr: 'Des copies certifiées, une par intimé'}
+      cites: [/ma/loi/58-25/art_216]
+
+- key: aid-file
+  title: {ar: 'ملف طلب المساعدة القضائية', fr: 'Le dossier d’assistance judiciaire'}
+  lead:
+    ar: 'ما يطلبه المرسوم الملكي 514.65: طلب إلى وكيل الملك، وشهادة عسر من الباشا أو القائد.'
+    fr: 'Ce que demande le décret royal 514.65 : une demande au procureur du Roi, et un certificat d’indigence du pacha ou du caïd.'
+  cites: [/ma/decret-loi/514-65/art_6, /ma/decret-loi/514-65/art_7]
+  items:
+    - label: {ar: 'الطلب، إلى وكيل الملك بالمحكمة التي يعرض عليها النزاع أو التي توجد في دائرتها', fr: 'La demande, au procureur du Roi du tribunal saisi ou de son ressort'}
+      cites: [/ma/decret-loi/514-65/art_6]
+    - label: {ar: 'شهادة العسر من الباشا أو القائد، تبين وسائل عيشك', fr: 'Le certificat d’indigence du pacha ou du caïd, indiquant vos moyens d’existence'}
+      cites: [/ma/decret-loi/514-65/art_7]
+    - label: {ar: 'ما يبين جوهر القضية، لأن وكيل الملك يحقق في العسر وفي جوهرها', fr: 'Ce qui montre le fond de l’affaire, sur lequel le procureur enquête aussi'}
+      cites: [/ma/decret-loi/514-65/art_6]
+    - label: {ar: 'في الطعن بالنقض: الطلب إلى الوكيل العام لدى محكمة النقض أو إلى النيابة العامة المحلية، ويوقف أجل النقض', fr: 'En cassation : la demande au procureur général près la Cour de cassation ou au parquet local ; elle suspend le délai de pourvoi'}
+      cites: [/ma/decret-loi/514-65/art_6, /ma/loi/58-25/art_380]
+    - label: {ar: 'في القضية الجنائية: المتهم الذي يقدم شهادة العسر يعين له رئيس المحكمة مدافعا', fr: 'Au pénal : le prévenu qui produit le certificat se voit désigner un défenseur par le président'}
+      cites: [/ma/decret-loi/514-65/art_18]
+    - label: {ar: 'الأجير في القضايا الاجتماعية لا يحتاج طلبا: يستفيد بقوة القانون', fr: 'Le salarié en matière sociale n’a pas à demander : il en bénéficie de plein droit'}
+      cites: [/ma/loi/58-25/art_311]

@@ -1,0 +1,16 @@
+# The domestic work law (19.12) as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned around
+# («ثالثة» for «ثلاثة»), a word cut in two («ج سيم»), a letter moved («والي لز مه» for «ولا يلزمه»). Each was read
+# against the page's image on 20 Oct 2026 (T1 of the work plan): the 12 articles the work topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/domestic_work_19_12.yaml`; a reload of the text applies them again.
+text: /ma/loi/19-12
+document: sources/adala/domestic_work_19_12.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [3], wrong: وبأه ليت هما, right: وبأهليتهما}   # split, p. 4
+  - {arts: [3], wrong: ثالثة نظائر, right: ثلاثة نظائر}   # turn, p. 4
+  - {arts: [3, 10, 19], wrong: للعمالة, right: للعاملة}   # other, p. 4, 7, 9
+  - {arts: [3], wrong: بعمالات, right: بعاملات}   # other, p. 4
+  - {arts: [14], wrong: ثالثة أشهر, right: ثلاثة أشهر}   # turn, p. 8
+  - {arts: [19], wrong: خالف ذلك, right: خلاف ذلك}   # turn, p. 9
+  - {arts: [23], wrong: عمالة أو عاملا, right: عاملة أو عاملا}   # other, p. 11
+  - {arts: [23], wrong: عاملا ت, right: عاملات}   # split, p. 11

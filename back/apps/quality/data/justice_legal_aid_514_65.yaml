@@ -1,0 +1,30 @@
+# The justice topic's texts (27 Oct 2026), where our reading differs from the page.
+# Royal decree 514.65 on legal aid, as Adala's consolidation of 26 Oct 2011 prints it (sources/adala/legal_aid_514_65.pdf):
+# the layer turned «لا» into «ال» (عملا, ثلاثة) and, in chapter 9, set the words before footnote 12 after it and split
+# «المدافعين». Read on pages 3, 4, 6, 7 and 9. Applied by `manage.py apply_page_reading
+# apps/quality/data/justice_legal_aid_514_65.yaml`.
+text: /ma/decret-loi/514-65
+document: sources/adala/legal_aid_514_65.pdf
+read_on: '2026-10-27'
+fixes:
+- arts: [1]
+  wrong: 'من هذه المساعدة عمال بالمعاهدات'
+  right: 'من هذه المساعدة عملا بالمعاهدات'
+- arts: [2]
+  wrong: 'الواجب إنجازها عمال بالأحكام'
+  right: 'الواجب إنجازها عملا بالأحكام'
+- arts: [3]
+  wrong: '2 -ثالثة قضاة سامين'
+  right: '2 -ثلاثة قضاة سامين'
+- arts: [5]
+  wrong: 'إلا بحضور ثالثة من أعضائه'
+  right: 'إلا بحضور ثلاثة من أعضائه'
+- arts: [9]
+  wrong: 'يوجه كاتب المكتب في الثالثة أيام'
+  right: 'يوجه كاتب المكتب في الثلاثة أيام'
+- arts: [9]
+  wrong: 'إذا لم يكن  ويدعو الرئيس نقيب هيئة المحامين لتعيين محام ويتولى بنفسه هذا التعيين هناك مجلس للهيئة ويمكنه كذلك تعيين مدافع مقبول أو وكيل، ويجب على الم داف عين المشار إليهم'
+  right: 'ويدعو الرئيس نقيب هيئة المحامين لتعيين محام ويتولى بنفسه هذا التعيين إذا لم يكن هناك مجلس للهيئة ويمكنه كذلك تعيين مدافع مقبول أو وكيل، ويجب على المدافعين المشار إليهم'
+- arts: [13]
+  wrong: 'تحصيل المبالغ الواجبة للخزينة عمال بمقتضيات الفصل .12 ويتعين'
+  right: "تحصيل المبالغ الواجبة للخزينة عملا بمقتضيات الفصل 12.\nويتعين"

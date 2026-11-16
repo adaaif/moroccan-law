@@ -1,0 +1,518 @@
+{
+ "about": "Housing questions (H7 of the housing plan, 20 Oct 2026): what a tenant, a landlord, a co-owner or a buyer types, in MSA, Darija and French, with the article that must come back (a list: any of them; «missing:<code>» when the answer is that the site does not hold it). The plan's bar: 61 of 76 in the top 3. Baseline before the build: 20 first, 24 in the top 3.",
+ "questions": [
+  {
+   "q": "الزيادة في الكراء",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ],
+   "note": "art 34 sets the rate (8 %/10 %), art 32 the 3-year floor"
+  },
+  {
+   "q": "الزيادة فالكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ]
+  },
+  {
+   "q": "شحال الزيادة في الكراء",
+   "expect": "/ma/loi/67-12/art_34",
+   "note": "the number asked for is in art 34"
+  },
+  {
+   "q": "مول الدار زاد فالكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ],
+   "note": "«الدار» matches «الدار البيضاء» in place names"
+  },
+  {
+   "q": "مول الدار بغا يزيد فالكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ],
+   "note": "an editor's search, 30 Oct 2026: the increase door learnt «بغا يزيد فالكرا» on it (tuning)"
+  },
+  {
+   "q": "طلع ليا الكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ],
+   "note": "tuning, 30 Oct 2026"
+  },
+  {
+   "q": "augmentation du loyer",
+   "expect": "/ma/loi/67-12/art_34",
+   "note": "67.12 has no French text; everyday rewrite keeps «augmentation»"
+  },
+  {
+   "q": "révision du loyer",
+   "expect": [
+    "/ma/loi/67-12/art_31",
+    "/ma/loi/67-12/art_33"
+   ]
+  },
+  {
+   "q": "مول الدار بغا يخرجني",
+   "expect": "/ma/loi/67-12/art_45",
+   "note": "the topic guess is right, the results are not"
+  },
+  {
+   "q": "الإفراغ",
+   "expect": "/ma/loi/67-12/art_45"
+  },
+  {
+   "q": "الإشعار بالإفراغ",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46"
+   ]
+  },
+  {
+   "q": "الإفراغ من أجل السكن",
+   "expect": "/ma/loi/67-12/art_45",
+   "note": "art 45 names «استرداد المحل لسكنه الشخصي»"
+  },
+  {
+   "q": "expulsion locataire",
+   "expect": "/ma/loi/67-12/art_45"
+  },
+  {
+   "q": "الضمانة ديال الكرا",
+   "expect": "/ma/loi/67-12/art_20"
+  },
+  {
+   "q": "ضمانة الكراء",
+   "expect": "/ma/loi/67-12/art_20"
+  },
+  {
+   "q": "caution loyer",
+   "expect": "/ma/loi/67-12/art_20"
+  },
+  {
+   "q": "dépôt de garantie",
+   "expect": "/ma/loi/67-12/art_20",
+   "note": "first answer is the insurance circular swallowed by decree 2.21.604"
+  },
+  {
+   "q": "عقد الكراء",
+   "expect": [
+    "/ma/loi/67-12",
+    "/ma/loi/67-12/art_3"
+   ],
+   "note": "citation card for the code"
+  },
+  {
+   "q": "كرا الدار بلا عقد",
+   "expect": "/ma/loi/67-12/art_3"
+  },
+  {
+   "q": "bail d'habitation",
+   "expect": "/ma/loi/67-12",
+   "note": "citation card"
+  },
+  {
+   "q": "ما خلصتش الكرا",
+   "expect": [
+    "/ma/loi/67-12/art_23",
+    "/ma/loi/67-12/art_56"
+   ]
+  },
+  {
+   "q": "عدم أداء الوجيبة الكرائية",
+   "expect": [
+    "/ma/loi/67-12/art_23",
+    "/ma/loi/67-12/art_56"
+   ]
+  },
+  {
+   "q": "وصل الكراء",
+   "expect": "/ma/loi/67-12/art_11"
+  },
+  {
+   "q": "مول الدار ما بغاش يصلح",
+   "expect": "/ma/loi/67-12/art_10"
+  },
+  {
+   "q": "إصلاحات المحل المكترى",
+   "expect": "/ma/loi/67-12/art_10"
+  },
+  {
+   "q": "état des lieux",
+   "expect": [
+    "/ma/loi/67-12/art_7",
+    "/ma/loi/67-12/art_8"
+   ]
+  },
+  {
+   "q": "وفاة المكتري",
+   "expect": "/ma/loi/67-12/art_53"
+  },
+  {
+   "q": "الطلاق والكراء",
+   "expect": "/ma/loi/67-12/art_54",
+   "note": "art 54 reads «طالق» for «طلاق» (lam-alef turn), so «الطلاق» cannot find it"
+  },
+  {
+   "q": "تولية الكراء",
+   "expect": "/ma/loi/67-12/art_39"
+  },
+  {
+   "q": "sous-location",
+   "expect": "/ma/loi/67-12/art_39"
+  },
+  {
+   "q": "المحل المهجور",
+   "expect": [
+    "/ma/loi/67-12/art_57",
+    "/ma/loi/67-12/art_59"
+   ]
+  },
+  {
+   "q": "المكري باع الدار",
+   "expect": "/ma/loi/67-12/art_4"
+  },
+  {
+   "q": "السانديك",
+   "expect": [
+    "/ma/loi/18-00/art_26",
+    "/ma/loi/18-00/art_19"
+   ],
+   "note": "everyday list rewrites to «مسير الملكية المشتركة», not the law's «وكيل اتحاد الملاك»"
+  },
+  {
+   "q": "السانديك ما خدامش",
+   "expect": [
+    "/ma/loi/18-00/art_26",
+    "/ma/loi/18-00/art_16"
+   ],
+   "note": "art 16 holds 16 مكرر 3 (owners convene when the syndic does not), swallowed"
+  },
+  {
+   "q": "وكيل اتحاد الملاك",
+   "expect": [
+    "/ma/loi/18-00/art_26",
+    "/ma/loi/18-00/art_19"
+   ]
+  },
+  {
+   "q": "syndic copropriété",
+   "expect": [
+    "/ma/loi/18-00/art_26",
+    "/ma/loi/18-00/art_19"
+   ]
+  },
+  {
+   "q": "لاكوسيون ديال السانديك",
+   "expect": [
+    "/ma/loi/18-00/art_36",
+    "/ma/loi/18-00/art_25"
+   ],
+   "note": "«لاكوسيون» (la cotisation) unknown to the everyday list"
+  },
+  {
+   "q": "جار ما بغاش يخلص السانديك",
+   "expect": [
+    "/ma/loi/18-00/art_36",
+    "/ma/loi/18-00/art_25-bis"
+   ]
+  },
+  {
+   "q": "التكاليف المشتركة",
+   "expect": [
+    "/ma/loi/18-00/art_36",
+    "/ma/loi/18-00/art_37"
+   ]
+  },
+  {
+   "q": "charges de copropriété",
+   "expect": [
+    "/ma/loi/18-00/art_36",
+    "/ma/loi/18-00/art_37"
+   ]
+  },
+  {
+   "q": "الجمع العام للملاك المشتركين",
+   "expect": [
+    "/ma/loi/18-00/art_16",
+    "/ma/loi/18-00/art_17"
+   ],
+   "note": "18.00 prints «المالك المشتركين» 48 times"
+  },
+  {
+   "q": "اتحاد الملاك",
+   "expect": "/ma/loi/18-00/art_13",
+   "note": "18.00 prints «اتحاد المالك» 33 times; the amending law 39.24 comes first"
+  },
+  {
+   "q": "الأجزاء المشتركة",
+   "expect": [
+    "/ma/loi/18-00/art_3",
+    "/ma/loi/18-00/art_4"
+   ]
+  },
+  {
+   "q": "شريت على التصميم",
+   "expect": [
+    "/ma/code/doc/art_618-1",
+    "/ma/code/doc/art_618-3",
+    "/ma/code/doc/art_618-6",
+    "/ma/loi/41-25/art_3"
+   ],
+   "note": "the answer is the DOC 618-1 and after (law 44.00/107.12), not held here; 41.25 art 3 is the one piece on the site"
+  },
+  {
+   "q": "البروموتور تعطل",
+   "expect": [
+    "/ma/code/doc/art_618-12",
+    "/ma/code/doc/art_618-14",
+    "/ma/code/doc/art_618-7"
+   ],
+   "note": "DOC 618-x (delay penalty) not held here"
+  },
+  {
+   "q": "بيع العقار في طور الإنجاز",
+   "expect": [
+    "/ma/code/doc/art_618-1",
+    "/ma/code/doc/art_618-3",
+    "/ma/code/doc/art_618-6",
+    "/ma/loi/41-25/art_3"
+   ],
+   "note": "DOC itself missing"
+  },
+  {
+   "q": "VEFA",
+   "expect": [
+    "/ma/code/doc/art_618-1",
+    "/ma/code/doc/art_618-3",
+    "/ma/code/doc/art_618-6",
+    "/ma/loi/41-25/art_3"
+   ],
+   "note": "needs an everyday entry → «بيع العقار في طور الإنجاز»"
+  },
+  {
+   "q": "vente en l'état futur d'achèvement",
+   "expect": [
+    "/ma/code/doc/art_618-1",
+    "/ma/code/doc/art_618-3",
+    "/ma/code/doc/art_618-6",
+    "/ma/loi/41-25/art_3"
+   ]
+  },
+  {
+   "q": "الوعد بالبيع",
+   "expect": "/ma/loi/39-08/art_4",
+   "note": "art 4 shown without its 41.25 wording (change not placed)"
+  },
+  {
+   "q": "دعم السكن 100000 درهم",
+   "expect": "/ma/decret/2-23-350/art_2",
+   "note": "«لدعم» in the decree is not folded to «دعم»; the BO prints «100.000»"
+  },
+  {
+   "q": "دعم السكن",
+   "expect": [
+    "/ma/decret/2-23-350/art_2",
+    "/ma/loi/50-22/art_8"
+   ]
+  },
+  {
+   "q": "شروط الاستفادة من دعم السكن",
+   "expect": "/ma/loi/50-22/art_8",
+   "note": "conditions live in Finance Law 2023 art 8, amended 2024 and 2026, neither placed"
+  },
+  {
+   "q": "الدعم ديال الدار 70000",
+   "expect": "/ma/decret/2-23-350/art_2"
+  },
+  {
+   "q": "aide au logement",
+   "expect": "/ma/decret/2-23-350/art_2"
+  },
+  {
+   "q": "رفع الرهن دعم السكن",
+   "expect": [
+    "/ma/decret/2-23-350/art_6-bis",
+    "/ma/decret/2-26-578/art_3",
+    "/ma/loi/50-25/art_8"
+   ]
+  },
+  {
+   "q": "الكراء التجاري الإفراغ",
+   "expect": "/ma/loi/49-16",
+   "note": "law 49.16 not held here: should say so, with its Adala file"
+  },
+  {
+   "q": "الحلاوة",
+   "expect": "/ma/loi/49-16",
+   "note": "not held here (pas-de-porte is outside 49.16 too; DOC)"
+  },
+  {
+   "q": "الكرا ديال الحانوت",
+   "expect": "/ma/loi/49-16",
+   "note": "67.12 comes first, which does not govern shops"
+  },
+  {
+   "q": "bail commercial",
+   "expect": "/ma/loi/49-16",
+   "note": "67.12 comes first, wrongly"
+  },
+  {
+   "q": "دار آيلة للسقوط",
+   "expect": "/ma/loi/94-12",
+   "note": "law 94.12 not held here"
+  },
+  {
+   "q": "المباني الآيلة للسقوط",
+   "expect": "/ma/loi/94-12"
+  },
+  {
+   "q": "ضريبة السكن",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_24",
+    "/ma/loi/47-06/art_27"
+   ]
+  },
+  {
+   "q": "رسم السكن",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_27"
+   ]
+  },
+  {
+   "q": "taxe d'habitation",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_27"
+   ],
+   "note": "everyday list rewrites to «الضريبة السكنية», a term the law does not use; should be «رسم السكن»"
+  },
+  {
+   "q": "رسم الخدمات الجماعية",
+   "expect": [
+    "/ma/loi/47-06/art_33",
+    "/ma/loi/47-06/art_36"
+   ]
+  },
+  {
+   "q": "الإيجار المفضي إلى تملك العقار",
+   "expect": [
+    "/ma/loi/51-00",
+    "/ma/loi/41-25/art_4"
+   ],
+   "note": "51.00 is a title without articles"
+  },
+  {
+   "q": "location-accession",
+   "expect": [
+    "/ma/loi/51-00",
+    "/ma/loi/41-25/art_4"
+   ]
+  },
+  {
+   "q": "السكن الاجتماعي",
+   "expect": ["/ma/code/cgi/art_93", "/ma/code/cgi/art_92"],
+   "note": "the CGI since 26 Oct 2026: art. 92-I-28° exempts social housing, art. 93-I its conditions; 47.06 art 52 is a side answer"
+  },
+  {
+   "q": "دور الصفيح",
+   "expect": "/ma/decret/2-22-292",
+   "note": "the only text; no programme text on the site"
+  },
+  {
+   "q": "رخصة السكن",
+   "expect": [
+    "/ma/loi/12-90/art_55",
+    "/ma/decret/2-18-577/art_48"
+   ]
+  },
+  {
+   "q": "permis d'habiter",
+   "expect": [
+    "/ma/loi/12-90/art_55",
+    "/ma/decret/2-18-577/art_48"
+   ]
+  },
+  {
+   "q": "رخصة البناء",
+   "expect": [
+    "/ma/loi/12-90/art_40",
+    "/ma/decret/2-18-577/art_21"
+   ]
+  },
+  {
+   "q": "التجزئة العقارية",
+   "expect": "/ma/loi/25-90/art_1"
+  },
+  {
+   "q": "التحفيظ العقاري",
+   "expect": [
+    "/ma/code/land-registration"
+   ],
+   "note": "dahir of 12 Aug 1913 not held here; first result is decree 2.21.604 with a swallowed insurance circular"
+  },
+  {
+   "q": "الرسم العقاري",
+   "expect": [
+    "/ma/code/land-registration"
+   ]
+  },
+  {
+   "q": "نزع الملكية",
+   "expect": [
+    "/ma/loi/7-81/art_1",
+    "/ma/loi/7-81"
+   ]
+  },
+  {
+   "q": "القسمة ديال الورث فالدار",
+   "expect": [
+    "/ma/loi/39-08/art_313",
+    "/ma/loi/39-08/art_317"
+   ]
+  },
+  {
+   "q": "الملكية المشتركة",
+   "expect": [
+    "/ma/loi/18-00",
+    "/ma/loi/18-00/art_1"
+   ]
+  },
+  {
+   "q": "kra dyal dar",
+   "expect": [
+    "/ma/loi/67-12"
+   ],
+   "note": "PX11 of the where-it-trips review (31 Oct 2026, owner-provisional): a tenant's rent in Latin-letter Darija; it opened on the tax door for landlords"
+  },
+  {
+   "q": "chhal khassni nkhalless lkra",
+   "expect": [
+    "/ma/loi/67-12"
+   ],
+   "note": "PX11, owner-provisional: how much rent to pay, Latin letters"
+  },
+  {
+   "q": "mol dar bgha yzid f lkra",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32"
+   ],
+   "note": "PX11, owner-provisional: the rise, Latin letters"
+  },
+  {
+   "q": "شحال خاصني نخلص الكرا",
+   "expect": [
+    "/ma/loi/67-12"
+   ],
+   "note": "PX11, owner-provisional: a Taza commune decree came first once, every article found by meaning"
+  }
+ ]
+}

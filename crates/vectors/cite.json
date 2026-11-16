@@ -1,0 +1,1085 @@
+[
+ {
+  "in": "طبقا لمقتضيات الفصل 418 من ق.ل.ع، فإن",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 418 من ق.ل.ع",
+    "article": "418",
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "انظر م 53 م.أ",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "م 53 م.أ",
+    "article": "53",
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المادة الأولى من القانون رقم 31.13",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة الأولى من القانون رقم 31.13",
+    "article": "1",
+    "text_kind": "law",
+    "text_number": "31-13",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المواد 5 و6 و7 من مدونة الشغل",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المواد 5 و6 و7 من مدونة الشغل",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد 5 و6 و7 من مدونة الشغل",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد 5 و6 و7 من مدونة الشغل",
+    "article": "7",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "conformément à l'article 6 de la loi n° 31-13",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "article 6 de la loi n° 31-13",
+    "article": "6",
+    "text_kind": "law",
+    "text_number": "31-13",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "art. 1er du DOC",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "art. 1er du DOC",
+    "article": "1",
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 5 مكرر من مدونة التجارة",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 5 مكرر من مدونة التجارة",
+    "article": "5-bis",
+    "text_kind": null,
+    "text_number": null,
+    "code": "commerce",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 5 من الدستور",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 5 من الدستور",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "constitution",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "تطبيقا للفصل 5",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "للفصل 5",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 12",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 12",
+    "article": "12",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الصادر بتنفيذه الظهير الشريف رقم 1.58.250",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "الظهير الشريف رقم 1.58.250",
+    "article": null,
+    "text_kind": "dahir",
+    "text_number": "1-58-250",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "بمقتضى المرسوم رقم 2.22.729",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "المرسوم رقم 2.22.729",
+    "article": null,
+    "text_kind": "decree",
+    "text_number": "2-22-729",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "القانون التنظيمي رقم 065.13",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "القانون التنظيمي رقم 065.13",
+    "article": null,
+    "text_kind": "organic_law",
+    "text_number": "065-13",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "la loi n° 70-03 portant code de la famille",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "loi n° 70-03",
+    "article": null,
+    "text_kind": "law",
+    "text_number": "70-03",
+    "code": null,
+    "issue": null
+   },
+   {
+    "kind": "text",
+    "raw": "code de la famille",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "نشر بالجريدة الرسمية عدد 7533",
+  "want": [
+   {
+    "kind": "issue",
+    "raw": "بالجريدة الرسمية عدد 7533",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": 7533
+   }
+  ]
+ },
+ {
+  "in": "ج.ر 7533",
+  "want": [
+   {
+    "kind": "issue",
+    "raw": "ج.ر 7533",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": 7533
+   }
+  ]
+ },
+ {
+  "in": "BO n° 7533",
+  "want": [
+   {
+    "kind": "issue",
+    "raw": "BO n° 7533",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": 7533
+   }
+  ]
+ },
+ {
+  "in": "حسب مدونة الأسرة",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "مدونة الأسرة",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "صدر سنة 2026 م 53 نسخة",
+  "want": []
+ },
+ {
+  "in": "مدونة الأسرة 53",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "مدونة الأسرة 53",
+    "article": "53",
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "ق.ل.ع 230",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "ق.ل.ع 230",
+    "article": "230",
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "1.58.250",
+  "query": true,
+  "want": [
+   {
+    "kind": "text",
+    "raw": "1.58.250",
+    "article": null,
+    "text_kind": "dahir",
+    "text_number": "1-58-250",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "31.13",
+  "query": true,
+  "want": [
+   {
+    "kind": "text",
+    "raw": "31.13",
+    "article": null,
+    "text_kind": "law",
+    "text_number": "31-13",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "م 53",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "م 53",
+    "article": "53",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "النفقة",
+  "query": true,
+  "want": []
+ },
+ {
+  "in": "وفقا لمقتضيات المادة 12 من مدونة الأسرة وبالقانون رقم 103.13",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة 12 من مدونة الأسرة",
+    "article": "12",
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   },
+   {
+    "kind": "text",
+    "raw": "وبالقانون رقم 103.13",
+    "article": null,
+    "text_kind": "law",
+    "text_number": "103-13",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "طبقا لمدونة الشغل",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "لمدونة الشغل",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المواد 5، 6 و7 من مدونة الشغل",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المواد 5، 6 و7 من مدونة الشغل",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد 5، 6 و7 من مدونة الشغل",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد 5، 6 و7 من مدونة الشغل",
+    "article": "7",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "يغير الفصل 13.- 1 كما يلي",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 13",
+    "article": "13",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "كما نشر بالجريدة الرسمية عدد 7465 مكرر.",
+  "want": [
+   {
+    "kind": "issue",
+    "raw": "بالجريدة الرسمية عدد 7465 مكرر",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": 7465,
+    "issue_suffix": "bis"
+   }
+  ]
+ },
+ {
+  "in": "تطبق المواد من 5 إلى 7 من مدونة الشغل",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المواد من 5 إلى 7 من مدونة الشغل",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد من 5 إلى 7 من مدونة الشغل",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المواد من 5 إلى 7 من مدونة الشغل",
+    "article": "7",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "voir les articles 5 à 7 du code du travail",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "articles 5 à 7 du code du travail",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "articles 5 à 7 du code du travail",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "articles 5 à 7 du code du travail",
+    "article": "7",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "حسب الفصل الحادي عشر من الدستور",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل الحادي عشر من الدستور",
+    "article": "11",
+    "text_kind": null,
+    "text_number": null,
+    "code": "constitution",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المادة الحادية والعشرون من القانون رقم 31.08",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة الحادية والعشرون من القانون رقم 31.08",
+    "article": "21",
+    "text_kind": "law",
+    "text_number": "31-08",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل الثاني عشر مكرر",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل الثاني عشر مكرر",
+    "article": "12-bis",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "نصت المادة الخمسون على ذلك",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة الخمسون",
+    "article": "50",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "ظهير 12 غشت 1913 بمثابة قانون الالتزامات والعقود",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "ظهير 12 غشت 1913",
+    "article": null,
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1913-08-12"
+   },
+   {
+    "kind": "text",
+    "raw": "قانون الالتزامات والعقود",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "le dahir du 12 août 1913 sur l'immatriculation",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "dahir du 12 août 1913",
+    "article": null,
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1913-08-12"
+   }
+  ]
+ },
+ {
+  "in": "الظهير الشريف الصادر في 9 أكتوبر 1977",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "الظهير الشريف الصادر في 9 أكتوبر 1977",
+    "article": null,
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1977-10-09"
+   }
+  ]
+ },
+ {
+  "in": "تغير أحكام المادة 73 من المدونة العامة للضرائب المحدثة بموجب المادة 5",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة 73 من المدونة العامة للضرائب",
+    "article": "73",
+    "text_kind": null,
+    "text_number": null,
+    "code": "tax",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المادة 5",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "يغير الفصل الثالث من الظهير الشريف الصادر في 9 رمضان 1331 (12 غشت 1913) بشأن التحفيظ العقاري",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل الثالث من الظهير الشريف الصادر في 9 رمضان 1331 (12 غشت 1913",
+    "article": "3",
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1913-08-12"
+   }
+  ]
+ },
+ {
+  "in": "بناء على القرار الوزيري المؤرخ في 3 ذي القعدة عام 1344 الموافق 15 مايو سنة 1926 بشأن",
+  "want": [
+   {
+    "kind": "text",
+    "raw": "القرار الوزيري المؤرخ في 3 ذي القعدة عام 1344 الموافق 15 مايو سنة 1926",
+    "article": null,
+    "text_kind": "order",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1926-05-15"
+   }
+  ]
+ },
+ {
+  "in": "غير الفصل الثاني من ظهيرنا الشريف الصادر يوم فاتح ربيع الاول عام 1365 الموافق 4 فبراير 1946",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل الثاني من ظهيرنا الشريف الصادر يوم فاتح ربيع الاول عام 1365 الموافق 4 فبراير 1946",
+    "article": "2",
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1946-02-04"
+   }
+  ]
+ },
+ {
+  "in": "الفصل 573 من ظهير 9 رمضان 1331 (12 أغسطس 1913) بمثابة قانون الالتزامات والعقود",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 573 من ظهير 9 رمضان 1331 (12 أغسطس 1913",
+    "article": "573",
+    "text_kind": "dahir",
+    "text_number": null,
+    "code": null,
+    "issue": null,
+    "date": "1913-08-12"
+   },
+   {
+    "kind": "text",
+    "raw": "قانون الالتزامات والعقود",
+    "article": null,
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "يستفيد الأجير عند فصله تعسفيا من التعويض عن الضرر والتعويض عن أجل الإخطار المنصوص عليهما على التوالي في المادتين 41 و 51 أعلاه.",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادتين 41 و 51",
+    "article": "41",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المادتين 41 و 51",
+    "article": "51",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "وفقا للفصلين 230 و231 من ق.ل.ع",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "للفصلين 230 و231 من ق.ل.ع",
+    "article": "230",
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "للفصلين 230 و231 من ق.ل.ع",
+    "article": "231",
+    "text_kind": null,
+    "text_number": null,
+    "code": "doc",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "تطبق أحكام المادتين 5 و6 من مدونة الشغل",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادتين 5 و6 من مدونة الشغل",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المادتين 5 و6 من مدونة الشغل",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "تطبق المادتان 12 و14 من القانون رقم 52.05",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادتان 12 و14 من القانون رقم 52.05",
+    "article": "12",
+    "text_kind": "law",
+    "text_number": "52-05",
+    "code": null,
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المادتان 12 و14 من القانون رقم 52.05",
+    "article": "14",
+    "text_kind": "law",
+    "text_number": "52-05",
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "عملا بالفصلين 5 و6 من هذا القانون",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "بالفصلين 5 و6",
+    "article": "5",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "بالفصلين 5 و6",
+    "article": "6",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "يطبق الفصلان 417-1 و417-2 أدناه",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصلان 417-1 و417-2",
+    "article": "417-1",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "الفصلان 417-1 و417-2",
+    "article": "417-2",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المادتين 41 و51 من مدونة الشغل",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادتين 41 و51 من مدونة الشغل",
+    "article": "41",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "المادتين 41 و51 من مدونة الشغل",
+    "article": "51",
+    "text_kind": null,
+    "text_number": null,
+    "code": "labour",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "خلال الفصلين الدراسيين وفي المادتين المذكورتين أعلاه",
+  "want": []
+ },
+ {
+  "in": "الفصل 490 من القانون الجنائي",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 490 من القانون الجنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المادة 115 من قانون المسطرة الجنائية",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة 115 من قانون المسطرة الجنائية",
+    "article": "115",
+    "text_kind": null,
+    "text_number": null,
+    "code": "criminal_procedure",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "وفق art. 490 C.P. فإن",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "art. 490 C.P",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصلين 490 و491 من القانون الجنائي",
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصلين 490 و491 من القانون الجنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   },
+   {
+    "kind": "article",
+    "raw": "الفصلين 490 و491 من القانون الجنائي",
+    "article": "491",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "490 من القانون الجنائي",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "490 من القانون الجنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 490 جنائي",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 490 جنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "490 جنائي",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "490 جنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 490 ديال القانون الجنائي",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 490 ديال القانون الجنائي",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "490 code pénal",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "490 code pénal",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "222 ق ج",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "222 ق ج",
+    "article": "222",
+    "text_kind": null,
+    "text_number": null,
+    "code": "penal",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "المادة 20 د مدونة الأسرة",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "المادة 20 د مدونة الأسرة",
+    "article": "20",
+    "text_kind": null,
+    "text_number": null,
+    "code": "family",
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "الفصل 490",
+  "query": true,
+  "want": [
+   {
+    "kind": "article",
+    "raw": "الفصل 490",
+    "article": "490",
+    "text_kind": null,
+    "text_number": null,
+    "code": null,
+    "issue": null
+   }
+  ]
+ },
+ {
+  "in": "490",
+  "query": true,
+  "want": []
+ }
+]

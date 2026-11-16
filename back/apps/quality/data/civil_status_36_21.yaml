@@ -1,0 +1,53 @@
+# Law 36.21 on civil status, where the SGG's consolidated file (its text layer) misreads it, and our newest version
+# with it. Each word is the one BO 7006 (22 Jul 2021) prints, as read here by OCR, checked against the page images on
+# 20 Oct 2026 (F2 of the family plan): the birth journey cites these articles.
+text: /ma/loi/36-21
+document: BO 7006 (sgg_bo), against the SGG's consolidated file
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1, 28, 38], wrong: بمقتض ى, right: بمقتضى}
+  - {arts: [1, 2, 19, 25, 26, 27, 29, 30, 32, 52], wrong: والدة, right: ولادة}
+  - {arts: [1, 2, 13, 19, 36], wrong: وانحالل, right: وانحلال}
+  - {arts: [2, 19, 22], wrong: المعلوم ياتي, right: المعلومياتي}
+  - {arts: [3], wrong: تكتس ي, right: تكتسي}
+  - {arts: [5, 8, 47], wrong: بلا خارجية, right: بالخارجية}
+  - {arts: [6], wrong: ملساعده, right: لمساعده}
+  - {arts: [11], wrong: إحصائي اتها ومع طياتها, right: إحصائياتها ومعطياتها}
+  - {arts: [13, 28], wrong: بوالدة, right: بولادة}
+  - {arts: [13], wrong: تغييرأو, right: تغيير أو}
+  - {arts: [17, 34], wrong: الشخص ي, right: الشخصي}
+  - {arts: [19], wrong: المغربأو, right: المغرب أو}
+  - {arts: [20], wrong: ولا عسكرية, right: والعسكرية}
+  - {arts: [20], wrong: وا لتهذيب, right: والتهذيب}
+  - {arts: [20], wrong: بلا ولا دات, right: بالولادات}
+  - {arts: [20], wrong: بالتصر يح, right: بالتصريح}
+  - {arts: [20], wrong: ا لقانون, right: القانون}
+  - {arts: [21, 29, 43], wrong: فال, right: فلا}
+  - {arts: [21], wrong: ير فع, right: يرفع}
+  - {arts: [23], wrong: يقض ي, right: يقضي}
+  - {arts: [24, 37], wrong: وص ي, right: وصي}
+  - {arts: [24], wrong: التصر يح, right: التصريح}
+  - {arts: [25], wrong: بوالدته, right: بولادته}
+  - {arts: [25], wrong: هلل, right: لله}
+  - {arts: [25], wrong: بالحا لة, right: بالحالة}
+  - {arts: [27], wrong: شخص ي, right: شخصي}
+  - {arts: [29, 47], wrong: والدته, right: ولادته}
+  - {arts: [31, 40], wrong: ملغربي, right: لمغربي}
+  - {arts: [31, 36, 40], wrong: الد بلو ماس ي, right: الدبلوماسي}
+  - {arts: [33], wrong: لالسم, right: للاسم}
+  - {arts: [33], wrong: وألعقابه, right: ولأعقابه}
+  - {arts: [36], wrong: مللخص, right: لملخص}
+  - {arts: [36], wrong: قاض ي, right: قاضي}
+  - {arts: [36], wrong: ا لمصالح, right: المصالح}
+  - {arts: [36, 41], wrong: الش يء المقض ي, right: الشيء المقضي}
+  - {arts: [42], wrong: وما لجن دين, right: والمجندين}
+  - {arts: [42], wrong: المس تشه دين, right: المستشهدين}
+  - {arts: [43], wrong: أ و, right: أو}
+  - {arts: [47], wrong: بالقنص ليات, right: بالقنصليات}
+  - {arts: [47], wrong: بالخار ج, right: بالخارج}
+  - {arts: [49], wrong: خالف, right: خلاف}
+  - {arts: [53], wrong: فو ضت, right: فوضت}
+  - {arts: [55], wrong: معموال, right: معمولا}
+  - {arts: [33], wrong: ألبية, right: لأبيه}
+  - {arts: [44], wrong: لألزواج, right: للأزواج}
+  - {arts: [13], wrong: ا لمحرر ة, right: المحررة}

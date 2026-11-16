@@ -1,0 +1,661 @@
+{
+ "about": "Drafts by Claude Haiku from the site's articles, for an editor's review.",
+ "situations": [
+  {
+   "slug": "road-accident",
+   "title": {
+    "ar": "وقعت لي حادثة سير",
+    "fr": "J'ai eu un accident de la route"
+   },
+   "searches": [
+    "حادثة سير",
+    "تصريح بالحادثة",
+    "الفرار بعد ارتكاب حادثة",
+    "التأمين على العربات"
+   ],
+   "shelf": [
+    "road"
+   ],
+   "intro": {
+    "ar": "تنظم مدونة السير على الطرق الحوادث المرورية وما يترتب عليها من مسؤولية وعقوبات، ويتعلق بالوضعية نص المادة 169 من القانون رقم 52.05 الذي يحدد الأفعال المعاقب عليها عند وقوع حادثة سير، كما تتضمن المادة 99 من القانون نفسه الآثار المتعلقة بخصم النقط من رخصة السياقة. وتتعلق المادة 111 من القانون ذاته بالإجراءات المتعلقة بالمركبة في بعض حالات حادثة السير.",
+    "fr": "Le Code de la route, loi n° 52.05, régit la situation d'un accident de la route : son article 169 décrit les faits punis lorsqu'un accident de ce type survient, et son article 99 prévoit le retrait de points du permis de conduire dans les cas visés. Vous trouverez également à l'article 111 les mesures pouvant concerner le véhicule dans certains cas d'accident."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/52-05/art_169",
+     "says": {
+      "ar": "يعاقب القانون السائق الذي تثبت مسؤوليته عن حادث سير وتسبب عنه جروح أو إصابة أو مرض تترتب عليها عاهة مستديمة للغير بعدم التبصر أو الإهمال أو عدم مراعاة التزامات السلامة، بالحبس من شهر إلى سنتين وبغرامة من 2.400 إلى 10.000 درهم أو بإحدى العقوبتين، وترفع العقوبة إلى الضعف في حالات منها السكر أو السرعة المتجاوزة أو التملص من المسؤولية بعدم التوقف.",
+      "fr": "Cet article prévoit que le conducteur dont la responsabilité est établie dans un accident de la route ayant causé involontairement à autrui des blessures entraînant une infirmité permanente est puni d'un emprisonnement d'un mois à deux ans et d'une amende de 2 400 à 10 000 dirhams, ou de l'une de ces peines, la peine étant doublée dans certains cas énumérés, notamment l'ivresse ou le fait de ne pas s'arrêter après l'accident."
+     }
+    },
+    {
+     "path": "/ma/loi/52-05/art_99",
+     "says": {
+      "ar": "تنص المادة على أن السلطة المختصة تخصم النقط من رصيد رخصة السياقة في الحالات المحددة، بناء على مقررات قضائية حائزة لقوة الشيء المقضي به، ومنها القتل غير العمدي أو الجروح غير العمدية إثر حادثة سير ومحاولة التملص من المسؤولية بعد الحادثة.",
+      "fr": "Cet article indique que l'autorité compétente retire des points du permis de conduire dans les cas prévus, sur la base de décisions judiciaires devenues définitives, parmi lesquels figurent l'homicide ou les blessures involontaires causés lors d'un accident de la route, et la tentative de se soustraire à sa responsabilité après l'accident."
+     }
+    },
+    {
+     "path": "/ma/loi/52-05/art_111",
+     "says": {
+      "ar": "تنص المادة على أن ضابط الشرطة القضائية أو العون محرر المحضر أو السلطة القضائية يأمر فورا بإيداع المركبة في المحجز في حالات منها محاولة التملص من المسؤولية بعدم التوقف بعد ارتكاب حادثة سير.",
+      "fr": "Cet article prévoit que l'officier de police judiciaire, l'agent rédacteur du procès-verbal ou l'autorité judiciaire ordonne immédiatement la mise en fourrière du véhicule dans plusieurs cas, dont la tentative de se soustraire à sa responsabilité en ne s'arrêtant pas après un accident de la route."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "driving-licence",
+   "title": {
+    "ar": "رخصة السياقة والمخالفات",
+    "fr": "Permis de conduire et infractions"
+   },
+   "searches": [
+    "رخصة السياقة",
+    "نظام النقط",
+    "سحب رخصة السياقة",
+    "الغرامة التصالحية الجزافية"
+   ],
+   "shelf": [
+    "road"
+   ],
+   "intro": {
+    "ar": "يحكم هذه الوضعية أساسا القانون رقم 52.05 المتعلق بمدونة السير على الطرق، والمرسوم رقم 2.10.313 المتعلق بالغرامات التصالحية والجزافية، وتنظم بعض الجوانب المالية المرتبطة برخصة السياقة نصوص الضرائب والرسوم المذكورة أدناه. وتكفي المواد المدرجة أدناه للاطلاع على الإطار العام المتعلق برخصة السياقة والمخالفات.",
+    "fr": "Cette situation est principalement régie par la loi n° 52.05 portant code de la route et par le décret n° 2.10.313 relatif aux amendes transactionnelles et forfaitaires. Certains aspects financiers liés au permis de conduire relèvent également des textes fiscaux et des droits cités ci-dessous, pour vous orienter dans ces dispositions."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/52-05/art_37",
+     "says": {
+      "ar": "تنص المادة على البيانات التي يجب أن يتضمنها حامل رخصة السياقة، كهوية صاحبها وتسليم الرخصة وأصنافها والتقييدات المفروضة على استعمالها، وعلى المعلومات الإضافية التي قد تُسجَّل إلكترونيا، كالإدانات القضائية والغرامات التصالحية ورصيد النقط.",
+      "fr": "Cet article énumère les mentions que doit comporter le support du permis de conduire, notamment l'identité du titulaire, les catégories de permis et les restrictions d'usage, ainsi que les informations supplémentaires pouvant être enregistrées électroniquement, telles que les condamnations, les amendes transactionnelles et le solde de points."
+     }
+    },
+    {
+     "path": "/ma/decret/2-10-313/art_6",
+     "says": {
+      "ar": "تنص المادة على كيفية تسليم رخصة السياقة أو وثيقة المركبة إلى صاحبها بعد معاينة المخالفة، وعلى الأجل المحدد لذلك وعلى الإجراءات التي تتبع عند عدم سحب الوثيقة.",
+      "fr": "Cet article précise les modalités de restitution du permis de conduire ou des documents du véhicule après la constatation d'une infraction, le délai prévu pour cette restitution et la procédure applicable lorsque le document n'est pas retiré."
+     }
+    },
+    {
+     "path": "/ma/decret/2-10-313/art_7",
+     "says": {
+      "ar": "تنص المادة على الأماكن التي يمكن فيها أداء الغرامات التصالحية والجزافية، ومنها القباضات التابعة للخزينة العامة، وعلى شروط أداء الغرامة بواسطة شيك.",
+      "fr": "Cet article indique les lieux où peuvent être payées les amendes transactionnelles et forfaitaires, notamment les perceptions du Trésor général, ainsi que les conditions de paiement par chèque."
+     }
+    },
+    {
+     "path": "/ma/loi/52-05/art_3",
+     "says": {
+      "ar": "تنص المادة على التزام السائقين الحاملين لرخص أجنبية بالخضوع لامتحانات الحصول على رخصة مغربية أو بطلب تبديل رخصتهم، وعلى الحالات التي يمكن فيها ذلك حسب اتفاقات الاعتراف المتبادل.",
+      "fr": "Cet article prévoit que les conducteurs titulaires d'un permis étranger doivent passer les examens d'obtention du permis marocain ou demander l'échange de leur permis, et décrit les cas où l'échange est possible selon les accords de reconnaissance mutuelle."
+     }
+    },
+    {
+     "path": "/ma/loi/52-05/art_18",
+     "says": {
+      "ar": "تنص المادة على الإجراءات التي يوجهها الطبيب إلى الإدارة بعد الفحص الطبي، وعلى الحالات التي يمكن فيها الاستمرار في استعمال الرخصة مع تقييدات، أو التي تُسحب فيها الرخصة أو تُلغى.",
+      "fr": "Cet article décrit les suites que le médecin transmet à l'administration après l'examen médical, les cas où le titulaire peut continuer à conduire avec des restrictions, et ceux où le permis est retiré ou annulé."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "renting",
+   "title": {
+    "ar": "أكتري سكنا أو أكريه",
+    "fr": "Je loue un logement"
+   },
+   "searches": [
+    "كراء المحلات المعدة للسكنى",
+    "عقد الكراء",
+    "الوجيبة الكرائية"
+   ],
+   "shelf": [
+    "housing_lease",
+    "doc"
+   ],
+   "intro": {
+    "ar": "يحكم كراء السكن القانون رقم 67.12 المتعلق بكراء المحلات المعدة للسكنى أو للاستعمال المهني، وقانون الالتزامات والعقود فيما سكت عنه. ويحكم كراء المحلات التجارية القانون رقم 49.16. والنصوص كلها في «قانون».",
+    "fr": "La location d’un logement est régie par la loi n° 67.12 sur les baux d’habitation et à usage professionnel, et par le DOC pour ce qu’elle ne dit pas. Les baux commerciaux relèvent de la loi n° 49.16. Tous ces textes sont dans 3adala."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/67-12/art_3",
+     "says": {
+      "ar": "يبرم عقد الكراء وجوبا بمحرر كتابي ثابت التاريخ يتضمن هوية الطرفين والمحل والوجيبة ودورية أدائها والتكاليف.",
+      "fr": "Le bail est obligatoirement écrit, à date certaine, avec l’identité des parties, le logement, le loyer et sa périodicité, et les charges."
+     }
+    },
+    {
+     "path": "/ma/loi/67-12/art_20",
+     "says": {
+      "ar": "لا تزيد الضمانة على وجيبة شهرين، وترد في أجل أقصاه شهر من إرجاع المحل.",
+      "fr": "La garantie ne dépasse pas deux mois de loyer et est rendue au plus tard un mois après la restitution du logement."
+     }
+    },
+    {
+     "path": "/ma/loi/67-12/art_34",
+     "says": {
+      "ar": "نسبة الزيادة في الوجيبة 8% للسكنى و10% للاستعمال المهني.",
+      "fr": "La hausse du loyer est de 8 % pour l’habitation et de 10 % pour l’usage professionnel."
+     }
+    },
+    {
+     "path": "/ma/loi/67-12/art_46",
+     "says": {
+      "ar": "يتضمن الإشعار بالإفراغ، تحت طائلة البطلان، الأسباب والمحل كله وأجلا لا يقل عن شهرين.",
+      "fr": "Le congé indique, à peine de nullité, les motifs, tout le logement et un délai d’au moins deux mois."
+     }
+    },
+    {
+     "path": "/ma/loi/67-12/art_53",
+     "says": {
+      "ar": "يستمر الكراء بعد وفاة المكتري لفائدة زوجه وأقاربه المباشرين الذين كانوا يعيشون معه وتحت كفالته.",
+      "fr": "Au décès du locataire, le bail continue au profit de son conjoint et de ses proches directs qui vivaient avec lui et à sa charge."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5",
+   "edited": "by hand on 20 Oct 2026 (H7 of the housing plan): the texts are now on the site"
+  },
+  {
+   "slug": "divorce",
+   "title": {
+    "ar": "الطلاق والنفقة وحضانة الأطفال",
+    "fr": "Divorce, pension et garde des enfants"
+   },
+   "searches": [
+    "الطلاق",
+    "النفقة",
+    "الحضانة"
+   ],
+   "shelf": [
+    "family",
+    "civil_procedure"
+   ],
+   "intro": {
+    "ar": "يحكم هذه الوضعية أساسا مدونة الأسرة، وهي غير مدرجة بعد في مكتبة «قانون»، وتتعلق بالطلاق والنفقة وحضانة الأطفال. وتبين المواد المرفقة الجهة القضائية المختصة وطريقة نظر القضايا المتعلقة بالطلاق والنفقة والحضانة.",
+    "fr": "Cette situation est principalement régie par le Code de la famille (Moudawana), qui n'est pas encore disponible dans 3adala et qui traite du divorce, de la pension et de la garde des enfants. Les articles ci-dessous indiquent quel tribunal est compétent et comment ces affaires sont examinées."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/58-25/art_274",
+     "says": {
+      "ar": "تنص المادة على أن طلب الإذن بالإشهاد على الطلاق وطلب التطليق يقدمان إلى المحكمة الابتدائية التي يوجد بدائرتها بيت الزوجية أو موطن الزوجة أو محل إقامتها بالمغرب أو المحل الذي أبرم فيه عقد الزواج، حسب الترتيب، وأن محاولة الصلح تجرى قبل الإذن بالإشهاد بالطلاق.",
+      "fr": "Cet article indique que la demande d'autorisation de constatation du divorce et la demande de divorce judiciaire sont introduites auprès du tribunal de première instance du lieu du domicile conjugal, du domicile ou de la résidence de l'épouse au Maroc, ou du lieu de conclusion du mariage, dans cet ordre, et qu'une tentative de conciliation précède l'autorisation."
+     }
+    },
+    {
+     "path": "/ma/loi/58-25/art_96",
+     "says": {
+      "ar": "تنص المادة على أن مسطرة المناقشة الشفوية تطبق على قضايا الزواج والنفقة وإعداد بيت الزوجية والرجوع إليه والطلاق الاتفاقي وأجرة الحضانة وزيارة المحضون، وكذلك على قضايا الحالة المدنية والقضايا الاجتماعية.",
+      "fr": "Cet article prévoit que la procédure de plaidoirie orale s'applique aux affaires de mariage, de pension, d'aménagement du domicile conjugal, de retour au domicile conjugal, de divorce conventionnel, de salaire de garde et de droit de visite de l'enfant, ainsi qu'aux affaires d'état civil et sociales."
+     }
+    },
+    {
+     "path": "/ma/loi/38-15/art_51",
+     "says": {
+      "ar": "تنص المادة على أن قضايا الأحوال الشخصية والأسرة، باستثناء الطلاق الاتفاقي والنفقة وأجرة الحضانة وباقي الالتزامات المادية والحق في زيارة المحضون والرجوع إلى بيت الزوجية وإعداد بيت الزوجية وقضايا الحالة المدنية، تنظر فيها هيئة من ثلاثة قضاة.",
+      "fr": "Cet article indique que les affaires relatives au statut personnel et à la famille, à l'exception du divorce conventionnel, de la pension, du salaire de garde, des autres obligations financières, du droit de visite de l'enfant, du retour au domicile conjugal, de l'aménagement du domicile conjugal et de l'état civil, sont jugées par une formation de trois magistrats."
+     }
+    },
+    {
+     "path": "/ma/loi/51-26/art_47",
+     "says": {
+      "ar": "تنص المادة على أن توثيق الزواج والطلاق الذي يتم في حدود دائرة المحكمة الابتدائية طبقا لمدونة الأسرة يستثنى من قاعدة تقيد العدل بحدود دائرة محكمة الاستئناف.",
+      "fr": "Cet article précise que l'établissement des actes de mariage et de divorce, conformément au Code de la famille, dans le ressort du tribunal de première instance, fait exception à la règle selon laquelle l'adoul exerce dans le ressort de la cour d'appel."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "dismissal",
+   "title": {
+    "ar": "طُردت من العمل",
+    "fr": "J'ai été licencié"
+   },
+   "searches": [
+    "الفصل من الشغل",
+    "التعويض عن الفصل",
+    "عقد الشغل"
+   ],
+   "shelf": [
+    "labour"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الحالة أساساً مدونة الشغل، وهي غير موجودة بعد في «قانون». وترد أدناه مادتان من القانون رقم 58.25 المتعلق بالمسطرة المدنية تتناولان مسطرة الصلح والاختصاص القضائي في نزاعات الشغل.",
+    "fr": "Cette situation relève principalement du Code du travail (مدونة الشغل), qui n'est pas encore dans 3adala. Vous trouverez ci-dessous deux articles de la loi n° 58.25 relative à la procédure civile qui concernent la procédure de conciliation et la compétence des tribunaux dans les litiges du travail."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/58-25/art_313",
+     "says": {
+      "ar": "ينص هذا الفصل على أنه إذا باشر طرفا عقد الشغل مسطرة الصلح التمهيدي المنصوص عليها في مدونة الشغل، فلا يجوز لهما اللجوء إلى المحكمة إلا بعد انتهاء هذه المسطرة، كما يعتبر نهائياً كل اتفاق موقع من الأجير والمشغل ومصادق على صحة إمضائه، ولا يُطعن فيه إلا بالزور.",
+      "fr": "Cet article prévoit que, si les parties à un contrat de travail engagent la procédure de conciliation préalable prévue par le Code du travail, elles ne peuvent saisir le tribunal qu'à l'issue de cette procédure, et qu'un accord signé par le salarié et l'employeur, dont la signature est légalisée, est définitif et ne peut être contesté que pour faux."
+     }
+    },
+    {
+     "path": "/ma/loi/58-25/art_67",
+     "says": {
+      "ar": "ينص هذا الفصل في بنده السادس على أن دعاوى إجارة الخدمة أو العمل تُقام أمام محكمة محل التعاقد أو تنفيذ العقد إذا كان موطن أحد الأطراف فيه، وإلا فأمام محكمة موطن المدعى عليه.",
+      "fr": "Cet article précise, à son sixième point, que les actions relatives au louage de services ou au travail sont portées devant le tribunal du lieu de conclusion ou d'exécution du contrat si le domicile de l'une des parties s'y trouve, et sinon devant le tribunal du domicile du défendeur."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "birth",
+   "title": {
+    "ar": "تسجيل مولود في الحالة المدنية",
+    "fr": "Déclarer une naissance à l'état civil"
+   },
+   "searches": [
+    "التصريح بالولادة",
+    "رسم الولادة",
+    "الحالة المدنية"
+   ],
+   "shelf": [
+    "civil_status"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الوضعية أساسا أحكام القانون رقم 36.21 المتعلق بالحالة المدنية، التي تنظم من يصرح بالولادة وكيف تسجل رسومها. ولا توجد نصوص أخرى تحكم هذه الوضعية خارج ما هو مدرج في مكتبة «قانون».",
+    "fr": "Cette situation est principalement régie par la loi n° 36.21 relative à l'état civil, qui précise qui doit déclarer la naissance et comment l'acte est établi. Aucun autre texte régissant cette situation n'est signalé en dehors de ceux présents dans 3adala."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/36-21/art_24",
+     "says": {
+      "ar": "تنص المادة 24 على أن التصريح الأولي بالولادة يقوم به أقرباء المولود وفق ترتيب محدد يبدأ بالأب أو الأم، وينتقل هذا الواجب إلى من يليه إذا تعذر التصريح من الأول.",
+      "fr": "L'article 24 prévoit que la déclaration initiale de naissance est faite par les proches de l'enfant selon un ordre déterminé, commençant par le père ou la mère, et passe au suivant en cas d'empêchement."
+     }
+    },
+    {
+     "path": "/ma/loi/36-21/art_36",
+     "says": {
+      "ar": "تنص المادة 36 على أن ضابط الحالة المدنية يضمن في رسم الولادة البيانات الأساسية لملخص وثيقة الزواج أو انحلال ميثاق الزوجية عند توصله بها.",
+      "fr": "L'article 36 dispose que l'officier de l'état civil reporte dans l'acte de naissance les données essentielles des résumés d'acte de mariage ou de dissolution du lien conjugal lorsqu'il les reçoit."
+     }
+    },
+    {
+     "path": "/ma/loi/36-21/art_31",
+     "says": {
+      "ar": "تنص المادة 31 على أنه إذا وقعت ولادة لمغربي أثناء سفر بحري أو جوي، يجب التصريح بها لدى القنصل المغربي أو العون الدبلوماسي في جهة الوصول، أو لدى أي ضابط للحالة المدنية بالمغرب، خلال أجل يحدده نص تنظيمي.",
+      "fr": "L'article 31 prévoit que si un Marocain naît au cours d'un voyage maritime ou aérien, la naissance doit être déclarée auprès du consul du Maroc ou de l'agent diplomatique au point d'arrivée, ou auprès de tout officier de l'état civil au Maroc, dans un délai fixé par voie réglementaire."
+     }
+    },
+    {
+     "path": "/ma/loi/36-21/art_22",
+     "says": {
+      "ar": "تنص المادة 22 على أن رسوم الحالة المدنية توقع إلكترونيا، وأن على ضابط الحالة المدنية توقيعها بمجرد تحريرها والمصادقة عليها بالنظام المعلوماتي.",
+      "fr": "L'article 22 dispose que les actes d'état civil sont signés électroniquement, et que l'officier de l'état civil doit les signer dès leur établissement et leur validation dans le système informatique."
+     }
+    },
+    {
+     "path": "/ma/loi/36-21/art_47",
+     "says": {
+      "ar": "تنص المادة 47 على أن ضابط الحالة المدنية يضيف أو يصحح كتابة الأسماء الشخصية والعائلية لصاحب الرسم وأصوله بحروف تيفيناغ والحروف اللاتينية، بإذن من السلطة المركزية أو من تفوضه.",
+      "fr": "L'article 47 prévoit que l'officier de l'état civil ajoute ou corrige la transcription des noms et prénoms de l'intéressé et de ses ascendants en tifinagh et en caractères latins, avec l'autorisation de l'autorité centrale ou de son délégataire."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "consumer",
+   "title": {
+    "ar": "اشتريت منتجا معيبا أو خدمة لم تُنجز",
+    "fr": "J'ai acheté un produit défectueux"
+   },
+   "searches": [
+    "حماية المستهلك",
+    "الضمان القانوني لعيوب الشيء المبيع",
+    "حق التراجع",
+    "الشروط التعسفية"
+   ],
+   "shelf": [
+    "consumer"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الوضعية أساسا المواد المتعلقة بتدابير حماية المستهلك من القانون رقم 31.08، ولا سيما ما يخص ضمان عيوب الشيء المبيع والضمانات المرتبطة به. وتتضمن المقتطفات المتاحة مواد حول الضمانات وحق الطعن، أما النصوص الأخرى فلا يُشار إليها هنا.",
+    "fr": "Cette situation relève principalement de la loi n° 31.08 sur les mesures de protection du consommateur, notamment les dispositions relatives à la garantie des vices de la chose vendue et aux garanties contractuelles. Les extraits disponibles portent sur ces garanties et sur les recours, sans que d'autres textes ne soient cités ici."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/31-08/art_1",
+     "says": {
+      "ar": "يهدف هذا القانون، من بين أمور أخرى، إلى تحديد الضمانات القانونية والتعاقدية لعيوب الشيء المبيع والخدمة بعد البيع، وتحديد الشروط والإجراءات المتعلقة بالتعويض عن الضرر.",
+      "fr": "Cette loi vise notamment à définir les garanties légales et contractuelles des défauts de la chose vendue et du service après-vente, ainsi que les conditions et procédures d'indemnisation du préjudice subi par le consommateur."
+     }
+    },
+    {
+     "path": "/ma/loi/31-08/art_66",
+     "says": {
+      "ar": "يُقصد بالضمان التعاقدي كل ضمان يضاف إلى الضمان القانوني لعيوب الشيء المبيع ويمكن أن يقترحه المورد على المستهلك، ويجب على المورد أن يحدد بدقة مدته ونطاقه وشروطه.",
+      "fr": "La garantie contractuelle désigne toute garantie ajoutée à la garantie légale des défauts de la chose vendue que le fournisseur peut proposer au consommateur, et le fournisseur doit en préciser avec exactitude la durée, la portée et les conditions."
+     }
+    },
+    {
+     "path": "/ma/loi/31-08/art_36",
+     "says": {
+      "ar": "للمستهلك أجل سبعة أيام كاملة لممارسة حقه في التراجع، وثلاثون يوما في حالة عدم وفاء المورد بالتزامه بالتأكيد الكتابي للمعلومات، وتبدأ هذه الآجال من تاريخ تسلم السلعة أو قبول العرض بالنسبة للخدمات.",
+      "fr": "Le consommateur dispose de sept jours pleins pour exercer son droit de rétractation, et de trente jours si le fournisseur n'a pas respecté son obligation de confirmation écrite des informations, ces délais courant à partir de la réception du bien ou de l'acceptation de l'offre pour les services."
+     }
+    },
+    {
+     "path": "/ma/loi/31-08/art_157",
+     "says": {
+      "ar": "يمكن للجامعة الوطنية ولجمعيات حماية المستهلك المعترف لها بصفة المنفعة العامة أن ترفع دعاوى قضائية أو تتدخل في دعاوى جارية للدفاع عن مصالح المستهلك.",
+      "fr": "La fédération nationale et les associations de protection des consommateurs reconnues d'utilité publique peuvent introduire des actions en justice ou intervenir dans des procédures en cours pour défendre les intérêts des consommateurs."
+     }
+    },
+    {
+     "path": "/ma/loi/31-08/art_17",
+     "says": {
+      "ar": "لا يشمل تقدير الطابع التعسفي لشرط من الشروط تحديد المحل الأساسي من العقد ولا ملاءمة السعر للسلعة المبيعة أو الأجرة للخدمة المقدمة، ما دامت الشروط محررة بصورة واضحة ومفهومة.",
+      "fr": "L'appréciation du caractère abusif d'une clause ne porte pas sur la détermination de l'objet principal du contrat ni sur le caractère adéquat du prix du bien vendu ou de la rémunération du service, dès lors que les clauses sont rédigées de manière claire et compréhensible."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "co-ownership",
+   "title": {
+    "ar": "أسكن في عمارة: السانديك والتكاليف المشتركة",
+    "fr": "J'habite un immeuble : syndic et charges"
+   },
+   "searches": [
+    "الملكية المشتركة",
+    "اتحاد الملاك",
+    "وكيل الاتحاد",
+    "التكاليف المشتركة"
+   ],
+   "shelf": [
+    "co_ownership"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الوضعية أساسا من القانون رقم 18.00 المتعلق بنظام الملكية المشتركة للعقارات المبنية، إذ يبين نظام الملكية المشتركة وتكاليفها، ويُنشئ اتحاد الملاك المشتركين ويحدد مهام وكيل الاتحاد ونائبه. ولا توجد نصوص أخرى غير موجودة في «قانون» تتعلق بهذه الوضعية.",
+    "fr": "Cette situation est régie principalement par la loi n° 18.00 relative au régime de la copropriété des immeubles bâtis, qui définit le règlement de copropriété et les charges communes, crée le syndicat des copropriétaires et précise les fonctions du syndic et de son adjoint. Aucun autre texte absent de 3adala n'est signalé pour cette situation."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/18-00/art_9",
+     "says": {
+      "ar": "يحدد نظام الملكية المشتركة لزوما قواعد تسيير اتحاد الملاك وتعيين وكيله ونائبه، وتكاليف المحافظة على الملكية المشتركة وصيانتها، وحصة كل مالك في هذه التكاليف حسب حصته الشائعة.",
+      "fr": "Le règlement de copropriété doit obligatoirement fixer les règles de gestion du syndicat, la désignation du syndic et de son adjoint, les coûts de conservation et d'entretien des parties communes, ainsi que la part de chaque copropriétaire dans ces charges selon sa quote-part indivise."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_13",
+     "says": {
+      "ar": "ينشأ بقوة القانون بين جميع الملاك المشتركين اتحاد للمالك يتمتع بالشخصية المعنوية والاستقلال المالي، ويهدف إلى حفظ الأجزاء المشتركة وصيانتها وإدارتها.",
+      "fr": "Un syndicat des copropriétaires, doté de la personnalité morale et de l'autonomie financière, est créé de plein droit entre tous les copropriétaires dès la première mutation inscrite; il a pour objet la conservation, l'entretien et la gestion des parties communes."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_19",
+     "says": {
+      "ar": "يعين الجمع العام وكيل الاتحاد ونائبه بأغلبية ثلاثة أرباع أصوات الملاك المشتركين، لمدة سنتين قابلة للتجديد، ويمكن عزلهما بنفس الأغلبية.",
+      "fr": "L'assemblée générale désigne le syndic et son adjoint à la majorité des trois quarts des voix des copropriétaires, pour une durée de deux ans renouvelable, et peut les révoquer à la même majorité."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_8",
+     "says": {
+      "ar": "يوضع نظام للملكية المشتركة لكل بناء مشترك، وفي غيابه يطبق نظام نموذجي يحدده نص تنظيمي.",
+      "fr": "Un règlement de copropriété doit être établi pour chaque immeuble soumis à la loi et, à défaut, c'est un règlement type fixé par texte réglementaire qui s'applique."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_43",
+     "says": {
+      "ar": "تتقادم ديون الاتحاد المترتبة في ذمة الملاك المشتركين على التكاليف المشتركة إذا لم تتم المطالبة بها خلال خمس سنوات من تاريخ إقرارها من قبل الجمع العام.",
+      "fr": "Les créances du syndicat sur les copropriétaires au titre des charges communes se prescrivent par cinq ans à compter de la date de leur approbation par l'assemblée générale."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5",
+   "edited": "«الملاك» put back by hand on 20 Oct 2026 (H2 of the housing plan)"
+  },
+  {
+   "slug": "building",
+   "title": {
+    "ar": "أريد البناء أو تقسيم أرض",
+    "fr": "Je veux construire ou diviser un terrain"
+   },
+   "searches": [
+    "رخصة البناء",
+    "التجزئات العقارية",
+    "تقسيم العقارات"
+   ],
+   "shelf": [
+    "urbanism"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الوضعية أساسا نصوص قانون التعمير رقم 12.90 وقانون التجزئات العقارية والمجموعات السكنية وتقسيم العقارات رقم 25.90، إلى جانب قانون المحافظة على المباني التاريخية رقم 22.80 في حال كان العقار مرتبا. ويبين ما يلي المواد الأقرب إلى موضوع البناء والتقسيم.",
+    "fr": "Cette situation est principalement régie par la loi n° 12.90 relative à l'urbanisme et par la loi n° 25.90 relative aux lotissements, groupes d'habitations et morcellement des propriétés, ainsi que par la loi n° 22.80 sur les monuments historiques si le terrain est classé. Les articles ci-dessous correspondent le plus directement à la construction et à la division d'un terrain."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/12-90/art_41",
+     "says": {
+      "ar": "تنص هذه المادة على أن رئيس مجلس الجماعة هو الذي يسلم رخصة البناء، ويوجه نسخة منها إلى السلطة الإدارية المحلية المعنية.",
+      "fr": "Cet article prévoit que la délivrance du permis de construire relève du président du conseil de la commune, qui transmet une copie du permis à l'autorité administrative locale concernée."
+     }
+    },
+    {
+     "path": "/ma/loi/25-90/art_43",
+     "says": {
+      "ar": "تنص هذه المادة على أن تشييد أبنية داخل تجزئة عقارية يتوقف على الحصول على رخصة البناء، ولو كانت التجزئة خارج المناطق التي تشترط فيها هذه الرخصة.",
+      "fr": "Cet article dispose que la construction de bâtiments dans un lotissement est subordonnée à l'obtention d'un permis de construire, même si le lotissement se situe hors des zones où ce permis est exigé."
+     }
+    },
+    {
+     "path": "/ma/loi/25-90/art_1",
+     "says": {
+      "ar": "تعرّف هذه المادة التجزئة العقارية بأنها تقسيم عقار عن طريق التفويت أو الإيجار أو القسمة إلى بقعتين أو أكثر لتشييد مبان للسكنى أو لغرض صناعي أو سياحي أو تجاري أو حرفي.",
+      "fr": "Cet article définit le lotissement comme la division d'une propriété, par vente, location ou partage, en deux lots ou plus destinés à la construction de bâtiments à usage d'habitation, industriel, touristique, commercial ou artisanal."
+     }
+    },
+    {
+     "path": "/ma/loi/25-90/art_44",
+     "says": {
+      "ar": "تنص هذه المادة على إمكانية تسليم رخصة البناء قبل انتهاء أشغال التجهيز إذا كان صاحب التجزئة هو من سيشيد المباني بنفسه في تجزئته.",
+      "fr": "Cet article prévoit qu'un permis de construire peut être délivré avant la fin des travaux d'équipement lorsque le lotisseur construit lui-même les bâtiments de son lotissement."
+     }
+    },
+    {
+     "path": "/ma/loi/12-90/art_72",
+     "says": {
+      "ar": "تحدد هذه المادة عقوبات الغرامة والحبس المقررة لمن يشيد بناء يخالف الرخصة المسلمة له، سواء بتغيير العلو أو الأحجام أو المواقع أو المساحة أو الغرض، أو بزيادة طابق أو طوابق.",
+      "fr": "Cet article fixe les amendes et les peines d'emprisonnement applicables à celui qui réalise une construction non conforme au permis qui lui a été délivré, qu'il s'agisse de la hauteur, des dimensions, de l'emplacement, de la surface, de l'usage ou de l'ajout d'étages."
+     }
+    },
+    {
+     "path": "/ma/loi/25-90/art_32",
+     "says": {
+      "ar": "تنص هذه المادة على أنه لا يمكن قيد التجزئة في الصك العقاري ونقل تصميمها على الخريطة العقارية إلا بعد وضع التصميم الطبوغرافي والإدلاء بنسخة من محضر التسلم المؤقت، وعلى صاحب التجزئة أن يطلب إنشاء صك عقاري خاص بكل بقعة.",
+      "fr": "Cet article dispose que l'inscription du lotissement à la conservation foncière et le report de son plan sur la carte foncière ne peuvent intervenir qu'après l'établissement du plan topographique et la production d'une copie du procès-verbal de réception provisoire, le lotisseur devant demander un titre foncier distinct pour chaque lot."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "expropriation",
+   "title": {
+    "ar": "الدولة تريد نزع ملكية أرضي",
+    "fr": "L'État veut exproprier mon terrain"
+   },
+   "searches": [
+    "نزع الملكية لأجل المنفعة العامة",
+    "التعويض عن نزع الملكية",
+    "الاحتلال المؤقت"
+   ],
+   "shelf": [],
+   "intro": {
+    "ar": "يحكم وضعكم أساسا القانون رقم 7.81 المتعلق بنزع الملكية لأجل المنفعة العامة وبالاحتلال المؤقت، ويحدد القانون رقم 58.25 المتعلق بالمسطرة المدنية المحكمة المختصة بالنظر في النزاعات المتعلقة بذلك. لا توجد نصوص أخرى غير مدرجة في «قانون» تتعلق بهذه الحالة.",
+    "fr": "Le texte qui régit votre situation est la loi n° 7.81 relative à l'expropriation pour cause d'utilité publique et à l'occupation temporaire, et la loi n° 58.25 relative à la procédure civile indique le tribunal compétent pour les litiges qui en découlent. Aucun autre texte absent de 3adala n'a été signalé pour cette situation."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/7-81/art_2",
+     "says": {
+      "ar": "ينص الفصل 2 على أن نزع الملكية لأجل المنفعة العامة يتم بحكم قضائي.",
+      "fr": "L'article 2 dispose que l'expropriation pour cause d'utilité publique s'effectue par décision de justice."
+     }
+    },
+    {
+     "path": "/ma/loi/7-81/art_19",
+     "says": {
+      "ar": "ينص الفصل 19 على أن رئيس المحكمة الإدارية يختص وحده بالإذن بالحيازة مقابل دفع أو إيداع تعويض احتياطي يعادل مبلغ التعويض الذي اقترحه نازع الملكية، وبالحكم بنقل الملكية وتحديد مبلغ التعويضات.",
+      "fr": "L'article 19 attribue au président du tribunal administratif la compétence exclusive pour autoriser la prise de possession contre paiement ou consignation d'une indemnité provisionnelle égale au montant proposé par l'expropriant, et pour prononcer le transfert de propriété et fixer le montant des indemnités."
+     }
+    },
+    {
+     "path": "/ma/loi/58-25/art_38",
+     "says": {
+      "ar": "تنص المادة 38 على أن المحاكم الابتدائية الإدارية تبت ابتدائيا في نزاعات نزع الملكية لأجل المنفعة العامة والاحتلال المؤقت، من بين اختصاصات أخرى.",
+      "fr": "L'article 38 prévoit que les tribunaux de première instance administratifs statuent en premier ressort sur l'expropriation pour cause d'utilité publique et l'occupation temporaire, parmi d'autres compétences."
+     }
+    },
+    {
+     "path": "/ma/loi/58-25/art_54",
+     "says": {
+      "ar": "تنص المادة 54 على أن المحاكم الابتدائية الإدارية تختص بتلقي وثائق إجراءات نزع الملكية والاحتلال المؤقت وبالنظر في النزاعات الناشئة عن تطبيق القانون رقم 7.81.",
+      "fr": "L'article 54 dispose que les tribunaux administratifs reçoivent les documents des procédures d'expropriation et d'occupation temporaire et connaissent des litiges nés de l'application de la loi n° 7.81."
+     }
+    },
+    {
+     "path": "/ma/loi/7-81/art_66",
+     "says": {
+      "ar": "ينص الفصل 66 على أنه إذا كان زائد القيمة يتعلق بملك نزعت ملكية جزء منه، يُسقط من التعويض عن زائد القيمة المبلغ المقتطع من التعويض عن نزع الملكية.",
+      "fr": "L'article 66 prévoit que, lorsque la plus-value concerne un bien dont une partie a été expropriée, le montant prélevé sur l'indemnité d'expropriation est déduit de l'indemnité de plus-value."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "property",
+   "title": {
+    "ar": "شراء عقار أو إثبات ملكيته",
+    "fr": "Acheter un bien immobilier ou prouver sa propriété"
+   },
+   "searches": [
+    "الحقوق العينية",
+    "التحفيظ العقاري",
+    "البيع العقاري",
+    "الحيازة"
+   ],
+   "shelf": [
+    "real_rights"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الحالة مدونة الحقوق العينية رقم 39.08 بتعديلاته، خاصة ما يتعلق بشكل التصرفات العقارية وأنواع الحقوق العينية، إضافة إلى قانون الملكية المشتركة رقم 18.00 فيما يخص الشكل الرسمي للتصرفات. ولا توجد نصوص أخرى تحكم هذه الحالة غير مدرجة في «قانون».",
+    "fr": "Cette situation est régie par le Code des droits réels n° 39.08 tel que modifié, notamment pour la forme des actes immobiliers et les types de droits réels, ainsi que par la loi n° 18.00 sur la copropriété pour la forme authentique des actes. Aucun autre texte régissant cette situation n'est absent de 3adala."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/39-08/art_9",
+     "says": {
+      "ar": "تنص المادة 9 على أن حق الملكية وحق الارتفاق وحق الانتفاع وحق العمرى وحق الاستعمال وحق السطحية وحق الكراء الطويل الأمد وحق الحبس وحق الزينة وحق الهواء والتعلية، إضافة إلى الحقوق العرفية المنشأة بوجه صحيح قبل دخول القانون حيز التنفيذ، هي حقوق عينية أصلية.",
+      "fr": "L'article 9 énumère les droits réels principaux, dont le droit de propriété, les droits de servitude, d'usufruit, d'habitation, de superficie et de long bail, ainsi que les droits coutumiers valablement constitués avant l'entrée en vigueur de la loi."
+     }
+    },
+    {
+     "path": "/ma/loi/41-25/art_1",
+     "says": {
+      "ar": "تنص المادة الأولى من القانون 041.25 على تغيير المادة 4 من القانون 39.08، التي توجب تحرير جميع التصرفات المتعلقة بنقل ملكية العقار أو بإنشاء الحقوق العينية أو نقلها أو تعديلها أو إسقاطها، والوعد بالبيع العقاري، وكذا الوكالات الخاصة بها، بموجب محرر رسمي تحت طائلة البطلان، ما لم ينص مقتضى خاص على خلاف ذلك.",
+      "fr": "L'article premier de la loi 041.25 modifie l'article 4 de la loi 39.08, qui impose que les actes de transfert de propriété immobilière ou de constitution, transfert, modification ou extinction d'autres droits réels, ainsi que la promesse de vente immobilière et les procurations s'y rapportant, soient rédigés en la forme authentique à peine de nullité, sauf disposition particulière contraire."
+     }
+    },
+    {
+     "path": "/ma/loi/41-25/art_2",
+     "says": {
+      "ar": "تنص المادة الثانية من القانون 041.25 على تغيير المادة 12 من القانون 18.00، التي توجب تحرير جميع التصرفات المتعلقة بنقل الملكية المشتركة أو إنشاء حقوق عينية عليها أو نقلها أو تعديلها أو إسقاطها بموجب محرر رسمي تحت طائلة البطلان، مع استثناء العقارات التابعة للملك الخاص للدولة.",
+      "fr": "L'article 2 de la loi 041.25 modifie l'article 12 de la loi 18.00, qui impose que les actes portant sur la propriété commune ou sur des droits réels la concernant soient établis en la forme authentique à peine de nullité, à l'exclusion des biens relevant du domaine privé de l'État."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_12",
+     "says": {
+      "ar": "تنص المادة 12 من القانون 18.00 على وجوب تحرير التصرفات المتعلقة بالملكية المشتركة في محرر رسمي تحت طائلة البطلان، مع استثناء العقارات التابعة للملك الخاص للدولة.",
+      "fr": "L'article 12 de la loi 18.00 prévoit que les actes relatifs à la propriété commune doivent être rédigés en la forme authentique à peine de nullité, à l'exclusion des biens du domaine privé de l'État."
+     }
+    },
+    {
+     "path": "/ma/loi/18-00/art_51",
+     "says": {
+      "ar": "تنص المادة 51 من القانون 18.00 على أن المحافظ على الأملاك العقارية يؤسس، عند الاقتضاء، رسما عقاريا خاصا باسم المستفيد من أحد الحقوق العينية المتفرعة عن حق الملكية المنصوص عليها في المادة 9 من القانون 39.08.",
+      "fr": "L'article 51 de la loi 18.00 dispose que le conservateur de la propriété foncière établit, le cas échéant, un titre foncier spécial au nom du bénéficiaire d'un droit réel dérivé du droit de propriété visé à l'article 9 de la loi 39.08."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  },
+  {
+   "slug": "copyright",
+   "title": {
+    "ar": "أنا مؤلف أو فنان: حقوقي على أعمالي",
+    "fr": "Je suis auteur ou artiste : mes droits"
+   },
+   "searches": [
+    "حقوق المؤلف",
+    "الحقوق المادية للمؤلف",
+    "مدة الحماية"
+   ],
+   "shelf": [
+    "copyright"
+   ],
+   "intro": {
+    "ar": "تحكم هذه الوضعية أساسا أحكام القانون رقم 2.00 المتعلق بحقوق المؤلف والحقوق المجاورة، كما عدلته أحكام القانون رقم 013.26، ويتولى المكتب المغربي لحقوق المؤلف والحقوق المجاورة حماية هذه الحقوق واستغلالها. وتتضمن المواد المعروضة أعلاه النصوص المتعلقة بهذه الحقوق ومدد حمايتها وأحكام الاستغلال التجاري.",
+    "fr": "Cette situation est régie principalement par la loi n° 2.00 relative aux droits d'auteur et aux droits voisins, telle que modifiée par la loi n° 013.26, qui confie la protection et l'exploitation de ces droits au Bureau marocain des droits d'auteur. Les articles ci-dessous, tirés de ces textes, portent sur ce bureau, la durée de protection et l'exploitation commerciale des œuvres."
+   },
+   "articles": [
+    {
+     "path": "/ma/loi/2-00/art_60",
+     "says": {
+      "ar": "يعهد بحماية واستغلال حقوق المؤلف والحقوق المجاورة إلى المكتب المغربي لحقوق المؤلفين.",
+      "fr": "La protection et l'exploitation des droits d'auteur et des droits voisins sont confiées au Bureau marocain des droits d'auteur."
+     }
+    },
+    {
+     "path": "/ma/loi/13-26/art_2",
+     "says": {
+      "ar": "تنص المادة 1.7 المضافة على أن استغلال المصنفات التي استوفت مدة حمايتها لأهداف تجارية يخضع لترخيص من المكتب المغربي لحقوق المؤلف والحقوق المجاورة، ويتولى المكتب استخلاص المستحقات المترتبة عليه، وتخصص حصيلتها بعد خصم مصاريف التدبير لدعم الصناعات الثقافية.",
+      "fr": "L'article 1.7 ajouté prévoit que l'exploitation à des fins commerciales des œuvres dont la protection est échue est soumise à l'autorisation du Bureau marocain des droits d'auteur, qui perçoit les redevances dues, lesquelles, après déduction des frais de gestion, sont affectées au soutien des industries culturelles."
+     }
+    },
+    {
+     "path": "/ma/loi/2-00/art_29",
+     "says": {
+      "ar": "مدة الحماية الواجب توفيرها للفنون التطبيقية سبعون سنة ابتداء من نهاية السنة الشمسية التي تم فيها نشر المصنف المرخص له لأول مرة، وإذا لم يتم هذا النشر خلال خمسين سنة من تاريخ الإبداع فسبعون سنة من نهاية السنة الشمسية لهذا الإبداع.",
+      "fr": "La durée de protection des arts appliqués est de soixante-dix ans à compter de la fin de l'année civile de la première publication autorisée de l'œuvre; si cette publication n'intervient pas dans les cinquante ans suivant la création, la durée est de soixante-dix ans à compter de la fin de l'année civile de cette création."
+     }
+    },
+    {
+     "path": "/ma/loi/2-00/art_69",
+     "says": {
+      "ar": "تطبق أحكام هذا القانون أيضا على المصنفات والأداءات والمسجلات الصوتية والبرامج الإذاعية التي أنتجت أو أنجزت قبل دخوله حيز التنفيذ، ما لم تكن قد دخلت الملك العمومي، وتبقى الأعمال والعقود المبرمة قبله سارية المفعول.",
+      "fr": "Les dispositions de cette loi s'appliquent aussi aux œuvres, interprétations, phonogrammes et programmes radiophoniques produits ou diffusés avant son entrée en vigueur, à condition qu'ils n'soient pas tombés dans le domaine public, et les actes et contrats conclus antérieurement restent valables."
+     }
+    },
+    {
+     "path": "/ma/loi/2-00/art_15-65",
+     "says": {
+      "ar": "يطالب المكتب المغربي لحقوق المؤلفين مقدم الخدمات الذي توصل بالإعذار، بناء على طلب كتابي من صاحب الحقوق أو وكيله، بتحديد هوية مرتكب خرق مزعوم لحقوق المؤلف أو الحقوق المجاورة، وبتزويد صاحب الحقوق بالمعلومات الكافية حول مرتكب الخرق.",
+      "fr": "Sur demande écrite du titulaire des droits ou de son mandataire, le Bureau marocain des droits d'auteur demande au prestataire de services ayant reçu la mise en demeure d'identifier l'auteur présumé d'une atteinte aux droits d'auteur ou aux droits voisins et de fournir au titulaire les informations suffisantes à son sujet."
+     }
+    }
+   ],
+   "model": "claude-haiku-5-5"
+  }
+ ]
+}

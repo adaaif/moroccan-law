@@ -1,0 +1,1303 @@
+{
+ "about": "The everyday words people search with, each with the law's own terms (row 1, 18 Oct 2026). Only entries a person approved are here: Haiku drafts them (`draft_vocab`), a person reviews them, `apply_vocab` writes this file. The housing words (H7 of the housing plan) were approved with the plan on 20 Oct 2026.",
+ "entries": [
+  {
+   "typed": [
+    "CNSS"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الصندوق الوطني للضمان الاجتماعي"
+   ]
+  },
+  {
+   "typed": [
+    "AMO"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "التأمين الإجباري الأساسي عن المرض"
+   ]
+  },
+  {
+   "typed": [
+    "CNOPS"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الصندوق الوطني لمنظمات الاحتياط الاجتماعي"
+   ]
+  },
+  {
+   "typed": [
+    "RAMED"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "نظام المساعدة الطبية"
+   ]
+  },
+  {
+   "typed": [
+    "TVA"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الضريبة على القيمة المضافة"
+   ]
+  },
+  {
+   "typed": [
+    "IR"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الضريبة على الدخل"
+   ]
+  },
+  {
+   "typed": [
+    "IS"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الضريبة على الشركات"
+   ]
+  },
+  {
+   "typed": [
+    "SARL"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "شركة ذات المسؤولية المحدودة"
+   ]
+  },
+  {
+   "typed": [
+    "SARL AU"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "شركة ذات مسؤولية محدودة ذات الشريك الوحيد"
+   ]
+  },
+  {
+   "typed": [
+    "SA"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "شركة مساهمة"
+   ]
+  },
+  {
+   "typed": [
+    "SNC"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "شركة التضامن"
+   ]
+  },
+  {
+   "typed": [
+    "GIE"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "مجموعة المصلحة الاقتصادية"
+   ]
+  },
+  {
+   "typed": [
+    "OPCVM"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "هيئات التوظيف الجماعي"
+   ]
+  },
+  {
+   "typed": [
+    "CIN"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "البطاقة الوطنية للتعريف"
+   ]
+  },
+  {
+   "typed": [
+    "RIB"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "رمز الهوية البنكية"
+   ]
+  },
+  {
+   "typed": [
+    "SMIG"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الحد الأدنى القانوني للأجر"
+   ]
+  },
+  {
+   "typed": [
+    "SMAG"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الحد الأدنى للأجر الفلاحي المضمون"
+   ]
+  },
+  {
+   "typed": [
+    "CDD"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "عقد محدد المدة"
+   ]
+  },
+  {
+   "typed": [
+    "CDI"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "عقد غير محدد المدة"
+   ]
+  },
+  {
+   "typed": [
+    "PME"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "المقاولات الصغرى والمتوسطة"
+   ]
+  },
+  {
+   "typed": [
+    "CNDP"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "اللجنة الوطنية لمراقبة حماية المعطيات ذات الطابع الشخصي"
+   ]
+  },
+  {
+   "typed": [
+    "ANRT"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الوكالة الوطنية لتقنين الاتصالات"
+   ]
+  },
+  {
+   "typed": [
+    "HACA"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الهيئة العليا للاتصال السمعي البصري"
+   ]
+  },
+  {
+   "typed": [
+    "AMMC"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الهيئة المغربية لسوق الرساميل"
+   ]
+  },
+  {
+   "typed": [
+    "DGI"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "المديرية العامة للضرائب"
+   ]
+  },
+  {
+   "typed": [
+    "ADII"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الإدارة العامة للجمارك والضرائب غير المباشرة"
+   ]
+  },
+  {
+   "typed": [
+    "CDG"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "صندوق الإيداع والتدبير"
+   ]
+  },
+  {
+   "typed": [
+    "ONSSA"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "المكتب الوطني للسلامة الصحية للمنتجات الغذائية"
+   ]
+  },
+  {
+   "typed": [
+    "AREF"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الأكاديمية الجهوية للتربية والتكوين"
+   ]
+  },
+  {
+   "typed": [
+    "RSU"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "السجل الاجتماعي الموحد"
+   ]
+  },
+  {
+   "typed": [
+    "CRI"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "المركز الجهوي للاستثمار"
+   ]
+  },
+  {
+   "typed": [
+    "TP"
+   ],
+   "kind": "acronyms",
+   "means": [
+    "الأشغال العمومية"
+   ]
+  },
+  {
+   "typed": [
+    "bail"
+   ],
+   "kind": "french",
+   "means": [
+    "عقد الكراء",
+    "الكراء"
+   ]
+  },
+  {
+   "typed": [
+    "loyer"
+   ],
+   "kind": "french",
+   "means": [
+    "الوجيبة الكرائية",
+    "الكراء"
+   ]
+  },
+  {
+   "typed": [
+    "préavis"
+   ],
+   "kind": "french",
+   "means": [
+    "أجل الإخطار"
+   ]
+  },
+  {
+   "typed": [
+    "licenciement"
+   ],
+   "kind": "french",
+   "means": [
+    "الفصل عن الشغل",
+    "الفصل"
+   ]
+  },
+  {
+   "typed": [
+    "indemnité de licenciement"
+   ],
+   "kind": "french",
+   "means": [
+    "التعويض عن الفصل"
+   ]
+  },
+  {
+   "typed": [
+    "congé de maternité"
+   ],
+   "kind": "french",
+   "means": [
+    "إجازة الولادة",
+    "إجازة الأمومة"
+   ]
+  },
+  {
+   "typed": [
+    "heures supplémentaires"
+   ],
+   "kind": "french",
+   "means": [
+    "الساعات الإضافية"
+   ]
+  },
+  {
+   "typed": [
+    "contrat de travail"
+   ],
+   "kind": "french",
+   "means": [
+    "عقد الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "période d'essai"
+   ],
+   "kind": "french",
+   "means": [
+    "فترة الاختبار"
+   ]
+  },
+  {
+   "typed": [
+    "accident du travail"
+   ],
+   "kind": "french",
+   "means": [
+    "حادثة شغل",
+    "حوادث الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "retraite"
+   ],
+   "kind": "french",
+   "means": [
+    "التقاعد"
+   ]
+  },
+  {
+   "typed": [
+    "pension de retraite"
+   ],
+   "kind": "french",
+   "means": [
+    "معاش التقاعد"
+   ]
+  },
+  {
+   "typed": [
+    "divorce"
+   ],
+   "kind": "french",
+   "means": [
+    "الطلاق",
+    "التطليق"
+   ]
+  },
+  {
+   "typed": [
+    "pension alimentaire"
+   ],
+   "kind": "french",
+   "means": [
+    "النفقة"
+   ]
+  },
+  {
+   "typed": [
+    "garde des enfants"
+   ],
+   "kind": "french",
+   "means": [
+    "الحضانة"
+   ]
+  },
+  {
+   "typed": [
+    "héritage"
+   ],
+   "kind": "french",
+   "means": [
+    "الإرث"
+   ]
+  },
+  {
+   "typed": [
+    "succession"
+   ],
+   "kind": "french",
+   "means": [
+    "التركة",
+    "الإرث"
+   ]
+  },
+  {
+   "typed": [
+    "testament"
+   ],
+   "kind": "french",
+   "means": [
+    "الوصية"
+   ]
+  },
+  {
+   "typed": [
+    "état civil"
+   ],
+   "kind": "french",
+   "means": [
+    "الحالة المدنية"
+   ]
+  },
+  {
+   "typed": [
+    "permis de conduire"
+   ],
+   "kind": "french",
+   "means": [
+    "رخصة السياقة"
+   ]
+  },
+  {
+   "typed": [
+    "carte grise"
+   ],
+   "kind": "french",
+   "means": [
+    "شهادة تسجيل المركبة"
+   ]
+  },
+  {
+   "typed": [
+    "amende"
+   ],
+   "kind": "french",
+   "means": [
+    "الغرامة"
+   ]
+  },
+  {
+   "typed": [
+    "patente"
+   ],
+   "kind": "french",
+   "means": [
+    "الرسم المهني"
+   ]
+  },
+  {
+   "typed": [
+    "taxe professionnelle"
+   ],
+   "kind": "french",
+   "means": [
+    "الضريبة المهنية"
+   ]
+  },
+  {
+   "typed": [
+    "taxe d'habitation"
+   ],
+   "kind": "french",
+   "means": [
+    "رسم السكن"
+   ]
+  },
+  {
+   "typed": [
+    "taxe de services communaux"
+   ],
+   "kind": "french",
+   "means": [
+    "رسم الخدمات الجماعية"
+   ]
+  },
+  {
+   "typed": [
+    "droits d'enregistrement"
+   ],
+   "kind": "french",
+   "means": [
+    "رسوم التسجيل"
+   ]
+  },
+  {
+   "typed": [
+    "droit de timbre"
+   ],
+   "kind": "french",
+   "means": [
+    "رسم الطابع"
+   ]
+  },
+  {
+   "typed": [
+    "impôt sur le revenu"
+   ],
+   "kind": "french",
+   "means": [
+    "الضريبة على الدخل"
+   ]
+  },
+  {
+   "typed": [
+    "auto-entrepreneur"
+   ],
+   "kind": "french",
+   "means": [
+    "المقاولة الذاتية"
+   ]
+  },
+  {
+   "typed": [
+    "marchés publics"
+   ],
+   "kind": "french",
+   "means": [
+    "الصفقات العمومية"
+   ]
+  },
+  {
+   "typed": [
+    "appel d'offres"
+   ],
+   "kind": "french",
+   "means": [
+    "طلب العروض"
+   ]
+  },
+  {
+   "typed": [
+    "titre foncier"
+   ],
+   "kind": "french",
+   "means": [
+    "الرسم العقاري"
+   ]
+  },
+  {
+   "typed": [
+    "immatriculation foncière"
+   ],
+   "kind": "french",
+   "means": [
+    "التحفيظ العقاري"
+   ]
+  },
+  {
+   "typed": [
+    "copropriété"
+   ],
+   "kind": "french",
+   "means": [
+    "الملكية المشتركة"
+   ]
+  },
+  {
+   "typed": [
+    "permis de construire"
+   ],
+   "kind": "french",
+   "means": [
+    "رخصة البناء"
+   ]
+  },
+  {
+   "typed": [
+    "lotissement"
+   ],
+   "kind": "french",
+   "means": [
+    "التجزئة العقارية"
+   ]
+  },
+  {
+   "typed": [
+    "chèque sans provision"
+   ],
+   "kind": "french",
+   "means": [
+    "الشيك بدون رصيد"
+   ]
+  },
+  {
+   "typed": [
+    "registre de commerce"
+   ],
+   "kind": "french",
+   "means": [
+    "السجل التجاري"
+   ]
+  },
+  {
+   "typed": [
+    "nationalité"
+   ],
+   "kind": "french",
+   "means": [
+    "الجنسية"
+   ]
+  },
+  {
+   "typed": [
+    "casier judiciaire"
+   ],
+   "kind": "french",
+   "means": [
+    "السجل العدلي"
+   ]
+  },
+  {
+   "typed": [
+    "garde à vue"
+   ],
+   "kind": "french",
+   "means": [
+    "الحراسة النظرية"
+   ]
+  },
+  {
+   "typed": [
+    "détention préventive"
+   ],
+   "kind": "french",
+   "means": [
+    "الاعتقال الاحتياطي"
+   ]
+  },
+  {
+   "typed": [
+    "tribunal administratif"
+   ],
+   "kind": "french",
+   "means": [
+    "المحكمة الإدارية"
+   ]
+  },
+  {
+   "typed": [
+    "cour de cassation"
+   ],
+   "kind": "french",
+   "means": [
+    "محكمة النقض"
+   ]
+  },
+  {
+   "typed": [
+    "notaire"
+   ],
+   "kind": "french",
+   "means": [
+    "الموثق"
+   ]
+  },
+  {
+   "typed": [
+    "adoul"
+   ],
+   "kind": "french",
+   "means": [
+    "العدل",
+    "العدول"
+   ]
+  },
+  {
+   "typed": [
+    "huissier de justice"
+   ],
+   "kind": "french",
+   "means": [
+    "المفوض القضائي"
+   ]
+  },
+  {
+   "typed": [
+    "expert judiciaire"
+   ],
+   "kind": "french",
+   "means": [
+    "الخبير القضائي"
+   ]
+  },
+  {
+   "typed": [
+    "avocat"
+   ],
+   "kind": "french",
+   "means": [
+    "المحامي"
+   ]
+  },
+  {
+   "typed": [
+    "assurance maladie obligatoire"
+   ],
+   "kind": "french",
+   "means": [
+    "التأمين الإجباري عن المرض"
+   ]
+  },
+  {
+   "typed": [
+    "allocations familiales"
+   ],
+   "kind": "french",
+   "means": [
+    "التعويضات العائلية"
+   ]
+  },
+  {
+   "typed": [
+    "protection des données personnelles"
+   ],
+   "kind": "french",
+   "means": [
+    "حماية المعطيات ذات الطابع الشخصي"
+   ]
+  },
+  {
+   "typed": [
+    "consommateur"
+   ],
+   "kind": "french",
+   "means": [
+    "المستهلك"
+   ]
+  },
+  {
+   "typed": [
+    "harcèlement sexuel"
+   ],
+   "kind": "french",
+   "means": [
+    "التحرش الجنسي"
+   ]
+  },
+  {
+   "typed": [
+    "violence contre les femmes"
+   ],
+   "kind": "french",
+   "means": [
+    "العنف ضد النساء"
+   ]
+  },
+  {
+   "typed": [
+    "délai de prescription"
+   ],
+   "kind": "french",
+   "means": [
+    "أجل التقادم",
+    "التقادم"
+   ]
+  },
+  {
+   "typed": [
+    "الكرا"
+   ],
+   "kind": "darija",
+   "means": [
+    "الكراء"
+   ]
+  },
+  {
+   "typed": [
+    "الكونطرا"
+   ],
+   "kind": "darija",
+   "means": [
+    "العقد",
+    "عقد"
+   ]
+  },
+  {
+   "typed": [
+    "الكونطرا ديال الكرا"
+   ],
+   "kind": "darija",
+   "means": [
+    "عقد الكراء"
+   ]
+  },
+  {
+   "typed": [
+    "الورث"
+   ],
+   "kind": "darija",
+   "means": [
+    "الإرث"
+   ]
+  },
+  {
+   "typed": [
+    "الحضانة ديال الدراري"
+   ],
+   "kind": "darija",
+   "means": [
+    "الحضانة"
+   ]
+  },
+  {
+   "typed": [
+    "لاكارط"
+   ],
+   "kind": "darija",
+   "means": [
+    "البطاقة"
+   ]
+  },
+  {
+   "typed": [
+    "لاكارط ناسيونال"
+   ],
+   "kind": "darija",
+   "means": [
+    "البطاقة الوطنية للتعريف"
+   ]
+  },
+  {
+   "typed": [
+    "البيرمي"
+   ],
+   "kind": "darija",
+   "means": [
+    "رخصة السياقة"
+   ]
+  },
+  {
+   "typed": [
+    "الكارت كريز"
+   ],
+   "kind": "darija",
+   "means": [
+    "شهادة التسجيل"
+   ]
+  },
+  {
+   "typed": [
+    "الشوماج"
+   ],
+   "kind": "darija",
+   "means": [
+    "التعويض عن فقدان الشغل",
+    "البطالة"
+   ]
+  },
+  {
+   "typed": [
+    "الطرد من الخدمة"
+   ],
+   "kind": "darija",
+   "means": [
+    "الفصل عن الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "السميك"
+   ],
+   "kind": "darija",
+   "means": [
+    "الحد الأدنى القانوني للأجر"
+   ]
+  },
+  {
+   "typed": [
+    "الشيك بلا رصيد"
+   ],
+   "kind": "darija",
+   "means": [
+    "الشيك بدون مؤونة"
+   ]
+  },
+  {
+   "typed": [
+    "الحبس"
+   ],
+   "kind": "darija",
+   "means": [
+    "الحبس"
+   ]
+  },
+  {
+   "typed": [
+    "الطابع"
+   ],
+   "kind": "darija",
+   "means": [
+    "الطابع",
+    "الطابع الجبائي"
+   ]
+  },
+  {
+   "typed": [
+    "لافاكتورة"
+   ],
+   "kind": "darija",
+   "means": [
+    "الفاتورة"
+   ]
+  },
+  {
+   "typed": [
+    "الباطانطا"
+   ],
+   "kind": "darija",
+   "means": [
+    "الضريبة المهنية"
+   ]
+  },
+  {
+   "typed": [
+    "لاريتريت"
+   ],
+   "kind": "darija",
+   "means": [
+    "التقاعد",
+    "راتب الشيخوخة",
+    "المعاش"
+   ]
+  },
+  {
+   "typed": [
+    "السانديك"
+   ],
+   "kind": "darija",
+   "means": [
+    "وكيل اتحاد الملاك",
+    "وكيل الاتحاد"
+   ]
+  },
+  {
+   "typed": [
+    "الرسم العقاري"
+   ],
+   "kind": "darija",
+   "means": [
+    "الرسم العقاري"
+   ]
+  },
+  {
+   "typed": [
+    "رخصة البناء"
+   ],
+   "kind": "darija",
+   "means": [
+    "رخصة البناء"
+   ]
+  },
+  {
+   "typed": [
+    "التحفيظ"
+   ],
+   "kind": "darija",
+   "means": [
+    "التحفيظ العقاري"
+   ]
+  },
+  {
+   "typed": [
+    "الدراري الصغار"
+   ],
+   "kind": "darija",
+   "means": [
+    "القاصرون"
+   ]
+  },
+  {
+   "typed": [
+    "المخالفة"
+   ],
+   "kind": "darija",
+   "means": [
+    "المخالفة"
+   ]
+  },
+  {
+   "typed": [
+    "الكرا ديال الحانوت"
+   ],
+   "kind": "darija",
+   "means": [
+    "كراء المحل التجاري"
+   ]
+  },
+  {
+   "typed": [
+    "المحكمة الإدارية"
+   ],
+   "kind": "darija",
+   "means": [
+    "المحكمة الإدارية"
+   ]
+  },
+  {
+   "typed": [
+    "الضمان الاجتماعي"
+   ],
+   "kind": "darija",
+   "means": [
+    "الضمان الاجتماعي"
+   ]
+  },
+  {
+   "typed": [
+    "التغطية الصحية"
+   ],
+   "kind": "darija",
+   "means": [
+    "التغطية الصحية"
+   ]
+  },
+  {
+   "typed": [
+    "الكونجي"
+   ],
+   "kind": "darija",
+   "means": [
+    "العطلة السنوية المؤدى عنها"
+   ]
+  },
+  {
+   "typed": [
+    "البيلتان",
+    "البولتان"
+   ],
+   "kind": "darija",
+   "means": [
+    "ورقة الأداء"
+   ]
+  },
+  {
+   "typed": [
+    "الديميسيون"
+   ],
+   "kind": "darija",
+   "means": [
+    "الاستقالة"
+   ]
+  },
+  {
+   "typed": [
+    "السيكيريتي",
+    "السكوريتي"
+   ],
+   "kind": "darija",
+   "means": [
+    "الحراسة"
+   ]
+  },
+  {
+   "typed": [
+    "démission"
+   ],
+   "kind": "french",
+   "means": [
+    "الاستقالة"
+   ]
+  },
+  {
+   "typed": [
+    "grève",
+    "droit de grève"
+   ],
+   "kind": "french",
+   "means": [
+    "الإضراب"
+   ]
+  },
+  {
+   "typed": [
+    "congé payé",
+    "congés payés"
+   ],
+   "kind": "french",
+   "means": [
+    "العطلة السنوية المؤدى عنها"
+   ]
+  },
+  {
+   "typed": [
+    "solde de tout compte"
+   ],
+   "kind": "french",
+   "means": [
+    "توصيل تصفية كل حساب"
+   ]
+  },
+  {
+   "typed": [
+    "bulletin de paie",
+    "fiche de paie"
+   ],
+   "kind": "french",
+   "means": [
+    "ورقة الأداء"
+   ]
+  },
+  {
+   "typed": [
+    "certificat de travail"
+   ],
+   "kind": "french",
+   "means": [
+    "شهادة الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "inspecteur du travail"
+   ],
+   "kind": "french",
+   "means": [
+    "الأعوان المكلفين بتفتيش الشغل",
+    "تفتيش الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "perte d’emploi",
+    "perte d'emploi",
+    "IPE"
+   ],
+   "kind": "french",
+   "means": [
+    "التعويض عن فقدان الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "فترة التجربة",
+    "البيريود دايسي"
+   ],
+   "kind": "darija",
+   "means": [
+    "فترة الاختبار"
+   ]
+  },
+  {
+   "typed": [
+    "مفتش الشغل",
+    "لانسبيكسيون",
+    "المفتش ديال الشغل"
+   ],
+   "kind": "darija",
+   "means": [
+    "الأعوان المكلفين بتفتيش الشغل",
+    "تفتيش الشغل"
+   ]
+  },
+  {
+   "typed": [
+    "لاكوسيون"
+   ],
+   "kind": "darija",
+   "means": [
+    "الضمانة"
+   ]
+  },
+  {
+   "typed": [
+    "الحلاوة"
+   ],
+   "kind": "darija",
+   "means": [
+    "الحق في الكراء"
+   ]
+  },
+  {
+   "typed": [
+    "البروموتور"
+   ],
+   "kind": "darija",
+   "means": [
+    "العقار في طور الإنجاز"
+   ]
+  },
+  {
+   "typed": [
+    "التسبيق"
+   ],
+   "kind": "darija",
+   "means": [
+    "التسبيقات"
+   ]
+  },
+  {
+   "typed": [
+    "على التصميم"
+   ],
+   "kind": "darija",
+   "means": [
+    "العقار في طور الإنجاز"
+   ]
+  },
+  {
+   "typed": [
+    "VEFA",
+    "vente en l'état futur d'achèvement"
+   ],
+   "kind": "french",
+   "means": [
+    "بيع العقار في طور الإنجاز"
+   ]
+  },
+  {
+   "typed": [
+    "caution"
+   ],
+   "kind": "french",
+   "means": [
+    "الضمانة"
+   ]
+  },
+  {
+   "typed": [
+    "état des lieux"
+   ],
+   "kind": "french",
+   "means": [
+    "البيان الوصفي"
+   ]
+  },
+  {
+   "typed": [
+    "bail commercial"
+   ],
+   "kind": "french",
+   "means": [
+    "الاستعمال التجاري"
+   ]
+  },
+  {
+   "typed": [
+    "aide au logement"
+   ],
+   "kind": "french",
+   "means": [
+    "إعانة الدولة لدعم السكن",
+    "دعم السكن"
+   ]
+  }
+ ]
+}

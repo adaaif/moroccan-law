@@ -1,0 +1,143 @@
+# The papers and checks (H9 of the housing plan): each list is what an article names, item by item. A check (`verdict`)
+# says which of the article's conditions the paper in hand misses, each with its article: it reads the paper against
+# the law, never decides a case. Ticks stay on the reader's phone.
+
+- key: eviction-notice
+  for: [tenant, landlord]
+  title: {ar: واش الإشعار بالإفراغ صحيح؟, fr: 'Le congé est-il valable ?'}
+  lead:
+    ar: 'يكون الإشعار بالإفراغ باطلا إذا نقصه واحد من البيانات التي تفرضها المادة 46. علّم ما تجده في الورقة التي بين يديك.'
+    fr: 'Le congé est nul s’il lui manque une des mentions que l’article 46 impose. Cochez ce que vous trouvez sur le papier que vous avez en main.'
+  cites: [/ma/loi/67-12/art_46]
+  items:
+    - label: {ar: 'يذكر الأسباب التي يستند عليها المكري', fr: 'Il indique les motifs du bailleur'}
+      cites: [/ma/loi/67-12/art_46]
+    - label: {ar: 'السبب من الأسباب الجدية والمشروعة التي تذكرها المادة 45: السكن، أو الهدم وإعادة البناء أو الإصلاحات الضرورية، أو التماطل في الأداء', fr: 'Le motif est de ceux, sérieux et légitimes, que cite l’article 45 : la reprise pour habiter, la démolition et la reconstruction ou des travaux nécessaires, le retard persistant à payer'}
+      note: {ar: 'لا تصحح المحكمة الإشعار إلا لهذه الأسباب', fr: 'Le tribunal ne valide le congé que pour ces motifs'}
+      cites: [/ma/loi/67-12/art_45, /ma/loi/67-12/art_48]
+    - label: {ar: 'يشمل المحل المكترى كله بكافة مرافقه', fr: 'Il porte sur tout le logement loué avec toutes ses dépendances'}
+      cites: [/ma/loi/67-12/art_46]
+    - label: {ar: 'يمنح أجلا لا يقل عن شهرين', fr: 'Il laisse un délai d’au moins deux mois'}
+      note: {ar: 'يبتدئ الأجل من تاريخ توصلك بالإشعار', fr: 'Le délai court à partir de la réception du congé'}
+      cites: [/ma/loi/67-12/art_46]
+    - label: {ar: 'بلغ وفق قواعد التبليغ في المسطرة المدنية: بواسطة مفوض قضائي، أو بطريقة أخرى تأمر بها المحكمة', fr: 'Il a été notifié selon les règles de la procédure civile : par un commissaire judiciaire, ou d’une autre manière ordonnée par le tribunal'}
+      cites: [/ma/loi/67-12/art_46, /ma/loi/58-25/art_83]
+    - label: {ar: 'إذا كان السبب هو السكن: المحل في ملك المكري منذ ثمانية عشر شهرا على الأقل يوم الإشعار، ولا يشغل المستفيد سكنا في ملكه أو كافيا لحاجياته؛ أو عرض عليك سكنا مماثلا بنفس المواصفات والوجيبة', fr: 'Si le motif est la reprise pour habiter : le bailleur est propriétaire depuis au moins dix-huit mois au jour du congé, et le bénéficiaire n’occupe pas un logement à lui ou suffisant ; ou il vous a offert un logement semblable, mêmes caractéristiques et même loyer'}
+      when: {ar: 'عند الاسترجاع للسكن', fr: 'en cas de reprise pour habiter'}
+      cites: [/ma/loi/67-12/art_49]
+  verdict:
+    ok: {ar: 'الورقة تتضمن ما تفرضه المادتان 45 و46. تصحيح الإشعار يبقى للمحكمة.', fr: 'Le papier contient ce que les articles 45 et 46 exigent. La validation du congé reste au tribunal.'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها. الإشعار الذي ينقصه بيان من المادة 46 يكون باطلا؛ وغيره شرط لتصحيحه (المادتان 48 و49):', fr: 'Vous n’avez pas coché ces mentions. Un congé est nul s’il lui manque une mention de l’article 46 ; les autres conditionnent sa validation (art. 48 et 49) :'}
+
+- key: payment-notice
+  for: [tenant, landlord]
+  title: {ar: واش الإنذار بالأداء صحيح؟, fr: 'La mise en demeure de payer est-elle valable ?'}
+  lead:
+    ar: 'لا يقبل الإنذار بالأداء إذا نقصه بيان من بيانات المادة 24، ولا يكون إلا بإذن من رئيس المحكمة، لكراء ثابت بمحرر ثابت التاريخ أو بحكم نهائي.'
+    fr: 'La mise en demeure est irrecevable s’il lui manque une mention de l’article 24 ; elle n’est faite que sur autorisation du président du tribunal, pour un bail établi par écrit à date certaine ou par jugement définitif.'
+  cites: [/ma/loi/67-12/art_22, /ma/loi/67-12/art_23, /ma/loi/67-12/art_24]
+  items:
+    - label: {ar: 'الكراء ثابت بمحرر كتابي ثابت التاريخ أو بحكم نهائي يحدد الوجيبة', fr: 'Le bail est établi par un écrit à date certaine ou par un jugement définitif qui fixe le loyer'}
+      cites: [/ma/loi/67-12/art_22]
+    - label: {ar: 'وجه بإذن من رئيس المحكمة الابتدائية', fr: 'Elle est adressée sur autorisation du président du tribunal de première instance'}
+      cites: [/ma/loi/67-12/art_23]
+    - label: {ar: 'أسماء الطرفين كما في العقد أو الحكم', fr: 'Les noms des parties tels qu’au contrat ou au jugement'}
+      cites: [/ma/loi/67-12/art_24]
+    - label: {ar: 'عنوان المكري، وعنوان المحل', fr: 'L’adresse du bailleur et celle du logement'}
+      cites: [/ma/loi/67-12/art_24]
+    - label: {ar: 'مبلغ الوجيبة والتكاليف المطالب بها، والمدة المستحقة، ومجموع ما بذمتك', fr: 'Le montant du loyer et des charges réclamés, la période due, et le total dû'}
+      cites: [/ma/loi/67-12/art_24]
+    - label: {ar: 'أجل لا يقل عن خمسة عشر يوما من تبليغه للأداء', fr: 'Un délai d’au moins quinze jours à compter de sa notification pour payer'}
+      note: {ar: 'تؤدي يدا بيد مقابل وصل، أو في حساب المكري البنكي، أو في صندوق المحكمة، أو بأي وسيلة تثبت الأداء وتاريخه', fr: 'En main propre contre quittance, sur le compte bancaire du bailleur, à la caisse du tribunal, ou par tout moyen qui prouve le paiement et sa date'}
+      cites: [/ma/loi/67-12/art_25]
+  verdict:
+    ok: {ar: 'الإنذار يتضمن ما تفرضه المواد 22 إلى 25. يبقى الأمر بالأداء لرئيس المحكمة (المادة 26).', fr: 'La mise en demeure contient ce que les articles 22 à 25 exigent. L’ordonnance reste au président du tribunal (art. 26).'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها. الإنذار الذي ينقصه بيان من المادة 24 لا يقبل:', fr: 'Vous n’avez pas coché ces mentions. Une mise en demeure à laquelle manque une mention de l’article 24 est irrecevable :'}
+
+- key: before-renting
+  for: [tenant, landlord]
+  title: {ar: قبل ما توقع عقد الكراء, fr: Avant de signer le bail}
+  lead:
+    ar: 'يبرم عقد كراء السكن وجوبا بمحرر كتابي ثابت التاريخ. هذا ما يذكره القانون، وما يحفظ حق الطرفين عند الخروج.'
+    fr: 'Le bail d’habitation est obligatoirement écrit, à date certaine. Voici ce que la loi demande, et ce qui protège les deux parties au départ.'
+  cites: [/ma/loi/67-12/art_3]
+  items:
+    - label: {ar: 'عقد مكتوب ثابت التاريخ', fr: 'Un contrat écrit à date certaine'}
+      note: {ar: 'بلا عقد ثابت التاريخ أو حكم نهائي يحدد الوجيبة، لا يمكن للمكري سلوك مسطرة الإنذار بالأداء', fr: 'Sans écrit à date certaine ni jugement définitif fixant le loyer, le bailleur ne peut pas recourir à la mise en demeure de payer'}
+      cites: [/ma/loi/67-12/art_3, /ma/loi/67-12/art_22]
+    - label: {ar: 'هوية المكري والمكتري، والوكيل إن وجد', fr: 'L’identité du bailleur et du locataire, et du mandataire s’il y en a un'}
+      cites: [/ma/loi/67-12/art_3]
+    - label: {ar: 'المحل ومرافقه والغرض المخصص له والتجهيزات التي يستعملها المكتري وحده', fr: 'Le logement, ses dépendances, son usage et les équipements réservés au locataire'}
+      cites: [/ma/loi/67-12/art_3]
+    - label: {ar: 'مبلغ الوجيبة ودورية أدائها، والتكاليف التي يتحملها المكتري، ووسيلة الأداء', fr: 'Le loyer et sa périodicité, les charges du locataire, le moyen de paiement'}
+      cites: [/ma/loi/67-12/art_3]
+    - label: {ar: 'بيان وصفي مفصل لحالة المحل، ثابت التاريخ، دون عبارة «حالة جيدة»', fr: 'Un état des lieux détaillé et à date certaine, sans formule « bon état »'}
+      note: {ar: 'يحرر كذلك عند الخروج ويرفق بالعقد', fr: 'Il est refait à la sortie et joint au contrat'}
+      cites: [/ma/loi/67-12/art_7, /ma/loi/67-12/art_8]
+    - label: {ar: 'ضمانة لا تتجاوز وجيبة شهرين', fr: 'Une garantie de deux mois de loyer au plus'}
+      cites: [/ma/loi/67-12/art_20]
+    - label: {ar: 'الأشغال التي يمكن للمكتري القيام بها وخصمها من الوجيبة، إن اتفقتما عليها، مكتوبة', fr: 'Les travaux que le locataire peut faire et déduire du loyer, si vous en convenez, par écrit'}
+      cites: [/ma/loi/67-12/art_6]
+    - label: {ar: 'نسخة من نظام الملكية المشتركة، إذا كانت الشقة في عمارة', fr: 'Une copie du règlement de copropriété, si le logement est dans un immeuble'}
+      when: {ar: 'في عمارة مشتركة', fr: 'en copropriété'}
+      cites: [/ma/loi/18-00/art_31]
+    - label: {ar: 'وصل موقع عند كل أداء، يميز بين الوجيبة والتكاليف', fr: 'Une quittance signée à chaque paiement, distinguant loyer et charges'}
+      when: {ar: 'عند كل أداء', fr: 'à chaque paiement'}
+      cites: [/ma/loi/67-12/art_11]
+
+- key: assembly
+  for: [building]
+  title: {ar: واش الاستدعاء للجمع العام صحيح؟, fr: 'La convocation à l’assemblée est-elle en règle ?'}
+  lead:
+    ar: 'هذا ما يفرضه القانون 18.00 في الاستدعاء للجمع العام وفي الوثائق التي توضع رهن إشارة الملاك قبله.'
+    fr: 'Voici ce que la loi 18.00 exige de la convocation à l’assemblée et des documents mis à la disposition des copropriétaires avant elle.'
+  cites: [/ma/loi/18-00/art_16-bis-4, /ma/loi/18-00/art_30, /ma/loi/18-00/art_59-bis-11]
+  items:
+    - label: {ar: 'بلغ قبل خمسة عشر يوما على الأقل من تاريخ الجمع، بآخر عنوان أشعرت به الوكيل', fr: 'Notifiée au moins quinze jours avant l’assemblée, à la dernière adresse donnée au syndic'}
+      cites: [/ma/loi/18-00/art_16-bis-4]
+    - label: {ar: 'يذكر مكان الجمع وتاريخه وساعته، ونقط جدول الأعمال', fr: 'Elle indique le lieu, la date, l’heure et l’ordre du jour'}
+      cites: [/ma/loi/18-00/art_16-bis-4]
+    - label: {ar: 'يذكر بأن من لم يؤد التكاليف المشتركة لا يقبل حضوره', fr: 'Elle rappelle que celui qui n’a pas payé ses charges n’est pas admis'}
+      cites: [/ma/loi/18-00/art_16-bis-4]
+    - label: {ar: 'الجمع داخل حدود الجماعة التي توجد بها العمارة', fr: 'L’assemblée se tient dans la commune de l’immeuble'}
+      cites: [/ma/loi/18-00/art_16-bis-4]
+    - label: {ar: 'بيان الوضعية المالية ومشروع الميزانية رهن إشارتك قبل خمسة عشر يوما', fr: 'La situation financière et le projet de budget à votre disposition quinze jours avant'}
+      when: {ar: 'إذا كان الجمع سيصادق على الحسابات أو الميزانية', fr: 'si l’assemblée approuve les comptes ou le budget'}
+      cites: [/ma/loi/18-00/art_16-bis-6]
+    - label: {ar: 'العقود ووثائق المصاريف رهن إشارتك قبل ثلاثة أيام على الأقل', fr: 'Les contrats et les justificatifs des dépenses à votre disposition au moins trois jours avant'}
+      cites: [/ma/loi/18-00/art_16-bis-4]
+  verdict:
+    ok: {ar: 'الاستدعاء يتضمن ما تفرضه المادتان 16 مكرر 4 و16 مكرر 6.', fr: 'La convocation contient ce que les articles 16 bis 4 et 16 bis 6 exigent.'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها، وكل واحد منها تفرضه مادة من القانون 18.00. ولمن تضرر من قرار أن يطعن فيه داخل شهرين من تاريخ إخباره به (المادتان 30 و59 مكرر 11):', fr: 'Vous n’avez pas coché ces points, chacun imposé par un article de la loi 18.00. Celui qui est lésé par une décision peut la contester dans les deux mois de la notification (art. 30 et 59 bis 11) :'}
+
+- key: offplan-contract
+  for: [buyer]
+  title: {ar: قبل ما توقع العقد الابتدائي على التصميم, fr: Avant de signer le contrat préliminaire sur plan}
+  lead:
+    ar: 'يجب أن يتضمن العقد الابتدائي للبيع في طور الإنجاز هذه البيانات على الخصوص، في محرر رسمي، وبعد رخصة البناء.'
+    fr: 'Le contrat préliminaire de vente en l’état futur d’achèvement doit notamment contenir ces mentions, par acte authentique, après le permis de construire.'
+  cites: [/ma/code/doc/art_618-3-bis]
+  items:
+    - label: {ar: 'محرر رسمي (عند موثق أو عدلين)', fr: 'Un acte authentique (notaire ou adouls)'}
+      note: {ar: 'منذ 16 يوليوز 2026، تحت طائلة البطلان', fr: 'Depuis le 16 juillet 2026, à peine de nullité'}
+      cites: [/ma/code/doc/art_618-3]
+    - label: {ar: 'رخصة البناء موجودة: تاريخها ورقمها في العقد', fr: 'Le permis de construire existe : sa date et son numéro figurent au contrat'}
+      cites: [/ma/code/doc/art_618-3-bis, /ma/code/doc/art_618-5]
+    - label: {ar: 'هوية الطرفين، ومحل المخابرة المتفق عليه', fr: 'L’identité des parties, et l’adresse convenue pour les notifications'}
+      cites: [/ma/code/doc/art_618-3-bis]
+    - label: {ar: 'رقم الرسم العقاري الأصلي، أو مراجع ملكية العقار غير المحفظ وحقوقه وتحملاته', fr: 'Le numéro du titre foncier d’origine, ou les références de propriété du terrain non immatriculé, ses droits et charges'}
+      cites: [/ma/code/doc/art_618-3-bis]
+    - label: {ar: 'موقع العقار ووصفه ومساحته التقريبية', fr: 'L’emplacement, la description et la superficie approximative'}
+      cites: [/ma/code/doc/art_618-3-bis]
+    - label: {ar: 'ثمن المتر المربع وكيفية الأداء (أو الثمن الإجمالي في السكن الاجتماعي)', fr: 'Le prix au mètre carré et les modalités de paiement (ou le prix global en logement social)'}
+      cites: [/ma/code/doc/art_618-3-bis]
+    - label: {ar: 'أجل التسليم', fr: 'Le délai de livraison'}
+      cites: [/ma/code/doc/art_618-3-bis]
+    - label: {ar: 'مراجع ضمانة استرجاع الأقساط أو ضمانة إنهاء الأشغال أو التأمين', fr: 'Les références de la garantie de remboursement, de la garantie d’achèvement ou de l’assurance'}
+      cites: [/ma/code/doc/art_618-3-bis, /ma/code/doc/art_618-9]
+    - label: {ar: 'لم تؤد أي مبلغ قبل التوقيع', fr: 'Vous n’avez rien payé avant la signature'}
+      note: {ar: 'كل أداء قبل عقد التخصيص أو العقد الابتدائي باطل', fr: 'Tout paiement avant la réservation ou le contrat préliminaire est nul'}
+      cites: [/ma/code/doc/art_618-8]
+  verdict:
+    ok: {ar: 'العقد يتضمن البيانات التي يذكرها الفصل 618-3 مكرر.', fr: 'Le contrat contient les mentions que cite l’article 618-3 bis.'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها، وكل واحد منها يفرضه فصل من قانون الالتزامات والعقود:', fr: 'Vous n’avez pas coché ces mentions, chacune imposée par un article du DOC :'}

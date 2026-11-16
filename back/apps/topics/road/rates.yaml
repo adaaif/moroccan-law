@@ -1,0 +1,27 @@
+# The figures the road tools read (R11–R13 of the road plan): each fixed by a law, in force from a date, with the
+# articles that fix it. A new law is one row more. `open: true`: the fine tool, shown, as chosen, before a
+# professional's review (Q1), reads them; they are the code's own numbers. The capital table waits for a lawyer (Q5).
+
+- key: fines
+  open: true
+  title: {ar: 'الغرامات التصالحية والجزافية', fr: 'Les amendes transactionnelles et forfaitaires'}
+  unit: {ar: درهم, fr: dirhams}
+  rows:
+    # Per class: the same day or within 24 hours of the day after a radar's notice; within 15 full days; within the
+    # 30 days (the transactional amount); the court's range, whose maximum is the deposit to contest (art. 231).
+    - from: '2016-08-11'
+      values: {c1_day: 400, c1_15: 500, c1_30: 700, c1_min: 700, c1_max: 1400,
+               c2_day: 300, c2_15: 350, c2_30: 500, c2_min: 500, c2_max: 1000,
+               c3_day: 150, c3_15: 200, c3_30: 300, c3_min: 300, c3_max: 600,
+               walk_30: 25, walk_min: 20, walk_max: 50}
+      cites: [/ma/loi/52-05/art_219, /ma/loi/52-05/art_184, /ma/loi/52-05/art_185, /ma/loi/52-05/art_186, /ma/loi/52-05/art_187]
+
+- key: capital
+  title: {ar: 'الرأسمال المعتمد حسب السن والأجر', fr: 'Le capital de référence selon l’âge et le salaire'}
+  unit: {ar: درهم, fr: dirhams}
+  rows:
+    # BO 7478 pp. 851–858 as read here (`manage.py build_compensation_table`): 65 earnings × 46 ages, five cells
+    # the BO misprinted kept as printed and named, and art. 5's four transitional minimum rows (2026–2029).
+    - from: '2026-01-29'
+      table: compensation.json
+      cites: [/ma/loi/70-24/art_5, /ma/loi/70-24/annex, /ma/dahir/1-84-177/art_5, /ma/loi/70-24/art_7]

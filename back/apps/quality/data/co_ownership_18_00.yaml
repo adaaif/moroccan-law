@@ -1,0 +1,21 @@
+# Law 18.00 on co-ownership as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around («المالك» for «الملاك»), a word cut in two, a letter lost. Each was read against the page's image on 20 Oct
+# 2026 (H2 of the housing plan), in the articles the housing topic cites (8 corrected; 51.00's ten cited articles
+# matched their pages). Applied by `manage.py apply_page_reading apps/quality/data/co_ownership_18_00.yaml`.
+text: /ma/loi/18-00
+document: sources/adala/co_ownership_18_00.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [13], wrong: لفائدة المالك, right: لفائدة الملاك}   # turn, p. 11
+  - {arts: [14], wrong: تعدد مالك جزء, right: تعدد ملاك جزء}   # turn, p. 12
+  - {arts: ['16-bis-4'], wrong: بلا تكاليف المشتركة, right: بالتكاليف المشتركة}   # turn, p. 14
+  - {arts: ['16-bis-4'], wrong: إشارة المالك جميع, right: إشارة الملاك جميع}   # turn, p. 15
+  - {arts: ['16-bis-9'], wrong: مجموع عدد المالك, right: مجموع عدد الملاك}   # turn, p. 16
+  - {arts: ['16-bis-9'], wrong: ثالثة (3) مالكين, right: ثلاثة (3) ملاكين}   # turn, p. 16
+  - {arts: ['16-bis-9'], wrong: أصوات مالك الاتحاد, right: أصوات ملاك الاتحاد}   # turn, p. 16
+  - {arts: [19], wrong: بين المالك الحاضرين, right: بين الملاك الحاضرين}   # turn, p. 18
+  - {arts: [19, 21], wrong: بأغلبية ثالثة أرباع, right: بأغلبية ثلاثة أرباع}   # turn, p. 18 (art. 19), p. 19 (art. 21)
+  - {arts: [21], wrong: كالحريق والانف جار, right: كالحريق والانفجار}   # split, p. 20
+  - {arts: [28], wrong: حصيلة عملها, right: حصيلة عملهما}   # missing, p. 25
+  - {arts: [28], wrong: انتهاء مهمتها, right: انتهاء مهمتهما}   # missing, p. 25
+  - {arts: [31], wrong: بباقي المالك, right: بباقي الملاك}   # turn, p. 28

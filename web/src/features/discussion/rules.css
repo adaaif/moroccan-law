@@ -1,0 +1,114 @@
+/* /rules, «قواعد النقاش» (31 Oct 2026), beside /privacy (privacy.css gives the head, the margin sections and the
+   draft's note). The rules set as the discussion's own law, numbered in the margin in the law's type; the road a post
+   travels drawn as a route: one line of three stations, then three ways in their colours (published in the green of
+   what stands, back to its writer in the violet of one's own hand, waiting in the amber of what is pending; removed in
+   the red of what was struck). Every colour a token. */
+
+.pv { --published: var(--color-in-force); --returned: var(--color-stamp); --waits: var(--color-amended); --removed: var(--color-repealed); }
+
+/* ── The seven rules, as articles ────────────────────────────────────────────────────────────────────────────────── */
+.ru-charter { display: flex; flex-direction: column; gap: 18px; }
+.ru-charter > ol { display: flex; flex-direction: column; margin: 0 -16px; padding: 6px 16px; list-style: none; background: var(--color-sheet); }
+@media (min-width: 640px) { .ru-charter > ol { margin-inline: 0; padding: 8px 36px; border-radius: var(--radius-card); } }
+.ru-charter > ol > li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); gap: 6px 18px; padding: 22px 0; border-top: 1px solid var(--color-rule-soft);
+  scroll-margin-top: 96px; }
+.ru-charter > ol > li:first-child { border-top: 0; }
+@media (min-width: 900px) { .ru-charter > ol > li { grid-template-columns: 4rem minmax(0, 1fr) 15rem; gap: 6px 28px; align-items: start; } }
+/* The number in the margin, as the law numbers its articles. */
+.ru-charter .n { font-family: var(--font-law); font-size: 3rem; line-height: 0.9; font-weight: 700; color: var(--color-stamp); text-align: center; }
+.ru-charter h3 { margin: 0; font-family: var(--font-law); font-size: clamp(1.5rem, 1.35rem + 0.5vw, 1.875rem); line-height: 1.3; font-weight: 700; color: var(--color-ink); }
+.ru-charter li p { margin: 6px 0 0; max-width: 62ch; line-height: 1.8; color: var(--color-ink); text-wrap: pretty; }
+.ru-charter li p.held { font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+/* What guards it: three marks, lit where it is guarded. */
+.ru-guards { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; grid-column: 2; }
+@media (min-width: 900px) { .ru-guards { grid-column: 3; flex-direction: column; gap: 4px; padding-top: 6px; } }
+.ru-guards li { display: inline-flex; align-items: center; gap: 8px; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ru-guards li i { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--color-tick); }
+.ru-guards li[data-on] { color: var(--color-ink); font-weight: 600; }
+.ru-guards li[data-on] i { border-color: var(--color-ink); background: var(--color-ink); }
+@media (max-width: 899px) {
+  .ru-guards li { padding: 2px 10px 2px 8px; border-radius: 999px; background: var(--color-paper); }
+  .ru-guards li:not([data-on]) { display: none; }
+}
+
+/* ── The road: three stations on one line, then three ways ───────────────────────────────────────────────────────── */
+.ru-road { display: flex; flex-direction: column; gap: 18px; margin-inline: -16px; padding: 28px 16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .ru-road { margin-inline: 0; padding: 34px 36px 30px; border-radius: var(--radius-card); } }
+.ru-trunk, .ru-ways { --gap: 28px; display: grid; grid-template-columns: minmax(0, 1fr); margin: 0; padding: 0; list-style: none; }
+.ru-trunk > li, .ru-ways > li { position: relative; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.ru-road b { font-size: var(--text-lead); line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.ru-road li > p { margin: 0; max-width: 46ch; line-height: 1.75; color: var(--color-ink); text-wrap: pretty; }
+.ru-road .dot { position: absolute; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 3px solid var(--color-ink);
+  background: var(--color-sheet); font-size: var(--text-meta); font-weight: 700; line-height: 1; color: var(--color-ink); box-sizing: border-box; }
+.ru-ways > li { --c: var(--color-ink); }
+.ru-ways > li[data-way="published"] { --c: var(--published); }
+.ru-ways > li[data-way="returned"] { --c: var(--returned); }
+.ru-ways > li[data-way="waits"] { --c: var(--waits); }
+.ru-ways .dot { border-color: var(--c); background: var(--c); }
+.ru-ways > li > b { color: var(--c); }
+
+/* A phone: one line down the page, the stations on it, then the three ways as its branches. */
+@media (max-width: 899px) {
+  .ru-trunk > li, .ru-ways > li { padding-inline-start: 44px; padding-bottom: 22px; }
+  .ru-road .dot { inset-inline-start: 0; top: 0; }
+  .ru-trunk > li::before { content: ""; position: absolute; inset-inline-start: 12.5px; top: 28px; bottom: 0; border-inline-start: 3px solid var(--color-ink); }
+  .ru-trunk > li:last-child::before { display: none; }
+  /* After the check the line stops: the three ways are one or another, never one after another. */
+  .ru-fork { margin: 0; padding-inline-start: 44px; font-weight: 700; color: var(--color-ink); }
+  .ru-ways > li { padding-bottom: 18px; }
+}
+@media (min-width: 900px) { .ru-fork { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; } }
+
+/* A desk: the stations side by side on one line; from the last, the line forks over the three ways. */
+@media (min-width: 900px) {
+  .ru-trunk, .ru-ways { grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--gap); }
+  .ru-trunk > li, .ru-ways > li { padding-top: 44px; }
+  .ru-road .dot { inset-inline-start: 0; top: 0; }
+  /* The line from a station to the next. */
+  .ru-trunk > li:not(:last-child)::before { content: ""; position: absolute; top: 12.5px; inset-inline-start: 28px; inset-inline-end: calc(-1 * var(--gap));
+    border-top: 3px solid var(--color-ink); }
+  /* From the last station down to the fork. */
+  .ru-trunk > li:last-child::before { content: ""; position: absolute; top: 28px; bottom: -34px; inset-inline-start: 12.5px; border-inline-start: 3px solid var(--color-ink); }
+  /* Its words step aside from the line that leaves it. */
+  .ru-trunk > li:last-child > b, .ru-trunk > li:last-child > p { padding-inline-start: 26px; }
+  .ru-ways { position: relative; margin-top: 34px; padding-top: 0; }
+  /* The fork: one line over the three ways, from the first to the last, each dropping to its own. */
+  .ru-ways::before { content: ""; position: absolute; top: 0; inset-inline-start: 12.5px; width: calc((100% - 2 * var(--gap)) * 2 / 3 + 2 * var(--gap)); border-top: 3px solid var(--color-ink); }
+  .ru-ways > li { padding-top: 58px; }
+  .ru-ways .dot { top: 26px; }
+  .ru-ways > li::before { content: ""; position: absolute; top: 0; height: 26px; inset-inline-start: 12.5px; border-inline-start: 3px solid var(--c); }
+}
+/* The moderator's three answers, and the appeal after a removal. */
+.ru-decide { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; padding: 0; list-style: none; }
+.ru-decide li { padding: 3px 12px; border-radius: 999px; font-size: var(--text-meta); font-weight: 600; line-height: 1.6;
+  color: var(--c, var(--color-ink)); background: color-mix(in srgb, var(--c, var(--color-ink)) 10%, var(--color-sheet)); }
+.ru-decide li[data-way="published"] { --c: var(--published); }
+.ru-decide li[data-way="returned"] { --c: var(--returned); }
+.ru-decide li[data-way="removed"] { --c: var(--removed); }
+.ru-road p.ru-appeal { margin-top: 6px; padding-inline-start: 12px; border-inline-start: 3px solid var(--removed); font-size: var(--text-meta); line-height: 1.7; }
+.ru-edits { margin: 6px 0 0; padding-top: 16px; border-top: 1px solid var(--color-rule-soft); max-width: 72ch; line-height: 1.75; color: var(--color-ink-soft); }
+@media (prefers-reduced-motion: no-preference) {
+  .ru-road .dot { animation: ru-stop 380ms cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+  .ru-trunk > li:nth-child(2) .dot { animation-delay: 120ms; }
+  .ru-trunk > li:nth-child(3) .dot { animation-delay: 240ms; }
+  .ru-ways .dot { animation-delay: 420ms; }
+}
+@keyframes ru-stop { from { scale: 0.4; opacity: 0; } }
+
+/* ── The margin sections, a few lines each ───────────────────────────────────────────────────────────────────────── */
+.ru-items .pv-item { grid-template-columns: minmax(0, 1fr); }
+.ru-more { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--color-stamp); }
+
+/* ── The month's numbers ──────────────────────────────────────────────────────────────────────────────────────────── */
+.ru-numbers { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 96px; }
+.ru-table { overflow-x: auto; margin-inline: -16px; padding: 10px 16px 14px; background: var(--color-sheet); }
+@media (min-width: 640px) { .ru-table { margin-inline: 0; padding: 14px 32px 18px; border-radius: var(--radius-card); } }
+.ru-table table { width: 100%; max-width: 46rem; min-width: 22rem; border-collapse: collapse; }
+.ru-table th, .ru-table td { padding: 8px 10px; border-top: 1px solid var(--color-rule-soft); }
+.ru-table thead th { border-top: 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); text-align: end; font-variant-numeric: tabular-nums; }
+.ru-table thead td { border-top: 0; }
+.ru-table tbody th { text-align: start; font-weight: 400; color: var(--color-ink-soft); }
+.ru-table td { text-align: end; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.ru-table td[data-zero] { color: var(--color-muted); }
+.ru-table tr[data-strong] th, .ru-table tr[data-strong] td { font-weight: 700; color: var(--color-ink); }
+.ru-table tr.g th { padding-top: 18px; border-top: 0; font-size: var(--text-meta); font-weight: 700; color: var(--color-ink); text-align: start; }

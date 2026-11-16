@@ -1,0 +1,225 @@
+# What changed for work, and what is coming (T14 of the work plan): one item per change, its stage said first, its
+# dated official record, and what circulates that is not so. Stages: in_force (law in force), coming (law, not yet in
+# force), bill (in parliament), announced (said by the government or the social dialogue, no text). Checked against the
+# BO and the official pages on 20 Oct 2026; each item is followed on its own («تابع»).
+
+- key: civil-procedure
+  title: {ar: 'قانون المسطرة المدنية الجديد (58.25)', fr: 'Le nouveau Code de procédure civile (loi 58.25)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 23 غشت 2026: مساعدة قضائية بحكم القانون للأجير في كل الدرجات، والحكم بالأجر ينفذ رغم الاستئناف.', fr: 'En vigueur depuis le 23 août 2026 : assistance judiciaire de plein droit pour le salarié à tous les degrés, le jugement sur le salaire exécutoire malgré l’appel.'}
+  timeline:
+    - date: '2026-02-23'
+      text: {ar: 'نشر القانون 58.25 في الجريدة الرسمية، ونسخه، من تاريخ دخوله حيز التنفيذ، قانون المسطرة المدنية لسنة 1974.', fr: 'Publication de la loi 58.25 au Bulletin officiel ; elle abroge, à son entrée en vigueur, le Code de procédure civile de 1974.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7485', fr: 'BO n° 7485'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7485_Ar.pdf'}
+      cites: [/ma/loi/58-25/art_644]
+    - date: '2026-08-23'
+      text: {ar: 'دخول القانون حيز التنفيذ، بعد ستة أشهر من نشره.', fr: 'Entrée en vigueur, six mois après la publication.'}
+      source: {name: {ar: 'المادة 643', fr: 'Article 643'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7485_Ar.pdf'}
+      cites: [/ma/loi/58-25/art_643, /ma/loi/58-25/art_311, /ma/loi/58-25/art_322]
+
+- key: guards
+  title: {ar: 'حراس شركات الحراسة: الساعات العادية (032.26)', fr: 'Gardiens des sociétés de gardiennage : la durée normale (loi 032.26)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 16 يوليوز 2026، وللمقاولات تسعة أشهر لعقودها السابقة، أي إلى 16 أبريل 2027.', fr: 'En vigueur depuis le 16 juillet 2026 ; les entreprises ont neuf mois pour leurs contrats antérieurs, soit jusqu’au 16 avril 2027.'}
+  timeline:
+    - date: '2026-04-17'
+      text: {ar: 'جولة الحوار الاجتماعي: الالتزام بتقليص يوم عمل الحراس من 12 إلى 8 ساعات.', fr: 'Dialogue social : engagement de ramener la journée des gardiens de 12 à 8 heures.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/fr/node/12882'}
+    - date: '2026-04-30'
+      text: {ar: 'الحكومة تصادق على مشروع القانون.', fr: 'Le gouvernement adopte le projet de loi.'}
+      source: {name: {ar: 'وكالة المغرب العربي للأنباء', fr: 'MAP'}, url: 'https://www.mapexpress.ma/actualite/activite-gouvernementale/mobilisation-linspection-du-travail-assurer-mise-en-oeuvre-du-projet-loi-relatif-aux-agents-securite-privee-m-sekkouri/'}
+    - date: '2026-06-22'
+      text: {ar: 'دراسة المشروع والتصويت عليه في لجنة القطاعات الاجتماعية بمجلس النواب.', fr: 'Examen et vote en commission des secteurs sociaux de la Chambre des représentants.'}
+      source: {name: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}, url: 'https://www.chambredesrepresentants.ma/en/agenda/examination-and-vote-government-bill-03226-monday-june-22-2026'}
+    - date: '2026-07-16'
+      text: {ar: 'نشر القانون 032.26 في الجريدة الرسمية، والعمل به من تاريخ نشره.', fr: 'Publication de la loi 032.26 au Bulletin officiel ; elle s’applique dès sa publication.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7526', fr: 'BO n° 7526'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7526_Ar.pdf'}
+      cites: [/ma/loi/32-26/art_1, /ma/loi/32-26/art_2]
+
+- key: idmaj
+  title: {ar: 'عقود الإدماج: مفتوحة لغير حاملي الشهادات (51.25)', fr: 'Contrats d’insertion : ouverts aux non-diplômés (loi 51.25)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 10 غشت 2026: عقد تدريب من أجل الإدماج لاثني عشر شهرا على الأكثر، غير قابل للتجديد.', fr: 'En vigueur depuis le 10 août 2026 : un contrat de formation-insertion de douze mois au plus, non renouvelable.'}
+  timeline:
+    - date: '2026-08-10'
+      text: {ar: 'نشر القانون 51.25 بتغيير الظهير 1.93.16 في الجريدة الرسمية.', fr: 'Publication de la loi 51.25 modifiant le dahir 1.93.16 au Bulletin officiel.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7533', fr: 'BO n° 7533'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7533_Ar.pdf'}
+      cites: [/ma/loi/51-25/art_1]
+
+- key: direct-support
+  title: {ar: 'الدعم المباشر والتصريح في الضمان الاجتماعي (041.26)', fr: 'Aide sociale directe et déclaration à la CNSS (loi 041.26)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 6 يوليوز 2026: الأسرة التي يصرح بأحد أفرادها في الضمان الاجتماعي، أو يفقد شغله، لا تفقد الدعم بنفس الطريقة.', fr: 'En vigueur depuis le 6 juillet 2026 : un foyer dont un membre est déclaré à la CNSS, ou perd son emploi, ne perd plus l’aide de la même manière.'}
+  timeline:
+    - date: '2026-07-06'
+      text: {ar: 'نشر القانون 041.26 بتغيير القانون 58.23 المتعلق بنظام الدعم الاجتماعي المباشر.', fr: 'Publication de la loi 041.26 modifiant la loi 58.23 sur l’aide sociale directe.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7523', fr: 'BO n° 7523'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7523_Ar.pdf'}
+      cites: [/ma/loi/41-26/art_1]
+    - date: '2026-07-30'
+      text: {ar: 'مرسوم التطبيق 2.26.434.', fr: 'Décret d’application 2.26.434.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7530', fr: 'BO n° 7530'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7530_Ar.pdf'}
+      cites: [/ma/decret/2-26-434/art_1]
+
+- key: minimum-wage
+  title: {ar: 'الحد الأدنى للأجر', fr: 'Le salaire minimum'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: '17,92 درهما للساعة منذ فاتح يناير 2026، و97,44 درهما ليوم الفلاحة منذ فاتح أبريل 2026. التوحيد معلن في أفق 2028، ولا مرسوم لسنة 2027.', fr: '17,92 DH de l’heure depuis le 1er janvier 2026, 97,44 DH la journée agricole depuis le 1er avril 2026. L’unification est annoncée pour 2028 ; aucun décret pour 2027.'}
+  timeline:
+    - date: '2022-09-12'
+      text: {ar: '15,55 درهما للساعة و84,37 درهما لليوم الفلاحي من فاتح شتنبر 2022.', fr: '15,55 DH de l’heure et 84,37 DH la journée agricole au 1er septembre 2022.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7125', fr: 'BO n° 7125'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2022/BO_7125_Ar.pdf'}
+      cites: [/ma/decret/2-22-606/art_1]
+    - date: '2023-10-19'
+      text: {ar: '16,29 درهما و88,58 درهما من فاتح شتنبر 2023.', fr: '16,29 DH et 88,58 DH au 1er septembre 2023.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7240', fr: 'BO n° 7240'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7240_Ar.pdf'}
+      cites: [/ma/decret/2-23-799/art_1]
+    - date: '2025-01-06'
+      text: {ar: '17,10 درهما من فاتح يناير 2025، و93 درهما من فاتح أبريل 2025.', fr: '17,10 DH au 1er janvier 2025, 93 DH au 1er avril 2025.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7367', fr: 'BO n° 7367'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7367_Ar.pdf'}
+      cites: [/ma/decret/2-24-1122/art_1, /ma/decret/2-24-1122/art_2]
+    - date: '2025-04-30'
+      text: {ar: 'جولة الحوار الاجتماعي لأبريل 2025: توحيد الحد الأدنى في الفلاحة وغيرها في أفق 2028.', fr: 'Dialogue social d’avril 2025 : unification des minima agricole et non agricole d’ici 2028.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/en/node/12332'}
+    - date: '2025-12-29'
+      text: {ar: '17,92 درهما من فاتح يناير 2026، و97,44 درهما من فاتح أبريل 2026.', fr: '17,92 DH au 1er janvier 2026, 97,44 DH au 1er avril 2026.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7469', fr: 'BO n° 7469'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7469_Ar.pdf'}
+      cites: [/ma/decret/2-25-983/art_1, /ma/decret/2-25-983/art_2]
+
+- key: family-allowance
+  title: {ar: 'التعويض العائلي من الطفل الرابع إلى السادس', fr: 'Allocations familiales du 4e au 6e enfant'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: '100 درهم في الشهر عن الطفل الرابع والخامس والسادس في القطاع الخاص، بأثر رجعي من فاتح يناير 2023.', fr: '100 DH par mois pour les 4e, 5e et 6e enfants dans le secteur privé, avec effet au 1er janvier 2023.'}
+  timeline:
+    - date: '2025-11-03'
+      text: {ar: 'نشر المرسوم 2.23.715 بتغيير المرسوم 2.08.358.', fr: 'Publication du décret 2.23.715 modifiant le décret 2.08.358.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7453', fr: 'BO n° 7453'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7453_Ar.pdf'}
+      cites: [/ma/decret/2-23-715/art_1]
+
+- key: strike
+  title: {ar: 'قانون الإضراب (97.15)', fr: 'La loi sur la grève (97.15)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'نافذ منذ 24 شتنبر 2025. نصوصه التنظيمية، ومنها لجنة الإضراب والحد الأدنى من الخدمة، لم تنشر بعد.', fr: 'En vigueur depuis le 24 septembre 2025. Ses textes d’application, dont le comité de grève et le service minimum, ne sont pas encore publiés.'}
+  timeline:
+    - date: '2025-02-05'
+      text: {ar: 'مجلس النواب يصادق على المشروع في قراءة ثانية بعد تعديله في مجلس المستشارين.', fr: 'La Chambre des représentants adopte le projet en seconde lecture, après son amendement à la Chambre des conseillers.'}
+      source: {name: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}, url: 'https://www.chambredesrepresentants.ma/en/CommuniqueSL050225'}
+    - date: '2025-03-12'
+      text: {ar: 'المحكمة الدستورية تصرح بمطابقة القانون التنظيمي للدستور، مع ملاحظات على المواد 1 و5 و12 (القرار 251/25).', fr: 'La Cour constitutionnelle déclare la loi organique conforme, avec des observations sur les articles 1, 5 et 12 (décision 251/25).'}
+      source: {name: {ar: 'المحكمة الدستورية', fr: 'Cour constitutionnelle'}, url: 'https://www.cour-constitutionnelle.ma/Decision?id=2115'}
+    - date: '2025-03-24'
+      text: {ar: 'نشر القانون التنظيمي في الجريدة الرسمية؛ يدخل حيز التنفيذ بعد ستة أشهر.', fr: 'Publication au Bulletin officiel ; entrée en vigueur six mois plus tard.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7389', fr: 'BO n° 7389'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7389_Ar.pdf'}
+      cites: [/ma/loi-organique/97-15/art_33]
+
+- key: pension-1320
+  title: {ar: 'معاش من 1320 يوما (02.24)', fr: 'Une pension dès 1 320 jours (loi 02.24)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'منذ فاتح أبريل 2025 يفتح الحق في المعاش من 1320 يوما، ومبلغه بالمرسوم 2.25.265 منذ فاتح ماي 2025.', fr: 'Depuis le 1er avril 2025, la pension est due dès 1 320 jours ; son montant suit le décret 2.25.265 depuis le 1er mai 2025.'}
+  timeline:
+    - date: '2022-04-30'
+      text: {ar: 'اتفاق الحوار الاجتماعي يلتزم بالمعاش من 1320 يوما بدل 3240.', fr: 'L’accord de dialogue social prévoit la pension dès 1 320 jours au lieu de 3 240.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/en/node/10747'}
+    - date: '2025-03-03'
+      text: {ar: 'نشر القانون 02.24 بتغيير ظهير الضمان الاجتماعي.', fr: 'Publication de la loi 02.24 modifiant le dahir sur la sécurité sociale.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7383', fr: 'BO n° 7383'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7383_Ar.pdf'}
+      cites: [/ma/loi/2-24/art_1, /ma/loi/2-24/art_14]
+    - date: '2025-04-28'
+      text: {ar: 'نشر المرسوم 2.25.265 الذي يحدد مبلغ المعاش والحد الأدنى من 600 إلى 1000 درهم.', fr: 'Publication du décret 2.25.265 fixant le montant de la pension et son minimum de 600 à 1 000 DH.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7399', fr: 'BO n° 7399'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7399_Ar.pdf'}
+      cites: [/ma/decret/2-25-265/art_1, /ma/decret/2-25-265/art_2]
+    - date: '2025-05-01'
+      text: {ar: 'الصندوق الوطني للضمان الاجتماعي يبدأ صرف المعاش.', fr: 'La CNSS commence à verser la pension.'}
+      source: {name: {ar: 'بوابة المغرب', fr: 'maroc.ma'}, url: 'https://maroc.ma/fr/actualites/la-pension-de-vieillesse-mise-en-oeuvre-partir-du-1er-mai-2025-cnss'}
+
+- key: amo-public
+  title: {ar: 'التأمين عن المرض للقطاع العام إلى الضمان الاجتماعي (54.23)', fr: 'L’AMO du secteur public à la CNSS (loi 54.23)'}
+  stage: coming
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'قانون منشور، يدخل حيز التنفيذ في فاتح فبراير 2027: يدبر الصندوق الوطني للضمان الاجتماعي التأمين عن المرض للقطاع العام.', fr: 'Loi publiée, en vigueur le 1er février 2027 : la CNSS gère l’assurance maladie du secteur public.'}
+  timeline:
+    - date: '2026-01-29'
+      text: {ar: 'نشر القانون 54.23 في الجريدة الرسمية؛ يدخل حيز التنفيذ بعد اثني عشر شهرا من فاتح الشهر الموالي لنشره.', fr: 'Publication de la loi 54.23 ; entrée en vigueur douze mois après le premier jour du mois suivant.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7478', fr: 'BO n° 7478'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7478_Ar.pdf'}
+      cites: [/ma/loi/54-23/art_1, /ma/loi/54-23/art_19]
+
+- key: pensions-reform
+  title: {ar: 'إصلاح أنظمة التقاعد', fr: 'La réforme des retraites'}
+  stage: announced
+  stages: *stages
+  checked_on: '2026-10-26'
+  line: {ar: 'معلن فقط: لجنة وطنية في مرحلة التشخيص. لا مشروع قانون، والسن القانوني في القطاع الخاص 60 سنة.', fr: 'Seulement annoncée : une commission nationale au stade du diagnostic. Aucun projet de loi ; l’âge légal dans le privé est de 60 ans.'}
+  timeline:
+    - date: '2025-02-27'
+      text: {ar: 'وزارة الاقتصاد والمالية تعلن التوجه نحو قطبين، عمومي وخاص.', fr: 'Le ministère de l’Économie annonce l’orientation vers deux pôles, public et privé.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية', fr: 'Ministère de l’Économie et des Finances'}, url: 'https://www.finances.gov.ma/fr/pages/detail-actualite.aspx?fiche=7187'}
+    - date: '2025-07-17'
+      text: {ar: 'اجتماع اللجنة الوطنية لإصلاح التقاعد وإحداث لجنة تقنية.', fr: 'Réunion de la commission nationale de la réforme des retraites et création d’une commission technique.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/en/node/12468'}
+    - date: '2026-04-17'
+      text: {ar: 'جولة الحوار الاجتماعي: الإصلاح ما زال في تشخيص كل صندوق.', fr: 'Dialogue social : la réforme en est encore au diagnostic de chaque caisse.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/fr/node/12882'}
+    - date: '2026-10-23'
+      text: {ar: 'مع مشروع قانون المالية 2027، أعلن وزير الاقتصاد والمالية الرفع التدريجي للمعاش الأدنى إلى 3.000 درهم (1.700 من 2027) وحصة الأرامل من 50% إلى 100%، مع إطلاق إصلاح أنظمة التقاعد بالحوار. معلن، ماشي فمواد المشروع.', fr: 'Avec le projet de loi de finances 2027, le ministre annonce la hausse progressive de la pension minimale à 3 000 DH (1 700 dès 2027) et la part des veuves de 50 % à 100 %, avec le lancement de la réforme des retraites par le dialogue. Annoncé, pas dans les articles du projet.'}
+      source: {name: {ar: 'خطاب الوزير أمام البرلمان، الصفحة 12 من الملف', fr: 'Discours du ministre au Parlement, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+  rumours:
+    - claim: {ar: 'سن التقاعد ارتفع إلى 63 سنة', fr: 'L’âge de la retraite passe à 63 ans'}
+      truth: {ar: 'لا يقترحه أي نص رسمي للضمان الاجتماعي. السن في القطاع الخاص 60 سنة.', fr: 'Aucun texte officiel ne le propose pour la CNSS. L’âge dans le privé est de 60 ans.'}
+      cites: [/ma/loi/65-99/art_526, /ma/dahir/1-72-184/art_53]
+
+- key: labour-code-revision
+  title: {ar: 'مراجعة مدونة الشغل', fr: 'La révision du Code du travail'}
+  stage: announced
+  stages: *stages
+  checked_on: '2026-10-20'
+  line: {ar: 'معلنة فقط: لجان في الحوار الاجتماعي. لا مشروع قانون، والمادة 193 وحدها عدلت في 2026.', fr: 'Seulement annoncée : des commissions du dialogue social. Aucun projet de loi ; seul l’article 193 a changé en 2026.'}
+  timeline:
+    - date: '2025-04-30'
+      text: {ar: 'جولة الحوار الاجتماعي: لجان لصياغة مراجعة مدونة الشغل وقانون النقابات.', fr: 'Dialogue social : des commissions pour rédiger la révision du Code du travail et la loi sur les syndicats.'}
+      source: {name: {ar: 'رئاسة الحكومة', fr: 'Chef du gouvernement'}, url: 'https://www.cg.gov.ma/en/node/12332'}
+    - date: '2025-05-08'
+      text: {ar: 'الوزير يعلن تأطير العمل عن بعد في مدونة الشغل.', fr: 'Le ministre annonce l’encadrement du télétravail dans le Code du travail.'}
+      source: {name: {ar: 'بوابة المغرب', fr: 'maroc.ma'}, url: 'https://maroc.ma/fr/actualites/maroc-le-teletravail-bientot-encadre-par-le-code-du-travail'}
+  rumours:
+    - claim: {ar: 'صودق على مدونة شغل جديدة في ماي 2026', fr: 'Un nouveau Code du travail a été adopté en mai 2026'}
+      truth: {ar: 'لا أثر لذلك في مجلس الحكومة ولا في البرلمان ولا في الجريدة الرسمية.', fr: 'Aucune trace au Conseil de gouvernement, au Parlement ni au Bulletin officiel.'}
+    - claim: {ar: 'رخصة الأبوة صارت 15 يوما', fr: 'Le congé de paternité est de 15 jours'}
+      truth: {ar: 'خمسة عشر يوما للموظفين منذ 2022 (القانون 30.22). وفي القطاع الخاص ثلاثة أيام.', fr: 'Quinze jours pour les fonctionnaires depuis 2022 (loi 30.22). Dans le privé, trois jours.'}
+      cites: [/ma/loi/65-99/art_269, /ma/loi/30-22/art_1]
+
+# The 2027 finance bill's lines for a worker (the finance-bill review, P9): a bill, never law; its way
+# through Parliament and its tool are the tax topic's.
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: الأجر والتعويضات', fr: 'Le projet de loi de finances 2027 : le salaire et les indemnités'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: من 2027 الشريحة المعفية 60.000 درهم فالعام والمصاريف المهنية 45% لكل الأجراء (35.000 على الأكثر)؛ ومن 2031 التعويضات اللي كتخلص كل شهر على الخدمة كتولي أجر خاضع للضريبة.', fr: 'Un projet, pas une loi : dès 2027, la tranche exonérée à 60 000 DH par an et les frais professionnels à 45 % pour tous les salariés (35 000 au plus) ; dès 2031, les indemnités versées chaque mois pour l’emploi deviennent du salaire imposable.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26؛ مادته 7 كتبدل المواد 57 و59 و73 من المدونة العامة للضرائب، وكتزيد جداول انتقالية من 2027 حتى 2030 فالمادة 247.', fr: 'Dépôt du projet de loi de finances 60.26 ; son article 7 modifie les articles 57, 59 et 73 du CGI et ajoute des barèmes transitoires de 2027 à 2030 à l’article 247.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_59, /ma/code/cgi/art_73, /ma/projet-loi/60-26/art_7]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين. الجدول والمصاريف 45% والتعويضات ديال 2031 دازو كما أودعتهم الحكومة.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers. Le barème, les 45 % de frais et les indemnités de 2031 passent tels que déposés.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}

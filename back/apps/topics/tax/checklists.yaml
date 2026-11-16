@@ -1,0 +1,20 @@
+# The papers a step asks for (the tax review), each named by its article, ticked on the reader's phone only.
+
+- key: sell-papers
+  title: {ar: 'أوراق التصريح بالربح العقاري', fr: 'Les pièces de la déclaration du profit foncier'}
+  lead:
+    ar: 'التصريح كيتدار داخل 30 يوما من البيع، مع الوثائق اللي كتبين مصاريف الشرا والأشغال؛ بلا بيها، المصاريف كتتحسب 15% جزافيا.'
+    fr: 'La déclaration se fait dans les 30 jours de la vente, avec les pièces justifiant les frais d’achat et les travaux ; sans elles, les frais sont comptés à 15 % forfaitaires.'
+  items:
+    - text: {ar: 'عقد البيع', fr: 'L’acte de vente'}
+      cites: [/ma/code/cgi/art_83]
+    - text: {ar: 'عقد الشرا القديم، ولا جرد التركة إلا كان العقار موروث', fr: 'L’ancien acte d’achat, ou l’inventaire de succession pour un bien hérité'}
+      cites: [/ma/code/cgi/art_65]
+    - text: {ar: 'وصولات مصاريف الشرا: التسجيل، المحافظة، الموثق، السمسار', fr: 'Les justificatifs des frais d’achat : enregistrement, conservation, notaire, courtage'}
+      cites: [/ma/code/cgi/art_65]
+    - text: {ar: 'فواتير الأشغال: البناء، التوسيع، الترميم، التجهيز', fr: 'Les factures des travaux : construction, agrandissement, rénovation, équipement'}
+      cites: [/ma/code/cgi/art_65]
+    - text: {ar: 'كشف فوائد قرض الشرا، إلا كان', fr: 'Le relevé des intérêts du prêt d’achat, le cas échéant'}
+      cites: [/ma/code/cgi/art_65]
+    - text: {ar: 'للسكن الرئيسي: ما يثبت السكنى خمس سنين', fr: 'Pour l’habitation principale : ce qui prouve cinq ans d’occupation'}
+      cites: [/ma/code/cgi/art_63]

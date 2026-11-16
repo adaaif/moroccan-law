@@ -1,0 +1,24 @@
+# The rates the refund tool reads (S17 of the health review), a table per fund: each row from its date, with the
+# decree and article that set it. A medicine's reference is its public price (law 65.00, art. 12). A new decree is a row
+# more. Shares are percentages of the national reference tariff (of the public price for the CNOPS's medicines).
+
+# The CNSS (private-sector employees, AMO Tadamon, the self-employed, AMO Achamil): decree 2.05.737 (Adala, to 20 Nov 2014),
+# art. 2: 70 %, 90 % for a serious, long or costly illness treated in a public hospital.
+- key: refund-cnss
+  title: {ar: 'نسب التغطية لدى الصندوق الوطني للضمان الاجتماعي', fr: 'Les taux de couverture de la CNSS'}
+  unit: {ar: '% من التعريفة المرجعية الوطنية', fr: '% du tarif national de référence'}
+  rows:
+    - from: '2014-11-20'
+      values: {care: 70, medicine: 70, hospital: 70, public_hospital: 70, long_public: 90, long_private: 70, share_cap: 100}
+      cites: [/ma/decret/2-05-737/art_2, /ma/loi/65-00/art_12]
+
+# The CNOPS (civil servants, until 31 Jan 2027): decree 2.05.736 (Adala, as of BO 5344, 18 Aug 2005), arts 1–2: 80 %
+# outpatient, 90 % hospital and 100 % in a public one, 70 % of a medicine's public price; a long illness's share capped at
+# 10 %, none for a costly one.
+- key: refund-cnops
+  title: {ar: 'نسب التغطية لدى الصندوق الوطني لمنظمات الاحتياط الاجتماعي', fr: 'Les taux de couverture de la CNOPS'}
+  unit: {ar: '% من التعريفة المرجعية الوطنية', fr: '% du tarif national de référence'}
+  rows:
+    - from: '2005-08-18'
+      values: {care: 80, medicine: 70, hospital: 90, public_hospital: 100, long_public: 100, long_private: 90, share_cap: 10}
+      cites: [/ma/decret/2-05-736/art_1, /ma/decret/2-05-736/art_2, /ma/loi/65-00/art_12]

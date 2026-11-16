@@ -1,0 +1,518 @@
+{
+  "dh": "{{amount}} DH",
+  "share": "Envoyer sur WhatsApp",
+  "remind": "Me le rappeler dans l’agenda",
+  "yes": "Oui",
+  "no": "Non",
+  "strip": {
+    "left": "Les jours du délai, à partir du lendemain du jour de départ"
+  },
+  "return": {
+    "title": "Puis-je la renvoyer ?",
+    "lead": "Où vous avez acheté, et le jour de la réception ou de l’acceptation : le dernier jour pour vous rétracter et ce qu’il reste, selon la loi 31-08.",
+    "lastDay": "Dernier jour pour vous rétracter",
+    "passed": "Le délai est passé. Reste la garantie légale si le bien a un vice.",
+    "today": "C’est aujourd’hui le dernier jour.",
+    "left_zero": "C’est aujourd’hui le dernier jour.",
+    "left_one": "Il reste un jour.",
+    "left_other": "Il reste {{count}} jours.",
+    "excludedOver": "Dans ces cas, pas de droit de rétractation",
+    "none": "Pas de rétractation",
+    "excludedLine": "Un bien fait sur mesure ou périssable, un logiciel descellé, un journal, un service commencé avec votre accord : pas de rétractation, sauf accord contraire (art. 38).",
+    "shopOver": "En magasin, pas de droit de rétractation",
+    "shopLine": "Mais la garantie légale court jusqu’au {{date}} si un vice apparaît (art. 65).",
+    "after": {
+      "online": "Après la rétractation, le fournisseur rembourse la totalité sur-le-champ, au plus tard dans les quinze jours ; ensuite des intérêts au taux légal courent (art. 37). Le consommateur ne supporte que les frais de retour, le cas échéant (art. 36).",
+      "door": "La rétractation s’envoie avec le formulaire détachable du contrat, par tout moyen prouvant la réception (art. 49). Rien ne peut être exigé avant la fin du délai, et les engagements et ordres de paiement sont rendus dans les quinze jours de la rétractation (art. 50).",
+      "credit": "La rétractation se fait avec le formulaire joint à l’offre, déposé contre un reçu portant le cachet et la signature du prêteur, sans inscription dans aucun fichier (art. 85). Si le crédit finance un achat précis, la vente est résolue de plein droit (art. 97)."
+    },
+    "message": "Calculé sur 3adala, d’après la loi 31-08 :",
+    "channels": {
+      "online": "En ligne ou par téléphone",
+      "door": "Un vendeur est venu",
+      "credit": "À crédit",
+      "shop": "En magasin"
+    },
+    "remindTitle": "Dernier jour pour se rétracter",
+    "where": "Où avez-vous acheté ?",
+    "day": {
+      "online": "Quand avez-vous reçu le produit ?",
+      "service": "Quand avez-vous accepté l’offre ?",
+      "door": "Quand avez-vous passé commande ?",
+      "credit": "Quand avez-vous accepté l’offre de crédit ?",
+      "shop": "Quand avez-vous reçu le bien ?"
+    },
+    "what": "Qu’avez-vous acheté ?",
+    "goods": "Un produit",
+    "service": "Un service",
+    "confirmed": "Avez-vous reçu par écrit la confirmation des informations (adresse du fournisseur, comment se rétracter) ?",
+    "exclusions": "Fait sur mesure, périssable, logiciel descellé, journal, ou service commencé avec mon accord",
+    "toGuarantee": "Calculer la garantie",
+    "full": "Les délais de cette loi sont francs (art. 203) : le jour de la réception ne compte pas. 3adala donne le dernier jour selon la lecture la plus étroite.",
+    "toLetter": "La lettre de rétractation"
+  },
+  "guarantee": {
+    "title": "Ma garantie court-elle encore ?",
+    "lead": "Le jour de la livraison, la garantie du magasin, les jours où le bien est resté chez eux pour réparation : le dernier jour de chaque garantie.",
+    "over": "La garantie légale court jusqu’au",
+    "passed": "L’année est passée : l’action en garantie légale est éteinte (art. 65).",
+    "left_zero": "C’est aujourd’hui le dernier jour.",
+    "left_one": "Il reste un jour.",
+    "left_other": "Il reste {{count}} jours.",
+    "shopPassed": "La garantie du magasin a pris fin le {{date}}.",
+    "shopLine_zero": "Garantie du magasin jusqu’au {{date}} : c’est aujourd’hui le dernier jour.",
+    "shopLine_one": "Garantie du magasin jusqu’au {{date}}, il reste un jour.",
+    "shopLine_other": "Garantie du magasin jusqu’au {{date}}, il reste {{count}} jours.",
+    "noShop": "Sans garantie du magasin, reste la garantie légale, qu’aucune clause ne peut raccourcir.",
+    "legal": "Garantie légale",
+    "shop_zero": "Garantie du magasin",
+    "shop_one": "Garantie du magasin : un mois",
+    "shop_other": "Garantie du magasin : {{count}} mois",
+    "repairs_zero": "Jours de réparation",
+    "repairs_one": "Un jour de réparation en plus",
+    "repairs_other": "{{count}} jours de réparation en plus",
+    "message": "Calculé sur 3adala, d’après la loi 31-08 :",
+    "remindTitle": "Dernier jour de la garantie légale",
+    "remindShop": "Dernier jour de la garantie du magasin",
+    "caption": "Le trait vertical sur chaque barre, c’est aujourd’hui.",
+    "delivered": "Quand avez-vous reçu le bien ?",
+    "kind": "De quoi s’agit-il ?",
+    "movable": "Un objet (meuble)",
+    "immovable": "Un logement ou un terrain (immeuble)",
+    "card": "Garantie du magasin ou du fabricant (sur la carte)",
+    "noCard": "Aucune",
+    "months_one": "Un mois",
+    "months_other": "{{count}} mois",
+    "other": "Autre durée",
+    "monthsAsk": "Combien de mois ?",
+    "repairAsk": "Combien de jours le bien est-il resté chez eux pour réparation ?",
+    "repairHint": "Du reçu de dépôt au reçu de restitution que remet le fournisseur (art. 73).",
+    "askTitle": "Ce que peut demander l’acheteur",
+    "ask": "Le vice établi : l’annulation de la vente et le remboursement du prix. Qui préfère garder le bien ne peut obtenir de réduction du prix. Des dommages-intérêts si le vendeur connaissait le vice, ce qui est toujours présumé d’un commerçant qui vend les produits de son métier.",
+    "k1": "L’article 65 s’ouvre sur « par dérogation aux articles 573 et 553 » ; 3adala le lit comme écartant pour le consommateur l’avis de sept jours qu’exige l’article 553, ne laissant que le délai d’un an.",
+    "toLetter": "La lettre de demande de garantie",
+    "toJourney": "La garantie étape par étape"
+  },
+  "late": {
+    "title": "La commande est en retard",
+    "lead": "La date écrite sur le document, et le jour où le fournisseur a reçu votre avis : les jours où vous pouvez résoudre sans juge, et le dernier jour du remboursement.",
+    "distanceOver": "Dernier jour pour exécuter la commande",
+    "distancePassed": "Le délai est passé, sauf accord sur un autre délai (art. 39).",
+    "left_zero": "C’est aujourd’hui le dernier jour.",
+    "left_one": "Il reste un jour.",
+    "left_other": "Il reste {{count}} jours.",
+    "fromOver": "La résolution sans juge est possible à partir du",
+    "until": "Et jusqu’au {{date}}, cinq jours après les sept (art. 13).",
+    "nowOver": "La résolution sans juge est possible maintenant, jusqu’au",
+    "nowLine_zero": "C’est aujourd’hui le dernier des cinq jours.",
+    "nowLine_one": "Il reste un jour des cinq.",
+    "nowLine_other": "Il reste {{count}} jours des cinq.",
+    "passedOver": "Les cinq jours ont pris fin le",
+    "passedLine": "La résolution sans juge de l’article 13 se faisait dans ces jours. Reste ce que prévoit le Code des obligations et des contrats.",
+    "distanceRefund": "Si le produit manque, le consommateur doit en être informé et remboursé sur-le-champ, au plus tard dans les quinze jours du paiement ; ensuite des intérêts au taux légal courent (art. 40).",
+    "refund": "Si le fournisseur reçoit l’avis le {{notice}}, il rembourse les sommes versées au plus tard le {{by}}, et des intérêts au taux légal courent dès le {{from}} (art. 14).",
+    "message": "Calculé sur 3adala, d’après la loi 31-08 :",
+    "remindDistance": "Dernier jour pour exécuter la commande",
+    "remindFrom": "La commande en retard peut être résolue à partir d’aujourd’hui",
+    "remindUntil": "Dernier jour pour résoudre sans juge la commande en retard",
+    "thirty": "Trente jours après la confirmation",
+    "caption": "Les sept jours après la date, puis les cinq jours pour résoudre, puis sept jours pour rembourser. Le trait vertical sur chaque barre, c’est aujourd’hui.",
+    "seven": "Sept jours après la date",
+    "five": "Cinq jours pour résoudre",
+    "seven2": "Sept jours pour rembourser",
+    "mode": "Comment avez-vous acheté ?",
+    "modes": {
+      "date": "Une date est écrite sur le document",
+      "distance": "Une commande en ligne ou par téléphone"
+    },
+    "confirmedAsk": "Quand le fournisseur a-t-il confirmé avoir reçu la commande ?",
+    "promisedAsk": "Quelle est la date de livraison écrite ?",
+    "noticeAsk": "Quand le fournisseur a-t-il reçu votre avis ? (si vous l’avez envoyé)",
+    "noticeHint": "Sans elle, 3adala compte du premier jour possible.",
+    "priceAsk": "Quel est le prix ? (facultatif)",
+    "required": "Au-delà de 3 000 DH, le fournisseur doit écrire la date de livraison (art. 12, et art. 28 du décret 2-12-503).",
+    "notRequired": "À 3 000 DH ou moins, le décret n’impose pas d’écrire la date ; les jours ci-dessus s’appliquent si elle est écrite.",
+    "distanceNote": "Les parties peuvent convenir d’un autre délai que trente jours. Les délais de cette loi sont francs : le jour de la confirmation ne compte pas.",
+    "forceNote": "Pas de résolution sans juge si le retard est dû à la force majeure, ni si le fournisseur a livré avant de recevoir l’avis (art. 13).",
+    "toLetter": "La lettre de résolution"
+  },
+  "credit": {
+    "title": "Le crédit",
+    "lead": "Le dernier jour pour vous rétracter, ce que coûte un remboursement anticipé, et le plus que le prêteur peut réclamer si vous ne payez plus, selon la loi 31-08.",
+    "homeOfferOver": "En crédit immobilier, l’offre ne s’accepte pas avant",
+    "homeOffer": "dix jours",
+    "homeOfferLine": "L’offre est maintenue quinze jours au moins après sa réception, ne s’accepte qu’après dix jours, et rien n’est versé avant l’acceptation (art. 120 et 121).",
+    "withdrawOver": "Dernier jour pour renoncer au crédit",
+    "passed": "Les sept jours sont passés.",
+    "left_zero": "C’est aujourd’hui le dernier jour.",
+    "left_one": "Il reste un jour.",
+    "left_other": "Il reste {{count}} jours.",
+    "earlyOver": "Le remboursement anticipé",
+    "atMost2": "2 % au plus",
+    "free": "Sans indemnité",
+    "earlyHome": "En crédit immobilier, l’indemnité de remboursement anticipé n’est due que si le contrat la prévoit, et ne dépasse pas 2 % du capital restant dû (art. 132).",
+    "earlyConsumer": "En crédit à la consommation, l’emprunteur peut rembourser à tout moment tout ou partie, sans indemnité ; toute clause contraire est nulle (art. 103).",
+    "defaultOver": "Le plus que le prêteur réclame en intérêts de retard",
+    "atMost4": "4 % au plus",
+    "defaultHome": "En crédit immobilier : le prêteur ne relève pas le taux tant qu’il ne demande pas la résolution ; s’il la demande, les intérêts de retard ne dépassent pas 2 % du capital restant (art. 133).",
+    "defaultConsumer": "Si le prêteur exige tout le restant dû sur-le-champ. Sinon, une indemnité de {{indemnity}} au plus (art. 105).",
+    "atMost4Inst": "4 % des échéances impayées",
+    "message": "Calculé sur 3adala, d’après la loi 31-08 :",
+    "qs": {
+      "withdraw": "Renoncer",
+      "early": "Rembourser plus tôt",
+      "default": "Je ne peux plus payer"
+    },
+    "question": "Que voulez-vous savoir ?",
+    "kind": "Quel crédit ?",
+    "consumer": "Crédit à la consommation ou paiement échelonné",
+    "home": "Crédit immobilier",
+    "accepted": "Quand avez-vous accepté l’offre de crédit ?",
+    "capital": "Combien reste-t-il du capital ? (en dirhams)",
+    "unpaid": "Combien d’échéances échues et impayées ? (en dirhams)",
+    "deferred": "Combien d’échéances le prêteur a-t-il accepté de reporter ? (en dirhams, s’il y en a)",
+    "deferredHint": "Si le prêteur accepte de reporter des échéances, l’indemnité ne dépasse pas 2 % de celles-ci (art. 105).",
+    "defaultWhen": "Est défaillant l’emprunteur qui n’a pas payé trois échéances successives et n’a pas répondu à la mise en demeure (art. 109).",
+    "nothingElse": "L’emprunteur ne doit aucune autre indemnité ni aucun autre coût, sauf les frais que le prêteur prouve avoir payés à cause de la défaillance, sans forfait de recouvrement (art. 108 et 110).",
+    "court": "L’action du prêteur se fait devant le tribunal du domicile de l’emprunteur, dans les deux ans ; si l’impayé vient d’un licenciement ou d’une situation sociale imprévue, une médiation d’abord, et le président du tribunal peut accorder un délai (art. 111 et 149).",
+    "orderNote": "Ce sont les plafonds que la loi écrit. Le taux maximum des intérêts de retard est fixé par un arrêté conjoint des ministres du commerce et des finances (décret 2-12-503, art. 33), que 3adala n’a pas encore trouvé au Bulletin officiel. Le contrat peut réclamer moins, jamais plus.",
+    "ceilingNote": "Ce sont les plafonds de la loi, calculés en dirhams à partir des montants saisis. Le contrat peut réclamer moins, jamais plus.",
+    "remindTitle": "Dernier jour pour renoncer au crédit",
+    "toJourney": "Le crédit étape par étape"
+  },
+  "where": {
+    "title": "Auprès de qui réclamer ?",
+    "lead": "Selon le secteur : la première porte, puis le service officiel, l’article sur lequel repose chaque porte, et ce qu’il faut apporter.",
+    "message": "Où réclamer ({{sector}}), d’après 3adala :",
+    "sector": "Sur quoi porte la réclamation ?",
+    "sectors": {
+      "shop": "Un magasin",
+      "online": "Un achat en ligne",
+      "bank": "La banque et le crédit",
+      "telecom": "Internet et téléphone",
+      "utility": "L’eau et l’électricité",
+      "insurance": "L’assurance",
+      "food": "L’alimentation",
+      "prices": "Les prix"
+    },
+    "open": "Ouvrir le service",
+    "doors": {
+      "supplier": {
+        "title": "Le fournisseur lui-même",
+        "what": "Avec la facture ou le ticket, et le bon de garantie s’il existe. La garantie légale s’applique à toute vente entre fournisseur et consommateur."
+      },
+      "supplierOnline": {
+        "title": "Le fournisseur, à l’adresse donnée pour les réclamations",
+        "what": "Le consommateur doit recevoir par écrit l’adresse où réclamer, et les numéros dédiés ne peuvent être surtaxés. C’est au fournisseur de prouver qu’il a informé et respecté les délais."
+      },
+      "portal": {
+        "title": "Le portail du consommateur",
+        "what": "Le portail du ministère de l’Industrie et du Commerce pour déposer une réclamation ou demander une information, tel que le donne la page du ministère. Des enquêteurs assermentés de l’administration recherchent les infractions.",
+        "link": "Déposer une réclamation"
+      },
+      "chikaya": {
+        "title": "Le portail national des réclamations",
+        "what": "Le portail des administrations publiques pour recevoir les réclamations.",
+        "link": "chikaya.ma"
+      },
+      "association": {
+        "title": "Une association de consommateurs",
+        "what": "Les associations habilitées agissent pour l’intérêt collectif, et demandent réparation au nom de consommateurs lésés par le même fournisseur quand deux au moins les mandatent par écrit."
+      },
+      "court": {
+        "title": "Le tribunal de première instance de votre ville",
+        "what": "Seul compétent malgré toute clause contraire : celui du domicile ou de la résidence du consommateur, ou du lieu du dommage, à son choix."
+      },
+      "bank": {
+        "title": "La banque elle-même",
+        "what": "Le service des réclamations de la banque d’abord, avec le contrat, l’offre préalable et les relevés."
+      },
+      "cmmb": {
+        "title": "Le Centre marocain de médiation bancaire",
+        "what": "Une médiation entre la banque et son client, après une réclamation à la banque."
+      },
+      "bkam": {
+        "title": "Bank Al-Maghrib",
+        "what": "Une réclamation écrite avec les pièces, comme Bank Al-Maghrib décrit sa procédure, après la banque.",
+        "link": "La procédure de Bank Al-Maghrib"
+      },
+      "operator": {
+        "title": "L’opérateur",
+        "what": "Le service client de l’opérateur d’abord. Les délégataires d’un service public sont tenus des obligations du fournisseur."
+      },
+      "anrt": {
+        "title": "L’ANRT",
+        "what": "Après l’opérateur."
+      },
+      "company": {
+        "title": "La société ou la régie de distribution",
+        "what": "L’agence de la société, avec la facture et le contrat. La facture indique le total toutes taxes comprises."
+      },
+      "insurer": {
+        "title": "L’assureur",
+        "what": "Le service des réclamations de l’assureur d’abord, avec le contrat et les courriers."
+      },
+      "acaps": {
+        "title": "L’ACAPS",
+        "what": "Après l’assureur."
+      },
+      "seller": {
+        "title": "Le vendeur",
+        "what": "Avec la facture et le produit. Aucun aliment dangereux pour la santé ne peut être mis sur le marché."
+      },
+      "onssa": {
+        "title": "L’ONSSA",
+        "what": "Les autorités compétentes imposent le retrait du marché d’un aliment dangereux."
+      },
+      "pricesShop": {
+        "title": "Le magasin lui-même",
+        "what": "Le prix affiché est le prix total ; le refus de vente sans motif légitime et la vente liée sont interdits."
+      },
+      "competition": {
+        "title": "Le Conseil de la concurrence",
+        "what": "Pour les pratiques anticoncurrentielles ; les prix sont libres, sauf ceux d’une liste fixée par voie réglementaire."
+      }
+    },
+    "bring": "Ce qu’il faut apporter",
+    "papers": {
+      "invoice": "La facture ou le ticket de caisse",
+      "guaranteeCard": "Le bon de garantie et les reçus de réparation",
+      "dates": "Les dates : achat, livraison, avis",
+      "order": "Le numéro de commande et le message de confirmation",
+      "confirmation": "La confirmation écrite des informations",
+      "messages": "Les messages et courriers avec le fournisseur",
+      "contract": "Le contrat",
+      "offer": "L’offre préalable de crédit",
+      "statements": "Les relevés",
+      "letters": "Les courriers envoyés et reçus",
+      "bills": "Les factures",
+      "meter": "Une photo du compteur",
+      "policy": "Le contrat d’assurance",
+      "product": "Le produit, ou sa photo et son emballage",
+      "photo": "Une photo du prix affiché"
+    },
+    "practice": "L’ordre des portes après le fournisseur est celui que décrivent les organismes eux-mêmes ; la loi 31-08 n’impose pas d’ordre avant le tribunal.",
+    "toPage": "La page complète"
+  },
+  "clause": {
+    "title": "Cette clause est-elle abusive ?",
+    "lead": "Les dix-sept sortes que cite l’article 18 de la loi 31-08 à titre d’exemple, et ce que dit la loi de toute clause abusive.",
+    "typeAsk": "Tapez des mots de la clause, ou choisissez la sorte qui lui ressemble",
+    "placeholder": "Par exemple : la société peut résilier à tout moment",
+    "found_zero": "",
+    "found_one": "Une sorte peut lui ressembler :",
+    "found_other": "{{count}} sortes peuvent lui ressembler :",
+    "noneFound": "3adala ne trouve pas de sorte avec ces mots ; toutes les sortes sont ci-dessous.",
+    "kinds": {
+      "1": "Une clause qui supprime ou réduit votre droit à réparation si le fournisseur manque à ses obligations.",
+      "2": "Une clause qui permet au fournisseur de modifier seul les caractéristiques de ce qu’il livrera, sauf des changements techniques sans hausse de prix ni baisse de qualité.",
+      "3": "Une clause qui exonère ou limite la responsabilité du fournisseur en cas de décès ou de dommage corporel causé par lui.",
+      "4": "Une clause qui supprime ou limite vos droits si le fournisseur n’exécute pas ou exécute mal, comme compenser sa créance sur vous avec ce qu’il vous doit.",
+      "5": "Une clause qui vous engage définitivement alors que l’engagement du fournisseur dépend de sa seule volonté.",
+      "6": "Une clause qui vous impose une indemnité excessive, ou plusieurs indemnités et pénalités cumulées, si vous manquez à vos obligations.",
+      "7": "Une clause qui réserve au fournisseur seul le droit de résilier, ou lui laisse les sommes versées pour des prestations non fournies quand c’est lui qui résilie.",
+      "8": "Une clause qui permet au fournisseur de mettre fin à un contrat à durée indéterminée sans préavis raisonnable, sauf motif grave.",
+      "9": "Une clause qui reconduit automatiquement le contrat faute d’opposition, avec une date limite d’opposition très éloignée de son terme.",
+      "10": "Une clause qui constate votre acceptation définitive de conditions que vous n’avez pas pu lire avant le contrat.",
+      "11": "Une clause qui permet au fournisseur de modifier seul le contrat sans motif valable prévu et sans vous en informer.",
+      "12": "Une clause qui fixe le prix à la livraison, ou permet de l’augmenter, sans droit pour vous de résilier s’il dépasse beaucoup le prix convenu.",
+      "13": "Une clause qui fait du fournisseur seul le juge de la conformité de ce qu’il livre, ou de l’interprétation du contrat.",
+      "14": "Une clause qui limite l’obligation du fournisseur de respecter les engagements de ses mandataires, ou soumet ses obligations à une formalité particulière.",
+      "15": "Une clause qui vous oblige à exécuter vos obligations même si le fournisseur n’exécute pas les siennes.",
+      "16": "Une clause qui permet de céder le contrat à un autre fournisseur réduisant vos garanties sans votre accord.",
+      "17": "Une clause qui supprime ou entrave votre droit d’agir en justice ou de faire recours, limite vos preuves ou vous impose une charge de la preuve qui incombe normalement à l’autre partie."
+    },
+    "ifSo": "Si la clause est de cette sorte et qu’elle déséquilibre fortement le contrat à votre détriment, la loi la tient pour abusive : elle est nulle et non avenue.",
+    "allTitle": "Ce que dit la loi de toute clause abusive",
+    "all": {
+      "void": "La clause abusive est nulle et non avenue ; le reste du contrat s’applique s’il peut subsister sans elle (art. 19).",
+      "burden": "En cas de litige, le fournisseur doit prouver que la clause n’est pas abusive (art. 18).",
+      "public": "Ces règles sont d’ordre public : on ne peut y déroger (art. 20).",
+      "court": "Les sortes sont citées à titre d’exemple, sous l’appréciation des tribunaux : c’est le tribunal qui décide pour chaque contrat.",
+      "association": "Une association habilitée demande au tribunal de supprimer la clause du modèle de contrat pour tous les consommateurs (art. 162)."
+    },
+    "notYours": "3adala ne dit pas que votre clause est abusive : il montre les sortes que cite la loi et ce qu’elle en dit.",
+    "message": "La clause abusive dans la loi 31-08, d’après 3adala :",
+    "toJourney": "La clause abusive étape par étape"
+  },
+  "prices": {
+    "title": "Les prix fixés par l’État",
+    "lead": "Le sucre : le prix maximum sortie d’usine selon la présentation, et ce qu’ajoutent le grossiste et le détaillant, chaque chiffre avec l’arrêté qui le fixe.",
+    "over": "{{what}} · {{date}}",
+    "withMargins": "Le grossiste y ajoute {{wholesale}} au plus, le détaillant {{retail}} au plus : au total {{total}} le kilogramme.",
+    "noMargins": "L’arrêté de cette date ne contient pas les marges.",
+    "before": "3adala ne trouve pas de prix pour cette date.",
+    "none": "—",
+    "message": "Le prix maximum du sucre, d’après 3adala :",
+    "p": {
+      "g1": "Sucre granulé, sac de 1 kg",
+      "g2": "Sucre granulé, sac de 2 kg",
+      "g5": "Sucre granulé, sac de 5 kg",
+      "loaf": "Pain de sucre de 2 kg",
+      "lump": "Sucre en morceaux, boîte de 1 kg",
+      "bulk50": "Sucre granulé 99,5, sac de 50 kg"
+    },
+    "factory": "Prix maximum sortie d’usine",
+    "order": "Arrêté {{order}}, Bulletin officiel n° {{issue}}, à compter du {{date}}.",
+    "what": "Présentation",
+    "when": "Quand",
+    "today": "Aujourd’hui",
+    "years": "Le prix au fil des ans",
+    "from": "À compter du {{date}}",
+    "byOrder": "Arrêté {{order}} · BO n° {{issue}}",
+    "notice": "Ce sont les prix maximaux sortie d’usine que fixent les arrêtés, et les marges maximales des revendeurs calculées sur ce prix telles que les écrit l’arrêté 3243-23. L’arrêté de base 1964-06 n’est pas encore dans 3adala ; il peut contenir d’autres règles.",
+    "medicines": "Les prix des médicaments attendent qu’une personne vérifie un échantillon de leur liste avant d’être montrés ici.",
+    "marginsLabel": "Arrêté 3243-23 : les marges"
+  },
+  "letters": {
+    "title": "Des lettres qui citent la loi",
+    "lead": "Choisissez la lettre, remplissez les champs, copiez-la ou envoyez-la. 3adala n’envoie rien, et les champs restent sur cette page.",
+    "which": "Quelle lettre ?",
+    "fields": {
+      "name": "Nom complet",
+      "supplier": "Le fournisseur (magasin, société, site)",
+      "item": "Le bien ou le service",
+      "day": "La date",
+      "day_online": "Date de réception du produit",
+      "day_door": "Date de la commande",
+      "day_credit": "Date d’acceptation de l’offre de crédit",
+      "day_late": "Date de livraison écrite",
+      "day_guarantee": "Date de livraison",
+      "day_subscription": "Date de la reconduction",
+      "order": "Numéro de commande ou de contrat",
+      "city": "Ville"
+    },
+    "preview": "La lettre",
+    "how": "Le droit s’exerce « par tout moyen prouvant la réception » : lettre recommandée avec accusé de réception, remise contre reçu, commissaire de justice. Pour une vente hors établissement, joindre le formulaire détachable ; pour un crédit, déposer le formulaire contre un reçu.",
+    "copy": "Copier la lettre",
+    "copied": "Copiée",
+    "nothingSent": "3adala n’envoie pas la lettre et ne la garde pas.",
+    "online": {
+      "name": "Rétractation d’un achat à distance",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : exercice du droit de rétractation – commande n° {{order}}\n\nMadame, Monsieur,\n\nJe vous informe que j’exerce mon droit de rétractation pour l’achat de {{item}}, objet de la commande n° {{order}}, reçue le {{day}}, dans le délai que prévoit l’article 36 de la loi n° 31-08 édictant des mesures de protection du consommateur.\n\nJe vous demande de me rembourser l’intégralité de la somme payée sur-le-champ, au plus tard dans les quinze jours suivant cette rétractation, conformément à l’article 37 de la même loi, au-delà desquels la somme porte intérêt au taux légal.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    },
+    "door": {
+      "name": "Rétractation d’une vente hors établissement",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : exercice du droit de rétractation – vente hors établissement\n\nMadame, Monsieur,\n\nJe vous informe que je me rétracte de la commande signée le {{day}} pour {{item}}, dans le délai de sept jours que prévoit l’article 49 de la loi n° 31-08 édictant des mesures de protection du consommateur ; je joins le formulaire détachable du contrat.\n\nJe vous rappelle que l’article 50 de la même loi interdit d’exiger toute contrepartie avant la fin du délai de rétractation et impose de rendre engagements et ordres de paiement dans les quinze jours de la rétractation.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    },
+    "credit": {
+      "name": "Rétractation d’un crédit à la consommation",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : rétractation de l’offre de crédit n° {{order}}\n\nMadame, Monsieur,\n\nJe vous informe que je reviens sur mon engagement au titre de l’offre de crédit n° {{order}}, acceptée le {{day}}, dans le délai de sept jours que prévoit l’article 85 de la loi n° 31-08 édictant des mesures de protection du consommateur ; je dépose le formulaire détachable contre un reçu portant votre cachet et votre signature.\n\nJe vous rappelle que cette rétractation n’entraîne aucune inscription dans un fichier, et que la vente financée par ce crédit, le cas échéant, est résolue de plein droit en application de l’article 97.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    },
+    "late": {
+      "name": "Résolution pour retard de livraison",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : résolution pour dépassement de la date de livraison – commande n° {{order}}\n\nMadame, Monsieur,\n\nVous avez fixé par écrit la livraison de {{item}} au {{day}}. Cette date est dépassée de plus de sept jours sans que le retard soit dû à la force majeure.\n\nJe résous donc l’engagement qui nous lie pour le bien non livré, conformément à l’article 13 de la loi n° 31-08 édictant des mesures de protection du consommateur ; il est résolu dès la réception du présent avis.\n\nJe vous demande de me rembourser les sommes versées d’avance dans les sept jours de la réception de cet avis, conformément à l’article 14 de la même loi, qui fait courir des intérêts au taux légal dès le huitième jour, sans préjudice de mon droit à réparation.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    },
+    "guarantee": {
+      "name": "Demande de garantie pour un vice",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : demande de mise en œuvre de la garantie pour un vice\n\nMadame, Monsieur,\n\nJ’ai acheté chez vous {{item}}, livré le {{day}}. Il présente un vice qui en diminue la valeur ou le rend impropre à l’usage auquel il est destiné.\n\nJe vous demande donc de mettre en œuvre la garantie légale des vices, que l’article 65 de la loi n° 31-08 édictant des mesures de protection du consommateur applique à toute vente entre fournisseur et consommateur, dont aucune convention ne réduit le délai, et qui permet à l’acheteur de demander la résolution de la vente et la restitution du prix selon l’article 556 du Code des obligations et des contrats, ainsi que la garantie contractuelle le cas échéant.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    },
+    "subscription": {
+      "name": "Fin d’un abonnement reconduit sans rappel",
+      "body": "{{city}}, le {{today}}\nDe : {{name}}\nÀ : {{supplier}}\n\nObjet : fin du contrat d’abonnement n° {{order}}\n\nMadame, Monsieur,\n\nLe contrat d’abonnement n° {{order}} a été reconduit tacitement le {{day}}, sans que vous m’ayez rappelé par écrit, un mois au moins avant, le délai pendant lequel je pouvais refuser cette reconduction.\n\nJe mets donc fin à ce contrat, conformément à l’article 7 de la loi n° 31-08 édictant des mesures de protection du consommateur, qui me le permet à tout moment à compter de la reconduction, sans justification ni pénalité.\n\nVeuillez agréer, Madame, Monsieur, mes salutations distinguées.\n\n{{name}}"
+    }
+  },
+  "answer": {
+    "return": {
+      "over": "La rétractation, selon la loi 31-08",
+      "value": "Sept jours francs",
+      "line": "dès la réception pour une vente à distance, trente jours sans confirmation écrite ; dès la commande hors établissement ; pas de rétractation en magasin",
+      "open": "Calculer mon dernier jour"
+    },
+    "guarantee": {
+      "over": "La garantie légale des vices",
+      "value": "Un an après la livraison",
+      "line": "pour un meuble, deux ans pour un immeuble, et aucune clause ne la raccourcit",
+      "open": "Calculer ma garantie"
+    },
+    "late": {
+      "over": "Le retard de livraison",
+      "value": "Sept jours après la date écrite",
+      "line": "puis cinq jours pour résoudre sans juge, et le remboursement sous sept jours",
+      "open": "Calculer mes jours"
+    }
+  },
+  "receipt": {
+    "title": "Le ticket de mes droits",
+    "lead": "Où, quoi, combien, quel jour : les droits de cet achat avec leurs délais et leurs articles, imprimés comme un ticket. Rien n’est envoyé.",
+    "heading": "Le ticket de vos droits",
+    "price": "Le prix en dirhams",
+    "item": "Qu’avez-vous acheté ? (facultatif)",
+    "itemHint": "Téléphone, réfrigérateur, salon…",
+    "shopMonths": "Garantie du magasin (si vous avez une carte)",
+    "noShopGuarantee": "Aucune",
+    "monthsN_one": "{{count}} mois",
+    "monthsN_other": "{{count}} mois",
+    "keep": "Garder dans mes achats",
+    "kept": "Gardé",
+    "mine": "Mes achats",
+    "forget": "Retirer",
+    "onPhone": "Gardés sur ce téléphone seulement ; rien n’est envoyé.",
+    "nothingRuns": "Aucun délai ne court plus",
+    "stampNote": "Cette mention n’écarte pas la garantie légale.",
+    "printed": "Calculé par 3adala d’après la loi 31-08, {{date}}",
+    "message": "Les droits de cet achat, selon 3adala :",
+    "note": "Calculé sur le téléphone d’après la loi 31-08, en jours francs (art. 203). La date de livraison écrite est obligatoire au-delà de {{price}} DH.",
+    "lines": {
+      "withdraw": {
+        "title": "Droit de rétractation",
+        "detail": "{{days}} jours francs, sans motif ni pénalité"
+      },
+      "noWithdraw": {
+        "title": "Pas de rétractation en magasin",
+        "detail": "Elle n’existe qu’à distance et hors établissement"
+      },
+      "excluded": {
+        "title": "Pas de rétractation ici",
+        "detail": "Sur mesure, périssable, logiciel ouvert, presse, service commencé avec votre accord"
+      },
+      "refund": {
+        "title": "Si vous vous rétractez",
+        "detail": "Remboursement intégral sous {{days}} jours"
+      },
+      "linkedSale": {
+        "title": "La vente liée au crédit",
+        "detail": "Résolue de plein droit si vous renoncez au crédit"
+      },
+      "guarantee": {
+        "title": "Garantie légale",
+        "detail": "Un vice qui diminue la valeur ou l’usage : la vente résolue et le prix rendu"
+      },
+      "shopGuarantee": {
+        "title": "Garantie du magasin",
+        "detail": "S’ajoute à la garantie légale, prolongée des jours de réparation"
+      },
+      "noReturnStamp": {
+        "title": "« Ni repris ni échangé »",
+        "detail": "n’écarte pas la garantie légale"
+      },
+      "invoice": {
+        "title": "La facture",
+        "detail": "Un droit : la date, le prix, le mode de paiement"
+      },
+      "price": {
+        "title": "Le prix affiché",
+        "detail": "C’est le prix total, taxes et frais compris"
+      },
+      "writtenDate": {
+        "title": "Une date de livraison écrite",
+        "detail": "Au-delà de 3 000 DH ; sept jours après son dépassement, résolution sans tribunal"
+      },
+      "earlyRepayment": {
+        "title": "Remboursement anticipé",
+        "detail": "À tout moment, sans indemnité"
+      },
+      "defaultCap": {
+        "title": "En cas de défaillance",
+        "detail": "Le prêteur ne réclame pas plus de 4 %"
+      },
+      "court": {
+        "title": "Le tribunal",
+        "detail": "Celui de première instance de votre ville, malgré toute clause contraire"
+      }
+    }
+  },
+  "instrument": {
+    "next": "{{what}} : {{days}}"
+  }
+}

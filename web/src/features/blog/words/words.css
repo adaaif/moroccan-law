@@ -1,0 +1,48 @@
+/* «كلمات دخلت القانون»: its own charts. The grid's cells in the source's violet, as dark as the word's share of the
+   year's texts against its own best year; empty years a hairline of paper. */
+.bp-heat { display: flex; flex-direction: column; gap: 8px; }
+.bp-heat svg { cursor: crosshair; }
+/* Above the charts' grey bars (.bp-plot rect). */
+.bp-heat rect.heat-on { fill: var(--color-stamp); }
+.bp-heat rect.heat-off { fill: var(--color-rule-soft); }
+.bp-heat rect.heat-pick { fill: var(--color-ink); }
+.heat-word { font-size: 14px; fill: var(--color-ink); }
+.heat-group { font-size: 14px; font-weight: 700; fill: var(--color-stamp); }
+
+/* Each word's stops down a line read in time: a hollow dot its first mention, a full one the first text on the subject,
+   a small one each step after. Two words side by side on a desk. */
+.bp-roads { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px 40px; margin-top: 8px; }
+@media (min-width: 900px) { .bp-roads { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bp-road { border-top: 1px solid var(--color-rule-soft); padding-top: 12px; min-width: 0; }
+.bp-road-word { margin: 0 0 6px; font-size: var(--text-lead); font-weight: 700; color: var(--color-stamp); }
+.bp-road ol { margin: 0; padding: 0; list-style: none; }
+.bp-road li { position: relative; display: flex; flex-direction: column; gap: 2px; margin-inline-start: 6px; padding: 6px 0 14px;
+  padding-inline-start: 20px; border-inline-start: 2px solid var(--color-rule); }
+.bp-road li:last-child { border-inline-start-color: transparent; padding-bottom: 0; }
+.bp-road li::before { content: ''; position: absolute; inset-inline-start: -8px; top: 10px; width: 14px; height: 14px; border-radius: 50%;
+  box-sizing: border-box; background: var(--color-paper); border: 2px solid var(--color-stamp); }
+.bp-road li.is-subject::before { background: var(--color-stamp); }
+.bp-road li.is-step::before { inset-inline-start: -6px; top: 12px; width: 10px; height: 10px; background: var(--color-ink-soft); border: 0; }
+.bp-road-when { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.bp-road-date { font-size: var(--text-meta); font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.bp-road-kind { font-size: var(--text-meta); color: var(--color-stamp); }
+.bp-road-what { font-size: var(--text-body); line-height: 1.7; color: var(--color-ink); text-wrap: pretty; }
+/* The text on one line (its whole title on hover), its issue and page beside it: a 44 px row to tap. */
+.bp-road-src { display: flex; align-items: center; gap: 12px; min-height: 44px; font-size: var(--text-meta); }
+.bp-road-text { flex: 1; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 44px;
+  color: var(--color-ink-soft); text-decoration: underline; text-decoration-color: var(--color-rule); text-underline-offset: 3px; }
+.bp-road-text:hover { color: var(--color-stamp); text-decoration-color: currentColor; }
+.bp-road-issue { flex: none; white-space: nowrap; color: var(--color-stamp); font-variant-numeric: tabular-nums; }
+.bp-road-uncut { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-road-open { margin: 10px 0 0 6px; padding-inline-start: 20px; border-inline-start: 2px dashed var(--color-rule);
+  font-size: var(--text-meta); line-height: 1.7; color: var(--color-ink-soft); }
+
+/* Two words as lines. */
+.bp-line { fill: none; stroke: var(--color-stamp); stroke-width: 2.5; stroke-linejoin: round; }
+.bp-line.soft { stroke: var(--color-ink-soft); stroke-width: 2; }
+.bp-guide { stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 3 3; }
+
+/* The era words, the part a ministry's name carried in ink. */
+.bp-eras { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.bp-plot rect.is-part { fill: var(--color-ink); pointer-events: none; }
+@media (max-width: 767px) { .bp-eras { grid-template-columns: minmax(0, 1fr); } }

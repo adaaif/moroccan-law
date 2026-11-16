@@ -1,0 +1,152 @@
+{
+  "share": "Envoyer sur WhatsApp",
+  "remind": "Me le rappeler dans l’agenda",
+  "clock": {
+    "title": "Combien de jours me restent ?",
+    "lead": "Le papier reçu et son jour : le dernier jour et ce qui reste, avec l’article qui le fixe.",
+    "which": "Quel papier ?",
+    "day": {
+      "oppose": "Jour de publication de l’avis au Bulletin officiel",
+      "inquiry": "Jour de publication du projet au Bulletin officiel",
+      "preempt": "Jour de réception de la notification",
+      "preempt-year": "Jour de l’inscription ou du dépôt de l’achat",
+      "share": "Jour de notification de la décision",
+      "fraud": "Jour de l’inscription"
+    },
+    "papers": {
+      "oppose": "Avis de clôture du bornage",
+      "inquiry": "Projet d’acte de cessibilité",
+      "preempt": "Notification de l’achat d’une part",
+      "preempt-year": "Achat d’une part sans notification",
+      "share": "Répartition d’une terre collective",
+      "fraud": "Inscription frauduleuse"
+    },
+    "for": {
+      "oppose": "pour faire opposition à la réquisition",
+      "inquiry": "pour inscrire vos observations au registre de la commune",
+      "preempt": "pour exercer la préemption",
+      "preempt-year": "pour exercer la préemption",
+      "share": "pour le recours devant le conseil de tutelle provincial",
+      "fraud": "pour agir en justice"
+    },
+    "left_zero": "Aujourd’hui est le dernier jour",
+    "left_one": "Il reste 1 jour",
+    "left_other": "Il reste {{count}} jours",
+    "passed": "Le délai est passé",
+    "lastDay": "Dernier jour : {{date}}",
+    "moved": "Reporté : le dernier jour tombait un jour férié ({{what}})",
+    "after": {
+      "oppose": "Après le délai : l’opposition exceptionnelle auprès du conservateur, tant que le dossier n’est pas transmis au tribunal.",
+      "inquiry": "Ensuite : le tribunal administratif prononce le transfert et fixe l’indemnité.",
+      "preempt": "Passé ce délai, le droit de préemption tombe.",
+      "preempt-year": "Sans notification, le droit tombe un an après l’inscription ou le dépôt.",
+      "share": "Ensuite, la décision devient définitive sans recours.",
+      "fraud": "Après quatre ans : plus d’action en annulation contre un tiers de bonne foi."
+    },
+    "how": "Calcul : les jours à partir du lendemain, les mois à la même date.",
+    "complete": "Délai franc : ni le premier ni le dernier jour ne comptent ; un dernier jour férié reporte l’échéance.",
+    "message": "Calcul d’un délai, depuis 3adala :",
+    "remindTitle": "Dernier jour du délai",
+    "toJourney": "Ce qui se passe ensuite",
+    "gone": "{{count}} écoulés"
+  },
+  "permit": {
+    "title": "Le chemin du permis",
+    "lead": "Le jour du dépôt à la commune : chaque étape à sa date, avec l’article qui la fixe.",
+    "filed": "Jour du dépôt",
+    "given": "Réponse reçue ?",
+    "notYet": "Pas encore",
+    "givenOn": "Permis délivré le",
+    "stops": {
+      "filed": {
+        "title": "Dépôt du dossier au bureau d’ordre de la commune",
+        "line": "contre récépissé daté"
+      },
+      "committee": {
+        "title": "Le dossier chez la commission d’instruction",
+        "line": "dans les 3 jours ouvrables du dépôt"
+      },
+      "study": {
+        "title": "La commission statue",
+        "line": "dans les 15 jours ouvrables du dépôt"
+      },
+      "tacit": {
+        "title": "Silence du président : le permis est réputé accordé",
+        "line": "deux mois après le dépôt"
+      },
+      "lapse": {
+        "title": "Commencer les fondations avant ce jour",
+        "line": "sinon le permis, exprès ou tacite, tombe"
+      }
+    },
+    "after": "Après les travaux : le permis d’habiter ou le certificat de conformité avant d’utiliser le bâtiment.",
+    "nextOver": "Prochaine étape",
+    "done": "passée",
+    "message": "Le chemin du permis de construire, depuis 3adala :"
+  },
+  "before": {
+    "title": "Avant d’acheter",
+    "lead": "Le certificat de propriété ligne par ligne : cochez ce que vous avez vérifié, voyez ce qui manque.",
+    "head": "Avant d’acheter : votre terrain",
+    "count": "{{done}} sur {{total}}",
+    "ok": "Tout est coché",
+    "missing": "Manque : {{count}}",
+    "kind": "Votre terrain est-il immatriculé ?",
+    "message": "Avant d’acheter un terrain, depuis 3adala :",
+    "clear": "Effacer les coches"
+  },
+  "find": {
+    "title": "Mon terrain au Bulletin officiel",
+    "lead": "Tapez votre commune, le nom de la propriété ou le numéro du titre foncier : chaque texte foncier du Bulletin officiel qui le nomme.",
+    "box": "Commune, propriété ou numéro de titre",
+    "search": "Recherche",
+    "examples": "Exemples",
+    "texts_zero": "aucun texte",
+    "texts_one": "1 texte",
+    "texts_other": "{{count}} textes",
+    "since": "{{texts}} au Bulletin officiel depuis {{year}}",
+    "none": "Aucun texte foncier ne contient « {{q}} ». Essayez le nom de la commune tel que l’écrit le Bulletin, ou le numéro du titre sans espaces.",
+    "rows": "Les parcelles nommées",
+    "plot": "Parcelle",
+    "property": "Propriété",
+    "title_ref": "Titre ou réquisition",
+    "area": "Superficie",
+    "owners": "Propriétaires nommés",
+    "notes": "Observations",
+    "m2": "{{n}} m²",
+    "follow": "Suivre cette commune",
+    "following": "Suivie",
+    "then": "Ce que ce texte ouvre",
+    "open": "Le texte entier",
+    "kinds": {
+      "expropriation": "Expropriation",
+      "utility": "Utilité publique",
+      "renewal": "Utilité publique renouvelée",
+      "occupation": "Occupation temporaire",
+      "delimitation": "Délimitation administrative",
+      "collective": "Immatriculation d’ensemble",
+      "plan": "Plan d’aménagement",
+      "road": "Alignement des voies",
+      "domain": "Domaine de l’État",
+      "forest": "Domaine forestier"
+    },
+    "thens": {
+      "expropriation": "Le décret désigne lui-même les parcelles (art. 7) ; accord sur le prix ou tribunal administratif (art. 42 et 18) ; indemnité à la valeur du jour de la décision (art. 20).",
+      "utility": "L’acte de cessibilité dans les deux ans de la publication, sinon la déclaration est renouvelée (art. 7) ; son projet au Bulletin et à la commune, deux mois pour les observations (art. 10).",
+      "renewal": "Deux ans passés sans acte de cessibilité : la déclaration d’utilité publique est renouvelée (art. 7).",
+      "occupation": "L’occupation temporaire d’un terrain pour des travaux publics, indemnisée.",
+      "delimitation": "La délimitation d’une terre collective ou de l’État : les oppositions dans le délai que fixe la loi.",
+      "collective": "Une zone d’immatriculation d’ensemble : les oppositions et délais dans l’arrêté.",
+      "plan": "La réservation pour un équipement public dure 10 ans après la publication (art. 28 de la loi 12.90).",
+      "road": "Un alignement de voie publique : le terrain qu’il couvre est réservé à la voie.",
+      "domain": "Le transfert d’une parcelle entre domaines de l’État.",
+      "forest": "Un terrain du domaine forestier."
+    },
+    "names": "Les noms tels que les imprime le Bulletin : la loi les publie pour que les propriétaires l’apprennent."
+  },
+  "instrument": {
+    "clock": "Le délai de votre papier",
+    "permit": "Du dépôt au permis",
+    "before": "Le certificat de propriété"
+  }
+}

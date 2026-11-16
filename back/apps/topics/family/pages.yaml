@@ -1,0 +1,296 @@
+# The family's pages (F6–F12 of the family plan): facts, each a sentence on its articles, in sections; `table` for the
+# five ways to end a marriage; `contacts` for the protection page; `series` for the numbers page (from series.yaml).
+# Nothing here advises: a fact says what an article says, in plain words.
+
+- key: ways
+  title: {ar: خمس طرق لإنهاء الزواج, fr: Cinq façons de mettre fin au mariage}
+  lead:
+    ar: 'لا ينتهي الزواج إلا تحت مراقبة القضاء. لكل طريق من يطلبه، وآجاله، وما يترتب عنه.'
+    fr: 'Le mariage ne prend fin que sous le contrôle du juge. Chaque voie a son demandeur, ses délais et ses effets.'
+  table:
+    columns:
+      - {key: who, label: {ar: من يطلبه, fr: Qui le demande}}
+      - {key: reconcile, label: {ar: الصلح, fr: La conciliation}}
+      - {key: time, label: {ar: الأجل, fr: Le délai}}
+      - {key: kind, label: {ar: نوعه, fr: Sa nature}}
+      - {key: money, label: {ar: المال, fr: L’argent}}
+    ask:
+      question: {ar: شكون بغا يفارق؟, fr: 'Qui veut se séparer ?'}
+      options:
+        - {key: wife, label: {ar: الزوجة, fr: L’épouse}}
+        - {key: husband, label: {ar: الزوج, fr: Le mari}}
+        - {key: both, label: {ar: بجوج متفقين, fr: 'Les deux, d’accord'}}
+      source: {ar: 'وزارة العدل كما تنشرها المندوبية السامية للتخطيط، المؤشرات الاجتماعية 2026، الصفحة 46', fr: 'Ministère de la Justice, tel que le publie le HCP, Indicateurs sociaux 2026, p. 46'}
+    rows:
+      - key: shiqaq
+        title: {ar: التطليق للشقاق, fr: Pour discorde}
+        to: journeys/shiqaq
+        askers: [wife, husband, both]
+        count: {n: 64565, year: 2024, unit: {ar: حكما بالتطليق للشقاق, fr: divorces pour discorde prononcés}, series: divorce}
+        cells:
+          reconcile: {ar: 'كل المحاولات، ومنها حكمان', fr: 'Toutes les tentatives, dont deux arbitres'}
+          who: {ar: أحد الزوجين أو هما معا, fr: 'L’un des époux, ou les deux'}
+          time: {ar: ستة أشهر على الأكثر, fr: Six mois au plus}
+          kind: {ar: بائن, fr: Irrévocable}
+          money: {ar: المستحقات، وتعويض يراعي مسؤولية كل واحد, fr: 'Les droits, et une indemnité selon la responsabilité de chacun'}
+        cites: [/ma/loi/70-03/art_94, /ma/loi/70-03/art_97, /ma/loi/70-03/art_122]
+      - key: agreement
+        title: {ar: الطلاق بالاتفاق, fr: Par consentement mutuel}
+        to: journeys/divorce-agreement
+        askers: [both]
+        count: {n: 23396, year: 2024, unit: {ar: رسم طلاق بالاتفاق, fr: actes de divorce par consentement}, series: divorce}
+        cells:
+          reconcile: {ar: 'تحاول المحكمة الإصلاح ما أمكن', fr: 'Le tribunal tente de réconcilier autant que possible'}
+          who: {ar: الزوجان معا, fr: Les deux époux}
+          time: {ar: لا أجل في المدونة, fr: Pas de délai dans le Code}
+          kind: {ar: بائن, fr: Irrévocable}
+          money: {ar: ما يتفقان عليه دون إضرار بالأطفال, fr: 'Ce dont ils conviennent, sans nuire aux enfants'}
+        cites: [/ma/loi/70-03/art_114, /ma/loi/70-03/art_123]
+      - key: khul
+        title: {ar: الخلع, fr: Le khol’}
+        to: journeys/khul
+        askers: [wife]
+        cells:
+          reconcile: {ar: 'تحاول المحكمة الصلح إذا اختلفا في المقابل', fr: 'Le tribunal tente la conciliation s’ils ne s’accordent pas sur la compensation'}
+          who: {ar: الزوجة، بموافقة الزوج, fr: 'L’épouse, avec l’accord du mari'}
+          time: {ar: لا أجل في المدونة, fr: Pas de délai dans le Code}
+          kind: {ar: بائن, fr: Irrévocable}
+          money: {ar: تبذل الزوجة مقابلا دون مغالاة, fr: 'L’épouse verse une compensation, sans excès'}
+        cites: [/ma/loi/70-03/art_115, /ma/loi/70-03/art_118, /ma/loi/70-03/art_120, /ma/loi/70-03/art_123]
+      - key: grounds
+        title: {ar: التطليق لسبب آخر, fr: Pour une autre cause}
+        cells:
+          reconcile: {ar: 'واجب، إلا في حالة الغيبة', fr: 'Obligatoire, sauf en cas d’absence'}
+          who: {ar: الزوجة, fr: L’épouse}
+          time: {ar: ستة أشهر على الأكثر, fr: Six mois au plus}
+          kind: {ar: 'بائن، إلا للإيلاء وعدم الإنفاق', fr: 'Irrévocable, sauf continence et défaut d’entretien'}
+          money: {ar: المستحقات، وتعويض عن الضرر, fr: 'Les droits, et une indemnité pour préjudice'}
+        cites: [/ma/loi/70-03/art_98, /ma/loi/70-03/art_113, /ma/loi/70-03/art_101, /ma/loi/70-03/art_122]
+      - key: talaq
+        title: {ar: الطلاق بطلب من الزوج, fr: À la demande du mari}
+        to: journeys/talaq
+        askers: [husband]
+        also: {wife: {ar: 'للزوجة إذا ملكها الزوج حق الطلاق في العقد', fr: 'Pour l’épouse, si le contrat lui en donne le droit'}}
+        cells:
+          reconcile: {ar: 'واجب؛ محاولتان بينهما 30 يوما إذا كان أطفال', fr: 'Obligatoire ; deux tentatives à 30 jours d’intervalle s’il y a des enfants'}
+          who: {ar: الزوج، أو الزوجة إذا ملكها حق الطلاق, fr: 'Le mari, ou l’épouse s’il lui a délégué ce droit'}
+          time: {ar: 30 يوما لإيداع المستحقات, fr: 30 jours pour déposer les droits}
+          kind: {ar: رجعي في الغالب, fr: En général révocable}
+          money: {ar: 'الصداق المؤخر، نفقة العدة، المتعة، مستحقات الأطفال', fr: 'Dot différée, pension de retraite, mut’a, droits des enfants'}
+        cites: [/ma/loi/70-03/art_79, /ma/loi/70-03/art_82, /ma/loi/70-03/art_83, /ma/loi/70-03/art_84, /ma/loi/70-03/art_89, /ma/loi/70-03/art_123]
+  sections:
+    - title: {ar: الأسباب الأخرى, fr: Les autres causes}
+      facts:
+        - text: {ar: 'للزوجة طلب التطليق لإخلال الزوج بشرط في العقد، أو للضرر، أو لعدم الإنفاق، أو للغيبة، أو للعيب، أو للإيلاء والهجر.', fr: 'L’épouse peut demander le divorce pour manquement à une condition de l’acte, préjudice, défaut d’entretien, absence, vice rédhibitoire, ou serment de continence et délaissement.'}
+          cites: [/ma/loi/70-03/art_98]
+        - text: {ar: 'يثبت الضرر بكل وسائل الإثبات بما فيها الشهود. وإذا لم يثبت وأصرت الزوجة على التطليق، يمكنها اللجوء إلى الشقاق.', fr: 'Le préjudice se prouve par tout moyen, témoins compris. S’il n’est pas prouvé et que l’épouse maintient sa demande, elle peut recourir à la discorde.'}
+          cites: [/ma/loi/70-03/art_100]
+        - text: {ar: 'إذا غاب الزوج أكثر من سنة، أمكن للزوجة طلب التطليق. وإذا حكم عليه بأكثر من ثلاث سنوات، أمكنها طلبه بعد سنة من اعتقاله، وفي جميع الأحوال بعد سنتين.', fr: 'Si le mari est absent plus d’un an, l’épouse peut demander le divorce. S’il est condamné à plus de trois ans, elle peut le demander un an après son arrestation, et dans tous les cas après deux ans.'}
+          cites: [/ma/loi/70-03/art_104, /ma/loi/70-03/art_106]
+        - text: {ar: 'إذا امتنع الزوج عن الإنفاق ولم يثبت العجز، تطلق المحكمة الزوجة حالا؛ وإذا ثبت عجزه، تمهله ثلاثين يوما على الأكثر.', fr: 'Si le mari refuse d’entretenir son épouse sans prouver son incapacité, le tribunal prononce le divorce aussitôt ; s’il prouve son incapacité, il lui accorde au plus trente jours.'}
+          cites: [/ma/loi/70-03/art_102]
+        - text: {ar: 'إذا آلى الزوج من زوجته أو هجرها، تؤجله المحكمة أربعة أشهر، فإن لم يرجع طلقتها عليه.', fr: 'Si le mari jure de s’abstenir de son épouse ou la délaisse, le tribunal lui donne quatre mois ; s’il ne revient pas, il prononce le divorce.'}
+          cites: [/ma/loi/70-03/art_112]
+    - title: {ar: في كل الطرق, fr: Dans toutes les voies}
+      facts:
+        - text: {ar: 'تبدأ العدة من تاريخ الطلاق أو التطليق: ثلاثة أطهار، أو ثلاثة أشهر لمن لا تحيض، والحامل إلى الوضع. ولا عدة قبل البناء إلا للوفاة.', fr: 'La retraite court du divorce : trois périodes de pureté, ou trois mois pour celle qui n’a pas ses règles ; enceinte, jusqu’à l’accouchement. Pas de retraite avant consommation, sauf en cas de décès.'}
+          cites: [/ma/loi/70-03/art_129, /ma/loi/70-03/art_136, /ma/loi/70-03/art_133, /ma/loi/70-03/art_130]
+        - text: {ar: 'للمحكمة أن تتخذ تدابير مؤقتة للزوجة والأطفال في انتظار الحكم، ومنها السكن مع أحد الأقارب، وتنفذ فورا عن طريق النيابة العامة.', fr: 'Le tribunal peut prendre des mesures provisoires pour l’épouse et les enfants en attendant le jugement, dont le logement chez un proche ; elles s’exécutent aussitôt par le parquet.'}
+          cites: [/ma/loi/70-03/art_121]
+        - text: {ar: 'إذا أخرج أحد الزوجين الآخر من بيت الزوجية دون مبرر، تتدخل النيابة العامة لإرجاعه حالا.', fr: 'Si l’un des époux chasse l’autre du domicile conjugal sans raison, le parquet intervient pour l’y faire revenir aussitôt.'}
+          cites: [/ma/loi/70-03/art_53]
+  next: [pages/child, pages/money]
+
+- key: child
+  title: {ar: الأطفال بعد الفراق, fr: Les enfants après la séparation}
+  lead:
+    ar: 'الحضانة والسكن والنفقة والزيارة والسفر، كما تنص عليها المدونة. في كل ذلك تراعي المحكمة مصلحة الطفل.'
+    fr: 'Garde, logement, pension, visites et voyages, tels que le Code les prévoit. En tout, le tribunal tient compte de l’intérêt de l’enfant.'
+  line:
+    max: 25
+    spans:
+      - {from: 0, to: 18, text: {ar: 'الحضانة مستمرة، للذكر والأنثى.', fr: 'La garde continue, pour un garçon comme pour une fille.'}, cites: [/ma/loi/70-03/art_166]}
+      - {from: 0, to: 18, text: {ar: 'نفقة الطفل على الأب، ومنها السكن والتعليم.', fr: 'La pension de l’enfant est due par le père, logement et études compris.'}, cites: [/ma/loi/70-03/art_198, /ma/loi/70-03/art_168]}
+      - {from: 0, to: 7, text: {ar: 'زواج الأم الحاضنة لا يسقط حضانتها.', fr: 'Le remariage de la mère ne lui fait pas perdre la garde.'}, cites: [/ma/loi/70-03/art_175]}
+      - {from: 7, to: 18, text: {ar: 'قد يسقط زواج الأم حضانتها، إلا في الحالات التي تذكرها المادة 175.', fr: 'Le remariage de la mère peut lui faire perdre la garde, sauf dans les cas de l’article 175.'}, cites: [/ma/loi/70-03/art_175]}
+      - {from: 15, to: 18, text: {ar: 'يختار الطفل من يحضنه من أبيه أو أمه.', fr: 'L’enfant choisit lequel de ses parents le garde.'}, cites: [/ma/loi/70-03/art_166]}
+      - {from: 18, to: 25, text: {ar: 'تستمر النفقة إلى 25 سنة لمن يتابع دراسته؛ وللبنت إلى أن تكسب أو تتزوج.', fr: 'La pension continue jusqu’à 25 ans en cas d’études ; pour une fille, jusqu’à ce qu’elle gagne sa vie ou se marie.'}, cites: [/ma/loi/70-03/art_198]}
+      - {from: 0, to: 21, text: {ar: 'تحسب الأسرة المستفيدة من الدعم المباشر هذا الولد ما دام دون 21 سنة.', fr: 'Une famille éligible à l’aide directe compte cet enfant tant qu’il a moins de 21 ans.'}, cites: [/ma/loi/58-23/art_2]}
+    points:
+      - {age: 0, text: {ar: 'التصريح بالولادة داخل 30 يوما من اليوم الموالي لها.', fr: 'La naissance se déclare dans les 30 jours à partir du lendemain.'}, cites: [/ma/decret/2-22-04/art_40]}
+      - {age: 7, text: {ar: 'بعد سبع سنوات، قد يسقط زواج الأم حضانتها إلا في حالات.', fr: 'Après sept ans, le remariage de la mère peut lui faire perdre la garde, sauf exceptions.'}, cites: [/ma/loi/70-03/art_175]}
+      - {age: 12, text: {ar: 'لا يكفل الطفل المهمل بعد اثنتي عشرة سنة إلا بموافقته.', fr: 'Après douze ans, un enfant abandonné n’est recueilli qu’avec son accord.'}, cites: [/ma/loi/15-01/art_12]}
+      - {age: 15, text: {ar: 'يختار من يحضنه من أبيه أو أمه.', fr: 'Il choisit lequel de ses parents le garde.'}, cites: [/ma/loi/70-03/art_166]}
+      - {age: 18, text: {ar: 'سن الرشد وسن الزواج؛ تنتهي الحضانة.', fr: 'Majorité et âge du mariage ; la garde prend fin.'}, cites: [/ma/loi/70-03/art_209, /ma/loi/70-03/art_19, /ma/loi/70-03/art_166]}
+      - {age: 21, text: {ar: 'لا يحسب بعدها في الدعم المباشر، إلا الولد في وضعية إعاقة إذا كانت الأم الحاضنة أرملة.', fr: 'Il ne compte plus pour l’aide directe, sauf l’enfant handicapé d’une mère veuve qui en a la garde.'}, cites: [/ma/loi/58-23/art_3]}
+      - {age: 25, text: {ar: 'تنتهي نفقة الأب على من يتابع دراسته؛ وتستمر للبنت إلى أن تكسب أو تتزوج، وللعاجز عن الكسب.', fr: 'La pension du père prend fin pour l’étudiant ; elle continue pour une fille jusqu’à ce qu’elle gagne sa vie ou se marie, et pour qui ne peut gagner sa vie.'}, cites: [/ma/loi/70-03/art_198]}
+  sections:
+    - title: {ar: الحضانة, fr: La garde}
+      facts:
+        - text: {ar: 'تخول الحضانة للأم، ثم للأب، ثم لأم الأم. فإن تعذر ذلك، أسندتها المحكمة لأحد الأقارب الأكثر أهلية.', fr: 'La garde revient à la mère, puis au père, puis à la grand-mère maternelle ; à défaut, le tribunal la confie au proche le plus apte.'}
+          cites: [/ma/loi/70-03/art_171]
+        - text: {ar: 'تستمر الحضانة إلى 18 سنة للذكر والأنثى. ومن أتم 15 سنة يختار من يحضنه من أبيه أو أمه.', fr: 'La garde dure jusqu’à 18 ans, pour les garçons comme pour les filles. Dès 15 ans, l’enfant choisit lequel de ses parents le garde.'}
+          cites: [/ma/loi/70-03/art_166]
+        - text: {ar: 'زواج الأم الحاضنة لا يسقط حضانتها إذا كان الطفل لم يتجاوز سبع سنوات أو يلحقه ضرر من فراقها، أو كانت به علة، أو كان زوجها قريبا محرما أو نائبا شرعيا له.', fr: 'Le remariage de la mère ne lui fait pas perdre la garde si l’enfant a sept ans au plus ou souffrirait de la séparation, s’il est malade ou handicapé, ou si son nouveau mari est un proche parent ou le représentant légal de l’enfant.'}
+          cites: [/ma/loi/70-03/art_175]
+        - text: {ar: 'من سكت سنة بعد علمه بزواج الحاضنة سقط حقه في الحضانة، إلا لأسباب قاهرة.', fr: 'Qui se tait pendant un an après avoir appris le remariage de la gardienne perd son droit à la garde, sauf force majeure.'}
+          cites: [/ma/loi/70-03/art_176]
+        - text: {ar: 'لا تسقط الحضانة بانتقال الحاضنة داخل المغرب، إلا إذا ثبت للمحكمة ما يوجب ذلك.', fr: 'Déménager à l’intérieur du Maroc ne fait pas perdre la garde, sauf si le tribunal en constate la nécessité.'}
+          cites: [/ma/loi/70-03/art_178]
+    - title: {ar: السكن, fr: Le logement}
+      facts:
+        - text: {ar: 'على الأب أن يهيئ لأولاده محلا للسكن أو يؤدي ما تقدره المحكمة لكرائه. ولا يفرغ الطفل من بيت الزوجية إلا بعد تنفيذ الأب للحكم الخاص بسكناه.', fr: 'Le père doit loger ses enfants ou payer le loyer que fixe le tribunal. L’enfant ne quitte le domicile conjugal qu’une fois ce jugement exécuté par le père.'}
+          cites: [/ma/loi/70-03/art_168]
+        - text: {ar: 'أجرة الحضانة على المكلف بنفقة الطفل، وهي غير النفقة. ولا تستحقها الأم أثناء الزواج أو في عدة طلاق رجعي.', fr: 'Le salaire de garde est dû par celui qui doit la pension de l’enfant, en plus d’elle. La mère n’y a pas droit pendant le mariage ni pendant une retraite révocable.'}
+          cites: [/ma/loi/70-03/art_167]
+    - title: {ar: النفقة, fr: La pension}
+      facts:
+        - text: {ar: 'تستمر نفقة الأب على أولاده إلى سن الرشد، أو إلى 25 سنة لمن يتابع دراسته. ولا تسقط نفقة البنت إلا بكسبها أو بزواجها. ويستمر الإنفاق على المصابين بإعاقة والعاجزين عن الكسب.', fr: 'Le père entretient ses enfants jusqu’à leur majorité, ou 25 ans s’ils poursuivent des études. La pension d’une fille ne cesse que lorsqu’elle gagne sa vie ou se marie. Elle continue pour les enfants handicapés et incapables de gagner leur vie.'}
+          cites: [/ma/loi/70-03/art_198]
+        - text: {ar: 'تحكم المحكمة بنفقة الأولاد من تاريخ التوقف عن أدائها.', fr: 'La pension des enfants est due à partir du jour où elle a cessé d’être payée.'}
+          cites: [/ma/loi/70-03/art_200]
+      more: pages/money
+    - title: {ar: الزيارة, fr: Les visites}
+      facts:
+        - text: {ar: 'لغير الحاضن من الأبوين حق زيارة الطفل واستزارته. ينظمانها باتفاق تسجله المحكمة، وإلا حددت المحكمة أوقاتها ومكانها.', fr: 'Le parent qui n’a pas la garde a le droit de voir l’enfant et de le recevoir. Les parents l’organisent par un accord que le tribunal enregistre ; à défaut, le tribunal fixe les moments et le lieu.'}
+          cites: [/ma/loi/70-03/art_180, /ma/loi/70-03/art_181, /ma/loi/70-03/art_182]
+        - text: {ar: 'إذا تغيرت الظروف، أمكن طلب تعديل الزيارة. والتحايل في تنفيذها قد يؤدي إلى تعديلها أو إسقاط الحضانة.', fr: 'Si la situation change, on peut demander à modifier les visites. Faire obstacle aux visites peut entraîner leur modification ou la perte de la garde.'}
+          cites: [/ma/loi/70-03/art_183, /ma/loi/70-03/art_184]
+        - text: {ar: 'إذا توفي أحد الأبوين، يحل أبواه محله في حق الزيارة.', fr: 'Si l’un des parents décède, ses propres parents prennent sa place pour les visites.'}
+          cites: [/ma/loi/70-03/art_185]
+    - title: {ar: السفر والدراسة, fr: Voyages et études}
+      facts:
+        - text: {ar: 'يمكن للمحكمة، بطلب من النيابة العامة أو النائب الشرعي، أن تمنع السفر بالطفل خارج المغرب دون موافقة نائبه الشرعي. وعند الرفض، يمكن طلب الإذن من قاضي المستعجلات لسفر عرضي يضمن عودة الطفل.', fr: 'Le tribunal peut, à la demande du parquet ou du représentant légal, interdire de voyager avec l’enfant hors du Maroc sans l’accord du représentant légal. En cas de refus, le juge des référés peut autoriser un voyage occasionnel si le retour est garanti.'}
+          cites: [/ma/loi/70-03/art_179]
+        - text: {ar: 'على الأب أو النائب الشرعي والأم الحاضنة العناية بتوجيه الطفل الدراسي، ولا يبيت إلا عند حاضنته ما لم ير القاضي غير ذلك.', fr: 'Le père ou le représentant légal et la mère gardienne veillent ensemble à l’orientation scolaire ; l’enfant ne dort que chez sa gardienne, sauf décision contraire du juge.'}
+          cites: [/ma/loi/70-03/art_169]
+        - text: {ar: 'على الأب والأم والأقارب إخطار النيابة العامة بكل ضرر يتعرض له الطفل.', fr: 'Le père, la mère et les proches doivent signaler au parquet tout préjudice que subit l’enfant.'}
+          cites: [/ma/loi/70-03/art_177]
+  next: [pages/money, journeys/divorce-agreement]
+
+- key: money
+  title: {ar: النفقة والدعم, fr: Pension alimentaire et aides}
+  lead:
+    ar: 'إذا توقف من تجب عليه نفقة الأولاد عن أدائها شهرا دون عذر مقبول، طبقت عليه أحكام إهمال الأسرة. ولا تحدد المدونة مبلغا للنفقة: يقدرها القاضي في كل حالة. وتؤدي الدولة دعما مباشرا للأسر التي تستوفي شروطه.'
+    fr: 'Qui cesse de payer la pension des enfants pendant un mois sans excuse valable tombe sous l’abandon de famille. Le Code ne fixe aucun barème : le juge évalue la pension dans chaque cas. L’État verse une aide directe aux familles qui en remplissent les conditions.'
+  sections:
+    - title: {ar: إذا لم تؤد النفقة, fr: Si la pension n’est pas payée}
+      facts:
+        - text: {ar: 'تحدد المحكمة وسائل التنفيذ، ومنها الاقتطاع من منبع الأجر أو الريع، وتقرر الضمانات الكفيلة باستمرار الأداء.', fr: 'Le tribunal fixe les moyens d’exécution, dont la retenue à la source sur le salaire ou les revenus, et les garanties de paiement.'}
+          cites: [/ma/loi/70-03/art_191]
+        - text: {ar: 'كل توقف عن أداء نفقة الأولاد لمدة أقصاها شهر دون عذر مقبول، تطبق عليه أحكام إهمال الأسرة.', fr: 'Cesser de payer la pension des enfants pendant un mois au plus sans excuse valable relève de l’abandon de famille.'}
+          cites: [/ma/loi/70-03/art_202]
+        - text: {ar: 'من صدر عليه حكم نهائي أو قابل للتنفيذ المؤقت بدفع نفقة لزوجه أو لأصوله أو فروعه، وأمسك عمدا عن دفعها في موعدها، يعاقب بالحبس من شهر إلى سنة وبالغرامة من 200 إلى 2.000 درهم أو بإحداهما؛ وفي العود يكون الحبس حتميا.', fr: 'Qui, condamné par un jugement définitif ou exécutoire par provision à payer une pension à son conjoint, à ses ascendants ou à ses descendants, s’abstient volontairement de la payer à l’échéance, est puni d’un emprisonnement d’un mois à un an et d’une amende de 200 à 2 000 dirhams, ou de l’une de ces peines ; en cas de récidive, la prison est obligatoire.'}
+          cites: [/ma/dahir/1-59-413/art_480, /ma/dahir/1-59-413/art_479]
+        - text: {ar: 'يحكم للزوجة بالنفقة من تاريخ إمساك الزوج عن الإنفاق، ولا تسقط بمضي المدة.', fr: 'L’épouse a droit à la pension à compter du jour où le mari a cessé de l’entretenir, et ce droit ne se perd pas avec le temps.'}
+          cites: [/ma/loi/70-03/art_195]
+    - title: {ar: كيف يقدر القاضي النفقة, fr: Comment le juge fixe la pension}
+      facts:
+        - text: {ar: 'تشمل النفقة الغذاء والكسوة والعلاج والضروريات والتعليم للأولاد. ويراعى في تقديرها التوسط، ودخل الملزم بها، وحال مستحقها، ومستوى الأسعار والأعراف في الوسط.', fr: 'La pension couvre nourriture, habillement, soins, nécessités, et études pour les enfants. Le juge tient compte de la mesure, des revenus de celui qui la doit, de la situation de celui qui la reçoit, des prix et des usages du milieu.'}
+          cites: [/ma/loi/70-03/art_189]
+        - text: {ar: 'تعتمد المحكمة على تصريحات الطرفين وحججهما، ولها أن تستعين بالخبراء. ويبت في قضايا النفقة في أجل أقصاه شهر واحد.', fr: 'Le tribunal s’appuie sur les déclarations et pièces des deux parties, et peut recourir à des experts. Les affaires de pension sont jugées dans un délai d’un mois au plus.'}
+          cites: [/ma/loi/70-03/art_190]
+        - text: {ar: 'لا يقبل طلب الزيادة في النفقة أو التخفيض منها قبل مضي سنة، إلا في ظروف استثنائية.', fr: 'On ne peut demander d’augmenter ou de réduire la pension avant un an, sauf circonstances exceptionnelles.'}
+          cites: [/ma/loi/70-03/art_192]
+        - text: {ar: 'إذا عجز الأب عن الإنفاق على أولاده وكانت الأم موسرة، وجبت عليها النفقة بقدر ما عجز عنه الأب.', fr: 'Si le père ne peut pas entretenir ses enfants et que la mère en a les moyens, elle les entretient à hauteur de ce que le père ne peut payer.'}
+          cites: [/ma/loi/70-03/art_199]
+    - title: {ar: الدعم الاجتماعي المباشر, fr: L’aide sociale directe}
+      facts:
+        - text: {ar: 'تمنح الأسرة المستوفية للشروط منحة شهرية عن كل ولد دون 21 سنة في حدود ستة أولاد، ودعما تكميليا عن كل ولد في وضعية إعاقة وكل يتيم الأب في حدود ثلاثة، ومنحة عن الولادتين الأولى والثانية.', fr: 'Une famille éligible reçoit une allocation mensuelle par enfant de moins de 21 ans, dans la limite de six, un complément par enfant handicapé et par orphelin de père (trois au plus), et une prime pour les deux premières naissances.'}
+          cites: [/ma/loi/58-23/art_2, /ma/loi/58-23/art_3]
+        - text: {ar: 'لا يقل المبلغ الممنوح للأسرة عن 500 درهم في الشهر. وتستفيد الأسرة التي ليس لها أولاد دون 21 سنة من إعانة جزافية.', fr: 'La famille ne reçoit jamais moins de 500 DH par mois. Celle qui n’a pas d’enfant de moins de 21 ans reçoit une aide forfaitaire.'}
+          cites: [/ma/decret/2-23-1067/art_2, /ma/loi/58-23/art_4]
+        - text: {ar: 'لا يستفيد من الدعم من كان موظفا، أو مصرحا به في الضمان الاجتماعي، أو صاحب معاش. ولا يجمع بين الدعم والتعويضات العائلية عن نفس الولد.', fr: 'En sont exclus les fonctionnaires, les salariés déclarés à la sécurité sociale et les retraités. On ne cumule pas l’aide et les allocations familiales pour le même enfant.'}
+          cites: [/ma/loi/58-23/art_7, /ma/loi/58-23/art_5]
+        - text: {ar: 'يمكن التظلم من رفض الطلب داخل خمسة عشر يوما من الإشعار به، وتبت الوكالة الوطنية للدعم الاجتماعي داخل ثلاثين يوما.', fr: 'Un refus peut être contesté dans les quinze jours de sa notification ; l’Agence nationale de l’aide sociale répond dans les trente jours.'}
+          cites: [/ma/decret/2-23-1067/art_5]
+      tool: tools/support
+    - title: {ar: صندوق التكافل العائلي, fr: Le Fonds d’entraide familiale}
+      facts:
+        - text: {ar: 'نسخ القانون 58.23 قانون صندوق التكافل العائلي سنة 2023. يبقى ساريا فقط على من كانوا يستفيدون منه عند نشر القانون الجديد وعلى الطلبات المقدمة قبله. ولا يجمع بين مخصصاته والدعم المباشر.', fr: 'La loi 58.23 a abrogé en 2023 la loi sur le Fonds d’entraide familiale. Elle ne s’applique plus qu’aux bénéficiaires de l’époque et aux demandes déposées avant. On ne cumule pas le Fonds et l’aide directe.'}
+          cites: [/ma/loi/58-23/art_19, /ma/loi/58-23/art_5]
+  next: [pages/child]
+
+- key: abroad
+  title: {ar: الأسرة خارج المغرب, fr: La famille à l’étranger}
+  lead:
+    ar: 'ما تقوله المدونة وقانون الحالة المدنية للمغاربة المقيمين بالخارج.'
+    fr: 'Ce que le Code de la famille et la loi sur l’état civil prévoient pour les Marocains de l’étranger.'
+  sections:
+    - title: {ar: الزواج, fr: Le mariage}
+      facts:
+        - text: {ar: 'يمكن للمغاربة المقيمين بالخارج أن يتزوجوا وفق الإجراءات الإدارية لبلد إقامتهم، إذا توفر الإيجاب والقبول والأهلية والولي عند الاقتضاء، وانتفت الموانع، ولم ينص على إسقاط الصداق، وحضره شاهدان مسلمان.', fr: 'Les Marocains de l’étranger peuvent se marier selon les formalités locales, s’il y a offre et acceptation, capacité, tuteur le cas échéant, aucun empêchement, pas de renonciation à la dot, et deux témoins musulmans.'}
+          cites: [/ma/loi/70-03/art_14]
+        - text: {ar: 'يجب إيداع نسخة من هذا العقد داخل ثلاثة أشهر بالقنصلية المغربية، أو إرسالها إلى وزارة الخارجية إن لم توجد قنصلية.', fr: 'Une copie de cet acte doit être déposée dans les trois mois au consulat marocain, ou envoyée au ministère des Affaires étrangères à défaut de consulat.'}
+          cites: [/ma/loi/70-03/art_15]
+        - text: {ar: 'تضمن بيانات هذا الزواج في رسم الولادة دون التقيد بأي أجل.', fr: 'Ce mariage est mentionné sur l’acte de naissance sans condition de délai.'}
+          cites: [/ma/loi/36-21/art_36]
+    - title: {ar: الولادة, fr: La naissance}
+      facts:
+        - text: {ar: 'أجل التصريح بولادات المغاربة المقيمين بالخارج سنة. وينقل التصريح إلى السجل الوطني بالقنصلية بناء على نسخة كاملة من رسم الولادة الأجنبي مع عقد زواج الأبوين.', fr: 'Les Marocains de l’étranger ont un an pour déclarer une naissance. Le consulat l’inscrit au registre national sur la copie intégrale de l’acte étranger, avec l’acte de mariage des parents.'}
+          cites: [/ma/decret/2-22-04/art_40, /ma/decret/2-22-04/art_23]
+    - title: {ar: الطلاق, fr: Le divorce}
+      facts:
+        - text: {ar: 'تنفذ أحكام الطلاق الأجنبية إذا صدرت عن محكمة مختصة وأسست على أسباب لا تتنافى مع المدونة، بعد تذييلها بالصيغة التنفيذية.', fr: 'Un jugement de divorce étranger est exécutoire s’il émane d’un tribunal compétent et repose sur des motifs compatibles avec le Code, après exequatur.'}
+          cites: [/ma/loi/70-03/art_128]
+        - text: {ar: 'إذا لم يكن للزوجين محل ولادة بالمغرب، يوجه ملخص الزواج أو الطلاق إلى وكيل الملك بالمحكمة الابتدائية بالرباط.', fr: 'Si les époux ne sont pas nés au Maroc, l’extrait du mariage ou du divorce est envoyé au procureur du tribunal de première instance de Rabat.'}
+          cites: [/ma/loi/70-03/art_68, /ma/loi/70-03/art_141]
+    - title: {ar: الأطفال, fr: Les enfants}
+      facts:
+        - text: {ar: 'يمكن أن تمنع المحكمة السفر بالطفل خارج المغرب دون موافقة نائبه الشرعي.', fr: 'Le tribunal peut interdire de faire sortir l’enfant du Maroc sans l’accord de son représentant légal.'}
+          cites: [/ma/loi/70-03/art_179]
+        - text: {ar: 'لا يسافر الكافل بالمكفول للإقامة الدائمة خارج المغرب إلا بإذن القاضي، وتتتبع القنصلية وضعية الطفل.', fr: 'Le kafil ne part vivre à l’étranger avec l’enfant qu’avec l’autorisation du juge ; le consulat suit sa situation.'}
+          cites: [/ma/loi/15-01/art_24]
+  next: [journeys/marry, journeys/birth]
+
+- key: protection
+  discreet: true
+  title: {ar: الحماية من العنف, fr: Se protéger de la violence}
+  lead:
+    ar: 'ما يحميك القانون منه، وما يمكن أن يأمر به القاضي، وأين تجد من يستقبلك.'
+    fr: 'Ce dont la loi vous protège, ce que le juge peut ordonner, et où trouver un accueil.'
+  # A number shows only with the official page that gives it (C1 of the family-papers review, as on the road): the
+  # DGSN's header links tel:19 (kept with its hash in data/sources/road/). The Gendarmerie's 177 waits for its own
+  # page: gendarmerie.ma and gr.ma did not answer on 26 Oct 2026.
+  contacts:
+    - number: '19'
+      name: {ar: الأمن الوطني, fr: 'Police (Sûreté nationale)'}
+      source:
+        name: {ar: موقع المديرية العامة للأمن الوطني, fr: Site de la DGSN}
+        url: https://www.dgsn.gov.ma/ar
+        file: road/dgsn_home_ar_2026-10-26.html
+        sha256: 6508185563d2a3d3a64418a06946a9ed4713aede103429c6014cc3be48f5e7b6
+  sections:
+    - title: {ar: ما يعد عنفا, fr: Ce qui est une violence}
+      facts:
+        - text: {ar: 'العنف ضد المرأة كل فعل أو امتناع أساسه التمييز بسبب الجنس يترتب عليه ضرر جسدي أو نفسي أو جنسي أو اقتصادي. والعنف الاقتصادي يشمل كل فعل أو امتناع ذي طبيعة مالية يضر بحقوقها.', fr: 'La violence contre les femmes est tout acte ou abstention fondé sur le sexe qui cause un préjudice physique, psychologique, sexuel ou économique. La violence économique comprend tout acte ou abstention financier qui nuit à ses droits.'}
+          cites: [/ma/loi/103-13/art_1]
+    - title: {ar: ما يمكن أن يأمر به القاضي, fr: Ce que le juge peut ordonner}
+      facts:
+        - text: {ar: 'أثناء المتابعة، يمكن للنيابة العامة أو قاضي التحقيق أو المحكمة، ولو بطلب من الضحية، منع المتابع من الاتصال بها أو الاقتراب منها، إلى أن يصدر الحكم.', fr: 'Pendant les poursuites, le parquet, le juge d’instruction ou le tribunal, y compris à la demande de la victime, peut interdire à la personne poursuivie de la contacter ou de s’en approcher, jusqu’au jugement.'}
+          cites: [/ma/loi/103-13/art_5]
+        - text: {ar: 'بعد الإدانة، يمكن منع المحكوم عليه من الاتصال بالضحية حتى خمس سنوات، أو بصفة نهائية بقرار معلل. ومن يخرق هذا المنع يعاقب بالحبس.', fr: 'Après condamnation, le contact avec la victime peut être interdit jusqu’à cinq ans, ou définitivement par décision motivée. Violer cette interdiction est puni de prison.'}
+          cites: [/ma/loi/103-13/art_5]
+        - text: {ar: 'الطرد من بيت الزوجية جنحة، وتتدخل النيابة العامة لإرجاع المطرود حالا مع اتخاذ ما يكفل أمنه.', fr: 'Chasser son conjoint du domicile conjugal est un délit ; le parquet intervient pour le faire revenir aussitôt, en assurant sa sécurité.'}
+          cites: [/ma/loi/103-13/art_5, /ma/loi/70-03/art_53]
+        - text: {ar: 'الإكراه على الزواج بالعنف أو التهديد جنحة، وتضاعف العقوبة إذا كانت الضحية قاصرا.', fr: 'Forcer quelqu’un à se marier par la violence ou la menace est un délit, puni du double si la victime est mineure.'}
+          cites: [/ma/loi/103-13/art_5]
+    - title: {ar: أين تتوجه الضحية, fr: Où aller}
+      facts:
+        - text: {ar: 'توجد خلايا للتكفل بالنساء ضحايا العنف في المحاكم الابتدائية ومحاكم الاستئناف، ولدى مصالح الصحة والأمن الوطني والدرك الملكي. تستقبل وتستمع وتدعم وتوجه وترافق.', fr: 'Des cellules de prise en charge des femmes victimes de violence existent dans les tribunaux de première instance et les cours d’appel, et auprès des services de santé, de la sûreté nationale et de la gendarmerie. Elles accueillent, écoutent, soutiennent, orientent et accompagnent.'}
+          cites: [/ma/loi/103-13/art_10]
+  next: [pages/ways]
+
+- key: numbers
+  title: {ar: الأسرة بالأرقام, fr: La famille en chiffres}
+  lead:
+    ar: 'أرقام وزارة العدل كما نشرتها المندوبية السامية للتخطيط. كل رقم بمصدره وصفحته، وما لا يقوله مكتوب تحته.'
+    fr: 'Les chiffres du ministère de la Justice tels que les publie le Haut-Commissariat au Plan. Chaque chiffre avec sa source et sa page, et ce qu’il ne dit pas écrit dessous.'
+  series: [minors, divorce, marriages]
+  sections:
+    - title: {ar: كيف تقرأ هذه الأرقام, fr: Comment lire ces chiffres}
+      facts:
+        - text: {ar: 'الطلبات ليست زيجات: يحسب طلب الإذن بزواج قاصر سنة تقديمه، وقد يرفض.', fr: 'Une demande n’est pas un mariage : la demande d’autorisation de marier un mineur est comptée l’année où elle est déposée, et peut être refusée.'}
+          cites: [/ma/loi/70-03/art_20]
+        - text: {ar: 'التطليق المحكوم به غير الأحكام الصادرة: لا تحسب هنا الطلبات المرفوضة.', fr: 'Les divorces prononcés ne sont pas tous les jugements : les demandes rejetées ne sont pas comptées ici.'}
+        - text: {ar: 'سنة 2020 سنة الجائحة: انخفضت فيها كل الأرقام.', fr: 'L’année 2020 est celle de la pandémie : tous les chiffres y baissent.'}

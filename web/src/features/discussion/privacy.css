@@ -1,0 +1,230 @@
+/* /privacy, «ما نحفظ وإلى متى» (31 Oct 2026). Loaded with the page, never in the first load. The head as the library's
+   rooms have it (a double rule as printed matter ends a head), one sentence in the law's type, then the page's one
+   picture: a ruler of time, each thing kept a line from its arrival to its erasing, the site's in the source's violet and
+   the phone's in the green of «the document never leaves your device». Every colour a token. */
+
+.pv { display: flex; flex-direction: column; gap: 40px;
+  --here: var(--color-stamp); --phone: var(--color-in-force); --what: 17rem; }
+.pv a { text-decoration: none; }
+.pv a:focus-visible, .pv button:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.pv-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ── The head ─────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.pv-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 24px; border-bottom: 4px double var(--color-ink); }
+.pv-head h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.pv-head .lead { margin: 0; max-width: 62ch; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink-soft); text-wrap: pretty; }
+/* The answer most readers came for, in the law's type. */
+.pv-plaque { margin: 10px 0 4px; max-width: 44ch; font-family: var(--font-law); font-size: clamp(1.5rem, 1.25rem + 0.9vw, 2rem);
+  line-height: 1.55; color: var(--color-ink); text-wrap: pretty; }
+.pv-plaque:lang(fr) { line-height: 1.45; }
+.pv-draft { align-self: flex-start; margin: 4px 0 0; max-width: 72ch; padding: 8px 14px; border-radius: var(--radius-control);
+  background: var(--color-amended-wash); color: var(--color-amended); font-size: var(--text-meta); line-height: 1.6; }
+.pv-draft span { white-space: nowrap; font-weight: 600; }
+
+/* ── The ruler ───────────────────────────────────────────────────────────────────────────────────────────────────── */
+.pv-ruler { display: flex; flex-direction: column; gap: 22px; margin-inline: -16px; padding: 26px 16px 18px; background: var(--color-sheet); }
+@media (min-width: 640px) { .pv-ruler { margin-inline: 0; padding: 32px 36px 22px; border-radius: var(--radius-card); } }
+.pv-ruler-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px; }
+.pv-ruler-head h2, .pv-part-head h2 { margin: 0; font-size: var(--text-h2); line-height: 1.2; font-weight: 700; color: var(--color-ink); }
+.pv-ruler-head p, .pv-part-head p { margin: 6px 0 0; max-width: 56ch; color: var(--color-ink-soft); }
+.pv-key { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0; padding: 0; list-style: none; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.pv-key li { display: inline-flex; align-items: center; gap: 8px; }
+.pv-key i { width: 30px; border-top: 4px solid var(--here); border-radius: 2px; }
+.pv-key [data-where="phone"] i { border-top: 3px dashed var(--phone); border-radius: 0; }
+.pv-key [data-where="part"] i { border-top: 3px dotted var(--color-ink-soft); border-radius: 0; }
+
+/* «شنو كتدير ف«قانون»؟»: its answer leaves its own lines lit. */
+.pv-ask { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.pv-ask > span { font-weight: 700; font-size: var(--text-lead); color: var(--color-ink); }
+.pv-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pv-chips button { min-height: 44px; padding: 0 18px; border: 1.5px solid var(--color-rule); border-radius: 999px; background: var(--color-sheet);
+  color: var(--color-ink); font: inherit; font-weight: 600; cursor: pointer; transition: background-color 160ms, border-color 160ms, color 160ms; }
+.pv-chips button:hover { border-color: var(--color-ink); }
+.pv-chips button[aria-pressed="true"] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-sheet); }
+@media (max-width: 639px) {
+  .pv-ask { gap: 10px; }
+  .pv-chips { flex-wrap: nowrap; width: 100%; gap: 6px; }
+  .pv-chips button { flex: 1 1 0; min-width: 0; padding: 0 4px; }
+}
+
+/* The scale over the lines: a label column, then the moments; a phone names fewer of them. */
+.pv-scale, .pv-row { display: grid; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .pv-scale, .pv-row { grid-template-columns: var(--what) minmax(0, 1fr); column-gap: 28px; } }
+.pv-scale > span { display: none; }
+@media (min-width: 900px) { .pv-scale > span { display: block; } }
+.pv-scale ol { position: relative; height: 22px; margin: 0; padding: 0; list-style: none; }
+.pv-scale li { position: absolute; inset-inline-start: var(--x); translate: -50% 0; font-size: var(--text-meta); line-height: 22px;
+  color: var(--color-ink-soft); white-space: nowrap; }
+.pv-scale li:dir(rtl) { translate: 50% 0; }
+.pv-scale li[data-at="open"] { inset-inline-start: auto; inset-inline-end: 0; translate: none; font-weight: 600; color: var(--color-ink); }
+@media (max-width: 899px) { .pv-scale li:not([data-narrow]) { display: none; } }
+
+.pv-rows { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.pv-group { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding: 16px 0 6px; transition: opacity 220ms; }
+.pv-group a { font-weight: 700; font-size: var(--text-lead); color: var(--color-ink); }
+.pv-group a:hover { color: var(--color-stamp); }
+.pv-group span { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.pv-row { row-gap: 6px; align-items: center; padding: 10px 0; border-top: 1px solid var(--color-rule-soft); transition: opacity 220ms; }
+.pv-group + .pv-row { border-top-color: var(--color-rule); }
+.pv-row[data-off], .pv-group[data-off] { opacity: 0.22; }
+/* A phone keeps only the reader's own lines: the others would be a screen to scroll past. */
+@media (max-width: 899px) { .pv-row[data-off], .pv-group[data-off] { display: none; } }
+.pv-what { display: flex; flex-direction: column; min-width: 0; }
+@media (max-width: 899px) {
+  .pv-row { row-gap: 0; padding: 9px 0 4px; }
+  .pv-what { flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 12px; }
+  .pv-what span { white-space: nowrap; }
+  .pv-track { height: 20px; }
+}
+.pv-what b { font-weight: 600; line-height: 1.45; color: var(--color-ink); }
+.pv-what span { font-size: var(--text-meta); line-height: 1.5; font-weight: 600; color: var(--here); }
+.pv-row[data-where="phone"] .pv-what span { color: var(--phone); }
+
+/* A line's life on the ruler: a dot where it arrives, a ring where it is erased; an arrow when it has no end; dashes
+   when it stays on the phone; dots after the ring when part of it stays. */
+.pv-track { position: relative; height: 26px; margin-inline: 6px; }
+.pv-track::before { content: ""; position: absolute; inset-inline: 0; top: 50%; border-top: 1px solid var(--color-rule-soft); }
+.pv-tick { position: absolute; inset-inline-start: var(--x); top: calc(50% - 5px); width: 1px; height: 10px; background: var(--color-tick); }
+.pv-bar { position: absolute; inset-inline-start: 0; top: calc(50% - 2px); width: var(--to); height: 4px; border-radius: 2px; background: var(--here); }
+.pv-bar::before, .pv-bar::after { content: ""; position: absolute; top: 50%; translate: 0 -50%; border-radius: 50%; }
+.pv-bar::before { inset-inline-start: -5px; width: 10px; height: 10px; background: var(--here); }
+.pv-bar::after { inset-inline-end: -7px; width: 14px; height: 14px; border: 3px solid var(--here); background: var(--color-sheet); box-sizing: border-box; }
+.pv-row[data-at="open"] .pv-bar::after { inset-inline-end: -3px; width: 0; height: 0; border-radius: 0; background: none;
+  border-block: 7px solid transparent; border-inline-start: 11px solid var(--here); border-inline-end: 0; }
+.pv-row[data-where="phone"] .pv-bar { height: 0; top: calc(50% - 1.5px); border-top: 3px dashed var(--phone); background: none; border-radius: 0; }
+.pv-row[data-where="phone"] .pv-bar::before { background: var(--phone); }
+.pv-row[data-where="phone"] .pv-bar::after { border-color: var(--phone); }
+.pv-row[data-where="phone"][data-at="open"] .pv-bar::after { border-color: transparent; border-inline-start-color: var(--phone); }
+/* A line's time where it ends (a desk; a phone says it under the line's name): past its ring, or on the line, the sheet
+   cut out under it, when the line has no end or part of it stays. */
+.pv-end { display: none; position: absolute; top: 50%; translate: 0 -50%; inset-inline-start: calc(var(--to) + 18px); font-size: var(--text-meta);
+  line-height: 1.4; font-weight: 600; color: var(--here); white-space: nowrap; }
+.pv-row[data-where="phone"] .pv-end { color: var(--phone); }
+.pv-row[data-at="open"] .pv-end { inset-inline-start: auto; inset-inline-end: 26px; padding: 0 10px; background: var(--color-sheet); }
+.pv-row[data-part] .pv-end { inset-inline-start: calc(var(--to) + 8px); padding-inline: 10px; background: var(--color-sheet); }
+@media (min-width: 900px) {
+  .pv-end { display: block; }
+  .pv-what span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .pv-row { padding: 7px 0; }
+}
+.pv-rest { position: absolute; inset-inline-start: var(--to); inset-inline-end: 0; top: calc(50% - 1.5px); border-top: 3px dotted var(--color-ink-soft); }
+@media (prefers-reduced-motion: no-preference) {
+  .pv-bar { animation: pv-grow 760ms cubic-bezier(0.2, 0.7, 0.2, 1) both; animation-delay: calc(var(--i) * 32ms + 160ms); }
+  .pv-rest, .pv-end { animation: pv-in 320ms ease-out both; animation-delay: calc(17 * 32ms + 700ms); }
+}
+@keyframes pv-grow { from { width: 0; } }
+@keyframes pv-in { from { opacity: 0; } }
+
+/* ── The acts, each in the margin as the law numbers its articles ────────────────────────────────────────────────── */
+.pv-acts { display: flex; flex-direction: column; margin-inline: -16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .pv-acts { margin-inline: 0; border-radius: var(--radius-card); } }
+.pv-act { display: grid; gap: 14px; padding: 30px 16px; border-top: 1px solid var(--color-rule); scroll-margin-top: 96px; }
+.pv-act:first-child { border-top: 0; }
+@media (min-width: 640px) { .pv-act { padding: 34px 36px; } }
+@media (min-width: 900px) { .pv-act { grid-template-columns: 12rem minmax(0, 1fr); gap: 36px; } }
+.pv-margin { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
+@media (min-width: 900px) { .pv-margin { position: sticky; top: 96px; align-self: start; } }
+.pv-margin h2 { margin: 0; font-size: var(--text-h1); line-height: 1.1; font-weight: 700; color: var(--color-ink); }
+.pv-margin > span { color: var(--color-ink-soft); }
+.pv-margin .pv-lock { margin-top: 8px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 999px;
+  background: color-mix(in srgb, var(--phone) 10%, var(--color-sheet)); color: var(--phone); font-size: var(--text-meta); font-weight: 600; }
+.pv-body { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.pv-answer { margin: 0; max-width: 54ch; font-size: var(--text-lead); line-height: 1.7; font-weight: 600; color: var(--color-ink); text-wrap: pretty; }
+.pv-items { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.pv-item { display: grid; gap: 6px 24px; padding: 14px 0; border-top: 1px solid var(--color-rule-soft); }
+@media (min-width: 640px) { .pv-item { grid-template-columns: minmax(0, 1fr) 14rem; } }
+.pv-item h3 { margin: 0; font-size: var(--text-body); line-height: 1.5; font-weight: 700; color: var(--color-ink); }
+.pv-item p { margin: 2px 0 0; max-width: 66ch; line-height: 1.8; color: var(--color-ink); text-wrap: pretty; }
+/* A thing's time beside it, its line drawn small. */
+.pv-when { align-self: start; justify-self: start; display: inline-flex; align-items: center; gap: 8px; padding: 3px 12px 3px 10px;
+  border-radius: 14px; background: color-mix(in srgb, var(--here) 9%, var(--color-sheet)); color: var(--here);
+  font-size: var(--text-meta); line-height: 1.5; font-weight: 600; }
+.pv-when i { flex: none; width: 16px; border-top: 3px solid currentColor; border-radius: 2px; }
+.pv-when[data-where="phone"] { background: color-mix(in srgb, var(--phone) 10%, var(--color-sheet)); color: var(--phone); }
+.pv-when[data-where="phone"] i { border-top-style: dashed; border-radius: 0; }
+.pv-care { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 14px 18px; list-style: none; border-inline-start: 3px solid var(--color-amended);
+  background: var(--color-amended-wash); border-radius: 0 var(--radius-control) var(--radius-control) 0; }
+.pv-care:dir(rtl) { border-radius: var(--radius-control) 0 0 var(--radius-control); }
+.pv-care li { line-height: 1.75; color: var(--color-ink); }
+.pv-not { margin: 0; max-width: 66ch; line-height: 1.8; color: var(--color-ink-soft); }
+
+/* Who sees what: a dot where one sees. */
+.pv-who { display: flex; flex-direction: column; gap: 10px; padding-top: 6px; }
+.pv-who h3 { margin: 0; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.pv-who table { width: 100%; border-collapse: collapse; }
+.pv-who th, .pv-who td { padding: 10px 6px; border-top: 1px solid var(--color-rule-soft); }
+.pv-who thead td { border-top: 0; }
+.pv-who thead th { border-top: 0; padding-top: 0; font-size: var(--text-meta); line-height: 1.35; font-weight: 600; color: var(--color-ink-soft); text-align: center; vertical-align: bottom; width: 4.5rem; }
+@media (min-width: 640px) { .pv-who thead th { width: 6.5rem; } }
+.pv-who tbody th { text-align: start; font-weight: 400; line-height: 1.55; color: var(--color-ink); }
+.pv-who td { text-align: center; }
+.pv-who i { display: inline-block; vertical-align: middle; border-radius: 50%; }
+.pv-who i.yes { width: 12px; height: 12px; background: var(--color-ink); }
+.pv-who i.no { width: 9px; height: 9px; border: 1.5px solid var(--color-muted); }
+.pv-who p { margin: 4px 0 0; max-width: 66ch; line-height: 1.8; color: var(--color-ink-soft); }
+
+/* ── What the site counts (the analytics review, 15 Nov 2026): the promise, the measures as the server lists them, the
+   phone's one date, «لا تحسبني» ──────────────────────────────────────────────────────────────────────────────────── */
+.pv-count { display: flex; flex-direction: column; gap: 18px; scroll-margin-top: 96px; }
+.pv-count-sheet { display: flex; flex-direction: column; gap: 18px; margin-inline: -16px; padding: 28px 16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .pv-count-sheet { margin-inline: 0; padding: 32px 36px; border-radius: var(--radius-card); } }
+.pv-count-sheet h3 { margin: 8px 0 0; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.pv-promise { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.pv-promise li { position: relative; max-width: 66ch; padding-inline-start: 20px; line-height: 1.8; color: var(--color-ink); }
+.pv-promise li::before { content: ""; position: absolute; inset-inline-start: 2px; top: 0.75em; width: 8px; height: 8px; border-radius: 50%; background: var(--here); }
+.pv-measures { display: flex; flex-direction: column; gap: 4px; }
+.pv-measures h4 { margin: 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.pv-measures ul { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.pv-measure { display: grid; gap: 4px 24px; padding: 12px 0; border-top: 1px solid var(--color-rule-soft); }
+@media (min-width: 900px) { .pv-measure { grid-template-columns: 10rem minmax(0, 1fr); } .pv-measure .pv-props { grid-column: 2; } }
+.pv-measure code { justify-self: start; font-family: ui-monospace, monospace; font-size: var(--text-meta); line-height: 1.8; color: var(--here); }
+.pv-measure p { margin: 0; max-width: 66ch; line-height: 1.8; color: var(--color-ink); }
+.pv-measure .pv-props { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.pv-props span { font-family: ui-monospace, monospace; }
+.pv-device { margin: 0; max-width: 66ch; line-height: 1.8; color: var(--color-ink); }
+.pv-device .pv-when { margin-inline-end: 10px; vertical-align: 1px; }
+.pv-switch { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding-top: 14px; border-top: 1px solid var(--color-rule); }
+.pv-switch p { margin: 0; max-width: 66ch; line-height: 1.7; color: var(--color-ink); }
+.pv-switch .pv-small { margin: 0; }
+
+/* ── The two companies, the two halves of one sheet ──────────────────────────────────────────────────────────────── */
+.pv-out, .pv-rights { display: flex; flex-direction: column; gap: 18px; scroll-margin-top: 96px; }
+.pv-firms { display: grid; margin-inline: -16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .pv-firms { margin-inline: 0; border-radius: var(--radius-card); } }
+@media (min-width: 900px) { .pv-firms { grid-template-columns: 1fr 1fr 1fr; } .pv-firm + .pv-firm { border-inline-start: 1px solid var(--color-rule); } }
+.pv-firm { display: flex; flex-direction: column; gap: 14px; padding: 26px 16px; scroll-margin-top: 96px; }
+@media (min-width: 640px) { .pv-firm { padding: 28px 32px; } }
+.pv-firm + .pv-firm { border-top: 1px solid var(--color-rule); }
+@media (min-width: 900px) { .pv-firm + .pv-firm { border-top: 0; } }
+.pv-firm h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin: 0; font-size: var(--text-h3); font-weight: 700; color: var(--color-ink); }
+.pv-firm dl { display: flex; flex-direction: column; gap: 12px; margin: 0; }
+.pv-firm dt { font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.pv-firm dd { margin: 2px 0 0; line-height: 1.75; color: var(--color-ink); }
+.pv-nobody { margin: 0; max-width: 72ch; line-height: 1.8; color: var(--color-ink); }
+
+/* ── The rights, each with its article ───────────────────────────────────────────────────────────────────────────── */
+.pv-rights > ul { display: flex; flex-direction: column; margin: 0 -16px; padding: 4px 16px; list-style: none; background: var(--color-sheet); }
+@media (min-width: 640px) { .pv-rights > ul { margin-inline: 0; padding: 6px 32px; border-radius: var(--radius-card); } }
+.pv-right { display: grid; gap: 6px 28px; padding: 18px 0; border-top: 1px solid var(--color-rule-soft); }
+.pv-right:first-child { border-top: 0; }
+@media (min-width: 900px) { .pv-right { grid-template-columns: 14rem minmax(0, 1fr) auto; align-items: start; } }
+.pv-right h3 { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 0; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.pv-right p { margin: 0; max-width: 62ch; line-height: 1.8; color: var(--color-ink); }
+.pv-do { display: flex; flex-wrap: wrap; gap: 8px; }
+.pv-do a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1.5px solid var(--color-stamp); border-radius: var(--radius-control);
+  color: var(--color-stamp); font-weight: 600; white-space: nowrap; }
+.pv-do a:hover { background: var(--color-wash); }
+/* An article of law 09.08, its words a tap away. */
+.pv-art { display: inline-flex; align-items: center; min-height: 34px; padding: 0 12px; border: 0; border-radius: 999px; background: var(--color-wash);
+  color: var(--color-stamp); font: inherit; font-family: var(--font-law); font-size: 1.25rem; line-height: 1; font-weight: 700; cursor: pointer; position: relative; }
+/* A finger's 44 px around the pill. */
+.pv-art::after { content: ""; position: absolute; inset: -5px 0; }
+.pv-art:hover { background: var(--color-stamp); color: var(--color-on-stamp); }
+.pv-reader { margin: 0; max-width: 66ch; font-size: var(--text-lead); line-height: 1.7; color: var(--color-ink); text-wrap: pretty; }
+.pv-small { margin: -6px 0 0; color: var(--color-ink-soft); }
+
+@media print {
+  .pv-chips { display: none; }
+  .pv-row[data-off], .pv-group[data-off] { opacity: 1; }
+  .pv-bar { animation: none; }
+}

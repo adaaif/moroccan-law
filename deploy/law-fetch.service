@@ -1,0 +1,18 @@
+[Unit]
+Description=law: the Bulletin's new issues fetched from the SGG and read (fetch.sh)
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=@USER@
+# manage.py falls back to the development settings: production's are named here, should .env not name them (a line
+# in .env still wins: systemd lets EnvironmentFile= override Environment=).
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+Nice=10
+IOSchedulingClass=idle
+ExecStart=@ROOT@/app/deploy/fetch.sh

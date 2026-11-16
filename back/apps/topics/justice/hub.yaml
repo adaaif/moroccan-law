@@ -1,0 +1,475 @@
+# The justice topic's page (the justice review, 27 Oct 2026, $5 of Haiku at most: what Moroccans need to understand
+# going to court, a complaint, a lawyer, legal aid, deadlines and judgments). One question first, since the law a reader
+# meets depends on where they stand in a case: someone of theirs arrested, a victim, the one prosecuted, the one who
+# claims, the one summoned, or the one holding a judgment. Then the doors in a case's road, each led by the court file
+# every Moroccan who went to court carries home a number of (`marks: file`), the one figure the law sets for the door on
+# its cover, or its pictogram. Written from the texts as the site holds them on 27 Oct 2026: the criminal procedure 22.01
+# (Adala's consolidation with law 03.23, in force since 8 Dec 2025), the civil procedure 58.25 (BO 7485, 23 Feb 2026, in
+# force six months after), the penal code (Adala, 22 Aug 2024, with law 43.22's alternative sentences, arts 35-1 to
+# 35-15), decree 2.25.386 on them, the lawyers' law 66.23 (BO of 20 Aug 2026), royal decree 514.65 on legal aid (Adala,
+# 26 Oct 2011) and order 2787.19, the judicial organisation 38.15 and the prisons law 10.23. Nothing here reaches a
+# reader before a person checks it.
+doors_title: {ar: شنو كتحتاج فالقضية ديالك؟, fr: 'De quoi avez-vous besoin dans votre affaire ?'}
+marks: file
+stages:
+  - {key: police, title: {ar: عند البوليس, fr: Chez la police}, doors: [custody, silence, lawyer-hour, detention]}
+  - {key: complaint, title: {ar: الشكاية, fr: La plainte}, doors: [complaint, prescription, settlement, direct]}
+  - {key: lawyer, title: {ar: المحامي والمساعدة القضائية, fr: 'L’avocat et l’assistance judiciaire'}, doors: [need-lawyer, aid, fees, lawyer-complaint]}
+  - {key: case, title: {ar: القضية المدنية, fr: 'Une affaire civile'}, doors: [which-court, small, lawsuit, debt-paper, summons]}
+  - {key: judgment, title: {ar: الحكم والطعن, fr: 'Le jugement et les recours'}, doors: [appeal-civil, appeal-criminal, opposition, cassation, final]}
+  - {key: after, title: {ar: من بعد الحكم, fr: 'Après le jugement'}, doors: [enforce, coercion, alternative, release, visit]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [rehab, record, protection, accident, cheque, dismissed], links: true}
+
+# The band: the moment someone of yours is taken to the station, the justice emergency every family knows. Its acts are
+# the custody journey's first answers; its tool is the custody clock. No number is shown: no official page gives one.
+urgent:
+  title: {ar: شي حد ديالك تشد؟, fr: 'Un proche arrêté ?'}
+  lead: {ar: 'شنو كيقول القانون من الساعة الأولى ديال الحراسة النظرية', fr: 'Ce que dit la loi dès la première heure de la garde à vue'}
+  to: journeys/custody
+  tone: indigo
+  acts: {journey: custody, steps: [0, 1, 2]}
+  tool: tools/custody
+  tool_label: {ar: 'فوقاش خاصو يتقدم؟', fr: 'Quand doit-il être présenté ?'}
+
+learn: [pages/courts, journeys/complaint, journeys/lawsuit, pages/deadlines, pages/beliefs]
+
+# What people believe, and what the law says, each card leading to the page that answers it.
+beliefs:
+  - claim: {ar: 'البوليس يقدر يخليك حتى يكمل البحث', fr: 'La police peut vous garder jusqu’à la fin de l’enquête'}
+    truth: {ar: 'الحراسة النظرية 48 ساعة، وتزاد 24 ساعة مرة وحدة بإذن كتابي معلل من النيابة العامة، إلا فأمن الدولة والإرهاب.', fr: 'La garde à vue dure 48 heures, prolongeable une fois de 24 heures sur autorisation écrite motivée du parquet, sauf sûreté de l’État et terrorisme.'}
+    to: pages/beliefs
+  - claim: {ar: 'إلا سكتي، كيحسبوها عليك', fr: 'Se taire, c’est avouer'}
+    truth: {ar: 'من حقك تسكت على الأفعال اللي تشديتي عليها، والصمت ماشي اعتراف.', fr: 'Vous avez le droit de garder le silence sur les faits, et le silence n’est pas un aveu.'}
+    to: pages/beliefs
+  - claim: {ar: 'المحامي ما كيدخلش حتى تمشي للمحكمة', fr: 'L’avocat n’intervient qu’au tribunal'}
+    truth: {ar: 'الاتصال بالمحامي من الساعة الأولى ديال الحراسة النظرية، 30 دقيقة فسرية.', fr: 'Le contact avec l’avocat se fait dès la première heure de garde à vue, 30 minutes en toute confidentialité.'}
+    to: pages/beliefs
+  - claim: {ar: 'إلا تنازل المشتكي، القضية كتسالي', fr: 'Si la victime retire sa plainte, l’affaire s’arrête'}
+    truth: {ar: 'التنازل كيوقف الدعوى العمومية غير إلا كانت الشكاية شرط للمتابعة؛ وإلا النيابة العامة كتكمل.', fr: 'Le désistement n’éteint l’action publique que si la plainte conditionne les poursuites ; sinon le parquet poursuit.'}
+    to: pages/beliefs
+  - claim: {ar: 'القفة مسموحة فالحبس', fr: 'On peut apporter le panier à la prison'}
+    truth: {ar: 'القانون كيمنع على المعتقل يتوصل بالمؤونة، إلا فأحوال ومناسبات خاصة كتسمح بيها الإدارة.', fr: 'La loi interdit au détenu de recevoir des provisions, sauf cas et occasions particuliers autorisés par l’administration.'}
+    to: pages/beliefs
+  - claim: {ar: 'المحامي ياخد نسبة من الحكم', fr: 'L’avocat prend un pourcentage du jugement'}
+    truth: {ar: 'الاتفاق المسبق على أتعاب مرتبطة بنتيجة الدعوى باطل بقوة القانون.', fr: 'Convenir d’avance d’honoraires liés au résultat du procès est nul de plein droit.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in: the arrest and the complaint first, then the civil case and the deadlines,
+# then the lawyer, legal aid and what comes after a judgment.
+waves:
+  1: [journeys/custody, journeys/complaint, journeys/trial, pages/beliefs, pages/deadlines, tools/custody, tools/deadline, checklists/custody-rights]
+  2: [journeys/lawsuit, journeys/small-claim, journeys/payment-order, journeys/appeal, pages/courts, tools/court, checklists/claim, checklists/appeal]
+  3: [journeys/aid, journeys/lawyer, journeys/enforce, pages/lawyer, pages/aid, pages/alternatives, pages/prison, pages/coercion, tools/alternative, checklists/aid-file, reform/civil-2026, reform/criminal-2025, reform/alternatives-2025, reform/lawyers-2026, reform/bailiffs-2025]
+
+# The one question: where the reader stands in the case. Each answer names the law that governs it, three figures with
+# their articles, and leads with its own door; it is kept on the phone.
+profile:
+  question: {ar: فين واقف فالقضية؟, fr: 'Où en êtes-vous dans l’affaire ?'}
+  options:
+    - key: family
+      first: custody
+      main: true
+      label: {ar: شي حد ديالي تشد ولا فالحبس, fr: 'Un proche est arrêté ou détenu'}
+      law: {ar: 'قانون المسطرة الجنائية: الحراسة النظرية تدبير استثنائي، بمدة محسوبة بالساعة، وبحقوق كيتعلم بيها الموقوف من الأول.', fr: 'Le code de procédure pénale : la garde à vue est une mesure exceptionnelle, comptée en heures, avec des droits notifiés dès le début.'}
+      facts:
+        - {value: {ar: '48 ساعة', fr: '48 heures'}, label: {ar: 'أقصى مدة للحراسة النظرية، وتزاد 24 مرة وحدة بإذن كتابي', fr: 'au plus de garde à vue, prolongeable une fois de 24 heures sur autorisation écrite'}, cites: [/ma/loi/22-01/art_66, /ma/loi/22-01/art_66-2]}
+        - {value: {ar: 'الساعة 1', fr: '1re heure'}, label: {ar: 'من الحراسة النظرية كيبدا الاتصال بالمحامي، 30 دقيقة', fr: 'de garde à vue : le contact avec l’avocat, 30 minutes'}, cites: [/ma/loi/22-01/art_66-2]}
+        - {value: {ar: 'العائلة', fr: 'La famille'}, label: {ar: 'كيعلمها الضابط فور الوضع تحت الحراسة، إلا رفض الموقوف', fr: 'est prévenue par l’officier dès la garde à vue, sauf refus de la personne'}, cites: [/ma/loi/22-01/art_67]}
+    - key: victim
+      first: complaint
+      main: true
+      label: {ar: تعدّاو عليّا وبغيت نشكي, fr: 'Je suis victime et veux porter plainte'}
+      law: {ar: 'قانون المسطرة الجنائية: الشكاية كتوصل لوكيل الملك، وهو اللي كيقرر واش يتابع ولا يحفظ، وكيعلمك بالمآل.', fr: 'Le code de procédure pénale : la plainte va au procureur du Roi, qui décide de poursuivre ou de classer, et vous informe de la suite.'}
+      facts:
+        - {value: {ar: '15 يوم', fr: '15 jours'}, label: {ar: 'باش يعلمك وكيل الملك بمآل الشكاية من نهار القرار', fr: 'pour que le procureur vous informe de la suite, après sa décision'}, cites: [/ma/loi/22-01/art_40]}
+        - {value: {ar: '4 سنين', fr: '4 ans'}, label: {ar: 'تقادم الدعوى العمومية فالجنحة؛ 15 فالجناية وعام فالمخالفة', fr: 'de prescription de l’action publique pour un délit ; 15 pour un crime, 1 pour une contravention'}, cites: [/ma/loi/22-01/art_5]}
+        - {value: {ar: 'الصلح', fr: 'La conciliation'}, label: {ar: 'ممكن أمام وكيل الملك قبل المتابعة، ولا بالوساطة', fr: 'possible devant le procureur avant les poursuites, ou par médiation'}, cites: [/ma/loi/22-01/art_41]}
+    - key: accused
+      first: lawyer-hour
+      main: true
+      label: {ar: تشكاو بيا ولا متابع, fr: 'Je suis mis en cause ou poursuivi'}
+      law: {ar: 'قانون المسطرة الجنائية: البراءة هي الأصل، والصمت ماشي اعتراف، والمحامي ضروري فالجنايات وفبعض الجنح.', fr: 'Le code de procédure pénale : la présomption d’innocence, le silence n’est pas un aveu, l’avocat est obligatoire pour les crimes et certains délits.'}
+      facts:
+        - {value: {ar: 'الصمت', fr: 'Le silence'}, label: {ar: 'من حقك، وما كيتحسبش اعتراف', fr: 'est votre droit, et ne vaut pas aveu'}, cites: [/ma/loi/22-01/art_66-2]}
+        - {value: {ar: '10 أيام', fr: '10 jours'}, label: {ar: 'باش تستأنف حكم جنحي من نهار النطق بيه', fr: 'pour faire appel d’un jugement correctionnel, dès son prononcé'}, cites: [/ma/loi/22-01/art_400]}
+        - {value: {ar: 'إلزامي', fr: 'Obligatoire'}, label: {ar: 'المحامي فالجنايات، وفالجنح للقاصر وذوي العاهات', fr: 'l’avocat pour les crimes, et pour les délits d’un mineur ou d’une personne handicapée'}, cites: [/ma/loi/22-01/art_316]}
+    - key: claimant
+      first: which-court
+      main: true
+      label: {ar: عندي حق بغيت نطالب بيه, fr: 'Je veux réclamer un droit'}
+      law: {ar: 'قانون المسطرة المدنية 58.25 (نافذ منذ 23 غشت 2026): الدعوى بمقال مكتوب فيه بيانات محددة، والمحكمة حسب الموضوع والمبلغ.', fr: 'Le code de procédure civile 58.25 (en vigueur depuis le 23 août 2026) : la demande par requête écrite avec des mentions fixées, le tribunal selon l’objet et le montant.'}
+      facts:
+        - {value: {ar: '5.000 درهم', fr: '5 000 DH'}, label: {ar: 'أقل منها: قاضي القرب، شفوي ومجاني', fr: 'en dessous : le juge de proximité, oral et gratuit'}, cites: [/ma/loi/58-25/art_331, /ma/loi/58-25/art_329]}
+        - {value: {ar: '10.000 درهم', fr: '10 000 DH'}, label: {ar: 'حتى ليها: المحكمة الابتدائية كتحكم ابتدائيا وانتهائيا', fr: 'jusqu’à ce montant : le tribunal de première instance juge en premier et dernier ressort'}, cites: [/ma/loi/58-25/art_30]}
+        - {value: {ar: 'المقال', fr: 'La requête'}, label: {ar: 'مكتوب ومؤرخ وموقع، والوثائق مقابل وصل', fr: 'écrite, datée, signée, les pièces contre récépissé'}, cites: [/ma/loi/58-25/art_76, /ma/loi/58-25/art_77]}
+    - key: defendant
+      first: summons
+      label: {ar: جاني استدعاء للمحكمة, fr: 'J’ai reçu une convocation'}
+      law: {ar: 'قانون المسطرة المدنية 58.25: الاستدعاء كيوصل مع نسخة من المقال، والآجال كتبدا من التبليغ.', fr: 'Le code de procédure civile 58.25 : la convocation arrive avec la copie de la requête, et les délais courent de la notification.'}
+      facts:
+        - {value: {ar: 'نسخة المقال', fr: 'La requête'}, label: {ar: 'كتوصلك مع الاستدعاء، باش تعرف شنو كيطلبو منك', fr: 'vous est remise avec la convocation, pour savoir ce qu’on vous demande'}, cites: [/ma/loi/58-25/art_84]}
+        - {value: {ar: '15 يوم', fr: '15 jours'}, label: {ar: 'باش تتعرض على حكم غيابي ما كيتستأنفش', fr: 'pour faire opposition à un jugement par défaut non susceptible d’appel'}, cites: [/ma/loi/58-25/art_200]}
+        - {value: {ar: '30 يوم', fr: '30 jours'}, label: {ar: 'باش تستأنف حكم ابتدائي من التبليغ', fr: 'pour faire appel d’un jugement dès la notification'}, cites: [/ma/loi/58-25/art_204]}
+    - key: judgment
+      first: appeal-civil
+      label: {ar: عندي حكم, fr: 'J’ai un jugement'}
+      law: {ar: 'الطعن داخل أجله ولا الحكم كيولي نهائي؛ والتنفيذ بطلب لقاضي التنفيذ.', fr: 'Le recours dans son délai, sinon le jugement devient définitif ; l’exécution sur demande au juge de l’exécution.'}
+      facts:
+        - {value: {ar: '30 يوم', fr: '30 jours'}, label: {ar: 'الاستئناف والنقض فالمدني من التبليغ', fr: 'pour l’appel et la cassation en matière civile, dès la notification'}, cites: [/ma/loi/58-25/art_204, /ma/loi/58-25/art_380]}
+        - {value: {ar: 'كامل', fr: 'Franc'}, label: {ar: 'الأجل: ما كيتحسبش نهار التبليغ ولا النهار الأخير', fr: 'le délai : ni le jour de la notification ni le dernier ne comptent'}, cites: [/ma/loi/58-25/art_602, /ma/loi/22-01/art_750]}
+        - {value: {ar: '10 أيام', fr: '10 jours'}, label: {ar: 'باش يبلغ المكلف بالتنفيذ المنفذ عليه من نهار الطلب', fr: 'pour que l’agent d’exécution notifie le débiteur après la demande'}, cites: [/ma/loi/58-25/art_486]}
+
+events:
+  # At the police.
+  - key: custody
+    mark: {value: '48', unit: {ar: ساعة, fr: heures}}
+    words: [الحراسة النظرية, لاكارد آ في, garde à vue, شحال كيبقى فالكوميسارية, شحال يقدر يخليه البوليس, تشد, تشدّ, شدوه البوليس, ddawh lbolis, شدو ولدي, شدو خويا, chhal kaybqa f commissariat, durée garde à vue maroc, تمديد الحراسة النظرية, prolongation garde à vue, الكوميسارية, commissariat, kaybqa f commissariat, f commissariat]
+    means:
+      لمدة لا تتجاوز ثمان وأربعين ساعة تحتسب ابتداء من ساعة إيقافهم: [الحراسة النظرية, لاكارد آ في, garde à vue, شحال كيبقى فالكوميسارية, شحال يقدر يخليه البوليس, chhal kaybqa f commissariat, durée garde à vue maroc, الكوميسارية]
+      يمكن لضرورة البحث تمديد مدة الحراسة النظرية أربعا وعشرين ساعة لمرة واحدة: [تمديد الحراسة النظرية, prolongation garde à vue]
+      يحتفظ بشخص أو عدة أشخاص تحت الحراسة النظرية: [تشد, تشدّ, شدوه البوليس, ddawh lbolis, شدو ولدي, شدو خويا]
+      لمدة لا تتجاوز ثمان وأربعين ساعة: [commissariat, kaybqa f commissariat, f commissariat]
+    title: {ar: 'تشد عند البوليس: شحال يقدر يبقى؟', fr: 'Garde à vue : combien de temps ?'}
+    lead: {ar: '48 ساعة، وتزاد 24 مرة وحدة بإذن مكتوب ومعلل من النيابة العامة', fr: '48 heures, prolongeables une fois de 24 heures sur autorisation écrite motivée du parquet'}
+    to: journeys/custody
+  - key: silence
+    icon: hush
+    words: [الحق فالصمت, نسكت عند البوليس, droit au silence, droit de se taire, الصمت ماشي اعتراف, حقوق الموقوف, droits garde à vue, شنو حقوقي ملي نتشد, يعلمو العائلة, خاصهم يعلمو العائلة, يعلمو عائلتي]
+    means:
+      حقه في التزام الصمت بشأن الأفعال موضوع إيقافه: [الحق فالصمت, نسكت عند البوليس, droit au silence, droit de se taire, الصمت ماشي اعتراف]
+      إخباره فورا وبكيفية يفهمها، بدواعي إيقافه وبحقوقه: [حقوق الموقوف, droits garde à vue, شنو حقوقي ملي نتشد]
+      يقوم ضابط الشرطة القضائية بإشعار عائلة الموقوف: [يعلمو العائلة, خاصهم يعلمو العائلة, يعلمو عائلتي]
+    title: {ar: 'شنو حقوقي ملي نتشد؟', fr: 'Mes droits quand je suis arrêté'}
+    lead: {ar: 'علاش تشديتي، الحق فالصمت، المحامي، العائلة والفحص الطبي', fr: 'Le motif, le silence, l’avocat, la famille, l’examen médical'}
+    to: checklists/custody-rights
+  - key: lawyer-hour
+    mark: {value: '30', unit: {ar: دقيقة, fr: minutes}}
+    words: [محامي فالكوميسارية, الاتصال بالمحامي, الاتصال بمحام, حق الاتصال بمحام, المعتقل والمحامي, avocat garde à vue, avocat dès la première heure, نعيط للمحامي, نتصل بالعائلة, نعيط لمحامي, ملي نتشد, نعيط للمحامي]
+    means:
+      يتم الاتصال بالمحامي ابتداء من الساعة الأولى لوضع المعني بالأمر تحت الحراسة النظرية: [محامي فالكوميسارية, الاتصال بالمحامي, avocat garde à vue, avocat dès la première heure, نعيط للمحامي]
+      إمكانية الاتصال بأحد أقربائه أو محاميه بالهاتف: [نتصل بالعائلة]
+      يتم الاتصال بالمحامي ابتداء من الساعة الأولى: [نعيط لمحامي, ملي نتشد, نعيط للمحامي]
+    title: {ar: 'المحامي من الساعة الأولى', fr: 'L’avocat dès la première heure'}
+    lead: {ar: '30 دقيقة مع المحامي فسرية، والاتصال بشي واحد من العائلة', fr: '30 minutes avec l’avocat en toute confidentialité, et un appel à un proche'}
+    to: journeys/custody
+  - key: detention
+    mark: {value: '1', unit: {ar: شهر, fr: mois}}
+    words: [الاعتقال الاحتياطي, détention préventive, حطوه فالحبس قبل الحكم, المراقبة القضائية, contrôle judiciaire, السراح المؤقت, الكفالة, liberté provisoire, سراح]
+    means:
+      الاعتقال الاحتياطي تدبير استثنائي: [الاعتقال الاحتياطي, détention préventive, حطوه فالحبس قبل الحكم]
+      المراقبة القضائية: [المراقبة القضائية, contrôle judiciaire]
+      تقديم كفالة مالية أو شخصية مقابل إطلاق سراحه: [السراح المؤقت, الكفالة, liberté provisoire, سراح]
+    title: {ar: 'حطوه فالحبس قبل الحكم', fr: 'Détenu avant le jugement'}
+    lead: {ar: 'الاعتقال الاحتياطي استثنائي ومكتوب ومعلل؛ فالتحقيق فالجنح شهر يتجدد مرة', fr: 'La détention provisoire est exceptionnelle, écrite et motivée ; en instruction correctionnelle, un mois renouvelable une fois'}
+    to: journeys/custody
+  # The complaint.
+  - key: complaint
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [نشكي, شكاية, نحط شكاية, ندير شكاية, شكاية لوكيل الملك, porter plainte, déposer plainte maroc, plainte procureur, nchki, n7at chkaya, الشكاية تحفظات, حفظ الشكاية, classement sans suite, مآل الشكاية, suite de ma plainte, déposer plainte, procureur du roi, plainte auprès du procureur]
+    means:
+      يتلقى وكيل الملك المحاضر والشكايات والوشايات: [نشكي, شكاية, نحط شكاية, ندير شكاية, شكاية لوكيل الملك, porter plainte, déposer plainte maroc, plainte procureur, nchki, n7at chkaya]
+      يقوم وكيل الملك بإشعار المحامي، وعند الاقتضاء الضحية أو المشتكي، بالمآل: [مآل الشكاية, suite de ma plainte]
+      إذا قرر حفظ الشكاية: [الشكاية تحفظات, حفظ الشكاية, classement sans suite]
+      يتلقى وكيل الملك المحاضر والشكايات والوشايات: [déposer plainte, procureur du roi, plainte auprès du procureur]
+    title: {ar: 'بغيت نشكي', fr: 'Porter plainte'}
+    lead: {ar: 'الشكاية لوكيل الملك، وكيعلمك بالمآل داخل 15 يوم من القرار', fr: 'La plainte au procureur du Roi, qui vous informe de la suite dans les 15 jours de sa décision'}
+    to: journeys/complaint
+  - key: prescription
+    mark: {value: '4', unit: {ar: سنين, fr: ans}}
+    words: [التقادم, تقادم الشكاية, تقادم الدعوى العمومية, prescription plainte maroc, prescription délit, واش فات الوقت نشكي, شكاية قديمة, prescription de l'action publique, action publique prescription]
+    means:
+      تتقادم الدعوى العمومية: [التقادم, تقادم الشكاية, تقادم الدعوى العمومية, prescription plainte maroc, prescription délit, واش فات الوقت نشكي, شكاية قديمة]
+    title: {ar: 'واش مازال الوقت نشكي؟', fr: 'Est-il encore temps de porter plainte ?'}
+    lead: {ar: 'التقادم: 15 سنة فالجناية، 4 فالجنحة، عام فالمخالفة', fr: 'La prescription : 15 ans pour un crime, 4 pour un délit, 1 pour une contravention'}
+    to: tools/deadline
+  - key: settlement
+    icon: handshake
+    words: [الصلح, نتصالحو, الصلح الجنائي, médiation pénale, conciliation pénale, تنازل, التنازل عن الشكاية, désistement plainte, retirer plainte, التنازل كيوقف, كيوقف المتابعة, tanazol]
+    means:
+      يعتبر الصلح بديلا عن الدعوى العمومية: [الصلح, نتصالحو, الصلح الجنائي, médiation pénale, conciliation pénale]
+      تسقط أيضا بتنازل المشتكي عن شكايته، إذا كانت الشكاية شرطاً للمتابعة: [تنازل, التنازل عن الشكاية, désistement plainte, retirer plainte]
+      تسقط أيضا بتنازل المشتكي عن شكايته: [التنازل كيوقف, كيوقف المتابعة, tanazol]
+    title: {ar: 'نتصالحو ولا نتنازل', fr: 'Se concilier ou se désister'}
+    lead: {ar: 'الصلح أمام وكيل الملك قبل المتابعة؛ والتنازل ما كيوقفش ديما القضية', fr: 'La conciliation devant le procureur avant les poursuites ; le désistement n’arrête pas toujours l’affaire'}
+    to: journeys/complaint
+  - key: direct
+    icon: letter
+    words: [الاستدعاء المباشر, citation directe, الطرف المدني, partie civile, نطالب بالتعويض فالقضية الجنائية, المطالبة بالحق المدني]
+    means:
+      بالاستدعاء المباشر الذي يسلمه وكيل الملك أو الطرف المدني للمتهم: [الاستدعاء المباشر, citation directe]
+      الطرف المدني: [الطرف المدني, partie civile, نطالب بالتعويض فالقضية الجنائية, المطالبة بالحق المدني]
+    title: {ar: 'نرفع القضية بيدي ونطالب بالتعويض', fr: 'Citer directement et demander réparation'}
+    lead: {ar: 'الاستدعاء المباشر من الطرف المدني، والمطالبة بالحق المدني', fr: 'La citation directe par la partie civile, et la constitution de partie civile'}
+    to: journeys/complaint
+  # The lawyer and legal aid.
+  - key: need-lawyer
+    icon: robe
+    words: [واش خاصني محامي, ضروري محامي, avocat obligatoire, sans avocat, نمشي للمحكمة بلا محامي, بلا محامي, نوكل محامي, المحامي, avocat maroc, l avocat]
+    means:
+      تكون مؤازرة المحامي إلزامية في الجنايات: [ضروري محامي, avocat obligatoire]
+      لا يمكن أن يكون وكيلا للأطراف، إلا من كان زوجا أو صهرا: [واش خاصني محامي, sans avocat, نمشي للمحكمة بلا محامي, بلا محامي]
+      يجب على المحامي أن يحتفظ بتكليف مكتوب من موكله: [نوكل محامي, المحامي, avocat maroc, l avocat]
+    title: {ar: 'واش خاصني محامي؟', fr: 'Faut-il un avocat ?'}
+    lead: {ar: 'ضروري فالجنايات وأمام محكمة النقض؛ فبزاف ديال القضايا تقدر تمشي بوحدك', fr: 'Obligatoire pour les crimes et devant la Cour de cassation ; dans bien des affaires, vous pouvez y aller seul'}
+    to: pages/lawyer
+  - key: aid
+    mark: {value: '0', unit: {ar: درهم, fr: DH}}
+    words: [المساعدة القضائية, assistance judiciaire, aide juridictionnelle, محامي بالمجان, محامي فابور, avocat gratuit, ما عنديش باش نخلص المحامي, شهادة العسر, certificat d'indigence, chahadat l3osr, m7ami fabor, mo7ami fabor, fabor]
+    means:
+      يمكن منح المساعدة القضائية لدى جميع محاكم المملكة: [المساعدة القضائية, assistance judiciaire, aide juridictionnelle, محامي بالمجان, محامي فابور, avocat gratuit, ما عنديش باش نخلص المحامي]
+      شهادة صحيحة من حيث الشكل يسلمها الباشا أو القائد تثبت عسر المعني بالأمر: [شهادة العسر, certificat d'indigence, chahadat l3osr]
+      يمكن منح المساعدة القضائية لدى جميع محاكم المملكة: [m7ami fabor, mo7ami fabor, fabor]
+    title: {ar: 'ما عنديش باش نخلص المحامي', fr: 'Je n’ai pas de quoi payer un avocat'}
+    lead: {ar: 'المساعدة القضائية: الطلب لوكيل الملك مع شهادة العسر من الباشا أو القائد', fr: 'L’assistance judiciaire : la demande au procureur avec le certificat d’indigence du pacha ou du caïd'}
+    to: journeys/aid
+  - key: fees
+    mark: {value: '10.000', unit: {ar: درهم, fr: DH}}
+    words: [أتعاب المحامي, شحال كياخد المحامي, honoraires avocat maroc, tarif avocat, الوصل ديال المحامي, reçu avocat, نسبة من الحكم, pourcentage avocat, honoraires d'avocat, honoraires avocat, honoraires liés au résultat, résultat du procès]
+    means:
+      يجب على المحامي أن يحتفظ بتكليف مكتوب من موكله: [أتعاب المحامي, شحال كياخد المحامي, honoraires avocat maroc, tarif avocat]
+      لا يجوز للمحامي أن يتسلم، في نطاق نشاطه المهني، أي مبالغ مالية أو سندات أو قيم إلا مقابل وصل: [الوصل ديال المحامي, reçu avocat]
+      أن يتفق مسبقا مع موكله على أن تكون الأتعاب المستحقة له مرتبطة بنتيجة الدعوى: [نسبة من الحكم, pourcentage avocat]
+      يجب على المحامي أن يحتفظ بتكليف مكتوب من موكله: [honoraires d'avocat, honoraires avocat]
+      مرتبطة بنتيجة الدعوى: [honoraires liés au résultat, résultat du procès]
+    title: {ar: 'الأتعاب ديال المحامي', fr: 'Les honoraires de l’avocat'}
+    lead: {ar: 'تكليف مكتوب ووصل؛ فوق 10.000 درهم بشيك ولا أداء إلكتروني', fr: 'Une lettre de mission et un reçu ; au-delà de 10 000 DH par chèque ou paiement électronique'}
+    to: pages/lawyer
+  - key: lawyer-complaint
+    mark: {value: '1', unit: {ar: شهر, fr: mois}}
+    words: [نشكي بالمحامي, شكاية ضد محامي, plainte contre avocat, النقيب, bâtonnier, المحامي ما رجعش ليا الوثائق, نزاع الأتعاب, litige honoraires, المحامي خدعني, retirer son dossier, retirer le mandat, changer d avocat, نبدل المحامي]
+    means:
+      تحال إلى النقيب الشكايات المرفوعة مباشرة لمجلس الهيئة: [نشكي بالمحامي, شكاية ضد محامي, plainte contre avocat, النقيب, bâtonnier, المحامي خدعني]
+      يختص نقيب هيئة المحامين بالبت، بناء على طلب، في المنازعات التي تثار بين المحامي وموكله: [نزاع الأتعاب, litige honoraires]
+      أن يحتفظ بالوثائق المسلمة له من طرف موكله: [المحامي ما رجعش ليا الوثائق]
+      يمكن للموكل أن يسحب التوكيل من محاميه: [retirer son dossier, retirer le mandat, changer d avocat, نبدل المحامي]
+    title: {ar: 'مشكل مع المحامي', fr: 'Un différend avec son avocat'}
+    lead: {ar: 'النقيب كيبت فشهر، فالشكاية وفالأتعاب؛ والوثائق كترجع فـ15 يوم', fr: 'Le bâtonnier statue en un mois, sur la plainte comme sur les honoraires ; les pièces reviennent en 15 jours'}
+    to: journeys/lawyer
+  # A civil case.
+  - key: which-court
+    icon: scales
+    words: [أشمن محكمة, فين نمشي, المحكمة المختصة, tribunal compétent, quel tribunal, المحكمة الإدارية, tribunal administratif, المحكمة التجارية, tribunal de commerce, القسم الاجتماعي, محكمة الأسرة]
+    means:
+      تختص المحاكم الابتدائية بالنظر في: [أشمن محكمة, فين نمشي, المحكمة المختصة, tribunal compétent, quel tribunal, القسم الاجتماعي, محكمة الأسرة]
+      تختص المحاكم الابتدائية الإدارية والأقسام المتخصصة في القضاء الإداري: [المحكمة الإدارية, tribunal administratif]
+      القضايا التجارية: [المحكمة التجارية, tribunal de commerce]
+    title: {ar: 'أشمن محكمة؟', fr: 'Quel tribunal ?'}
+    lead: {ar: 'حسب الموضوع والمبلغ: القرب، الابتدائية وأقسامها، الإدارية، التجارية', fr: 'Selon l’objet et le montant : proximité, première instance et ses sections, administratif, commerce'}
+    to: tools/court
+  - key: small
+    mark: {value: '5.000', unit: {ar: درهم, fr: DH}}
+    words: [قضاء القرب, قاضي القرب, juge de proximité, justice de proximité, دين صغير, petite créance, نطالب بدين صغير, داين ليا شي فلوس قليلة, 9adi l9orb, l9orb]
+    means:
+      يختص قاضي القرب بالنظر في الدعاوى الشخصية والمنقولة التي تقل قيمتها عن خمسة آلاف: [قضاء القرب, قاضي القرب, juge de proximité, justice de proximité, دين صغير, petite créance, نطالب بدين صغير, داين ليا شي فلوس قليلة]
+      يختص قاضي القرب بالنظر في الدعاوى الشخصية والمنقولة: [9adi l9orb, l9orb]
+    title: {ar: 'دين صغير: قاضي القرب', fr: 'Une petite créance : le juge de proximité'}
+    lead: {ar: 'أقل من 5.000 درهم: بالكلام ولا بمقال، وبلا رسوم للأشخاص', fr: 'Moins de 5 000 DH : de vive voix ou par écrit, sans frais pour les particuliers'}
+    to: journeys/small-claim
+  - key: lawsuit
+    icon: contract
+    words: [نرفع دعوى, دعوى مدنية, ندعي, نرفع قضية, intenter une action, action en justice maroc, مقال افتتاحي, requête introductive, الرسم القضائي, frais de justice]
+    means:
+      تقدم الدعوى أمام محاكم الدرجة الأولى، ما لم ينص القانون على خلاف ذلك، بمقال مكتوب: [نرفع دعوى, دعوى مدنية, ندعي, نرفع قضية, intenter une action, action en justice maroc, مقال افتتاحي, requête introductive]
+      الرسم القضائي: [الرسم القضائي, frais de justice]
+    title: {ar: 'بغيت نرفع دعوى', fr: 'Intenter une action'}
+    lead: {ar: 'مقال مكتوب فيه البيانات اللي كيطلب القانون، والوثائق مقابل وصل', fr: 'Une requête écrite avec les mentions que la loi exige, les pièces contre récépissé'}
+    to: journeys/lawsuit
+  - key: debt-paper
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [الأمر بالأداء, injonction de payer, عندي ورقة فيها الدين, عندي اعتراف بدين, كمبيالة ما تخلصاتش, التعرض على الأمر بالأداء, kambiyala, kambiyala ma tkhlsatch, كمبيالة]
+    means:
+      مقال الأمر بالأداء: [الأمر بالأداء, injonction de payer, عندي ورقة فيها الدين, عندي اعتراف بدين, كمبيالة ما تخلصاتش]
+      أن يتعرض على الأمر داخل أجل خمسة عشر (15) يوما من تاريخ التبليغ: [التعرض على الأمر بالأداء]
+      مقال الأمر بالأداء: [kambiyala, kambiyala ma tkhlsatch, كمبيالة]
+    title: {ar: 'عندي ورقة فيها الدين', fr: 'J’ai un titre de créance'}
+    lead: {ar: 'الأمر بالأداء كينفذ فالحين؛ والمدين يتعرض داخل 15 يوم من التبليغ', fr: 'L’injonction de payer est exécutoire aussitôt ; le débiteur fait opposition dans les 15 jours de la notification'}
+    to: journeys/payment-order
+  - key: summons
+    icon: letter
+    words: [استدعاء للمحكمة, جاني استدعاء, convocation tribunal, المفوض القضائي, huissier de justice, التبليغ, notification jugement, تبدلت العنوان]
+    means:
+      يسلم الاستدعاء مرفقا بنسخة من مقال الدعوى إلى الشخص نفسه: [استدعاء للمحكمة, جاني استدعاء, convocation tribunal, التبليغ, notification jugement]
+      يبلغ الاستدعاء بواسطة أحد المفوضين القضائيين: [المفوض القضائي, huissier de justice]
+      يتم اعتماد المعلومات المتوفرة بقاعدة المعطيات المتعلقة بالبطاقة الوطنية للتعريف الإلكترونية: [تبدلت العنوان]
+    title: {ar: 'جاني استدعاء للمحكمة', fr: 'J’ai reçu une convocation'}
+    lead: {ar: 'كيوصل مع نسخة المقال؛ وإلا تبدل العنوان، كيعتمدو عنوان البطاقة الوطنية', fr: 'Elle arrive avec la copie de la requête ; en cas de déménagement, l’adresse de la carte nationale fait foi'}
+    to: journeys/lawsuit
+  # The judgment and its recourses.
+  - key: appeal-civil
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [الاستئناف, نستأنف, أجل الاستئناف, délai d'appel, faire appel jugement, appel civil maroc, nst2nf, شحال عندي باش نستأنف, nst2nf l7okm, l7okm]
+    means:
+      تستأنف الأحكام الصادرة عن محاكم الدرجة الأولى داخل أجل ثلاثين (30) يوما: [الاستئناف, نستأنف, أجل الاستئناف, délai d'appel, faire appel jugement, appel civil maroc, nst2nf, شحال عندي باش نستأنف]
+    title: {ar: 'نستأنف حكم مدني', fr: 'Faire appel d’un jugement civil'}
+    lead: {ar: '30 يوم من التبليغ، وأجل كامل', fr: '30 jours dès la notification, délai franc'}
+    to: tools/deadline
+  - key: appeal-criminal
+    mark: {value: '10', unit: {ar: أيام, fr: jours}}
+    words: [استئناف حكم جنحي, appel pénal, appel correctionnel délai, نستأنف الحكم ديال الحبس, أجل الاستئناف الجنحي]
+    means:
+      يحدد أجل الاستئناف في عشرة أيام تبتدئ من تاريخ النطق بالحكم: [استئناف حكم جنحي, appel pénal, appel correctionnel délai, نستأنف الحكم ديال الحبس, أجل الاستئناف الجنحي]
+    title: {ar: 'نستأنف حكم جنحي', fr: 'Faire appel d’un jugement correctionnel'}
+    lead: {ar: '10 أيام من النطق بالحكم إلا كنتي حاضر', fr: '10 jours dès le prononcé si vous étiez présent'}
+    to: tools/deadline
+  - key: opposition
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [حكم غيابي, التعرض, jugement par défaut, opposition jugement, حكمو عليا وأنا غايب]
+    means:
+      يجوز التعرض على الأحكام الغيابية: [حكم غيابي, التعرض, jugement par défaut, opposition jugement, حكمو عليا وأنا غايب]
+    title: {ar: 'حكمو عليا وأنا غايب', fr: 'Jugé en mon absence'}
+    lead: {ar: 'التعرض: 15 يوم فالمدني و10 أيام فالزجري من التبليغ', fr: 'L’opposition : 15 jours au civil, 10 au pénal, dès la notification'}
+    to: tools/deadline
+  - key: cassation
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [النقض, محكمة النقض, pourvoi en cassation, cour de cassation, طعن بالنقض]
+    means:
+      يحدد أجل الطعن أمام محكمة النقض: [النقض, محكمة النقض, pourvoi en cassation, cour de cassation, طعن بالنقض]
+    title: {ar: 'نطعن بالنقض', fr: 'Se pourvoir en cassation'}
+    lead: {ar: '30 يوم فالمدني و10 أيام فالجنائي، بمحامي مقبول أمام محكمة النقض', fr: '30 jours au civil, 10 au pénal, par un avocat agréé près la Cour de cassation'}
+    to: journeys/appeal
+  - key: final
+    mark: {value: '10.000', unit: {ar: درهم, fr: DH}}
+    words: [حكم ابتدائي وانتهائي, en premier et dernier ressort, طلب الإلغاء, واش الحكم كيتستأنف, jugement non susceptible d'appel, premier et dernier ressort, dernier ressort]
+    means:
+      ابتدائيا وانتهائيا إلى غاية عشرة آلاف (10.000) درهم: [حكم ابتدائي وانتهائي, en premier et dernier ressort, واش الحكم كيتستأنف, jugement non susceptible d'appel]
+      طلب إلغائه أمام رئيس المحكمة الابتدائية المختص: [طلب الإلغاء]
+    title: {ar: 'واش الحكم ديالي كيتستأنف؟', fr: 'Mon jugement est-il susceptible d’appel ?'}
+    lead: {ar: 'حتى 10.000 درهم ما كاينش استئناف؛ غير طلب الإلغاء فـ15 يوم فحالات محددة', fr: 'Jusqu’à 10 000 DH, pas d’appel ; seulement une demande d’annulation en 15 jours, dans des cas précis'}
+    to: tools/court
+  # After the judgment.
+  - key: enforce
+    mark: {value: '10', unit: {ar: أيام, fr: jours}}
+    words: [تنفيذ الحكم, ننفذ الحكم, exécution jugement, exécution d'un jugement, exécuter un jugement, قاضي التنفيذ, juge de l'exécution, الصيغة التنفيذية, formule exécutoire, الحجز التنفيذي, الحجز التحفظي, saisie exécution, saisie conservatoire, ما بغاش يخلص من بعد الحكم, ننفذ حكم, ننفذ الحكم ديالي]
+    means:
+      يقدم طلب التنفيذ إلى قاضي التنفيذ: [تنفيذ الحكم, ننفذ الحكم, exécution jugement, exécution d'un jugement, exécuter un jugement, قاضي التنفيذ, juge de l'exécution, ما بغاش يخلص من بعد الحكم]
+      صيغة التنفيذ: [الصيغة التنفيذية, formule exécutoire]
+      حجز المنقولات والعقارات: [الحجز التنفيذي, saisie exécution]
+      يقدم طلب التنفيذ إلى قاضي التنفيذ: [ننفذ حكم, ننفذ الحكم ديالي]
+    title: {ar: 'بغيت ننفذ الحكم', fr: 'Faire exécuter un jugement'}
+    lead: {ar: 'طلب لقاضي التنفيذ؛ المكلف بالتنفيذ كيبلغ المنفذ عليه داخل 10 أيام', fr: 'Une demande au juge de l’exécution ; l’agent notifie le débiteur dans les 10 jours'}
+    to: journeys/enforce
+  - key: coercion
+    mark: {value: '8.000', unit: {ar: درهم, fr: DH}}
+    words: [الإكراه البدني, contrainte par corps, الحبس على الغرامة, ما خلصتش الغرامة, شهادة عدم الخضوع للضريبة, non imposition contrainte, prescription de la peine, تقادم العقوبة, تقادم العقوبات, peine prescrite]
+    means:
+      تحدد مدة الإكراه البدني: [الإكراه البدني, contrainte par corps, الحبس على الغرامة, ما خلصتش الغرامة]
+      شهادة عدم الخضوع للضريبة على المستوى الوطني: [شهادة عدم الخضوع للضريبة, non imposition contrainte]
+      تتقادم العقوبات الجنحية بمضي أربع سنوات: [prescription de la peine, تقادم العقوبة, تقادم العقوبات, peine prescrite]
+    title: {ar: 'ما خلصتش الغرامة: الإكراه البدني', fr: 'Amende impayée : la contrainte par corps'}
+    lead: {ar: 'من 15 يوم حتى 15 شهر حسب المبلغ، من 8.000 درهم؛ والمعسر معفي بشهادة', fr: 'De 15 jours à 15 mois selon le montant, dès 8 000 DH ; l’insolvable en est dispensé sur attestation'}
+    to: pages/coercion
+  - key: alternative
+    mark: {value: '5', unit: {ar: سنين, fr: ans}}
+    words: [العقوبات البديلة, العقوبة البديلة, peines alternatives, peine alternative maroc, العمل لأجل المنفعة العامة, travail d'intérêt général, الغرامة اليومية, amende journalière, المراقبة الإلكترونية, bracelet électronique, السوار الإلكتروني, نشري الحبس, نشري أيام الحبس, السوار الإلكتروني بدل الحبس, jour-amende, montant jour amende, surveillance électronique peine]
+    means:
+      العقوبات البديلة هي العقوبات التي يحكم بها بديلا للعقوبات السالبة للحرية: [العقوبات البديلة, العقوبة البديلة, peines alternatives, peine alternative maroc]
+      العمل لأجل المنفعة العامة: [العمل لأجل المنفعة العامة, travail d'intérêt général]
+      يحدد مبلغ الغرامة اليومية: [الغرامة اليومية, amende journalière, نشري الحبس, نشري أيام الحبس]
+      المراقبة الإلكترونية: [المراقبة الإلكترونية, bracelet électronique, السوار الإلكتروني]
+      يمكن للمحكمة أن تحكم بالمراقبة الإلكترونية بديلا للعقوبة السالبة للحرية: [السوار الإلكتروني بدل الحبس, surveillance électronique peine]
+      يحدد مبلغ الغرامة اليومية بين 100 و2.000 درهم: [jour-amende, montant jour amende]
+    title: {ar: 'العقوبة البديلة', fr: 'La peine alternative'}
+    lead: {ar: 'فالجنح حتى 5 سنين حبس: خدمة، مراقبة، تدابير ولا غرامة يومية', fr: 'Pour les délits jusqu’à 5 ans de prison : travail, surveillance, mesures ou jours-amende'}
+    to: tools/alternative
+  - key: release
+    mark: {value: '½', unit: {ar: العقوبة, fr: de la peine}}
+    words: [الإفراج المقيد بشروط, libération conditionnelle, يخرج قبل الوقت, نص العقوبة, العفو]
+    means:
+      الإفراج المقيد بشروط: [الإفراج المقيد بشروط, libération conditionnelle, يخرج قبل الوقت, نص العقوبة]
+    title: {ar: 'يخرج قبل ما تكمل العقوبة؟', fr: 'Sortir avant la fin de la peine ?'}
+    lead: {ar: 'الإفراج المقيد: من بعد نص العقوبة فالجنح، وثلثيها فالجنايات', fr: 'La libération conditionnelle : après la moitié de la peine pour un délit, les deux tiers pour un crime'}
+    to: pages/prison
+  - key: visit
+    icon: bars
+    words: [زيارة الحبس, نزور فالحبس, visite prison, القفة, panier prison, المراسلة مع السجين, شكاية السجين, الحبس, السجن, prison maroc, مراسلات المعتقل, correspondance détenu]
+    means:
+      يحق للمعتقلين الاستفادة من زيارة أزواجهم أو أصولهم أو فروعهم أو إخوتهم: [زيارة الحبس, نزور فالحبس, visite prison, الحبس, السجن, prison maroc]
+      يمنع على المعتقل التوصل بالمؤونة: [القفة, panier prison]
+      الرسائل الموجهة إلى المعتقل: [المراسلة مع السجين]
+      يقدم المعتقل شكايته وتظلمه: [شكاية السجين]
+      يجب أن تحرر بخط مقروء، الرسائل الموجهة إلى المعتقل: [مراسلات المعتقل, correspondance détenu]
+    title: {ar: 'عندي شي حد فالحبس', fr: 'Un proche en prison'}
+    lead: {ar: 'الزيارة للزوج والأصول والفروع والإخوة؛ المراسلة؛ والقفة ممنوعة إلا فمناسبات', fr: 'Les visites du conjoint, des parents, enfants, frères et sœurs ; le courrier ; le panier interdit sauf occasions'}
+    to: pages/prison
+  # Elsewhere.
+  - key: rehab
+    icon: scales
+    words: [رد الاعتبار, السوابق العدلية, casier judiciaire]
+    title: {ar: 'فوقاش يتمسح الحكم من السوابق؟', fr: 'Quand la condamnation s’efface-t-elle ?'}
+    lead: {ar: 'فموضوع الوثائق', fr: 'Dans le thème des papiers'}
+    to: papers:tools/rehab
+  - key: record
+    icon: papers
+    words: [شهادة السوابق, extrait de casier judiciaire, البطاقة رقم 3]
+    title: {ar: 'شهادة السوابق العدلية', fr: 'L’extrait de casier judiciaire'}
+    lead: {ar: 'فموضوع الوثائق', fr: 'Dans le thème des papiers'}
+    to: papers:journeys/record
+  - key: protection
+    icon: home
+    words: [العنف الزوجي, violence conjugale, حماية النساء]
+    title: {ar: 'العنف داخل الأسرة', fr: 'Les violences au sein du foyer'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:pages/protection
+  - key: accident
+    icon: accident
+    words: [حادثة سير, accident de la route]
+    title: {ar: 'درت أكسيدة', fr: 'Un accident de la route'}
+    lead: {ar: 'فموضوع الطريق', fr: 'Dans le thème de la route'}
+    to: road:journeys/accident
+  - key: cheque
+    icon: bank
+    words: [شيك بلا رصيد متابعة, chèque sans provision poursuites]
+    title: {ar: 'كتبت شيك بلا رصيد', fr: 'J’ai émis un chèque sans provision'}
+    lead: {ar: 'فموضوع المقاولة', fr: 'Dans le thème de l’entreprise'}
+    to: business:journeys/cheque-written
+  - key: dismissed
+    icon: resign
+    words: [licenciement tribunal, المحكمة الاجتماعية]
+    title: {ar: 'طردوني من الخدمة', fr: 'J’ai été licencié'}
+    lead: {ar: 'فموضوع الشغل', fr: 'Dans le thème du travail'}
+    to: work:journeys/dismissed
+
+tools:
+  # «شحال باقي ليا؟»: what was decided (a civil, urgent or payment order, a correctional judgment, a cassation, a judgment
+  # by default, or the facts for a complaint) and the day it started → the last day, as both codes count a full delay
+  # (58.25 art. 602, 22.01 art. 750), a holiday or weekend end moved to the next working day. It waits for a person's check.
+  - key: deadline
+    icon: clock
+    words: [حساب أجل الاستئناف, حساب الآجال القضائية, calcul délai d'appel, آخر أجل للطعن, شحال باقي ليا نستأنف, délai franc, آجال كاملة, احتساب الآجال, آخر نهار عطلة]
+    means: تكون جميع الآجال المنصوص عليها في هذا القانون كاملة
+    tool: true
+    title: {ar: 'شحال باقي ليا؟', fr: 'Combien de temps me reste-t-il ?'}
+    lead: {ar: 'من نهار التبليغ ولا الحكم ولا الأفعال: آخر نهار، بمادتو', fr: 'De la notification, du jugement ou des faits : le dernier jour, avec son article'}
+    cites: [/ma/loi/58-25/art_602, /ma/loi/22-01/art_750, /ma/loi/58-25/art_200, /ma/loi/58-25/art_204, /ma/loi/58-25/art_230, /ma/loi/58-25/art_239, /ma/loi/58-25/art_242, /ma/loi/58-25/art_279, /ma/loi/58-25/art_32, /ma/loi/58-25/art_380, /ma/loi/22-01/art_393, /ma/loi/22-01/art_400, /ma/loi/22-01/art_527, /ma/loi/22-01/art_5]
+  # The custody clock: the hour of arrest and the kind of case → the 48 hours' end, the end with the one extension, the
+  # lawyer's contact from the first hour; state security 96 + 96, terrorism 96 + 96 + 96 (22.01 arts 66, 66-2, 80).
+  - key: custody
+    icon: clock
+    words: [حساب مدة الحراسة النظرية, فوقاش غادي يخرج من الكوميسارية, calcul garde à vue]
+    means: لمدة لا تتجاوز ثمان وأربعين ساعة تحتسب ابتداء من ساعة إيقافهم
+    tool: true
+    title: {ar: 'فوقاش خاصو يتقدم؟', fr: 'Quand doit-il être présenté ?'}
+    lead: {ar: 'من ساعة الإيقاف: نهاية 48 ساعة، والتمديد، وساعة المحامي', fr: 'De l’heure de l’arrestation : la fin des 48 heures, la prolongation, l’avocat'}
+    cites: [/ma/loi/22-01/art_66, /ma/loi/22-01/art_66-2, /ma/loi/22-01/art_67, /ma/loi/22-01/art_80]
+  # «فين نمشي؟»: what the dispute is about and how much → the court and section that decides it (58.25 arts 29–33, 38,
+  # 331), whether its judgment can be appealed (art. 30) or taken to cassation (art. 375), whether a lawyer is needed
+  # (art. 376; 22.01 art. 316) and what it costs (art. 329). It never says who is right.
+  - key: court
+    icon: scales
+    words: [شنو المحكمة المختصة, اشمن محكمة نمشي ليها, quel tribunal saisir]
+    means: تختص المحاكم الابتدائية بالنظر في
+    tool: true
+    title: {ar: 'فين نمشي؟', fr: 'Où aller ?'}
+    lead: {ar: 'الموضوع والمبلغ: المحكمة، الاستئناف والنقض، والمحامي', fr: 'L’objet et le montant : le tribunal, l’appel et la cassation, l’avocat'}
+    cites: [/ma/loi/58-25/art_29, /ma/loi/58-25/art_30, /ma/loi/58-25/art_31, /ma/loi/58-25/art_33, /ma/loi/58-25/art_38, /ma/loi/58-25/art_329, /ma/loi/58-25/art_331, /ma/loi/58-25/art_375, /ma/loi/58-25/art_376, /ma/loi/22-01/art_316]
+  # The alternative sentence: the prison term a court would set, the offence, a first offence or not → whether the
+  # penal code opens an alternative (35-1, 35-3), the hours of community work (three a day, 40 to 3,600: 35-6), the
+  # day-fine's range (100 to 2,000 DH a day: 35-15) and its condition (35-14), the six months to carry it out.
+  - key: alternative
+    icon: scales
+    words: [حساب ساعات العمل لأجل المنفعة العامة, حساب الغرامة اليومية, calcul peine alternative, شحال غادي نخلص على الحبس]
+    means: موازاة كل يوم من مدة العقوبة الحبسية المحكوم بها لثلاث ساعات من العمل
+    tool: true
+    title: {ar: 'واش كاينة عقوبة بديلة؟', fr: 'Une peine alternative est-elle possible ?'}
+    lead: {ar: 'من مدة الحبس: الساعات ديال الخدمة، والغرامة اليومية، والشروط', fr: 'De la durée de prison : les heures de travail, les jours-amende, les conditions'}
+    cites: [/ma/dahir/1-59-413/art_35-1, /ma/dahir/1-59-413/art_35-2, /ma/dahir/1-59-413/art_35-3, /ma/dahir/1-59-413/art_35-5, /ma/dahir/1-59-413/art_35-6, /ma/dahir/1-59-413/art_35-7, /ma/dahir/1-59-413/art_35-14, /ma/dahir/1-59-413/art_35-15]

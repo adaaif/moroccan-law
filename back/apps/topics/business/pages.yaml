@@ -1,0 +1,234 @@
+# The business topic's pages (the business review): the forms side by side, the trades excluded from the
+# auto-entrepreneur's regime, the invoice, payment terms, the cheque, public procurement, investment support, and what
+# people believe. Every fact names its articles, as the site holds them on 27 Oct 2026.
+
+- key: forms
+  title: {ar: 'مقاول ذاتي، تاجر، شركة أو تعاونية', fr: 'Auto-entrepreneur, commerçant, société ou coopérative'}
+  lead:
+    ar: 'ما يكتبه كل نص عن الشكل الذي ينظمه: من يمكنه، أين يسجل، ما يمسكه من دفاتر، وما يجيب عن الديون. القانون لا يختار عنك.'
+    fr: 'Ce que chaque texte écrit de la forme qu’il règle : qui peut, où s’inscrire, quels livres tenir, ce qui répond des dettes. La loi ne choisit pas pour vous.'
+  cites: [/ma/loi/114-13/art_1, /ma/loi/5-96/art_44]
+  sections:
+    - title: {ar: 'جنبا إلى جنب', fr: 'Côte à côte'}
+      table:
+        head: [{ar: '', fr: ''}, {ar: 'مقاول ذاتي', fr: 'Auto-entrepreneur'}, {ar: 'تاجر شخص ذاتي', fr: 'Commerçant'}, {ar: 'ش.ذ.م.م', fr: 'SARL'}, {ar: 'تعاونية', fr: 'Coopérative'}]
+        rows:
+          - [{ar: 'من', fr: 'Qui'}, {ar: 'شخص واحد', fr: 'Une personne'}, {ar: 'شخص واحد', fr: 'Une personne'}, {ar: 'من 1 إلى 50', fr: 'De 1 à 50'}, {ar: '5 على الأقل', fr: '5 au moins'}]
+          - [{ar: 'السقف', fr: 'Plafond'}, {ar: '500.000 / 200.000 درهم', fr: '500 000 / 200 000 DH'}, {ar: 'لا سقف', fr: 'Aucun'}, {ar: 'لا سقف', fr: 'Aucun'}, {ar: 'لا سقف', fr: 'Aucun'}]
+          - [{ar: 'السجل', fr: 'Registre'}, {ar: 'السجل الوطني للمقاول الذاتي', fr: 'Registre national de l’AE'}, {ar: 'السجل التجاري', fr: 'Registre du commerce'}, {ar: 'السجل التجاري', fr: 'Registre du commerce'}, {ar: 'سجل التعاونيات', fr: 'Registre des coopératives'}]
+          - [{ar: 'المحاسبة', fr: 'Comptabilité'}, {ar: 'معفى', fr: 'Dispensé'}, {ar: 'واجبة', fr: 'Obligatoire'}, {ar: 'واجبة', fr: 'Obligatoire'}, {ar: 'واجبة', fr: 'Obligatoire'}]
+          - [{ar: 'الديون', fr: 'Les dettes'}, {ar: 'السكنى الرئيسية لا تحجز', fr: 'Résidence principale insaisissable'}, {ar: 'أمواله', fr: 'Ses biens'}, {ar: 'في حدود الحصص', fr: 'À hauteur des apports'}, {ar: 'أموال التعاونية', fr: 'Les biens de la coopérative'}]
+      cites: [/ma/loi/114-13/art_1, /ma/loi/114-13/art_2, /ma/loi/114-13/art_4, /ma/loi/15-95/art_19, /ma/loi/15-95/art_37, /ma/loi/5-96/art_44, /ma/loi/5-96/art_47, /ma/loi/112-12/art_14, /ma/loi/112-12/art_9]
+      tool: tools/form
+    - title: {ar: 'المقاول الذاتي', fr: 'L’auto-entrepreneur'}
+      for: [auto]
+      facts:
+        - text: {ar: 'شخص ذاتي يعمل بصفة فردية، في حدود 500.000 درهم من رقم الأعمال المحصل في التجارة والصناعة والحرف، و200.000 درهم في الخدمات.', fr: 'Une personne physique qui travaille seule, dans la limite de 500 000 DH encaissés en commerce, industrie et artisanat, et 200 000 DH en services.'}
+          cites: [/ma/loi/114-13/art_1]
+        - text: {ar: 'معفى من السجل التجاري ومن مسك المحاسبة، ويمكنه أن يوطن نشاطه في سكناه.', fr: 'Dispensé du registre du commerce et de la comptabilité, il peut domicilier l’activité chez lui.'}
+          cites: [/ma/loi/114-13/art_2, /ma/loi/114-13/art_3]
+        - text: {ar: 'لا يجوز الحجز على محل سكناه الرئيسي بسبب ديون نشاطه.', fr: 'Sa résidence principale ne peut être saisie pour les dettes de son activité.'}
+          cites: [/ma/loi/114-13/art_4]
+          more: journeys/auto-start
+    - title: {ar: 'الشركة ذات المسؤولية المحدودة', fr: 'La SARL'}
+      for: [company]
+      facts:
+        - text: {ar: 'من شخص إلى خمسين، لا يتحملون الخسائر إلا في حدود حصصهم.', fr: 'D’une à cinquante personnes, qui ne supportent les pertes qu’à hauteur de leurs apports.'}
+          cites: [/ma/loi/5-96/art_44, /ma/loi/5-96/art_47]
+        - text: {ar: 'رأسمالها يحدده الشركاء بحرية؛ ويدفع ربع الحصص النقدية على الأقل عند التأسيس، والباقي داخل خمس سنوات.', fr: 'Son capital est fixé librement ; un quart au moins des apports en numéraire est versé à la constitution, le reste dans les cinq ans.'}
+          cites: [/ma/loi/5-96/art_46, /ma/loi/5-96/art_51]
+        - text: {ar: 'إذا نزلت وضعيتها الصافية تحت ربع رأسمالها بسبب الخسائر، يقرر الشركاء داخل ثلاثة أشهر من المصادقة على الحسابات هل تحل؛ وإلا خفضت رأسمالها.', fr: 'Si ses capitaux propres tombent sous le quart du capital par des pertes, les associés décident dans les trois mois de l’approbation des comptes de la dissoudre ou non ; sinon elle réduit son capital.'}
+          cites: [/ma/loi/5-96/art_86]
+          more: journeys/sarl-start
+    - title: {ar: 'المنصة الإلكترونية', fr: 'La plateforme électronique'}
+      for: [company, trader]
+      facts:
+        - text: {ar: 'طلب واحد عبر المنصة الإلكترونية لإحداث المقاولات يساوي الشهادة السلبية، وتسجيل النظام الأساسي، والرسم المهني، والسجل التجاري، والتصريح الجبائي، والنشر في الجريدة الرسمية، والانخراط في الضمان الاجتماعي.', fr: 'Une demande sur la plateforme de création vaut certificat négatif, enregistrement des statuts, taxe professionnelle, RC, déclaration fiscale, publication au BO et affiliation CNSS.'}
+          cites: [/ma/decret/2-22-92/art_4, /ma/decret/2-22-92/art_1]
+
+- key: excluded
+  title: {ar: 'المهن المستثناة من نظام المقاول الذاتي', fr: 'Les métiers exclus du régime de l’auto-entrepreneur'}
+  lead:
+    ar: 'يستثني المرسوم 2.15.263، تطبيقا للمادة 42 المكررة مرتين من المدونة العامة للضرائب، إحدى وأربعين مهنة من النظام الجبائي للمقاول الذاتي، كما غيره المرسوم 2.15.942.'
+    fr: 'Le décret 2.15.263, pris pour l’article 42 ter du code des impôts, exclut quarante et un métiers du régime fiscal de l’auto-entrepreneur, tel que modifié par le décret 2.15.942.'
+  cites: [/ma/decret/2-15-263/art_1, /ma/code/cgi/art_42-ter]
+  sections:
+    - title: {ar: 'الصحة والقانون والأرقام', fr: 'Santé, droit et chiffres'}
+      facts:
+        - text: {ar: 'الأطباء، الجراحون، جراحو الأسنان، الأطباء المتخصصون في التشخيص بالأشعة، الصيادلة، البياطرة، النظاراتيون، مستغلو المصحات ومختبرات التحاليل الطبية.', fr: 'Médecins, chirurgiens, chirurgiens-dentistes, radiologues, pharmaciens, vétérinaires, opticiens, exploitants de cliniques et de laboratoires d’analyses.'}
+          cites: [/ma/decret/2-15-263/art_1]
+        - text: {ar: 'المحامون، الموثقون، الأعوان القضائيون، المحاسبون، الخبراء المحاسبون، مراقبو الحسابات، معشرو الجمارك.', fr: 'Avocats, notaires, huissiers, comptables, experts-comptables, commissaires aux comptes, transitaires en douane.'}
+          cites: [/ma/decret/2-15-263/art_1]
+        - text: {ar: 'المهندسون المعماريون، المساحون، المساحون القائسون، المقاولون في الأعمال الطبوغرافية، مسيرو مكاتب الدراسات.', fr: 'Architectes, géomètres, métreurs, entrepreneurs de topographie, gérants de bureaux d’études.'}
+          cites: [/ma/decret/2-15-263/art_1]
+    - title: {ar: 'التجارة والخدمات', fr: 'Commerce et services'}
+      facts:
+        - text: {ar: 'تجار الذهب والحلي والمجوهرات بالتقسيط وبالجملة، التجار المصدرون والمستوردون، التجار بالوكالات وبالعمولة، المتاجرون في العقارات، المجزئون والمستثمرون العقاريون، الصيارفة، بائعو التبغ.', fr: 'Bijoutiers au détail et en gros, exportateurs et importateurs, commerçants à la commission et agents, marchands de biens, lotisseurs et promoteurs, changeurs, débitants de tabac.'}
+          cites: [/ma/decret/2-15-263/art_1]
+        - text: {ar: 'أرباب الفنادق ومؤسسات التأمين، مستغلو مدارس التعليم الخاص ومؤسسات تعليم السياقة والقاعات السينمائية، مؤجرو الطائرات، مقدمو خدمات تنظيم الحفلات والاستقبالات.', fr: 'Hôteliers et assureurs, exploitants d’écoles privées, d’auto-écoles et de salles de cinéma, loueurs d’aéronefs, prestataires de fêtes et réceptions.'}
+          cites: [/ma/decret/2-15-263/art_1]
+        - text: {ar: 'الناشرون، الكتبيون، المقاولون في الطباعة.', fr: 'Éditeurs, libraires, imprimeurs.'}
+          cites: [/ma/decret/2-15-263/art_1]
+      tool: tools/form
+
+- key: invoice
+  title: {ar: 'الفاتورة', fr: 'La facture'}
+  lead:
+    ar: 'المدونة العامة للضرائب تكتب ما تحمله الفاتورة، ومدونة التجارة تحدد متى تصدر، وقانون الشركة ذات المسؤولية المحدودة يضيف بيانات الشركة.'
+    fr: 'Le code des impôts écrit ce que porte la facture, le code de commerce quand elle est émise, et la loi sur la SARL ajoute les mentions de la société.'
+  cites: [/ma/code/cgi/art_145]
+  sections:
+    - title: {ar: 'ما تحمله', fr: 'Ce qu’elle porte'}
+      facts:
+        - text: {ar: 'فاتورة مرقمة مسبقا من سلسلة متصلة، فيها هوية البائع، ورقم تعريفه الضريبي ورقم الرسم المهني، وتاريخ العملية، واسم الزبون وعنوانه ورقم تعريفه الموحد (ICE)، والثمن والكمية وطبيعة السلعة أو الخدمة، والضريبة على القيمة المضافة مستقلة، ومراجع الأداء.', fr: 'Une facture prénumérotée en série continue, avec l’identité du vendeur, son IF et sa taxe professionnelle, la date, le nom, l’adresse et l’ICE du client, le prix, la quantité et la nature du bien ou service, la TVA à part et les références de paiement.'}
+          cites: [/ma/code/cgi/art_145]
+          more: checklists/invoice
+        - text: {ar: 'وفي البيع للخواص، تقوم بطاقة الصندوق مقام الفاتورة، وفيها التاريخ وهوية البائع وطبيعة المنتوج والكمية والثمن.', fr: 'Pour une vente aux particuliers, le ticket de caisse en tient lieu : la date, le vendeur, la nature du produit, la quantité et le prix.'}
+          cites: [/ma/code/cgi/art_145]
+        - text: {ar: 'والشركة ذات المسؤولية المحدودة تذكر تسميتها وعبارة «ش.ذ.م.م» ورأسمالها ومقرها ورقم سجلها التجاري في فواتيرها ورسائلها.', fr: 'Une SARL mentionne sa dénomination, «SARL», son capital, son siège et son numéro de RC sur ses factures et lettres.'}
+          cites: [/ma/loi/5-96/art_45]
+    - title: {ar: 'متى تصدر', fr: 'Quand l’émettre'}
+      facts:
+        - text: {ar: 'بين التجار، تصدر الفاتورة على الأكثر في اليوم الأخير من شهر التسليم أو الخدمة؛ وإلا حسب أجل الأداء من نهاية ذلك الشهر.', fr: 'Entre commerçants, la facture est émise au plus tard le dernier jour du mois de la livraison ou du service ; sinon le délai court de la fin de ce mois.'}
+          cites: [/ma/loi/15-95/art_2-78]
+          more: pages/terms
+
+- key: terms
+  title: {ar: 'آجال الأداء بين التجار', fr: 'Les délais de paiement entre commerçants'}
+  lead:
+    ar: 'الباب الذي أعاد كتابته القانون 69.21: أجل قانوني، سقف للاتفاق، غرامة للخزينة، وتصريح كل ثلاثة أشهر، لمن يتجاوز رقم معاملاته مليوني درهم.'
+    fr: 'Le chapitre que la loi 69.21 a réécrit : un délai légal, un plafond conventionnel, une amende au Trésor et une déclaration trimestrielle, au-delà de 2 millions de DH de chiffre.'
+  cites: [/ma/loi/15-95/art_1-78]
+  sections:
+    - title: {ar: 'الأجل', fr: 'Le délai'}
+      facts:
+        - text: {ar: '60 يوما من إصدار الفاتورة إذا لم يتفق الطرفان؛ و120 يوما على الأكثر إذا اتفقا؛ ويمكن بمرسوم أن يصل إلى 180 يوما في قطاعات موسمية.', fr: '60 jours après la facture sans accord ; 120 jours au plus avec accord ; un décret peut aller jusqu’à 180 jours dans des secteurs saisonniers.'}
+          cites: [/ma/loi/15-95/art_2-78]
+        - text: {ar: 'ولا يسري هذا الباب على من يحقق رقم معاملات سنويا يقل أو يساوي مليوني درهم دون الضريبة.', fr: 'Le chapitre ne s’applique pas sous un chiffre annuel de 2 millions de DH hors taxe ou moins.'}
+          cites: [/ma/loi/15-95/art_1-78]
+    - title: {ar: 'الغرامة', fr: 'L’amende'}
+      facts:
+        - text: {ar: 'المتأخر يؤدي للخزينة: السعر المديري لبنك المغرب عن الشهر الأول، و0,85% عن كل شهر أو جزء شهر بعده، على المبلغ غير المؤدى مع الضريبة.', fr: 'Le retardataire paie au Trésor le taux directeur le premier mois, puis 0,85 % par mois ou fraction, sur l’impayé TTC.'}
+          cites: [/ma/loi/15-95/art_3-78]
+        - text: {ar: 'السعر المديري لبنك المغرب 2,25% منذ قرار 20 مارس 2025، كما ينشره بنك المغرب.', fr: 'Le taux directeur de Bank Al-Maghrib est de 2,25 % depuis la décision du 20 mars 2025, tel que Bank Al-Maghrib le publie.'}
+      tool: tools/late
+    - title: {ar: 'التصريح والجزاء', fr: 'La déclaration et la sanction'}
+      facts:
+        - text: {ar: 'تصريح إلكتروني قبل نهاية الشهر الموالي لكل ثلاثة أشهر، ولو لم تكن فواتير متأخرة.', fr: 'Une déclaration électronique avant la fin du mois suivant chaque trimestre, même sans facture en retard.'}
+          cites: [/ma/loi/15-95/art_4-78]
+        - text: {ar: 'عدم التصريح أو التأخر فيه أو في أداء الغرامة: 5.000 درهم (من 2 إلى 10 ملايين)، 12.500 (حتى 50 مليونا)، 50.000 (حتى 200 مليون)، 125.000 (حتى 500 مليون)، 250.000 درهم فوقها؛ و5.000 درهم عن كل فاتورة ناقصة.', fr: 'Défaut ou retard de déclaration ou de paiement : 5 000 DH (2 à 10 millions), 12 500 (jusqu’à 50 millions), 50 000 (jusqu’à 200 millions), 125 000 (jusqu’à 500 millions), 250 000 DH au-delà ; 5 000 DH par facture incomplète.'}
+          cites: [/ma/loi/15-95/art_6-78]
+  links:
+    - {name: {ar: 'بنك المغرب: قرارات السياسة النقدية', fr: 'Bank Al-Maghrib : décisions de politique monétaire'}, url: 'https://www.bkam.ma/Politique-monetaire/Cadre-strategique/Decision-de-la-politique-monetaire/Historique-des-decisions', note: {ar: 'السعر المديري الذي تحسب به غرامة الشهر الأول', fr: 'Le taux directeur du premier mois d’amende'}}
+
+- key: cheque
+  title: {ar: 'الشيك', fr: 'Le chèque'}
+  lead:
+    ar: 'مدونة التجارة كما غيرها القانون 71.24 في يناير 2026: متى يقدم الشيك، ما يفعله البنك إذا رجع، ما يؤديه الساحب، وما يتعرض له.'
+    fr: 'Le code de commerce modifié par la loi 71.24 en janvier 2026 : quand présenter le chèque, ce que fait la banque s’il revient, ce que paie le tireur, ce qu’il encourt.'
+  cites: [/ma/loi/15-95/art_239]
+  sections:
+    - title: {ar: 'الشيك الصحيح', fr: 'Le chèque valable'}
+      facts:
+        - text: {ar: 'يحمل كلمة «شيك»، والأمر بأداء مبلغ معين، واسم البنك، ومكان الوفاء، وتاريخ ومكان إنشائه، واسم الساحب وتوقيعه.', fr: 'Il porte le mot «chèque», l’ordre de payer une somme, le nom de la banque, le lieu de paiement, la date et le lieu de création, le nom et la signature du tireur.'}
+          cites: [/ma/loi/15-95/art_239]
+        - text: {ar: 'يستحق الوفاء بمجرد الاطلاع، والمقدم قبل تاريخه يؤدى يوم تقديمه.', fr: 'Il est payable à vue ; présenté avant sa date, il se paie le jour même.'}
+          cites: [/ma/loi/15-95/art_267]
+        - text: {ar: 'يقدم داخل 20 يوما من تاريخه إذا صدر في المغرب، و60 يوما إذا صدر في الخارج.', fr: 'Il se présente dans les 20 jours de sa date s’il est émis au Maroc, 60 s’il l’est à l’étranger.'}
+          cites: [/ma/loi/15-95/art_268]
+          more: tools/cheque
+    - title: {ar: 'التعرض', fr: 'L’opposition'}
+      facts:
+        - text: {ar: 'لا يقبل تعرض الساحب على الوفاء إلا في حالة الضياع أو السرقة أو الاستعمال التدليسي أو التزوير، أو التسوية أو التصفية القضائية للحامل؛ ويؤكده كتابة فورا. والتعرض لسبب آخر يعاقب عليه.', fr: 'L’opposition du tireur n’est admise qu’en cas de perte, vol, usage frauduleux, falsification, ou redressement ou liquidation du porteur ; il la confirme par écrit sur-le-champ. Une opposition pour un autre motif est punie.'}
+          cites: [/ma/loi/15-95/art_271, /ma/loi/15-95/art_316]
+    - title: {ar: 'شيك الضمانة', fr: 'Le chèque de garantie'}
+      facts:
+        - text: {ar: 'من قبل عن علم شيكا بشرط ألا يستخلص فورا وأن يحتفظ به ضمانة يعاقب بغرامة 2% من قيمته؛ وأداؤها قبل الحكم النهائي يوقف الدعوى. ولا يمنعه ذلك من المطالبة بقيمة الشيك.', fr: 'Qui accepte sciemment un chèque à condition de ne pas l’encaisser et de le garder en garantie encourt une amende de 2 % de son montant ; la payer avant le jugement définitif arrête l’action. Il peut toujours réclamer le montant.'}
+          cites: [/ma/loi/15-95/art_316]
+    - title: {ar: 'إذا رجع بلا رصيد', fr: 'S’il revient impayé'}
+      facts:
+        - text: {ar: 'ينذر البنك صاحب الحساب داخل يومين، ويمنعه من الشيكات خمس سنوات؛ والتسوية داخل ثلاثة أشهر بلا غرامة، وبعدها بغرامة من 0,5% إلى 1,5% (بين 500 و50.000 درهم) إذا أدى داخل سنتين.', fr: 'La banque adresse l’injonction dans les deux jours, avec cinq ans d’interdiction ; la régularisation dans les trois mois est sans amende, ensuite de 0,5 % à 1,5 % (500 à 50 000 DH) si le paiement intervient dans les deux ans.'}
+          cites: [/ma/loi/15-95/art_313, /ma/loi/15-95/art_314]
+          more: journeys/cheque-bounced
+        - text: {ar: 'وقبل المتابعة إعذار لثلاثين يوما؛ والعقوبة الحبس من 6 أشهر إلى 3 سنوات وغرامة من 5.000 إلى 20.000 درهم؛ والأداء أو التنازل يوقف الدعوى أو التنفيذ بعد غرامة 2%.', fr: 'Avant les poursuites, trente jours de mise en demeure ; la peine, six mois à trois ans et 5 000 à 20 000 DH ; le paiement ou le désistement arrête l’action ou l’exécution contre 2 %.'}
+          cites: [/ma/loi/15-95/art_325, /ma/loi/15-95/art_316]
+          more: journeys/cheque-written
+        - text: {ar: 'تتقادم دعوى الحامل ضد الساحب والمظهرين بسنة من انتهاء أجل التقديم، وضد البنك المسحوب عليه بسنتين.', fr: 'L’action du porteur contre le tireur et les endosseurs se prescrit par un an après le délai de présentation, contre la banque tirée par deux ans.'}
+          cites: [/ma/loi/15-95/art_295]
+
+- key: markets
+  title: {ar: 'الصفقات العمومية للمقاولات الصغرى', fr: 'Les marchés publics pour les petites entreprises'}
+  lead:
+    ar: 'المرسوم 2.22.431 يفتح الصفقات للجميع بالمساواة والشفافية، ويحفظ جزءا منها للمقاولات الصغيرة جدا والصغرى والمتوسطة والتعاونيات والمقاولين الذاتيين.'
+    fr: 'Le décret 2.22.431 ouvre les marchés à tous, à égalité et en transparence, et en réserve une part aux TPME, coopératives et auto-entrepreneurs.'
+  cites: [/ma/decret/2-22-431/art_1]
+  sections:
+    - title: {ar: 'المبادئ', fr: 'Les principes'}
+      facts:
+        - text: {ar: 'حرية الولوج إلى الصفقات العمومية، والمساواة في التعامل مع المتنافسين، وضمان حقوقهم، والشفافية في اختيارات صاحب المشروع.', fr: 'La liberté d’accès aux marchés, l’égalité de traitement des concurrents, la garantie de leurs droits, la transparence des choix du maître d’ouvrage.'}
+          cites: [/ma/decret/2-22-431/art_1]
+    - title: {ar: 'الحصة المحفوظة', fr: 'La part réservée'}
+      facts:
+        - text: {ar: 'يخصص كل صاحب مشروع 30% من المبلغ المتوقع لصفقاته في السنة للمقاولات الصغيرة جدا والصغرى والمتوسطة المقيمة بالمغرب، والمبتكرة حديثة النشأة، والتعاونيات واتحاداتها، والمقاولين الذاتيين؛ وينشر في بداية كل سنة ما أسنده لهم.', fr: 'Chaque maître d’ouvrage réserve 30 % du montant prévu de ses marchés de l’année aux TPME installées au Maroc, aux jeunes entreprises innovantes, aux coopératives et à leurs unions, et aux auto-entrepreneurs ; il publie chaque début d’année ce qu’il leur a attribué.'}
+          cites: [/ma/decret/2-22-431/art_148]
+    - title: {ar: 'العرض والضمان', fr: 'L’offre et le cautionnement'}
+      facts:
+        - text: {ar: 'الضمان المؤقت، إذا طلب، مبلغ محدد لا يتجاوز 2% من الكلفة التقديرية، ويرفع اليد عنه خلال 48 ساعة لمن لم يقبل تمديد صلاحية العروض.', fr: 'Le cautionnement provisoire, s’il est demandé, est un montant fixe d’au plus 2 % du coût estimé, et mainlevée en est donnée sous 48 heures à qui refuse de proroger son offre.'}
+          cites: [/ma/decret/2-22-431/art_24, /ma/decret/2-22-431/art_36]
+        - text: {ar: 'يبقى المتنافس ملتزما بعرضه 60 يوما من جلسة فتح الأظرفة.', fr: 'Le concurrent reste engagé par son offre 60 jours après l’ouverture des plis.'}
+          cites: [/ma/decret/2-22-431/art_36]
+  links:
+    - {name: {ar: 'بوابة الصفقات العمومية', fr: 'Portail des marchés publics'}, url: 'https://www.marchespublics.gov.ma', note: {ar: 'البوابة التي ينشر فيها صاحب المشروع ما أسنده للمقاولات الصغرى (المادة 148)', fr: 'Le portail où le maître d’ouvrage publie ce qu’il attribue aux TPME (art. 148)'}}
+
+- key: investment
+  title: {ar: 'دعم الاستثمار', fr: 'Les aides à l’investissement'}
+  lead:
+    ar: 'ميثاق الاستثمار 03.22 يضع أنظمة للدعم: نظام أساسي بمنح، ونظام للمشاريع الاستراتيجية، ونظام للمقاولات الصغيرة جدا والصغرى والمتوسطة تفعله المراكز الجهوية للاستثمار.'
+    fr: 'La charte 03.22 met en place des régimes d’aide : un dispositif principal de primes, un pour les projets stratégiques, et un pour les TPME que les centres régionaux d’investissement mettent en œuvre.'
+  cites: [/ma/loi/3-22/art_8]
+  sections:
+    - title: {ar: 'النظام الأساسي', fr: 'Le dispositif principal'}
+      facts:
+        - text: {ar: 'يستفيد منه مشروع يبلغ 50 مليون درهم أو أكثر ويحدث مناصب شغل قارة في حدود 149، أو مشروع يحدث 150 منصبا قارا أو أكثر.', fr: 'Il concerne un projet de 50 millions de DH ou plus créant jusqu’à 149 emplois stables, ou un projet créant 150 emplois stables ou plus.'}
+          cites: [/ma/decret/2-23-1/art_6]
+        - text: {ar: 'المنح المشتركة: 5% أو 7% أو 10% حسب نسبة مناصب الشغل، و3% لكل من المناصفة (30% نساء)، ومهن المستقبل، والاستدامة، والاندماج المحلي؛ وتجمع المنح في حدود 30% من الاستثمار القابل للاستفادة.', fr: 'Les primes communes : 5, 7 ou 10 % selon le ratio d’emplois, et 3 % chacune pour la parité (30 % de femmes), les métiers d’avenir, la durabilité et l’intégration locale ; cumulées dans la limite de 30 % de l’investissement primable.'}
+          cites: [/ma/decret/2-23-1/art_7, /ma/decret/2-23-1/art_10]
+        - text: {ar: 'ينجز المشروع داخل خمس سنوات من توقيع اتفاقية الاستثمار، وتصرف المنح على دفعات، ويرجعها من أخل بالتزاماته.', fr: 'Le projet est réalisé dans les cinq ans de la convention, les primes versées par tranches, et rendues par qui manque à ses engagements.'}
+          cites: [/ma/decret/2-23-1/art_3, /ma/decret/2-23-1/art_4, /ma/decret/2-23-1/art_5]
+    - title: {ar: 'المراكز الجهوية', fr: 'Les centres régionaux'}
+      facts:
+        - text: {ar: 'المراكز الجهوية للاستثمار تواكب المقاولات، لا سيما الصغيرة جدا والصغرى والمتوسطة، وتفعل نظام الدعم الخاص بها.', fr: 'Les CRI accompagnent les entreprises, surtout les TPME, et mettent en œuvre leur régime d’aide.'}
+          cites: [/ma/loi/47-18/art_4, /ma/loi/47-18/art_4-ter]
+        - text: {ar: 'رفض اللجنة الجهوية الموحدة يطعن فيه أمام والي الجهة داخل 15 يوما، ثم أمام اللجنة الوزارية للطعون داخل 15 يوما، وتبت هذه داخل 45 يوما.', fr: 'Un refus de la commission régionale unifiée se conteste devant le wali dans les 15 jours, puis devant la commission ministérielle des recours dans les 15 jours, qui statue en 45 jours.'}
+          cites: [/ma/loi/47-18/art_37]
+
+- key: beliefs
+  title: {ar: 'ما يقوله الناس، وما يقوله القانون', fr: 'Ce que l’on dit, et ce que dit la loi'}
+  lead:
+    ar: 'ست أفكار رائجة عن المقاولة، وجواب النص.'
+    fr: 'Six idées répandues sur l’entreprise, et la réponse du texte.'
+  sections:
+    - title: {ar: '«خاص 10.000 درهم باش تدير SARL»', fr: '«Il faut 10 000 DH pour une SARL»'}
+      facts:
+        - text: {ar: 'يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء في النظام الأساسي؛ ويدفع ربع الحصص النقدية على الأقل في البداية.', fr: 'Le capital de la SARL est fixé librement par les associés ; un quart des apports en numéraire au moins est versé au départ.'}
+          cites: [/ma/loi/5-96/art_46, /ma/loi/5-96/art_51]
+    - title: {ar: '«شيك الضمانة ماشي مشكل»', fr: '«Le chèque de garantie, ce n’est rien»'}
+      facts:
+        - text: {ar: 'قبول شيك على أساس عدم استخلاصه والاحتفاظ به ضمانة يعاقب عليه بغرامة 2% من قيمته.', fr: 'Accepter un chèque pour ne pas l’encaisser et le garder en garantie est puni d’une amende de 2 % de son montant.'}
+          cites: [/ma/loi/15-95/art_316]
+    - title: {ar: '«يحجزو الدار للمقاول الذاتي»', fr: '«On saisit la maison de l’auto-entrepreneur»'}
+      facts:
+        - text: {ar: 'لا يجوز، في أي حال من الأحوال، الحجز على محل السكنى الرئيسي للمقاول الذاتي بسبب ديون نشاطه.', fr: 'La résidence principale de l’auto-entrepreneur ne peut en aucun cas être saisie pour les dettes de son activité.'}
+          cites: [/ma/loi/114-13/art_4]
+    - title: {ar: '«الزبون يخلص فوقما بغا»', fr: '«Le client paie quand il veut»'}
+      facts:
+        - text: {ar: 'بين التجار فوق مليوني درهم: 60 يوما بلا اتفاق، و120 على الأكثر بالاتفاق، وغرامة للخزينة على المتأخر.', fr: 'Entre commerçants au-delà de 2 millions de DH : 60 jours sans accord, 120 au plus avec accord, et une amende au Trésor pour le retard.'}
+          cites: [/ma/loi/15-95/art_2-78, /ma/loi/15-95/art_3-78]
+    - title: {ar: '«الشيك المؤخر ما يتخلصش قبل تاريخو»', fr: '«Un chèque postdaté ne se paie pas avant sa date»'}
+      facts:
+        - text: {ar: 'الشيك مستحق الوفاء بمجرد الاطلاع؛ والمقدم قبل اليوم المبين فيه كتاريخ لإصداره يجب وفاؤه يوم تقديمه.', fr: 'Le chèque est payable à vue ; présenté avant le jour indiqué comme date d’émission, il est payable le jour de la présentation.'}
+          cites: [/ma/loi/15-95/art_267]
+    - title: {ar: '«المقاول الذاتي خاصو السجل التجاري»', fr: '«L’auto-entrepreneur doit s’inscrire au RC»'}
+      facts:
+        - text: {ar: 'يعفى المقاول الذاتي من إلزامية التقييد بالسجل التجاري ومن مسك المحاسبة، ويتسجل في السجل الوطني للمقاول الذاتي.', fr: 'L’auto-entrepreneur est dispensé du RC et de la comptabilité ; il s’inscrit au registre national de l’auto-entrepreneur.'}
+          cites: [/ma/loi/114-13/art_2, /ma/loi/114-13/art_5]

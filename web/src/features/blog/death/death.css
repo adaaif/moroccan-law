@@ -1,0 +1,98 @@
+/* «الإعدام في القانون المغربي» (the twentieth post). A document's tone: no colour for alarm. The code is ink on paper,
+   each article a square; the articles that punish with death are filled in ink, those that rule on it outlined; violet
+   is only what points to a printed page (stamps, links, the picked square's ring). The law's words in Markazi. */
+
+.dp { --dp-cell: 12px; --dp-gap: 2px; --dp-pale: color-mix(in srgb, var(--color-ink) 11%, transparent); }
+
+/* ── The code, article by article ─────────────────────────────────────────────────────────────────────────────── */
+.dp-hero { margin: 0 -16px; padding: 24px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 640px) { .dp-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 32px 32px 24px; } }
+@media (min-width: 900px) { .dp { --dp-cell: 13px; } }
+.dp-say { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.8rem); line-height: 1.25; text-wrap: balance; color: var(--color-ink-soft); }
+.dp-say-death { color: var(--color-ink); }
+.bp:lang(fr) .dp-say { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.2rem); }
+.dp-say-more { margin: 0; font-family: var(--font-law); font-size: 1.25rem; line-height: 1.65; max-width: 60ch; text-wrap: pretty; }
+.bp:lang(fr) .dp-say-more { font-family: "Source Serif 4", Georgia, serif; font-size: 1.08rem; }
+.dp-legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.dp-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.dp-legend .dp-cell { display: inline-block; }
+
+.dp-code { display: flex; flex-direction: column; gap: 10px; }
+.dp-run { display: flex; flex-direction: column; gap: 4px; }
+@media (min-width: 900px) { .dp-code { gap: 7px; } .dp-run { display: grid; grid-template-columns: 11.5rem minmax(0, 1fr); gap: 16px; align-items: start; }
+  .dp-run-name { padding-top: 0; line-height: 1.1; } }
+.dp-run-name { margin: 0; font-size: 14px; line-height: 1.3; color: var(--color-ink-soft); }
+.dp-cells { display: flex; flex-wrap: wrap; gap: var(--dp-gap); }
+.dp-cell { inline-size: var(--dp-cell); block-size: var(--dp-cell); border-radius: 2px; background: var(--dp-pale); border: 0; padding: 0; margin: 0; flex: none; }
+button.dp-cell { cursor: pointer; position: relative; }
+/* A marked square's finger target is larger than the square. */
+button.dp-cell::after { content: ''; position: absolute; inset: -9px; }
+.dp-cell.is-death { background: var(--dp-pale); transition: background-color 260ms ease, transform 260ms ease; }
+.dp-cell.is-death.is-lit { background: var(--color-ink); }
+.dp-cell.is-rule { background: transparent; box-shadow: inset 0 0 0 2px var(--color-ink); }
+.dp-cell.is-on { outline: 3px solid var(--color-stamp); outline-offset: 2px; z-index: 1; }
+@media (prefers-reduced-motion: reduce) { .dp-cell.is-death { transition: none; } }
+
+.dp-pick { display: flex; flex-direction: column; gap: 8px; min-height: 7.5rem; padding-top: 12px; border-top: 1px solid var(--color-rule); }
+.dp-pick-head { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.dp-pick-n { font-weight: 700; font-size: 1.2rem; color: var(--color-ink); }
+.dp-pick-kind { font-size: var(--text-meta); font-weight: 600; padding: 1px 10px; border-radius: 999px; }
+.dp-pick-kind.is-death { background: var(--color-ink); color: var(--color-sheet); }
+.dp-pick-kind.is-rule { box-shadow: inset 0 0 0 1.5px var(--color-ink); }
+.dp-pick-since { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.dp-stamp { vertical-align: middle; }
+.dp-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-ink); font-family: var(--font-law); font-size: 1.35rem; line-height: 1.75;
+  text-wrap: pretty; text-align: right; }
+.dp-quote.is-small { font-size: 1.18rem; }
+.dp-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.dp-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.dp-share:disabled { opacity: 0.6; }
+
+.dp-list { width: 100%; max-width: var(--bp-col); margin-inline: auto; }
+.dp-list summary { display: inline-flex; align-items: center; min-height: 44px; cursor: pointer; font-weight: 600; color: var(--color-stamp); }
+.dp-list ol { margin: 8px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--color-rule); }
+.dp-list li { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 2px 14px; padding: 10px 0; border-bottom: 1px solid var(--color-rule-soft); }
+@media (max-width: 560px) { .dp-list li { grid-template-columns: minmax(0, 1fr); } }
+.dp-list li.is-rule .dp-list-n { color: var(--color-ink-soft); }
+.dp-list-n { font-weight: 700; color: var(--color-ink); }
+.dp-list-words { font-family: var(--font-law); font-size: 1.15rem; line-height: 1.7; }
+
+/* ── The other texts ──────────────────────────────────────────────────────────────────────────────────────────── */
+.dp-food { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; align-items: start; }
+@media (min-width: 1100px) { .dp-food { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; } }
+.dp-food-print { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.dp-food-print .bp-print { box-shadow: 0 1px 0 var(--color-rule), 0 12px 28px -18px color-mix(in srgb, var(--color-ink) 40%, transparent); }
+.dp-food-words { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.dp-food-words h3, .dp-h3 { margin: 6px 0 0; font-family: var(--font-law); font-weight: 700; font-size: 1.55rem; line-height: 1.25; }
+.bp:lang(fr) .dp-food-words h3, .bp:lang(fr) .dp-h3 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 1.3rem; }
+.dp-food-src, .dp-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.7; }
+.dp-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.dp-arts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.dp-arts li { display: flex; flex-direction: column; gap: 6px; }
+.dp-arts-head { margin: 0; font-size: var(--text-meta); font-weight: 600; }
+
+/* ── From the sentence to the burial ──────────────────────────────────────────────────────────────────────────── */
+.dp-steps { margin: 0; padding: 0; list-style: none; counter-reset: dp-step; display: flex; flex-direction: column; border-inline-start: 2px solid var(--color-ink); }
+.dp-step { counter-increment: dp-step; position: relative; display: flex; flex-direction: column; gap: 8px; padding: 4px 0 22px; padding-inline-start: 26px; }
+.dp-step::before { content: counter(dp-step); position: absolute; inset-inline-start: -15px; top: 2px; inline-size: 28px; block-size: 28px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--color-paper); box-shadow: inset 0 0 0 2px var(--color-ink); font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.dp-step-h { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: 1.12rem; font-weight: 700; line-height: 1.45; }
+.dp-since { font-size: var(--text-meta); font-weight: 600; color: var(--color-stamp); background: color-mix(in srgb, var(--color-stamp) 12%, transparent); border-radius: 999px; padding: 0 10px; }
+.dp-was { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.7; }
+.dp-was-year { font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.dp-was span[lang="ar"] { font-family: var(--font-law); font-size: 1.08rem; text-decoration: line-through; text-decoration-thickness: 1px; }
+.dp-witnesses { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+.dp-witnesses li { font-size: 14px; padding: 3px 10px; border-radius: 999px; background: var(--color-sheet); box-shadow: inset 0 0 0 1px var(--color-rule); }
+
+/* ── The people ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.dp-people { --dp-dot: 7px; display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; padding-top: 8px; }
+@media (min-width: 520px) { .dp-people { --dp-dot: 8px; } }
+.dp-col { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 6px 4px; border: 0; border-radius: 10px; background: transparent; color: inherit; font: inherit; cursor: pointer; min-width: 0; }
+.dp-col.is-on { background: color-mix(in srgb, var(--color-ink) 7%, transparent); }
+.dp-col-n { font-weight: 300; font-size: 1.5rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.dp-col.is-on .dp-col-n { font-weight: 600; }
+.dp-dots { display: grid; gap: 2px; direction: ltr; transform: scaleY(-1); }
+.dp-dots i { inline-size: var(--dp-dot); block-size: var(--dp-dot); border-radius: 50%; background: var(--color-ink); }
+.dp-col-year { font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.dp-col.is-on .dp-col-year { color: var(--color-ink); font-weight: 700; }

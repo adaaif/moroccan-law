@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A misread word, seen while reading
+    url: https://3adala.com/open-source
+    about: The quickest way is on the site itself. Under every article, «خطأ في القراءة؟»; and the page above shows doubtful words one at a time.
+  - name: A security flaw
+    url: https://3adala.com/.well-known/security.txt
+    about: Never in a public issue. SECURITY.md says how to report it.

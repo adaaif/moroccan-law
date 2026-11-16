@@ -1,0 +1,236 @@
+# «كلمات دخلت القانون»: the blog's third post (B6 of the blog-first-post review, built 31 Oct 2026 in the order chosen).
+# The counts are in figures.json (manage.py blog_figures words-in-the-law): the texts whose articles, as first
+# published, carry a word, year by year; counted on the search copy since the scan reads every article.
+slug: words-in-the-law
+number: 3
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+title:
+  ar: كلمات دخلت القانون، وكلمات خرجت منه
+  fr: Les mots qui sont entrés dans la loi, et ceux qui en sont sortis
+lead:
+  ar: "«الأمازيغية» أول مرة في 1983، في إجازة الآداب، وأول نص خاص بها في 2001. و«الأنترنت» في 1998، و«كوفيد» في 2020. و«فرنك» كان في قرابة ثلث النصوص سنة الاستقلال، ثم غاب. عددنا 24 كلمة في 158.320 نصا من الجريدة الرسمية منذ 1956، وتتبعنا محطات كل واحدة منها."
+  fr: "« Amazighe » paraît en 1983, dans la licence ès lettres, et son premier texte propre date de 2001. « Internet » en 1998, « Covid » en 2020. « Franc » figurait dans près d’un texte sur trois l’année de l’indépendance, puis a disparu. Nous avons compté 24 mots dans 158 320 textes du Bulletin officiel depuis 1956, et suivi les étapes de chacun."
+
+# The words, in the forms counted (a form found anywhere in an article: «الإرهاب» also finds «الإرهابية»), folded on
+# both sides (services/words.py: the hamza on an alef, the madda, a final yā and the elongations), so «الامازيغية» as
+# printed in 1983 is found. A group is a part of the post; the order inside a group is the order of the picture. Left out
+# for their second meanings: «المناصفة» (also «half and half» in agreements since 2001), «الرقمي» (also «numeric»),
+# «كوفيد» alone (a 1958 list of medicines).
+#
+# `since`: counted from that day only. `misread`: an article whose reading carries the word where its page does not,
+# left out of the count with what the page says (the reading itself waits for /corrections).
+#
+# `stops` (each read on its printed page on 31 Oct 2026, to give each word its context: the first time the state takes
+# up its cause, as the 2001 BO does for one): `first` the first mention, `subject` the first text whose subject the
+# word is, `step` a later text that changed its story. `text` and `art` (or `eid`) name
+# the article; a text the site holds only in Adala's or the SGG's copy names its `issue` and `page`; a text not cut yet names
+# its `issue`, `page` and `title` as printed and opens its issue. `open`: what the stops do not reach yet.
+groups:
+  - key: left
+    ar: كلمات خرجت
+    fr: Des mots qui sont sortis
+    words:
+      - key: franc
+        forms: [فرنك]
+        ar: فرنك
+        fr: franc
+        stops:
+          - {date: 1959-10-23, kind: step, text: /akn/ma/act/dahir/1-59-363, art: 1, ar: "يصير الدرهم وحدة النقد، «وينقسم الدرهم إلى مائة فرنك»", fr: "Le dirham devient l’unité monétaire, « divisé en cent francs »"}
+          - {date: 1974-07-17, kind: step, text: /akn/ma/act/decret/2-74-315, ar: "قطع نقدية جديدة تُعدّ بالسنتيم", fr: "De nouvelles pièces, comptées en santimes"}
+      - key: caid
+        forms: [القائد, القواد]
+        ar: القائد
+        fr: caïd
+        stops:
+          - {date: 2008-10-27, kind: step, text: /akn/ma/act/dahir/1-08-67, art: 1, ar: "هيئة رجال السلطة: «إطار الباشوات» و«إطار القواد» درجتان إلى اليوم", fr: "Le corps des agents d’autorité : pachas et caïds restent des grades"}
+      - {key: pacha, forms: [الباشا, باشوية], ar: الباشا, fr: pacha}
+  - key: replaced
+    ar: كلمات عوّضت كلمات
+    fr: Des mots qui en ont remplacé d’autres
+    words:
+      # Before the dirham was created, «درهم» in the texts is a family's or a place's name («بودرهم», «عين الدراهم»).
+      - key: dirham
+        forms: [درهم, دراهم]
+        since: 1959-10-23
+        ar: درهم
+        fr: dirham
+        stops:
+          - {date: 1959-10-23, kind: subject, text: /akn/ma/act/dahir/1-59-363, art: 1, ar: "«ابتداء من 19 أكتوبر 1959 يكون الدرهم هو الوحدة النقدية لمملكتنا»", fr: "« À compter du 19 octobre 1959, le dirham est l’unité monétaire de Notre Royaume »"}
+      - key: disabled_old
+        forms: [المعاقين, المعوقين]
+        ar: المعاقين
+        fr: « handicapés »
+        misread:
+          - {text: /akn/ma/act/arrete/1051-73, eid: annex, page: 3711, printed: "المقاعد والعربات الخاصة بالمعطوبين"}
+        stops:
+          - {date: 1982-06-16, kind: first, text: /akn/ma/act/decret/2-81-280, art: 6, ar: "وزارة الشؤون الاجتماعية تعمل على «إعادة تكييف المعوقين وإدماجهم في الحياة الاجتماعية»", fr: "Le ministère des Affaires sociales œuvre à « la réadaptation des handicapés et à leur intégration dans la vie sociale »"}
+          - {date: 1993-10-20, kind: subject, text: /akn/ma/act/loi/7-92, art: 8, ar: "قانون الرعاية الاجتماعية للأشخاص المعاقين", fr: "La loi sur la protection sociale des personnes handicapées"}
+      - key: disabled_new
+        forms: [وضعية إعاقة]
+        ar: في وضعية إعاقة
+        fr: « en situation de handicap »
+        stops:
+          - {date: 2010-12-09, kind: first, text: /akn/ma/act/decret/2-10-536, art: 1, ar: "جمعية «إدماج الأشخاص في وضعية إعاقة ذهنية» تحتفظ بصفة المنفعة العامة", fr: "Une association « pour l’intégration des personnes en situation de handicap mental » garde son utilité publique"}
+          - {date: 2016-05-19, kind: subject, text: /akn/ma/act/loi/97-13, art: 1, issue: '6466', page: 3854, ar: "القانون الإطار لحماية حقوق الأشخاص في وضعية إعاقة؛ ومنذ تلك السنة صارت التسمية الجديدة أكثر كل سنة", fr: "La loi-cadre sur les droits des personnes en situation de handicap ; depuis, la nouvelle expression l’emporte chaque année"}
+  - key: eras
+    ar: كلمات لها زمن
+    fr: Des mots qui ont eu leur époque
+    words:
+      # «الاستثمار» before the 1970s is often a field's or a forest's yield («في إبان الاستثمار», 1957), «البيئة» a milieu
+      # («من البيئة والوسط», 1967): their stops are the laws, not a first mention.
+      - key: investment
+        forms: [الاستثمار]
+        ar: الاستثمار
+        fr: investissement
+        stops:
+          - {date: 1995-11-29, kind: subject, text: /akn/ma/act/loi/18-95, art: 1, ar: "القانون الإطار بمثابة ميثاق للاستثمارات، في السنة نفسها التي بلغت فيها الكلمة أوجها", fr: "La loi-cadre portant charte de l’investissement, l’année même où le mot culmine"}
+          - {date: 2022-12-12, kind: step, text: /akn/ma/act/loi/3-22, art: 1, ar: "ميثاق الاستثمار الجديد", fr: "La nouvelle charte de l’investissement"}
+      - key: privatization
+        forms: [الخوصصة, الخصخصة]
+        ar: الخوصصة
+        fr: privatisation
+        stops:
+          - {date: 1990-04-18, kind: step, text: /akn/ma/act/loi/39-89, ar: "القانون الذي أذن بالخوصصة يسميها «تحويل منشآت عامة إلى القطاع الخاص»، بلا الكلمة", fr: "La loi qui l’autorise dit « transfert d’entreprises publiques au secteur privé », sans le mot"}
+          # Read again 1 Nov 2026, after the 1956–2018 decisions were cut: the same ministry's name a year before 1271-93.
+          - {date: 1992-10-15, kind: first, text: /akn/ma/act/arrete/1459-92, art: 1, ar: "أول مرة في مادة: «وزارة التجارة والصناعة والخوصصة»، في لجانها الإدارية المتساوية الأعضاء", fr: "Première fois dans un article : « ministère du Commerce, de l’Industrie et de la Privatisation », pour ses commissions administratives paritaires"}
+      - key: environment
+        forms: [البيئة]
+        ar: البيئة
+        fr: environnement
+        stops:
+          - {date: 2003-06-19, kind: subject, text: /akn/ma/act/loi/11-03, art: 1, ar: "قانون حماية واستصلاح البيئة", fr: "La loi sur la protection et la mise en valeur de l’environnement"}
+          - {date: 2014-03-20, kind: step, text: /akn/ma/act/loi/99-12, art: 1, ar: "الميثاق الوطني للبيئة والتنمية المستدامة", fr: "La charte nationale de l’environnement et du développement durable"}
+      # The same words where they come in a minister's or a ministry's name, which every text it signs repeats (read on
+      # the 1995, 2001 and 1998 peaks: «وزير المالية والاستثمارات», «وزير الاقتصاد والمالية والخوصصة والسياحة»,
+      # «وزير الفلاحة والتجهيز والبيئة»). Not drawn as rows: they say how much of their word a name carried.
+      - {key: investment_title, part_of: investment, forms: [المالية والاستثمارات, الفلاحة والاستثمار الفلاحي], ar: في اسم وزارة, fr: dans un nom de ministère}
+      - {key: privatization_title, part_of: privatization, forms: [والمالية والخوصصة, المكلف بالخوصصة, القطاع العام والخصخصة, والمالية والخصخصة], ar: في اسم وزارة, fr: dans un nom de ministère}
+      - {key: environment_title, part_of: environment, forms: [الفلاحة والتجهيز والبيئة, المكلف بالبيئة, التراب الوطني والبيئة, الماء والبيئة], ar: في اسم وزارة, fr: dans un nom de ministère}
+      - key: emergency
+        forms: [الطوارئ الصحية]
+        ar: الطوارئ الصحية
+        fr: urgence sanitaire
+        stops:
+          - {date: 2009-11-05, kind: first, text: /akn/ma/act/dahir/1-09-212, art: 6, ar: "اللوائح الصحية الدولية: «الطوارئ الصحية العمومية التي تثير قلقا دوليا»", fr: "Le Règlement sanitaire international : « urgences de santé publique de portée internationale »"}
+          - {date: 2020-03-24, kind: subject, text: /akn/ma/act/decret-loi/2-20-292, art: 1, ar: "مرسوم بقانون يتعلق بحالة الطوارئ الصحية", fr: "Le décret-loi sur l’état d’urgence sanitaire"}
+  - key: entered
+    ar: كلمات دخلت
+    fr: Des mots qui sont entrés
+    words:
+      - key: hr
+        forms: [حقوق الإنسان]
+        ar: حقوق الإنسان
+        fr: droits de l’homme
+        stops:
+          # A text of 9 Sep 1955 (BO 2237, the 1951 Geneva convention on refugees) holds the words too: «since independence».
+          - {date: 1958-05-23, kind: first, text: /akn/ma/act/texte/1958-05-23/bo2378-1, eid: art_1, ar: "أول مرة منذ الاستقلال، في العهد الملكي قبل أول دستور: رعايانا «يتمتعوا بحقوق الإنسان»", fr: "Première fois depuis l’indépendance, dans la Charte royale, avant la première Constitution : que Nos sujets « jouissent des droits de l’homme »"}
+          - {date: 1963-01-25, kind: step, text: /akn/ma/act/dahir/1-62-271, art: 13, ar: "المصادقة على اتفاقيات العمل الدولية: «التصريح العالمي لحقوق الإنسان»", fr: "La ratification de conventions internationales du travail : « la Déclaration universelle des droits de l’homme »"}
+          - {date: 1990-05-02, kind: subject, text: /akn/ma/act/dahir/1-90-12, art: 1, ar: "المجلس الاستشاري لحقوق الإنسان", fr: "Le Conseil consultatif des droits de l’homme"}
+          - {date: 2011-03-03, kind: step, text: /akn/ma/act/dahir/1-11-19, art: 1, ar: "المجلس الوطني لحقوق الإنسان", fr: "Le Conseil national des droits de l’homme"}
+      - key: terrorism
+        forms: [الإرهاب]
+        ar: الإرهاب
+        fr: terrorisme
+        stops:
+          - {date: 1981-02-25, kind: first, text: /akn/ma/act/decision/1965/64-667, art: 4, ar: "التأمين من الحريق لا يضمن «أعمال الإرهاب أو التخريب»", fr: "L’assurance incendie ne couvre pas « les actes de terrorisme ou de sabotage »"}
+          - {date: 2003-05-29, kind: subject, text: /akn/ma/act/loi/3-03, art: 1, ar: "قانون مكافحة الإرهاب", fr: "La loi relative à la lutte contre le terrorisme"}
+      - key: sustainable
+        forms: [التنمية المستدامة]
+        ar: التنمية المستدامة
+        fr: développement durable
+        stops:
+          - {date: 1997-09-04, kind: first, text: /akn/ma/act/dahir/1-96-1, art: 1, ar: "اتفاقية الأمم المتحدة لمكافحة التصحر", fr: "La Convention des Nations unies sur la lutte contre la désertification"}
+          - {date: 2014-03-20, kind: subject, text: /akn/ma/act/loi/99-12, art: 1, ar: "القانون الإطار بمثابة ميثاق وطني للبيئة والتنمية المستدامة", fr: "La loi-cadre portant charte nationale de l’environnement et du développement durable"}
+      - key: socprot
+        forms: [الحماية الاجتماعية]
+        ar: الحماية الاجتماعية
+        fr: protection sociale
+        stops:
+          - {date: 1997-02-06, kind: first, text: /akn/ma/act/decret/2-95-321, art: 1, ar: "وزارة التشغيل تعد النصوص المتعلقة «بالحماية الاجتماعية للعمال»", fr: "Le ministère de l’Emploi prépare les textes sur « la protection sociale des travailleurs »"}
+          - {date: 2021-04-05, kind: subject, text: /akn/ma/act/loi/9-21, art: 1, ar: "القانون الإطار المتعلق بالحماية الاجتماعية", fr: "La loi-cadre relative à la protection sociale"}
+      - key: internet
+        forms: [الأنترنت, الإنترنت]
+        ar: الأنترنت
+        fr: Internet
+        stops:
+          - {date: 1998-02-26, kind: first, text: /akn/ma/act/decret/2-97-1024, art: 1, ar: "قائمة الخدمات ذات القيمة المضافة: «خدمات الأنترنت»", fr: "La liste des services à valeur ajoutée : « services Internet »"}
+          - {date: 2020-07-30, kind: step, text: /akn/ma/act/loi/5-20, art: 1, ar: "قانون الأمن السيبراني", fr: "La loi sur la cybersécurité"}
+      - key: pdata
+        forms: [المعطيات الشخصية, المعطيات ذات الطابع الشخصي]
+        ar: المعطيات الشخصية
+        fr: données personnelles
+        stops:
+          - {date: 1998-02-26, kind: first, text: /akn/ma/act/decret/2-97-1026, art: 5, ar: "في العدد نفسه، بعد خمس صفحات: مستغل الشبكة يمحو «المعطيات ذات الطابع الشخصي»", fr: "Dans le même numéro, cinq pages plus loin : l’exploitant efface « les données à caractère personnel »"}
+          - {date: 2009-02-23, kind: subject, text: /akn/ma/act/loi/9-08, art: 1, ar: "قانون حماية الأشخاص الذاتيين تجاه معالجة المعطيات ذات الطابع الشخصي", fr: "La loi sur la protection des personnes physiques à l’égard du traitement des données à caractère personnel"}
+      - key: amazigh
+        forms: [الأمازيغية]
+        ar: الأمازيغية
+        fr: amazighe
+        stops:
+          - {date: 1983-02-02, kind: first, text: /akn/ma/act/decret/2-82-472, art: 16, ar: "إجازة الآداب: بحث في الثقافة الشعبية المغربية، «الدارجة المغربية أو الامازيغية أو الريفية أو الشلحية»", fr: "La licence ès lettres : un mémoire sur la culture populaire marocaine, « dialectal marocain, amazighe, rifain ou chleuh »"}
+          - {date: 2000-05-25, kind: step, text: /akn/ma/act/loi/5-00, art: 1, ar: "في المدرسة: التعليم الأولي «مع الاستئناس بالأمازيغية»، والأكاديميات تدمجها في برامجها (القانون 07.00)", fr: "À l’école : le préscolaire « en se familiarisant avec l’amazighe », et les académies l’intègrent à leurs programmes (loi 07.00)"}
+          - {date: 2001-11-01, kind: subject, text: /akn/ma/act/dahir/1-01-299, art: 1, ar: "أول نص تتكفل فيه الدولة بالأمازيغية: إحداث المعهد الملكي للثقافة الأمازيغية", fr: "Le premier texte par lequel l’État prend l’amazighe en charge : la création de l’Institut royal de la culture amazighe"}
+          - {date: 2011-07-30, kind: step, text: /akn/ma/act/dahir/1-11-91, art: 5, issue: '5964-bis', page: 3600, ar: "الدستور: «تعد الأمازيغية أيضا لغة رسمية للدولة»", fr: "La Constitution : l’amazighe « constitue également une langue officielle de l’État »"}
+          - {date: 2019-09-26, kind: step, text: /akn/ma/act/loi-organique/26-16, art: 1, ar: "قانون تنظيمي يحدد مراحل تفعيل طابعها الرسمي", fr: "Une loi organique fixe les étapes de la mise en œuvre de son caractère officiel"}
+          - {date: 2023-12-14, kind: step, text: /akn/ma/act/decret/2-23-688, art: 1, ar: "رأس السنة الأمازيغية، 14 يناير، يوم عطلة", fr: "Le Nouvel An amazigh, le 14 janvier, jour férié"}
+      - key: laundering
+        forms: [غسل الأموال, تبييض الأموال]
+        ar: غسل الأموال
+        fr: blanchiment
+        stops:
+          - {date: 2001-06-18, kind: first, text: /akn/ma/act/dahir/1-00-316, art: 1, page: 1547, ar: "اتفاق تعاون مع مصر في مكافحة الجريمة", fr: "Un accord de coopération avec l’Égypte contre la criminalité"}
+          - {date: 2007-05-03, kind: subject, text: /akn/ma/act/loi/43-05, art: 1, ar: "قانون مكافحة غسل الأموال", fr: "La loi relative à la lutte contre le blanchiment de capitaux"}
+      - key: amo
+        forms: [التأمين الإجباري الأساسي عن المرض]
+        ar: التأمين عن المرض
+        fr: assurance maladie (AMO)
+        stops:
+          - {date: 2002-11-21, kind: subject, text: /akn/ma/act/loi/65-00, art: 1, ar: "مدونة التغطية الصحية الأساسية", fr: "Le code de la couverture médicale de base"}
+          - {date: 2021-04-05, kind: step, text: /akn/ma/act/loi/9-21, art: 4, ar: "القانون الإطار للحماية الاجتماعية يعممه", fr: "La loi-cadre sur la protection sociale le généralise"}
+      - key: governance
+        forms: [الحكامة, الحوكمة]
+        ar: الحكامة
+        fr: gouvernance
+        misread:
+          - {text: /akn/ma/act/loi/75-03, eid: annex, page: 207, printed: "الوزارة المنتدبة لدى الوزير الأول المكلفة بالشؤون العامة للحكومة"}
+        stops:
+          - {date: 2005-07-28, kind: first, text: /akn/ma/act/decret/2-05-1017, art: 3, ar: "صندوق المبادرة الوطنية للتنمية البشرية: «تقوية الحكامة في ميدان التدبير المحلي»", fr: "Le fonds de l’Initiative nationale pour le développement humain : « renforcer la gouvernance dans la gestion locale »"}
+          - {date: 2011-07-30, kind: step, text: /akn/ma/act/dahir/1-11-91, art: 1, issue: '5964-bis', page: 3600, ar: "الدستور: «الحكامة الجيدة» من أسس النظام الدستوري، ولها باب كامل", fr: "La Constitution : la « bonne gouvernance » parmi les fondements du régime, avec un titre entier"}
+          - {date: 2012-03-12, kind: step, text: /akn/ma/act/decret/2-12-44, ar: "وزير منتدب «مكلف بالشؤون العامة والحكامة»", fr: "Un ministre délégué « chargé des Affaires générales et de la Gouvernance »"}
+      - key: climate
+        forms: [التغيرات المناخية, تغير المناخ]
+        ar: التغيرات المناخية
+        fr: changements climatiques
+        stops:
+          # Read again 1 Nov 2026: «التغيرات المناخية», a lesson of the climatology programme in the meteorology technicians'
+          # exam (order 1536.90 of 20 Nov 1990), six years before the convention the post first named.
+          - {date: 1991-01-09, kind: first, text: /akn/ma/act/arrete/1536-90, art: 1, ar: "«التغيرات المناخية» درس في برنامج امتحان تقنيي الأرصاد الجوية", fr: "« Les changements climatiques », une leçon du programme d’examen des techniciens de la météorologie"}
+          - {date: 1997-09-04, kind: step, text: /akn/ma/act/dahir/1-96-1, art: 8, ar: "اتفاقية مكافحة التصحر تحيل على اتفاقية تغير المناخ", fr: "La Convention sur la désertification renvoie à celle sur les changements climatiques"}
+          - {date: 2002-04-25, kind: subject, text: /akn/ma/act/dahir/1-96-93, art: 1, ar: "نشر اتفاقية الأمم المتحدة الإطارية بشأن تغير المناخ", fr: "La publication de la Convention-cadre des Nations unies sur les changements climatiques"}
+          - {date: 2016-09-15, kind: step, text: /akn/ma/act/loi/42-16, ar: "الموافقة على اتفاق باريس بشأن تغير المناخ", fr: "L’approbation de l’Accord de Paris sur le climat"}
+      - key: autoent
+        forms: [المقاول الذاتي]
+        ar: المقاول الذاتي
+        fr: auto-entrepreneur
+        stops:
+          - {date: 2013-12-31, kind: first, text: /akn/ma/act/loi/110-13, art: 4, page: 8063, ar: "قانون المالية لسنة 2014: «نظام المقاول الذاتي» في الضريبة على الدخل", fr: "La loi de finances 2014 : le « régime de l’auto-entrepreneur » dans l’impôt sur le revenu"}
+          - {date: 2015-03-12, kind: subject, text: /akn/ma/act/loi/114-13, art: 1, issue: '6342', page: 1593, ar: "قانون نظام المقاول الذاتي", fr: "La loi relative au statut de l’auto-entrepreneur"}
+      - key: covid
+        forms: [كوفيد-19, كوفيد 19, كوفيد- 19, كوفيد19, فيروس كورونا, كورونا المستجد]
+        ar: كوفيد
+        fr: Covid
+        stops:
+          - {date: 2020-03-17, kind: first, text: /akn/ma/act/decret/2-20-269, art: 1, ar: "«الصندوق الخاص بتدبير جائحة فيروس كورونا «كوفيد - 19»»", fr: "Le « Fonds spécial pour la gestion de la pandémie du coronavirus “Covid-19” »"}
+          - {date: 2020-03-24, kind: step, text: /akn/ma/act/decret/2-20-293, ar: "إعلان حالة الطوارئ الصحية في كل التراب الوطني", fr: "La proclamation de l’état d’urgence sanitaire sur tout le territoire"}
+      - key: ai
+        forms: [الذكاء الاصطناعي]
+        ar: الذكاء الاصطناعي
+        fr: intelligence artificielle
+        stops:
+          - {date: 1994-01-19, kind: first, text: /akn/ma/act/arrete/2668-93, art: 2, ar: "دبلوم مهندس الدولة بالمدرسة الوطنية العليا للمعلوميات وتحليل النظم: مادة «هندسة المنطق والذكاء الاصطناعي»", fr: "Le diplôme d’ingénieur d’État de l’École nationale supérieure d’informatique et d’analyse des systèmes : la matière « ingénierie de la logique et intelligence artificielle »"}
+        open:
+          ar: "ولم نجد حتى الآن نصا في عنوانه «الذكاء الاصطناعي»."
+          fr: "Nous n’avons trouvé, à ce jour, aucun texte dont le titre nomme l’intelligence artificielle."

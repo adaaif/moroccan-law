@@ -1,0 +1,1570 @@
+{
+  "title": "Discussion",
+  "aboutArticle": "Discussion sur l’article {{number}}",
+  "about": "Discussion sur {{label}}",
+  "aboutShort": "Discussion",
+  "count_zero": "Aucune contribution",
+  "count_one": "{{count}} contribution",
+  "count_other": "{{count}} contributions",
+  "open_zero": "",
+  "open_one": "{{count, n}} question sans réponse",
+  "open_other": "{{count, n}} questions sans réponse",
+  "talk": {
+    "title": "Discussions",
+    "lead": "Les questions des gens sur les articles de loi, et leurs réponses, chaque question sur son article.",
+    "waiting": "Questions en attente de réponse",
+    "answered": "Répondues récemment",
+    "accepted": "M'a aidé"
+  },
+  "talkLabel": "Discussion sur {{label}} : {{count}}",
+  "backToText": "Retour au texte",
+  "readWhole": "Lire l’article dans son texte",
+  "tabs": {
+    "useful": "Les plus utiles",
+    "new": "Les plus récentes",
+    "open": "Questions sans réponse"
+  },
+  "kinds": {
+    "question": "Question",
+    "explanation": "Explication",
+    "experience": "Expérience",
+    "source": "Source",
+    "remark": "Remarque",
+    "post": "Message",
+    "comment": "Commentaire"
+  },
+  "kindHints": {
+    "question": "Que voulez-vous savoir, ou comment la loi s’applique-t-elle à votre situation ?",
+    "explanation": "Expliquez l’article simplement, et citez les articles sur lesquels vous vous appuyez.",
+    "experience": "Racontez ce que vous avez vécu avec cet article, sans nom ni détail qui identifie quelqu’un.",
+    "source": "Indiquez un texte, une décision ou une publication officielle qui éclaire l’article.",
+    "remark": "Une courte remarque sur l’article ou sa rédaction.",
+    "post": "Une expérience, une explication, un avis ou une source : ce que vous voulez faire lire au thème."
+  },
+  "anonymous": "Sans nom",
+  "deletedAccount": "Compte supprimé",
+  "you": "Vous",
+  "useful": "Utile",
+  "usefulCount": "Utile {{count}}",
+  "usefulHint": "Votez « Utile » pour ce qui vous a aidé. Le vote d’un compte de moins de trois jours ne compte pas.",
+  "accept": "M’a aidé",
+  "acceptHint": "Marquez la réponse qui vous a aidé. Une par question.",
+  "accepted": "A aidé l’auteur de la question",
+  "reply": "Répondre",
+  "replyTo": "En réponse à {{name}}",
+  "edit": "Modifier",
+  "delete": "Supprimer",
+  "deleteConfirm": "La contribution sera supprimée définitivement, avec sa voix et ses images. La supprimer ?",
+  "report": "Signaler",
+  "copyLink": "Copier le lien",
+  "linkCopied": "Lien copié",
+  "more": "Autres options",
+  "edited": "modifiée",
+  "held": "En attente de relecture avant d’être visible. Vous recevrez un message à sa publication.",
+  "heldReasons": {
+    "pictures": "Les images sont relues avant publication jusqu’au titre « Contributeur ».",
+    "phone": "Elle contient un numéro de téléphone.",
+    "email": "Elle contient une adresse e-mail.",
+    "cin": "Elle contient ce qui ressemble à un numéro de CIN.",
+    "rib": "Elle contient ce qui ressemble à un RIB.",
+    "link": "Elle contient un lien vers un site non officiel.",
+    "case": "Elle contient un numéro de dossier.",
+    "insult": "Elle contient un mot de la liste des insultes.",
+    "check": "Le contrôle automatique y voit peut-être une règle enfreinte.",
+    "check_privacy": "Le contrôle automatique y voit peut-être la règle 1 enfreinte.",
+    "check_respect": "Le contrôle automatique y voit peut-être la règle 2 enfreinte.",
+    "check_soliciting": "Le contrôle automatique y voit peut-être la règle 3 enfreinte.",
+    "check_lawful": "Le contrôle automatique y voit peut-être la règle 4 enfreinte.",
+    "check_decent": "Le contrôle automatique y voit peut-être la règle 5 enfreinte.",
+    "check_on_topic": "Le contrôle automatique y voit peut-être la règle 6 enfreinte.",
+    "check_honest": "Le contrôle automatique y voit peut-être la règle 7 enfreinte.",
+    "check_unavailable": "Le contrôle automatique n’a pas pu le lire : il attend un modérateur.",
+    "check_limit": "Le contrôle automatique a déjà lu assez de vos textes aujourd’hui : celui-ci attend un modérateur."
+  },
+  "outdated": "Écrite sur une version antérieure de cet article ({{date}}), modifié depuis.",
+  "marker": {
+    "deleted": "Son auteur a supprimé cette contribution.",
+    "removed": "Contribution retirée : elle enfreignait la règle {{n}}."
+  },
+  "disclaimer": "Ce qu’écrivent les participants est une information générale, pas un conseil juridique. Seul fait foi le texte publié au Bulletin officiel.",
+  "empty": "Aucune contribution sur cet article. Posez la première question, ou expliquez ce que vous en savez.",
+  "emptyOpen": "Aucune question en attente ici.",
+  "loadMore": "Autres contributions",
+  "loading": "Chargement…",
+  "notFound": "Article introuvable.",
+  "follow": "Suivre cette discussion",
+  "following": "Vous suivez cette discussion",
+  "followHint": "Vous recevez un message quand quelqu’un y écrit.",
+  "locked": "Discussion fermée : elle se lit, on n’y écrit plus.",
+  "rulesLink": "Règles de la discussion",
+  "privacyLink": "Ce que nous gardons, et combien de temps",
+  "aside": {
+    "rulesTitle": "Avant d’écrire",
+    "rule1": "Aucun nom de personne, aucun numéro de CIN, de dossier ou de téléphone.",
+    "rule2": "Interrogez et expliquez ; ne demandez ni n’offrez de service.",
+    "rule3": "Citez les articles : « l’article 32 » devient un lien.",
+    "questionsTitle": "Questions sans réponse dans ce texte",
+    "questionsLink": "Toutes les questions sans réponse"
+  },
+  "composer": {
+    "start": "Poser une question ou écrire un message…",
+    "startReply": "Écrire un commentaire…",
+    "kindLabel": "Type de contribution",
+    "placeholder": "Écrivez ici, en darija, en arabe ou en français.",
+    "quoteHint": "Sélectionnez des mots de l’article ci-dessus pour les citer.",
+    "quoteFrom": "Citation de {{label}}",
+    "quoteRemove": "Retirer la citation",
+    "quoteThis": "Citer",
+    "voice": "Enregistrer votre voix",
+    "picture": "Ajouter une image",
+    "picturesFull": "Trois images au plus",
+    "anonymous": "Sans nom",
+    "anonymousHint": "Ni les lecteurs ni les relecteurs ne voient votre nom. Seule l’équipe de 3adala peut le voir, en notant pourquoi.",
+    "anonymousVoice": "Un enregistrement n’est jamais sans nom : une voix identifie.",
+    "send": "Publier",
+    "sending": "Publication…",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "privacy": "Aucun nom de personne, aucun numéro de CIN, de dossier ou de téléphone. Tout le monde lit ce que vous écrivez ; c’est une information générale, pas un conseil.",
+    "counter": "{{count}} / 3000",
+    "published": "Contribution publiée.",
+    "heldNow": "Contribution reçue : elle sera publiée après relecture.",
+    "heldWhy": "En relecture : {{reasons}}",
+    "namelessOffer": "Une question personnelle ? Vous pouvez la poser sans votre nom : ni les lecteurs ni les relecteurs ne le verront.",
+    "namelessYes": "Demander sans nom"
+  },
+  "why": {
+    "discussion.closed": "L’écriture n’est pas encore ouverte. Vous pouvez lire.",
+    "account.sign_in": "Connectez-vous pour écrire ou voter.",
+    "email.not_proven": "Confirmez votre adresse e-mail pour participer.",
+    "account.paused": "L’écriture est suspendue sur votre compte. Motif et durée dans votre compte.",
+    "account.closed": "Ce compte est fermé."
+  },
+  "signIn": "Se connecter",
+  "register": "Créer un compte",
+  "proveEmail": "Confirmer mon adresse",
+  "recorder": {
+    "start": "Commencer l’enregistrement",
+    "recording": "Enregistrement",
+    "paused": "En pause",
+    "limit": "Deux minutes au plus",
+    "pause": "Pause",
+    "resume": "Reprendre",
+    "done": "Terminé",
+    "cancel": "Annuler",
+    "listen": "Écoutez avant de publier",
+    "redo": "Recommencer",
+    "drop": "Supprimer",
+    "use": "Ajouter à ma contribution",
+    "uploading": "Envoi de l’enregistrement…",
+    "attached": "Enregistrement",
+    "remove": "Retirer l’enregistrement",
+    "warning": "Votre voix vous identifie : elle est publiée telle quelle, sous votre nom, et ne peut pas être anonyme.",
+    "noEdit": "Un enregistrement ne se modifie pas après publication. Vous pouvez le supprimer à tout moment.",
+    "micDenied": "Le micro n’est pas autorisé. Autorisez-le dans les réglages du navigateur, puis réessayez.",
+    "failed": "L’enregistrement a échoué sur cet appareil.",
+    "unsupported": "Ce navigateur n’enregistre pas le son. Essayez un Chrome, Firefox ou Safari récent.",
+    "play": "Lire",
+    "pausePlay": "Pause",
+    "seek": "Position"
+  },
+  "pictures": {
+    "add": "Ajouter une image",
+    "blurTitle": "Masquez les noms et les numéros",
+    "blurHint": "Glissez sur chaque nom ou numéro pour le masquer. Le masquage se fait sur votre appareil, avant l’envoi.",
+    "undo": "Annuler le dernier",
+    "done": "Terminé",
+    "cancel": "Annuler",
+    "uploading": "Envoi de l’image…",
+    "remove": "Retirer l’image",
+    "open": "Ouvrir l’image",
+    "close": "Fermer",
+    "stripped": "Les informations de l’appareil et du lieu sont retirées de l’image."
+  },
+  "reportSheet": {
+    "title": "Signaler cette contribution",
+    "reasonLabel": "Motif",
+    "details": "Précisions (facultatif)",
+    "moment": "À {{time}} de l’enregistrement",
+    "send": "Envoyer",
+    "sent": "Signalement reçu. Une personne l’examine ; l’auteur ne saura pas qui a signalé.",
+    "who": "Une personne l’examine. L’auteur ne saura pas qui a signalé.",
+    "already": "Vous avez déjà signalé cette contribution."
+  },
+  "reasons": {
+    "exposing": "Révèle des informations personnelles sur quelqu’un",
+    "abuse": "Insulte ou harcèlement",
+    "soliciting": "Publicité ou démarchage",
+    "fraud": "Fraude ou incitation à enfreindre la loi",
+    "sexual": "Contenu sexuel ou violent",
+    "off_topic": "Répétée ou hors du thème"
+  },
+  "rules": {
+    "privacy": "Ne révélez rien de personnel sur personne",
+    "respect": "Ni insulte, ni harcèlement, ni menace",
+    "soliciting": "Ni publicité, ni démarchage",
+    "lawful": "Ni fraude, ni incitation à enfreindre la loi",
+    "decent": "Rien de sexuel ni de violent",
+    "on_topic": "Restez dans le thème, sans répéter",
+    "honest": "N’usurpez aucune qualité"
+  },
+  "rulesLong": {
+    "privacy": "Ni nom complet, ni numéro de CIN, de dossier, de téléphone ou de compte, ni adresse, ni les vôtres ni ceux d’autrui. Racontez votre cas avec ce qu’il faut : un prénom seul ou une qualité (« mon employeur », « le bailleur ») suffit.",
+    "respect": "Contestez l’idée, pas la personne. Ni insulte, ni moquerie, ni menace.",
+    "soliciting": "Ne proposez pas vos services et ne demandez à personne de vous contacter. Les règles de la profession d’avocat interdisent le démarchage.",
+    "lawful": "N’expliquez pas comment contourner la loi, n’incitez pas à l’enfreindre.",
+    "decent": "Ni image ni mot sexuel ou violent.",
+    "on_topic": "Écrivez dans le thème où vous êtes, et commentez le message sous lequel vous écrivez. Ce qui se répète ou en sort est retiré.",
+    "honest": "Ne vous présentez pas comme avocat, juge, notaire ou fonctionnaire pour donner du poids à vos propos. Mentionner votre métier en passant ne pose pas de problème."
+  },
+  "rulesPage": {
+    "title": "Règles de la discussion",
+    "lede": "La discussion de 3adala est un lieu où chacun pose ses questions sur la loi dans les thèmes de sa vie, où explique qui sait, où raconte qui l’a vécu. Ce qui s’y écrit est une information générale, pas une consultation juridique, et seul fait foi le texte publié au Bulletin officiel.",
+    "draft": "Brouillon : ces règles attendent la relecture d’un avocat marocain, l’autorisation et la déclaration à la CNDP, avant l’ouverture de l’écriture au public. L’inscription est fermée pour l’instant : écrivent ceux à qui l’équipe de 3adala a donné un compte pour essayer.",
+    "rulesTitle": "Sept règles",
+    "rulesLead": "Chaque règle avec ce qui la garde : des motifs fixes qui retiennent avant toute lecture, un contrôle automatique qui lit chaque message et commentaire, des lecteurs qui signalent.",
+    "guardsLabel": "Ce qui garde cette règle",
+    "guards": {
+      "fixed": "Motifs fixes",
+      "check": "Contrôle automatique",
+      "report": "Signalement",
+      "none": "(non)"
+    },
+    "fixed": {
+      "privacy": "Retenus avant publication : numéros de téléphone, e-mails, numéros de CIN, de compte bancaire et de dossier.",
+      "respect": "Retenues avant publication : les insultes.",
+      "soliciting": "Retenus avant publication : numéros de téléphone, e-mails, liens vers des sites non officiels."
+    },
+    "roadTitle": "Le chemin de ce que vous écrivez",
+    "roadLead": "Chaque message et commentaire, et chaque modification, passe par ici.",
+    "road": {
+      "send": {
+        "t": "Vous envoyez",
+        "d": "La première fois, vous acceptez que le contrôle automatique le lise. La première semaine, cinq contributions par jour au plus, et le contrôle lit vos textes dix fois par jour (quarante ensuite) ; au-delà, cela attend un modérateur."
+      },
+      "fixed": {
+        "t": "Motifs fixes",
+        "d": "Un téléphone, un e-mail, un numéro de CIN, de compte ou de dossier, un lien vers un site non officiel, une insulte : directement chez un modérateur."
+      },
+      "check": {
+        "t": "Le contrôle automatique",
+        "d": "L’intelligence artificielle lit le titre et le texte, et le message que vous commentez, et les compare aux sept règles seulement. Elle ne juge pas de ce qui est dit de la loi."
+      },
+      "ways": "Après le contrôle, l’un des trois :",
+      "published": {
+        "t": "Publié aussitôt",
+        "d": "Tout le monde le voit. Tout lecteur peut le signaler ; trois signalements pour révélation d’informations personnelles ou contenu sexuel, de trois comptes confirmés ouverts depuis trois jours au moins, le masquent jusqu’à la décision d’un modérateur."
+      },
+      "returned": {
+        "t": "Il vous revient",
+        "d": "Avec la règle qu’il semble enfreindre, et rien n’en est gardé. Vous le modifiez et il est relu, ou vous l’envoyez tel quel et il attend un modérateur."
+      },
+      "waits": {
+        "t": "Il attend un modérateur",
+        "d": "Ce que les motifs fixes ont retenu, ce que le contrôle a jugé grave, ou ce qu’il n’a pas pu lire. Seuls vous et les modérateurs le voient, jusqu’à ce qu’un modérateur décide :"
+      },
+      "decide": {
+        "publish": "Publié",
+        "back": "Renvoyé avec une note",
+        "remove": "Retiré, avec la règle"
+      },
+      "appeal": "S’il est retiré, vous faites appel une fois depuis votre compte, et quelqu’un d’autre que celui qui l’a retiré décide.",
+      "takedown": "Et une personne nommée dans un message, même sans compte, peut en demander le retrait depuis le menu ⋯ qui le suit."
+    },
+    "parts": {
+      "moderators": {
+        "head": "Qui modère",
+        "sub": "et ce qu’il peut faire",
+        "answer": "L’équipe de 3adala modère tous les thèmes, et nomme pour chacun des modérateurs parmi ses habitués, ceux dont les gens ont trouvé les contributions utiles. Personne ne décide sur ce qu’il a écrit lui-même.",
+        "items": [
+          {
+            "t": "Ce qu’il voit",
+            "d": "Ce qui attend et ce qui est signalé dans son thème, et le texte d’un message avant sa modification. Il ne sait ni qui a signalé, ni qui écrit « sans nom », et garde le secret de ce qu’il voit."
+          },
+          {
+            "t": "Ce qu’il fait",
+            "d": "Il publie ce qui attend, maintient ce qui est signalé, le retire avec une règle, rétablit ce qui a été retiré dans les 90 jours, efface des mots précis, renvoie un message à son auteur avec une note, ou ferme un thème."
+          },
+          {
+            "t": "La suspension",
+            "d": "Trois jours, sept ou vingt-huit, ou définitive : la suspension définitive d’un modérateur dure 28 jours jusqu’à ce qu’un second modérateur ou l’équipe la confirme. Une nouvelle suspension ne raccourcit jamais celle qui court ; seule l’équipe lève une suspension définitive ou décidée par elle, et personne ne décide de sa propre suspension. Elle empêche d’écrire, de voter et de signaler, jamais de lire."
+          },
+          {
+            "t": "L’appel",
+            "d": "Une fois par retrait et par suspension, depuis votre compte. Quelqu’un d’autre que celui qui a décidé tranche."
+          },
+          {
+            "t": "Le registre",
+            "d": "Chaque décision est inscrite dans un registre gardé un an. Les modérateurs voient celui de leurs thèmes, l’équipe le voit en entier, et nous publions chaque mois le nombre des principales décisions (plus bas)."
+          }
+        ]
+      },
+      "votes": {
+        "head": "« Utile »",
+        "sub": "et les points",
+        "answer": "Un seul vote : « Utile ». Aucun vote contre quelqu’un, ni pour soi. L’auteur d’une question marque une réponse « M’a aidé », et peut déplacer cette marque.",
+        "items": [
+          {
+            "t": "Les points",
+            "d": "Chaque « Utile » vaut un point, chaque « M’a aidé » cinq. Le vote d’un compte dont l’e-mail n’est pas confirmé ou qui a moins de trois jours ne compte pas. Les points de ce qui est retiré ou supprimé tombent, et reviennent s’il est rétabli."
+          },
+          {
+            "t": "Où ils s’affichent",
+            "d": "À côté de votre nom dans tout ce que vous écrivez et sur votre page. Les points de ce que vous écrivez « sans nom » vous sont aussi comptés."
+          },
+          {
+            "t": "Pas de badges",
+            "d": "Pas de badges professionnels sur 3adala : qui écrit ici écrit en son nom, et se lit à ce qu’il dit et aux articles qu’il cite."
+          },
+          {
+            "t": "La réponse d’abord",
+            "d": "Sous « Les plus utiles » vient d’abord la réponse marquée par l’auteur de la question, puis ce que les gens ont trouvé le plus utile."
+          }
+        ]
+      },
+      "edit": {
+        "head": "Modifier",
+        "sub": "et supprimer",
+        "answer": "Vous modifiez ce que vous avez écrit quand vous voulez, et la modification suit le même chemin. Vous le supprimez, il est effacé aussitôt.",
+        "items": [
+          {
+            "t": "La modification",
+            "d": "Elle est signalée par « modifié », et les modérateurs voient le texte d’avant pendant 90 jours."
+          },
+          {
+            "t": "La suppression",
+            "d": "Si des réponses suivent ce que vous supprimez, une marque reste à sa place. Ce qu’un modérateur a retiré laisse une marque qui nomme la règle."
+          },
+          {
+            "t": "« Sans nom »",
+            "d": "Cache votre nom aux lecteurs et aux modérateurs, pas à l’équipe de 3adala."
+          },
+          {
+            "t": "Les limites",
+            "d": "Soixante contributions ou modifications par heure, et cinq par jour la première semaine. Le contrôle automatique lit ce que vous écrivez quarante fois par jour au plus, dix la première semaine, textes renvoyés, modifiés ou supprimés compris ; au-delà, cela attend un modérateur."
+          },
+          {
+            "t": "Votre nom",
+            "d": "Le nom affiché et le nom d’utilisateur passent par les mêmes règles fixes : s’il s’y trouve un numéro de téléphone, une adresse, un lien ou une insulte, il ne s’affiche pas à côté de ce que vous écrivez."
+          }
+        ]
+      },
+      "yours": {
+        "head": "Vos écrits",
+        "sub": "à qui ils sont",
+        "answer": "Ce que vous écrivez reste à vous. En le publiant, vous donnez à 3adala une permission gratuite et non exclusive de l’afficher, de le garder et d’en améliorer la recherche, tant qu’il est publié.",
+        "items": [
+          {
+            "t": "Pas vendu",
+            "d": "Nous ne le vendons pas, ne le donnons à personne, et il n’entre pas dans les données ouvertes."
+          },
+          {
+            "t": "Lu par l’intelligence artificielle",
+            "d": "Avant publication, chez une société hors du Maroc que nomme la page « Ce que nous gardons », pour vérifier les règles seulement ; il ne sert à entraîner aucun modèle."
+          },
+          {
+            "t": "Après votre compte",
+            "d": "Si vous supprimez votre compte, le texte publié reste, signé « Compte supprimé »."
+          }
+        ]
+      },
+      "explain": {
+        "head": "« En bref »",
+        "sub": "les explications des lecteurs à côté de la loi",
+        "answer": "Des lecteurs expliquent les articles, les textes et les mots avec des mots simples. Chaque explication, et chacune de ses modifications, suit le même chemin, et les lecteurs ne la voient qu'après la relecture d'une personne.",
+        "items": [
+          {
+            "t": "Avant la relecture",
+            "d": "Les règles fixes puis l'intelligence artificielle lisent le titre, l'explication et ce que vous dites de votre modification, et le relecteur voit ce qu'elles ont relevé. Seuls vous et les relecteurs voyez la modification ; l'explication relue reste affichée jusqu'à la relecture."
+          },
+          {
+            "t": "Qui relit",
+            "d": "Les relecteurs du texte et l'équipe de 3adala. Ce qu'écrit un relecteur est publié aussitôt, sauf si quelque chose le retient : un autre relecteur décide alors, car personne ne décide de ses propres mots."
+          },
+          {
+            "t": "Le signalement",
+            "d": "Tout lecteur qui a un compte peut signaler l'explication affichée, pour les mêmes motifs que dans la discussion. Son auteur ne sait pas qui a signalé."
+          },
+          {
+            "t": "Le retrait",
+            "d": "Le relecteur maintient l'explication ou la retire en nommant l'une des sept règles ; l'explication relue d'avant revient, et son auteur apprend la règle sur la page de son compte."
+          }
+        ]
+      }
+    },
+    "privacyLink": "Ce que nous gardons, et combien de temps",
+    "numbersTitle": "Les chiffres du mois",
+    "numbersLede": "Le nombre de contributions et de celles retenues, ce qu’a dit le contrôle automatique, les signalements par motif et les principales décisions des modérateurs, pour ce mois et le précédent, sans aucun nom. Les comptes de l’équipe de développement n’y sont pas comptés.",
+    "numbersLoad": "Les messages du test de charge que porte cette démonstration y sont comptés, sous les noms « Utilisateur test ».",
+    "held": "Retenues, non publiées par un modérateur",
+    "contributions": "Contributions",
+    "checks": "Ce qu’a dit le contrôle automatique",
+    "checkOutcomes": {
+      "publish": "Publié",
+      "return": "Renvoyé à l’auteur",
+      "hold": "Retenu pour un modérateur",
+      "unavailable": "Lecture impossible"
+    },
+    "overturned": "Publié par un modérateur après une retenue",
+    "reportsBy": "Signalements par motif",
+    "acts": "Décisions des modérateurs",
+    "pauses": "Comptes suspendus",
+    "appeals": "Appels",
+    "verbs": {
+      "approve": "Publiées après relecture",
+      "keep": "Maintenues après signalement",
+      "remove": "Retirées",
+      "restore": "Rétablies",
+      "lock": "Discussions fermées",
+      "ban": "Suspensions",
+      "ban_confirm": "Suspensions définitives confirmées",
+      "unban": "Suspensions levées",
+      "appeal_lift": "Appels acceptés",
+      "appeal_keep": "Appels rejetés",
+      "reveal": "Auteurs sans nom révélés"
+    }
+  },
+  "privacy": {
+    "title": "Ce que nous gardons, et combien de temps",
+    "lead": "Ce qui nous parvient quand vous utilisez 3adala, où cela reste, qui le voit, quand c’est effacé, et comment le récupérer ou l’effacer : ce que l’article 5 de la loi 09.08 impose à quiconque traite les données des personnes.",
+    "plaque": "Vous lisez 3adala et y cherchez sans compte ; nous ne posons dans votre navigateur aucune publicité, et deux cookies au plus, qui ne contiennent qu’un numéro au hasard : « reader » au premier article, pour compter votre lecture du jour, et « reading_pass » si vous passez la vérification après une journée entière de lecture. Ce que vous gardez reste sur votre téléphone. Ce qui nous parvient, nous ne le vendons pas, et cette page dit quand nous l’effaçons.",
+    "draft": "Brouillon : cette page attend la relecture d’un avocat marocain, l’autorisation et la déclaration à la CNDP, avant l’ouverture de l’écriture au public.",
+    "changed": "Dernière modification : 15 novembre 2026",
+    "article": "Art. {{n}}",
+    "ask": {
+      "label": "Que faites-vous sur 3adala ?",
+      "all": "Tout",
+      "read": "Je lis",
+      "search": "Je cherche",
+      "keep": "Je garde",
+      "write": "J’écris"
+    },
+    "ruler": {
+      "title": "Combien de temps",
+      "lead": "Chaque ligne est une chose que nous gardons, de son arrivée au jour où elle est effacée.",
+      "here": "Chez nous, sur le serveur de 3adala",
+      "phone": "Sur votre téléphone, ne nous parvient pas",
+      "part": "Une partie reste",
+      "ticks": {
+        "day": "1 jour",
+        "fortnight": "2 semaines",
+        "month": "1 mois",
+        "quarter": "3 mois",
+        "half": "6 mois",
+        "year": "1 an",
+        "open": "Sans limite"
+      }
+    },
+    "rows": {
+      "web": [
+        "Le journal du serveur web, avec votre IP",
+        "7 jours"
+      ],
+      "measured": [
+        "Ce que nous comptons : un événement par ligne, sans personne",
+        "{{days}} jours"
+      ],
+      "counts": [
+        "Les comptes de chaque jour, tirés de ces lignes",
+        "Sans limite, ils ne décrivent personne"
+      ],
+      "lastday": [
+        "Le jour de votre dernière visite, et votre refus si vous le choisissez",
+        "Sur votre téléphone"
+      ],
+      "backups": [
+        "Les sauvegardes",
+        "14 jours sur le serveur, 30 jours sur une seconde machine"
+      ],
+      "report": [
+        "Un signalement d’erreur dans un article",
+        "Sans limite, sans nom"
+      ],
+      "words": [
+        "Les mots de votre recherche",
+        "90 jours, puis sans les mots"
+      ],
+      "recent": [
+        "Vos dernières recherches",
+        "Sur votre téléphone"
+      ],
+      "saved": [
+        "Mes articles et les réponses des outils",
+        "Sur votre téléphone, jusqu’à effacement"
+      ],
+      "document": [
+        "Le document de « Vérifier les renvois »",
+        "Ne quitte pas votre téléphone"
+      ],
+      "account": [
+        "Votre compte et ce que vous publiez",
+        "Tant que vous gardez votre compte"
+      ],
+      "access": [
+        "Une demande d’accès aux données : vos réponses et la décision",
+        "Tant que l’accès dure, et 12 mois après"
+      ],
+      "declined": [
+        "Une demande d’accès refusée",
+        "6 mois, puis sans vos réponses"
+      ],
+      "deleted": [
+        "Ce que vous supprimez vous-même",
+        "Texte effacé aussitôt"
+      ],
+      "edits": [
+        "Votre texte avant modification",
+        "90 jours"
+      ],
+      "check": [
+        "Le résultat du contrôle automatique",
+        "90 jours, sans votre texte"
+      ],
+      "removed": [
+        "Ce qu’un modérateur a retiré",
+        "90 jours"
+      ],
+      "reports": [
+        "Un signalement, une fois décidé",
+        "90 jours"
+      ],
+      "notices": [
+        "Vos notifications",
+        "180 jours"
+      ],
+      "ledger": [
+        "Le registre des décisions des modérateurs",
+        "1 an"
+      ],
+      "left": [
+        "Ce que vous avez publié, après la suppression du compte",
+        "Sans limite, signé « Compte supprimé »"
+      ],
+      "day": [
+        "Ce que le site vous donne dans la journée, compté",
+        "jusqu’à minuit"
+      ]
+    },
+    "acts": {
+      "read": {
+        "head": "Je lis",
+        "sub": "sans compte",
+        "answer": "Lire ne demande pas de compte, et nous ne savons pas qui vous êtes. Mais chaque requête qui atteint notre serveur laisse une ligne dans ses registres.",
+        "items": {
+          "day": {
+            "t": "Ce que le site vous donne dans la journée",
+            "d": "Nous comptons les articles et les pages imprimées que le site donne à chaque navigateur dans la journée, sous un numéro qui change chaque jour et non sous l’adresse, et le compte s’efface après minuit. Pour cela, au premier article que vous lisez, nous déposons dans votre navigateur un cookie, « reader », qui ne contient qu’un numéro au hasard, reste un an et lui donne 3000 articles par jour, plus que n’en a lu aucun lecteur jusqu’ici ; chaque adresse IP a un plafond de dix jours de lecture pour tous les navigateurs qui sont derrière elle ensemble, pour qu’on ne copie pas toute la loi d’un coup. Au-delà, nous vous demandons de revenir demain, ou Cloudflare vérifie que vous êtes une personne (Turnstile) : si c’est le cas, nous plaçons dans votre navigateur un second cookie, « reading_pass », contenant un numéro aléatoire, qui vous donne une journée de lecture à vous et s’efface à minuit."
+          },
+          "web": {
+            "t": "Les deux journaux du serveur",
+            "d": "Le serveur web écrit votre adresse IP complète avec la page demandée et votre navigateur, sans ce qui suit « ? » dans son adresse, et l’efface après 7 jours : c’est un registre de sécurité. Une requête qu’il refuse ou qui reste sans réponse est écrite entière, avec ce qui suit « ? », dans son journal des erreurs, gardé 14 jours. Le journal de l’application écrit l’adresse de chaque requête, sans IP, et la garde jusqu’à ce qu’il soit plein (il remonte aujourd’hui au 25 octobre 2026)."
+          },
+          "counted": {
+            "t": "Ce que nous comptons",
+            "d": "Nous comptons des pages, des outils, des vitesses et des erreurs, pas des personnes : chaque événement est une ligne sans adresse ni compte, comme le dit « Ce que nous comptons » plus bas."
+          },
+          "backups": {
+            "t": "Les sauvegardes",
+            "d": "Chaque nuit, nous copions toute la base et gardons les 14 dernières copies sur le serveur ; les 30 dernières sont aussi copiées sur une seconde machine, à nous, hors du serveur. Nous en faisons aussi une avant chaque grande mise à jour, gardée jusqu’à ce que nous la supprimions. Ce que nous effaçons reste dans ces copies jusqu’à leur suppression : 30 jours au plus pour celles de chaque nuit."
+          },
+          "report": {
+            "t": "Si vous signalez une erreur dans un article",
+            "d": "Nous gardons l’article, le type d’erreur, la phrase et votre message. Ni votre nom, ni votre compte, ni votre adresse."
+          },
+          "word": {
+            "t": "Trancher un mot sur la page « Contribuer »",
+            "d": "Nous gardons le mot, la réponse et l'heure. Rien sur vous."
+          },
+          "assistants": {
+            "t": "ChatGPT, Claude, Gemini et les autres",
+            "d": "ChatGPT, Claude, Gemini et les autres lisent 3adala sans compte (page /ai). Comme toute requête, chacun de leurs appels laisse une ligne dans le journal du serveur web, 7 jours (plus haut) : l’adresse qui appelle, celle de la société pour Claude et ChatGPT. ChatGPT envoie avec chaque appel une ville, une région et un pays approximatifs, un numéro anonyme de son utilisateur et un autre de sa conversation : nous ne gardons ni le lieu ni le numéro de la conversation. Pour limiter les appels, nous les comptons en mémoire : ceux de chaque adresse qui appelle directement, c’est-à-dire ni Claude ni ChatGPT (Gemini, Claude Code, un programme sur votre appareil), oubliés au bout de 26 heures au plus ; ceux de chaque utilisateur de ChatGPT, sous un numéro que nous tirons de son numéro anonyme, oubliés au bout de deux heures. De ces appels, nous gardons des comptes, sans adresse ni personne, sans limite de durée : pour chaque assistant (ou le nom du programme qui appelle directement), chaque jour, ses appels, les articles donnés et les outils utilisés ; et l’heure où les utilisateurs d’un même assistant ont, ensemble, utilisé la moitié de leur part de l’heure. Les mots de ses recherches entrent dans le journal de recherche, comme les vôtres, marqués comme venant d’un assistant. Les références qu’il vérifie ne sont pas gardées. Nous ne lui envoyons que le texte de la loi et sa source ; ce qu’il en fait relève des conditions de la société qui l’exploite, que vous avez choisie. Si vous le connectez avec votre compte 3adala, nous gardons aussi son nom, son domaine et ses appels par jour, et vous le déconnectez quand vous voulez depuis votre compte."
+          }
+        },
+        "not": "Pas d’autres cookies que « reader » et « reading_pass » (plus haut), pas de publicité, aucun outil de suivi ou de statistiques d’une autre société : ce que nous comptons, nous le comptons nous-mêmes, sans personne (« Ce que nous comptons », plus bas). Les polices viennent de notre serveur. Chaque requête passe d’abord par Cloudflare (plus bas)."
+      },
+      "search": {
+        "head": "Je cherche",
+        "sub": "dans la recherche",
+        "answer": "Votre recherche est lue sur notre serveur, par une intelligence artificielle qui tourne chez nous : elle n’est envoyée à aucune société, ni liée à votre compte.",
+        "items": {
+          "words": {
+            "t": "Le registre des recherches",
+            "d": "Les mots, les articles qui se sont affichés, ceux que vous avez ouverts, gardés, partagés ou copiés, et si vous avez trouvé votre réponse. Sans compte, sans adresse IP, sans numéro d’appareil. Après 90 jours, les mots sont effacés ; ce qui s’est affiché et ce qui a été ouvert reste."
+          },
+          "violence": {
+            "t": "Ce qui touche à la violence",
+            "d": "Si vous cherchez avec des mots de violence ou d’agression, ils ne sont pas écrits dans le registre des recherches."
+          },
+          "but": {
+            "t": "Mais",
+            "d": "Les mots sont dans l’adresse de la requête, après « ? ». Le journal du serveur web n’écrit pas ce qui suit « ? » ; celui de l’application écrit l’adresse entière, mots de violence compris, sans IP, jusqu’à ce qu’il soit plein."
+          },
+          "recent": {
+            "t": "Sur votre téléphone",
+            "d": "Vos quatre dernières recherches, pour y revenir."
+          },
+          "people": {
+            "t": "Les questions des gens",
+            "d": "Des questions publiées par des lecteurs dans la discussion peuvent apparaître sous votre réponse. Votre recherche n’apparaît à personne."
+          }
+        }
+      },
+      "keep": {
+        "head": "Je garde",
+        "sub": "et j’utilise les outils",
+        "lock": "Reste sur votre téléphone",
+        "answer": "Ce que vous gardez et ce que vous calculez dans les outils reste sur votre téléphone ; cela ne nous parvient pas.",
+        "items": {
+          "saved": {
+            "t": "Mes articles",
+            "d": "Les articles que vous avez gardés, avec leur texte, pour les lire sans internet."
+          },
+          "tools": {
+            "t": "Les outils",
+            "d": "Ce que vous tapez dans un outil reste dans l’adresse de la page ; les jours et les étapes de vos parcours, vos achats et votre situation dans chaque thème restent dans la mémoire de votre navigateur."
+          },
+          "reading": {
+            "t": "La lecture",
+            "d": "Votre place dans les 60 derniers textes lus, la taille du texte, le thème et la langue, ce que vous suivez sans compte, et les brouillons de ce que vous écrivez dans la discussion."
+          },
+          "offline": {
+            "t": "Sans internet",
+            "d": "Votre navigateur garde les pages que vous avez ouvertes, pour qu’elles marchent sans internet."
+          },
+          "document": {
+            "t": "La vérification des renvois",
+            "d": "Votre navigateur lit le document. Seuls les renvois qu’il y trouve nous sont envoyés, et nous ne les gardons pas."
+          }
+        },
+        "care": [
+          "Si vous rechargez la page d’un outil ou partagez son lien, ses réponses restent dans son adresse, après « ? », et le journal du serveur web n’écrit pas ce qui suit « ? ». Mais qui reçoit le lien les lit : ne partagez pas le lien d’une lettre qui porte votre nom et votre numéro de CIN.",
+          "Ce que vous suivez sans compte : votre téléphone demande à notre serveur ce qui est nouveau, et ce que vous suivez est dans l’adresse de la requête, après « ? ». Le journal du serveur web écrit la requête avec votre adresse IP, 7 jours, sans ce qui suit « ? » ; celui de l’application l’écrit entière, sans IP, jusqu’à ce qu’il soit plein.",
+          "Vous effacez tout cela dans les réglages de votre navigateur (données du site). Se déconnecter ne l’efface pas."
+        ]
+      },
+      "write": {
+        "head": "J’écris",
+        "sub": "dans la discussion",
+        "answer": "Écrire dans la discussion demande un compte, que vous créez avec votre adresse e-mail.",
+        "answerClosed": "Écrire dans la discussion demande un compte. L’inscription est fermée pour l’instant : l’équipe de 3adala donne les comptes à qui essaie la discussion.",
+        "items": {
+          "account": {
+            "t": "Votre compte",
+            "d": "Le nom d’utilisateur, votre e-mail, le nom affiché, la façon dont nous nous adressons à vous, votre langue, si vous recevez des lettres, la date d’inscription et de dernière connexion, la date de confirmation de votre e-mail et celle de votre accord au contrôle automatique. Votre mot de passe est gardé sous une forme que personne ne peut lire."
+          },
+          "written": {
+            "t": "Ce que vous écrivez",
+            "d": "Vos messages et commentaires et leur texte avant chaque modification, vos « En bref » dans toutes leurs versions, vos votes « Utile » (jamais montrés un par un), vos signalements, ce que vous suivez, vos points et vos notifications."
+          },
+          "signin": {
+            "t": "La connexion",
+            "d": "Chaque appareil d’où vous vous connectez reçoit une clé qui vit 90 jours ; nous en gardons la trace. Du code de confirmation de l’e-mail, nous ne gardons qu’une empreinte, effacée un jour après son expiration. Le lien d’un nouveau mot de passe n’est pas gardé : il vaut 3 heures, une seule fois. Si vous entrez avec Google, nous en recevons votre adresse et le numéro de votre compte Google, rien d’autre : ni votre nom ni votre photo. Nos pages ne chargent rien de Google, qui ne sait donc pas ce que vous lisez ici."
+          },
+          "access": {
+            "t": "La demande d’accès aux données",
+            "d": "Si vous demandez l’accès à la base de données ou à l’API : vos six réponses (le nom, qui vous êtes, ce que vous ferez, ce que vous demandez, où cela tourne, combien, et si cela vous rapporte de l’argent), la date des conditions acceptées, nos décisions, notre question et votre réponse ; puis, pour votre accès, le nombre de requêtes et d’articles de chaque jour, jamais ce que vous avez demandé ni votre adresse, et les fichiers téléchargés. De vos clés, nous ne gardons que l’empreinte et les premiers caractères. Seules les personnes qui font fonctionner le site les lisent ; elles sont dans la copie de vos données. Vos réponses restent tant que votre accès dure et douze mois après, six mois après une demande refusée ; puis elles sont effacées, et restent le type de la demande, sa date et sa décision. Si vous supprimez votre compte, votre accès prend fin et vos réponses sont effacées."
+          },
+          "media": {
+            "t": "Voix et images",
+            "d": "Pas encore activées. Une fois activées : la voix est votre vraie voix, que nous ne modifions pas, donc jamais sans nom ; l’image perd les informations de l’appareil et du lieu, et vous en masquez ce que vous voulez sur votre téléphone avant de l’envoyer ; ce qui n’est pas publié est effacé après 24 heures."
+          },
+          "mail": {
+            "t": "Les e-mails",
+            "d": "3adala envoie ses e-mails par Resend : le code de confirmation, le lien d’un nouveau mot de passe quand vous le demandez, un avis quand votre mot de passe ou votre adresse change ; puis vos notifications et le résumé de ce que vous suivez si vous les acceptez, chacun avec un lien pour l’arrêter."
+          },
+          "check": {
+            "t": "Avant publication",
+            "d": "L’intelligence artificielle lit ce que vous écrivez pour vérifier les règles, avec votre accord (plus bas)."
+          }
+        }
+      }
+    },
+    "counted": {
+      "title": "Ce que nous comptons",
+      "lead": "Pour savoir ce qui est lu, quels outils sont menés à leur terme, où les pages ralentissent ou se cassent, nous comptons ce qui se passe sur le site, pas qui le fait.",
+      "answer": "Nous comptons des pages, des outils, des vitesses et des erreurs, jamais des personnes.",
+      "promise": [
+        "Chaque ligne que nous gardons est un seul événement : une page affichée, une étape d’un outil, la vitesse d’une page, une erreur. Elle ne contient ni votre adresse IP, ni votre compte, ni la description de votre navigateur, ni votre ville, ni rien de ce que vous avez tapé ou choisi.",
+        "Elle dit la langue de la page, la largeur de l’écran (téléphone, tablette ou ordinateur) et la version du site. Son heure est l’heure, jamais la minute.",
+        "Elle part de votre navigateur vers notre serveur, par Cloudflare comme toute requête, sans cookie ni compte. Nous ne la donnons à aucune société et ne la vendons pas."
+      ],
+      "kept": "Nous gardons ces lignes {{days}} jours, puis les effaçons ; il n’en reste que les comptes de chaque jour (combien de fois une page s’est affichée, combien de fois un outil a été mené au bout), qui ne décrivent personne.",
+      "list": "Ce que nous comptons, un par un",
+      "categories": {
+        "interaction": "Ce qui sert sur le site",
+        "technical": "Comment le site fonctionne"
+      },
+      "carries": "Ce qu’il porte :",
+      "noList": "La liste n’est pas arrivée. Rechargez la page.",
+      "phone": "Pour cela seulement, nous gardons sur votre téléphone une seule date : le dernier jour où vous avez ouvert le site, pour savoir si les lecteurs reviennent sans savoir qui revient. Nous y gardons aussi votre refus si vous le choisissez, et une marque si un compte de l’équipe de 3adala s’y est connecté, car nous ne comptons pas les appareils de l’équipe.",
+      "country": "À la première page de chaque visite, nous comptons le pays que Cloudflare estime d’après votre adresse, dans le nombre de visites de ce jour par pays : le pays n’est écrit sur aucune ligne, il ne peut donc être lié à une page.",
+      "switch": "Ne pas me compter",
+      "on": "Cet appareil est compté, sans rien sur vous, comme ci-dessus.",
+      "off": "Nous ne comptons pas cet appareil : il n’envoie aucune mesure, et nous avons effacé la date qu’il gardait. Votre choix reste dans ce navigateur jusqu’à ce que vous reveniez dessus ou effaciez les données du site.",
+      "gpcOn": "Votre navigateur envoie le signal Global Privacy Control : nous ne comptons pas cet appareil, sans besoin du bouton.",
+      "staff": "Un compte de l’équipe de 3adala s’est connecté depuis cet appareil : nous ne le comptons pas.",
+      "gpc": "Le signal Global Privacy Control, si votre navigateur l’envoie, fait ce que fait ce bouton sans que vous ayez à le presser."
+    },
+    "measures": {
+      "page_shown": "Chaque page que le site affiche : son adresse sans ce qui suit « ? », son genre (article, texte, outil…), et si elle s’ouvre depuis l’application installée. À la première page d’une visite : le nom du site d’où vous venez, seul, jamais sa page, qui nous dit son genre (moteur de recherche, assistant d’intelligence artificielle, réseau social, autre site) ; le temps écoulé depuis le dernier jour où ce téléphone a ouvert le site, et si c’est sa première visite du jour, de la semaine ou du mois.",
+      "tool_step": "Chaque étape d’un outil : ouvert, votre première réponse, votre résultat affiché, partagé, une image, un rappel, l’écoute, une scène bien ou mal répondue, une étape d’un parcours, une porte prise depuis la recherche. Chaque ouverture d’un outil porte un numéro au hasard, tiré dans la mémoire de la page et jamais gardé, pour savoir où l’on s’arrête. Jamais ce que vous avez tapé ou choisi.",
+      "page_speed": "La vitesse de la première page de chaque chargement : quand sa plus grande partie est apparue, combien elle a bougé en s’affichant, à quelle vitesse elle répond à votre doigt, quand la première réponse du serveur est arrivée ; le genre de réseau tel que le navigateur l’estime (4G, 3G…), et si l’économiseur de données est activé.",
+      "app_error": "Une erreur que le site n’a pas rattrapée : son nom (comme TypeError) et sa place dans les fichiers du site. Jamais son texte.",
+      "api_failed": "Une requête de la page vers notre serveur qui a échoué ou n’a pas eu de réponse : le nom du service seul (comme /corpus/at), jamais ce qu’on lui a demandé, et le code de l’erreur.",
+      "page_missing": "Un lien qui ne mène nulle part : l’adresse que nous n’avons pas trouvée, et si le lien était sur 3adala même, ou le nom du site d’où il venait."
+    },
+    "who": {
+      "title": "Qui voit quoi",
+      "cols": {
+        "all": "Tout le monde",
+        "mods": "Les modérateurs du thème",
+        "team": "L’équipe de 3adala"
+      },
+      "rows": {
+        "public": "Ce que vous publiez, le nom affiché, le nom d’utilisateur, les points",
+        "waiting": "Ce qui attend, ce qui est signalé, et le texte avant modification",
+        "reporter": "Qui a signalé",
+        "email": "Votre e-mail",
+        "anon": "L’auteur d’un message « sans nom »"
+      },
+      "yes": "voit",
+      "no": "ne voit pas",
+      "note": "« Sans nom » cache votre nom aux lecteurs et aux modérateurs. L’équipe de 3adala le voit dans son interface d’administration, et ne le révèle à personne, sauf pour une raison inscrite au registre des décisions. Les modérateurs s’engagent à garder le secret de ce qu’ils voient."
+    },
+    "out": {
+      "title": "Les sociétés par lesquelles passent vos données",
+      "lead": "Trois sociétés, toutes américaines, donc hors du Maroc.",
+      "labels": {
+        "when": "Quand",
+        "what": "Ce qui leur parvient",
+        "why": "Pourquoi"
+      },
+      "cloudflare": {
+        "name": "Cloudflare",
+        "when": "À chaque requête, pour chaque visiteur.",
+        "what": "Votre adresse IP, la page et votre navigateur. Il estime d’après votre adresse où vous êtes, et nous envoie le pays avec la requête : du lieu, nous ne lisons que le pays, et ne le gardons que dans le compte des visites de chaque jour par pays (« Ce que nous comptons », plus haut).",
+        "why": "Pour que le site vous parvienne et soit protégé des attaques, et pour vérifier que vous êtes une personne si vous dépassez la lecture du jour. Nous n’y faisons tourner aucun outil de statistiques."
+      },
+      "anthropic": {
+        "name": "Anthropic",
+        "when": "Seulement quand vous publiez ou modifiez dans la discussion, ou écrivez ou modifiez un « En bref », après votre accord exprès, donné une fois.",
+        "what": "Le titre, le texte, le thème, et le message que vous commentez, ou l'article que vous expliquez et ce que vous dites de votre modification. Ni votre nom, ni votre e-mail, ni rien de votre compte.",
+        "why": "Son intelligence artificielle lit ce que vous écrivez pour vérifier les règles avant publication. Nous gardons son résultat 90 jours, sans votre texte. Selon ses conditions commerciales, Anthropic n’entraîne pas ses modèles sur ce qui lui parvient ainsi. Sans cet accord, vous lisez tout, mais ne publiez pas."
+      },
+      "nobody": "Nous ne vendons pas vos données, et ne les donnons à personne d’autre que ces trois sociétés, sauf sur décision de justice.",
+      "resend": {
+        "name": "Resend",
+        "when": "Quand nous vous envoyons un e-mail.",
+        "what": "Votre adresse et le texte du message : votre nom d’utilisateur, parfois un code ou un lien.",
+        "why": "Pour que nos e-mails arrivent, et pas dans les indésirables. Nous ne suivons ni leur ouverture ni les clics sur leurs liens."
+      }
+    },
+    "rights": {
+      "title": "Vos droits",
+      "lead": "La loi 09.08 vous donne ces droits : chacun avec son article, et ce que vous faites pour l’exercer.",
+      "know": {
+        "name": "Savoir",
+        "text": "Ce que nous recueillons, pourquoi, et qui le voit : cette page."
+      },
+      "copy": {
+        "name": "Obtenir une copie",
+        "text": "Depuis votre compte : votre compte, ce que vous avez publié, vos signalements, ce que vous suivez, les résultats du contrôle, et votre demande d’accès aux données avec son usage. Elle ne contient pas encore vos notifications, vos points ni vos textes avant modification.",
+        "action": "Mes données"
+      },
+      "fix": {
+        "name": "Corriger et effacer",
+        "text": "Changez votre nom et votre langue, modifiez ou supprimez ce que vous avez écrit, ou supprimez votre compte : vos votes, vos suivis, vos notifications, vos voix, vos images et les réponses de votre demande d’accès sont effacés, et votre accès prend fin ; le texte publié reste, signé « Compte supprimé ».",
+        "settings": "Réglages",
+        "leave": "Supprimer le compte"
+      },
+      "object": {
+        "name": "Vous opposer",
+        "text": "Au traitement de ce qui vous concerne, pour un motif légitime. Vous retirez votre accord au contrôle automatique en supprimant votre compte."
+      },
+      "complain": {
+        "name": "Vous plaindre",
+        "text": "À la Commission nationale de contrôle de la protection des données à caractère personnel (CNDP), si vous estimez que nous ne respectons pas cela.",
+        "action": "Site de la CNDP"
+      },
+      "reader": "Vous lisez sans compte ? Nous ne pouvons pas retrouver vos lignes dans nos registres, puisque nous ne savons pas lesquelles sont les vôtres. Elles s’effacent d’elles-mêmes, à leur heure.",
+      "signedOut": "Les actions du compte sont dans sa page, pour qui en a un.",
+      "contact": "Pour toute autre demande, écrivez à"
+    }
+  },
+  "questionsPage": {
+    "title": "Questions sans réponse",
+    "lede": "Des questions posées par les lecteurs de 3adala sur des articles de loi, auxquelles personne n’a encore répondu. Si vous savez, répondez en citant les articles.",
+    "filter": "Texte",
+    "all": "Tous les textes",
+    "none": "Aucune question en attente pour l’instant.",
+    "on": "Sur {{article}}",
+    "answer": "Répondre"
+  },
+  "personPage": {
+    "joined": "Inscrit·e le {{date}}",
+    "contributions_zero": "Aucune contribution sous son nom",
+    "contributions_one": "{{count}} contribution",
+    "contributions_other": "{{count}} contributions",
+    "accepted_zero": "",
+    "accepted_one": "{{count}} réponse qui a aidé",
+    "accepted_other": "{{count}} réponses qui ont aidé",
+    "notFound": "Ce compte n’existe pas.",
+    "anonymousNote": "Ce qui a été écrit sans nom n’apparaît pas ici."
+  },
+  "account": {
+    "title": "Discussion",
+    "proveTitle": "Confirmez votre adresse pour participer",
+    "proveLede": "Saisissez le code à six chiffres envoyé à {{email}}. Il est valable un quart d’heure. Rien reçu ? Regardez dans les indésirables, ou demandez un nouveau code.",
+    "send": "Envoyer un nouveau code",
+    "sent": "Code envoyé. Regardez dans votre messagerie, et dans les indésirables.",
+    "code": "Code",
+    "prove": "Confirmer",
+    "proven": "Votre adresse est confirmée.",
+    "settingsTitle": "Réglages de la discussion",
+    "form": "Accord des titres et des badges",
+    "forms": {
+      "": "Non précisé",
+      "m": "Au masculin",
+      "f": "Au féminin"
+    },
+    "emails": "M’écrire quand quelqu’un me répond ou écrit dans une discussion que je suis",
+    "save": "Enregistrer",
+    "saved": "Enregistré.",
+    "noticesTitle": "Nouveautés",
+    "noNotices": "Rien de nouveau.",
+    "markSeen": "Tout marquer comme lu",
+    "notices": {
+      "answer": "Quelqu’un a répondu à votre contribution",
+      "new": "Nouvelle contribution dans une discussion suivie",
+      "accepted": "L’auteur de la question a marqué votre réponse « M’a aidé »",
+      "approved": "Votre contribution a été publiée après relecture",
+      "removed": "Votre contribution a été retirée (règle {{n}})",
+      "restored": "Votre contribution a été rétablie",
+      "report": "Votre signalement a été examiné",
+      "banned": "L’écriture est suspendue sur votre compte",
+      "appeal": "Votre appel a été tranché",
+      "badge": "Votre demande de badge a été tranchée",
+      "newGroup_one": "{{count}} nouvelle contribution dans une discussion suivie",
+      "newGroup_other": "{{count}} nouvelles contributions dans une discussion suivie",
+      "answerWho": "{{who}} a répondu à votre contribution",
+      "sent_back": "Un relecteur vous renvoie votre contribution",
+      "redacted": "Un relecteur a retiré une partie de votre contribution et l’a publiée",
+      "duplicate": "Votre question était déjà posée : les réponses sont sur la première",
+      "digest": "Des contributions attendent une relecture depuis plus de 12 heures"
+    },
+    "mineTitle": "Vos contributions",
+    "states": {
+      "published": "Publiée",
+      "held": "En relecture",
+      "removed": "Retirée : règle {{n}}"
+    },
+    "appeal": "Faire appel",
+    "appealTitle": "Votre appel",
+    "appealHint": "Un seul appel. Expliquez pourquoi votre contribution n’enfreint pas la règle. Une autre personne que celle qui a décidé tranche.",
+    "appealSend": "Envoyer l’appel",
+    "appealSent": "Appel reçu.",
+    "appealStates": {
+      "waiting": "Appel en attente",
+      "lifted": "Appel accepté",
+      "kept": "Appel rejeté"
+    },
+    "pauseTitle": "Écriture suspendue",
+    "pauseUntil": "Jusqu’au {{date}}, pour la règle {{n}}.",
+    "pauseForGood": "Définitivement, pour la règle {{n}}.",
+    "reportsTitle": "Vos signalements",
+    "reportStates": {
+      "open": "En attente",
+      "acted": "Suite donnée",
+      "reviewed": "Examiné"
+    },
+    "followingTitle": "Discussions suivies",
+    "unfollow": "Ne plus suivre",
+    "dataTitle": "Vos données personnelles",
+    "dataLead": "Une copie, ou la suppression du compte",
+    "export": "Télécharger une copie",
+    "deleteTitle": "Supprimer votre compte",
+    "deleteLede": "Le texte de vos contributions reste, signé « Compte supprimé », car des réponses s’y rattachent. Vos voix, images, votes et suivis sont effacés. C’est définitif.",
+    "deletePassword": "Mot de passe",
+    "deleteConfirm": "Supprimer mon compte définitivement",
+    "reviewLink": "Page de relecture",
+    "wrongAddress": "Mauvaise adresse ? Changez-la"
+  },
+  "review": {
+    "title": "Relecture",
+    "tabs": {
+      "held": "À publier",
+      "reported": "Signalées",
+      "appeals": "Appels",
+      "pauses": "Suspensions",
+      "ledger": "Registre",
+      "guide": "Guide",
+      "reviewers": "Modérateurs",
+      "explain": "En bref"
+    },
+    "empty": "Rien en attente ici.",
+    "oldest": "Les plus anciennes d’abord",
+    "on": "Sur {{article}}",
+    "record": "Ses contributions : {{contributions}} · retirées : {{removed}} · suspensions : {{paused}}",
+    "anonymous": "Sans nom : le nom n’est pas montré aux relecteurs",
+    "heldFor": "Retenue :",
+    "reports": "Signalements",
+    "details": "Ce qu’ont écrit les signalants",
+    "moments": "À",
+    "revisions": "Versions antérieures",
+    "approve": "Publier",
+    "keep": "Maintenir",
+    "remove": "Retirer (règle)",
+    "rule": "Règle",
+    "note": "Note pour le registre (facultatif)",
+    "pause": "Suspendre l’écriture",
+    "days": {
+      "3": "3 jours",
+      "7": "7 jours",
+      "28": "28 jours",
+      "permanent": "Définitivement"
+    },
+    "permanentNote": "Une suspension définitive demande l’accord d’un second relecteur ; 28 jours courent en attendant.",
+    "lock": "Fermer la discussion",
+    "unlock": "Rouvrir la discussion",
+    "reveal": "Révéler l’auteur",
+    "revealNote": "Pourquoi ? La raison est inscrite au registre.",
+    "revealed": "Écrit par : {{name}} ({{email}})",
+    "confirm": "Confirmer la suspension définitive",
+    "lift": "Lever la suspension",
+    "waitingSecond": "Attend un second relecteur",
+    "askedByYou": "Demandée par vous : un autre confirme",
+    "until": "Jusqu’au {{date}}",
+    "forGood": "Définitive",
+    "appealOn": {
+      "contribution": "Appel d’un retrait",
+      "pause": "Appel d’une suspension"
+    },
+    "lifted": "Accepter l’appel",
+    "kept": "Rejeter l’appel",
+    "restore": "Rétablir",
+    "done": "Fait.",
+    "verbs": {
+      "approve": "a publié une contribution retenue",
+      "keep": "a maintenu une contribution signalée",
+      "remove": "a retiré une contribution",
+      "restore": "a rétabli une contribution",
+      "lock": "a fermé une discussion",
+      "unlock": "a rouvert une discussion",
+      "ban": "a suspendu l’écriture",
+      "ban_ask": "a demandé une suspension définitive",
+      "ban_confirm": "a confirmé une suspension définitive",
+      "unban": "a levé une suspension",
+      "appeal_lift": "a accepté un appel",
+      "appeal_keep": "a rejeté un appel",
+      "reveal": "a révélé l’auteur d’une contribution sans nom",
+      "appoint": "a nommé un relecteur",
+      "dismiss": "a mis fin à un relecteur",
+      "badge": "a accordé un badge",
+      "badge_refuse": "a refusé un badge",
+      "badge_end": "a mis fin à un badge"
+    },
+    "notReviewer": "Cette page est réservée aux relecteurs.",
+    "waitedFor": "En attente depuis {{time}}",
+    "articleText": "Texte de l’article",
+    "parentQ": "La question à laquelle elle répond",
+    "recent": "Ses dernières contributions signées",
+    "suggested": "Règle suggérée :",
+    "removeSuggested": "Retirer · règle {{n}}",
+    "redactMatched": "Retirer ce qui a été repéré et publier",
+    "redactSelected": "Retirer la sélection",
+    "selectHint": "Sélectionnez des mots dans le texte pour ne retirer qu’eux.",
+    "coverPicture": "Masquer une partie de l’image",
+    "sendBack": "Renvoyer à l’auteur",
+    "sendBackNote": "Que doit corriger l’auteur ? Il recevra ce texte.",
+    "unhide": "Réafficher",
+    "trust": "Confiance",
+    "trusted": "Auteur de confiance",
+    "untrust": "Retirer la confiance",
+    "duplicate": "Répète la question…",
+    "duplicateId": "Numéro de la première question",
+    "undoIn": "Exécuté dans {{s}} s",
+    "undoNow": "Annuler",
+    "keys": "Clavier :",
+    "median": "Les contributions retenues sont d’ordinaire publiées en {{h}} h.",
+    "moment": "À {{time}}",
+    "takedown": "Demande de retrait par la personne concernée",
+    "contact": "Contact :",
+    "returned": "Corrigée par l’auteur après renvoi",
+    "hidden": "Masquée après signalements",
+    "lockThis": "Fermer la discussion",
+    "grant": "Accorder le badge",
+    "refuse": "Refuser",
+    "reviewersNone": "Aucun modérateur nommé.",
+    "appoint": "Nommer un modérateur",
+    "appointUser": "Nom d’utilisateur",
+    "appointGo": "Nommer",
+    "end": "Mettre fin",
+    "allTexts": "Tous les thèmes",
+    "guideLede": "Pour chaque règle, deux exemples à retirer et deux à garder, pour que les relecteurs lisent les règles de la même façon.",
+    "guideRemove": "À retirer",
+    "guideKeep": "À garder",
+    "medianMinutes": "Les contributions retenues sont d’ordinaire publiées en {{m}} min.",
+    "post": "Message",
+    "candidatesTitle": "Des modérateurs issus du thème",
+    "candidatesPlace": "Choisir un thème",
+    "karmaHere_zero": "0 point ici",
+    "karmaHere_one": "1 point ici",
+    "karmaHere_other": "{{count}} points ici",
+    "appointHere": "Nommer modérateur ici",
+    "candidatesNone": "Personne encore : aucun point gagné dans ce thème.",
+    "appointPlaces": "Modère",
+    "explain": {
+      "pending": "Une modification attend la relecture",
+      "reports_one": "{{count}} signalement",
+      "reports_other": "{{count}} signalements"
+    }
+  },
+  "time": {
+    "now": "à l’instant"
+  },
+  "errors": {
+    "body": {
+      "required": "Écrivez quelque chose, enregistrez votre voix ou ajoutez une image.",
+      "too_long": "3000 caractères au plus."
+    },
+    "quote": {
+      "not_in_article": "La citation doit reprendre les mots de l’article.",
+      "too_long": "Une citation plus courte, s’il vous plaît."
+    },
+    "kind": {
+      "invalid": "Choisissez le type de contribution."
+    },
+    "parent": {
+      "not_found": "Cette contribution n’existe plus."
+    },
+    "discussion": {
+      "closed": "L’écriture n’est pas encore ouverte.",
+      "locked": "Cette discussion est fermée."
+    },
+    "account": {
+      "sign_in": "Connectez-vous d’abord.",
+      "paused": "L’écriture est suspendue sur votre compte.",
+      "day_limit": "Cinq contributions aujourd’hui : c’est la limite de la première semaine. Revenez demain."
+    },
+    "email": {
+      "not_proven": "Confirmez d’abord votre adresse.",
+      "already_proven": "Votre adresse est confirmée.",
+      "too_many_codes": "Trop de codes demandés. Attendez une heure.",
+      "not_sent": "Le code n’a pas pu partir. Réessayez dans un instant.",
+      "unreachable": "Votre adresse contient une faute de frappe : nous n’y envoyons rien. Changez-la dans « Adresse et mot de passe » plus bas."
+    },
+    "code": {
+      "invalid": "Code erroné ou expiré."
+    },
+    "anonymous": {
+      "voice": "Un enregistrement n’est jamais sans nom."
+    },
+    "voice": {
+      "not_yet": "La voix s’ouvre trois jours après l’inscription et une première contribution publiée.",
+      "required": "Enregistrez d’abord.",
+      "too_large": "Enregistrement trop lourd.",
+      "too_long": "Deux minutes au plus.",
+      "empty": "L’enregistrement est vide.",
+      "format": "Ce type d’enregistrement n’est pas accepté.",
+      "invalid": "Enregistrement illisible.",
+      "one_track": "L’enregistrement contient autre chose que du son.",
+      "unreadable": "La conversion a échoué. Réessayez.",
+      "not_found": "Cet enregistrement n’existe plus. Enregistrez à nouveau."
+    },
+    "picture": {
+      "required": "Choisissez une image.",
+      "too_large": "Image trop lourde (12 Mo au plus).",
+      "invalid": "Image illisible.",
+      "format": "Images JPEG, PNG ou WebP seulement."
+    },
+    "pictures": {
+      "not_yet": "Les images s’ouvrent trois jours après l’inscription et une première contribution publiée.",
+      "too_many": "Trois images au plus.",
+      "not_found": "Cette image n’existe plus."
+    },
+    "useful": {
+      "own": "Vous ne votez pas pour vous-même."
+    },
+    "accept": {
+      "not_asker": "Seul l’auteur de la question marque une réponse."
+    },
+    "report": {
+      "own": "Vous ne signalez pas votre propre contribution.",
+      "already": "Vous avez déjà signalé cette contribution."
+    },
+    "reason": {
+      "invalid": "Choisissez un motif."
+    },
+    "contribution": {
+      "not_found": "Cette contribution n’existe plus.",
+      "removed": "Cette contribution a été retirée."
+    },
+    "appeal": {
+      "used": "Vous avez déjà fait appel.",
+      "not_found": "Rien à contester."
+    },
+    "text": {
+      "required": "Écrivez votre appel.",
+      "too_long": "1000 caractères au plus."
+    },
+    "profession": {
+      "already": "Vous avez déjà une demande ou un badge."
+    },
+    "card": {
+      "required": "Ajoutez la photo de la carte.",
+      "invalid": "Image illisible.",
+      "too_large": "Image trop lourde.",
+      "format": "Images JPEG, PNG ou WebP seulement."
+    },
+    "password": {
+      "invalid": "Mot de passe erroné.",
+      "locked_one": "Trop de mots de passe erronés. Attendez 1 minute.",
+      "locked_other": "Trop de mots de passe erronés. Attendez {{count}} minutes."
+    },
+    "rule": {
+      "required": "Choisissez la règle."
+    },
+    "review": {
+      "own": "Un autre relecteur tranche sur ce que vous avez écrit.",
+      "not_reviewer": "Hors de vos textes.",
+      "nothing_waiting": "Rien en attente ici.",
+      "second_eye": "Un autre relecteur confirme.",
+      "staff_only": "Réservé à l’équipe de 3adala."
+    },
+    "note": {
+      "required": "Écrivez la raison."
+    },
+    "path": {
+      "not_found": "Thème ou article introuvable.",
+      "not_a_place": "La discussion se tient dans les thèmes : posez votre question dans le sien."
+    },
+    "unknown": "Une erreur est survenue. Réessayez.",
+    "network": "Pas de connexion. Vérifiez le réseau puis réessayez.",
+    "tooMany": "Trop d’essais. Patientez un peu.",
+    "request": {
+      "throttled": "Trop d’essais. Patientez un peu."
+    },
+    "title": {
+      "required": "Écrivez un titre d’au moins trois caractères.",
+      "too_long": "Titre trop long : 140 caractères au plus."
+    },
+    "consent": {
+      "required": "Acceptez d’abord que l’intelligence artificielle lise ce que vous écrivez avant publication."
+    },
+    "about": {
+      "not_found": "Article introuvable."
+    },
+    "post": {
+      "not_found": "Message introuvable."
+    },
+    "check": {
+      "privacy": "Il semble enfreindre la règle 1.",
+      "respect": "Il semble enfreindre la règle 2.",
+      "soliciting": "Il semble enfreindre la règle 3.",
+      "lawful": "Il semble enfreindre la règle 4.",
+      "decent": "Il semble enfreindre la règle 5.",
+      "on_topic": "Il semble enfreindre la règle 6.",
+      "honest": "Il semble enfreindre la règle 7."
+    },
+    "pause": {
+      "longer_running": "Une suspension plus longue court, ou une suspension définitive attend sa confirmation : elle n’est pas raccourcie."
+    },
+    "days": {
+      "required": "Choisissez la durée de la suspension.",
+      "invalid": "Choisissez la durée de la suspension."
+    },
+    "places": {
+      "required": "Choisissez au moins un thème."
+    }
+  },
+  "waiting": {
+    "title": "Une question attend votre réponse",
+    "of": "{{n}} sur {{total}}",
+    "answer": "Répondre",
+    "next": "Suivante"
+  },
+  "replyToAnon": "En réponse à une contribution sans nom",
+  "duplicateNote": "Question déjà posée : les réponses sont sur la première.",
+  "seeOriginal": "Aller à la première question",
+  "moreAnswers_one": "{{count}} autre réponse",
+  "moreAnswers_other": "{{count}} autres réponses",
+  "fewerAnswers": "Moins",
+  "share": "Envoyer",
+  "shareAnswer": "La réponse",
+  "shareMore": "Lire la discussion sur 3adala",
+  "speed": "Vitesse",
+  "deleteAsk": "Supprimer définitivement, avec voix et images ?",
+  "deleteYes": "Supprimer",
+  "deleteNo": "Annuler",
+  "sentBack": "Un relecteur vous la renvoie : « {{note}} ». Modifiez-la et elle repartira en relecture.",
+  "hiddenNote": "Masquée après des signalements, en attendant un relecteur.",
+  "heldWhy": "En relecture : {{reasons}}",
+  "reviewTime": "La relecture prend d’ordinaire environ {{hours}} h.",
+  "takedown": {
+    "menu": "Cette contribution parle de moi",
+    "title": "Cette contribution parle de moi",
+    "lede": "Si elle donne votre nom ou ce qui vous identifie, demandez qu’elle soit retirée. Un relecteur lit votre demande avant tout autre signalement ; l’auteur ne saura pas qui l’a faite. Aucun compte n’est nécessaire.",
+    "details": "Qu’est-ce qui vous identifie ?",
+    "contact": "Comment vous joindre si besoin (facultatif)",
+    "send": "Envoyer la demande",
+    "sent": "Demande reçue. Une personne l’examine avant tout autre signalement."
+  },
+  "mod": {
+    "title": "Relecteur",
+    "held": "Retenue",
+    "approve": "Publier",
+    "keep": "Maintenir et réafficher",
+    "removeRule": "Retirer · règle {{n}}",
+    "removeOther": "Retirer pour une autre règle…",
+    "sendBack": "Renvoyer à l’auteur…",
+    "sendBackNote": "Que doit corriger l’auteur ?",
+    "send": "Envoyer",
+    "pause": "Suspendre 7 jours",
+    "trust": "Faire confiance à l’auteur",
+    "untrust": "Retirer la confiance",
+    "duplicate": "Question déjà posée…",
+    "duplicateOf": "Quelle question répète-t-elle ?",
+    "lock": "Fermer la discussion",
+    "unlock": "Rouvrir la discussion",
+    "done": "Fait.",
+    "cancel": "Annuler"
+  },
+  "composer2": {
+    "proveTitle": "Confirmez votre adresse pour publier",
+    "proveSent": "Nous avons envoyé un code à {{email}} à votre inscription. Votre texte est gardé.",
+    "proveAndSend": "Confirmer et publier",
+    "resend": "Renvoyer le code",
+    "resent": "Nouveau code envoyé.",
+    "holdLead": "Votre contribution attendra une relecture :",
+    "holdFix": "Retirer « {{words}} »",
+    "holdSolicit": "Le démarchage est interdit (règle 3).",
+    "similarTitle": "Ceci répond peut-être à votre question",
+    "similarOpen": "Lire les réponses",
+    "similarNo": "Ma question est différente",
+    "similarAnswers_zero": "Pas encore de réponse",
+    "similarAnswers_one": "{{count}} réponse",
+    "similarAnswers_other": "{{count}} réponses",
+    "draftKept": "Brouillon gardé sur cet appareil.",
+    "quoteTap": "Citer d’un toucher",
+    "quoteTapHint": "Touchez une phrase de l’article pour la citer, puis la suivante pour étendre la citation.",
+    "quoteDone": "Terminé"
+  },
+  "dot": {
+    "label": "Du nouveau dans votre compte",
+    "review_one": "{{count}} contribution attend une relecture",
+    "review_other": "{{count}} contributions attendent une relecture"
+  },
+  "home": {
+    "title": "Questions sans réponse",
+    "lede": "Des lecteurs interrogent des articles de loi. Si vous savez, répondez en citant les articles.",
+    "all": "Toutes les questions"
+  },
+  "textTalk_one": "{{count}} contribution dans la discussion de ce texte",
+  "textTalk_other": "{{count}} contributions dans la discussion de ce texte",
+  "textTalkQuestions": "Questions sans réponse",
+  "letters": {
+    "title": "Les messages de 3adala",
+    "lede": "Ce lien vient d’un message que nous vous avons envoyé. Choisissez ce qui s’arrête.",
+    "stopThis": "Arrêter les messages de la discussion sur {{label}}",
+    "stopAll": "Arrêter tous les messages",
+    "stoppedThis": "Vous ne recevrez plus les messages de cette discussion.",
+    "stoppedAll": "Vous ne recevrez plus de messages de 3adala. Vous pouvez les rétablir dans votre compte.",
+    "invalid": "Ce lien ne fonctionne pas. Arrêtez les messages depuis votre compte."
+  },
+  "guide": {
+    "privacy": {
+      "remove": [
+        "« Mon bailleur, c’est Mohammed B., derb Sultan n° 12 »",
+        "Photo d’un jugement montrant le nom et le numéro de dossier"
+      ],
+      "keep": [
+        "« Mon bailleur demande 15 % » sans nom ni adresse",
+        "Photo d’une clause de bail aux noms masqués"
+      ]
+    },
+    "respect": {
+      "remove": [
+        "Insulter quelqu’un ou se moquer de sa façon de parler",
+        "Menacer nommément un bailleur ou un locataire"
+      ],
+      "keep": [
+        "« Cette lecture est fausse, l’article 33 dit l’inverse »",
+        "Une critique vive de la loi elle-même, sans viser personne"
+      ]
+    },
+    "soliciting": {
+      "remove": [
+        "« J’ai un bon avocat, appelez le 06… »",
+        "« Notre cabinet traite les dossiers de bail, prix raisonnables »"
+      ],
+      "keep": [
+        "« Consultez un avocat pour votre cas », sans nom ni numéro",
+        "Une avocate qui explique l’article avec son badge vérifié"
+      ]
+    },
+    "lawful": {
+      "remove": [
+        "Expliquer comment falsifier une quittance",
+        "Appeler à expulser un locataire sans jugement"
+      ],
+      "keep": [
+        "« Que faire si le bailleur refuse le loyer ? »",
+        "Expliquer la procédure d’expulsion prévue par la loi"
+      ]
+    },
+    "decent": {
+      "remove": [
+        "Image ou propos sexuels",
+        "Image de violence"
+      ],
+      "keep": [
+        "Décrire en termes généraux une violence conjugale pour une question juridique",
+        "Demander comment protéger une victime, sans détail choquant"
+      ]
+    },
+    "on_topic": {
+      "remove": [
+        "Publicité ou politique sans rapport avec l’article",
+        "La même question mot pour mot, une troisième fois"
+      ],
+      "keep": [
+        "Une question sur un article voisin, renvoyée vers lui",
+        "Un récit qui montre comment l’article a été appliqué"
+      ]
+    },
+    "honest": {
+      "remove": [
+        "« Je suis juge » sans badge, pour convaincre",
+        "Usurper le nom d’un avocat connu"
+      ],
+      "keep": [
+        "« J’ai étudié le droit » sans prétendre à une qualité",
+        "Un titulaire de badge vérifié qui cite sa profession"
+      ]
+    }
+  },
+  "reviewTimeMinutes": "La relecture prend d’ordinaire environ {{minutes}} min.",
+  "textTalkTop": "Les articles les plus discutés",
+  "talkCount_one": "{{count}} contribution",
+  "talkCount_other": "{{count}} contributions",
+  "ask": "Demander",
+  "help": {
+    "title": "Une aide près de chez vous",
+    "legalAid": "L'assistance judiciaire : si vous ne pouvez pas payer un avocat et les frais du procès, vous pouvez la demander. Renseignez-vous au tribunal de première instance le plus proche.",
+    "lawyer": "Pour votre cas, c'est un avocat qui donne un conseil. Ce qui s'écrit ici est une information générale, pas un avis sur votre situation.",
+    "violence": "S'il s'agit de violence, les tribunaux et les hôpitaux ont des cellules de prise en charge des femmes et des enfants victimes de violence.",
+    "summary": "L'assistance judiciaire gratuite, l'avocat, les cellules d'accueil des victimes de violence"
+  },
+  "talkTab": "Discussion",
+  "notYet": "La discussion n’est pas encore ouverte. Vous pouvez lire l’article et le suivre.",
+  "talk2": {
+    "titleLabel": "Titre",
+    "titleQuestion": "Votre question en une ligne",
+    "titlePost": "Le titre de votre message",
+    "commentPlaceholder": "Votre commentaire",
+    "waits": "En attente de relecture",
+    "changed": "modifié depuis",
+    "comments_zero": "Aucun commentaire",
+    "comments_one": "1 commentaire",
+    "comments_other": "{{count, n}} commentaires",
+    "posts_zero": "Aucun message",
+    "posts_one": "1 message",
+    "posts_other": "{{count, n}} messages",
+    "lead": "Posez vos questions et écrivez dans le thème qui vous concerne ; lisez ce que d’autres ont écrit. Chaque thème est modéré par des personnes de sa communauté.",
+    "noPostsYet": "Pas encore de message.",
+    "open": "Entrer",
+    "topicPage": "La page du thème",
+    "moderators": "Modération :",
+    "moderatorsStaff": "L’équipe de 3adala modère ce thème jusqu’à la nomination de modérateurs de sa communauté.",
+    "sortLabel": "Ordre des messages",
+    "sorts": {
+      "active": "Actifs",
+      "new": "Récents",
+      "top": "Les plus utiles",
+      "open": "Sans réponse"
+    },
+    "periodLabel": "Période",
+    "periods": {
+      "week": "Cette semaine",
+      "month": "Ce mois-ci",
+      "year": "Cette année",
+      "all": "Depuis le début"
+    },
+    "empty": "Pas encore de message dans ce thème. Posez la première question, ou partagez ce que vous savez.",
+    "morePosts": "Autres messages",
+    "commentTitle": "Commentaires",
+    "citedChanged": "Modifié depuis ce message : {{list}}.",
+    "askTitle": "Poser une question sur cet article",
+    "citedTitle": "Messages qui citent cet article",
+    "where": "Dans le thème :",
+    "whereLabel": "Le thème où publier la question",
+    "onPost": "Commentaire sur « {{title}} »",
+    "commentSortLabel": "Ordre des commentaires",
+    "commentSorts": {
+      "best": "Les plus utiles",
+      "new": "Les plus récents",
+      "old": "Les plus anciens"
+    },
+    "moreComments": "Afficher d’autres commentaires",
+    "loadingComments": "Chargement…"
+  },
+  "check": {
+    "returned": "Pas encore publié : il semble enfreindre la règle {{n}}, « {{rule}} ».",
+    "fix": "Modifiez-le puis envoyez-le, ou",
+    "insist": "l’envoyer tel quel à un modérateur",
+    "consent": "J’accepte que l’intelligence artificielle de la société Anthropic, hors du Maroc, lise ce que j’écris avant sa publication, pour vérifier les règles seulement. Ni mon nom ni mon e-mail ne lui sont envoyés.",
+    "consentMore": "Ce que nous gardons",
+    "reading": "Lecture…",
+    "asideTitle": "Avant publication",
+    "aside": "Ce qui respecte les sept règles paraît aussitôt ; ce qui les enfreint revient à son auteur avec la règle ; ce qui est grave attend un modérateur."
+  },
+  "karma": {
+    "count_zero": "0 point",
+    "count_one": "1 point",
+    "count_other": "{{count}} points",
+    "hint": "Les points disent combien les gens ont trouvé utile ce qu’écrit une personne : un point par « Utile » d’un compte confirmé de plus de trois jours, cinq quand l’auteur d’une question marque sa réponse « M’a aidé ».",
+    "title": "Les points",
+    "mine_zero": "Vous n’avez pas encore de points.",
+    "mine_one": "Vous avez 1 point.",
+    "mine_other": "Vous avez {{count}} points.",
+    "moderates": "Modère « {{place}} »"
+  },
+  "talk3": {
+    "askSearch": "Chercher dans la loi",
+    "askClosed": "Pour l’instant, seuls les comptes invités écrivent dans la discussion. Posez votre question : nous vous montrons la réponse de la loi.",
+    "lead": "Posez vos questions sur la loi qui vous concerne, et répondez à ceux qui ont demandé avant vous.",
+    "askLabel": "Votre question",
+    "askPlaceholder": "Par exemple : licencié sans préavis après 6 ans, quels sont mes droits ?",
+    "askPick": "Dans quel sujet ?",
+    "askChange": "Changer de sujet",
+    "askGo": "Poser la question",
+    "similarHead": "Des questions proches, déjà posées :",
+    "exchangeCap": "Récemment répondu",
+    "exchangeMore": "Lire la discussion",
+    "doors": "Les sujets",
+    "doorsLead": "Le nombre sur la porte : les questions qui attendent une réponse.",
+    "generalLead": "Une loi qui n’a pas de sujet ici",
+    "waitingTitle": "Elles attendent votre réponse",
+    "waitingLead": "Si vous connaissez la réponse, aidez la personne qui demande.",
+    "answerIt": "Répondre",
+    "allQuestions": "Toutes les questions en attente",
+    "latestTitle": "Nouveau dans la discussion",
+    "waitingLabel": "Sans réponse",
+    "solvedLabel": "Résolu",
+    "answersNoun_one": "réponse",
+    "answersNoun_other": "réponses",
+    "commentsNoun_one": "commentaire",
+    "commentsNoun_other": "commentaires"
+  },
+  "me2": {
+    "menuLabel": "Votre compte : {{name}}",
+    "menuTitle": "Votre compte",
+    "publicPage": "Votre page publique",
+    "proveAlert": "Confirmez votre adresse e-mail",
+    "proveAlertLead": "pour écrire et voter.",
+    "notices": "Nouveautés",
+    "mine": "Mes contributions",
+    "following": "Mes suivis",
+    "followingLead": "Lois et thèmes",
+    "review": "Modération",
+    "reviewLead": "Ce qui attend dans vos thèmes",
+    "settings": "Réglages",
+    "settingsLead": "Nom, langue, e-mails",
+    "tabMe": "Moi",
+    "pagesLabel": "Votre compte",
+    "settingsTitle": "Nom, langue et e-mails",
+    "reading": "Lecture",
+    "readingLead": "Taille du texte et mode nuit",
+    "joined": "Membre depuis {{date}}",
+    "lastActive": "Dernière contribution {{ago}}",
+    "emailProven": "E-mail confirmé",
+    "statKarma": "Points",
+    "statPosts": "Questions et messages",
+    "statAnswers": "Réponses et commentaires",
+    "statAccepted": "Réponses qui ont aidé",
+    "moderates": "Modère :",
+    "seeAsOthers": "Votre page vue par les autres",
+    "tabAll": "Tout",
+    "tabPosts": "Questions et messages",
+    "tabAnswers": "Réponses et commentaires",
+    "tabsLabel": "Contributions",
+    "answerTo": "En réponse à",
+    "more": "Plus",
+    "empty": "Rien ici pour l’instant.",
+    "whereTitle": "Contributions par thème",
+    "secProve": "Confirmer l’e-mail",
+    "followingTitle": "Vos suivis",
+    "savedTile_zero": "Aucun article enregistré sur cet appareil",
+    "savedTile_one": "1 article sur cet appareil",
+    "savedTile_other": "{{count}} articles sur cet appareil",
+    "lawsTile": "Lois et thèmes",
+    "lawsTileLead_zero": "Suivez une loi ou un thème pour recevoir ses nouvelles",
+    "lawsTileLead_one": "1 suivi, des nouvelles chaque semaine",
+    "lawsTileLead_other": "{{count}} suivis, des nouvelles chaque semaine",
+    "noFollowing": "Vous ne suivez aucune discussion. Suivez un message depuis sa page, ou écrivez-y : écrire dans une discussion la suit.",
+    "firstOther": "Rien d’écrit sous ce nom pour l’instant.",
+    "stepsTitle": "Par où commencer",
+    "stepAsk": "Posez votre première question",
+    "stepAskLead": "D’autres lecteurs y répondent dans la discussion.",
+    "stepFollow": "Suivez une loi",
+    "stepFollowLead": "Nous vous disons quand elle change, et par quel texte.",
+    "access": "Mon accès",
+    "desk": "Gestion des accès",
+    "deskLead": "Demandes, accès et usage",
+    "deskWaiting_one": "Une demande attend votre réponse",
+    "deskWaiting_other": "{{count}} demandes attendent votre réponse",
+    "accessStates": {
+      "waiting": "Demande envoyée le {{date}} : elle attend notre réponse",
+      "more": "Nous vous avons posé une question : elle attend votre réponse",
+      "declined": "Demande refusée. Vous pourrez redemander à partir du {{date}}",
+      "again": "Demande refusée. Vous pouvez redemander",
+      "live": "Votre accès court jusqu’au {{date}}",
+      "ended": "Votre accès a pris fin"
+    }
+  },
+  "hub": {
+    "all": "Tout",
+    "following": "Mes suivis",
+    "open": "Sans réponse",
+    "topics": "Les thèmes",
+    "liveToday": "Actif aujourd’hui",
+    "close": "Fermer",
+    "about": "La discussion",
+    "followingLead": "Les thèmes et les messages que vous suivez.",
+    "followingNone": "Vous ne suivez encore aucun thème ni message. Suivez un thème depuis sa page, ou écrivez dans un message : écrire le suit.",
+    "topicAbout": "Le thème",
+    "waitingHere": "En attente de réponse ici"
+  },
+  "homeTalk": {
+    "title": "En ce moment dans la discussion",
+    "all": "Toute la discussion",
+    "ask": "Une question ? Posez-la ici"
+  },
+  "talk4": {
+    "comments_one": "1 commentaire",
+    "comments_other": "{{n}} commentaires",
+    "people_one": "d’une personne",
+    "people_other": "de {{n}} personnes",
+    "replyingTo": "En réponse à",
+    "opener": {
+      "question": "auteur de la question",
+      "question_f": "autrice de la question",
+      "post": "auteur du message",
+      "post_f": "autrice du message"
+    }
+  },
+  "talk5": {
+    "fold": "Replier ce commentaire et ses réponses",
+    "unfold": "Déplier ce commentaire et ses réponses",
+    "hides_one": "1 réponse",
+    "hides_other": "{{n}} réponses",
+    "replies": "Voir les réponses ({{n}})",
+    "more": "Voir d’autres réponses ({{n}})",
+    "court": "Un commentaire ouvert par un lien, dans sa conversation.",
+    "all": "Voir tous les commentaires",
+    "next": "Aller au commentaire suivant",
+    "loading": "Ouverture de la publication…"
+  },
+  "keptDraft": "Votre question est gardée sur ce téléphone ; elle revient à sa place après la connexion :",
+  "member": "Membre"
+}

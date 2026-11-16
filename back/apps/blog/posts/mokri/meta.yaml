@@ -1,0 +1,52 @@
+# «محمد المقري: 11.679 نصا بتوقيع واحد»: the blog's twenty-fifth post (S20 of the first-principles review, 6 Nov
+# 2026: «Yes», C2 as recommended: officials named when their office ended before 1956; built 7 Nov 2026). Every text
+# whose closing, as the Bulletin printed it, carries the Grand Vizier's name: the vizirial orders he signed and the
+# dahirs registered at the Grand Vizierate under his name, counted by year (figures.json, manage.py blog_figures mokri),
+# with the Residents General who authorised their publication. The story stops in 1956. A person checks every quote on
+# its page before the post is published.
+slug: mokri
+number: 25
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "محمد المقري: 11.679 نصا بتوقيع واحد، من 1913 إلى 1955"
+  fr: "Mohammed El Mokri : 11 679 textes sous une même signature, de 1913 à 1955"
+lead:
+  ar: "في الجريدة الرسمية للحماية، يُختم القرار الوزيري بتوقيع الصدر الأعظم، ويُسجَّل الظهير الشريف «في الوزارة الكبرى» تحت اسمه. وطوال 39 سنة، من 1917 إلى 1955، كان الاسم نفسه: محمد المقري. عددنا 11.679 نصا تحمله، أولها ظهير سنة 1913 وآخرها قرار وقّعه سنة 1955. وتعاقب في تلك السنين أحد عشر مقيما عاما أذنوا بنشرها."
+  fr: "Au Bulletin officiel du Protectorat, l’arrêté viziriel se clôt sur la signature du Grand Vizir, et le dahir est « enregistré au Grand Vizirat » sous son nom. Pendant 39 ans, de 1917 à 1955, ce fut le même nom : Mohammed El Mokri. Nous avons compté 11 679 textes qui le portent, le premier un dahir de 1913, le dernier un arrêté signé en 1955. Onze résidents généraux qui en autorisaient la publication se sont succédé dans ces années."
+
+# The name as the Bulletin printed it in a closing.
+name_re: "المقري|المقرى"
+# The Residents General, in their order, by their name in the closings («اطلع عليه وأذن بنشره … المقيم العام: …»).
+residents:
+  - {key: lyautey, re: "ليوطي|لموطي|ليوتي", ar: "ليوطي", fr: "Lyautey"}
+  - {key: steeg, re: "ستيك|ستيغ|ستيج", ar: "ستيغ", fr: "Steeg"}
+  - {key: saint, re: "لوسيان سان|ل\\. ?سان|لوميان سان", ar: "لوسيان سان", fr: "Lucien Saint"}
+  - {key: ponsot, re: "بونسو|يونسو", ar: "بونسو", fr: "Ponsot"}
+  - {key: peyrouton, re: "بيروتون|بيروطون", ar: "بيروتون", fr: "Peyrouton"}
+  - {key: nogues, re: "نوجيس|نوكيس|نوجيز|توجيس|نوجبس|توكيس", ar: "نوكيس", fr: "Noguès"}
+  - {key: puaux, re: "بيو(?![ء-ي])", ar: "بيو", fr: "Puaux"}
+  - {key: labonne, re: "لابون", ar: "لابون", fr: "Labonne"}
+  - {key: juin, re: "جوان|جـوان", ar: "جوان", fr: "Juin"}
+  - {key: guillaume, re: "كيوم|غيوم", ar: "كيوم", fr: "Guillaume"}
+  - {key: grandval, re: "كرانفال|غرانفال|كراندفال", ar: "كرانفال", fr: "Grandval"}
+  - {key: latour, re: "دولاتور|دو لاتور", ar: "بويي دولاتور", fr: "Boyer de Latour"}
+
+# His signature, cut from the Bulletin's thousandth issue (BO 1000, 25 Dec 1931, p. 2522): a dahir «registered at the
+# Grand Vizierate» under his name, then authorised for publication by the Resident General.
+clip:
+  issue: 1000
+  page: 2522
+  words: "قد سجل هذا الظهير الشريف في الوزارة الكبرى بتاريخ 21 رجب عامه الموافق 2 دجنبر سنة 1931 محمد المقري"
+  crop: {left: 0.0063, top: 0.4445, right: 0.4825, bottom: 0.5794, ratio: 1.4167}
+
+# What a Grand Vizier signed: a few titles as printed, one a theme.
+signed:
+  - {year: 1925, issue: 654, page: 810, akn: /akn/ma/act/arrete/1925-05-05/bo654-2, title: "قرار وزيري في ضبط استعمال التلغراف بلا سلك لصيانة سير شؤون المناطيد بالمغرب"}
+  - {year: 1927, issue: 767, page: 1557, akn: /akn/ma/act/dahir/1927-07-05/bo767-3, title: "ظهير شريف في المصادقة على القوانين الجديدة المختصة بالجمعية المعروفة بازوكلوب دي ماروك (وهي جمعية تهتم بامر المناطيد بالمغرب)"}
+  - {year: 1928, issue: 796, page: 216, akn: /akn/ma/act/dahir/1928-01-24/bo796-4, title: "ظهير شريف في رفع اداء الاستهلاك الموظف على السكر الصافي او السكر الموجود في بعض المواد المصنوعة به"}
+  - {year: 1934, issue: 1112, page: 197, akn: /akn/ma/act/arrete/1934-02-16/bo1112-14, title: "قرار وزيري يتعلق بوجوب اتخاذ تدبيرات للوقاية من امراض النحل المعدية"}
+  - {year: 1941, issue: 1481, page: 409, akn: /akn/ma/act/dahir/1941-03-14/bo1481-4, title: "ظهير شريف في تحميص وبيع القهوة او ما قام مقامها"}
+  - {year: 1942, issue: 1542, page: 680, akn: /akn/ma/act/dahir/1942-05-15/bo1542-8, title: "ظهير شريف يتعلق بتعيين اثمان المقاعد في قاعات السينما"}
+  - {year: 1955, issue: 2245, page: 3154, akn: /akn/ma/act/dahir/1955-11-04/bo2245-1, title: "ظهير شريف يحدث بمقتضاه صندوق مال للضمان تعوض به الاضرار اللاحقة بالاملاك من جراء الاضطرابات المخلة بالنظام العام"}

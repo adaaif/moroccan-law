@@ -1,0 +1,12 @@
+# /ma/decret/2-10-432 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+# Strings holding a line break are double-quoted ("\n" is the break in our body); all others single-quoted.
+language: fr
+text: /ma/decret/2-10-432
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [3], wrong: 'du ministre de équipement', right: 'du ministre de l’équipement'}      # p. 1765: «l’» dropped
+  - {arts: [3], wrong: 'd’enseignenient', right: 'd’enseignement'}      # p. 1765: «ni» for «m»
+  - {arts: [3], wrong: "les droits et les\n- obligations de chaque partie", right: 'les droits et les obligations de chaque partie'}      # p. 1765: one sentence; a margin mark became a paragraph break and «- »
+  - {arts: [3], wrong: "des transports.\nDispositions relatives aux établissements de l’enseignement de la conduite", right: 'des transports.'}      # p. 1765: the name of Chapitre II (which follows) glued at the end
+checked: [3]

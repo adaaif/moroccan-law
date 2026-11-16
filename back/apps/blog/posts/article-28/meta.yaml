@@ -1,0 +1,133 @@
+# «الفصل 28، كما طبعته الجريدة الرسمية سنة 1967»: the blog's seventeenth post (S13 of the first-principles review, 6
+# Nov 2026: «Yes»; built 7 Nov 2026). The order is read whole on the site (7 Nov 2026: 47 articles, BO 2856, pp.
+# 1658–1663) and its article 28 on the printed page (p. 1661); the 1913 dahir on its pages (BO 8, pp. 56–58), where
+# our text layer is too rough to quote. The tone is the review's (C4, S13): the text, its date, its penalties,
+# nothing else. Officials are named only before 1956 (C2). A person checks every quote and figure on its page before the
+# post is published.
+slug: article-28
+number: 17
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "الفصل 28، كما طبعته الجريدة الرسمية سنة 1967"
+  fr: "L’article 28, tel que le Bulletin officiel l’a imprimé en 1967"
+lead:
+  ar: "يمنع الفصل 28 بيع المشروبات الكحولية أو تقديمها مجانا «الى المغاربة المسلمين». ليس قانونا صوّت عليه البرلمان: هو فصل من قرار للمدير العام للديوان الملكي بتاريخ 17 يوليوز 1967، من 47 فصلا، اتُّخذ بتفويض من مرسوم ملكي. يخاطب مستغل المؤسسة المرخص لها، ويعاقبه بالحبس من شهر إلى ستة أشهر وبغرامة من 300 إلى 1.500 درهم. وفي 1913، كان أول ظهير في الموضوع يمنع على المسلمين أنفسهم دخول الخمارات للشرب."
+  fr: "L’article 28 interdit de vendre ou d’offrir gratuitement des boissons alcooliques « aux Marocains musulmans ». Ce n’est pas une loi votée par le Parlement : c’est l’article d’un arrêté du directeur général du Cabinet royal du 17 juillet 1967, qui en compte 47, pris sur délégation d’un décret royal. Il s’adresse à l’exploitant d’un établissement autorisé, puni d’un à six mois de prison et de 300 à 1 500 dirhams d’amende. En 1913, le premier dahir sur le sujet interdisait aux musulmans eux-mêmes d’entrer dans les débits pour y boire."
+
+# The order, as the Bulletin printed it.
+order: {number: "3.177.66", issue: 2856, page: 1658, last: 1663, articles: 47, signed: "1967-07-17", published: "1967-07-26", akn: /akn/ma/act/decision/1967/3-177-66}
+
+# Article 28 as printed (p. 1661), word for word, its three paragraphs; where it stands on the page's image, as shares of
+# the image (left, top, right, bottom) and the image's height over its width, read on the image; our translation
+# (the official French text of 1967 is not held here). `marks`: the words a note opens, as printed.
+art28:
+  page: 1661
+  crop: {left: 0.0689, top: 0.4101, right: 0.5107, bottom: 0.5696, ratio: 1.2650}
+  ar:
+    - "يمنع على مستغل كل مؤسسة تتوقف على رخصة أن يبيع أو يقدم مجانا مشروبات كحولية أو ممزوجة بالكحول الى المغاربة المسلمين."
+    - "ويعاقب عن المخالفات للمقتضيات السابقة بالحبس لمدة تتراوح بين شهر واحد وستة أشهر وبغرامة تتراوح بين 300 و 1.500 درهم أو باحدى هاتين العقوبتين فقط."
+    - "وفي حالة العود الى المخالفة يمكن أن تضاعف عقوبة الحبس والغرامة المنصوص عليهما أعلاه."
+  fr:
+    - "Il est interdit à l’exploitant de tout établissement soumis à licence de vendre ou d’offrir gratuitement des boissons alcooliques ou alcoolisées aux Marocains musulmans."
+    - "Les infractions aux dispositions qui précèdent sont punies d’un emprisonnement d’un à six mois et d’une amende de 300 à 1 500 dirhams, ou de l’une de ces deux peines seulement."
+    - "En cas de récidive, l’emprisonnement et l’amende prévus ci-dessus peuvent être portés au double."
+  marks:
+    - {key: who, p: 0, ar: "مستغل كل مؤسسة تتوقف على رخصة", fr: "l’exploitant de tout établissement soumis à licence"}
+    - {key: what, p: 0, ar: "أن يبيع أو يقدم مجانا", fr: "vendre ou d’offrir gratuitement"}
+    - {key: whom, p: 0, ar: "المغاربة المسلمين", fr: "Marocains musulmans"}
+    - {key: penalty, p: 1, ar: "بالحبس لمدة تتراوح بين شهر واحد وستة أشهر وبغرامة تتراوح بين 300 و 1.500 درهم", fr: "d’un emprisonnement d’un à six mois et d’une amende de 300 à 1 500 dirhams"}
+    - {key: repeat, p: 2, ar: "وفي حالة العود", fr: "En cas de récidive"}
+
+# The order's other articles the post names, each with its printed page.
+articles:
+  - {n: 1, page: 1658}
+  - {n: 3, page: 1658}
+  - {n: 4, page: 1658}
+  - {n: 5, page: 1658}
+  - {n: 7, page: 1659}
+  - {n: 9, page: 1659}
+  - {n: 27, page: 1661}
+  - {n: 29, page: 1661}
+  - {n: 30, page: 1661}
+  - {n: 31, page: 1661}
+  - {n: 32, page: 1662}
+  - {n: 35, page: 1662}
+  - {n: 36, page: 1662}
+  - {n: 37, page: 1662}
+  - {n: 43, page: 1662}
+  - {n: 44, page: 1662}
+
+# How it came, and what changed it. The royal decree of 1966 names the official it delegates to; the post quotes it from
+# its delegation on (C2).
+chain:
+  - key: delegation
+    year: 1966
+    text: {number: "76.66", issue: 2782, page: 328, akn: /akn/ma/act/decret/76-66}
+    words: "التفويض لاتخاذ جميع التدابير التشريعية أو التنظيمية المتعلقة بما يلي : الكحول والمشروبات الكحولية والخمور والمهن المرتبطة بها ؛ ألعاب القمار كيفما كان نوعها والمهن المرتبطة بها."
+  - key: order
+    year: 1967
+    text: {number: "3.177.66", issue: 2856, page: 1658, akn: /akn/ma/act/decision/1967/3-177-66}
+  - key: commission
+    year: 1970
+    text: {number: "3.289.70", issue: 3026, page: 2664, akn: /akn/ma/act/decision/1970/3-289-70}
+  - key: walis
+    year: 2002
+    text: {number: "371.02", issue: 4984, page: 490, akn: /akn/ma/act/decision/2002/371-02}
+  - key: withdraw
+    year: 2015
+    text: {number: "3918.15", issue: 6434, page: 516, akn: /akn/ma/act/decision/2015/3918-15}
+
+# Article 44: what the order repealed, as printed (p. 1662).
+repealed: "تلغى جميع المقتضيات المتعلقة بنفس الموضوع ولاسيما : القانون الصادر في 10 ذي الحجة 1347 (18 مايو 1929) ببيع أنواع الكحول والمشروبات الكحولية الى المغاربة المسلمين ؛ القرار الوزيرى الصادر في 10 محرم 1354 (15 أبريل 1935) بالمصادقة على النظام المتعلق باستغلال المؤسسات المستهلكة فيها المشروبات الكحولية وبتطبيقه ؛ القرار الوزيرى الصادر في 23 صفر 1356 (5 مايو 1937) بتنظيم أماكن بيع المشروبات والاكلات الخفيفة وأماكن بيع الماحيا حسبما وقع تغييره أو تتميمه ؛ القانون الصادر في 27 شوال 1372 (10 يوليوز 1953) بتنظيم أماكن بيع المشروبات."
+
+# The first text: the dahir «في ضبط محال بيع المسكرات», signed at Marrakech on 7 Safar 1331 and printed in the Arabic
+# Bulletin's No. 8 (29 June 1913), pp. 56–58, its regulation drawn up by the Grand Vizier, El Hadj Mohammed El Mokri (named
+# by the dahir). Its words are read on the page images; our text layer of 1913 is too rough to quote.
+first:
+  issue: 8
+  page: 56
+  hijri: "7 صفر 1331"
+  akn: /akn/ma/act/dahir/1913-06-29/bo8-2
+  crop: {left: 0.5188, top: 0.7745, right: 0.9474, bottom: 0.8595, ratio: 1.4142}
+  art1: "ممنوع على الرعية من المسلمين ان يجعلوا محلات المسكرات التي تشرب فيها ومن الممنوع ايضا ان يدخلوا في تلك المحلات لشرب تلك المسكرات ."
+  reason: "وكان شرب المسكرات حراما على المسلمين"
+  vizier: {ar: "الصدر الأعظم الحاج محمد المقري", fr: "le Grand Vizir El Hadj Mohammed El Mokri"}
+
+# What the two texts share, article by article, each read on its page (1913: BO 8, pp. 56–58; 1967: BO 2856).
+pairs:
+  - {key: muslims, a1913: "1", p1913: 56, a1967: "28", n1967: 28}
+  - {key: distance, a1913: "9", p1913: 57, a1967: "4", n1967: 4}
+  - {key: women, a1913: "10", p1913: 57, a1967: "27", n1967: 27}
+  - {key: minors, a1913: "16, 19", p1913: 58, a1967: "30, 31", n1967: 30}
+  - {key: drunk, a1913: "16", p1913: 58, a1967: "32", n1967: 32}
+  - {key: wall, a1913: "22", p1913: 58, a1967: "36", n1967: 36}
+
+# Every fine the order sets, in dirhams, with its prison in months (none: a fine only), read in each article (the fiscal
+# fine of art. 20 left out). `or`: the court may give one of the two only.
+fines:
+  - {art: 1, lo: 500, hi: 2500, prison: [1, 6], or: true}
+  - {art: 5, lo: 500, hi: 2500, prison: [1, 6]}
+  - {art: 17, lo: 500, hi: 2500}
+  - {art: 19, lo: 500, hi: 2500}
+  - {art: 22, lo: 500, hi: 2500, prison: [1, 6]}
+  - {art: 23, lo: 500, hi: 2500, prison: [1, 6]}
+  - {art: 25, lo: 500, hi: 2500, prison: [1, 6], or: true}
+  - {art: 26, lo: 120, hi: 240}
+  - {art: 27, lo: 500, hi: 2500}
+  - {art: 28, lo: 300, hi: 1500, prison: [1, 6], or: true}
+  - {art: 29, lo: 24, hi: 360}
+  - {art: 30, lo: 24, hi: 360, prison: [1, 2], or: true}
+  - {art: 31, lo: 100, hi: 1000, prison: [1, 6]}
+  - {art: 32, lo: 150, hi: 500}
+  - {art: 33, lo: 500, hi: 2500}
+  - {art: 34, lo: 500, hi: 2500, prison: [1, 6], or: true}
+  - {art: 36, lo: 120, hi: 240}
+  - {art: 39, lo: 600, hi: 2000, prison: [6, 12]}
+
+# The drinker in public: royal decree 724.66 of 14 November 1967 (BO 2873, p. 2545), «كل شخص», art. 1; its art. 6
+# repealed the dahir of 1914 and the law of 1929 on public drunkenness.
+drunk:
+  text: {number: "724.66", issue: 2873, page: 2545, akn: /akn/ma/act/loi/724-66}
+  words: "يعاقب بالحبس لمدة تتراوح بين شهر واحد وستة أشهر وبغرامة يتراوح قدرها بين 150 و 500 درهم أو باحـدى هاتين العقوبتين فقط كل شخص وجد فى حالة سكر بين فى الازقة أو الطرق أو المقاهى أو الكباريهات أو فى أماكن أخرى عمومية أو يغشاها العموم."

@@ -1,0 +1,26 @@
+[Unit]
+Description=law: the MCP server the assistants read the law through (uvicorn, 127.0.0.1:8042)
+After=network-online.target docker.service law-web.service
+Wants=network-online.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@ROOT@/app/back
+EnvironmentFile=@ROOT@/.env
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+# Two processes, each with MCP_THREADS (4) threads for the tools: at most 8 database connections. Its CPU capped below
+# the site's. No access log: it would write each caller's address to the journal, and /privacy says the application's
+# journal keeps none (nginx's log keeps it 14 days, as it says).
+ExecStart=@ROOT@/venv/bin/uvicorn config.mcp_asgi:app --host 127.0.0.1 --port 8042 --workers 2 \
+    --proxy-headers --forwarded-allow-ips 127.0.0.1 --timeout-keep-alive 30 --no-access-log
+CPUQuota=150%
+MemoryMax=1500M
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

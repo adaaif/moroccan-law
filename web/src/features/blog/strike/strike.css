@@ -1,0 +1,100 @@
+/* «حق الإضراب مضمون» (the eighteenth post). The printed pages are the evidence: six clippings of one sentence, never
+   redrawn. Violet is what the texts printed (the constitutions on the line, the law, the words that changed, the laws that
+   came late); ink is time, the years the sentence waited. Numbers that matter are set large in Readex Pro's lightest
+   weight. */
+
+.st { --st-law: var(--color-stamp); }
+
+/* ── The six clippings and the years ──────────────────────────────────────────────────────────────────────────── */
+.st-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+@media (min-width: 640px) { .st-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+@media (min-width: 900px) { .st-hero { grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); align-items: start; gap: 32px; }
+  .st-hero-count { position: sticky; top: 90px; } .st-share-row { grid-column: 1 / -1; } }
+.st-hero-count { display: flex; flex-direction: column; gap: 10px; }
+.st-kicker { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.7rem, 1.4rem + 1.2vw, 2.3rem); line-height: 1.2; }
+.bp:lang(fr) .st-kicker { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem); }
+.st-big { margin: 0; display: flex; align-items: baseline; gap: 12px; }
+.st-big-n { font-weight: 200; font-size: clamp(6rem, 4.5rem + 8vw, 10.5rem); line-height: 0.85; letter-spacing: -0.05em; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.st-big-unit { font-size: 1.4rem; color: var(--color-ink-soft); }
+.st-between { margin: 0; font-family: var(--font-law); font-size: 1.3rem; line-height: 1.6; text-wrap: pretty; max-width: 30ch; }
+.bp:lang(fr) .st-between { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; }
+.st-hero-law { margin: 0; font-weight: 600; }
+.st-hero-law a { color: var(--st-law); }
+.st-slips { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.st-slip { display: flex; flex-direction: column; gap: 0; min-width: 0; }
+.st-slip:nth-child(odd) .bp-print { transform: rotate(-0.35deg); }
+.st-slip:nth-child(even) .bp-print { transform: rotate(0.35deg); }
+.st-slip-head { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.st-slip-year { font-weight: 300; font-size: 1.7rem; line-height: 1.1; color: var(--color-ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.st-slip-year:hover { color: var(--st-law); }
+.st-slip-art { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.st-slip-stamp { margin: -4px 0 10px; }
+.st-stamp { vertical-align: middle; }
+.st-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.st-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.st-share:disabled { opacity: 0.6; }
+
+/* ── The words, compared ──────────────────────────────────────────────────────────────────────────────────────── */
+.st-words { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--color-rule); }
+.st-words li { display: grid; grid-template-columns: 3.6rem minmax(0, 1fr); gap: 0 14px; padding: 10px 0; border-bottom: 1px solid var(--color-rule-soft); align-items: baseline; }
+.st-words-year { font-family: var(--font-ui); font-weight: 300; font-size: 1.35rem; font-variant-numeric: tabular-nums; color: var(--color-ink-soft); }
+.st-words-text { font-family: var(--font-law); font-size: 1.35rem; line-height: 1.75; }
+.st-words-text .is-first { font-weight: 700; }
+.st-words-text .is-new { color: var(--st-law); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.3em; }
+.st-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── Sixty-two years ──────────────────────────────────────────────────────────────────────────────────────────── */
+.st-wait svg, .st-promises svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; }
+.st-rail { stroke: var(--color-rule); stroke-width: 2; }
+.st-tick { stroke: var(--color-tick); stroke-width: 1.2; }
+.st-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.st-waited { stroke: var(--color-ink); stroke-width: 3; stroke-linecap: round; }
+.st-ring circle { fill: var(--color-sheet); stroke: var(--st-law); stroke-width: 2.5; }
+.st-ring text { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+.st-band rect { fill: color-mix(in srgb, var(--st-law) 30%, transparent); }
+.st-band-words { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--st-law); }
+.st-law circle { fill: var(--st-law); stroke: var(--color-sheet); stroke-width: 3; }
+.st-law text { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--st-law); }
+.st-count { font-family: var(--font-ui); font-weight: 200; font-size: 50px; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+.st-count-words { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); }
+.st-head-line { stroke: var(--color-ink-soft); stroke-width: 1; stroke-dasharray: 2 3; }
+
+.st-path { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-inline-start: 2px solid var(--color-rule); }
+.st-path li { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 2px 14px; padding: 8px 0 8px 0; padding-inline-start: 14px; position: relative; }
+@media (max-width: 560px) { .st-path li { grid-template-columns: minmax(0, 1fr); } }
+.st-path li::before { content: ''; position: absolute; inset-inline-start: -7px; top: 0.95rem; inline-size: 12px; block-size: 12px; border-radius: 50%; background: var(--color-paper);
+  border: 2px solid var(--color-ink-soft); }
+.st-path li.is-key::before { background: var(--st-law); border-color: var(--st-law); }
+.st-path-day { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; padding-top: 2px; }
+.st-path-body { display: flex; flex-direction: column; gap: 2px; line-height: 1.6; }
+.st-path-gap { align-self: flex-start; font-size: var(--text-meta); font-weight: 700; color: var(--color-ink); background: var(--color-sheet); border-radius: 999px; padding: 0 10px;
+  font-variant-numeric: tabular-nums; }
+.st-path li.is-key .st-path-gap { background: var(--st-law); color: var(--color-on-stamp); }
+.st-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--st-law); font-family: var(--font-law); font-size: var(--text-law); line-height: 1.8;
+  text-wrap: pretty; text-align: right; }
+.st-quote.is-small { font-size: 1.15rem; }
+
+/* ── The law by its numbers ───────────────────────────────────────────────────────────────────────────────────── */
+.st-cards { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 14px; }
+.st-card { display: flex; flex-direction: column; gap: 6px; padding: 16px 16px 12px; background: var(--color-sheet); border-radius: var(--radius-card); }
+.st-card-n { margin: 0; display: flex; align-items: baseline; gap: 8px; color: var(--st-law); }
+.st-card-n[dir='ltr'] { justify-content: flex-end; }
+.bp:lang(fr) .st-card-n[dir='ltr'] { justify-content: flex-start; }
+.st-card-num { font-weight: 200; font-size: 3.2rem; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.st-card-unit { font-size: 1.05rem; font-weight: 600; }
+.st-card-text { margin: 0; line-height: 1.7; }
+.st-card-src { margin: auto 0 0; font-size: var(--text-meta); }
+.st-art { font-weight: 600; color: var(--st-law); }
+
+/* ── The promises of 2011 ─────────────────────────────────────────────────────────────────────────────────────── */
+.st-legis { fill: color-mix(in srgb, var(--st-law) 8%, transparent); }
+.st-legis-words { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--st-law); }
+.st-dot { cursor: pointer; }
+.st-dot circle:first-child { fill: var(--color-ink-soft); stroke: var(--color-sheet); stroke-width: 1.5; }
+.st-dot.is-late circle:first-child { fill: var(--st-law); }
+.st-dot.is-on circle:first-child { stroke: var(--color-ink); stroke-width: 2.5; }
+.st-hit { fill: transparent; stroke: none; }
+.st-dot-name { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--st-law); font-variant-numeric: tabular-nums; }
+.st-filed { fill: none; stroke: var(--st-law); stroke-width: 1.5; stroke-dasharray: 4 4; }
+.st-filed-dot { fill: var(--color-sheet); stroke: var(--st-law); stroke-width: 2; }

@@ -1,0 +1,397 @@
+{
+ "about": "People's own phrasings of the hard moments: other persons, genders, word orders and Latin letters, one generic word, a number asked (HM1, HM9, HM10 of the hard-moment review, 7 Nov 2026). Expected articles from the topics' sets; owner-provisional.",
+ "questions": [
+  {
+   "q": "شدوني البوليس شحال يقدرو يخليوني",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "ولدي شداتو البوليس البارح",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "شدوها البوليس",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "بنتي شداتها البوليس",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "خويا شدوه فالكوميسارية شحال غادي يبقى",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "chdouni lbolis f lcommissariat",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "arabizi",
+   "theme": "custody"
+  },
+  {
+   "q": "chdo wldi lbolis",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "arabizi",
+   "theme": "custody"
+  },
+  {
+   "q": "garde à vue durée maximale",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "french",
+   "theme": "custody"
+  },
+  {
+   "q": "طردوه من الخدمة بلا سبب",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "طردوها من الخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "الشركة طردتني بلا ما تعطيني والو",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "كيطردوني من الخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "jrawni mn lkhedma bla sbab",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "arabizi",
+   "theme": "dismissal"
+  },
+  {
+   "q": "tredouni mn lkhedma",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "arabizi",
+   "theme": "dismissal"
+  },
+  {
+   "q": "مولات الدار بغات تخرجني",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49"
+   ],
+   "lang": "darija",
+   "theme": "eviction"
+  },
+  {
+   "q": "مول الدار بغا يخرجنا من الدار",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49"
+   ],
+   "lang": "darija",
+   "theme": "eviction"
+  },
+  {
+   "q": "mol dar bgha ykhrjni mn dar",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49"
+   ],
+   "lang": "arabizi",
+   "theme": "eviction"
+  },
+  {
+   "q": "moul dar bgha ykhrejni",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49"
+   ],
+   "lang": "arabizi",
+   "theme": "eviction"
+  },
+  {
+   "q": "زادت عليا فالكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32",
+    "/ma/loi/67-12/art_33"
+   ],
+   "lang": "darija",
+   "theme": "increase"
+  },
+  {
+   "q": "زادو علينا فالكرا",
+   "expect": [
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32",
+    "/ma/loi/67-12/art_33"
+   ],
+   "lang": "darija",
+   "theme": "increase"
+  },
+  {
+   "q": "راجلي بغا يطلقني",
+   "expect": [
+    "/ma/loi/70-03/art_79",
+    "/ma/loi/70-03/art_78",
+    "/ma/loi/70-03/art_94",
+    "/ma/loi/70-03/art_114"
+   ],
+   "lang": "darija",
+   "theme": "divorce"
+  },
+  {
+   "q": "مراتي بغات تطلق",
+   "expect": [
+    "/ma/loi/70-03/art_79",
+    "/ma/loi/70-03/art_78",
+    "/ma/loi/70-03/art_94",
+    "/ma/loi/70-03/art_114"
+   ],
+   "lang": "darija",
+   "theme": "divorce"
+  },
+  {
+   "q": "بغات تطلق من راجلها",
+   "expect": [
+    "/ma/loi/70-03/art_79",
+    "/ma/loi/70-03/art_78",
+    "/ma/loi/70-03/art_94",
+    "/ma/loi/70-03/art_114"
+   ],
+   "lang": "darija",
+   "theme": "divorce"
+  },
+  {
+   "q": "bghit ntle9 mrati",
+   "expect": [
+    "/ma/loi/70-03/art_79",
+    "/ma/loi/70-03/art_78",
+    "/ma/loi/70-03/art_94",
+    "/ma/loi/70-03/art_114"
+   ],
+   "lang": "arabizi",
+   "theme": "divorce"
+  },
+  {
+   "q": "كيبتزوني بالتصاور ديالي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "darija",
+   "theme": "blackmail"
+  },
+  {
+   "q": "كتبتزني بتصاوري",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "darija",
+   "theme": "blackmail"
+  },
+  {
+   "q": "نصبو عليا فالأنترنت",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "darija",
+   "theme": "scam"
+  },
+  {
+   "q": "نصبات عليا وحدة فالفيسبوك",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "darija",
+   "theme": "scam"
+  },
+  {
+   "q": "خالفوني على السرعة شحال من نقطة غادي يحيدو",
+   "expect": [
+    "/ma/loi/52-05/art_219",
+    "/ma/loi/52-05/art_184",
+    "/ma/loi/52-05/art_99",
+    "/ma/loi/52-05/art_24"
+   ],
+   "lang": "darija",
+   "theme": "speeding"
+  },
+  {
+   "q": "khalfouni 3la sor3a",
+   "expect": [
+    "/ma/loi/52-05/art_219",
+    "/ma/loi/52-05/art_184",
+    "/ma/loi/52-05/art_99",
+    "/ma/loi/52-05/art_24"
+   ],
+   "lang": "arabizi",
+   "theme": "speeding"
+  },
+  {
+   "q": "تسرقات ليا لاكارط",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_6"
+   ],
+   "lang": "darija",
+   "theme": "card"
+  },
+  {
+   "q": "ضاعت ليها البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_6"
+   ],
+   "lang": "darija",
+   "theme": "card"
+  },
+  {
+   "q": "الخدامة طردتها",
+   "expect": [
+    "/ma/loi/19-12/art_19",
+    "/ma/loi/19-12/art_22",
+    "/ma/loi/19-12/art_23"
+   ],
+   "lang": "darija",
+   "theme": "domestic"
+  },
+  {
+   "q": "الخادمة ديالنا بغات تمشي شنو خاصني نعطيها",
+   "expect": [
+    "/ma/loi/19-12/art_19",
+    "/ma/loi/19-12/art_22",
+    "/ma/loi/19-12/art_23"
+   ],
+   "lang": "darija",
+   "theme": "domestic"
+  },
+  {
+   "q": "شنو حقوقي مع مول الدار",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49",
+    "/ma/loi/67-12/art_34",
+    "/ma/loi/67-12/art_32",
+    "/ma/loi/67-12/art_33"
+   ],
+   "lang": "darija",
+   "theme": "generic"
+  },
+  {
+   "q": "licencié sans motif quels sont mes droits",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "french",
+   "theme": "generic"
+  },
+  {
+   "q": "التعويض عن الضرر",
+   "expect": [
+    "/ma/code/doc/art_77",
+    "/ma/code/doc/art_78",
+    "/ma/code/doc/art_98"
+   ],
+   "lang": "ar",
+   "theme": "generic"
+  },
+  {
+   "q": "الإفراغ من أجل الاستعمال الشخصي",
+   "expect": [
+    "/ma/loi/67-12/art_45",
+    "/ma/loi/67-12/art_46",
+    "/ma/loi/67-12/art_49"
+   ],
+   "lang": "ar",
+   "theme": "generic"
+  },
+  {
+   "q": "شحال ديال الإنذار قبل الطرد",
+   "expect": [
+    "/ma/loi/65-99/art_43",
+    "/ma/decret/2-04-469/art_1"
+   ],
+   "lang": "darija",
+   "theme": "figure"
+  },
+  {
+   "q": "شحال الغرامة ديال السرعة",
+   "expect": [
+    "/ma/loi/52-05/art_219",
+    "/ma/loi/52-05/art_184",
+    "/ma/loi/52-05/art_99",
+    "/ma/loi/52-05/art_24"
+   ],
+   "lang": "darija",
+   "theme": "figure"
+  }
+ ],
+ "checked": "owner-provisional"
+}

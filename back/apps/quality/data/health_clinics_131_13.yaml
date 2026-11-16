@@ -1,0 +1,8 @@
+# Law 131.13 (the practice of medicine: clinics) as the SGG's consolidated file prints it. Read against the page images on
+# 2026-10-27 (the health review, S4): arts 75 and 115, the articles the health topic cites. They read as printed
+# (art. 115's «فى» is the file's own): nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_clinics_131_13.yaml`; a reload of the text applies them again.
+text: /ma/loi/131-13
+document: sources/sgg_consolidated/131_13.pdf
+read_on: '2026-10-27'
+fixes: []

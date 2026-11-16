@@ -1,0 +1,35 @@
+/* «المغرب والعالم في الجريدة الرسمية»: the lenders as rows of decrees (a loan in the source's violet, the State's
+   guarantee in the corrected brown), the guarantees the brown part of the decades' bars, and the African part of the
+   laws in violet. */
+.ag-lenders { display: flex; flex-direction: column; gap: 8px; }
+.ag-lenders svg:focus-visible { outline: 2px solid var(--color-stamp); outline-offset: 4px; }
+.ag-lenders line.ag-decade { stroke: var(--color-rule-soft); stroke-width: 1; }
+.ag-lenders line.ag-row { stroke: var(--color-rule-soft); stroke-width: 1; }
+.ag-lenders text.ag-name tspan { font-size: 13px; }
+.ag-lenders line.ag-mark { stroke: var(--color-stamp); stroke-width: 1.5; opacity: 0.8; pointer-events: none; }
+.ag-lenders line.ag-mark.is-guarantee { stroke: var(--color-amended); }
+.ag-lenders .ag-picked line { stroke: var(--color-ink); stroke-width: 3.5; stroke-linecap: round; }
+
+.ag-split .bp-plot rect.is-part { fill: var(--color-amended); pointer-events: none; }
+.ag-africa .bp-plot rect.is-part { fill: var(--color-stamp); pointer-events: none; }
+
+.ag-rank { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
+.ag-rank li { display: grid; grid-template-columns: 16rem minmax(0, 1fr); align-items: center; gap: 12px; min-height: 34px; }
+.ag-rank-name { font-size: var(--text-meta); line-height: 1.35; }
+.ag-bar { display: flex; align-items: center; gap: 8px; }
+.ag-bar i { height: 14px; width: calc(var(--w) * (100% - 3.5rem)); min-width: 2px; border-radius: 2px; background: var(--bp-bar); }
+.ag-rank li.is-hi .ag-bar i { background: var(--color-stamp); }
+.ag-bar b { font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+@media (max-width: 639px) { .ag-rank li { grid-template-columns: 9.5rem minmax(0, 1fr); } }
+
+.ag-old { display: flex; flex-direction: column; margin: 4px 0 0; padding: 0; list-style: none; }
+.ag-old li { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 2px 14px; padding: 10px 0; border-top: 1px solid var(--color-rule-soft); }
+.ag-old li:first-child { border-top: 0; }
+.ag-years { font-size: var(--text-body); font-weight: 700; color: var(--color-stamp); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.ag-when { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ag-title { grid-column: 1 / -1; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink); text-decoration: none;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ag-title:hover { color: var(--color-stamp); }
+
+/* A link inside a paragraph is told from the words around it by more than its colour. */
+.bp-sec .bp-p a { text-decoration: underline; text-underline-offset: 3px; }

@@ -1,0 +1,289 @@
+# The places' list, as a person keeps it (PL1 of the places review, 1 Nov 2026). `manage.py make_gazetteer` joins
+# it to the kept sources (the UN's M49 names, Natural Earth's Morocco edition, the 2024 census decree's tables read on
+# their pages, GeoNames) and writes places.json beside it. Every spelling below is one the Bulletin printed.
+# Matching folds both sides (أ إ آ ٱ → ا, ى → ي, ة → ه, no tatweel or harakat) and lets a name carry و ب ل ف ك or لل.
+
+countries:
+  # Each state's spellings beyond its UN name: from the agreements post's words and the places pilot (31 Oct 2026), and
+  # the old Bulletin's (6 Nov 2026, BH4 of the posts-from-No.-1 review): «فرانسا», «الدولة الفرنسوية», «اصبانيا», «انكلترا»,
+  # «اطاليا», «هولاندا», counted in its 1913–1955 texts. An adjective alone («الفرنساوي») names no state (C4); with
+  # «الدولة» or «الجمهورية» it is the state's name.
+  # A word that is also a common word never stands alone here: «مالي» is «financial», «قطر» a diameter, «بنين» sons,
+  # «سيلان» a leak, «عمان» the capital of Jordan; they come with «جمهورية», «دولة» or «سلطنة».
+  forms:
+    AFG: [افغانستان]
+    AGO: [انغولا, انجولا]
+    ALB: [البانيا]
+    ARE: [الامارات العربية المتحدة, دولة الامارات, الامارات العربية]
+    ARG: [الارجنتين]
+    ARM: [ارمينيا]
+    AUS: [استراليا]
+    AUT: [النمسا]
+    AZE: [اذربيجان]
+    BDI: [بوروندي]
+    BEL: [المملكة البلجيكية, بلجيكا, مملكة بلجيكا]
+    BEN: [جمهورية البنين, جمهورية بنين]
+    BFA: [بوركينا فاسو, بوركينا فاصو, بوركينافاسو, بوركينافاصو]
+    BGD: [بنغلاديش, بنغلادش]
+    BGR: [بلغاريا]
+    BHR: [مملكة البحرين, دولة البحرين, البحرين]
+    BIH: [البوسنة]
+    BLR: [بيلاروسيا, روسيا البيضاء]
+    BOL: [بوليفيا]
+    BRA: [البرازيل]
+    BRN: [بروناي, بروني]
+    BWA: [بوتسوانا]
+    CAF: [افريقيا الوسطى]
+    CAN: [كندا]
+    CHE: [الاتحاد السويسري, المجلس الفيدرالي السويسري, الكونفدرالية السويسرية, سويسرا, سويسرة]
+    CHL: [الشيلي, تشيلي, شيلي]
+    CHN: [الصين, الصين الشعبية, جمهورية الصين الشعبية]
+    CIV: [الكويت ديفوار, الكوت ديفوار, ساحل العاج, كوت ديفوار]
+    CMR: [الكامرون, الكاميرون]
+    COD: [الكونغو الديمقراطية, جمهورية الكونغو الديمقراطية]
+    COG: [الكونغو]
+    COL: [كولومبيا]
+    COM: [جزر القمر, القمر المتحدة]
+    CPV: [الراس الاخضر]
+    CRI: [كوستاريكا, كوستا ريكا]
+    CUB: [كوبا]
+    CYP: [قبرص]
+    CZE: [التشيك]
+    DEU: [المانيا, جمهورية المانيا الاتحادية, المانيا الاتحادية, المانيا الغربية, الدولة الالمانية]
+    DJI: [جيبوتي]
+    DNK: [الدانمارك, الدنمارك]
+    DOM: [الدومينيكان]
+    DZA: [الجزائر]
+    ECU: [الاكوادور, اكوادور]
+    EGY: [مصر, جمهورية مصر العربية]
+    ERI: [اريتريا]
+    ESP: [المملكة الاسبانية, اسبانيا, مملكة اسبانيا, اصبانيا, الدولة الاسبانية, الدولة الاصبانية, الدولة الاسبانيولية]
+    EST: [استونيا]
+    ETH: [اثيوبيا]
+    FIN: [فنلندا]
+    FRA: [الجمهورية الفرنسية, فرنسا, فرانسا, افرانسا, الجمهورية الفرنساوية, الدولة الفرنساوية, الجمهورية الفرنسوية, الدولة الفرنسوية, الدولة الفرنسية]
+    GAB: [الغابون]
+    GBR: [المملكة المتحدة, بريطانيا, انكلترا, انجلترا, انكلترة, انجلترة, انقلترا, بريطانيا العظمى, الدولة الانجليزية, الدولة الانكليزية]
+    GEO: [جمهورية جورجيا, جورجيا]
+    GHA: [غانا]
+    GIN: [غينيا]
+    GMB: [غامبيا]
+    GNB: [غينيا بيساو]
+    GNQ: [غينيا الاستوائية]
+    GRC: [اليونان]
+    GTM: [غواتيمالا, جواتيمالا]
+    HND: [الهندوراس, هندوراس]
+    HRV: [كرواتيا]
+    HTI: [هايتي]
+    HUN: [هنغاريا, المجر, جمهورية المجر]
+    IDN: [اندونيسيا]
+    IND: [الهند]
+    IRL: [جمهورية ايرلندا]
+    IRN: [ايران]
+    IRQ: [العراق]
+    ISL: [ايسلندا]
+    ISR: [اسرائيل]
+    ITA: [ايطاليا, اطاليا]
+    JAM: [جامايكا]
+    JOR: [الاردن]
+    JPN: [اليابان]
+    KAZ: [كازاخستان]
+    KEN: [كينيا]
+    KGZ: [قيرغيزستان, قرغيزستان]
+    KHM: [كمبوديا]
+    KOR: [كوريا, جمهورية كوريا]
+    KWT: [الكويت]
+    LBN: [لبنان]
+    LBR: [ليبيريا]
+    LBY: [ليبيا, الجماهيرية العربية الليبية, الجماهيرية الليبية]
+    LKA: [سريلانكا, سري لانكا]
+    LSO: [ليسوتو]
+    LTU: [ليتوانيا]
+    LUX: [اللوكسمبورغ, اللوكسامبورغ, لوكسمبورغ]
+    LVA: [لاتفيا]
+    MCO: [موناكو]
+    MDA: [مولدوفا, مولدافيا]
+    MDG: [مدغشقر]
+    MDV: [المالديف]
+    MEX: [المكسيك]
+    MKD: [مقدونيا]
+    MLI: [جمهورية مالي, دولة مالي, بمالي]
+    MLT: [مالطا]
+    MMR: [بورما, ميانمار]
+    MNE: []
+    MNG: [منغوليا]
+    MOZ: [موزمبيق, الموزمبيق]
+    MRT: [موريتانيا]
+    MUS: [موريشيوس, جمهورية موريس]
+    MWI: [مالاوي, ملاوي]
+    MYS: [ماليزيا]
+    NAM: [ناميبيا]
+    NER: [النيجر]
+    NGA: [نيجيريا, نجيريا]
+    NIC: [نيكاراغوا]
+    NLD: [الاراضي المنخفضة, المملكة الهولندية, المملكة الهولاندية, هولندا, هولاندا, هولندة, هولاندة]
+    NOR: [النرويج]
+    NZL: [نيوزيلندا, نيوزلندا, زيلندا الجديدة]
+    OMN: [سلطنة عمان]
+    PAK: [باكستان, الباكستان]
+    PAN: [بنما, باناما]
+    PER: [البيرو, بيرو]
+    PHL: [الفلبين, الفليبين]
+    POL: [بولونيا, بولونية, بولندا]
+    PRK: [كوريا الشعبية, كوريا الديمقراطية, كوريا الشمالية]
+    PRT: [البرتغال]
+    PRY: [الباراغواي, باراغواي, البارغواي]
+    PSE: [فلسطين]
+    QAT: [دولة قطر, حكومة قطر]
+    ROU: [رومانيا]
+    RUS: [روسيا, الاتحاد الروسي, روسيا الاتحادية, فدرالية روسيا, الفدرالية الروسية, الفيدرالية الروسية]
+    RWA: [رواندا]
+    SAU: [المملكة العربية السعودية, العربية السعودية]
+    SDN: [السودان]
+    SEN: [السينغال, السنغال, السنيغال, السينيغال]
+    SGP: [سنغافورة]
+    SLE: [سيراليون]
+    SLV: [السلفادور]
+    SOM: [الصومال]
+    SRB: [صربيا]
+    SSD: [جنوب السودان]
+    STP: [ساو تومي]
+    SVK: [سلوفاكيا]
+    SVN: [سلوفينيا]
+    SWE: [السويد]
+    SWZ: [اسواتيني, سوازيلاند]
+    SYC: [سيشل, السيشل]
+    SYR: [سوريا]
+    TCD: [تشاد, التشاد]
+    TGO: [الطوغو, توغو, الطوكو]
+    THA: [تايلاند, تايلندا]
+    TJK: [طاجيكستان]
+    TKM: [تركمانستان]
+    TUN: [تونس]
+    TUR: [تركيا, الدولة التركية]
+    TZA: [تنزانيا]
+    UGA: [اوغندا]
+    UKR: [اوكرانيا]
+    URY: [الاوروغواي, اوروغواي, الاورغواي]
+    USA: [الولايات المتحدة, الولايات المتحدة الامريكية, امريكا, اميركا, الولايات المتحدة الاميركية]
+    UZB: [اوزبكستان, اوزباكستان]
+    VAT: [الكرسي الرسولي, الفاتيكان]
+    VEN: [فنزويلا]
+    VNM: [فيتنام, الفيتنام]
+    YEM: [اليمن]
+    ZAF: [جنوب افريقيا]
+    ZMB: [زامبيا]
+    ZWE: [زيمبابوي]
+  # A name that is also a person's first name counts only beside a state word (1956–69 lists of civil servants print
+  # «مارك بن اسرائيل»): the state as «دولة إسرائيل», «إسرائيل» after مع، و، ب، ل, or in a title.
+  # «بليز» is also Blaise («زقاق بليز باسكال»).
+  ctx: [ISR, BLZ]
+  # A spelling that is also a word, a man's name or a Moroccan place counts only beside a state word, with و ب ل, or in a
+  # title, as `ctx` (BH12 of the posts-from-No.-1 review, read on every state named before 1956): «بيرو» the bureau and
+  # «دي بيرو», «كوريا ماركوس» and «الشيلي» men, «ايران اثنان» two ares and «اسيف ايران» a stream, «للولاة البحرين» the
+  # sailors, «برونى ألفريد», «عزيب بوتان», «اغيل توغو», «هيلو دومينيكا», «فانسانت رواندا», «بنمـا» and «ملاوي» in civil lists
+  # and land notices, «بنن» a misread «بن».
+  needs: {PER: [بيرو, البيرو], KOR: [كوريا], IRN: [ايران], BHR: [البحرين], CHL: [شيلي, الشيلي], BRN: [بروني], BTN: [بوتان],
+          PAN: [بنما], TGO: [توغو], DMA: [دومينيكا], RWA: [رواندا], MWI: [ملاوي], BEN: [بنن], CUB: [كوبا], BLZ: [بليز]}
+  # A state counts from the day it took its name: before it the letters were another's («بأسرائيل بن موحا» 1923,
+  # «الامارات التي تشير الى الشدة» 1939, «بلدان ماليزيا» the Malay islands 1933).
+  since: {ISR: 1948-05-14, ARE: 1971-12-02, MYS: 1963-09-16, MWI: 1964-07-06, BEN: 1975-11-30}
+  # The UN's long names are kept; these are the short slugs and the Latin words a reader types.
+  slugs: {USA: united-states, GBR: united-kingdom, RUS: russia, KOR: south-korea, PRK: north-korea, IRN: iran, SYR: syria,
+          VEN: venezuela, BOL: bolivia, TZA: tanzania, VNM: vietnam, LAO: laos, MDA: moldova, PSE: palestine, VAT: holy-see,
+          COD: dr-congo, COG: congo, CIV: cote-divoire, CZE: czechia, MKD: north-macedonia, NLD: netherlands, CPV: cape-verde,
+          SWZ: eswatini, TUR: turkey, FSM: micronesia, BRN: brunei, ARE: united-arab-emirates, GNB: guinea-bissau,
+          GNQ: equatorial-guinea, CAF: central-african-republic, DOM: dominican-republic, STP: sao-tome-and-principe}
+  latin: {USA: [usa, amerique, america, etats-unis], GBR: [uk, angleterre, england, britain], ARE: [emirats, uae, emirates],
+          SAU: [arabie saoudite, saudi], DEU: [allemagne], ESP: [espagne, spain], CHN: [chine], RUS: [russie], EGY: [egypte],
+          DZA: [algerie], TUN: [tunisie], MRT: [mauritanie], SEN: [senegal], CIV: [cote d'ivoire, ivory coast], ITA: [italie],
+          BEL: [belgique], NLD: [pays-bas, hollande, holland], CHE: [suisse], TUR: [turquie], JPN: [japon], KOR: [coree], UKR: [ukraine]}
+  # States not in the UN's list, or not in it as a state.
+  extra:
+    TWN: {slug: taiwan, ar: تايوان, fr: Taïwan, en: Taiwan, forms: [تايوان], region: [Asia, Eastern Asia, '']}
+  # Not counted as states: Morocco itself, and its Sahara (Natural Earth's Morocco edition draws it whole); territories
+  # that are no state of their own.
+  skip: [MAR, ESH, HKG, MAC, ALA, GRL, CUW, ABW, SXM, GGY, JEY, IMN, ATA, ATF, BES, BVT, CCK, CXR, FLK, GIB, GLP, GUF, IOT,
+         MTQ, MYT, REU, SGS, SHN, SJM, TKL, UMI, HMD, NFK, PCN, MNP, ASM, GUM, PRI, VIR, VGB, AIA, BMU, CYM, MSR, TCA,
+         SPM, NCL, PYF, WLF, BLM, MAF, FRO, NIU, COK]
+  # States the Bulletin named that are gone, each drawn on the state that followed it.
+  gone:
+    czechoslovakia: {ar: تشيكوسلوفاكيا, en: Czechoslovakia, fr: Tchécoslovaquie, successor: CZE, forms: [تشيكوسلوفاكيا]}
+    yugoslavia: {ar: يوغوسلافيا, en: Yugoslavia, fr: Yougoslavie, successor: SRB, forms: [يوغوسلافيا]}
+    soviet-union: {ar: الاتحاد السوفياتي, en: Soviet Union, fr: Union soviétique, successor: RUS, forms: [السوفياتية, السوفيتية, السوفييتية, الاتحاد السوفياتي, الاتحاد السوفيتي, الاتحاد السوفييتي]}
+    east-germany: {ar: ألمانيا الديمقراطية, en: East Germany, fr: RDA, successor: DEU, forms: [المانيا الديمقراطية, الالمانية الديمقراطية]}
+    united-arab-republic: {ar: الجمهورية العربية المتحدة, en: United Arab Republic, fr: République arabe unie, successor: EGY, forms: [الجمهورية العربية المتحدة]}
+    upper-volta: {ar: فولتا العليا, en: Upper Volta, fr: Haute-Volta, successor: BFA, forms: [فولتا العليا]}
+    rhodesia: {ar: روديسيا, en: Rhodesia, fr: Rhodésie, successor: ZWE, forms: [روديسيا]}
+    south-yemen: {ar: اليمن الديمقراطية, en: South Yemen, fr: Yémen du Sud, successor: YEM, forms: [اليمن الديمقراطية الشعبية, اليمن الجنوبي, اليمن الديمقراطية]}
+    ottoman-empire: {ar: الدولة العثمانية, en: Ottoman Empire, fr: Empire ottoman, successor: TUR, forms: [الدولة العثمانية, الدولة العلية, الامبراطورية العثمانية, السلطنة العثمانية]}
+    austria-hungary: {ar: النمسا والمجر, en: Austria-Hungary, fr: Autriche-Hongrie, successor: AUT, forms: [النمسا والمجر, النمسا والهنغاريا]}
+    # Zaire from its name's day (27 Oct 1971): before it «اولاد زائير» is a tribe and «الزائير» a family. Prussia is not
+    # here: every «بروسيا» read was «بـروسيا», in Russia (BH12).
+    zaire: {ar: زايير, en: Zaire, fr: Zaïre, successor: COD, forms: [زايير, الزايير, زائير, الزائير], since: 1971-10-27}
+
+morocco:
+  # The census tables' reading slips, fixed against the printed page (BO 7356, pages 8447–8584).
+  fix: {خريكة: خريبكة, 'جماعةمهدية': 'جماعة مهدية', taourirt: تاوريرت}
+  # Other spellings of a commune's name the Bulletin has printed.
+  forms:
+    الناظور: [الناضور]
+    تزنيت: [تيزنيت]
+    الرشيدية: [الراشيدية]
+    أصيلة: [أصيلا]
+    شفشاون: [الشاون]
+    ابن جرير: [بن جرير, بنجرير]
+    الدار البيضاء: [الدارالبيضاء]
+    طانطان: [الطنطان]
+    وادي زم: [واد زم]
+    القصر الكبير: [قصر الكبير]
+    مولاي إدريس زرهون: [مولاي ادريس زرهون]
+  # A commune's name that is also a word of the language counts only beside a place word (مدينة، جماعة، إقليم، عمالة…)
+  # or written with «بـ»: «الداخلة في» is «included in», «الجديدة» «new», «العيون» springs, «بركان» a volcano.
+  ctx: [مليلية, مليلة, الداخلة, الجديدة, المحمدية, العيون, بركان, المضيق, مهدية, العروي, المنصورية, المرسى, سبع عيون, الريش, ميسور, الكارة,
+        تيسة, الجرف, المنزل, الرماني, رأس الماء, التواركة, الأخصاص, الحنشان, لولاد, الزاك, النعيمة, الشلالات, لهراويين,
+        بن الطيب, البهاليل, الدروة, لقليعة, النواصر, الوليدية, بومية, مديونة, اليوسفية, الحاجب, علين, أقا, آسا, أجدير,
+        زاوية الشيخ, الكردان, حطان, لقصابي, أكليم, التواركة, سيدي رحال, تمنار, بنسليمان]
+  # (The extras below take it too: «مليلية», «مليلة», before 1956 mostly the Mlila tribe of the Chaouia, «قبيلة مليلة».)
+  # Old names, counted for the city they became (PL15).
+  old:
+    القنيطرة: [بور ليوطي, بورليوطي, بور ليوتي, مرسى ليوطي, مرسى اليوطي, ميناء ليوطي, ميناء اليوطي]
+    سيدي قاسم: [بتي جان, بتيجان, بيتي جان, بوتي جان]
+    الجديدة: [مازاكان, مزاكان, مازكان, مازغان]
+    الصويرة: [موكادور, موغادور]
+    المحمدية: [فضالة]
+    الرشيدية: [قصر السوق, كصر السوك]
+    اليوسفية: [لويس جانتي, لويس جنتي, لويس جانتيل]
+    # Decree 2.59.514 (BO 2447, 18 Sep 1959, p. 2786) named the towns of the north the Spanish had named.
+    أصيلة: [أرزيلا, ارزيلا]
+    المضيق: [رينكون, رينكون]
+    الفنيدق: [كاسطيليخوس, كاسطليخوس, كاستيليخوس]
+    مرتيل: [ريومرتان, ريو مرتان, ريومرتين]
+  # Counted from a day: before it the name is another place's or a word's (the Oriental's «العيون», springs). The Sahara's
+  # cities from the texts that made them provinces: dahir 1.76.468 (BO 3328, 1976), decree 2.79.430 (BO 3485, 1979).
+  # «المرسى» before 1976 is «the port» («المحكمة الكائنة بالمرسى الذي فيه مربط المركب», 1936), never Laâyoune's.
+  since: {العيون: 1976-01-01, السمارة: 1976-01-01, بوجدور: 1976-01-01, الداخلة: 1979-08-01, المرسى: 1976-01-01}
+  # The Latin words a reader types for a city.
+  latin: {الدار البيضاء: [casa, casablanca, dar el beida], فاس: [fes, fez], طنجة: [tanger, tangier, tanja],
+          مراكش: [marrakech, marrakesh, kech], الرباط: [rabat], أكادير: [agadir], مكناس: [meknes], وجدة: [oujda],
+          القنيطرة: [kenitra], تطوان: [tetouan, tetuan], العيون: [laayoune, layoune, el aaiun], الداخلة: [dakhla],
+          الحسيمة: [al hoceima, hoceima], الناظور: [nador], الجديدة: [el jadida, jadida], آسفي: [safi, asfi]}
+  # French names the census tables' reading lost (their French cell was not read).
+  names: {مرتيل: Martil, الفنيدق: Fnideq, المضيق: "M'diq", ميدلت: Midelt, الريش: Rich, بومية: Boumia, علين: Allyene,
+          بليونش: Belyounech}
+  # Where a city is when GeoNames does not say it under the census's names (approximate, by hand).
+  positions: {مرتيل: [35.62, -5.27], الفنيدق: [35.85, -5.36], المضيق: [35.68, -5.32], ميدلت: [32.68, -4.74], الريش: [32.26, -4.50],
+              بومية: [32.73, -5.10], آيت عميرة: [30.15, -9.48], الدشيرة الجهادية: [30.37, -9.54], لقليعة: [30.29, -9.47],
+              قلعة السراغنة: [32.05, -7.41], تسلطانت: [31.58, -7.95], الشلالات: [33.73, -7.30], الفقيه بن صالح: [32.50, -6.69],
+              الدروة: [33.31, -7.54], المجاطية أولاد الطالب: [33.52, -7.47], عين الشقف: [33.98, -5.03], سيدي حجاج واد حصار: [33.50, -7.50],
+              عامر: [34.13, -6.73], سوق السبت أولاد النمة: [32.32, -6.70], أولاد صالح: [33.43, -7.66], بني انصار: [35.26, -2.93],
+              العيون-سيدي ملوك: [34.59, -2.50], عين تاوجطات: [33.93, -5.21], جرف الملحة: [34.48, -5.51], أولاد برحيل: [30.64, -8.47],
+              لبير الجديد: [33.58, -7.98], الشماعية: [32.08, -8.63], زاوية الشيخ: [32.65, -5.92], امتانوت: [31.17, -8.86],
+              أولاد عياد: [32.18, -6.80], الهرهورة: [33.95, -6.94], الوليدية: [32.73, -9.03], قلعة مكونة: [31.24, -6.13],
+              تحناوت: [31.35, -7.95], عين بني مطهر: [34.01, -2.03], بودنيب: [31.95, -3.60], الرماني: [33.53, -6.61],
+              تنجداد: [31.51, -5.03], بويزكارن: [29.18, -9.73], أوطاط الحاج: [33.35, -3.70], رباط الخير: [33.82, -4.41],
+              إيموزار كندر: [33.73, -5.01], السهول: [34.00, -6.68], آيت إيعزة: [30.50, -8.79]}
+  # Places the census does not list as communes.
+  extra:
+    - {slug: sebta, kind: city, ar: سبتة, fr: Sebta, en: Ceuta, forms: [سبتة], lat: 35.889, lon: -5.319}
+    - {slug: melilla, kind: city, ar: مليلية, fr: Melilla, en: Melilla, forms: [مليلية, مليلة], lat: 35.292, lon: -2.938}

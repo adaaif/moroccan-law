@@ -1,0 +1,53 @@
+# «من يكتب القواعد التي نعيش بها؟»: the blog's fourth post (B2 of the blog-first-post review, built 31 Oct 2026 in the
+# order chosen). The counts are in figures.json: each text's type, authority and title as the corpus holds them (the
+# type and the authority read from its title when it was cut), counted from the live database on 31 Oct 2026.
+slug: who-writes
+number: 4
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+title:
+  ar: من يكتب القواعد التي نعيش بها؟
+  fr: Qui écrit les règles de notre vie ?
+lead:
+  ar: في سبعين سنة نشرت الجريدة الرسمية 160.525 نصا، أكثر من نصفها قرارات وزراء. ونصف هذه القرارات معادلة شهادة أو تفويض توقيع. أما القوانين التي يصوّت عليها البرلمان فأقل من نص في كل خمسين.
+  fr: En soixante-dix ans, le Bulletin officiel a publié 160 525 textes, dont plus de la moitié sont des arrêtés de ministres. La moitié de ces arrêtés fixent l’équivalence d’un diplôme ou délèguent une signature. Les lois votées par le Parlement font moins d’un texte sur cinquante.
+
+# Who signs a text, by its type. The last one takes every other type.
+authors:
+  - {key: king, types: [dahir], ar: الملك, fr: Le Roi, what: {ar: ظهائر, fr: dahirs}}
+  - {key: parliament, types: [law, organic_law], ar: البرلمان, fr: Le Parlement, what: {ar: قوانين, fr: lois}}
+  - {key: government, types: [decree, decree_law], ar: الحكومة, fr: Le Gouvernement, what: {ar: مراسيم, fr: décrets}}
+  - {key: ministers, types: [order], ar: الوزراء, fr: Les ministres, what: {ar: قرارات, fr: arrêtés}}
+  - {key: others, types: [decision, other, convention, circular, constitution], ar: جهات أخرى, fr: D’autres, what: {ar: مقررات وغيرها, fr: décisions et autres}}
+
+# A minister's order goes to the ministry its authority names first (a joint order, to its first minister).
+ministries:
+  - {key: education, words: [التعليم العالي, التربية الوطنية, التكوين المهني], ar: التعليم, fr: Enseignement}
+  - {key: agriculture, words: [الفلاحة, الصيد البحري], ar: الفلاحة والصيد, fr: Agriculture et pêche}
+  - {key: finance, words: [المالية, الاقتصاد], ar: المالية والاقتصاد, fr: Finances et économie}
+  - {key: interior, words: [الداخلية], ar: الداخلية, fr: Intérieur}
+  - {key: equipment, words: [التجهيز, النقل, الأشغال العمومية], ar: التجهيز والنقل, fr: Équipement et transport}
+  - {key: energy, words: [الطاقة, المعادن], ar: الطاقة والمعادن, fr: Énergie et mines}
+  - {key: health, words: [الصحة], ar: الصحة, fr: Santé}
+  - {key: industry, words: [الصناعة, التجارة], ar: الصناعة والتجارة, fr: Industrie et commerce}
+  - {key: justice, words: [العدل], ar: العدل, fr: Justice}
+  - {key: culture, words: [الثقافة, الاتصال], ar: الثقافة والاتصال, fr: Culture et communication}
+  - {key: employment, words: [التشغيل, الشغل], ar: التشغيل, fr: Emploi}
+  - {key: housing, words: [الإسكان, السكنى, التعمير, إعداد التراب], ar: الإسكان والتعمير, fr: Habitat et urbanisme}
+  - {key: tourism, words: [السياحة], ar: السياحة, fr: Tourisme}
+  - {key: habous, words: [الأوقاف], ar: الأوقاف, fr: Habous}
+
+# What an order does, read on its title; the first that matches.
+subjects:
+  - {key: equivalence, words: [المعادلات, معادلة, لائحة الشهادات], ar: معادلة شهادات, fr: Équivalences de diplômes}
+  - {key: delegation, words: [تفويض الإمضاء, تفويض الامضاء, بتفويض], ar: تفويض الإمضاء, fr: Délégations de signature}
+  - {key: land, words: [بتسليم قطعة, بتسليم القطع], ar: تسليم أراض فلاحية, fr: Remise de lots agricoles}
+  - {key: boundaries, words: [الحدود الترابية, بتعيين حدود], ar: حدود ترابية, fr: Limites territoriales}
+
+# What a law does, read on its title.
+laws:
+  - {key: agreement, words: [يوافق بموجبه, بالموافقة على], ar: يوافق على اتفاقية, fr: Approuve un accord}
+  - {key: decree_law, words: [بالمصادقة على المرسوم بقانون, المصادقة على المرسوم بقانون, بالمصادقة على مرسوم بقانون], ar: يصادق على مرسوم بقانون, fr: Ratifie un décret-loi}
+  - {key: finance, words: [قانون المالية, التصفية], ar: المالية والتصفية, fr: Finances et règlement}

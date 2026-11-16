@@ -1,0 +1,26 @@
+[Unit]
+Description=law: Django under gunicorn (127.0.0.1:8040)
+After=network-online.target docker.service law-models.service
+Wants=network-online.target
+
+[Service]
+User=@USER@
+WorkingDirectory=@ROOT@/app/back
+EnvironmentFile=@ROOT@/.env
+# manage.py falls back to the development settings: production's are named here, should .env not name them (a line
+# in .env still wins: systemd lets EnvironmentFile= override Environment=).
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+# 2 x cores + 1 sync workers. --preload: the app and what config/wsgi.py warms (topics, suggestions, a search's
+# tables) load once in the master, and each worker, a recycled one too, forks warm instead of making its first reader
+# wait.
+ExecStart=@ROOT@/venv/bin/gunicorn config.wsgi:application --bind 127.0.0.1:8040 --workers 9 --preload \
+    --max-requests 1000 --max-requests-jitter 100 --timeout 60 --access-logfile - --error-logfile -
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+# /akn/ma/act/dahir/1-58-008 as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned around
+# («ثالثة» for «ثلاثة»), a word cut in two («ج سيم»), a letter moved («والي لز مه» for «ولا يلزمه»). Each was read
+# against the page's image on 20 Oct 2026 (T1 of the work plan): the 1 articles the work topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/dahir_1_58_008.yaml`; a reload of the text applies them again.
+text: /ma/dahir/1-58-008
+document: sources/adala/civil_service_1_58_008.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: التي ينص عليها, right: التي ينص عليها أو التي تنتج عن قوانين اساسية خصوصية}   # missing, p. 5

@@ -1,0 +1,138 @@
+/* «القانون يعرف البرقية، ولا يعرف واتساب» (the nineteenth post). Two home screens face each other: the law's in violet,
+   what its texts print (the machines, their counts as badges), the Moroccans' in ink, the networks with their share of
+   users and a hollow zero for the texts that name them. Plain tiles, never a brand's mark. The printed pages are the
+   evidence: two lines cut from their pages. The Mediator's two lines draw themselves once, the post's one motion. */
+
+.wa { --wa-law: var(--color-stamp); --wa-wa: var(--kc-3); }
+
+/* ── The two screens ──────────────────────────────────────────────────────────────────────────────────────────── */
+.wa-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 22px; }
+@media (min-width: 640px) { .wa-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.wa-screens { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+@media (min-width: 760px) { .wa-screens { grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); align-items: stretch; gap: 26px; } }
+.wa-phone { display: flex; flex-direction: column; gap: 14px; min-width: 0; padding: 30px 18px 18px; border-radius: 34px; border: 2.5px solid var(--color-ink);
+  background: var(--color-paper); position: relative; }
+.wa-phone::before { content: ''; position: absolute; top: 11px; inset-inline-start: calc(50% - 32px); inline-size: 64px; block-size: 8px; border-radius: 4px; background: currentColor; opacity: 0.85; }
+.wa-phone.is-law { color: var(--wa-law); border-color: var(--wa-law); }
+.wa-phone.is-people { color: var(--color-ink); }
+.wa-phone-title { margin: 0; text-align: center; font-weight: 700; font-size: 1.05rem; }
+.wa-phone-note { margin: auto 0 0; font-size: var(--text-meta); line-height: 1.55; color: var(--color-ink-soft); text-wrap: pretty; }
+.wa-tiles { margin: 0; padding: 6px 0 0; list-style: none; display: grid; gap: 22px 12px; justify-items: center; }
+.wa-tiles.is-four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.wa-tiles.is-ten { display: flex; flex-wrap: wrap; justify-content: center; --wa-cols: 5; }
+.wa-tiles.is-ten .wa-tile { flex: 0 0 calc((100% - (var(--wa-cols) - 1) * 12px) / var(--wa-cols)); }
+@media (min-width: 760px) { .wa-tiles.is-four { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 18px; padding-top: 14px; } }
+@media (max-width: 420px) { .wa-tiles.is-ten { --wa-cols: 4; } }
+/* French names are longer («machine à écrire»): two by two on a phone. */
+@media (max-width: 559px) { .bp:lang(fr) .wa-tiles.is-four { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.wa-tile { position: relative; display: flex; flex-direction: column; align-items: center; gap: 7px; min-width: 0; inline-size: 100%; }
+.wa-icon { display: grid; place-items: center; inline-size: min(100%, 64px); aspect-ratio: 1; border-radius: 22%; background: var(--color-sheet);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, currentColor 30%, transparent); color: inherit; }
+.is-law .wa-icon { inline-size: min(100%, 76px); color: var(--wa-law); }
+.wa-icon svg { inline-size: 62%; block-size: auto; }
+.wa-icon.is-app { color: var(--color-ink); }
+.wa-pct { font-weight: 300; font-size: 0.95rem; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.wa-badge { position: absolute; top: -9px; inset-inline-end: calc(50% - min(50%, 38px) - 8px); min-inline-size: 26px; padding: 1px 8px; border-radius: 999px;
+  font-size: 14px; font-weight: 700; line-height: 1.5; text-align: center; font-variant-numeric: tabular-nums; background: var(--wa-law); color: var(--color-on-stamp); }
+.is-people .wa-badge { inset-inline-end: calc(50% - min(50%, 32px) - 8px); }
+.wa-badge.is-zero { background: var(--color-sheet); color: var(--color-ink); box-shadow: inset 0 0 0 2px var(--color-ink); }
+.wa-tile-name { font-size: 14px; line-height: 1.3; text-align: center; color: var(--color-ink); max-inline-size: calc(100% + 12px); }
+.is-people .wa-tile-name { white-space: nowrap; }
+.is-law .wa-tile-name { font-weight: 600; }
+
+.wa-zero { display: flex; flex-direction: column; gap: 8px; max-width: 58ch; }
+.wa-zero-line { margin: 0; display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+.wa-zero-n { font-weight: 200; font-size: clamp(5rem, 4rem + 6vw, 8.5rem); line-height: 0.85; letter-spacing: -0.04em; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.wa-zero-words { font-family: var(--font-law); font-weight: 700; font-size: clamp(1.5rem, 1.3rem + 1vw, 2.1rem); line-height: 1.25; }
+.bp:lang(fr) .wa-zero-words { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.25rem, 1.1rem + 0.8vw, 1.7rem); }
+.wa-zero-more { margin: 0; font-family: var(--font-law); font-size: 1.3rem; line-height: 1.6; text-wrap: pretty; }
+.bp:lang(fr) .wa-zero-more { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; }
+.wa-zero-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.wa-stamp { vertical-align: middle; }
+.wa-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.wa-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.wa-share:disabled { opacity: 0.6; }
+
+/* ── The four machines ────────────────────────────────────────────────────────────────────────────────────────── */
+.wa-machines { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+@media (min-width: 1100px) { .wa-machines { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.wa-machine { display: flex; flex-direction: column; gap: 10px; padding: 18px 18px 14px; background: var(--color-sheet); border-radius: var(--radius-card); min-width: 0; }
+.wa-machine-head { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; }
+.wa-machine-icon { display: grid; place-items: center; inline-size: 48px; block-size: 48px; border-radius: 12px; color: var(--wa-law);
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--wa-law) 35%, transparent); }
+.wa-machine-icon svg { inline-size: 34px; block-size: 34px; }
+.wa-machine-name { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: 1.6rem; line-height: 1.1; }
+.bp:lang(fr) .wa-machine-name { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 1.3rem; }
+.wa-machine-n { margin: 0; display: flex; flex-direction: column; align-items: flex-end; text-align: end; }
+.wa-machine-num { font-weight: 200; font-size: 2.6rem; line-height: 1; letter-spacing: -0.03em; color: var(--wa-law); font-variant-numeric: tabular-nums; }
+.wa-machine-unit { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.wa-dec svg { display: block; overflow: visible; }
+.wa-dec rect { fill: color-mix(in srgb, var(--wa-law) 45%, transparent); }
+.wa-dec rect.is-peak { fill: var(--wa-law); }
+.wa-dec rect.is-none { fill: var(--color-rule); }
+.wa-dec-rail { stroke: var(--color-rule); stroke-width: 1; }
+.wa-dec-n { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--wa-law); font-variant-numeric: tabular-nums; }
+.wa-dec-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.wa-machine-ex { margin: 4px 0 0; line-height: 1.6; }
+.wa-machine-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.7; }
+.wa-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--wa-law); font-family: var(--font-law); font-size: 1.3rem; line-height: 1.75;
+  text-wrap: pretty; text-align: right; }
+.wa-quote.is-small { font-size: 1.15rem; }
+.wa-gloss { margin: -2px 0 0; font-size: var(--text-meta); line-height: 1.55; color: var(--color-ink-soft); font-style: italic; }
+.wa-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.65; }
+
+/* ── The firsts ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.wa { --wa-k-opinion: var(--kc-2); --wa-k-report: var(--kc-4); --wa-k-quote: var(--color-ink); }
+.wa-kinds { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.wa-kinds li { display: inline-flex; align-items: center; gap: 8px; }
+.wa-k { display: inline-block; inline-size: 12px; block-size: 12px; border-radius: 50%; }
+.wa-k.is-opinion { background: var(--wa-k-opinion); }
+.wa-k.is-report { background: var(--wa-k-report); }
+.wa-k.is-quote { background: var(--wa-k-quote); }
+.wa-firsts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-inline-start: 2px solid var(--color-rule); }
+.wa-first { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 4px 16px; padding: 12px 0; padding-inline-start: 16px; position: relative; }
+@media (max-width: 560px) { .wa-first { grid-template-columns: minmax(0, 1fr); } }
+.wa-first::before { content: ''; position: absolute; inset-inline-start: -8px; top: 1.15rem; inline-size: 14px; block-size: 14px; border-radius: 50%;
+  background: var(--wa-k-opinion); box-shadow: 0 0 0 3px var(--color-paper); }
+.wa-first.is-report::before { background: var(--wa-k-report); }
+.wa-first.is-quote::before { background: var(--wa-k-quote); }
+.wa-first-day { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; padding-top: 4px; }
+.wa-first-body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.wa-first-names { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: 1.35rem; }
+.wa-first-names b { font-weight: 700; }
+.wa-first-kind { font-size: var(--text-meta); font-weight: 600; color: var(--wa-k-opinion); }
+.is-report .wa-first-kind { color: var(--wa-k-report); }
+.is-quote .wa-first-kind { color: var(--wa-k-quote); }
+.wa-first-what { margin: 0; line-height: 1.65; }
+.wa-first .bp-print { max-width: 560px; }
+
+/* ── The Mediator ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.wa-med svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; touch-action: manipulation; }
+.wa-med-grid { stroke: var(--color-rule-soft); stroke-width: 1; }
+.wa-med-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.wa-med-line { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.wa-med-line.is-fax { stroke: var(--color-ink); }
+.wa-med-line.is-wa { stroke: var(--wa-wa); }
+.wa-med.is-drawn .wa-med-line { stroke-dashoffset: 0; transition: stroke-dashoffset 1600ms cubic-bezier(0.3, 0, 0.2, 1); }
+.wa-med.is-drawn .wa-med-line.is-wa { transition-delay: 900ms; }
+.wa-med-year circle { stroke: var(--color-sheet); stroke-width: 2; }
+.wa-med-year circle.is-fax { fill: var(--color-ink); }
+.wa-med-year circle.is-wa { fill: var(--wa-wa); }
+.wa-med-year.is-on .wa-med-axis { fill: var(--color-ink); font-weight: 700; }
+.wa-med-hit { fill: transparent; cursor: pointer; }
+.wa-med-year.is-on .wa-med-hit { fill: color-mix(in srgb, var(--color-ink) 6%, transparent); }
+.wa-med-name { font-family: var(--font-ui); font-size: 15px; font-weight: 700; }
+.wa-med-name.is-fax { fill: var(--color-ink); }
+.wa-med-name.is-wa { fill: var(--wa-wa); }
+.wa-med-pass line { stroke: var(--wa-wa); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.wa-med-pass text { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--wa-wa); }
+@media (prefers-reduced-motion: reduce) { .wa-med-line, .wa-med.is-drawn .wa-med-line { stroke-dashoffset: 0; transition: none; } }
+
+/* ── How the law names them ───────────────────────────────────────────────────────────────────────────────────── */
+.wa-formula { margin: 0; padding: 18px 20px 14px; background: var(--color-sheet); border-radius: var(--radius-card); display: flex; flex-direction: column; gap: 10px; }
+.wa-formula ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; font-family: var(--font-law); font-size: 1.45rem; line-height: 1.55; }
+.wa-formula li { display: flex; gap: 10px; align-items: baseline; }
+.wa-or { flex: none; min-inline-size: 5.6rem; font-size: 1.05rem; color: var(--color-ink-soft); }
+.wa-formula figcaption { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.wa-close { font-weight: 700; }

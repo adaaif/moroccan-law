@@ -1,0 +1,10 @@
+# The digital topic's texts (27 Oct 2026), where our reading differs from the page.
+# The penal code, Adala's consolidation (samples/adala/adala_89.pdf): «زميلا» read «زميال» in art. 503-1-1, unambiguous from its sentence.
+# Applied by `manage.py apply_page_reading apps/quality/data/digital_penal_1_59_413.yaml`.
+text: /ma/dahir/1-59-413
+document: samples/adala/adala_89.pdf
+read_on: '2026-10-27'
+fixes:
+- arts: ['503-1-1']
+  wrong: 'مرتكب الفعل زميال في العمل'
+  right: 'مرتكب الفعل زميلا في العمل'

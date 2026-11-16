@@ -1,0 +1,9 @@
+# Law 63.17 on the administrative delimitation of the collective communities' lands as BO 6807 prints it, where our text
+# misreads it: the page's running header glued into the text, one paragraph broken at the column's line ends. Each was read
+# against the page's image on 26 Oct 2026 (the land review, M16), in the articles the land topic cites (1 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/collective_63_17.yaml`; a reload of the text applies them again.
+text: /ma/loi/63-17
+document: issues/bo_ar/BO_6807_ar.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [2], wrong: "افتتاح\nعمليات التحديد الإداري، بالنسبة لعقار واحد أو عدة عقارات على\nملك جماعة سلالية أو عدة جماعات سلالية.\n5893 الرسمية\nيبين", right: "افتتاح عمليات التحديد الإداري، بالنسبة لعقار واحد أو عدة عقارات على ملك جماعة سلالية أو عدة جماعات سلالية.\nيبين"}   # header, pp. 5892–5893: «5893 الرسمية» is the next page's header; the first paragraph is one

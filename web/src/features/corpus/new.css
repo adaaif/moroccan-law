@@ -1,0 +1,239 @@
+/* /new, a week of the Bulletin (drawn again on 1 Nov 2026 from the newest issues). Loaded with the page. The week's
+   head says its days large in the law's type; its paper is a strip per issue, the pages coloured by what they hold; the
+   texts follow under the kinds the Bulletin prints them by, a series as one pile of sheets with its count large, the
+   special section folded the same way. Every colour a token. */
+
+.nw { gap: 28px; }
+.nw a { text-decoration: none; }
+.nw a:focus-visible, .nw button:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 6px; }
+
+/* The paper's classes: what makes law in ink, decrees in the law's violet, orders and decisions a lighter violet, the
+   special section hatched in the grey of a field's edge (a grey beside the light violet was one colour at night), the
+   front and its contents the rule. Night redefines each token. */
+.nw {
+  --paper-law: var(--color-ink);
+  --paper-decree: var(--color-stamp);
+  --paper-order: color-mix(in srgb, var(--color-stamp) 42%, var(--color-sheet));
+  --paper-front: var(--color-rule);
+}
+.seg.law { background: var(--paper-law); }
+.seg.decree { background: var(--paper-decree); }
+.seg.order { background: var(--paper-order); }
+.seg.special { background: repeating-linear-gradient(135deg, var(--color-field) 0 2px, var(--color-sheet) 2px 5px); }
+.seg.front { background: var(--paper-front); }
+
+/* ── The week's head ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.nw-front { margin-inline: -16px; padding: 24px 16px 20px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 10px; }
+@media (min-width: 640px) { .nw-front { margin-inline: 0; border-radius: var(--radius-card); padding: 34px 40px 28px; } }
+.nw-title { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.nw-title h1 { margin: 0; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.nw-title .of { font-family: var(--font-law); font-size: var(--text-h3); line-height: 1.1; font-weight: 700; color: var(--color-stamp); }
+.nw-title .when { font-family: var(--font-law); font-size: var(--text-display); line-height: 1.05; font-weight: 700; color: var(--color-ink);
+  font-variant-numeric: tabular-nums; text-wrap: balance; }
+/* The weeks around this one, left to right: the arrows step one, a bar goes to its week. */
+.nw-weeks { display: flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.nw-weeks > .nw-arrow { align-self: flex-start; margin-top: 18px; }
+.nw-weeks .bars { display: flex; flex-direction: column; gap: 4px; padding-top: 18px; }
+.nw-weeks ol { display: flex; align-items: flex-end; gap: 3px; height: 44px; margin: 0; padding: 0 4px; list-style: none; }
+.nw-weeks .ends { display: flex; justify-content: space-between; margin: 0; padding: 0 4px; font-size: var(--text-meta); line-height: 1.2;
+  color: var(--color-ink-soft); }
+.nw-weeks li { height: 100%; }
+.nw-weeks li button { display: flex; align-items: flex-end; width: 14px; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+.nw-weeks li button span { display: block; width: 100%; border-radius: 2px 2px 0 0; background: var(--color-tick); }
+.nw-weeks li button:hover:not(:disabled) span { background: var(--color-stamp-line); }
+.nw-weeks li button.here span { background: var(--color-stamp); }
+.nw-weeks li button:disabled { cursor: default; }
+@media (max-width: 639px) {
+  .nw-title { flex-direction: column; }
+  .nw-weeks { align-self: stretch; justify-content: space-between; }
+  .nw-weeks .bars { flex: 1; padding-top: 0; }
+  .nw-weeks ol { justify-content: space-between; }
+  .nw-weeks li button { width: 12px; }
+}
+.nw-arrow { display: inline-grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--color-rule); border-radius: 999px;
+  background: var(--color-sheet); color: var(--color-stamp); cursor: pointer; }
+.nw-arrow:hover:not(:disabled) { background: var(--color-wash); border-color: var(--color-stamp-line); }
+.nw-arrow:disabled { color: var(--color-muted); border-color: var(--color-rule-soft); cursor: default; }
+.nw-hijri { margin: 0; font-size: var(--text-lead); color: var(--color-ink-soft); }
+.nw-facts { margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: var(--text-body); color: var(--color-ink); }
+.nw-facts span + span { position: relative; }
+
+/* The week's paper: an issue a strip of its pages, as wide as it is thick. Left to right whatever the page's direction. */
+.nw-paper-fig { margin: 12px 0 0; display: flex; flex-direction: column; gap: 12px; }
+.nw-paper { display: flex; gap: 8px; margin: 0; padding: 0; list-style: none; overflow-x: auto; scrollbar-width: none; }
+.nw-paper > li { flex: 1 1 0; min-width: 86px; }
+/* A cheap phone is 360 px wide: four issues asked for 368 and the newest was cut off with no way to reach it. Narrower
+   strips there; a week of five scrolls inside the strip, never past the screen. */
+@media (max-width: 400px) {
+  .nw-paper { gap: 6px; }
+  .nw-paper > li { min-width: 76px; }
+  /* The number a size down, and room for a day that takes two lines («الخميس، 29»), so the four strips stay level. */
+  .nw-paper .nw-issue .top { min-height: 70px; align-content: flex-start; }
+  .nw-paper .nw-issue .top b { font-size: var(--text-h3); }
+}
+.nw-issue { display: flex; flex-direction: column; gap: 6px; padding: 6px 4px 4px; border-radius: 10px; color: var(--color-ink); }
+.nw-issue:hover { background: var(--color-target-wash); }
+.nw-issue .top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.nw-issue .top b { font-family: var(--font-law); font-size: var(--text-h2); line-height: 1; font-weight: 700; color: var(--color-stamp);
+  font-variant-numeric: tabular-nums; white-space: nowrap; }
+.nw-issue .top span { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-issue .bar { display: flex; height: 30px; border-radius: 4px; overflow: hidden; gap: 1px; background: var(--color-sheet); }
+.nw-issue .bar .seg { min-width: 2px; }
+.nw-issue .pp { display: flex; flex-wrap: wrap; gap: 0 8px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-issue .pp .range { font-variant-numeric: tabular-nums; }
+.nw-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.nw-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; }
+
+/* ── The week's texts, beside the way through them on a desk ──────────────────────────────────────────────────────── */
+.nw-grid { display: grid; gap: 22px; }
+.nw-main { display: flex; flex-direction: column; gap: 34px; min-width: 0; }
+@media (min-width: 1024px) {
+  .nw-grid { grid-template-columns: minmax(0, 1fr) 270px; gap: 48px; align-items: start; }
+  .nw-main { grid-column: 1; grid-row: 1; }
+  .nw-index { grid-column: 2; grid-row: 1; position: sticky; top: 88px; }
+}
+
+/* The way through: the kinds with their counts; on a phone a row under the head, on a desk a column that stays. */
+.nw-index { display: flex; flex-direction: column; gap: 14px; }
+.nw-index h2 { margin: 0; font-size: var(--text-body); font-weight: 600; color: var(--color-ink-soft); }
+.nw-index ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.nw-index ul a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px; border-radius: 999px;
+  background: var(--color-sheet); color: var(--color-ink); font-weight: 500; }
+.nw-index ul a b { font-family: var(--font-law); font-size: var(--text-lead); font-weight: 700; color: var(--color-stamp); font-variant-numeric: tabular-nums; }
+.nw-index ul a:hover { background: var(--color-wash); }
+@media (min-width: 1024px) {
+  .nw-index ul { flex-direction: column; flex-wrap: nowrap; gap: 0; border-top: 1px solid var(--color-rule); }
+  .nw-index ul a { display: flex; justify-content: space-between; border-radius: 0; padding: 0 4px; background: none;
+    border-bottom: 1px solid var(--color-rule); }
+  .nw-index ul a:hover { background: var(--color-target-wash); }
+}
+.nw-topics { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-topics p { margin: 0; flex-basis: 100%; }
+.nw-topic { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; color: var(--t); }
+.nw-topic:hover { text-decoration: underline; }
+.nw-aside-steps { display: none; }
+@media (min-width: 1024px) {
+  .nw-aside-steps { display: flex; flex-direction: column; align-items: flex-start; gap: 0; }
+  .nw-aside-steps a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; }
+}
+
+/* A kind, as the Bulletin heads it, with how many texts it holds this week. */
+.nw-kind h2 { margin: 0 0 4px; display: flex; align-items: baseline; gap: 12px; font-family: var(--font-law); font-size: var(--text-h2);
+  line-height: 1.2; font-weight: 700; color: var(--color-ink); scroll-margin-top: 90px; }
+.nw-kind h2 .n { font-size: var(--text-h3); color: var(--color-stamp); font-variant-numeric: tabular-nums; }
+.nw-kind { scroll-margin-top: 84px; }
+.nw-lead { margin: 0 0 8px; max-width: 42rem; color: var(--color-ink-soft); }
+.nw-units { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+
+/* A text alone: its title in the law's type, its opening words, where it was printed and what it touches. */
+.nw-text { display: flex; flex-direction: column; gap: 10px; padding: 18px 0; border-bottom: 1px solid var(--color-rule); }
+.nw-text .t { font-family: var(--font-law); font-size: var(--text-law); line-height: 1.5; font-weight: 500; color: var(--color-ink); max-width: 44rem; }
+.nw-text .t:hover { color: var(--color-stamp); }
+.nw-text.quiet { padding: 14px 0; gap: 8px; }
+.nw-text.quiet .t { font-size: var(--text-lead); line-height: 1.6; }
+.nw-text .sub { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-text .sub .rel a { color: var(--color-ink); font-weight: 500; }
+.nw-text .sub .rel a:hover { color: var(--color-stamp); }
+.nw-text .sub a.nw-topic { color: var(--t); }
+
+/* The law said by itself: its first article, a rule at its start, its words in the law's type. */
+.nw-first { margin: 0; padding: 2px 0 2px; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-stamp-line);
+  display: flex; flex-direction: column; gap: 4px; max-width: 44rem; font-family: var(--font-law); color: var(--color-ink); }
+.nw-first .lbl { font-family: var(--font-ui); font-size: var(--text-meta); font-weight: 600; color: var(--color-stamp); }
+.nw-first .body { font-size: var(--text-lead); line-height: 1.7; white-space: pre-line;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.nw-first .body.short { -webkit-line-clamp: 2; }
+/* A table the page prints, as the Bulletin sets a dahir's members: the name, dots, the office. */
+.nw-first .rows { display: flex; flex-direction: column; gap: 2px; margin-top: 2px; font-size: var(--text-lead); line-height: 1.55; }
+.nw-first .row { display: flex; align-items: baseline; gap: 6px; }
+.nw-first .row > span:first-child { flex-shrink: 0; font-weight: 600; }
+.nw-first .row .dots { flex: 1 1 18px; min-width: 18px; border-bottom: 2px dotted var(--color-field); transform: translateY(-4px); }
+.nw-first .row > span:last-child { flex: 0 1 auto; min-width: 0; text-align: end; color: var(--color-ink-soft); }
+@media (max-width: 639px) {
+  .nw-first .row { flex-direction: column; align-items: flex-start; gap: 0; padding: 2px 0; }
+  .nw-first .row .dots { display: none; }
+  .nw-first .row > span:last-child { text-align: start; }
+}
+.nw-first .more { align-self: flex-start; margin-top: 4px; font-family: var(--font-ui); font-size: var(--text-meta); font-weight: 600;
+  min-height: 44px; display: inline-flex; align-items: center; }
+
+/* A series: one pile of sheets, the count where a page number would stand, the shared words once, the members named by
+   what differs. Two sheets show under a long one. */
+.nw-pile { position: relative; isolation: isolate; display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 4px 16px;
+  margin: 14px 0 26px; padding: 18px 18px 14px; padding-inline-start: 10px; border: 1px solid var(--color-rule);
+  border-radius: 14px; background: var(--color-sheet); }
+.nw-pile::before, .nw-pile::after { content: ''; position: absolute; z-index: -1; height: 100%; border: 1px solid var(--color-rule);
+  border-radius: 14px; background: var(--color-sheet); }
+.nw-pile::before { inset-inline: 8px; bottom: -7px; background: color-mix(in srgb, var(--color-paper) 50%, var(--color-sheet)); }
+.nw-pile.deep::after { inset-inline: 16px; bottom: -13px; z-index: -2; background: var(--color-paper); }
+.nw-pile:not(.deep)::after { display: none; }
+.nw-pile .count { display: flex; flex-direction: column; align-items: center; padding-top: 2px; text-align: center; }
+.nw-pile .count b { font-family: var(--font-law); font-size: var(--text-display); line-height: 0.95; font-weight: 700; color: var(--color-stamp);
+  font-variant-numeric: tabular-nums; }
+.nw-pile .count span { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-pile .body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.nw-pile .h { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.45; font-weight: 600; color: var(--color-ink); }
+.nw-pile .who { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.nw-pile .who span { display: inline-flex; align-items: center; gap: 8px; padding: 4px 6px 4px 12px; border-radius: 999px; background: var(--color-paper);
+  font-size: var(--text-meta); color: var(--color-ink); }
+.nw-pile .who span b { min-width: 24px; padding: 0 6px; border-radius: 999px; background: var(--color-sheet); text-align: center;
+  font-weight: 700; color: var(--color-stamp); font-variant-numeric: tabular-nums; }
+.nw-pile .members { margin: 0; padding: 0; list-style: none; font-family: var(--font-law); font-size: var(--text-lead); line-height: 1.6; }
+.nw-pile .members a { color: var(--color-ink); }
+.nw-pile .members a:hover { color: var(--color-stamp); text-decoration: underline; text-decoration-color: var(--color-stamp-line); }
+.nw-pile .members .no { flex-shrink: 0; font-family: var(--font-ui); font-size: var(--text-meta); color: var(--color-ink-soft);
+  font-variant-numeric: tabular-nums; }
+/* Short names run on as a sentence, long ones stand one a line. */
+.nw-pile .members.run { display: flex; flex-wrap: wrap; column-gap: 0; }
+.nw-pile .members.run li:not(:last-child)::after { content: '،'; margin-inline-end: 10px; color: var(--color-ink-soft); }
+.nw-pile .members.run .no { display: none; }
+.nw-pile .members.list li { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 6px 0;
+  border-top: 1px solid var(--color-rule-soft); }
+.nw-pile .members.list li:first-child { border-top: 0; }
+@media (prefers-reduced-motion: no-preference) {
+  .nw-pile .members li.late { animation: rise 240ms cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(min(var(--i), 14) * 16ms); }
+}
+.nw-pile .foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; padding-top: 4px; }
+.nw-pile .unfold { min-height: 44px; padding: 0 14px; border: 1px solid var(--color-stamp-line); border-radius: 999px; background: var(--color-sheet);
+  font: inherit; font-size: var(--text-meta); font-weight: 600; color: var(--color-stamp); cursor: pointer; }
+.nw-pile .unfold:hover { background: var(--color-wash); }
+@media (max-width: 639px) {
+  .nw-pile { grid-template-columns: minmax(0, 1fr); padding: 16px 14px 12px; }
+  .nw-pile .count { flex-direction: row; align-items: baseline; gap: 8px; }
+}
+
+/* The special section: the same order, the titles a size smaller. */
+.nw-special .nw-pile .h { font-size: var(--text-lead); }
+
+/* ── What an editor told: people's words, under their headline, with where the law was printed ─────────────────── */
+.nw-told { display: flex; flex-direction: column; gap: 14px; }
+.nw-head { display: flex; flex-direction: column; gap: 4px; }
+.nw-head h2 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: var(--text-h2); line-height: 1.25; font-weight: 700; color: var(--color-ink); }
+.nw-head h2::before { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--color-people-fill); }
+.nw-head p { margin: 0; color: var(--color-ink-soft); }
+.nw-story { display: flex; flex-direction: column; gap: 12px; padding: 22px 20px; border-radius: var(--radius-card); background: var(--color-people-wash); scroll-margin-top: 90px; }
+@media (min-width: 640px) { .nw-story { padding: 28px 30px; } }
+.nw-story .h { margin: 0; font-size: var(--text-h3); line-height: 1.4; font-weight: 700; }
+.nw-story.lead .h { font-size: clamp(1.5rem, 1.2rem + 1vw, 1.875rem); line-height: 1.3; }
+.nw-story .h a { color: var(--color-ink); }
+.nw-story .h a:hover { color: var(--color-stamp); }
+.nw-story .body { margin: 0; font-size: var(--text-body); line-height: 1.85; color: var(--color-ink);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
+.nw-story.lead .body { font-size: var(--text-lead); -webkit-line-clamp: 9; }
+.nw-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-top: 4px; }
+.nw-acts .read { font-weight: 700; }
+.nw-acts .more { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-acts .more:hover { color: var(--color-stamp); }
+.nw-acts .share { margin-inline-start: auto; }
+.nw-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.nw-none { margin: 0; padding: 20px 22px; border-radius: var(--radius-card); background: var(--color-sheet); color: var(--color-ink-soft); }
+
+.nw-step { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; border: 0; border-radius: 999px; background: none;
+  font: inherit; font-size: 0.9375rem; font-weight: 600; color: var(--color-stamp); cursor: pointer; white-space: nowrap; }
+.nw-step:hover:not(:disabled) { background: var(--color-wash); }
+.nw-step:disabled { color: var(--color-muted); cursor: default; }
+.nw-aside-steps .nw-step { padding: 0 4px; }
+.nw-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding-inline: 4px; }
+.nw-foot a { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 639px) { .nw-foot a { order: 3; flex-basis: 100%; justify-content: center; } }

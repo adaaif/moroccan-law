@@ -1,0 +1,7 @@
+# Law 77.17 (forensic medicine) as BO 6866 (19 Mar 2020) prints it. Read against the page image on 2026-10-27 (
+# the health review, S4): art. 2, the article the health topic cites. It reads as printed: nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_forensic_77_17.yaml`; a reload of the text applies them again.
+text: /ma/loi/77-17
+document: issues/bo_ar/BO_6866_ar.pdf
+read_on: '2026-10-27'
+fixes: []

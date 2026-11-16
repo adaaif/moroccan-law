@@ -1,0 +1,77 @@
+{
+ "about": "Step-by-step guides for the situations (R10 of the for-everyone review, 19 Oct 2026). DRAFTS written by Claude (Opus) from the articles each step names, for the design; like the situations' drafts they reach readers only once a lawyer has reviewed them and an editor approved them (shown while developing only). Every step and deadline restates the article it names.",
+ "guides": {
+  "renting": {
+   "steps": [
+    {
+     "ar": "اكتبا عقد الكراء: يجب أن يُبرم كتابةً بمحرر ثابت التاريخ، يذكر على الخصوص هوية المكري والمكتري.",
+     "fr": "Écrivez le bail : il doit être conclu par un écrit à date certaine, qui indique notamment l'identité du bailleur et du locataire.",
+     "paths": [
+      "/ma/loi/67-12/art_3"
+     ]
+    },
+    {
+     "ar": "أعدّا بيانا وصفيا لحالة المحل عند التسلّم، مفصّلا وثابت التاريخ، يُرفق بالعقد. إن لم يُعدّ، يُفترض أن المكتري تسلّم المحل في حالة صالحة للاستعمال.",
+     "fr": "Faites un état des lieux détaillé et daté à la remise des clés, joint au bail. Sans état des lieux, le locataire est présumé avoir reçu un logement en état d'usage.",
+     "paths": [
+      "/ma/loi/67-12/art_7",
+      "/ma/loi/67-12/art_8"
+     ]
+    },
+    {
+     "ar": "الضمانة لا تتجاوز كراء شهرين، وتُرد في أجل أقصاه شهر من إرجاع المحل، بعد خصم ما ثبت أنه مستحق.",
+     "fr": "Le dépôt de garantie ne dépasse pas deux mois de loyer ; il est rendu au plus tard un mois après la restitution du logement, déduction faite de ce qui est dû et prouvé.",
+     "paths": [
+      "/ma/loi/67-12/art_20"
+     ]
+    },
+    {
+     "ar": "اطلب وصلا موقعا عن كل أداء، يفصّل مبلغ الكراء والتكاليف.",
+     "fr": "Demandez un reçu signé pour chaque paiement, qui distingue le loyer et les charges.",
+     "paths": [
+      "/ma/loi/67-12/art_11"
+     ]
+    },
+    {
+     "ar": "إذا تأخر الأداء، لا يكون الإفراغ مباشرة: يطلب المكري من رئيس المحكمة الابتدائية الإذن بتوجيه إنذار بالأداء، يمنح المكتري أجلا لا يقل عن 15 يوما من تبليغه.",
+     "fr": "En cas de retard de paiement, pas d'expulsion directe : le bailleur demande au président du tribunal de première instance l'autorisation d'adresser une mise en demeure, qui laisse au locataire au moins 15 jours après sa notification.",
+     "paths": [
+      "/ma/loi/67-12/art_23",
+      "/ma/loi/67-12/art_25"
+     ]
+    }
+   ],
+   "deadlines": [
+    {
+     "ar": "15 يوما على الأقل: أجل الأداء الذي يمنحه الإنذار بالأداء.",
+     "fr": "Au moins 15 jours : le délai de paiement que laisse la mise en demeure.",
+     "paths": [
+      "/ma/loi/67-12/art_25"
+     ]
+    },
+    {
+     "ar": "شهر واحد: إذا أُشعر المكري بإصلاحات ضرورية تقع عليه ولم ينجزها، يمكن للمكتري أن يطلب من رئيس المحكمة الابتدائية الإذن بإجرائها وخصمها من الكراء.",
+     "fr": "Un mois : si le bailleur, averti, ne fait pas les réparations nécessaires à sa charge, le locataire peut demander au président du tribunal l'autorisation de les faire et de les déduire du loyer.",
+     "paths": [
+      "/ma/loi/67-12/art_10"
+     ]
+    },
+    {
+     "ar": "شهر واحد: أقصى أجل لرد الضمانة بعد إرجاع المحل.",
+     "fr": "Un mois au plus : pour rendre le dépôt de garantie après la restitution du logement.",
+     "paths": [
+      "/ma/loi/67-12/art_20"
+     ]
+    },
+    {
+     "ar": "3 سنوات على الأقل: بين زيادتين في الكراء.",
+     "fr": "Au moins 3 ans : entre deux hausses de loyer.",
+     "paths": [
+      "/ma/loi/67-12/art_32",
+      "/ma/loi/67-12/art_33"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "قانون · 3adala — قانون المغرب، بكلام مفهوم",
+  "short_name": "قانون",
+  "description": "قوانين المغرب مادة بمادة، بكلام مفهوم، مع صفحة الجريدة الرسمية التي نُشرت فيها.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f2ee",
+  "theme_color": "#5b3a9e",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "درت أكسيدة؟ شنو دير دابا", "short_name": "درت أكسيدة؟", "url": "/topics/road/tools/now",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

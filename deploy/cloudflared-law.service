@@ -1,0 +1,16 @@
+[Unit]
+Description=law: the Cloudflare tunnel to nginx (127.0.0.1:8041), configured in /etc/cloudflared/law.yml
+After=network-online.target nginx.service
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/cloudflared --no-autoupdate --config /etc/cloudflared/law.yml tunnel run
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

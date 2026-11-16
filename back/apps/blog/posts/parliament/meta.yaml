@@ -1,0 +1,54 @@
+# «على كل قانون يصوّت عليه البرلمان، 13 مرسوما و48 قرارا»: the blog's twenty-first post (S15 of
+# the first-principles review, 6 Nov 2026: «Yes»; built 7 Nov 2026). The «who writes» post (4) counts the texts by their signer; this
+# one is about the law Parliament votes: how many texts follow each law, who made the laws in the years without a
+# Parliament, and how long the law in force takes to read. The counts are in figures.json (manage.py blog_figures
+# parliament), counted on the search copy; the constitutions' words were read on their pages. A person checks every
+# quote on its page before the post is published.
+slug: parliament
+number: 21
+status: draft
+date: null
+counted_on: 2026-11-07
+span: [1963, 2026]
+title:
+  ar: "على كل قانون يصوّت عليه البرلمان، 14 مرسوما و52 قرارا وزاريا"
+  fr: "Pour chaque loi votée par le Parlement, 14 décrets et 52 arrêtés"
+lead:
+  ar: "منذ أول برلمان سنة 1963، نشرت الجريدة الرسمية 158.447 نصا، منها 1.891 قانونا صوّت عليه البرلمان: نص من كل 84، ومقابل كل قانون 14 مرسوما و52 قرارا وزاريا. وفي سنوات بلا برلمان، كتب الملك القوانين: بمراسيم ملكية «بمثابة قانون» من 1965 إلى 1970، وبظهائر «بمثابة قانون» من 1972 إلى 1977، كما تقول الدساتير نفسها. أقل سنة بالقوانين 2012، وأكثرها 2016. وقراءة القوانين القائمة وحدها تأخذ نحو 500 ساعة."
+  fr: "Depuis le premier Parlement, en 1963, le Bulletin officiel a publié 158 447 textes, dont 1 891 lois votées par le Parlement : un texte sur 84, et pour chaque loi 14 décrets et 52 arrêtés ministériels. Les années sans Parlement, c’est le Roi qui a fait les lois : par décrets royaux « portant loi » de 1965 à 1970, par dahirs « portant loi » de 1972 à 1977, comme le disent les constitutions elles-mêmes. L’année la plus maigre en lois est 2012, la plus riche 2016. Lire les seules lois en vigueur prend environ 500 heures."
+
+# Who made a text of the law's rank, read from its title as the Bulletin printed it (Python's regular expressions, on the
+# title folded of its tatweel and its final ى). In this order: the first that matches. «ظهير شريف رقم 1.63.274» alone, its
+# title lost, matches none.
+hands:
+  - {key: rdl, re: "^مرسوم ملكي.{0,140}بمثابة قانون"}
+  - {key: dfl, re: "^ظهير شريف.{0,140}بمثابة (ال)?قانون"}
+  - {key: voted, re: "^(قانون|القانون)|^(ظهير شريف.{0,140})?بتنفيذ (ال)?قانون"}
+  - {key: dlaw, re: "^مرسوم (رقم [0-9.\\- ]+ )?(صادر .{0,90})?بقانون"}
+# The kinds of text the hands are read among; a decree-law the Bulletin typed so counts even when its title is plainer.
+# The ratio in the title: the decrees (less the royal decrees «بمثابة قانون») and the orders, over the laws voted.
+ranks: [law, organic_law, decree_law, dahir, decree]
+
+# The constitutions' own words for the years without a House, and the decree of 1965 that declared the state of
+# exception, each read on its page.
+constitutions:
+  - {year: 1962, art: "110", issue: 2616, bis: true, page: 2999, akn: /akn/ma/act/dahir/constitution-1962,
+     words: "الى أن يتم تنصيب البرلمان يتخذ جلالة الملك التدابير التشريعية والتنظيمية اللازمة لاقامة المؤسسات الدستورية ولتدبير شؤون الدولة"}
+  - {year: 1970, art: "101", issue: 3013, bis: true, page: 1936, akn: /akn/ma/act/dahir/1-70-177,
+     words: "الى أن يتم تنصيب مجلس النواب يتخذ جلالة الملك الاجراءات التشريعية والتنظيمية اللازمة لاقامة المؤسسات الدستورية وسير السلط العمومية وتدبير شؤون الدولة"}
+  - {year: 1972, art: "102", issue: 3098, page: 632, akn: /akn/ma/act/dahir/1-72-061,
+     words: "الى أن يتم تنصيب مجلس النواب المنصوص عليه فى هذا الدستور يتخذ جلالة الملك الاجراءات التشريعية اللازمة لاقامة المؤسسات الدستورية وسير السلط العمومية وتدبير شؤون الدولة"}
+exception:
+  decree: {number: "136.65", issue: 2745, page: 1080, date: "1965-06-09", akn: /akn/ma/act/decret/136-65,
+           words: "نعلن حالة الاستثناء ابتداء من يوم 7 يونيه 1965 فى الساعة الثامنة والنصف مساء"}
+  indemnities: {number: "146.65", issue: 2747, page: 1198, date: "1965-06-23", akn: /akn/ma/act/decret/146-65,
+                words: "بالغاء المرسوم رقم 2.64.140 الصادر في 7 ذى الحجة 1383 (20 أبريل 1964) بتحديد نظام التعويضات والمنافع الممنوحة لاعضاء البرلمان"}
+
+# How long the law in force takes to read: the words of every text of each kind that the site has read no repeal for, in
+# its latest Arabic version (a model's translation from the French left out), at 200 words a minute.
+reading:
+  wpm: 200
+  layers:
+    - {key: laws, types: [law, organic_law]}
+    - {key: decrees, types: [dahir, decree, decree_law]}
+    - {key: orders, types: [order]}

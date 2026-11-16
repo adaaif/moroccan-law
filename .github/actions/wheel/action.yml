@@ -1,0 +1,56 @@
+# The Rust module ma_law, built once per state of crates/ and handed to the run's other jobs as the artifact
+# `ma-law-wheel`. The wheel is abi3 (Python 3.12 and newer), so one build serves every job. A cache keyed on the
+# crates' files skips the build when they have not changed since the last run.
+name: ma_law wheel
+description: Builds crates/ma-py with maturin, or takes it from the cache, and uploads it as the artifact ma-law-wheel.
+inputs:
+  python-version:
+    description: The Python that maturin runs on.
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: The wheel of these crates, if an earlier run built it
+      id: cache
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: ${{ runner.temp }}/wheel
+        key: ma-law-wheel-${{ runner.os }}-${{ hashFiles('crates/**') }}
+
+    - name: Python
+      if: steps.cache.outputs.cache-hit != 'true'
+      uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Cargo's downloads and the last build
+      if: steps.cache.outputs.cache-hit != 'true'
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: |
+          ~/.cargo/registry/index
+          ~/.cargo/registry/cache
+          ~/.cargo/git/db
+          crates/target
+        key: cargo-wheel-${{ runner.os }}-${{ hashFiles('crates/Cargo.lock') }}
+        restore-keys: cargo-wheel-${{ runner.os }}-
+
+    - name: Build with maturin, the version and hashes of the lock
+      if: steps.cache.outputs.cache-hit != 'true'
+      shell: bash
+      run: |
+        # maturin's own entry of back/requirements/lock.txt: its pin and its hashes, nothing else of the lock.
+        awk '/^maturin==/ { keep = 1 } keep { print } keep && !/\\$/ { exit }' back/requirements/lock.txt \
+          > "$RUNNER_TEMP/maturin.txt"
+        python -m venv "$RUNNER_TEMP/maturin"
+        "$RUNNER_TEMP/maturin/bin/pip" install --quiet --require-hashes --no-deps -r "$RUNNER_TEMP/maturin.txt"
+        rustc --version
+        "$RUNNER_TEMP/maturin/bin/maturin" build --release --locked -m crates/ma-py/Cargo.toml -o "$RUNNER_TEMP/wheel"
+
+    - name: Hand the wheel to the other jobs
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: ma-law-wheel
+        path: ${{ runner.temp }}/wheel/*.whl
+        if-no-files-found: error
+        retention-days: 7

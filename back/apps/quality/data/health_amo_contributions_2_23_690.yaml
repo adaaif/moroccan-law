@@ -1,0 +1,12 @@
+# Decree 2.23.690 (the contributions of AMO for those able to pay who have no paid activity, applying law 60.22) as the
+# SGG's consolidated file prints it, where our text (its SGG version and the machine version) reads it wrong: the comma
+# moved before the law's number, and art. 6's table of contributions by score read as one line with its cells out of order
+# (144 and 176 side by side, 224 and 287 apart from their rows, 611 and 1164 together), put back as the page draws it.
+# Read against the page images on 2026-10-27 (the health review, S4): art. 6, the article the health topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_contributions_2_23_690.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-23-690
+document: sources/sgg_consolidated/2_23_690.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [6], wrong: "رقم ،60.22 تحدد،", right: "رقم 60.22، تحدد،"}   # comma moved, p. 3
+  - {arts: [6], wrong: "مبلغ الاشتراك الشهري مستوى التنقيط المستحق بالدرهم يفوق 9,3264284 ولا يتجاوز 9,5124369 144 176 يفوق 9,5124369 ولا يتجاوز 9,743001 224 يفوق 9,743001 ولا يتجاوز 9,9903727 يفوق 9,9903727 ولا يتجاوز 10,237316 287 يفوق 10,237316 ولا يتجاوز 10,431048 355 يفوق 10,431048 ولا يتجاوز 10,739952 454 يفوق 10,739952 ولا يتجاوز 11,013068 611 1164 يفوق 11,013068", right: "| مستوى التنقيط | مبلغ الاشتراك الشهري المستحق بالدرهم |\n|---|---|\n| يفوق 9,3264284 ولا يتجاوز 9,5124369 | 144 |\n| يفوق 9,5124369 ولا يتجاوز 9,743001 | 176 |\n| يفوق 9,743001 ولا يتجاوز 9,9903727 | 224 |\n| يفوق 9,9903727 ولا يتجاوز 10,237316 | 287 |\n| يفوق 10,237316 ولا يتجاوز 10,431048 | 355 |\n| يفوق 10,431048 ولا يتجاوز 10,739952 | 454 |\n| يفوق 10,739952 ولا يتجاوز 11,013068 | 611 |\n| يفوق 11,013068 | 1164 |"}   # the table read as one line, its cells out of order, p. 3

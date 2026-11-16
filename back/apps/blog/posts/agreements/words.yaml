@@ -1,0 +1,237 @@
+# The words that sort the agreements of «المغرب والعالم في الجريدة الرسمية» (the blog's tenth post, B8), as the
+# Bulletin's titles write them. Each word is matched whole, any letter case, after the title is folded (أ إ آ → ا,
+# ى → ي, no tatweel), alone or after و ب ل, a word in «ال» also as «لل» («للبنك»). The partner is looked for after the
+# title's «بين», Morocco's own names taken out: the lenders first, then the organisations, then the states, so
+# «الصندوق الكويتي» is the Kuwait Fund and not Kuwait. A state's region: the Arab League's members as «arab», the rest
+# of Africa as «africa». Read and written by a person; corrections go here.
+
+# A text that is Morocco's contract with a company or a body at home, though its title says «اتفاق».
+domestic: ["النفطي", "النفطية", "الهيدروكاربورات", "الهيدروكاربون", "الهيدروكاربونات", "الاحياء البحرية", "مزرعة", "الامتياز",
+           "الاتفاقية الجماعية", "اتفاقية الشغل الجماعية", "اتفاقيات الشغل الجماعية", "التدبير المفوض", "صندوق الايداع والتدبير",
+           "صندوق الايداع والتسيير", "الشركة المدعوة", "الشركة المسماة", "اتفاقية الاستثمار", "اتفاقية استثمار",
+           "الشراكة بين القطاعين", "بين المهني", "بين المهنية", "المجلس الجماعي", "التطهير"]
+# A title with no partner named that is still an international instrument.
+multilateral: ["معاهدة", "بروتوكول", "البروتوكول", "الدولية", "الدولي", "العالمية", "الاتفاقية الاوروبية", "الاتفاقية العربية",
+               "الاتفاقية الافريقية", "ميثاق", "الميثاق", "متعددة الاطراف"]
+# A law (or the dahir that promulgates it) that approves a treaty before its ratification.
+approve_law: ["يوافق بموجبه", "بالموافقة من حيث المبدا", "القاضي بالموافقة", "يقضي بالموافقة", "الموافقة من حيث المبدا"]
+# Where an agreement's title dates it; a protocol's or an amendment's title dates the instrument it changes, so those
+# are not aged.
+signed: ["الموقع", "الموقعة", "المبرم", "المبرمة", "المعتمد", "المعتمدة", "المحررة", "المؤرخ", "المؤرخة"]
+not_aged: ["بروتوكول", "البروتوكول", "البروتوكولين", "برتوكول", "تعديل", "بتعديل", "الملحق", "ملحق", "المعدل", "المعدلة", "التعديلات"]
+# What a treaty with a state is about: the first of these its title names.
+topics:
+  - {key: tax, words: ["الازدواج الضريبي", "ازدواج الضريبة", "التهرب الضريبي", "تفادي الازدواج", "تجنب الازدواج", "الضرائب على الدخل"]}
+  - {key: investment, words: ["حماية الاستثمارات", "تشجيع الاستثمارات", "وحماية الاستثمارات", "حماية الاستثمار", "ضمان الاستثمارات"]}
+  - {key: air, words: ["الخدمات الجوية", "النقل الجوي", "الملاحة الجوية", "الخطوط الجوية", "الطيران المدني"]}
+  - {key: justice, words: ["القضائي", "القضائية", "تسليم المجرمين", "المحكوم عليهم", "المساعدة القانونية"]}
+  - {key: social, words: ["الضمان الاجتماعي"]}
+  - {key: customs, words: ["الجمركية", "الجمركي", "الجمارك"]}
+  - {key: trade, words: ["التبادل الحر", "التجاري", "التجارة", "التجارية"]}
+  - {key: transport, words: ["النقل الطرقي", "النقل الدولي", "رخص السياقة", "النقل البحري", "الملاحة البحرية", "البحرية التجارية"]}
+  - {key: culture, words: ["الثقافي", "الثقافة", "الثقافية", "التعليم", "العلمي", "التربية", "الشباب", "الرياضة", "الجامعي"]}
+  - {key: security, words: ["الامني", "الامن", "العسكري", "الدفاع", "الارهاب", "الجريمة", "المخدرات"]}
+  - {key: labour, words: ["الشغل", "العمال", "اليد العاملة"]}
+  - {key: cooperation, words: ["التعاون"]}
+# The public body a guaranteed loan goes to: the first of these the title names.
+borrowers:
+  - {key: onee, ar: "المكتب الوطني للكهرباء والماء", fr: "ONEE (électricité et eau)", words: ["المكتب الوطني للكهرباء", "المكتب الوطني للماء", "المكتب الوطني للكهرباء والماء"]}
+  - {key: adm, ar: "الشركة الوطنية للطرق السيارة", fr: "Autoroutes du Maroc", words: ["الشركة الوطنية للطرق السيارة"]}
+  - {key: masen, ar: "الوكالة المغربية للطاقة المستدامة", fr: "MASEN", words: ["الوكالة المغربية للطاقة الشمسية", "الوكالة المغربية للطاقة المستدامة"]}
+  - {key: cnca, ar: "القرض الفلاحي", fr: "Crédit agricole", words: ["الصندوق الوطني للقرض الفلاحي", "القرض الفلاحي"]}
+  - {key: bnde, ar: "البنك الوطني للإنماء الاقتصادي", fr: "BNDE", words: ["البنك الوطني للانماء الاقتصادي"]}
+  - {key: oncf, ar: "المكتب الوطني للسكك الحديدية", fr: "ONCF", words: ["المكتب الوطني للسكك الحديدية"]}
+  - {key: ocp, ar: "المكتب الشريف للفوسفاط", fr: "OCP", words: ["المكتب الشريف للفوسفاط", "مجموعة المكتب الشريف"]}
+  - {key: onda, ar: "المكتب الوطني للمطارات", fr: "ONDA", words: ["المكتب الوطني للمطارات"]}
+  - {key: cih, ar: "القرض العقاري والسياحي", fr: "CIH", words: ["القرض العقاري والسياحي", "القرض العقاري والفندقي"]}
+  - {key: regies, ar: "وكالات التوزيع المستقلة", fr: "Régies de distribution", words: ["الوكالة المستقلة", "وكالة توزيع"]}
+  - {key: ormva, ar: "المكاتب الجهوية للاستثمار الفلاحي", fr: "ORMVA", words: ["المكتب الجهوي للاستثمار الفلاحي"]}
+  - {key: ram, ar: "الخطوط الملكية المغربية", fr: "Royal Air Maroc", words: ["الخطوط الملكية المغربية", "الخطوط الجوية الملكية"]}
+  - {key: fec, ar: "صندوق التجهيز الجماعي", fr: "FEC", words: ["صندوق التجهيز الجماعي"]}
+  - {key: ports, ar: "الموانئ", fr: "Ports", words: ["الوكالة الوطنية للموانئ", "مكتب استغلال الموانئ", "الوكالة الخاصة طنجة المتوسط"]}
+
+lenders:
+  - {key: world_bank, ar: "البنك الدولي", fr: "Banque mondiale", short_ar: "البنك الدولي", short_fr: "Banque mondiale", words: ["البنك الدولي", "البنك العالمي", "الجمعية الدولية للتنمية", "الجمعية الدولية للانماء"]}
+  - {key: afdb, ar: "البنك الإفريقي للتنمية", fr: "Banque africaine de développement", short_ar: "البنك الإفريقي", short_fr: "BAD", words: ["البنك الافريقي للتنمية", "البنك الافريقي", "الصندوق الافريقي للتنمية"]}
+  - {key: arab_fund, ar: "الصندوق العربي للإنماء", fr: "Fonds arabe de développement", short_ar: "الصندوق العربي", short_fr: "Fonds arabe", words: ["الصندوق العربي للانماء", "الصندوق العربي للتنمية"]}
+  - {key: isdb, ar: "البنك الإسلامي للتنمية", fr: "Banque islamique de développement", short_ar: "البنك الإسلامي", short_fr: "BID", words: ["البنك الاسلامي للتنمية", "البنك الاسلامي"]}
+  - {key: kuwait_fund, ar: "الصندوق الكويتي للتنمية", fr: "Fonds koweïtien", short_ar: "الصندوق الكويتي", short_fr: "Fonds koweïtien", words: ["الصندوق الكويتي"]}
+  - {key: saudi_fund, ar: "الصندوق السعودي للتنمية", fr: "Fonds saoudien", short_ar: "الصندوق السعودي", short_fr: "Fonds saoudien", words: ["الصندوق السعودي"]}
+  - {key: abu_dhabi_fund, ar: "صندوق أبوظبي للتنمية", fr: "Fonds d’Abou Dhabi", short_ar: "صندوق أبوظبي", short_fr: "Fonds d’Abou Dhabi", words: ["صندوق ابو ظبي", "صندوق ابي ظبي", "صندوق ابوظبي"]}
+  - {key: opec_fund, ar: "صندوق أوبيك للتنمية", fr: "Fonds de l’OPEP", short_ar: "صندوق أوبيك", short_fr: "Fonds de l’OPEP", words: ["صندوق الاوبيك", "صندوق اوبيك", "منظمة البلدان المصدرة للنفط", "منظمة الدول المصدرة للنفط"]}
+  - {key: afd, ar: "الوكالة الفرنسية للتنمية", fr: "Agence française de développement", short_ar: "الوكالة الفرنسية", short_fr: "AFD", words: ["الوكالة الفرنسية للتنمية", "الصندوق الفرنسي للتنمية", "صندوق التنمية الفرنسي", "الصندوق المركزي للتعاون الاقتصادي"]}
+  - {key: kfw, ar: "مؤسسة قروض التعمير (ألمانيا)", fr: "KfW (Allemagne)", short_ar: "KfW الألمانية", short_fr: "KfW", words: ["مؤسسة قروض التعمير", "كريدي تانستالت", "كريدتانستالت", "كريدتنستالت", "البنك الالماني للتنمية", "KfW", "KFW", "K.F.W", "Kreditanstalt"]}
+  - {key: japan_agency, ar: "الوكالة اليابانية للتعاون", fr: "Coopération japonaise (JICA, JBIC, OECF)", short_ar: "التعاون الياباني", short_fr: "Japon (JICA)", words: ["الوكالة اليابانية للتعاون الدولي", "بنك اليابان للتعاون الدولي", "البنك الياباني للتصدير والاستيراد", "صندوق التعاون الاقتصادي لما وراء البحار", "الصندوق الياباني"]}
+  - {key: eib, ar: "البنك الأوروبي للاستثمار", fr: "Banque européenne d’investissement", short_ar: "بنك الاستثمار الأوروبي", short_fr: "BEI", words: ["البنك الاوروبي للاستثمار", "البنك الاوروبي للاستثمارات", "البنك الاوربي للاستثمار"]}
+  - {key: ebrd, ar: "البنك الأوروبي لإعادة الإعمار", fr: "BERD", short_ar: "البنك الأوروبي للإعمار", short_fr: "BERD", words: ["البنك الاوروبي لاعادة الاعمار", "البنك الاوروبي للاعمار"]}
+  - {key: ifad, ar: "الصندوق الدولي للتنمية الزراعية", fr: "FIDA", short_ar: "إيفاد", short_fr: "FIDA", words: ["الصندوق الدولي للتنمية الزراعية", "الصندوق الدولي للتنمية الفلاحية"]}
+  - {key: other_funds, ar: "صناديق أخرى", fr: "Autres fonds", short_ar: "صناديق أخرى", short_fr: "Autres fonds", words: ["صندوق النقد العربي", "صندوق النقد الدولي", "الصندوق العراقي", "صندوق الاوبك"]}
+  - {key: banks, ar: "بنوك ومورّدون ووكالات تصدير", fr: "Banques, fournisseurs et agences d’export", short_ar: "بنوك ومورّدون", short_fr: "Banques et fournisseurs", words: ["مجموعة من الابناك", "مجموعة ابناك", "مجموعة بنوك", "مجموعة من البنوك", "البنوك التجارية", "الابناك التجارية", "BNP", "الشركة العامة", "Merrill", "Lloyds", "لويدز", "بنك التصدير والاستيراد", "بنك الولايات المتحدة للتصدير", "Exim", "هانديلس", "Instituto", "البنك الخارجي لاسبانيا", "بنك اسبانيا الخارجي", "المؤسسة الكندية", "كوميرز بنك", "مجموعة مقرضين", "مجموعة هيئات مالية", "مجموعة من المؤسسات المالية", "القرض التجاري", "مؤسسات مالية دولية", "البنك المغربي للتجارة الخارجية بباريس", "Banco", "Bank", "Banque", "Girozentrale", "Santander", "BBVA", "Natixis", "Barclays", "Citibank", "Commerzbank", "Mediocredito", "قرض توريد", "قرض شراء", "مجموعة الشركات المسماة"]}
+organisations:
+  - {key: eu, ar: "الاتحاد الأوروبي", fr: "Union européenne", words: ["الاتحاد الاوروبي", "المجموعة الاوروبية", "المجموعة الاقتصادية الاوروبية", "المجموعة الاقتصادية الاوربية", "المجموعة الاوربية", "الجماعة الاوروبية", "الجماعة الاقتصادية الاوروبية"]}
+  - {key: un, ar: "الأمم المتحدة ووكالاتها", fr: "Nations unies et agences", words: ["الامم المتحدة", "منظمة الامم المتحدة", "اليونسكو", "اليونيسيف", "المنظمة الدولية للهجرة", "برنامج الاغذية العالمي", "المفوضية السامية"]}
+  - {key: arab_orgs, ar: "منظمات عربية وإسلامية", fr: "Organisations arabes et islamiques", words: ["جامعة الدول العربية", "اتحاد المغرب العربي", "المنظمة العربية", "منظمة التعاون الاسلامي", "منظمة المؤتمر الاسلامي", "المنظمة الاسلامية"]}
+  - {key: african_orgs, ar: "منظمات إفريقية", fr: "Organisations africaines", words: ["الاتحاد الافريقي", "منظمة الوحدة الافريقية", "المدن والحكومات المحلية المتحدة الافريقية", "الشركة الافريقية لاعادة التامين"]}
+states:
+  - {key: france, ar: "فرنسا", fr: "France", region: europe, words: ["الجمهورية الفرنسية", "فرنسا"]}
+  - {key: spain, ar: "إسبانيا", fr: "Espagne", region: europe, words: ["المملكة الاسبانية", "اسبانيا", "مملكة اسبانيا"]}
+  - {key: belgium, ar: "بلجيكا", fr: "Belgique", region: europe, words: ["المملكة البلجيكية", "بلجيكا", "مملكة بلجيكا", "لبلجيكا"]}
+  - {key: netherlands, ar: "هولندا", fr: "Pays-Bas", region: europe, words: ["الاراضي المنخفضة", "المملكة الهولندية", "المملكة الهولاندية", "هولندا"]}
+  - {key: germany, ar: "ألمانيا", fr: "Allemagne", region: europe, words: ["المانيا", "الالمانية"]}
+  - {key: italy, ar: "إيطاليا", fr: "Italie", region: europe, words: ["الايطالية", "ايطاليا"]}
+  - {key: portugal, ar: "البرتغال", fr: "Portugal", region: europe, words: ["البرتغالية", "البرتغال"]}
+  - {key: uk, ar: "المملكة المتحدة", fr: "Royaume-Uni", region: europe, words: ["المملكة المتحدة", "بريطانيا"]}
+  - {key: switzerland, ar: "سويسرا", fr: "Suisse", region: europe, words: ["الاتحاد السويسري", "المجلس الفيدرالي السويسري", "الكونفدرالية السويسرية", "سويسرا", "سويسرة"]}
+  - {key: luxembourg, ar: "لوكسمبورغ", fr: "Luxembourg", region: europe, words: ["اللوكسمبورغ", "اللوكسامبورغ", "للوكسمبورغ", "لوكسمبورغ"]}
+  - {key: austria, ar: "النمسا", fr: "Autriche", region: europe, words: ["النمسا", "النمساوية"]}
+  - {key: sweden, ar: "السويد", fr: "Suède", region: europe, words: ["السويدية", "السويد"]}
+  - {key: denmark, ar: "الدنمارك", fr: "Danemark", region: europe, words: ["الدنماركية", "الدانمارك", "الدنمارك"]}
+  - {key: norway, ar: "النرويج", fr: "Norvège", region: europe, words: ["النرويجية", "النرويج"]}
+  - {key: finland, ar: "فنلندا", fr: "Finlande", region: europe, words: ["الفنلندية", "الفينلاندية", "فنلندا"]}
+  - {key: greece, ar: "اليونان", fr: "Grèce", region: europe, words: ["اليونانية", "اليونان"]}
+  - {key: poland, ar: "بولونيا", fr: "Pologne", region: europe, words: ["البولونية", "بولونيا", "بولونية", "بولندا"]}
+  - {key: romania, ar: "رومانيا", fr: "Roumanie", region: europe, words: ["الرومانية", "رومانيا"]}
+  - {key: bulgaria, ar: "بلغاريا", fr: "Bulgarie", region: europe, words: ["البلغارية", "بلغاريا"]}
+  - {key: hungary, ar: "هنغاريا", fr: "Hongrie", region: europe, words: ["الهنغارية", "هنغاريا", "المجر"]}
+  - {key: czechoslovakia, ar: "تشيكوسلوفاكيا", fr: "Tchécoslovaquie", region: europe, words: ["تشيكوسلوفاكيا", "التشيكوسلوفاكية"]}
+  - {key: czechia, ar: "التشيك", fr: "Tchéquie", region: europe, words: ["التشيك", "التشيكية"]}
+  - {key: yugoslavia, ar: "يوغوسلافيا", fr: "Yougoslavie", region: europe, words: ["اليوغوسلافية", "يوغوسلافيا"]}
+  - {key: serbia, ar: "صربيا", fr: "Serbie", region: europe, words: ["صربيا"]}
+  - {key: croatia, ar: "كرواتيا", fr: "Croatie", region: europe, words: ["كرواتيا"]}
+  - {key: bosnia, ar: "البوسنة والهرسك", fr: "Bosnie-Herzégovine", region: europe, words: ["البوسنة"]}
+  - {key: slovakia, ar: "سلوفاكيا", fr: "Slovaquie", region: europe, words: ["سلوفاكيا", "السلوفاكية"]}
+  - {key: slovenia, ar: "سلوفينيا", fr: "Slovénie", region: europe, words: ["سلوفينيا"]}
+  - {key: belarus, ar: "بيلاروسيا", fr: "Biélorussie", region: europe, words: ["بيلاروسيا", "روسيا البيضاء"]}
+  - {key: ukraine, ar: "أوكرانيا", fr: "Ukraine", region: europe, words: ["اوكرانيا"]}
+  - {key: russia, ar: "روسيا", fr: "Russie", region: europe, words: ["روسيا"]}
+  - {key: ussr, ar: "الاتحاد السوفياتي", fr: "URSS", region: europe, words: ["السوفياتية", "السوفيتية", "السوفييتية"]}
+  - {key: east_germany, ar: "ألمانيا الديمقراطية", fr: "RDA", region: europe, words: ["المانيا الديمقراطية", "الالمانية الديمقراطية"]}
+  - {key: malta, ar: "مالطا", fr: "Malte", region: europe, words: ["مالطا"]}
+  - {key: cyprus, ar: "قبرص", fr: "Chypre", region: europe, words: ["قبرص"]}
+  - {key: latvia, ar: "لاتفيا", fr: "Lettonie", region: europe, words: ["لاتفيا"]}
+  - {key: lithuania, ar: "ليتوانيا", fr: "Lituanie", region: europe, words: ["ليتوانيا"]}
+  - {key: estonia, ar: "إستونيا", fr: "Estonie", region: europe, words: ["استونيا"]}
+  - {key: albania, ar: "ألبانيا", fr: "Albanie", region: europe, words: ["البانيا"]}
+  - {key: macedonia, ar: "مقدونيا", fr: "Macédoine", region: europe, words: ["مقدونيا"]}
+  - {key: montenegro, ar: "الجبل الأسود", fr: "Monténégro", region: europe, words: ["الجبل الاسود"]}
+  - {key: moldova, ar: "مولدوفا", fr: "Moldavie", region: europe, words: ["مولدوفا", "مولدافيا"]}
+  - {key: ireland, ar: "إيرلندا", fr: "Irlande", region: europe, words: ["جمهورية ايرلندا"]}
+  - {key: iceland, ar: "إيسلندا", fr: "Islande", region: europe, words: ["ايسلندا"]}
+  - {key: monaco, ar: "موناكو", fr: "Monaco", region: europe, words: ["موناكو"]}
+  - {key: holy_see, ar: "الكرسي الرسولي", fr: "Saint-Siège", region: europe, words: ["الكرسي الرسولي"]}
+  - {key: turkey, ar: "تركيا", fr: "Turquie", region: asia, words: ["تركيا", "التركية"]}
+  - {key: azerbaijan, ar: "أذربيجان", fr: "Azerbaïdjan", region: asia, words: ["اذربيجان"]}
+  - {key: georgia, ar: "جورجيا", fr: "Géorgie", region: asia, words: ["جورجيا"]}
+  - {key: armenia, ar: "أرمينيا", fr: "Arménie", region: asia, words: ["ارمينيا"]}
+  - {key: kazakhstan, ar: "كازاخستان", fr: "Kazakhstan", region: asia, words: ["كازاخستان", "كازاخستان"]}
+  - {key: uzbekistan, ar: "أوزبكستان", fr: "Ouzbékistan", region: asia, words: ["اوزبكستان", "اوزباكستان"]}
+  - {key: tunisia, ar: "تونس", fr: "Tunisie", region: arab, words: ["التونسية", "تونس"]}
+  - {key: algeria, ar: "الجزائر", fr: "Algérie", region: arab, words: ["الجزائرية", "الجزائر"]}
+  - {key: libya, ar: "ليبيا", fr: "Libye", region: arab, words: ["الليبية", "ليبيا", "الجماهيرية"]}
+  - {key: egypt, ar: "مصر", fr: "Égypte", region: arab, words: ["مصر", "الجمهورية العربية المتحدة"]}
+  - {key: mauritania, ar: "موريتانيا", fr: "Mauritanie", region: arab, words: ["الموريتانية", "موريتانيا"]}
+  - {key: saudi, ar: "السعودية", fr: "Arabie saoudite", region: arab, words: ["السعودية"]}
+  - {key: kuwait, ar: "الكويت", fr: "Koweït", region: arab, words: ["الكويت"]}
+  - {key: uae, ar: "الإمارات", fr: "Émirats arabes unis", region: arab, words: ["الامارات"]}
+  - {key: qatar, ar: "قطر", fr: "Qatar", region: arab, words: ["قطر"]}
+  - {key: bahrain, ar: "البحرين", fr: "Bahreïn", region: arab, words: ["البحرين"]}
+  - {key: oman, ar: "عمان", fr: "Oman", region: arab, words: ["سلطنة عمان"]}
+  - {key: jordan, ar: "الأردن", fr: "Jordanie", region: arab, words: ["الاردنية", "الاردن"]}
+  - {key: syria, ar: "سوريا", fr: "Syrie", region: arab, words: ["السورية", "سوريا"]}
+  - {key: iraq, ar: "العراق", fr: "Irak", region: arab, words: ["العراقية", "العراق"]}
+  - {key: lebanon, ar: "لبنان", fr: "Liban", region: arab, words: ["اللبنانية", "لبنان"]}
+  - {key: yemen, ar: "اليمن", fr: "Yémen", region: arab, words: ["اليمنية", "اليمن"]}
+  - {key: south_sudan, ar: "جنوب السودان", fr: "Soudan du Sud", region: africa, words: ["جنوب السودان"]}
+  - {key: sudan, ar: "السودان", fr: "Soudan", region: arab, words: ["السودان"]}
+  - {key: palestine, ar: "فلسطين", fr: "Palestine", region: arab, words: ["فلسطين"]}
+  - {key: djibouti, ar: "جيبوتي", fr: "Djibouti", region: arab, words: ["جيبوتي"]}
+  - {key: comoros, ar: "جزر القمر", fr: "Comores", region: arab, words: ["جزر القمر", "القمر المتحدة"]}
+  - {key: somalia, ar: "الصومال", fr: "Somalie", region: arab, words: ["الصومال"]}
+  - {key: senegal, ar: "السنغال", fr: "Sénégal", region: africa, words: ["السينغال", "السنغال", "السنيغال", "السينيغال", "السينغالية", "السنغالية"]}
+  - {key: ivory_coast, ar: "كوت ديفوار", fr: "Côte d’Ivoire", region: africa, words: ["الكوت ديفوار", "ساحل العاج", "كوت ديفوار"]}
+  - {key: gabon, ar: "الغابون", fr: "Gabon", region: africa, words: ["الغابون", "الغابونية"]}
+  - {key: mali, ar: "مالي", fr: "Mali", region: africa, words: ["مالي"]}
+  - {key: nigeria, ar: "نيجيريا", fr: "Nigeria", region: africa, words: ["نيجيريا", "نجيريا"]}
+  - {key: niger, ar: "النيجر", fr: "Niger", region: africa, words: ["النيجر"]}
+  - {key: guinea_bissau, ar: "غينيا بيساو", fr: "Guinée-Bissau", region: africa, words: ["غينيا بيساو"]}
+  - {key: equatorial_guinea, ar: "غينيا الاستوائية", fr: "Guinée équatoriale", region: africa, words: ["غينيا الاستوائية"]}
+  - {key: guinea, ar: "غينيا", fr: "Guinée", region: africa, words: ["غينيا", "لغينيا"]}
+  - {key: drc, ar: "الكونغو الديمقراطية", fr: "RD Congo", region: africa, words: ["الكونغو الديمقراطية", "زايير", "الزايير"]}
+  - {key: congo, ar: "الكونغو", fr: "Congo", region: africa, words: ["الكونغو"]}
+  - {key: cameroon, ar: "الكاميرون", fr: "Cameroun", region: africa, words: ["الكامرون", "الكاميرون"]}
+  - {key: chad, ar: "تشاد", fr: "Tchad", region: africa, words: ["تشاد", "التشاد"]}
+  - {key: gambia, ar: "غامبيا", fr: "Gambie", region: africa, words: ["غامبيا"]}
+  - {key: burkina, ar: "بوركينا فاسو", fr: "Burkina Faso", region: africa, words: ["بوركينا فاسو", "بوركينا فاصو", "بوركينافاسو", "بوركينافاصو"]}
+  - {key: madagascar, ar: "مدغشقر", fr: "Madagascar", region: africa, words: ["مدغشقر"]}
+  - {key: sierra_leone, ar: "سيراليون", fr: "Sierra Leone", region: africa, words: ["سيراليون"]}
+  - {key: liberia, ar: "ليبيريا", fr: "Liberia", region: africa, words: ["ليبيريا"]}
+  - {key: rwanda, ar: "رواندا", fr: "Rwanda", region: africa, words: ["رواندا"]}
+  - {key: benin, ar: "بنين", fr: "Bénin", region: africa, words: ["البنين", "بنين"]}
+  - {key: togo, ar: "توغو", fr: "Togo", region: africa, words: ["الطوغو", "توغو", "الطوكو"]}
+  - {key: ghana, ar: "غانا", fr: "Ghana", region: africa, words: ["غانا"]}
+  - {key: cape_verde, ar: "الرأس الأخضر", fr: "Cap-Vert", region: africa, words: ["الراس الاخضر"]}
+  - {key: sao_tome, ar: "ساو تومي وبرينسيبي", fr: "Sao Tomé-et-Principe", region: africa, words: ["ساو تومي"]}
+  - {key: ethiopia, ar: "إثيوبيا", fr: "Éthiopie", region: africa, words: ["اثيوبيا"]}
+  - {key: zambia, ar: "زامبيا", fr: "Zambie", region: africa, words: ["زامبيا"]}
+  - {key: kenya, ar: "كينيا", fr: "Kenya", region: africa, words: ["كينيا"]}
+  - {key: tanzania, ar: "تنزانيا", fr: "Tanzanie", region: africa, words: ["تنزانيا"]}
+  - {key: angola, ar: "أنغولا", fr: "Angola", region: africa, words: ["انغولا", "انجولا"]}
+  - {key: mozambique, ar: "موزمبيق", fr: "Mozambique", region: africa, words: ["موزمبيق", "الموزمبيق"]}
+  - {key: south_africa, ar: "جنوب إفريقيا", fr: "Afrique du Sud", region: africa, words: ["جنوب افريقيا"]}
+  - {key: central_africa, ar: "إفريقيا الوسطى", fr: "Centrafrique", region: africa, words: ["افريقيا الوسطى"]}
+  - {key: uganda, ar: "أوغندا", fr: "Ouganda", region: africa, words: ["اوغندا"]}
+  - {key: burundi, ar: "بوروندي", fr: "Burundi", region: africa, words: ["بوروندي"]}
+  - {key: eritrea, ar: "إريتريا", fr: "Érythrée", region: africa, words: ["اريتريا"]}
+  - {key: namibia, ar: "ناميبيا", fr: "Namibie", region: africa, words: ["ناميبيا"]}
+  - {key: zimbabwe, ar: "زيمبابوي", fr: "Zimbabwe", region: africa, words: ["زيمبابوي"]}
+  - {key: malawi, ar: "مالاوي", fr: "Malawi", region: africa, words: ["مالاوي", "ملاوي"]}
+  - {key: mauritius, ar: "موريشيوس", fr: "Maurice", region: africa, words: ["موريشيوس", "موريس"]}
+  - {key: seychelles, ar: "سيشل", fr: "Seychelles", region: africa, words: ["سيشل", "السيشل"]}
+  - {key: botswana, ar: "بوتسوانا", fr: "Botswana", region: africa, words: ["بوتسوانا"]}
+  - {key: eswatini, ar: "إسواتيني", fr: "Eswatini", region: africa, words: ["اسواتيني", "سوازيلاند"]}
+  - {key: lesotho, ar: "ليسوتو", fr: "Lesotho", region: africa, words: ["ليسوتو"]}
+  - {key: china, ar: "الصين", fr: "Chine", region: asia, words: ["الصين"]}
+  - {key: japan, ar: "اليابان", fr: "Japon", region: asia, words: ["اليابان", "اليابانية"]}
+  - {key: korea, ar: "كوريا", fr: "Corée", region: asia, words: ["كوريا"]}
+  - {key: india, ar: "الهند", fr: "Inde", region: asia, words: ["الهند", "الهندية"]}
+  - {key: pakistan, ar: "باكستان", fr: "Pakistan", region: asia, words: ["باكستان", "الباكستانية", "لباكستان", "للباكستان", "الباكستان"]}
+  - {key: indonesia, ar: "إندونيسيا", fr: "Indonésie", region: asia, words: ["اندونيسيا"]}
+  - {key: malaysia, ar: "ماليزيا", fr: "Malaisie", region: asia, words: ["ماليزيا"]}
+  - {key: thailand, ar: "تايلاند", fr: "Thaïlande", region: asia, words: ["التايلاندية", "تايلاند", "تايلندا"]}
+  - {key: vietnam, ar: "فيتنام", fr: "Viêt Nam", region: asia, words: ["فيتنام", "الفيتنام", "الفيتنامية"]}
+  - {key: philippines, ar: "الفلبين", fr: "Philippines", region: asia, words: ["الفلبين", "الفليبين"]}
+  - {key: bangladesh, ar: "بنغلاديش", fr: "Bangladesh", region: asia, words: ["بنغلاديش", "بنغلادش"]}
+  - {key: iran, ar: "إيران", fr: "Iran", region: asia, words: ["الايرانية", "ايران"]}
+  - {key: singapore, ar: "سنغافورة", fr: "Singapour", region: asia, words: ["سنغافورة"]}
+  - {key: sri_lanka, ar: "سريلانكا", fr: "Sri Lanka", region: asia, words: ["سريلانكا", "سري لانكا"]}
+  - {key: afghanistan, ar: "أفغانستان", fr: "Afghanistan", region: asia, words: ["افغانستان"]}
+  - {key: kyrgyzstan, ar: "قيرغيزستان", fr: "Kirghizistan", region: asia, words: ["قيرغيزستان", "قرغيزستان"]}
+  - {key: tajikistan, ar: "طاجيكستان", fr: "Tadjikistan", region: asia, words: ["طاجيكستان"]}
+  - {key: turkmenistan, ar: "تركمانستان", fr: "Turkménistan", region: asia, words: ["تركمانستان"]}
+  - {key: brunei, ar: "بروناي", fr: "Brunei", region: asia, words: ["بروناي", "بروني"]}
+  - {key: maldives, ar: "المالديف", fr: "Maldives", region: asia, words: ["المالديف"]}
+  - {key: israel, ar: "إسرائيل", fr: "Israël", region: asia, words: ["اسرائيل"]}
+  - {key: australia, ar: "أستراليا", fr: "Australie", region: americas_oceania, words: ["استراليا"]}
+  - {key: usa, ar: "الولايات المتحدة", fr: "États-Unis", region: americas_oceania, words: ["الولايات المتحدة", "ديفلو بمنت لوز فوند", "بنك الاصدار والايراد بواشنطون"]}
+  - {key: canada, ar: "كندا", fr: "Canada", region: americas_oceania, words: ["كندا"]}
+  - {key: mexico, ar: "المكسيك", fr: "Mexique", region: americas_oceania, words: ["المكسيك", "المكسيكية"]}
+  - {key: brazil, ar: "البرازيل", fr: "Brésil", region: americas_oceania, words: ["البرازيل"]}
+  - {key: argentina, ar: "الأرجنتين", fr: "Argentine", region: americas_oceania, words: ["الارجنتين", "الارجنتينية"]}
+  - {key: chile, ar: "الشيلي", fr: "Chili", region: americas_oceania, words: ["الشيلي", "تشيلي", "شيلي"]}
+  - {key: peru, ar: "البيرو", fr: "Pérou", region: americas_oceania, words: ["البيرو", "بيرو"]}
+  - {key: colombia, ar: "كولومبيا", fr: "Colombie", region: americas_oceania, words: ["كولومبيا"]}
+  - {key: cuba, ar: "كوبا", fr: "Cuba", region: americas_oceania, words: ["كوبا"]}
+  - {key: panama, ar: "بنما", fr: "Panama", region: americas_oceania, words: ["بنما", "باناما"]}
+  - {key: el_salvador, ar: "السلفادور", fr: "Salvador", region: americas_oceania, words: ["السلفادور"]}
+  - {key: dominican, ar: "الدومينيكان", fr: "République dominicaine", region: americas_oceania, words: ["الدومينيكان", "الدومينيكية"]}
+  - {key: venezuela, ar: "فنزويلا", fr: "Venezuela", region: americas_oceania, words: ["فنزويلا"]}
+  - {key: ecuador, ar: "الإكوادور", fr: "Équateur", region: americas_oceania, words: ["الاكوادور", "اكوادور"]}
+  - {key: paraguay, ar: "الباراغواي", fr: "Paraguay", region: americas_oceania, words: ["الباراغواي", "باراغواي", "البارغواي"]}
+  - {key: uruguay, ar: "الأوروغواي", fr: "Uruguay", region: americas_oceania, words: ["الاوروغواي", "اوروغواي", "الاورغواي"]}
+  - {key: bolivia, ar: "بوليفيا", fr: "Bolivie", region: americas_oceania, words: ["بوليفيا"]}
+  - {key: guatemala, ar: "غواتيمالا", fr: "Guatemala", region: americas_oceania, words: ["غواتيمالا", "جواتيمالا"]}
+  - {key: honduras, ar: "الهندوراس", fr: "Honduras", region: americas_oceania, words: ["الهندوراس", "هندوراس"]}
+  - {key: nicaragua, ar: "نيكاراغوا", fr: "Nicaragua", region: americas_oceania, words: ["نيكاراغوا"]}
+  - {key: costa_rica, ar: "كوستاريكا", fr: "Costa Rica", region: americas_oceania, words: ["كوستاريكا", "كوستا ريكا"]}
+  - {key: haiti, ar: "هايتي", fr: "Haïti", region: americas_oceania, words: ["هايتي"]}
+  - {key: jamaica, ar: "جامايكا", fr: "Jamaïque", region: americas_oceania, words: ["جامايكا"]}

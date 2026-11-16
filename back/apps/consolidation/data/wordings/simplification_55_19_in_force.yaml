@@ -1,0 +1,10 @@
+# Law 55.19's art. 33 makes its entry into force wait for the decrees its arts 5, 11 and 27 call for: «يدخل هذا القانون حيز
+# التنفيذ ابتداء من تاريخ نشر النصوص التنظيمية المشار اليها في المواد 5 و 11 و 27 منه». Decree 2.20.660 applies all three
+# (art. 1: arts 5 para. 1 and 11; art. 2: art. 27) and was published in BO 6919 of 21 Sep 2020 (the papers review,
+# 27 Oct 2026, owner-provisional). Applied by `manage.py apply_wordings <this file>`.
+text: /akn/ma/act/loi/55-19
+by: /akn/ma/act/loi/55-19
+checked: owner-provisional
+in_force:
+  since: '2020-09-21'
+  because: 'المرسوم 2.20.660 بتطبيق المواد 5 و11 و27، الجريدة الرسمية عدد 6919 بتاريخ 21 شتنبر 2020'

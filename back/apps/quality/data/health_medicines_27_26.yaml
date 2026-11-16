@@ -1,0 +1,10 @@
+# Law 27.26 (amending law 17.04, the code of medicines and pharmacy) as BO 7526 (16 Jul 2026) prints it, where the site's
+# reading of the issue misreads it: a closing quotation mark the page does not print. The three articles the health topic
+# cites (arts 2, 4, 7; pp. 4424–4425) were read word by word against the page images on 27 Oct 2026 (
+# the health review, S4); arts 2 and 7 read as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_medicines_27_26.yaml`; a reload of the text applies them again.
+text: /ma/loi/27-26
+document: issues/bo_ar/BO_7526_ar.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [4], wrong: "واستردادها ؛»", right: "واستردادها ؛"}   # a closing «»» the page does not print (art. 131 bis goes on), p. 4424

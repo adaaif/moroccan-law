@@ -1,0 +1,40 @@
+# «نزع الملكية»: the blog's twenty-fourth post (S23 of the first-principles review, 6 Nov 2026: «Yes»; built 7 Nov
+# 2026). Every text whose title declares that the public good requires a work and expropriates the land it needs,
+# counted by year and by what it is for (figures.json, manage.py blog_figures expropriation). Communes and works are
+# named; owners never (the review's care). A person checks every example on its page before the post is published.
+slug: expropriation
+number: 24
+status: draft
+date: null
+counted_on: 2026-11-07
+span: [1913, 2026]
+title:
+  ar: "نزع الملكية: 912 مرسوما منذ 2020، قرابة نصفها من أجل الماء"
+  fr: "L’expropriation : 912 décrets depuis 2020, près de la moitié pour l’eau"
+lead:
+  ar: "كلما احتاجت الدولة أرضا لطريق أو سد أو مدرسة، نشرت الجريدة الرسمية مرسوما «بإعلان أن المنفعة العامة تقضي» بالمشروع «وبنزع ملكية» الأرض اللازمة له. منذ 2020 نُشر منها 912، أي نحو 134 في السنة، أكثر من أي عقد قبله. وقرابة نصفها من أجل الماء: السدود والماء الصالح للشرب والتطهير، بعد ثلثها في العقد السابق."
+  fr: "Chaque fois que l’État a besoin d’un terrain pour une route, un barrage ou une école, le Bulletin officiel publie un décret « déclarant d’utilité publique » le projet « et frappant d’expropriation » les terrains nécessaires. Depuis 2020, il en a publié 912, environ 134 par an, plus qu’en aucune décennie avant. Près de la moitié sont pour l’eau : barrages, eau potable, assainissement, contre un tiers la décennie précédente."
+
+# A declaration: a text of the Arabic general edition whose title names the public good («المنفعة العامة», «المنفعة
+# العمومية», «المصلحة العمومية») and an expropriation («نزع»).
+title_re: "(المنفعة العامة|المنفعة العمومية|المصلحة العمومية|مصلحة عمومية)"
+taking_re: "نزع"
+# What a declaration is for, read in its title after «تقضي ب…» (the first that matches, in this order).
+purposes:
+  - {key: water, re: "سد|السد|الماء|ماء|مياه|المياه|التطهير|تطهير|قناة|القناة|محطة لمعالجة|خزان|ثقب|تحلية|الري|سقي|صهريج|الفيضانات"}
+  - {key: road, re: "الطريق السيار|طريق|الطرق|منعرج|مدار|قنطرة|القنطرة|ممر|محول|المحول|الممر|منشأة فنية|منشآت فنية"}
+  - {key: school, re: "مدرسة|ثانوية|إعدادية|اعدادية|كلية|جامعة|جامعية|معهد|مؤسسة تعليمية|مدرسية|مؤسسة للتعليم|التكوين|داخلية|حضانة|روض"}
+  - {key: rail, re: "السكة|سكة|القطار|السككي|فائق السرعة|الترامواي|ترامواي"}
+  - {key: mines, re: "الفوسفاط|فوسفاط|منجم|المعادن"}
+  - {key: power, re: "كهرب|الطاقة|حرارية|الريحية|الشمسية|التوتر|مركز للتحويل|محطة تحويل"}
+  - {key: health, re: "مستشفى|المستشفى|صحي|مستوصف|الاستشفائي|مستعجلات|الصحة"}
+  - {key: sport, re: "ملعب|الملعب|رياضي|الرياضية|رياضية|القاعة المغطاة|مسبح|حلبة"}
+  - {key: port, re: "ميناء|مطار|الميناء|المطار"}
+  - {key: admin, re: "مقر|ثكنة|مخفر|باشوية|قيادة|دائرة|ملحقة إدارية|الملحقة الإدارية|الوقاية المدنية|للأمن|الدرك|محكمة|سجن|سجنية|محجز"}
+  - {key: town, re: "تهيئة|ساحة|سوق|مقبرة|مسجد|حديقة|منطقة|حي|تجزئة|مرآب|محطة طرقية|مجزرة"}
+
+# The law and the Constitution, as printed.
+law: {number: "7.81", issue: 3685, page: 980, date: "1983-06-15", akn: /akn/ma/act/loi/7-81,
+      words: "إن نزع ملكية العقارات كلا أو بعضا أو ملكية الحقوق العينية العقارية لا يجوز الحكم به إلا إذا أعلنت المنفعة العامة، ولا يمكن إجراؤه إلا طبق الكيفيات المقررة في هذا القانون"}
+constitution: {year: 2011, art: "35", issue: 5964, bis: true, page: 3607, akn: /akn/ma/act/dahir/1-11-91,
+               words: "يضمن القانون حق الملكية. ويمكن الحد من نطاقها وممارستها بموجب القانون، إذا اقتضت ذلك متطلبات التنمية الاقتصادية والاجتماعية للبلاد. ولا يمكن نزع الملكية إلا في الحالات ووفق الإجراءات التي ينص عليها القانون."}

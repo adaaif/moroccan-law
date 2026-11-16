@@ -1,0 +1,1627 @@
+# The tax topic's pages (the tax review, T19, T20, T22): facts, each on its articles, from the DGI's 2026 edition
+# of the code (unofficial; the BO prevails), finance laws 60.24 and 50.25, and law 47.06 for the communes' taxes. Who
+# taxes what is said once: the code is the State's, 47.06 the communes'. A page says whom it is for (`for`).
+
+- key: map
+  title: {ar: 'المدونة العامة للضرائب بكلمات الناس', fr: 'Le Code général des impôts, en mots de tous les jours'}
+  lead:
+    ar: 'المدونة ديال الدولة فيها ثلاثة أجزاء: الضرائب، والإجراءات، والواجبات والرسوم الأخرى. والجماعة عندها قانونها: القانون 47.06 (رسم السكن، رسم الخدمات، الأراضي غير المبنية، الرسم المهني).'
+    fr: 'Le code de l’État a trois livres : les impôts, les procédures, les droits et autres taxes. La commune a sa loi : la loi 47.06 (taxe d’habitation, de services communaux, sur les terrains non bâtis, taxe professionnelle).'
+  sections:
+    - title: {ar: 'الأجر والمعاش والكراء والمدخرات: الضريبة على الدخل', fr: 'Salaire, pension, loyers, épargne : l’impôt sur le revenu'}
+      facts:
+        - text: {ar: 'الضريبة على الدخل كتشمل الدخول المهنية والفلاحية، والأجور والمعاشات، والدخول والأرباح العقارية، ودخول رؤوس الأموال المنقولة.', fr: 'L’impôt sur le revenu porte sur les revenus professionnels et agricoles, les salaires et pensions, les revenus et profits fonciers, les revenus de capitaux mobiliers.'}
+          cites: [/ma/code/cgi/art_21, /ma/code/cgi/art_22]
+        - text: {ar: 'الأجر: المواد 56 حتى 60؛ الجدول: المادة 73؛ الأعباء العائلية: المادة 74؛ التصريح: المادتان 82 و86.', fr: 'Le salaire : articles 56 à 60 ; le barème : article 73 ; les charges de famille : article 74 ; la déclaration : articles 82 et 86.'}
+          cites: [/ma/code/cgi/art_56, /ma/code/cgi/art_59, /ma/code/cgi/art_73, /ma/code/cgi/art_74, /ma/code/cgi/art_82]
+        - text: {ar: 'الكراء وبيع العقار: المواد 61 حتى 65، والمادة 144-II للحد الأدنى.', fr: 'Les loyers et la vente d’un bien : articles 61 à 65, et l’article 144-II pour le minimum.'}
+          cites: [/ma/code/cgi/art_61, /ma/code/cgi/art_63, /ma/code/cgi/art_64, /ma/code/cgi/art_65, /ma/code/cgi/art_144]
+    - title: {ar: 'الشراء والهبة والفينييت: الواجبات والرسوم', fr: 'Achat, donation, vignette : les droits et taxes'}
+      facts:
+        - text: {ar: 'واجبات التسجيل على العقود (المواد 126 حتى 143)، وواجبات التمبر (المواد 249 حتى 258)، والضريبة الخصوصية السنوية على المركبات (المواد 259 حتى 266).', fr: 'Les droits d’enregistrement des actes (articles 126 à 143), les droits de timbre (articles 249 à 258), la taxe spéciale annuelle sur les véhicules (articles 259 à 266).'}
+          cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_252, /ma/code/cgi/art_262]
+    - title: {ar: 'الشركات: الضريبة على الشركات والقيمة المضافة', fr: 'Les sociétés : IS et TVA'}
+      facts:
+        - text: {ar: 'الضريبة على الشركات: المواد 1 حتى 20؛ الضريبة على القيمة المضافة: المواد 87 حتى 125.', fr: 'L’impôt sur les sociétés : articles 1 à 20 ; la TVA : articles 87 à 125.'}
+          cites: [/ma/code/cgi/art_19, /ma/code/cgi/art_99]
+    - title: {ar: 'إلا ما تحلاتش: المراقبة والتظلم والجزاءات', fr: 'Quand ça se passe mal : contrôle, réclamation, sanctions'}
+      facts:
+        - text: {ar: 'الجزاءات: المواد 184 حتى 208؛ المراقبة والتصحيح: المواد 210 حتى 234؛ التظلم والاسترداد والمحكمة: المواد 235 حتى 243.', fr: 'Les sanctions : articles 184 à 208 ; le contrôle et la rectification : articles 210 à 234 ; la réclamation, la restitution et le juge : articles 235 à 243.'}
+          cites: [/ma/code/cgi/art_184, /ma/code/cgi/art_208, /ma/code/cgi/art_220, /ma/code/cgi/art_235, /ma/code/cgi/art_241-bis]
+    - title: {ar: 'الجماعة: الدار والأرض والمحل', fr: 'La commune : le logement, le terrain, le local'}
+      facts:
+        - text: {ar: 'رسم السكن (المواد 19 حتى 31)، ورسم الخدمات الجماعية (المواد 33 حتى 38)، والرسم على الأراضي الحضرية غير المبنية (المواد 39 حتى 48)؛ وكلها كتتفرض باسم المالك.', fr: 'La taxe d’habitation (articles 19 à 31), la taxe de services communaux (33 à 38), la taxe sur les terrains urbains non bâtis (39 à 48) ; toutes établies au nom du propriétaire.'}
+          cites: [/ma/loi/47-06/art_20, /ma/loi/47-06/art_33, /ma/loi/47-06/art_39]
+
+- key: beliefs
+  title: {ar: 'ما يقال، وما تقوله المدونة', fr: 'Ce qu’on entend, et ce que dit le code'}
+  lead:
+    ar: 'جمل كيسمعها كل واحد على الضريبة، وكل وحدة بجانب المادة اللي كتجاوب عليها.'
+    fr: 'Des phrases que chacun entend sur l’impôt, chacune à côté de l’article qui y répond.'
+  sections:
+    - title: {ar: '«إلا زادت ليا الأجرة نقدر نخسر»', fr: '« Une augmentation peut me faire perdre de l’argent »'}
+      facts:
+        - text: {ar: 'الجدول كيطبق شريحة بشريحة: كل جزء من الدخل كيتخلص بسعر الشريحة ديالو. الدرهم اللي كيفوت العتبة وحدو كيتخلص بالسعر الأعلى، والباقي ما كيتبدلش؛ إذن الصافي ديما كيزيد ملي كتزيد الأجرة.', fr: 'Le barème s’applique tranche par tranche : chaque part du revenu paie le taux de sa tranche. Seul le dirham au-dessus du seuil paie le taux supérieur, le reste ne change pas ; le net augmente donc toujours avec le salaire.'}
+          cites: [/ma/code/cgi/art_73]
+      tool: tools/salary
+    - title: {ar: '«المعاش ما فيهش الضريبة»', fr: '« La pension n’est pas imposée »'}
+      facts:
+        - text: {ar: 'منذ فاتح يناير 2026 معاشات أنظمة التقاعد الأساسي معفية، وكذلك معاشات عقود التقاعد التكميلي الجماعية للقطاع الخاص عند الصندوق المهني المغربي للتقاعد بشروطها؛ المعاشات التكميلية الأخرى كتخلص بعد الإسقاط.', fr: 'Depuis le 1er janvier 2026, les pensions des régimes de base sont exonérées, comme celles des contrats de retraite complémentaire de groupe du privé servies par la CIMR, à leurs conditions ; les autres pensions complémentaires sont imposées après abattement.'}
+          cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_60]
+      tool: tools/pension
+    - title: {ar: '«رسم السكن كيخلصو الكاري»', fr: '« La taxe d’habitation, c’est le locataire qui la paie »'}
+      facts:
+        - text: {ar: 'رسم السكن كيتفرض باسم المالك ولا صاحب حق الانتفاع، ولا باسم الحائز إلا ما عرفناش المالك؛ وكيتفرض على السكن اللي كيسكن فيه المالك ولا اللي عطاه مجانا لزوجه ولا أصوله ولا فروعه.', fr: 'La taxe d’habitation est établie au nom du propriétaire ou de l’usufruitier, ou du possesseur si le propriétaire est inconnu ; elle frappe le logement que le propriétaire occupe ou laisse gratuitement à son conjoint, ses ascendants ou descendants.'}
+          cites: [/ma/loi/47-06/art_19, /ma/loi/47-06/art_20]
+      tool: tools/local
+    - title: {ar: '«بعت الدار ديالي، ما عليا والو»', fr: '« J’ai vendu ma maison, je ne dois rien »'}
+      facts:
+        - text: {ar: 'الربح على بيع السكن الرئيسي معفي إلا كنتي ساكن فيه خمس سنين على الأقل نهار البيع، مرة وحدة فداك الخمس سنين؛ والثمن اللي فوق 4 ملايين درهم كتخلص عليه 3% على الأقل.', fr: 'Le profit sur la vente de l’habitation principale est exonéré après au moins cinq ans d’occupation au jour de la vente, une seule fois sur ces cinq ans ; au-delà de 4 millions de dirhams de prix, 3 % restent dus sur l’excédent.'}
+          cites: [/ma/code/cgi/art_63, /ma/code/cgi/art_144]
+        - text: {ar: 'وخارج هاد الحالة، الضريبة 20% من الربح وما تقلش على 3% من الثمن ولو ما ربحتي والو؛ والتصريح والأداء داخل 30 يوما.', fr: 'Hors ce cas, l’impôt est de 20 % du profit et jamais moins de 3 % du prix, même sans profit ; déclaration et paiement dans les 30 jours.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_144, /ma/code/cgi/art_83]
+      tool: tools/sell
+    - title: {ar: '«الأجير ديما خاصو يصرح»', fr: '« Un salarié doit toujours déclarer »'}
+      facts:
+        - text: {ar: 'اللي عندو غير أجر واحد كيحجز عليه المشغل الضريبة ما مطلوبش منو التصريح، إلا بغا يستافد من الخصومات ولا شاف راسو خلص أكثر من اللازم.', fr: 'Qui n’a qu’un salaire retenu à la source par un seul employeur n’a pas à déclarer, sauf pour obtenir une déduction ou s’il s’estime surtaxé.'}
+          cites: [/ma/code/cgi/art_86]
+      to: journeys/declare
+
+- key: calendar
+  title: {ar: 'الآجال ديال العام', fr: 'Les échéances de l’année'}
+  lead:
+    ar: 'كل أجل بالمادة ديالو. من بعد الأجل كتزاد الزيادة، وفالأداء المتأخر الذعيرة والزيادة شهر بشهر.'
+    fr: 'Chaque échéance avec son article. Passé le délai, la majoration s’ajoute ; pour un paiement tardif, la pénalité et la majoration mois par mois.'
+  sections:
+    - title: {ar: 'يناير', fr: 'Janvier'}
+      facts:
+        - text: {ar: 'الفينييت ديال العام كتتخلص فشهر يناير؛ والطوموبيل اللي دخلات للطريق خلال العام داخل 60 يوما من وصل إيداع ملف البطاقة الرمادية.', fr: 'La vignette de l’année se paie en janvier ; un véhicule mis en circulation en cours d’année, dans les 60 jours du récépissé du dossier de carte grise.'}
+          cites: [/ma/code/cgi/art_261]
+    - title: {ar: 'قبل فاتح مارس', fr: 'Avant le 1er mars'}
+      facts:
+        - text: {ar: 'التصريح بالدخل الإجمالي ديال العام اللي فات، لكل دخل ماشي دخل مهني: الكراء، أكثر من أجر، معاش تكميلي من عدة جهات فوق العتبة…', fr: 'La déclaration du revenu global de l’année passée, pour tout revenu autre que professionnel : loyers, plusieurs salaires, pensions complémentaires de plusieurs débirentiers au-delà du seuil…'}
+          cites: [/ma/code/cgi/art_82, /ma/code/cgi/art_86]
+        - text: {ar: 'الإقرار بالأراضي الحضرية غير المبنية، ولو معفية، وأداء رسمها للجماعة.', fr: 'La déclaration des terrains urbains non bâtis, même exonérés, et le paiement de leur taxe à la commune.'}
+          cites: [/ma/loi/47-06/art_46, /ma/loi/47-06/art_47]
+    - title: {ar: 'قبل فاتح ماي', fr: 'Avant le 1er mai'}
+      facts:
+        - text: {ar: 'التصريح بالدخل المهني المحدد حسب نظام النتيجة الصافية الحقيقية ولا المبسطة.', fr: 'La déclaration des revenus professionnels déterminés au résultat net réel ou simplifié.'}
+          cites: [/ma/code/cgi/art_82]
+    - title: {ar: 'كل شهر ولا كل ربع', fr: 'Chaque mois ou chaque trimestre'}
+      facts:
+        - text: {ar: 'المقاول الذاتي كيصرح برقم المعاملات ويخلص قبل نهاية الشهر اللي من بعد الشهر ولا الربع اللي تحصل فيه.', fr: 'L’auto-entrepreneur déclare son chiffre d’affaires et paie avant la fin du mois qui suit le mois ou le trimestre d’encaissement.'}
+          cites: [/ma/code/cgi/art_82-bis]
+    - title: {ar: 'من نهار العقد', fr: 'À compter de l’acte'}
+      facts:
+        - text: {ar: 'بيع عقار: التصريح بالربح وأداء الضريبة داخل 30 يوما من البيع.', fr: 'Vente d’un bien : déclaration du profit et paiement dans les 30 jours de la cession.'}
+          cites: [/ma/code/cgi/art_83, /ma/code/cgi/art_173]
+        - text: {ar: 'شراء ولا هبة: تسجيل العقد وأداء الواجبات داخل 30 يوما من تاريخه.', fr: 'Achat ou donation : enregistrement de l’acte et paiement des droits dans les 30 jours de sa date.'}
+          cites: [/ma/code/cgi/art_128]
+    - title: {ar: 'إلا فات الأجل', fr: 'Une fois le délai passé'}
+      facts:
+        - text: {ar: 'التصريح المتأخر: 5% داخل 30 يوما، و15% من بعد، و20% إلا فرضاتها الإدارة تلقائيا.', fr: 'La déclaration tardive : 5 % sous 30 jours, 15 % ensuite, 20 % en cas d’imposition d’office.'}
+          cites: [/ma/code/cgi/art_184]
+        - text: {ar: 'الأداء المتأخر: ذعيرة 10% (5% داخل 30 يوما)، و5% عن الشهر الأول و0,5% عن كل شهر من بعد.', fr: 'Le paiement tardif : pénalité de 10 % (5 % sous 30 jours), 5 % le premier mois et 0,5 % par mois ensuite.'}
+          cites: [/ma/code/cgi/art_208]
+      tool: tools/late
+
+- key: savings
+  title: {ar: 'الفوائد والأسهم والادخار', fr: 'Intérêts, actions, épargne'}
+  lead:
+    ar: 'دخول المدخرات كتتحجز عليها الضريبة فالمنبع بسعر إبرائي: البنك ولا الوسيط كيخلصها، وما كتزادش للتصريح.'
+    fr: 'Les revenus de l’épargne sont retenus à la source à un taux libératoire : la banque ou l’intermédiaire paie, rien à ajouter à la déclaration.'
+  sections:
+    - title: {ar: 'الفوائد والأرباح الموزعة', fr: 'Intérêts et dividendes'}
+      facts:
+        - text: {ar: 'فوائد الودائع والسندات ديال شخص ذاتي: 30%. الأرباح الموزعة على الأسهم: 10%.', fr: 'Les intérêts de dépôts et d’obligations d’une personne physique : 30 %. Les dividendes : 10 %.'}
+          cites: [/ma/code/cgi/art_73]
+        - text: {ar: 'فوائد دفاتر صندوق التوفير الوطني معفية.', fr: 'Les intérêts des livrets de la Caisse d’épargne nationale sont exonérés.'}
+          cites: [/ma/code/cgi/art_68]
+    - title: {ar: 'بيع الأسهم', fr: 'Vendre des actions'}
+      facts:
+        - text: {ar: 'الربح على الأسهم المدرجة فالبورصة: 15%؛ على الأسهم غير المدرجة: 20%. والبيوع اللي ما كتفوتش 30.000 درهم فالعام معفية.', fr: 'Le profit sur des actions cotées : 15 % ; sur des actions non cotées : 20 %. Les cessions qui ne dépassent pas 30 000 dirhams dans l’année sont exonérées.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_68]
+    - title: {ar: 'مخططات الادخار', fr: 'Les plans d’épargne'}
+      facts:
+        - text: {ar: 'مخطط الادخار السكني: فوائده معفية إلا كانت الفلوس لشراء ولا بناء السكن الرئيسي وبقات ثلاث سنين على الأقل، والدفوعات ما فاتتش 400.000 درهم.', fr: 'Le plan d’épargne logement : intérêts exonérés si l’épargne va à l’achat ou la construction de l’habitation principale, gardée trois ans au moins, versements jusqu’à 400 000 dirhams.'}
+          cites: [/ma/code/cgi/art_68]
+        - text: {ar: 'مخطط الادخار للتعليم: خمس سنين على الأقل و300.000 درهم على كل ولد؛ ومخطط الادخار فالأسهم: خمس سنين على الأقل.', fr: 'Le plan d’épargne éducation : cinq ans au moins et 300 000 dirhams par enfant ; le plan d’épargne en actions : cinq ans au moins.'}
+          cites: [/ma/code/cgi/art_68]
+
+- key: gift
+  title: {ar: 'الهبة والإرث', fr: 'Donation et héritage'}
+  lead:
+    ar: 'الهبة بين الأقارب القريبين ما فيهاش ضريبة على الربح، وفيها واجبات تسجيل قليلة. والإرث نفسه ما فيه حتى ضريبة؛ البيع من بعد هو اللي فيه.'
+    fr: 'La donation entre proches parents ne paie pas d’impôt sur le profit, et peu de droits d’enregistrement. L’héritage lui-même n’est pas imposé ; c’est la vente ensuite qui l’est.'
+  sections:
+    - title: {ar: 'الهبة فالعائلة', fr: 'La donation en famille'}
+      facts:
+        - text: {ar: 'الهبة ديال عقار بين الأصول والفروع، والأزواج، والإخوة والأخوات، وبين الكافل والطفل المكفول: معفية من الضريبة على الربح.', fr: 'La donation d’un bien entre ascendants et descendants, époux, frères et sœurs, et entre le kafil et l’enfant recueilli : exonérée de l’impôt sur le profit.'}
+          cites: [/ma/code/cgi/art_63]
+        - text: {ar: 'واجبات التسجيل على هاد الهبة: 1,5%، داخل 30 يوما من العقد.', fr: 'Les droits d’enregistrement sur cette donation : 1,5 %, dans les 30 jours de l’acte.'}
+          cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_128]
+    - title: {ar: 'بيع عقار ورثتيه', fr: 'Vendre un bien hérité'}
+      facts:
+        - text: {ar: 'ثمن الشرا اللي كيتحسب بيه الربح هو قيمة العقار نهار الوفاة، كما كتبوها الورثة فالجرد، ولا كما صرحتي بيها.', fr: 'Le prix d’acquisition retenu pour le profit est la valeur du bien au jour du décès, inscrite à l’inventaire des héritiers, ou déclarée.'}
+          cites: [/ma/code/cgi/art_65]
+        - text: {ar: 'بيع حصص مشاعة فأرض فلاحية خارج المدار الحضري بين الورثة: معفي.', fr: 'La cession de droits indivis sur des terres agricoles hors périmètre urbain entre cohéritiers : exonérée.'}
+          cites: [/ma/code/cgi/art_63]
+      tool: tools/sell
+
+- key: abroad
+  title: {ar: 'ساكن فالخارج', fr: 'Vous vivez à l’étranger'}
+  for: [abroad]
+  lead:
+    ar: 'الضريبة المغربية كتتبع الموطن الضريبي: اللي موطنه فالمغرب كيخلص على كلشي، واللي لا كيخلص غير على اللي مصدره المغرب، مع الاتفاقيات الضريبية.'
+    fr: 'L’impôt marocain suit le domicile fiscal : domicilié au Maroc, on est imposé sur tout ; sinon, sur la source marocaine seulement, conventions fiscales réservées.'
+  sections:
+    - title: {ar: 'الموطن الضريبي', fr: 'Le domicile fiscal'}
+      facts:
+        - text: {ar: 'عندك موطن ضريبي فالمغرب إلا كان فيه السكن الدائم ديالك، ولا مركز المصالح الاقتصادية ديالك، ولا إلا فاتت الإقامة ديالك فيه 183 يوما فكل 365 يوما.', fr: 'Votre domicile fiscal est au Maroc s’il y a votre foyer permanent, le centre de vos intérêts économiques, ou si vous y séjournez plus de 183 jours sur 365.'}
+          cites: [/ma/code/cgi/art_23]
+        - text: {ar: 'الاتفاقيات لتفادي الازدواج الضريبي كتقرر شكون عندو الحق يفرض الضريبة على شي دخل.', fr: 'Les conventions contre la double imposition décident quel État peut imposer tel revenu.'}
+          cites: [/ma/code/cgi/art_23]
+    - title: {ar: 'الدار اللي فالمغرب', fr: 'Le logement au Maroc'}
+      facts:
+        - text: {ar: 'المسكن اللي كيحتفظ بيه المغاربة المقيمين بالخارج كسكن رئيسي ليهم فالمغرب، ولا اللي ساكنين فيه مجانا الزوج ولا الوالدين ولا الأولاد: كيستافد من إعفاء الربح عند البيع بشروطه.', fr: 'Le logement que les Marocains résidant à l’étranger gardent comme habitation principale au Maroc, ou qu’occupent gratuitement leur conjoint, parents ou enfants : exonéré du profit à la vente, à ses conditions.'}
+          cites: [/ma/code/cgi/art_63]
+        - text: {ar: 'ولرسم السكن، نفس الدار كتستافد من إسقاط 75%.', fr: 'Pour la taxe d’habitation, ce même logement bénéficie de l’abattement de 75 %.'}
+          cites: [/ma/loi/47-06/art_24]
+    - title: {ar: 'معاش من الخارج', fr: 'Une pension de l’étranger'}
+      facts:
+        - text: {ar: 'اللي موطنه فالمغرب وكيتقاضى معاش من الخارج كيستافد من تخفيض 80% من الضريبة على الجزء اللي كيحولو نهائيا بالدرهم غير القابل للتحويل.', fr: 'Domicilié au Maroc avec une pension de source étrangère, vous bénéficiez d’une réduction de 80 % de l’impôt sur la part transférée à titre définitif en dirhams non convertibles.'}
+          cites: [/ma/code/cgi/art_76]
+
+- key: business
+  title: {ar: 'للشركات: الأساسي', fr: 'Pour les entreprises : l’essentiel'}
+  for: [company, self]
+  lead:
+    ar: 'صفحة قصيرة، كتكبر مع الوقت: الأسعار والآجال الأساسية، وكل سطر بالمادة ديالو.'
+    fr: 'Une page courte, qui s’enrichira : les taux et échéances essentiels, chaque ligne avec son article.'
+  sections:
+    - title: {ar: 'الضريبة على الشركات', fr: 'L’impôt sur les sociétés'}
+      facts:
+        - text: {ar: 'السعر 20%، و35% للشركات اللي ربحها الصافي كيوصل 100 مليون درهم ولا كيفوتها، مع استثناءات المادة 19.', fr: 'Le taux est de 20 %, et de 35 % pour un bénéfice net de 100 millions de dirhams ou plus, sauf les exceptions de l’article 19.'}
+          cites: [/ma/code/cgi/art_19]
+        - text: {ar: 'المساهمة الدنيا: حد أدنى كتخلصو الشركة ولو ما ربحاتش.', fr: 'La cotisation minimale : un minimum dû même sans bénéfice.'}
+          cites: [/ma/code/cgi/art_144]
+    - title: {ar: 'الضريبة على القيمة المضافة', fr: 'La TVA'}
+      facts:
+        - text: {ar: 'السعر العادي 20%، وأسعار مخفضة لعمليات معينة (10% للفندقة والمطاعم مثلا).', fr: 'Le taux normal est de 20 %, avec des taux réduits pour certaines opérations (10 % pour l’hébergement et la restauration, par exemple).'}
+          cites: [/ma/code/cgi/art_99]
+        - text: {ar: 'التصريح شهريا ولا كل ربع حسب رقم المعاملات.', fr: 'La déclaration est mensuelle ou trimestrielle selon le chiffre d’affaires.'}
+          cites: [/ma/code/cgi/art_108, /ma/code/cgi/art_110, /ma/code/cgi/art_111]
+    - title: {ar: 'خدام بحسابك', fr: 'À votre compte'}
+      facts:
+        - text: {ar: 'المقاول الذاتي: 0,5% ولا 1% من رقم المعاملات المحصل، فحدود 500.000 ولا 200.000 درهم، مع الانخراط فالضمان الاجتماعي.', fr: 'L’auto-entrepreneur : 0,5 % ou 1 % du chiffre d’affaires encaissé, dans la limite de 500 000 ou 200 000 dirhams, avec l’adhésion à la sécurité sociale.'}
+          cites: [/ma/code/cgi/art_42-ter, /ma/code/cgi/art_73]
+        - text: {ar: 'المساهمة المهنية الموحدة: 10% على الدخل المحسوب بمعامل المهنة من رقم المعاملات، حتى مليونين درهم للتجارة و500.000 للخدمات.', fr: 'La contribution professionnelle unique : 10 % du revenu tiré du chiffre d’affaires par le coefficient de la profession, jusqu’à 2 millions de dirhams pour le commerce et 500 000 pour les services.'}
+          cites: [/ma/code/cgi/art_40, /ma/code/cgi/art_41, /ma/code/cgi/art_73]
+      tool: tools/own
+    - title: {ar: 'الرسم المهني', fr: 'La taxe professionnelle'}
+      facts:
+        - text: {ar: 'الجماعة كتفرض الرسم المهني على كل نشاط مهني، ورسم الخدمات الجماعية على المحلات.', fr: 'La commune perçoit la taxe professionnelle sur toute activité professionnelle, et la taxe de services communaux sur les locaux.'}
+          cites: [/ma/loi/47-06/art_5, /ma/loi/47-06/art_33]
+    # P14: what the 2027 bill would change for a business, said as a bill (each line its date).
+    - title: {ar: 'فمشروع قانون المالية 2027 (مشروع، ماشي قانون)', fr: 'Dans le projet de loi de finances 2027 (un projet, pas une loi)'}
+      bill: /ma/projet-loi/60-26
+      facts:
+        - text: {ar: 'التجار اللي كيستوردو باش يبيعو بحالتها: تسبيق 3% من القيمة الجمركية على كل استيراد (المشروع كما أودع كان كاتب 5%؛ لجنة المالية بمجلس النواب نقصاتو)، من 1 يوليوز 2027، لمدة 36 شهر، ومن بعد غير بلا شهادة الإبراء الضريبي عندها أقل من 30 يوم؛ كيتخصم من الضريبة.', fr: 'Les commerçants qui importent pour revendre en l’état : une avance de 3 % de la valeur en douane sur chaque importation (le projet déposé écrivait 5 % ; la commission des finances de la Chambre des représentants l’a baissée), dès le 1er juillet 2027, pendant 36 mois, puis seulement sans attestation de régularité fiscale de moins de 30 jours ; imputée sur l’impôt.'}
+          cites: [/ma/code/cgi/art_170, /ma/code/cgi/art_173, /ma/projet-loi/60-26/art_7]
+        - text: {ar: 'مستوردو وموزعو المحروقات: 40% على ربح صافي من 100 مليون درهم فما فوق، على السنوات المحاسبية اللي كتبدا من 2027.', fr: 'Les importateurs et distributeurs de carburants : 40 % sur un bénéfice net de 100 millions de DH ou plus, pour les exercices ouverts dès 2027.'}
+          cites: [/ma/code/cgi/art_19, /ma/projet-loi/60-26/art_7]
+        - text: {ar: 'تجار العقارات المبنية: اختيار أداء القيمة المضافة على الهامش وخصم القيمة المضافة ديال أشغال الترميم، على البيوعات من 1 يوليوز 2027.', fr: 'Les marchands de biens immeubles bâtis : l’option de la TVA sur la marge, avec déduction de la TVA sur les travaux de rénovation, pour les ventes dès le 1er juillet 2027.'}
+          cites: [/ma/code/cgi/art_90, /ma/code/cgi/art_96, /ma/projet-loi/60-26/art_7]
+        - text: {ar: 'اللي خدام بلا تسجيل: اللي تسجل فالرسم المهني فـ2027 ولا 2028 كيتحاسب غير من نهار تسجل (المشروع كما أودع كان كيعطي 2027 بوحدو؛ النواب زادو عام).', fr: 'Qui travaille sans être inscrit : qui s’inscrit à la taxe professionnelle en 2027 ou en 2028 n’est imposé qu’à partir de cette date (le projet déposé ne donnait que 2027 ; les députés ajoutent un an).'}
+          cites: [/ma/code/cgi/art_247, /ma/projet-loi/60-26/art_7]
+        - text: {ar: 'الطعون أمام اللجان والمساطر ديال المراقبة كتبدل فبعض الآجال والقواعد، على اللي كيبدا من 2027.', fr: 'Les recours devant les commissions et les procédures de contrôle changent sur certains délais et règles, pour ce qui commence dès 2027.'}
+          cites: [/ma/code/cgi/art_220, /ma/code/cgi/art_225, /ma/code/cgi/art_222, /ma/code/cgi/art_228, /ma/projet-loi/60-26/art_7]
+      more: pages/bill-2027
+
+# The 2027 finance bill (the finance-bill review, P5, P7, P9, P12–P15; 26 Oct 2026). A page with `bill` speaks
+# of a bill, never of law: the web draws the bill's band above it. Every line names the bill's article and the code's
+# article it would change; the dates are the bill's own (its art. 7-IV). Owner-provisional until a person checks it,
+# the claims page by two (P23).
+- key: bill-2027
+  bill: /ma/projet-loi/60-26
+  # The bill-page review (V1–V12, 26 Oct 2026): the changes as data, drawn as amendment lines (`then` the bill's
+  # figure, `now` today's, `from` the bill's date of effect, `when` said otherwise, `check` a date a person must confirm,
+  # `announced` not in the bill at all), a section per reader (`for` the topic's answers; none: everyone), the reader's
+  # own first. `detail` is the sentence the row stands on; `cites` the code's articles only, since every change here is
+  # in the bill's article 7 (said once, in the lead: V5). `calendar` is the bill's own dates of effect (V7).
+  layout: changes
+  reform: lf-2027
+  # The Chamber-vote update (15 Nov 2026): the page opens on the Chamber's vote.
+  chamber: vote
+  # The committee's report, second part: the amendments, their votes and the final wording of each amended article. A
+  # row's `amended.page` opens it there. The text as the Chamber adopted it is not published yet (15 Nov 2026).
+  report: &committee_report
+    name: {ar: 'تقرير لجنة المالية والتنمية الاقتصادية بمجلس النواب حول المشروع، الجزء الثاني', fr: 'Rapport de la commission des finances de la Chambre des représentants sur le projet, deuxième partie'}
+    url: 'https://www.chambredesrepresentants.ma/sites/default/files/2emepUP2.pdf'
+    file: sources/parliament/plf2027/2emepUP2.pdf
+    sha256: f983ee219d6e93524606f9b34cd91edfdae03e2331da04113dfb978a141831ca
+  press: bill-press
+  # The bill-story review (Y1–Y7): the guess and the curve above the changes, four people, the road to 2031 and the
+  # method after them; «شنو كيقولو» at the end (pages/bill-press).
+  story: [bill-story]
+  after: [bill-people, bill-road, bill-method]
+  title: {ar: 'مشروع قانون المالية 2027: شنو غادي يتبدل ليك', fr: 'Le projet de loi de finances 2027 : ce qui changerait pour vous'}
+  lead:
+    ar: 'كل تغيير هنا مكتوب فالمشروع كما عدلاتو لجنة المالية وصادق عليه مجلس النواب، بالتاريخ اللي كيعطيه المشروع نفسه. اللي بدلوه النواب معلّم بقلم.'
+    fr: 'Chaque changement est écrit dans le projet tel que la commission des finances l’a amendé et que la Chambre des représentants l’a adopté, avec la date que le projet donne lui-même. Ce que les députés ont modifié porte un crayon.'
+  sections:
+    - key: salary
+      for: [salary]
+      chip: {ar: أجير, fr: Salarié}
+      title: {ar: 'إلا كنتي أجير', fr: 'Si vous êtes salarié'}
+      line: {ar: 'الشريحة المعفية 60.000، المصاريف 45%، والجدول كيتبدل كل عام حتى 2031', fr: 'Tranche exonérée à 60 000, frais à 45 %, et un barème par an jusqu’en 2031'}
+      note: {ar: 'النواب ما بدلو والو فالجدول ولا فالمصاريف 45%: دازو كما أودعتهم الحكومة. وما تقبلوش اقتراحات كانت باغية تزيد: 720 درهم عوض 600 على كل واحد فتكلفك، وخصم مصاريف المدرسة الخاصة حتى 6.000 درهم على كل ولد.', fr: 'Les députés n’ont touché ni au barème ni aux 45 % de frais : ils passent tels que déposés. Deux propositions qui allaient plus loin n’ont pas été retenues : 720 DH au lieu de 600 par personne à charge, et la déduction des frais d’école privée jusqu’à 6 000 DH par enfant.'}
+      note_more: pages/bill-amendments
+      note_link: {ar: 'شنو بدلو النواب وشنو رفضو', fr: 'Ce que les députés ont changé, et refusé'}
+      aside: bill-gain
+      rows:
+        - headline: {ar: 'الشريحة المعفية من الضريبة على الدخل', fr: 'La tranche exonérée de l’impôt sur le revenu'}
+          plain: {ar: 'أول جزء من الدخل الصافي ديال العام ما كتخلص عليه حتى درهم ديال الضريبة، كيفما كان أجرك.', fr: 'La première part du revenu net de l’année ne paie aucun impôt, quel que soit votre salaire.'}
+          then: '60.000'
+          now: '40.000'
+          unit: {ar: درهم فالعام, fr: DH par an}
+          from: '2027-01-01'
+          detail: {ar: 'من 2027 حتى 2030 جدول جديد كل عام؛ و2031 الجدول الأخير: 10% حتى 150.000، و20% حتى 500.000، و30% فوق.', fr: 'De 2027 à 2030, un barème par an ; en 2031 le dernier : 10 % jusqu’à 150 000, 20 % jusqu’à 500 000, 30 % au-delà.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+        # The bill-rows rewrite (27 Oct 2026: the four rows rewritten to be clear): what the thing is
+        # (`plain`), today's and the bill's figure each with its note (`now_note`, `then_note`), and the reader's
+        # own figure from the salary on the page (`you`, a PAGE_WIDGETS name).
+        - headline: {ar: 'المصاريف المهنية', fr: 'Les frais professionnels'}
+          plain: {ar: 'جزء من الأجر الخام كيتحسب مصاريف ديال الخدمة وكيتنقص قبل ما تتحسب الضريبة، بلا ما تبرر بالأوراق.', fr: 'Une part du salaire brut compte comme frais du métier et se retire avant le calcul de l’impôt, sans justificatifs.'}
+          then: '45%'
+          then_note: {ar: 'لكل الأجراء، و35.000 درهم فالعام على الأكثر', fr: 'pour tous les salariés, 35 000 DH par an au plus'}
+          now: {ar: '35% ولا 25%', fr: '35 % ou 25 %'}
+          now_note: {ar: '35% حتى 6.500 درهم خام فالشهر، و25% فوق', fr: '35 % jusqu’à 6 500 DH bruts par mois, 25 % au-delà'}
+          you: bill-you-expenses
+          from: '2027-01-01'
+          detail: {ar: 'لكل الأجراء، و35.000 درهم فالعام على الأكثر؛ والنسب الخاصة ديال الصحافيين والفنانين وطواقم الطيران كتمشي.', fr: 'Pour tous les salariés, 35 000 DH par an au plus ; les taux propres aux journalistes, artistes et équipages disparaissent.'}
+          cites: [/ma/code/cgi/art_59]
+        - headline: {ar: 'أعلى نسبة ديال الضريبة على الدخل', fr: 'Le taux le plus haut de l’impôt sur le revenu'}
+          plain: {ar: 'ما كتطبقش على الأجر كامل: كتطبق غير على الجزء من الدخل الصافي اللي فوق حد معين، والباقي كيتخلص بنسب أقل.', fr: 'Il ne s’applique pas à tout le salaire : seulement à la part du revenu net au-delà d’un seuil ; le reste paie des taux plus bas.'}
+          then: '30%'
+          then_note: {ar: 'من 2030، على اللي فوق 200.000؛ ومن 2031 على اللي فوق 500.000', fr: 'dès 2030, au-delà de 200 000 ; dès 2031, au-delà de 500 000'}
+          now: '37%'
+          now_note: {ar: 'على اللي فوق 180.000 درهم صافية فالعام', fr: 'au-delà de 180 000 DH nets par an'}
+          you: bill-you-top
+          from: '2030-01-01'
+          when: {ar: من 2030, fr: dès 2030}
+          detail: {ar: '37% كيبقى فـ2027 و2028، و35% فـ2029؛ و30% فوق 200.000 فـ2030، وفوق 500.000 من 2031.', fr: '37 % reste en 2027 et 2028, 35 % en 2029 ; 30 % au-delà de 200 000 en 2030, au-delà de 500 000 dès 2031.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+        - headline: {ar: 'التعويضات اللي كتزاد على الأجر كل شهر', fr: 'Les indemnités qui s’ajoutent au salaire chaque mois'}
+          plain: {ar: 'النقل، التمثيل، القفة… اللي كيعطيها المشغل كل شهر بنفس المبلغ، فوق الأجر.', fr: 'Transport, représentation, panier… ce que l’employeur verse chaque mois au même montant, en plus du salaire.'}
+          then: {ar: خاضعة, fr: imposables}
+          then_note: {ar: 'كتولي جزء من الأجر؛ كيبقى معفي غير اللي كيرجع مصاريف حقيقية بالأوراق', fr: 'elles deviennent du salaire ; seul reste exonéré le remboursement de frais réels justifiés'}
+          now: {ar: معفية, fr: exonérées}
+          now_note: {ar: 'ما كتخلصش عليها الضريبة، بالأوراق ولا جزافية', fr: 'aucun impôt, sur états ou forfaitaires'}
+          you: bill-you-allowance
+          from: '2031-01-01'
+          detail: {ar: 'كتولي أجر خاضع للضريبة؛ كتبقى معفية غير التعويضات اللي كترجع مصاريف حقيقية ومبررة، والمصاريف 45% ما كتجتمعش معاها.', fr: 'Elles deviennent du salaire imposable ; seules restent exonérées celles qui remboursent des frais réels et justifiés, et les 45 % ne s’y cumulent pas.'}
+          cites: [/ma/code/cgi/art_57]
+          more: pages/allowances-2031
+        - headline: {ar: 'التصريح السنوي بالدخل', fr: 'La déclaration annuelle de revenus'}
+          plain: {ar: 'كيخص غير اللي عندو دخل آخر ولا أكثر من مشغل: اللي عندو غير أجر من مشغل واحد، المشغل كيقطع الضريبة من الأجر وما كيصرحش.', fr: 'Elle ne concerne que qui a un autre revenu ou plusieurs employeurs : avec un seul salaire d’un seul employeur, l’impôt est retenu sur la paie et vous ne déclarez pas.'}
+          then: {ar: بالإنترنت, fr: en ligne}
+          then_note: {ar: 'المشروع كيكتب «بطريقة إلكترونية»', fr: 'le projet écrit « par procédé électronique »'}
+          now: {ar: 'بالورق ولا بالإنترنت', fr: 'papier ou en ligne'}
+          now_note: {ar: 'كيف بغيتي', fr: 'au choix'}
+          you: bill-you-declare
+          when: {ar: التاريخ ما محددش, fr: date non fixée}
+          check: true
+          detail: {ar: 'المشروع كيكتب «بطريقة إلكترونية» وما كيعطيش لهاد الجملة تاريخ بوحدها (1 يوليوز 2027 كيخص التسبيق على الاستيراد). كنتحققو مع المادة 155 قبل ما نقولو شنو تدير.', fr: 'Le projet écrit « par procédé électronique » sans dater cette phrase à part (le 1er juillet 2027 vise l’avance sur importations). Nous vérifions avec l’article 155 avant de vous dire quoi faire.'}
+          cites: [/ma/code/cgi/art_86, /ma/code/cgi/art_82, /ma/code/cgi/art_155]
+        - headline: {ar: 'تعويض التدريب (الستاج) فشركة خاصة', fr: 'L’indemnité de stage dans une entreprise privée'}
+          plain: {ar: 'التعويض الشهري اللي كتعطيه شركة خاصة لمتدرب ما كتخلصش عليه الضريبة حتى لسقف معين.', fr: 'L’indemnité mensuelle qu’une entreprise privée verse à un stagiaire ne paie pas d’impôt jusqu’à un plafond.'}
+          then: '8.000'
+          now: '6.000'
+          unit: {ar: درهم فالشهر, fr: DH par mois}
+          from: '2027-01-01'
+          when: {ar: 'العقود من فاتح يناير 2027', fr: 'contrats conclus dès le 1er janvier 2027'}
+          amended: {by: committee, vote: unanimous, page: 743}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. فريق العدالة والتنمية طلب 10.000 درهم؛ اللجنة كتبات 8.000 بصيغتها. الشروط الأخرى ديال الإعفاء ما تبدلوش.', fr: 'Absent du projet déposé. Le groupe Justice et développement demandait 10 000 DH ; la commission a écrit 8 000 dans sa rédaction. Les autres conditions de l’exonération ne changent pas.'}
+          cites: [/ma/code/cgi/art_57]
+      tool: tools/bill
+    - key: pension
+      for: [pension]
+      chip: {ar: متقاعد, fr: Retraité}
+      title: {ar: 'إلا كنتي متقاعد', fr: 'Si vous êtes retraité'}
+      line: {ar: 'الضريبة على المعاش ما تبدلاتش؛ المعاش الأدنى معلن، ماشي فالمشروع', fr: 'L’impôt sur la pension ne change pas ; la pension minimale est annoncée, pas dans le projet'}
+      note: {ar: 'ما تقبلش اقتراح كان باغي يطلع الخصم الجزافي على المعاشات اللي كيتخلص عليها من 70% لـ85%: 6 مع، 23 ضد، 11 ممتنع.', fr: 'Une proposition qui portait de 70 % à 85 % l’abattement sur les pensions imposées n’a pas été retenue : 6 pour, 23 contre, 11 abstentions.'}
+      note_more: pages/bill-amendments
+      note_link: {ar: 'شنو بدلو النواب وشنو رفضو', fr: 'Ce que les députés ont changé, et refusé'}
+      rows:
+        - headline: {ar: 'معاشات أنظمة التقاعد الأساسي', fr: 'Les pensions des régimes de base'}
+          then: {ar: معفية, fr: exonérées}
+          now: {ar: معفية, fr: exonérées}
+          same: true
+          detail: {ar: 'المشروع ما كيبدلش الضريبة على المعاش: معفية منذ 2026. والمعاش التكميلي اللي كيتخلص عليه كيستافد من الجدول الجديد.', fr: 'Le projet ne change pas l’impôt sur les pensions : exonérées depuis 2026. Une pension complémentaire imposée profite du nouveau barème.'}
+          cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_73]
+        - headline: {ar: 'المعاش الأدنى', fr: 'La pension minimale'}
+          then: '1.700'
+          unit: {ar: درهم فالشهر, fr: DH par mois}
+          announced: true
+          detail: {ar: 'معلن من الوزير: 1.700 درهم فـ2027، ثم 2.000 فـ2028 و2.500 فـ2029 و3.000 فـ2030 (جوابو فلجنة المالية)، والأرامل 100% من المعاش. ماشي فمواد المشروع: خاص نص ديالو.', fr: 'Annoncé par le ministre : 1 700 DH en 2027, puis 2 000 en 2028, 2 500 en 2029 et 3 000 en 2030 (sa réponse en commission), les veuves à 100 %. Pas dans les articles du projet : il faut un texte à part.'}
+          more: reform/announced-pensions
+        - headline: {ar: 'إلا طلبات منك الإدارة ترجع أجر ولا معاش تخلص ليك بالغلط', fr: 'Si l’administration vous réclame un salaire ou une pension versés par erreur'}
+          plain: {ar: 'كيهم الموظفين والمتقاعدين ديال الدولة والجماعات والمؤسسات العمومية: المبلغ اللي تخلص بلا حق كيترجع بأمر بالمداخيل.', fr: 'Pour les agents et retraités de l’État, des collectivités et des établissements publics : la somme versée à tort se rembourse sur ordre de recette.'}
+          then: {ar: بلا زيادة, fr: sans majoration}
+          now: {ar: '6% فالعام', fr: '6 % par an'}
+          now_note: {ar: 'زيادة على التأخير فوق المبلغ', fr: 'majoration de retard, en plus de la somme'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 775}
+          detail: {ar: 'مادة جديدة زادوها النواب: الأوامر بالمداخيل اللي كتسترجع أجور وتعويضات ومعاشات تخلصات بغير حق ما بقاتش كتزاد عليها زيادة 6% ديال مدونة تحصيل الديون العمومية.', fr: 'Un article ajouté par les députés : les ordres de recette qui récupèrent des traitements, indemnités et pensions versés à tort ne portent plus la majoration de 6 % du code de recouvrement des créances publiques.'}
+          cites: [/ma/loi/15-97/art_23]
+    - key: rent
+      for: [rent, property]
+      chip: {ar: كتكري ولا عندك عقار, fr: Bailleur ou propriétaire}
+      title: {ar: 'إلا كتكري ولا عندك عقار', fr: 'Si vous louez ou possédez un bien'}
+      line: {ar: 'العقود القديمة بلا ذعيرة، الكراء من شركة بلا اقتطاع حتى 60.000، والبيع الصغير معفي حتى 200.000', fr: 'Les actes anciens sans pénalité, le loyer payé par une société sans retenue jusqu’à 60 000, la petite vente exonérée jusqu’à 200 000'}
+      rows:
+        - headline: {ar: 'تسجيل عقد قديم تقادمو الواجبات ديالو', fr: 'Enregistrer un acte ancien aux droits prescrits'}
+          then: {ar: بلا ذعيرة, fr: sans pénalité}
+          now: {ar: بالذعيرة, fr: avec pénalités}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 1, 0], page: 755}
+          detail: {ar: 'كيتسجل بالأسعار ديال نهار التسجيل، بلا ذعيرة ولا زيادات؛ وكل تسجيل كيعطي شهادة. النواب زادو: الواجبات كتتخلص داخل الآجال العادية ديال التسجيل، محسوبة من نهار طلبتي التسجيل.', fr: 'Il s’enregistre aux taux du jour, sans pénalité ni majoration ; chaque enregistrement donne une attestation. Les députés ont ajouté : les droits se paient dans les délais ordinaires d’enregistrement, comptés du jour de votre demande.'}
+          cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_135, /ma/code/cgi/art_126, /ma/code/cgi/art_128]
+        - headline: {ar: 'الكراء اللي كيتخلص بالجدول', fr: 'Les loyers imposés au barème'}
+          then: '60.000'
+          now: '40.000'
+          unit: {ar: درهم معفية فالعام, fr: DH exonérés par an}
+          from: '2027-01-01'
+          detail: {ar: 'كيستافد من الجدول الجديد؛ نسب الاقتطاع والسعر الإبرائي 20% ما تبدلوش.', fr: 'Ils profitent du nouveau barème ; les taux de retenue et le taux libératoire de 20 % ne changent pas.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_64]
+        - headline: {ar: 'الكراء اللي كتخلصو ليك شركة ولا مهني', fr: 'Le loyer que vous paie une société ou un professionnel'}
+          plain: {ar: 'إلا كاري لشركة، ولا لمهني كيتحاسب بالنتيجة الحقيقية ولا المبسطة، هو اللي كيقطع الضريبة من الكراء قبل ما يخلصك. تحت مبلغ معين فالعام ما كيقطعش.', fr: 'Si votre locataire est une société, ou un professionnel au résultat net réel ou simplifié, c’est lui qui retient l’impôt sur le loyer avant de vous payer. Sous un montant annuel, il ne retient rien.'}
+          then: '60.000'
+          now: '40.000'
+          unit: {ar: درهم فالعام, fr: DH par an}
+          from: '2027-01-01'
+          amended: {by: groups, vote: unanimous, page: 759}
+          detail: {ar: 'ما كانش فالمشروع كما أودع: زادوه تعديلان، واحد ديال فرق الأغلبية وواحد ديال فريق العدالة والتنمية. كيطبق على الكراء المدفوع من فاتح يناير 2027.', fr: 'Absent du projet déposé : deux amendements l’ajoutent, l’un des groupes de la majorité, l’autre du groupe Justice et développement. S’applique aux loyers versés dès le 1er janvier 2027.'}
+          cites: [/ma/code/cgi/art_160-bis]
+        - headline: {ar: 'بيع عقار بثمن صغير', fr: 'Vendre un bien de petite valeur'}
+          plain: {ar: 'اللي باع فالعام عقارات مجموع قيمتها ما كيفوتش مبلغ معين، الربح ديالو معفي من الضريبة على الدخل.', fr: 'Qui vend dans l’année des biens dont la valeur totale ne dépasse pas un montant ne paie pas d’impôt sur le profit.'}
+          then: '200.000'
+          now: '140.000'
+          unit: {ar: درهم فالعام, fr: DH par an}
+          from: '2027-01-01'
+          amended: {by: mp, vote: [39, 0, 1], page: 746}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. فريق الحركة الشعبية طلب 280.000 درهم؛ اللجنة كتبات 200.000 بصيغتها. كيطبق على البيوعات من فاتح يناير 2027.', fr: 'Absent du projet déposé. Le groupe du Mouvement populaire demandait 280 000 DH ; la commission a écrit 200 000 dans sa rédaction. S’applique aux cessions dès le 1er janvier 2027.'}
+          cites: [/ma/code/cgi/art_63]
+        - headline: {ar: 'بيع الأسهم غير المدرجة', fr: 'La cession de titres non cotés'}
+          then: {ar: 'كل بيعة، بالإنترنت', fr: 'chaque cession, en ligne'}
+          filed: {ar: كل بيعة, fr: chaque cession}
+          now: {ar: مرة فالعام, fr: une fois par an}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 750}
+          detail: {ar: 'تصريح على كل بيعة فالشهر اللي من بعدها، مع الأداء. النواب زادو بلي التصريح كيتدار بطريقة إلكترونية.', fr: 'Une déclaration par cession dans le mois qui suit, avec le paiement. Les députés ont ajouté qu’elle se dépose par procédé électronique.'}
+          cites: [/ma/code/cgi/art_84, /ma/code/cgi/art_173]
+    - key: self
+      for: [self]
+      chip: {ar: خدام بحسابك, fr: À votre compte}
+      title: {ar: 'إلا كتخدم بحسابك ولا بلا تسجيل', fr: 'Si vous travaillez à votre compte, ou sans être déclaré'}
+      line: {ar: 'عامين باش تتسجل عوض عام، والمقاول الذاتي 20% عوض 30% فوق 100.000 مع زبون واحد', fr: 'Deux ans pour s’inscrire au lieu d’un, et l’auto-entrepreneur à 20 % au lieu de 30 % au-delà de 100 000 avec un même client'}
+      rows:
+        - headline: {ar: 'المدة باش يتسجل فالرسم المهني اللي خدام بلا تسجيل', fr: 'Le temps pour s’inscrire à la taxe professionnelle quand on travaille sans être déclaré'}
+          plain: {ar: 'اللي تسجل داخل هاد المدة كيتحاسب غير على اللي ربح من نهار التسجيل، ماشي على اللي فات.', fr: 'Qui s’inscrit dans ce délai n’est imposé que sur ce qu’il gagne depuis son inscription, pas sur le passé.'}
+          then: {ar: عامين, fr: deux ans}
+          then_note: {ar: 'من فاتح يناير 2027 حتى 31 دجنبر 2028', fr: 'du 1er janvier 2027 au 31 décembre 2028'}
+          filed: {ar: عام واحد, fr: un an}
+          filed_note: {ar: 'حتى 31 دجنبر 2027', fr: 'jusqu’au 31 décembre 2027'}
+          now: {ar: ما كايناش, fr: aucun}
+          now_note: {ar: 'اللي تسجل كيتحاسب على اللي فات', fr: 'qui s’inscrit est imposé sur le passé'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 767}
+          detail: {ar: 'إلا خدام بلا ما تكون مسجل: اللي تسجل فالرسم المهني من فاتح يناير 2027 كيتحاسب غير على الدخول والعمليات من نهار التسجيل. المشروع كما أودع كان كيسد الباب فـ31 دجنبر 2027؛ النواب زادو عام.', fr: 'Si vous travaillez sans être inscrit : en vous inscrivant à la taxe professionnelle dès le 1er janvier 2027, vous n’êtes imposé que sur ce que vous gagnez depuis l’inscription. Le projet déposé fermait la fenêtre le 31 décembre 2027 ; les députés ajoutent un an.'}
+          cites: [/ma/code/cgi/art_247]
+        - headline: {ar: 'المقاول الذاتي اللي كيخدم بزاف مع زبون واحد', fr: 'L’auto-entrepreneur qui travaille beaucoup pour un même client'}
+          plain: {ar: 'إلا فات اللي فكتيرتي لزبون واحد فالعام مبلغ معين، الزبون كيقطع الضريبة من الزيادة قبل ما يخلصك. نفس القاعدة لأصحاب المساهمة المهنية الموحدة.', fr: 'Quand ce que vous facturez à un même client dans l’année dépasse un montant, ce client retient l’impôt sur le surplus avant de vous payer. Même règle pour la contribution professionnelle unique.'}
+          then: {ar: '20% فوق 100.000', fr: '20 % au-delà de 100 000'}
+          now: {ar: '30% فوق 80.000', fr: '30 % au-delà de 80 000'}
+          unit: {ar: درهم مع نفس الزبون فالعام, fr: DH par an avec un même client}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 0, 1], page: 741}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. كيطبق على المكافآت المدفوعة من فاتح يناير 2027، دقة وحدة بلا تدرج، والاقتطاع كيبرئ من الضريبة. لأصحاب المساهمة المهنية الموحدة التصويت كان 29 مع و11 ضد.', fr: 'Absent du projet déposé. S’applique aux rémunérations versées dès le 1er janvier 2027, d’un coup, et la retenue est libératoire. Pour la contribution professionnelle unique, le vote a été de 29 pour et 11 contre.'}
+          cites: [/ma/code/cgi/art_42-bis, /ma/code/cgi/art_40, /ma/code/cgi/art_45-bis, /ma/code/cgi/art_73]
+        - headline: {ar: 'الأتعاب والعمولات اللي كيتقطع منها 30%', fr: 'Les honoraires et commissions retenus à 30 %'}
+          plain: {ar: 'أتعاب كتخلصها مقاولة لواحد ماشي من المستخدمين ديالها، وأجور الفنانين، وعمولات الممثلين والجوالين التجاريين: الضريبة كتتقطع من المنبع بسعر خاص.', fr: 'Les honoraires qu’une entreprise verse à quelqu’un hors de son personnel, les cachets des artistes, les commissions des représentants : l’impôt est retenu à la source à un taux spécial.'}
+          then: '28%'
+          then_note: {ar: 'فـ2027، ثم 26% و24% و22%، و20% من 2031', fr: 'en 2027, puis 26 %, 24 % et 22 %, et 20 % dès 2031'}
+          now: '30%'
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 768}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. السعر الخاص 30% كيتحذف: 28% فـ2027، 26% فـ2028، 24% فـ2029، 22% فـ2030، و20% من فاتح يناير 2031؛ والاقتطاع كيبرئ من الضريبة من 2027.', fr: 'Absent du projet déposé. Le taux spécial de 30 % disparaît : 28 % en 2027, 26 % en 2028, 24 % en 2029, 22 % en 2030, 20 % dès le 1er janvier 2031 ; la retenue est libératoire dès 2027.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247, /ma/code/cgi/art_58, /ma/code/cgi/art_60, /ma/code/cgi/art_156]
+      tool: tools/own
+    - key: company
+      for: [company]
+      chip: {ar: عندك شركة, fr: Société}
+      title: {ar: 'إلا عندك شركة', fr: 'Si vous avez une société'}
+      line: {ar: 'التسبيق على الاستيراد 3% عوض 5%، المحروقات 40%، وتجار العقار', fr: 'L’avance à l’importation à 3 % au lieu de 5 %, les carburants à 40 %, les marchands de biens'}
+      note: {ar: 'سعر 40% على شركات المحروقات داز كما أودع. ما تقبلش اقتراح كان باغي يزيد شركات الاتصالات والإسمنت لنفس السعر: 10 مع، 23 ضد، 7 ممتنعين.', fr: 'Le taux de 40 % des sociétés de carburants passe tel que déposé. Une proposition qui y ajoutait les opérateurs télécoms et les cimentiers n’a pas été retenue : 10 pour, 23 contre, 7 abstentions.'}
+      note_more: pages/bill-amendments
+      note_link: {ar: 'شنو بدلو النواب وشنو رفضو', fr: 'Ce que les députés ont changé, et refusé'}
+      rows:
+        - headline: {ar: 'التسبيق على الاستيراد باش تبيع', fr: 'L’avance sur les importations destinées à la revente'}
+          then: '3%'
+          then_note: {ar: 'لمدة 36 شهر', fr: 'pendant 36 mois'}
+          filed: '5%'
+          filed_note: {ar: 'لمدة 60 شهر', fr: 'pendant 60 mois'}
+          unit: {ar: من القيمة الجمركية, fr: de la valeur en douane}
+          new: true
+          from: '2027-07-01'
+          amended: {by: committee, vote: unanimous, page: 761}
+          detail: {ar: 'على كل استيراد لمدة 36 شهر، ومن بعد غير اللي ما جابش شهادة الإبراء الضريبي عندها أقل من 30 يوم؛ كيتخصم من الضريبة. فريق الحركة الشعبية سحب التعديلات ديالو مقابل تعديل اللجنة.', fr: 'Sur chaque importation pendant 36 mois, puis seulement sans attestation de régularité fiscale de moins de 30 jours ; imputée sur l’impôt. Le groupe du Mouvement populaire a retiré ses amendements en échange de celui de la commission.'}
+          cites: [/ma/code/cgi/art_170, /ma/code/cgi/art_173]
+        - headline: {ar: 'مستوردو وموزعو المحروقات', fr: 'Importateurs et distributeurs de carburants'}
+          then: '40%'
+          now: '35%'
+          from: '2027-01-01'
+          detail: {ar: 'على ربح صافي من 100 مليون درهم فما فوق، على السنوات المحاسبية اللي كتبدا من 2027.', fr: 'Sur un bénéfice net de 100 millions de DH ou plus, pour les exercices ouverts dès 2027.'}
+          cites: [/ma/code/cgi/art_19]
+        - headline: {ar: 'تجار العقارات المبنية', fr: 'Les marchands de biens immeubles bâtis'}
+          then: {ar: على الهامش, fr: sur la marge}
+          now: {ar: على الثمن, fr: sur le prix}
+          from: '2027-07-01'
+          detail: {ar: 'اختيار أداء القيمة المضافة على الهامش، مع خصم القيمة المضافة ديال أشغال الترميم.', fr: 'L’option de la TVA sur la marge, avec déduction de la TVA sur les travaux de rénovation.'}
+          cites: [/ma/code/cgi/art_90, /ma/code/cgi/art_96]
+      more: pages/business
+    - key: buy
+      chip: {ar: كتشري, fr: Vous achetez}
+      title: {ar: 'إلا كتشري: اللحم، الدخان، الطوموبيل', fr: 'Si vous achetez : viande, tabac, voiture'}
+      line: {ar: 'اللحم المستورد معفي، الدخان والسيكار كيطلعو، والطوموبيل فوق مليون 25%', fr: 'La viande importée exonérée, tabac et cigares en hausse, la voiture au-delà d’un million à 25 %'}
+      rows:
+        - headline: {ar: 'استيراد المواشي ولحومها', fr: 'L’importation du bétail et de ses viandes'}
+          then: {ar: معفي, fr: exonérée}
+          then_note: {ar: 'بإجراءات كتحددها الإدارة', fr: 'selon des procédures que l’administration fixe'}
+          now: {ar: معلق مؤقتا, fr: suspendu}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [22, 17, 0], page: 727}
+          detail: {ar: 'من رسم الاستيراد ومن الضريبة على القيمة المضافة عند الاستيراد، بصفة دائمة؛ اليوم رسم الاستيراد معلق بمرسوم 2.26.584 لمدة محددة. النواب زادو بلي هاد الاستيراد كيدوز «وفق إجراءات مؤطرة تحددها الإدارة». وما تقبلوش ثلاثة ديال الاقتراحات كانت باغية تحيد الإعفاء ولا تحدو فعام ولا عامين. الإعفاء الضريبي ماشي ثمن: الثمن فالسوق.', fr: 'Du droit d’importation et de la TVA à l’importation, de façon permanente ; aujourd’hui le droit est suspendu pour un temps par le décret 2.26.584. Les députés ont ajouté que ces importations se font « selon des procédures encadrées que l’administration fixe ». Trois propositions qui supprimaient l’exonération ou la limitaient à un an ou deux n’ont pas été retenues. Une exonération n’est pas un prix : le prix se fait au marché.'}
+          cites: [/ma/code/cgi/art_123, /ma/projet-loi/60-26/art_3]
+        - headline: {ar: 'السيجارة الإلكترونية', fr: 'La cigarette électronique'}
+          then: '100'
+          now: '50'
+          unit: {ar: درهم للوحدة, fr: DH l’unité}
+          from: '2027-01-01'
+          detail: {ar: 'بجميع أنواعها (اليوم غير اللي كتستعمل مرة وحدة)؛ والضريبة على السجائر كتطلع كل عام حتى 2031.', fr: 'De tout type (aujourd’hui les jetables seulement) ; la taxe sur les cigarettes monte chaque année jusqu’en 2031.'}
+          cites: [/ma/projet-loi/60-26/art_5]
+        - headline: {ar: 'السائل ديال السيجارة الإلكترونية', fr: 'Le liquide de cigarette électronique'}
+          then: {ar: '10 و20', fr: '10 et 20'}
+          then_note: {ar: '10 بلا نيكوتين و20 بالنيكوتين', fr: '10 sans nicotine, 20 avec'}
+          now: {ar: '5 و10', fr: '5 et 10'}
+          now_note: {ar: '5 بلا نيكوتين و10 بالنيكوتين', fr: '5 sans nicotine, 10 avec'}
+          unit: {ar: درهم لكل 10 ملل, fr: DH les 10 ml}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 734}
+          detail: {ar: 'ما كانش فالمشروع كما أودع: المشروع كان مبدل غير الضريبة على السيجارة الإلكترونية نفسها.', fr: 'Absent du projet déposé, qui ne changeait que la taxe sur la cigarette électronique elle-même.'}
+          cites: [/ma/projet-loi/60-26/art_5]
+        - headline: {ar: 'السيكار الكبير والصغير', fr: 'Les cigares et cigarillos'}
+          then: '1.125'
+          then_note: {ar: 'و50% من ثمن البيع', fr: 'et 50 % du prix de vente'}
+          now: '750'
+          now_note: {ar: 'و35% من ثمن البيع', fr: 'et 35 % du prix de vente'}
+          unit: {ar: درهم لكل 1.000 وحدة, fr: DH les 1 000 unités}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 733}
+          detail: {ar: 'ما كانش فالمشروع كما أودع، اللي كان كيطلع غير السجائر. المبلغ الأدنى كيولي 2.250 درهم عوض 1.500.', fr: 'Absent du projet déposé, qui ne relevait que les cigarettes. Le minimum de perception passe à 2 250 DH au lieu de 1 500.'}
+          cites: [/ma/projet-loi/60-26/art_5]
+        - headline: {ar: 'التمبر ديال الطوموبيل الغالية', fr: 'Le timbre de la voiture chère'}
+          then: '25%'
+          filed: '24%'
+          now: '20%'
+          unit: {ar: فوق مليون درهم, fr: au-delà d’un million}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 770}
+          detail: {ar: 'عند أول تسجيل: 5% من 400.000 حتى 600.000 (بحال اليوم؛ المشروع كما أودع كان كاتب 6%)، و12% حتى 800.000، و18% حتى مليون، و25% فوق (اليوم 5 و10 و15 و20%).', fr: 'À la première immatriculation : 5 % de 400 000 à 600 000 (comme aujourd’hui ; le projet déposé écrivait 6 %), 12 % jusqu’à 800 000, 18 % jusqu’à un million, 25 % au-delà (5, 10, 15 et 20 % aujourd’hui).'}
+          cites: [/ma/code/cgi/art_252]
+  calendar:
+    - date: '2027-01-01'
+      for: [salary, rent, self, company, buy]
+      text: {ar: 'الجدول الجديد، المصاريف 45%، العقود القديمة والكراء والبيع الصغير، باب التسجيل فالرسم المهني، المقاول الذاتي 20%، المحروقات، اللحم والدخان والطوموبيل', fr: 'Le nouveau barème, les frais à 45 %, actes anciens, loyers et petites ventes, la fenêtre de la taxe professionnelle, l’auto-entrepreneur à 20 %, les carburants, viande, tabac et voiture'}
+    - date: '2027-07-01'
+      for: [company]
+      text: {ar: 'التسبيق 3% على الاستيراد، وتجار العقار', fr: 'L’avance de 3 % à l’importation, les marchands de biens'}
+    - date: '2028-01-01'
+      to: '2030-01-01'
+      for: [salary, rent, self]
+      text: {ar: 'جدول جديد كل عام، والأتعاب 26% ثم 24% ثم 22%', fr: 'Un nouveau barème chaque année ; les honoraires à 26 %, 24 % puis 22 %'}
+    - date: '2031-01-01'
+      for: [salary, rent, self]
+      text: {ar: 'الجدول الأخير، التعويضات الشهرية كتولي أجر، والأتعاب 20%', fr: 'Le dernier barème, les indemnités mensuelles deviennent du salaire, les honoraires à 20 %'}
+  next: [pages/bill-amendments, pages/bill-claims, reform/lf-2027, pages/fifa-2030, pages/allowances-2031]
+
+- key: bill-amendments
+  bill: /ma/projet-loi/60-26
+  # The Chamber-vote update (15 Nov 2026): what the Finance committee of the Chamber of Representatives changed in bill
+  # 60.26 on 11–12 Nov 2026, amendment by amendment, and what it did not take, read from the committee's report (second
+  # part). `amended` / `refused` give who filed it, the vote [for, against, abstain] and the page in the report;
+  # `filed` is the bill's own figure where it had one. The text as the Chamber adopted it is not published yet.
+  layout: changes
+  reform: lf-2027
+  chamber: amendments
+  report: *committee_report
+  title: {ar: 'شنو بدلو النواب فمشروع قانون المالية 2027', fr: 'Ce que les députés ont changé au projet de loi de finances 2027'}
+  lead:
+    ar: 'كل تعديل قبلاتو لجنة المالية بمجلس النواب نهار 11 و12 نونبر 2026: شكون قدمو، كيفاش تصوت عليه، والصفحة ديالو فتقرير اللجنة؛ ومن بعد شنو ما قبلاتش. النص كما صادق عليه المجلس ما تنشرش بعد، فهاد الصفحة كتقرا تقرير اللجنة.'
+    fr: 'Chaque amendement retenu par la commission des finances de la Chambre des représentants les 11 et 12 novembre 2026 : qui l’a déposé, son vote, sa page dans le rapport ; puis ce qu’elle n’a pas retenu. Le texte adopté par la Chambre n’est pas encore publié : cette page lit le rapport de la commission.'
+  sections:
+    - key: people
+      for: [salary, pension, rent, property]
+      chip: {ar: 'أجير، متقاعد ولا مالك', fr: 'Salarié, retraité ou propriétaire'}
+      title: {ar: 'إلا كنتي أجير ولا متقاعد ولا عندك عقار', fr: 'Si vous êtes salarié ou retraité, ou si vous avez un bien'}
+      line: {ar: 'تعويض الستاج معفي حتى 8.000، الكراء من شركة بلا اقتطاع حتى 60.000، والبيع الصغير معفي حتى 200.000', fr: 'L’indemnité de stage exonérée jusqu’à 8 000, le loyer payé par une société sans retenue jusqu’à 60 000, la petite vente exonérée jusqu’à 200 000'}
+      rows:
+        - headline: {ar: 'تعويض التدريب (الستاج) فشركة خاصة', fr: 'L’indemnité de stage dans une entreprise privée'}
+          plain: {ar: 'التعويض الشهري اللي كتعطيه شركة خاصة لمتدرب ما كتخلصش عليه الضريبة حتى لسقف معين.', fr: 'L’indemnité mensuelle qu’une entreprise privée verse à un stagiaire ne paie pas d’impôt jusqu’à un plafond.'}
+          then: '8.000'
+          now: '6.000'
+          unit: {ar: 'درهم فالشهر', fr: 'DH par mois'}
+          from: '2027-01-01'
+          when: {ar: 'العقود من فاتح يناير 2027', fr: 'contrats conclus dès le 1er janvier 2027'}
+          amended: {by: committee, vote: unanimous, page: 743}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. فريق العدالة والتنمية طلب 10.000 درهم؛ اللجنة كتبات 8.000 بصيغتها. الشروط الأخرى ديال الإعفاء ما تبدلوش.', fr: 'Absent du projet déposé. Le groupe Justice et développement demandait 10 000 DH ; la commission a écrit 8 000 dans sa rédaction. Les autres conditions de l’exonération ne changent pas.'}
+          cites: [/ma/code/cgi/art_57]
+        - headline: {ar: 'إلا طلبات منك الإدارة ترجع أجر ولا معاش تخلص ليك بالغلط', fr: 'Si l’administration vous réclame un salaire ou une pension versés par erreur'}
+          plain: {ar: 'كيهم الموظفين والمتقاعدين ديال الدولة والجماعات والمؤسسات العمومية: المبلغ اللي تخلص بلا حق كيترجع بأمر بالمداخيل.', fr: 'Pour les agents et retraités de l’État, des collectivités et des établissements publics : la somme versée à tort se rembourse sur ordre de recette.'}
+          then: {ar: 'بلا زيادة', fr: 'sans majoration'}
+          now: {ar: '6% فالعام', fr: '6 % par an'}
+          now_note: {ar: 'زيادة على التأخير فوق المبلغ', fr: 'majoration de retard, en plus de la somme'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 775}
+          detail: {ar: 'مادة جديدة زادوها النواب: الأوامر بالمداخيل اللي كتسترجع أجور وتعويضات ومعاشات تخلصات بغير حق ما بقاتش كتزاد عليها زيادة 6% ديال مدونة تحصيل الديون العمومية.', fr: 'Un article ajouté par les députés : les ordres de recette qui récupèrent des traitements, indemnités et pensions versés à tort ne portent plus la majoration de 6 % du code de recouvrement des créances publiques.'}
+          cites: [/ma/loi/15-97/art_23]
+        - headline: {ar: 'الكراء اللي كتخلصو ليك شركة ولا مهني', fr: 'Le loyer que vous paie une société ou un professionnel'}
+          plain: {ar: 'إلا كاري لشركة، ولا لمهني كيتحاسب بالنتيجة الحقيقية ولا المبسطة، هو اللي كيقطع الضريبة من الكراء قبل ما يخلصك. تحت مبلغ معين فالعام ما كيقطعش.', fr: 'Si votre locataire est une société, ou un professionnel au résultat net réel ou simplifié, c’est lui qui retient l’impôt sur le loyer avant de vous payer. Sous un montant annuel, il ne retient rien.'}
+          then: '60.000'
+          now: '40.000'
+          unit: {ar: 'درهم فالعام', fr: 'DH par an'}
+          from: '2027-01-01'
+          amended: {by: groups, vote: unanimous, page: 759}
+          detail: {ar: 'ما كانش فالمشروع كما أودع: زادوه تعديلان، واحد ديال فرق الأغلبية وواحد ديال فريق العدالة والتنمية. كيطبق على الكراء المدفوع من فاتح يناير 2027.', fr: 'Absent du projet déposé : deux amendements l’ajoutent, l’un des groupes de la majorité, l’autre du groupe Justice et développement. S’applique aux loyers versés dès le 1er janvier 2027.'}
+          cites: [/ma/code/cgi/art_160-bis]
+        - headline: {ar: 'بيع عقار بثمن صغير', fr: 'Vendre un bien de petite valeur'}
+          plain: {ar: 'اللي باع فالعام عقارات مجموع قيمتها ما كيفوتش مبلغ معين، الربح ديالو معفي من الضريبة على الدخل.', fr: 'Qui vend dans l’année des biens dont la valeur totale ne dépasse pas un montant ne paie pas d’impôt sur le profit.'}
+          then: '200.000'
+          now: '140.000'
+          unit: {ar: 'درهم فالعام', fr: 'DH par an'}
+          from: '2027-01-01'
+          amended: {by: mp, vote: [39, 0, 1], page: 746}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. فريق الحركة الشعبية طلب 280.000 درهم؛ اللجنة كتبات 200.000 بصيغتها. كيطبق على البيوعات من فاتح يناير 2027.', fr: 'Absent du projet déposé. Le groupe du Mouvement populaire demandait 280 000 DH ; la commission a écrit 200 000 dans sa rédaction. S’applique aux cessions dès le 1er janvier 2027.'}
+          cites: [/ma/code/cgi/art_63]
+        - headline: {ar: 'تسجيل عقد قديم تقادمو الواجبات ديالو', fr: 'Enregistrer un acte ancien aux droits prescrits'}
+          plain: {ar: 'عقد تقادمو الواجبات ديال التسجيل ديالو، وطلبو الأطراف ولا واحد منهم يتسجل.', fr: 'Un acte dont les droits d’enregistrement sont prescrits, et que les parties, ou l’une d’elles, demandent à enregistrer.'}
+          then: {ar: 'بلا ذعيرة، داخل الآجال العادية', fr: 'sans pénalité, dans les délais ordinaires'}
+          then_note: {ar: 'محسوبة من نهار طلب التسجيل', fr: 'comptés du jour de la demande'}
+          filed: {ar: 'بلا ذعيرة', fr: 'sans pénalité'}
+          now: {ar: 'بالذعيرة', fr: 'avec pénalités'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 1, 0], page: 755}
+          detail: {ar: 'المشروع كما أودع كيسجلو بالأسعار ديال نهار التسجيل، بلا ذعيرة ولا زيادات. النواب زادو: الواجبات كتتخلص داخل الآجال العادية ديال التسجيل، محسوبة من النهار اللي طلبو فيه الأطراف ولا واحد منهم التسجيل.', fr: 'Le projet déposé l’enregistre aux taux du jour, sans pénalité ni majoration. Les députés ont ajouté : les droits se paient dans les délais ordinaires d’enregistrement, comptés du jour où les parties, ou l’une d’elles, le demandent.'}
+          cites: [/ma/code/cgi/art_128]
+        - headline: {ar: 'عقد بيع عقار: شهادة أداء الضرائب ديالو', fr: 'L’acte de vente d’un bien : l’attestation de ses impôts payés'}
+          plain: {ar: 'اللي كيحرر عقد كينقل ملكية عقار خاصو يكتب فيه معلومات على الضرائب ديال هاد العقار.', fr: 'Qui rédige un acte transférant un bien doit y écrire des informations sur les impôts de ce bien.'}
+          then: {ar: 'حتى مراجع شهادة الأداء', fr: 'aussi les références de l’attestation de paiement'}
+          now: {ar: 'رقم القيد فرسم السكن ورسم الخدمات الجماعية', fr: 'le numéro d’inscription à la taxe d’habitation et de services communaux'}
+          from: '2027-01-01'
+          when: {ar: 'العقود اللي تسجلات من فاتح يناير 2027', fr: 'actes enregistrés dès le 1er janvier 2027'}
+          amended: {by: majority, vote: [39, 0, 1], page: 757}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. العقد، والنموذج ديال الإدارة اللي كيتقدم معاه، خاصهم يذكرو مراجع الشهادة اللي كتسلمها مصالح التحصيل وكتثبت بلي الضرائب والرسوم ديال العقار تخلصات على العام اللي تنقلات فيه الملكية والسنين اللي قبل. العقد اللي ما معاهش النموذج كيترفض تسجيلو؛ وفالتسجيل الإلكتروني، إلا تنسات هاد المراجع، كاينة ذعيرة ديال 1.000 درهم (تعديل ثاني، 39 مع و1 ضد).', fr: 'Absent du projet déposé. L’acte, et le formulaire de l’administration déposé avec lui, doivent donner les références de l’attestation délivrée par les services de recouvrement prouvant que les impôts et taxes du bien sont payés pour l’année du transfert et les années antérieures. Un acte sans le formulaire est refusé à l’enregistrement ; à l’enregistrement électronique, l’oubli de ces références est puni d’une amende de 1 000 DH (un second amendement, 39 pour et 1 contre).'}
+          cites: [/ma/code/cgi/art_139, /ma/code/cgi/art_206-bis]
+        - headline: {ar: 'بيع الأسهم غير المدرجة', fr: 'La cession de titres non cotés'}
+          then: {ar: 'كل بيعة، بالإنترنت', fr: 'chaque cession, en ligne'}
+          filed: {ar: 'كل بيعة', fr: 'chaque cession'}
+          now: {ar: 'مرة فالعام', fr: 'une fois par an'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 750}
+          detail: {ar: 'تصريح على كل بيعة فالشهر اللي من بعدها، مع الأداء. النواب زادو بلي التصريح كيتدار بطريقة إلكترونية.', fr: 'Une déclaration par cession dans le mois qui suit, avec le paiement. Les députés ont ajouté qu’elle se dépose par procédé électronique.'}
+          cites: [/ma/code/cgi/art_84, /ma/code/cgi/art_173]
+    - key: self
+      for: [self]
+      chip: {ar: 'خدام بحسابك', fr: 'À votre compte'}
+      title: {ar: 'إلا كتخدم بحسابك ولا بلا تسجيل', fr: 'Si vous travaillez à votre compte, ou sans être déclaré'}
+      line: {ar: 'عامين باش تتسجل عوض عام، 20% عوض 30% فوق 100.000 مع زبون واحد، والأتعاب من 30% لـ20% حتى 2031', fr: 'Deux ans pour s’inscrire au lieu d’un, 20 % au lieu de 30 % au-delà de 100 000 avec un même client, et les honoraires de 30 % à 20 % d’ici 2031'}
+      rows:
+        - headline: {ar: 'المدة باش يتسجل فالرسم المهني اللي خدام بلا تسجيل', fr: 'Le temps pour s’inscrire à la taxe professionnelle quand on travaille sans être déclaré'}
+          plain: {ar: 'اللي تسجل داخل هاد المدة كيتحاسب غير على اللي ربح من نهار التسجيل، ماشي على اللي فات.', fr: 'Qui s’inscrit dans ce délai n’est imposé que sur ce qu’il gagne depuis son inscription, pas sur le passé.'}
+          then: {ar: 'عامين', fr: 'deux ans'}
+          then_note: {ar: 'من فاتح يناير 2027 حتى 31 دجنبر 2028', fr: 'du 1er janvier 2027 au 31 décembre 2028'}
+          filed: {ar: 'عام واحد', fr: 'un an'}
+          filed_note: {ar: 'حتى 31 دجنبر 2027', fr: 'jusqu’au 31 décembre 2027'}
+          now: {ar: 'ما كايناش', fr: 'aucun'}
+          now_note: {ar: 'اللي تسجل كيتحاسب على اللي فات', fr: 'qui s’inscrit est imposé sur le passé'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 767}
+          detail: {ar: 'إلا خدام بلا ما تكون مسجل: اللي تسجل فالرسم المهني من فاتح يناير 2027 كيتحاسب غير على الدخول والعمليات من نهار التسجيل. المشروع كما أودع كان كيسد الباب فـ31 دجنبر 2027؛ النواب زادو عام.', fr: 'Si vous travaillez sans être inscrit : en vous inscrivant à la taxe professionnelle dès le 1er janvier 2027, vous n’êtes imposé que sur ce que vous gagnez depuis l’inscription. Le projet déposé fermait la fenêtre le 31 décembre 2027 ; les députés ajoutent un an.'}
+          cites: [/ma/code/cgi/art_247]
+        - headline: {ar: 'المقاول الذاتي اللي كيخدم بزاف مع زبون واحد', fr: 'L’auto-entrepreneur qui travaille beaucoup pour un même client'}
+          plain: {ar: 'إلا فات اللي فكتيرتي لزبون واحد فالعام مبلغ معين، الزبون كيقطع الضريبة من الزيادة قبل ما يخلصك.', fr: 'Quand ce que vous facturez à un même client dans l’année dépasse un montant, ce client retient l’impôt sur le surplus avant de vous payer.'}
+          then: {ar: '20% فوق 100.000', fr: '20 % au-delà de 100 000'}
+          now: {ar: '30% فوق 80.000', fr: '30 % au-delà de 80 000'}
+          unit: {ar: 'درهم مع نفس الزبون فالعام', fr: 'DH par an avec un même client'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 0, 1], page: 741}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. كيطبق على المكافآت المدفوعة من فاتح يناير 2027، دقة وحدة بلا تدرج، والاقتطاع كيبرئ من الضريبة. تعريف «الزائد» والتصريح ديالو تبعو نفس الحد ديال 100.000 درهم.', fr: 'Absent du projet déposé. S’applique aux rémunérations versées dès le 1er janvier 2027, d’un coup, et la retenue est libératoire. La définition de « l’excédent » et sa déclaration suivent le même seuil de 100 000 DH.'}
+          cites: [/ma/code/cgi/art_42-bis, /ma/code/cgi/art_45-bis, /ma/code/cgi/art_73]
+        - headline: {ar: 'المساهمة المهنية الموحدة مع زبون واحد', fr: 'La contribution professionnelle unique avec un même client'}
+          plain: {ar: 'نفس القاعدة لأصحاب المساهمة المهنية الموحدة: فوق مبلغ معين فالعام مع نفس الزبون، الزبون كيقطع الضريبة من المنبع.', fr: 'La même règle pour la contribution professionnelle unique : au-delà d’un montant par an avec un même client, ce client retient l’impôt à la source.'}
+          then: {ar: '20% فوق 100.000', fr: '20 % au-delà de 100 000'}
+          now: {ar: '30% فوق 80.000', fr: '30 % au-delà de 80 000'}
+          unit: {ar: 'درهم مع نفس الزبون فالعام', fr: 'DH par an avec un même client'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [29, 11, 0], page: 740}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. الاقتطاع كيدوز من السعر الخاص 30% لـ20% كيبرئ من الضريبة، من فاتح يناير 2027 بلا تدرج.', fr: 'Absent du projet déposé. La retenue passe du taux spécial de 30 % à 20 % libératoire, dès le 1er janvier 2027, sans paliers.'}
+          cites: [/ma/code/cgi/art_40, /ma/code/cgi/art_73]
+        - headline: {ar: 'الأتعاب والعمولات اللي كيتقطع منها 30%', fr: 'Les honoraires et commissions retenus à 30 %'}
+          plain: {ar: 'أتعاب كتخلصها مقاولة لواحد ماشي من المستخدمين ديالها، وأجور الفنانين، وعمولات الممثلين والجوالين التجاريين: الضريبة كتتقطع من المنبع بسعر خاص.', fr: 'Les honoraires qu’une entreprise verse à quelqu’un hors de son personnel, les cachets des artistes, les commissions des représentants : l’impôt est retenu à la source à un taux spécial.'}
+          then: '28%'
+          then_note: {ar: 'فـ2027، ثم 26% و24% و22%، و20% من 2031', fr: 'en 2027, puis 26 %, 24 % et 22 %, et 20 % dès 2031'}
+          now: '30%'
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 768}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. السعر الخاص 30% كيتحذف: 28% فـ2027، 26% فـ2028، 24% فـ2029، 22% فـ2030، و20% من فاتح يناير 2031؛ والاقتطاع كيبرئ من الضريبة من 2027.', fr: 'Absent du projet déposé. Le taux spécial de 30 % disparaît : 28 % en 2027, 26 % en 2028, 24 % en 2029, 22 % en 2030, 20 % dès le 1er janvier 2031 ; la retenue est libératoire dès 2027.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247, /ma/code/cgi/art_58, /ma/code/cgi/art_60, /ma/code/cgi/art_156]
+        - headline: {ar: 'الربح من ألعاب الحظ الأجنبية فالإنترنت', fr: 'Les gains des jeux de hasard étrangers en ligne'}
+          plain: {ar: 'الضريبة على الأرباح من ألعاب الحظ عبر الإنترنت اللي أصلها من الخارج كتتقطع من المنبع بسعر خاص.', fr: 'L’impôt sur les gains des jeux de hasard en ligne d’origine étrangère est retenu à la source à un taux spécial.'}
+          then: '28%'
+          then_note: {ar: 'فـ2027، ثم 26% و24% و22%، و20% من 2031', fr: 'en 2027, puis 26 %, 24 % et 22 %, et 20 % dès 2031'}
+          now: '30%'
+          from: '2027-01-01'
+          amended: {by: majority, vote: [23, 0, 17], page: 760}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. نفس التدرج ديال الأتعاب: 28% فـ2027، 26% فـ2028، 24% فـ2029، 22% فـ2030، و20% من فاتح يناير 2031.', fr: 'Absent du projet déposé. Les mêmes paliers que les honoraires : 28 % en 2027, 26 % en 2028, 24 % en 2029, 22 % en 2030, 20 % dès le 1er janvier 2031.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+    - key: company
+      for: [company]
+      chip: {ar: 'عندك شركة', fr: 'Société'}
+      title: {ar: 'إلا عندك شركة', fr: 'Si vous avez une société'}
+      line: {ar: 'التسبيق على الاستيراد 3% عوض 5%، دفتر المعشرين تحيد، وبيع الرملة بلا إعفاء', fr: 'L’avance à l’importation à 3 % au lieu de 5 %, le cahier des déclarants en douane retiré, la vente de sable sans exonération'}
+      rows:
+        - headline: {ar: 'التسبيق على الاستيراد باش تبيع', fr: 'L’avance sur les importations destinées à la revente'}
+          plain: {ar: 'اللي كيستورد سلع باش يبيعها كيخلص فالديوانة تسبيق على الضريبة ديالو.', fr: 'Qui importe des marchandises pour les revendre paie à la douane une avance sur son impôt.'}
+          then: '3%'
+          then_note: {ar: 'لمدة 36 شهر', fr: 'pendant 36 mois'}
+          filed: '5%'
+          filed_note: {ar: 'لمدة 60 شهر', fr: 'pendant 60 mois'}
+          unit: {ar: 'من القيمة الجمركية', fr: 'de la valeur en douane'}
+          new: true
+          from: '2027-07-01'
+          amended: {by: committee, vote: unanimous, page: 761}
+          detail: {ar: 'على كل استيراد لمدة 36 شهر، ومن بعد غير اللي ما جابش شهادة الإبراء الضريبي عندها أقل من 30 يوم (المشروع كما أودع كان كاتب شهادة ديال ستة شهور)؛ كيتخصم من الضريبة. فريق الحركة الشعبية سحب التعديلات ديالو مقابل تعديل اللجنة.', fr: 'Sur chaque importation pendant 36 mois, puis seulement sans attestation de régularité fiscale de moins de 30 jours (le projet déposé écrivait six mois) ; imputée sur l’impôt. Le groupe du Mouvement populaire a retiré ses amendements en échange de celui de la commission.'}
+          cites: [/ma/code/cgi/art_170, /ma/code/cgi/art_173]
+        - headline: {ar: 'دفتر التحملات ديال المعشرين فالديوانة', fr: 'Le cahier des charges des déclarants en douane'}
+          plain: {ar: 'المشروع كان كيفرض على اللي طلب رخصة المعشر فالديوانة يلتزم بدفتر تحملات كتعدو الإدارة، ويرفق معاه الوثائق اللي كتحددها هي.', fr: 'Le projet obligeait qui demande la licence de déclarant en douane à respecter un cahier des charges rédigé par l’administration, avec les pièces qu’elle fixe.'}
+          then: {ar: 'محذوف', fr: 'supprimé'}
+          then_note: {ar: 'مع البند الانتقالي ديالو', fr: 'avec sa disposition transitoire'}
+          filed: {ar: 'دفتر كتعدو الإدارة', fr: 'rédigé par l’administration'}
+          filed_note: {ar: 'و12 شهر للمعشرين المقبولين قبل فاتح يناير 2027 باش يودعوه', fr: 'et 12 mois aux déclarants agréés avant le 1er janvier 2027 pour le déposer'}
+          now: {ar: 'ما كاينش', fr: 'aucun'}
+          when: {ar: 'ما كيتبدل والو', fr: 'rien ne change'}
+          amended: {by: committee, vote: unanimous, page: 727}
+          detail: {ar: 'خمسة ديال الفرق والمجموعات قدمو تعديلات على هاد القاعدة: فرق الأغلبية، وفريق التجمع الوطني للأحرار، وفريق العدالة والتنمية، وفريق الحركة الشعبية، ومجموعة تحالف اليسار. اللجنة حذفات التغيير ديال الفصل 68 من مدونة الجمارك كامل، والصيغ ديال الفرق ما دخلاتش؛ قواعد الرخصة كتبقى كيف هي.', fr: 'Cinq groupes avaient déposé des amendements sur cette règle : les groupes de la majorité, le groupe du Rassemblement national des indépendants, le groupe Justice et développement, le groupe du Mouvement populaire et le groupement de l’Alliance de la gauche. La commission a supprimé tout le changement de l’article 68 du code des douanes, sans reprendre les rédactions des groupes ; les règles de la licence restent telles quelles.'}
+          cites: [/ma/projet-loi/60-26/art_3]
+        - headline: {ar: 'إعفاء بيع الرملة من الضريبة على القيمة المضافة', fr: 'L’exonération de TVA des ventes de sable'}
+          then: {ar: 'محذوف', fr: 'supprimée'}
+          filed: {ar: 'معفي بلا حق فالخصم', fr: 'exonérées sans droit à déduction'}
+          now: {ar: 'ما كاينش', fr: 'aucune'}
+          when: {ar: 'ما كيتبدل والو', fr: 'rien ne change'}
+          amended: {by: groups, vote: unanimous, page: 751}
+          detail: {ar: 'المشروع كما أودع كان كيزيد بيع الرملة للبيوعات المعفية من الضريبة على القيمة المضافة بلا حق فالخصم. أربعة ديال الفرق والمجموعات طلبو يتحيد: فرق الأغلبية، وفريق العدالة والتنمية، وفريق الحركة الشعبية، ومجموعة تحالف اليسار. بيع الرملة كيبقى تحت قواعد القيمة المضافة اللي خدامة دابا.', fr: 'Le projet déposé ajoutait les ventes de sable aux ventes exonérées de TVA sans droit à déduction. Quatre groupes ont demandé de le retirer : les groupes de la majorité, le groupe Justice et développement, le groupe du Mouvement populaire et le groupement de l’Alliance de la gauche. Les ventes de sable restent aux règles de TVA en vigueur.'}
+          cites: [/ma/code/cgi/art_91]
+        - headline: {ar: 'شهادة الوضعية الجبائية فالحجز ديال القيمة المضافة', fr: 'L’attestation de régularité fiscale dans la retenue de TVA'}
+          plain: {ar: 'فالحجز من المنبع ديال القيمة المضافة على موردي سلع التجهيز والأشغال، القاعدة كتعتمد على شهادة كتسلمها إدارة الضرائب.', fr: 'Dans la retenue à la source de TVA sur les fournisseurs de biens d’équipement et de travaux, la règle s’appuie sur une attestation que l’administration fiscale délivre.'}
+          then: {ar: 'أقل من 30 يوم', fr: 'moins de 30 jours'}
+          now: {ar: '6 شهور', fr: '6 mois'}
+          unit: {ar: 'عمر الشهادة', fr: 'âge de l’attestation'}
+          from: '2027-01-01'
+          when: {ar: 'الشهادات اللي تسلمات من فاتح يناير 2027', fr: 'attestations délivrées dès le 1er janvier 2027'}
+          amended: {by: majority, vote: [23, 0, 17], page: 753}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. اللجنة قبلاتو بصيغة الحكومة: الشهادة خاصها تكون تسلمات من أقل من 30 يوم عوض 6 شهور.', fr: 'Absent du projet déposé. La commission l’a accepté dans la rédaction du gouvernement : l’attestation doit dater de moins de 30 jours au lieu de 6 mois.'}
+          cites: [/ma/code/cgi/art_117]
+        - headline: {ar: 'القيمة المضافة على شراء النفايات الصناعية والمعادن المستعملة', fr: 'La TVA sur les achats de déchets industriels et de métaux usagés'}
+          plain: {ar: 'اللي شرى هاد المواد كيصرح وكيخلص بنفسو القيمة المضافة ديالها.', fr: 'Qui achète ces matières déclare et paie lui-même leur TVA.'}
+          then: {ar: 'حتى التجار اللي كيعطيو التحويل بالمناولة', fr: 'aussi les négociants qui font transformer en sous-traitance'}
+          now: {ar: 'غير معامل التحويل', fr: 'les seules usines de transformation'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 0, 1], page: 754}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. التجار اللي كيعطيو لمقاولات أخرى، تحت المسؤولية ديالهم وفإطار المناولة، تحويل النفايات الصناعية الجديدة والمعادن والمواد الأخرى المستعملة، خاصهم يصرحو ويخلصو القيمة المضافة على هاد المشتريات بنفس الشروط ديال معامل التحويل.', fr: 'Absent du projet déposé. Les négociants qui confient à d’autres entreprises, sous leur responsabilité et en sous-traitance, la transformation des déchets industriels neufs, métaux et autres matières usagées doivent déclarer et payer la TVA sur ces achats aux mêmes conditions que les usines de transformation.'}
+          cites: [/ma/code/cgi/art_125-quater]
+        - headline: {ar: 'عقود تخفيض رأسمال الشركات', fr: 'Les actes de réduction du capital des sociétés'}
+          then: {ar: 'معفية من واجبات التسجيل', fr: 'exonérés des droits d’enregistrement'}
+          new: true
+          from: '2027-01-01'
+          when: {ar: 'العقود اللي تسجلات من فاتح يناير 2027', fr: 'actes enregistrés dès le 1er janvier 2027'}
+          amended: {by: majority, vote: [32, 7, 1], page: 756}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. إعفاء جديد لعقود التخفيض من رأسمال الشركات ولا المجموعات ذات النفع الاقتصادي، إلا كان التخفيض بسبب الخسائر ولا كيترجعو بيه فلوس للشركاء حسب المساهمة ديال كل واحد.', fr: 'Absent du projet déposé. Une exonération nouvelle pour les actes réduisant le capital des sociétés ou des groupements d’intérêt économique, que la réduction vienne de pertes ou rende de l’argent aux associés selon la part de chacun.'}
+          cites: [/ma/code/cgi/art_129]
+        - headline: {ar: 'استرداد القيمة المضافة اللي تحجزات من المنبع', fr: 'La restitution de la TVA retenue à la source'}
+          plain: {ar: 'المورد اللي تقطعات ليه القيمة المضافة من المنبع وما قدرش يخصمها كيطلب يرجعوها ليه.', fr: 'Le fournisseur dont la TVA a été retenue à la source et qu’il n’a pas pu imputer en demande la restitution.'}
+          then: {ar: 'بعد الشهر', fr: 'après le mois'}
+          then_note: {ar: 'للي كيصرح كل شهر', fr: 'pour qui déclare chaque mois'}
+          filed: {ar: 'بعد ربع العام', fr: 'après le trimestre'}
+          new: true
+          from: '2027-01-01'
+          amended: {by: majority, vote: [39, 0, 1], page: 766}
+          detail: {ar: 'الطلب كيتودع بعد ما يسالي الشهر ولا ربع العام اللي تعاين فيه الفائض، عوض ما يتسنى ربع العام كما فالمشروع كما أودع.', fr: 'La demande se dépose après la fin du mois ou du trimestre où l’excédent a été constaté, au lieu d’attendre la fin du trimestre comme dans le projet déposé.'}
+          cites: [/ma/code/cgi/art_240]
+    - key: buy
+      chip: {ar: 'كتشري', fr: 'Vous achetez'}
+      title: {ar: 'إلا كتشري: اللحم، الدخان، الطوموبيل', fr: 'Si vous achetez : viande, tabac, voiture'}
+      line: {ar: 'استيراد المواشي بإجراءات كتحددها الإدارة، السيكار والسائل الإلكتروني كيطلعو، والطوموبيل فوق مليون 25%', fr: 'Le bétail importé selon des procédures que l’administration fixe, cigares et liquides en hausse, la voiture au-delà d’un million à 25 %'}
+      rows:
+        - headline: {ar: 'استيراد المواشي ولحومها', fr: 'L’importation du bétail et de ses viandes'}
+          then: {ar: 'معفي', fr: 'exonérée'}
+          then_note: {ar: 'بإجراءات مؤطرة كتحددها الإدارة', fr: 'selon des procédures encadrées que l’administration fixe'}
+          now: {ar: 'معلق مؤقتا', fr: 'suspendu'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: [22, 17, 0], page: 727}
+          detail: {ar: 'المشروع كيزيد البقر والغنم والمعز والجمال الحية، واللحوم والأحشاء ديالها طرية ولا مبردة ولا مجمدة، للاستيرادات المعفية من رسوم الديوانة والضرائب الأخرى. النواب خلاو الإعفاء وزادو بلي هاد الاستيراد كيدوز «وفق إجراءات مؤطرة تحددها الإدارة لبلوغ الأهداف المتوخاة»؛ ما تبدل حتى سعر ولا رقم. ثلاثة ديال الاقتراحات اللي كانت باغية تحيدو ولا تحدو ما تقبلوش (تحت).', fr: 'Le projet ajoute les bovins, ovins, caprins et camelins vivants, et leurs viandes et abats frais, réfrigérés ou congelés, aux importations exonérées des droits de douane et autres taxes. Les députés gardent l’exonération et ajoutent que ces importations se font « selon des procédures encadrées que l’administration fixe pour atteindre les objectifs visés » ; aucun taux ni chiffre ne change. Trois propositions qui la supprimaient ou la limitaient n’ont pas été retenues (plus bas).'}
+          cites: [/ma/projet-loi/60-26/art_3]
+        - headline: {ar: 'السيكار الكبير والصغير', fr: 'Les cigares et cigarillos'}
+          then: '1.125'
+          then_note: {ar: 'و50% من ثمن البيع', fr: 'et 50 % du prix de vente'}
+          now: '750'
+          now_note: {ar: 'و35% من ثمن البيع', fr: 'et 35 % du prix de vente'}
+          unit: {ar: 'درهم لكل 1.000 وحدة', fr: 'DH les 1 000 unités'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 733}
+          detail: {ar: 'ما كانش فالمشروع كما أودع، اللي كان كيطلع غير السجائر. المبلغ الأدنى كيولي 2.250 درهم عوض 1.500.', fr: 'Absent du projet déposé, qui ne relevait que les cigarettes. Le minimum de perception passe à 2 250 DH au lieu de 1 500.'}
+          cites: [/ma/projet-loi/60-26/art_5]
+        - headline: {ar: 'السائل ديال السيجارة الإلكترونية', fr: 'Le liquide de cigarette électronique'}
+          then: {ar: '10 و20', fr: '10 et 20'}
+          then_note: {ar: '10 بلا نيكوتين و20 بالنيكوتين', fr: '10 sans nicotine, 20 avec'}
+          now: {ar: '5 و10', fr: '5 et 10'}
+          now_note: {ar: '5 بلا نيكوتين و10 بالنيكوتين', fr: '5 sans nicotine, 10 avec'}
+          unit: {ar: 'درهم لكل 10 ملل', fr: 'DH les 10 ml'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 734}
+          detail: {ar: 'ما كانش فالمشروع كما أودع: المشروع كان مبدل غير الضريبة على السيجارة الإلكترونية نفسها.', fr: 'Absent du projet déposé, qui ne changeait que la taxe sur la cigarette électronique elle-même.'}
+          cites: [/ma/projet-loi/60-26/art_5]
+        - headline: {ar: 'التمبر ديال الطوموبيل الغالية', fr: 'Le timbre de la voiture chère'}
+          then: '25%'
+          filed: '24%'
+          now: '20%'
+          unit: {ar: 'فوق مليون درهم', fr: 'au-delà d’un million'}
+          from: '2027-01-01'
+          amended: {by: majority, vote: unanimous, page: 770}
+          detail: {ar: 'عند أول تسجيل: 5% من 400.000 حتى 600.000 (بحال اليوم؛ المشروع كما أودع كان كاتب 6%)، و12% حتى 800.000، و18% حتى مليون، و25% فوق (اليوم 5 و10 و15 و20%).', fr: 'À la première immatriculation : 5 % de 400 000 à 600 000 (comme aujourd’hui ; le projet déposé écrivait 6 %), 12 % jusqu’à 800 000, 18 % jusqu’à un million, 25 % au-delà (5, 10, 15 et 20 % aujourd’hui).'}
+          cites: [/ma/code/cgi/art_252]
+    - key: state
+      chip: {ar: 'ميزانية الدولة', fr: 'Budget de l’État'}
+      title: {ar: 'ميزانية الدولة: المناصب والحسابات والتوازن', fr: 'Le budget de l’État : postes, comptes, équilibre'}
+      line: {ar: '49.654 منصب مالي عوض 34.454، حساب جديد للنظام العام، و1,6 مليار درهم زايدة من الضريبة على الشركات', fr: '49 654 postes budgétaires au lieu de 34 454, un nouveau compte pour l’ordre public, et 1,6 milliard de DH de plus d’impôt sur les sociétés'}
+      rows:
+        - headline: {ar: 'المناصب المالية فـ2027', fr: 'Les postes budgétaires de 2027'}
+          then: '49.654'
+          filed: '34.454'
+          unit: {ar: 'منصب مالي', fr: 'postes budgétaires'}
+          when: {ar: 'السنة المالية 2027', fr: 'année budgétaire 2027'}
+          amended: {by: government, vote: [39, 0, 1], page: 776}
+          detail: {ar: 'وزارة الداخلية من 14.200 لـ29.200 منصب (+15.000)، ووزارة التشغيل والحوار الاجتماعي من 20 لـ220 (+200، باش توظف مفتشي الشغل). الـ500 منصب ديال البند الثاني ما تبدلوش.', fr: 'Le ministère de l’Intérieur passe de 14 200 à 29 200 postes (+15 000), celui de l’Emploi et du Dialogue social de 20 à 220 (+200, pour recruter des inspecteurs du travail). Les 500 postes du point 2 ne changent pas.'}
+          cites: [/ma/projet-loi/60-26/art_21]
+        - headline: {ar: 'حساب خصوصي جديد للحفاظ على النظام العام', fr: 'Un nouveau compte spécial pour l’ordre public'}
+          plain: {ar: 'حساب خصوصي ديال الخزينة كيتمول من الميزانية العامة، ووزير الداخلية هو الآمر بقبض الموارد ديالو وصرف النفقات ديالو.', fr: 'Un compte spécial du Trésor alimenté par le budget général, dont le ministre de l’Intérieur ordonne les recettes et les dépenses.'}
+          then: {ar: 'حساب جديد', fr: 'compte nouveau'}
+          new: true
+          from: '2027-01-01'
+          amended: {by: government, vote: unanimous, page: 775}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. كيخلص مشاريع البنيات التحتية (حتى شراء الأراضي)، والعربات، وتجهيزات الاتصال، والمعدات الأخرى ديال الحفاظ على النظام العام. فجدول الموارد ديال الحسابات الخصوصية كيبان «للتذكرة»، بلا مبلغ.', fr: 'Absent du projet déposé. Il paie les projets d’infrastructure (achat de terrains compris), les véhicules, le matériel de communication et les autres équipements du maintien de l’ordre public. Le tableau des ressources des comptes spéciaux l’inscrit « pour mémoire », sans montant.'}
+        - headline: {ar: 'شحال يقدر يلتزم بيه وزير الداخلية مسبقا من هاد الحساب', fr: 'Ce que le ministre de l’Intérieur peut engager d’avance sur ce compte'}
+          then: '11,5'
+          unit: {ar: 'مليار درهم من اعتمادات 2028', fr: 'milliards de DH des crédits de 2028'}
+          new: true
+          when: {ar: 'خلال 2027', fr: 'pendant 2027'}
+          amended: {by: government, vote: [39, 0, 1], page: 777}
+          detail: {ar: 'ما كانش فالمشروع كما أودع. وزير الداخلية يقدر يلتزم مسبقا خلال 2027 بنفقات حتى 11.500.000.000 درهم من الاعتمادات اللي غادي تترصد ليه فـ2028، على الحساب الجديد.', fr: 'Absent du projet déposé. Le ministre de l’Intérieur peut engager d’avance, pendant 2027, jusqu’à 11 500 000 000 DH de dépenses sur les crédits qui lui seront ouverts en 2028, sur le nouveau compte.'}
+        - headline: {ar: 'حساب معدات القوات المسلحة الملكية', fr: 'Le compte d’équipement des Forces armées royales'}
+          then: '210,5'
+          filed: '190,5'
+          unit: {ar: 'مليار درهم من اعتمادات 2028', fr: 'milliards de DH des crédits de 2028'}
+          when: {ar: 'خلال 2027', fr: 'pendant 2027'}
+          amended: {by: government, vote: unanimous, page: 777}
+          detail: {ar: 'المبلغ اللي يقدر يلتزم بيه مسبقا خلال 2027 الوزير المنتدب المكلف بإدارة الدفاع الوطني زاد 20 مليار درهم. والحساب تبدلات سميتو لـ«اقتناء وإصلاح معدات القوات المسلحة الملكية ودعم تطوير الصناعة والبنيات التحتية العسكرية»، وولا يقدر يخلص التشييد والتهيئة وشراء المعدات ومواد البناء ديال البنيات التحتية العسكرية.', fr: 'Ce que le ministre délégué chargé de l’administration de la défense nationale peut engager d’avance pendant 2027 augmente de 20 milliards de DH. Le compte prend le nom « Acquisition et réparation des matériels des Forces armées royales et soutien au développement de l’industrie et des infrastructures militaires », et peut payer la construction, l’aménagement, l’achat de matériel et de matériaux de construction des infrastructures militaires.'}
+        - headline: {ar: 'المداخيل المتوقعة من الضريبة على الشركات', fr: 'Les recettes prévues de l’impôt sur les sociétés'}
+          then: '127.608'
+          filed: '126.008'
+          unit: {ar: 'مليون درهم', fr: 'millions de DH'}
+          when: {ar: 'السنة المالية 2027', fr: 'année budgétaire 2027'}
+          amended: {by: government, vote: unanimous, page: 778}
+          detail: {ar: 'زيادة 1.600 مليون درهم فالتقديرات. المداخيل العادية والنفقات العادية ديال الميزانية العامة زادو بنفس المبلغ، والرصيد العادي ما تبدلش: نفقات الموظفين +650 مليون درهم، ونفقات المعدات والنفقات المختلفة +950 مليون. الفلوس كتمشي لـ950 مليون درهم زايدة للمجموعات الصحية الترابية، و50 مليون لمناصب مفتشي الشغل الجداد، ولمناصب الداخلية الزايدة.', fr: 'Une hausse de 1 600 millions de DH des prévisions. Les recettes et les dépenses ordinaires du budget général augmentent d’autant, et le solde ordinaire ne change pas : dépenses de personnel +650 millions de DH, matériel et dépenses diverses +950 millions. L’argent va à 950 millions de DH de plus pour les groupements sanitaires territoriaux, 50 millions pour les nouveaux postes d’inspecteurs du travail, et aux postes supplémentaires de l’Intérieur.'}
+          cites: [/ma/projet-loi/60-26/art_38]
+        - headline: {ar: 'صندوق تفعيل الطابع الرسمي للأمازيغية', fr: 'Le fonds pour le caractère officiel de l’amazighe'}
+          then: {ar: 'تطبيق القانون التنظيمي 26.16', fr: 'appliquer la loi organique 26.16'}
+          then_note: {ar: 'فالتعليم وفمجالات الحياة العامة ذات الأولوية', fr: 'dans l’enseignement et les domaines prioritaires de la vie publique'}
+          filed: {ar: 'تفعيل الطابع الرسمي للأمازيغية', fr: 'mettre en œuvre le caractère officiel de l’amazighe'}
+          filed_note: {ar: 'وإدماجها فمجالات الحياة العامة ذات الأولوية', fr: 'et son intégration dans les domaines prioritaires de la vie publique'}
+          from: '2027-01-01'
+          amended: {by: mp, vote: unanimous, page: 775}
+          detail: {ar: 'الحساب جديد فالمشروع. النواب كتبو الهدف ديالو من جديد: كيذكر القانون التنظيمي 26.16 والتعليم، وكيقول بلي الصندوق كيوفر الموارد المالية باش تتطبق أحكامو. ما تبدل حتى مبلغ ولا ضريبة.', fr: 'Le compte est nouveau dans le projet. Les députés ont réécrit son objet : il nomme la loi organique 26.16 et l’enseignement, et dit que le fonds apporte les moyens financiers d’appliquer ses dispositions. Aucun montant ni impôt ne change.'}
+          cites: [/ma/projet-loi/60-26/art_13]
+    - key: refused
+      chip: {ar: 'ما تقبلش', fr: 'Non retenu'}
+      title: {ar: 'شنو ما قبلاتش اللجنة', fr: 'Ce que la commission n’a pas retenu'}
+      line: {ar: '720 درهم على كل واحد فتكلفك، مصاريف المدرسة، 85% على المعاش، و40% فوق مليون: ما تقبلوش', fr: '720 DH par personne à charge, les frais d’école, 85 % sur la pension, 40 % au-delà d’un million : non retenus'}
+      rows:
+        - headline: {ar: 'الخصم على كل واحد فتكلفك', fr: 'La réduction par personne à charge'}
+          plain: {ar: 'مبلغ كيتنقص من الضريبة ديال العام على كل شخص فتكلفك.', fr: 'Une somme retirée de l’impôt de l’année pour chaque personne à votre charge.'}
+          then: '720'
+          then_note: {ar: 'والسقف 4.320', fr: 'plafond 4 320'}
+          now: '600'
+          now_note: {ar: 'والسقف 3.600', fr: 'plafond 3 600'}
+          unit: {ar: 'درهم فالعام على كل واحد', fr: 'DH par an et par personne'}
+          refused: {by: pjd, vote: [6, 23, 11], page: 228}
+          detail: {ar: 'الاقتراح كان كيعطي حتى 2.000 درهم على كل شخص فوضعية إعاقة فالأسرة.', fr: 'La proposition donnait aussi 2 000 DH pour chaque personne handicapée du foyer.'}
+          cites: [/ma/code/cgi/art_74]
+        - headline: {ar: 'خصم على الإعاقة', fr: 'Une déduction pour handicap'}
+          then: '3.000'
+          unit: {ar: 'درهم فالعام', fr: 'DH par an'}
+          new: true
+          refused: {by: majority, withdrawn: true, page: 56}
+          detail: {ar: 'خصم زايد إلا كان الملزم ولا شي واحد فتكلفو فوضعية إعاقة.', fr: 'Une déduction en plus lorsque le contribuable ou une personne à sa charge est handicapé.'}
+          cites: [/ma/code/cgi/art_74]
+        - headline: {ar: 'مصاريف المدرسة الخاصة', fr: 'Les frais d’école privée'}
+          then: '6.000'
+          unit: {ar: 'درهم فالعام على كل ولد', fr: 'DH par an et par enfant'}
+          new: true
+          refused: {by: pjd, vote: [6, 23, 14], page: 205}
+          detail: {ar: 'خصم من الدخل الخاضع ديال واجبات التسجيل والتمدرس اللي كتخلص لمؤسسات التعليم الأولي والابتدائي والثانوي الخاصة المرخص ليها، على الولاد اللي فتكلفك. اليوم ما كاين حتى خصم بحال هادا فالمادة 28.', fr: 'Une déduction du revenu imposable des frais d’inscription et de scolarité payés aux écoles privées autorisées, du préscolaire au secondaire, pour les enfants à charge. Aucune déduction de ce genre n’existe aujourd’hui à l’article 28.'}
+          cites: [/ma/code/cgi/art_28]
+        - headline: {ar: 'الخصم الجزافي على المعاش', fr: 'L’abattement forfaitaire sur la pension'}
+          plain: {ar: 'جزء من المعاش الخام اللي كيتخلص عليه كيتنقص قبل ما تتحسب الضريبة.', fr: 'Une part de la pension brute imposable se retire avant le calcul de l’impôt.'}
+          then: '85%'
+          then_note: {ar: 'حتى 216.000 درهم فالعام', fr: 'jusqu’à 216 000 DH par an'}
+          now: '70%'
+          now_note: {ar: 'حتى 168.000 درهم فالعام', fr: 'jusqu’à 168 000 DH par an'}
+          refused: {by: pjd, vote: [6, 23, 11], page: 225}
+          detail: {ar: 'السقف المقترح هو 18.000 درهم فالشهر. 70% و168.000 درهم هوما اللي خدامين اليوم، والمشروع ما مسهمش.', fr: 'Le plafond proposé fait 18 000 DH par mois. 70 % et 168 000 DH sont les chiffres en vigueur, que le projet ne touche pas.'}
+          cites: [/ma/code/cgi/art_60]
+        - headline: {ar: 'السقف ديال المصاريف المهنية', fr: 'Le plafond des frais professionnels'}
+          then: '45.000'
+          now: '35.000'
+          unit: {ar: 'درهم فالعام', fr: 'DH par an'}
+          refused: {by: pjd, vote: [6, 23, 11], page: 223}
+          detail: {ar: 'المشروع كيطلع المصاريف المهنية لـ45% لكل الأجراء وكيخلي السقف فـ35.000 درهم فالعام؛ الاقتراح كان باغي يطلع السقف لـ45.000.', fr: 'Le projet porte les frais professionnels à 45 % pour tous les salariés et garde le plafond à 35 000 DH par an ; la proposition le portait à 45 000.'}
+          cites: [/ma/code/cgi/art_59]
+        - headline: {ar: 'فوائد قرض السكن الرئيسي الأول', fr: 'Les intérêts du prêt pour une première résidence principale'}
+          plain: {ar: 'اللي شرى ولا بنى سكن ديالو بقرض كينقص الفوائد (ولا هامش المرابحة والإجارة) من الدخل الخاضع، حتى لنسبة منو.', fr: 'Qui achète ou construit son logement à crédit retire les intérêts (ou la marge de mourabaha et d’ijara) de son revenu imposable, jusqu’à une part de celui-ci.'}
+          then: '15%'
+          then_note: {ar: 'فالعشر سنين الأولى ديال القرض', fr: 'les 10 premières années du prêt'}
+          now: '10%'
+          unit: {ar: 'من الدخل الإجمالي الخاضع', fr: 'du revenu global imposable'}
+          refused: {by: pjd, vote: [6, 23, 14], page: 203}
+          detail: {ar: 'لأول شراء ديال سكن رئيسي ثمنو ما كيفوتش 1.000.000 درهم بلا القيمة المضافة. والخصم كان غادي يبقى طول مدة القرض ما دام السكن رئيسي.', fr: 'Pour le premier achat d’une résidence principale de 1 000 000 DH au plus hors TVA. La déduction restait pour toute la durée du prêt tant que le logement reste la résidence principale.'}
+          cites: [/ma/code/cgi/art_28]
+        - headline: {ar: 'الشريحة المعفية من الضريبة على الدخل', fr: 'La tranche exonérée de l’impôt sur le revenu'}
+          then: '80.000'
+          filed: '60.000'
+          now: '40.000'
+          unit: {ar: 'درهم فالعام', fr: 'DH par an'}
+          refused: {by: mp, withdrawn: true, page: 342}
+          detail: {ar: 'الشريحة ديال 10% كانت غادي تبدا من 80.001 درهم؛ 20% و30% كيبقاو كيف فالمشروع.', fr: 'La tranche à 10 % aurait commencé à 80 001 DH ; 20 % et 30 % restaient comme dans le projet.'}
+          cites: [/ma/code/cgi/art_73]
+        - headline: {ar: 'المشغل يدوز للأجير الربح ديال الجدول الجديد', fr: 'L’employeur reverse au salarié le gain du nouveau barème'}
+          then: {ar: 'واجب على المشغل', fr: 'obligatoire pour l’employeur'}
+          new: true
+          refused: {by: majority, withdrawn: true, page: 57}
+          detail: {ar: 'الاقتراح كان كيفرض على المشغلين يدوزو للأجراء الربح اللي كيجي من الجدول الجديد، ويراجعو للفوق العقود اللي فيها الأجر صافي.', fr: 'La proposition obligeait les employeurs à faire passer aux salariés le gain du nouveau barème, et à réviser à la hausse les contrats en salaire net.'}
+        - headline: {ar: 'سعر 40% على الدخل الكبير', fr: 'Un taux de 40 % sur les gros revenus'}
+          then: '40%'
+          then_note: {ar: 'على اللي فوق 1.000.000 درهم فالعام', fr: 'au-delà de 1 000 000 DH par an'}
+          filed: '30%'
+          filed_note: {ar: 'أعلى سعر فالمشروع من 2031، فوق 500.000', fr: 'le taux le plus haut du projet dès 2031, au-delà de 500 000'}
+          now: '37%'
+          now_note: {ar: 'على اللي فوق 180.000 درهم صافية فالعام', fr: 'au-delà de 180 000 DH nets par an'}
+          refused: {by: left, vote: [1, 23, 16], page: 468}
+          detail: {ar: 'كل الشرائح والأسعار ديال المشروع كانو غادي يبقاو حتى 1.000.000 درهم، وسعر 40% كيتزاد فوقها، فالجدول ديال 2031 وفكل جدول من 2027 حتى 2030.', fr: 'Toutes les tranches et tous les taux du projet restaient jusqu’à 1 000 000 DH, avec 40 % au-delà, dans le barème de 2031 et dans chaque barème de 2027 à 2030.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+        - headline: {ar: 'الإعفاء ديال استيراد المواشي ولحومها', fr: 'L’exonération des importations de bétail et de viande'}
+          then: {ar: 'حذف ولا حد بعام ولا عامين', fr: 'supprimée, ou limitée à un an ou deux'}
+          filed: {ar: 'معفي بلا حد', fr: 'exonérée sans limite'}
+          now: {ar: 'معلق مؤقتا', fr: 'suspendu'}
+          refused: {by: groups, page: 155}
+          detail: {ar: 'ثلاثة ديال الاقتراحات: فريق العدالة والتنمية بغا يحذف الإعفاء (7 مع، 23 ضد، 9 ممتنعين)؛ فريق الحركة الشعبية بغا يحدو فالاستيراد من فاتح يناير 2027 حتى 31 دجنبر 2028، فحدود كميات كيحددها نص تنظيمي مسبقا (10 مع، 22 ضد، 7 ممتنعين)؛ ومجموعة تحالف اليسار بغات تحدو فـ2027 بوحدها، من رسم الاستيراد ومن القيمة المضافة عند الاستيراد (7 مع، 22 ضد، 11 ممتنعين).', fr: 'Trois propositions : le groupe Justice et développement supprimait l’exonération (7 pour, 23 contre, 9 abstentions) ; le groupe du Mouvement populaire la limitait aux importations du 1er janvier 2027 au 31 décembre 2028, dans des quantités fixées à l’avance par un texte réglementaire (10 pour, 22 contre, 7 abstentions) ; le groupement de l’Alliance de la gauche la limitait à 2027, pour le droit d’importation et la TVA à l’importation (7 pour, 22 contre, 11 abstentions).'}
+          cites: [/ma/projet-loi/60-26/art_3]
+        - headline: {ar: 'شركات الاتصالات والإسمنت', fr: 'Les opérateurs télécoms et les cimentiers'}
+          then: '40%'
+          now: '35%'
+          now_note: {ar: 'على ربح صافي من 100 مليون درهم فما فوق', fr: 'sur un bénéfice net de 100 millions de DH ou plus'}
+          refused: {by: pjd, vote: [10, 23, 7], page: 199}
+          detail: {ar: 'الاقتراح كان كيدخل الشركات الكبرى ديال خدمات الاتصالات وإنتاج الإسمنت فأعلى سعر ديال الضريبة على الشركات، 40%، اللي كيطبقو المشروع على مستوردي وموزعي المحروقات. فرق الأغلبية حتى هي قدمات اقتراح ديال 40% على المحروقات والإسمنت والاتصالات اللي ربحها الصافي 100 مليون درهم فما فوق، وسحباتو.', fr: 'La proposition plaçait les grands opérateurs télécoms et les cimentiers au taux le plus haut de l’impôt sur les sociétés, 40 %, que le projet applique aux importateurs et distributeurs de carburants. Les groupes de la majorité avaient aussi déposé un taux de 40 % pour les carburants, le ciment et les télécoms au bénéfice net de 100 millions de DH ou plus, puis l’ont retiré.'}
+          cites: [/ma/code/cgi/art_19]
+        - headline: {ar: 'إعفاء القطاني والطماطم المصبرة والضو ديال الدار من القيمة المضافة', fr: 'Exonérer de TVA les légumineuses, la tomate en conserve et l’électricité du foyer'}
+          then: {ar: 'معفية', fr: 'exonérées'}
+          new: true
+          refused: {by: pjd, withdrawn: true, page: 235}
+          detail: {ar: 'ثلاثة ديال الاقتراحات: القطاني الجافة (العدس، الحمص، الفول، الفاصوليا)، ومصبرات الطماطم ومركزاتها، وأول 150 كيلوواط ساعة فالشهر ديال الضو ديال الدار على كل عداد، والباقي كيبقى خاضع للسعر ديال المادة 99.', fr: 'Trois propositions : les légumineuses sèches (lentilles, pois chiches, fèves, haricots), les conserves et concentrés de tomate, et les 150 premiers kWh par mois d’électricité domestique par compteur, le reste demeurant au taux de l’article 99.'}
+          cites: [/ma/code/cgi/art_91]
+        - headline: {ar: 'إعفاء السخانات والأجهزة اللي كتقتصد الما من القيمة المضافة', fr: 'Exonérer de TVA les chauffe-eau et les appareils économes en eau'}
+          then: {ar: 'معفية', fr: 'exonérés'}
+          new: true
+          refused: {by: mp, withdrawn: true, page: 347}
+          detail: {ar: 'السخانات والمضخات الحرارية الكهربائية، والتجهيزات المنزلية اللي كتقتصد الما: رؤوس الدوش الذكية، والصنابير اللي كتحس بالحرارة، والغسالات الكهربائية الاقتصادية.', fr: 'Les chauffe-eau et pompes à chaleur électriques, et les équipements ménagers économes en eau : pommeaux de douche intelligents, robinets thermostatiques, lave-linge économes.'}
+          cites: [/ma/code/cgi/art_91]
+        - headline: {ar: 'ثمن المحروقات فالمحطة', fr: 'Le prix du carburant à la pompe'}
+          then: '2'
+          unit: {ar: 'درهم أقل فاللتر', fr: 'DH de moins par litre'}
+          new: true
+          refused: {by: left, vote: [1, 23, 16], page: 448}
+          detail: {ar: 'الاقتراح جا فالسطر ديال 40% على مستوردي وموزعي المحروقات اللي ربحهم الصافي 100 مليون درهم فما فوق: يتحيد الدعم الموجه للنقل، وينقص الثمن فمحطات التوزيع بـ2 دراهم للتر.', fr: 'La proposition venait dans la ligne des 40 % sur les importateurs et distributeurs de carburants au bénéfice net de 100 millions de DH ou plus : supprimer le soutien au transport et baisser le prix de 2 DH le litre dans les stations.'}
+          cites: [/ma/code/cgi/art_19]
+  next: [pages/bill-2027, pages/bill-claims, reform/lf-2027]
+
+- key: bill-claims
+  bill: /ma/projet-loi/60-26
+  # «قالو | مكتوب» (V13): each claim with its neutral marker (`mark`: as, if, later, not, other; its words) and the text's
+  # figure first (`figure`); never «كذب» or «خطأ». `repeated`: the press items (pages/bill-press) that printed it (Y9).
+  # A draft, never `open`: it weighs a named minister's figures against the text, so it waits until a person has read
+  # each claim against its page (the review desk records that check).
+  layout: claims
+  reform: lf-2027
+  press: bill-press
+  title: {ar: 'شنو قالو، وشنو مكتوب', fr: 'Ce qui a été dit, et ce qui est écrit'}
+  lead:
+    ar: 'الأرقام اللي كتسمع هاد الأيام، كل وحدة بالصفحة اللي قالتها، وحدها المادة والحساب ديالنا بالفرضيات ديالو. حسب النص، ماشي حسب الكلام.'
+    fr: 'Les chiffres qu’on entend ces jours-ci, chacun avec la page qui le dit, à côté de l’article et de notre calcul avec ses hypothèses. Selon le texte, pas selon les mots.'
+  sections:
+    - title: {ar: '«الأجور الصافية اللي تحت 10.000 درهم ما غاديش تخلص الضريبة على الدخل»', fr: '« Les salaires nets sous 10 000 DH seront exonérés »'}
+      repeated: [le360-1024, hespress-1025, madar-1023]
+      mark: if
+      mark_words: {ar: 'بشرط', fr: 'Sous condition'}
+      figure: {ar: '9.416 درهم صافي، بثلاثة فتكلفك', fr: '9 416 DH nets, avec trois personnes à charge'}
+      source: {name: {ar: 'خطاب وزير الاقتصاد والمالية أمام البرلمان، الصفحة 11 من الملف', fr: 'Discours du ministre de l’Économie et des Finances au Parlement, page 11 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، بالشريحة المعفية 60.000 والمصاريف 45% (35.000 على الأكثر)، الأجير فالضمان الاجتماعي ما كيخلص والو فـ2027 حتى 9.416 درهم صافي (9.909 خام) مع ثلاثة فتكلفو، الفرضية اللي بنا عليها الخطاب أرقامو الأخرى؛ وحتى 7.916 صافي بلا أعباء. الصافي كيوصل 10.000 تقريبا (9.999) غير مع خمسة فتكلفو.', fr: 'Selon le texte, avec la tranche exonérée à 60 000 et les frais à 45 % (35 000 au plus), un salarié CNSS ne paie rien en 2027 jusqu’à 9 416 DH nets (9 909 bruts) avec trois personnes à charge, l’hypothèse des autres chiffres du discours ; jusqu’à 7 916 nets sans charge. Le net n’atteint presque 10 000 (9 999) qu’avec cinq personnes à charge.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_59, /ma/code/cgi/art_74]
+      tool: tools/bill
+    - title: {ar: '«أجر خام ديال 10.506 درهم كيخلص 250 درهم فالشهر، وبالخصوم العائلية كيوصل الصافي لـ10.000»', fr: '« Un salaire brut de 10 506 DH paie 250 DH par mois, et avec les charges de famille le net atteint 10 000 »'}
+      repeated: [medias24-1031-lekjaa]
+      mark: as
+      mark_words: {ar: 'كيفما قال، بخمسة فتكلفو', fr: 'Comme dit, avec cinq personnes à charge'}
+      figure: {ar: '249,95 درهم؛ 0 بخمسة فتكلفو', fr: '249,95 DH ; 0 avec cinq personnes à charge'}
+      source: {name: {ar: 'جواب الوزير فلجنة المالية، 30 أكتوبر 2026، كما نقلاتو ميدياس24', fr: 'Réponse du ministre à la commission des finances, 30 octobre 2026, rapportée par Médias24'}, url: 'https://medias24.com/2026/10/31/plf-2027-les-reponses-de-lekjaa-a-la-commission-des-finances-1786030/', file: sources/press/plf2027/medias24-1031-lekjaa.html, sha256: f0101a223a1a33349bc6473ed9b12f701af3e752d969672c7e30c64b59ed8e73}
+      facts:
+        - text: {ar: 'حسب النص، فـ2027: من 10.506 درهم خام كيتنقصو 268,80 للضمان الاجتماعي، و237,44 للتأمين الإجباري الأساسي عن المرض، و2.916,67 للمصاريف المهنية (45%، 35.000 فالعام على الأكثر)؛ كيبقى 7.083,10 فالشهر، وهادي 2.999,43 درهم ديال الضريبة فالعام: 249,95 فالشهر بلا حتى واحد فتكلفك. الخصم العائلي 600 درهم على كل شخص، إذن خاص خمسة باش تولي الضريبة 0 والصافي 9.999,76. اليوم، نفس الأجر كيخلص 711,98 فالشهر بلا حتى واحد فتكلفك.', fr: 'Selon le texte, en 2027 : de 10 506 DH bruts on retire 268,80 de CNSS, 237,44 d’AMO et 2 916,67 de frais professionnels (45 %, au plus 35 000 par an) ; restent 7 083,10 par mois, soit 2 999,43 DH d’impôt par an : 249,95 par mois sans personne à charge. La réduction est de 600 DH par personne : il en faut cinq pour un impôt nul et un net de 9 999,76. Aujourd’hui, le même salaire paie 711,98 par mois sans personne à charge.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_59, /ma/code/cgi/art_74, /ma/projet-loi/60-26/art_7]
+      tool: tools/bill
+    - title: {ar: '«حوالي 500 درهم فالشهر زايدة فـ2027 لأغلب المعنيين»', fr: '« Environ 500 DH de plus par mois en 2027 pour la plupart »'}
+      repeated: [le360-1024]
+      mark: as
+      mark_words: {ar: 'كيفما قالو، فوق 11.800 خام', fr: 'Comme dit, au-delà de 11 800 bruts'}
+      figure: {ar: '500 درهم بالضبط', fr: '500 DH exactement'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 11 من الملف', fr: 'Discours du ministre, page 11 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، 500 درهم بالضبط لكل واحد الدخل الصافي الخاضع ديالو فوق 100.000 فالعام (تقريبا 11.800 خام فالشهر)؛ وأقل تحت هاد الحد: 443 درهم لأجر خام ديال 10.000، و331 لأجر ديال 8.374.', fr: 'Selon le texte, exactement 500 DH pour tout revenu net imposable au-dessus de 100 000 par an (environ 11 800 bruts par mois) ; moins en dessous : 443 DH pour un salaire brut de 10 000, 331 pour 8 374.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+      tool: tools/bill
+    - title: {ar: '«1.186 درهم فالشهر لأجر ديال 11.829، و3.079 لأجر ديال 18.737»', fr: '« 1 186 DH par mois pour un salaire de 11 829, 3 079 pour 18 737 »'}
+      mark: as
+      mark_words: {ar: 'كيفما قالو، لأجير بثلاثة فتكلفو', fr: 'Comme dit, pour un salarié avec trois personnes à charge'}
+      figure: {ar: '1.186 و3.079 درهم فـ2031', fr: '1 186 et 3 079 DH en 2031'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 12 من الملف', fr: 'Discours du ministre, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، الرقمين كيخرجو بالضبط لأجير فالضمان الاجتماعي عندو ثلاثة فتكلفو، والأجر اللي كيذكر الخطاب هو الصافي ديال اليوم: أجر خام ديال 14.000 درهم (صافي 11.829) كيربح 1.186 فالشهر فـ2031، وأجر خام ديال 25.000 (صافي 18.737) كيربح 3.079. فـ2027 بجوج كيربحو 500 درهم.', fr: 'Selon le texte, les deux chiffres se retrouvent exactement pour un salarié CNSS avec trois personnes à charge, le salaire cité étant le net d’aujourd’hui : 14 000 DH bruts (11 829 nets) gagnent 1 186 DH par mois en 2031, 25 000 bruts (18 737 nets) 3 079 DH. En 2027, les deux gagnent 500 DH.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_74, /ma/code/cgi/art_247]
+      tool: tools/bill
+    - title: {ar: '«السعر الأعلى كينزل من 37% لـ30%»', fr: '« Le taux supérieur passe de 37 % à 30 % »'}
+      repeated: [skynews-1024, hespress-1025]
+      mark: later
+      mark_words: {ar: 'فوقت آخر', fr: 'Plus tard'}
+      figure: {ar: 'فـ2030 و2031', fr: 'En 2030 et 2031'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 11 من الملف', fr: 'Discours du ministre, page 11 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، فـ2030 و2031. 37% كيبقى فـ2027 و2028، و35% فـ2029، و30% فوق 200.000 فـ2030 وفوق 500.000 من 2031.', fr: 'Selon le texte, en 2030 et 2031. 37 % reste en 2027 et 2028, 35 % en 2029, 30 % au-delà de 200 000 en 2030 et au-delà de 500 000 dès 2031.'}
+          cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247]
+    - title: {ar: '«المعاش الأدنى 3.000 درهم، و1.700 فـ2027، والأرامل 100%»', fr: '« Pension minimale à 3 000 DH, 1 700 en 2027, veuves à 100 % »'}
+      repeated: [le360-1024, madar-1023, medias24-1031-lekjaa, leseco-1030-social]
+      mark: not
+      mark_words: {ar: 'ماشي فالمشروع', fr: 'Pas dans le projet'}
+      figure: {ar: 'معلن', fr: 'Annoncé'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 12 من الملف', fr: 'Discours du ministre, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، ما كاينش فمواد المشروع. خاص نص ديالو (مرسوم، أنظمة صناديق التقاعد) باش يولي قاعدة.', fr: 'Selon le texte, ce n’est pas dans les articles du projet. Il faudra un texte à part (un décret, les règles des caisses de retraite) pour que cela devienne une règle.'}
+          cites: []
+      more: reform/announced-pensions
+    - title: {ar: '«الدولة كتخلص كل فاتورة ضو ديال 100 درهم ولا أقل»', fr: '« L’État paie toute facture d’électricité de 100 DH ou moins »'}
+      repeated: [le360-1024, medias24-1031-lekjaa]
+      mark: not
+      mark_words: {ar: 'ماشي فالمشروع', fr: 'Pas dans le projet'}
+      figure: {ar: 'معلن', fr: 'Annoncé'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 12 من الملف', fr: 'Discours du ministre, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب النص، ما كاينة حتى مادة. هادي نفقة، وكيفاش ومن امتى ما مكتوبش فالمشروع.', fr: 'Selon le texte, aucun article. C’est une dépense ; comment et à partir de quand, le projet ne l’écrit pas.'}
+          cites: []
+      more: reform/announced-electricity
+    - title: {ar: '«النمو 4,7%»', fr: '« Une croissance de 4,7 % »'}
+      mark: other
+      mark_words: {ar: 'رقم آخر', fr: 'Un autre chiffre'}
+      figure: {ar: '3,7%', fr: '3,7 %'}
+      source: {name: {ar: 'مذكرة تقديم المشروع، الصفحة 26', fr: 'Note de présentation du projet, page 26'}, url: 'https://www.finances.gov.ma/Publication/db/2027/Note-presentation_Fr.pdf', file: sources/mef/plf2027/Note-presentation_Fr.pdf, sha256: 8b5653939c7f0ad6ffebd2e7f697b9a2620ec0f03598aae64828c53ceabc2459}
+      facts:
+        - text: {ar: 'حسب المذكرة، النمو المعتمد لـ2027 هو 3,7%. الرقم 4,7% اللي كيدور فبعض المقالات هو التضخم العالمي اللي كتذكرو المذكرة.', fr: 'Selon la note, la croissance retenue pour 2027 est de 3,7 %. Le 4,7 % repris par certains articles est l’inflation mondiale que la note cite.'}
+          cites: []
+    - title: {ar: '«الدعم الاجتماعي المباشر من 500 لـ1.000 درهم»', fr: '« L’aide sociale directe de 500 à 1 000 DH »'}
+      repeated: [le360-1024]
+      mark: not
+      mark_words: {ar: 'ماشي فالمشروع', fr: 'Pas dans le projet'}
+      figure: {ar: '600 درهم فـ2027', fr: '600 DH en 2027'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 13 من الملف', fr: 'Discours du ministre, page 13 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      facts:
+        - text: {ar: 'حسب الخطاب نفسه، 600 درهم فـ2027 (زيادة 100)، و1.000 فآخر الولاية؛ معلن، ماشي فمواد المشروع. المبلغ اليوم كيحددو المرسوم 2.23.1067.', fr: 'Selon le discours lui-même, 600 DH en 2027 (100 de plus) et 1 000 à la fin du mandat ; annoncé, pas dans les articles du projet. Le montant d’aujourd’hui est fixé par le décret 2.23.1067.'}
+          cites: []
+      more: reform/announced-support
+
+- key: allowances-2031
+  bill: /ma/projet-loi/60-26
+  reform: lf-2027
+  for: [salary]
+  title: {ar: 'التعويضات ديال الأجر فـ2031', fr: 'Les indemnités du salaire en 2031'}
+  lead:
+    ar: 'المشروع كيبدل المادة 57-1° من 2031: قبل ما يفاجئك، هاد الصفحة كتقول شنو كيبقى معفي وشنو كيولي أجر.'
+    fr: 'Le projet change l’article 57-1° dès 2031 : avant que cela vous surprenne, ce qui reste exonéré et ce qui devient du salaire.'
+  sections:
+    - title: {ar: 'اليوم وحتى آخر 2030', fr: 'Aujourd’hui et jusqu’à fin 2030'}
+      facts:
+        - text: {ar: 'التعويضات الخاصة اللي كيعطيها المشغل باش يرجع مصاريف تحملتيها فالخدمة معفية، كيفما كانت: بالأوراق ولا جزافية. والمادة 57-1° اللي كاينة نهار 31 دجنبر 2026 كتبقى كتطبق على الدخول حتى 31 دجنبر 2030.', fr: 'Les indemnités spéciales que l’employeur verse pour rembourser des frais engagés dans le service sont exonérées, sur états ou forfaitaires. L’article 57-1° en vigueur au 31 décembre 2026 reste applicable aux revenus acquis jusqu’au 31 décembre 2030.'}
+          cites: [/ma/code/cgi/art_57, /ma/projet-loi/60-26/art_7]
+    - title: {ar: 'من فاتح يناير 2031، حسب المشروع', fr: 'Dès le 1er janvier 2031, selon le projet'}
+      facts:
+        - text: {ar: 'كتبقى معفية غير التعويضات اللي كترجع مصاريف حقيقية ومبررة، تحملتيها غير لمصلحة المشغل. التعويضات اللي كتخلص كل شهر على الخدمة العادية (النقل، التمثيل، القفة…) كتولي تكملة للأجر وكتخلص عليها الضريبة.', fr: 'Ne restent exonérées que les indemnités qui remboursent des frais réels et justifiés, engagés dans le seul intérêt de l’employeur. Celles versées chaque mois pour l’exercice normal de l’emploi (transport, représentation, panier…) deviennent un complément de salaire imposable.'}
+          cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_56]
+        - text: {ar: 'والمصاريف المهنية 45% ما كتجتمعش مع التعويضات المعفية على نفس المصاريف.', fr: 'Et les frais professionnels de 45 % ne se cumulent pas avec les indemnités exonérées pour les mêmes frais.'}
+          cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_59]
+    - title: {ar: 'شنو تدير من دابا', fr: 'Ce que vous pouvez faire dès maintenant'}
+      facts:
+        - text: {ar: 'شوف فورقة الأجر شنو من سطر «تعويض» كيتخلص كل شهر بنفس المبلغ، وشنو كيرجع مصاريف بالأوراق. الأول هو اللي غادي يتبدل.', fr: 'Regardez sur votre bulletin quelles lignes « indemnité » reviennent chaque mois au même montant, et lesquelles remboursent des frais sur justificatifs. Ce sont les premières qui changeraient.'}
+          cites: [/ma/code/cgi/art_57]
+      tool: tools/salary
+
+- key: fifa-2030
+  bill: /ma/projet-loi/60-26
+  reform: lf-2027
+  title: {ar: 'كأس العالم 2030 والضريبة', fr: 'La Coupe du monde 2030 et l’impôt'}
+  lead:
+    ar: 'شكون معفي من شنو، وحتى لامتى، حسب المشروع: المادتين 247 المكررة ثلاث مرات و247 المكررة أربع مرات الجداد فالمدونة، والمادة 6 من المشروع للجمارك.'
+    fr: 'Qui est exonéré de quoi, et jusqu’à quand, selon le projet : les nouveaux articles 247 quater et 247 quinquies du code, et l’article 6 du projet pour la douane.'
+  sections:
+    - title: {ar: 'الفيفا والجهات ديالها', fr: 'La FIFA et ses entités'}
+      facts:
+        - text: {ar: 'الفيفا والجهات التابعة ليها، والمستضيفين والمتعاقدين معاها، معفيين من الضريبة على الشركات، والاقتطاع من المنبع، والقيمة المضافة، وواجبات التسجيل والتمبر، على العمليات ديال كأس العالم 2030، من 2027 حتى 2031.', fr: 'La FIFA, ses entités, les hôtes et ses contractants sont exonérés de l’IS, des retenues à la source, de la TVA, des droits d’enregistrement et de timbre pour leurs opérations de la Coupe du monde 2030, de 2027 à 2031.'}
+          cites: [/ma/projet-loi/60-26/art_7]
+        - text: {ar: 'الجمارك: السلع والمعدات اللي كتدخل باسم الفيفا ولا لحسابها معفية من 1 يناير 2027 حتى 31 دجنبر 2032.', fr: 'La douane : les biens et matériels importés par la FIFA ou pour son compte sont exonérés du 1er janvier 2027 au 31 décembre 2032.'}
+          cites: [/ma/projet-loi/60-26/art_6]
+    - title: {ar: 'اللاعبين والحكام والمتطوعين', fr: 'Joueurs, arbitres, bénévoles'}
+      facts:
+        - text: {ar: 'اللاعبين وحكام الماتشات والمتطوعين معفيين من الضريبة على الدخل على اللي كيتخلصو عليه فكأس العالم.', fr: 'Les joueurs, les officiels de match et les bénévoles sont exonérés de l’impôt sur le revenu sur ce qu’ils perçoivent pour la Coupe du monde.'}
+          cites: [/ma/projet-loi/60-26/art_7]
+    - title: {ar: 'صندوق الإرث', fr: 'Le Fonds d’Héritage'}
+      facts:
+        - text: {ar: 'صندوق الإرث (Fonds d’Héritage) معفي من الضريبة على الشركات على جميع أنشطته، ومن الضريبة الخصوصية على المركبات ديالو، ومن الرسم على عقود التأمين ديالو.', fr: 'Le Fonds d’Héritage est exonéré de l’IS sur l’ensemble de ses activités, de la taxe spéciale sur ses véhicules et de la taxe sur ses contrats d’assurance.'}
+          cites: [/ma/code/cgi/art_6, /ma/code/cgi/art_260, /ma/code/cgi/art_282]
+
+# «شنو كيقولو» (the bill-story review, Y8–Y12, 26 Oct 2026: sourced beyond the text itself, with links to the
+# media and the press). Who said what about the bill outside its text: Parliament,
+# unions, experts, the press. Each item: the outlet, the date, the headline as printed (`title`, in its language), what
+# it says in one attributed sentence of ours (`said`: never the article's body; C3), a proposal said as one, and the
+# private copy kept with its hash (C4: `file`, `sha256`). What a named person said is in `quotes`, each `says` one
+# sentence of ours in reported speech («كيقول بلي …», «estime que …»), drawn after their name: never their words.
+# Never a source for the law or its figures: those come from the bill and the code (docs/rules.md, «What people say
+# is linked, never the law»).
+- key: bill-press
+  bill: /ma/projet-loi/60-26
+  layout: press
+  reform: lf-2027
+  title: {ar: 'شنو كيقولو على مشروع قانون المالية 2027', fr: 'Ce qu’on dit du projet de loi de finances 2027'}
+  lead:
+    ar: 'البرلمان والنقابات والخبراء والصحافة: كل واحد بالعنوان ديالو كما نشر، والتاريخ، وجملة وحدة منسوبة ليه، والرابط للمقال كامل. الأرقام ديال القانون كناخذوها غير من النص.'
+    fr: 'Le Parlement, les syndicats, les experts et la presse : chacun avec son titre tel que publié, sa date, une phrase attribuée et le lien vers l’article. Les chiffres de la loi viennent du texte seul.'
+  checked_on: '2026-11-15'
+  # Fourteen more on 15 Nov 2026, the week the Chamber of Representatives voted (the committee's amendments, the groups'
+  # explanations of vote, the minister's replies, the employers before the second chamber), each read whole from its kept
+  # copy; an outlet's count that differs from the committee's own table is left out of our sentence.
+  # The first seven read by hand; the next six proposed by `watch_finance_bill --press` and read before they were added; five more on 28 Oct 2026, the committee's first day of general discussion (from the watcher, a search and the Chamber's own communiqué), each read whole before it was added. Seven more on 31 Oct 2026, when the text was checked again for changes and new sources: the Chamber's communiqués of 29 and 30 Oct and five articles the watcher proposed, each read whole; three more it proposed were behind a paywall, read only in part, and left out. Five more on 8 Nov 2026, from a new look for updates: Hespress on the ministry's «ميزانية المواطن» (30 Oct), La Vie éco, Febrayer, TelQuel's tribune on the rural world and Le360 on the allowances (its 2031 date checked against the bill's art. 7), each read whole; two TelQuel pieces and La Vie éco's social one, readable only in part, left out.
+  items:
+    - key: medi1-1023
+      type: parliament
+      outlet: {ar: ميدي1, fr: Médi1}
+      date: '2026-10-23'
+      lang: ar
+      title: 'لقجع يقدم مشروع قانون المالية لسنة 2027 أمام لجنة المالية بمجلس النواب'
+      url: 'https://www.medi1news.com/ar/article/413056.html'
+      said: {ar: 'وزير الاقتصاد والمالية قدم المشروع أمام لجنة المالية بمجلس النواب بخمس أولويات، منها القدرة الشرائية وتشغيل الشباب.', fr: 'Le ministre de l’Économie et des Finances présente le projet à la commission des finances de la Chambre des représentants, avec cinq priorités dont le pouvoir d’achat et l’emploi des jeunes.'}
+      file: sources/press/plf2027/medi1-1023.html
+      sha256: 7883069b4ae13f915130b6e986659b7c29bd27282ccdce817fa0d0ef5a2260c2
+    - key: hespress-1025
+      type: unions
+      outlet: {ar: هسبريس, fr: Hespress}
+      date: '2026-10-25'
+      lang: ar
+      title: 'نقابات مغربية تشيد بإعفاء "الأجور دون 10 آلاف درهم" من الضريبة على الدخل'
+      url: 'https://www.hespress.com/%D9%86%D9%82%D8%A7%D8%A8%D8%A7%D8%AA-%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D8%AA%D8%B4%D9%8A%D8%AF-%D8%A8%D8%A5%D8%B9%D9%81%D8%A7%D8%A1-%D8%A7%D9%84%D8%A3%D8%AC%D9%88%D8%B1-%D8%AF%D9%88%D9%86-10-1828559.html'
+      quotes:
+        - who: {ar: 'يونس فيراشين، الكونفدرالية الديمقراطية للشغل', fr: 'Younes Firachine, CDT'}
+          says: {ar: 'كيقول بلي هادا مطلب قديم، ولكن التطبيق الكامل ديالو غير فـ2031، وبلي الأجور الدنيا المعفية أصلا ما غادياش تستافد، وبلي هادشي ما كيعوضش الزيادة فالأجور.', fr: 'juge la revendication ancienne mais complète seulement en 2031 ; selon lui, les plus bas salaires, déjà exonérés, n’y gagnent rien, et cela ne remplace pas une hausse des salaires.'}
+        - who: {ar: 'علي لطفي، المنظمة الديمقراطية للشغل', fr: 'Ali Lotfi, ODT'}
+          says: {ar: 'كيقترح سقف ديال 20% عوض 37%، وإعفاء كامل للأجور اللي كتوصل 15.000 درهم ولا أكثر.', fr: 'propose un plafond de 20 % au lieu de 37 %, et l’exonération totale des salaires de 15 000 DH ou plus.'}
+          proposal: true
+      file: sources/press/plf2027/hespress-1025.html
+      sha256: c5d9a02bcd9c0ddc2fbd3697207033d9889e90f46b9a4775ca5d1d13e60be63a
+    - key: lematin-1026
+      type: experts
+      outlet: {ar: لوماتان, fr: Le Matin}
+      date: '2026-10-26'
+      lang: fr
+      title: 'PLF 2027 : les nouveautés et les enjeux de l’impôt sur le revenu expliqués par un universitaire'
+      url: 'https://lematin.ma/economie/impot-sur-le-revenu-les-enjeux-expliques-par-mohammed-kadous/372381'
+      quotes:
+        - who: {ar: 'محمد قدوس، عميد كلية العلوم القانونية والاقتصادية والاجتماعية بمكناس', fr: 'Mohammed Kadous, doyen de la FSJES de Meknès'}
+          says: {ar: 'كيقدّر الكلفة بحوالي 20 مليار درهم على خمس سنين، عوض 5,5 مليار ديال 2027 اللي قالت الحكومة.', fr: 'estime le coût à environ 20 milliards de DH sur cinq ans, contre 5,5 milliards pour 2027 selon le gouvernement.'}
+      file: sources/press/plf2027/lematin-1026.html
+      sha256: c9ef918650177e1556939333ded7e47e9e441ce31938606b1779fdde4fd72d2f
+    - key: le360-1021
+      type: press
+      outlet: {ar: Le360, fr: Le360}
+      date: '2026-10-21'
+      lang: fr
+      title: 'Exclusif. Une réforme «historique» de l’Impôt sur le revenu: ce qui va changer pour les salariés dès 2027'
+      url: 'https://fr.le360.ma/politique/exclusif-une-reforme-historique-de-limpot-sur-le-revenu-ce-qui-va-changer-pour-les-salaries-des-2027_UBLXPQPXLNEUZLLXYXQQXJ3GE4/'
+      quotes:
+        - who: {ar: 'برنامج حزب الأصالة والمعاصرة، كما نقلته Le360', fr: 'Le programme du PAM, selon Le360'}
+          says: {ar: 'كيقترح إعفاء كامل للأجور الخام تحت 15.000 درهم فالشهر، وسعر أعلى ديال 20%.', fr: 'prévoit l’exonération totale des salaires bruts sous 15 000 DH par mois, et un taux supérieur de 20 %.'}
+          proposal: true
+      file: sources/press/plf2027/le360-1021.html
+      sha256: 187de2fdd090544bc81829e20d175b5062cc0363ebe761c70e0858538103bc36
+    - key: le360-1024
+      type: press
+      outlet: {ar: Le360, fr: Le360}
+      date: '2026-10-24'
+      lang: fr
+      title: 'PLF 2027: baisse de l’IR, hausse des pensions, aides sociales… Les mesures prévues pour le pouvoir d’achat'
+      url: 'https://fr.le360.ma/economie/plf-2027-baisse-de-lir-hausse-des-pensions-aides-sociales-les-mesures-prevues-pour-le-pouvoir-dachat_UZWEYCSMIFGQFH3K6AGNOADYZA/'
+      said: {ar: 'كتعاود أرقام الحكومة: الأجراء اللي كيشدو أقل من 10.000 درهم صافي ما غاديش يخلصو، 87% معفيين، وحوالي 500 درهم فالشهر.', fr: 'Reprend les chiffres du gouvernement : moins de 10 000 DH nets exonérés, 87 % des salariés, environ 500 DH par mois.'}
+      file: sources/press/plf2027/le360-1024.html
+      sha256: 3225dcacd84c6baf8d7463c6ceed11f3c6f6d71d8dbe0c6b119be70cfabfb43c
+    - key: madar-1023
+      type: press
+      outlet: {ar: مدار, fr: Madar}
+      date: '2026-10-23'
+      lang: fr
+      title: 'Maroc : les salaires sous 10 000 dirhams exonérés d''IR en 2027'
+      url: 'https://fr.madar.mr/actualites/maghreb/morocco-2027-finance-bill-income-tax-pensions-20261023'
+      said: {ar: 'كتكتب «الأجراء اللي كيشدو أقل من 10.000 درهم فالشهر» بلا كلمة «صافي»، نقلا على هسبريس.', fr: 'Écrit « les salariés gagnant moins de 10 000 dirhams par mois », sans le mot « nets », d’après Hespress.'}
+      file: sources/press/plf2027/madar-1023.html
+      sha256: efcd3a71eecc7ed56c89f90a666dec7d0036600f3314a90a3d947583548ad5d7
+    - key: telquel-1023-fuel
+      type: press
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-23'
+      lang: fr
+      title: 'PLF 2027 : pétroliers, voitures de luxe et importateurs paieront plus'
+      url: 'https://telquel.ma/instant-t/2026/10/23/plf-2027-petroliers-voitures-de-luxe-et-importateurs-paieront-plus_2014746/'
+      said: {ar: 'الضريبة كتطلع على موزعي المحروقات الكبار، والرسم على الطوموبيلات الغالية كيزيد، والتجار المستوردين غادي يخلصو تسبيق.', fr: 'L’impôt des grands distributeurs de carburants s’alourdit, la taxe sur les voitures de luxe augmente, les commerçants importateurs paient une avance.'}
+      file: sources/press/plf2027/telquel-1023-fuel.html
+      sha256: 64a09c868f41f3f3d6dbaa20aae9424942f58565e96d1ec23f8936721b7dfd16
+    - key: telquel-1023-tobacco
+      type: press
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-23'
+      lang: fr
+      title: 'PLF 2027 : cigarettes, vapoteuses, alcool et sodas taxés plus lourdement'
+      url: 'https://telquel.ma/instant-t/2026/10/23/plf-2027-cigarettes-vapoteuses-alcool-et-sodas-taxes-plus-lourdement_2014763/'
+      said: {ar: 'الضريبة على الدخان كتطلع حتى 2031، وعلى السيجارة الإلكترونية كتضاعف، والمشروبات الغازية ديال «الفونتين» حتى هي غادي تخلص.', fr: 'La taxe sur le tabac monte jusqu’en 2031, celle des cigarettes électroniques double, et les sodas servis en fontaine seront taxés.'}
+      file: sources/press/plf2027/telquel-1023-tobacco.html
+      sha256: 4c3fe13e8518eb797e2484f88c8d138990814a902235370ce32841b5fbd6a5af
+    - key: telquel-1023-fifa
+      type: press
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-23'
+      lang: fr
+      title: 'Mondial 2030 : le PLF 2027 accorde un régime fiscal d’exception à la FIFA'
+      url: 'https://telquel.ma/instant-t/2026/10/23/mondial-2030-le-plf-2027-accorde-un-regime-fiscal-dexception-a-la-fifa_2014779/'
+      said: {ar: 'الفيفا والشركات التابعة ليها وشركاؤها معفيين من أغلب الضرائب حتى 2032، والمغرب كان التزم بهادشي فملف الترشيح.', fr: 'La FIFA, ses filiales et ses partenaires exonérés de la plupart des impôts jusqu’en 2032, un engagement de la candidature marocaine.'}
+      file: sources/press/plf2027/telquel-1023-fifa.html
+      sha256: 9c13bff20fe4cd5c7e21dc206cdb2d1f9d48855ad3a98232787676c82cb4db42
+    - key: telquel-1026-informal
+      type: press
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-26'
+      lang: fr
+      title: 'Informel : le PLF 2027 propose la réinstauration de la mesure d’incitation fiscale pour favoriser l’intégration dans l’économie structurée'
+      url: 'https://telquel.ma/instant-t/2026/10/26/informel-le-plf-2027-propose-la-reinstauration-de-la-mesure-dincitation-fiscale-pour-favoriser-lintegration-dans-leconomie-structuree_2014870/'
+      said: {ar: 'المشروع كيرجع الإجراء اللي كيشجع اللي خدامين فالقطاع غير المهيكل باش يتسجلو، حسب مذكرة التقديم.', fr: 'Le projet réinstaure la mesure qui incite les travailleurs de l’informel à s’inscrire, selon la note de présentation.'}
+      file: sources/press/plf2027/telquel-1026-informal.html
+      sha256: 9efbaa9bef7b42bcd85f1ad1cf59c2f42a25197a56486cac0bafbb0f857dfd55
+    - key: medias24-1026-hypotheses
+      type: press
+      outlet: {ar: 'ميدياس24', fr: 'Médias24'}
+      date: '2026-10-26'
+      lang: fr
+      title: 'Croissance, inflation, énergie : les hypothèses du PLF 2027'
+      url: 'https://medias24.com/2026/10/26/croissance-inflation-agriculture-energie-les-hypotheses-du-plf-2027-1784016/'
+      said: {ar: 'المشروع مبني على نمو ديال 3,7% وتضخم ديال 1,5%.', fr: 'Le projet repose sur une croissance de 3,7 % et une inflation de 1,5 %.'}
+      file: sources/press/plf2027/medias24-1026-hypotheses.html
+      sha256: 51ed7ba133ee294041d518912e5115878a08fedda0575e1091c4f271338532b7
+    - key: hespressfr-1026-asd
+      type: press
+      outlet: {ar: 'هسبريس بالفرنسية', fr: 'Hespress FR'}
+      date: '2026-10-26'
+      lang: fr
+      title: 'Aide sociale directe : Le PLF 2027 prépare une refonte du ciblage des bénéficiaires'
+      url: 'https://fr.hespress.com/493970-aide-sociale-directe-le-plf-2027-prepare-une-refonte-du-ciblage-des-beneficiaires.html'
+      said: {ar: 'المشروع كيحضر مرحلة جديدة فالدعم الاجتماعي المباشر، بإعادة النظر فكيفاش كيتختارو المستافدين.', fr: 'Le projet prépare une nouvelle étape de l’aide sociale directe, en revoyant le ciblage des bénéficiaires.'}
+      file: sources/press/plf2027/hespressfr-1026-asd.html
+      sha256: 428b03e2ab18a0f2d593c88888f5cbcefaa97062544bf743d1841733a01166aa
+    - key: skynews-1024
+      type: press
+      outlet: {ar: سكاي نيوز عربية, fr: Sky News Arabia}
+      date: '2026-10-24'
+      lang: ar
+      title: 'مشروع موازنة المغرب 2027.. إعفاءات ضريبية ودعم للأسر'
+      url: 'https://www.skynewsarabia.com/middle-east/1900291-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8-2027-%D8%A5%D8%B9%D9%81%D8%A7%D8%A1%D8%A7%D8%AA-%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9-%D9%88%D8%AF%D8%B9%D9%85-%D9%84%D9%84%D8%A3%D8%B3%D8%B1'
+      said: {ar: 'الشريحة المعفية من 40.000 لـ60.000 درهم، والأشطر من خمسة لثلاثة، والسعر الأعلى من 37% لـ30%.', fr: 'La tranche exonérée de 40 000 à 60 000 DH, cinq tranches ramenées à trois, le taux supérieur de 37 % à 30 %.'}
+      file: sources/press/plf2027/skynews-1024.html
+      sha256: afe30b6c4d96bc3917b774799fe2580144f3db6ce6b62ac57822fd9aeb71c463
+    - key: parliament-1028
+      type: parliament
+      outlet: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}
+      date: '2026-10-28'
+      lang: ar
+      title: 'بلاغ اجتماع لجنة المالية والتنمية الاقتصادية بمجلس النواب : الشروع في المناقشة العامة لمشروع قانون المالية رقم 60.26 للسنة المالية 2027'
+      url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-bmjls-alnwab-alshrw-fy-almnaqsht-alamt-lmshrw'
+      said: {ar: 'لجنة المالية بدات المناقشة العامة: نواب ثمنو التدابير الاجتماعية، ونواب آخرين سولو الحكومة كيفاش غادي تجمع بين الإنفاق الاجتماعي وتخفيف الضرائب وعجز فحدود 3% من الناتج الداخلي الخام.', fr: 'La commission ouvre la discussion générale : des députés saluent les mesures sociales, d’autres demandent comment concilier dépenses sociales, baisses d’impôt et un déficit limité à 3 % du PIB.'}
+      file: sources/parliament/plf2027/communique-2026-10-28.html
+      sha256: cec15eea7d01b5d566e11174fff027ff6fb5851128659000a60df262e9f5164f
+    - key: hespressfr-1028-pam
+      type: parliament
+      outlet: {ar: 'هسبريس بالفرنسية', fr: 'Hespress FR'}
+      date: '2026-10-28'
+      lang: fr
+      title: 'PLF 2027 : Le PAM soutient l’investissement public dans l’éducation et la santé'
+      url: 'https://fr.hespress.com/494185-plf-2027-le-pam-soutient-linvestissement-public-dans-leducation-et-la-sante.html'
+      quotes:
+        - who: {ar: 'هشام صابري، رئيس فريق الأصالة والمعاصرة بمجلس النواب', fr: 'Hicham Sabiry, président du groupe PAM à la Chambre des représentants'}
+          says: {ar: 'كيشوف بلي الفرضيات ديال المشروع معقولة وواقعية، وبلي التدابير الاجتماعية هي الترجمة المالية ديال البرنامج الحكومي.', fr: 'juge les hypothèses du projet « raisonnables et réalistes », et voit dans les mesures sociales la traduction en chiffres du programme du gouvernement.'}
+      file: sources/press/plf2027/hespressfr-1028-pam.html
+      sha256: 373b81c0baeef0c043c5cd2508ae097b85a80d171ee9296ea66ac7ecebf6c254
+    - key: alaoual-1028-rni
+      type: parliament
+      outlet: {ar: 'الأول', fr: 'Alaoual'}
+      date: '2026-10-28'
+      lang: ar
+      title: 'الأحرار يفتحون النار على مشروع مالية 2027 لحكومة المنصوري: 62 مليار درهم لا تصنع القطيعة والوعود الاجتماعية مؤجلة إلى 2031'
+      url: 'https://alaoual.com/%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/499289.html'
+      quotes:
+        - who: {ar: 'ياسين عكاشة، رئيس فريق التجمع الوطني للأحرار، من المعارضة', fr: 'Le président du groupe RNI, dans l’opposition'}
+          says: {ar: 'كيتسائل واش 62 مليار درهم مجهود اجتماعي جديد ولا تجميع لالتزامات قائمة، وكيقول بلي التخفيض الضريبي ماشي بالضرورة دعم مباشر، وبلي جزء كبير من الوعود الاجتماعية مأجل لـ2031.', fr: 'demande si les 62 milliards de DH sont un effort social nouveau ou un regroupement d’engagements existants ; selon lui, une baisse d’impôt n’est pas forcément une aide directe, et une bonne part des promesses sociales est renvoyée à 2031.'}
+      file: sources/press/plf2027/alaoual-1028-rni.html
+      sha256: ff2ff17af7e06eb0ffe05a7817b0307486284132256c6eb20f470c806ec02d91
+    - key: leseco-1028
+      type: press
+      outlet: {ar: 'ليزيكو', fr: 'LesEco'}
+      date: '2026-10-28'
+      lang: fr
+      title: 'Pouvoir d’achat : ce que le PLF 2027 prévoit pour la classe moyenne'
+      url: 'https://leseco.ma/maroc/pouvoir-dachat-ce-que-le-plf-2027-prevoit-pour-la-classe-moyenne.html'
+      said: {ar: 'الإجراءات ما كتمسش نفس الناس: الضريبة على الدخل كتنفع الأجير اللي كيخلصها، الدعم كيمنع الأثمنة تطلع بلا ما ينقص الفاتورة، ومساعدة السكن ما كتنفعش اللي كيكري؛ إذن ما كاينش ربح متوسط واحد للطبقة الوسطى.', fr: 'Les mesures ne touchent pas les mêmes ménages : la baisse de l’IR profite au salarié imposable, la compensation évite des hausses sans baisser les factures, l’aide au logement ne soulage pas les locataires ; pas de gain moyen pour la classe moyenne.'}
+      file: sources/press/plf2027/leseco-1028.html
+      sha256: 9a56ef16c2e0b193ba88f4ca0f11733c34781057d9afb66f142b74793e367137
+    - key: medias24-1028-bourse
+      type: press
+      outlet: {ar: 'ميدياس24', fr: 'Médias24'}
+      date: '2026-10-28'
+      lang: fr
+      title: 'Bourse de Casa : les secteurs qui pourraient profiter du PLF 2027 et ceux qui risquent d''en pâtir'
+      url: 'https://medias24.com/2026/10/28/bourse-de-casa-les-secteurs-qui-pourraient-profiter-du-plf-2027-et-ceux-qui-risquent-den-patir-1784815/'
+      said: {ar: 'مهنيين فالبورصة كيشوفو 400 مليار درهم ديال الاستثمار العمومي طلبيات للبناء والإسمنت، والضريبة على الشركات ديال مستوردي وموزعي المحروقات الكبار غادي تطلع لـ40% إلا تقبل المشروع؛ والأثر رهين بالتنفيذ وبنسب الفائدة.', fr: 'Pour des professionnels du marché, les 400 MMDH d’investissement public promettent des commandes au BTP et aux cimentiers, et l’IS des grands importateurs et distributeurs d’hydrocarbures passerait à 40 % si le projet est adopté ; l’effet dépend de l’exécution et des taux.'}
+      file: sources/press/plf2027/medias24-1028-bourse.html
+      sha256: 7b005e513627e52ec7f59b685f9cfe76fd0c12f985c68aeba3bedf0cdfe390a3
+    - key: parliament-1029
+      type: parliament
+      outlet: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}
+      date: '2026-10-29'
+      lang: ar
+      title: 'بلاغ اجتماع لجنة المالية والتنمية الاقتصادية ليوم الخميس 29 أكتوبر 2026'
+      url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-lywm-alkhmys-29-aktwbr-2026'
+      said: {ar: 'نواب ثمنو التدابير الاجتماعية والضريبية ورفع الاستثمار العمومي لـ400 مليار درهم، ونواب آخرين شافو فالمشروع استمرارية للحكومة السابقة وطالبو بمراجعة مرسوم الصفقات العمومية وبتوزيع عادل للمشاريع على الجهات.', fr: 'Des députés saluent les mesures sociales et fiscales et l’investissement public porté à 400 milliards de DH ; d’autres y voient la continuité du gouvernement précédent et demandent de revoir le décret sur les marchés publics et de mieux répartir les projets entre les régions.'}
+      file: sources/parliament/plf2027/communique-2026-10-29.html
+      sha256: 926b74df60d9b047dd26ff157b2deb15c912cc622127b9c551345ee833c3e8e3
+    - key: parliament-1030
+      type: government
+      outlet: {ar: 'مجلس النواب', fr: 'Chambre des représentants'}
+      date: '2026-10-30'
+      lang: ar
+      title: 'بلاغ اجتماع لجنة المالية والتنمية الاقتصادية ليوم الجمعة 30 أكتوبر 2026 - اجتماع المساء'
+      url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-lywm-aljmt-30-aktwbr-2026-ajtma-almsa'
+      quotes:
+        - who: {ar: 'فوزي لقجع، وزير الاقتصاد والمالية والنجاعة العمومية، كما لخص جوابو بلاغ المجلس', fr: 'Fouzi Lekjaa, ministre de l’Économie, des Finances et de la Performance publique, selon le communiqué de la Chambre'}
+          says: {ar: 'كيقول بلي فرضيات النمو مبنية على معدل «واقعي وحذر»، وبلي الرفع التدريجي ديال الضريبة على الشركات اللي كتربح فوق 100 مليون درهم جا باسم المنافسة والشفافية، وبلي الحكومة كتوجد إجراءات لدعم الأسر اللي كتستهلك أقل من 100 درهم ديال الضو فالشهر.', fr: 'affirme que les hypothèses de croissance sont réalistes et prudentes, que la hausse progressive de l’IS des sociétés aux bénéfices de plus de 100 millions de DH répond à la concurrence et à la transparence, et que des mesures se préparent pour les ménages qui consomment moins de 100 DH d’électricité par mois.'}
+      file: sources/parliament/plf2027/communique-2026-10-30-soir.html
+      sha256: 5453e4f3c78ccc0472d194824ae647dd1499a519a0d678025e0c6a56ad4d3341
+    - key: medias24-1031-lekjaa
+      type: government
+      outlet: {ar: 'ميدياس24', fr: 'Médias24'}
+      date: '2026-10-31'
+      lang: fr
+      title: 'PLF 2027: les réponses de Lekjaa à la Commission des finances'
+      url: 'https://medias24.com/2026/10/31/plf-2027-les-reponses-de-lekjaa-a-la-commission-des-finances-1786030/'
+      quotes:
+        - who: {ar: 'فوزي لقجع، وزير الاقتصاد والمالية والنجاعة العمومية، فجوابو فلجنة المالية', fr: 'Fouzi Lekjaa, ministre de l’Économie, des Finances et de la Performance publique, en réponse à la commission'}
+          says: {ar: 'كيقول بلي نسبة الأجراء المعفيين من الضريبة على الدخل كتطلع من 80% لـ87%، وبلي أجر خام ديال 10.506 درهم كيخلص 250 درهم فالشهر، وبالخصوم العائلية كيوصل الصافي لـ10.000، وبلي المعاش الأدنى كيولي 1.700 درهم فـ2027 ثم 2.000 فـ2028 و2.500 فـ2029 و3.000 فـ2030.', fr: 'indique que la part des salariés exonérés d’IR passe de 80 % à 87 %, qu’un brut de 10 506 DH paie 250 DH par mois et qu’avec les charges de famille le net atteint 10 000, et que la pension minimale passe à 1 700 DH en 2027, puis 2 000 en 2028, 2 500 en 2029 et 3 000 en 2030.'}
+      file: sources/press/plf2027/medias24-1031-lekjaa.html
+      sha256: f0101a223a1a33349bc6473ed9b12f701af3e752d969672c7e30c64b59ed8e73
+    - key: leseco-1030-social
+      type: parliament
+      outlet: {ar: 'ليزيكو', fr: 'LesEco'}
+      date: '2026-10-30'
+      lang: fr
+      title: 'PLF 2027: les engagements sociaux au banc d’essai'
+      url: 'https://leseco.ma/business/plf-2027-les-engagements-sociaux-au-banc-dessai.html'
+      quotes:
+        - who: {ar: 'ريم شباط، رئيسة الفريق الحركي', fr: 'Rim Chabat, présidente du groupe Haraki'}
+          says: {ar: 'كتقول بلي الاعتمادات ديال دعم المواد الأساسية كتنقص من 22 لـ19,4 مليار درهم، حسب الأرقام اللي قدمات فاللجنة، وكتتسائل واش الإصلاح المتدرج للضريبة على الدخل يقدر يجاوب دابا على هموم الطبقة الوسطى.', fr: 'relève que les crédits de soutien aux produits de première nécessité reculent de 22 à 19,4 milliards de DH, selon les chiffres qu’elle a avancés en commission, et demande si la réforme graduelle de l’IR peut répondre tout de suite aux préoccupations des classes moyennes.'}
+        - who: {ar: 'رحال المكاوي، رئيس الفريق الاستقلالي', fr: 'Rahhal El Makkaoui, président du groupe istiqlalien'}
+          says: {ar: 'كيدافع على الشركات الجهوية لجمع وتوزيع المواد الغذائية وتحديث أسواق الجملة، وكيتسائل واش ما يمكنش يكون مجهود أكبر فالدعم الاجتماعي من بداية الولاية.', fr: 'défend les sociétés régionales de collecte et de distribution des produits alimentaires et la modernisation des marchés de gros, et demande si un effort social plus important dès le début de la législature ne serait pas possible.'}
+      file: sources/press/plf2027/leseco-1030-social.html
+      sha256: d441c60bff210ffec523bf215c7c3abd3201934d70185d3a6a314d66ce8d6874
+    - key: telquel-1030-khalfi
+      type: parliament
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-30'
+      lang: fr
+      title: 'PLF 2027 : El Khalfi juge les mesures insuffisantes pour le pouvoir d’achat et l’emploi'
+      url: 'https://telquel.ma/instant-t/2026/10/30/plf-2027-el-khalfi-juge-les-mesures-insuffisantes-pour-le-pouvoir-dachat-et-lemploi_2015845/'
+      quotes:
+        - who: {ar: 'مصطفى الخلفي، فريق العدالة والتنمية بمجلس النواب', fr: 'Mustapha El Khalfi, groupe PJD à la Chambre des représentants'}
+          says: {ar: 'كيشوف بلي رفع المعاش الأدنى ومعاش الأرامل ومراجعة الضريبة على الدخل ودعم فاتورة الضو خطوات أولى، ولكن ما كافياش بلا محاربة التضخم والمضاربة وكثرة الوسطاء.', fr: 'voit dans le relèvement de la pension minimale et des pensions des veuves, la révision de l’IR et l’aide aux factures d’électricité de premières étapes, insuffisantes selon lui sans action sur l’inflation, la spéculation et les intermédiaires.'}
+      file: sources/press/plf2027/telquel-1030-khalfi.html
+      sha256: 5a0aa36a9785712222da677c5daaedb05308eca5a7d0df58f14e235234cef538
+    - key: telquel-1029-mounib
+      type: parliament
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-29'
+      lang: fr
+      title: 'PLF 2027 : Nabila Mounib dénonce une “démocratie de façade”'
+      url: 'https://telquel.ma/instant-t/2026/10/29/plf-2027-nabila-mounib-denonce-une-democratie-de-facade_2015530/'
+      quotes:
+        - who: {ar: 'نبيلة منيب، المجموعة النيابية لتحالف اليسار', fr: 'Nabila Mounib, groupement parlementaire de l’Alliance de la gauche'}
+          says: {ar: 'كتقول بلي المشروع ما فيه أفق واضح للإصلاحات السياسية والحقوق والحريات، وكتتسائل واش هادي حكومة جديدة بمشروع جديد ولا استمرارية للاختيارات السابقة.', fr: 'estime que le projet manque de perspectives claires pour les réformes politiques, les droits et les libertés, et demande s’il s’agit d’un nouveau gouvernement porteur d’un nouveau projet ou de la continuité des choix précédents.'}
+      file: sources/press/plf2027/telquel-1029-mounib.html
+      sha256: 2dec5940f2f3dc801c111817f2bab4be4248da53c2f2ecd7b7fc043977676123
+    - key: telquel-1030-sante
+      type: experts
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-10-30'
+      lang: fr
+      title: '[Tribune] PLF 2027 santé : des milliards, mais quels résultats ?'
+      url: 'https://telquel.ma/2026/10/30/tribune-plf-2027-sante-des-milliards-mais-quels-resultats_2015712'
+      quotes:
+        - who: {ar: 'الحسن بلكبير، مفتش عام سابق بوزارة الصحة', fr: 'El Hassane Belkebir, ancien inspecteur général du ministère de la Santé'}
+          says: {ar: 'كيذكّر بـ45,4 مليار درهم للصحة و8.000 منصب فـ2027، وكيتسائل واش هاد الاعتمادات غادي تولي علاجات فمتناول الناس، وكيقترح لوحة قيادة عمومية لكل جهة.', fr: 'rappelle les 45,4 milliards de DH pour la santé et les 8 000 postes de 2027, se demande si ces crédits deviendront des soins accessibles, et propose un tableau de bord public par région.'}
+      file: sources/press/plf2027/telquel-1030-sante.html
+      sha256: fa3b1a02ce1cc243c3f97272668a6a46b23a8c6d42af181e6938747d41fdf463
+    - key: hespress-1030-citizen
+      type: press
+      outlet: {ar: 'هسبريس', fr: 'Hespress'}
+      date: '2026-10-30'
+      lang: ar
+      title: '"ميزانية المواطن" تبرز أثر "مالية 2027" على الدخل والأسعار والخدمات'
+      url: 'https://www.hespress.com/%D9%85%D9%8A%D8%B2%D8%A7%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86-%D8%AA%D8%A8%D8%B1%D8%B2-%D8%A3%D8%AB%D8%B1-%D9%85%D8%A7%D9%84%D9%8A%D8%A9-2027-%D8%B9%D9%84%D9%89-%D8%A7-1831098.html'
+      quotes:
+        - who: {ar: 'يوسف يعكوبي، هسبريس', fr: 'Youssef Yaakoubi, Hespress'}
+          says: {ar: 'كيكتب بلي وزارة الاقتصاد والمالية نشرات «ميزانية المواطن» ديال المشروع: وثيقة كتشرح بكلام ساهل التدابير والأرقام اللي كتهم المعيشة، من الدعم والكهرباء حتى الضريبة على الدخل.', fr: 'rapporte que le ministère de l’Économie et des Finances a publié le « budget citoyen » du projet, un document qui explique simplement les mesures et les chiffres de la vie quotidienne, du soutien et de l’électricité à l’impôt sur le revenu.'}
+      file: sources/press/plf2027/hespress-1030-citizen.html
+      sha256: 1b5928e6b78b41859bfa6586308df3fcf6b8050984cabdf6d3fba3971750d7bf
+    - key: lavieeco-1102-fiscalite
+      type: press
+      outlet: {ar: 'لافي إيكو', fr: 'La Vie éco'}
+      date: '2026-11-02'
+      lang: fr
+      title: 'En Couv’. Fiscalité : Les mesures phares du PLF 2027'
+      url: 'https://www.lavieeco.com/argent/budget/en-couv-fiscalite-les-mesures-phares-du-plf-2027/'
+      quotes:
+        - who: {ar: 'مومار ديياو، لافي إيكو', fr: 'Momar Diao, La Vie éco'}
+          says: {ar: 'كيكتب بلي الجانب الضريبي ديال المشروع كيكمل فطريق السنين اللي فاتت، وبلي الضريبة على الدخل هي اللي تبدلات أكثر: الشريحة المعفاة من 40.000 لـ60.000 درهم، والأشطر من خمسة لثلاثة.', fr: 'écrit que le volet fiscal du projet poursuit la trajectoire des années passées, et que l’impôt sur le revenu est celui qui change le plus : la tranche exonérée passe de 40 000 à 60 000 DH et le barème de cinq tranches à trois.'}
+      file: sources/press/plf2027/lavieeco-1102-fiscalite.html
+      sha256: 350b68b01b94aa43f404aeb33817cacc9f850d7bd69c35c201e23dca5b0081ee
+    - key: febrayer-1103-chiker
+      type: experts
+      outlet: {ar: 'فبراير', fr: 'Febrayer'}
+      date: '2026-11-03'
+      lang: ar
+      title: 'بين الدعم وتخفيف الضرائب.. هل يخفف قانون مالية 2027 أعباء المعيشة عن المغاربة؟'
+      url: 'https://febrayer.com/1167291.html'
+      quotes:
+        - who: {ar: 'محمد شقير، محلل سياسي وأستاذ باحث في العلوم السياسية', fr: 'Mohamed Chiker, analyste politique, enseignant-chercheur en science politique'}
+          says: {ar: 'كيشوف بلي خصوصية المشروع فحجم الانتظارات، حيت دعم القدرة الشرائية كان من أبرز المطالب فالانتخابات، وبلي المنصات الجهوية الستة للتسويق هدفها تنقص الوسطاء والزيادات فالأسعار.', fr: 'estime que la particularité du projet tient à l’ampleur des attentes, le pouvoir d’achat ayant été l’une des principales demandes de la campagne électorale, et que les six plateformes régionales de commercialisation doivent réduire les intermédiaires et les hausses de prix.'}
+      file: sources/press/plf2027/febrayer-1103-chiker.html
+      sha256: c06adbabc51e123bf65f6a34b5d4c5bb37c54d765a8fef2672b2a4c4d5367ddf
+    - key: telquel-1105-rural
+      type: experts
+      outlet: {ar: 'تيلكيل', fr: 'TelQuel'}
+      date: '2026-11-05'
+      lang: fr
+      title: '[Tribune] PLF 2027 : le monde rural, airbag d’une croissance qui l’oublie'
+      url: 'https://telquel.ma/2026/11/05/tribune-plf-2027-le-monde-rural-airbag-dune-croissance-qui-loublie_2016989'
+      quotes:
+        - who: {ar: 'الحسين بويشو، باحث في الاقتصاد الفلاحي', fr: 'El Houssain Bouichou, chercheur agroéconomiste'}
+          says: {ar: 'كيقول بلي المشروع كيحمي العالم القروي وكيجهزو، ولكن ما كيستثمرش فيه باش ينتج، وبلي البادية كتمتص الصدمات بلا ما تحتافظ بجزء من القيمة اللي كتنتج.', fr: 'juge que le projet protège et équipe le monde rural sans y investir pour produire, et que les campagnes amortissent les chocs sans garder une part de la valeur qu’elles produisent.'}
+      file: sources/press/plf2027/telquel-1105-rural.html
+      sha256: b744c79d90d9a40de0bb498cf4f716ca284d31f30593a505d0f96a687426cad5
+    - key: le360-1106-frais
+      type: press
+      outlet: {ar: 'لو360', fr: 'Le360'}
+      date: '2026-11-06'
+      lang: fr
+      title: 'PLF 2027: le fisc s’attaque aux salaires déguisés en frais professionnels'
+      url: 'https://fr.le360.ma/economie/plf-2027-le-fisc-sattaque-aux-salaires-deguises-en-frais-professionnels_26FCHLISURGJ5CRSY44EUVZ4R4/'
+      quotes:
+        - who: {ar: 'وديع المودن، لو360', fr: 'Wadie El Mouden, Le360'}
+          says: {ar: 'كيكتب بلي المشروع كيبدل المادتين 56 و57 من المدونة العامة للضرائب باش التعويضات المهنية اللي كتعطى ديما مع الخدمة، وهي فالحقيقة زيادة فالأجرة، تولي كتخلص عليها الضريبة، وبلي الشروط الجديدة للإعفاء ما تطبق حتى 1 يناير 2031.', fr: 'explique que le projet modifie les articles 56 et 57 du CGI pour que les indemnités professionnelles versées en permanence, qui sont en réalité des compléments de salaire, deviennent imposables, et que les nouvelles conditions d’exonération ne s’appliqueraient qu’à partir du 1er janvier 2031.'}
+      file: sources/press/plf2027/le360-1106-frais.html
+      sha256: c94b59b3c780bf3fafaec3a78badaf6240ac45a6d7aac7e6446576ee2e489e32
+    - key: lebrief-1112-commission
+      type: press
+      outlet: {ar: 'لوبريف', fr: 'Le Brief'}
+      date: '2026-11-12'
+      lang: fr
+      title: 'PLF 2027 : la première partie adoptée en commission'
+      url: 'https://www.lebrief.ma/plf-2027-la-premiere-partie-adoptee-en-commission-100173096/'
+      said: {ar: 'حسب الجريدة، لجنة المالية زادت فالضريبة الداخلية على استهلاك السيكار الكبير والصغير، وطلعات العتبة اللي كيبدا منها الاقتطاع من المنبع على المقاولين الذاتيين من 80.000 لـ100.000 درهم ونقصات السعر ديالو من 30% لـ20%، ولقجع فكّر بلي الإصلاح كيدور على أربع أسعار ديال الضريبة على الشركات: 0 و20 و35 و40%.', fr: 'Selon le journal, la commission des finances a relevé la TIC sur les cigares et cigarillos, porté de 80 000 à 100 000 DH le seuil de la retenue à la source libératoire des auto-entrepreneurs et abaissé son taux de 30 % à 20 %, tandis que Fouzi Lekjaa rappelait une réforme organisée autour de quatre taux d’IS : 0, 20, 35 et 40 %.'}
+      file: sources/press/plf2027/lebrief-1112-commission.html
+      sha256: 3fcb26d823f5e3b999534d2fcdc80f68210f94b3b9c37dea8d0163b148813d08
+    - key: lematin-1112-amendements
+      type: press
+      outlet: {ar: 'لوماتان', fr: 'Le Matin'}
+      date: '2026-11-12'
+      lang: fr
+      title: 'PLF 2027 : fiscalité, exonérations et douanes au menu des amendements'
+      url: 'https://lematin.ma/nation/plf-2027-fiscalite-exonerations-et-douanes-au-menu-des-amendements/375399'
+      said: {ar: 'الجريدة قرات مصفوفة التعديلات اللي فيها كثر من 500 صفحة: تحالف اليسار باغي الحكومة تعطي للبرلمان قبل 15 أكتوبر 2027 حصيلة ديال الإعفاء على استيراد البهايم واللحوم، شحال دخل وشحال كلف وكيفاش تحركو الأثمنة، والفرق ناقشو حتى إعفاءات المونديال وشروط مهنة المعشّر.', fr: 'Le journal lit la matrice des amendements, plus de 500 pages : l’Alliance de la gauche demande au gouvernement un bilan des exonérations sur le bétail et les viandes avant le 15 octobre 2027 (quantités, coût fiscal, évolution des prix), et les groupes débattent aussi des exonérations du Mondial 2030 et du cahier des charges des transitaires en douane.'}
+      file: sources/press/plf2027/lematin-1112-amendements.html
+      sha256: 0a19d72ae3fd268db22584d75bb095dc38b620c9a7dcbdda9c3eddfb430b5c49
+    - key: medias24-1112-cgem
+      type: employers
+      outlet: {ar: 'ميدياس24', fr: 'Médias24'}
+      date: '2026-11-12'
+      lang: fr
+      title: 'PLF 2027. Avant l''épreuve de la deuxième Chambre, le patronat sort du bois'
+      url: 'https://medias24.com/2026/11/12/plf-2027-avant-lepreuve-de-la-deuxieme-chambre-le-patronat-sort-du-bois-1790403/'
+      quotes:
+        - who: {ar: 'يوسف العلوي، رئيس الفريق البرلماني ديال الاتحاد العام لمقاولات المغرب', fr: 'Youssef Alaoui, président du groupe parlementaire de la CGEM'}
+          says: {ar: 'كيقول بلي الربح من الضريبة على الدخل خاصو يوصل للأجير واخا القانون ما يقدرش يفرضو، وبلي الاتحاد غادي يطالب فمجلس المستشارين بضريبة على الشركات بالأشطر عوض القفزة لـ35% من أول درهم، وغادي يرفض تقصير صلاحية الشهادة الجبائية من 6 شهور لـ30 يوم اللي دازت فاللجنة، وكيعترض من المبدأ على الـ40% اللي كتستهدف قطاع واحد.', fr: 'estime que la baisse de l’IR doit profiter au salarié même si la loi ne peut l’imposer ; à la deuxième Chambre, la CGEM demandera un IS par tranches au lieu du saut à 35 % dès le premier dirham, s’opposera à la validité de l’attestation fiscale ramenée de 6 mois à 30 jours en commission, et conteste par principe l’IS à 40 % qui vise un seul secteur.'}
+          proposal: true
+      file: sources/press/plf2027/medias24-1112-cgem.html
+      sha256: 3695947fc0a89900b722f51864e5211ac21bcdc3a438e576c88def026b49dc13
+    - key: al3omk-1113-report
+      type: parliament
+      outlet: {ar: 'العمق', fr: 'Al3omk'}
+      date: '2026-11-13'
+      lang: ar
+      title: 'تقرير برلماني يرصد 20.76% من الغيابات خلال مناقشة مالية 2027 وقبول الحكومة لـ 59 تعديلا'
+      url: 'https://al3omk.com/1209938.html'
+      said: {ar: 'الجريدة قرات تقرير لجنة المالية: الحكومة قبلات 59 تعديل من 287 تقدمو على الجزء الأول، والغياب فاجتماعات اللجنة وصل 20,76%.', fr: 'Le journal a lu le rapport de la commission des finances : le gouvernement a accepté 59 des 287 amendements déposés sur la première partie, et l’absentéisme aux réunions de la commission a atteint 20,76 %.'}
+      file: sources/press/plf2027/al3omk-1113-report.html
+      sha256: 670317876b1e22ad108d0342b990fa75eb7f9c5c842e47e8b51144c53eb9057d
+    - key: alaoual-1113-rni
+      type: parliament
+      outlet: {ar: 'الأول', fr: 'Alaoual'}
+      date: '2026-11-13'
+      lang: ar
+      title: 'التجمع الوطني للأحرار يعلن معارضته لمشروع مالية 2027 ويتهم الحكومة بالتراجع عن الوعود الانتخابية وتأجيل الإصلاحات'
+      url: 'https://alaoual.com/%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9/501386.html'
+      quotes:
+        - who: {ar: 'ياسين عكاشا، رئيس الفريق النيابي للتجمع الوطني للأحرار، من المعارضة', fr: 'Le président du groupe RNI à la Chambre des représentants, dans l’opposition'}
+          says: {ar: 'كيقول بلي فريقو كيعارض المشروع لعشرة ديال الأسباب، منها وعود انتخابية ما تترجماتش لاعتمادات وإصلاحات اجتماعية وضريبية مأجلة لآخر الولاية، وبلي مراجعة الضريبة على الدخل، حسب الأرقام اللي قدم، ما كيستافد منها غير 5,5 مليون مغربي، وبلي 6 مليار درهم مقسومة على 8 مليون شاب كتجي 750 درهم فالعام لكل واحد.', fr: 'explique que son groupe s’oppose au projet pour dix raisons, dont des promesses électorales non traduites en crédits et des réformes sociales et fiscales renvoyées à la fin de la législature ; selon les chiffres qu’il avance, la révision de l’IR ne profite qu’à 5,5 millions de Marocains, et 6 milliards de DH répartis sur 8 millions de jeunes font 750 DH par an chacun.'}
+      file: sources/press/plf2027/alaoual-1113-rni.html
+      sha256: c146a71b4255e0800f34d5e5626d9381ffef405480976d181e82083e9979bc47
+    - key: saispress-1113-akesbi
+      type: experts
+      outlet: {ar: 'سايس بريس', fr: 'Saispress'}
+      date: '2026-11-13'
+      lang: ar
+      title: 'أقصبي ينتقد إعفاءات "الفيفا" الضريبية في مشروع قانون مالية 2027'
+      url: 'https://saispress.com/news/1978/%D8%A3%D9%82%D8%B5%D8%A8%D9%8A-%D9%8A%D9%86%D8%AA%D9%82%D8%AF-%D8%A5%D8%B9%D9%81%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D9%8A%D9%81%D8%A7-%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9-%D9%81%D9%8A-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D9%85%D8%A7%D9%84%D9%8A%D8%A9-1978'
+      quotes:
+        - who: {ar: 'نجيب أقصبي، اقتصادي', fr: 'Najib Akesbi, économiste'}
+          says: {ar: 'كيسمي الإعفاءات ديال الفيفا وشركائها جنة ضريبية، وكيقول بلي التدابير اللي كتتخلى فيها الدولة على مداخيلها وصلات 283، وبلي رفع الضريبة على شركات المحروقات لـ40% فيه نزعة ديال الانتقام، وبلي العجز الحقيقي ديال الميزانية، حسب الحساب ديالو، 159 مليار درهم.', fr: 'qualifie de « paradis fiscal » les exonérations accordées à la FIFA et à ses partenaires ; selon lui, les mesures par lesquelles l’État renonce à des recettes sont au nombre de 283, la hausse à 40 % de l’IS des distributeurs de carburants relève d’un esprit de revanche, et le déficit réel du budget atteint 159 milliards de DH selon son calcul.'}
+      file: sources/press/plf2027/saispress-1113-akesbi.html
+      sha256: 1589521b34e0c25bafead4788d88542e102163ff0fc26787b0ad60317a903812
+    - key: leseco-1113-douanes
+      type: press
+      outlet: {ar: 'ليزيكو', fr: 'LesEco'}
+      date: '2026-11-13'
+      lang: fr
+      title: 'Douanes, viandes, médicaments… Les arbitrages du PLF 2027 se précisent'
+      url: 'https://leseco.ma/business/douanes-viandes-medicaments-les-arbitrages-du-plf-2027-se-precisent.html'
+      said: {ar: 'حسب الجريدة، اللجنة لغات المادة 68 على المعشّرين ولقجع وعد بقانون خاص بالمهنة، ووافق على مبدأ رسوم جمركية متدرجة على الدوا اللي كيتصنع فالمغرب ولكن طلب اللائحة، حيت الرسوم دابا بين 10% و17,5% حسب الأصناف، وعرض يقدم كل ثلاث شهور تقييم على استيراد اللحوم.', fr: 'Selon le journal, la commission a abrogé l’article 68 sur les transitaires en douane et Fouzi Lekjaa promet une loi dédiée ; il accepte le principe de droits de douane progressifs sur les médicaments produits au Maroc mais demande la liste des produits, les droits actuels allant de 10 % à 17,5 % selon les catégories, et propose une évaluation trimestrielle des importations de viandes.'}
+      file: sources/press/plf2027/leseco-1113-douanes.html
+      sha256: 5e50844e32d96989d63106af9d7fb678c4bb5b249cb629b883f45fc6f30a5fd1
+    - key: hespress-1113-opposition
+      type: parliament
+      outlet: {ar: 'هسبريس', fr: 'Hespress'}
+      date: '2026-11-13'
+      lang: ar
+      title: 'المعارضة: الحكومة تنتقل من الوعود بالجملة إلى "التنزيل بالتقسيط"'
+      url: 'https://www.hespress.com/%d8%a7%d9%84%d9%85%d8%b9%d8%a7%d8%b1%d8%b6%d8%a9-%d8%a7%d9%84%d8%ad%d9%83%d9%88%d9%85%d8%a9-%d8%aa%d9%86%d8%aa%d9%82%d9%84-%d9%85%d9%86-%d8%a7%d9%84%d9%88%d8%b9%d9%88%d8%af-%d8%a8%d8%a7%d9%84%d8%ac-1839312.html'
+      quotes:
+        - who: {ar: 'إدريس الأزمي الإدريسي، رئيس فريق العدالة والتنمية بمجلس النواب', fr: 'Driss El Azami El Idrissi, président du groupe PJD à la Chambre des représentants'}
+          says: {ar: 'كيشوف فالمشروع استمرارية ماشي تغيير ديال المسار، وكيقول بلي الربح من الضريبة على الدخل، فحدود 500 درهم، غادي تاكلو الأسعار، وبلي الحكومة رحّلات رفع المعاش الأدنى لـ3.000 درهم وإصلاح الضريبة على الدخل حتى 2031.', fr: 'voit dans le projet la continuité plutôt qu’un changement de cap ; selon lui, le gain d’IR, de l’ordre de 500 DH, sera vite absorbé par les prix, et le gouvernement renvoie à 2031 la pension minimale de 3 000 DH comme la réforme de l’IR.'}
+        - who: {ar: 'ريم شباط، رئيسة الفريق الحركي', fr: 'Rim Chabat, présidente du groupe Haraki'}
+          says: {ar: 'كتوصف الميزانية بأنها محاسباتية كتعتمد بالأساس على الضرائب، وكتقول بلي من حوالي 272 مؤسسة ومقاولة عمومية غير 5 اللي كيساهمو فالمالية العمومية، وكتحذر من ثقل الدين مع حوالي 120 مليار درهم ديال القروض المتوسطة والطويلة الأمد.', fr: 'qualifie le budget de purement comptable, reposant surtout sur l’impôt ; selon elle, sur quelque 272 établissements et entreprises publics, 5 seulement contribuent aux finances publiques, et elle met en garde contre le poids de la dette, avec près de 120 milliards de DH d’emprunts à moyen et long terme.'}
+      file: sources/press/plf2027/hespress-1113-opposition.html
+      sha256: 5f6e94ae18b84aaedd8df927793b7bf7cb28b012c23eb415f54114994cc05e3b
+    - key: hespress-1114-livestock
+      type: parliament
+      outlet: {ar: 'هسبريس', fr: 'Hespress'}
+      date: '2026-11-14'
+      lang: ar
+      title: 'إعفاء استيراد المواشي يعيد جدل "الفراقشية" ومستقبل القطيع الوطني'
+      url: 'https://www.hespress.com/%d8%a5%d8%b9%d9%81%d8%a7%d8%a1-%d8%a7%d8%b3%d8%aa%d9%8a%d8%b1%d8%a7%d8%af-%d8%a7%d9%84%d9%85%d9%88%d8%a7%d8%b4%d9%8a-%d9%8a%d8%b9%d9%8a%d8%af-%d8%ac%d8%af%d9%84-%d8%a7%d9%84%d9%81%d8%b1%d8%a7%d9%82-1839659.html'
+      quotes:
+        - who: {ar: 'إدريس الأزمي الإدريسي، رئيس فريق العدالة والتنمية', fr: 'Driss El Azami El Idrissi, président du groupe PJD'}
+          says: {ar: 'كيدافع فالجلسة العامة على تعديل كيحيد الإعفاء الدائم من رسوم استيراد البقر والغنم واللحوم، حيت حسب رأيو ما نزّلش أثمنة اللحم وغادي يقضي على القطيع الوطني؛ والتعديل طاح، حسب الجريدة، بـ77 صوت معاه و171 ضدو و40 امتنعو.', fr: 'défend en plénière un amendement supprimant l’exonération permanente des droits d’importation sur les bovins, ovins et viandes, qui selon lui n’a pas fait baisser les prix et menace d’en finir avec le cheptel national ; l’amendement est rejeté par 171 voix contre 77, avec 40 abstentions, selon le journal.'}
+          proposal: true
+        - who: {ar: 'هشام المهاجري، فريق الأصالة والمعاصرة ورئيس لجنة المالية', fr: 'Hicham Mhajri, groupe PAM, président de la commission des finances'}
+          says: {ar: 'كيقول بلي الاستيراد بكميات محدودة فالسنين اللي فاتت هو اللي فتح الباب للبونات والمزايدات اللي تسماو «الفراقشية»، وبلي الإعفاء طول العام غادي يخلق منافسة بين المستوردين تبان فثمن اللحم.', fr: 'estime que les importations par quantités limitées des années passées ont ouvert la voie aux bons d’importation et à la spéculation, et que l’exonération toute l’année créera entre importateurs une concurrence qui se verra dans le prix de la viande.'}
+      file: sources/press/plf2027/hespress-1114-livestock.html
+      sha256: 6f0317409697011b500b5c7a675c6e3f873d9389199ad8d32648589a8f59a2f2
+    - key: le360-1114-pjd
+      type: parliament
+      outlet: {ar: 'لو360', fr: 'Le360'}
+      date: '2026-11-14'
+      lang: fr
+      title: 'PLF 2027: le PJD explique pourquoi il a voté contre la surtaxe de 40% sur les sociétés pétrolières'
+      url: 'https://fr.le360.ma/politique/plf-2027-le-pjd-explique-pourquoi-il-a-vote-contre-la-surtaxe-de-40-sur-les-societes-petrolieres_GFODRTQAURE3HEBJ4Y7KL7IQNQ/'
+      quotes:
+        - who: {ar: 'إدريس الأزمي الإدريسي، رئيس فريق العدالة والتنمية، فبلاغ ديال الفريق', fr: 'Driss El Azami El Idrissi, président du groupe PJD, dans un communiqué'}
+          says: {ar: 'كيقول بلي الفريق صوت ضد المادة كما جابتها الحكومة، ماشي ضد رفع الضريبة على شركات المحروقات، حيت التعديل ديالو رقم 21 كان باغي يطبق نفس الـ40% على الشركات الكبرى ديال الاتصالات والإسمنت، وبلي خلاه باش يدافع عليه فالجلسة العامة.', fr: 'affirme que le groupe a voté contre l’article dans la rédaction du gouvernement, et non contre la hausse de l’impôt des sociétés pétrolières, parce que son amendement n° 21 voulait appliquer le même taux de 40 % aux grandes sociétés des télécoms et du ciment, amendement qu’il maintient pour la plénière.'}
+          proposal: true
+      file: sources/press/plf2027/le360-1114-pjd.html
+      sha256: 81f3b667386424d1429f44c2ae4471c4f26cea5398b1917eeb0ca62c52863357
+    - key: alakhbar-1114-commission
+      type: press
+      outlet: {ar: 'الأخبار', fr: 'Al Akhbar'}
+      date: '2026-11-14'
+      lang: ar
+      title: 'النواب يصادقون على الجزء الأول من مشروع قانون المالية'
+      url: 'https://www.alakhbar.press.ma/%D8%A7%D9%84%D9%86%D9%88%D8%A7%D8%A8-%D9%8A%D8%B5%D8%A7%D8%AF%D9%82%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%AC%D8%B2%D8%A1-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%85%D9%86-%D9%85%D8%B4%D8%B1%D9%88-303874.html'
+      said: {ar: 'الجريدة كتحكي الليلة ديال لجنة المالية، حوالي 18 ساعة حتى الربعة ديال الصباح: لقجع رفض تعديل العدالة والتنمية اللي كان باغي يخصم مصاريف المدرسة الخاصة من الدخل الخاضع للضريبة (حتى 6.000 درهم على كل ولد)، وعاتب نوابها بلي هاد الخصم كينفع غير اللي كيخلصو الضريبة على الدخل وكيشجع الخاص على حساب العمومي، وشرح بلي الـ40% غادي تمس 11 شركة ديال المحروقات.', fr: 'Le journal raconte la nuit de la commission des finances, environ 18 heures jusqu’à 4 heures du matin : Fouzi Lekjaa a refusé l’amendement du PJD qui voulait déduire du revenu imposable les frais de l’école privée (jusqu’à 6 000 DH par enfant), en reprochant au groupe une mesure qui ne profite qu’aux contribuables imposables et favorise le privé au détriment du public, et a expliqué que l’IS à 40 % toucherait 11 sociétés de carburants.'}
+      file: sources/press/plf2027/alakhbar-1114-commission.html
+      sha256: d4d181b9951f70643cd0f81b8aa5139dbbf577613051f33283f61625a69703c0
+    - key: le360-1114-lekjaa
+      type: government
+      outlet: {ar: 'لو360', fr: 'Le360'}
+      date: '2026-11-14'
+      lang: fr
+      title: 'Carburants: Fouzi Lekjaa justifie la surtaxe des pétroliers et laisse ouverte la piste d’un plafonnement des marges'
+      url: 'https://fr.le360.ma/economie/carburants-fouzi-lekjaa-justifie-la-surtaxe-des-petroliers-et-laisse-ouverte-la-piste-dun_4B4T6YY3SRFCHFSTGUIOIR3FUM/'
+      quotes:
+        - who: {ar: 'فوزي لقجع، وزير الاقتصاد والمالية والنجاعة العمومية، فالجلسة العامة', fr: 'Fouzi Lekjaa, ministre de l’Économie, des Finances et de la Performance publique, en séance plénière'}
+          says: {ar: 'كيقول بلي الضريبة على الشركات بـ40% كتمس 11 شركة ديال المحروقات اللي كتربح فوق 100 مليون درهم، وبلي الاتصالات بقات برا حيت عندها مساهمات خاصة والإسمنت حيت باقي كيرجع من الركود، وبلي ما كايناش علاقة بين الضريبة وثمن البيع فالمحطة؛ أما تسقيف هوامش الربح فالحكومة تقدر تدرسو كموضوع بوحدو.', fr: 'affirme que l’IS à 40 % vise onze sociétés pétrolières qui gagnent plus de 100 millions de DH, que les télécoms restent à part parce qu’ils paient déjà des contributions spécifiques et les cimentiers parce qu’ils sortent à peine d’un long ralentissement, et qu’il n’y a pas de lien entre l’impôt et le prix à la pompe ; un plafonnement des marges peut en revanche être étudié, comme une question distincte.'}
+      file: sources/press/plf2027/le360-1114-lekjaa.html
+      sha256: f3679087591fc0638d3c5c26ed589006a6af3599deef590f5bf781bb610d6c9c
+    - key: akhbarona-1115-lekjaa
+      type: government
+      outlet: {ar: 'أخبارنا', fr: 'Akhbarona'}
+      date: '2026-11-15'
+      lang: ar
+      title: 'ضريبة الثروة تثير السجال في البرلمان.. لقجع: خاصنا نعرفو شنو هو الغنى أولا'
+      url: 'https://www.akhbarona.com/national/435792.html'
+      quotes:
+        - who: {ar: 'فوزي لقجع، وزير الاقتصاد والمالية والنجاعة العمومية، فجوابو على النواب', fr: 'Fouzi Lekjaa, ministre de l’Économie, des Finances et de la Performance publique, en réponse aux députés'}
+          says: {ar: 'كيقول بلي المطالبة برفع الضريبة على الشركات لـ70% باسم العدالة الاجتماعية ساهلة ولكن كتنسى المنافسة بين الدول على المستثمرين، وبلي خاص المعارضة تعرّف أولا شنو هو الغنى وشنو هي الثروة قبل ما تقترح ضريبة عليها.', fr: 'juge facile de réclamer un impôt sur les sociétés à 70 % au nom de la justice sociale, mais estime que cela ignore la concurrence entre pays pour attirer les investisseurs, et demande à l’opposition de définir d’abord la richesse avant de proposer de la taxer.'}
+      file: sources/press/plf2027/akhbarona-1115-lekjaa.html
+      sha256: 96604b7942983b688f8133ca4864a90cdf72b32b5a377cb4fc8c1d03b6d0a378
+    - key: medias24-1115-vote
+      type: press
+      outlet: {ar: 'ميدياس24', fr: 'Médias24'}
+      date: '2026-11-15'
+      lang: fr
+      title: 'Le PLF 2027 adopté en première lecture à la Chambre des représentants'
+      url: 'https://medias24.com/2026/11/15/le-plf-2027-adopte-en-premiere-lecture-a-la-chambre-des-representants-1791295/'
+      said: {ar: 'الجريدة كتحكي كيفاش داز التصويت: الجزء الأول نهار السبت فالصباح من بعد جواب الحكومة، ومن الجوج ديال العشية الجزء الثاني والمشروع كامل، والجلسة سالات فالحداش ديال الليل؛ ودابا، حسب الجريدة، عند مجلس المستشارين 22 يوم على الأكثر، ومن بعد 6 أيام لمجلس النواب فالقراءة الثانية.', fr: 'Le journal retrace le vote : la première partie samedi matin après la réponse du gouvernement, la deuxième partie et l’ensemble à partir de 14 heures, jusqu’à 23 heures ; selon lui, la Chambre des conseillers dispose désormais de 22 jours au plus, puis la Chambre des représentants de 6 jours pour la deuxième lecture.'}
+      file: sources/press/plf2027/medias24-1115-vote.html
+      sha256: 33cd2ffa20a17487522486cf554cdafc4615aef6ca0144dc937a703a464c9706

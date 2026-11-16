@@ -1,0 +1,28 @@
+/* «قانون بالأرقام» where a reader already is (BlogLinks.tsx): a sheet with the blog's name over its double rule, as the
+   blog heads its own list, then each post as a headline in the law's type with its number and two lines of its lead. On
+   a wide page the posts stand side by side; on the home, one under the other and larger. */
+.bl { display: flex; flex-direction: column; gap: 4px; padding: 20px 20px 8px; border-radius: var(--radius-card); background: var(--color-sheet); }
+@media (min-width: 640px) { .bl { padding: 24px 32px 12px; } }
+.bl-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; padding-bottom: 10px; border-bottom: 4px double var(--color-ink); }
+.bl .bl-head h2 { margin: 0; font-family: var(--font-law); font-size: 1.75rem; line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.bl-all { display: inline-flex; align-items: center; min-height: 44px; margin-inline-start: auto; font-size: var(--text-body); font-weight: 500; text-decoration: none; }
+.bl-head p { flex-basis: 100%; margin: 0; max-width: 60ch; font-size: var(--text-body); line-height: 1.7; color: var(--color-ink-soft); }
+.bl-list { display: grid; grid-template-columns: minmax(0, 1fr); margin: 0; padding: 0; list-style: none; }
+@media (min-width: 900px) { .bl:not(.big) .bl-list { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); column-gap: 32px; } }
+.bl-list li { min-width: 0; }
+.bl-list li + li { border-top: 1px solid var(--color-rule); }
+@media (min-width: 900px) { .bl:not(.big) .bl-list li + li { border-top: 0; } }
+.bl-list a { display: flex; flex-direction: column; gap: 6px; height: 100%; padding: 16px 0; text-decoration: none; color: var(--color-ink); }
+.bl-list a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 6px; }
+.bl-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: var(--text-meta); font-weight: 700; color: var(--color-stamp); }
+.bl-draft { padding: 0 10px; border-radius: 12px; background: var(--color-amended-wash); color: var(--color-amended); font-weight: 600; }
+.bl .bl-list b { font-family: var(--font-law); font-size: 1.375rem; line-height: 1.25; font-weight: 700; text-wrap: balance; }
+.bl .bl-list a:hover b { color: var(--color-stamp); }
+.bl-lead { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: var(--text-body); line-height: 1.65; color: var(--color-ink-soft); }
+.bl.big .bl-head h2 { font-size: 2rem; }
+/* At the end of a post, as wide as its figures. */
+.bl.after { width: 100%; max-width: 52rem; margin: 24px auto 0; }
+.bl.big .bl-list b { font-size: 1.625rem; }
+.bl.big .bl-lead { -webkit-line-clamp: 3; }
+.bl .bl-list a:lang(fr) b { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1875rem; }
+.bl.big .bl-list a:lang(fr) b { font-size: 1.375rem; }

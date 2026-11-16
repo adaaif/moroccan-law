@@ -1,0 +1,49 @@
+# «حين تصحح الجريدة الرسمية نفسها»: the blog's ninth post (B9 of the blog-first-post review, built 31 Oct 2026 in the
+# order chosen). Counted from the live database on 31 Oct 2026: every correction notice the Arabic edition's pages
+# print, with the issue it names. The examples were read on their pages; their days come from the counted figures.
+slug: errata
+number: 9
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+title:
+  ar: "حين تصحح الجريدة الرسمية نفسها"
+  fr: "Quand le Bulletin officiel se corrige"
+lead:
+  ar: "منذ 1956 نشرت الجريدة الرسمية 1.375 استدراكا، يسمي كل واحد منها العدد الذي يصححه. جاء نصفها بعد أربعة أشهر أو أكثر، وجاء أطولها بعد خمس وعشرين سنة ليصحح رقما واحدا في تاريخ. قرأناها كلها على صفحاتها."
+  fr: "Depuis 1956, le Bulletin officiel a publié 1 375 rectificatifs, chacun nommant le numéro qu’il corrige. La moitié sont venus quatre mois ou plus après l’erreur, le plus tardif vingt-cinq ans après, pour un seul chiffre dans une date. Nous les avons tous lus sur leurs pages."
+# Four corrections read on their pages, the oldest first: what the notice names, and its «عوض … يقرأ …» as printed.
+examples:
+  - corrected_issue: "2367"
+    printed_issue: "2377"
+    what:
+      ar: "الظهير 1.58.073 الذي طبّق الكتاب الخامس المتعلق بالوصية، الفصل 215"
+      fr: "Dahir 1.58.073 appliquant le livre V, relatif au testament, article 215"
+    wrong: "منفردا"
+    right: "متعددا"
+    gloss: "« seul » devait se lire « plusieurs »"
+  - corrected_issue: "3125"
+    printed_issue: "3461"
+    what:
+      ar: "الظهير 1.72.260 بمثابة القانون التنظيمي للمالية، الفصل 17"
+      fr: "Dahir 1.72.260 portant loi organique des finances, article 17"
+    wrong: "باقتراح من وزير المالية المعنى بالامر"
+    right: "باقتراح من وزير المالية والوزير المعنى بالامر"
+    gloss: "« sur proposition du ministre des Finances concerné » devait se lire « du ministre des Finances et du ministre concerné »"
+  - corrected_issue: "4260"
+    printed_issue: "5216"
+    what:
+      ar: "المرسوم 2.94.253 بضم قطعتين أرضيتين بقرية بامحمد بإقليم تاونات، عنوانه"
+      fr: "Décret 2.94.253 sur deux parcelles du village de Bamhamed (Taounate), son titre"
+    wrong: "من أملاك الدولة العامة إلى أملاك الدولة الخاصة"
+    right: "من أملاك الدولة الخاصة إلى أملاك الدولة العامة"
+    gloss: "« du domaine public au domaine privé de l’État » devait se lire « du domaine privé au domaine public »"
+  - corrected_issue: "4628"
+    printed_issue: "7271"
+    what:
+      ar: "المرسوم 2.98.661 بالموافقة على التحديد الإداري للعقار الجماعي «جبل تازة» بزرهون الشمالية، تاريخ محضر التحديد"
+      fr: "Décret 2.98.661 approuvant la délimitation administrative du bien collectif « Jbel Taza » (Zerhoun nord), la date du procès-verbal"
+    wrong: "24 فبراير 1924"
+    right: "24 فبراير 1954"
+    gloss: "« 24 février 1924 » devait se lire « 24 février 1954 »"

@@ -1,0 +1,44 @@
+/* «حالة الطوارئ الصحية» (the twenty-seventh post). A wall calendar of three years: a row a year, the months left to right,
+   each decree's term a band of violet (what the texts printed), alternating light and dark so each one shows; the
+   declaration in ink; the two that changed a term hatched. */
+
+.em-hero { display: flex; flex-direction: column; gap: 10px; width: 100%; max-width: var(--bp-fig); margin-inline: auto; }
+.em-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem); line-height: 1.25; }
+.bp:lang(fr) .em-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.8rem); }
+.em-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 560px) { .em-facts { grid-template-columns: minmax(0, 1fr); } }
+.em-facts p { margin: 0; display: flex; flex-direction: column; gap: 2px; padding-inline-start: 12px; border-inline-start: 3px solid var(--color-stamp); }
+.em-facts b { font-weight: 200; font-size: 2.6rem; line-height: 1.05; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.em-facts span { font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.5; }
+.em-legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.em-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.em-legend i { inline-size: 16px; block-size: 12px; border-radius: 3px; }
+.em-legend i.is-declared { background: var(--color-ink); }
+.em-legend i.is-extended { background: var(--color-stamp); }
+.em-legend i.is-changed { background: repeating-linear-gradient(135deg, var(--color-stamp) 0 3px, color-mix(in srgb, var(--color-stamp) 30%, transparent) 3px 6px); }
+
+.em-cal { display: flex; flex-direction: column; gap: 8px; padding-top: 6px; }
+.em-months { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); margin-inline-start: 3.4rem; font-size: 14px; color: var(--color-ink-soft); }
+.em-months span { overflow: hidden; white-space: nowrap; text-overflow: clip; padding-inline-start: 2px; }
+
+.em-row { display: grid; grid-template-columns: 3rem minmax(0, 1fr); align-items: center; gap: 0 0.4rem; }
+.em-year { font-weight: 300; font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.em-track { position: relative; block-size: 34px; border-radius: 6px; background: color-mix(in srgb, var(--color-ink) 5%, transparent); }
+.em-month-line { position: absolute; top: 0; bottom: 0; inline-size: 1px; background: var(--color-rule); }
+.em-term { position: absolute; top: 3px; bottom: 3px; padding: 0; border: 0; border-radius: 4px; cursor: pointer; background: var(--color-stamp);
+  opacity: 0; transform: scaleY(0.4); transition: opacity 260ms ease, transform 260ms ease; }
+.em-term::after { content: ''; position: absolute; inset: -6px 0; }
+.em-term.is-on { opacity: 1; transform: none; }
+.em-term.is-odd { background: color-mix(in srgb, var(--color-stamp) 55%, transparent); }
+.em-term.is-declared { background: var(--color-ink); }
+.em-term.is-changed { background: repeating-linear-gradient(135deg, var(--color-stamp) 0 3px, color-mix(in srgb, var(--color-stamp) 30%, transparent) 3px 6px); }
+.em-term.is-picked { outline: 3px solid var(--color-ink); outline-offset: 1px; z-index: 1; }
+@media (prefers-reduced-motion: reduce) { .em-term { transition: none; } }
+.em-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-stamp); font-family: var(--font-law); font-size: 1.3rem; line-height: 1.75; text-wrap: pretty; text-align: right; }
+.em-quote.is-small { font-size: 1.15rem; }
+.em-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.em-stamp { vertical-align: middle; }
+.em-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.em-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.em-share:disabled { opacity: 0.6; }

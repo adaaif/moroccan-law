@@ -1,0 +1,473 @@
+# The consumer topic's journeys (J1–J9 of the consumer plan): what happens after a purchase, step by step, each
+# step on the articles it rests on, with the deadlines as the code counts them. Every period of law 31.08 is a full one
+# (art. 203): it starts the day after the event and ends with its last day. Written from law 31.08 as the SGG
+# consolidated it (to law 78.20), decree 2.12.503 (Adala, as published in BO 6192), orders 4.14 and 07.14 (BO 6255,
+# 6286) and the DOC's articles 549 to 575 (Adala), as the site holds them on 24 Oct 2026. A reader sees a journey once a
+# person has checked it (`manage.py approve_topic consumer journeys/<key> --by …`). Steps say what the law says, never
+# what a reader should do in their own case.
+
+- key: online
+  for: [online]
+  title: {ar: 'شريت أونلاين: من الطلبية إلى التراجع والاسترداد', fr: 'Acheter à distance : de la commande à la rétractation et au remboursement'}
+  lead:
+    ar: 'كل بيع يتم بدون حضور البائع والمشتري في آن واحد (الإنترنت، الهاتف، مواقع التواصل) بيع عن بعد. للمستهلك سبعة أيام كاملة ليتراجع دون تبرير، تبدأ من تسلم السلعة، وثلاثون يوما إذا لم يتوصل بتأكيد كتابي للمعلومات. ويرد المورد المبلغ داخل خمسة عشر يوما.'
+    fr: 'Toute vente conclue sans la présence simultanée du vendeur et de l’acheteur (internet, téléphone, réseaux sociaux) est une vente à distance. Le consommateur a sept jours francs pour se rétracter sans motif, à compter de la réception, et trente jours s’il n’a pas reçu de confirmation écrite. Le fournisseur rembourse dans les quinze jours.'
+  day: {ar: 'متى تسلمت السلعة؟', fr: 'Quand avez-vous reçu le produit ?'}
+  steps:
+    - title: {ar: 'ما يجب أن يقوله العرض', fr: 'Ce que l’offre doit dire'}
+      answer: {ar: 'قبل الشراء: اسم المورد وعنوانه وهاتفه، والثمن، وأجل التسليم ومصاريفه، ووجود حق التراجع.', fr: 'Avant l’achat : le nom, l’adresse et le téléphone du fournisseur, le prix, le délai et les frais de livraison, l’existence du droit de rétractation.'}
+      body:
+        ar: 'يجب أن يتضمن العرض المميزات الأساسية للمنتوج، واسم المورد وتسميته التجارية وهاتفه وبريده الإلكتروني وعنوانه (ورقم السجل التجاري إن كان تاجرا سيبرانيا خاضعا له)، وأجل التسليم ومصاريفه، ووجود حق التراجع، وكيفيات الأداء والتسليم، ومدة صلاحية العرض وثمنه. ويجب أن يمكن المورد المستهلك من الاطلاع على الشروط التعاقدية على صفحة الاستقبال، وأن يقبلها صراحة قبل تأكيد الطلبية، وأن يمكنه من تأكيد طلبيته أو تعديلها.'
+        fr: 'L’offre doit indiquer les caractéristiques essentielles du produit, le nom et la dénomination commerciale du fournisseur, son téléphone, son courriel et son adresse (et son numéro au registre du commerce pour un cybercommerçant qui y est soumis), le délai et les frais de livraison, l’existence du droit de rétractation, les modalités de paiement et de livraison, la durée de validité de l’offre et son prix. Le fournisseur doit donner accès aux conditions contractuelles dès la page d’accueil, les faire accepter expressément avant la confirmation de la commande, et permettre de confirmer ou de modifier la commande.'
+      cites: [/ma/loi/31-08/art_29, /ma/loi/31-08/art_30, /ma/loi/31-08/art_25]
+      papers: checklists/offer
+    - title: {ar: 'التأكيد المكتوب', fr: 'La confirmation écrite'}
+      answer: {ar: 'على أبعد تقدير عند التسليم، يتوصل المستهلك كتابة بتأكيد المعلومات، وبعنوان الشكايات، وبكيفية التراجع.', fr: 'Au plus tard à la livraison, le consommateur reçoit par écrit la confirmation des informations, l’adresse des réclamations et la façon de se rétracter.'}
+      body:
+        ar: 'يجب أن يتلقى المستهلك كتابة أو بأي وسيلة دائمة، على أبعد تقدير عند التسليم: تأكيدا للمعلومات، وعنوان المورد لتقديم الشكايات، وشروط ممارسة حق التراجع، والمعلومات المتعلقة بالخدمة بعد البيع والضمانات. ولا تخضع أرقام الهاتف المخصصة لتتبع الطلبية أو دراسة الشكايات لرسوم إضافية. وغياب هذا التأكيد يمد أجل التراجع إلى ثلاثين يوما.'
+        fr: 'Le consommateur doit recevoir par écrit ou sur un support durable, au plus tard à la livraison : la confirmation des informations, l’adresse du fournisseur pour les réclamations, les conditions du droit de rétractation, les informations sur le service après-vente et les garanties. Les numéros de suivi de commande ou de réclamation ne peuvent être surtaxés. Sans cette confirmation, le délai de rétractation passe à trente jours.'
+      cites: [/ma/loi/31-08/art_32, /ma/loi/31-08/art_36]
+    - title: {ar: 'تنفيذ الطلبية', fr: 'L’exécution de la commande'}
+      answer: {ar: 'ثلاثون يوما على الأكثر من تأكيد الطلبية، إلا إذا اتفق الطرفان على غير ذلك.', fr: 'Trente jours au plus après la confirmation de la commande, sauf accord contraire.'}
+      body:
+        ar: 'لا يمكن أن يتجاوز تنفيذ الطلبية ثلاثين يوما ابتداء من اليوم الذي أكد فيه المورد تسلم الطلبية، ما لم يتفق الطرفان على خلاف ذلك. وإذا لم ينفذ العقد لعدم توفر المنتوج، وجب إخبار المستهلك ورد ما دفعه على الفور وعلى أبعد تقدير خلال خمسة عشر يوما من الأداء، وبعدها تترتب فوائد بالسعر القانوني. ويمكن للمورد أن يقدم منتوجا من نفس الجودة ونفس الثمن إذا أعلن ذلك قبل العقد، وحينئذ يتحمل هو مصاريف الإرجاع إن تراجع المستهلك.'
+        fr: 'L’exécution de la commande ne peut dépasser trente jours à compter du jour où le fournisseur en a confirmé la réception, sauf accord contraire. Si le produit n’est pas disponible, le consommateur doit en être informé et remboursé sur-le-champ, au plus tard dans les quinze jours du paiement ; au-delà, des intérêts au taux légal courent. Le fournisseur peut livrer un produit de même qualité et de même prix s’il l’a annoncé avant le contrat ; il supporte alors les frais de retour en cas de rétractation.'
+      cites: [/ma/loi/31-08/art_39, /ma/loi/31-08/art_40, /ma/loi/31-08/art_41]
+      tool: tools/late?p={d}
+    - title: {ar: 'التراجع', fr: 'La rétractation'}
+      answer: {ar: 'سبعة أيام كاملة من تسلم السلعة، بلا تبرير وبلا غرامة، ما عدا مصاريف الإرجاع.', fr: 'Sept jours francs à compter de la réception, sans motif ni pénalité, hormis les frais de retour.'}
+      body:
+        ar: 'للمستهلك أجل سبعة أيام كاملة لممارسة حقه في التراجع، وثلاثين يوما إذا لم يف المورد بالتأكيد الكتابي للمعلومات، وذلك دون الحاجة إلى تبرير أو دفع غرامة، باستثناء مصاريف الإرجاع إن اقتضى الحال. وتسري الآجال من تاريخ تسلم السلعة، أو من قبول العرض فيما يخص الخدمات. والآجال في هذا القانون آجال كاملة: لا يحسب يوم التسلم.'
+        fr: 'Le consommateur a sept jours francs pour exercer son droit de rétractation, trente jours si le fournisseur n’a pas confirmé les informations par écrit, sans avoir à se justifier ni à payer de pénalité, sauf les frais de retour le cas échéant. Les délais courent de la réception du produit, ou de l’acceptation de l’offre pour un service. Les délais de cette loi sont francs : le jour de la réception ne compte pas.'
+      cites: [/ma/loi/31-08/art_36, /ma/loi/31-08/art_203]
+      tool: tools/return
+      delay: {on_day: true, days: 7, from: {ar: من اليوم الموالي لتسلم السلعة, fr: à compter du lendemain de la réception}}
+    - title: {ar: 'متى لا يوجد تراجع', fr: 'Quand il n’y a pas de rétractation'}
+      answer: {ar: 'السلعة المصنوعة حسب الطلب، أو سريعة التلف، أو البرامج المفتوحة، أو الجرائد، أو خدمة بدأت بموافقتك.', fr: 'Un produit fait sur mesure ou périssable, un logiciel descellé, un journal, un service commencé avec votre accord.'}
+      body:
+        ar: 'لا يمارس حق التراجع، إلا إذا اتفق الطرفان على خلاف ذلك، في: الخدمات التي شرع في تنفيذها بموافقة المستهلك قبل انتهاء السبعة أيام؛ والسلع التي يرتبط ثمنها بتقلبات السوق المالية؛ والسلع المصنوعة حسب مواصفات المستهلك أو التي لا يمكن إعادة إرسالها أو المعرضة للفساد؛ والتسجيلات السمعية البصرية والبرامج المعلوماتية التي اطلع عليها المستهلك؛ والجرائد والمجلات. ولا تطبق أحكام التراجع على خدمات الإيواء والنقل والمطاعم والترفيه المقدمة في تاريخ معين، ولا على سلع الاستهلاك العادي التي يوزعها الباعة في جولات منتظمة، ولا على البيع في المزاد العلني والعقارات.'
+        fr: 'Sauf accord contraire, pas de rétractation pour : un service commencé avec l’accord du consommateur avant la fin des sept jours ; un produit dont le prix dépend des marchés financiers ; un produit fait selon les spécifications du consommateur, qui ne peut être réexpédié ou qui est périssable ; des enregistrements audio, vidéo ou logiciels descellés ; journaux et magazines. La rétractation ne s’applique pas non plus à l’hébergement, au transport, à la restauration et aux loisirs fournis à une date précise, aux produits de consommation courante livrés en tournées régulières, ni aux ventes aux enchères et aux immeubles.'
+      cites: [/ma/loi/31-08/art_38, /ma/loi/31-08/art_42, /ma/loi/31-08/art_28]
+    - title: {ar: 'رد المبلغ', fr: 'Le remboursement'}
+      answer: {ar: 'المبلغ كاملا على الفور، وعلى أبعد تقدير خلال خمسة عشر يوما من التراجع؛ وبعدها فوائد بالسعر القانوني.', fr: 'La totalité, sur-le-champ, au plus tard dans les quinze jours de la rétractation ; ensuite des intérêts au taux légal.'}
+      body:
+        ar: 'عند ممارسة حق التراجع، يجب على المورد أن يرد إلى المستهلك المبلغ المدفوع كاملا على الفور، وعلى أبعد تقدير داخل الخمسة عشر يوما الموالية لتاريخ ممارسة هذا الحق. وبعد انصرام الأجل، تترتب بقوة القانون على المبلغ المستحق فوائد بالسعر القانوني. ويعاقب المورد الذي يرفض الإرجاع بغرامة من 1.200 إلى 50.000 درهم.'
+        fr: 'En cas de rétractation, le fournisseur rembourse la totalité de la somme payée sur-le-champ, au plus tard dans les quinze jours qui suivent l’exercice du droit. Passé ce délai, la somme porte de plein droit intérêt au taux légal. Le fournisseur qui refuse de rembourser encourt une amende de 1 200 à 50 000 dirhams.'
+      cites: [/ma/loi/31-08/art_37, /ma/loi/31-08/art_178]
+      delay: {days: 15, from: {ar: من اليوم الموالي لممارسة التراجع, fr: à compter du lendemain de la rétractation}}
+    - title: {ar: 'ما لم تطلبه', fr: 'Ce que vous n’avez pas commandé'}
+      answer: {ar: 'سلعة أرسلت بلا طلب مع طلب الأداء: لا يدفع المستهلك عنها شيئا، وسكوته ليس قبولا.', fr: 'Un produit envoyé sans commande avec une demande de paiement : le consommateur ne doit rien, et son silence ne vaut pas acceptation.'}
+      body:
+        ar: 'يمنع توريد المنتوجات أو تقديم الخدمات إلى المستهلك دون طلبية مسبقة منه إذا تضمن هذا التوريد طلبا بالأداء. ولا يعتبر سكوت المستهلك قبولا، ولا يتحمل أي مقابل.'
+        fr: 'Il est interdit de fournir un produit ou un service sans commande préalable lorsque la fourniture s’accompagne d’une demande de paiement. Le silence du consommateur ne vaut pas acceptation, et il ne doit rien.'
+      cites: [/ma/loi/31-08/art_33]
+    - title: {ar: 'النزاع', fr: 'En cas de litige'}
+      answer: {ar: 'المورد هو من يثبت أنه أعطى المعلومات واحترم الآجال؛ والمحكمة الابتدائية لمدينة المستهلك.', fr: 'C’est au fournisseur de prouver qu’il a informé et respecté les délais ; le tribunal de première instance de la ville du consommateur.'}
+      body:
+        ar: 'في حالة نزاع، يقع عبء الإثبات على المورد، خاصة في تقديم المعلومات وتأكيدها واحترام الآجال وقبول المستهلك، وكل اتفاق مخالف باطل. وأحكام البيع عن بعد من النظام العام. وتختص المحكمة الابتدائية وحدها، رغم أي شرط مخالف، وهي محكمة موطن المستهلك أو محل إقامته أو المكان الذي وقع فيه الضرر، باختياره.'
+        fr: 'En cas de litige, la preuve incombe au fournisseur, notamment pour l’information préalable, sa confirmation, le respect des délais et l’acceptation du consommateur ; toute clause contraire est nulle. Les règles de la vente à distance sont d’ordre public. Le tribunal de première instance est seul compétent, malgré toute clause contraire : celui du domicile ou de la résidence du consommateur, ou du lieu du dommage, à son choix.'
+      cites: [/ma/loi/31-08/art_34, /ma/loi/31-08/art_44, /ma/loi/31-08/art_202]
+      next: pages/where
+  ends: {icon: list, paper: {ar: 'تأكيد الطلبية المكتوب والفاتورة، ووصل إرسال التراجع إلا تراجعتي', fr: 'La confirmation écrite de la commande et la facture, et la preuve d’envoi de la rétractation le cas échéant'}, cites: [/ma/loi/31-08/art_32, /ma/loi/31-08/art_36], papers: checklists/invoice}
+  next: [journeys/late, journeys/defect]
+
+- key: defect
+  for: [shop, online, door, credit]
+  title: {ar: 'عيب في ما اشتريت: الضمان القانوني والضمان التعاقدي', fr: 'Un défaut : la garantie légale et la garantie contractuelle'}
+  lead:
+    ar: 'يطبق على كل بيع بين مورد ومستهلك الضمان القانوني لعيوب الشيء المبيع الوارد في قانون الالتزامات والعقود، ولا يمكن لأي شرط أن يلغيه. وترفع الدعوى خلال سنة بعد التسليم للمنقولات، وسنتين للعقارات. وضمان المحل التعاقدي يضاف إليه ولا يعوضه.'
+    fr: 'Toute vente entre un fournisseur et un consommateur emporte la garantie légale des vices du Code des obligations et des contrats, qu’aucune clause ne peut écarter. L’action se fait dans l’année qui suit la livraison pour un meuble, deux ans pour un immeuble. La garantie commerciale du magasin s’y ajoute, sans la remplacer.'
+  day: {ar: 'متى تسلمت الشيء؟', fr: 'Quand l’avez-vous reçu ?'}
+  steps:
+    - title: {ar: 'الفاتورة', fr: 'La facture'}
+      answer: {ar: 'للمستهلك الحق في فاتورة أو تذكرة صندوق، وفيها التاريخ والثمن وكيفية الأداء.', fr: 'Le consommateur a droit à une facture ou un ticket de caisse, avec la date, le prix et le mode de paiement.'}
+      body:
+        ar: 'يجب على المورد أن يسلم فاتورة أو مخالصة أو تذكرة صندوق أو أي وثيقة تقوم مقامها إلى كل مستهلك قام بعملية شراء. ويحدد المرسوم 2.12.503 بياناتها: التعريف بالمورد، والسلع أو الخدمات، وتاريخ العملية ومكانها وتاريخ التسليم عند الاقتضاء، والكمية، وسعر البيع لكل سلعة والمبلغ الإجمالي بكل الرسوم، وكيفيات الأداء.'
+        fr: 'Le fournisseur doit remettre une facture, une quittance, un ticket de caisse ou tout document en tenant lieu à tout consommateur qui achète. Le décret 2-12-503 en fixe les mentions : l’identité du fournisseur, les produits ou services, la date et le lieu de l’opération et, le cas échéant, la date de livraison, la quantité, le prix de chaque article et le total toutes taxes comprises, le mode de paiement.'
+      cites: [/ma/loi/31-08/art_4, /ma/decret/2-12-503/art_25]
+      papers: checklists/invoice
+    - title: {ar: 'ما يضمنه البائع', fr: 'Ce que garantit le vendeur'}
+      answer: {ar: 'العيب الذي ينقص من القيمة أو الاستعمال نقصا محسوسا، والصفات التي صرح بها البائع.', fr: 'Le vice qui diminue sensiblement la valeur ou l’usage, et les qualités que le vendeur a annoncées.'}
+      body:
+        ar: 'يطبق على بيع السلع بين المورد والمستهلك الضمان القانوني لعيوب الشيء المبيع الوارد في الفصول 549 إلى 575 من قانون الالتزامات والعقود. ويضمن البائع عيوب الشيء التي تنقص من قيمته نقصا محسوسا أو تجعله غير صالح لاستعماله فيما أعد له، كما يضمن وجود الصفات التي صرح بها أو اشترطها المشتري. ولا يضمن العيوب الظاهرة أو التي كان المشتري يعرفها، إلا إذا صرح البائع بعدم وجودها.'
+        fr: 'La vente d’un produit entre un fournisseur et un consommateur emporte la garantie légale des vices des articles 549 à 575 du DOC. Le vendeur garantit les vices qui diminuent sensiblement la valeur du bien ou le rendent impropre à son usage, et la présence des qualités qu’il a déclarées ou que l’acheteur a stipulées. Il ne garantit pas les vices apparents ou connus de l’acheteur, sauf s’il en a déclaré l’absence.'
+      cites: [/ma/loi/31-08/art_65, /ma/code/doc/art_549, /ma/code/doc/art_569, /ma/code/doc/art_570]
+    - title: {ar: 'لا شرط يلغيه', fr: 'Aucune clause ne l’écarte'}
+      answer: {ar: '«لا ترد ولا تستبدل» لا يلغي الضمان القانوني: شرط عدم الضمان لا يطبق على المستهلك.', fr: '« Ni reprise ni échange » n’écarte pas la garantie légale : la clause de non-garantie ne s’applique pas au consommateur.'}
+      body:
+        ar: 'لا يطبق على البيع بين المستهلك والمورد البند الثاني من الفصل 571، الذي يعفي البائع إذا اشترط عدم مسؤوليته عن أي ضمان. ولا يسوغ تقصير آجال الضمان باتفاق المتعاقدين. وتبقى للبائع حالة واحدة من الفصل 571: العيب الذي صرح به قبل البيع.'
+        fr: 'L’alinéa 2 de l’article 571, qui libère le vendeur ayant stipulé qu’il ne garantit rien, ne s’applique pas à la vente entre un consommateur et un fournisseur, et les délais de garantie ne peuvent être réduits par convention. Il reste au vendeur un cas de l’article 571 : le vice qu’il a déclaré avant la vente.'
+      cites: [/ma/loi/31-08/art_65, /ma/code/doc/art_571]
+      next: pages/beliefs
+    - title: {ar: 'الأجل', fr: 'Le délai'}
+      answer: {ar: 'ترفع الدعوى خلال سنة بعد التسليم للأشياء المنقولة، وسنتين للعقارات.', fr: 'L’action se fait dans l’année qui suit la livraison pour un meuble, deux ans pour un immeuble.'}
+      body:
+        ar: 'خلافا للفصلين 553 و573 من قانون الالتزامات والعقود، كل دعوى ناشئة عن العيوب الموجبة للضمان أو عن خلو المبيع من الصفات الموعود بها يجب أن ترفع، وإلا سقطت: خلال سنتين بعد التسليم بالنسبة إلى العقارات، وخلال سنة بعد التسليم بالنسبة إلى الأشياء المنقولة. ولا يسوغ تقصير هذه الآجال باتفاق المتعاقدين.'
+        fr: 'Par dérogation aux articles 553 et 573 du DOC, toute action née des vices ou de l’absence des qualités promises doit être intentée, à peine de déchéance, dans les deux ans suivant la livraison pour les immeubles et dans l’année suivant la livraison pour les meubles. Ces délais ne peuvent être réduits par convention.'
+      cites: [/ma/loi/31-08/art_65, /ma/code/doc/art_553, /ma/code/doc/art_573]
+      tool: tools/guarantee
+      delay: {on_day: true, months: 12, from: {ar: من اليوم الموالي للتسليم, fr: à compter du lendemain de la livraison}}
+      note:
+        ar: 'تبدأ المادة 65 بعبارة «خلافا لأحكام المواد 573 و553»، وتقرأ هنا على أنها تبعد عن المستهلك إخطار السبعة أيام الذي يفرضه الفصل 553، فلا يبقى إلا أجل السنة. وهذه قراءة لم يراجعها مختص بعد.'
+        fr: 'L’article 65 s’ouvre sur « par dérogation aux articles 573 et 553 » ; il est lu ici comme écartant pour le consommateur l’avis de sept jours qu’exige l’article 553, ne laissant que le délai d’un an. Cette lecture n’a pas encore été revue par un professionnel.'
+        cites: [/ma/loi/31-08/art_65, /ma/code/doc/art_553]
+    - title: {ar: 'ما يمكن طلبه', fr: 'Ce que l’on peut demander'}
+      answer: {ar: 'فسخ البيع ورد الثمن؛ ومن احتفظ بالشيء لا ينقص من الثمن؛ والتعويض إذا كان البائع تاجرا.', fr: 'L’annulation de la vente et le remboursement ; qui garde le bien ne peut réduire le prix ; des dommages-intérêts si le vendeur est commerçant.'}
+      body:
+        ar: 'إذا ثبت الضمان، كان للمشتري أن يطلب فسخ البيع ورد الثمن، وإذا فضل الاحتفاظ بالمبيع لم يكن له أن ينقص من الثمن. وله الحق في التعويض إذا كان البائع يعلم العيب، ويفترض هذا العلم دائما إذا كان البائع تاجرا أو صانعا باع منتجات حرفته. وفي الأشياء المثلية، يطلب المشتري مثلها خالية من العيب.'
+        fr: 'La garantie établie, l’acheteur peut demander la résolution de la vente et la restitution du prix ; s’il préfère garder le bien, il ne peut obtenir de réduction du prix. Il a droit à des dommages-intérêts si le vendeur connaissait le vice, ce qui est toujours présumé d’un commerçant ou fabricant qui vend les produits de son métier. Pour des choses fongibles, l’acheteur demande des choses semblables sans vice.'
+      cites: [/ma/code/doc/art_556, /ma/code/doc/art_557, /ma/code/doc/art_561]
+    - title: {ar: 'ضمان المحل (الكارانتي)', fr: 'La garantie du magasin'}
+      answer: {ar: 'ضمان يضاف إلى الضمان القانوني، بمحرر يذكر مدته ومراكز الإصلاح؛ وتمدد مدته بأيام الإصلاح.', fr: 'Une garantie qui s’ajoute à la garantie légale, avec un écrit qui dit sa durée et les centres de réparation ; sa durée s’allonge des jours de réparation.'}
+      body:
+        ar: 'الضمان التعاقدي يضاف إلى الضمان القانوني، ولا يقترحه المورد دون أن يشير بوضوح إلى الضمان القانوني الذي يطبق في جميع الأحوال. ويكون موضوع محرر يذكر اسم الضامن وعنوانه، ووصف السلعة، والتزاماته، والمسطرة، ومدته بدقة، ومدة توفر قطع الغيار، وقائمة مراكز الإصلاح. ويتحمل المورد مصاريف النقل أو الإرسال. وتمدد مدته بأجل يساوي المدة التي حاز فيها المورد السلعة للإصلاح، ويسلم المورد وصلا بتاريخ التسلم وآخر بتاريخ الإرجاع.'
+        fr: 'La garantie contractuelle s’ajoute à la garantie légale ; le fournisseur ne peut la proposer sans rappeler clairement la garantie légale, qui s’applique en tout cas. Elle fait l’objet d’un écrit qui indique le garant et son adresse, le bien, ses obligations, la procédure, sa durée précise, la durée de disponibilité des pièces et la liste des centres de réparation. Le fournisseur supporte les frais de transport ou d’envoi. Sa durée est prolongée du temps pendant lequel le fournisseur a détenu le bien pour la réparation ; il remet un reçu daté au dépôt et un autre à la restitution.'
+      cites: [/ma/loi/31-08/art_66, /ma/loi/31-08/art_67, /ma/loi/31-08/art_68, /ma/loi/31-08/art_71, /ma/loi/31-08/art_72, /ma/loi/31-08/art_73]
+      tool: tools/guarantee
+    - title: {ar: 'الخدمة بعد البيع', fr: 'Le service après-vente'}
+      answer: {ar: 'الصيانة والتركيب والإصلاح عقد آخر، مكتوب بأسعاره، وليس هو الضمان.', fr: 'L’entretien, l’installation et la réparation sont un autre contrat, écrit avec ses prix, distinct de la garantie.'}
+      body:
+        ar: 'الخدمة بعد البيع هي العقد الذي يحدد الخدمات التي يلتزم بها المورد، بعوض أو بالمجان، كالتسليم بالمنازل والصيانة والتركيب والإصلاح، وهي تختلف عن الضمان القانوني والضمان التعاقدي. وإذا أبرم في شأنها عقد مستقل، وجب أن يبين كتابة حقوق المستهلك والأسعار الواجب أداؤها.'
+        fr: 'Le service après-vente est le contrat qui fixe les prestations du fournisseur, payantes ou gratuites, comme la livraison à domicile, l’entretien, l’installation et la réparation ; il se distingue de la garantie légale et de la garantie contractuelle. Conclu à part, il doit indiquer par écrit les droits du consommateur et les prix à payer.'
+      cites: [/ma/loi/31-08/art_69, /ma/loi/31-08/art_70]
+    - title: {ar: 'المحكمة', fr: 'Le tribunal'}
+      answer: {ar: 'المحكمة الابتدائية لموطن المستهلك أو لمكان الضرر، باختياره، رغم أي شرط مخالف.', fr: 'Le tribunal de première instance du domicile du consommateur ou du lieu du dommage, à son choix, malgré toute clause contraire.'}
+      body:
+        ar: 'في حال نزاع بين المورد والمستهلك، ورغم وجود أي شرط مخالف، ينعقد الاختصاص حصريا للمحكمة الابتدائية. والمحكمة المختصة مكانيا محكمة موطن المستهلك أو محل إقامته أو محكمة المحل الذي وقع فيه الفعل المتسبب في الضرر، باختياره.'
+        fr: 'En cas de litige entre fournisseur et consommateur, malgré toute clause contraire, le tribunal de première instance est seul compétent ; territorialement, celui du domicile ou de la résidence du consommateur, ou celui du lieu du fait dommageable, à son choix.'
+      cites: [/ma/loi/31-08/art_202]
+      next: pages/where
+  ends: {icon: list, paper: {ar: 'الفاتورة أو تذكرة الصندوق، ومحرر الضمان إلا عطاك المحل واحد', fr: 'La facture ou le ticket de caisse, et le certificat de garantie si le magasin en a donné un'}, cites: [/ma/loi/31-08/art_4, /ma/loi/31-08/art_66], papers: checklists/invoice}
+  next: [journeys/online]
+
+- key: late
+  for: [shop, online, door]
+  title: {ar: 'التسليم تأخر: الأجل المكتوب والفسخ دون محكمة', fr: 'La livraison tarde : le délai écrit et la résolution sans juge'}
+  lead:
+    ar: 'إذا تجاوز الثمن 3.000 درهم ولم يكن التسليم فوريا، يكتب المورد أجل التسليم. وإذا تجاوزه بسبعة أيام دون قوة قاهرة، أمكن للمستهلك أن يفسخ دون اللجوء إلى القضاء، داخل خمسة أيام بعدها، ويسترد ما دفعه داخل سبعة أيام.'
+    fr: 'Au-delà de 3 000 dirhams et pour une livraison non immédiate, le fournisseur écrit la date de livraison. S’il la dépasse de sept jours sans force majeure, le consommateur peut résoudre sans juge, dans les cinq jours qui suivent, et être remboursé sous sept jours.'
+  day: {ar: 'ما هو أجل التسليم المكتوب؟', fr: 'Quelle est la date de livraison écrite ?'}
+  steps:
+    - title: {ar: 'الأجل المكتوب', fr: 'La date écrite'}
+      answer: {ar: 'فوق 3.000 درهم، يكتب المورد في العقد أو الفاتورة أو التذكرة الأجل الذي يلتزم فيه بالتسليم.', fr: 'Au-delà de 3 000 dirhams, le fournisseur écrit sur le contrat, la facture ou le ticket la date à laquelle il s’engage à livrer.'}
+      body:
+        ar: 'في كل عقد بيع أو خدمة للمستهلك، إذا تجاوز الثمن الحد المقرر بنص تنظيمي ولم يكن التسليم فوريا، يحدد المورد كتابة في العقد أو الفاتورة أو تذكرة الصندوق أو المخالصة أو أي وثيقة أخرى الأجل الذي يتعهد فيه بالتسليم. ويحدد المرسوم 2.12.503 هذا الحد في 3.000 درهم.'
+        fr: 'Dans toute vente ou prestation au consommateur, si le prix dépasse le seuil fixé par voie réglementaire et que la livraison n’est pas immédiate, le fournisseur indique par écrit, sur le contrat, la facture, le ticket, la quittance ou tout autre document, la date à laquelle il s’engage à livrer. Le décret 2-12-503 fixe ce seuil à 3 000 dirhams.'
+      cites: [/ma/loi/31-08/art_12, /ma/decret/2-12-503/art_28]
+    - title: {ar: 'سبعة أيام من التأخير', fr: 'Sept jours de retard'}
+      answer: {ar: 'بعد سبعة أيام كاملة من الأجل، يمكن للمستهلك أن يفسخ بنفسه، بأي وسيلة تثبت التوصل، داخل خمسة أيام.', fr: 'Sept jours francs après la date, le consommateur peut résoudre lui-même, par tout moyen prouvant la réception, dans les cinq jours.'}
+      body:
+        ar: 'إذا تم تجاوز الأجل بسبعة أيام ولم يعز التأخير إلى قوة قاهرة، جاز للمستهلك، دون اللجوء إلى القضاء، أن يفسخ الالتزام فيما يتعلق بالسلعة غير المسلمة أو الخدمة غير المقدمة، بأية وسيلة تثبت التوصل، رغم كل شرط مخالف. ويمارس هذا الحق داخل أجل أقصاه خمسة أيام بعد انصرام أجل السبعة أيام.'
+        fr: 'Si la date est dépassée de sept jours sans force majeure, le consommateur peut, sans recourir au juge, résoudre l’engagement pour le produit non livré ou le service non fourni, par tout moyen prouvant la réception, malgré toute clause contraire. Il exerce ce droit dans un délai de cinq jours au plus après l’expiration des sept jours.'
+      cites: [/ma/loi/31-08/art_13, /ma/loi/31-08/art_203]
+      tool: tools/late?p={d}
+      delay: {on_day: true, days: 7, from: {ar: من اليوم الموالي للأجل المكتوب, fr: à compter du lendemain de la date écrite}}
+    - title: {ar: 'متى يعتبر العقد مفسوخا', fr: 'Quand le contrat est résolu'}
+      answer: {ar: 'بمجرد توصل المورد بالإشعار، إلا إذا سلم السلعة قبل ذلك.', fr: 'Dès que le fournisseur reçoit l’avis, sauf s’il a livré entre-temps.'}
+      body:
+        ar: 'يعتبر الالتزام مفسوخا بمجرد توصل المورد بالإشعار الموجه إليه، على ألا يكون التسليم قد تم في المدة الفاصلة بين توجيه الإشعار وتسلمه.'
+        fr: 'L’engagement est résolu dès que le fournisseur reçoit l’avis, à condition que la livraison n’ait pas eu lieu entre l’envoi de l’avis et sa réception.'
+      cites: [/ma/loi/31-08/art_13]
+      tool: tools/letters
+    - title: {ar: 'رد المبالغ', fr: 'Le remboursement'}
+      answer: {ar: 'داخل سبعة أيام من تسلم الإشعار؛ ومن اليوم الثامن فوائد بالسعر القانوني، والتعويض عن الضرر.', fr: 'Dans les sept jours de la réception de l’avis ; dès le huitième, des intérêts au taux légal, et la réparation du préjudice.'}
+      body:
+        ar: 'في حالة الفسخ، يجب على المورد أن يرد المبالغ المسبقة داخل أجل لا يتجاوز سبعة أيام من تاريخ تسلم الإشعار. وتستحق بقوة القانون فائدة بالسعر القانوني الجاري به العمل على المبلغ ابتداء من اليوم الثامن، دون المساس بحق المستهلك في التعويض عن الضرر.'
+        fr: 'En cas de résolution, le fournisseur rembourse les sommes versées d’avance dans sept jours au plus à compter de la réception de l’avis. Des intérêts au taux légal courent de plein droit à partir du huitième jour, sans préjudice des dommages-intérêts.'
+      cites: [/ma/loi/31-08/art_14]
+      delay: {days: 7, from: {ar: من اليوم الموالي لتسلم المورد للإشعار, fr: à compter du lendemain de la réception de l’avis}}
+    - title: {ar: 'في البيع عن بعد', fr: 'Dans la vente à distance'}
+      answer: {ar: 'ثلاثون يوما على الأكثر لتنفيذ الطلبية من تأكيدها، وخمسة عشر يوما لرد ما دفع إذا لم تتوفر السلعة.', fr: 'Trente jours au plus pour exécuter la commande après sa confirmation, quinze pour rembourser si le produit manque.'}
+      body:
+        ar: 'لا يتجاوز تنفيذ الطلبية عن بعد ثلاثين يوما من تأكيد المورد تسلمها، ما لم يتفق على خلاف ذلك. وإذا لم يتوفر المنتوج، رد المورد ما دفع على الفور وعلى أبعد تقدير خلال خمسة عشر يوما، ثم تترتب فوائد بالسعر القانوني.'
+        fr: 'À distance, la commande est exécutée dans les trente jours de la confirmation de sa réception, sauf accord contraire. Si le produit manque, le fournisseur rembourse sur-le-champ, au plus tard dans les quinze jours, puis des intérêts au taux légal courent.'
+      cites: [/ma/loi/31-08/art_39, /ma/loi/31-08/art_40]
+  ends: {icon: list, paper: {ar: 'العقد أو الفاتورة بالأجل المكتوب، ووصل الإشعار بالفسخ', fr: 'Le contrat ou la facture avec la date écrite, et la preuve de l’avis de résolution'}, cites: [/ma/loi/31-08/art_12, /ma/loi/31-08/art_13]}
+  next: [journeys/online]
+
+- key: door
+  for: [door]
+  title: {ar: 'البيع خارج المحلات: في المنزل، في العمل، في رحلة أو معرض', fr: 'La vente hors établissement : à domicile, au travail, en excursion'}
+  lead:
+    ar: 'كل بيع يقترح على المستهلك في منزله أو محل إقامته أو عمله، ولو بطلب منه، أو في مكان غير معد للبيع كالاجتماعات والرحلات، يحتاج عقدا مكتوبا باستمارة للتراجع. للمستهلك سبعة أيام من الطلبية، ولا يؤدي شيئا قبل انقضائها.'
+    fr: 'Toute vente proposée au consommateur chez lui, à sa résidence ou à son travail, même à sa demande, ou dans un lieu non destiné à la vente comme une réunion ou une excursion, exige un contrat écrit avec un formulaire de rétractation. Le consommateur a sept jours dès la commande, et ne paie rien avant leur fin.'
+  day: {ar: 'متى وقعت الطلبية؟', fr: 'Quand avez-vous passé commande ?'}
+  steps:
+    - title: {ar: 'أي بيع', fr: 'Quelles ventes'}
+      answer: {ar: 'في المنزل أو العمل، ولو بطلبك، وفي الاجتماعات والرحلات التي ينظمها البائع.', fr: 'À domicile ou au travail, même à votre demande, et dans les réunions ou excursions organisées par le vendeur.'}
+      body:
+        ar: 'يخضع لهذه الأحكام كل بيع أو إيجار أو تقديم خدمة يقترح خارج المحلات التجارية في موطن شخص أو محل إقامته أو عمله، ولو بطلب منه، وفي الأماكن غير المعدة للبيع، ولا سيما الاجتماعات أو الرحلات التي ينظمها المورد. ولا تخضع له الأنشطة المنظمة بنص خاص، ولا البيع بالمنازل لمنتوجات الاستهلاك العادي في جولات منتظمة، ولا بيع المورد لما يصنعه بنفسه.'
+        fr: 'Relèvent de ces règles toute vente, location ou prestation proposée hors établissement au domicile, à la résidence ou au travail d’une personne, même à sa demande, et dans un lieu non destiné à la vente, notamment une réunion ou une excursion organisée par le fournisseur. N’en relèvent pas les activités régies par un texte spécial, la vente à domicile de produits courants en tournées régulières, ni la vente de ce que le fournisseur produit lui-même.'
+      cites: [/ma/loi/31-08/art_45, /ma/loi/31-08/art_46]
+    - title: {ar: 'العقد المكتوب', fr: 'Le contrat écrit'}
+      answer: {ar: 'نسخة للمستهلك، موقعة ومؤرخة بخط يده، وفيها استمارة قابلة للاقتطاع للتراجع.', fr: 'Un exemplaire pour le consommateur, signé et daté de sa main, avec un formulaire détachable de rétractation.'}
+      body:
+        ar: 'يبرم عقد مكتوب تسلم نسخة منه إلى المستهلك وقت إبرامه، ويتضمن استمارة قابلة للاقتطاع لتسهيل التراجع، ويوقع المستهلك جميع النظائر ويؤرخها بخط يده. ويتضمن العقد، تحت طائلة البطلان: اسم المورد والبائع وعنوان المورد، ومكان العقد، وطبيعة المنتوج ومميزاته، وأجل التسليم والسعر الإجمالي، وكيفيات الأداء، وإمكانية التراجع وشروطها، والنص الكامل للمواد 47 إلى 50 بشكل بارز. ولا يجوز أن يتضمن شرطا يسند الاختصاص لمحكمة.'
+        fr: 'Un contrat écrit est conclu, dont un exemplaire est remis au consommateur sur-le-champ, avec un formulaire détachable pour faciliter la rétractation ; le consommateur signe et date de sa main tous les exemplaires. À peine de nullité, le contrat indique : le nom du fournisseur et du vendeur, l’adresse du fournisseur, le lieu du contrat, la nature et les caractéristiques du produit, le délai de livraison et le prix total, le mode de paiement, la faculté de rétractation et ses conditions, et le texte intégral des articles 47 à 50, en évidence. Il ne peut contenir de clause attributive de juridiction.'
+      cites: [/ma/loi/31-08/art_47, /ma/loi/31-08/art_48]
+    - title: {ar: 'سبعة أيام للتراجع', fr: 'Sept jours pour se rétracter'}
+      answer: {ar: 'سبعة أيام من الطلبية، بإرسال الاستمارة بأي وسيلة تثبت التوصل؛ والتنازل عن هذا الحق باطل.', fr: 'Sept jours dès la commande, en envoyant le formulaire par tout moyen prouvant la réception ; y renoncer est nul.'}
+      body:
+        ar: 'استثناء من الفصل 604 من قانون الالتزامات والعقود، يجوز للمستهلك التراجع داخل أجل أقصاه سبعة أيام من تاريخ الطلبية أو الالتزام بالشراء، بإرسال الاستمارة القابلة للاقتطاع بأي وسيلة تثبت التوصل. وكل شرط يتخلى به عن هذا الحق باطل.'
+        fr: 'Par dérogation à l’article 604 du DOC, le consommateur peut se rétracter dans les sept jours de la commande ou de l’engagement d’achat, en envoyant le formulaire détachable par tout moyen prouvant la réception. Toute clause par laquelle il y renonce est nulle.'
+      cites: [/ma/loi/31-08/art_49, /ma/loi/31-08/art_203]
+      tool: tools/return?c=door
+      delay: {on_day: true, days: 7, from: {ar: من اليوم الموالي للطلبية, fr: à compter du lendemain de la commande}}
+    - title: {ar: 'لا أداء قبل الأجل', fr: 'Rien à payer avant la fin du délai'}
+      answer: {ar: 'لا يطالب أحد المستهلك بأي مقابل قبل انقضاء أجل التراجع، ويرد ما وقع خلال خمسة عشر يوما من تراجعه.', fr: 'Personne ne peut rien exiger avant la fin du délai, et ce qui a été remis est rendu dans les quinze jours de la rétractation.'}
+      body:
+        ar: 'لا يجوز لأي كان، قبل انصرام أجل التراجع، أن يطالب المستهلك أو يحصل منه بأي شكل على أي مقابل أو التزام. ولا تنفذ الأوامر بالأداء إلا بعد انصرام الأجل، وترد إلى المستهلك داخل الخمسة عشر يوما الموالية لتراجعه.'
+        fr: 'Nul ne peut, avant la fin du délai de rétractation, exiger ou obtenir du consommateur une contrepartie ou un engagement quelconque. Les ordres de paiement ne s’exécutent qu’après le délai et sont rendus dans les quinze jours de la rétractation.'
+      cites: [/ma/loi/31-08/art_50]
+    - title: {ar: 'بالهاتف', fr: 'Par téléphone'}
+      answer: {ar: 'يقول البائع هويته والطابع التجاري للمكالمة، ولا يلزم العرض المستهلك إلا بعد توقيعه.', fr: 'Le vendeur dit son identité et le but commercial de l’appel ; l’offre n’engage le consommateur qu’une fois signée.'}
+      body:
+        ar: 'عند كل بيع خارج المحلات عن طريق الهاتف، يبين المورد صراحة هويته والطابع التجاري للعملية، ويوجه إلى المستهلك تأكيدا للعرض لا يلزمه إلا عند توقيعه. وأحكام هذا الباب من النظام العام.'
+        fr: 'Pour toute vente hors établissement par téléphone, le fournisseur indique expressément son identité et le caractère commercial de l’opération, puis adresse au consommateur une confirmation de l’offre qui ne l’engage qu’une fois signée. Ces règles sont d’ordre public.'
+      cites: [/ma/loi/31-08/art_51, /ma/loi/31-08/art_52]
+  ends: {icon: list, paper: {ar: 'نظيرك من العقد مؤرخ وموقع بخط يدك، واستمارة التراجع', fr: 'Votre exemplaire du contrat daté et signé de votre main, et le formulaire de rétractation'}, cites: [/ma/loi/31-08/art_47, /ma/loi/31-08/art_49]}
+
+- key: credit
+  for: [credit]
+  title: {ar: 'القرض الاستهلاكي: العرض، التراجع، التسديد، التوقف', fr: 'Le crédit à la consommation : l’offre, la rétractation, le remboursement, la défaillance'}
+  lead:
+    ar: 'كل قرض لمستهلك تزيد مدته على ثلاثة أشهر، ومنه البيع بالتقسيط والإيجار المفضي إلى البيع، يسبقه عرض مكتوب. للمقترض سبعة أيام ليتراجع بعد قبوله، وله أن يسدد مبكرا دون تعويض، ولا يطالب عند التوقف عن الأداء بأكثر مما حدده القانون.'
+    fr: 'Tout crédit à un consommateur de plus de trois mois, y compris la vente à tempérament et la location-vente, est précédé d’une offre écrite. L’emprunteur a sept jours pour se rétracter après l’avoir acceptée, peut rembourser par anticipation sans indemnité, et ne doit, en cas de défaillance, rien au-delà de ce que fixe la loi.'
+  day: {ar: 'متى قبلت عرض القرض؟', fr: 'Quand avez-vous accepté l’offre de crédit ?'}
+  steps:
+    - title: {ar: 'أي قرض', fr: 'Quel crédit'}
+      answer: {ar: 'كل قرض لحاجات غير مهنية تزيد مدته على ثلاثة أشهر، والبيع بالتقسيط والإيجار مع خيار الشراء.', fr: 'Tout crédit pour des besoins non professionnels de plus de trois mois, la vente à tempérament et la location avec option d’achat.'}
+      body:
+        ar: 'تطبق هذه الأحكام على كل قرض ممنوح من مقرض إلى مستهلك وعلى كفالته، ويدخل في حكمه الإيجار المفضي إلى البيع والإيجار مع خيار الشراء والبيع الذي يكون أداؤه مقسطا أو مؤجلا. ويستثنى منها القرض الذي لا تزيد مدته على ثلاثة أشهر، والقرض المهني، والقرض العقاري الذي له أحكامه.'
+        fr: 'Ces règles s’appliquent à tout crédit consenti par un prêteur à un consommateur et à son cautionnement ; y sont assimilées la location-vente, la location avec option d’achat et la vente payable à terme ou à tempérament. En sont exclus le crédit de trois mois ou moins, le crédit professionnel et le crédit immobilier, qui a ses règles.'
+      cites: [/ma/loi/31-08/art_74, /ma/loi/31-08/art_75]
+    - title: {ar: 'العرض المسبق', fr: 'L’offre préalable'}
+      answer: {ar: 'نسختان بالمجان، يبقى العرض سبعة أيام على الأقل، وفيه المبلغ والأقساط والتكلفة الإجمالية والسعر الفعلي.', fr: 'Deux exemplaires gratuits, l’offre maintenue au moins sept jours, avec le montant, les mensualités, le coût total et le taux effectif global.'}
+      body:
+        ar: 'يسبق كل قرض عرض مسبق يمكن المقترض من تقييم التزامه، تسلم منه نسختان بالمجان، ويلتزم المقرض بالإبقاء على شروطه سبعة أيام على الأقل من تسليمه. ويتضمن هوية الأطراف، ومبلغ القرض والأقساط، والتكلفة الإجمالية المفصلة والسعر الفعلي الإجمالي، وشروط التأمين، والسلعة الممولة، وأحكام التسديد المبكر والتوقف عن الأداء. وإذا كان التأمين إجباريا، فللمقترض أن يبرمه لدى مؤمن يختاره. والمقرض الذي يمنح قرضا دون عرض مطابق يفقد الحق في الفوائد.'
+        fr: 'Tout crédit est précédé d’une offre préalable permettant d’évaluer l’engagement, remise gratuitement en deux exemplaires ; le prêteur en maintient les conditions au moins sept jours. Elle indique l’identité des parties, le montant et les échéances, le coût total détaillé et le taux effectif global, l’assurance, le bien financé, et les règles du remboursement anticipé et de la défaillance. Si l’assurance est obligatoire, l’emprunteur peut la souscrire auprès de l’assureur de son choix. Le prêteur qui accorde un crédit sans offre conforme perd le droit aux intérêts.'
+      cites: [/ma/loi/31-08/art_77, /ma/loi/31-08/art_78, /ma/loi/31-08/art_82, /ma/loi/31-08/art_89]
+    - title: {ar: 'سبعة أيام للتراجع', fr: 'Sept jours pour se rétracter'}
+      answer: {ar: 'من قبول العرض، باستمارة قابلة للاقتطاع تودع مقابل وصل؛ ولا تقييد في أي سجل.', fr: 'Dès l’acceptation de l’offre, avec un formulaire détachable déposé contre un reçu ; sans inscription dans aucun fichier.'}
+      body:
+        ar: 'للمقترض أن يتراجع عن التزامه داخل أجل سبعة أيام من تاريخ قبوله للعرض، بالاستمارة القابلة للاقتطاع المرفقة بالعرض، يودعها مقابل وصل يحمل طابع المقرض وتوقيعه. ولا يترتب على التراجع أي تقييد في سجل معين. وإذا احتفظ المقرض بحق قبول الطلب، لا يتم العقد إلا إذا أبلغ قراره داخل السبعة أيام ولم يتراجع المقترض.'
+        fr: 'L’emprunteur peut revenir sur son engagement dans les sept jours de son acceptation de l’offre, au moyen du formulaire détachable joint à l’offre, déposé contre un reçu portant le cachet et la signature du prêteur. La rétractation n’entraîne aucune inscription dans un fichier. Si le prêteur s’est réservé l’agrément, le contrat ne se forme que s’il notifie sa décision dans les sept jours et que l’emprunteur ne s’est pas rétracté.'
+      cites: [/ma/loi/31-08/art_85, /ma/loi/31-08/art_86]
+      tool: tools/return?c=credit
+      delay: {on_day: true, days: 7, from: {ar: من اليوم الموالي لقبول العرض, fr: à compter du lendemain de l’acceptation}}
+    - title: {ar: 'لا مال قبل تمام العقد', fr: 'Pas d’argent avant le contrat définitif'}
+      answer: {ar: 'لا يدفع المقرض ولا المقترض شيئا قبل أن يتم العقد، ويسلم المقترض نظيرا منه.', fr: 'Ni le prêteur ni l’emprunteur ne versent rien avant que le contrat soit définitif ; l’emprunteur en reçoit un exemplaire.'}
+      body:
+        ar: 'لا يؤدى أي مبلغ من المقرض إلى المقترض أو منه إلى المقرض ما لم يتم العقد بصورة نهائية، ولا يقوم المقترض بأي إيداع داخل أجل التراجع، ولا يسري ترخيص الاقتطاع من حسابه إلا بتمام العقد. ويسلم المقرض نظيرا من العقد فور توقيعه.'
+        fr: 'Aucune somme ne passe du prêteur à l’emprunteur, ni de l’emprunteur au prêteur, avant que le contrat soit définitif ; l’emprunteur ne verse aucun dépôt pendant le délai de rétractation, et l’autorisation de prélèvement n’a d’effet qu’avec le contrat. Le prêteur remet un exemplaire du contrat dès sa signature.'
+      cites: [/ma/loi/31-08/art_87, /ma/loi/31-08/art_88]
+    - title: {ar: 'القرض المخصص لشراء معين', fr: 'Le crédit affecté à un achat'}
+      answer: {ar: 'إذا رفض القرض أو تراجعت عنه، يفسخ البيع بقوة القانون ويرد البائع ما دفعته.', fr: 'Si le crédit est refusé ou que vous vous rétractez, la vente est résolue de plein droit et le vendeur rend ce que vous avez payé.'}
+      body:
+        ar: 'إذا كان القرض مخصصا لتمويل سلعة أو خدمة، ذكرت في العرض، ولا يبدأ المقترض في الأداء إلا من تسليمها. ويبين عقد البيع أن الثمن يؤدى بقرض، ولا يتسلم البائع أي أداء ما لم يقبل المستهلك العرض. ويفسخ البيع بقوة القانون ودون تعويض إذا لم يبلغ المقرض البائع بقبول القرض داخل السبعة أيام أو إذا تراجع المقترض، ويرد البائع ما دفع له، وتستحق فوائد بالسعر القانوني من اليوم السادس عشر الموالي لطلب الاسترداد؛ إلا إذا أدى المقترض نقدا قبل انصرام السبعة أيام.'
+        fr: 'Quand le crédit finance un bien ou un service précis, l’offre le nomme et l’emprunteur ne commence à payer qu’à la livraison. Le contrat de vente indique que le prix est payé à crédit, et le vendeur ne reçoit aucun paiement tant que l’offre n’est pas acceptée. La vente est résolue de plein droit et sans indemnité si le prêteur n’a pas informé le vendeur de l’octroi dans les sept jours ou si l’emprunteur s’est rétracté ; le vendeur rend ce qu’il a reçu, avec intérêts au taux légal dès le seizième jour suivant la demande, sauf si l’emprunteur a payé comptant avant la fin des sept jours.'
+      cites: [/ma/loi/31-08/art_91, /ma/loi/31-08/art_92, /ma/loi/31-08/art_97, /ma/loi/31-08/art_99]
+    - title: {ar: 'القرض المجاني', fr: 'Le crédit gratuit'}
+      answer: {ar: 'الإشهار بـ«قرض مجاني» يذكر الخصم لمن يؤدي نقدا، ولا يطلب البائع بالقرض المجاني أكثر من ثمنه نقدا.', fr: 'La publicité pour un « crédit gratuit » indique la remise au comptant, et le vendeur à crédit gratuit ne demande pas plus que son prix comptant.'}
+      body:
+        ar: 'القرض المجاني قرض يسدد دون فوائد. ويشير كل إشهار يتضمن «قرض مجاني» إلى مبلغ الخصم في حالة الأداء نقدا، ويتعلق بكل منتوج على حدة. وعندما تغطي عملية التمويل مصاريف القرض كلها أو بعضها، لا يطلب المورد مبلغا يزيد على السعر المتوسط المعمول به نقدا خلال الثلاثين يوما السابقة، ويقترح سعرا للأداء نقدا أقل.'
+        fr: 'Le crédit gratuit est un crédit remboursé sans intérêts. Toute publicité comportant « crédit gratuit » indique la remise consentie en cas de paiement comptant, produit par produit. Quand le financement couvre tout ou partie des frais du crédit, le fournisseur ne demande pas plus que le prix moyen comptant des trente derniers jours, et propose un prix comptant inférieur.'
+      cites: [/ma/loi/31-08/art_100, /ma/loi/31-08/art_101, /ma/loi/31-08/art_102]
+    - title: {ar: 'التسديد المبكر', fr: 'Le remboursement anticipé'}
+      answer: {ar: 'في أي وقت، كليا أو جزئيا، دون تعويض؛ وكل شرط مخالف باطل.', fr: 'À tout moment, en tout ou en partie, sans indemnité ; toute clause contraire est nulle.'}
+      body:
+        ar: 'يجوز للمقترض بمبادرة منه أن يسدد مبكرا في أي وقت، ودون تعويض، مبلغ القرض كله أو بعضه، ويعتبر كل شرط مخالف باطلا بقوة القانون. ولا يطبق ذلك على عقود الإيجار إلا إذا نصت على نقل الملكية في النهاية.'
+        fr: 'L’emprunteur peut, de sa propre initiative, rembourser par anticipation à tout moment et sans indemnité tout ou partie du crédit ; toute clause contraire est nulle de plein droit. Pour une location, seulement si elle prévoit le transfert final de la propriété.'
+      cites: [/ma/loi/31-08/art_103]
+      tool: tools/credit
+    - title: {ar: 'التوقف عن الأداء', fr: 'La défaillance'}
+      answer: {ar: 'بعد ثلاثة أقساط متتالية وإشعار: لا يطالب المقرض بأكثر من 4 % فوق ما هو مستحق، ولا بأي مصاريف جزافية.', fr: 'Après trois échéances impayées et une mise en demeure : le prêteur ne réclame pas plus de 4 % en sus, ni aucun frais forfaitaire.'}
+      body:
+        ar: 'يعتبر متوقفا عن الأداء من لم يسدد ثلاثة أقساط متتالية ولم يستجب للإشعار. فإما أن يطالب المقرض بالتسديد الفوري لرأس المال المتبقي مع الفوائد الحالة، وتترتب على المتبقي فوائد عن التأخير لا تتعدى 4 % من رأس المال المتبقي (يحدد سعرها الأقصى قرار مشترك لوزيري التجارة والمالية)؛ وإما ألا يفرض التسديد الفوري ويطالب بتعويض لا يزيد على 4 % من الأقساط الحالة غير المؤداة، و2 % من الأقساط المؤجلة إذا قبل إرجاءها. ولا يتحمل المقترض أي تعويض أو تكلفة أخرى، إلا المصاريف التي يثبت المقرض أنه دفعها، دون أي تسديد جزافي لمصاريف التحصيل.'
+        fr: 'Est défaillant l’emprunteur qui n’a pas payé trois échéances successives et n’a pas répondu à la mise en demeure. Le prêteur peut soit exiger le remboursement immédiat du capital restant dû et des intérêts échus, le restant dû portant des intérêts de retard d’au plus 4 % du capital restant (leur taux maximum est fixé par un arrêté conjoint des ministres du commerce et des finances), soit ne pas l’exiger et réclamer une indemnité d’au plus 4 % des échéances échues impayées, 2 % des échéances reportées s’il accepte de les reporter. Aucune autre indemnité ni aucun autre coût, sauf les frais que le prêteur prouve avoir payés, sans forfait de recouvrement.'
+      cites: [/ma/loi/31-08/art_109, /ma/loi/31-08/art_104, /ma/loi/31-08/art_105, /ma/loi/31-08/art_108, /ma/loi/31-08/art_110, /ma/decret/2-12-503/art_33]
+      tool: tools/credit
+    - title: {ar: 'المحكمة والمهلة', fr: 'Le tribunal et le délai de grâce'}
+      answer: {ar: 'دعوى المقرض أمام محكمة موطن المقترض خلال سنتين؛ وبعد الطرد من العمل، وساطة أولا، ومهلة يمنحها القاضي.', fr: 'L’action du prêteur devant le tribunal du domicile de l’emprunteur dans les deux ans ; après un licenciement, une médiation d’abord, et un délai que le juge peut accorder.'}
+      body:
+        ar: 'تقام دعاوى المطالبة بالأداء أمام محكمة موطن المقترض أو محل إقامته خلال السنتين المواليتين للحدث الذي أدى إليها، تحت طائلة سقوط الحق في فوائد التأخير. وإذا كان عدم التسديد ناتجا عن الفصل عن العمل أو حالة اجتماعية غير متوقعة، لا تقام الدعوى إلا بعد وساطة، لا يتحمل المقترض خلالها فوائد تأخير ولا مصاريف. ويمكن لرئيس المحكمة، ولا سيما في هاتين الحالتين، أن يوقف تنفيذ التزامات المدين، وأن يقرر ألا تترتب فوائد خلال المهلة.'
+        fr: 'L’action en paiement est portée devant le tribunal du domicile ou de la résidence de l’emprunteur dans les deux ans qui suivent l’événement qui l’a fait naître, à peine de perdre les intérêts de retard. Si l’impayé vient d’un licenciement ou d’une situation sociale imprévue, l’action ne peut être engagée qu’après une médiation, pendant laquelle ni intérêts de retard ni frais ne sont dus. Le président du tribunal peut, notamment dans ces cas, suspendre les obligations du débiteur et décider qu’aucun intérêt ne court pendant le délai.'
+      cites: [/ma/loi/31-08/art_111, /ma/loi/31-08/art_149]
+    - title: {ar: 'الكفيل', fr: 'La caution'}
+      answer: {ar: 'عبارة يكتبها الكفيل بخط يده، وإخباره من أول عارض، ولا كفالة لا تتناسب مع ما يملك.', fr: 'Une mention écrite de la main de la caution, une information dès le premier incident, et pas de cautionnement disproportionné.'}
+      body:
+        ar: 'يكتب الكفيل الشخص الطبيعي قبل توقيعه، تحت طائلة بطلان التزامه، العبارة التي حددها القانون بالمبلغ والمدة. ويخبره المقرض بتوقف المدين منذ أول عارض، وإلا لم يلزم بفوائد التأخير عن تلك المدة. ولا يعتد بكفالة غير متناسبة بشكل واضح مع أموال الكفيل ومداخيله. والكمبيالات والسندات لأمر التي يوقعها المقترض في هذه القروض باطلة، وأحكام هذا القسم من النظام العام.'
+        fr: 'La caution personne physique écrit avant de signer, à peine de nullité, la mention que fixe la loi, avec le montant et la durée. Le prêteur l’informe de la défaillance dès le premier incident, faute de quoi elle ne doit pas les intérêts de retard de cette période. Un cautionnement manifestement disproportionné aux biens et revenus de la caution ne peut être invoqué. Les lettres de change et billets à ordre signés par l’emprunteur pour ces crédits sont nuls ; ces règles sont d’ordre public.'
+      cites: [/ma/loi/31-08/art_144, /ma/loi/31-08/art_146, /ma/loi/31-08/art_147, /ma/loi/31-08/art_150, /ma/loi/31-08/art_151]
+  ends: {icon: list, paper: {ar: 'نظيرك من العرض والعقد، ووصل الاستمارة إلا تراجعتي', fr: 'Votre exemplaire de l’offre et du contrat, et le récépissé du formulaire si vous vous rétractez'}, cites: [/ma/loi/31-08/art_77, /ma/loi/31-08/art_85, /ma/loi/31-08/art_88], papers: checklists/offer}
+  next: [journeys/home-loan]
+
+- key: home-loan
+  for: [home-loan, credit]
+  title: {ar: 'القرض العقاري: عشرة أيام للتفكير، والبيع رهين بالقرض', fr: 'Le crédit immobilier : dix jours de réflexion, la vente subordonnée au prêt'}
+  lead:
+    ar: 'القرض الذي يمول شراء مسكن أو أرض لبنائه أو إصلاحه يسبقه عرض مكتوب يوجه بالمجان، يبقى خمسة عشر يوما، ولا يقبل إلا بعد عشرة أيام من تسلمه. وعقد الشراء يبرم تحت شرط الحصول على القرض.'
+    fr: 'Le prêt qui finance l’achat d’un logement, d’un terrain à bâtir ou des travaux est précédé d’une offre écrite gratuite, maintenue quinze jours, qui ne peut être acceptée que dix jours après sa réception. L’achat est conclu sous la condition d’obtenir le prêt.'
+  day: {ar: 'متى تسلمت عرض القرض؟', fr: 'Quand avez-vous reçu l’offre de prêt ?'}
+  steps:
+    - title: {ar: 'أي قرض', fr: 'Quel prêt'}
+      answer: {ar: 'كل قرض يمول اقتناء مسكن أو بناءه أو إصلاحه، أو شراء أرض لبنائه.', fr: 'Tout prêt qui finance l’acquisition, la construction ou les travaux d’un logement, ou l’achat d’un terrain pour le bâtir.'}
+      body:
+        ar: 'تطبق هذه الأحكام على القروض الممنوحة بصورة اعتيادية لتمويل اقتناء العقارات المعدة للسكن أو للسكن ونشاط مهني، أو حصص الشركات التي تملكها، أو نفقات بنائها أو إصلاحها، أو شراء الأراضي المخصصة لبنائها. وتستثنى القروض المهنية والممنوحة لأشخاص القانون العام.'
+        fr: 'Ces règles s’appliquent aux prêts consentis habituellement pour acquérir un immeuble d’habitation ou à usage mixte, des parts de société qui le possèdent, pour le construire ou le réparer, ou pour acheter un terrain à bâtir. Sont exclus les prêts professionnels et ceux consentis aux personnes de droit public.'
+      cites: [/ma/loi/31-08/art_113, /ma/loi/31-08/art_114]
+    - title: {ar: 'العرض المكتوب', fr: 'L’offre écrite'}
+      answer: {ar: 'يوجه بالمجان، وفيه جدول الاستهلاك والتكلفة الإجمالية والسعر الفعلي والتأمينات المطلوبة.', fr: 'Adressée gratuitement, avec le tableau d’amortissement, le coût total, le taux effectif global et les garanties exigées.'}
+      body:
+        ar: 'يعد المقرض عرضا مكتوبا يوجهه بالمجان بأي وسيلة تثبت التوصل إلى المقترض وإلى الكفيل. ويتضمن هوية الأطراف، وطبيعة القرض وكيفيات وضع الأموال، وجدول الاستهلاك الذي يوزع كل قسط بين رأس المال والفوائد، والتكلفة الإجمالية والسعر الفعلي الإجمالي، والتأمينات والضمانات المطلوبة وتكلفتها، والمصاريف المرتبطة بمنح القرض. ويشير كل إشهار أو وثيقة إعلام إلى أجل التفكير، وإلى أن البيع رهين بالقرض.'
+        fr: 'Le prêteur adresse gratuitement, par tout moyen prouvant la réception, une offre écrite à l’emprunteur et à la caution. Elle indique l’identité des parties, la nature du prêt et la mise à disposition des fonds, le tableau d’amortissement répartissant chaque échéance entre capital et intérêts, le coût total et le taux effectif global, les assurances et garanties exigées et leur coût, les frais liés à l’octroi. Toute publicité ou document d’information mentionne le délai de réflexion et que la vente dépend du prêt.'
+      cites: [/ma/loi/31-08/art_117, /ma/loi/31-08/art_118, /ma/loi/31-08/art_116]
+    - title: {ar: 'عشرة أيام للتفكير', fr: 'Dix jours de réflexion'}
+      answer: {ar: 'يبقى العرض خمسة عشر يوما، ولا يقبل إلا بعد عشرة أيام من تسلمه، بأي وسيلة تثبت التوصل.', fr: 'L’offre tient quinze jours et ne s’accepte qu’après dix jours, par tout moyen prouvant la réception.'}
+      body:
+        ar: 'يلتزم المقرض بالإبقاء على شروط العرض خمسة عشر يوما على الأقل من تسلمه. ولا يجوز للمقترض والكفيل قبوله إلا بعد عشرة أيام من تسلمه، ويبلغ القبول بأي وسيلة تثبت التوصل. وإلى حين القبول، لا يؤدى أي مبلغ، ولا يوقع المقترض شيكا ولا ورقة تجارية.'
+        fr: 'Le prêteur maintient l’offre au moins quinze jours après sa réception. L’emprunteur et la caution ne peuvent l’accepter que dix jours après l’avoir reçue ; l’acceptation est notifiée par tout moyen prouvant la réception. Jusque-là, aucune somme n’est versée et l’emprunteur ne signe ni chèque ni effet de commerce.'
+      cites: [/ma/loi/31-08/art_120, /ma/loi/31-08/art_121]
+      delay: {on_day: true, days: 10, from: {ar: من اليوم الموالي لتسلم العرض, fr: à compter du lendemain de la réception de l’offre}}
+    - title: {ar: 'البيع رهين بالقرض', fr: 'La vente subordonnée au prêt'}
+      answer: {ar: 'إذا لم يحصل المشتري على القرض، يرد له كل ما دفعه فورا، دون اقتطاع.', fr: 'Si l’acheteur n’obtient pas le prêt, tout ce qu’il a versé lui est rendu aussitôt, sans retenue.'}
+      body:
+        ar: 'يحدد عقد الشراء، ولو كان وعدا بالبيع، ما إذا كان الثمن سيؤدى بقرض، ويبرم حينئذ في محرر ثابت التاريخ تحت شرط الحصول على القرض لمدة لا تقل عن شهر. وإذا لم يتحقق الشرط، يرد كل مبلغ دفعه المقترض كاملا وعلى الفور، وتترتب فوائد بالسعر القانوني من اليوم السادس عشر الموالي لطلب الاسترداد. ويعلق قبول العرض على إبرام عقد الشراء خلال أربعة أشهر.'
+        fr: 'L’acte d’achat, même une promesse, indique si le prix sera payé à l’aide d’un prêt ; il est alors conclu par écrit à date certaine sous la condition d’obtenir le prêt, pour un mois au moins. Si la condition défaille, toute somme versée est rendue intégralement et aussitôt, avec intérêts au taux légal dès le seizième jour suivant la demande. L’acceptation de l’offre tombe si l’achat n’est pas conclu dans les quatre mois.'
+      cites: [/ma/loi/31-08/art_126, /ma/loi/31-08/art_127, /ma/loi/31-08/art_122, /ma/loi/31-08/art_124]
+    - title: {ar: 'التسديد المبكر والتوقف', fr: 'Le remboursement anticipé et la défaillance'}
+      answer: {ar: 'التسديد المبكر جائز، وتعويضه إن نص عليه العقد لا يتجاوز 2 % من الباقي؛ وعند التوقف، فوائد التأخير لا تتجاوز 2 %.', fr: 'Le remboursement anticipé est permis ; son indemnité, si le contrat la prévoit, ne dépasse pas 2 % du restant dû ; en cas de défaillance, les intérêts de retard ne dépassent pas 2 %.'}
+      body:
+        ar: 'يجوز للمقترض أن يسدد مبكرا كليا أو جزئيا في أي وقت، ويمكن للعقد أن يمنع تسديدا لا يتجاوز عشرة في المائة من القرض الأولي. وإذا نص العقد على تعويض عن الفوائد غير الحالة، فإنه لا يتجاوز 2 % من رأس المال المتبقي. وعند التوقف، لا يرفع المقرض سعر الفائدة ما لم يطلب الفسخ؛ وإذا طلبه، فلا تتجاوز فوائد التأخير 2 % من رأس المال المتبقي، ولا يتحمل المقترض أي تكلفة أخرى إلا المصاريف المثبتة.'
+        fr: 'L’emprunteur peut rembourser par anticipation à tout moment, en tout ou en partie ; le contrat peut interdire un remboursement de dix pour cent du prêt initial ou moins. L’indemnité pour intérêts non échus, si le contrat la prévoit, ne dépasse pas 2 % du capital restant dû. En cas de défaillance, le prêteur ne relève pas le taux tant qu’il ne demande pas la résolution ; s’il la demande, les intérêts de retard ne dépassent pas 2 % du capital restant, et rien d’autre n’est dû que les frais prouvés.'
+      cites: [/ma/loi/31-08/art_132, /ma/loi/31-08/art_133, /ma/loi/31-08/art_134]
+  ends: {icon: list, paper: {ar: 'العرض المكتوب بجدول الاستهلاك، وتاريخ تسلمه', fr: 'L’offre écrite avec son tableau d’amortissement, et sa date de réception'}, cites: [/ma/loi/31-08/art_117, /ma/loi/31-08/art_120]}
+  next: [housing:journeys/offplan]
+
+- key: subscription
+  for: [subscription, bill]
+  title: {ar: 'الاشتراك وتجديده', fr: 'L’abonnement et sa reconduction'}
+  lead:
+    ar: 'في عقود الاشتراك محددة المدة، يذكر المورد المستهلك كتابة شهرا على الأقل قبل نهاية العقد أو قبل آخر أجل لرفض تجديده. وإذا لم يذكره وكان العقد يتجدد ضمنيا، فللمستهلك أن ينهيه في أي وقت بعد التجديد، دون تبرير أو غرامة.'
+    fr: 'Pour un abonnement à durée déterminée, le fournisseur rappelle par écrit au consommateur, un mois au moins avant, la fin du contrat ou la date limite pour refuser sa reconduction. Sans ce rappel, si le contrat se reconduit tacitement, le consommateur peut y mettre fin à tout moment après la reconduction, sans motif ni pénalité.'
+  day: {ar: 'متى ينتهي العقد أو يتجدد؟', fr: 'Quand le contrat prend-il fin ou se reconduit-il ?'}
+  steps:
+    - title: {ar: 'التذكير', fr: 'Le rappel'}
+      answer: {ar: 'كتابة، بأي وسيلة تثبت التوصل، شهرا على الأقل قبل الأجل.', fr: 'Par écrit, par tout moyen prouvant la réception, un mois au moins avant l’échéance.'}
+      body:
+        ar: 'في عقود الاشتراك محددة المدة، يذكر المورد المستهلك كتابة بأي وسيلة تثبت التوصل: إذا لم يكن العقد يتجدد ضمنيا، بانتهائه شهرا على الأقل قبل أجله؛ وإذا كان يتجدد ضمنيا، بالأجل الذي يمكنه خلاله رفض التجديد، شهرا على الأقل قبل بدايته.'
+        fr: 'Pour les abonnements à durée déterminée, le fournisseur rappelle par écrit, par tout moyen prouvant la réception : sans reconduction tacite, la fin du contrat un mois au moins avant son terme ; avec reconduction tacite, le délai pendant lequel le consommateur peut refuser la reconduction, un mois au moins avant son ouverture.'
+      cites: [/ma/loi/31-08/art_7]
+    - title: {ar: 'بلا تذكير', fr: 'Sans rappel'}
+      answer: {ar: 'إذا تجدد العقد دون تذكير، ينهيه المستهلك متى شاء بعد التجديد، دون تبرير ولا غرامة.', fr: 'Reconduit sans rappel, le contrat prend fin quand le consommateur le veut après la reconduction, sans motif ni pénalité.'}
+      body:
+        ar: 'في حالة وجود شرط التجديد الضمني وعدم تذكير المستهلك، يمكن له أن ينهي العقد في أي وقت وحين ابتداء من تاريخ التجديد، دون تبرير ذلك أو دفع غرامات.'
+        fr: 'S’il y a une clause de reconduction tacite et que le consommateur n’a pas été prévenu, il peut mettre fin au contrat à tout moment à compter de la reconduction, sans justification ni pénalité.'
+      cites: [/ma/loi/31-08/art_7]
+      tool: tools/letters
+    - title: {ar: 'نسخة من العقد وشروطه', fr: 'Un exemplaire et des clauses claires'}
+      answer: {ar: 'نسخة على الأقل للمستهلك، وشروط واضحة؛ وعند الشك يفسر الشرط لصالحه.', fr: 'Au moins un exemplaire pour le consommateur, des clauses claires ; en cas de doute, la clause s’interprète en sa faveur.'}
+      body:
+        ar: 'إذا كان العقد مكتوبا، يحرره المورد في العدد اللازم من النظائر ويسلم إحداها على الأقل إلى المستهلك. وتحرر الشروط بصورة واضحة ومفهومة، وفي حالة الشك حول مدلول شرط يرجح التأويل الأكثر فائدة للمستهلك. وكل عقد بلغة أجنبية يصحب بترجمة إلى العربية.'
+        fr: 'Un contrat écrit est établi en autant d’exemplaires que nécessaire, dont un au moins est remis au consommateur. Les clauses sont rédigées de façon claire et compréhensible ; en cas de doute, l’interprétation la plus favorable au consommateur prévaut. Tout contrat rédigé en langue étrangère est accompagné d’une traduction arabe.'
+      cites: [/ma/loi/31-08/art_8, /ma/loi/31-08/art_9, /ma/loi/31-08/art_206]
+    - title: {ar: 'التمديد البعيد شرط تعسفي', fr: 'Un préavis lointain est abusif'}
+      answer: {ar: 'شرط يجعل آخر أجل لرفض التجديد بعيدا جدا عن نهاية العقد من الشروط التعسفية.', fr: 'Une clause qui fixe la date limite de refus très loin de la fin du contrat figure parmi les clauses abusives.'}
+      body:
+        ar: 'من الشروط التعسفية الشرط الذي يمدد العقد محدد المدة تلقائيا إذا لم يعترض المستهلك، عندما يحدد أجل يبعد كثيرا عن انتهاء مدته باعتباره آخر أجل ليعبر عن رغبته في عدم التمديد. والشرط التعسفي باطل.'
+        fr: 'Est abusive la clause qui reconduit automatiquement un contrat à durée déterminée faute d’opposition, quand la date limite pour s’y opposer est fixée très loin de son terme. La clause abusive est nulle.'
+      cites: [/ma/loi/31-08/art_18, /ma/loi/31-08/art_19]
+      next: journeys/clause
+  ends: {icon: list, paper: {ar: 'نسختك من العقد، والتذكير المكتوب إلا وصلك', fr: 'Votre copie du contrat, et le rappel écrit s’il est arrivé'}, cites: [/ma/loi/31-08/art_7, /ma/loi/31-08/art_8]}
+
+- key: clause
+  title: {ar: 'الشرط التعسفي', fr: 'La clause abusive'}
+  lead:
+    ar: 'كل شرط في عقد بين مورد ومستهلك يخل إخلالا كبيرا بين حقوق الطرفين وواجباتهما على حساب المستهلك شرط تعسفي، وهو باطل، ويبقى باقي العقد. ويذكر القانون سبعة عشر نوعا على سبيل المثال، وعلى المورد أن يثبت أن الشرط غير تعسفي.'
+    fr: 'Toute clause d’un contrat entre fournisseur et consommateur qui crée un déséquilibre significatif entre les droits et obligations des parties au détriment du consommateur est abusive ; elle est nulle, et le reste du contrat demeure. La loi cite dix-sept sortes à titre d’exemple, et c’est au fournisseur de prouver qu’une clause n’est pas abusive.'
+  steps:
+    - title: {ar: 'ما هو الشرط التعسفي', fr: 'Qu’est-ce qu’une clause abusive'}
+      answer: {ar: 'شرط يخل إخلالا كبيرا بالتوازن على حساب المستهلك، في أي عقد أو فاتورة أو وصل أو تذكرة.', fr: 'Une clause qui déséquilibre fortement le contrat au détriment du consommateur, dans tout contrat, facture, bon ou ticket.'}
+      body:
+        ar: 'يعتبر شرطا تعسفيا كل شرط يكون الغرض منه أو يترتب عليه اختلال كبير بين حقوق وواجبات طرفي العقد على حساب المستهلك، كيفما كان شكل العقد، ولا سيما في سندات الطلب والفاتورات وأذون الضمان والتذاكر. ويقدر بالرجوع إلى ظروف إبرام العقد وإلى باقي شروطه، ولا يشمل التقدير المحل الأساسي للعقد ولا ملاءمة الثمن ما دامت الشروط واضحة.'
+        fr: 'Est abusive toute clause qui a pour objet ou pour effet de créer un déséquilibre significatif entre les droits et obligations des parties au détriment du consommateur, quelle que soit la forme du contrat, notamment bons de commande, factures, bons de garantie et tickets. Le caractère abusif s’apprécie au regard des circonstances et des autres clauses ; l’appréciation ne porte ni sur l’objet principal ni sur l’adéquation du prix, si les clauses sont claires.'
+      cites: [/ma/loi/31-08/art_15, /ma/loi/31-08/art_16, /ma/loi/31-08/art_17]
+    - title: {ar: 'الأنواع التي يذكرها القانون', fr: 'Les sortes que cite la loi'}
+      answer: {ar: 'سبعة عشر نوعا، منها: حرمانك من التعويض، وتغيير السلعة أو الثمن من جانب واحد، والفسخ له وحده.', fr: 'Dix-sept sortes, dont : vous priver d’indemnité, changer seul le produit ou le prix, se réserver seul la résiliation.'}
+      body:
+        ar: 'تعتبر تعسفية، على سبيل المثال، الشروط التي: تلغي أو تنقص حق المستهلك في التعويض؛ أو تخول المورد أن يغير وحده خصائص المنتوج أو بنود العقد أو أن يرفع الثمن دون حق مماثل للمستهلك في الفسخ؛ أو تعفيه من المسؤولية عن وفاة المستهلك أو إصابته؛ أو تلزم المستهلك نهائيا والمورد بشرط يتوقف على إرادته؛ أو تفرض تعويضا مبالغا فيه؛ أو تخول المورد وحده حق الفسخ أو الاحتفاظ بما دفع عن خدمات لم ينجزها؛ أو تمدد العقد تلقائيا بأجل اعتراض بعيد؛ أو تفرض قبول شروط لم يطلع عليها؛ أو تجعل المورد وحده حكما في مطابقة السلعة؛ أو تعرقل حق المستهلك في التقاضي.'
+        fr: 'Sont notamment abusives les clauses qui : suppriment ou réduisent le droit à réparation du consommateur ; permettent au fournisseur de modifier seul le produit, le contrat ou d’augmenter le prix sans droit équivalent de résiliation pour le consommateur ; l’exonèrent en cas de décès ou de dommage corporel ; engagent définitivement le consommateur quand l’engagement du fournisseur dépend de sa seule volonté ; imposent une indemnité excessive ; réservent au fournisseur seul la résiliation ou la conservation de sommes pour des prestations non fournies ; reconduisent le contrat avec un préavis lointain ; font accepter des clauses non lues ; font du fournisseur seul le juge de la conformité ; entravent l’action en justice du consommateur.'
+      cites: [/ma/loi/31-08/art_18]
+      tool: tools/clause
+    - title: {ar: 'باطل، والعقد يبقى', fr: 'Nulle, et le contrat demeure'}
+      answer: {ar: 'الشرط التعسفي باطل ولاغ، ويطبق الباقي إذا أمكن أن يبقى العقد بدونه؛ وعلى المورد أن يثبت العكس.', fr: 'La clause abusive est nulle et non avenue ; le reste s’applique si le contrat peut subsister sans elle ; au fournisseur de prouver le contraire.'}
+      body:
+        ar: 'يعتبر باطلا ولاغيا الشرط التعسفي الوارد في العقد، وتطبق باقي مقتضياته إذا أمكن أن يبقى قائما بدونه. وفي حالة نزاع، على المورد أن يثبت الطابع غير التعسفي للشرط. وهذه الأحكام من النظام العام.'
+        fr: 'La clause abusive est nulle et non avenue ; le reste du contrat s’applique s’il peut subsister sans elle. En cas de litige, le fournisseur doit prouver que la clause n’est pas abusive. Ces règles sont d’ordre public.'
+      cites: [/ma/loi/31-08/art_19, /ma/loi/31-08/art_18, /ma/loi/31-08/art_20]
+    - title: {ar: 'حذفه من كل العقود', fr: 'La supprimer de tous les contrats'}
+      answer: {ar: 'جمعية حماية المستهلك المؤهلة تطلب من المحكمة حذف الشرط من نموذج العقد، تحت غرامة تهديدية.', fr: 'Une association habilitée demande au tribunal de supprimer la clause du modèle de contrat, sous astreinte.'}
+      body:
+        ar: 'يمكن للجامعة الوطنية أو لجمعية حماية المستهلك المعترف لها بصفة المنفعة العامة أو المأذون لها بالتقاضي أن تطلب من المحكمة أن تأمر بحذف شرط تعسفي من العقد أو من نموذج العقد المقترح على المستهلكين، بأمر مقرون بغرامة تهديدية ومشمول بالنفاذ المعجل.'
+        fr: 'La fédération nationale ou une association de consommateurs reconnue d’utilité publique ou autorisée à ester peut demander au tribunal d’ordonner la suppression d’une clause abusive du contrat ou du modèle de contrat proposé aux consommateurs, par une décision assortie d’une astreinte et exécutoire par provision.'
+      cites: [/ma/loi/31-08/art_157, /ma/loi/31-08/art_162]
+      next: pages/where
+  ends: {icon: list, paper: {ar: 'العقد أو الفاتورة أو الوصل اللي فيه الشرط', fr: 'Le contrat, la facture ou le reçu qui porte la clause'}, cites: [/ma/loi/31-08/art_15]}
+
+- key: prices
+  for: [shop, online]
+  title: {ar: 'الأسعار، التخفيضات، والبيع المشروط', fr: 'Les prix, les soldes et la vente liée'}
+  lead:
+    ar: 'الثمن المعلن هو الثمن الإجمالي بالضريبة على القيمة المضافة وكل الرسوم والمصاريف. و«التخفيض» له شروط: اللفظة، والثمن القديم والجديد، والمدة. ولا يرفض البائع البيع دون سبب مقبول، ولا يشترط شراء شيء آخر.'
+    fr: 'Le prix annoncé est le prix total, TVA, taxes et frais compris. Les « soldes » ont leurs règles : le mot, l’ancien et le nouveau prix, la durée. Le vendeur ne refuse pas de vendre sans motif légitime et n’impose pas d’acheter autre chose.'
+  steps:
+    - title: {ar: 'الثمن الإجمالي', fr: 'Le prix total'}
+      answer: {ar: 'الثمن المعلن يشمل الضريبة على القيمة المضافة وكل الرسوم وتكلفة كل خدمة يلزم المستهلك بأدائها، بالدرهم.', fr: 'Le prix affiché comprend la TVA, toutes les taxes et le coût de toute prestation imposée, en dirhams.'}
+      body:
+        ar: 'يعلم المورد المستهلك بأسعار المنتوجات وتعريفات الخدمات بوضع العلامة أو العنونة أو الإعلان. ويشمل البيان المتعلق بالسعر الثمن الإجمالي الذي يدفعه المستهلك بما في ذلك الضريبة على القيمة المضافة وجميع الرسوم الأخرى والتكلفة الإضافية لجميع الخدمات التي يلزم بأدائها. ويعبر عن الأسعار بالدرهم.'
+        fr: 'Le fournisseur informe des prix et tarifs par marquage, étiquetage ou affichage. Le prix indiqué est le prix total à payer, TVA, autres taxes et coût de toute prestation imposée compris. Les prix s’expriment en dirhams.'
+      cites: [/ma/loi/31-08/art_3, /ma/loi/31-08/art_5, /ma/decret/2-12-503/art_15]
+    - title: {ar: 'التخفيض', fr: 'Les soldes'}
+      answer: {ar: 'لفظة «تخفيض» ظاهرة، والثمن الجديد والقديم المشطب عليه، والمدة؛ والقديم لا يتجاوز أدنى ثمن في الثلاثين يوما السابقة.', fr: 'Le mot « soldes » visible, le nouveau prix et l’ancien barré, la durée ; l’ancien ne dépasse pas le prix le plus bas des trente jours précédents.'}
+      body:
+        ar: 'لا يكون البيع بالتخفيض إلا مقرونا بإعلان واضح للفظة «تخفيض». ويشير المورد في أماكن البيع إلى المنتوجات التي يشملها، والسعر الجديد والسعر القديم المشطب عليه، ومدة التخفيض ببدايته ونهايته. ولا يتجاوز السعر القديم أدنى سعر طبقه المورد على منتوج مماثل في نفس المؤسسة خلال الثلاثين يوما السابقة. ويشير كل إشهار عن التخفيض إلى تاريخ بدايته ومدته.'
+        fr: 'Une vente en solde exige l’annonce claire du mot « تخفيض ». Le fournisseur indique sur place les produits concernés, le nouveau prix et l’ancien barré, la durée avec son début et sa fin. L’ancien prix ne peut dépasser le plus bas qu’il a pratiqué pour un produit semblable dans le même établissement pendant les trente jours précédents. Toute publicité indique la date de début et la durée.'
+      cites: [/ma/loi/31-08/art_53, /ma/loi/31-08/art_54, /ma/loi/31-08/art_55]
+    - title: {ar: 'الهدية مع الشراء', fr: 'Le cadeau avec l’achat'}
+      answer: {ar: 'ممنوعة إلا إذا كانت من نفس المنتوج، أو شيئا بسيطا أو عينة قيمتها في حدود ما حدده القرار.', fr: 'Interdite sauf du même produit, ou un objet de faible valeur ou un échantillon dans la limite fixée par arrêté.'}
+      body:
+        ar: 'يمنع البيع الذي يخول الحق في مكافأة مجانية من منتجات أو خدمات أخرى، ما عدا إذا كانت مماثلة لما بيع. ولا يطبق ذلك على الأشياء البسيطة والخدمات ذات القيمة الزهيدة والعينات، التي يحدد قيمتها القصوى قرار؛ ويحددها القرار 4.14 في قطاع التجارة والصناعة.'
+        fr: 'Est interdite la vente qui donne droit gratuitement à une prime faite d’autres produits ou services, sauf s’ils sont identiques à ceux vendus. Cela ne vise pas les menus objets, services de faible valeur et échantillons, dont un arrêté fixe la valeur maximale ; l’arrêté 4-14 la fixe dans le secteur du commerce et de l’industrie.'
+      cites: [/ma/loi/31-08/art_56, /ma/arrete/4-14/art_1]
+    - title: {ar: 'رفض البيع والبيع المشروط', fr: 'Le refus de vente et la vente liée'}
+      answer: {ar: 'لا يرفض البائع البيع دون سبب مقبول، ولا يعلقه على كمية مفروضة أو على شراء منتوج آخر.', fr: 'Le vendeur ne refuse pas de vendre sans motif légitime, ni ne subordonne la vente à une quantité imposée ou à l’achat d’un autre produit.'}
+      body:
+        ar: 'يمنع الامتناع عن بيع منتوج أو تقديم خدمة إلى المستهلك دون سبب مقبول، وتعليق البيع على شراء كمية مفروضة أو منتوج آخر أو خدمة أخرى، وتعليق خدمة على خدمة أخرى أو على شراء منتوج. ويعاقب على ذلك بغرامة من 1.200 إلى 10.000 درهم.'
+        fr: 'Sont interdits le refus de vendre un produit ou de fournir un service sans motif légitime, la vente subordonnée à l’achat d’une quantité imposée ou d’un autre produit ou service, et la prestation subordonnée à une autre prestation ou à un achat. L’amende va de 1 200 à 10 000 dirhams.'
+      cites: [/ma/loi/31-08/art_57, /ma/loi/31-08/art_182]
+    - title: {ar: 'استغلال الضعف والبيع الهرمي', fr: 'L’abus de faiblesse et la vente pyramidale'}
+      answer: {ar: 'كل التزام نشأ باستغلال ضعف المستهلك أو جهله باطل، ويسترد ما دفع ويعوض؛ والبيع الهرمي ممنوع.', fr: 'Tout engagement né de l’abus de la faiblesse ou de l’ignorance du consommateur est nul ; il récupère ce qu’il a payé et est indemnisé ; la vente pyramidale est interdite.'}
+      body:
+        ar: 'يقع باطلا بقوة القانون كل التزام نشأ بفعل استغلال ضعف أو جهل المستهلك، مع حفظ حقه في استرجاع ما أداه وتعويضه. ويمنع البيع بالشكل الهرمي، وكل اقتراح على المستهلك بجمع اشتراكات مقابل مكاسب تزيد بتزايد عدد المشتركين.'
+        fr: 'Est nul de plein droit tout engagement né de l’abus de la faiblesse ou de l’ignorance du consommateur, qui garde le droit de récupérer ce qu’il a payé et d’être indemnisé. Sont interdites la vente pyramidale et toute offre de gains liés à la multiplication des adhérents.'
+      cites: [/ma/loi/31-08/art_59, /ma/loi/31-08/art_58]
+    - title: {ar: 'الإشهار', fr: 'La publicité'}
+      answer: {ar: 'يمنع كل إشهار كاذب أو من شأنه أن يوقع في الغلط، ويعاقب عليه بغرامة من 50.000 إلى 250.000 درهم.', fr: 'Toute publicité fausse ou de nature à induire en erreur est interdite, et punie d’une amende de 50 000 à 250 000 dirhams.'}
+      body:
+        ar: 'يمنع كل إشهار يتضمن ادعاء أو بيانا أو عرضا كاذبا، وكل إشهار من شأنه أن يوقع في الغلط بشأن حقيقة السلعة أو طبيعتها أو مميزاتها أو سعرها أو شروط بيعها أو نطاق التزامات المعلن. والإشهار المقارن لا يرخص به إلا إذا كان نزيها وصادقا. ويعاقب على المخالفة بغرامة من 50.000 إلى 250.000 درهم، ويمكن رفع الحد الأقصى إلى نصف نفقات الإشهار.'
+        fr: 'Est interdite toute publicité comportant une allégation, une indication ou une présentation fausse, ou de nature à induire en erreur sur la réalité du bien, sa nature, ses caractéristiques, son prix, ses conditions de vente ou la portée des engagements de l’annonceur. La publicité comparative n’est permise que loyale et véridique. L’amende va de 50 000 à 250 000 dirhams, son maximum pouvant être porté à la moitié des dépenses de publicité.'
+      cites: [/ma/loi/31-08/art_21, /ma/loi/31-08/art_22, /ma/loi/31-08/art_174]
+    - title: {ar: 'المسابقات الإشهارية', fr: 'Les loteries publicitaires'}
+      answer: {ar: 'مسابقة من أجل الربح: قسيمة مستقلة عن الفاتورة، ونظام مودع لدى الإدارة يرسل بالمجان لمن طلبه، وجرد للجوائز بقيمتها.', fr: 'Une loterie publicitaire : un bulletin distinct de la facture, un règlement déposé auprès de l’administration et envoyé gratuitement à qui le demande, la liste des lots avec leur valeur.'}
+      body:
+        ar: 'المسابقات الإشهارية من أجل الربح هي كل عملية إشهارية تبعث الأمل في ربح كيفما كانت طريقة القرعة، وتكون قسيمة المشاركة فيها مستقلة عن كل وصل أو فاتورة. ويودع منظموها نظامها لدى الإدارة المختصة، وتتضمن الإعلانات جردا مقروءا للجوائز بعددها وقيمتها، والبيان «يوجه نظام العملية بالمجان إلى كل شخص طبيعي أو معنوي يطلب ذلك».'
+        fr: 'Est une loterie publicitaire toute opération publicitaire qui fait naître l’espérance d’un gain, quel que soit le mode de tirage ; le bulletin de participation est distinct de tout bon ou facture. Les organisateurs déposent le règlement auprès de l’administration compétente ; les annonces donnent l’inventaire lisible des lots, leur nombre et leur valeur, et la mention que le règlement est adressé gratuitement à qui le demande.'
+      cites: [/ma/loi/31-08/art_60, /ma/loi/31-08/art_61, /ma/loi/31-08/art_62]
+    - title: {ar: 'الأسعار التي تحددها الدولة', fr: 'Les prix que fixe l’État'}
+      answer: {ar: 'الأسعار حرة، إلا قائمة يحددها نص تنظيمي بعد رأي مجلس المنافسة، كالسكر.', fr: 'Les prix sont libres, sauf une liste fixée par voie réglementaire après avis du Conseil de la concurrence, comme le sucre.'}
+      body:
+        ar: 'تحدد أسعار السلع والخدمات بالمنافسة الحرة، إلا السلع والخدمات التي تحدد قائمتها بنص تنظيمي بعد استشارة مجلس المنافسة، وفي القطاعات التي تكون فيها المنافسة محدودة. ويحدد هذه الأسعار قرار لرئيس الحكومة أو السلطة المفوضة منه. ويمكن للإدارة أن تتخذ تدابير مؤقتة ضد ارتفاع فاحش في الأسعار لا تزيد مدتها على ستة أشهر قابلة للتمديد مرة واحدة.'
+        fr: 'Les prix se forment par la libre concurrence, sauf pour la liste fixée par voie réglementaire après consultation du Conseil de la concurrence et dans les secteurs où la concurrence est limitée ; ces prix sont fixés par arrêté du Chef du gouvernement ou de l’autorité qu’il délègue. L’administration peut prendre des mesures temporaires contre une hausse excessive, pour six mois au plus, renouvelables une fois.'
+      cites: [/ma/loi/104-12/art_2, /ma/loi/104-12/art_3, /ma/loi/104-12/art_4, /ma/decret/2-14-652/art_1, /ma/arrete/2889-25/art_1, /ma/arrete/3243-23/art_1]
+      tool: tools/prices
+  ends: {icon: list, paper: {ar: 'الفاتورة بالثمن الإجمالي', fr: 'La facture au prix total'}, cites: [/ma/loi/31-08/art_4, /ma/loi/31-08/art_5]}

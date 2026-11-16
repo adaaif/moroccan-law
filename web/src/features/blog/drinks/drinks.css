@@ -1,0 +1,89 @@
+/* «الفصل 28، كما طبعته الجريدة الرسمية سنة 1967» (the seventeenth post). The printed page is the evidence: it is shown as
+   a clipping on white paper, never redrawn. Violet marks the words a note opens and article 28 wherever it stands among
+   the others; everything else is the page's ink. The tone is a document's: no colour for alarm, no picture of a drink. */
+
+.dr { --dr-mark: var(--color-stamp); }
+
+/* ── The article, framed and read ─────────────────────────────────────────────────────────────────────────────── */
+.dr-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 640px) { .dr-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.dr-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.6rem); line-height: 1.15; }
+.bp:lang(fr) .dr-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+.dr-how { margin: 0; color: var(--color-ink-soft); max-width: 62ch; }
+.dr-sheet { display: flex; flex-direction: column; gap: 10px; padding: clamp(4px, 2.4vw, 26px); background: var(--color-paper); border-radius: 10px; }
+.dr-order { margin: 0; font-family: var(--font-law); font-size: 1.15rem; line-height: 1.5; color: var(--color-ink-soft); text-align: center; text-wrap: balance; }
+.dr-sheet-stamp { margin: 0; text-align: center; }
+.dr-stamp { vertical-align: middle; }
+
+.dr-read { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+@media (min-width: 760px) { .dr-read { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 28px; align-items: start; } }
+.dr-text { display: flex; flex-direction: column; gap: 10px; }
+.dr-art-head { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: 1.35rem; }
+.dr-words { margin: 0; font-family: var(--font-law); font-size: 1.4rem; line-height: 1.9; text-wrap: pretty; }
+.bp:lang(fr) .dr-words, .bp:lang(fr) .dr-art-head { font-family: "Source Serif 4", Georgia, serif; font-size: 1.15rem; line-height: 1.75; }
+.dr-ar { margin-top: 4px; padding-top: 10px; border-top: 1px solid var(--color-rule); font-family: var(--font-law); font-size: 1.15rem; line-height: 1.8; color: var(--color-ink-soft); }
+.dr-ar p { margin: 0 0 6px; }
+.dr-mark { cursor: pointer; text-decoration: underline; text-decoration-color: var(--dr-mark); text-decoration-thickness: 2px; text-underline-offset: 0.3em;
+  border-radius: 3px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.dr-mark sup { font-family: var(--font-ui); font-size: 0.6em; font-weight: 700; color: var(--dr-mark); padding-inline-start: 2px; }
+.dr-mark.is-on { background: color-mix(in srgb, var(--dr-mark) 14%, transparent); text-decoration-thickness: 3px; }
+.dr-mark:focus-visible { outline: 2px solid var(--dr-mark); outline-offset: 2px; }
+.dr-notes h2 { margin: 0 0 8px; font-family: var(--font-ui); font-size: 1rem; font-weight: 700; color: var(--color-ink-soft); }
+.dr-notes ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid var(--color-rule); }
+.dr-notes li { border-bottom: 1px solid var(--color-rule); }
+.dr-note-head { display: flex; align-items: baseline; gap: 10px; inline-size: 100%; min-height: 44px; padding: 10px 0; background: none; border: 0; color: var(--color-ink);
+  font: inherit; text-align: start; cursor: pointer; }
+.dr-note-n { flex: none; display: inline-grid; place-items: center; inline-size: 24px; block-size: 24px; border-radius: 50%; border: 1.5px solid var(--dr-mark); color: var(--dr-mark);
+  font-size: 13px; font-weight: 700; }
+.dr-notes li.is-on .dr-note-n { background: var(--dr-mark); color: var(--color-on-stamp); }
+.dr-notes li.is-on .dr-note-head { font-weight: 700; }
+.dr-note-body { padding: 0 34px 14px 0; display: flex; flex-direction: column; gap: 6px; line-height: 1.7; }
+.bp:lang(fr) .dr-note-body { padding: 0 0 14px 34px; }
+.dr-note-body p { margin: 0; }
+.dr-note-refs { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: var(--text-meta); }
+.dr-art { font-weight: 600; color: var(--dr-mark); }
+.dr-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.dr-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.dr-share:disabled { opacity: 0.6; }
+
+/* ── Quotes, the chain ────────────────────────────────────────────────────────────────────────────────────────── */
+.dr-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--dr-mark); font-family: var(--font-law); font-size: var(--text-law); line-height: 1.8;
+  text-wrap: pretty; text-align: right; }
+.dr-quote.is-small { font-size: 1.1rem; }
+.bp:lang(fr) .dr-quote.is-small { font-family: "Source Serif 4", Georgia, serif; text-align: left; }
+.dr-chain { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-inline-start: 2px solid var(--color-rule); }
+.dr-chain li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: 0 14px; padding: 10px 0; position: relative; }
+.dr-chain li::before { content: ''; position: absolute; inset-inline-start: -7px; top: 1.15rem; inline-size: 12px; block-size: 12px; border-radius: 50%; background: var(--color-paper);
+  border: 2px solid var(--color-ink-soft); }
+.dr-chain li.is-order::before { background: var(--dr-mark); border-color: var(--dr-mark); }
+.dr-year { padding-inline-start: 14px; font-weight: 300; font-size: 1.6rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.dr-chain li.is-order .dr-year { color: var(--dr-mark); font-weight: 400; }
+.dr-chain-body { display: flex; flex-direction: column; gap: 2px; line-height: 1.6; }
+.dr-chain-src { font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── 1913 beside 1967 ─────────────────────────────────────────────────────────────────────────────────────────── */
+.dr-two { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; padding: 8px; background: var(--color-paper); border-radius: 10px; }
+@media (min-width: 640px) { .dr-two { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; } }
+.dr-two figure { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.dr-two figcaption { font-size: var(--text-meta); color: var(--color-ink-soft); text-align: center; font-variant-numeric: tabular-nums; }
+.dr-pairs { inline-size: 100%; border-collapse: collapse; font-size: var(--text-body); }
+.dr-pairs th, .dr-pairs td { padding: 8px 6px; border-bottom: 1px solid var(--color-rule-soft); text-align: start; vertical-align: top; }
+.dr-pairs thead th { font-size: var(--text-meta); color: var(--color-ink-soft); font-weight: 600; border-bottom: 2px solid var(--color-ink); }
+.dr-pairs tbody th { font-weight: 500; }
+.dr-pairs td { white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* ── The fines ────────────────────────────────────────────────────────────────────────────────────────────────── */
+.dr-fines { display: flex; flex-direction: column; gap: 6px; }
+.dr-fine-rows { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.dr-fine { display: flex; flex-direction: column; gap: 5px; }
+.dr-fine-head { margin: 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; line-height: 1.5; }
+.dr-fine-label { color: var(--color-ink); }
+.dr-fine-range { font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.dr-fine.is-on .dr-fine-label, .dr-fine.is-on .dr-fine-range { color: var(--dr-mark); font-weight: 700; }
+.dr-track { position: relative; block-size: 12px; border-radius: 6px; background: repeating-linear-gradient(to right, var(--color-rule-soft) 0 calc(20% - 1px), var(--color-rule) calc(20% - 1px) 20%); }
+.dr-track i { position: absolute; inset-block: 0; border-radius: 6px; background: var(--color-ink-soft); }
+.dr-fine.is-on .dr-track i { background: var(--dr-mark); }
+.dr-ticks { display: flex; justify-content: space-between; font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.dr-also { margin: 0; padding-inline-start: 1.2em; display: flex; flex-direction: column; gap: 6px; line-height: 1.75; }
+.dr-note-small { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }

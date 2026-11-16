@@ -1,0 +1,200 @@
+# The consumer topic's pages (D3, D4 and K3 of the consumer plan): facts, each on its articles, and the official
+# services by name and link (`links`: cited and linked, never copied, never logged into). What is a body's own practice
+# rather than the law is said to be that body's. A page says whom it is for (`for`).
+
+- key: beliefs
+  title: {ar: 'ما يقال، وما يقوله القانون', fr: 'Ce qu’on entend, et ce que dit la loi'}
+  lead:
+    ar: 'جمل يسمعها المستهلك كل يوم، وكل واحدة بجانب ما يقوله القانون رقم 31.08 في حالاتها.'
+    fr: 'Des phrases que le consommateur entend chaque jour, chacune à côté de ce que dit la loi 31-08 dans ses cas.'
+  sections:
+    - title: {ar: '«لا ترد ولا تستبدل»', fr: '« Ni reprise ni échange »'}
+      facts:
+        - text: {ar: 'إذا كان الشيء سليما واشتري في المحل، فالقانون لا يعطي حقا في إرجاعه: حق التراجع للبيع عن بعد وللبيع خارج المحلات. والمحل الذي يقبل الاستبدال يفعل ذلك باختياره.', fr: 'Un bien sans défaut acheté en magasin : la loi ne donne pas de droit de le rendre ; la rétractation vaut pour la vente à distance et hors établissement. Le magasin qui échange le fait de son plein gré.'}
+          cites: [/ma/loi/31-08/art_36, /ma/loi/31-08/art_49]
+        - text: {ar: 'إذا كان فيه عيب، فالضمان القانوني يطبق، ولا يطبق على المستهلك الشرط الذي يعفي البائع من كل ضمان. فهذه العبارة لا تلغي الضمان.', fr: 'S’il a un vice, la garantie légale s’applique, et la clause qui libère le vendeur de toute garantie ne s’applique pas au consommateur. Cette mention n’écarte donc pas la garantie.'}
+          cites: [/ma/loi/31-08/art_65, /ma/code/doc/art_571]
+    - title: {ar: '«الضمان عام من الفاتورة»', fr: '« La garantie, c’est un an à partir de la facture »'}
+      facts:
+        - text: {ar: 'الضمان القانوني يحسب من التسليم لا من الفاتورة: سنة للمنقولات وسنتان للعقارات، ولا يقصره أي اتفاق.', fr: 'La garantie légale court de la livraison, non de la facture : un an pour un meuble, deux ans pour un immeuble, et aucune convention ne la raccourcit.'}
+          cites: [/ma/loi/31-08/art_65]
+        - text: {ar: 'ضمان المحل أو الصانع ضمان إضافي، ومدته تمدد بالأيام التي بقي فيها الشيء عند المورد للإصلاح.', fr: 'La garantie du magasin ou du fabricant s’ajoute ; sa durée s’allonge des jours où le bien est resté chez le fournisseur pour réparation.'}
+          cites: [/ma/loi/31-08/art_66, /ma/loi/31-08/art_73]
+      tool: tools/guarantee
+    - title: {ar: '«أونلاين ديما نقدر نرجعها»', fr: '« En ligne, on peut toujours renvoyer »'}
+      facts:
+        - text: {ar: 'سبعة أيام كاملة من التسلم، وثلاثون إذا لم يصل تأكيد كتابي؛ وبعدها لا تراجع، إلا الضمان إن كان عيب.', fr: 'Sept jours francs dès la réception, trente sans confirmation écrite ; ensuite plus de rétractation, seulement la garantie en cas de vice.'}
+          cites: [/ma/loi/31-08/art_36]
+        - text: {ar: 'ولا تراجع في السلع المصنوعة حسب الطلب أو سريعة التلف، ولا في البرامج المفتوحة، ولا في الجرائد، ولا في خدمة بدأت بموافقة المستهلك.', fr: 'Pas de rétractation non plus pour un bien sur mesure ou périssable, un logiciel descellé, un journal, ou un service commencé avec l’accord du consommateur.'}
+          cites: [/ma/loi/31-08/art_38]
+      tool: tools/return
+    - title: {ar: '«البنك هو اللي كيقرر شحال كندين ليه»', fr: '« C’est la banque qui décide de ce que je dois »'}
+      facts:
+        - text: {ar: 'في القرض الاستهلاكي، عند التوقف عن الأداء، لا يطالب المقرض إلا بما حدده القانون: فوائد تأخير لا تتعدى 4 % من رأس المال المتبقي، أو تعويض لا يزيد على 4 % من الأقساط الحالة غير المؤداة؛ ولا أي تكلفة أخرى.', fr: 'En crédit à la consommation, en cas de défaillance, le prêteur ne réclame que ce que fixe la loi : des intérêts de retard d’au plus 4 % du capital restant, ou une indemnité d’au plus 4 % des échéances échues impayées ; aucun autre coût.'}
+          cites: [/ma/loi/31-08/art_104, /ma/loi/31-08/art_105, /ma/loi/31-08/art_108]
+        - text: {ar: 'والتسديد المبكر جائز في أي وقت دون تعويض، وكل شرط مخالف باطل.', fr: 'Et le remboursement anticipé est permis à tout moment sans indemnité ; toute clause contraire est nulle.'}
+          cites: [/ma/loi/31-08/art_103]
+      tool: tools/credit
+    - title: {ar: '«سنيت، ما بقا ما يدار»', fr: '« J’ai signé, c’est fini »'}
+      facts:
+        - text: {ar: 'سبعة أيام للتراجع بعد البيع خارج المحلات، وسبعة أيام بعد قبول عرض القرض، والشرط التعسفي باطل ولو وقعه المستهلك.', fr: 'Sept jours de rétractation après une vente hors établissement, sept jours après l’acceptation d’une offre de crédit, et une clause abusive est nulle même signée.'}
+          cites: [/ma/loi/31-08/art_49, /ma/loi/31-08/art_85, /ma/loi/31-08/art_19]
+    - title: {ar: '«العقد بالفرنسية، ما فهمت والو»', fr: '« Le contrat est en français, je n’ai rien compris »'}
+      facts:
+        - text: {ar: 'كل عقد محرر بلغة أجنبية يصحب وجوبا بترجمة إلى العربية، والشروط تحرر بصورة واضحة، وعند الشك يفسر الشرط لصالح المستهلك.', fr: 'Tout contrat rédigé en langue étrangère est obligatoirement accompagné d’une traduction arabe ; les clauses sont claires, et en cas de doute l’interprétation favorable au consommateur l’emporte.'}
+          cites: [/ma/loi/31-08/art_206, /ma/loi/31-08/art_9]
+    - title: {ar: '«الثمن فالكاس ماشي بحال المكتوب»', fr: '« Le prix en caisse n’est pas celui affiché »'}
+      facts:
+        - text: {ar: 'الثمن المعلن هو الثمن الإجمالي الذي يدفعه المستهلك، بالضريبة على القيمة المضافة وكل الرسوم وتكلفة كل خدمة يلزم بها.', fr: 'Le prix annoncé est le prix total que paie le consommateur, TVA, taxes et coût de toute prestation imposée compris.'}
+          cites: [/ma/loi/31-08/art_5]
+
+- key: where
+  title: {ar: 'فين تشكي', fr: 'Où réclamer'}
+  lead:
+    ar: 'المورد أولا، ثم الإدارة المختصة، أو جمعية لحماية المستهلك، ثم المحكمة الابتدائية لمدينتك. ولكل قطاع منظم خدمته الرسمية للشكايات.'
+    fr: 'Le fournisseur d’abord, puis l’administration compétente ou une association de consommateurs, puis le tribunal de première instance de votre ville. Chaque secteur régulé a son service officiel de réclamation.'
+  sections:
+    - title: {ar: 'المورد أولا', fr: 'Le fournisseur d’abord'}
+      facts:
+        - text: {ar: 'في البيع عن بعد، يجب أن يتوصل المستهلك بعنوان المورد الذي يقدم إليه شكاياته، ولا تخضع أرقام الهاتف المخصصة للشكايات لرسوم إضافية.', fr: 'Pour une vente à distance, le consommateur doit recevoir l’adresse où réclamer ; les numéros dédiés aux réclamations ne peuvent être surtaxés.'}
+          cites: [/ma/loi/31-08/art_32]
+        - text: {ar: 'والمورد يسلم نظيرا من الاتفاقات التي يقترحها عادة لكل من يطلبه، والمستهلك له نسخة من عقده المكتوب.', fr: 'Le fournisseur remet ses conventions habituelles à qui les demande, et le consommateur reçoit un exemplaire de son contrat écrit.'}
+          cites: [/ma/loi/31-08/art_11, /ma/loi/31-08/art_8]
+    - title: {ar: 'الإدارة', fr: 'L’administration'}
+      facts:
+        - text: {ar: 'يبحث عن مخالفات القانون ويثبتها، زيادة على ضباط الشرطة القضائية، باحثون محلفون تنتدبهم الإدارة المختصة، يمكنهم أن يلجوا المحلات المهنية ويطلعوا على الفاتورات والوثائق. ويحدد القرار 2.14 الباحثين التابعين لوزارة الصناعة والتجارة.', fr: 'Outre les officiers de police judiciaire, des enquêteurs assermentés de l’administration compétente recherchent et constatent les infractions ; ils accèdent aux locaux professionnels et consultent factures et documents. L’arrêté 2-14 désigne ceux du ministère de l’Industrie et du Commerce.'}
+          cites: [/ma/loi/31-08/art_166, /ma/loi/31-08/art_169, /ma/arrete/2-14/art_1]
+    - title: {ar: 'جمعيات حماية المستهلك', fr: 'Les associations de consommateurs'}
+      facts:
+        - text: {ar: 'ترفع الجامعة الوطنية والجمعيات المعترف لها بصفة المنفعة العامة الدعاوى دفاعا عن المصلحة الجماعية للمستهلكين؛ وغيرها لا ترفعها إلا بإذن خاص بالتقاضي من وزارة العدل، يمنح داخل شهرين لجمعية مضى على تأسيسها سنتان على الأقل.', fr: 'La fédération nationale et les associations reconnues d’utilité publique agissent en justice pour l’intérêt collectif des consommateurs ; les autres seulement avec une autorisation spéciale d’ester du ministère de la Justice, accordée dans les deux mois à une association d’au moins deux ans.'}
+          cites: [/ma/loi/31-08/art_157, /ma/decret/2-12-503/art_35, /ma/decret/2-12-503/art_37]
+        - text: {ar: 'منح وزير العدل هذا الإذن، لمدة ثلاث سنوات، للجامعة المغربية لحقوق المستهلك بالقرار 504.24 المؤرخ في 23 فبراير 2024، وللجامعة الوطنية لجمعيات المستهلك بالقرار 3094.22 المؤرخ في 11 نونبر 2022. ولا يجد «قانون» في الجريدة الرسمية، إلى أكتوبر 2026، قرارا يجدد هذا الأخير.', fr: 'Le ministre de la Justice a accordé cette autorisation, pour trois ans, à la Fédération marocaine des droits du consommateur par l’arrêté 504-24 du 23 février 2024, et à la Fédération nationale des associations du consommateur par l’arrêté 3094-22 du 11 novembre 2022. 3adala ne trouve au Bulletin officiel, jusqu’en octobre 2026, aucun arrêté qui renouvelle ce dernier.'}
+          cites: [/ma/arrete/3094-22/art_1, /ma/arrete/504-24/art_1]
+        - text: {ar: 'إذا تضرر عدة مستهلكين من نفس المورد ولنفس السبب، يمكن للجمعية، إذا وكلها اثنان منهم على الأقل كتابة، أن تطالب بالتعويض باسمهم، والوكالة مجانية ويمكن سحبها في أي وقت.', fr: 'Si plusieurs consommateurs ont subi un préjudice du même fournisseur et de la même origine, l’association mandatée par écrit par deux d’entre eux au moins peut demander réparation en leur nom ; le mandat est gratuit et révocable à tout moment.'}
+          cites: [/ma/loi/31-08/art_158, /ma/loi/31-08/art_160, /ma/loi/31-08/art_161]
+    - title: {ar: 'المحكمة', fr: 'Le tribunal'}
+      facts:
+        - text: {ar: 'في نزاع بين مورد ومستهلك، تختص المحكمة الابتدائية وحدها رغم أي شرط مخالف، وهي محكمة موطن المستهلك أو محل إقامته، أو مكان الضرر، باختياره.', fr: 'Dans un litige entre fournisseur et consommateur, le tribunal de première instance est seul compétent malgré toute clause contraire : celui du domicile ou de la résidence du consommateur, ou du lieu du dommage, à son choix.'}
+          cites: [/ma/loi/31-08/art_202]
+    - title: {ar: 'حسب القطاع', fr: 'Selon le secteur'}
+      facts:
+        - text: {ar: 'البنوك ومؤسسات الائتمان: البنك أولا، ثم المركز المغربي للوساطة البنكية، ثم بنك المغرب، كما يصف بنك المغرب مسطرته.', fr: 'Banques et établissements de crédit : la banque d’abord, puis le Centre marocain de médiation bancaire, puis Bank Al-Maghrib, comme Bank Al-Maghrib décrit sa procédure.'}
+        - text: {ar: 'الاتصالات: المتعهد أولا، ثم الوكالة الوطنية لتقنين المواصلات. التأمين: المؤمن، ثم هيئة مراقبة التأمينات والاحتياط الاجتماعي. الأغذية: المكتب الوطني للسلامة الصحية للمنتجات الغذائية.', fr: 'Télécommunications : l’opérateur d’abord, puis l’ANRT. Assurance : l’assureur, puis l’ACAPS. Aliments : l’ONSSA.'}
+      tool: tools/where
+  links:
+    - name: {ar: 'بوابة خدمات المستهلك (وزارة الصناعة والتجارة)', fr: 'Portail du consommateur (ministère de l’Industrie et du Commerce)'}
+      url: https://www.khidmat-almostahlik.ma
+      note: {ar: 'كما تذكرها صفحة الوزارة لحماية المستهلك', fr: 'telle que la donne la page du ministère sur la protection du consommateur'}
+    - name: {ar: 'إيداع شكاية لدى بوابة خدمات المستهلك', fr: 'Déposer une réclamation au portail du consommateur'}
+      url: http://reclamation.khidmat-almostahlik.ma/
+    - name: {ar: 'البوابة الوطنية للشكايات', fr: 'Portail national des réclamations'}
+      url: https://www.chikaya.ma
+    - name: {ar: 'بنك المغرب: معالجة شكايات زبناء مؤسسات الائتمان', fr: 'Bank Al-Maghrib : traitement des réclamations de la clientèle des établissements de crédit'}
+      url: https://www.bkam.ma/Trouvez-l-information-concernant/Services-rendus-au-public/Resolution-des-differends-entre-les-etablissements-de-credit-et-leur-clientele/Traitement-des-reclamations-de-la-clientele-des-etablissements-de-credit
+    - name: {ar: 'المركز المغربي للوساطة البنكية', fr: 'Centre marocain de médiation bancaire'}
+      url: https://cmmb.ma
+    - name: {ar: 'الوكالة الوطنية لتقنين المواصلات', fr: 'ANRT'}
+      url: https://www.anrt.ma
+    - name: {ar: 'هيئة مراقبة التأمينات والاحتياط الاجتماعي', fr: 'ACAPS'}
+      url: https://www.acaps.ma
+    - name: {ar: 'المكتب الوطني للسلامة الصحية للمنتجات الغذائية', fr: 'ONSSA'}
+      url: https://www.onssa.gov.ma
+    - name: {ar: 'مجلس المنافسة', fr: 'Conseil de la concurrence'}
+      url: https://conseil-concurrence.ma
+
+- key: bills
+  for: [bill, subscription]
+  title: {ar: 'الماء، الكهرباء، الاتصالات', fr: 'L’eau, l’électricité, les télécommunications'}
+  lead:
+    ar: 'من يسير مرفقا عاما بالتفويض ملزم بما يلزم به المورد، والإدارة التي تسيره كذلك مع مراعاة قواعد المرفق العام. فالفاتورة، والثمن الإجمالي، والشروط التعسفية، والاشتراك، كلها تخضع للقانون رقم 31.08.'
+    fr: 'Qui gère un service public par délégation est tenu des obligations du fournisseur, et l’administration qui le gère aussi, sous les règles du service public. La facture, le prix total, les clauses abusives et l’abonnement relèvent donc de la loi 31-08.'
+  sections:
+    - title: {ar: 'المفوض لهم والإدارات', fr: 'Délégataires et administrations'}
+      facts:
+        - text: {ar: 'يتقيد الأشخاص الخاضعون للقانون الخاص المفوض لهم تسيير مرفق عام بالالتزامات التي يفرضها هذا القانون على المورد، ويتقيد بها كذلك الأشخاص المعنويون الخاضعون للقانون العام مع مراعاة قواعد المرفق الذي يسيرونه.', fr: 'Les personnes de droit privé délégataires d’un service public sont tenues des obligations que la loi impose au fournisseur ; les personnes morales de droit public aussi, sous réserve des règles du service public qu’elles gèrent.'}
+          cites: [/ma/loi/31-08/art_2]
+    - title: {ar: 'الفاتورة', fr: 'La facture'}
+      facts:
+        - text: {ar: 'تذكر الفاتورة المورد، والخدمة وكشفها المفصل عند الاقتضاء، والتاريخ، وسعر كل خدمة والمبلغ الإجمالي بكل الرسوم والضريبة، وكيفيات الأداء. والثمن الإجمالي يشمل كل خدمة يلزم المستهلك بأدائها.', fr: 'La facture indique le fournisseur, la prestation et son relevé détaillé le cas échéant, la date, le prix de chaque prestation et le total toutes taxes comprises, le mode de paiement. Le prix total comprend toute prestation imposée.'}
+          cites: [/ma/loi/31-08/art_4, /ma/decret/2-12-503/art_25, /ma/loi/31-08/art_5]
+      tool: tools/where
+    - title: {ar: 'العقد والاشتراك', fr: 'Le contrat et l’abonnement'}
+      facts:
+        - text: {ar: 'الشرط التعسفي في عقد الاشتراك باطل، كالشرط الذي يخول المورد تغيير بنود العقد وحده دون سبب منصوص عليه، أو رفع الثمن دون حق مماثل للمستهلك في الفسخ.', fr: 'La clause abusive d’un contrat d’abonnement est nulle, comme celle qui permet au fournisseur de modifier seul le contrat sans motif prévu, ou d’augmenter le prix sans droit équivalent de résiliation.'}
+          cites: [/ma/loi/31-08/art_18, /ma/loi/31-08/art_19]
+        - text: {ar: 'في الاشتراك محدد المدة، يذكر المورد المستهلك كتابة شهرا قبل نهاية العقد أو تجديده؛ وإلا فللمستهلك أن ينهيه بعد التجديد في أي وقت.', fr: 'Pour un abonnement à durée déterminée, le fournisseur rappelle par écrit un mois avant la fin ou la reconduction ; sinon le consommateur peut y mettre fin à tout moment après la reconduction.'}
+          cites: [/ma/loi/31-08/art_7]
+    - title: {ar: 'عن بعد وبالهاتف', fr: 'À distance et par téléphone'}
+      facts:
+        - text: {ar: 'أرقام الهاتف المخصصة لتتبع العقد ودراسة الشكايات لا تخضع لرسوم إضافية، ويشار إليها في العقد والمراسلات.', fr: 'Les numéros dédiés au suivi du contrat et aux réclamations ne peuvent être surtaxés ; ils figurent dans le contrat et les courriers.'}
+          cites: [/ma/loi/31-08/art_32]
+  links:
+    - name: {ar: 'الوكالة الوطنية لتقنين المواصلات', fr: 'ANRT'}
+      url: https://www.anrt.ma
+      note: {ar: 'شكايات الاتصالات، بعد المتعهد', fr: 'réclamations télécoms, après l’opérateur'}
+    - name: {ar: 'البوابة الوطنية للشكايات', fr: 'Portail national des réclamations'}
+      url: https://www.chikaya.ma
+
+- key: bank
+  for: [credit, home-loan]
+  title: {ar: 'البنك والقرض', fr: 'La banque et le crédit'}
+  lead:
+    ar: 'القروض للمستهلكين، الاستهلاكية والعقارية، يحكمها القانون رقم 31.08. والشكاية على البنك تمر بالبنك نفسه، ثم بالوساطة البنكية، ثم ببنك المغرب، كما يصفها بنك المغرب.'
+    fr: 'Les crédits aux consommateurs, à la consommation et immobiliers, relèvent de la loi 31-08. Une réclamation contre une banque passe par la banque, puis par la médiation bancaire, puis par Bank Al-Maghrib, comme Bank Al-Maghrib la décrit.'
+  sections:
+    - title: {ar: 'ما يقوله القانون رقم 31.08', fr: 'Ce que dit la loi 31-08'}
+      facts:
+        - text: {ar: 'عرض مسبق قبل كل قرض استهلاكي، وسبعة أيام للتراجع من قبوله، والتسديد المبكر دون تعويض، وحدود لما يطالب به عند التوقف.', fr: 'Une offre préalable avant tout crédit à la consommation, sept jours de rétractation après l’acceptation, le remboursement anticipé sans indemnité, des plafonds en cas de défaillance.'}
+          cites: [/ma/loi/31-08/art_77, /ma/loi/31-08/art_85, /ma/loi/31-08/art_103, /ma/loi/31-08/art_104]
+        - text: {ar: 'في القرض العقاري: عرض يبقى خمسة عشر يوما ولا يقبل إلا بعد عشرة أيام، وتعويض التسديد المبكر لا يتجاوز 2 % من الباقي إن نص عليه العقد.', fr: 'En crédit immobilier : une offre maintenue quinze jours, acceptée seulement après dix, et une indemnité de remboursement anticipé d’au plus 2 % du restant dû si le contrat la prévoit.'}
+          cites: [/ma/loi/31-08/art_120, /ma/loi/31-08/art_132]
+        - text: {ar: 'المقرض الذي لا يشير إلى السعر الفعلي الإجمالي في عقد القرض يعاقب بغرامة من 20.000 إلى 30.000 درهم.', fr: 'Le prêteur qui n’indique pas le taux effectif global dans le contrat encourt une amende de 20 000 à 30 000 dirhams.'}
+          cites: [/ma/loi/31-08/art_143, /ma/loi/31-08/art_193]
+      tool: tools/credit
+    - title: {ar: 'الشكاية', fr: 'La réclamation'}
+      facts:
+        - text: {ar: 'حسب بنك المغرب: الشكاية مكتوبة مع الوثائق، بعد أن تقدم إلى البنك نفسه؛ والمركز المغربي للوساطة البنكية يتدخل بين البنك وزبونه قبل ذلك.', fr: 'Selon Bank Al-Maghrib : une réclamation écrite avec les pièces, après l’avoir adressée à la banque elle-même ; le Centre marocain de médiation bancaire intervient avant, entre la banque et son client.'}
+  links:
+    - name: {ar: 'بنك المغرب: معالجة شكايات زبناء مؤسسات الائتمان', fr: 'Bank Al-Maghrib : réclamations de la clientèle des établissements de crédit'}
+      url: https://www.bkam.ma/Trouvez-l-information-concernant/Services-rendus-au-public/Resolution-des-differends-entre-les-etablissements-de-credit-et-leur-clientele/Traitement-des-reclamations-de-la-clientele-des-etablissements-de-credit
+    - name: {ar: 'المركز المغربي للوساطة البنكية', fr: 'Centre marocain de médiation bancaire'}
+      url: https://cmmb.ma
+
+- key: safety
+  title: {ar: 'سلامة ما يشتريه المستهلك', fr: 'La sécurité de ce qu’on achète'}
+  lead:
+    ar: 'ثلاثة قوانين: سلامة المنتوجات والخدمات (24.09)، والسلامة الصحية للمنتجات الغذائية (28.07)، والزجر عن الغش في البضائع (13.83).'
+    fr: 'Trois lois : la sécurité des produits et des services (24-09), la sécurité sanitaire des produits alimentaires (28-07), la répression des fraudes sur les marchandises (13-83).'
+  sections:
+    - title: {ar: 'منتوج أو خدمة غير سليمة', fr: 'Un produit ou un service dangereux'}
+      facts:
+        - text: {ar: 'لا يعرض المنتج أو المستورد أو مقدم الخدمة في السوق إلا ما هو سليم: ما لا يشكل خطرا في شروط الاستعمال العادية أو المعقول توقعها، أو يشكل أخطارا محدودة مقبولة. والأغذية والأدوية لها قوانينها.', fr: 'Producteurs, importateurs et prestataires ne mettent sur le marché que des produits et services sûrs : sans danger dans les conditions d’usage normales ou raisonnablement prévisibles, ou avec des risques limités et acceptables. Aliments et médicaments ont leurs lois.'}
+          cites: [/ma/loi/24-09/art_4, /ma/loi/24-09/art_5, /ma/loi/24-09/art_2]
+        - text: {ar: 'من علم أن ما عرضه غير سليم يخبر الإدارة فورا؛ وللإدارة أن توقف المنتوج سنة على الأكثر، وتسحبه، وتأمر باسترجاعه لاستبداله أو رد ثمنه.', fr: 'Qui sait que ce qu’il a mis sur le marché n’est pas sûr en informe aussitôt l’administration ; celle-ci peut suspendre le produit un an au plus, le retirer et en ordonner le rappel pour échange ou remboursement.'}
+          cites: [/ma/loi/24-09/art_28, /ma/loi/24-09/art_36]
+        - text: {ar: 'والبيانات الموجهة للمستعمل، كالعنونة وطرق الاستعمال والتحذيرات، تحرر على الأقل بالعربية.', fr: 'Les informations destinées à l’usager, étiquetage, mode d’emploi, avertissements, sont rédigées au moins en arabe.'}
+          cites: [/ma/loi/24-09/art_31]
+    - title: {ar: 'الأغذية', fr: 'Les aliments'}
+      facts:
+        - text: {ar: 'لا يعرض في السوق أي منتوج غذائي يشكل خطرا على حياة الإنسان أو صحته، ومن علم بذلك يخبر السلطات فورا، فتفرض سحبه، أو تسحبه على نفقته.', fr: 'Aucun aliment dangereux pour la vie ou la santé ne peut être mis sur le marché ; qui le sait prévient aussitôt les autorités, qui imposent le retrait ou y procèdent à ses frais.'}
+          cites: [/ma/loi/28-07/art_4, /ma/loi/28-07/art_10]
+    - title: {ar: 'الغش', fr: 'La fraude'}
+      facts:
+        - text: {ar: 'يعد غشا خداع المتعاقد في جوهر الشيء أو كميته أو تغييرهما بالتدليس، ويعاقب عليه بالحبس من ستة أشهر إلى خمس سنوات وبغرامة، وتضاعف العقوبة إذا كان فيه خطر على الصحة.', fr: 'Est une fraude le fait de tromper le contractant sur la substance ou la quantité de la chose, ou de les altérer frauduleusement ; six mois à cinq ans d’emprisonnement et une amende, doublés s’il y a danger pour la santé.'}
+          cites: [/ma/loi/13-83/art_1, /ma/loi/13-83/art_2]
+  links:
+    - name: {ar: 'المكتب الوطني للسلامة الصحية للمنتجات الغذائية', fr: 'ONSSA'}
+      url: https://www.onssa.gov.ma
+      note: {ar: 'العنوان كما يذكره المكتب', fr: 'l’adresse que donne l’Office'}
+
+- key: numbers
+  for: [credit, home-loan]
+  title: {ar: 'شحال من شكاية على البنوك؟', fr: 'Combien de réclamations contre les banques ?'}
+  lead:
+    ar: 'أرقام بنك المغرب، سنة بسنة، ولكل رقم تقريره وصفحته. هي الشكايات التي وصلت إلى بنك المغرب والوساطة، لا كل ما قدم إلى البنوك.'
+    fr: 'Les chiffres de Bank Al-Maghrib, année par année, chacun avec son rapport et sa page. Ce sont les réclamations arrivées à Bank Al-Maghrib et à la médiation, non toutes celles faites aux banques.'
+  series: [bank-complaints, mediation]
+  links:
+    - name: {ar: 'التقرير السنوي حول الإشراف البنكي', fr: 'Rapport annuel sur la supervision bancaire'}
+      url: https://www.bkam.ma/fr/Publications-et-recherche/Publications-institutionnelles/Rapport-annuel-sur-la-supervision-bancaire
+      note: {ar: بنك المغرب, fr: Bank Al-Maghrib}

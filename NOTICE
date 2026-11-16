@@ -1,0 +1,103 @@
+3adala («قانون»): Moroccan law article by article
+Copyright 2026 3adala.com
+
+This repository is licensed path by path (REUSE.toml, LICENSES/). It contains, or is built with, the third-party
+works below. Each keeps its own licence and its authors' rights.
+
+The law
+-------
+The texts come from official sources only: the Bulletin Officiel published by the Secrétariat Général du
+Gouvernement (sgg.gov.ma), the Ministry of Justice's portal Adala (adala.justice.gov.ma), the Direction Générale des
+Impôts' yearly edition of the tax code (tax.gov.ma) and the Parliament's documents. Official texts carry no copyright
+(law 2-00, article 8). Reuse cites the source and its date and never distorts the text (law 31-13, article 6). The
+Bulletin prevails over any consolidated version.
+
+Files in this repository
+------------------------
+Markazi Text (web/public/fonts/markazi-text-*.woff2, back/apps/corpus/fonts/MarkaziText.ttf)
+  Copyright 2017 The Markazi Text Project Authors (https://github.com/BornaIz/markazitext)
+  SIL Open Font License 1.1; the licence text is beside each font (OFL-MarkaziText.txt, OFL-markazitext.txt).
+
+Readex Pro (web/public/fonts/readex-pro-*.woff2, back/apps/corpus/fonts/ReadexPro.ttf)
+  Copyright 2018 The Readex Pro Project Authors (https://github.com/ThomasJockin/readexpro), with Reserved Font Name
+  "RevReading Lexend". SIL Open Font License 1.1; the licence text is beside each font.
+
+Source Serif 4 (web/public/fonts/source-serif-4-latin.woff2)
+  Copyright 2014 The Source Serif 4 Project Authors (https://github.com/adobe-fonts/source-serif). The font's own
+  notice reads: © 2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/), with Reserved Font Name ‘Source’.
+  SIL Open Font License 1.1; the licence text is beside the font. The subsets are made by the recipe in
+  web/scripts/fonts.md.
+
+lean-qr 2.7.4 (web/src/features/corpus/article/qr.js)
+  Copyright (c) 2021-2025 David Evans. MIT License; the notice is kept in the file.
+
+disposable-email-domains (back/apps/accounts/data/disposable_domains.txt, merged)
+  https://github.com/disposable-email-domains/disposable-email-domains. CC0 1.0 Universal.
+
+fakefilter (back/apps/accounts/data/disposable_domains.txt, merged)
+  Copyright (c) 2022, 7c. https://github.com/7c/fakefilter. BSD 3-Clause License; the notice is reproduced in
+  back/apps/accounts/data/README.md.
+
+GeoNames (back/apps/places/data/places.json: most positions of Moroccan cities and communes)
+  GeoNames, https://www.geonames.org. Creative Commons Attribution 4.0 (CC BY 4.0). The site credits it where it
+  draws the places.
+
+Natural Earth (web/public/geo/*.json; the states' positions in back/apps/places/data/places.json)
+  Made with Natural Earth, version 5.1, https://www.naturalearthdata.com. Public domain.
+
+United Nations M49 (the states' names in back/apps/places/data/places.json)
+  Standard country or area codes for statistical use, United Nations Statistics Division.
+
+The browser's reader (web/src/shared/wasm/ma_law/ma_law_bg.wasm)
+  Built from crates/ (MIT OR Apache-2.0). It links these crates, each under its own licence, taken here under MIT
+  where it offers a choice. Each copyright line is as the crate's LICENSE-MIT prints it; where it prints none, the
+  crate's authors as its Cargo.toml names them:
+    regex, regex-automata, regex-syntax ....................... MIT OR Apache-2.0
+      Copyright (c) 2014 The Rust Project Developers
+    aho-corasick, memchr ...................................... Unlicense OR MIT
+      Copyright (c) 2015 Andrew Gallant
+    unicode-normalization ..................................... (MIT OR Apache-2.0) AND Unicode-3.0
+      Copyright (c) 2015 The Rust Project Developers; its Unicode data tables: Copyright © 1991-2023 Unicode, Inc.
+    tinyvec ................................................... Zlib OR Apache-2.0 OR MIT
+      Lokathor (no copyright line in its LICENSE-MIT)
+    serde_json, serde_core, itoa .............................. MIT OR Apache-2.0
+      serde_json: the serde-rs project, https://github.com/serde-rs/json (no copyright line, no authors named);
+      serde_core: Erick Tryzelaar, David Tolnay; itoa: David Tolnay (no copyright line in either LICENSE-MIT)
+    zmij ...................................................... MIT
+      David Tolnay (no copyright line in its LICENSE-MIT)
+    wasm-bindgen, wasm-bindgen-shared, once_cell, cfg-if ...... MIT OR Apache-2.0
+      wasm-bindgen, wasm-bindgen-shared, cfg-if: Copyright (c) 2014 Alex Crichton; once_cell: Aleksey Kladov (no
+      copyright line in its LICENSE-MIT)
+  The MIT licence's text is in LICENSES/MIT.txt, the Unicode licence's in LICENSES/Unicode-3.0.txt. The exact
+  versions are in crates/Cargo.lock.
+
+The web's bundled packages (React, React DOM, React Router, i18next, TanStack Query, zustand: MIT; web-vitals:
+  Apache-2.0)
+  The build writes each one's name, version, licence and licence text to licenses.txt beside the site's pages
+  (web/vite.config.ts, build.license); the site serves it at /licenses.txt.
+
+Search engines' and assistants' address ranges (back/apps/seo/data/crawlers.json, back/apps/mcp/data/platforms.json)
+  Copied from the lists Google, Bing, Apple, OpenAI, Perplexity and Anthropic publish; each entry names its source and
+  date.
+
+Statistics
+  The topics' yearly figures (back/apps/topics/*/series.yaml) are copied, each with its title, link, page and the
+  hash of the file kept, from the publications of the Haut-Commissariat au Plan (hcp.ma), Bank Al-Maghrib (bkam.ma),
+  the Agence Nationale de la Sécurité Routière (narsa.ma), the ministries and the national open data portal
+  (data.gov.ma).
+
+Used by the code, not in this repository
+----------------------------------------
+DB-IP's IP to ASN Lite database (fetched by manage.py fetch_geoip, for the day of reading's ceiling per network
+  operator): IP Geolocation by DB-IP, https://db-ip.com. CC BY 4.0.
+bge-m3, the search's meaning model (BAAI, https://huggingface.co/BAAI/bge-m3): MIT License; its folder keeps
+  SOURCE.txt with its origin and hash.
+ParadeDB (pg_search, https://github.com/paradedb/paradedb): AGPL-3.0, run as the database server.
+pgvector (https://github.com/pgvector/pgvector): PostgreSQL License.
+Tesseract OCR (https://github.com/tesseract-ocr/tesseract): Apache-2.0, installed on the server.
+PDFium, through pypdfium2 (https://github.com/pypdfium2-team/pypdfium2): BSD-3-Clause and Apache-2.0.
+The Python, JavaScript and Rust packages named in back/requirements/, web/package-lock.json and crates/Cargo.lock,
+  each under its own licence.
+
+Press items and what people say about a law are linked, never copied: a topic keeps the headline as printed and one
+sentence of the project's own; the private copy kept with its hash is not in this repository.

@@ -1,0 +1,513 @@
+{
+  "about": "Articles people know by their number or by a name the public debate gives them (F11 of the famous-articles review, 9 Nov 2026): 84 questions written by Claude in every form the review tested (a bare number, an article without its code, the code's everyday name and its short forms, the public's names in Arabic, Darija, French and Darija in Latin letters, questions around them), each with the article that answers it. Not taken from any private question bank. The bar: the right article first for every one. Owner-provisional, as the list (apps/search/data/famous.json).",
+  "checked": "owner-provisional",
+  "questions": [
+    {
+      "q": "490",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "491",
+      "expect": [
+        "/ma/dahir/1-59-413/art_491"
+      ]
+    },
+    {
+      "q": "489",
+      "expect": [
+        "/ma/dahir/1-59-413/art_489"
+      ]
+    },
+    {
+      "q": "222",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "220",
+      "expect": [
+        "/ma/dahir/1-59-413/art_220"
+      ]
+    },
+    {
+      "q": "449",
+      "expect": [
+        "/ma/dahir/1-59-413/art_449"
+      ]
+    },
+    {
+      "q": "453",
+      "expect": [
+        "/ma/dahir/1-59-413/art_453"
+      ]
+    },
+    {
+      "q": "475",
+      "expect": [
+        "/ma/dahir/1-59-413/art_475"
+      ]
+    },
+    {
+      "q": "288",
+      "expect": [
+        "/ma/dahir/1-59-413/art_288"
+      ]
+    },
+    {
+      "q": "16",
+      "expect": [
+        "/ma/loi/70-03/art_16"
+      ]
+    },
+    {
+      "q": "20",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "49",
+      "expect": [
+        "/ma/loi/70-03/art_49"
+      ]
+    },
+    {
+      "q": "332",
+      "expect": [
+        "/ma/loi/70-03/art_332"
+      ]
+    },
+    {
+      "q": "19",
+      "expect": [
+        "/ma/dahir/1-11-91/art_19"
+      ]
+    },
+    {
+      "q": "47",
+      "expect": [
+        "/ma/dahir/1-11-91/art_47"
+      ]
+    },
+    {
+      "q": "53",
+      "expect": [
+        "/ma/loi/65-99/art_53"
+      ]
+    },
+    {
+      "q": "الفصل 490",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "الفصل 222",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "الفصل 489",
+      "expect": [
+        "/ma/dahir/1-59-413/art_489"
+      ]
+    },
+    {
+      "q": "الفصل 220",
+      "expect": [
+        "/ma/dahir/1-59-413/art_220"
+      ]
+    },
+    {
+      "q": "الفصل 453",
+      "expect": [
+        "/ma/dahir/1-59-413/art_453"
+      ]
+    },
+    {
+      "q": "المادة 20",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "المادة 49",
+      "expect": [
+        "/ma/loi/70-03/art_49"
+      ]
+    },
+    {
+      "q": "المادة 16",
+      "expect": [
+        "/ma/loi/70-03/art_16"
+      ]
+    },
+    {
+      "q": "الفصل 47",
+      "expect": [
+        "/ma/dahir/1-11-91/art_47"
+      ]
+    },
+    {
+      "q": "المادة 53",
+      "expect": [
+        "/ma/loi/65-99/art_53"
+      ]
+    },
+    {
+      "q": "ف 490",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "article 222",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "الفصل 490 من القانون الجنائي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "490 من القانون الجنائي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "الفصل 222 جنائي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "222 ق ج",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "art. 490 C.P.",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "article 222 code pénal",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "489 code pénal",
+      "expect": [
+        "/ma/dahir/1-59-413/art_489"
+      ]
+    },
+    {
+      "q": "art 453 code penal",
+      "expect": [
+        "/ma/dahir/1-59-413/art_453"
+      ]
+    },
+    {
+      "q": "الفصل 475 من القانون الجنائي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_475"
+      ]
+    },
+    {
+      "q": "الفصل 490 ديال القانون الجنائي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "المادة 20 من مدونة الأسرة",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "المادة 332 من مدونة الأسرة",
+      "expect": [
+        "/ma/loi/70-03/art_332"
+      ]
+    },
+    {
+      "q": "المادة 49 د مدونة الأسرة",
+      "expect": [
+        "/ma/loi/70-03/art_49"
+      ]
+    },
+    {
+      "q": "الفصل 19 من الدستور",
+      "expect": [
+        "/ma/dahir/1-11-91/art_19"
+      ]
+    },
+    {
+      "q": "المادة 53 من مدونة الشغل",
+      "expect": [
+        "/ma/loi/65-99/art_53"
+      ]
+    },
+    {
+      "q": "العلاقات الرضائية",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "العلاقات خارج الزواج",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "العلاقات الجنسية خارج إطار الزواج",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "وكالين رمضان",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "الإفطار العلني في رمضان",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "الماكلة فرمضان",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "زواج القاصرات",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "تزويج القاصرات",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "الكد والسعاية",
+      "expect": [
+        "/ma/loi/70-03/art_49"
+      ]
+    },
+    {
+      "q": "المثلية الجنسية",
+      "expect": [
+        "/ma/dahir/1-59-413/art_489"
+      ]
+    },
+    {
+      "q": "الخيانة الزوجية",
+      "expect": [
+        "/ma/dahir/1-59-413/art_491"
+      ]
+    },
+    {
+      "q": "زعزعة عقيدة مسلم",
+      "expect": [
+        "/ma/dahir/1-59-413/art_220"
+      ]
+    },
+    {
+      "q": "التبشير",
+      "expect": [
+        "/ma/dahir/1-59-413/art_220"
+      ]
+    },
+    {
+      "q": "المناصفة",
+      "expect": [
+        "/ma/dahir/1-11-91/art_19"
+      ]
+    },
+    {
+      "q": "ثبوت الزوجية",
+      "expect": [
+        "/ma/loi/70-03/art_16"
+      ]
+    },
+    {
+      "q": "زواج الفاتحة",
+      "expect": [
+        "/ma/loi/70-03/art_16"
+      ]
+    },
+    {
+      "q": "زواج المغتصب من ضحيته",
+      "expect": [
+        "/ma/dahir/1-59-413/art_475"
+      ]
+    },
+    {
+      "q": "عرقلة حرية العمل",
+      "expect": [
+        "/ma/dahir/1-59-413/art_288"
+      ]
+    },
+    {
+      "q": "الإرث بين المسلم وغير المسلم",
+      "expect": [
+        "/ma/loi/70-03/art_332"
+      ]
+    },
+    {
+      "q": "تعيين رئيس الحكومة",
+      "expect": [
+        "/ma/dahir/1-11-91/art_47"
+      ]
+    },
+    {
+      "q": "التعويض عن الفصل",
+      "expect": [
+        "/ma/loi/65-99/art_53"
+      ]
+    },
+    {
+      "q": "الإجهاض الطبي",
+      "expect": [
+        "/ma/dahir/1-59-413/art_453"
+      ]
+    },
+    {
+      "q": "الإجهاض",
+      "expect": [
+        "/ma/dahir/1-59-413/art_449",
+        "/ma/dahir/1-59-413/art_453",
+        "/ma/dahir/1-59-413/art_454",
+        "/ma/dahir/1-59-413/art_455"
+      ]
+    },
+    {
+      "q": "relations hors mariage",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "relations sexuelles hors mariage au maroc",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "avortement",
+      "expect": [
+        "/ma/dahir/1-59-413/art_449"
+      ]
+    },
+    {
+      "q": "avortement thérapeutique",
+      "expect": [
+        "/ma/dahir/1-59-413/art_453"
+      ]
+    },
+    {
+      "q": "homosexualité",
+      "expect": [
+        "/ma/dahir/1-59-413/art_489"
+      ]
+    },
+    {
+      "q": "mariage des mineures",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "wkalin ramdan",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "déjeuner pendant le ramadan",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "parité",
+      "expect": [
+        "/ma/dahir/1-11-91/art_19"
+      ]
+    },
+    {
+      "q": "adultère",
+      "expect": [
+        "/ma/dahir/1-59-413/art_491"
+      ]
+    },
+    {
+      "q": "prosélytisme",
+      "expect": [
+        "/ma/dahir/1-59-413/art_220"
+      ]
+    },
+    {
+      "q": "indemnité de licenciement",
+      "expect": [
+        "/ma/loi/65-99/art_53"
+      ]
+    },
+    {
+      "q": "واش العلاقات الرضائية ممنوعة",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "شنو كيقول الفصل 490",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "عقوبة الفصل 222",
+      "expect": [
+        "/ma/dahir/1-59-413/art_222"
+      ]
+    },
+    {
+      "q": "الفصل 490 شنو فيه",
+      "expect": [
+        "/ma/dahir/1-59-413/art_490"
+      ]
+    },
+    {
+      "q": "زواج القاصرات فالمغرب",
+      "expect": [
+        "/ma/loi/70-03/art_20"
+      ]
+    },
+    {
+      "q": "avortement au maroc",
+      "expect": [
+        "/ma/dahir/1-59-413/art_449"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "about": "The words that open the law (R9 of the for-everyone review, 19 Oct 2026): each a page at /words/<slug>. Its meaning is the explanation people write at that address (apps.explain), checked by a reviewer; where the law uses it is found by searching `search`, the law's own term; `topic` is a data/topics.json slug. The built-in words of the reading page (web article/words.ts) have their pages too.",
+  "concepts": [
+    {
+      "slug": "nafaqa",
+      "term": {
+        "ar": "النفقة",
+        "fr": "Pension alimentaire"
+      },
+      "search": "النفقة",
+      "topic": "family"
+    },
+    {
+      "slug": "custody",
+      "term": {
+        "ar": "الحضانة",
+        "fr": "Garde des enfants"
+      },
+      "search": "الحضانة",
+      "topic": "family"
+    },
+    {
+      "slug": "mutaa",
+      "term": {
+        "ar": "المتعة",
+        "fr": "Don de consolation (mutâa)"
+      },
+      "search": "المتعة",
+      "topic": "family"
+    },
+    {
+      "slug": "kafala",
+      "term": {
+        "ar": "الكفالة",
+        "fr": "Kafala"
+      },
+      "search": "كفالة الأطفال المهملين",
+      "topic": "family"
+    },
+    {
+      "slug": "marriage-age",
+      "term": {
+        "ar": "سن الزواج",
+        "fr": "Âge du mariage"
+      },
+      "search": "أهلية الزواج",
+      "topic": "family"
+    },
+    {
+      "slug": "minimum-wage",
+      "term": {
+        "ar": "الحد الأدنى للأجر",
+        "fr": "Salaire minimum"
+      },
+      "search": "الحد الأدنى القانوني للأجر",
+      "topic": "work"
+    },
+    {
+      "slug": "dismissal",
+      "term": {
+        "ar": "الفصل من العمل",
+        "fr": "Licenciement"
+      },
+      "search": "الفصل عن الشغل",
+      "topic": "work"
+    },
+    {
+      "slug": "strike",
+      "term": {
+        "ar": "الإضراب",
+        "fr": "Grève"
+      },
+      "search": "الإضراب",
+      "topic": "work"
+    },
+    {
+      "slug": "notice",
+      "term": {
+        "ar": "أجل الإخطار",
+        "fr": "Préavis"
+      },
+      "search": "أجل الإخطار",
+      "topic": "work"
+    },
+    {
+      "slug": "rent",
+      "term": {
+        "ar": "الوجيبة الكرائية",
+        "fr": "Loyer"
+      },
+      "search": "الوجيبة الكرائية",
+      "topic": "housing"
+    },
+    {
+      "slug": "eviction",
+      "term": {
+        "ar": "الإفراغ",
+        "fr": "Expulsion du locataire"
+      },
+      "search": "الإشعار بالإفراغ",
+      "topic": "housing"
+    },
+    {
+      "slug": "lessor-lessee",
+      "term": {
+        "ar": "المكري والمكتري",
+        "fr": "Bailleur et locataire"
+      },
+      "search": "المكري والمكتري",
+      "topic": "housing"
+    },
+    {
+      "slug": "syndic",
+      "term": {
+        "ar": "وكيل اتحاد الملاك (السانديك)",
+        "fr": "Syndic de copropriété"
+      },
+      "search": "وكيل اتحاد الملاك",
+      "topic": "housing"
+    },
+    {
+      "slug": "points",
+      "term": {
+        "ar": "رصيد النقط في رخصة السياقة",
+        "fr": "Permis à points"
+      },
+      "search": "رصيد النقط",
+      "topic": "road"
+    },
+    {
+      "slug": "fine",
+      "term": {
+        "ar": "الغرامة التصالحية والجزافية",
+        "fr": "Amende transactionnelle et forfaitaire"
+      },
+      "search": "الغرامة التصالحية والجزافية",
+      "topic": "road"
+    },
+    {
+      "slug": "guarantee",
+      "term": {
+        "ar": "ضمان عيوب الشيء المبيع",
+        "fr": "Garantie des vices cachés"
+      },
+      "search": "ضمان العيوب",
+      "topic": "consumer"
+    },
+    {
+      "slug": "withdrawal",
+      "term": {
+        "ar": "حق التراجع",
+        "fr": "Droit de rétractation"
+      },
+      "search": "حق التراجع",
+      "topic": "consumer"
+    },
+    {
+      "slug": "building-permit",
+      "term": {
+        "ar": "رخصة البناء",
+        "fr": "Permis de construire"
+      },
+      "search": "رخصة البناء",
+      "topic": "land"
+    },
+    {
+      "slug": "land-registration",
+      "term": {
+        "ar": "التحفيظ العقاري",
+        "fr": "Immatriculation foncière"
+      },
+      "search": "التحفيظ العقاري",
+      "topic": "land"
+    },
+    {
+      "slug": "expropriation",
+      "term": {
+        "ar": "نزع الملكية لأجل المنفعة العامة",
+        "fr": "Expropriation pour cause d'utilité publique"
+      },
+      "search": "نزع الملكية لأجل المنفعة العامة",
+      "topic": "land"
+    },
+    {
+      "slug": "income-tax",
+      "term": {
+        "ar": "الضريبة على الدخل",
+        "fr": "Impôt sur le revenu"
+      },
+      "search": "الضريبة على الدخل",
+      "topic": "tax"
+    },
+    {
+      "slug": "vat",
+      "term": {
+        "ar": "الضريبة على القيمة المضافة",
+        "fr": "Taxe sur la valeur ajoutée"
+      },
+      "search": "الضريبة على القيمة المضافة",
+      "topic": "tax"
+    },
+    {
+      "slug": "amo",
+      "term": {
+        "ar": "التأمين الإجباري الأساسي عن المرض",
+        "fr": "Assurance maladie obligatoire (AMO)"
+      },
+      "search": "التأمين الإجباري الأساسي عن المرض",
+      "topic": "health"
+    },
+    {
+      "slug": "direct-support",
+      "term": {
+        "ar": "الدعم الاجتماعي المباشر",
+        "fr": "Aide sociale directe"
+      },
+      "search": "الدعم الاجتماعي المباشر",
+      "topic": "health"
+    },
+    {
+      "slug": "civil-status",
+      "term": {
+        "ar": "الحالة المدنية",
+        "fr": "État civil"
+      },
+      "search": "الحالة المدنية",
+      "topic": "papers"
+    },
+    {
+      "slug": "auto-entrepreneur",
+      "term": {
+        "ar": "المقاول الذاتي",
+        "fr": "Auto-entrepreneur"
+      },
+      "search": "المقاول الذاتي",
+      "topic": "business"
+    },
+    {
+      "slug": "custody-police",
+      "term": {
+        "ar": "الحراسة النظرية",
+        "fr": "Garde à vue"
+      },
+      "search": "الحراسة النظرية",
+      "topic": "justice"
+    },
+    {
+      "slug": "alternative-sentences",
+      "term": {
+        "ar": "العقوبات البديلة",
+        "fr": "Peines alternatives"
+      },
+      "search": "العقوبات البديلة",
+      "topic": "justice"
+    },
+    {
+      "slug": "legal-aid",
+      "term": {
+        "ar": "المساعدة القضائية",
+        "fr": "Assistance judiciaire"
+      },
+      "search": "المساعدة القضائية",
+      "topic": "justice"
+    },
+    {
+      "slug": "personal-data",
+      "term": {
+        "ar": "المعطيات ذات الطابع الشخصي",
+        "fr": "Données à caractère personnel"
+      },
+      "search": "المعطيات ذات الطابع الشخصي",
+      "topic": "digital"
+    },
+    {
+      "slug": "abusive-clause",
+      "term": {
+        "ar": "الشرط التعسفي",
+        "fr": "Clause abusive"
+      },
+      "search": "الشرط التعسفي",
+      "topic": "consumer"
+    },
+    {
+      "slug": "distance-contract",
+      "term": {
+        "ar": "العقد المبرم عن بعد",
+        "fr": "Contrat conclu à distance"
+      },
+      "search": "العقود المبرمة عن بعد",
+      "topic": "consumer"
+    },
+    {
+      "slug": "contract-guarantee",
+      "term": {
+        "ar": "الضمان التعاقدي",
+        "fr": "Garantie contractuelle"
+      },
+      "search": "الضمان التعاقدي",
+      "topic": "consumer"
+    },
+    {
+      "slug": "after-sales",
+      "term": {
+        "ar": "الخدمة بعد البيع",
+        "fr": "Service après-vente"
+      },
+      "search": "الخدمة بعد البيع",
+      "topic": "consumer"
+    },
+    {
+      "slug": "consumer-credit",
+      "term": {
+        "ar": "القرض الاستهلاكي",
+        "fr": "Crédit à la consommation"
+      },
+      "search": "القرض الاستهلاكي",
+      "topic": "consumer"
+    },
+    {
+      "slug": "off-premises",
+      "term": {
+        "ar": "البيع خارج المحلات التجارية",
+        "fr": "Vente hors établissement"
+      },
+      "search": "البيع خارج المحلات التجارية",
+      "topic": "consumer"
+    },
+    {
+      "slug": "supplier",
+      "term": {
+        "ar": "المورد",
+        "fr": "Fournisseur"
+      },
+      "search": "المورد",
+      "topic": "consumer"
+    },
+    {
+      "slug": "land-title",
+      "term": {
+        "ar": "الرسم العقاري",
+        "fr": "Titre foncier"
+      },
+      "search": "الرسم العقاري",
+      "topic": "land"
+    },
+    {
+      "slug": "requisition",
+      "term": {
+        "ar": "مطلب التحفيظ",
+        "fr": "Réquisition d’immatriculation"
+      },
+      "search": "مطلب التحفيظ",
+      "topic": "land"
+    },
+    {
+      "slug": "opposition",
+      "term": {
+        "ar": "التعرض على مطلب التحفيظ",
+        "fr": "Opposition à l’immatriculation"
+      },
+      "search": "التعرض",
+      "topic": "land"
+    },
+    {
+      "slug": "prenotation",
+      "term": {
+        "ar": "التقييد الاحتياطي",
+        "fr": "Prénotation"
+      },
+      "search": "التقييد الاحتياطي",
+      "topic": "land"
+    },
+    {
+      "slug": "indivision",
+      "term": {
+        "ar": "الشياع",
+        "fr": "Indivision"
+      },
+      "search": "الملك المشاع",
+      "topic": "land"
+    },
+    {
+      "slug": "preemption",
+      "term": {
+        "ar": "الشفعة",
+        "fr": "Droit de préemption"
+      },
+      "search": "الشفعة",
+      "topic": "land"
+    },
+    {
+      "slug": "partition",
+      "term": {
+        "ar": "القسمة",
+        "fr": "Partage"
+      },
+      "search": "القسمة",
+      "topic": "land"
+    },
+    {
+      "slug": "possession",
+      "term": {
+        "ar": "الحيازة",
+        "fr": "Possession"
+      },
+      "search": "الحيازة",
+      "topic": "land"
+    },
+    {
+      "slug": "authentic-deed",
+      "term": {
+        "ar": "المحرر الرسمي",
+        "fr": "Acte authentique"
+      },
+      "search": "محرر رسمي",
+      "topic": "land"
+    },
+    {
+      "slug": "urban-note",
+      "term": {
+        "ar": "مذكرة المعلومات التعميرية",
+        "fr": "Note de renseignements urbanistiques"
+      },
+      "search": "مذكرة المعلومات التعميرية",
+      "topic": "land"
+    },
+    {
+      "slug": "habitation-permit",
+      "term": {
+        "ar": "رخصة السكن",
+        "fr": "Permis d’habiter"
+      },
+      "search": "رخصة السكن",
+      "topic": "land"
+    },
+    {
+      "slug": "cessibility",
+      "term": {
+        "ar": "مقرر التخلي",
+        "fr": "Acte de cessibilité"
+      },
+      "search": "مقرر التخلي",
+      "topic": "land"
+    },
+    {
+      "slug": "collective-lands",
+      "term": {
+        "ar": "أراضي الجماعات السلالية",
+        "fr": "Terres collectives"
+      },
+      "search": "الجماعات السلالية",
+      "topic": "land"
+    },
+    {
+      "slug": "finance-bill",
+      "term": {
+        "ar": "مشروع قانون المالية",
+        "fr": "Projet de loi de finances"
+      },
+      "search": "مشروع قانون المالية",
+      "topic": "tax"
+    },
+    {
+      "slug": "explanatory-note",
+      "term": {
+        "ar": "مذكرة تقديم مشروع قانون المالية",
+        "fr": "Note de présentation"
+      },
+      "search": "مذكرة تقديم مشروع قانون المالية",
+      "topic": "tax"
+    },
+    {
+      "slug": "second-reading",
+      "term": {
+        "ar": "القراءة الثانية",
+        "fr": "Seconde lecture"
+      },
+      "search": "البت النهائي في مشروع قانون المالية",
+      "topic": "tax"
+    },
+    {
+      "slug": "finance-committee",
+      "term": {
+        "ar": "لجنة المالية",
+        "fr": "La commission des finances"
+      },
+      "search": "اللجنتين المكلفتين بالمالية",
+      "topic": "tax"
+    },
+    {
+      "slug": "amendment",
+      "term": {
+        "ar": "التعديل",
+        "fr": "L’amendement"
+      },
+      "search": "التعديلات المصوت عليها",
+      "topic": "tax"
+    },
+    {
+      "slug": "financial-impact",
+      "term": {
+        "ar": "الأثر المالي",
+        "fr": "L’impact financier"
+      },
+      "search": "الأثر المالي",
+      "topic": "tax"
+    },
+    {
+      "slug": "marginal-rate",
+      "term": {
+        "ar": "السعر الهامشي",
+        "fr": "Le taux marginal"
+      },
+      "search": "السعر الهامشي",
+      "topic": "tax"
+    },
+    {
+      "slug": "exempt-slice",
+      "term": {
+        "ar": "الشريحة المعفية",
+        "fr": "La tranche exonérée"
+      },
+      "search": "شريحة الدخل",
+      "topic": "tax"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+/* «حياتك بأعمار القانون» (the sixteenth post). Violet is the law: every age a text writes, a notch on the line of a life,
+   a numeral on the ruler. Ink is the reader: their years on the line, the ages they have passed on the ruler, their
+   pencil mark. A filled dot starts something at an age, a ring ends something there. Ages that matter are set large in
+   Readex Pro's lightest weight, as the other posts set their numbers. */
+
+.ag { --ag-law: var(--color-stamp); --ag-col: 4.6rem; --ag-gutter: 20px; --ag-num: 2.9rem; }
+@media (max-width: 560px) { .ag { --ag-col: 3.1rem; --ag-gutter: 12px; --ag-num: 2.2rem; } }
+
+/* ── The dial and the line of a life ──────────────────────────────────────────────────────────────────────────── */
+.ag-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 640px) { .ag-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.ag-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.9rem, 1.5rem + 1.6vw, 2.6rem); line-height: 1.15; text-align: center; }
+.bp:lang(fr) .ag-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); }
+.ag-dial { display: flex; align-items: center; justify-content: center; gap: clamp(14px, 4vw, 36px); direction: ltr; }
+.ag-pm { inline-size: 52px; block-size: 52px; border-radius: 50%; border: 1.5px solid var(--color-rule); background: var(--color-sheet); color: var(--color-ink);
+  font: 300 1.8rem/1 var(--font-ui); cursor: pointer; display: grid; place-items: center; }
+.ag-pm:hover { border-color: var(--color-ink); }
+.ag-age { display: inline-flex; align-items: baseline; gap: 10px; min-inline-size: 4.2ch; justify-content: center; }
+.ag-age-num { font-family: var(--font-ui); font-weight: 200; font-size: clamp(5rem, 3.8rem + 6vw, 8rem); line-height: 0.9; letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.ag-age-unit { font-size: 1.15rem; color: var(--color-ink-soft); }
+.ag-how { margin: 0; color: var(--color-ink-soft); text-align: center; font-size: var(--text-meta); }
+.ag-line svg { display: block; overflow: visible; cursor: pointer; touch-action: pan-y; -webkit-user-select: none; user-select: none; }
+.ag-line svg:focus-visible { outline: 3px solid var(--ag-law); outline-offset: 4px; border-radius: 6px; }
+.ag-rail { stroke: var(--color-rule); stroke-width: 3; stroke-linecap: round; }
+.ag-rail.is-fold { stroke-dasharray: 2 5; }
+.ag-tick { stroke: var(--color-tick); stroke-width: 1; }
+.ag-lived { stroke: var(--color-ink); stroke-width: 4; stroke-linecap: round; transition: x2 160ms ease; }
+.ag-notch { stroke: var(--ag-law); stroke-width: 2.5; stroke-linecap: round; }
+.ag-notch-num { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ag-notch-num.is-on { fill: var(--color-ink); font-weight: 700; }
+.ag-mark line { stroke: var(--color-ink); stroke-width: 2.5; stroke-linecap: round; }
+.ag-mark circle { fill: var(--color-ink); stroke: var(--color-sheet); stroke-width: 3; }
+.ag-mark { transition: transform 160ms ease; }
+
+/* What holds, what comes. */
+.ag-now { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; padding-top: 6px; border-top: 1px solid var(--color-rule); }
+@media (min-width: 760px) { .ag-now { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; } }
+.ag-col { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.ag-col h2 { margin: 0; font-family: var(--font-ui); font-size: 1.05rem; font-weight: 700; line-height: 1.5; }
+.ag-col.is-next h2 { color: var(--ag-law); }
+.ag-none { margin: 0; color: var(--color-ink-soft); }
+.ag-more { align-self: flex-start; min-height: 44px; padding: 6px 14px; border: 1px solid var(--color-rule); border-radius: 999px; background: none; color: var(--color-ink);
+  font: inherit; font-weight: 600; cursor: pointer; }
+
+/* An age's line: its dot, its words, its text and page. */
+.ag-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.ag-item { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 10px; align-items: start; }
+.ag-dot { inline-size: 11px; block-size: 11px; margin-top: 0.55em; border-radius: 50%; background: var(--ag-law); border: 2px solid var(--ag-law); }
+.ag-item.is-end .ag-dot { background: transparent; }
+.ag-item-body { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ag-item-age { color: var(--ag-law); font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ag-item.is-compact { gap: 8px; }
+.ag-item.is-compact .ag-item-body { gap: 0; }
+.ag-item.is-compact .ag-src { line-height: 1.5; }
+.ag-list:has(.is-compact) { gap: 12px; }
+.ag-item-text { line-height: 1.65; }
+.ag-src { font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.9; }
+.ag-src > a { color: var(--color-ink-soft); text-decoration-color: var(--color-rule); }
+/* A finger's 44 px (HM30): the article's link is 18 px of text; its target reaches 13 px above and below, short of the next line's. */
+.ag-src > a { position: relative; }
+.ag-src > a::after { content: ''; position: absolute; inset: -13px 0; }
+.ag-src > a:hover { color: var(--ag-law); }
+.ag-stamp { vertical-align: middle; }
+
+.ag-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.ag-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.ag-share:disabled { opacity: 0.6; }
+
+/* ── The ruler: a door frame, the ages marked up its side ─────────────────────────────────────────────────────── */
+.ag-legend { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ag-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.ag-legend i { inline-size: 11px; block-size: 11px; border-radius: 50%; border: 2px solid var(--ag-law); background: var(--ag-law); }
+.ag-legend .is-end i { background: transparent; }
+.ag-ruler { margin: 0; padding: 0; list-style: none; position: relative; display: flex; flex-direction: column; }
+.ag-ruler::before { content: ''; position: absolute; inset-block: 0; inset-inline-start: var(--ag-col); inline-size: 3px; background: var(--color-rule); border-radius: 2px; }
+.ag-row { position: relative; display: grid; grid-template-columns: var(--ag-col) minmax(0, 1fr); gap: 0 var(--ag-gutter); padding: 14px 0; }
+.ag-row::before { content: ''; position: absolute; inset-inline-start: calc(var(--ag-col) - 8px); inline-size: 19px; block-size: 3px; top: calc(var(--ag-num) * 0.62 + 14px); background: var(--ag-law); border-radius: 2px; }
+.ag-num { font-weight: 200; font-size: var(--ag-num); line-height: 1; color: var(--ag-law); font-variant-numeric: tabular-nums; text-align: end; padding-inline-end: 14px;
+  letter-spacing: -0.03em; }
+.ag-row.is-past .ag-num { color: var(--color-ink); }
+.ag-row.is-past::before { background: var(--color-ink); }
+.ag-row .ag-list { padding-top: 0.55rem; }
+.ag-gap { position: relative; block-size: calc(var(--gap) * 7px + 24px); display: flex; align-items: center; padding-inline-start: calc(var(--ag-col) + var(--ag-gutter)); }
+.ag-gap::before { content: ''; position: absolute; inset-block: 6px; inset-inline-start: var(--ag-col); inline-size: 3px;
+  background: repeating-linear-gradient(to bottom, var(--color-paper) 0 4px, transparent 4px 10px); }
+.ag-gap span { font-size: var(--text-meta); color: var(--color-ink-soft); font-style: italic; }
+.ag-you { position: relative; padding: 10px 0 10px calc(var(--ag-col) + var(--ag-gutter)); padding-inline-start: calc(var(--ag-col) + var(--ag-gutter)); padding-inline-end: 0; }
+.ag-you::before { content: ''; position: absolute; inset-inline: 0; top: 50%; border-top: 2px solid var(--color-ink); }
+.ag-you span { position: relative; background: var(--color-paper); padding-inline: 8px; font-weight: 700; font-size: var(--text-meta); }
+.ag-num { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.ag-num-you { font-size: var(--text-meta); font-weight: 700; letter-spacing: 0; color: var(--color-ink); background: var(--color-sheet); border: 1.5px solid var(--color-ink);
+  border-radius: 999px; padding: 1px 9px; line-height: 1.5; }
+.ag-row.is-you .ag-num { font-weight: 400; }
+
+/* ── The ages that moved ──────────────────────────────────────────────────────────────────────────────────────── */
+.ag-moves { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.ag-move { display: flex; flex-direction: column; gap: 8px; padding: 14px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.ag-move:last-child { border-bottom: 0; }
+.ag-move-head { margin: 0; display: flex; align-items: baseline; gap: 12px; }
+.ag-move-change { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ag-move-steps { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+.ag-step + .ag-step::before { content: '←'; color: var(--color-ink-soft); padding-inline: 4px; }
+.bp:lang(fr) .ag-step + .ag-step::before { content: '→'; }
+.ag-step { display: inline-flex; align-items: center; }
+.ag-step-box { position: relative; display: inline-grid; grid-template-columns: auto auto; grid-template-rows: auto auto; column-gap: 6px; align-items: baseline;
+  padding: 4px 6px; border-radius: 8px; color: inherit; text-decoration: none; }
+a.ag-step-box:hover { background: var(--color-paper); }
+.ag-step-age { grid-row: 1; font-weight: 300; font-size: 2.2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.ag-step-unit { grid-row: 1; font-size: var(--text-meta); }
+.ag-step-year { grid-row: 2; grid-column: 1 / -1; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ag-step.is-was .ag-step-age, .ag-step.is-was .ag-step-unit { color: var(--color-ink-soft); }
+.ag-step.is-was .ag-step-box::after { content: ''; position: absolute; inset-inline: 2px; top: 1.05rem; block-size: 2.5px; background: var(--color-ink); border-radius: 2px;
+  transform-origin: left center; }
+.ag-step.is-now .ag-step-age, .ag-step.is-now .ag-step-unit { color: var(--ag-law); }
+.ag-step.is-now .ag-step-age { font-weight: 400; }
+.ag-move-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.9; }
+.ag-move:not(.is-on) .ag-step { opacity: 0; }
+.ag-move:not(.is-on) .ag-step.is-was .ag-step-box::after { transform: scaleX(0); }
+.ag-move.is-on .ag-step { animation: ag-in 420ms cubic-bezier(0.3, 0, 0.2, 1) calc(120ms + var(--k) * 460ms) both; }
+.ag-move.is-on .ag-step.is-was .ag-step-box::after { animation: ag-strike 320ms cubic-bezier(0.5, 0, 0.2, 1) calc(120ms + var(--k) * 460ms + 400ms) both; }
+@keyframes ag-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes ag-strike { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+.ag-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--ag-law); font-family: var(--font-law); font-size: var(--text-law); line-height: 1.75;
+  text-wrap: pretty; text-align: right; }
+.ag-tr { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); font-style: italic; }
+
+/* ── The staircase of retirement ──────────────────────────────────────────────────────────────────────────────── */
+.ag-stairs { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); align-items: end; gap: 6px; }
+.ag-stairs li { display: flex; flex-direction: column; align-items: stretch; gap: 6px; min-width: 0; text-align: center; }
+.ag-stairs i { display: block; block-size: calc(var(--h) * 150px + 14px); background: var(--color-stamp-wash, color-mix(in srgb, var(--ag-law) 22%, transparent)); border-radius: 4px 4px 0 0; }
+.ag-stairs li.is-now i { background: var(--ag-law); }
+.ag-stair-age { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.ag-stair-year { font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; line-height: 1.3; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ag-moves .ag-step { opacity: 1 !important; animation: none !important; }
+  .ag-moves .ag-step.is-was .ag-step-box::after { transform: none !important; animation: none !important; }
+  .ag-lived, .ag-mark { transition: none; }
+}

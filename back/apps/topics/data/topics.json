@@ -1,0 +1,862 @@
+{
+  "about": "The life topics (R2 of the for-everyone review, 19 Oct 2026): how people name the part of life a law governs. Each names the codes of the shelf it holds (services/codes.py SHELF keys), its situations (situations.json slugs), the words that open its laws (concepts.json slugs) and the words a new text's title must hold to count as one of its recent changes. Order is the order the home and /topics show them; colours are the web tokens t-<slug>. `everyday` are the words people ask with, Darija included: a question holding one shows the topic above the search results (it never changes which articles are found).",
+  "topics": [
+    {
+      "slug": "family",
+      "name": {
+        "ar": "الأسرة",
+        "fr": "Famille"
+      },
+      "short": {
+        "ar": "الأسرة",
+        "fr": "Famille"
+      },
+      "lead": {
+        "ar": "الزواج والطلاق والنفقة وحضانة الأطفال والكفالة والإرث",
+        "fr": "Mariage, divorce, pension alimentaire, garde des enfants, kafala, héritage"
+      },
+      "codes": [
+        "family",
+        "civil_status",
+        "civil_status_decree",
+        "kafala",
+        "women_violence",
+        "direct_support",
+        "direct_support_decree"
+      ],
+      "situations": [
+        "divorce"
+      ],
+      "words": [
+        "nafaqa",
+        "custody",
+        "mutaa",
+        "kafala",
+        "marriage-age"
+      ],
+      "keywords": [
+        "مدونة الأسرة",
+        "الزواج",
+        "الطلاق",
+        "النفقة",
+        "الحضانة",
+        "الكفالة",
+        "الأطفال المهملين",
+        "صندوق التكافل العائلي"
+      ],
+      "everyday": [
+        "الزواج",
+        "زواج",
+        "الطلاق",
+        "طلاق",
+        "طلقني",
+        "النفقة",
+        "نفقة",
+        "الحضانة",
+        "الدراري",
+        "الولاد",
+        "الزوجة",
+        "الزوج",
+        "المرا",
+        "الراجل",
+        "الإرث",
+        "الورث",
+        "الكفالة",
+        "الصداق",
+        "العدول"
+      ]
+    },
+    {
+      "slug": "work",
+      "name": {
+        "ar": "الشغل",
+        "fr": "Travail"
+      },
+      "short": {
+        "ar": "الشغل",
+        "fr": "Travail"
+      },
+      "lead": {
+        "ar": "عقد الشغل والأجر والفصل والإضراب والضمان الاجتماعي",
+        "fr": "Contrat de travail, salaire, licenciement, grève, sécurité sociale"
+      },
+      "codes": [
+        "labour",
+        "social_security",
+        "work_accidents",
+        "domestic_work",
+        "civil_procedure",
+        "strike",
+        "minimum_wage",
+        "old_age_pension",
+        "civil_service"
+      ],
+      "situations": [
+        "dismissal"
+      ],
+      "words": [
+        "minimum-wage",
+        "dismissal",
+        "strike",
+        "notice"
+      ],
+      "keywords": [
+        "الشغل",
+        "الأجر",
+        "الأجراء",
+        "الإضراب",
+        "الضمان الاجتماعي",
+        "حوادث الشغل",
+        "التشغيل",
+        "النقابات",
+        "التقاعد",
+        "الوظيفة العمومية"
+      ],
+      "everyday": [
+        "الخدمة",
+        "خدمتي",
+        "طردوني",
+        "جراو عليا",
+        "الطرد",
+        "الباطرون",
+        "المشغل",
+        "الأجرة",
+        "الخلصة",
+        "السميك",
+        "الحد الأدنى للأجر",
+        "الضمان الاجتماعي",
+        "الإضراب",
+        "الكونجي",
+        "العطلة السنوية",
+        "التقاعد",
+        "لاريتريت",
+        "الشوماج",
+        "شغل",
+        "حادثة شغل",
+        "حادثة الشغل",
+        "تصابت فالخدمة",
+        "البيلتان",
+        "الديميسيون",
+        "الاستقالة",
+        "السيكيريتي",
+        "مفتش الشغل",
+        "الكنوس",
+        "التعويض عن الفصل",
+        "الفصل من العمل"
+      ]
+    },
+    {
+      "slug": "housing",
+      "name": {
+        "ar": "السكن والكراء",
+        "fr": "Logement et location"
+      },
+      "short": {
+        "ar": "السكن والكراء",
+        "fr": "Logement"
+      },
+      "lead": {
+        "ar": "الكراء والزيادة فيه والإفراغ، والعمارة والسانديك، والشراء على التصميم ودعم السكن، والحانوت",
+        "fr": "Location, hausse du loyer, expulsion, copropriété, achat sur plan, aide au logement, bail commercial"
+      },
+      "codes": [
+        "housing_lease",
+        "co_ownership",
+        "doc",
+        "commercial_lease",
+        "rent_to_own",
+        "buildings_risk",
+        "housing_aid",
+        "local_taxes",
+        "real_rights",
+        "land_registration"
+      ],
+      "situations": [
+        "renting",
+        "co-ownership"
+      ],
+      "words": [
+        "rent",
+        "eviction",
+        "lessor-lessee",
+        "syndic"
+      ],
+      "keywords": [
+        "الكراء",
+        "السكن",
+        "السكنى",
+        "الملكية المشتركة",
+        "المكري",
+        "المكتري",
+        "السكن الاجتماعي",
+        "دعم السكن",
+        "البيع في طور الإنجاز",
+        "الإيجار المفضي إلى تملك العقار",
+        "المباني الآيلة للسقوط",
+        "الكراء التجاري",
+        "رسم السكن",
+        "رسم الخدمات الجماعية",
+        "اتحاد الملاك"
+      ],
+      "everyday": [
+        "الكرا",
+        "كرا",
+        "الكراء",
+        "مول الدار",
+        "مولات الدار",
+        "الشقة",
+        "المكري",
+        "المكتري",
+        "يخرجني",
+        "نخرج من الدار",
+        "الإفراغ",
+        "السانديك",
+        "العمارة",
+        "السكنى",
+        "لاكوسيون",
+        "الكوسيون",
+        "الضمانة ديال الكرا",
+        "الحلاوة",
+        "البروموتور",
+        "المنعش العقاري",
+        "التسبيق",
+        "على التصميم",
+        "شريت على التصميم",
+        "الحانوت",
+        "المحل التجاري",
+        "الدار آيلة للسقوط",
+        "دعم السكن",
+        "الدعم ديال الدار",
+        "ضريبة السكن",
+        "loyer",
+        "location",
+        "bail",
+        "bailleur",
+        "locataire",
+        "caution",
+        "état des lieux",
+        "expulsion",
+        "congé",
+        "syndic",
+        "copropriété",
+        "VEFA",
+        "vente sur plan",
+        "aide au logement",
+        "bail commercial",
+        "taxe d'habitation",
+        "augmentation de loyer",
+        "augmentation loyer",
+        "hausse de loyer"
+      ]
+    },
+    {
+      "slug": "road",
+      "name": {
+        "ar": "الطريق والسياقة",
+        "fr": "Route et conduite"
+      },
+      "short": {
+        "ar": "الطريق",
+        "fr": "Route"
+      },
+      "lead": {
+        "ar": "رخصة السياقة والمخالفات وحوادث السير والتأمين",
+        "fr": "Permis, infractions, accidents de la route, assurance"
+      },
+      "codes": [
+        "road",
+        "road_rules",
+        "road_licence",
+        "road_signs",
+        "road_victims",
+        "insurance",
+        "road_pro",
+        "road_school"
+      ],
+      "situations": [],
+      "words": [
+        "points",
+        "fine"
+      ],
+      "keywords": [
+        "السير على الطرق",
+        "السياقة",
+        "العربات",
+        "حوادث السير",
+        "النقل الطرقي",
+        "رخصة السياقة"
+      ],
+      "everyday": [
+        "البيرمي",
+        "الطوموبيل",
+        "السيارة",
+        "الموطور",
+        "حادثة",
+        "حادثة سير",
+        "الكسيدة",
+        "المخالفة",
+        "الرادار",
+        "رخصة السياقة",
+        "الكارت كريز",
+        "التروتينيت",
+        "الفوريان",
+        "لاسورانس",
+        "الفيزيت",
+        "الكاسك",
+        "الرومبوان",
+        "أكسيدة"
+      ]
+    },
+    {
+      "slug": "consumer",
+      "name": {
+        "ar": "المستهلك",
+        "fr": "Consommation"
+      },
+      "short": {
+        "ar": "المستهلك",
+        "fr": "Consommation"
+      },
+      "lead": {
+        "ar": "حقوقك حين تشتري: الضمان والإرجاع والأسعار والسلامة",
+        "fr": "Vos droits quand vous achetez : garantie, retour, prix, sécurité"
+      },
+      "codes": [
+        "consumer",
+        "consumer_decree",
+        "doc",
+        "product_safety",
+        "food_safety",
+        "fraud",
+        "competition"
+      ],
+      "situations": [
+        "consumer"
+      ],
+      "words": [
+        "guarantee",
+        "withdrawal",
+        "abusive-clause",
+        "distance-contract",
+        "contract-guarantee",
+        "consumer-credit",
+        "off-premises",
+        "after-sales",
+        "supplier"
+      ],
+      "keywords": [
+        "المستهلك",
+        "حماية المستهلك",
+        "الأسعار",
+        "سلامة المنتجات",
+        "المنتجات الغذائية",
+        "التجارة الإلكترونية",
+        "الشرط التعسفي",
+        "القرض الاستهلاكي",
+        "البيع عن بعد",
+        "البيع خارج المحلات التجارية",
+        "الضمان القانوني"
+      ],
+      "everyday": [
+        "شريت",
+        "اشتريت",
+        "الضمانة",
+        "الكارانتي",
+        "نرجع السلعة",
+        "الفاتورة",
+        "لافاكتورة",
+        "المستهلك",
+        "السلعة",
+        "البيع عن بعد",
+        "شريت أونلاين",
+        "طلبت أونلاين",
+        "الكريدي",
+        "الكريدي ديال الاستهلاك",
+        "لا ترد ولا تستبدل",
+        "الطلبية",
+        "الليفريزون",
+        "الأبونمو",
+        "الصولد",
+        "التخفيضات",
+        "جوميا",
+        "نرجعها",
+        "نتراجع",
+        "الكوموند",
+        "achat en ligne",
+        "garantie",
+        "rétractation",
+        "crédit conso",
+        "facture",
+        "remboursement",
+        "retour produit",
+        "soldes"
+      ]
+    },
+    {
+      "slug": "land",
+      "name": {
+        "ar": "الأرض والبناء والعقار",
+        "fr": "Terre, construction, immobilier"
+      },
+      "short": {
+        "ar": "الأرض والعقار",
+        "fr": "Immobilier"
+      },
+      "lead": {
+        "ar": "رخص البناء وتقسيم الأرض والتحفيظ ونزع الملكية",
+        "fr": "Permis de construire, lotissement, immatriculation, expropriation"
+      },
+      "codes": [
+        "real_rights",
+        "land_registration",
+        "urbanism",
+        "subdivisions",
+        "building_rules",
+        "expropriation",
+        "collective_lands",
+        "collective_delimitation",
+        "local_taxes"
+      ],
+      "situations": [],
+      "words": [
+        "land-title",
+        "requisition",
+        "opposition",
+        "prenotation",
+        "indivision",
+        "preemption",
+        "partition",
+        "possession",
+        "authentic-deed",
+        "urban-note",
+        "building-permit",
+        "habitation-permit",
+        "cessibility",
+        "expropriation",
+        "collective-lands",
+        "land-registration"
+      ],
+      "keywords": [
+        "المتعلق بالتعمير",
+        "وثائق التعمير",
+        "ضوابط البناء",
+        "رخص البناء",
+        "التجزئات العقارية",
+        "التحفيظ العقاري",
+        "الحقوق العينية",
+        "الجماعات السلالية",
+        "الأراضي الجماعية",
+        "الأملاك المخزنية"
+      ],
+      "everyday": [
+        "أرض الجموع",
+        "الأرض",
+        "الأرض السلالية",
+        "البقعة",
+        "البناء",
+        "البني",
+        "التجزئة",
+        "التحفيظ",
+        "التعرض",
+        "الحيازة",
+        "الرسم العقاري",
+        "الشفعة",
+        "الشياع",
+        "رخصة البناء",
+        "رخصة السكن",
+        "نزع الملكية"
+      ]
+    },
+    {
+      "slug": "tax",
+      "name": {
+        "ar": "الضرائب",
+        "fr": "Impôts"
+      },
+      "short": {
+        "ar": "الضرائب",
+        "fr": "Impôts"
+      },
+      "lead": {
+        "ar": "الضريبة على الدخل والضريبة على القيمة المضافة والرسوم وقانون المالية",
+        "fr": "Impôt sur le revenu, TVA, taxes, loi de finances"
+      },
+      "codes": [
+        "tax",
+        "local_taxes",
+        "finance_2026",
+        "finance_2025",
+        "auto_entrepreneur"
+      ],
+      "situations": [],
+      "words": [
+        "income-tax",
+        "vat"
+      ],
+      "keywords": [
+        "الضريبة",
+        "الضرائب",
+        "الرسوم",
+        "الجبايات",
+        "الجمارك",
+        "قانون المالية",
+        "المدونة العامة للضرائب"
+      ],
+      "everyday": [
+        "الضريبة",
+        "الضرائب",
+        "الطاكس",
+        "الباطانطا",
+        "الضريبة على الدخل",
+        "الضريبة على القيمة المضافة",
+        "الديوانة",
+        "الجمارك",
+        "نصرح",
+        "مدخول الكراء",
+        "impôt",
+        "impôts"
+      ]
+    },
+    {
+      "slug": "health",
+      "name": {
+        "ar": "الصحة والحماية الاجتماعية",
+        "fr": "Santé et protection sociale"
+      },
+      "short": {
+        "ar": "الصحة",
+        "fr": "Santé"
+      },
+      "lead": {
+        "ar": "التغطية الصحية والدعم الاجتماعي المباشر والأدوية",
+        "fr": "Couverture maladie, aide sociale directe, médicaments"
+      },
+      "codes": [
+        "amo",
+        "amo_tadamon",
+        "amo_self",
+        "amo_achamil",
+        "medicines",
+        "medicine_practice",
+        "medical_ethics",
+        "organ_donation",
+        "disability",
+        "hospital_rules"
+      ],
+      "situations": [],
+      "words": [
+        "amo",
+        "direct-support"
+      ],
+      "keywords": [
+        "الصحة",
+        "التأمين الإجباري الأساسي عن المرض",
+        "التغطية الصحية",
+        "الدعم الاجتماعي المباشر",
+        "الحماية الاجتماعية",
+        "الأدوية",
+        "المستشفيات"
+      ],
+      "everyday": [
+        "الصحة",
+        "الطبيب",
+        "السبيطار",
+        "المستشفى",
+        "الدوا",
+        "الدواء",
+        "التغطية الصحية",
+        "التعاضدية",
+        "الدعم المباشر",
+        "الدعم الاجتماعي المباشر",
+        "أمو",
+        "راميد"
+      ]
+    },
+    {
+      "slug": "papers",
+      "name": {
+        "ar": "الوثائق والحالة المدنية",
+        "fr": "Papiers et état civil"
+      },
+      "short": {
+        "ar": "الوثائق",
+        "fr": "Papiers"
+      },
+      "lead": {
+        "ar": "البطاقة الوطنية، الحالة المدنية، الباسبور، الجنسية، وحقوقك فالإدارة",
+        "fr": "Carte nationale, état civil, passeport, nationalité, vos droits au guichet"
+      },
+      "codes": [
+        "cnie",
+        "civil_status",
+        "civil_status_decree",
+        "nationality",
+        "passport",
+        "simplification",
+        "signatures",
+        "certified_copies",
+        "foreigners"
+      ],
+      "situations": [
+        "birth"
+      ],
+      "words": [
+        "civil-status"
+      ],
+      "keywords": [
+        "الحالة المدنية",
+        "البطاقة الوطنية",
+        "الجنسية",
+        "جواز السفر",
+        "السجل الوطني للسكان",
+        "السجل الاجتماعي الموحد",
+        "جواز السفر البيومتري",
+        "تبسيط المساطر والإجراءات الإدارية",
+        "الإشهاد على صحة الإمضاء",
+        "مطابقة نسخ الوثائق",
+        "دخول وإقامة الأجانب",
+        "البطاقة الوطنية للتعريف الإلكترونية"
+      ],
+      "everyday": [
+        "لاكارط",
+        "لاكارط ناسيونال",
+        "البطاقة الوطنية",
+        "الحالة المدنية",
+        "عقد الازدياد",
+        "نسجل ولدي",
+        "الجنسية",
+        "الباسبور",
+        "جواز السفر",
+        "الكارط",
+        "الدفتر العائلي",
+        "تصحيح الإمضاء",
+        "نسخة مطابقة للأصل",
+        "السجل العدلي",
+        "فيش السوابق",
+        "بطاقة الإقامة",
+        "carte nationale",
+        "passeport",
+        "casier judiciaire"
+      ]
+    },
+    {
+      "slug": "business",
+      "name": {
+        "ar": "المقاولة والتجارة",
+        "fr": "Entreprise et commerce"
+      },
+      "short": {
+        "ar": "المقاولة",
+        "fr": "Entreprise"
+      },
+      "lead": {
+        "ar": "المقاول الذاتي، الشركة، السجل التجاري، الشيك، آجال الأداء والصفقات العمومية",
+        "fr": "Auto-entrepreneur, société, registre du commerce, chèque, délais de paiement, marchés publics"
+      },
+      "codes": [
+        "commerce",
+        "companies",
+        "auto_entrepreneur",
+        "auto_register",
+        "auto_excluded",
+        "cooperatives",
+        "public_markets",
+        "competition",
+        "investment_charter"
+      ],
+      "situations": [],
+      "words": [
+        "auto-entrepreneur"
+      ],
+      "keywords": [
+        "المقاولة",
+        "المقاولات",
+        "الشركات",
+        "التجارة",
+        "الاستثمار",
+        "السجل التجاري",
+        "الصفقات العمومية",
+        "المقاول الذاتي",
+        "الشركة ذات المسؤولية المحدودة",
+        "الأصل التجاري",
+        "آجال الأداء",
+        "الشيك",
+        "صعوبات المقاولة",
+        "التعاونيات",
+        "ميثاق الاستثمار",
+        "مدونة التجارة"
+      ],
+      "everyday": [
+        "الشركة",
+        "الشركات",
+        "المقاول الذاتي",
+        "السجل التجاري",
+        "الكونطرا",
+        "الشيك",
+        "شيك بلا رصيد",
+        "الصفقات العمومية",
+        "الصارل",
+        "SARL",
+        "نفتح شركة",
+        "نحل شركة",
+        "الفاكتورة",
+        "الطامبون",
+        "الباتنتا",
+        "ICE",
+        "registre de commerce",
+        "auto-entrepreneur",
+        "chèque sans provision",
+        "délais de paiement",
+        "coopérative",
+        "facture",
+        "factures",
+        "fournisseur"
+      ]
+    },
+    {
+      "slug": "justice",
+      "name": {
+        "ar": "الشرطة والمحاكم",
+        "fr": "Police et tribunaux"
+      },
+      "short": {
+        "ar": "الشرطة والمحاكم",
+        "fr": "Justice"
+      },
+      "lead": {
+        "ar": "الحراسة النظرية، الشكاية، المحامي والمساعدة القضائية، المحاكم، الآجال، الطعن والتنفيذ والعقوبات البديلة",
+        "fr": "Garde à vue, plainte, avocat et assistance judiciaire, tribunaux, délais, recours, exécution et peines alternatives"
+      },
+      "codes": [
+        "criminal_procedure",
+        "civil_procedure",
+        "penal",
+        "judicial_organisation",
+        "lawyers",
+        "legal_aid",
+        "alternatives_decree",
+        "prisons",
+        "bailiffs"
+      ],
+      "situations": [],
+      "words": [
+        "custody-police",
+        "alternative-sentences",
+        "legal-aid"
+      ],
+      "keywords": [
+        "القانون الجنائي",
+        "المسطرة الجنائية",
+        "المسطرة المدنية",
+        "العقوبات البديلة",
+        "المحاكم",
+        "التنظيم القضائي",
+        "السجون",
+        "المساعدة القضائية",
+        "مهنة المحاماة",
+        "المفوضين القضائيين",
+        "المؤسسات السجنية",
+        "قضاء القرب",
+        "الطعن بالنقض",
+        "الأمر بالأداء"
+      ],
+      "everyday": [
+        "البوليس",
+        "الشرطة",
+        "الحبس",
+        "السجن",
+        "المحكمة",
+        "الشكاية",
+        "المحامي",
+        "الكوميسارية",
+        "الحراسة النظرية",
+        "المساعدة القضائية",
+        "نشكي",
+        "شكاية",
+        "المحكمة الابتدائية",
+        "الاستئناف",
+        "محامي",
+        "النقيب",
+        "حكم غيابي",
+        "قاضي القرب",
+        "تشد",
+        "garde à vue",
+        "porter plainte",
+        "avocat",
+        "tribunal",
+        "assistance judiciaire",
+        "faire appel",
+        "jugement"
+      ]
+    },
+    {
+      "slug": "digital",
+      "name": {
+        "ar": "الأنترنت والمعطيات الشخصية",
+        "fr": "Internet et données personnelles"
+      },
+      "short": {
+        "ar": "الأنترنت",
+        "fr": "Internet"
+      },
+      "lead": {
+        "ar": "معطياتك الشخصية، القرصنة والابتزاز والتشهير، الحق في المعلومة، حقوق المؤلف والتوقيع الإلكتروني",
+        "fr": "Vos données, piratage, chantage et diffamation, droit à l’information, droit d’auteur et signature électronique"
+      },
+      "codes": [
+        "personal_data",
+        "access_information",
+        "copyright",
+        "press",
+        "cybersecurity",
+        "trust_services",
+        "personal_data_decree",
+        "penal",
+        "consumer"
+      ],
+      "situations": [
+        "copyright"
+      ],
+      "words": [
+        "personal-data"
+      ],
+      "keywords": [
+        "المعطيات ذات الطابع الشخصي",
+        "المعطيات الشخصية",
+        "الرقمية",
+        "الحق في الحصول على المعلومات",
+        "الأمن السيبراني",
+        "حقوق المؤلف",
+        "الخدمات الإلكترونية",
+        "التوقيع الإلكتروني",
+        "خدمات الثقة",
+        "الصحافة والنشر",
+        "المعالجة الآلية للمعطيات",
+        "القذف",
+        "الابتزاز"
+      ],
+      "everyday": [
+        "الأنترنت",
+        "الفيسبوك",
+        "الواتساب",
+        "التصاور ديالي",
+        "المعطيات الشخصية",
+        "الابتزاز",
+        "التشهير",
+        "تقرصن",
+        "الحساب ديالي",
+        "الصور ديالي",
+        "البيانات ديالي",
+        "CNDP",
+        "données personnelles",
+        "piratage",
+        "arnaque en ligne",
+        "diffamation",
+        "droit d'auteur",
+        "signature électronique",
+        "instagram",
+        "tiktok"
+      ]
+    }
+  ]
+}

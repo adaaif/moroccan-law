@@ -1,0 +1,7 @@
+# /ma/arrete/2-11 as Adala prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/arrete/2-11
+document: sources/road/adala_order_02_11_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: 'أعلاه رقم ،52.05 يمكن', right: 'أعلاه رقم 52.05، يمكن'}      # p. 2: the comma moved before the law's number
+checked: [1, 2]

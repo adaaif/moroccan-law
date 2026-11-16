@@ -1,0 +1,46 @@
+{
+  "check": {
+    "title": "Vérifier les références",
+    "lead": "Collez un contrat, un jugement ou une note : chaque référence à un texte de loi est lue, située dans le corpus, et signalée si elle a changé depuis la date du document.",
+    "paste": "Texte du document",
+    "placeholder": "Exemple : conformément à l'article 230 du DOC et à l'article 2 de la loi n° 12-26…",
+    "since": "Date du document (facultatif)",
+    "run": "Vérifier",
+    "privacy": "Le navigateur lit le document sur votre appareil ; seules les références trouvées sont envoyées au serveur.",
+    "failed": "La vérification a échoué. Réessayez.",
+    "none": "Aucune référence à un texte de loi dans ce document.",
+    "found_one": "{{count}} référence",
+    "found_other": "{{count}} références",
+    "inCorpus_one": "{{count}} dans le corpus",
+    "inCorpus_other": "{{count}} dans le corpus",
+    "notIn_one": "{{count}} hors du corpus",
+    "notIn_other": "{{count}} hors du corpus",
+    "changed_one": "{{count}} modifiée depuis",
+    "changed_other": "{{count}} modifiées depuis",
+    "changedBy": "Modifié après la date du document par",
+    "amendedBy": "Modifié par",
+    "state": {
+      "found": "Dans le corpus",
+      "issue": "Numéro du Bulletin officiel",
+      "text_only": "Texte dans le corpus",
+      "repealed": "Abrogé",
+      "not_in_corpus": "Pas encore dans le corpus",
+      "unknown": "Référence imprécise"
+    },
+    "example": "Conformément à l’article 230 du Dahir des obligations et des contrats, à l’article 53 du Code du travail et à l’article 15 de la loi n° 31-08 édictant des mesures de protection du consommateur, les parties conviennent de ce qui suit…",
+    "tryExample": "Essayer un exemple",
+    "results": "Le résultat",
+    "before": "Chaque référence du document apparaîtra ici, dans la couleur de ce qu’elle est :",
+    "box": {
+      "found": "références",
+      "inCorpus": "dans 3adala",
+      "notIn": "hors de 3adala"
+    },
+    "sample": {
+      "found": "article 53",
+      "text_only": "article 999",
+      "repealed": "dahir abrogé",
+      "not_in_corpus": "loi pas encore lue"
+    }
+  }
+}

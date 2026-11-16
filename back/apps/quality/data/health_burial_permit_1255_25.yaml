@@ -1,0 +1,13 @@
+# Order 1255.25 of the minister of the interior (the model of the burial permit) as BO 7482 (12 Feb 2026) prints it. Read
+# against the page images on 2026-10-27 (the health review, S4): the annex (the permit's form, p. 1010), which the
+# health topic cites, reads as printed. Arts 1 and 2 are EMPTY on the site (their words were lost at the cut, not glued into the
+# preamble, the closing or the annex); a page reading mends words and cannot fill an empty article, so they wait for the
+# text's reload. The page (p. 1009) prints:
+#   art. 1: «تطبيقا لمقتضيات المادة 6 من المرسوم المشار إليه أعلاه رقم 2.22.218، يحدد نموذج رخصة الدفن كما هو محدد بملحق هذا القرار.»
+#   art. 2: «ينشر هذا القرار بالجريدة الرسمية.»
+# (The page dates the signature «15 من ذي القعدة 1447 (13 ماي 2025)», against 1446 in the heading: the page's own.)
+# Applied by `manage.py apply_page_reading apps/quality/data/health_burial_permit_1255_25.yaml`; a reload of the text applies them again.
+text: /ma/arrete/1255-25
+document: issues/bo_ar/BO_7482_ar.pdf
+read_on: '2026-10-27'
+fixes: []

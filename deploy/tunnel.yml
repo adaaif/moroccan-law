@@ -1,0 +1,12 @@
+# /etc/cloudflared/law.yml, written by deploy.sh --system: @DOMAIN@ is the site's address, TUNNEL_ID the id of the
+# tunnel made for it (cloudflared tunnel create NAME), read from the installed file. Each name's DNS record is a proxied
+# CNAME to TUNNEL_ID.cfargotunnel.com (cloudflared tunnel route dns NAME @DOMAIN@). A server with more names keeps its
+# own copy of this file in deploy/private/tunnel.yml.
+tunnel: TUNNEL_ID
+credentials-file: /etc/cloudflared/TUNNEL_ID.json
+ingress:
+  - hostname: @DOMAIN@
+    service: http://127.0.0.1:8041
+  - hostname: www.@DOMAIN@
+    service: http://127.0.0.1:8041
+  - service: http_status:404

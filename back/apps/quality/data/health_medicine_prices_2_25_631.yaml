@@ -1,0 +1,9 @@
+# Decree 2.25.631 (amending decree 2.13.852 on how the public sale price of medicines is set) as BO 7532 (6 Aug 2026)
+# prints it. Read against the page images on 2026-10-27 (the health review, S4): arts 1 and 4, the articles the
+# health topic cites. They read as printed (the quoted lines' «, the dotted elisions and «ثلاثمائة ( 300)» are the page's
+# own): nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_medicine_prices_2_25_631.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-25-631
+document: issues/bo_ar/BO_7532_ar.pdf
+read_on: '2026-10-27'
+fixes: []

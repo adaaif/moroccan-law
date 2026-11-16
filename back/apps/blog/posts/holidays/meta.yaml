@@ -1,0 +1,61 @@
+# «أعيادنا بمرسوم: كيف كبرت لائحة العطل»: the blog's seventh post (B5 of the blog-first-post review, built 31 Oct 2026 in
+# the order chosen). The lists were read in each text's first article as the corpus holds it (31 Oct 2026); the figures
+# (manage.py blog_figures holidays) tie each text to its issue, page and address.
+# Before 1957 (BH5 and BH15 of the posts-from-No.-1 review, 6 Nov 2026), to read when the post looks back: 16 Arabic titles of
+# 1913–1955 name holidays or paid leave, among them «ظهير شريف يتعلق بايام الاعياد خلال مدة الحرب» (1939), «ظهير شريف في
+# احداث عطلة سنوية يتمتع بها المستخدمون بالصناعة والتجارة والمهن الحرة مع قبض اجورهم فيها» (1937), «ظهير شريف يتعلق
+# بالعطلات المدفوعة اجرتها في سنة 1941», a 1929 vizirial order on «ايام الاعياد» for port handling; whether the Arabic
+# edition printed a whole list of holidays before 1957 is to be read on the pages.
+slug: holidays
+number: 7
+status: draft
+date: null
+counted_on: 2026-10-31
+title:
+  ar: أعيادنا بمرسوم، كيف كبرت لائحة العطل
+  fr: Nos fêtes par décret, comment la liste des jours fériés s’est allongée
+lead:
+  ar: في 1977 كانت لائحة الأعياد المؤدى عنها الأجر في المقاولات ثمانية أيام. وهي اليوم أربعة عشر، آخرها عيد الوحدة، 31 أكتوبر، منذ 2026. قرأنا كل مرسوم غيّر اللائحة، يوما بيوم.
+  fr: En 1977, la liste des fêtes chômées et payées dans les entreprises comptait huit jours. Elle en compte aujourd’hui quatorze, la dernière la fête de l’Unité, le 31 octobre, depuis 2026. Nous avons lu chaque décret qui a changé la liste, jour par jour.
+
+# The days, in the year's order; «hijri» for the feasts that move with the Hijri calendar.
+holidays:
+  - {key: jan11, date: 01-11, ar: "11 يناير، ذكرى تقديم وثيقة الاستقلال", fr: "11 janvier, Manifeste de l’indépendance"}
+  - {key: jan14, date: 01-14, ar: "14 يناير، رأس السنة الأمازيغية", fr: "14 janvier, Nouvel an amazigh"}
+  - {key: mar3, date: 03-03, ar: "3 مارس، عيد العرش", fr: "3 mars, fête du Trône"}
+  - {key: may1, date: 05-01, ar: "فاتح ماي، عيد الشغل", fr: "1er mai, fête du Travail"}
+  - {key: jul30, date: 07-30, ar: "30 يوليوز، عيد العرش", fr: "30 juillet, fête du Trône"}
+  - {key: aug14, date: 08-14, ar: "14 غشت، يوم وادي الذهب", fr: "14 août, Oued Eddahab"}
+  - {key: aug20, date: 08-20, ar: "20 غشت، ثورة الملك والشعب", fr: "20 août, Révolution du Roi et du peuple"}
+  - {key: aug21, date: 08-21, ar: "21 غشت، عيد الشباب", fr: "21 août, fête de la Jeunesse"}
+  - {key: oct31, date: 10-31, ar: "31 أكتوبر، عيد الوحدة", fr: "31 octobre, fête de l’Unité"}
+  - {key: nov6, date: 11-06, ar: "6 نونبر، المسيرة الخضراء", fr: "6 novembre, Marche verte"}
+  - {key: nov18, date: 11-18, ar: "18 نونبر، عيد الاستقلال", fr: "18 novembre, fête de l’Indépendance"}
+  - {key: muharram, hijri: true, ar: "فاتح محرم", fr: "1er Moharram"}
+  - {key: mawlid, hijri: true, ar: "عيد المولد النبوي", fr: "Aïd al-Mawlid"}
+  - {key: fitr, hijri: true, ar: "عيد الفطر", fr: "Aïd al-Fitr"}
+  - {key: adha, hijri: true, ar: "عيد الأضحى", fr: "Aïd al-Adha"}
+
+# The paid holidays of private employers (art. 45 of the 1947 dahir, then the Labour Code), list by list, each as its
+# first article prints it. Decree 2.62.101 (1962), whose first article these replace, is not held here.
+private:
+  - {text: 2-77-249, days: [mar3, may1, nov6, nov18, fitr, adha, muharram, mawlid]}
+  - {text: 2-79-457, days: [mar3, may1, aug14, nov6, nov18, fitr, adha, muharram, mawlid]}
+  - {text: 2-00-167, days: [jan11, may1, jul30, aug14, aug20, aug21, nov6, nov18, fitr, adha, muharram, mawlid]}
+  - {text: 2-04-426, days: [jan11, may1, jul30, aug14, aug20, aug21, nov6, nov18, fitr, adha, muharram, mawlid]}
+  - {text: 2-23-1000, days: [jan11, jan14, may1, jul30, aug14, aug20, aug21, nov6, nov18, fitr, adha, muharram, mawlid]}
+  - {text: 2-26-14, days: [jan11, jan14, may1, jul30, aug14, aug20, aug21, oct31, nov6, nov18, fitr, adha, muharram, mawlid]}
+
+# The administration's list. The 1958 dahir is read in its first two articles: the corpus's copy of it carries, after
+# them, the articles of another text (decree 2.58.1244 on pashas' and caids' allowances), to be cut apart. The 1962 dahir
+# 1.61.327 and the 1977 decree 2.77.169 are not held here; the texts that changed 2.77.169 are.
+administration:
+  - {text: 1-57-393, days: [may1, nov18, fitr, jan1, adha, muharram, mawlid], also: {ar: «وللمغاربة الإسرائيليين روش أشانا (فاتح السنة) ويوم كيبور»، و18 نونبر فيه «عيد العرش», fr: « et pour les Marocains israélites Roch Hachana (nouvel an) et Yom Kippour » ; le 18 novembre y est la « fête du Trône »}}
+  - {text: 2-91-539, adds: [aug14, aug20]}
+  - {text: 2-00-166, days: [muharram, mawlid, fitr, adha, jan1, jan11, may1, jul30, aug14, aug20, aug21, nov6, nov18], two_days: [mawlid, fitr, adha]}
+  - {text: 2-23-688, adds: [jan14]}
+  - {text: 2-25-1140, adds: [oct31]}
+jan1: {ar: "فاتح يناير", fr: "1er janvier"}
+
+# A holiday for one town: royal decree 178.65 makes 15 June 1965 a paid holiday in Safi.
+once: {text: 178-65}

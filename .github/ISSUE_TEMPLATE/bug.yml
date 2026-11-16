@@ -1,0 +1,29 @@
+name: Something does not work
+description: A page, a search, a tool or a command that fails or answers wrongly.
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The address on the site, or the command and the folder when it is on your machine.
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: What you did, and what you saw. An error's own words help more than a description of it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: with
+    attributes:
+      label: With what
+      description: The phone or browser and its version; or your system, Python and Node versions.

@@ -1,0 +1,38 @@
+# /ma/decret/2-10-420 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+# Strings holding a line break are double-quoted ("\n" is the break in our body); all others single-quoted.
+language: fr
+text: /ma/decret/2-10-420
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [7], wrong: 'le port permanent où provisoire', right: 'le port permanent ou provisoire'}      # p. 1733: «ou», no accent
+  - {arts: [9], wrong: 'est interdit. I est également', right: 'est interdit. Il est également'}      # p. 1733: «Il»
+  - {arts: [9], wrong: "du conducteur.\nRespect des distances de sécurité suffisantes", right: 'du conducteur.'}      # p. 1733: the name of Chapitre 2 (which follows) glued at the end
+  - {arts: [16], wrong: '90 kilomètres à l''heure,', right: '90 kilomètres à l''heure.'}      # p. 1734: ends with a full stop
+  - {arts: [17], wrong: '+ les motocyclies ;', right: '• les motocycles ;'}      # p. 1734: bullet «•»; «motocycles»
+  - {arts: [17], wrong: '- les véhicules dont le poids', right: '• les véhicules dont le poids'}      # p. 1734: bullet «•»
+  - {arts: [17], wrong: 'n’excède pas 3.300 kilogrammes', right: 'n’excède pas 3.500 kilogrammes'}      # p. 1734: 3.500 (the 5 is broken in print but is a 5, as in art. 18 and the Arabic)
+  - {arts: [17], wrong: '+ les véhicules de transport de marchandises', right: '• les véhicules de transport de marchandises'}      # p. 1734: bullet «•»
+  - {arts: [17], wrong: '+ les véhicule de transport', right: '• les véhicule de transport'}      # p. 1734: bullet «•» («véhicule» singular is the page's)
+  - {arts: [17], wrong: '+ les taxis', right: '• les taxis'}      # p. 1734: bullet «•»
+  - {arts: [17], wrong: '6-—30 Km/h', right: '6 — 30 Km/h'}      # p. 1735: «6 – 30», one dash
+  - {arts: [18], wrong: '+ les motocycles ;', right: '• les motocycles ;'}      # p. 1735: bullet «•»
+  - {arts: [18], wrong: '+ les véhicules dont le poids total', right: '• les véhicules dont le poids total'}      # p. 1735: bullet «•»
+  - {arts: [18], wrong: '+ les taxis', right: '• les taxis'}      # p. 1735: bullet «•»
+  - {arts: [18], wrong: '+ les véhicules de transport de marchandises', right: '• les véhicules de transport de marchandises'}      # p. 1735: bullet «•»
+  - {arts: [18], wrong: '* les véhicules de transport en commun', right: '• les véhicules de transport en commun'}      # p. 1735: bullet «•»
+  - {arts: [18], wrong: 'inférieure à 60 km /h,', right: 'inférieure à 60 km /h.'}      # p. 1735: ends with a full stop
+  - {arts: [27], wrong: 't} qu''il a la possibilité', right: '1) qu''il a la possibilité'}      # p. 1736: «1)»
+  - {arts: [27], wrong: '3} si un autre conducteur', right: '3) si un autre conducteur'}      # p. 1736: «3)»
+  - {arts: [27], wrong: '1! doit, en cas de nécessité', right: 'Il doit, en cas de nécessité'}      # p. 1736: «Il»
+  - {arts: [27], wrong: 'dépasser. H ne doit pas', right: 'dépasser. Il ne doit pas'}      # p. 1736: «Il»
+  - {arts: [27], wrong: 'l''article 6 (1° alinéa)', right: 'l''article 6 (1er alinéa)'}      # p. 1736: 1ᵉʳ (superscript er) read «1°»
+  - {arts: [27], wrong: "la moitié.\ngauche de la chaussée", right: 'la moitié gauche de la chaussée'}      # p. 1736: one sentence; a speck at the line end became a full stop and a paragraph break
+  - {arts: [38], wrong: '« stop » (L33)', right: '« stop » (قف)'}      # p. 1737: the page prints the Arabic word «قف» in the brackets
+  - {arts: [87], wrong: 'le passageaux piétons', right: 'le passage aux piétons'}      # p. 1742: two words
+  - {arts: [94], wrong: '1 s''arrêter aussitôt', right: '1 — s''arrêter aussitôt'}      # p. 1742: «1 –», the dash dropped
+  - {arts: [94], wrong: '3 si l''accident', right: '3 — si l''accident'}      # p. 1742: «3 –», the dash dropped
+  - {arts: [94], wrong: 'b}communiquer', right: 'b) communiquer'}      # p. 1742: «b)»
+  - {arts: [94], wrong: "les responsabilités.\nLa circulation sur des voies affectées à la circulation de certaines catégories d'usagers de la voie publique", right: 'les responsabilités.'}      # p. 1742: the name of Titre III, Chapitre 1 (which follows) glued at the end
+  - {arts: [112], wrong: 'lorsqu''il en exisie une', right: 'lorsqu''il en existe une'}      # p. 1744: «existe»
+checked: [7, 8, 9, 15, 16, 17, 18, 19, 27, 36, 38, 78, 87, 94, 110, 112]

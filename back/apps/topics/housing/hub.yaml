@@ -1,0 +1,222 @@
+# The housing topic's page (H6–H7 of the housing plan): where the reader stands, then doors by what is happening, in the
+# words people use, each leading to a journey or a page; then the tools. A door, a tool or a page says whom it is for
+# (`for`, the keys of the profile's answers); the reader's answer, kept on the phone, fades the others with the reason.
+# Buying a home and the shop's lease live here (a call of 20 Oct 2026); permits stay in the land topic. A door's `means`
+# is the law's own phrase for its words: a question that is one of them is searched as that phrase first (H7 of the
+# housing plan: search learns the doors' words), as an everyday word is.
+# Housing, by its receipt (HM19 of the hard-moment review, 7 Nov 2026): each door led by the rent receipt's
+# counterfoil with the law's figure (kit/Sign.tsx RentReceipt), and the band of the papers that start a clock.
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+marks: receipt
+urgent:
+  title: {ar: توصلت بإنذار؟, fr: 'Vous avez reçu un congé ou une mise en demeure ?'}
+  lead: {ar: 'ورقتان كيبدا معاهم أجل، وما كيخرجك من الدار حتى حكم', fr: 'Deux papiers qui ouvrent un délai ; seul un jugement fait partir de chez soi'}
+  to: journeys/eviction
+  tone: pine
+  day: {ar: نهار توصلت بالإشعار؟, fr: 'Congé reçu quand ?'}
+  for: [tenant, landlord]
+  papers:
+    - paper: {ar: الإشعار بالإفراغ, fr: Le congé}
+      limit: {ar: شهران على الأقل, fr: deux mois au moins}
+      for: {ar: من يوم توصلت به، والمحكمة هي اللي كتصححو, fr: 'à compter de sa réception ; seul le tribunal le valide'}
+      article: {ar: المادة 46, fr: art. 46}
+      cites: [/ma/loi/67-12/art_46]
+      to: journeys/eviction
+      key: eviction
+    - paper: {ar: الإنذار بالأداء, fr: La mise en demeure de payer}
+      limit: {ar: 15 يوما على الأقل, fr: 15 jours au moins}
+      for: {ar: من يوم تبليغه، باش تخلص بوصل ولا تحويل ولا فصندوق المحكمة, fr: 'à compter de sa notification, pour payer contre quittance, par virement ou à la caisse du tribunal'}
+      article: {ar: المادة 25, fr: art. 25}
+      cites: [/ma/loi/67-12/art_25]
+      to: journeys/arrears
+      key: arrears
+
+profile:
+  question: {ar: شنو وضعك؟, fr: 'Quelle est votre situation ?'}
+  options:
+    - key: tenant
+      label: {ar: مكتري دار, fr: Je loue un logement}
+      law: {ar: 'قانونك هو القانون 67.12 المتعلق بكراء المحلات المعدة للسكنى أو للاستعمال المهني، وقانون الالتزامات والعقود فيما سكت عنه.', fr: 'Votre loi est la loi 67.12 sur les baux d’habitation et à usage professionnel, et le DOC pour ce qu’elle ne dit pas.'}
+    - key: landlord
+      label: {ar: مكري, fr: Je loue à quelqu’un}
+      law: {ar: 'نفس القانون 67.12، من الجهة الأخرى: الإنذار بالأداء، والإفراغ، والضمانة.', fr: 'La même loi 67.12, de l’autre côté : la mise en demeure, l’éviction, la garantie.'}
+    - key: shop
+      label: {ar: حانوت أو محل تجاري, fr: Un local commercial}
+      law: {ar: 'قانونك هو القانون 49.16 المتعلق بكراء المحلات التجارية والصناعية والحرفية، وليس 67.12.', fr: 'Votre loi est la loi 49.16 sur les baux commerciaux, industriels et artisanaux, pas la loi 67.12.'}
+      to: journeys/shop
+    - key: building
+      label: {ar: ساكن فعمارة, fr: J’habite un immeuble en copropriété}
+      law: {ar: 'قانونك هو القانون 18.00 المتعلق بنظام الملكية المشتركة: الجمع العام، ووكيل الاتحاد، والتكاليف المشتركة.', fr: 'Votre loi est la loi 18.00 sur la copropriété : l’assemblée, le syndic, les charges.'}
+      to: journeys/syndic
+    - key: buyer
+      label: {ar: غادي نشري, fr: J’achète un logement}
+      law: {ar: 'البيع في طور الإنجاز في قانون الالتزامات والعقود (الفصول 618-1 إلى 618-20)، والدعم المباشر في قانون المالية لسنة 2023 ومرسوم 2.23.350، وكل بيع بمحرر رسمي منذ 16 يوليوز 2026.', fr: 'La vente en l’état futur d’achèvement dans le DOC (art. 618-1 à 618-20), l’aide directe dans la loi de finances 2023 et le décret 2.23.350, et tout achat par acte authentique depuis le 16 juillet 2026.'}
+    - key: owner
+      label: {ar: ساكن فدار ديالي, fr: J’habite chez moi}
+      law: {ar: 'رسم السكن ورسم الخدمات الجماعية في القانون 47.06، وصيانة المبنى في القانون 94.12.', fr: 'La taxe d’habitation et la taxe de services communaux (loi 47.06), l’entretien du bâtiment (loi 94.12).'}
+
+events:
+  - key: evicted
+    mark: {value: '2', unit: {ar: شهور على الأقل, fr: mois au moins}}
+    words: [مول الدار بغا يخرجني, بغا يخرجني, يخرجني, الإفراغ, الإشعار بالإفراغ, نخرج من الدار, expulsion, congé du bailleur, expulsion locataire]
+    means: الإشعار بالإفراغ
+    title: {ar: مول الدار بغا يخرجني, fr: Mon propriétaire veut que je parte}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'بغيت نخرج المكتري', fr: 'Je veux reprendre mon logement'}}
+    lead: {ar: 'إشعار بشهرين على الأقل، وكراء سنة إذا صححته المحكمة', fr: 'Un préavis d’au moins deux mois, un an de loyer si le tribunal le valide'}
+    to: journeys/eviction
+    for: [tenant, landlord]
+  - key: increase
+    mark: {value: '8%', unit: {ar: كل 3 سنين, fr: tous les 3 ans}}
+    words: [زاد عليا فالكرا, مول الدار زاد فالكرا, بغا يزيد فالكرا, يزيد فالكرا, يزيد فالكراء, يزيد في الكراء, يزيد عليا فالكرا, زاد فالكرا, زاد فالكراء, زاد الكرا, طلع الكرا, طلع ليا الكرا, غلا الكرا, الزيادة في الكراء, الزيادة فالكرا, زيادة الكراء, مراجعة الوجيبة الكرائية, augmentation du loyer, révision du loyer, augmenter le loyer, hausse du loyer]
+    means: الزيادة في الوجيبة الكرائية
+    title: {ar: زاد عليا فالكرا, fr: Mon loyer augmente}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'بغيت نزيد فالكرا', fr: 'Je veux augmenter le loyer'}}
+    lead: {ar: '8% على الأكثر، مرة كل ثلاث سنوات', fr: '8 % au plus, une fois tous les trois ans'}
+    to: journeys/increase
+    for: [tenant, landlord, shop]
+  - key: deposit
+    mark: {value: '2', unit: {ar: شهور على الأكثر, fr: mois au plus}}
+    words: [الضمانة, الضمانة ديال الكرا, لاكوسيون, بغيت الضمانة ديالي, caution, dépôt de garantie, état des lieux]
+    means:
+      ضمانة الكراء: [الضمانة, الضمانة ديال الكرا, لاكوسيون, بغيت الضمانة ديالي, caution, dépôt de garantie]
+      البيان الوصفي لحالة المحل: [état des lieux]
+    title: {ar: بغيت الضمانة ديالي, fr: Je veux récupérer ma caution}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'الضمانة ديال المكتري', fr: 'Le dépôt de garantie de mon locataire'}}
+    lead: {ar: 'شهرين على الأكثر، ترد داخل شهر من الخروج', fr: 'Deux mois de loyer au plus, rendus dans le mois qui suit le départ'}
+    to: journeys/leaving
+    for: [tenant, landlord]
+  - key: arrears
+    mark: {value: '15', unit: {ar: يوما على الأقل, fr: jours au moins}}
+    words: [ما قدرتش نخلص الكرا, ما خلصتش الكرا, المكتري ما خلصش, المكتري ما بغاش يخلص, الإنذار بالأداء, loyer impayé, impayés de loyer]
+    means: الإنذار بالأداء
+    title: {ar: الكرا ما تخلصش, fr: Le loyer n’est pas payé}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'المكتري ما خلصش الكرا', fr: 'Mon locataire ne paie pas'}}
+    lead: {ar: 'إنذار بخمسة عشر يوما، وأمر داخل 48 ساعة', fr: 'Une mise en demeure de quinze jours, une ordonnance sous 48 heures'}
+    to: journeys/arrears
+    for: [tenant, landlord]
+  - key: repairs
+    mark: {value: '1', unit: {ar: شهر, fr: mois}}
+    words: [الدار خاصها إصلاح, مول الدار ما بغاش يصلح, الإصلاحات, إصلاحات المحل المكترى, réparations, travaux logement loué]
+    means: الإصلاحات الضرورية
+    title: {ar: الدار خاصها إصلاح, fr: Le logement a besoin de réparations}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'المكتري طلب الإصلاح', fr: 'Mon locataire demande des réparations'}}
+    lead: {ar: 'شكون كيصلح شنو، وشهر قبل ما تتصرف', fr: 'Qui répare quoi, et un mois avant d’agir'}
+    to: journeys/repairs
+    for: [tenant, landlord]
+  - key: family
+    words: [مات المكتري, وفاة المكتري, طلقنا, الطلاق والكراء, شكون يبقى فالدار, décès du locataire, divorce et bail]
+    means:
+      وفاة المكتري: [مات المكتري, وفاة المكتري, شكون يبقى فالدار, décès du locataire]
+      طلاق الزوجين الأم الحاضنة: [طلقنا, الطلاق والكراء, divorce et bail]
+    title: {ar: 'مات المكتري أو طلقنا: شكون يبقى؟', fr: 'Décès ou divorce : qui garde le bail ?'}
+    # The landlord's side of the same door (PX38 of the where-it-trips review), said when the reader answered so.
+    title_by: {landlord: {ar: 'مات المكتري أو طلق: شكون يبقى؟', fr: 'Mon locataire est mort ou a divorcé : qui reste ?'}}
+    lead: {ar: 'الزوج والأبناء والأصول، والمحضونون عند الطلاق', fr: 'Le conjoint, les enfants, les ascendants, et la garde en cas de divorce'}
+    to: journeys/family
+    for: [tenant, landlord]
+  - key: syndic
+    words: [السانديك, السانديك ما خدامش, وكيل اتحاد الملاك, الجمع العام للملاك, التكاليف المشتركة, لاكوسيون ديال السانديك, جار ما بغاش يخلص السانديك, syndic, copropriété, syndic copropriété, charges de copropriété]
+    means:
+      وكيل الاتحاد: [السانديك, السانديك ما خدامش, وكيل اتحاد الملاك, syndic, copropriété, syndic copropriété]
+      الجمع العام للملاك المشتركين: [الجمع العام للملاك]
+      المساهمة في التكاليف المشتركة: [التكاليف المشتركة, لاكوسيون ديال السانديك, جار ما بغاش يخلص السانديك, charges de copropriété]
+    title: {ar: السانديك والواجبات, fr: 'Le syndic et les charges'}
+    lead: {ar: 'ثلاثة أرباع الأصوات، وتقرير كل ستة أشهر، وشهرين للطعن', fr: 'Les trois quarts des voix, un rapport tous les six mois, deux mois pour contester'}
+    to: journeys/syndic
+    for: [building]
+  - key: offplan
+    mark: {value: '1%', unit: {ar: فالشهر, fr: par mois}}
+    words: [شريت على التصميم, على التصميم, البروموتور, البروموتور تعطل, المنعش العقاري, بيع العقار في طور الإنجاز, VEFA, vente en l'état futur d'achèvement, promoteur]
+    means: العقار في طور الإنجاز
+    title: {ar: شريت على التصميم, fr: J’achète sur plan}
+    lead: {ar: 'شحال تخلص فكل مرحلة، و1% فالشهر على التأخير', fr: 'Ce que vous payez à chaque étape, 1 % par mois de retard'}
+    to: journeys/offplan
+    for: [buyer]
+  - key: aid
+    mark: {value: '100.000', unit: {ar: درهم, fr: DH}}
+    words: [دعم السكن, الدعم المباشر للسكن, الدعم ديال الدار, 100000 درهم, 70000 درهم, aide au logement, aide directe au logement]
+    means: إعانة الدولة لدعم السكن
+    title: {ar: دعم السكن, fr: L’aide directe au logement}
+    lead: {ar: '100.000 أو 70.000 درهم، وخمس سنوات فالدار', fr: '100 000 ou 70 000 dirhams, et cinq ans dans le logement'}
+    to: journeys/aid
+    for: [buyer]
+  - key: ruin
+    words: [دار آيلة للسقوط, الدار آيلة للسقوط, المباني الآيلة للسقوط, الدار مشققة, bâtiment menaçant ruine]
+    means: المباني الآيلة للسقوط
+    title: {ar: الدار آيلة للسقوط, fr: Le bâtiment menace ruine}
+    lead: {ar: 'خبّر الجماعة، والكرا كيتوقف من الشهر الموالي للإفراغ', fr: 'Prévenir la commune ; le loyer s’arrête le mois qui suit l’évacuation'}
+    to: journeys/ruin
+  - key: shop
+    mark: {value: '2', unit: {ar: سنين, fr: ans}}
+    words: [الحانوت, الكرا ديال الحانوت, الكراء التجاري, الأصل التجاري, الحلاوة, bail commercial, indemnité d'éviction, fonds de commerce, pas-de-porte]
+    means: كراء العقارات أو المحلات المخصصة للاستعمال التجاري
+    title: {ar: الحانوت, fr: Le local commercial}
+    lead: {ar: 'الحق في التجديد بعد سنتين، والتعويض على قدر الضرر', fr: 'Le droit au renouvellement après deux ans, une indemnité à la mesure du préjudice'}
+    to: journeys/shop
+    for: [shop]
+  - key: rent-to-own
+    mark: {value: '10%', unit: {ar: عند الفسخ, fr: à la résiliation}}
+    words: [الإيجار المفضي إلى تملك العقار, الإيجار المفضي إلى التملك, كرا وتملك, location-accession]
+    means: الإيجار المفضي إلى تملك العقار
+    title: {ar: كنكري باش نتملك, fr: 'Je loue pour acheter'}
+    lead: {ar: 'ثمن لا يراجع، ومحرر رسمي، و10% عند الفسخ', fr: 'Un prix non révisable, un acte authentique, 10 % à la résiliation'}
+    to: pages/rent-to-own
+    for: [buyer, tenant]
+  - key: taxes
+    mark: {value: '75%', unit: {ar: إسقاط, fr: d’abattement}}
+    words: [رسم السكن, ضريبة السكن, الضريبة على السكن, رسم الخدمات الجماعية, taxe d'habitation, taxe de services communaux]
+    means:
+      رسم السكن السكن الرئيسي: [رسم السكن, ضريبة السكن, الضريبة على السكن, taxe d'habitation]
+      رسم الخدمات الجماعية القيمة الإيجارية: [رسم الخدمات الجماعية, taxe de services communaux]
+    title: {ar: رسم السكن ورسم الخدمات الجماعية, fr: 'Taxe d’habitation, taxe de services communaux'}
+    lead: {ar: 'على المالك، وإسقاط 75% على السكن الرئيسي', fr: 'À la charge du propriétaire, 75 % d’abattement sur la résidence principale'}
+    to: pages/taxes
+    for: [owner, landlord, buyer]
+
+# The tools run on the reader's phone; `tool: true` ones wait for a person's check (checked.yaml: tools/<key>), unless
+# `open: true` shows one before, with a note that no professional has reviewed it yet.
+tools:
+  - key: rent
+    words: [واش الزيادة قانونية, الزيادة في الكراء, شحال الزيادة, الضمانة, augmentation du loyer, caution]
+    means: الزيادة في الوجيبة الكرائية
+    tool: true
+    open: true            # call H10 of the housing plan (20 Oct 2026): shown before a professional's review
+    title: {ar: واش الزيادة قانونية؟, fr: 'L’augmentation est-elle légale ?'}
+    lead: {ar: 'أقرب تاريخ وأقصى زيادة، والضمانة، والآجال', fr: 'La date la plus proche, l’augmentation maximale, la garantie, les délais'}
+    for: [tenant, landlord, shop]
+  - key: eviction
+    words: [بغا يخرجني, التعويض عن الإفراغ, الإشعار بالإفراغ]
+    means: الإشعار بالإفراغ
+    tool: true
+    title: {ar: بغا يخرجني, fr: 'Mon bailleur veut me faire partir'}
+    lead: {ar: 'واش الإشعار صحيح، وشنو كيتسال', fr: 'Le congé est-il valable, et que me doit-on ?'}
+    for: [tenant, landlord, shop]
+  - key: offplan
+    words: [على التصميم, البروموتور تعطل, VEFA]
+    means: العقار في طور الإنجاز
+    tool: true
+    title: {ar: شريت على التصميم, fr: J’achète sur plan}
+    lead: {ar: 'المراحل والأقساط، والتعويض على التأخير', fr: 'Les étapes et les versements, l’indemnité de retard'}
+    for: [buyer]
+  - key: aid
+    words: [دعم السكن, واش عندي الحق فالدعم, aide au logement]
+    means: إعانة الدولة لدعم السكن
+    tool: true
+    title: {ar: دعم السكن, fr: L’aide au logement}
+    lead: {ar: 'واش عندك الحق، شحال، والخمس سنوات من بعد', fr: 'Y avez-vous droit, combien, et les cinq ans qui suivent'}
+    for: [buyer]
+  - key: where
+    words: [فين نمشي, المحكمة, الجماعة, الموثق, où aller]
+    to: pages/where
+    title: {ar: فين نمشي؟, fr: 'Où aller ?'}
+    lead: {ar: 'المحكمة، الجماعة، الموثق، والمنصات الرسمية', fr: 'Le tribunal, la commune, le notaire, les plateformes officielles'}
+  - key: numbers
+    words: [إحصائيات السكن, أسعار العقار, statistiques logement]
+    to: pages/numbers
+    title: {ar: السكن بالأرقام, fr: Le logement en chiffres}
+    lead: {ar: 'أرقام رسمية بمصادرها', fr: 'Des chiffres officiels, avec leurs sources'}

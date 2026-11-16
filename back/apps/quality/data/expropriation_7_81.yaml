@@ -1,0 +1,35 @@
+# Law 7.81 on expropriation as the SGG's consolidated PDF prints it, where our text misreads it: a ligature turned
+# around («عمال» for «عملا», «المالك» for «الملاك»), a word cut in two («وما لن زوعة»), lines set out of the page's order around a
+# footnote mark (chs 3, 12, 19, 20, 24, 33), and two chapters' ends lost where their last line «الفصل 26.» was taken for a heading
+# (chs 29, 34). Each was read against the page's image on 26 Oct 2026 (the land review, M16), in the articles the land
+# topic cites and the chapters reported or found beside them (25 corrected; page numbers are the PDF's).
+# Applied by `manage.py apply_page_reading apps/quality/data/expropriation_7_81.yaml`; a reload of the text applies them again.
+text: /ma/loi/7-81
+document: sources/sgg_consolidated/7_81.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [3], wrong: "(1) وإلى الأشخاص المعنويين الآخرين الجارية يخول حق نزع الملكية إلى الدولة والجماعات الترابية عليهم", right: "يخول حق نزع الملكية إلى الدولة والجماعات الترابية (1) وإلى الأشخاص المعنويين الآخرين الجارية عليهم"}   # order, p. 2 (not cited by the topic: a known defect)
+  - {arts: [11], wrong: "وما لكترين", right: "والمكترين"}   # split, p. 4
+  - {arts: [12], wrong: "عمال بالفصل 85", right: "عملا بالفصل 85"}   # turn, p. 4
+  - {arts: [12], wrong: "عمال بالفصل 84", right: "عملا بالفصل 84"}   # turn, p. 4
+  - {arts: [12], wrong: "امل تعر ضين", right: "المتعرضين"}   # turn and split, p. 4
+  - {arts: [12], wrong: "يودع (1) التابع لها موقع العقارات لأجل تقييده في السجل الخاص لدى كتابة الضبط بالمحكمة الإدارية المنصوص", right: "يودع لدى كتابة الضبط بالمحكمة الإدارية (1) التابع لها موقع العقارات لأجل تقييده في السجل الخاص المنصوص"}   # order, p. 5
+  - {arts: [14], wrong: "أنهم المالك طبق", right: "أنهم الملاك طبق"}   # turn, p. 5 (not cited)
+  - {arts: [14], wrong: "على المالك الوفاء", right: "على الملاك الوفاء"}   # turn, p. 5 (not cited)
+  - {arts: [19], wrong: "(1) وحده للإذن بواسطة أمر في الحيازة مقابل دفع أو إيداع تعويض يختص رئيس المحكمة الإدارية احتياطي", right: "يختص رئيس المحكمة الإدارية (1) وحده للإذن بواسطة أمر في الحيازة مقابل دفع أو إيداع تعويض احتياطي"}   # order, p. 7 (not cited: a known defect)
+  - {arts: [20], wrong: "امل ضار بات", right: "المضاربات"}   # turn and split, p. 7
+  - {arts: [20], wrong: "تعويض .\n(2) نزع الملكية هي قيمة العقار يوم آخر إيداع لأحد هذه المقالات بكتابة ضبط المحكمة الإدارية\n-4", right: "تعويض نزع الملكية هي قيمة العقار يوم آخر إيداع لأحد هذه المقالات بكتابة ضبط المحكمة الإدارية (2).\n-4"}   # order (a line of the text set as a note), p. 7
+  - {arts: [24], wrong: "(1) رفض الإذن في ذلك إلا بسبب عندما يلتمس نازع الملكية الحيازة لا يجوز لرئيس المحكمة الإدارية بطلان", right: "عندما يلتمس نازع الملكية الحيازة لا يجوز لرئيس المحكمة الإدارية (1) رفض الإذن في ذلك إلا بسبب بطلان"}   # order, p. 9
+  - {arts: [29], wrong: "الإجراءات المنصوص عليها في", right: "الإجراءات المنصوص عليها في الفصل 26."}   # end lost (its line read as a heading), p. 11 (not cited)
+  - {arts: [33], wrong: "(1) بوصفها يرفع الاستئناف المنصوص عليه في الفقرة الثالثة من الفصل السابق إلى محكمة النقض الجهة", right: "يرفع الاستئناف المنصوص عليه في الفقرة الثالثة من الفصل السابق إلى محكمة النقض (1) بوصفها الجهة"}   # order, p. 12
+  - {arts: [34], wrong: "نازع الملكية طبق", right: "نازع الملكية طبق الشروط المقررة في الفصل 26."}   # end lost (its line read as a heading), p. 12 (not cited)
+  - {arts: [37], wrong: "للم تعر ضين", right: "للمتعرضين"}   # split, p. 13
+  - {arts: [40], wrong: "بالالت جاء", right: "بالالتجاء"}   # split, p. 14
+  - {arts: [40], wrong: "للمالك السابقين", right: "للملاك السابقين"}   # turn, p. 14
+  - {arts: [41], wrong: "حالا أو آجال", right: "حالا أو آجلا"}   # turn, p. 14 (not cited)
+  - {arts: [41], wrong: "للمالك المعنيين", right: "للملاك المعنيين"}   # turn, p. 15 (not cited)
+  - {arts: [42], wrong: "الملكية وما لن زوعة ملكيته على", right: "الملكية والمنزوعة ملكيته على"}   # turn and split, p. 15
+  - {arts: [42], wrong: "الملكية وما لن زوعة ملكيته فيما", right: "الملكية والمنزوعة ملكيته فيما"}   # turn and split, p. 15
+  - {arts: [43], wrong: "للمالك المعنيين", right: "للملاك المعنيين"}   # turn, p. 16
+  - {arts: [44], wrong: "ألوصياء", right: "لأوصياء"}   # turn, p. 16
+  - {arts: [55], wrong: "خالف بشأن", right: "خلاف بشأن"}   # turn, p. 19 (not cited)

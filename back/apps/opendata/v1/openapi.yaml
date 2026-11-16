@@ -1,0 +1,632 @@
+openapi: 3.1.0
+info:
+  title: Moroccan law, article by article (v1)
+  version: '1'
+  license:
+    name: Open Database License 1.0
+    identifier: ODbL-1.0
+  description: |
+    The law of Morocco as the Bulletin officiel printed it, for programs: its texts and articles, in Arabic with the
+    official French where the Bulletin printed one, each with its version, its standing, the Bulletin issue and page it
+    comes from, and its link on the site. Never anything else: no draft, no explanation, no discussion.
+
+    A consolidated version is unofficial, for information: the Bulletin officiel prevails, and each change names the
+    issue that made it. A bill (projet de loi) is not law, and every answer that holds one says so.
+
+    To cite what you use, name the site by its address (the host of the link each answer gives) and the Bulletin
+    officiel's issue and date, and give the link the answer gives (`url`). The answers are the text of the law, not legal advice.
+
+    Every read but this file needs a key, sent in the `X-Api-Key` header from your server, never from a web page (no
+    answer carries a CORS header). A key is given to a person whose request the site accepted: ask for one on the
+    site's data page, /data. Each call counts against the access's limits (requests a minute, calls a day, articles a
+    day); every answer says what is left in `RateLimit-Policy` and `RateLimit`.
+
+    v1 only grows: a field is added, never renamed or removed. A read that will go is announced 90 days ahead by its
+    answers' `Deprecation` and `Sunset` headers and by a letter to the holders of the keys that used it.
+servers:
+  - url: /api/v1
+security:
+  - key: []
+
+paths:
+  /search:
+    get:
+      operationId: search
+      summary: Search the law
+      description: >-
+        The site's search: up to ten articles and texts, best first, each with its id, title, link, a snippet and its
+        standing. A citation («المادة 53 من مدونة الشغل», «art. 6 loi 31-13») leads with the article it names.
+      parameters:
+        - name: q
+          in: query
+          required: true
+          description: Words in Arabic, French or Darija, a citation, a law's everyday name, or "words in quotes".
+          schema: {type: string, maxLength: 300}
+      responses:
+        '200':
+          description: The results.
+          headers: &read-headers
+            RateLimit-Policy: {$ref: '#/components/headers/RateLimit-Policy'}
+            RateLimit: {$ref: '#/components/headers/RateLimit'}
+            Deprecation: {$ref: '#/components/headers/Deprecation'}
+            Sunset: {$ref: '#/components/headers/Sunset'}
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/SearchAnswer'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /texts/{path}:
+    get:
+      operationId: text
+      summary: An article, a text or a Bulletin issue
+      description: >-
+        An article whole, with its official French, standing, version and changes; a text with its facts and its
+        outline (each article's id); or a Bulletin issue with the texts it published.
+      parameters:
+        - name: path
+          in: path
+          required: true
+          description: >-
+            A site address, its slashes kept: ma/loi/65-99 (a text), ma/loi/65-99/art_51 (an article), bo/7533 or
+            bo/7465-bis (an issue).
+          schema: {type: string, maxLength: 300}
+      responses:
+        '200':
+          description: The item.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Item'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /articles/{path}:
+    get:
+      operationId: articles
+      summary: A run of a text's articles
+      description: >-
+        Up to twenty consecutive articles of a text, whole, as they read today or on a past day, with the version they
+        come from and where to read on (`next`).
+      parameters:
+        - name: path
+          in: path
+          required: true
+          description: A text's address (ma/loi/65-99), or an article's to start from (ma/loi/65-99/art_51).
+          schema: {type: string, maxLength: 300}
+        - name: start
+          in: query
+          description: The article number to start from (51, 5-1); empty starts at the article in the path, or the first.
+          schema: {type: string, maxLength: 20}
+        - name: count
+          in: query
+          description: How many articles.
+          schema: {type: integer, minimum: 1, maximum: 20, default: 10}
+        - name: 'on'
+          in: query
+          description: A day (YYYY-MM-DD) to read the articles as they stood then; empty for today.
+          schema: {type: string, format: date}
+        - name: french
+          in: query
+          description: Also give each article's official French where the Bulletin printed one.
+          schema: {type: string, enum: ['1', 'true', 'yes', '0', 'false', 'no'], default: '0'}
+      responses:
+        '200':
+          description: The articles.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Run'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /references:
+    post:
+      operationId: references
+      summary: Check references to Moroccan law
+      description: >-
+        Each reference, as written in a document, read and resolved: which text and article it is, its standing, and
+        with `since` what changed in it after that day.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [references]
+              properties:
+                references:
+                  type: array
+                  minItems: 1
+                  maxItems: 50
+                  items: {type: string, maxLength: 200}
+                  description: The references alone, as written («المادة 52 من مدونة الأسرة», «Dahir n° 1-03-194»).
+                since:
+                  type: string
+                  format: date
+                  description: A day (YYYY-MM-DD); each reference then says what changed in it after that day.
+      responses:
+        '200':
+          description: Each reference and what it was read as.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/References'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '415': {$ref: '#/components/responses/Refused'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /bulletin/:
+    get:
+      operationId: bulletin_latest
+      summary: The Bulletin's latest week
+      description: >-
+        The issues of the Bulletin officiel's Arabic general edition in the week of the newest one, each with the texts
+        the site holds from it (forty at most in all: `count` says how many an issue holds; read the issue for all).
+      responses:
+        '200':
+          description: The issues.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Bulletin'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /bulletin/{issue}:
+    get:
+      operationId: bulletin
+      summary: One issue of the Bulletin
+      parameters:
+        - name: issue
+          in: path
+          required: true
+          description: The issue's number, 7533 or 7465-bis (of the Arabic general edition).
+          schema: {type: string, maxLength: 40}
+      responses:
+        '200':
+          description: The issue and every text the site holds from it.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Bulletin'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '404': {$ref: '#/components/responses/NotFound'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /changes:
+    get:
+      operationId: changes
+      summary: What changed since a day
+      description: >-
+        For a program that keeps a copy in step: the texts the Bulletin published since a day (that day included) and
+        the changes it published since then to the texts the site holds, newest first, at most 200 items a page.
+        Changes are those the site shows as fact, read in the amending text. A whole copy comes from the database's
+        edition, not from here: `since` reaches back 366 days at most.
+      parameters:
+        - name: since
+          in: query
+          required: true
+          description: The first day (YYYY-MM-DD), at most 366 days ago.
+          schema: {type: string, format: date}
+        - name: cursor
+          in: query
+          description: The `next` of the page before, with the same `since`; empty for the first page.
+          schema: {type: string}
+      responses:
+        '200':
+          description: A page of what changed.
+          headers: *read-headers
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/Changes'}
+        '400': {$ref: '#/components/responses/Refused'}
+        '401': {$ref: '#/components/responses/NoKey'}
+        '403': {$ref: '#/components/responses/NotOpen'}
+        '429': {$ref: '#/components/responses/Limit'}
+
+  /openapi.yaml:
+    get:
+      operationId: openapi
+      summary: This file
+      security: []
+      responses:
+        '200':
+          description: The contract, as written.
+          content:
+            application/yaml:
+              schema: {type: string}
+
+components:
+  securitySchemes:
+    key:
+      type: apiKey
+      in: header
+      name: X-Api-Key
+      description: A key of an access that includes the API, made by its holder on the site's account page.
+
+  headers:
+    RateLimit-Policy:
+      required: true
+      description: >-
+        The access's limits, as the IETF's RateLimit header fields write them: `"minute";q=120;w=60, "day";q=20000;w=86400`.
+      schema: {type: string}
+    RateLimit:
+      required: true
+      description: What is left of each limit and the seconds until it starts again (`"minute";r=119;t=42, "day";r=19999;t=3600`).
+      schema: {type: string}
+    Retry-After:
+      required: true
+      description: The seconds until the limit reached starts again.
+      schema: {type: integer}
+    Deprecation:
+      description: 'On a read that will go: when it was deprecated, as `@<unix time>` (RFC 9745).'
+      schema: {type: string}
+    Sunset:
+      description: 'On a read that will go: the day it stops answering, as an HTTP date (RFC 8594).'
+      schema: {type: string}
+
+  responses:
+    Refused:
+      description: >-
+        What was sent cannot be read: (`q`, `required` | `too_long`), (`id`, `invalid` | `too_long`), (`count`,
+        `invalid`), (`on`, `invalid`), (`french`, `invalid`), (`start`, `too_long`), (`references`, `required` |
+        `invalid` | `too_long` | `too_many`), (`since`, `required` | `invalid` | `too_far`), (`cursor`, `invalid`),
+        (`issue`, `invalid` | `too_long`), (`body`, `invalid` | `unsupported_media_type`).
+      headers: *read-headers
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Errors'}
+    NotFound:
+      description: >-
+        Nothing there: (`id`, `not_found`) no such text or article, (`start`, `not_found`) no such article in the
+        text, (`on`, `not_found`) no version of the text on that day, (`issue`, `not_found`) no such issue.
+      headers: *read-headers
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Errors'}
+    NoKey:
+      description: >-
+        No key, or a key that opens nothing: (`key`, `required` | `invalid` | `ended` | `expired`).
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Errors'}
+    NotOpen:
+      description: >-
+        (`access`, `no_api`) the key's access does not include the API; (`access`, `closed`) the API is closed for
+        now.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Errors'}
+    Limit:
+      description: >-
+        A limit reached: (`key`, `minute` | `calls` | `articles`). Nothing was counted; come back after Retry-After.
+        Past the day's articles, the reads that give the law's words (texts, articles) wait for the next day; the
+        others still answer.
+      headers:
+        Retry-After: {$ref: '#/components/headers/Retry-After'}
+        RateLimit-Policy: {$ref: '#/components/headers/RateLimit-Policy'}
+        RateLimit: {$ref: '#/components/headers/RateLimit'}
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/Errors'}
+
+  schemas:
+    Errors:
+      description: Every refusal, in one shape. The codes are words for a program, never a sentence.
+      type: object
+      required: [errors]
+      properties:
+        errors:
+          type: array
+          minItems: 1
+          items:
+            type: object
+            required: [field, code]
+            properties:
+              field: {type: string}
+              code: {type: string}
+
+    Law:
+      description: A text's facts, said the same way in every answer.
+      type: object
+      required: [id, title, name_ar, name_fr, number, type, status, url]
+      properties:
+        id: {type: string, description: 'Its address: /ma/loi/65-99.'}
+        title: {type: string, description: Its title as the Bulletin printed it.}
+        name_ar: {type: string, description: The name people know it by.}
+        name_fr: {type: string}
+        number: {type: string, description: Its number as printed (65.99).}
+        type: {type: string, description: 'constitution, organic_law, law, dahir, decree_law, decree, order, decision, convention, bill, …'}
+        status: {type: string, description: 'in force, partly repealed, repealed, not yet in force, status not established; for a bill, not law.'}
+        url: {type: string, description: Its page on the site.}
+
+    Published:
+      description: Where the Bulletin officiel printed it.
+      type: object
+      required: [bo, date, page, url]
+      properties:
+        bo: {type: [string, 'null'], description: 'The issue: 7533, 7465-bis.'}
+        edition: {type: [string, 'null'], description: 'general_ar, translation_fr, conventions_ar, …'}
+        date: {type: [string, 'null'], format: date}
+        page: {type: [integer, 'null'], description: The Bulletin's printed page.}
+        url: {type: [string, 'null'], description: The issue's page on the site.}
+
+    Version:
+      description: Which version of the text this is. Only `as_published` is the Bulletin's own words.
+      type: object
+      required: [in_force_since, kind, source, official]
+      properties:
+        in_force_since: {type: string, format: date}
+        kind: {type: string, description: 'as_published, sgg, adala, dgi, checked, machine, translation, bill'}
+        source: {type: string}
+        official: {type: boolean}
+        note: {type: string}
+        as_of: {type: string}
+
+    ArticleChange:
+      description: One change an article received.
+      type: object
+      required: ['on', how, by, by_id, bo, page]
+      properties:
+        'on': {type: [string, 'null'], format: date, description: The day it took (or takes) effect, else its publication.}
+        how: {type: [string, 'null'], description: 'modified, added, replaced, repealed, words'}
+        by: {type: string, description: The amending text.}
+        by_id: {type: [string, 'null']}
+        bo: {type: [string, 'null']}
+        page: {type: [integer, 'null']}
+
+    French:
+      description: The article's official French, as the Bulletin's French edition printed it.
+      type: object
+      required: [label, text, source]
+      properties:
+        label: {type: string}
+        text: {type: string}
+        source: {type: string}
+        note: {type: string}
+
+    Article:
+      type: object
+      required: [id, label, text, title, url, status, heading, citation, changes]
+      properties:
+        id: {type: string, description: 'Its address: /ma/loi/65-99/art_51.'}
+        label: {type: string, description: As printed («المادة 51»).}
+        text: {type: string, description: Its words (a very long one is cut, and `cut` says where it continues).}
+        title: {type: string}
+        url: {type: string}
+        status: {type: string}
+        heading: {type: string, description: 'The book, part and chapter above it, joined by « › ».'}
+        citation: {type: string, description: How to cite it.}
+        changes: {type: array, items: {$ref: '#/components/schemas/ArticleChange'}}
+        cut: {type: string}
+        french: {oneOf: [{$ref: '#/components/schemas/French'}, {type: 'null'}]}
+
+    SearchAnswer:
+      type: object
+      required: [results]
+      properties:
+        results:
+          type: array
+          maxItems: 10
+          items:
+            type: object
+            required: [id, title, url, text, status, kind]
+            properties:
+              id: {type: string, description: An address for /texts/ or /articles/.}
+              title: {type: string}
+              url: {type: string}
+              text: {type: string, description: A snippet, or an article's first words.}
+              status: {type: [string, 'null']}
+              kind: {type: string, description: 'article or text'}
+        searched_as: {type: string, description: The words searched when the query was read otherwise (a keyboard's slip).}
+        note: {type: string, description: What to try when nothing was found.}
+
+    Item:
+      type: object
+      required: [id, title, text, url, metadata]
+      properties:
+        id: {type: string}
+        title: {type: string}
+        text: {type: string, description: "An article's words; a text's outline, a line an article; an issue's texts, a line each."}
+        url: {type: string}
+        metadata:
+          oneOf:
+            - {$ref: '#/components/schemas/ArticleFacts'}
+            - {$ref: '#/components/schemas/TextFacts'}
+            - {$ref: '#/components/schemas/IssueFacts'}
+
+    ArticleFacts:
+      type: object
+      required: [kind, law, status, heading, citation, published_in, version, changes, french, position]
+      properties:
+        kind: {const: article}
+        law: {$ref: '#/components/schemas/Law'}
+        status: {type: string}
+        heading: {type: string}
+        citation: {type: string}
+        published_in: {oneOf: [{$ref: '#/components/schemas/Published'}, {type: 'null'}]}
+        version: {oneOf: [{$ref: '#/components/schemas/Version'}, {type: 'null'}]}
+        changes: {type: array, items: {$ref: '#/components/schemas/ArticleChange'}}
+        french: {oneOf: [{$ref: '#/components/schemas/French'}, {type: 'null'}]}
+        position: {type: string, description: 'Where it stands in the text: «3 of 6».'}
+        cut: {type: string}
+
+    TextFacts:
+      type: object
+      required: [kind, law, published_in, version, articles, signed_on, authority, french_title, amended_by]
+      properties:
+        kind: {const: text}
+        law: {$ref: '#/components/schemas/Law'}
+        published_in: {oneOf: [{$ref: '#/components/schemas/Published'}, {type: 'null'}]}
+        version: {oneOf: [{$ref: '#/components/schemas/Version'}, {type: 'null'}]}
+        articles: {type: integer, description: How many articles its version today holds.}
+        signed_on: {type: [string, 'null'], format: date}
+        authority: {type: string}
+        french_title: {type: [string, 'null']}
+        amended_by:
+          type: array
+          description: The last ten texts that changed it.
+          items:
+            type: object
+            required: [id, title, published]
+            properties:
+              id: {type: [string, 'null']}
+              title: {type: [string, 'null']}
+              published: {type: [string, 'null'], format: date}
+        note: {type: string, description: 'On a bill: it is not law.'}
+
+    IssueFacts:
+      type: object
+      required: [kind, edition, date, texts]
+      properties:
+        kind: {const: bulletin_issue}
+        edition: {type: string}
+        date: {type: string, format: date}
+        texts: {type: integer}
+
+    Run:
+      type: object
+      required: [law, version, 'on', published_in, note, articles, range, total, next]
+      properties:
+        law: {$ref: '#/components/schemas/Law'}
+        version: {oneOf: [{$ref: '#/components/schemas/Version'}, {type: 'null'}]}
+        'on': {type: [string, 'null'], format: date}
+        published_in: {oneOf: [{$ref: '#/components/schemas/Published'}, {type: 'null'}]}
+        note: {type: [string, 'null'], description: 'When the day asked is before the version given: what that means.'}
+        articles: {type: array, maxItems: 20, items: {$ref: '#/components/schemas/Article'}}
+        range: {type: array, items: {type: integer}, minItems: 2, maxItems: 2, description: 'The first and last positions given, from 1.'}
+        total: {type: integer}
+        next: {type: [string, 'null'], description: The address to read on from.}
+
+    References:
+      type: object
+      required: [since, references]
+      properties:
+        since: {type: [string, 'null'], format: date}
+        references:
+          type: array
+          items:
+            type: object
+            required: [reference, found]
+            properties:
+              reference: {type: string}
+              found:
+                type: array
+                description: What the reference names (several when it names several texts); empty when it names none.
+                items:
+                  type: object
+                  required: [state, meaning, text, name, article, id, url, status, changed_since]
+                  properties:
+                    state: {type: string, description: 'found, text_only, not_in_corpus, repealed, issue, unknown'}
+                    meaning: {type: string}
+                    text: {type: [string, 'null']}
+                    name: {type: [string, 'null']}
+                    article: {type: [string, 'null']}
+                    id: {type: [string, 'null']}
+                    url: {type: [string, 'null']}
+                    status: {type: [string, 'null']}
+                    official_source: {type: object}
+                    changed_since:
+                      type: [array, 'null']
+                      description: With `since`, each change after that day; null without it.
+                      items:
+                        type: object
+                        required: [how, article, published, bo, by]
+                        properties:
+                          how: {type: [string, 'null']}
+                          article: {type: [string, 'null']}
+                          published: {type: [string, 'null'], format: date}
+                          bo: {type: [string, 'null']}
+                          by: {type: [string, 'null']}
+
+    Bulletin:
+      type: object
+      required: [issues]
+      properties:
+        issues:
+          type: array
+          items:
+            type: object
+            required: [key, edition, date, url, count, texts]
+            properties:
+              key: {type: string}
+              edition: {type: string}
+              date: {type: string, format: date}
+              url: {type: string}
+              count: {type: integer, description: How many texts the site holds from the issue.}
+              texts:
+                type: array
+                items:
+                  type: object
+                  required: [id, kind, title, page]
+                  properties:
+                    id: {type: string}
+                    kind: {type: string}
+                    title: {type: string}
+                    page: {type: [integer, 'null']}
+
+    Changes:
+      type: object
+      required: [since, published, amended, next]
+      properties:
+        since: {type: string, format: date}
+        published:
+          type: array
+          description: The texts the Bulletin published, newest first.
+          items:
+            type: object
+            required: [id, url, title, title_fr, type, number, status, 'on', published_in]
+            properties:
+              id: {type: string}
+              url: {type: string}
+              title: {type: string}
+              title_fr: {type: [string, 'null']}
+              type: {type: string}
+              number: {type: string}
+              status: {type: string}
+              'on': {type: string, format: date, description: The issue's date.}
+              published_in: {$ref: '#/components/schemas/Published'}
+        amended:
+          type: array
+          description: The changes the Bulletin published to the texts the site holds, newest first.
+          items:
+            type: object
+            required: [id, url, title, type, article, article_id, how, 'on', effective_on, by, published_in]
+            properties:
+              id: {type: string, description: The text changed.}
+              url: {type: string}
+              title: {type: string}
+              type: {type: string}
+              article: {type: [string, 'null'], description: 'The article changed (51, 5-1); null for the whole text.'}
+              article_id: {type: [string, 'null'], description: "That article's address, where the text's version today holds it."}
+              how: {type: string, description: 'modified, added, replaced, repealed, words'}
+              'on': {type: string, format: date, description: The Bulletin's date that published the change.}
+              effective_on: {type: [string, 'null'], format: date, description: The day it takes effect; null on a condition.}
+              by:
+                type: object
+                required: [id, title, kind, number, article]
+                properties:
+                  id: {type: [string, 'null'], description: The amending text's address, where the site holds it.}
+                  title: {type: [string, 'null']}
+                  kind: {type: string}
+                  number: {type: string}
+                  article: {type: [string, 'null'], description: Its article that makes the change, as printed.}
+              published_in: {$ref: '#/components/schemas/Published'}
+        next:
+          type: [string, 'null']
+          description: The cursor of the next page (pass it as `cursor`, with the same `since`); null on the last page.

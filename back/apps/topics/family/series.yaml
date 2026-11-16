@@ -1,0 +1,76 @@
+# The family in numbers (F13 of the family plan): the Ministry of Justice's yearly counts as the HCP prints them in
+# «Les indicateurs sociaux du Maroc». Each year is read from the edition named in `from`, on its printed page, copied
+# by hand on 20 Oct 2026 and read twice. The files are kept under CORPUS_DIR/sources/hcp/ with their hashes; a
+# published inconsistency is shown, not repaired.
+
+files:
+  ed2023: {title: 'Les indicateurs sociaux du Maroc, édition 2023', url: 'https://www.hcp.ma/file/245235/', path: sources/hcp/hcp_indicateurs_sociaux_2023.pdf, sha256: 86fbe37af0e38bbeab88d154ea6b3a2690c1c05192ac3b64e1d7e91a6d4dc653}
+  ed2024: {title: 'Les indicateurs sociaux du Maroc, édition 2024', url: 'https://www.hcp.ma/file/240386/', path: sources/hcp/hcp_indicateurs_sociaux_2024.pdf, sha256: fe20bd3360738ae8c55a3d62b4aafed919073a74daf8eba05141bff24804d709}
+  ed2026: {title: 'Les indicateurs sociaux du Maroc, édition 2026', url: 'https://www.hcp.ma/file/248623/', path: sources/hcp/hcp_indicateurs_sociaux_2026.pdf, sha256: 5274142b6336d35064f34ff4316dcd939d7dabe9c64d55ec01b843b76175f10e}
+
+series:
+  - key: minors
+    title: {ar: 'زواج القاصرين: الطلبات والأذون', fr: 'Mariage des mineurs : demandes et autorisations'}
+    lead:
+      ar: 'طلبات الإذن بزواج من هم دون 18 سنة المسجلة لدى قضاة الأسرة، وما قبل منها، حسب المادة 20.'
+      fr: 'Les demandes d’autorisation de marier une personne de moins de 18 ans enregistrées par les juges de la famille, et celles acceptées, selon l’article 20.'
+    cites: [/ma/loi/70-03/art_20]
+    table: 'Tableau 1.40 : Demandes enregistrées de mariage de mineurs'
+    lines:
+      - {key: requests, label: {ar: الطلبات, fr: Demandes}}
+      - {key: granted, label: {ar: المقبولة, fr: Acceptées}}
+    years:
+      - {year: 2018, requests: 32104, granted: 26240, from: ed2026, page: 45}
+      - {year: 2019, requests: 33368, granted: 24426, from: ed2026, page: 45}
+      - {year: 2020, requests: 21373, granted: 16359, from: ed2023, page: 43}
+      - {year: 2021, requests: 28303, granted: 21433, from: ed2024, page: 43}
+      - {year: 2022, requests: 20605, granted: 13841, from: ed2024, page: 43}
+      - {year: 2023, requests: 18297, granted: 13538, from: ed2026, page: 45}
+      - {year: 2024, requests: 15425, granted: 9842, from: ed2026, page: 45}
+    notes:
+      - {ar: 'أرقام 2019 كما نشرت لا تتطابق: المقبولة (24426) والمرفوضة (6942) مجموعها 31368، والمجموع المنشور 33368.', fr: 'Les chiffres de 2019 tels que publiés ne concordent pas : acceptées (24 426) et refusées (6 942) font 31 368, pour un total publié de 33 368.'}
+      - {ar: 'أكثر من 99% من الطلبات تخص فتيات.', fr: 'Plus de 99 % des demandes concernent des filles.'}
+
+  - key: divorce
+    title: {ar: 'الطلاق بالاتفاق والتطليق', fr: 'Divorce par consentement et divorce judiciaire'}
+    lead:
+      ar: 'رسوم الطلاق بالاتفاق التي يوثقها العدول، وأحكام التطليق المحكوم بها (أغلبها للشقاق).'
+      fr: 'Les actes de divorce par consentement mutuel dressés par les adouls, et les divorces judiciaires prononcés (presque tous pour discorde).'
+    cites: [/ma/loi/70-03/art_114, /ma/loi/70-03/art_97]
+    table: 'Tableaux 1.41 et 1.42 : Actes de divorce selon le type ; Divorces judiciaires prononcés'
+    lines:
+      - {key: judicial, label: {ar: التطليق المحكوم به, fr: Divorces judiciaires prononcés}}
+      - {key: agreement, label: {ar: الطلاق بالاتفاق, fr: Par consentement mutuel}}
+    years:
+      - {year: 2018, judicial: 53257, agreement: 19696, from: ed2026, page: 46}
+      - {year: 2019, judicial: 91106, agreement: 21213, from: ed2026, page: 46}
+      - {year: 2020, judicial: 38884, agreement: 16280, from: ed2023, page: 44}
+      - {year: 2021, judicial: 65078, agreement: 20655, from: ed2024, page: 44}
+      - {year: 2022, judicial: 61147, agreement: 22577, from: ed2024, page: 44}
+      - {year: 2023, judicial: 67565, agreement: 24162, from: ed2026, page: 46}
+      - {year: 2024, judicial: 65475, agreement: 23396, from: ed2026, page: 46}
+    notes:
+      - {ar: 'لا يفسر المصدر قفزة 2019 (من 53257 إلى 91106).', fr: 'La source n’explique pas le bond de 2019 (de 53 257 à 91 106).'}
+      - {ar: 'التطليق للشقاق وحده 64565 من 65475 سنة 2024.', fr: 'La discorde seule compte pour 64 565 des 65 475 divorces judiciaires de 2024.'}
+
+  - key: marriages
+    title: {ar: رسوم الزواج, fr: Les actes de mariage}
+    lead:
+      ar: 'عدد رسوم الزواج كل سنة، بالآلاف، ومنها زواج القاصرين.'
+      fr: 'Le nombre d’actes de mariage chaque année, en milliers, dont les mariages de mineurs.'
+    cites: [/ma/loi/70-03/art_65]
+    unit: thousands
+    table: 'Tableau 1.39 : Actes de mariage selon le type'
+    lines:
+      - {key: total, label: {ar: كل الرسوم (بالآلاف), fr: Tous les actes (milliers)}}
+      - {key: minors, label: {ar: زواج القاصرين (بالآلاف), fr: Mariages de mineurs (milliers)}}
+    years:
+      - {year: 2018, total: 279.3, minors: 25.5, from: ed2026, page: 45}
+      - {year: 2019, total: 275.5, minors: 20.7, from: ed2026, page: 45}
+      - {year: 2020, total: 194.5, minors: 12.6, from: ed2023, page: 43}
+      - {year: 2021, total: 269.9, minors: 19.4, from: ed2024, page: 43}
+      - {year: 2022, total: 251.8, minors: 15.0, from: ed2024, page: 43}
+      - {year: 2023, total: 249.1, minors: 12.5, from: ed2026, page: 45}
+      - {year: 2024, total: 239.3, minors: 8.9, from: ed2026, page: 45}
+    notes:
+      - {ar: 'رسم الزواج يحسب سنة توثيقه، وقد يقع بعد سنة الإذن.', fr: 'Un acte est compté l’année où il est dressé, parfois après l’année de l’autorisation.'}

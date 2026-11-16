@@ -1,0 +1,1097 @@
+{
+ "about": "The health topic's questions (the health review, S20, 27 Oct 2026): people's words in Darija, Arabic, French and Latin letters, each with the articles that answer it. Written by the session from the articles the site holds, before the doors' words were tuned on them; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "المصحة طلبات مني شيك ضمان",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "darija",
+   "theme": "cheque"
+  },
+  {
+   "q": "الكلينيك بغات شيك قبل ما تدخلني",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "darija",
+   "theme": "cheque"
+  },
+  {
+   "q": "واش المصحة عندها الحق تطلب شيك",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "darija",
+   "theme": "cheque"
+  },
+  {
+   "q": "هل يحق للمصحة طلب شيك الضمان من المؤمن",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "ar",
+   "theme": "cheque"
+  },
+  {
+   "q": "chèque de garantie clinique interdit",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "fr",
+   "theme": "cheque"
+  },
+  {
+   "q": "la clinique exige un chèque de caution",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "fr",
+   "theme": "cheque"
+  },
+  {
+   "q": "lclinique tlbat menni chek",
+   "expect": [
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "arabizi",
+   "theme": "cheque"
+  },
+  {
+   "q": "غرامة المصحة اللي طلبات شيك",
+   "expect": [
+    "/ma/loi/131-13/art_115",
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "darija",
+   "theme": "cheque_fine"
+  },
+  {
+   "q": "المصحة ما بغاتش تعطيني وصل",
+   "expect": [
+    "/ma/loi/131-13/art_115",
+    "/ma/loi/131-13/art_75"
+   ],
+   "lang": "darija",
+   "theme": "cheque_fine"
+  },
+  {
+   "q": "السبيطار رفض يداويني فالمستعجلات",
+   "expect": [
+    "/ma/decret/2-21-225/art_9",
+    "/ma/dahir/1-59-413/art_431"
+   ],
+   "lang": "darija",
+   "theme": "danger"
+  },
+  {
+   "q": "الطبيب رفض يعاون مريض فخطر",
+   "expect": [
+    "/ma/decret/2-21-225/art_9",
+    "/ma/dahir/1-59-413/art_431"
+   ],
+   "lang": "darija",
+   "theme": "danger"
+  },
+  {
+   "q": "عدم تقديم المساعدة لشخص في خطر",
+   "expect": [
+    "/ma/decret/2-21-225/art_9",
+    "/ma/dahir/1-59-413/art_431"
+   ],
+   "lang": "ar",
+   "theme": "danger"
+  },
+  {
+   "q": "refus de soins urgence médecin",
+   "expect": [
+    "/ma/decret/2-21-225/art_9",
+    "/ma/dahir/1-59-413/art_431"
+   ],
+   "lang": "fr",
+   "theme": "danger"
+  },
+  {
+   "q": "non-assistance à personne en danger",
+   "expect": [
+    "/ma/decret/2-21-225/art_9",
+    "/ma/dahir/1-59-413/art_431"
+   ],
+   "lang": "fr",
+   "theme": "danger"
+  },
+  {
+   "q": "فوقاش نصيفط ورقة العلاج",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "darija",
+   "theme": "deposit"
+  },
+  {
+   "q": "آجال إيداع ملف المرض",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "ar",
+   "theme": "deposit"
+  },
+  {
+   "q": "شحال عندي باش ندفع لافوي",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "darija",
+   "theme": "deposit"
+  },
+  {
+   "q": "délai dépôt feuille de soins",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "fr",
+   "theme": "deposit"
+  },
+  {
+   "q": "nsift lfeuille de soins mn ba3d chhrin",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "arabizi",
+   "theme": "deposit"
+  },
+  {
+   "q": "فات شهرين على ورقة العلاج واش يقبلوها",
+   "expect": [
+    "/ma/decret/2-05-733/art_12"
+   ],
+   "lang": "darija",
+   "theme": "deposit"
+  },
+  {
+   "q": "شحال كيبقى التعويض ديال الكنوس",
+   "expect": [
+    "/ma/decret/2-05-733/art_11",
+    "/ma/loi/65-00/art_16"
+   ],
+   "lang": "darija",
+   "theme": "refund_time"
+  },
+  {
+   "q": "أجل إرجاع المصاريف الطبية",
+   "expect": [
+    "/ma/decret/2-05-733/art_11",
+    "/ma/loi/65-00/art_16"
+   ],
+   "lang": "ar",
+   "theme": "refund_time"
+  },
+  {
+   "q": "délai de remboursement amo",
+   "expect": [
+    "/ma/decret/2-05-733/art_11",
+    "/ma/loi/65-00/art_16"
+   ],
+   "lang": "fr",
+   "theme": "refund_time"
+  },
+  {
+   "q": "تعطل عليا التعويض ديال الدوا",
+   "expect": [
+    "/ma/decret/2-05-733/art_11",
+    "/ma/loi/65-00/art_16"
+   ],
+   "lang": "darija",
+   "theme": "refund_time"
+  },
+  {
+   "q": "رفضو ليا الملف ديال التعويض",
+   "expect": [
+    "/ma/loi/65-00/art_129"
+   ],
+   "lang": "darija",
+   "theme": "appeal"
+  },
+  {
+   "q": "الطعن في رفض إرجاع المصاريف",
+   "expect": [
+    "/ma/loi/65-00/art_129"
+   ],
+   "lang": "ar",
+   "theme": "appeal"
+  },
+  {
+   "q": "recours refus de remboursement",
+   "expect": [
+    "/ma/loi/65-00/art_129"
+   ],
+   "lang": "fr",
+   "theme": "appeal"
+  },
+  {
+   "q": "طبيب المراقبة رفض الملف ديالي",
+   "expect": [
+    "/ma/loi/65-00/art_30",
+    "/ma/decret/2-05-733/art_38"
+   ],
+   "lang": "darija",
+   "theme": "control"
+  },
+  {
+   "q": "الطعن في قرار المراقبة الطبية",
+   "expect": [
+    "/ma/loi/65-00/art_30",
+    "/ma/decret/2-05-733/art_38"
+   ],
+   "lang": "ar",
+   "theme": "control"
+  },
+  {
+   "q": "contrôle médical contestation anam",
+   "expect": [
+    "/ma/loi/65-00/art_30",
+    "/ma/decret/2-05-733/art_38"
+   ],
+   "lang": "fr",
+   "theme": "control"
+  },
+  {
+   "q": "مرض مزمن التكفل الكامل",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "darija",
+   "theme": "ald"
+  },
+  {
+   "q": "الإعفاء من الجزء الباقي على عاتق المؤمن",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "ar",
+   "theme": "ald"
+  },
+  {
+   "q": "السكري واش فيه التكفل 100",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "darija",
+   "theme": "ald"
+  },
+  {
+   "q": "السرطان والتأمين واش كيخلصو كلشي",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "darija",
+   "theme": "ald"
+  },
+  {
+   "q": "liste des maladies chroniques ald",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "fr",
+   "theme": "ald"
+  },
+  {
+   "q": "exonération ticket modérateur maladie longue",
+   "expect": [
+    "/ma/loi/65-00/art_9",
+    "/ma/decret/2-05-733/art_10",
+    "/ma/arrete/2518-05/art_1",
+    "/ma/arrete/2518-05/annex"
+   ],
+   "lang": "fr",
+   "theme": "ald"
+  },
+  {
+   "q": "المشغل ما خلصش الضمان وأنا مريض بمرض مزمن",
+   "expect": [
+    "/ma/loi/65-00/art_32"
+   ],
+   "lang": "darija",
+   "theme": "ald_unpaid"
+  },
+  {
+   "q": "بغيت الملف الطبي ديالي من السبيطار",
+   "expect": [
+    "/ma/decret/2-21-225/art_49",
+    "/ma/decret/2-21-225/art_48"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "حق المريض في الاطلاع على ملفه الطبي",
+   "expect": [
+    "/ma/decret/2-21-225/art_49",
+    "/ma/decret/2-21-225/art_48"
+   ],
+   "lang": "ar",
+   "theme": "record"
+  },
+  {
+   "q": "accès au dossier médical patient",
+   "expect": [
+    "/ma/decret/2-21-225/art_49",
+    "/ma/decret/2-21-225/art_48"
+   ],
+   "lang": "fr",
+   "theme": "record"
+  },
+  {
+   "q": "الطبيب ما بغاش يعطيني نسخة من الملف",
+   "expect": [
+    "/ma/decret/2-21-225/art_49",
+    "/ma/decret/2-21-225/art_48"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "بدلت الطبيب واش يعطيه الملف ديالي",
+   "expect": [
+    "/ma/decret/2-21-225/art_14"
+   ],
+   "lang": "darija",
+   "theme": "transfer"
+  },
+  {
+   "q": "السر المهني للطبيب",
+   "expect": [
+    "/ma/decret/2-21-225/art_11"
+   ],
+   "lang": "ar",
+   "theme": "secret"
+  },
+  {
+   "q": "secret médical médecin",
+   "expect": [
+    "/ma/decret/2-21-225/art_11"
+   ],
+   "lang": "fr",
+   "theme": "secret"
+  },
+  {
+   "q": "الطبيب ما شرحش ليا المرض",
+   "expect": [
+    "/ma/decret/2-21-225/art_40"
+   ],
+   "lang": "darija",
+   "theme": "inform"
+  },
+  {
+   "q": "الطبيب خاصو يقول ليا الثمن قبل العملية",
+   "expect": [
+    "/ma/decret/2-21-225/art_40"
+   ],
+   "lang": "darija",
+   "theme": "inform"
+  },
+  {
+   "q": "information du patient sur le coût des soins",
+   "expect": [
+    "/ma/decret/2-21-225/art_40"
+   ],
+   "lang": "fr",
+   "theme": "inform"
+  },
+  {
+   "q": "واش نقدر نرفض العملية",
+   "expect": [
+    "/ma/decret/2-21-225/art_42",
+    "/ma/decret/2-21-225/art_43"
+   ],
+   "lang": "darija",
+   "theme": "consent"
+  },
+  {
+   "q": "موافقة المريض على العلاج",
+   "expect": [
+    "/ma/decret/2-21-225/art_42",
+    "/ma/decret/2-21-225/art_43"
+   ],
+   "lang": "ar",
+   "theme": "consent"
+  },
+  {
+   "q": "consentement du patient",
+   "expect": [
+    "/ma/decret/2-21-225/art_42",
+    "/ma/decret/2-21-225/art_43"
+   ],
+   "lang": "fr",
+   "theme": "consent"
+  },
+  {
+   "q": "موافقة الوالدين على عملية الولد",
+   "expect": [
+    "/ma/decret/2-21-225/art_42",
+    "/ma/decret/2-21-225/art_43"
+   ],
+   "lang": "darija",
+   "theme": "consent"
+  },
+  {
+   "q": "شهادة طبية مجاملة",
+   "expect": [
+    "/ma/decret/2-21-225/art_52"
+   ],
+   "lang": "ar",
+   "theme": "certificate"
+  },
+  {
+   "q": "certificat de complaisance",
+   "expect": [
+    "/ma/decret/2-21-225/art_52"
+   ],
+   "lang": "fr",
+   "theme": "certificate"
+  },
+  {
+   "q": "مرضت وما مشيتش للخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_271"
+   ],
+   "lang": "darija",
+   "theme": "sick"
+  },
+  {
+   "q": "شهادة طبية للمشغل 48 ساعة",
+   "expect": [
+    "/ma/loi/65-99/art_271"
+   ],
+   "lang": "darija",
+   "theme": "sick"
+  },
+  {
+   "q": "arrêt maladie prévenir employeur",
+   "expect": [
+    "/ma/loi/65-99/art_271"
+   ],
+   "lang": "fr",
+   "theme": "sick"
+  },
+  {
+   "q": "كيفاش ندير أمو تضامن",
+   "expect": [
+    "/ma/decret/2-22-797/art_3"
+   ],
+   "lang": "darija",
+   "theme": "tadamon_apply"
+  },
+  {
+   "q": "طلب الاستفادة من نظام غير القادرين على تحمل واجبات الاشتراك",
+   "expect": [
+    "/ma/decret/2-22-797/art_3"
+   ],
+   "lang": "ar",
+   "theme": "tadamon_apply"
+  },
+  {
+   "q": "demande amo tadamon",
+   "expect": [
+    "/ma/decret/2-22-797/art_3"
+   ],
+   "lang": "fr",
+   "theme": "tadamon_apply"
+  },
+  {
+   "q": "kifach ndir amo tadamon",
+   "expect": [
+    "/ma/decret/2-22-797/art_3"
+   ],
+   "lang": "arabizi",
+   "theme": "tadamon_apply"
+  },
+  {
+   "q": "حيدوني من أمو تضامن",
+   "expect": [
+    "/ma/decret/2-22-797/art_5"
+   ],
+   "lang": "darija",
+   "theme": "tadamon_stop"
+  },
+  {
+   "q": "توقفات ليا أمو تضامن",
+   "expect": [
+    "/ma/decret/2-22-797/art_5"
+   ],
+   "lang": "darija",
+   "theme": "tadamon_stop"
+  },
+  {
+   "q": "amo tadamon suspendue",
+   "expect": [
+    "/ma/decret/2-22-797/art_5"
+   ],
+   "lang": "fr",
+   "theme": "tadamon_stop"
+  },
+  {
+   "q": "عتبة المؤشر ديال أمو تضامن",
+   "expect": [
+    "/ma/decret/2-22-923/art_1",
+    "/ma/decret/2-22-797/art_1"
+   ],
+   "lang": "darija",
+   "theme": "threshold"
+  },
+  {
+   "q": "seuil indice rsu amo",
+   "expect": [
+    "/ma/decret/2-22-923/art_1",
+    "/ma/decret/2-22-797/art_1"
+   ],
+   "lang": "fr",
+   "theme": "threshold"
+  },
+  {
+   "q": "أمو تضامن فالسبيطار العمومي فابور",
+   "expect": [
+    "/ma/loi/65-00/art_120-bis"
+   ],
+   "lang": "darija",
+   "theme": "public_tadamon"
+  },
+  {
+   "q": "فقدت راميد شنو ندير",
+   "expect": [
+    "/ma/loi/27-22/art_8"
+   ],
+   "lang": "darija",
+   "theme": "ramed"
+  },
+  {
+   "q": "راميد ولى أمو تضامن",
+   "expect": [
+    "/ma/loi/27-22/art_8"
+   ],
+   "lang": "darija",
+   "theme": "ramed"
+  },
+  {
+   "q": "أمو الشامل شحال نخلص",
+   "expect": [
+    "/ma/loi/60-22/art_3",
+    "/ma/loi/60-22/art_4",
+    "/ma/decret/2-23-690/art_6"
+   ],
+   "lang": "darija",
+   "theme": "achamil"
+  },
+  {
+   "q": "amo achamil cotisation",
+   "expect": [
+    "/ma/loi/60-22/art_3",
+    "/ma/loi/60-22/art_4",
+    "/ma/decret/2-23-690/art_6"
+   ],
+   "lang": "fr",
+   "theme": "achamil"
+  },
+  {
+   "q": "التأمين للي ما خدامش ويقدر يخلص",
+   "expect": [
+    "/ma/loi/60-22/art_3",
+    "/ma/loi/60-22/art_4",
+    "/ma/decret/2-23-690/art_6"
+   ],
+   "lang": "darija",
+   "theme": "achamil"
+  },
+  {
+   "q": "مدة التدريب أمو الشامل",
+   "expect": [
+    "/ma/loi/60-22/art_7",
+    "/ma/loi/60-22/art_5"
+   ],
+   "lang": "ar",
+   "theme": "achamil_wait"
+  },
+  {
+   "q": "خدام بحسابي والتغطية الصحية",
+   "expect": [
+    "/ma/loi/98-15/art_3",
+    "/ma/loi/98-15/art_13"
+   ],
+   "lang": "darija",
+   "theme": "self"
+  },
+  {
+   "q": "amo travailleurs indépendants stage",
+   "expect": [
+    "/ma/loi/98-15/art_3",
+    "/ma/loi/98-15/art_13"
+   ],
+   "lang": "fr",
+   "theme": "self"
+  },
+  {
+   "q": "بدلت السكنى خاصني نصرح للضمان",
+   "expect": [
+    "/ma/loi/98-15/art_9"
+   ],
+   "lang": "darija",
+   "theme": "self_change"
+  },
+  {
+   "q": "الكنوبس غادي تحيد",
+   "expect": [
+    "/ma/loi/54-23/art_19",
+    "/ma/loi/54-23/art_6"
+   ],
+   "lang": "darija",
+   "theme": "cnops"
+  },
+  {
+   "q": "دمج الكنوبس في الضمان الاجتماعي",
+   "expect": [
+    "/ma/loi/54-23/art_19",
+    "/ma/loi/54-23/art_6"
+   ],
+   "lang": "ar",
+   "theme": "cnops"
+  },
+  {
+   "q": "fusion cnops cnss date",
+   "expect": [
+    "/ma/loi/54-23/art_19",
+    "/ma/loi/54-23/art_6"
+   ],
+   "lang": "fr",
+   "theme": "cnops"
+  },
+  {
+   "q": "تأمين الطلبة",
+   "expect": [
+    "/ma/loi/54-23/art_13",
+    "/ma/loi/54-23/art_14",
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "ar",
+   "theme": "students"
+  },
+  {
+   "q": "ولدي طالب عندو 25 عام واش مغطي",
+   "expect": [
+    "/ma/loi/54-23/art_13",
+    "/ma/loi/54-23/art_14",
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "darija",
+   "theme": "students"
+  },
+  {
+   "q": "amo étudiants",
+   "expect": [
+    "/ma/loi/54-23/art_13",
+    "/ma/loi/54-23/art_14",
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "fr",
+   "theme": "students"
+  },
+  {
+   "q": "حتى لشحال الولد مغطي فالتأمين",
+   "expect": [
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "darija",
+   "theme": "family"
+  },
+  {
+   "q": "ذوو حقوق المؤمن",
+   "expect": [
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "ar",
+   "theme": "family"
+  },
+  {
+   "q": "ayants droit amo enfants",
+   "expect": [
+    "/ma/loi/65-00/art_5",
+    "/ma/loi/116-12/art_29"
+   ],
+   "lang": "fr",
+   "theme": "family"
+  },
+  {
+   "q": "شحال كيرجع الضمان الاجتماعي على الدوا",
+   "expect": [
+    "/ma/decret/2-05-737/art_2"
+   ],
+   "lang": "darija",
+   "theme": "rate_cnss"
+  },
+  {
+   "q": "نسبة تغطية الصندوق الوطني للضمان الاجتماعي",
+   "expect": [
+    "/ma/decret/2-05-737/art_2"
+   ],
+   "lang": "ar",
+   "theme": "rate_cnss"
+  },
+  {
+   "q": "taux de remboursement cnss",
+   "expect": [
+    "/ma/decret/2-05-737/art_2"
+   ],
+   "lang": "fr",
+   "theme": "rate_cnss"
+  },
+  {
+   "q": "شحال كيرجع الكنوبس",
+   "expect": [
+    "/ma/decret/2-05-736/art_1",
+    "/ma/decret/2-05-736/art_2"
+   ],
+   "lang": "darija",
+   "theme": "rate_cnops"
+  },
+  {
+   "q": "taux de couverture cnops",
+   "expect": [
+    "/ma/decret/2-05-736/art_1",
+    "/ma/decret/2-05-736/art_2"
+   ],
+   "lang": "fr",
+   "theme": "rate_cnops"
+  },
+  {
+   "q": "ثمن الدوا فالصيدلية",
+   "expect": [
+    "/ma/loi/65-00/art_12",
+    "/ma/decret/2-13-852/art_1",
+    "/ma/decret/2-25-631/art_1"
+   ],
+   "lang": "darija",
+   "theme": "med_price"
+  },
+  {
+   "q": "تحديد سعر بيع الأدوية للعموم",
+   "expect": [
+    "/ma/loi/65-00/art_12",
+    "/ma/decret/2-13-852/art_1",
+    "/ma/decret/2-25-631/art_1"
+   ],
+   "lang": "ar",
+   "theme": "med_price"
+  },
+  {
+   "q": "prix public des médicaments",
+   "expect": [
+    "/ma/loi/65-00/art_12",
+    "/ma/decret/2-13-852/art_1",
+    "/ma/decret/2-25-631/art_1"
+   ],
+   "lang": "fr",
+   "theme": "med_price"
+  },
+  {
+   "q": "الصيدلية ديال الحراسة",
+   "expect": [
+    "/ma/loi/17-04/art_111"
+   ],
+   "lang": "darija",
+   "theme": "duty"
+  },
+  {
+   "q": "pharmacie de garde",
+   "expect": [
+    "/ma/loi/17-04/art_111"
+   ],
+   "lang": "fr",
+   "theme": "duty"
+  },
+  {
+   "q": "الصيدلي ما بغاش يعطيني الدوا بلا وصفة",
+   "expect": [
+    "/ma/loi/17-04/art_34"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  },
+  {
+   "q": "غلط طبي فين نشكي",
+   "expect": [
+    "/ma/loi/8-12/art_73",
+    "/ma/loi/8-12/art_74"
+   ],
+   "lang": "darija",
+   "theme": "error_order"
+  },
+  {
+   "q": "شكاية ضد طبيب هيئة الأطباء",
+   "expect": [
+    "/ma/loi/8-12/art_73",
+    "/ma/loi/8-12/art_74"
+   ],
+   "lang": "ar",
+   "theme": "error_order"
+  },
+  {
+   "q": "plainte ordre des médecins",
+   "expect": [
+    "/ma/loi/8-12/art_73",
+    "/ma/loi/8-12/art_74"
+   ],
+   "lang": "fr",
+   "theme": "error_order"
+  },
+  {
+   "q": "تعويض عن خطأ طبي",
+   "expect": [
+    "/ma/code/doc/art_78",
+    "/ma/code/doc/art_77",
+    "/ma/code/doc/art_106"
+   ],
+   "lang": "ar",
+   "theme": "error_civil"
+  },
+  {
+   "q": "erreur médicale indemnisation délai",
+   "expect": [
+    "/ma/code/doc/art_78",
+    "/ma/code/doc/art_77",
+    "/ma/code/doc/art_106"
+   ],
+   "lang": "fr",
+   "theme": "error_civil"
+  },
+  {
+   "q": "خطأ طبي فالسبيطار العمومي المحكمة الإدارية",
+   "expect": [
+    "/ma/loi/58-25/art_38"
+   ],
+   "lang": "darija",
+   "theme": "error_public"
+  },
+  {
+   "q": "الطبيب غلط فالعملية وتضرر",
+   "expect": [
+    "/ma/dahir/1-59-413/art_433",
+    "/ma/dahir/1-59-413/art_432"
+   ],
+   "lang": "darija",
+   "theme": "error_penal"
+  },
+  {
+   "q": "التبرع بالأعضاء",
+   "expect": [
+    "/ma/loi/16-98/art_5",
+    "/ma/loi/16-98/art_3"
+   ],
+   "lang": "ar",
+   "theme": "donation"
+  },
+  {
+   "q": "don d'organes gratuit",
+   "expect": [
+    "/ma/loi/16-98/art_5",
+    "/ma/loi/16-98/art_3"
+   ],
+   "lang": "fr",
+   "theme": "donation"
+  },
+  {
+   "q": "بغيت نتبرع بكلية لخويا",
+   "expect": [
+    "/ma/loi/16-98/art_10",
+    "/ma/loi/16-98/art_11"
+   ],
+   "lang": "darija",
+   "theme": "donation_living"
+  },
+  {
+   "q": "التبرع بعد الوفاة",
+   "expect": [
+    "/ma/loi/16-98/art_13",
+    "/ma/loi/16-98/art_14",
+    "/ma/loi/16-98/art_16"
+   ],
+   "lang": "ar",
+   "theme": "donation_death"
+  },
+  {
+   "q": "don d'organes après la mort refus",
+   "expect": [
+    "/ma/loi/16-98/art_13",
+    "/ma/loi/16-98/art_14",
+    "/ma/loi/16-98/art_16"
+   ],
+   "lang": "fr",
+   "theme": "donation_death"
+  },
+  {
+   "q": "بطاقة الإعاقة كيفاش ندير",
+   "expect": [
+    "/ma/decret/2-22-1075/art_1",
+    "/ma/decret/2-22-1075/art_4",
+    "/ma/loi/97-13/art_23"
+   ],
+   "lang": "darija",
+   "theme": "disability_card"
+  },
+  {
+   "q": "carte handicap maroc",
+   "expect": [
+    "/ma/decret/2-22-1075/art_1",
+    "/ma/decret/2-22-1075/art_4",
+    "/ma/loi/97-13/art_23"
+   ],
+   "lang": "fr",
+   "theme": "disability_card"
+  },
+  {
+   "q": "شهادة الوفاة",
+   "expect": [
+    "/ma/loi/36-21/art_37",
+    "/ma/arrete/1251-25/art_1"
+   ],
+   "lang": "ar",
+   "theme": "death"
+  },
+  {
+   "q": "التصريح بالوفاة شكون كيصرح",
+   "expect": [
+    "/ma/loi/36-21/art_37",
+    "/ma/arrete/1251-25/art_1"
+   ],
+   "lang": "darija",
+   "theme": "death"
+  },
+  {
+   "q": "رخصة الدفن",
+   "expect": [
+    "/ma/arrete/1255-25/annex"
+   ],
+   "lang": "ar",
+   "theme": "burial"
+  },
+  {
+   "q": "التصريح بالحمل للتأمين",
+   "expect": [
+    "/ma/decret/2-05-733/art_13"
+   ],
+   "lang": "ar",
+   "theme": "pregnancy"
+  },
+  {
+   "q": "déclaration de grossesse amo",
+   "expect": [
+    "/ma/decret/2-05-733/art_13"
+   ],
+   "lang": "fr",
+   "theme": "pregnancy"
+  },
+  {
+   "q": "شحال من فحص خاصني فالحمل",
+   "expect": [
+    "/ma/arrete/2519-05/art_3",
+    "/ma/arrete/2519-05/art_9",
+    "/ma/arrete/2519-05/art_10"
+   ],
+   "lang": "darija",
+   "theme": "prenatal"
+  },
+  {
+   "q": "suivi de grossesse consultations",
+   "expect": [
+    "/ma/arrete/2519-05/art_3",
+    "/ma/arrete/2519-05/art_9",
+    "/ma/arrete/2519-05/art_10"
+   ],
+   "lang": "fr",
+   "theme": "prenatal"
+  },
+  {
+   "q": "شكون معفي من خلاص السبيطار",
+   "expect": [
+    "/ma/decret/2-99-80/art_2"
+   ],
+   "lang": "darija",
+   "theme": "fees"
+  },
+  {
+   "q": "gratuité hôpital public exonération",
+   "expect": [
+    "/ma/decret/2-99-80/art_2"
+   ],
+   "lang": "fr",
+   "theme": "fees"
+  },
+  {
+   "q": "الطبيب طلب فلوس على قد النتيجة",
+   "expect": [
+    "/ma/decret/2-21-225/art_55"
+   ],
+   "lang": "darija",
+   "theme": "fee_forfait"
+  },
+  {
+   "q": "المشغل ما سجلنيش فالتأمين الإجباري",
+   "expect": [
+    "/ma/loi/65-00/art_131"
+   ],
+   "lang": "darija",
+   "theme": "unregistered"
+  },
+  {
+   "q": "غش في أمو تضامن",
+   "expect": [
+    "/ma/loi/65-00/art_142"
+   ],
+   "lang": "ar",
+   "theme": "fraud"
+  },
+  {
+   "q": "منع التدخين في الأماكن العمومية",
+   "expect": [
+    "/ma/loi/15-91/art_2"
+   ],
+   "lang": "ar",
+   "theme": "smoking"
+  },
+  {
+   "q": "الأبحاث البيوطبية",
+   "expect": [
+    "/ma/loi/28-13/art_1"
+   ],
+   "lang": "ar",
+   "theme": "research"
+  },
+  {
+   "q": "المساعدة الطبية على الإنجاب",
+   "expect": [
+    "/ma/loi/47-14/art_1"
+   ],
+   "lang": "ar",
+   "theme": "pma"
+  }
+ ]
+}

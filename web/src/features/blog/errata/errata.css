@@ -1,0 +1,47 @@
+/* «حين تصحح الجريدة الرسمية نفسها»: the corrections as arcs (a text of law in the source's violet, names in a list in
+   the corrected brown, the rest in soft ink), the Bulletin's «عوض … يقرأ …» in the law's type with the wrong words struck
+   and the right ones marked, and the waits as a ranked list. */
+.er-arcs { display: flex; flex-direction: column; gap: 8px; }
+.er-arcs svg:focus-visible { outline: 2px solid var(--color-stamp); outline-offset: 4px; }
+.er-arc-all path { fill: none; stroke: var(--color-ink-soft); stroke-width: 1; opacity: 0.45; }
+.er-arc-all path.is-law { stroke: var(--color-stamp); opacity: 0.55; }
+.er-arc-all path.is-names { stroke: var(--color-amended); opacity: 0.65; }
+.er-arc-picked path { fill: none; stroke: var(--color-ink); stroke-width: 2.5; }
+.er-arc-picked circle { fill: var(--color-ink); stroke: var(--color-sheet); stroke-width: 2; }
+.er-arcs text.er-note { font-weight: 600; }
+
+.er-names .bp-plot rect.is-part { fill: var(--color-amended); pointer-events: none; }
+
+/* Four corrections as printed. */
+.er-examples { display: flex; flex-direction: column; gap: 14px; max-width: var(--bp-col); margin: 8px 0 0; padding: 0; list-style: none; }
+.er-examples li { display: flex; flex-direction: column; gap: 8px; padding: 16px 18px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.er-when { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.er-what { margin: 0; font-size: var(--text-body); line-height: 1.6; }
+.er-fix { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: baseline; gap: 2px 14px; margin: 2px 0 0; }
+.er-fix dt { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.er-fix dd { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.75; }
+.er-fix del { color: var(--color-repealed); text-decoration-thickness: 2px; }
+.er-fix ins { padding: 0 4px; border-radius: 3px; background: var(--color-amended-wash); color: var(--color-amended); font-weight: 600; text-decoration: none; }
+.er-gloss { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.er-open { display: inline-flex; align-items: center; align-self: flex-start; min-height: 44px; font-size: var(--text-meta); font-weight: 600; }
+
+/* The waits, the shortest first. */
+.er-rank { display: flex; flex-direction: column; gap: 6px; margin: 4px 0 0; padding: 0; list-style: none; }
+.er-rank li { display: grid; grid-template-columns: 12rem minmax(0, 1fr); align-items: center; gap: 12px; min-height: 36px; }
+.er-name { font-size: var(--text-meta); line-height: 1.35; }
+.er-bar { display: flex; align-items: center; gap: 8px; }
+.er-bar i { height: 14px; width: calc(var(--w) * (100% - 3.5rem)); min-width: 2px; border-radius: 2px; background: var(--bp-bar); }
+.er-rank li.is-hi .er-bar i { background: var(--color-stamp); }
+.er-bar b { font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+@media (max-width: 639px) { .er-rank li { grid-template-columns: 8.5rem minmax(0, 1fr); } }
+
+/* The ten latest. */
+.er-late { display: flex; flex-direction: column; margin: 4px 0 0; padding: 0; list-style: none; }
+.er-late li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0 12px; padding: 8px 0 0; border-top: 1px solid var(--color-rule-soft); }
+.er-late li:first-child { border-top: 0; }
+.er-dates { font-size: var(--text-meta); line-height: 1.6; font-variant-numeric: tabular-nums; }
+.er-days { font-size: var(--text-meta); font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.er-late li.is-law .er-days { color: var(--color-stamp); }
+.er-late li.is-names .er-days { color: var(--color-amended); }
+.er-kind { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.er-late .er-open { justify-self: end; }

@@ -1,0 +1,365 @@
+# The business topic's journeys (the business review): what happens, step by step, each step on the articles it
+# rests on, the limits as the texts set them. Written from the commerce code 15.95 (Adala, 29 Jan 2026), law 5.96, law
+# 114.13 and decrees 2.15.258 and 2.21.928, law 112.12, decree 2.22.92 and the tax code, as the site holds them on 27 Oct
+# 2026. Steps say what the law says, never what a reader should do in their own case. A reader sees a journey once a
+# person has checked it.
+
+- key: auto-start
+  title: {ar: 'التسجيل كمقاول ذاتي', fr: 'S’inscrire comme auto-entrepreneur'}
+  lead:
+    ar: 'المقاول الذاتي شخص ذاتي يزاول بصفة فردية نشاطا صناعيا أو تجاريا أو حرفيا أو يقدم خدمات، في حدود رقم أعمال سنوي؛ ويستفيد من نظامه ابتداء من تسجيله في السجل الوطني.'
+    fr: 'L’auto-entrepreneur est une personne physique qui exerce seule une activité industrielle, commerciale, artisanale ou de services, dans une limite de chiffre d’affaires annuel ; il bénéficie de son régime dès son inscription au registre national.'
+  steps:
+    - title: {ar: 'من يمكنه', fr: 'Qui peut'}
+      answer: {ar: 'شخص ذاتي يعمل وحده، لا يتجاوز رقم أعماله المحصل 500.000 درهم في التجارة والصناعة والحرف، أو 200.000 درهم في الخدمات.', fr: 'Une personne physique qui travaille seule, dont le chiffre encaissé ne dépasse pas 500 000 DH en commerce, industrie et artisanat, ou 200 000 DH en services.'}
+      body:
+        ar: 'يقصد بالمقاول الذاتي كل شخص ذاتي يزاول بصفة فردية نشاطا صناعيا أو تجاريا أو حرفيا أو يقدم خدمات، ولا يتجاوز رقم الأعمال السنوي المحصل عليه 500.000 درهم في الأنشطة الصناعية أو التجارية أو الحرفية، و200.000 درهم في تقديم الخدمات. ويجب على الخاضع للضريبة لاختيار هذا النظام أن ينخرط في نظام الضمان الاجتماعي.'
+        fr: 'Est auto-entrepreneur toute personne physique qui exerce seule une activité industrielle, commerciale, artisanale ou de services, sans dépasser un chiffre d’affaires annuel encaissé de 500 000 DH en activités industrielles, commerciales ou artisanales, et de 200 000 DH en services. Pour opter pour ce régime, le contribuable doit adhérer au régime de sécurité sociale.'
+      cites: [/ma/loi/114-13/art_1, /ma/code/cgi/art_42-ter]
+    - title: {ar: 'المهن المستثناة', fr: 'Les métiers exclus'}
+      answer: {ar: 'مرسوم يستثني 41 مهنة من النظام الجبائي للمقاول الذاتي، منها الأطباء والمحامون والصيادلة وتجار الذهب والمستوردون.', fr: 'Un décret exclut 41 métiers du régime fiscal de l’auto-entrepreneur, dont les médecins, avocats, pharmaciens, bijoutiers et importateurs.'}
+      body:
+        ar: 'يستثنى من نظام المقاول الذاتي الخاضعون للضريبة الذين يزاولون مهنا أو أنشطة أو يقدمون خدمات محددة بنص تنظيمي. وقد عدد المرسوم 2.15.263 إحدى وأربعين مهنة، منها: المهندسون المعماريون، والمحامون، والأطباء، والصيادلة، والموثقون، والمحاسبون، ومستغلو مؤسسات تعليم السياقة، وتجار الذهب والحلي بالتقسيط والجملة، والتجار المصدرون والمستوردون، والمتاجرون في العقارات، ومقدمو خدمات تنظيم الحفلات.'
+        fr: 'Sont exclus du régime les contribuables exerçant des professions, activités ou services fixés par voie réglementaire. Le décret 2.15.263 en énumère quarante et un, dont les architectes, avocats, médecins, pharmaciens, notaires, comptables, exploitants d’auto-écoles, bijoutiers au détail et en gros, exportateurs et importateurs, marchands de biens et prestataires d’organisation de fêtes.'
+      cites: [/ma/code/cgi/art_42-ter, /ma/decret/2-15-263/art_1]
+      tool: tools/form
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      answer: {ar: 'يملأ الطلب إلكترونيا ثم يودع شخصيا في شباك لبريد المغرب داخل 30 يوما، مع صورة ونسخة البطاقة الوطنية والتصريح بالتأسيس.', fr: 'La demande se remplit en ligne puis se dépose en personne à un guichet de Barid Al-Maghrib dans les 30 jours, avec une photo, la copie de la carte et la déclaration d’existence.'}
+      body:
+        ar: 'يتم ملء طلب التسجيل بطريقة إلكترونية عبر البوابة الإلكترونية الخاصة بالسجل الوطني للمقاول الذاتي، ثم يسحب ويوقعه صاحبه. ويجب أن يودعه صاحبه بصفة شخصية لدى أحد شبابيك بريد المغرب داخل أجل لا يتعدى ثلاثين يوما من تاريخ ملئه إلكترونيا، مرفقا بالتصريح بالتأسيس المنصوص عليه في المادة 148-V من المدونة العامة للضرائب، وبصورة شخصية، وبنسخة من البطاقة الوطنية للتعريف.'
+        fr: 'La demande d’inscription se remplit en ligne sur le portail du registre national de l’auto-entrepreneur, puis est imprimée et signée. Elle est déposée en personne à un guichet de Barid Al-Maghrib dans les trente jours de sa saisie, avec la déclaration d’existence de l’article 148-V du code des impôts, une photo et la copie de la carte nationale.'
+      cites: [/ma/decret/2-15-258/art_3, /ma/loi/114-13/art_6, /ma/loi/114-13/art_11]
+      papers: checklists/auto-file
+    - title: {ar: 'ما تعفى منه', fr: 'Ce dont vous êtes dispensé'}
+      answer: {ar: 'لا سجل تجاري ولا محاسبة؛ ويمكنك أن توطن نشاطك في محل سكناك.', fr: 'Ni registre du commerce ni comptabilité ; et vous pouvez domicilier l’activité chez vous.'}
+      body:
+        ar: 'يعفى المقاول الذاتي من مسك المحاسبة المنصوص عليها في المادة 19 من مدونة التجارة، ومن إلزامية التقييد في السجل التجاري. ويمارس نشاطه في محل معد لذلك، وإن لم يتوفر عليه أمكنه أن يوطنه في محل سكناه أو في محل مشترك بين عدة مقاولات، شريطة احترام النصوص الجاري بها العمل.'
+        fr: 'L’auto-entrepreneur est dispensé de la comptabilité de l’article 19 du code de commerce et de l’immatriculation au registre du commerce. Il exerce dans un local prévu à cet effet ; à défaut, il peut domicilier son activité à son domicile ou dans un local partagé entre entreprises, en respectant les textes en vigueur.'
+      cites: [/ma/loi/114-13/art_2, /ma/loi/114-13/art_3]
+    - title: {ar: 'الضريبة والتغطية', fr: 'L’impôt et la couverture'}
+      answer: {ar: 'كل شهر أو كل ثلاثة أشهر: تصرح برقم الأعمال المحصل وتؤدي 0,5% أو 1% منه، مع الواجب التكميلي للتغطية الصحية والتقاعد.', fr: 'Chaque mois ou trimestre : vous déclarez le chiffre encaissé et payez 0,5 % ou 1 %, avec le droit complémentaire de la couverture santé et retraite.'}
+      body:
+        ar: 'يخضع المقاول الذاتي للضريبة على الدخل بسعر 0,5% من رقم الأعمال المحصل في الأنشطة التجارية والصناعية والحرفية، و1% في الخدمات، ويضاف إليها واجب تكميلي حسب جدول المادة 73. ويصرح ويؤدي شهريا أو كل ثلاثة أشهر حسب اختياره، قبل نهاية الشهر الموالي للفترة. وفي الخدمات، ما زاد على 80.000 درهم في السنة لدى نفس الزبون يحجزه الزبون في المنبع.'
+        fr: 'L’auto-entrepreneur paie l’impôt sur le revenu à 0,5 % du chiffre encaissé en commerce, industrie et artisanat, et 1 % en services, plus un droit complémentaire selon le barème de l’article 73. Il déclare et paie chaque mois ou trimestre, à son choix, avant la fin du mois suivant. En services, ce qui dépasse 80 000 DH par an chez un même client est retenu à la source par ce client.'
+      cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_82-bis, /ma/code/cgi/art_42-bis, /ma/decret/2-21-928/art_3]
+      tool: tax:tools/own
+    - title: {ar: 'متى يشطب', fr: 'Quand on est radié'}
+      answer: {ar: 'إذا تجاوز رقم أعمالك السقف سنتين متتاليتين، أو لم تصرح أو لم تؤد سنة كاملة، أو تحولت إلى شركة.', fr: 'Si votre chiffre dépasse le plafond deux années de suite, si vous ne déclarez ou ne payez pas une année entière, ou si vous passez en société.'}
+      body:
+        ar: 'يشطب على المقاول الذاتي بطلب منه، أو لعدم التصريح برقم الأعمال أو التصريح بعدم تحقيق أي رقم أعمال برسم سنة مدنية (غير سنة التسجيل)، أو لعدم أداء الضريبة والاشتراكات سنة مدنية، أو لتجاوز السقف سنتين متتاليتين، أو لتحوله إلى شركة، أو بحكم قضائي. ويمكنه أن يعيد التسجيل بعد أداء ما بقي في ذمته.'
+        fr: 'L’auto-entrepreneur est radié à sa demande, pour défaut de déclaration ou déclaration de chiffre nul sur une année civile (hors année d’inscription), pour non-paiement de l’impôt et des cotisations sur une année civile, pour dépassement du plafond deux années de suite, pour passage en société, ou par jugement. Il peut se réinscrire après avoir payé ce qu’il doit.'
+      cites: [/ma/loi/114-13/art_8, /ma/loi/114-13/art_10, /ma/code/cgi/art_43]
+  ends: {office: post, paper: {ar: 'التسجيل في السجل الوطني للمقاول الذاتي', fr: 'L’inscription au registre national de l’auto-entrepreneur'}, cites: [/ma/loi/114-13/art_5]}
+  next: [journeys/sarl-start]
+
+- key: sarl-start
+  title: {ar: 'تأسيس شركة ذات مسؤولية محدودة', fr: 'Constituer une SARL'}
+  lead:
+    ar: 'الشركة ذات المسؤولية المحدودة تتكون من شخص أو أكثر لا يتحملون الخسائر إلا في حدود حصصهم؛ ورأسمالها يحدده الشركاء بحرية.'
+    fr: 'La SARL se compose d’une ou plusieurs personnes qui ne supportent les pertes qu’à hauteur de leurs apports ; son capital est fixé librement par les associés.'
+  steps:
+    - title: {ar: 'الشركاء', fr: 'Les associés'}
+      answer: {ar: 'من شريك واحد حتى خمسين؛ والشريك الوحيد يمارس سلطات جمعية الشركاء.', fr: 'D’un à cinquante associés ; l’associé unique exerce les pouvoirs de l’assemblée.'}
+      body:
+        ar: 'تتكون الشركة من شخص أو أكثر. وإذا تكونت من شخص واحد سمي الشريك الوحيد، ويمارس الصلاحيات المخولة لجمعية الشركاء. ولا يمكن أن يتجاوز عدد الشركاء خمسين، وإلا وجب تحويلها إلى شركة مساهمة داخل سنتين. ولا يجوز لشركة ذات مسؤولية محدودة من شريك واحد أن تكون الشريك الوحيد في شركة أخرى مثلها. ولا تتخذ هذا الشكل البنوك وشركات القرض والاستثمار والتأمين.'
+        fr: 'La société se compose d’une ou plusieurs personnes. Une seule personne est l’associé unique, qui exerce les pouvoirs de l’assemblée. Les associés ne peuvent dépasser cinquante, sinon la société doit devenir anonyme dans les deux ans. Une SARL à associé unique ne peut être l’associé unique d’une autre SARL. Banques, sociétés de crédit, d’investissement et d’assurance ne peuvent prendre cette forme.'
+      cites: [/ma/loi/5-96/art_44, /ma/loi/5-96/art_47, /ma/loi/5-96/art_49]
+    - title: {ar: 'التسمية والشهادة السلبية', fr: 'Le nom et le certificat négatif'}
+      answer: {ar: 'التسمية متبوعة بـ«شركة ذات المسؤولية المحدودة» أو «ش.ذ.م.م»؛ وطلب الشهادة السلبية جزء من الطلب الواحد على المنصة.', fr: 'Le nom suivi de «société à responsabilité limitée» ou «SARL» ; le certificat négatif fait partie de la demande unique sur la plateforme.'}
+      body:
+        ar: 'تعين الشركة بتسمية يجب أن تكون مسبوقة أو متبوعة بعبارة «شركة ذات المسؤولية المحدودة» أو بالأحرف «ش. ذ. م. م.»، أو «من شريك وحيد»، وتذكر مع رأسمالها ومقرها ورقم سجلها التجاري في كل وثائقها الموجهة للأغيار. ويعتبر ملء الاستمارة الإلكترونية لإحداث المقاولة بمثابة طلب للحصول على الشهادة السلبية من المكتب المغربي للملكية الصناعية والتجارية.'
+        fr: 'La société est désignée par un nom précédé ou suivi de «société à responsabilité limitée» ou «SARL», ou «à associé unique», mentionné avec son capital, son siège et son numéro de RC sur tous ses documents destinés aux tiers. Remplir le formulaire électronique de création vaut demande du certificat négatif à l’OMPIC.'
+      cites: [/ma/loi/5-96/art_45, /ma/decret/2-22-92/art_4]
+    - title: {ar: 'النظام الأساسي', fr: 'Les statuts'}
+      answer: {ar: 'يوقعه كل الشركاء، مؤرخا، وفيه البيانات الاثنتا عشرة التي يعددها القانون، تحت طائلة البطلان.', fr: 'Signés par tous les associés, datés, avec les douze mentions que la loi énumère, à peine de nullité.'}
+      body:
+        ar: 'يجب على كافة الشركاء أن ينضموا إلى العقد التأسيسي شخصيا أو بوكيل بوكالة خاصة. ويجب، تحت طائلة البطلان، أن يؤرخ النظام الأساسي وأن يتضمن هوية كل شريك، والشكل، والغرض، والتسمية، والمقر، ومبلغ رأس المال، وحصة كل شريك، وتوزيع الأنصبة، والمدة، والمسيرين إن عينوا فيه، وكتابة الضبط التي يودع بها، وإمضاء كل الشركاء.'
+        fr: 'Tous les associés signent l’acte constitutif, en personne ou par mandataire spécial. À peine de nullité, les statuts sont datés et indiquent l’identité de chaque associé, la forme, l’objet, la dénomination, le siège, le capital, l’apport de chacun, la répartition des parts, la durée, les gérants s’ils y sont nommés, le greffe du dépôt et la signature de tous.'
+      cites: [/ma/loi/5-96/art_50]
+      papers: checklists/sarl-statutes
+    - title: {ar: 'الرأسمال', fr: 'Le capital'}
+      answer: {ar: 'يحدده الشركاء بحرية؛ تكتتب كل الأنصبة، ويدفع ربع الحصص النقدية على الأقل في حساب بنكي، والباقي داخل 5 سنوات.', fr: 'Fixé librement ; toutes les parts sont souscrites, un quart au moins des apports en numéraire versé en banque, le reste dans les 5 ans.'}
+      body:
+        ar: 'يحدد رأسمال الشركة بحرية من طرف الشركاء في النظام الأساسي ويقسم إلى أنصبة متساوية القيمة. ويجب أن يكتتب الشركاء كل الأنصبة، وأن تدفع الحصص العينية كاملة، وربع الحصص النقدية على الأقل، ويدفع الباقي بقرار من المسير داخل خمس سنوات من التقييد في السجل التجاري. وتودع الأموال في البنك ولا تسحب إلا بشهادة التقييد في السجل التجاري؛ وإذا لم تنشأ الشركة داخل ستة أشهر أمكن استرجاعها.'
+        fr: 'Le capital est fixé librement dans les statuts et divisé en parts égales. Toutes les parts sont souscrites, les apports en nature libérés en entier et un quart au moins des apports en numéraire, le reste sur décision du gérant dans les cinq ans de l’immatriculation. Les fonds sont déposés en banque et retirés sur le certificat d’immatriculation ; si la société n’est pas constituée dans les six mois, ils peuvent être repris.'
+      cites: [/ma/loi/5-96/art_46, /ma/loi/5-96/art_51, /ma/loi/5-96/art_52]
+    - title: {ar: 'المسير', fr: 'Le gérant'}
+      answer: {ar: 'شخص طبيعي أو أكثر، شريك أو غير شريك؛ وإذا سكت النظام الأساسي، يعين لثلاث سنوات.', fr: 'Une ou plusieurs personnes physiques, associées ou non ; si les statuts sont muets, nommé pour trois ans.'}
+      body:
+        ar: 'تسير الشركة من طرف شخص طبيعي أو أكثر، ويمكن اختيارهم من غير الشركاء. ويعينهم الشركاء في النظام الأساسي أو بعقد لاحق؛ وفي حالة سكوت النظام الأساسي يعين المسير لمدة ثلاث سنوات.'
+        fr: 'La société est gérée par une ou plusieurs personnes physiques, qui peuvent ne pas être associées, nommées dans les statuts ou par un acte postérieur ; si les statuts sont muets, pour trois ans.'
+      cites: [/ma/loi/5-96/art_62]
+    - title: {ar: 'المنصة الإلكترونية', fr: 'La plateforme électronique'}
+      answer: {ar: 'طلب واحد على المنصة يساوي: الشهادة السلبية، تسجيل النظام الأساسي، الرسم المهني، السجل التجاري، التصريح الجبائي، النشر في الجريدة الرسمية، والانخراط في CNSS.', fr: 'Une demande sur la plateforme vaut : certificat négatif, enregistrement des statuts, taxe professionnelle, RC, déclaration fiscale, publication au BO et affiliation CNSS.'}
+      body:
+        ar: 'يعتبر تضمين البيانات في الاستمارة الإلكترونية المخصصة لإحداث المقاولة عبر المنصة، وإرفاقها بالوثائق المطلوبة، بمثابة طلب للحصول على الشهادة السلبية، ولتسجيل النظام الأساسي، وللتسجيل في جدول الرسم المهني، وللتقييد في السجل التجاري، وللتصريح الجبائي بالتأسيس، وللنشر في الجريدة الرسمية، وللانخراط في الصندوق الوطني للضمان الاجتماعي. ويعفى المعني من الوثائق التي تتبادلها الإدارات بينها، ويبقى مسؤولا عن صحة ما أدلى به.'
+        fr: 'Remplir le formulaire électronique de création et y joindre les pièces vaut demande du certificat négatif, de l’enregistrement des statuts, de l’inscription à la taxe professionnelle, de l’immatriculation au RC, de la déclaration fiscale d’existence, de la publication au BO et de l’affiliation à la CNSS. Le demandeur est dispensé des pièces que les administrations échangent, et répond de l’exactitude de ce qu’il fournit.'
+      cites: [/ma/decret/2-22-92/art_4, /ma/decret/2-22-92/art_2, /ma/decret/2-22-92/art_6]
+  ends: {office: court, paper: {ar: 'شهادة التقييد في السجل التجاري (النموذج 7)', fr: 'Le certificat d’immatriculation au RC (modèle 7)'}, cites: [/ma/loi/5-96/art_52]}
+  next: [journeys/register]
+
+- key: register
+  title: {ar: 'التقييد في السجل التجاري', fr: 'S’immatriculer au registre du commerce'}
+  lead:
+    ar: 'يلزم بالتسجيل في السجل التجاري الأشخاص الذاتيون والاعتباريون، مغاربة أو أجانب، الذين يزاولون نشاطا تجاريا في المملكة؛ والسجل اليوم إلكتروني.'
+    fr: 'Doivent s’immatriculer au registre du commerce les personnes physiques et morales, marocaines ou étrangères, qui exercent une activité commerciale au Maroc ; le registre est aujourd’hui électronique.'
+  steps:
+    - title: {ar: 'من هو التاجر', fr: 'Qui est commerçant'}
+      answer: {ar: 'من يمارس بصفة اعتيادية أو احترافية نشاطا من الأنشطة التي يعددها القانون: الشراء للبيع، الصناعة والحرف، النقل، البناء، الوساطة…', fr: 'Qui exerce habituellement ou professionnellement une des activités que la loi énumère : acheter pour revendre, industrie et artisanat, transport, construction, courtage…'}
+      body:
+        ar: 'تكتسب صفة تاجر بالممارسة الاعتيادية أو الاحترافية لأنشطة منها: شراء المنقولات بنية بيعها أو تأجيرها، وشراء العقارات بنية بيعها، والنشاط الصناعي أو الحرفي، والنقل، والبنك والقرض، والسمسرة والوكالة بالعمولة، والطباعة والنشر، والبناء والأشغال العمومية، ومكاتب الأعمال والأسفار والإشهار، والتزويد بالمواد والخدمات، والتوطين.'
+        fr: 'On devient commerçant par l’exercice habituel ou professionnel d’activités dont l’achat de meubles pour les revendre ou les louer, l’achat d’immeubles pour les revendre, l’industrie ou l’artisanat, le transport, la banque et le crédit, le courtage et la commission, l’impression et l’édition, le bâtiment et les travaux publics, les agences d’affaires, de voyages et de publicité, la fourniture de produits et de services, la domiciliation.'
+      cites: [/ma/loi/15-95/art_6, /ma/loi/15-95/art_37]
+    - title: {ar: 'الأجل', fr: 'Le délai'}
+      answer: {ar: 'خلال ثلاثة أشهر من فتح المحل أو اقتناء الأصل التجاري، أو من تأسيس الشركة؛ وكل تقييد آخر داخل شهر.', fr: 'Dans les trois mois de l’ouverture ou de l’achat du fonds, ou de la constitution ; toute autre inscription dans le mois.'}
+      body:
+        ar: 'يجب أن يطلب تسجيل الأشخاص الذاتيين خلال الثلاثة أشهر الموالية لفتح المؤسسة التجارية أو لاقتناء الأصل التجاري، والأشخاص الاعتباريين داخل الثلاثة أشهر الموالية للتأسيس. وكل تقييد لم يحدد أجله يطلب في ظرف شهر من تاريخ التصرف أو الواقعة الواجب تقييدها.'
+        fr: 'L’immatriculation d’une personne physique est demandée dans les trois mois de l’ouverture de l’établissement ou de l’achat du fonds, celle d’une personne morale dans les trois mois de sa constitution. Toute inscription sans délai propre est demandée dans le mois de l’acte ou du fait à inscrire.'
+      cites: [/ma/loi/15-95/art_75]
+      delay: {months: 3, from: {ar: 'فتح المحل أو التأسيس', fr: 'l’ouverture ou la constitution'}}
+    - title: {ar: 'من يطلب', fr: 'Qui demande'}
+      answer: {ar: 'التاجر نفسه أو وكيله بوكالة كتابية؛ والشركة مسيروها.', fr: 'Le commerçant lui-même ou son mandataire par procuration écrite ; la société par ses dirigeants.'}
+      body:
+        ar: 'لا يجوز تسجيل التاجر بالسجل التجاري الإلكتروني إلا بناء على طلبه أو طلب وكيله الذي يتوفر على وكالة كتابية ترفق وجوبا بالطلب. ولا يطلب تسجيل شركة إلا مسيروها أو أعضاء أجهزة الإدارة أو التدبير أو التسيير.'
+        fr: 'Le commerçant n’est immatriculé au registre électronique qu’à sa demande ou à celle de son mandataire muni d’une procuration écrite jointe à la demande. Une société n’est immatriculée qu’à la demande de ses dirigeants.'
+      cites: [/ma/loi/15-95/art_38]
+    - title: {ar: 'الغرامة', fr: 'L’amende'}
+      answer: {ar: 'من لم يطلب التقييد في أجله، بعد شهر من إنذار الإدارة: غرامة من 1.000 إلى 5.000 درهم.', fr: 'Qui ne demande pas l’inscription à temps, un mois après la mise en demeure : 1 000 à 5 000 DH d’amende.'}
+      body:
+        ar: 'بعد انصرام شهر واحد عن إنذار موجه من الإدارة، يعاقب بغرامة تتراوح بين 1.000 و5.000 درهم كل تاجر أو مسير ملزم بالتسجيل في السجل التجاري لم يطلب التقييدات الواجبة في الآجال المنصوص عليها.'
+        fr: 'Un mois après une mise en demeure de l’administration, tout commerçant ou dirigeant tenu à l’immatriculation qui n’a pas demandé les inscriptions dans les délais encourt une amende de 1 000 à 5 000 DH.'
+      cites: [/ma/loi/15-95/art_62]
+    - title: {ar: 'المحاسبة', fr: 'La comptabilité'}
+      answer: {ar: 'التاجر يمسك محاسبة طبقا للقانون 9.88؛ وإذا كانت منتظمة، فهي حجة أمام القضاء بين التجار.', fr: 'Le commerçant tient une comptabilité selon la loi 9.88 ; régulière, elle fait preuve en justice entre commerçants.'}
+      body:
+        ar: 'يتعين على التاجر أن يمسك محاسبة طبقا لأحكام القانون رقم 9.88 المتعلق بالقواعد المحاسبية الواجب على التجار العمل بها. وإذا كانت ممسوكة بانتظام فإنها تكون مقبولة أمام القضاء كوسيلة إثبات بين التجار في الأعمال المرتبطة بتجارتهم.'
+        fr: 'Le commerçant tient une comptabilité conforme à la loi 9.88 sur les obligations comptables des commerçants. Régulièrement tenue, elle est admise en justice comme preuve entre commerçants pour leurs actes de commerce.'
+      cites: [/ma/loi/15-95/art_19]
+  ends: {office: court, paper: {ar: 'رقم التقييد في السجل التجاري', fr: 'Le numéro d’immatriculation au RC'}, cites: [/ma/loi/15-95/art_37]}
+
+- key: cooperative
+  title: {ar: 'تأسيس تعاونية', fr: 'Constituer une coopérative'}
+  lead:
+    ar: 'التعاونية مجموعة من الأشخاص اتفقوا على إنشاء مقاولة تلبي حاجياتهم الاقتصادية والاجتماعية، تدار ديمقراطيا: لكل عضو صوت واحد مهما كانت حصصه.'
+    fr: 'La coopérative est un groupement de personnes qui créent ensemble une entreprise pour leurs besoins économiques et sociaux, gérée démocratiquement : une voix par membre, quelles que soient ses parts.'
+  steps:
+    - title: {ar: 'الأعضاء', fr: 'Les membres'}
+      answer: {ar: 'خمسة على الأقل، عند التأسيس وطيلة مدة التعاونية؛ أشخاص ذاتيون أو اعتباريون.', fr: 'Cinq au moins, à la création et toute la durée ; personnes physiques ou morales.'}
+      body:
+        ar: 'يجب أن تضم التعاونيات، عند تأسيسها وطيلة مدتها، العدد الكافي من الأعضاء الذي يمكنها من تحقيق غرضها، على ألا يقل عددهم عن خمسة. ولكل المتعاونين نفس الحقوق في الإدارة مهما كان عدد حصصهم، ولكل منهم صوت واحد في الجمعية العامة.'
+        fr: 'La coopérative doit compter, à sa création et toute sa durée, assez de membres pour son objet, et jamais moins de cinq. Tous ont les mêmes droits de gestion quel que soit le nombre de leurs parts, et une voix chacun à l’assemblée générale.'
+      cites: [/ma/loi/112-12/art_14, /ma/loi/112-12/art_2]
+    - title: {ar: 'التسمية', fr: 'Le nom'}
+      answer: {ar: 'يصادق عليها مكتب تنمية التعاون داخل يومين من الطلب.', fr: 'L’Office du développement de la coopération l’approuve dans les deux jours.'}
+      body:
+        ar: 'يتم تأسيس التعاونية بعد مصادقة مكتب تنمية التعاون على تسميتها داخل أجل يومين من تاريخ تقديم الطلب، ثم توقيع النظام الأساسي من جميع الأعضاء المؤسسين أو وكلائهم.'
+        fr: 'La coopérative se constitue après l’approbation de son nom par l’Office du développement de la coopération dans les deux jours de la demande, puis la signature des statuts par tous les fondateurs ou leurs mandataires.'
+      cites: [/ma/loi/112-12/art_7]
+    - title: {ar: 'الرأسمال', fr: 'Le capital'}
+      answer: {ar: 'يكتتب بالكامل ويحرر ربع كل حصة نقدية على الأقل، ويودع في حساب بنكي مجمد داخل 5 أيام.', fr: 'Souscrit en entier, un quart au moins de chaque part en numéraire libéré, déposé sur un compte bloqué dans les 5 jours.'}
+      body:
+        ar: 'يكتتب رأس المال بالكامل ويحرر كل نصيب ممثل لحصة نقدية بربع قيمته على الأقل. ويودع المؤسسون الأموال في حساب بنكي مجمد باسم التعاونية في طور التأسيس داخل خمسة أيام من تلقيها، ولا تسحب إلا بشهادة تقييدها في سجل التعاونيات.'
+        fr: 'Le capital est souscrit en entier et chaque part en numéraire libérée d’un quart au moins. Les fondateurs déposent les fonds sur un compte bloqué au nom de la coopérative en formation dans les cinq jours, retirés sur le certificat d’inscription au registre.'
+      cites: [/ma/loi/112-12/art_7, /ma/loi/112-12/art_8]
+    - title: {ar: 'الإيداع والتسجيل', fr: 'Le dépôt et l’inscription'}
+      answer: {ar: 'نسخة من الوثائق لدى السلطة المحلية مقابل وصل في الحال، ثم التسجيل في سجل التعاونيات بكتابة ضبط المحكمة الابتدائية.', fr: 'Une copie des pièces à l’autorité locale contre reçu immédiat, puis l’inscription au registre des coopératives au greffe du tribunal de première instance.'}
+      body:
+        ar: 'تودع نسخة من الوثائق لدى السلطة الإدارية المحلية التي يوجد مقر التعاونية في دائرتها ويسلم عنها وصل في الحال، ثم تسجل التعاونية في سجل التعاونيات، الذي يتكون من سجل مركزي يمسكه مكتب تنمية التعاون وسجلات محلية تمسكها كتابات الضبط لدى المحاكم الابتدائية.'
+        fr: 'Une copie des pièces est déposée à l’autorité locale du siège contre un reçu immédiat, puis la coopérative est inscrite au registre des coopératives : un registre central tenu par l’Office et des registres locaux tenus par les greffes des tribunaux de première instance.'
+      cites: [/ma/loi/112-12/art_7, /ma/loi/112-12/art_9]
+    - title: {ar: 'المعاملات مع الأغيار', fr: 'Les opérations avec les tiers'}
+      answer: {ar: 'مع أعضائها فقط؛ وبعد سنة من التسجيل، مع الأغيار في حدود 30%.', fr: 'Avec ses seuls membres ; un an après l’inscription, avec des tiers dans la limite de 30 %.'}
+      body:
+        ar: 'لا تباشر التعاونية نشاطها إلا مع أعضائها. غير أنه يمكنها بعد سنة من تسجيلها أن تتعامل مع الأغيار في حدود 30% من قيمة ما يزودها به أعضاؤها، أو من رقم الأعمال المنجز معهم، أو من كتلة الأجور، حسب صنفها.'
+        fr: 'La coopérative n’opère qu’avec ses membres. Un an après son inscription, elle peut traiter avec des tiers dans la limite de 30 % des apports de ses membres, du chiffre réalisé avec eux, ou de la masse salariale, selon sa catégorie.'
+      cites: [/ma/loi/112-12/art_6]
+  ends: {office: court, paper: {ar: 'التسجيل في سجل التعاونيات', fr: 'L’inscription au registre des coopératives'}, cites: [/ma/loi/112-12/art_9]}
+
+- key: cheque-bounced
+  title: {ar: 'شيك رجع بلا رصيد: عندي الشيك', fr: 'Chèque revenu impayé : je le détiens'}
+  lead:
+    ar: 'الشيك يستحق الوفاء بمجرد الاطلاع. إذا رفض البنك أداءه لعدم كفاية المؤونة، يبدأ عند البنك وعند القضاء طريق تحدده مدونة التجارة كما غيرها القانون 71.24.'
+    fr: 'Le chèque est payable à vue. Si la banque le refuse faute de provision, la banque puis la justice suivent un chemin que fixe le code de commerce, modifié par la loi 71.24.'
+  day: {ar: 'نهار رجع الشيك', fr: 'Le jour du rejet'}
+  steps:
+    - title: {ar: 'قدمه في أجله', fr: 'Le présenter à temps'}
+      answer: {ar: '20 يوما من التاريخ المكتوب عليه إذا صدر في المغرب، و60 يوما إذا صدر في الخارج؛ والشيك المؤخر يؤدى يوم تقديمه.', fr: '20 jours après la date inscrite s’il est émis au Maroc, 60 s’il l’est à l’étranger ; postdaté, il se paie le jour où il est présenté.'}
+      body:
+        ar: 'إذا كان الشيك صادرا بالمغرب ومستحق الوفاء به، وجب تقديمه للوفاء داخل أجل عشرين يوما، وستين يوما إذا صدر خارج المغرب، تحسب من التاريخ المبين فيه كتاريخ لإصداره. والشيك مستحق الوفاء بمجرد الاطلاع، وكل بيان مخالف كأن لم يكن، والمقدم قبل تاريخه يجب وفاؤه يوم تقديمه. ويجب على البنك الوفاء ولو بعد انقضاء أجل التقديم.'
+        fr: 'Émis et payable au Maroc, le chèque est présenté dans les vingt jours ; émis hors du Maroc, dans les soixante jours, à compter de la date d’émission qu’il porte. Il est payable à vue, toute mention contraire étant réputée non écrite, et présenté avant sa date, il est payé le jour même. La banque doit payer même après le délai de présentation.'
+      cites: [/ma/loi/15-95/art_268, /ma/loi/15-95/art_267, /ma/loi/15-95/art_271]
+      tool: tools/cheque
+    - title: {ar: 'البنك ينذر الساحب', fr: 'La banque adresse l’injonction'}
+      answer: {ar: 'داخل يومين من الرفض، يأمر البنك صاحب الحساب بإرجاع دفاتر الشيكات وعدم إصدار شيكات لمدة خمس سنوات.', fr: 'Dans les deux jours du rejet, la banque enjoint au titulaire de rendre ses chéquiers et de ne plus émettre de chèques pendant cinq ans.'}
+      body:
+        ar: 'يجب على البنك الذي رفض وفاء شيك لعدم توفر أو كفاية المؤونة أن يأمر صاحب الحساب، داخل أجل يومين من تاريخ العارض، بإرجاع صيغ الشيكات التي في حوزته إلى جميع البنوك التي يتعامل معها، وألا يصدر خلال خمس سنوات شيكات غير شيكات السحب أو الشيكات المعتمدة.'
+        fr: 'La banque qui refuse un chèque faute de provision enjoint au titulaire, dans les deux jours de l’incident, de restituer les formules de chèques à toutes ses banques et de n’émettre pendant cinq ans que des chèques de retrait ou certifiés.'
+      cites: [/ma/loi/15-95/art_313]
+      delay: {days: 2, from: {ar: 'رفض الشيك', fr: 'le rejet du chèque'}}
+    - title: {ar: 'ثلاثة أشهر للتسوية', fr: 'Trois mois pour régulariser'}
+      answer: {ar: 'إذا أدى الساحب أو وفر المؤونة داخل ثلاثة أشهر من الإنذار، لا تفرض عليه غرامة استرجاع الشيكات.', fr: 'Si le tireur paie ou constitue la provision dans les trois mois de l’injonction, l’amende de régularisation n’est pas due.'}
+      body:
+        ar: 'لا تفرض الغرامة التي يؤديها صاحب الحساب لاسترجاع إمكانية إصدار الشيكات إذا بادر إلى تسوية أو توفير مؤونة الشيك غير المؤدى داخل أجل ثلاثة أشهر ابتداء من تاريخ الإنذار. وبعدها، يمكنه استرجاعها إذا أدى مبلغ الشيك خلال سنتين من انتهاء أجل التقديم وأدى الغرامة: 0,5% من المبلغ للإنذار الأول، و1% للثاني، و1,5% للثالث وما بعده، بين 500 و50.000 درهم.'
+        fr: 'L’amende due pour retrouver la faculté d’émettre des chèques n’est pas appliquée si le titulaire régularise ou constitue la provision dans les trois mois de l’injonction. Ensuite, il peut la retrouver s’il paie le chèque dans les deux ans suivant le délai de présentation et acquitte l’amende : 0,5 % au premier incident, 1 % au deuxième, 1,5 % au troisième et suivants, entre 500 et 50 000 DH.'
+      cites: [/ma/loi/15-95/art_314, /ma/loi/15-95/art_313]
+      delay: {months: 3, from: {ar: 'الإنذار', fr: 'l’injonction'}}
+    - title: {ar: 'الشكاية والإعذار', fr: 'La plainte et la mise en demeure'}
+      answer: {ar: 'قبل أي متابعة، تعذر النيابة العامة الساحب بأن يسوي وضعيته داخل 30 يوما؛ والأداء أو التنازل يوقف الدعوى.', fr: 'Avant toute poursuite, le parquet met le tireur en demeure de régulariser dans les 30 jours ; le paiement ou le désistement arrête l’action.'}
+      body:
+        ar: 'يجب أن يسبق المتابعة إعذار ساحب الشيك بأن يسوي وضعيته داخل ثلاثين يوما من تاريخ الإعذار، يتم في شكل استجواب يقوم به ضابط للشرطة القضائية بتعليمات من النيابة العامة، ويمكن تمديد الأجل بموافقة المستفيد. ويترتب على الأداء أو التنازل عن الشكاية عدم تحريك الدعوى العمومية أو سقوطها، بعد أداء غرامة قدرها 2% من مبلغ الشيك أو الخصاص.'
+        fr: 'Les poursuites sont précédées d’une mise en demeure du tireur de régulariser dans les trente jours, par une audition d’un officier de police judiciaire sur instruction du parquet, délai prorogeable avec l’accord du bénéficiaire. Le paiement ou le désistement éteint ou empêche l’action publique, contre une amende de 2 % du montant du chèque ou du manque.'
+      cites: [/ma/loi/15-95/art_325]
+      delay: {days: 30, from: {ar: 'الإعذار', fr: 'la mise en demeure'}}
+    - title: {ar: 'المطالبة بالمبلغ', fr: 'Réclamer le montant'}
+      answer: {ar: 'أمام القضاء الزجري كطرف مدني، أو أمام القضاء المدني؛ ودعواك ضد الساحب تتقادم بسنة من انتهاء أجل التقديم.', fr: 'Devant le juge pénal comme partie civile, ou devant le juge civil ; votre action contre le tireur se prescrit par un an après le délai de présentation.'}
+      body:
+        ar: 'يجوز لحامل الشيك الذي ينتصب طرفا مدنيا أن يطالب أمام القضاء الزجري بمبلغ يساوي قيمة الشيك، أو أن يختار المطالبة بدينه أمام القضاء المدني. وتتقادم دعاوى الحامل ضد المظهرين والساحب والملتزمين الآخرين بمضي سنة من انقضاء أجل التقديم، ودعواه ضد المسحوب عليه بمضي سنتين؛ وتبقى الدعوى ضد الساحب الذي لم يقدم مقابل الوفاء.'
+        fr: 'Le porteur constitué partie civile peut demander au juge pénal une somme égale au chèque, ou choisir le juge civil. Ses actions contre les endosseurs, le tireur et les autres obligés se prescrivent par un an après le délai de présentation, contre le tiré par deux ans ; l’action reste ouverte contre le tireur qui n’a pas fourni la provision.'
+      cites: [/ma/loi/15-95/art_326, /ma/loi/15-95/art_295]
+  ends: {office: bank, paper: {ar: 'شهادة رفض الأداء من البنك', fr: 'Le certificat de refus de paiement de la banque'}, cites: [/ma/loi/15-95/art_313]}
+  next: [journeys/cheque-written]
+
+- key: cheque-written
+  title: {ar: 'كتبت شيكا ولم يكن الرصيد', fr: 'J’ai émis un chèque sans provision'}
+  lead:
+    ar: 'من أغفل الحفاظ على المؤونة أو تكوينها يعاقب بالحبس والغرامة؛ لكن القانون 71.24 جعل قبل المتابعة إعذارا لثلاثين يوما، وجعل الأداء يوقف الدعوى ويمحو آثار الحكم.'
+    fr: 'Qui omet de maintenir ou constituer la provision encourt prison et amende ; mais la loi 71.24 impose avant les poursuites une mise en demeure de trente jours, et fait du paiement la fin de l’action et l’effacement de la peine.'
+  day: {ar: 'نهار إنذار البنك', fr: 'Le jour de l’injonction'}
+  steps:
+    - title: {ar: 'إنذار البنك', fr: 'L’injonction de la banque'}
+      answer: {ar: 'ترجع دفاتر الشيكات، ولا تصدر شيكات خمس سنوات، إلا إذا سويت الوضعية.', fr: 'Vous rendez vos chéquiers et n’émettez plus de chèques cinq ans, sauf régularisation.'}
+      body:
+        ar: 'يأمر البنك صاحب الحساب، داخل يومين من رفض الشيك، بإرجاع صيغ الشيكات وعدم إصدار شيكات لمدة خمس سنوات غير شيكات السحب أو المعتمدة، ويخبر وكلاءه وأصحاب الحساب المشترك. وتؤدي التسوية إلى رفع المنع وتطهير آثاره.'
+        fr: 'Dans les deux jours du rejet, la banque enjoint au titulaire de rendre ses formules et de n’émettre pendant cinq ans que des chèques de retrait ou certifiés, et en informe ses mandataires et cotitulaires. La régularisation lève l’interdiction et en efface les effets.'
+      cites: [/ma/loi/15-95/art_313, /ma/loi/15-95/art_315]
+    - title: {ar: 'التسوية بلا غرامة', fr: 'Régulariser sans amende'}
+      answer: {ar: 'داخل ثلاثة أشهر من الإنذار: تؤدي الشيك أو توفر المؤونة، ولا غرامة.', fr: 'Dans les trois mois de l’injonction : payer le chèque ou constituer la provision, sans amende.'}
+      body:
+        ar: 'لا تفرض الغرامة المالية إذا بادر صاحب الحساب إلى تسوية أو توفير مؤونة الشيك غير المؤدى داخل أجل ثلاثة أشهر ابتداء من تاريخ الإنذار.'
+        fr: 'L’amende n’est pas due si le titulaire régularise ou constitue la provision dans les trois mois de l’injonction.'
+      cites: [/ma/loi/15-95/art_314]
+      delay: {months: 3, from: {ar: 'الإنذار', fr: 'l’injonction'}}
+    - title: {ar: 'بعد ثلاثة أشهر', fr: 'Après trois mois'}
+      answer: {ar: 'تسترجع الشيكات إذا أديت المبلغ خلال سنتين وأديت الغرامة: 0,5% ثم 1% ثم 1,5%، بين 500 و50.000 درهم.', fr: 'Vous retrouvez les chèques si vous payez dans les deux ans et acquittez l’amende : 0,5 %, puis 1 %, puis 1,5 %, entre 500 et 50 000 DH.'}
+      body:
+        ar: 'لصاحب الحساب أن يستعيد إمكانية إصدار الشيكات إذا أدى مبلغ الشيك أو وفر مؤونة كافية خلال سنتين من انتهاء أجل التقديم، وأدى الغرامة: 0,5% من مبلغ الشيكات موضوع الإنذار الأول، و1% للثاني، و1,5% للثالث وما بعده؛ وإذا كانت المؤونة أقل من قيمة الشيك فالغرامة على الخصاص وحده، ولا تقل عن 500 درهم ولا تزيد على 50.000 درهم.'
+        fr: 'Le titulaire retrouve la faculté d’émettre des chèques s’il paie ou constitue la provision dans les deux ans suivant le délai de présentation et acquitte l’amende : 0,5 % des chèques du premier incident, 1 % du deuxième, 1,5 % du troisième et suivants ; sur le seul manque si la provision était partielle, entre 500 et 50 000 DH.'
+      cites: [/ma/loi/15-95/art_313, /ma/loi/15-95/art_314]
+      tool: tools/cheque
+    - title: {ar: 'الإعذار قبل المتابعة', fr: 'La mise en demeure avant les poursuites'}
+      answer: {ar: '30 يوما لتسوية الوضعية بعد استجواب الشرطة القضائية؛ يمكن تمديدها بموافقة المستفيد.', fr: '30 jours pour régulariser après l’audition par la police judiciaire ; prorogeables avec l’accord du bénéficiaire.'}
+      body:
+        ar: 'يجب أن يسبق المتابعة إعذار ساحب الشيك بأن يسوي وضعيته خلال ثلاثين يوما، في شكل استجواب يقوم به ضابط للشرطة القضائية بتعليمات من النيابة العامة، مع إمكان إخضاعه لتدابير المراقبة القضائية بما فيها السوار الإلكتروني. ويمكن للنيابة العامة تمديد الأجل لمدة مماثلة أو أكثر بعد موافقة المستفيد.'
+        fr: 'Les poursuites sont précédées d’une mise en demeure de régulariser dans les trente jours, par une audition d’un officier de police judiciaire sur instruction du parquet, avec d’éventuelles mesures de contrôle judiciaire dont le bracelet électronique. Le parquet peut proroger le délai d’autant ou plus avec l’accord du bénéficiaire.'
+      cites: [/ma/loi/15-95/art_325]
+      delay: {days: 30, from: {ar: 'الإعذار', fr: 'la mise en demeure'}}
+    - title: {ar: 'العقوبة، وما يوقفها', fr: 'La peine, et ce qui l’arrête'}
+      answer: {ar: 'الحبس من 6 أشهر إلى 3 سنوات وغرامة من 5.000 إلى 20.000 درهم؛ والأداء أو التنازل، ولو بعد الحكم، يوقف التنفيذ بعد غرامة 2%.', fr: 'Six mois à trois ans de prison et 5 000 à 20 000 DH d’amende ; le paiement ou le désistement, même après jugement, arrête l’exécution contre 2 %.'}
+      body:
+        ar: 'يعاقب بالحبس من ستة أشهر إلى ثلاث سنوات وبغرامة بين 5.000 و20.000 درهم ساحب الشيك الذي أغفل الحفاظ على المؤونة أو تكوينها. ويترتب على الأداء أو التنازل عن الشكاية عدم تحريك الدعوى أو سقوطها بعد أداء غرامة 2% من المبلغ؛ وإذا وقع بعد حكم نهائي وضع حدا لتنفيذ العقوبة السالبة للحرية ومحا آثارها. ولا جريمة ولا عقوبة في هذه الحالة بين الأزواج أو الأصول أو الفروع من الدرجة الأولى، دون الإخلال بحق المتضرر في القضاء المدني.'
+        fr: 'Le tireur qui omet de maintenir ou constituer la provision encourt six mois à trois ans de prison et 5 000 à 20 000 DH d’amende. Le paiement ou le désistement éteint ou empêche l’action contre une amende de 2 % ; après un jugement définitif, il met fin à la peine privative de liberté et en efface les effets. Il n’y a ni infraction ni peine dans ce cas entre époux, ascendants ou descendants au premier degré, sans préjudice de l’action civile.'
+      cites: [/ma/loi/15-95/art_316, /ma/loi/15-95/art_325]
+  ends: {office: bank, paper: {ar: 'ما يثبت التسوية وأداء الغرامة', fr: 'La preuve de la régularisation et de l’amende payée'}, cites: [/ma/loi/15-95/art_313]}
+
+- key: late-payment
+  title: {ar: 'الزبون لم يؤد الفاتورة في أجلها', fr: 'Le client n’a pas payé la facture à temps'}
+  lead:
+    ar: 'بين التجار، أجل الأداء 60 يوما من الفاتورة إذا لم يتفقا، ولا يتجاوز 120 يوما إذا اتفقا. ومن تأخر يؤدي غرامة لفائدة الخزينة، دون أن يسقط حق الدائن في التعويض. ولا يسري هذا على من لا يتجاوز رقم أعماله السنوي مليوني درهم.'
+    fr: 'Entre commerçants, le délai de paiement est de 60 jours après la facture sans accord, et ne dépasse pas 120 jours avec accord. Le retard coûte une amende au Trésor, sans priver le créancier d’indemnité. Rien de cela ne s’applique sous 2 millions de DH de chiffre d’affaires annuel.'
+  day: {ar: 'تاريخ الفاتورة', fr: 'La date de la facture'}
+  steps:
+    - title: {ar: 'من يشمله', fr: 'Qui est concerné'}
+      answer: {ar: 'المعاملات بين التجار في المغرب؛ ولا يسري على من يحقق رقم معاملات سنويا لا يتجاوز مليوني درهم دون الضريبة.', fr: 'Les transactions entre commerçants au Maroc ; pas pour qui réalise un chiffre annuel de 2 millions de DH hors taxe ou moins.'}
+      body:
+        ar: 'يتعين تحديد أجل لأداء المبالغ المستحقة على المعاملات بين التجار الذين لهم مقر أو موطن ضريبي أو مؤسسة بالمغرب، ضمن شروط الأداء التي يخبر بها كل تاجر من يطلبها قبل أي معاملة. ويتقيد به المفوض لهم تسيير مرفق عام والمؤسسات العمومية التي تمارس أنشطة تجارية. ولا تسري هذه الأحكام على من يحقق رقم معاملات سنويا يقل أو يساوي 2.000.000 درهم دون الضريبة على القيمة المضافة.'
+        fr: 'Un délai de paiement est fixé pour les transactions entre commerçants ayant siège, domicile fiscal ou établissement au Maroc, dans les conditions de paiement que chacun communique avant toute transaction. Il lie aussi les délégataires de service public et les établissements publics à activité commerciale. Ces règles ne s’appliquent pas sous un chiffre annuel de 2 000 000 DH hors TVA ou moins.'
+      cites: [/ma/loi/15-95/art_1-78]
+    - title: {ar: 'الأجل', fr: 'Le délai'}
+      answer: {ar: '60 يوما من إصدار الفاتورة بلا اتفاق؛ وبالاتفاق 120 يوما على الأكثر. والفاتورة تصدر قبل آخر يوم من شهر التسليم.', fr: '60 jours après la facture sans accord ; avec accord, 120 jours au plus. La facture est émise avant la fin du mois de livraison.'}
+      body:
+        ar: 'يحدد أجل الأداء في ستين يوما من تاريخ إصدار الفاتورة إذا لم يتفق الأطراف، ولا يتجاوز مائة وعشرين يوما إذا اتفقوا. وتصدر الفاتورة على الأكثر في اليوم الأخير من الشهر الذي سلمت فيه السلع أو نفذت الأشغال أو قدمت الخدمات، وإلا حسب الأجل من نهاية ذلك الشهر. وفي المعاملات الدورية التي لا تتعدى شهرا، يحسب من أول الشهر الموالي. ويمكن بمرسوم أن يصل الأجل إلى 180 يوما في قطاعات موسمية.'
+        fr: 'Le délai est de soixante jours après la facture sans accord des parties, et ne dépasse pas cent vingt jours avec accord. La facture est émise au plus tard le dernier jour du mois de la livraison, des travaux ou du service ; sinon le délai court de la fin de ce mois. Pour des transactions périodiques d’un mois au plus, il court du premier du mois suivant. Un décret peut porter le délai à 180 jours dans des secteurs saisonniers.'
+      cites: [/ma/loi/15-95/art_2-78]
+      delay: {days: 60, from: {ar: 'إصدار الفاتورة', fr: 'l’émission de la facture'}}
+      tool: tools/late
+    - title: {ar: 'الغرامة', fr: 'L’amende'}
+      answer: {ar: 'على المتأخر غرامة لفائدة الخزينة: السعر المديري لبنك المغرب عن الشهر الأول، و0,85% عن كل شهر أو جزء شهر بعده، على المبلغ غير المؤدى مع الضريبة.', fr: 'Le retardataire doit une amende au Trésor : le taux directeur de Bank Al-Maghrib le premier mois, 0,85 % par mois ou fraction ensuite, sur le montant impayé TTC.'}
+      body:
+        ar: 'تفرض عن كل مخالفة لأجل الأداء غرامة مالية لصالح الخزينة نسبتها السعر المديري لبنك المغرب المطبق عند اختتام الشهر الأول من التأخر، و0,85% عن كل شهر أو جزء من الشهر الإضافي، على المبلغ غير المؤدى في الأجل عن كل فاتورة مع احتساب الضريبة. وتدفع تلقائيا مع التصريح. ويتوقف تطبيقها على الفواتير المعروضة على المحكمة حتى الحكم النهائي.'
+        fr: 'Tout manquement au délai entraîne une amende au Trésor égale au taux directeur de Bank Al-Maghrib en vigueur à la fin du premier mois de retard, plus 0,85 % par mois ou fraction supplémentaire, sur le montant impayé de chaque facture TTC. Elle est payée spontanément avec la déclaration, et suspendue pour les factures portées devant le tribunal jusqu’au jugement définitif.'
+      cites: [/ma/loi/15-95/art_3-78]
+    - title: {ar: 'التصريح كل ثلاثة أشهر', fr: 'La déclaration trimestrielle'}
+      answer: {ar: 'من يتجاوز رقم معاملاته مليوني درهم يصرح إلكترونيا قبل نهاية الشهر الموالي لكل ثلاثة أشهر، حتى بلا فواتير متأخرة.', fr: 'Au-delà de 2 millions de DH, une déclaration électronique avant la fin du mois suivant chaque trimestre, même sans facture en retard.'}
+      body:
+        ar: 'يتعين على من يحقق رقم معاملات يفوق 2.000.000 درهم دون الضريبة أن يقدم للإدارة تصريحا إلكترونيا قبل نهاية الشهر الموالي لانصرام كل ثلاثة أشهر، يذكر الفواتير غير المؤداة في الأجل والغرامة المستحقة؛ ولا يعفي غيابها من التصريح. ويعاقب عن عدم التصريح أو التأخر فيه أو في أداء الغرامة بجزاء من 5.000 درهم إلى 250.000 درهم حسب رقم المعاملات، و5.000 درهم عن كل فاتورة ناقصة.'
+        fr: 'Au-delà de 2 000 000 DH hors taxe, une déclaration électronique est déposée avant la fin du mois suivant chaque trimestre, avec les factures impayées à temps et l’amende due ; leur absence ne dispense pas de déclarer. Le défaut ou le retard de déclaration ou de paiement coûte de 5 000 à 250 000 DH selon le chiffre, et 5 000 DH par facture incomplète.'
+      cites: [/ma/loi/15-95/art_4-78, /ma/loi/15-95/art_6-78]
+    - title: {ar: 'التعويض والطعن', fr: 'L’indemnité et le recours'}
+      answer: {ar: 'للدائن أن يطالب بالتعويض عن التأخر وفق القانون؛ ومن ينازع في الغرامة يشتكي للوزير داخل 6 أشهر.', fr: 'Le créancier peut demander une indemnité de retard selon la loi ; qui conteste l’amende se plaint au ministre dans les 6 mois.'}
+      body:
+        ar: 'يحق للدائن طلب التعويض عن التأخر في أداء المبالغ المستحقة من المدين وفقا للتشريع الجاري به العمل. ومن ينازع في الغرامات يوجه شكاية إلى الوزير المكلف بالمالية داخل ستة أشهر من الشهر الذي صدر فيه الأمر بالمداخيل، فإن لم يقبل القرار أو لم يجب داخل ثلاثة أشهر، أمكنه رفع دعوى داخل الشهرين المواليين.'
+        fr: 'Le créancier peut demander au débiteur une indemnité de retard selon la loi. Qui conteste les amendes adresse une réclamation au ministre des finances dans les six mois du mois de l’ordre de recettes ; sans accord ni réponse dans les trois mois, il peut saisir le tribunal dans les deux mois.'
+      cites: [/ma/loi/15-95/art_3-78, /ma/loi/15-95/art_9-78]
+
+- key: difficulty
+  title: {ar: 'المقاولة في صعوبة', fr: 'L’entreprise en difficulté'}
+  lead:
+    ar: 'الكتاب الخامس من مدونة التجارة يرتب الطريق: التنبيه داخل المقاولة، ثم الإنقاذ قبل التوقف عن الدفع، ثم التسوية القضائية بعده، ثم التصفية إذا اختلت الوضعية بشكل لا رجعة فيه.'
+    fr: 'Le livre V du code de commerce trace le chemin : l’alerte dans l’entreprise, la sauvegarde avant la cessation des paiements, le redressement après, la liquidation si la situation est irrémédiablement compromise.'
+  day: {ar: 'نهار التوقف عن الدفع', fr: 'Le jour de la cessation des paiements'}
+  steps:
+    - title: {ar: 'التنبيه', fr: 'L’alerte'}
+      answer: {ar: 'مراقب الحسابات أو أي شريك يبلغ رئيس المقاولة بالصعوبات داخل 8 أيام؛ وإن لم يستجب خلال 15 يوما، تعقد الجمعية العامة.', fr: 'Le commissaire aux comptes ou tout associé alerte le dirigeant dans les 8 jours ; sans réponse en 15 jours, l’assemblée générale se réunit.'}
+      body:
+        ar: 'إذا لم يصحح رئيس المقاولة تلقائيا الاختلال الذي يؤثر على استغلالها، يبلغه مراقب الحسابات أو أي شريك بالوقائع أو الصعوبات القانونية أو الاقتصادية أو المالية أو الاجتماعية التي تهدد استمراريتها، داخل ثمانية أيام من اكتشافها، برسالة مضمونة. وإذا لم يستجب خلال خمسة عشر يوما، وجب عليه عقد الجمعية العامة داخل خمسة عشر يوما.'
+        fr: 'Si le dirigeant ne corrige pas de lui-même un déséquilibre, le commissaire aux comptes ou tout associé lui signale, dans les huit jours de leur découverte et par lettre recommandée, les faits ou difficultés juridiques, économiques, financières ou sociales qui menacent la continuité. Sans réponse en quinze jours, il doit réunir l’assemblée générale dans les quinze jours.'
+      cites: [/ma/loi/15-95/art_547, /ma/loi/15-95/art_546]
+    - title: {ar: 'الإنقاذ', fr: 'La sauvegarde'}
+      answer: {ar: 'قبل التوقف عن الدفع، تطلب المقاولة التي تعاني صعوبات لا تقدر على تجاوزها فتح مسطرة الإنقاذ.', fr: 'Avant la cessation des paiements, l’entreprise aux difficultés insurmontables demande l’ouverture de la sauvegarde.'}
+      body:
+        ar: 'يمكن أن تفتح مسطرة الإنقاذ بطلب من كل مقاولة، دون أن تكون في حالة توقف عن الدفع، تعاني من صعوبات ليس بمقدورها تجاوزها ومن شأنها أن تؤدي بها في أجل قريب إلى التوقف عن الدفع. ويودع رئيسها الطلب بكتابة ضبط المحكمة مبينا نوع الصعوبات، مرفقا بالوثائق المنصوص عليها في المادة 577.'
+        fr: 'Toute entreprise qui, sans être en cessation des paiements, rencontre des difficultés qu’elle ne peut surmonter et qui risquent de l’y conduire bientôt peut demander la sauvegarde. Son dirigeant dépose la demande au greffe en exposant les difficultés, avec les pièces de l’article 577.'
+      cites: [/ma/loi/15-95/art_561]
+      papers: checklists/stop-file
+    - title: {ar: 'التوقف عن الدفع', fr: 'La cessation des paiements'}
+      answer: {ar: 'عجز عن تسديد الديون المستحقة المطالب بها بما هو متوفر من أصول؛ ويجب طلب التسوية القضائية داخل 30 يوما.', fr: 'L’impossibilité de payer les dettes exigibles avec l’actif disponible ; le redressement doit être demandé dans les 30 jours.'}
+      body:
+        ar: 'تثبت حالة التوقف عن الدفع متى عجزت المقاولة عن تسديد ديونها المستحقة المطالب بأدائها بسبب عدم كفاية أصولها المتوفرة. ويجب على رئيس المقاولة أن يطلب فتح مسطرة التسوية القضائية في أجل أقصاه ثلاثون يوما من تاريخ التوقف عن الدفع، ويرفق الطلب بالقوائم التركيبية، وجرد الأموال، وقوائم المدينين والدائنين، وقائمة الأجراء، والنموذج 7 من السجل التجاري، ووضعية الموازنة للأشهر الثلاثة الأخيرة.'
+        fr: 'Il y a cessation des paiements quand l’entreprise ne peut payer ses dettes exigibles réclamées faute d’actif disponible suffisant. Le dirigeant doit demander le redressement judiciaire dans les trente jours de la cessation, avec les états de synthèse, l’inventaire des biens, les listes des débiteurs et des créanciers, la liste des salariés, le modèle 7 du RC et la trésorerie des trois derniers mois.'
+      cites: [/ma/loi/15-95/art_575, /ma/loi/15-95/art_576, /ma/loi/15-95/art_577]
+      delay: {days: 30, from: {ar: 'التوقف عن الدفع', fr: 'la cessation des paiements'}}
+    - title: {ar: 'إن تأخرت', fr: 'Si vous tardez'}
+      answer: {ar: 'إغفال طلب التسوية أو التصفية داخل 30 يوما من الأفعال التي يعددها القانون ضد المسيرين.', fr: 'Omettre de demander le redressement ou la liquidation dans les 30 jours fait partie des faits que la loi retient contre les dirigeants.'}
+      body:
+        ar: 'من الأفعال التي يرتب عليها القانون جزاءات في حق المسيرين: إغفال القيام بتقديم طلب فتح مسطرة التسوية أو التصفية القضائية داخل أجل ثلاثين يوما من تاريخ التوقف عن الدفع.'
+        fr: 'Parmi les faits que la loi sanctionne chez les dirigeants : avoir omis de demander l’ouverture du redressement ou de la liquidation dans les trente jours de la cessation des paiements.'
+      cites: [/ma/loi/15-95/art_747]
+  ends: {office: court, paper: {ar: 'حكم فتح المسطرة', fr: 'Le jugement d’ouverture'}, cites: [/ma/loi/15-95/art_576]}
+
+- key: shop-sale
+  title: {ar: 'بيع أصل تجاري', fr: 'La vente d’un fonds de commerce'}
+  lead:
+    ar: 'الأصل التجاري مال منقول معنوي يضم ما يخصص لممارسة نشاط تجاري. وبيعه بعقد مكتوب، يودع ثمنه لدى جهة مؤهلة، وينشر مرتين حتى يتعرض دائنو البائع.'
+    fr: 'Le fonds de commerce est un bien meuble incorporel qui réunit ce qui sert à une activité commerciale. Sa vente se fait par écrit, son prix est déposé chez un dépositaire habilité, et elle est publiée deux fois pour les oppositions des créanciers du vendeur.'
+  steps:
+    - title: {ar: 'العقد', fr: 'L’acte'}
+      answer: {ar: 'رسمي أو عرفي، فيه الثمن مفصلا، والرهون، والكراء، ومصدر الملكية؛ والثمن يودع لدى جهة مؤهلة.', fr: 'Authentique ou sous seing privé, avec le prix ventilé, les sûretés, le bail et l’origine de propriété ; le prix déposé chez un dépositaire habilité.'}
+      body:
+        ar: 'يتم بيع الأصل التجاري بعقد رسمي أو عرفي، ويودع ثمن البيع لدى جهة مؤهلة قانونا للاحتفاظ بالودائع. وينص العقد على اسم البائع وتاريخ التفويت وثمنه مع تمييز ثمن العناصر المعنوية والبضائع والمعدات، وحالة الامتيازات والرهون، والكراء وتاريخه ومدته ومبلغه واسم المكري، ومصدر ملكية الأصل.'
+        fr: 'Le fonds se vend par acte authentique ou sous seing privé, le prix étant déposé chez un dépositaire habilité. L’acte indique le vendeur, la date et le prix, ventilé entre éléments incorporels, marchandises et matériel, les privilèges et nantissements, le bail (date, durée, loyer, bailleur) et l’origine de propriété.'
+      cites: [/ma/loi/15-95/art_79, /ma/loi/15-95/art_81]
+    - title: {ar: 'الإيداع والنشر', fr: 'Le dépôt et la publication'}
+      answer: {ar: 'نسخة لدى كتابة ضبط المحكمة داخل 15 يوما، ومستخرج في السجل التجاري، ونشر في الجريدة الرسمية وجريدة إعلانات، ثم نشر ثان.', fr: 'Une copie au greffe dans les 15 jours, un extrait au RC, une publication au BO et dans un journal d’annonces, puis une seconde.'}
+      body:
+        ar: 'بعد التسجيل يودع العقد لدى كتابة ضبط المحكمة التي يستغل الأصل في دائرتها داخل خمسة عشر يوما، ويقيد مستخرج منه في السجل التجاري، وينشره كاتب الضبط في الجريدة الرسمية وفي جريدة مخول لها نشر الإعلانات القانونية على نفقة الأطراف، ويجدد النشر.'
+        fr: 'Après l’enregistrement, l’acte est déposé au greffe du tribunal du lieu d’exploitation dans les quinze jours, un extrait est inscrit au RC, et le greffier le publie au BO et dans un journal d’annonces légales aux frais des parties ; la publication est renouvelée.'
+      cites: [/ma/loi/15-95/art_83]
+      delay: {days: 15, from: {ar: 'تاريخ العقد', fr: 'la date de l’acte'}}
+    - title: {ar: 'تعرضات الدائنين', fr: 'Les oppositions des créanciers'}
+      answer: {ar: 'لدائني البائع 15 يوما بعد النشر الثاني ليتعرضوا على أداء الثمن؛ والمكري لا يتعرض من أجل الكراء.', fr: 'Les créanciers du vendeur ont 15 jours après la seconde publication pour faire opposition au paiement du prix ; le bailleur ne peut s’opposer pour les loyers.'}
+      body:
+        ar: 'يجوز لدائني البائع، سواء كان الدين حالا أم لا، أن يتعرضوا داخل خمسة عشر يوما بعد النشر الثاني على أداء الثمن، برسالة مضمونة إلى كتابة الضبط أو بإيداع التعرض بها مقابل وصل، مع بيان مبلغ الدين وأسبابه والموطن المختار، تحت طائلة البطلان. ولا يجوز للمكري أن يتعرض من أجل الأكرية الجارية أو المقبلة.'
+        fr: 'Les créanciers du vendeur, que la dette soit échue ou non, peuvent former opposition au paiement du prix dans les quinze jours de la seconde publication, par lettre recommandée au greffe ou dépôt contre reçu, en indiquant le montant, la cause et un domicile élu, à peine de nullité. Le bailleur ne peut s’opposer pour des loyers courants ou à échoir.'
+      cites: [/ma/loi/15-95/art_84]
+      delay: {days: 15, from: {ar: 'النشر الثاني', fr: 'la seconde publication'}}
+  ends: {office: court, paper: {ar: 'المستخرج المقيد في السجل التجاري', fr: 'L’extrait inscrit au RC'}, cites: [/ma/loi/15-95/art_83]}

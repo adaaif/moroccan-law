@@ -1,0 +1,18 @@
+# Domains never treated as throwaway, whatever the public lists say.
+# (Every provider in addresses.ONE_TLD is added on top of these.)
+hotmail.com
+hotmail.fr
+outlook.com
+outlook.fr
+live.com
+live.fr
+yahoo.com
+yahoo.fr
+msn.com
+aol.com
+gmx.com
+gmx.fr
+me.com
+mac.com
+mail.com
+email.com

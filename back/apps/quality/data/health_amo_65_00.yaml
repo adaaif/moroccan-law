@@ -1,0 +1,17 @@
+# Law 65.00, the basic medical coverage code (AMO), as Adala's consolidated PDF prints it, where the PDF's text layer
+# misreads it: a lam-alef turned around («إلجبارية» for «لإجبارية», «إلرجاع» for «لإرجاع»), a ligature turned
+# («ثالثة» for «ثلاثة»), a word cut in two («ولل مستفيد») or turned into two words («بلا علاجات», «ولا بالغين»).
+# Each was read against the page's image on 27 Oct 2026 (the health review, S4): the 13 articles the health
+# topic cites (1, 5, 9, 12, 15, 16, 29, 30, 32, 120-bis, 129, 131, 142); 9, 12, 15, 32, 120-bis, 129, 131 and 142 read
+# as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_65_00.yaml`; a reload of the text applies them again.
+text: /ma/loi/65-00
+document: sources/adala/amo_65_00.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [1], wrong: "بلا علاجات", right: "بالعلاجات"}   # turned lam-alef, p. 6
+  - {arts: [5], wrong: "إلجبارية", right: "لإجبارية"}   # turned lam-alef, p. 8
+  - {arts: [5], wrong: "ولا بالغين", right: "والبالغين"}   # turned lam-alef, p. 8
+  - {arts: [16, 29], wrong: "إلرجاع", right: "لإرجاع"}   # turned lam-alef, pp. 14, 18
+  - {arts: [16], wrong: "ثالثة أشهر", right: "ثلاثة أشهر"}   # turned ligature, p. 14
+  - {arts: [30], wrong: "ولل مستفيد", right: "وللمستفيد"}   # word cut in two, p. 18

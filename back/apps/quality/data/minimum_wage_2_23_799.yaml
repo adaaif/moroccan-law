@@ -1,0 +1,8 @@
+# Decree 2.23.799 on the minimum wage, where the OCR read Latin letters into an Arabic word and the page's second
+# reading had no witness. The word BO 7240 (19 Oct 2023) prints, checked against the page image (p. 8037) on 20 Oct
+# 2026 (T3 of the work plan): the pay tool and the numbers page cite this decree.
+text: /ma/decret/2-23-799
+document: BO 7240 (sgg_bo), p. 8037
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: دirhماً, right: درهما}

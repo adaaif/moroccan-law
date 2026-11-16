@@ -1,0 +1,389 @@
+# The health topic's page (the health review, S6–S11, 27 Oct 2026: every picture readable by Moroccans). One
+# question first, since most answers depend on the reader's regime: the AMO law 65.00 (Adala, consolidated to 29 Jan
+# 2026), the AMO for the self-employed 98.15 (SGG), AMO Achamil 60.22, AMO
+# Tadamon's decree 2.22.797, law 54.23 (CNOPS to the CNSS on 1 Feb 2027). Then the doors in the order of a care, each
+# led by the label cut from a box of medicine (`marks: vignette`) with the one figure the law sets for it, or its
+# pictogram. Written from the texts as the site holds them on 27 Oct 2026; nothing here reaches a reader before a person
+# checks it (approve_topic).
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+marks: vignette
+stages:
+  - {key: doctor, title: {ar: عند الطبيب والصيدلية, fr: 'Chez le médecin et à la pharmacie'}, doors: [rights, record, medicines, sick]}
+  - {key: hospital, title: {ar: فالسبيطار ولا فالمصحة, fr: 'À l’hôpital ou en clinique'}, doors: [emergency, cheque, hospital, birth]}
+  - {key: refund, title: {ar: 'من بعد: التعويض', fr: 'Après : le remboursement'}, doors: [refund, refused, long-illness, family-cover]}
+  - {key: cover, title: {ar: التغطية ديالك, fr: 'Votre couverture'}, doors: [tadamon, tadamon-lost, cnops2027, self, achamil, students]}
+  - {key: wrong, title: {ar: إلا ما تحلاتش, fr: 'Si ça ne s’arrange pas'}, doors: [error]}
+  - {key: life, title: {ar: الإعاقة، التبرع، الوفاة, fr: 'Handicap, don, décès'}, doors: [disability, donation, death]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [not-declared, work-accident, maternity, direct-support], links: true}
+
+# The band (S10): the moments the law matters most at a hospital's or a clinic's door. Its acts are the emergency
+# journey's first answers; a number shows only with the official page that gives it (C2 «sourced»): the SAMU's 141 from
+# the Health Ministry's page of its launch, kept with its hash under data/sources/health/.
+urgent:
+  title: {ar: فالمستعجلات ولا فالمصحة؟, fr: 'Aux urgences ou en clinique ?'}
+  lead: {ar: 'شنو كيقول القانون فالباب', fr: 'Ce que dit la loi à la porte'}
+  to: journeys/emergency
+  acts: {journey: emergency, steps: [0, 1, 2]}
+  numbers:
+    - number: '141'
+      name: {ar: المساعدة الطبية المستعجلة (SAMU), fr: 'Aide médicale urgente (SAMU)'}
+      source:
+        name: {ar: 'وزارة الصحة، كلمة إطلاق الرقم الوطني 141', fr: 'Ministère de la Santé, allocution de lancement du 141'}
+        url: https://www.sante.gov.ma/Ministre/Documents/allocution%20SAMU%2019%20mars.pdf
+        file: health/samu_141_sante_gov_ma.pdf
+        sha256: '5b42fe6bbdb1504bd1c234881124b8b0c21b3389d49a9576d7183ebbb1ea2774'
+
+learn: [pages/rights, journeys/refund, pages/regimes, journeys/clinic, pages/beliefs]
+
+# What people believe, and what the law says (S16), each card leading to the page that answers it.
+beliefs:
+  - claim: {ar: المصحة عندها الحق تطلب شيك ضمان, fr: 'La clinique peut exiger un chèque de garantie'}
+    truth: {ar: 'إلا كان عندك التحمل، ما عندهاش الحق: غير الجزء اللي باقي عليك، وبوصل.', fr: 'Avec la prise en charge, non : seulement la part qui reste à votre charge, contre reçu.'}
+    to: pages/beliefs
+  - claim: {ar: الكنوبس تحيد, fr: 'La CNOPS est supprimée'}
+    truth: {ar: 'ماشي قبل فاتح فبراير 2027، ومن بعد التغطية كتكمل عند الضمان الاجتماعي.', fr: 'Pas avant le 1er février 2027 ; ensuite la couverture continue à la CNSS.'}
+    to: pages/beliefs
+  - claim: {ar: راميد مازال خدام, fr: 'Le RAMED existe toujours'}
+    truth: {ar: 'ولى أمو تضامن: اللي كانو فراميد دازو ليه بلا طلب، والدولة كتخلص الاشتراك.', fr: 'Il est devenu l’AMO Tadamon : ses bénéficiaires y sont passés d’office, l’État paie la cotisation.'}
+    to: pages/beliefs
+  - claim: {ar: الطبيب ما يقدرش يقول ليا الثمن قبل, fr: 'Le médecin ne peut pas dire le prix avant'}
+    truth: {ar: 'خاصو يقول ليك التشخيص والمخاطر وخطة العلاج وتكلفتها، بكلام مفهوم.', fr: 'Il doit vous dire le diagnostic, les risques, le plan de soins et son coût, en mots clairs.'}
+    to: pages/beliefs
+  - claim: {ar: ورقة العلاج نصيفطها فاش ما بغيت, fr: 'J’envoie la feuille de soins quand je veux'}
+    truth: {ar: 'داخل شهرين من أول فحص، وإلا كيضيع الحق فالتعويض، إلا فحالة قوة قاهرة.', fr: 'Dans les deux mois du premier acte, sinon le droit au remboursement est perdu, sauf force majeure.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in: what people meet most first (the refund, the clinic, the rights, AMO Tadamon),
+# then the long illness and the regimes, then the end of life and the changes.
+waves:
+  1: [journeys/emergency, journeys/refund, journeys/clinic, pages/rights, pages/regimes, pages/tadamon, pages/beliefs, tools/refund, tools/clock]
+  2: [journeys/refused, journeys/long-illness, journeys/tadamon-lost, journeys/record, journeys/sick, pages/hospital, pages/medicines, pages/birth, checklists/refund-file, tools/illness]
+  3: [journeys/error, journeys/death, pages/donation, pages/disability, reform/cnops-2027, reform/medicine-prices-2026, reform/pharmacy-2026, reform/lf-2027, rates/refund-cnss, rates/refund-cnops]
+
+# The one question (S7): «شنو التغطية ديالك؟». Each answer names its law and who manages it, three figures with their
+# articles, and leads with its own door; it is kept on the phone.
+profile:
+  question: {ar: شنو التغطية ديالك؟, fr: 'Quelle est votre couverture ?'}
+  options:
+    - key: private
+      first: refund
+      main: true
+      label: {ar: خدام فالقطاع الخاص, fr: Salarié du privé}
+      law: {ar: 'التأمين الإجباري الأساسي عن المرض (القانون 65.00) عند الصندوق الوطني للضمان الاجتماعي: 70% من التعريفة المرجعية، و90% للمرض الطويل فالمستشفى العمومي (المرسوم 2.05.737).', fr: 'L’AMO (loi 65.00) à la CNSS : 70 % du tarif national de référence, 90 % pour une longue maladie soignée à l’hôpital public (décret 2.05.737).'}
+      facts:
+        - {value: '70%', label: {ar: 'من التعريفة المرجعية الوطنية، و90% للمرض الطويل فالعمومي', fr: 'du tarif national de référence ; 90 % pour une longue maladie au public'}, cites: [/ma/decret/2-05-737/art_2]}
+        - {value: {ar: '2 شهور', fr: '2 mois'}, label: {ar: 'باش تدفع ورقة العلاج من أول فحص، وإلا كيضيع الحق', fr: 'pour déposer la feuille de soins dès le premier acte, sinon le droit est perdu'}, cites: [/ma/decret/2-05-733/art_12]}
+        - {value: {ar: '21 · 26', fr: '21 · 26'}, label: {ar: 'عام: ولادك مغطيين حتى 21، وحتى 26 إلا كيقراو قراية عليا؛ 30 من فبراير 2027', fr: 'ans : vos enfants couverts jusqu’à 21 ans, 26 en études supérieures ; 30 dès février 2027'}, cites: [/ma/loi/65-00/art_5, /ma/loi/116-12/art_29, /ma/loi/54-23/art_1]}
+    - key: cnops
+      first: cnops2027
+      main: true
+      label: {ar: موظف (الكنوبس), fr: Fonctionnaire (CNOPS)}
+      law: {ar: 'التأمين الإجباري الأساسي عن المرض (القانون 65.00) عند الصندوق الوطني لمنظمات الاحتياط الاجتماعي حتى 31 يناير 2027، ومن فاتح فبراير 2027 عند الصندوق الوطني للضمان الاجتماعي (القانون 54.23).', fr: 'L’AMO (loi 65.00) à la CNOPS jusqu’au 31 janvier 2027, à la CNSS dès le 1er février 2027 (loi 54.23).'}
+      facts:
+        - {value: {ar: '1 فبراير', fr: '1er février'}, label: {ar: '2027: التأمين ديالك كيدوز للضمان الاجتماعي', fr: '2027 : votre assurance passe à la CNSS'}, cites: [/ma/loi/54-23/art_19, /ma/loi/54-23/art_6]}
+        - {value: '80%', label: {ar: 'فالعلاج الخارجي، و90% فالاستشفاء، و100% فالمستشفى العمومي', fr: 'en ambulatoire, 90 % à l’hôpital, 100 % à l’hôpital public'}, cites: [/ma/decret/2-05-736/art_1]}
+        - {value: '10%', label: {ar: 'أقصى ما كيبقى عليك فالمرض الطويل، و0 فالمكلف', fr: 'au plus à votre charge pour une longue maladie, 0 pour une coûteuse'}, cites: [/ma/decret/2-05-736/art_2]}
+    - key: tadamon
+      first: tadamon
+      main: true
+      label: {ar: أمو تضامن (كان عندي راميد), fr: 'AMO Tadamon (ex-RAMED)'}
+      law: {ar: 'التأمين اللي كتخلص الدولة الاشتراك ديالو على اللي ما يقدرش (القانون 65.00، الكتاب الثالث)، والضمان الاجتماعي هو اللي كيدبر (المرسوم 2.22.797).', fr: 'L’assurance dont l’État paie la cotisation pour qui ne peut pas (loi 65.00, livre III), gérée par la CNSS (décret 2.22.797).'}
+      facts:
+        - {value: {ar: 'الطلب', fr: 'La demande'}, label: {ar: 'عند السلطة المحلية بالاستمارة، ولا فالموقع', fr: 'à l’autorité locale par le formulaire, ou en ligne'}, cites: [/ma/decret/2-22-797/art_3]}
+        - {value: {ar: 'العمومي', fr: 'Le public'}, label: {ar: 'فالسبيطار العمومي: التحمل مباشر، والدولة كتخلص الباقي', fr: 'à l’hôpital public : prise en charge directe, l’État paie le reste'}, cites: [/ma/loi/65-00/art_120-bis]}
+        - {value: '9,3264284', label: {ar: 'العتبة ديال المؤشر؛ كتراجع بشكل دوري', fr: 'le seuil de l’indice ; vérifié périodiquement'}, cites: [/ma/decret/2-22-923/art_1, /ma/decret/2-22-797/art_5]}
+    - key: self
+      first: self
+      main: true
+      label: {ar: خدام بحسابي, fr: Indépendant}
+      law: {ar: 'التأمين الخاص بالمهنيين والعمال المستقلين (القانون 98.15)، عند الضمان الاجتماعي.', fr: 'L’AMO des professionnels et travailleurs indépendants (loi 98.15), à la CNSS.'}
+      facts:
+        - {value: {ar: '3 شهور', fr: '3 mois'}, label: {ar: 'مدة التدريب قبل التعويض', fr: 'de stage avant le remboursement'}, cites: [/ma/loi/98-15/art_13]}
+        - {value: {ar: '30 يوم', fr: '30 jours'}, label: {ar: 'باش تصرح بكل تغيير فالسكنى ولا العائلة', fr: 'pour déclarer un changement d’adresse ou de famille'}, cites: [/ma/loi/98-15/art_9]}
+        - {value: {ar: '6 شهور', fr: '6 mois'}, label: {ar: 'باش تطعن فالتسجيل من نهار الإشعار', fr: 'pour contester l’immatriculation dès l’avis'}, cites: [/ma/loi/98-15/art_8]}
+    - key: achamil
+      first: achamil
+      label: {ar: كنخلص التأمين بوحدي (أمو الشامل), fr: 'Je cotise seul (AMO Achamil)'}
+      law: {ar: 'التأمين الخاص باللي يقدر يخلص وما خدامش (القانون 60.22)، عند الضمان الاجتماعي.', fr: 'L’AMO de qui peut cotiser sans exercer d’activité (loi 60.22), à la CNSS.'}
+      facts:
+        - {value: {ar: '144 درهم', fr: '144 DH'}, label: {ar: 'أقل اشتراك فالشهر، حتى 1.164 حسب المؤشر', fr: 'la plus petite cotisation mensuelle, jusqu’à 1 164 selon l’indice'}, cites: [/ma/decret/2-23-690/art_6]}
+        - {value: {ar: '3 شهور', fr: '3 mois'}, label: {ar: 'مدة التدريب قبل التعويض', fr: 'de stage avant le remboursement'}, cites: [/ma/loi/60-22/art_7]}
+        - {value: {ar: 'خلّص قبل', fr: 'Payer d’abord'}, label: {ar: 'الخدمات مرتبطة بأداء الاشتراك', fr: 'les prestations dépendent des cotisations payées'}, cites: [/ma/loi/60-22/art_6]}
+    - key: student
+      first: students
+      label: {ar: طالب, fr: Étudiant}
+      law: {ar: 'حتى 31 يناير 2027 تأمين الطلبة (القانون 116.12)؛ من فاتح فبراير 2027 كيتنسخ، واللي كانت الدولة كتخلص عليهم كيدوزو لأمو تضامن (القانون 54.23).', fr: 'Jusqu’au 31 janvier 2027 l’AMO des étudiants (loi 116.12) ; abrogée le 1er février 2027, ceux dont l’État payait la cotisation passent à l’AMO Tadamon (loi 54.23).'}
+      facts:
+        - {value: {ar: '26 عام', fr: '26 ans'}, label: {ar: 'مغطي مع الوالدين إلا كتقرا قراية عليا؛ 30 من فبراير 2027', fr: 'couvert avec vos parents en études supérieures ; 30 ans dès février 2027'}, cites: [/ma/loi/116-12/art_29, /ma/loi/54-23/art_1]}
+        - {value: {ar: '1 فبراير', fr: '1er février'}, label: {ar: '2027: تأمين الطلبة كيتنسخ', fr: '2027 : l’AMO des étudiants est abrogée'}, cites: [/ma/loi/54-23/art_13, /ma/loi/54-23/art_14]}
+        - {value: {ar: 'الأجانب', fr: 'Étrangers'}, label: {ar: 'الطلبة الأجانب مغطيين حتى هوما', fr: 'les étudiants étrangers sont couverts aussi'}, cites: [/ma/loi/54-23/art_15]}
+    - key: unknown
+      first: tadamon
+      label: {ar: ما عارفش ولا ما عنديش, fr: 'Je ne sais pas / aucune'}
+      law: {ar: 'القانون 65.00 كيبغي التغطية للجميع: بالمساهمة للي يقدر، وبالتضامن للي ما يقدرش (المادة 1).', fr: 'La loi 65.00 veut couvrir tout le monde : par la cotisation qui peut, par la solidarité qui ne peut pas (art. 1).'}
+      facts:
+        - {value: {ar: 'خدام؟', fr: 'Salarié ?'}, label: {ar: 'المشغل خاصو يسجلك، وإلا غرامة 1.000 درهم على كل أجير', fr: 'l’employeur doit vous immatriculer, sinon 1 000 DH d’amende par salarié'}, cites: [/ma/loi/65-00/art_131]}
+        - {value: {ar: 'المؤشر', fr: 'L’indice'}, label: {ar: 'تحت العتبة؟ أمو تضامن', fr: 'sous le seuil ? l’AMO Tadamon'}, cites: [/ma/decret/2-22-797/art_1]}
+        - {value: {ar: 'فوقها؟', fr: 'Au-dessus ?'}, label: {ar: 'أمو الشامل باشتراك حسب المؤشر', fr: 'l’AMO Achamil, cotisation selon l’indice'}, cites: [/ma/loi/60-22/art_3]}
+      to: pages/regimes
+
+events:
+  # At the doctor's and the pharmacy.
+  - key: rights
+    icon: steth
+    words: [الطبيب ما فهمنيش, ما شرحش ليا, التشخيص, الموافقة, نرفض العلاج, السر المهني, سر طبي, secret médical, consentement, information du patient, droits du patient, حقوق المريض, droits des patients, نرفض العملية, نرفض العملية, موافقة الوالدين, الثمن قبل العملية, يقول ليا الثمن, certificat de complaisance, complaisance, راميد ولى أمو تضامن, فقدت راميد, ما خدامش ويقدر يخلص, التأمين للي ما خدامش, خدام بحسابي, travailleurs indépendants, بدلت السكنى, نصرح للضمان]
+    means:
+      موافقة الشخص المراد فحصه أو علاجه: [الموافقة, نرفض العلاج, consentement, نرفض العملية, موافقة الوالدين]
+      شهادة مجاملة: [certificat de complaisance, complaisance]
+      تكلفتها: [الثمن قبل العملية, يقول ليا الثمن]
+      السر المهني: [السر المهني, سر طبي, secret médical]
+      يخبر المريض إخبارا صادقا: [الطبيب ما فهمنيش, ما شرحش ليا, التشخيص, information du patient]
+    title: {ar: الطبيب ما فهمنيش شنو عندي ولا شحال غادي يكلف, fr: 'Le médecin ne m’a pas expliqué ni dit le coût'}
+    lead: {ar: 'التشخيص، المخاطر، وخطة العلاج بثمنها، بكلام مفهوم', fr: 'Le diagnostic, les risques, le plan de soins et son coût, en mots clairs'}
+    to: pages/rights
+  - key: record
+    icon: papers
+    words: [الملف الطبي, ملفي الطبي, الملف ديالي فالسبيطار, dossier médical, mon dossier médical, compte rendu, نسخة من الملف, بدلت الطبيب, طبيب آخر]
+    means:
+      الملف الطبي الكامل للمريض: [بدلت الطبيب, طبيب آخر]
+      الملف الطبي: [الملف الطبي, ملفي الطبي, الملف ديالي فالسبيطار, dossier médical, mon dossier médical, نسخة من الملف]
+    title: {ar: بغيت الملف الطبي ديالي, fr: 'Je veux mon dossier médical'}
+    lead: {ar: 'تشوفو وتاخد نسخة على حسابك، ولا يمشي للطبيب اللي ختاريتي', fr: 'Le consulter, en avoir copie à vos frais, ou l’envoyer au médecin de votre choix'}
+    to: journeys/record
+  - key: medicines
+    icon: pill
+    words: [ثمن الدوا, ثمن الدواء, الدوا غالي, الصيدلية ديال الحراسة, صيدلية الحراسة, pharmacie de garde, prix des médicaments, prix du médicament, الجنيريك, générique, الوصفة, ordonnance, prix public des médicaments, prix public]
+    means:
+      سعر بيع الأدوية للعموم: [ثمن الدوا, ثمن الدواء, الدوا غالي, prix des médicaments, prix du médicament, prix public des médicaments, prix public]
+      الحراسة: [الصيدلية ديال الحراسة, صيدلية الحراسة, pharmacie de garde]
+      الوصفة: [الوصفة, ordonnance]
+    title: {ar: الدوا وثمنو والصيدلية ديال الحراسة, fr: 'Le médicament, son prix, la pharmacie de garde'}
+    lead: {ar: 'الثمن العمومي هو المرجع، والأثمنة الجديدة من دجنبر 2026', fr: 'Le prix public est la référence ; de nouveaux prix dès décembre 2026'}
+    to: pages/medicines
+  - key: sick
+    mark: {value: '48', unit: {ar: ساعة, fr: heures}}
+    words: [مرضت وما مشيتش للخدمة, شهادة طبية للخدمة, شهادة طبية, رخصة المرض, كونجي مالادي, arrêt maladie, certificat médical, absence maladie]
+    means:
+      تعذر عليه الالتحاق بشغله بسبب مرض: [مرضت وما مشيتش للخدمة, رخصة المرض, كونجي مالادي, arrêt maladie, absence maladie]
+      شهادة طبية تبرر غيابه: [شهادة طبية للخدمة, شهادة طبية, certificat médical]
+    title: {ar: مرضت وما مشيتش للخدمة, fr: 'Malade, je ne suis pas allé travailler'}
+    lead: {ar: 'خبّر المشغل داخل 48 ساعة، والشهادة إلا فات الغياب 4 أيام', fr: 'Prévenir l’employeur sous 48 heures, le certificat au-delà de 4 jours'}
+    to: journeys/sick
+  # At the hospital or the clinic.
+  - key: emergency
+    icon: medical
+    words: [المستعجلات, رفضو يداويني, ما بغاوش يدخلوني, السبيطار رفض, urgences, refus de soins, non-assistance, خطر, حالة مستعجلة, لاسامي, samu, '141']
+    means:
+      حالة خطر وشيك: [المستعجلات, رفضو يداويني, ما بغاوش يدخلوني, السبيطار رفض, urgences, refus de soins, حالة مستعجلة]
+      مساعدة لشخص في خطر: [non-assistance, خطر]
+    title: {ar: جيت للمستعجلات ولا رفضو يداويوني, fr: 'Aux urgences, ou on refuse de me soigner'}
+    lead: {ar: 'الطبيب خاصو يعاون اللي فخطر، والسبيطار العمومي كيقبل المستعجل', fr: 'Le médecin doit secourir qui est en danger ; l’hôpital public admet l’urgence'}
+    to: journeys/emergency
+  - key: cheque
+    mark: {value: '0', unit: {ar: شيك, fr: chèque}}
+    words: [شيك ضمان, طلبو مني شيك, المصحة طلبات شيك, الكلينيك طلبات شيك, chèque de garantie, chèque de caution, clinique chèque, ضمانة, avance clinique, شيك, الكلينيك, chek, كلينيك بغات شيك]
+    means:
+      وصل أداء: [ما بغاتش تعطيني وصل, ما عطاتنيش وصل, وصل, reçu clinique]
+      ضمانة نقدية أو بواسطة شيك: [شيك ضمان, طلبو مني شيك, المصحة طلبات شيك, الكلينيك طلبات شيك, chèque de garantie, chèque de caution, clinique chèque, ضمانة, شيك, الكلينيك, chek, كلينيك بغات شيك]
+    title: {ar: المصحة طلبات شيك ضمان, fr: 'La clinique exige un chèque de garantie'}
+    lead: {ar: 'بالتحمل، ما عندهاش الحق: غير الباقي عليك، وبوصل', fr: 'Avec la prise en charge, non : seulement votre part, contre reçu'}
+    to: journeys/clinic
+  - key: hospital
+    icon: hospital
+    words: [السبيطار العمومي, المستشفى العمومي, شحال كنخلص فالسبيطار, فابور فالسبيطار, مجانا, hôpital public, frais d'hospitalisation, gratuité, شكون معفي, خلاص السبيطار, معفي من الخلاص]
+    means:
+      يعفى من دفع مجموع أو بعض التعاريف: [شحال كنخلص فالسبيطار, فابور فالسبيطار, مجانا, frais d'hospitalisation, gratuité, شكون معفي, خلاص السبيطار, معفي من الخلاص]
+    title: {ar: 'السبيطار العمومي: شحال كنخلص؟', fr: 'L’hôpital public : combien je paie ?'}
+    lead: {ar: 'حسب التغطية ديالك، وشكون معفي بالقانون', fr: 'Selon votre couverture, et qui est exonéré par la loi'}
+    to: pages/hospital
+  - key: birth
+    mark: {value: '6', unit: {ar: شهور, fr: mois}}
+    words: [غادي نولد, الحمل, الولادة, تصريح بالحمل, grossesse, accouchement, déclaration de grossesse]
+    means:
+      حالات الحمل التي تمت معاينتها طبيا: [الحمل, تصريح بالحمل, grossesse, déclaration de grossesse]
+    title: {ar: 'غادي نولد: التأمين والسبيطار', fr: 'Je vais accoucher : l’assurance et l’hôpital'}
+    lead: {ar: 'صرحي بالحمل 6 شهور قبل الولادة على الأقل', fr: 'Déclarer la grossesse au moins 6 mois avant l’accouchement'}
+    to: pages/birth
+  # After: the refund.
+  - key: refund
+    mark: {value: '2', unit: {ar: شهور, fr: mois}}
+    words: [ورقة العلاج, ورقة العلاجات, شحال كيرجع الكنوس, كيرجع الكنوس فالدوا, شحال كيرجعو فالدوا, لافوي, feuille de soins, remboursement des soins, remboursement médicaments, تعويض الدوا, التعويض عن الدوا, التعويض ديال الدوا, التعويض على الدوا, التعويض ديال الكنوس, التعويض ديال الضمان, التعويض ديال cnss, التعويض عن العلاج, remboursement amo, remboursement cnss, délai de remboursement, فوقاش يرجعو ليا, ملف المرض, dossier maladie, الفينييت, vignette, code barre, أجل إرجاع المصاريف, إرجاع المصاريف الطبية, lfeuille, فوقاش يرجعو فلوسي]
+    means:
+      ورقة العلاجات: [ورقة العلاج, ورقة العلاجات, لافوي, feuille de soins, ملف المرض, dossier maladie]
+      إرجاع مصاريف خدمات العلاج: [remboursement des soins, remboursement médicaments, تعويض الدوا, التعويض عن الدوا, التعويض ديال الدوا, التعويض على الدوا, التعويض ديال الكنوس, التعويض ديال الضمان, التعويض ديال cnss, التعويض عن العلاج, remboursement amo, remboursement cnss, délai de remboursement, فوقاش يرجعو ليا, أجل إرجاع المصاريف, إرجاع المصاريف الطبية, lfeuille, فوقاش يرجعو فلوسي]
+    title: {ar: 'ورقة العلاج: فوقاش ندفعها وفوقاش يرجعو ليا فلوسي؟', fr: 'La feuille de soins : quand la déposer, quand suis-je remboursé ?'}
+    lead: {ar: 'داخل شهرين، والتعويض فـ90 يوم على الأكثر', fr: 'Dans les deux mois ; remboursement sous 90 jours au plus'}
+    to: journeys/refund
+  - key: refused
+    mark: {value: '1', unit: {ar: عام, fr: an}}
+    words: [رفضو ليا التعويض, رفضو ليا الملف, الملف ديال التعويض, رفضو الملف, تعطل عليا التعويض, نقصو ليا التعويض, المراقبة الطبية, طبيب المراقبة, refus de remboursement, contrôle médical, recours anam]
+    means:
+      الطعن في قرار رفض طلب إرجاع المصاريف: [رفضو ليا التعويض, رفضو الملف, نقصو ليا التعويض, refus de remboursement]
+      المراقبة الطبية: [المراقبة الطبية, طبيب المراقبة, contrôle médical]
+    title: {ar: رفضو ولا نقصو ليا التعويض, fr: 'Mon remboursement est refusé ou réduit'}
+    lead: {ar: 'عام باش تطعن، والطبيب الخبير عند الوكالة', fr: 'Un an pour contester, l’expert de l’ANAM'}
+    to: journeys/refused
+  - key: long-illness
+    icon: heart
+    words: [مرض مزمن, مرض طويل, الأمراض المزمنة, التكفل الكامل, التكفل 100, ALD, ALC, maladie chronique, longue durée, السرطان, cancer, الدياليز, dialyse, السكري, diabète, ticket modérateur, exonération, maladie longue]
+    means:
+      مرض طويل الأمد: [مرض مزمن, مرض طويل, الأمراض المزمنة, التكفل الكامل, ALD, maladie chronique, longue durée, ticket modérateur, exonération, maladie longue]
+      الأمراض الخطيرة: [السرطان, cancer, الدياليز, dialyse, السكري, diabète, ALC]
+    title: {ar: عندي مرض مزمن ولا مكلف, fr: 'J’ai une maladie chronique ou coûteuse'}
+    lead: {ar: 'الإعفاء من الجزء اللي باقي عليك، 6 شهور قابلة للتجديد', fr: 'L’exonération de votre part, six mois renouvelables'}
+    to: journeys/long-illness
+  - key: family-cover
+    mark: {value: '21·26', unit: {ar: عام, fr: ans}}
+    words: [ولادي مغطيين, مراتي مغطية, ذوي الحقوق, ayants droit, enfants couverts, حتى لشحال الولد مغطي, ذوو حقوق المؤمن, ذوي حقوق]
+    means:
+      أفراد عائلته الموجودين تحت كفالته: [ولادي مغطيين, مراتي مغطية, ذوي الحقوق, ayants droit, enfants couverts, ذوو حقوق المؤمن, ذوي حقوق]
+    title: {ar: شكون مغطي معايا؟, fr: 'Qui est couvert avec moi ?'}
+    lead: {ar: 'الزوج ولا الزوجة، والولاد حتى 21، وحتى 26 إلا كيقراو قراية عليا', fr: 'Le conjoint, les enfants jusqu’à 21 ans, 26 en études supérieures'}
+    to: pages/regimes
+  # Your coverage.
+  - key: tadamon
+    icon: card
+    words: [أمو تضامن, amo tadamon, راميد, ramed, تضامن, بطاقة راميد, السجل الاجتماعي, rsu, المؤشر, غير القادرين]
+    means:
+      غير القادرين على تحمل واجبات الاشتراك: [أمو تضامن, amo tadamon, راميد, ramed, تضامن, بطاقة راميد]
+      منظومة استهداف المستفيدين: [السجل الاجتماعي, rsu, المؤشر]
+    title: {ar: بغيت أمو تضامن, fr: 'Je veux l’AMO Tadamon'}
+    lead: {ar: 'الطلب، والسبيطار العمومي، والمؤشر', fr: 'La demande, l’hôpital public, l’indice'}
+    to: pages/tadamon
+    for: [tadamon, unknown, student]
+  - key: tadamon-lost
+    icon: back
+    words: [حيدوني من أمو تضامن, توقفات أمو تضامن, تحيد ليا التضامن, فقدت راميد, طلع ليا المؤشر, amo tadamon suspendue, perdu ramed]
+    means:
+      لم يعودوا يستوفون هذه العتبة: [حيدوني من أمو تضامن, توقفات أمو تضامن, تحيد ليا التضامن, فقدت راميد, طلع ليا المؤشر]
+    title: {ar: حيدوني من أمو تضامن, fr: 'On m’a retiré l’AMO Tadamon'}
+    lead: {ar: 'علاش كتوقف، والمرض الخطير، وفين تمشي من بعد', fr: 'Pourquoi elle s’arrête, la maladie grave, où aller ensuite'}
+    to: journeys/tadamon-lost
+    for: [tadamon, unknown]
+  - key: cnops2027
+    mark: {value: '2027', unit: {ar: فبراير, fr: février}}
+    words: [الكنوبس, cnops, الموظفين التغطية, الكنوبس غادي تحيد, fusion cnops cnss, التعاضدية, mutuelle fonctionnaire, دمج الكنوبس, الكنوبس فالضمان الاجتماعي]
+    means:
+      الصندوق الوطني لمنظمات الاحتياط الاجتماعي: [الكنوبس, cnops, الكنوبس غادي تحيد, fusion cnops cnss, دمج الكنوبس, الكنوبس فالضمان الاجتماعي]
+    title: {ar: 'موظف: شنو غادي يتبدل فـ2027؟', fr: 'Fonctionnaire : qu’est-ce qui change en 2027 ?'}
+    lead: {ar: 'من فاتح فبراير 2027، الضمان الاجتماعي هو اللي غادي يدبر', fr: 'Dès le 1er février 2027, la CNSS gère votre assurance'}
+    to: reform/cnops-2027
+    for: [cnops]
+  - key: self
+    mark: {value: '3', unit: {ar: شهور, fr: mois}}
+    words: [خدام بحسابي التغطية, المهنيين المستقلين, tns, أمو المهنيين, amo indépendants, auto-entrepreneur amo, الفلاح, التاجر التغطية]
+    means:
+      المهنيين والعمال المستقلين: [خدام بحسابي التغطية, المهنيين المستقلين, tns, أمو المهنيين, amo indépendants, خدام بحسابي, travailleurs indépendants, بدلت السكنى, نصرح للضمان]
+    title: {ar: 'خدام بحسابي: التغطية ديالي', fr: 'Indépendant : ma couverture'}
+    lead: {ar: '3 شهور ديال التدريب، والتصريح بالتغيير داخل 30 يوم', fr: 'Trois mois de stage, les changements déclarés sous 30 jours'}
+    to: journeys/self
+    for: [self]
+  - key: achamil
+    mark: {value: '144', unit: {ar: درهم, fr: DH}}
+    words: [أمو الشامل, amo achamil, نخلص التأمين بوحدي, ما خدامش وبغيت التغطية, القادرين على تحمل واجبات الاشتراك]
+    means:
+      القادرين على تحمل واجبات الاشتراك الذين لا يزاولون أي نشاط: [أمو الشامل, amo achamil, نخلص التأمين بوحدي, ما خدامش وبغيت التغطية, ما خدامش ويقدر يخلص, التأمين للي ما خدامش]
+    title: {ar: 'كنخلص التأمين بوحدي: أمو الشامل', fr: 'Je cotise seul : l’AMO Achamil'}
+    lead: {ar: 'من 144 حتى 1.164 درهم فالشهر حسب المؤشر', fr: 'De 144 à 1 164 DH par mois selon l’indice'}
+    to: pages/regimes
+    for: [achamil, unknown]
+  - key: students
+    icon: papers
+    words: [تأمين الطلبة, التغطية ديال الطلبة, amo étudiants, طالب مغطي, étudiant couverture, ولدي طالب, طالب مغطي]
+    means:
+      نظام التأمين الإجباري الأساسي عن المرض الخاص بالطلبة: [تأمين الطلبة, التغطية ديال الطلبة, amo étudiants, ولدي طالب, طالب مغطي]
+    title: {ar: 'طالب: التغطية ديالي', fr: 'Étudiant : ma couverture'}
+    lead: {ar: 'مع الوالدين حتى 26 عام (30 من فبراير 2027)، وتأمين الطلبة حتى فبراير 2027', fr: 'Avec vos parents jusqu’à 26 ans (30 dès février 2027) ; l’AMO étudiante jusqu’en février 2027'}
+    to: pages/regimes
+    for: [student]
+  # If it goes wrong.
+  - key: error
+    mark: {value: '5', unit: {ar: سنين, fr: ans}}
+    words: [غلط طبي, خطأ طبي, الطبيب غلط, غلط فالعملية, erreur médicale, faute médicale, شكاية على طبيب, plainte médecin, هيئة الأطباء, ordre des médecins, فين نشكي, نشكي على الطبيب, غلط طبي فين نشكي]
+    means:
+      خطإ شخصي: [غلط طبي, خطأ طبي, الطبيب غلط, غلط فالعملية, erreur médicale, faute médicale]
+      الشكاية: [شكاية على طبيب, plainte médecin, نشكي على الطبيب, غلط طبي فين نشكي]
+    title: {ar: غلط طبي, fr: 'Une erreur médicale'}
+    lead: {ar: 'الطرق اللي كيعطي القانون، وأجل خمس سنين', fr: 'Les voies que donne la loi, et le délai de cinq ans'}
+    to: journeys/error
+  # Disability, donation, death.
+  - key: disability
+    icon: card
+    words: [بطاقة الإعاقة, بطاقة شخص في وضعية إعاقة, الإعاقة, handicap, carte handicap, ولدي عندو إعاقة]
+    means:
+      بطاقة شخص في وضعية إعاقة: [بطاقة الإعاقة, بطاقة شخص في وضعية إعاقة, carte handicap]
+      الأشخاص في وضعية إعاقة: [الإعاقة, handicap, ولدي عندو إعاقة]
+    title: {ar: بطاقة شخص في وضعية إعاقة, fr: 'La carte de personne en situation de handicap'}
+    lead: {ar: 'الطلب فالمنصة، واللجنة الطبية، والحقوق', fr: 'La demande sur la plateforme, la commission médicale, les droits'}
+    to: pages/disability
+  - key: donation
+    icon: heart
+    words: [التبرع بالأعضاء, نتبرع بكلية, التبرع بالكلية, don d'organes, don de rein, greffe, زرع الأعضاء, التبرع بعد الوفاة]
+    means:
+      التبرع بالأعضاء البشرية: [التبرع بالأعضاء, نتبرع بكلية, التبرع بالكلية, don d'organes, don de rein, greffe, زرع الأعضاء, التبرع بعد الوفاة]
+    title: {ar: التبرع بالأعضاء, fr: 'Le don d’organes'}
+    lead: {ar: 'فابور ديما، الموافقة قدام القاضي، ورأيك بعد الموت كيتسجل', fr: 'Toujours gratuit, le consentement devant le juge, votre volonté enregistrée'}
+    to: pages/donation
+  - key: death
+    icon: papers
+    words: [توفى, الوفاة, شهادة الوفاة, شهادة معاينة الوفاة, رخصة الدفن, décès, certificat de décès, permis d'inhumer, التصريح بالوفاة]
+    means:
+      شهادة معاينة الوفاة: [شهادة الوفاة, شهادة معاينة الوفاة, certificat de décès]
+      رخصة الدفن: [رخصة الدفن, permis d'inhumer]
+      التصريح الأولي بالوفاة: [التصريح بالوفاة, décès]
+    title: {ar: توفى شي حد عزيز, fr: 'Un proche est décédé'}
+    lead: {ar: 'شهادة المعاينة، رخصة الدفن، والتصريح', fr: 'Le certificat, le permis d’inhumer, la déclaration'}
+    to: journeys/death
+  # In other topics.
+  - key: not-declared
+    icon: cnss
+    words: [ما مصرحش بيا فالضمان, المشغل ما سجلنيش, non déclaré cnss]
+    title: {ar: المشغل ما سجلنيش فالضمان, fr: 'Mon employeur ne m’a pas déclaré'}
+    lead: {ar: 'فموضوع الشغل', fr: 'Dans le thème du travail'}
+    to: work:journeys/not-declared
+  - key: work-accident
+    icon: hurt
+    words: [حادثة شغل, accident du travail]
+    title: {ar: تصابت فالخدمة, fr: 'Blessé au travail'}
+    lead: {ar: 'فموضوع الشغل', fr: 'Dans le thème du travail'}
+    to: work:journeys/accident
+  - key: maternity
+    icon: child
+    words: [رخصة الولادة, congé de maternité]
+    title: {ar: 'رخصة الولادة فالخدمة', fr: 'Le congé de maternité'}
+    lead: {ar: 'فموضوع الشغل', fr: 'Dans le thème du travail'}
+    to: work:journeys/maternity
+  - key: direct-support
+    icon: money
+    words: [الدعم المباشر, aide directe]
+    title: {ar: الدعم الاجتماعي المباشر, fr: 'L’aide sociale directe'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:pages/money
+
+tools:
+  # «شحال غادي يرجع ليك؟» (S17): a care's price in, what comes back and what stays out, by the reader's regime, each line
+  # with its article. It waits for a person's check (C4 «wait»).
+  - key: refund
+    icon: coins
+    words: [شحال غادي يرجع ليا, شحال كيرجع التأمين, شحال كيرجع الضمان الاجتماعي, كيرجع على الدوا, شحال كيرجع الكنوبس, شحال كيرجع أمو, نسبة التعويض, taux de remboursement, combien rembourse]
+    means: إرجاع مصاريف خدمات العلاج
+    tool: true
+    title: {ar: شحال غادي يرجع ليك؟, fr: 'Combien vous sera remboursé ?'}
+    lead: {ar: 'الثمن، والنسبة ديال الصندوق ديالك، والباقي عليك', fr: 'Le prix, le taux de votre caisse, votre part'}
+    cites: [/ma/loi/65-00/art_12, /ma/decret/2-05-737/art_2, /ma/decret/2-05-736/art_1, /ma/decret/2-05-736/art_2]
+  # The feuille de soins' clock (S18): from the day of the care, the deposit, the fund's 90 days, the year to contest.
+  - key: clock
+    icon: clock
+    words: [آخر أجل ورقة العلاج, فوقاش نصيفط الملف, délai feuille de soins, délai de dépôt]
+    tool: true
+    title: {ar: الساعة ديال ورقة العلاج, fr: 'L’horloge de la feuille de soins'}
+    lead: {ar: 'من نهار العلاج: آخر نهار للدفع، والتعويض، والطعن', fr: 'Dès le jour des soins : dépôt, remboursement, recours'}
+    cites: [/ma/decret/2-05-733/art_12, /ma/decret/2-05-733/art_11, /ma/loi/65-00/art_129]
+  # The long-illness finder (S19): once the list of order 2518-05 is on the site (S2).
+  - key: illness
+    icon: heart
+    words: [واش المرض ديالي فاللائحة, لائحة الأمراض المزمنة, liste ald, liste des maladies chroniques]
+    tool: true
+    title: {ar: واش المرض ديالي فاللائحة؟, fr: 'Ma maladie est-elle sur la liste ?'}
+    lead: {ar: 'لائحة الأمراض الطويلة والمكلفة', fr: 'La liste des maladies longues et coûteuses'}
+    cites: [/ma/loi/65-00/art_9]

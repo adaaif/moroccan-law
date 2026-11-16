@@ -1,0 +1,25 @@
+# «المغرب والعالم في الجريدة الرسمية»: the blog's tenth post (B8 of the blog-first-post review, built 31 Oct 2026, the
+# last in the order chosen). Counted from the live database on 31 Oct 2026: every Arabic text since 1956 whose title
+# names an agreement, a loan or a guarantee, sorted by the words in words.yaml beside this file (a person reads and
+# corrects them there).
+slug: agreements
+number: 10
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+title:
+  ar: "المغرب والعالم في الجريدة الرسمية"
+  fr: "Le Maroc et le monde au Bulletin officiel"
+lead:
+  ar: "منذ 1956 وافقت الدولة على 1.115 اتفاق قرض أو ضمان مع الخارج، بمرسوم في الغالب، أكثرها مع البنك الدولي. ونشرت الجريدة الرسمية 994 اتفاقية حتى 2018، كان عمر نصف ما نشرته منها بعد 2010 اثنتي عشرة سنة أو أكثر. ومنذ 2010 صارت الدول الإفريقية أول من يوافق البرلمان على اتفاقيات المغرب معها، قبل أوروبا والدول العربية."
+  fr: "Depuis 1956, l’État a approuvé 1 115 accords de prêt ou de garantie avec l’étranger, presque toujours par décret, la Banque mondiale en tête. Le Bulletin a publié 994 accords jusqu’en 2018 ; la moitié de ceux publiés après 2010 avaient douze ans ou plus. Depuis 2010, les États africains sont les premiers partenaires des accords que le Parlement approuve, devant l’Europe et le monde arabe."
+# The decree that gave treaties their own edition of the Bulletin, read on its page: its first article lists the
+# editions, among them «نشرة الاتفاقيات الدولية».
+edition:
+  decree: "2.18.576"
+  issue: "6703"
+  date: 2018-08-27
+  page: 5800
+  path: "/ma/decret/2-18-576"
+  words: "نشرة الاتفاقيات الدولية"

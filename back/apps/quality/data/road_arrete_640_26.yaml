@@ -1,0 +1,12 @@
+# /ma/arrete/640-26 as the BO (issue 7531, folios 4897-4901) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/arrete/640-26
+document: issues/bo_ar/BO_7531_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: "عدد 7531 - 19 صفر 1448 (3 أغسطس 2026)\n«المادة 8", right: '«المادة 8'}      # f. 4899: the page's running header, not the arrêté
+  - {arts: [1], wrong: 'بمحرك وأربيات الأشغال العمومية»', right: 'بمحرك وأريبات الأشغال العمومية'}      # f. 4899: «وأريبات», and the heading has no closing »
+  - {arts: [1], wrong: '«نقل ملكية المركبات»', right: '«نقل ملكية المركبات'}      # f. 4899: the heading has no closing »
+  - {arts: [1], wrong: "عدد 7531 - 19 صفر 1448 (3 أغسطس 2026)\n«المادة 14", right: '«المادة 14'}      # f. 4900: the page's running header, not the arrêté
+notes:
+  - {art: 1, page: 4898, what: 'From «بالنسبة لمقطورة جديدة : … في الاستعمال.» (the end of the new art 6) to the end of the new art 7, the site drops the « that opens every line on the page and the bullets of «• بالنسبة لمقطورة جديدة» and «• بالنسبة لمقطورة مستعملة»: punctuation only, the words are right.'}
+checked: [1, 4, 5]

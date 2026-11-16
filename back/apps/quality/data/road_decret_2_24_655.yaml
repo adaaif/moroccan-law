@@ -1,0 +1,9 @@
+# /ma/decret/2-24-655 as the BO (issue 7400, folio 2449) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-24-655
+document: issues/bo_ar/BO_7400_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: 'المشار إلهيا في', right: 'المشار إليها في'}      # f. 2449: «إليها»
+  - {arts: [1], wrong: 'السياقة أو شهادة «تسجيل أو سند ملكية', right: 'السياقة أو بشهادة «تسجيل أو بسند ملكية'}      # f. 2449: «بشهادة … بسند», like «برخصة» and «بنسخة» around them
+notes: []
+checked: [1]

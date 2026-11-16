@@ -1,0 +1,14 @@
+# The digital topic's texts (27 Oct 2026), where our reading differs from the page.
+# The DOC, Adala's consolidation (sources/adala/doc_1913.pdf), art. 417-3 on page 95: the layer set the end of its first
+# paragraph after the footnote marks 110 and 111 inside the second, and kept the next heading («1 - الورقة الرسمية»).
+# Applied by `manage.py apply_page_reading apps/quality/data/digital_doc_417_3.yaml`.
+text: /ma/code/doc
+document: sources/adala/doc_1913.pdf
+read_on: '2026-10-27'
+fixes:
+- arts: ['417-3']
+  wrong: "يفترض الوثوق في الوسيلة المستعملة في التوقيع الإلكتروني، عندما تتيح استخدام توقيع إلى أن يثبت ما يخالف ذلك.  إلكتروني مؤهل إذا تم إنشاؤه وكانت هوية الموقع مؤكدة وتمامية  يعتبر التوقيع الإلكتروني مؤهلا الوثيقة القانونية مضمونة، وفق النصوص التشريعية والتنظيمية المعمول بها في هذا المجال."
+  right: "يفترض الوثوق في الوسيلة المستعملة في التوقيع الإلكتروني، عندما تتيح استخدام توقيع إلكتروني مؤهل إلى أن يثبت ما يخالف ذلك.\nيعتبر التوقيع الإلكتروني مؤهلا إذا تم إنشاؤه وكانت هوية الموقع مؤكدة وتمامية الوثيقة القانونية مضمونة، وفق النصوص التشريعية والتنظيمية المعمول بها في هذا المجال."
+- arts: ['417-3']
+  wrong: "\n1 - الورقة الرسمية"
+  right: ""

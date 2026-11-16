@@ -1,0 +1,360 @@
+# The work topic's journeys (T6 of the work plan): what happens, step by step, each step on the articles it rests on.
+# Written from the texts as the site holds them on 20 Oct 2026 (the labour code from Adala's consolidation to 16 Jul 2026,
+# law 58.25 on civil procedure, the social security dahir, laws 18.12 and 19.12). A reader sees a journey once a person
+# has checked it (`manage.py approve_topic work journeys/<key> --by …`). Steps say what the law says, never what a
+# reader should do in their own case; `note` is a fact a reader is likely to miss, `delay` a time limit the law sets.
+
+- key: dismissed
+  for: [company, farm, guard]
+  title: {ar: 'الفصل من الشغل: من الاستماع إلى المحكمة', fr: 'Le licenciement : de l’audition au tribunal'}
+  lead:
+    ar: 'يمنع فصل الأجير دون مبرر مقبول. وللقانون مسطرة وآجال، ولكل خطوة مادتها.'
+    fr: 'Licencier un salarié sans motif valable est interdit. La loi fixe une procédure et des délais, chaque étape avec son article.'
+  day: {ar: 'يوم توصلت بمقرر الفصل', fr: 'Le jour où vous avez reçu la décision'}
+  steps:
+    - title: {ar: المبرر, fr: Le motif}
+      answer: {ar: 'لا تفصل إلا لمبرر مقبول يتعلق بكفاءتك أو بسلوكك أو بضرورة سير المقاولة، والمشغل هو من يثبته.', fr: 'Vous n’êtes licencié que pour un motif valable lié à votre aptitude, à votre conduite ou aux nécessités de l’entreprise ; c’est à l’employeur de le prouver.'}
+      body:
+        ar: 'لا يفصل الأجير إلا لمبرر مقبول مرتبط بكفاءته أو بسلوكه، أو تفرضه ضرورة سير المقاولة. وتعدد المادة 39 الأخطاء الجسيمة، منها السرقة وخيانة الأمانة والسكر العلني والتغيب دون مبرر لأكثر من أربعة أيام أو ثمانية أنصاف يوم خلال اثني عشر شهرا. وعلى المشغل إثبات المبرر.'
+        fr: 'Un salarié n’est licencié que pour un motif valable lié à son aptitude ou à sa conduite, ou imposé par les nécessités de l’entreprise. L’article 39 énumère les fautes graves, dont le vol, l’abus de confiance, l’ivresse publique et l’absence injustifiée de plus de quatre jours ou huit demi-journées sur douze mois. La preuve du motif incombe à l’employeur.'
+      cites: [/ma/loi/65-99/art_35, /ma/loi/65-99/art_39, /ma/loi/65-99/art_63]
+    - title: {ar: الاستماع إليك, fr: Votre audition}
+      answer: {ar: 'قبل الفصل لخطأ، يستمع إليك المشغل داخل 8 أيام بحضور مندوب أو نقابي تختاره، وتسلم لك نسخة من المحضر.', fr: 'Avant un licenciement pour faute, l’employeur vous entend dans les 8 jours, en présence d’un délégué ou d’un syndicaliste de votre choix, et vous remet une copie du procès-verbal.'}
+      body:
+        ar: 'قبل الفصل لخطأ، يجب أن تتاح لك فرصة الدفاع عن نفسك والاستماع إليك من طرف المشغل، بحضور مندوب الأجراء أو الممثل النقابي الذي تختاره، داخل أجل لا يتعدى ثمانية أيام من معاينة الفعل. ويحرر محضر يوقعه الطرفان، وتسلم لك نسخة منه. وإذا رفض أحد الطرفين إتمام المسطرة، يلجأ إلى مفتش الشغل.'
+        fr: 'Avant un licenciement pour faute, vous devez pouvoir vous défendre et être entendu par l’employeur, en présence du délégué des salariés ou du représentant syndical de votre choix, dans les huit jours suivant la constatation des faits. Un procès-verbal signé des deux parties est dressé, et une copie vous est remise. Si l’une des parties refuse la procédure, on recourt à l’inspecteur du travail.'
+      cites: [/ma/loi/65-99/art_62]
+      delay: {days: 8, from: {ar: من معاينة الفعل, fr: après la constatation des faits}}
+    - title: {ar: مقرر الفصل, fr: La décision de licenciement}
+      answer: {ar: 'يسلم لك مقرر الفصل داخل 48 ساعة، وينص على أجل 90 يوما لرفع الدعوى.', fr: 'La décision vous est remise dans les 48 heures et mentionne le délai de 90 jours pour agir en justice.'}
+      body:
+        ar: 'يسلم لك مقرر الفصل يدا بيد مقابل وصل، أو برسالة مضمونة مع إشعار بالتوصل، داخل 48 ساعة من اتخاذه. ويجب أن ينص على أجل التسعين يوما لرفع الدعوى.'
+        fr: 'La décision vous est remise en main propre contre reçu, ou par lettre recommandée avec accusé de réception, dans les 48 heures. Elle doit mentionner le délai de 90 jours pour agir en justice.'
+      cites: [/ma/loi/65-99/art_63, /ma/loi/65-99/art_65]
+    - title: {ar: توصيل تصفية كل حساب, fr: Le reçu pour solde de tout compte}
+      answer: {ar: 'يمكنك التراجع عن توصيل تصفية كل حساب داخل 60 يوما من توقيعه، وهو باطل إن لم يفصل كل مبلغ.', fr: 'Vous pouvez dénoncer le reçu pour solde de tout compte dans les 60 jours de sa signature ; il est nul s’il ne détaille pas chaque somme.'}
+      body:
+        ar: 'يكون التوصيل باطلا إذا لم يذكر كل مبلغ مفصلا، وأجل الستين يوما بحروف واضحة، وأنه حرر في نظيرين تسلم لك أحدهما. ويسبق توقيعك عبارة «قرأت ووافقت». وإذا كنت لا تحسن القراءة، يوقعه بالعطف مفتش الشغل. ويمكنك التراجع عنه داخل ستين يوما من توقيعه، برسالة مضمونة إلى المشغل أو برفع دعوى.'
+        fr: 'Le reçu est nul s’il ne détaille pas chaque somme, ne mentionne pas lisiblement le délai de 60 jours, ou n’est pas établi en deux exemplaires dont un vous est remis. Votre signature est précédée de « lu et approuvé ». Si vous êtes illettré, l’inspecteur du travail le contresigne. Vous pouvez le dénoncer dans les 60 jours de sa signature, par lettre recommandée à l’employeur ou en saisissant le tribunal.'
+      cites: [/ma/loi/65-99/art_73, /ma/loi/65-99/art_74, /ma/loi/65-99/art_75]
+      papers: checklists/final-receipt
+      delay: {days: 60, from: {ar: من توقيع التوصيل, fr: après la signature du reçu}}
+    - title: {ar: الصلح عند مفتش الشغل, fr: La conciliation chez l’inspecteur}
+      answer: {ar: 'يحاول مفتش الشغل الصلح، للرجوع إلى شغلك أو للتعويض، والاتفاق الموقع عنده نهائي.', fr: 'L’inspecteur du travail tente la conciliation, pour votre réintégration ou une indemnité ; l’accord signé chez lui est définitif.'}
+      body:
+        ar: 'يمكن للأجير الذي يعتبر فصله تعسفيا أن يلجأ إلى مسطرة الصلح التمهيدي أمام مفتش الشغل، للرجوع إلى شغله أو للحصول على تعويض. والاتفاق الموقع من الطرفين، المصادق على توقيعه والموقع بالعطف من مفتش الشغل، نهائي لا يطعن فيه إلا بالزور.'
+        fr: 'Le salarié qui juge son licenciement abusif peut recourir à la conciliation préliminaire devant l’inspecteur du travail, pour réintégrer son poste ou obtenir une indemnité. L’accord signé des deux parties, signatures légalisées et contresigné par l’inspecteur, est définitif et ne peut être attaqué que pour faux.'
+      cites: [/ma/loi/65-99/art_41, /ma/loi/65-99/art_532, /ma/loi/58-25/art_313]
+      note:
+        ar: 'ما دامت مسطرة الصلح جارية، لا يرفع أي من الطرفين دعواه إلى المحكمة.'
+        fr: 'Tant que la conciliation est en cours, aucune des parties ne saisit le tribunal.'
+        cites: [/ma/loi/58-25/art_313]
+    - title: {ar: المحكمة, fr: Le tribunal}
+      answer: {ar: 'ترفع الدعوى داخل 90 يوما من توصلك بمقرر الفصل، بمساعدة قضائية بحكم القانون ودون أن يلزمك محام.', fr: 'L’action est portée dans les 90 jours de la réception de la décision, avec l’assistance judiciaire de plein droit, sans avocat obligatoire.'}
+      body:
+        ar: 'ترفع دعوى الفصل أمام المحكمة الابتدائية داخل تسعين يوما من توصلك بمقرر الفصل، تحت طائلة سقوط الحق. وتستفيد بحكم القانون من المساعدة القضائية في كل درجات التقاضي، ولا يلزمك محام. وتبدأ الجلسة بمحاولة صلح، والحكم بالأداءات المترتبة عن عقد الشغل ينفذ رغم الاستئناف. ويستأنف الحكم داخل ثلاثين يوما من تبليغه.'
+        fr: 'L’action relative au licenciement est portée devant le tribunal de première instance dans les 90 jours de la réception de la décision, sous peine de déchéance. Vous bénéficiez de plein droit de l’assistance judiciaire à tous les degrés, et un avocat n’est pas obligatoire. L’audience s’ouvre par une tentative de conciliation, et le jugement sur les sommes dues au titre du contrat est exécutoire malgré l’appel. L’appel est formé dans les 30 jours de la notification.'
+      cites: [/ma/loi/65-99/art_65, /ma/loi/58-25/art_311, /ma/loi/58-25/art_314, /ma/loi/58-25/art_315, /ma/loi/58-25/art_322, /ma/loi/58-25/art_323]
+      delay: {on_day: true, days: 90, from: {ar: من توصلك بمقرر الفصل, fr: après la réception de la décision}}
+    - title: {ar: ما قد يكون لك, fr: Ce qui peut vous être dû}
+      answer: {ar: 'الإخطار، والتعويض عن الفصل، والعطلة التي لم تستفد منها؛ والتعويض عن الضرر إن حكمت المحكمة بأن الفصل تعسفي.', fr: 'Le préavis, l’indemnité de licenciement et les congés non pris ; des dommages-intérêts si le tribunal juge le licenciement abusif.'}
+      body:
+        ar: 'تعويض عن الإخطار إذا لم يحترم أجله، وتعويض عن الفصل بعد ستة أشهر من الشغل، وتعويض عن العطلة التي لم تستفد منها. وإذا حكمت المحكمة بأن الفصل تعسفي، فالتعويض عن الضرر أجر شهر ونصف عن كل سنة أو جزء من السنة، دون أن يتجاوز 36 شهرا. ولا شيء من ذلك في حالة الخطأ الجسيم.'
+        fr: 'Une indemnité de préavis si le préavis n’a pas été respecté, une indemnité de licenciement après six mois de travail, une indemnité pour les congés non pris. Si le tribunal juge le licenciement abusif, les dommages-intérêts sont d’un mois et demi de salaire par année ou fraction d’année, sans dépasser 36 mois. Rien de tout cela en cas de faute grave.'
+      cites: [/ma/loi/65-99/art_41, /ma/loi/65-99/art_51, /ma/loi/65-99/art_52, /ma/loi/65-99/art_53, /ma/loi/65-99/art_251, /ma/loi/65-99/art_61, /ma/decret/2-04-469/art_1]
+      tool: tools/end
+    - title: {ar: بعد الخروج, fr: Après le départ}
+      answer: {ar: 'تسلم لك شهادة الشغل داخل 8 أيام، ويطلب التعويض عن فقدان الشغل داخل 60 يوما.', fr: 'Le certificat de travail vous est remis dans les 8 jours ; l’indemnité pour perte d’emploi se demande dans les 60 jours.'}
+      body:
+        ar: 'يسلم لك المشغل شهادة الشغل داخل ثمانية أيام. وإذا فقدت شغلك بكيفية لا إرادية وتوفرت فيك الشروط، يمكنك طلب التعويض عن فقدان الشغل من الصندوق الوطني للضمان الاجتماعي داخل ستين يوما.'
+        fr: 'L’employeur vous remet le certificat de travail dans les huit jours. Si vous avez perdu votre emploi involontairement et remplissez les conditions, vous pouvez demander à la CNSS l’indemnité pour perte d’emploi dans les 60 jours.'
+      cites: [/ma/loi/65-99/art_72, /ma/dahir/1-72-184/art_46-bis, /ma/dahir/1-72-184/art_46-quater]
+      delay: {days: 60, from: {ar: من اليوم الأول لفقدان الشغل, fr: après le premier jour de perte d’emploi}}
+      tool: tools/cnss
+  ends: {icon: list, paper: {ar: 'مقرر الفصل، وشهادة الشغل، ونظير توصيل تصفية كل حساب إن وقعته', fr: 'La décision de licenciement, le certificat de travail, et votre exemplaire du reçu si vous l’avez signé'}, cites: [/ma/loi/65-99/art_63, /ma/loi/65-99/art_72, /ma/loi/65-99/art_74], papers: checklists/proof}
+  next: [pages/where, checklists/proof]
+
+- key: unpaid
+  for: [company, farm, guard, home]
+  title: {ar: 'الأجرة: متى وكم وكيف تطالب بها', fr: 'Le salaire : quand, combien, comment le réclamer'}
+  lead:
+    ar: 'الأجرة تؤدى في مواعيد يحددها القانون، ولا تقل عن الحد الأدنى الذي يحدده مرسوم.'
+    fr: 'Le salaire est payé à des échéances fixées par la loi, et jamais en dessous du minimum fixé par décret.'
+  steps:
+    - title: {ar: المواعيد, fr: Les échéances}
+      answer: {ar: 'تؤدى الأجرة للعمال مرتين في الشهر على الأقل، وللمستخدمين مرة في الشهر على الأقل.', fr: 'Les ouvriers sont payés au moins deux fois par mois, les employés au moins une fois par mois.'}
+      body:
+        ar: 'تؤدى الأجرة بالعملة المغربية. وتؤدى للعمال مرتين في الشهر على الأقل، بفاصل لا يتعدى ستة عشر يوما، وللمستخدمين مرة في الشهر على الأقل.'
+        fr: 'Le salaire est payé en monnaie marocaine : au moins deux fois par mois, à seize jours d’intervalle au plus, pour les ouvriers ; au moins une fois par mois pour les employés.'
+      cites: [/ma/loi/65-99/art_362, /ma/loi/65-99/art_363]
+    - title: {ar: الحد الأدنى, fr: Le minimum}
+      answer: {ar: 'لا يقل أجرك عن 17,92 درهما للساعة، أو 97,44 درهما ليوم الفلاحة، وكل اتفاق على أقل باطل.', fr: 'Votre salaire n’est pas inférieur à 17,92 DH de l’heure, ou 97,44 DH la journée agricole ; tout accord en dessous est nul.'}
+      body:
+        ar: 'لا يقل الأجر عن الحد الأدنى القانوني: 17,92 درهما عن ساعة الشغل في النشاطات غير الفلاحية منذ فاتح يناير 2026، و97,44 درهما عن يوم الشغل في النشاطات الفلاحية منذ فاتح أبريل 2026. وكل اتفاق ينزل بالأجر عنه باطل. وللعاملة أو العامل المنزلي، لا يقل الأجر النقدي عن 60 بالمائة منه، ولا يحسب فيه الإطعام والسكن.'
+        fr: 'Le salaire n’est jamais inférieur au minimum légal : 17,92 DH de l’heure dans les activités non agricoles depuis le 1er janvier 2026, 97,44 DH par jour dans les activités agricoles depuis le 1er avril 2026. Tout accord le réduisant est nul. Pour un travailleur domestique, le salaire en espèces n’est pas inférieur à 60 % de ce minimum, nourriture et logement non compris.'
+      cites: [/ma/loi/65-99/art_356, /ma/loi/65-99/art_360, /ma/decret/2-25-983/art_1, /ma/decret/2-25-983/art_2, /ma/loi/19-12/art_19]
+      tool: tools/pay
+    - title: {ar: ورقة الأداء, fr: Le bulletin de paie}
+      answer: {ar: 'تسلم لك ورقة أداء عند كل أداء، وتوقيعها لا يسقط حقك في الأجر.', fr: 'Un bulletin vous est remis à chaque paie ; le signer ne vous fait pas perdre votre droit au salaire.'}
+      body:
+        ar: 'يسلم لك المشغل عند كل أداء ورقة أداء. وقبولها دون تحفظ، ولو وقعتها بعبارة «قرأت ووافقت»، لا يسقط حقك في الأجر وتوابعه.'
+        fr: 'L’employeur vous remet un bulletin de paie à chaque paiement. L’accepter sans réserve, même signé « lu et approuvé », ne vous fait pas renoncer au salaire et à ses accessoires.'
+      cites: [/ma/loi/65-99/art_370]
+    - title: {ar: الأقدمية والساعات الإضافية, fr: Ancienneté et heures supplémentaires}
+      answer: {ar: 'منحة الأقدمية من 5% بعد سنتين إلى 25%، والساعات الإضافية تزاد من 25% إلى 100%.', fr: 'La prime d’ancienneté va de 5 % après deux ans à 25 % ; les heures supplémentaires sont majorées de 25 % à 100 %.'}
+      body:
+        ar: 'تستحق منحة أقدمية: 5% بعد سنتين، و10% بعد خمس سنوات، و15% بعد اثنتي عشرة سنة، و20% بعد عشرين، و25% بعد خمس وعشرين. وتزاد الساعات الإضافية 25% نهارا و50% ليلا، و50% و100% يوم الراحة الأسبوعية.'
+        fr: 'Une prime d’ancienneté est due : 5 % après deux ans, 10 % après cinq, 15 % après douze, 20 % après vingt, 25 % après vingt-cinq. Les heures supplémentaires sont majorées de 25 % le jour et 50 % la nuit, de 50 % et 100 % le jour du repos hebdomadaire.'
+      cites: [/ma/loi/65-99/art_350, /ma/loi/65-99/art_201]
+      tool: tools/pay
+    - title: {ar: المطالبة, fr: La réclamation}
+      answer: {ar: 'يجري مفتش الشغل الصلح، وأمام المحكمة لك المساعدة القضائية، والحكم بالأجر ينفذ رغم الاستئناف.', fr: 'L’inspecteur du travail concilie ; au tribunal vous avez l’assistance judiciaire, et le jugement sur le salaire est exécutoire malgré l’appel.'}
+      body:
+        ar: 'مفتش الشغل يخبر ويجري الصلح في نزاعات الشغل الفردية. وأمام المحكمة، تستفيد من المساعدة القضائية بحكم القانون، والحكم بالأداءات ينفذ رغم الاستئناف. وللأجور والتعويض القانوني عن الفصل امتياز من الرتبة الأولى على منقولات المشغل.'
+        fr: 'L’inspecteur du travail informe et concilie dans les conflits individuels. Devant le tribunal, l’assistance judiciaire vous est acquise de plein droit, et le jugement sur les sommes dues est exécutoire malgré l’appel. Les salaires et l’indemnité légale de licenciement ont un privilège de premier rang sur les biens meubles de l’employeur.'
+      cites: [/ma/loi/65-99/art_532, /ma/loi/58-25/art_311, /ma/loi/58-25/art_322, /ma/loi/65-99/art_382]
+      note:
+        ar: 'تتقادم كل الحقوق الناتجة عن عقد الشغل بمرور سنتين.'
+        fr: 'Tous les droits nés du contrat de travail se prescrivent par deux ans.'
+        cites: [/ma/loi/65-99/art_395]
+  ends: {icon: list, paper: {ar: 'ورقة الأداء عن كل أداء', fr: 'Un bulletin de paie à chaque paie'}, cites: [/ma/loi/65-99/art_370], papers: checklists/proof}
+  next: [pages/where, checklists/proof]
+
+- key: not-declared
+  for: [company, farm, guard, home]
+  title: {ar: 'التصريح في الضمان الاجتماعي', fr: 'La déclaration à la CNSS'}
+  lead:
+    ar: 'كل مشغل ملزم بالانخراط في الصندوق الوطني للضمان الاجتماعي وتسجيل أجرائه. والأيام المصرح بها هي ما يفتح الحق في التعويضات والتقاعد.'
+    fr: 'Tout employeur doit s’affilier à la CNSS et y immatriculer ses salariés. Les jours déclarés ouvrent les droits aux prestations et à la retraite.'
+  steps:
+    - title: {ar: واجب المشغل, fr: L’obligation de l’employeur}
+      answer: {ar: 'مشغلك ملزم بالانخراط في الصندوق وبتسجيلك فيه.', fr: 'Votre employeur doit s’affilier à la CNSS et vous y immatriculer.'}
+      body:
+        ar: 'يجب على كل مشغل يشغل أشخاصا خاضعين لنظام الضمان الاجتماعي أن ينخرط في الصندوق، وأن يسجل أجراءه والمتدربين لديه.'
+        fr: 'Tout employeur occupant des personnes soumises au régime doit s’affilier à la CNSS et y immatriculer ses salariés et apprentis.'
+      cites: [/ma/dahir/1-72-184/art_15]
+    - title: {ar: كيف تحسب أيامك, fr: Comment vos jours sont comptés}
+      answer: {ar: 'تحسب أيامك من أيام الشغل المصرح بها، 26 يوما في الشهر على الأكثر.', fr: 'Vos jours sont comptés sur les jours de travail déclarés, 26 par mois au plus.'}
+      body:
+        ar: 'تحسب أيام الاشتراك على أساس أيام الشغل المصرح بها، في حدود ستة وعشرين يوما عن كل شهر، دون أن يقل الأجر المصرح به عن كل يوم عن الحد الأدنى القانوني لليوم. وإذا قل، يعتمد الصندوق عدد الأيام الذي يوافق الأجر المصرح به.'
+        fr: 'Les jours de cotisation sont comptés sur les jours déclarés, dans la limite de 26 par mois, le salaire déclaré par jour ne pouvant être inférieur au minimum légal d’une journée. S’il l’est, la CNSS retient le nombre de jours correspondant au salaire déclaré.'
+      cites: [/ma/dahir/1-72-184/art_19]
+      note:
+        ar: 'أيامك المصرح بها وأجورك تظهر في حسابك على بوابة الصندوق وتطبيقه «Ma CNSS».'
+        fr: 'Vos jours et salaires déclarés figurent dans votre espace sur le portail de la CNSS et son application « Ma CNSS ».'
+    - title: {ar: المراقبة, fr: Le contrôle}
+      answer: {ar: 'يراقب مفتشو الصندوق ومفتشو الشغل التصريحات في أماكن الشغل.', fr: 'Les inspecteurs de la CNSS et du travail contrôlent les déclarations sur les lieux de travail.'}
+      body:
+        ar: 'يراقب مفتشو الصندوق ومراقبوه، والأعوان المكلفون بتفتيش الشغل، تطبيق نظام الضمان الاجتماعي من طرف المشغلين، ولهم أن يدخلوا أماكن الشغل ويطابقوا التصريحات بالأجور.'
+        fr: 'Les inspecteurs et contrôleurs de la CNSS et les agents de l’inspection du travail contrôlent l’application du régime par les employeurs ; ils peuvent entrer sur les lieux de travail et vérifier les déclarations de salaires.'
+      cites: [/ma/dahir/1-72-184/art_16]
+    - title: {ar: الإثبات, fr: La preuve}
+      answer: {ar: 'تثبت عقدك بكل وسيلة: أوراق الأداء والرسائل والشهود.', fr: 'Vous prouvez votre contrat par tous moyens : bulletins, messages, témoins.'}
+      body:
+        ar: 'يمكن إثبات عقد الشغل بجميع وسائل الإثبات. ما تحتفظ به من أوراق الأداء والرسائل والشهود يفيدك أمام مفتش الشغل والمحكمة.'
+        fr: 'Le contrat de travail se prouve par tous moyens. Bulletins de paie, messages et témoins vous servent devant l’inspecteur et le tribunal.'
+      cites: [/ma/loi/65-99/art_18]
+      papers: checklists/proof
+  ends: {icon: list, paper: {ar: 'كشف أيامك وأجورك المصرح بها، من حسابك على «Ma CNSS»', fr: 'Le relevé de vos jours et salaires déclarés, sur votre compte Ma CNSS'}, cites: [/ma/dahir/1-72-184/art_19], papers: checklists/proof}
+  next: [pages/where, journeys/retire]
+
+- key: accident
+  for: [company, farm, guard, home]
+  title: {ar: 'حادثة الشغل: من الإخبار إلى التعويض', fr: 'L’accident du travail : de la déclaration à l’indemnisation'}
+  lead:
+    ar: 'كل حادثة تقع بمناسبة الشغل أو بسببه حادثة شغل، ويتحمل المشغل أو مؤمنه مصاريفها وتعويضاتها.'
+    fr: 'Tout accident survenu par le fait ou à l’occasion du travail est un accident du travail ; l’employeur ou son assureur en supporte les frais et les indemnités.'
+  day: {ar: 'يوم الحادثة', fr: 'Le jour de l’accident'}
+  steps:
+    - title: {ar: ما هي حادثة الشغل, fr: Ce qu’est un accident du travail}
+      answer: {ar: 'كل حادثة تصيبك بمناسبة الشغل أو بسببه حادثة شغل.', fr: 'Tout accident qui vous atteint à l’occasion ou du fait du travail est un accident du travail.'}
+      body:
+        ar: 'كل حادثة، كيفما كان سببها، يترتب عنها ضرر للأجير أو لكل من يعمل بصفة تبعية، بمناسبة الشغل أو بسببه أو عند القيام به.'
+        fr: 'Tout accident, quelle qu’en soit la cause, causant un dommage au salarié ou à toute personne travaillant sous dépendance, par le fait ou à l’occasion du travail.'
+      cites: [/ma/loi/18-12/art_3, /ma/loi/18-12/art_1]
+    - title: {ar: أخبر المشغل, fr: Prévenez l’employeur}
+      answer: {ar: 'تخبر المشغل يوم الحادثة أو داخل 48 ساعة، ويسلم لك شهادة بها فورا.', fr: 'Vous prévenez l’employeur le jour même ou dans les 48 heures ; il vous remet aussitôt une attestation.'}
+      body:
+        ar: 'يخبر المصاب أو ذوو حقوقه المشغل بالحادثة في يوم وقوعها، أو داخل ثمان وأربعين ساعة على أبعد تقدير. ويسلم المشغل للمصاب فورا شهادة بالحادثة.'
+        fr: 'La victime ou ses ayants droit préviennent l’employeur le jour même, ou dans les 48 heures au plus tard. L’employeur remet aussitôt une attestation à la victime.'
+      cites: [/ma/loi/18-12/art_14]
+      delay: {on_day: true, days: 2, from: {ar: من يوم الحادثة (48 ساعة), fr: après l’accident (48 heures)}}
+    - title: {ar: الشهادة الطبية, fr: Le certificat médical}
+      answer: {ar: 'يحرر الطبيب شهادة أولية في أربعة نظائر، تسلم ثلاثة منها للمشغل داخل 24 ساعة.', fr: 'Le médecin établit un certificat initial en quatre exemplaires ; trois vont à l’employeur dans les 24 heures.'}
+      body:
+        ar: 'يحرر الطبيب المعالج شهادة طبية أولية في أربعة نظائر، ويسلم المصاب ثلاثة منها للمشغل داخل أربع وعشرين ساعة من تحريرها.'
+        fr: 'Le médecin traitant établit un certificat médical initial en quatre exemplaires ; la victime en remet trois à l’employeur dans les 24 heures.'
+      cites: [/ma/loi/18-12/art_19]
+    - title: {ar: تصريح المشغل, fr: La déclaration de l’employeur}
+      answer: {ar: 'يصرح المشغل بالحادثة لمؤمنه داخل 5 أيام، ولو واصلت العمل.', fr: 'L’employeur déclare l’accident à son assureur dans les 5 jours, même si vous continuez à travailler.'}
+      body:
+        ar: 'يصرح المشغل بالحادثة لمقاولة التأمين خلال الخمسة أيام الموالية لوقوعها، ولو استمر المصاب في العمل، ويخبر الإدارة المختصة داخل نفس الأجل.'
+        fr: 'L’employeur déclare l’accident à son assureur dans les cinq jours, même si la victime continue de travailler, et en informe l’administration compétente dans le même délai.'
+      cites: [/ma/loi/18-12/art_15, /ma/loi/18-12/art_17, /ma/loi/27-23/art_1]
+      delay: {on_day: true, days: 5, from: {ar: من يوم الحادثة, fr: après l’accident}}
+    - title: {ar: المصاريف والتعويض, fr: Les frais et l’indemnisation}
+      answer: {ar: 'يتحمل المشغل أو مؤمنه مصاريف العلاج كلها، وعند الخلاف تختص المحكمة الابتدائية.', fr: 'L’employeur ou son assureur paie tous les soins ; en cas de désaccord, le tribunal de première instance est compétent.'}
+      body:
+        ar: 'يتحمل المشغل أو مؤمنه مصاريف التشخيص والعلاج والاستشفاء والأدوية، سواء انقطع المصاب عن العمل أم لا. وعند الخلاف، تختص المحكمة الابتدائية، وتبدأ بمحاولة صلح، وتنفذ أحكامها في حوادث الشغل رغم الاستئناف.'
+        fr: 'L’employeur ou son assureur prend en charge diagnostic, soins, hospitalisation et médicaments, que la victime arrête ou non de travailler. En cas de désaccord, le tribunal de première instance est compétent ; il tente d’abord de concilier, et ses jugements en matière d’accidents du travail sont exécutoires malgré l’appel.'
+      cites: [/ma/loi/18-12/art_37, /ma/loi/58-25/art_33, /ma/loi/58-25/art_316, /ma/loi/58-25/art_322]
+  ends: {icon: list, paper: {ar: 'شهادة المشغل بالحادثة، ونظير من الشهادة الطبية الأولية', fr: 'L’attestation d’accident de l’employeur, et un exemplaire du certificat médical initial'}, cites: [/ma/loi/18-12/art_14, /ma/loi/18-12/art_19]}
+  next: [pages/where]
+
+- key: maternity
+  for: [company, farm, guard]
+  title: {ar: 'الأمومة والأبوة في العمل', fr: 'Maternité et paternité au travail'}
+  lead:
+    ar: 'أربعة عشر أسبوعا من الرخصة، وحماية من الفصل، وساعة للرضاعة، وثلاثة أيام للأب.'
+    fr: 'Quatorze semaines de congé, une protection contre le licenciement, une heure d’allaitement, trois jours pour le père.'
+  day: {ar: 'يوم الولادة', fr: 'Le jour de la naissance'}
+  steps:
+    - title: {ar: الرخصة, fr: Le congé}
+      answer: {ar: 'لك رخصة ولادة من 14 أسبوعا بشهادة طبية، ولا تشتغلين في 7 أسابيع بعد الوضع.', fr: 'Vous avez un congé de maternité de 14 semaines sur certificat médical, et ne travaillez pas les 7 semaines après l’accouchement.'}
+      body:
+        ar: 'للأجيرة الحامل، بشهادة طبية، رخصة ولادة مدتها أربعة عشر أسبوعا، ما لم تنص مقتضيات أفضل. ولا تشغل خلال السبعة أسابيع التي تلي الوضع. ويمكنها توقيف عقدها من سبعة أسابيع قبل التاريخ المرتقب للوضع إلى سبعة أسابيع بعده.'
+        fr: 'La salariée enceinte, sur certificat médical, a droit à un congé de maternité de quatorze semaines, sauf dispositions plus favorables. Elle n’est pas occupée pendant les sept semaines qui suivent l’accouchement, et peut suspendre son contrat de sept semaines avant la date présumée à sept semaines après.'
+      cites: [/ma/loi/65-99/art_152, /ma/loi/65-99/art_153, /ma/loi/65-99/art_154]
+    - title: {ar: التعويض اليومي, fr: Les indemnités journalières}
+      answer: {ar: 'يؤدي الصندوق تعويضا يوميا طوال 14 أسبوعا إذا توفرت لك 54 يوما في العشرة أشهر السابقة.', fr: 'La CNSS verse des indemnités journalières pendant 14 semaines si vous avez 54 jours sur les dix mois précédents.'}
+      body:
+        ar: 'تستحق المؤمن لها تعويضات يومية من الصندوق الوطني للضمان الاجتماعي طوال أربعة عشر أسبوعا، إذا توفرت لها 54 يوما مؤدى عنها الاشتراك خلال العشرة أشهر السابقة للتوقف عن العمل.'
+        fr: 'L’assurée a droit à des indemnités journalières de la CNSS pendant quatorze semaines si elle totalise 54 jours cotisés dans les dix mois précédant l’arrêt de travail.'
+      cites: [/ma/dahir/1-72-184/art_37]
+    - title: {ar: الحماية من الفصل, fr: La protection contre le licenciement}
+      answer: {ar: 'لا تفصلين أثناء الحمل وخلال 14 أسبوعا بعد الوضع، إلا لخطأ جسيم.', fr: 'Vous ne pouvez être licenciée pendant la grossesse et les 14 semaines après l’accouchement, sauf faute grave.'}
+      body:
+        ar: 'لا يجوز فصل الأجيرة الحامل، بشهادة طبية، أثناء الحمل وخلال الأربعة عشر أسبوعا الموالية للوضع، إلا لخطأ جسيم أو مبرر قانوني آخر لا يبلغ ولا يسري أثناء توقيف العقد.'
+        fr: 'La salariée enceinte, sur certificat médical, ne peut être licenciée pendant la grossesse et les quatorze semaines qui suivent l’accouchement, sauf faute grave ou autre motif légal qui ne peut être notifié ni prendre effet pendant la suspension.'
+      cites: [/ma/loi/65-99/art_159]
+      delay: {on_day: true, days: 98, from: {ar: من الوضع (14 أسبوعا), fr: 'après l’accouchement (14 semaines)'}}
+    - title: {ar: ساعة الرضاعة, fr: L’heure d’allaitement}
+      answer: {ar: 'لك ساعة رضاعة مؤداة كل يوم، خلال 12 شهرا من رجوعك إلى العمل.', fr: 'Vous avez une heure d’allaitement payée par jour, pendant 12 mois après votre reprise.'}
+      body:
+        ar: 'خلال اثني عشر شهرا من الرجوع إلى العمل، للأم الأجيرة استراحة يومية مؤدى عنها: نصف ساعة صباحا ونصف ساعة بعد الزوال، أو ساعة كاملة باتفاق مع المشغل.'
+        fr: 'Pendant douze mois après la reprise, la mère salariée a droit à un repos quotidien payé : une demi-heure le matin et une l’après-midi, ou une heure à tout moment en accord avec l’employeur.'
+      cites: [/ma/loi/65-99/art_161]
+      delay: {months: 12, from: {ar: من الرجوع إلى العمل, fr: après la reprise du travail}}
+    - title: {ar: الأب, fr: Le père}
+      answer: {ar: 'للأب 3 أيام رخصة عند كل ولادة، داخل شهر منها.', fr: 'Le père a 3 jours de congé à chaque naissance, dans le mois qui suit.'}
+      body:
+        ar: 'لكل أجير رخصة ثلاثة أيام عند كل ولادة، متصلة أو منفصلة باتفاق مع المشغل، داخل شهر من تاريخ الولادة.'
+        fr: 'Tout salarié a droit à trois jours à chaque naissance, continus ou non en accord avec l’employeur, dans le mois qui suit la naissance.'
+      cites: [/ma/loi/65-99/art_269]
+      delay: {on_day: true, months: 1, from: {ar: من الولادة, fr: après la naissance}}
+  ends: {icon: list, paper: {ar: 'الشهادة الطبية التي تفتح الرخصة والحماية', fr: 'Le certificat médical qui ouvre le congé et la protection'}, cites: [/ma/loi/65-99/art_152, /ma/loi/65-99/art_159]}
+
+- key: resign
+  for: [company, farm, guard]
+  title: {ar: 'الاستقالة', fr: 'La démission'}
+  lead:
+    ar: 'للأجير أن ينهي عقده غير محدد المدة بالاستقالة، بشرط الكتابة والمصادقة على التوقيع واحترام أجل الإخطار.'
+    fr: 'Le salarié peut mettre fin à son contrat à durée indéterminée en démissionnant : par écrit, signature légalisée, préavis respecté.'
+  steps:
+    - title: {ar: الاستقالة المكتوبة, fr: La démission écrite}
+      answer: {ar: 'تستقيل كتابة، بإمضاء مصادق عليه.', fr: 'Vous démissionnez par écrit, signature légalisée.'}
+      body:
+        ar: 'ينهى العقد غير محدد المدة بإرادة الأجير عن طريق استقالة مصادق على صحة إمضائها من طرف الجهة المختصة.'
+        fr: 'Le contrat à durée indéterminée prend fin par la volonté du salarié au moyen d’une démission dont la signature est légalisée par l’autorité compétente.'
+      cites: [/ma/loi/65-99/art_34]
+    - title: {ar: أجل الإخطار, fr: Le préavis}
+      answer: {ar: 'تحترم أجل الإخطار: من 8 أيام إلى 3 أشهر حسب صفتك وأقدميتك.', fr: 'Vous respectez le préavis : de 8 jours à 3 mois selon votre catégorie et votre ancienneté.'}
+      body:
+        ar: 'تحترم في الاستقالة آجال الإخطار التي يحددها المرسوم: للأطر شهر قبل سنة من الأقدمية، وشهران من سنة إلى خمس، وثلاثة أشهر بعدها؛ وللمستخدمين والعمال ثمانية أيام، ثم شهر، ثم شهران.'
+        fr: 'La démission respecte le préavis fixé par décret : pour les cadres, un mois avant un an d’ancienneté, deux mois de un à cinq ans, trois mois au-delà ; pour les employés et ouvriers, huit jours, puis un mois, puis deux mois.'
+      cites: [/ma/loi/65-99/art_43, /ma/decret/2-04-469/art_1]
+    - title: {ar: الأوراق عند الخروج, fr: Les papiers au départ}
+      answer: {ar: 'تسلم لك شهادة الشغل داخل 8 أيام، وتعويض عن العطلة التي لم تستفد منها.', fr: 'Le certificat de travail vous est remis dans les 8 jours, avec une indemnité pour les congés non pris.'}
+      body:
+        ar: 'تسلم لك شهادة الشغل داخل ثمانية أيام، وتعويض عن العطلة السنوية التي لم تستفد منها.'
+        fr: 'Le certificat de travail vous est remis dans les huit jours, avec une indemnité pour les congés payés non pris.'
+      cites: [/ma/loi/65-99/art_72, /ma/loi/65-99/art_251]
+      papers: checklists/final-receipt
+      note:
+        ar: 'التعويض عن فقدان الشغل لمن فقد شغله بكيفية لا إرادية، والاستقالة اختيارية.'
+        fr: 'L’indemnité pour perte d’emploi suppose une perte involontaire ; une démission est volontaire.'
+        cites: [/ma/dahir/1-72-184/art_46-bis]
+  ends: {icon: list, paper: {ar: 'نظير استقالتك المصادق عليها، وشهادة الشغل', fr: 'Votre exemplaire de la démission légalisée, et le certificat de travail'}, cites: [/ma/loi/65-99/art_34, /ma/loi/65-99/art_72], papers: checklists/final-receipt}
+
+- key: retire
+  for: [company, farm, guard, home]
+  title: {ar: 'التقاعد من الضمان الاجتماعي', fr: 'La retraite de la CNSS'}
+  lead:
+    ar: 'في الستين، يفتح الحق في معاش الشيخوخة من 1320 يوما من التأمين، وتحت ذلك تسترجع الاشتراكات.'
+    fr: 'À soixante ans, la pension de vieillesse est due dès 1 320 jours d’assurance ; en dessous, les cotisations sont remboursées.'
+  day: {ar: 'يوم توقفت عن العمل بعد الستين', fr: 'Le jour où vous avez cessé de travailler, après 60 ans'}
+  steps:
+    - title: {ar: السن, fr: L’âge}
+      answer: {ar: 'تحال على التقاعد في الستين، ويمكن أن تستمر بقرار وبموافقتك.', fr: 'Vous partez à la retraite à 60 ans ; vous pouvez continuer sur décision et avec votre accord.'}
+      body:
+        ar: 'يحال على التقاعد كل أجير بلغ ستين سنة، ويمكن أن يستمر في الشغل بقرار من السلطة الحكومية المكلفة بالشغل بطلب من المشغل وموافقة الأجير. والسن 55 سنة لعمال المناجم الذين قضوا خمس سنوات على الأقل في باطن الأرض.'
+        fr: 'Le salarié est mis à la retraite à soixante ans ; il peut continuer sur arrêté de l’autorité chargée du travail, à la demande de l’employeur et avec son accord. L’âge est de 55 ans pour les mineurs ayant travaillé au moins cinq ans au fond.'
+      cites: [/ma/loi/65-99/art_526, /ma/dahir/1-72-184/art_53]
+    - title: {ar: الحق في المعاش, fr: Le droit à pension}
+      answer: {ar: 'يستحق المعاش من 1320 يوما من التأمين؛ وتحتها تسترجع الاشتراكات.', fr: 'La pension est due dès 1 320 jours d’assurance ; en dessous, les cotisations sont remboursées.'}
+      body:
+        ar: 'يستحق المؤمن له البالغ ستين سنة، المتوقف عن كل نشاط مأجور، معاش الشيخوخة إذا توفر على 1320 يوما من التأمين على الأقل. ومن لم يبلغها، يسترجع الاشتراكات المستحقة عن حصته وحصة مشغله بعد تحيينها.'
+        fr: 'L’assuré de soixante ans ayant cessé toute activité salariée a droit à une pension de vieillesse s’il justifie d’au moins 1 320 jours d’assurance. En dessous, il récupère les cotisations salariales et patronales, réévaluées.'
+      cites: [/ma/dahir/1-72-184/art_53]
+    - title: {ar: المبلغ, fr: Le montant}
+      answer: {ar: 'من 1320 يوما نسبة تكبر مع الأيام؛ و50% من 3240 يوما، تزاد حتى 70%.', fr: 'Dès 1 320 jours, un taux qui croît avec les jours ; 50 % à 3 240 jours, jusqu’à 70 %.'}
+      body:
+        ar: 'من 1320 إلى 3239 يوما: 50% مضروبة في عدد الأيام مقسوما على 3240، من معدل الأجر عن 96 شهرا، دون أن يقل المعاش عن حد أدنى من 600 إلى 1000 درهم حسب الأيام. ومن 3240 يوما: 50% من معدل الأجر، تزاد 1% عن كل 216 يوما إضافية، دون تجاوز 70%.'
+        fr: 'De 1 320 à 3 239 jours : 50 % multipliés par le nombre de jours divisé par 3 240, appliqués au salaire moyen des 96 derniers mois, avec un minimum de 600 à 1 000 DH selon les jours. Dès 3 240 jours : 50 % du salaire moyen, plus 1 % par tranche de 216 jours supplémentaires, sans dépasser 70 %.'
+      cites: [/ma/decret/2-25-265/art_1, /ma/decret/2-25-265/art_2, /ma/dahir/1-72-184/art_55, /ma/dahir/1-72-184/art_56]
+      tool: tools/cnss
+    - title: {ar: الطلب, fr: La demande}
+      answer: {ar: 'تطلب المعاش داخل 5 سنوات.', fr: 'Vous demandez la pension dans les 5 ans.'}
+      body:
+        ar: 'يطالب المؤمن له بتعويضات الصندوق داخل أجل خمس سنوات. ويبتدئ هذا الأجل، بالنسبة لاسترجاع الاشتراكات، من بلوغ السن القانونية للتقاعد والتوقف النهائي عن العمل.'
+        fr: 'L’assuré réclame les prestations de la CNSS dans un délai de cinq ans. Pour le remboursement des cotisations, ce délai court de l’âge légal de la retraite et de l’arrêt définitif du travail.'
+      cites: [/ma/dahir/1-72-184/art_77-bis]
+      delay: {on_day: true, months: 60, from: {ar: من بلوغ السن والتوقف عن العمل, fr: après l’âge légal et l’arrêt du travail}}
+  next: [pages/numbers]
+
+- key: home
+  for: [home]
+  title: {ar: 'الشغل المنزلي: للعاملة وللمشغل', fr: 'Le travail domestique : pour la travailleuse et pour l’employeur'}
+  lead:
+    ar: 'للعاملات والعمال المنزليين قانون خاص بهم، القانون 19.12: عقد مكتوب، وسن لا يقل عن 18، وأجر ومدة ورخص.'
+    fr: 'Les travailleurs domestiques ont leur propre loi, la loi 19.12 : un contrat écrit, un âge minimum de 18 ans, un salaire, une durée de travail, des congés.'
+  steps:
+    - title: {ar: العقد, fr: Le contrat}
+      answer: {ar: 'تشتغل بعقد مكتوب وفق النموذج الرسمي، يوقعه الطرفان.', fr: 'Vous travaillez sous un contrat écrit selon le modèle officiel, signé des deux parties.'}
+      body:
+        ar: 'يشغل العامل المنزلي بعقد محدد أو غير محدد المدة، يعده المشغل وفق نموذج يحدده نص تنظيمي، ويوقعه الطرفان. ويمكن إثبات العقد بجميع وسائل الإثبات.'
+        fr: 'Le travailleur domestique est engagé par un contrat à durée déterminée ou indéterminée, établi par l’employeur selon un modèle fixé par voie réglementaire et signé des deux parties. Le contrat se prouve par tous moyens.'
+      cites: [/ma/loi/19-12/art_3, /ma/loi/19-12/art_9]
+    - title: {ar: السن, fr: L’âge}
+      answer: {ar: 'لا يشغل في البيوت من يقل عمره عن 18 سنة.', fr: 'Nul ne travaille dans une maison avant 18 ans.'}
+      body:
+        ar: 'السن الأدنى للتشغيل في الشغل المنزلي 18 سنة. وقد انقضت الفترة الانتقالية التي كانت تسمح بتشغيل من بين 16 و18 سنة بشروط. ومن شغل من يقل عمره عن 18 سنة بعدها يعاقب بغرامة من 25.000 إلى 30.000 درهم.'
+        fr: 'L’âge minimum est de 18 ans. La période transitoire qui permettait, sous conditions, l’emploi entre 16 et 18 ans est écoulée ; employer une personne de moins de 18 ans est puni d’une amende de 25 000 à 30 000 DH.'
+      cites: [/ma/loi/19-12/art_6, /ma/loi/19-12/art_27, /ma/loi/19-12/art_23]
+    - title: {ar: المدة والراحة, fr: Durée et repos}
+      answer: {ar: '48 ساعة في الأسبوع، وراحة أسبوعية من 24 ساعة متصلة.', fr: '48 heures par semaine, et un repos hebdomadaire de 24 heures d’affilée.'}
+      body:
+        ar: 'مدة العمل 48 ساعة في الأسبوع، توزع على أيامه باتفاق الطرفين. وللعامل راحة أسبوعية لا تقل عن 24 ساعة متصلة.'
+        fr: 'La durée du travail est de 48 heures par semaine, réparties d’un commun accord. Le repos hebdomadaire est d’au moins 24 heures consécutives.'
+      cites: [/ma/loi/19-12/art_13, /ma/loi/19-12/art_14]
+    - title: {ar: الأجر, fr: Le salaire}
+      answer: {ar: 'لا يقل الأجر النقدي عن 60% من الحد الأدنى، دون حساب الأكل والسكن.', fr: 'Le salaire en espèces n’est pas inférieur à 60 % du minimum, repas et logement non compris.'}
+      body:
+        ar: 'لا يقل الأجر النقدي عن 60 بالمائة من الحد الأدنى القانوني للأجر في الصناعة والتجارة والمهن الحرة، ولا يحسب فيه الإطعام والسكن. ويؤدى كل شهر عند انتهائه.'
+        fr: 'Le salaire en espèces n’est pas inférieur à 60 % du salaire minimum légal de l’industrie, du commerce et des professions libérales, nourriture et logement non compris. Il est payé chaque mois à son terme.'
+      cites: [/ma/loi/19-12/art_19, /ma/decret/2-25-983/art_1]
+      tool: tools/pay
+    - title: {ar: نهاية العقد, fr: La fin du contrat}
+      answer: {ar: 'بعد سنة متواصلة، لك تعويض عند الفصل، وشهادة الشغل داخل 8 أيام.', fr: 'Après un an continu, une indemnité de licenciement vous est due, et le certificat de travail dans les 8 jours.'}
+      body:
+        ar: 'تستحق العاملة أو العامل المنزلي تعويضا عند الفصل بعد سنة متواصلة من الشغل لدى نفس المشغل، بنفس ساعات مدونة الشغل: 96 ساعة عن كل سنة من الخمس الأولى، ثم أكثر. وتسلم شهادة الشغل داخل ثمانية أيام.'
+        fr: 'Le travailleur domestique a droit à une indemnité de licenciement après un an continu chez le même employeur, selon les mêmes heures que le Code du travail : 96 heures par année pour les cinq premières, puis davantage. Le certificat de travail est remis dans les huit jours.'
+      cites: [/ma/loi/19-12/art_21, /ma/loi/19-12/art_10]
+    - title: {ar: الشكاية, fr: La plainte}
+      answer: {ar: 'يتلقى مفتش الشغل الشكايات من الجهتين ويجري الصلح.', fr: 'L’inspecteur du travail reçoit les plaintes des deux côtés et concilie.'}
+      body:
+        ar: 'يتلقى مفتش الشغل شكايات العامل ضد المشغل والمشغل ضد العامل، ويستدعي الطرفين ويجري الصلح بينهما، ويضمن ذلك في محضر يوقعه الطرفان.'
+        fr: 'L’inspecteur du travail reçoit les plaintes du travailleur contre l’employeur et de l’employeur contre le travailleur ; il convoque les parties, tente de les concilier et le consigne dans un procès-verbal signé des deux.'
+      cites: [/ma/loi/19-12/art_22]
+  ends: {icon: list, paper: {ar: 'نظيرك من العقد، وشهادة الشغل عند النهاية', fr: 'Votre exemplaire du contrat, et le certificat de travail à la fin'}, cites: [/ma/loi/19-12/art_3, /ma/loi/19-12/art_10]}
+  next: [pages/where, pages/employers]

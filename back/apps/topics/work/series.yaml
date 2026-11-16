@@ -1,0 +1,83 @@
+# Work in numbers (T15 of the work plan). The minimum wage from its own decrees, as the BO printed them (the issues are
+# our own files); unemployment from the HCP's yearly «Activité, emploi et chômage», each year read from the edition
+# named in `from`, on its page, checked against the PDF's text on 20 Oct 2026. The HCP's 2026 survey counts otherwise,
+# so 2026 is never put on the same line. A year's minimum wage is the one in force on its 31 December (2026: today).
+
+files:
+  bo6790: {title: 'الجريدة الرسمية عدد 6790 (29 يونيو 2019)', url: 'https://www.sgg.gov.ma/BO/bo_ar/2019/BO_6790_Ar.pdf', path: issues/bo_ar/BO_6790_ar.pdf, sha256: 617f1f425dcfc3da5e93425bbabfc0d21e1c60cbb77b07854a17a0191b5881ab}
+  bo7125: {title: 'الجريدة الرسمية عدد 7125 (12 شتنبر 2022)', url: 'https://www.sgg.gov.ma/BO/AR/3111/2022/BO_7125_Ar.pdf', path: issues/bo_ar/BO_7125_ar.pdf, sha256: b1838bd28590253da9ceb82f21c13b92fb3f71d697da726c3b90a1306c9e00c7}
+  bo7240: {title: 'الجريدة الرسمية عدد 7240 (19 أكتوبر 2023)', url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7240_Ar.pdf', path: issues/bo_ar/BO_7240_ar.pdf, sha256: 0a9fcf3aa7dbffc9c69503a91fa31ed8be5cd677b849a8f5e3c0e66ec85c86bd}
+  bo7367: {title: 'الجريدة الرسمية عدد 7367 (6 يناير 2025)', url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7367_Ar.pdf', path: issues/bo_ar/BO_7367_ar.pdf, sha256: fe4d22f231235fd2fde5437ce0d6f4d549a44f7dfc456699e74df328f0c237a0}
+  bo7469: {title: 'الجريدة الرسمية عدد 7469 (29 دجنبر 2025)', url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7469_Ar.pdf', path: issues/bo_ar/BO_7469_ar.pdf, sha256: 87d0de5745e1baa779ea3f2960f32d20b256ec821d71f717d34ced45b2eaaa2f}
+  hcp2019: {title: 'Activité, emploi et chômage, résultats annuels 2019', url: 'https://www.hcp.ma/file/231290/', path: sources/hcp/hcp_emploi_2019.pdf, sha256: 06ab70e9dca067c851d3e44eda8fcc79fd67706aba0473f7cfab038d6e26c66c}
+  hcp2020: {title: 'Activité, emploi et chômage, résultats annuels 2020', url: 'https://www.hcp.ma/file/231289/', path: sources/hcp/hcp_emploi_2020.pdf, sha256: 65bf5c71a8eede400307a1a8f1061ebf9385826c52666a184bb4ea7b25931c9a}
+  hcp2022: {title: 'Activité, emploi et chômage, résultats annuels 2022', url: 'https://www.hcp.ma/file/237307/', path: sources/hcp/hcp_emploi_2022.pdf, sha256: 473a16d88f3346d81c31ca5892da6ab40841435413e0013d20b10591fb831bcd}
+  hcp2023: {title: 'Activité, emploi et chômage, résultats annuels 2023', url: 'https://www.hcp.ma/file/242461/', path: sources/hcp/hcp_emploi_2023.pdf, sha256: cd736d42ba8a2d656d5b5e73df99a71e93ab2c76a042d6312246d21a579a54c0}
+  hcp2024: {title: 'Activité, emploi et chômage, résultats annuels 2024', url: 'https://www.hcp.ma/file/244731/', path: sources/hcp/hcp_emploi_2024.pdf, sha256: 747b2499b1183d8a0b6d1528070a883cb625e67832ab7a275c6972d517fbf8be}
+  hcp2025: {title: 'Activité, emploi et chômage, résultats annuels 2025', url: 'https://www.hcp.ma/file/247824/', path: sources/hcp/hcp_emploi_2025.pdf, sha256: 8f232a09f223561cca224c88d6cfb37282c53cf7f34572eadfeb45c9c60209df}
+
+series:
+  - key: minimum-wage
+    title: {ar: 'الحد الأدنى للأجر عن ساعة الشغل', fr: 'Le salaire minimum de l’heure'}
+    lead:
+      ar: 'في الصناعة والتجارة والخدمات، بالدرهم، كما في الجريدة الرسمية في 31 دجنبر من كل سنة.'
+      fr: 'Dans l’industrie, le commerce et les services, en dirhams, tel qu’en vigueur au 31 décembre de chaque année.'
+    cites: [/ma/loi/65-99/art_356, /ma/decret/2-25-983/art_1]
+    table: 'المراسيم 2.19.424 و2.22.606 و2.23.799 و2.24.1122 و2.25.983'
+    unit: dirhams
+    lines:
+      - {key: hour, label: {ar: درهم للساعة, fr: DH de l’heure}}
+    years:
+      - {year: 2019, hour: 14.13, from: bo6790, page: 4597}
+      - {year: 2020, hour: 14.81, from: bo6790, page: 4597}
+      - {year: 2021, hour: 14.81, from: bo6790, page: 4597}
+      - {year: 2022, hour: 15.55, from: bo7125, page: 6045}
+      - {year: 2023, hour: 16.29, from: bo7240, page: 8037}
+      - {year: 2024, hour: 16.29, from: bo7240, page: 8037}
+      - {year: 2025, hour: 17.10, from: bo7367, page: 62}
+      - {year: 2026, hour: 17.92, from: bo7469, page: 10038}
+
+  - key: farm-minimum
+    title: {ar: 'الحد الأدنى للأجر عن يوم الشغل في الفلاحة', fr: 'Le salaire minimum de la journée agricole'}
+    lead:
+      ar: 'بالدرهم، كما في الجريدة الرسمية في 31 دجنبر من كل سنة. ارتفع منذ 2022 أسرع من الحد الأدنى في غير الفلاحة، والتوحيد معلن في أفق 2028.'
+      fr: 'En dirhams, tel qu’en vigueur au 31 décembre de chaque année. Il augmente plus vite que le minimum non agricole depuis 2022 ; l’unification est annoncée pour 2028.'
+    cites: [/ma/loi/65-99/art_358, /ma/decret/2-25-983/art_2]
+    table: 'المراسيم 2.19.424 و2.22.606 و2.23.799 و2.24.1122 و2.25.983'
+    unit: dirhams
+    lines:
+      - {key: day, label: {ar: درهم لليوم, fr: DH la journée}}
+    years:
+      - {year: 2019, day: 73.22, from: bo6790, page: 4597}
+      - {year: 2020, day: 76.70, from: bo6790, page: 4597}
+      - {year: 2021, day: 76.70, from: bo6790, page: 4597}
+      - {year: 2022, day: 84.37, from: bo7125, page: 6045}
+      - {year: 2023, day: 88.58, from: bo7240, page: 8037}
+      - {year: 2024, day: 88.58, from: bo7240, page: 8037}
+      - {year: 2025, day: 93.00, from: bo7367, page: 62}
+      - {year: 2026, day: 97.44, from: bo7469, page: 10038}
+
+  - key: unemployment
+    title: {ar: 'البطالة، كل الأعمار ومن 15 إلى 24 سنة', fr: 'Le chômage, tous âges et de 15 à 24 ans'}
+    lead:
+      ar: 'نسبة البطالة بالمائة، حسب البحث الوطني حول التشغيل للمندوبية السامية للتخطيط.'
+      fr: 'Le taux de chômage en pourcentage, selon l’enquête nationale sur l’emploi du HCP.'
+    table: 'Activité, emploi et chômage, résultats annuels'
+    unit: percent
+    lines:
+      - {key: all, label: {ar: كل الأعمار, fr: Tous âges}}
+      - {key: young, label: {ar: من 15 إلى 24 سنة, fr: 15 à 24 ans}}
+    years:
+      - {year: 2018, all: 9.5, young: 25.6, from: hcp2019, page: 10}   # national: p. 7
+      - {year: 2019, all: 9.2, young: 24.9, from: hcp2019, page: 10}
+      - {year: 2020, all: 11.9, young: 31.2, from: hcp2020, page: 12}
+      - {year: 2021, all: 12.3, young: 31.8, from: hcp2022, page: 8}
+      - {year: 2022, all: 11.8, young: 32.7, from: hcp2022, page: 4}
+      - {year: 2023, all: 13.0, young: 35.8, from: hcp2023, page: 4}
+      - {year: 2024, all: 13.3, young: 36.7, from: hcp2024, page: 4}
+      - {year: 2025, all: 13.0, young: 37.2, from: hcp2025, page: 4}
+    notes:
+      - ar: 'نسبة كل الأعمار لسنتي 2018 و2019 في الصفحة 7 من طبعة 2019، ولسنة 2021 في الصفحة 4 من طبعة 2022.'
+        fr: 'Le taux tous âges de 2018 et 2019 est page 7 de l’édition 2019, celui de 2021 page 4 de l’édition 2022.'
+      - ar: 'من 2026، تحسب المندوبية البطالة ببحث جديد وتعريف أضيق: 9,5% في الفصل الثاني من 2026، و27,2% من 15 إلى 24 سنة. ليس نفس المقياس، فلا يوضع على نفس الخط.'
+        fr: 'Depuis 2026, le HCP mesure le chômage par une nouvelle enquête et une définition plus stricte : 9,5 % au deuxième trimestre 2026, 27,2 % chez les 15-24 ans. Ce n’est pas la même mesure ; elle n’est pas mise sur la même ligne.'

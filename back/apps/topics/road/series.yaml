@@ -1,0 +1,59 @@
+# The road in numbers (R17 of the road plan): deaths within thirty days of an accident, as the National Road Safety
+# Agency (NARSA) counts them, each year from the report that prints it, read on its page on 20 Oct 2026 (2024 from
+# NARSA's open data, sheet 1, cell D3). Definitive figures only; 2025's are the Bilan's. The 2017–2026 strategy aimed
+# at half of 2015's deaths by 2026: a note, never drawn as a forecast. A year without an official figure stays empty.
+
+files:
+  recueil2020: {title: 'NARSA – Recueil des statistiques des accidents 2020', url: 'https://www.narsa.ma/sites/default/files/2026-02/recueil%202020.pdf', path: sources/road/narsa_recueil_2020.pdf, sha256: d74af2029bbd94cfedc02a699fa424f4cd9881829f9fbd8b991e17f50585f968}
+  note2019: {title: 'NARSA – Statistiques définitives des accidents 2019', url: 'https://www.narsa.ma/sites/default/files/2026-02/Comm%20accid%202019.pdf', path: sources/road/narsa_stats_definitives_2019.pdf, sha256: 0498ffda6e10c4fd96e41b89d261bd55a41320c70a8ffd43ef2b0a4bc939161a}
+  recueil2021: {title: 'NARSA – Recueil des statistiques des accidents 2021', url: 'https://www.narsa.ma/sites/default/files/2026-02/Recueil%202021.pdf', path: sources/road/narsa_recueil_2021.pdf, sha256: 333ae0c48abfb84df2dcab836d7126c81e73b55e5db43794eb2cd81fdf22a9f1}
+  recueil2022: {title: 'NARSA – Recueil des accidents 2022', url: 'https://www.narsa.ma/sites/default/files/2026-02/Recueil%20des%20accidents%20-%202022_231020_140050.pdf', path: sources/road/narsa_recueil_2022.pdf, sha256: 6a79cfdd960f4af66e1a224e78b59a05f739f2865adfd55694751bd3c9b2e8c6}
+  rapport2022: {title: 'NARSA – Rapport de la sécurité routière 2022', url: 'https://www.narsa.ma/sites/default/files/2026-02/Rapport%20de%20la%20SR%202022%20V5_231020_140005_compressed.pdf', path: sources/road/narsa_rapport_sr_2022.pdf, sha256: 2b050d38352e59a0a8d8d6d3ecd2caaf4503f02ea66cbadaf9dbd57c63ba2bd6}
+  rapport2023: {title: 'NARSA – Rapport de la sécurité routière 2023', url: 'https://www.narsa.ma/sites/default/files/2026-02/Rapport%20de%20la%20SR%202023_compressed.pdf', path: sources/road/narsa_rapport_sr_2023.pdf, sha256: 71d6d674f07e567eb5b295e68c4409b60e58280ecadce012a83b7227efd8e43e}
+  opendata2024: {title: 'NARSA – Statistiques des accidents 2024 (data.gov.ma)', url: 'https://data.gov.ma/data/fr/dataset/2e992f4b-bbd5-4aaf-b4cb-d0b8152321b3/resource/ea1bdf00-5aca-4b34-80ae-c418b84c8cc2/download/statistiqes_accidents_2024.xlsx', path: sources/road/narsa_opendata_accidents_2024.xlsx, sha256: a9f838e0fa37a22f6ccfb573e9935b49adb1722c285ba1c9d8c2f16ce44ab80f}
+  bilan2025: {title: 'NARSA – Bilan des accidents de la circulation routière 2025', url: 'https://www.narsa.ma/sites/default/files/2026-09/Bilan%20des%20accidents%20de%20la%20circulation%20routi%C3%A8re%202025.pdf', path: sources/road/narsa_bilan_2025.pdf, sha256: 5a2f588ea3d3f061763353b440ef7e8371708b4effab6e388dc5b675deba764b}
+
+series:
+  - key: deaths
+    title: {ar: 'الوفيات في حوادث السير', fr: 'Les tués sur les routes'}
+    lead:
+      ar: 'عدد القتلى داخل ثلاثين يوما من الحادثة، حسب الأرقام النهائية للوكالة الوطنية للسلامة الطرقية.'
+      fr: 'Le nombre de tués dans les trente jours qui suivent l’accident, selon les chiffres définitifs de la NARSA.'
+    table: 'الوفيات حسب السنة ومصدر كل رقم'
+    unit: count
+    lines:
+      - {key: deaths, label: {ar: الوفيات, fr: Tués}}
+    years:
+      - {year: 2011, deaths: 4222, from: recueil2020, page: 5}
+      - {year: 2012, deaths: 4167, from: recueil2020, page: 5}
+      - {year: 2013, deaths: 3832, from: recueil2020, page: 5}
+      - {year: 2014, deaths: 3489, from: recueil2020, page: 5}
+      - {year: 2015, deaths: 3776, from: recueil2020, page: 5}
+      - {year: 2016, deaths: 3785, from: recueil2020, page: 5}
+      - {year: 2017, deaths: 3726, from: recueil2020, page: 5}
+      - {year: 2018, deaths: 3736, from: recueil2020, page: 5}
+      - {year: 2019, deaths: 3622, from: note2019, page: 1}
+      - {year: 2020, deaths: 3005, from: recueil2021, page: 3}
+      - {year: 2021, deaths: 3685, from: recueil2022, page: 11}
+      - {year: 2022, deaths: 3499, from: rapport2022, page: 10}
+      - {year: 2023, deaths: 3819, from: rapport2023, page: 11}
+      - {year: 2024, deaths: 4024, from: opendata2024}
+      - {year: 2025, deaths: 4786, from: bilan2025, page: 2}
+    # The year told first (N1 of the road tools review): the newest figure and its change, who died by the Bilan's
+    # page 4, each group leading to the rule that is theirs (N2); the strategy's goal as a stated line, never drawn.
+    story:
+      year: 2025
+      value: 4786
+      change: 18.94
+      from: bilan2025
+      page: 2
+      words: {ar: 'قتيلا في طرقنا سنة 2025، أكثر سنة منذ 2011', fr: 'tués sur nos routes en 2025, l’année la plus lourde depuis 2011'}
+      who_from: {from: bilan2025, page: 4}
+      who:
+        - {key: two, share: 45, label: {ar: 'على دراجات بمحرك ذات عجلتين أو ثلاث', fr: 'sur des deux- ou trois-roues motorisés'}, rule: {ar: 'الخوذة المربوطة والمصادق عليها واجبة للسائق والراكب', fr: 'Le casque attaché et homologué, pour le conducteur comme pour le passager'}, to: journeys/riders}
+        - {key: walk, share: 26.1, label: {ar: 'راجلون', fr: 'des piétons'}, rule: {ar: 'للراجل الذي دخل الممر أسبقية المرور', fr: 'Le piéton engagé sur le passage a la priorité'}, to: pages/walking}
+        - {key: cars, share: 18.4, label: {ar: 'في السيارات السياحية', fr: 'en voitures de tourisme'}, rule: {ar: 'الحزام إجباري، ولا طفل دون عشر سنوات في المقاعد الأمامية', fr: 'La ceinture est obligatoire, et pas d’enfant de moins de dix ans à l’avant'}, to: pages/rules}
+        - {key: bikes, share: 4.5, label: {ar: 'على الدراجات', fr: 'à vélo'}, rule: {ar: 'الخوذة لسائقي الدراجات أيضا، ولا سماعات', fr: 'Le casque pour les cyclistes aussi, et pas d’écouteurs'}, to: journeys/riders}
+      goal: {ar: 'كانت الاستراتيجية الوطنية 2017–2026 تهدف إلى نصف وفيات 2015 (3.776) في أفق 2026.', fr: 'La stratégie nationale 2017–2026 visait la moitié des tués de 2015 (3 776) à l’horizon 2026.'}
+    notes:
+      - {ar: 'كانت الاستراتيجية الوطنية 2017–2026 تهدف إلى خفض عدد الوفيات بـ50% في أفق 2026 مقارنة بسنة 2015 (تقرير 2023، ص. 7)، وكان هدفها المرحلي لسنة 2023 أقل من 2.454 قتيلا (ص. 4)؛ وسجلت تلك السنة 3.819.', fr: 'La stratégie nationale 2017–2026 visait à réduire de 50 % le nombre de tués d’ici 2026 par rapport à 2015 (Rapport 2023, p. 7) ; son objectif intermédiaire pour 2023 était de moins de 2 454 tués (p. 4) ; l’année en a compté 3 819.'}

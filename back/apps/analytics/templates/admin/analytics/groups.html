@@ -1,0 +1,6 @@
+{% load figures %}{% comment %}A breakdown's table (report.groups): each group's count, its share with a bar, its count before and the
+change. `head` names the first column, `unit` the count's.{% endcomment %}<table>
+  <thead><tr><th>{{ head }}</th><th class="r-n">{{ unit }}</th><th>share</th><th class="r-n">before</th><th class="r-n">share before</th><th class="r-n">change</th></tr></thead>
+  <tbody>{% for g in rows %}<tr><td>{{ g.key|default:"—" }}{% if g.key == 'browser' and head == 'family' %} <span class="r-q">(people)</span>{% endif %}</td><td class="r-n">{{ g.now|num }}</td><td><span class="r-bar"><i style="width:{{ g.share|width }}%"></i></span> {{ g.share|pct }}</td><td class="r-n r-q">{{ g.before|num }}</td><td class="r-n r-q">{{ g.share_before|pct }}</td><td class="r-n">{{ g.change|change }}</td></tr>
+  {% empty %}<tr><td colspan="6">None counted.</td></tr>{% endfor %}</tbody>
+</table>

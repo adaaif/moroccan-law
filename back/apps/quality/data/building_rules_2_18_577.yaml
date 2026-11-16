@@ -1,0 +1,32 @@
+# Decree 2.18.577 (the general building regulation) as BO 6793 prints it, where our text misreads it: running headers
+# glued in, wrong or dropped letters, words misread in the forms of the annexes, a form line out of order, row numbers the
+# page leaves blank. Each was read against the page's image on 26 Oct 2026 (the land review, M16), in the articles the
+# land topic cites and the annexes (3 parts corrected). A fix whose words stand in several of the annex's forms puts all of them
+# right: each form prints them the same way.
+# Applied by `manage.py apply_page_reading apps/quality/data/building_rules_2_18_577.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-18-577
+document: issues/bo_ar/BO_6793_ar.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [48], wrong: "4860 الجريدة ا\nيتم", right: "يتم"}   # running header glued in, p. 4859
+  - {arts: [50], wrong: "إلىها", right: "إليها"}   # wrong letter, p. 4860
+  - {arts: [annex], wrong: "الوثائق الكونة للملف", right: "الوثائق المكونة للملف"}   # dropped letter, annex 5, p. 4865
+  - {arts: [annex], wrong: "الغانة", right: "الخانة"}   # wrong letter, annex 5, p. 4865
+  - {arts: [annex], wrong: "الغاية", right: "الخانة"}   # wrong letters, annex 5, p. 4871
+  - {arts: [annex], wrong: "| 6. | | ☐ |\n| 7. | | ☐ |", right: "| | | ☐ |\n| | | ☐ |"}   # row numbers the page leaves blank (3 forms), annex 5, pp. 4865, 4869, 4871
+  - {arts: [annex], wrong: "توقيع صاحب الطلب", right: "توقيع صاحب الشأن"}   # wrong word (2 forms), annex 5, pp. 4865, 4875
+  - {arts: [annex], wrong: "صاحب الفلان", right: "صاحب الشأن"}   # misread word, annex 5, p. 4869
+  - {arts: [annex], wrong: "عاص بمكتب الضبط", right: "خاص بمكتب الضبط"}   # wrong letter, annex 5, p. 4869
+  - {arts: [annex], wrong: "صاحب الطلب :\nبصفته : مالك، مكتري، مسير الشركة ........................ :\nرب.و/ السجل التجاري :\nالعنوان :\nهاتف/فاكس/بريد إلكتروني :\nنوع واستعمال المبنى :\nالموقع الجغرافي :\nالمراجع العقارية :\nالمساحة :\nالأجل المقترح لإنجاز الأشغال :\nالاسم الكامل أو الاسم التجاري للشركة ........................ :", right: "صاحب الطلب : الاسم الكامل أو الاسم التجاري للشركة ........................\nبصفته : مالك، مكتري، مسير الشركة ........................ :\nر.ب.و/ السجل التجاري :\nالعنوان :\nهاتف/فاكس/بريد إلكتروني :\nنوع واستعمال المبنى :\nالموقع الجغرافي :\nالمراجع العقارية :\nالمساحة :\nالأجل المقترح لإنجاز الأشغال :"}   # line out of order, dropped dot, annex 5, p. 4873
+  - {arts: [annex], wrong: "معلومات حن المشروع", right: "معلومات عن المشروع"}   # wrong letter, annex 5, p. 4876
+  - {arts: [annex], wrong: "بيانات حول طالب الرخصة", right: "بيانات حول طلب الرخصة"}   # wrong word, annex 5, p. 4877
+  - {arts: [annex], wrong: "الملاحظات المدرجة", right: "الملاحظات المبداة"}   # wrong word, annex 6, p. 4879
+  - {arts: [annex], wrong: "4880\nالجريدة الرسمية\nعدد 6793 - 5 ذو القعدة 1440 (8 يوليو 2019)\n| الوكالة المعتمدة", right: "| الوكالة الحضرية"}   # running header glued in, wrong word, annex 6, p. 4880
+  - {arts: [annex], wrong: "الإشعار والتوقيعات", right: "الأسماء والتوقيعات"}   # wrong word (3 tables), annex 6, p. 4881
+  - {arts: [annex], wrong: "برخص", right: "يرخص"}   # wrong letter (3 forms), annex 7 and 9, pp. 4883, 4889, 4896
+  - {arts: [annex], wrong: "ضوابط البناء العام", right: "ضابط البناء العام"}   # wrong word (6 forms), annexes 7 and 9, pp. 4885–4896
+  - {arts: [annex], wrong: "لقائدة الجماعة", right: "لفائدة الجماعة"}   # wrong letter, annex 7, p. 4886
+  - {arts: [annex], wrong: "عدد 6793 - 5 ذو القعدة 1440 (8 يوليو 2019)\nالجريدة الرسمية\n4892\nملحق رقم 8", right: "ملحق رقم 8"}   # running header glued in, annex 8, p. 4892
+  - {arts: [annex], wrong: "توعية المشروع", right: "نوعية المشروع"}   # wrong letter, annex 8, p. 4892
+  - {arts: [annex], wrong: "| الإمضاء والتوقيعات | الملاحظات المبداة | الاسم |", right: "| الأسماء والتوقيعات | الملاحظات المبداة | |"}   # wrong words, annex 8, p. 4892
+  - {arts: [annex], wrong: "الملاحظات البداية", right: "الملاحظات المبداة"}   # wrong word (2 tables), annex 8, p. 4893

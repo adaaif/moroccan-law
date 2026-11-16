@@ -1,0 +1,335 @@
+# The papers topic's pages (the papers review): your rights at the counter (law 55.19), civil-status copies and the
+# family booklet, the passport, nationality, the card itself, legalisation and certified copies, your data, the
+# foreigners' titles, and what people believe. Every fact names its articles, as the site holds them on 27 Oct 2026.
+
+- key: counter
+  title: {ar: 'حقوقك فالشباك', fr: 'Vos droits au guichet'}
+  lead:
+    ar: 'القانون 55.19 يكتب ما يمكن للإدارة أن تطلبه منك وما لا يمكن، وأجل جوابها، ووصلك، وطعنك؛ وكل مسطرة منشورة بالبوابة الوطنية للمساطر والإجراءات الإدارية.'
+    fr: 'La loi 55.19 écrit ce que l’administration peut vous demander et ce qu’elle ne peut pas, son délai, votre reçu et votre recours ; chaque procédure est publiée sur le portail national des procédures.'
+  cites: [/ma/loi/55-19/art_1]
+  sections:
+    - title: {ar: 'ما يمكن أن تطلبه', fr: 'Ce qu’elle peut demander'}
+      facts:
+        - text: {ar: 'لا تطلب منك الإدارة إلا الوثائق التي ينص عليها نص تشريعي أو تنظيمي، وتم جردها ونشرها بالبوابة الوطنية.', fr: 'L’administration ne vous demande que les pièces prévues par un texte législatif ou réglementaire, recensées et publiées sur le portail national.'}
+          cites: [/ma/loi/55-19/art_3]
+        - text: {ar: 'ولا تطلب منك الوثيقة نفسها، ولا المعلومة نفسها، أكثر من مرة واحدة.', fr: 'Elle ne vous demande la même pièce, ni la même information, qu’une seule fois.'}
+          cites: [/ma/loi/55-19/art_4]
+        - text: {ar: 'والبطاقة الوطنية تعفيك من رسم الولادة، وشهادة الإقامة، وشهادة الحياة، وشهادة الجنسية.', fr: 'Et la carte nationale vous dispense de l’acte de naissance, du certificat de résidence, du certificat de vie et du certificat de nationalité.'}
+          cites: [/ma/loi/4-20/art_11]
+    - title: {ar: 'ما لا يمكن أن تطلبه', fr: 'Ce qu’elle ne peut pas demander'}
+      facts:
+        - text: {ar: 'أكثر من نسخة واحدة من الملف ووثائقه؛ تصحيح الإمضاء على وثائق الملف؛ وثائق إدارية متاحة للعموم لا تعنيك شخصيا؛ ونسخا مطابقة للأصل.', fr: 'Plus d’une copie du dossier et de ses pièces ; la légalisation de signature sur ses pièces ; des documents administratifs publics qui ne vous concernent pas personnellement ; des copies conformes.'}
+          cites: [/ma/loi/55-19/art_7]
+        - text: {ar: 'إلا إذا شكت في صحة نسخة: تطلب الأصل أو نسخة مطابقة مرة واحدة، معللة طلبها، عند الإيداع أو خلال النصف الأول من أجل الدراسة، ويعلق الأجل حتى تدلي بها.', fr: 'Sauf doute sur une copie : elle demande l’original ou une copie conforme une seule fois, en motivant, au dépôt ou dans la première moitié du délai, qui est suspendu jusqu’à la production.'}
+          cites: [/ma/loi/55-19/art_7]
+        - text: {ar: 'ويمكن للإدارة أن تعوض وثائق بتصريح بالشرف تدلي به.', fr: 'L’administration peut remplacer des pièces par une déclaration sur l’honneur.'}
+          cites: [/ma/loi/55-19/art_8]
+    - title: {ar: 'الوصل', fr: 'Le reçu'}
+      facts:
+        - text: {ar: 'عند الإيداع تأخذ وصلا فورا: «ملف مودع» إذا كان كاملا، أو «ملف في طور الإيداع» مع لائحة ما ينقص كاملة ودفعة واحدة، تدلي بها داخل 30 يوما.', fr: 'Au dépôt, un reçu sur-le-champ : «dossier déposé» s’il est complet, ou «dossier en cours de dépôt» avec la liste complète, en une fois, de ce qui manque, à produire dans 30 jours.'}
+          cites: [/ma/loi/55-19/art_10]
+        - text: {ar: 'هذا الوصل هو ما تحتج به في الطعن، وفي المطالبة بالسكوت بمثابة موافقة.', fr: 'Ce reçu est ce que vous invoquez pour un recours, et pour faire valoir le silence valant accord.'}
+          cites: [/ma/loi/55-19/art_12]
+    - title: {ar: 'الأجل والتعليل', fr: 'Le délai et les motifs'}
+      facts:
+        - text: {ar: 'لكل قرار أجل لا يتعدى 60 يوما من إيداع الملف كاملا، و30 يوما لقرارات الاستثمار المحددة؛ ولا يمدد إلا مرة واحدة لخبرة تقنية أو بحث عمومي.', fr: 'Chaque décision a un délai de 60 jours au plus dès le dossier complet, 30 jours pour les décisions d’investissement listées ; il n’est prolongé qu’une fois, pour une expertise ou une enquête publique.'}
+          cites: [/ma/loi/55-19/art_16, /ma/loi/55-19/art_17]
+        - text: {ar: 'والإدارة تطلب معلومات تكميلية مرة واحدة فقط، خلال النصف الأول من الأجل.', fr: 'Elle ne demande des informations complémentaires qu’une fois, dans la première moitié du délai.'}
+          cites: [/ma/loi/55-19/art_14]
+        - text: {ar: 'والرفض يذكر أسبابه في صلب القرار، وتخبرك به الإدارة.', fr: 'Un refus écrit ses motifs dans la décision, et l’administration vous en informe.'}
+          cites: [/ma/loi/55-19/art_18]
+    - title: {ar: 'السكوت والطعن', fr: 'Le silence et le recours'}
+      facts:
+        - text: {ar: 'في القرارات المحددة بلائحة، السكوت بعد الأجل موافقة؛ وفي غيرها لك 30 يوما للطعن أمام رئيس الإدارة، الذي يرد في 15 يوما.', fr: 'Pour les décisions listées, le silence après le délai vaut accord ; pour les autres, 30 jours pour un recours auprès du supérieur, qui répond en 15 jours.'}
+          cites: [/ma/loi/55-19/art_19, /ma/loi/55-19/art_21]
+          more: journeys/appeal
+    - title: {ar: 'الوثائق بين الإدارات', fr: 'Les pièces entre administrations'}
+      facts:
+        - text: {ar: 'الوثائق التي توجد عند إدارة أخرى تأخذها الإدارة بنفسها بعد موافقتك، وترسل لك نسخة منها؛ وإن تعذر، تخبرك داخل 15 يوما بالسبب.', fr: 'Les pièces détenues par une autre administration, elle les obtient elle-même avec votre accord et vous en envoie copie ; si c’est impossible, elle vous dit pourquoi dans 15 jours.'}
+          cites: [/ma/loi/55-19/art_23, /ma/loi/55-19/art_24]
+  links:
+    - name: {ar: 'البوابة الوطنية للمساطر والإجراءات الإدارية', fr: 'Le portail national des procédures administratives'}
+      url: https://www.idarati.ma/
+      note: {ar: 'المرسوم 2.22.141، المادة 7', fr: 'Décret 2.22.141, art. 7'}
+  tool: tools/counter
+
+- key: copies
+  title: {ar: 'نسخ الحالة المدنية والدفتر العائلي', fr: 'Les copies d’état civil et le livret de famille'}
+  lead:
+    ar: 'السجل الوطني للحالة المدنية هو المصدر الرسمي الوحيد لكل الرسوم ومستخرجاتها؛ وتطلب النسخ من أي مكتب في المغرب أو خارجه، أو عن بعد.'
+    fr: 'Le registre national de l’état civil est la seule source officielle des actes et de leurs extraits ; les copies se demandent dans tout bureau au Maroc ou à l’étranger, ou à distance.'
+  cites: [/ma/loi/36-21/art_14]
+  sections:
+    - title: {ar: 'ثلاث نسخ', fr: 'Trois copies'}
+      facts:
+        - text: {ar: 'نسخة الرسم: كل بياناته وتغييراتها بترتيبها التاريخي. النسخة الكاملة: كل البيانات حسب آخر تحيين. النسخة الموجزة: ملخص البيانات الأساسية حسب آخر تحيين.', fr: 'La copie de l’acte : toutes ses mentions et leurs changements dans l’ordre. La copie intégrale : toutes les mentions au dernier état. L’extrait : un résumé des mentions essentielles au dernier état.'}
+          cites: [/ma/decret/2-22-04/art_44, /ma/decret/2-22-04/art_45]
+    - title: {ar: 'من يطلبها', fr: 'Qui les demande'}
+      facts:
+        - text: {ar: 'صاحب الرسم، وأصوله وفروعه وزوجه والأرمل، ووليه أو وصيه أو المقدم عليه، ومن يوكله، والكافل أو طالب الكفالة.', fr: 'Le titulaire de l’acte, ses ascendants et descendants, son conjoint et le veuf, son tuteur, son mandataire, le kafil ou le demandeur de kafala.'}
+          cites: [/ma/loi/36-21/art_43]
+        - text: {ar: 'من أي مكتب للحالة المدنية في المغرب أو خارجه، أو عبر المنظومة الرقمية، أو عن بعد بكل وسائل الاتصال المتوفرة.', fr: 'Dans tout bureau d’état civil au Maroc ou à l’étranger, par le système numérique, ou à distance par tout moyen disponible.'}
+          cites: [/ma/loi/36-21/art_43]
+        - text: {ar: 'وغير هؤلاء لا تسلم لهم إلا بإذن من السلطة المركزية بطلب كتابي معلل، تبت فيه داخل 60 يوما؛ وإذا رفضت، يمكن رفع دعوى أمام المحكمة.', fr: 'Pour d’autres, seulement sur autorisation de l’autorité centrale, à une demande écrite motivée, qu’elle tranche dans 60 jours ; en cas de refus, on peut saisir le tribunal.'}
+          cites: [/ma/loi/36-21/art_43, /ma/decret/2-22-04/art_41]
+    - title: {ar: 'بلا تمبر', fr: 'Sans timbre'}
+      facts:
+        - text: {ar: 'سجلات الحالة المدنية، والوثائق المدلى بها لإقامتها أو تصحيحها، ونسخها ومستخرجاتها، معفاة من واجبات التمبر؛ والإحالة إلى القانون القديم 37.99 صارت إحالة إلى القانون 36.21.', fr: 'Les registres d’état civil, les pièces produites pour l’établir ou le rectifier, ses copies et extraits sont exonérés du timbre ; les renvois à l’ancienne loi 37.99 visent désormais la loi 36.21.'}
+          cites: [/ma/code/cgi/art_250, /ma/loi/36-21/art_56]
+    - title: {ar: 'الدفتر العائلي', fr: 'Le livret de famille'}
+      facts:
+        - text: {ar: 'الدفتر العائلي إلكتروني، بالعربية مع كتابة الأسماء بحروف تيفيناغ واللاتينية؛ تسلم نسخة مستخرجة منه للزوجين المغربيين وللنائب الشرعي، وتطلب عن بعد أيضا.', fr: 'Le livret de famille est électronique, en arabe avec les noms en tifinagh et en latin ; une copie extraite est remise aux époux marocains et au représentant légal, et se demande aussi à distance.'}
+          cites: [/ma/loi/36-21/art_44, /ma/loi/36-21/art_45]
+        - text: {ar: 'تسلم النسخة لكل من الزوج والزوجة أو الزوجات، وللمطلقة إذا كان لها ولد، وللنائب الشرعي؛ ولأم الابن مجهول الأب أن تطلب نسخة خاصة بها.', fr: 'La copie est remise à chacun des époux, à la divorcée qui a un enfant, au représentant légal ; la mère d’un enfant de père inconnu peut demander la sienne.'}
+          cites: [/ma/decret/2-22-04/art_43]
+        - text: {ar: 'ويبقى الدفتر العائلي الورقي القديم صالحا.', fr: 'L’ancien livret de famille papier reste valable.'}
+          cites: [/ma/loi/36-21/art_55]
+    - title: {ar: 'الورقي والرقمي', fr: 'Le papier et le numérique'}
+      facts:
+        - text: {ar: 'إذا اختلفت بيانات السجلات الورقية عن نظيرتها المرقمنة، ترجح السجلات الورقية الأصلية.', fr: 'Si les registres papier diffèrent de leur version numérisée, les registres papier originaux l’emportent.'}
+          cites: [/ma/loi/36-21/art_13]
+        - text: {ar: 'رسوم الحالة المدنية لها قوة الوثائق الرسمية في الإثبات، مع الشروط الشرعية في إثبات النسب.', fr: 'Les actes d’état civil ont la force probante des actes officiels, sous les conditions du droit en matière de filiation.'}
+          cites: [/ma/loi/36-21/art_3]
+
+- key: passport
+  title: {ar: 'الباسبور', fr: 'Le passeport'}
+  lead:
+    ar: 'جواز السفر البيومتري وثيقة وطنية شخصية للسفر، تسلم بدون شرط سن لكل مغربي يطلبها؛ ومنذ يوليوز 2026 له نموذج جديد.'
+    fr: 'Le passeport biométrique est un document national personnel de voyage, délivré sans condition d’âge à tout Marocain qui le demande ; depuis juillet 2026 il a un nouveau modèle.'
+  cites: [/ma/decret/2-08-310/art_1]
+  sections:
+    - title: {ar: 'المدة', fr: 'La durée'}
+      facts:
+        - text: {ar: 'يسلم لمدة صلاحية أقصاها خمس سنوات غير قابلة للتمديد؛ وللقاصر دون ثلاث سنوات مدته ثلاث سنوات.', fr: 'Il est délivré pour cinq ans au plus, non prorogeables ; pour un enfant de moins de trois ans, pour trois ans.'}
+          cites: [/ma/decret/2-08-310/art_6]
+    - title: {ar: 'التمبر', fr: 'Le timbre'}
+      facts:
+        - text: {ar: 'جوازات السفر وكل تمديد لها تخضع لواجب ثابت قدره 500 درهم.', fr: 'Les passeports et toute prorogation sont soumis à un droit fixe de 500 DH.'}
+          cites: [/ma/code/cgi/art_252]
+        - text: {ar: 'وجوازات أبناء الجالية المغربية المقيمة بالخارج الذين تقل أعمارهم عن 18 سنة معفاة عند تسليمها أو تمديدها.', fr: 'Ceux des enfants de la diaspora marocaine de moins de 18 ans sont exonérés à la délivrance et à la prorogation.'}
+          cites: [/ma/code/cgi/art_250]
+    - title: {ar: 'النموذج الجديد (2026)', fr: 'Le nouveau modèle (2026)'}
+      facts:
+        - text: {ar: 'غلافه وصفحة بياناته بالعربية والأمازيغية والفرنسية والإنجليزية، وفيها رقم بطاقتك الوطنية؛ وصفحة للتوقيع بخط اليد بصورتك المؤمنة.', fr: 'Sa couverture et sa page de données en arabe, amazighe, français et anglais, avec votre numéro de carte nationale ; une page de signature manuscrite avec votre photo sécurisée.'}
+          cites: [/ma/decret/2-08-310/art_3, /ma/decret/2-08-310/art_4]
+        - text: {ar: 'مكونه الإلكتروني فيه صورتك الرقمية، وصورتان مشفرتان لبصمتي إصبعين، ومكان ولادتك، وتاريخ التسليم.', fr: 'Sa puce porte votre photo numérique, deux empreintes chiffrées, votre lieu de naissance et la date de délivrance.'}
+          cites: [/ma/decret/2-08-310/art_5]
+        - text: {ar: 'الباسبور الذي بين يديك يبقى صالحا حتى تنتهي مدته؛ وفي انتظار التعميم يمكن أن يسلم النموذج القديم.', fr: 'Le passeport que vous avez reste valable jusqu’à son expiration ; en attendant la généralisation, l’ancien modèle peut encore être délivré.'}
+          cites: [/ma/decret/2-26-551/art_3]
+        - text: {ar: 'والجواز المؤقت (اثنا عشر شهرا) نسخت أحكامه.', fr: 'Les dispositions du passeport provisoire (douze mois) sont abrogées.'}
+          cites: [/ma/decret/2-26-551/art_2]
+    - title: {ar: 'التسليم', fr: 'La délivrance'}
+      facts:
+        - text: {ar: 'يسلم وفق الشكليات والكيفيات التي يحددها قرار مشترك لوزيري الداخلية والشؤون الخارجية.', fr: 'Il est délivré selon les formalités fixées par un arrêté conjoint de l’Intérieur et des Affaires étrangères.'}
+          cites: [/ma/decret/2-08-310/art_2]
+
+- key: nationality
+  title: {ar: 'الجنسية المغربية', fr: 'La nationalité marocaine'}
+  lead:
+    ar: 'قانون الجنسية (الظهير 1.58.250) يقول من هو مغربي منذ ولادته، ومن يكتسبها، وكيف تثبت، ومتى تفقد.'
+    fr: 'Le code de la nationalité (dahir 1.58.250) dit qui est marocain dès sa naissance, qui le devient, comment on le prouve et quand on le perd.'
+  cites: [/ma/dahir/1-58-250/art_1]
+  sections:
+    - title: {ar: 'منذ الولادة', fr: 'Dès la naissance'}
+      facts:
+        - text: {ar: 'يعتبر مغربيا الولد المولود من أب مغربي أو أم مغربية؛ ويعد مغربيا منذ ولادته ولو ثبت ذلك بعدها.', fr: 'Est marocain l’enfant né d’un père marocain ou d’une mère marocaine ; il l’est dès sa naissance, même si c’est établi après.'}
+          cites: [/ma/dahir/1-58-250/art_6, /ma/dahir/1-58-250/art_8]
+        - text: {ar: 'ويعتبر مغربيا المولود في المغرب من أبوين مجهولين، ما لم يثبت خلال قصوره أن نسبه من أجنبي يحمل جنسيته.', fr: 'Est marocain l’enfant né au Maroc de parents inconnus, sauf s’il est établi pendant sa minorité qu’il descend d’un étranger dont il a la nationalité.'}
+          cites: [/ma/dahir/1-58-250/art_7]
+    - title: {ar: 'جنسيتان', fr: 'Deux nationalités'}
+      facts:
+        - text: {ar: 'المولود من زواج مختلط ويعتبر مغربيا بأمه يمكنه أن يصرح لوزير العدل، بين 18 و20 سنة، برغبته في الاحتفاظ بجنسية أحد أبويه فقط.', fr: 'L’enfant d’un mariage mixte, marocain par sa mère, peut déclarer au ministre de la Justice, entre 18 et 20 ans, vouloir garder la nationalité d’un seul de ses parents.'}
+          cites: [/ma/dahir/1-58-250/art_19]
+        - text: {ar: 'ولأمه أن تصرح بذلك قبل رشده، وله أن يعدل عما صرحت به بين 18 و20 سنة.', fr: 'Sa mère peut le déclarer avant sa majorité ; il peut revenir sur ce choix entre 18 et 20 ans.'}
+          cites: [/ma/dahir/1-58-250/art_19]
+        - text: {ar: 'واكتساب جنسية أجنبية لا يفقد المغربية وحده: الراشد الذي اكتسبها طوعا يفقد المغربية إذا أذن له بمرسوم في التخلي عنها.', fr: 'Acquérir une nationalité étrangère ne fait pas perdre seul la marocaine : le majeur qui l’acquiert volontairement ne la perd que s’il est autorisé par décret à y renoncer.'}
+          cites: [/ma/dahir/1-58-250/art_19, /ma/dahir/1-58-250/art_20]
+    - title: {ar: 'الاكتساب', fr: 'L’acquisition'}
+      facts:
+        - text: {ar: 'الزوجة الأجنبية لمغربي: بعد خمس سنوات من الإقامة معا في المغرب، بتصريح لوزير العدل الذي يبت في سنة.', fr: 'L’épouse étrangère d’un Marocain : après cinq ans de résidence commune au Maroc, par déclaration au ministre de la Justice, qui statue en un an.'}
+          cites: [/ma/dahir/1-58-250/art_10]
+          more: journeys/spouse
+        - text: {ar: 'المكفول المولود خارج المغرب من أبوين مجهولين: يصرح كافله المغربي بعد أكثر من خمس سنوات من الكفالة، أو يصرح هو خلال السنتين قبل رشده.', fr: 'L’enfant recueilli né hors du Maroc de parents inconnus : son kafil marocain le déclare après plus de cinq ans de kafala, ou lui-même dans les deux ans avant sa majorité.'}
+          cites: [/ma/dahir/1-58-250/art_9]
+        - text: {ar: 'التجنيس: خمس سنوات من الإقامة الاعتيادية، والرشد، والسلامة، والسيرة الحسنة، ومعرفة كافية بالعربية والأمازيغية أو إحداهما، ووسائل العيش؛ ويمنح بمرسوم.', fr: 'La naturalisation : cinq ans de résidence habituelle, la majorité, la santé, la bonne conduite, une connaissance suffisante de l’arabe et de l’amazighe ou de l’une d’elles, des moyens d’existence ; accordée par décret.'}
+          cites: [/ma/dahir/1-58-250/art_11, /ma/dahir/1-58-250/art_13]
+    - title: {ar: 'الإثبات', fr: 'La preuve'}
+      facts:
+        - text: {ar: 'تثبت الجنسية بشهادة يسلمها وزير العدل أو السلطات القضائية أو الإدارية التي يعينها.', fr: 'La nationalité se prouve par un certificat délivré par le ministre de la Justice ou les autorités judiciaires ou administratives qu’il désigne.'}
+          cites: [/ma/dahir/1-58-250/art_33]
+        - text: {ar: 'والبطاقة الوطنية تعفي من شهادة الجنسية؛ ولا تطلب في ملف البطاقة إلا إذا وقع شك.', fr: 'La carte nationale dispense du certificat ; il n’est demandé pour la carte qu’en cas de doute.'}
+          cites: [/ma/loi/4-20/art_11, /ma/decret/2-20-521/art_3]
+        - text: {ar: 'والجنسية الأصلية تثبت بكل الوسائل، ولا سيما بالحالة الظاهرة: وقائع علنية مشهورة تعترف لك ولأبويك بالصفة المغربية.', fr: 'La nationalité d’origine se prouve par tout moyen, notamment la possession d’état : des faits publics et notoires où vous et vos parents êtes reconnus marocains.'}
+          cites: [/ma/dahir/1-58-250/art_31]
+    - title: {ar: 'النزاع', fr: 'Le litige'}
+      facts:
+        - text: {ar: 'دعوى الاعتراف بالجنسية أو إنكارها تقام أمام المحكمة الابتدائية لمحل السكنى، أو المحكمة الابتدائية بالرباط لمن لا سكنى له في المغرب.', fr: 'L’action en reconnaissance ou en contestation de la nationalité se porte devant le tribunal de première instance du domicile, ou celui de Rabat sans domicile au Maroc.'}
+          cites: [/ma/dahir/1-58-250/art_38]
+
+- key: card
+  title: {ar: 'البطاقة الوطنية: ما فيها وما تعفي منه', fr: 'La carte nationale : ce qu’elle porte, ce qu’elle dispense'}
+  lead:
+    ar: 'البطاقة الوطنية للتعريف الإلكترونية تثبت هويتك، ومنها هويتك الرقمية، برقم وطني واحد؛ واجبة من 16 سنة، وممكنة قبلها.'
+    fr: 'La carte nationale d’identité électronique prouve votre identité, numérique comprise, par un numéro national unique ; obligatoire dès 16 ans, possible avant.'
+  cites: [/ma/loi/4-20/art_1]
+  sections:
+    - title: {ar: 'ما فيها', fr: 'Ce qu’elle porte'}
+      facts:
+        - text: {ar: 'في وجهها: الاسم بالعربية واللاتينية، تاريخ الولادة ومكانها، تاريخ انتهاء الصلاحية، الصورة، الرقم الوطني، ورقم الولوج إلى الرقاقة. وفي ظهرها: النسب، العنوان، رقم رسم الحالة المدنية، ورمز الجنس.', fr: 'Au recto : le nom en arabe et en latin, la date et le lieu de naissance, l’expiration, la photo, le numéro national, le code d’accès à la puce. Au verso : la filiation, l’adresse, le numéro d’acte d’état civil, le sexe.'}
+          cites: [/ma/loi/4-20/art_4]
+        - text: {ar: 'ويمكن أن تدرج بطلبك عبارة «زوجة» أو «أرملة» أو «أرمل»، وفي الرقاقة بريدك الإلكتروني وهاتفك ومن يتصل بهم عند الضرورة.', fr: 'À votre demande, la mention «épouse», «veuve» ou «veuf», et dans la puce votre courriel, votre téléphone et les personnes à prévenir.'}
+          cites: [/ma/loi/4-20/art_4, /ma/loi/4-20/art_6]
+    - title: {ar: 'الأطفال', fr: 'Les enfants'}
+      facts:
+        - text: {ar: 'قبل 16 سنة تصدر بطلب من النائب الشرعي؛ صالحة سبع سنوات على الأكثر قبل 12 سنة، ولا تتجاوز اليوم السابق لبلوغها؛ والتمبر 50 درهما.', fr: 'Avant 16 ans, délivrée à la demande du représentant légal ; avant 12 ans, sept ans au plus sans dépasser la veille des 12 ans ; timbre de 50 DH.'}
+          cites: [/ma/loi/4-20/art_2, /ma/decret/2-20-521/art_1, /ma/code/cgi/art_252]
+        - text: {ar: 'لا تؤخذ البصمات قبل 12 سنة؛ وعند بلوغها تجدد البطاقة وتؤخذ.', fr: 'Pas d’empreintes avant 12 ans ; à cet âge la carte se renouvelle et elles sont prises.'}
+          cites: [/ma/loi/4-20/art_5, /ma/decret/2-20-521/art_10, /ma/loi/4-20/art_13]
+    - title: {ar: 'ما تعفي منه', fr: 'Ce dont elle dispense'}
+      facts:
+        - text: {ar: 'رسم الولادة، شهادة الإقامة، شهادة الحياة، وشهادة الجنسية.', fr: 'L’acte de naissance, le certificat de résidence, le certificat de vie, le certificat de nationalité.'}
+          cites: [/ma/loi/4-20/art_11]
+    - title: {ar: 'البطاقات القديمة', fr: 'Les anciennes cartes'}
+      facts:
+        - text: {ar: 'البطاقات الصادرة قبل القانون 04.20 تبقى صالحة حتى انتهاء صلاحيتها أو تغير أحد معطياتها.', fr: 'Les cartes délivrées avant la loi 04.20 restent valables jusqu’à leur expiration ou au changement d’une de leurs données.'}
+          cites: [/ma/loi/4-20/art_16]
+    - title: {ar: 'الغرامات', fr: 'Les amendes'}
+      facts:
+        - text: {ar: 'من 300 إلى 400 درهم لمن بلغ 16 سنة ولم يطلبها؛ من 200 إلى 300 لمن لم يجددها في حالات التجديد؛ من 100 إلى 150 لمن لم يقدمها للشرطة القضائية بطلب منها.', fr: '300 à 400 DH pour qui ne la demande pas à 16 ans ; 200 à 300 pour qui ne la renouvelle pas quand il le faut ; 100 à 150 pour qui ne la présente pas à la police judiciaire qui la demande.'}
+          cites: [/ma/loi/4-20/art_15]
+  tool: tools/card
+
+- key: legalize
+  title: {ar: 'تصحيح الإمضاء والنسخة المطابقة للأصل', fr: 'Légalisation de signature et copie conforme'}
+  lead:
+    ar: 'تصحيح الإمضاء يتم في مقر الجماعة أو المقاطعة؛ والنسخة المطابقة تشهد عليها الجماعة أو الإدارة التي أصدرت الوثيقة. ولملف قرار إداري، لا تطلبهما الإدارة.'
+    fr: 'La légalisation de signature se fait au siège de la commune ou de l’arrondissement ; la copie conforme est certifiée par la commune ou l’administration qui a émis le document. Pour un dossier de décision administrative, l’administration ne les exige pas.'
+  sections:
+    - title: {ar: 'تصحيح الإمضاء', fr: 'La légalisation de signature'}
+      facts:
+        - text: {ar: 'يتم بمقر الجماعة أو المقاطعة: يطلع المكلف على الوثيقة، ويعاين إمضاءك شخصيا بعد التحقق من هويتك ببطاقتك الوطنية، في الوثيقة وفي نظيري السجل، ثم يضع الطابع ويوقع.', fr: 'Au siège de la commune ou de l’arrondissement : l’agent lit le document, voit votre signature en personne après vérification de votre carte, sur le document et dans les deux registres, puis appose le cachet et signe.'}
+          cites: [/ma/decret/2-22-047/art_3, /ma/decret/2-22-047/art_4]
+        - text: {ar: 'من يصحح إمضاءه كثيرا يمكنه إيداع توقيعه في بطاقة خاصة بمعرف رقمي، فلا يحضر شخصيا كل مرة.', fr: 'Qui légalise souvent peut déposer sa signature sur une fiche à identifiant numérique, sans venir en personne à chaque fois.'}
+          cites: [/ma/decret/2-22-047/art_5]
+        - text: {ar: 'للكفيف بحضور شاهدين، بعد تلاوة الوثيقة عليه.', fr: 'Pour une personne aveugle, en présence de deux témoins, après lecture du document.'}
+          cites: [/ma/decret/2-22-047/art_6]
+        - text: {ar: 'صاحب الوثيقة وحده مسؤول عن مضمونها؛ ويرفض التصحيح إذا خالفت الوثيقة الأخلاق أو النظام العام أو تضمنت سبا أو قذفا.', fr: 'Le signataire seul répond du contenu ; la légalisation est refusée si le document est contraire aux bonnes mœurs ou à l’ordre public, ou s’il injurie ou diffame.'}
+          cites: [/ma/decret/2-22-047/art_8, /ma/decret/2-22-047/art_9]
+    - title: {ar: 'النسخة المطابقة', fr: 'La copie conforme'}
+      facts:
+        - text: {ar: 'تشهد بها الجماعات والمقاطعات، وكل إدارة تصدر وثائق رسمية بالنسبة لوثائقها، بطلبك.', fr: 'Les communes et arrondissements la certifient, et toute administration qui émet des documents officiels pour les siens, à votre demande.'}
+          cites: [/ma/decret/2-22-048/art_1, /ma/decret/2-22-048/art_3]
+        - text: {ar: 'على الورق بطابع «نسخة مشهود بمطابقتها للأصل» بعد الاطلاع على الأصل، أو إلكترونيا للوثائق المودعة في قاعدة البيانات المعدة لذلك.', fr: 'Sur papier, cachet «copie certifiée conforme à l’original» après vue de l’original, ou en ligne pour les documents déposés dans la base prévue.'}
+          cites: [/ma/decret/2-22-048/art_5, /ma/decret/2-22-048/art_6, /ma/decret/2-22-048/art_7]
+    - title: {ar: 'متى لا يلزمانك', fr: 'Quand il n’en faut pas'}
+      facts:
+        - text: {ar: 'في ملف أي قرار إداري، لا تطلب منك الإدارة تصحيح الإمضاء ولا نسخا مطابقة للأصل، إلا الأصل مرة واحدة إن شكت، بتعليل.', fr: 'Pour tout dossier de décision administrative, l’administration ne vous demande ni légalisation ni copie conforme, seulement l’original une fois en cas de doute, motivé.'}
+          cites: [/ma/loi/55-19/art_7]
+          more: pages/counter
+
+- key: data
+  title: {ar: 'المعطيات ديالك', fr: 'Vos données'}
+  lead:
+    ar: 'رقاقة البطاقة لا يقرؤها إلا من أهلته المديرية العامة للأمن الوطني؛ ولك أن تعرف ما يعالج من معطياتك وأن تصححه، كما يقول القانون 09.08.'
+    fr: 'La puce de la carte n’est lue que par ceux que la DGSN habilite ; vous pouvez savoir quelles données vous concernant sont traitées et les corriger, selon la loi 09.08.'
+  sections:
+    - title: {ar: 'رقاقة البطاقة', fr: 'La puce de la carte'}
+      facts:
+        - text: {ar: 'في الرقاقة: رقمك، صورتك، اسمك، نسبك، ولادتك، عنوانك؛ وفي جزئها عالي الأمن رسم لنقط بصمتي إصبعين وشهادات الأمان.', fr: 'La puce porte votre numéro, photo, nom, filiation, naissance, adresse ; sa partie de haute sécurité, le gabarit de deux empreintes et les certificats de sécurité.'}
+          cites: [/ma/loi/4-20/art_5]
+        - text: {ar: 'لا يستغل معطيات الرقاقة إلا موظفو الأمن الوطني وموظفو الهيئات التي تؤهلها المديرية، تحت طائلة عقوبات القانون الجنائي؛ وتقرأ بالوسائل التي تعتمدها.', fr: 'Seuls les agents de la Sûreté et ceux des organismes habilités par la DGSN exploitent les données de la puce, sous les peines du code pénal ; elles se lisent avec les moyens qu’elle agrée.'}
+          cites: [/ma/loi/4-20/art_9, /ma/loi/4-20/art_8]
+    - title: {ar: 'حقوقك', fr: 'Vos droits'}
+      facts:
+        - text: {ar: 'تجمع معطياتك لغايات محددة ومعلنة، ملائمة وغير مفرطة، ولا تحفظ أكثر من اللازم.', fr: 'Vos données sont collectées pour des fins déterminées et déclarées, adéquates et non excessives, et ne sont pas gardées plus que nécessaire.'}
+          cites: [/ma/loi/9-08/art_3]
+        - text: {ar: 'لك أن تعرف، بعد إثبات هويتك ودون عوض، هل تعالج معطياتك، ولأي غاية، ولمن ترسل.', fr: 'Vous pouvez savoir, sur justification d’identité et gratuitement, si vos données sont traitées, pourquoi et à qui elles vont.'}
+          cites: [/ma/loi/9-08/art_7]
+        - text: {ar: 'ولك أن تطلب تصحيحها أو مسحها، ويلزم المسؤول بالتصحيح دون عوض داخل 10 أيام؛ وإلا، أمكنك إيداع طلبك لدى اللجنة الوطنية.', fr: 'Vous pouvez en demander la correction ou l’effacement, que le responsable fait gratuitement dans 10 jours ; à défaut, vous saisissez la Commission nationale.'}
+          cites: [/ma/loi/9-08/art_8]
+        - text: {ar: 'ولك أن تتعرض لأسباب مشروعة، ودون مصاريف على الاستعمال التجاري.', fr: 'Vous pouvez vous opposer pour des motifs légitimes, et sans frais à un usage commercial.'}
+          cites: [/ma/loi/9-08/art_9]
+    - title: {ar: 'السجل الوطني للسكان', fr: 'Le registre national de la population'}
+      facts:
+        - text: {ar: 'سجل رقمي للمغاربة والأجانب المقيمين، يقيد فيه من يطلب ذلك، وفيه الاسم والولادة والعنوان والجنسية والمعرف والصورة والبصمات وصورة القزحية من 5 سنوات.', fr: 'Un registre numérique des Marocains et étrangers résidents, où s’inscrit qui le demande ; il porte nom, naissance, adresse, nationalité, identifiant, photo, empreintes et iris dès 5 ans.'}
+          cites: [/ma/loi/72-18/art_4, /ma/loi/72-18/art_6, /ma/loi/72-18/art_7]
+        - text: {ar: 'لكل مقيد معرف مدني واجتماعي رقمي واحد لا يعطى لغيره؛ ويسند عند تسجيل كل ولادة في الحالة المدنية.', fr: 'Chaque inscrit a un identifiant civil et social numérique unique, jamais réattribué ; il est attribué à chaque naissance inscrite à l’état civil.'}
+          cites: [/ma/loi/72-18/art_8, /ma/loi/36-21/art_30]
+        - text: {ar: 'ومعطيات الحالة المدنية تعالج وفق قانون حماية المعطيات الشخصية.', fr: 'Les données d’état civil sont traitées selon la loi sur la protection des données personnelles.'}
+          cites: [/ma/loi/36-21/art_17, /ma/loi/72-18/art_3]
+
+- key: foreigners
+  title: {ar: 'الأجانب: الإقامة والحالة المدنية', fr: 'Les étrangers : le séjour et l’état civil'}
+  lead:
+    ar: 'الأجنبي المقيم الذي تفوق سنه 18 سنة يحمل بطاقة تسجيل أو بطاقة إقامة (القانون 02.03)؛ وولاداته ووفياته في المغرب يمكن تسجيلها في الحالة المدنية.'
+    fr: 'L’étranger résident de plus de 18 ans porte une carte d’immatriculation ou une carte de résidence (loi 02.03) ; ses naissances et décès au Maroc peuvent être inscrits à l’état civil.'
+  cites: [/ma/loi/2-03/art_5, /ma/loi/2-03/art_6]
+  sections:
+    - title: {ar: 'بطاقة التسجيل', fr: 'La carte d’immatriculation'}
+      facts:
+        - text: {ar: 'رخصة إقامة من سنة إلى عشر سنوات، قابلة للتجديد؛ تحملها أو تدلي بها داخل 48 ساعة، ووصل طلبها يقوم مقامها مؤقتا.', fr: 'Un permis de séjour d’un à dix ans, renouvelable ; vous la portez ou la produisez dans 48 heures, et le reçu de la demande en tient lieu.'}
+          cites: [/ma/loi/2-03/art_10, /ma/loi/2-03/art_8]
+        - text: {ar: 'تطلب من الأمن الوطني أو الدرك الملكي قبل انتهاء التأشيرة، أو داخل 90 يوما من الدخول لمن لا تأشيرة عليه؛ والقاصر داخل ستة أشهر من بلوغه 18 سنة.', fr: 'Elle se demande à la Sûreté ou à la Gendarmerie avant la fin du visa, ou dans 90 jours de l’entrée sans visa ; le mineur dans les six mois de ses 18 ans.'}
+          cites: [/ma/decret/2-09-607/art_1, /ma/decret/2-09-607/art_2]
+        - text: {ar: 'تحمل عبارة «زائر» أو «طالب» أو النشاط المهني المرخص.', fr: 'Elle porte «visiteur», «étudiant» ou l’activité professionnelle autorisée.'}
+          cites: [/ma/loi/2-03/art_13]
+    - title: {ar: 'بطاقة الإقامة', fr: 'La carte de résidence'}
+      facts:
+        - text: {ar: 'لمن أقام أربع سنوات متواصلة على الأقل؛ وتسلم، ما لم يوجد استثناء، لزوج المغربية أو زوجة المغربي، وللطفل الأجنبي من أم مغربية، ولمن أقام في المغرب أكثر من 15 سنة.', fr: 'Pour qui a résidé au moins quatre ans sans interruption ; délivrée, sauf exception, au conjoint d’un Marocain ou d’une Marocaine, à l’enfant étranger d’une mère marocaine, à qui vit au Maroc depuis plus de 15 ans.'}
+          cites: [/ma/loi/2-03/art_16, /ma/loi/2-03/art_17]
+        - text: {ar: 'تفقد صلاحيتها لمن غادر المغرب أكثر من سنتين؛ وتغيير السكنى يصرح به.', fr: 'Elle perd sa validité après plus de deux ans hors du Maroc ; un changement d’adresse se déclare.'}
+          cites: [/ma/loi/2-03/art_18]
+    - title: {ar: 'الرفض', fr: 'Le refus'}
+      facts:
+        - text: {ar: 'رفض سند الإقامة أو سحبه يطعن فيه داخل 15 يوما من تبليغه أمام رئيس المحكمة الإدارية بصفته قاضيا للمستعجلات.', fr: 'Le refus ou le retrait du titre se conteste dans 15 jours de sa notification devant le président du tribunal administratif statuant en référé.'}
+          cites: [/ma/loi/2-03/art_20]
+        - text: {ar: 'ومن رفض طلبه أو سحبت بطاقته يغادر المغرب داخل 15 يوما من التبليغ.', fr: 'Qui essuie un refus ou un retrait quitte le Maroc dans 15 jours de la notification.'}
+          cites: [/ma/loi/2-03/art_11]
+    - title: {ar: 'التمبر', fr: 'Le timbre'}
+      facts:
+        - text: {ar: 'وثائق إقامة الأجانب تخضع لواجب ثابت قدره 100 درهم عن كل سنة من مدة صلاحيتها.', fr: 'Les titres de séjour des étrangers paient 100 DH par année de validité.'}
+          cites: [/ma/code/cgi/art_252]
+    - title: {ar: 'الحالة المدنية والجنسية', fr: 'L’état civil et la nationalité'}
+      facts:
+        - text: {ar: 'يجوز للأجانب الاستفادة من الحالة المدنية المغربية لولاداتهم ووفياتهم التي تقع في المغرب، ويسند لكل أجنبي مقيم يسجل معرف رقمي.', fr: 'Les étrangers peuvent recourir à l’état civil marocain pour leurs naissances et décès au Maroc ; chaque étranger résident inscrit reçoit un identifiant numérique.'}
+          cites: [/ma/loi/36-21/art_1, /ma/loi/36-21/art_30]
+        - text: {ar: 'والجنسية المغربية: للزوجة بعد خمس سنوات من الإقامة معا في المغرب، وبالتجنيس بعد خمس سنوات من الإقامة الاعتيادية.', fr: 'La nationalité marocaine : pour l’épouse après cinq ans de résidence commune au Maroc, par naturalisation après cinq ans de résidence habituelle.'}
+          cites: [/ma/dahir/1-58-250/art_10, /ma/dahir/1-58-250/art_11]
+          more: pages/nationality
+
+- key: beliefs
+  title: {ar: 'شنو كيقولو الناس، وشنو كيقول القانون', fr: 'Ce que les gens disent, ce que dit la loi'}
+  lead:
+    ar: 'أفكار شائعة عن الوراق، وجواب النص.'
+    fr: 'Des idées répandues sur les papiers, et la réponse du texte.'
+  sections:
+    - title: {ar: '«عقد الازدياد كيتسالا من بعد 3 شهور»', fr: '«L’extrait de naissance expire après 3 mois»'}
+      facts:
+        - text: {ar: 'المرسوم 2.20.521 يكتب الثلاثة أشهر لنسخ الحالة المدنية في ملف أول بطاقة وطنية؛ والبطاقة نفسها تعفيك بعد ذلك من رسم الولادة.', fr: 'Le décret 2.20.521 écrit les trois mois pour les copies d’état civil du dossier de la première carte ; la carte vous dispense ensuite de l’acte de naissance.'}
+          cites: [/ma/decret/2-20-521/art_3, /ma/loi/4-20/art_11]
+    - title: {ar: '«خاصني نصحح الإمضاء ونطابق النسخ»', fr: '«Il faut légaliser et certifier conformes»'}
+      facts:
+        - text: {ar: 'في ملف قرار إداري، القانون 55.19 يمنع الإدارة من طلب تصحيح الإمضاء والنسخ المطابقة للأصل وأكثر من نسخة واحدة.', fr: 'Pour un dossier de décision administrative, la loi 55.19 interdit d’exiger légalisation, copies conformes et plus d’une copie.'}
+          cites: [/ma/loi/55-19/art_7]
+    - title: {ar: '«البطاقة ما كتتبدلش حتى تسالي»', fr: '«On ne change la carte qu’à son expiration»'}
+      facts:
+        - text: {ar: 'تغيير العنوان، والاسم، وعبارة «زوجة» أو «أرملة»، والضياع، وبلوغ القاصر 12 سنة، كلها توجب التجديد؛ وإلا غرامة من 200 إلى 300 درهم.', fr: 'Changer d’adresse, de nom, de mention «épouse» ou «veuve», la perte, les 12 ans du mineur obligent tous au renouvellement ; sinon 200 à 300 DH d’amende.'}
+          cites: [/ma/loi/4-20/art_13, /ma/loi/4-20/art_15]
+    - title: {ar: '«الباسبور القديم ما بقاش صالح»', fr: '«L’ancien passeport ne vaut plus»'}
+      facts:
+        - text: {ar: 'المرسوم 2.26.551 يقول إن الجواز المنجز قبل تغييره يستمر العمل به حتى انتهاء صلاحيته.', fr: 'Le décret 2.26.551 dit que le passeport établi avant sa modification reste en usage jusqu’à son expiration.'}
+          cites: [/ma/decret/2-26-551/art_3]
+    - title: {ar: '«ولد المغربية من أب أجنبي ماشي مغربي»', fr: '«L’enfant d’une Marocaine et d’un étranger n’est pas marocain»'}
+      facts:
+        - text: {ar: 'يعتبر مغربيا الولد المولود من أب مغربي أو أم مغربية، منذ ولادته.', fr: 'Est marocain dès sa naissance l’enfant né d’un père ou d’une mère marocains.'}
+          cites: [/ma/dahir/1-58-250/art_6, /ma/dahir/1-58-250/art_8]
+    - title: {ar: '«الإدارة تقدر تبقى ساكتة»', fr: '«L’administration peut se taire»'}
+      facts:
+        - text: {ar: 'الأجل 60 يوما على الأكثر من الملف الكامل؛ الرفض معلل؛ ولك 30 يوما للطعن أمام رئيس الإدارة، الذي يرد في 15 يوما.', fr: '60 jours au plus dès le dossier complet ; un refus motivé ; 30 jours pour un recours auprès du supérieur, qui répond en 15 jours.'}
+          cites: [/ma/loi/55-19/art_16, /ma/loi/55-19/art_18, /ma/loi/55-19/art_21]
+    - title: {ar: '«الحكم كيبقى فالسجل العدلي ديما»', fr: '«Une condamnation reste au casier pour toujours»'}
+      facts:
+        - text: {ar: 'رد الاعتبار يمحو آثار العقوبة للمستقبل، ويكتسب بقوة القانون بعد مدد يحددها القانون، من ستة أشهر بعد أداء الغرامة إلى عشر سنوات في الجنايات؛ وبعده لا تذكر العقوبة في البطاقة رقم 3.', fr: 'La réhabilitation efface les effets de la peine pour l’avenir ; elle est acquise de plein droit après des délais légaux, de six mois après une amende payée à dix ans pour un crime ; ensuite la peine ne figure plus au bulletin n° 3.'}
+          cites: [/ma/loi/22-01/art_687, /ma/loi/22-01/art_688, /ma/loi/22-01/art_702]
+          more: tools/rehab

@@ -1,0 +1,162 @@
+{
+  "title": "Mon accès",
+  "mark": {
+    "waiting": "En attente de notre réponse",
+    "more": "Une question attend votre réponse",
+    "declined": "Demande refusée",
+    "again": "Demande refusée",
+    "live": "Accès en cours",
+    "ended": "Accès terminé"
+  },
+  "say": {
+    "none": "Vous n’avez demandé l’accès ni à la base de données ni à l’API.",
+    "noneClosed": "Les demandes d’accès aux données ouvriront bientôt.",
+    "see": "Ce que c’est, et comment le demander",
+    "waiting": "Vous avez envoyé votre demande le {{sent}} ; notre réponse vous parvient par e-mail au plus tard le {{due}}.",
+    "more": "Nous avons lu votre demande, et il nous faut votre réponse à une question avant de décider.",
+    "reason": "La raison : {{reason}}",
+    "againOn": "Vous pourrez demander à nouveau à partir du {{date}}.",
+    "againNow": "Vous pouvez demander à nouveau dès maintenant.",
+    "held": "{{granted}} · taille « {{size}} » · jusqu’au {{date}}",
+    "ask": "Demander l’accès",
+    "askAgain": "Demander à nouveau"
+  },
+  "question": {
+    "title": "Notre question :",
+    "titleChange": "Notre question sur votre demande de modification :",
+    "label": "Votre réponse",
+    "send": "Envoyer la réponse"
+  },
+  "keys": {
+    "title": "Vos clés",
+    "default": "Clé",
+    "usedToday": "Dernier usage : aujourd’hui",
+    "used": "Dernier usage : le {{date}}",
+    "unused": "Pas encore utilisée",
+    "end": "Mettre fin",
+    "endLabel": "Mettre fin à la clé « {{name}} »",
+    "endSure": "Cette clé s’arrête maintenant, et n’ouvre plus rien.",
+    "endYes": "Oui, mettre fin à la clé",
+    "cancel": "Annuler",
+    "second": "Une seconde clé",
+    "secondLead": "La seconde clé remplace la première sans interruption : placez-la dans votre programme, puis mettez fin à la première.",
+    "none": "Vous n’avez pas de clé.",
+    "make": "Créer une clé",
+    "first": "Créez votre clé",
+    "firstLead": "Votre programme l’envoie avec chaque requête, dans l’en-tête X-Api-Key. Elle ne s’affiche qu’une fois, à sa création.",
+    "name": "Nom de la clé",
+    "optional": "facultatif",
+    "nameHint": "Par exemple : le serveur",
+    "fresh": "Votre nouvelle clé",
+    "once": "Elle ne s’affichera plus : copiez-la maintenant et gardez-la sur votre serveur.",
+    "copy": "Copier la clé",
+    "call": "Une première requête, la clé dedans :",
+    "copyCall": "Copier la requête",
+    "done": "Je l’ai gardée",
+    "reads": "Les six lectures et leurs adresses"
+  },
+  "use": {
+    "title": "L’usage",
+    "calls": "Requêtes aujourd’hui",
+    "articles": "Articles aujourd’hui",
+    "of": "sur {{of}}",
+    "minute": "Requêtes par minute : {{n}} au plus",
+    "days": "Les 30 derniers jours",
+    "sum": "Requêtes {{calls}}, articles {{articles}}",
+    "numbers": "Les chiffres, jour par jour",
+    "day": "Date"
+  },
+  "edition": {
+    "line": "Édition du {{date}} · {{size}}",
+    "get": "Télécharger",
+    "getLabel": "Télécharger {{file}}",
+    "all": "Tous les fichiers ({{n}})",
+    "what": "Ce que contient chaque fichier",
+    "receipt": "Le reçu",
+    "receiptHide": "Masquer le reçu",
+    "script": "Depuis un programme, avec votre clé :"
+  },
+  "api": {
+    "title": "L’API",
+    "lead": "Six lectures qui répondent en JSON ; la clé va dans l’en-tête X-Api-Key.",
+    "reads": {
+      "search": "Chercher dans la loi",
+      "texts": "Un texte ou un article par son adresse",
+      "articles": "Des articles qui se suivent",
+      "references": "Vérifier des renvois",
+      "bulletin": "Les numéros du Bulletin officiel",
+      "changes": "Ce qui a changé depuis un jour"
+    },
+    "openapi": "La description complète",
+    "errors": "Chaque refus a cette forme :",
+    "limits": "Passé la limite, une réponse 429, et dans Retry-After le nombre de secondes à attendre.",
+    "more": "Les exemples, et ce que votre programme rencontre"
+  },
+  "change": {
+    "open": "Demander une modification",
+    "lead": "Demandez ce qu’il vous faut maintenant : l’API, la base de données, ou une autre taille. Votre accès et vos clés restent tels quels jusqu’à notre réponse.",
+    "holds": "Ce que votre accès comprendra après la modification",
+    "size": "La taille",
+    "keep": "Inchangée : « {{size}} »",
+    "why": "Pourquoi",
+    "whyHint": "Ce qui a changé dans votre travail, et ce qu’il vous faut maintenant.",
+    "left": "Encore {{n}} caractères",
+    "send": "Envoyer la demande de modification",
+    "sending": "Envoi…",
+    "cancel": "Annuler",
+    "mark": {
+      "waiting": "Une demande de modification attend notre réponse",
+      "declined": "Demande de modification refusée"
+    },
+    "waiting": "Demandé le {{sent}} : {{granted}}, {{size}}. Nous vous répondons au plus tard le {{due}} ; votre accès reste tel quel d’ici là.",
+    "sizeSame": "à la même taille",
+    "sizeNew": "à la taille « {{size}} »",
+    "againOn": "Vous pourrez demander une modification à nouveau à partir du {{date}}.",
+    "againNow": "Vous pouvez demander une modification à nouveau dès maintenant."
+  },
+  "foot": {
+    "terms": "Vous avez accepté les conditions d’accès, version du {{date}}.",
+    "termsLink": "Les conditions",
+    "end": "Mettre fin à l’accès",
+    "endSure": "Votre accès et ses clés prennent fin maintenant, sans retour. Vous pourrez ensuite demander à nouveau.",
+    "endYes": "Oui, mettre fin à l’accès",
+    "cancel": "Annuler"
+  },
+  "sent": {
+    "summary": "Ce que vous avez envoyé le {{date}}",
+    "summaryChange": "La demande de modification, du {{date}}",
+    "fields": {
+      "name": "Le nom",
+      "kind": "Vous êtes",
+      "purpose": "Ce que vous ferez",
+      "wants": "Ce que vous avez demandé",
+      "runs_at": "Où cela tourne",
+      "volume": "Combien",
+      "commercial": "Rapporte de l’argent",
+      "size": "La taille demandée",
+      "why": "Pourquoi",
+      "asked": "Notre question",
+      "answer": "Votre réponse"
+    }
+  },
+  "errors": {
+    "access": {
+      "ended": "Cet accès a pris fin.",
+      "not_found": "Cet accès n’existe pas."
+    },
+    "request": {
+      "not_found": "Cette demande n’existe pas."
+    },
+    "change": {
+      "nothing": "C’est ce que votre accès comprend déjà : choisissez ce qui doit changer."
+    },
+    "size": {
+      "invalid": "Choisissez une taille dans la liste."
+    },
+    "why": {
+      "required": "Dites-nous pourquoi vous demandez cette modification.",
+      "too_long": "600 caractères au plus.",
+      "invalid": "Dites-nous pourquoi vous demandez cette modification."
+    }
+  }
+}

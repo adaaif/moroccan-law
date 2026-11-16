@@ -1,0 +1,8 @@
+# Law 17.04 (the code of medicines and pharmacy) as the SGG's consolidated file prints it. Read against the page images on
+# 2026-10-27 (the health review, S4): arts 34 and 111, the articles the health topic cites. They read as printed:
+# nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_pharmacy_17_04.yaml`; a reload of the text applies them again.
+text: /ma/loi/17-04
+document: sources/sgg_consolidated/17_04.pdf
+read_on: '2026-10-27'
+fixes: []

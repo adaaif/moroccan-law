@@ -1,0 +1,29 @@
+/* «وزارة التعليم: 24 اسما» (the twenty-sixth post). Letterheads: each name the ministry signed under, set in Markazi as a
+   heading would print it, with its bar on one line of years. The schools' names violet, higher education's ochre, the
+   years they were one ministry in ink. The longest name, alone and large, is the hero. */
+
+.mn { --mn-school: var(--color-stamp); --mn-higher: var(--kc-2); --mn-both: var(--color-ink); }
+.mn-hero { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: var(--bp-fig); margin-inline: auto; padding: 18px 0 4px; border-block: 3px double var(--color-ink); }
+.mn-q { margin: 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.mn-longest { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.9rem, 1.3rem + 2.6vw, 3.1rem); line-height: 1.3; text-wrap: balance; text-align: center; }
+.mn-longest-note { margin: 0; text-align: center; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.mn-legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.mn-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.mn-legend i { inline-size: 12px; block-size: 12px; border-radius: 2px; }
+.mn-legend i.is-school { background: var(--mn-school); } .mn-legend i.is-higher { background: var(--mn-higher); } .mn-legend i.is-both { background: var(--mn-both); }
+.mn-heads { position: relative; display: flex; flex-direction: column; gap: 10px; }
+.mn-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) 9rem; align-items: center; gap: 4px 14px; }
+.mn-heads.is-phone .mn-head { grid-template-columns: minmax(0, 1fr); gap: 2px; padding-block-end: 6px; border-bottom: 1px solid var(--color-rule-soft); }
+.mn-name { margin: 0; font-family: var(--font-law); font-size: 1.1rem; line-height: 1.35; text-align: right; }
+.mn-head.is-longest .mn-name { font-weight: 700; }
+.mn-track { position: relative; block-size: 12px; border-radius: 6px; background: color-mix(in srgb, var(--color-ink) 6%, transparent); }
+.mn-bar { position: absolute; top: 0; bottom: 0; border-radius: 6px; background: var(--mn-school); }
+.is-higher .mn-bar { background: var(--mn-higher); } .is-both .mn-bar { background: var(--mn-both); }
+.mn-years { margin: 0; font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.mn-axis { position: relative; block-size: 20px; }
+.mn-heads.is-phone .mn-axis-row { border-bottom: 0; }
+.mn-axis span { position: absolute; transform: translateX(-50%); font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.mn-share-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; padding-block: 4px 12px; }
+.mn-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.mn-share:disabled { opacity: 0.6; }

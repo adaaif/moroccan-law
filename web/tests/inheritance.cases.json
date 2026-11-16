@@ -1,0 +1,1782 @@
+{
+ "_": "Cases for the family code's book 6 (F6 of the family plan). `each` is one person's share of the estate; `out` the heirs who take nothing. The named cases carry the code's own numbers (arts 360–368). Written 20 Oct 2026; from case 92 on, added with the inheritance review (14 Nov 2026): the compulsory bequest in the Court of Cassation's reading (`other` is the bequest by the other reading), the mixed forms of arts 362–363 (`stop`), the reason a line carries (`why`). To be checked by an adoul.",
+ "cases": [
+  {
+   "name": "الأكدرية (المادة 361)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "fullSister": 1
+   },
+   "each": {
+    "husband": "9/27",
+    "mother": "6/27",
+    "fullSister": "4/27",
+    "grandfather": "8/27"
+   },
+   "base": 6,
+   "awl": 9,
+   "tashih": 27,
+   "named": "akdariyya"
+  },
+  {
+   "name": "المالكية (المادة 362)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "patBrother": 1,
+    "matBrother": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "grandfather": "1/3"
+   },
+   "out": [
+    "patBrother",
+    "matBrother"
+   ],
+   "named": "malikiyya"
+  },
+  {
+   "name": "شبه المالكية (المادة 363)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "fullBrother": 1,
+    "matSister": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "grandfather": "1/3"
+   },
+   "out": [
+    "fullBrother",
+    "matSister"
+   ],
+   "named": "shibhMalikiyya"
+  },
+  {
+   "name": "الخرقاء (المادة 364)",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "grandfather": 1,
+    "fullSister": 1
+   },
+   "each": {
+    "mother": "1/3",
+    "grandfather": "4/9",
+    "fullSister": "2/9"
+   },
+   "named": "kharqa"
+  },
+  {
+   "name": "المشتركة (المادة 365)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "matBrother": 2,
+    "fullBrother": 1
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "matBrother": "1/9",
+    "fullBrother": "1/9"
+   },
+   "named": "mushtaraka"
+  },
+  {
+   "name": "الغراوان، زوجة (المادة 366)",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "father": 1,
+    "mother": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "mother": "1/4",
+    "father": "1/2"
+   },
+   "named": "gharrawayn"
+  },
+  {
+   "name": "الغراوان، زوج (المادة 366)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "father": 1,
+    "mother": 1
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "father": "1/3"
+   },
+   "named": "gharrawayn"
+  },
+  {
+   "name": "المباهلة (المادة 367)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "fullSister": 1
+   },
+   "each": {
+    "husband": "3/8",
+    "fullSister": "3/8",
+    "mother": "2/8"
+   },
+   "base": 6,
+   "awl": 8,
+   "named": "mubahala"
+  },
+  {
+   "name": "المنبرية (المادة 368)",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "daughter": 2,
+    "father": 1,
+    "mother": 1
+   },
+   "each": {
+    "daughter": "8/27",
+    "father": "4/27",
+    "mother": "4/27",
+    "wife": "3/27"
+   },
+   "base": 24,
+   "awl": 27,
+   "tashih": 27,
+   "named": "minbariyya"
+  },
+  {
+   "name": "المعادة، العشرية (المادة 360)",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "fullSister": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "grandfather": "2/5",
+    "fullSister": "1/2",
+    "patBrother": "1/10"
+   },
+   "tashih": 10,
+   "named": "muadda"
+  },
+  {
+   "name": "مثال الخطة: زوجة وأم وابنان وبنت وإخوة",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "mother": 1,
+    "son": 2,
+    "daughter": 1,
+    "fullBrother": 2
+   },
+   "each": {
+    "wife": "15/120",
+    "mother": "20/120",
+    "son": "34/120",
+    "daughter": "17/120"
+   },
+   "out": [
+    "fullBrother"
+   ],
+   "base": 24,
+   "tashih": 120
+  },
+  {
+   "name": "زوجة وابن",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "son": 1
+   },
+   "each": {
+    "wife": "1/8",
+    "son": "7/8"
+   },
+   "base": 8
+  },
+  {
+   "name": "زوجتان وبنت: الرد على الجميع (المادة 349)",
+   "deceased": "m",
+   "counts": {
+    "wife": 2,
+    "daughter": 1
+   },
+   "each": {
+    "wife": "1/10",
+    "daughter": "4/5"
+   },
+   "radd": true
+  },
+  {
+   "name": "زوج وأب",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "father": 1
+   },
+   "each": {
+    "husband": "1/2",
+    "father": "1/2"
+   }
+  },
+  {
+   "name": "أبوان",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "father": 1
+   },
+   "each": {
+    "mother": "1/3",
+    "father": "2/3"
+   }
+  },
+  {
+   "name": "أم وأب وأخوان محجوبان",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "father": 1,
+    "fullBrother": 2
+   },
+   "each": {
+    "mother": "1/6",
+    "father": "5/6"
+   },
+   "out": [
+    "fullBrother"
+   ]
+  },
+  {
+   "name": "بنت وبنت ابن وأخت شقيقة",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "sonsDaughter": 1,
+    "fullSister": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "sonsDaughter": "1/6",
+    "fullSister": "1/3"
+   }
+  },
+  {
+   "name": "بنتان وبنت ابن",
+   "deceased": "m",
+   "counts": {
+    "daughter": 2,
+    "sonsDaughter": 1
+   },
+   "each": {
+    "daughter": "1/2"
+   },
+   "out": [
+    "sonsDaughter"
+   ],
+   "radd": true
+  },
+  {
+   "name": "بنتان وابن ابن وبنت ابن",
+   "deceased": "m",
+   "counts": {
+    "daughter": 2,
+    "sonsSon": 1,
+    "sonsDaughter": 1
+   },
+   "each": {
+    "daughter": "1/3",
+    "sonsSon": "2/9",
+    "sonsDaughter": "1/9"
+   }
+  },
+  {
+   "name": "شقيقة وأخت لأب",
+   "deceased": "m",
+   "counts": {
+    "fullSister": 1,
+    "patSister": 1
+   },
+   "each": {
+    "fullSister": "3/4",
+    "patSister": "1/4"
+   },
+   "radd": true
+  },
+  {
+   "name": "شقيقتان وأخ وأخت لأب",
+   "deceased": "m",
+   "counts": {
+    "fullSister": 2,
+    "patSister": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "fullSister": "1/3",
+    "patBrother": "2/9",
+    "patSister": "1/9"
+   }
+  },
+  {
+   "name": "شقيقتان وأخت لأب",
+   "deceased": "m",
+   "counts": {
+    "fullSister": 2,
+    "patSister": 1
+   },
+   "each": {
+    "fullSister": "1/2"
+   },
+   "out": [
+    "patSister"
+   ],
+   "radd": true
+  },
+  {
+   "name": "أخ وأخت لأم وأخ شقيق",
+   "deceased": "m",
+   "counts": {
+    "matBrother": 1,
+    "matSister": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "matBrother": "1/6",
+    "matSister": "1/6",
+    "fullBrother": "2/3"
+   }
+  },
+  {
+   "name": "زوجة وابن أخ شقيق وعم شقيق",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "fullNephew": 1,
+    "fullUncle": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "fullNephew": "3/4"
+   },
+   "out": [
+    "fullUncle"
+   ]
+  },
+  {
+   "name": "جد وأخ شقيق: المقاسمة",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "grandfather": "1/2",
+    "fullBrother": "1/2"
+   }
+  },
+  {
+   "name": "جد وثلاثة إخوة أشقاء: الثلث",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "fullBrother": 3
+   },
+   "each": {
+    "grandfather": "1/3",
+    "fullBrother": "2/9"
+   }
+  },
+  {
+   "name": "زوجة وجد وأخ شقيق",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "grandfather": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "grandfather": "3/8",
+    "fullBrother": "3/8"
+   }
+  },
+  {
+   "name": "بنت وجد وأخ شقيق",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "grandfather": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "grandfather": "1/4",
+    "fullBrother": "1/4"
+   }
+  },
+  {
+   "name": "زوج وابن وبنت",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "son": 1,
+    "daughter": 1
+   },
+   "each": {
+    "husband": "1/4",
+    "son": "1/2",
+    "daughter": "1/4"
+   }
+  },
+  {
+   "name": "أم وجدة لأم",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "grandmotherM": 1
+   },
+   "each": {
+    "mother": "1"
+   },
+   "out": [
+    "grandmotherM"
+   ],
+   "radd": true
+  },
+  {
+   "name": "جدتان وابن",
+   "deceased": "m",
+   "counts": {
+    "grandmotherM": 1,
+    "grandmotherF": 1,
+    "son": 1
+   },
+   "each": {
+    "grandmotherM": "1/12",
+    "grandmotherF": "1/12",
+    "son": "5/6"
+   }
+  },
+  {
+   "name": "أب وبنت (المادة 353)",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "daughter": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "father": "1/2"
+   }
+  },
+  {
+   "name": "جد وبنت",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "daughter": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "grandfather": "1/2"
+   }
+  },
+  {
+   "name": "زوجة وحدها: الرد",
+   "deceased": "m",
+   "counts": {
+    "wife": 1
+   },
+   "each": {
+    "wife": "1"
+   },
+   "radd": true,
+   "raddSpouse": "1/4"
+  },
+  {
+   "name": "لا وارث: بيت المال",
+   "deceased": "m",
+   "counts": {},
+   "each": {},
+   "treasury": "1"
+  },
+  {
+   "name": "أب وابن",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "son": 1
+   },
+   "each": {
+    "father": "1/6",
+    "son": "5/6"
+   }
+  },
+  {
+   "name": "زوج وشقيقتان وأم: العول",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "fullSister": 2,
+    "mother": 1
+   },
+   "each": {
+    "husband": "3/8",
+    "fullSister": "1/4",
+    "mother": "1/8"
+   },
+   "base": 6,
+   "awl": 8
+  },
+  {
+   "name": "زوجة وأم وأخوان لأم وأخ شقيق",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "mother": 1,
+    "matBrother": 2,
+    "fullBrother": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "mother": "1/6",
+    "matBrother": "1/6",
+    "fullBrother": "1/4"
+   }
+  },
+  {
+   "name": "أم وأختان لأم: الرد",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "matSister": 2
+   },
+   "each": {
+    "mother": "1/3",
+    "matSister": "1/3"
+   },
+   "radd": true
+  },
+  {
+   "name": "جد وأخ شقيق وأخ لأب: المعادة",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "fullBrother": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "grandfather": "1/3",
+    "fullBrother": "2/3"
+   },
+   "out": [
+    "patBrother"
+   ],
+   "named": "muadda"
+  },
+  {
+   "name": "أب وأم وابن وبنت وزوجة",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "mother": 1,
+    "son": 1,
+    "daughter": 1,
+    "wife": 1
+   },
+   "each": {
+    "wife": "1/8",
+    "father": "1/6",
+    "mother": "1/6",
+    "son": "13/36",
+    "daughter": "13/72"
+   }
+  },
+  {
+   "name": "وصية واجبة لأولاد البنت (المواد 369–372)",
+   "deceased": "m",
+   "counts": {
+    "son": 1
+   },
+   "predeceased": [
+    {
+     "sex": "f",
+     "sons": 1,
+     "daughters": 1
+    }
+   ],
+   "each": {
+    "son": "2/3"
+   },
+   "bequest": [
+    {
+     "son": "2/9",
+     "daughter": "1/9"
+    }
+   ]
+  },
+  {
+   "name": "وصية واجبة لا تتجاوز الثلث (المادة 370)",
+   "deceased": "m",
+   "counts": {
+    "son": 1
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 2,
+     "daughters": 0
+    }
+   ],
+   "each": {
+    "son": "2/3"
+   },
+   "out": [
+    "sonsSon"
+   ],
+   "bequest": [
+    {
+     "son": "1/6"
+    }
+   ],
+   "capped": true
+  },
+  {
+   "name": "حفدة وارثون لا وصية لهم (المادة 371)",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 1,
+     "daughters": 0
+    }
+   ],
+   "each": {
+    "daughter": "1/2",
+    "sonsSon": "1/2"
+   },
+   "bequest": []
+  },
+  {
+   "name": "وفاة قبل 4 أبريل 1958: قبل المدونة الأولى",
+   "deceased": "m",
+   "died": "1957-12-31",
+   "counts": {
+    "son": 1
+   },
+   "before": true
+  },
+  {
+   "name": "ابنا ابن وحدهما",
+   "deceased": "m",
+   "counts": {
+    "sonsSon": 2
+   },
+   "each": {
+    "sonsSon": "1/2"
+   }
+  },
+  {
+   "name": "ابن وابن ابن (المادة 358)",
+   "deceased": "m",
+   "counts": {
+    "son": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "son": "1"
+   },
+   "out": [
+    "sonsSon"
+   ]
+  },
+  {
+   "name": "بنت وابن ابن",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "sonsSon": "1/2"
+   }
+  },
+  {
+   "name": "بنتا ابن وحدهما: الرد",
+   "deceased": "m",
+   "counts": {
+    "sonsDaughter": 2
+   },
+   "each": {
+    "sonsDaughter": "1/2"
+   },
+   "radd": true
+  },
+  {
+   "name": "بنت وبنتا ابن: السدس ثم الرد",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "sonsDaughter": 2
+   },
+   "each": {
+    "daughter": "3/4",
+    "sonsDaughter": "1/8"
+   },
+   "radd": true
+  },
+  {
+   "name": "أب وجد: يحجبه الأب",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "grandfather": 1
+   },
+   "each": {
+    "father": "1"
+   },
+   "out": [
+    "grandfather"
+   ]
+  },
+  {
+   "name": "أب وجدتان: يحجب الأب أم الأب",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "grandmotherF": 1,
+    "grandmotherM": 1
+   },
+   "each": {
+    "grandmotherM": "1/6",
+    "father": "5/6"
+   },
+   "out": [
+    "grandmotherF"
+   ]
+  },
+  {
+   "name": "أم وجدة لأب",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "grandmotherF": 1
+   },
+   "each": {
+    "mother": "1"
+   },
+   "out": [
+    "grandmotherF"
+   ],
+   "radd": true
+  },
+  {
+   "name": "أخ وأخت شقيقان",
+   "deceased": "m",
+   "counts": {
+    "fullBrother": 1,
+    "fullSister": 1
+   },
+   "each": {
+    "fullBrother": "2/3",
+    "fullSister": "1/3"
+   }
+  },
+  {
+   "name": "أخ شقيق وشقيقتان",
+   "deceased": "m",
+   "counts": {
+    "fullBrother": 1,
+    "fullSister": 2
+   },
+   "each": {
+    "fullBrother": "1/2",
+    "fullSister": "1/4"
+   }
+  },
+  {
+   "name": "بنتان وأخت شقيقة: عصبة مع الغير",
+   "deceased": "m",
+   "counts": {
+    "daughter": 2,
+    "fullSister": 1
+   },
+   "each": {
+    "daughter": "1/3",
+    "fullSister": "1/3"
+   }
+  },
+  {
+   "name": "بنت وأخت لأب",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "patSister": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "patSister": "1/2"
+   }
+  },
+  {
+   "name": "بنت وشقيقة وأخ لأب: تحجبه الشقيقة العاصبة",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "fullSister": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "fullSister": "1/2"
+   },
+   "out": [
+    "patBrother"
+   ]
+  },
+  {
+   "name": "أخ شقيق وأخ لأب",
+   "deceased": "m",
+   "counts": {
+    "fullBrother": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "fullBrother": "1"
+   },
+   "out": [
+    "patBrother"
+   ]
+  },
+  {
+   "name": "شقيقة وأخ لأب",
+   "deceased": "m",
+   "counts": {
+    "fullSister": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "fullSister": "1/2",
+    "patBrother": "1/2"
+   }
+  },
+  {
+   "name": "أخ لأم وعم شقيق",
+   "deceased": "m",
+   "counts": {
+    "matBrother": 1,
+    "fullUncle": 1
+   },
+   "each": {
+    "matBrother": "1/6",
+    "fullUncle": "5/6"
+   }
+  },
+  {
+   "name": "ثلاث أخوات لأم: الرد",
+   "deceased": "m",
+   "counts": {
+    "matSister": 3
+   },
+   "each": {
+    "matSister": "1/3"
+   },
+   "radd": true
+  },
+  {
+   "name": "بنت وأخ لأم",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "matBrother": 1
+   },
+   "each": {
+    "daughter": "1"
+   },
+   "out": [
+    "matBrother"
+   ],
+   "radd": true
+  },
+  {
+   "name": "جد وأختان لأم: يحجبهما الجد",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "matSister": 2
+   },
+   "each": {
+    "grandfather": "1"
+   },
+   "out": [
+    "matSister"
+   ]
+  },
+  {
+   "name": "ابن أخ شقيق وابن أخ لأب",
+   "deceased": "m",
+   "counts": {
+    "fullNephew": 1,
+    "patNephew": 1
+   },
+   "each": {
+    "fullNephew": "1"
+   },
+   "out": [
+    "patNephew"
+   ]
+  },
+  {
+   "name": "ابن أخ لأب وعم شقيق",
+   "deceased": "m",
+   "counts": {
+    "patNephew": 1,
+    "fullUncle": 1
+   },
+   "each": {
+    "patNephew": "1"
+   },
+   "out": [
+    "fullUncle"
+   ]
+  },
+  {
+   "name": "عم شقيق وعم لأب",
+   "deceased": "m",
+   "counts": {
+    "fullUncle": 1,
+    "patUncle": 1
+   },
+   "each": {
+    "fullUncle": "1"
+   },
+   "out": [
+    "patUncle"
+   ]
+  },
+  {
+   "name": "عمان لأب وابن عم شقيق",
+   "deceased": "m",
+   "counts": {
+    "patUncle": 2,
+    "fullCousin": 1
+   },
+   "each": {
+    "patUncle": "1/2"
+   },
+   "out": [
+    "fullCousin"
+   ]
+  },
+  {
+   "name": "ابن عم شقيق وابن عم لأب",
+   "deceased": "m",
+   "counts": {
+    "fullCousin": 1,
+    "patCousin": 1
+   },
+   "each": {
+    "fullCousin": "1"
+   },
+   "out": [
+    "patCousin"
+   ]
+  },
+  {
+   "name": "أربع زوجات وابن",
+   "deceased": "m",
+   "counts": {
+    "wife": 4,
+    "son": 1
+   },
+   "each": {
+    "wife": "1/32",
+    "son": "7/8"
+   }
+  },
+  {
+   "name": "زوج وبنت: الرد على الزوج أيضا (المادة 349)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "daughter": 1
+   },
+   "each": {
+    "husband": "1/3",
+    "daughter": "2/3"
+   },
+   "radd": true
+  },
+  {
+   "name": "زوج وأخ شقيق",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "husband": "1/2",
+    "fullBrother": "1/2"
+   }
+  },
+  {
+   "name": "زوج وأم وأب وابن",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "father": 1,
+    "son": 1
+   },
+   "each": {
+    "husband": "1/4",
+    "mother": "1/6",
+    "father": "1/6",
+    "son": "5/12"
+   }
+  },
+  {
+   "name": "زوجة وأم وشقيقة وأخت لأب: العول إلى 13",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "mother": 1,
+    "fullSister": 1,
+    "patSister": 1
+   },
+   "each": {
+    "wife": "3/13",
+    "mother": "2/13",
+    "fullSister": "6/13",
+    "patSister": "2/13"
+   },
+   "base": 12,
+   "awl": 13
+  },
+  {
+   "name": "جد وشقيقتان",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "fullSister": 2
+   },
+   "each": {
+    "grandfather": "1/2",
+    "fullSister": "1/4"
+   }
+  },
+  {
+   "name": "جد وأخ وأخت لأب",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "patBrother": 1,
+    "patSister": 1
+   },
+   "each": {
+    "grandfather": "2/5",
+    "patBrother": "2/5",
+    "patSister": "1/5"
+   }
+  },
+  {
+   "name": "زوج وجد وأخوان شقيقان: السدس",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "grandfather": 1,
+    "fullBrother": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "grandfather": "1/6",
+    "fullBrother": "1/6"
+   }
+  },
+  {
+   "name": "زوجة وأم وجد وأخ شقيق: المقاسمة",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "mother": "1/3",
+    "grandfather": "5/24",
+    "fullBrother": "5/24"
+   }
+  },
+  {
+   "name": "أم وجد وأخوان شقيقان: ثلث الباقي",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "grandfather": 1,
+    "fullBrother": 2
+   },
+   "each": {
+    "mother": "1/6",
+    "grandfather": "5/18",
+    "fullBrother": "5/18"
+   }
+  },
+  {
+   "name": "بنت وبنت ابن وابن ابن",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1,
+    "sonsDaughter": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "sonsSon": "1/3",
+    "sonsDaughter": "1/6"
+   }
+  },
+  {
+   "name": "أب وأم وبنتان",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "mother": 1,
+    "daughter": 2
+   },
+   "each": {
+    "daughter": "1/3",
+    "mother": "1/6",
+    "father": "1/6"
+   }
+  },
+  {
+   "name": "أب وأم وبنت",
+   "deceased": "m",
+   "counts": {
+    "father": 1,
+    "mother": 1,
+    "daughter": 1
+   },
+   "each": {
+    "daughter": "1/2",
+    "mother": "1/6",
+    "father": "1/3"
+   }
+  },
+  {
+   "name": "زوج وأب وابن ابن",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "father": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "husband": "1/4",
+    "father": "1/6",
+    "sonsSon": "7/12"
+   }
+  },
+  {
+   "name": "أم وأخ شقيق وأخ لأم",
+   "deceased": "m",
+   "counts": {
+    "mother": 1,
+    "fullBrother": 1,
+    "matBrother": 1
+   },
+   "each": {
+    "mother": "1/6",
+    "matBrother": "1/6",
+    "fullBrother": "2/3"
+   }
+  },
+  {
+   "name": "زوجة وجد وأم: ليست غراوين",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "grandfather": 1,
+    "mother": 1
+   },
+   "each": {
+    "wife": "1/4",
+    "mother": "1/3",
+    "grandfather": "5/12"
+   }
+  },
+  {
+   "name": "رجل لا زوج له: يهمل ما أدخل خطأ",
+   "deceased": "m",
+   "counts": {
+    "husband": 1,
+    "son": 1
+   },
+   "each": {
+    "son": "1"
+   }
+  },
+  {
+   "name": "بنت حية وبنت متوفاة لها ابن: وصية إلى الثلث",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1
+   },
+   "each": {
+    "daughter": "2/3"
+   },
+   "predeceased": [
+    {
+     "sex": "f",
+     "sons": 1,
+     "daughters": 0
+    }
+   ],
+   "bequest": [
+    {
+     "son": "1/3"
+    }
+   ],
+   "capped": true
+  },
+  {
+   "name": "زوجة وابن وابن متوفى له ابن وبنت",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "son": 1
+   },
+   "each": {
+    "wife": "1/12",
+    "son": "7/12"
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 1,
+     "daughters": 1
+    }
+   ],
+   "out": [
+    "sonsSon",
+    "sonsDaughter"
+   ],
+   "bequest": [
+    {
+     "son": "2/9",
+     "daughter": "1/9"
+    }
+   ],
+   "capped": true
+  },
+  {
+   "name": "ابن وبنتان متوفاتان لكل منهما ابن",
+   "deceased": "m",
+   "counts": {
+    "son": 1
+   },
+   "each": {
+    "son": "2/3"
+   },
+   "predeceased": [
+    {
+     "sex": "f",
+     "sons": 1,
+     "daughters": 0
+    },
+    {
+     "sex": "f",
+     "sons": 1,
+     "daughters": 0
+    }
+   ],
+   "bequest": [
+    {
+     "son": "1/6"
+    },
+    {
+     "son": "1/6"
+    }
+   ],
+   "capped": true
+  },
+  {
+   "name": "المباهلة بأخت لأب",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "patSister": 1
+   },
+   "each": {
+    "husband": "3/8",
+    "patSister": "3/8",
+    "mother": "2/8"
+   },
+   "named": "mubahala"
+  },
+  {
+   "name": "الأكدرية بأخت لأب",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "patSister": 1
+   },
+   "each": {
+    "husband": "9/27",
+    "mother": "6/27",
+    "patSister": "4/27",
+    "grandfather": "8/27"
+   },
+   "named": "akdariyya",
+   "tashih": 27
+  },
+  {
+   "name": "الوصية الواجبة بقراءة محكمة النقض: مثال القاضي منصف (ابنان وبنت، وبنت ابن متوفى)، 700",
+   "deceased": "m",
+   "counts": {
+    "son": 2,
+    "daughter": 1
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 0,
+     "daughters": 1
+    }
+   ],
+   "each": {
+    "son": "12/35",
+    "daughter": "6/35"
+   },
+   "out": [
+    "sonsDaughter"
+   ],
+   "bequest": [
+    {
+     "daughter": "1/7"
+    }
+   ],
+   "capped": false,
+   "other": "2/7"
+  },
+  {
+   "name": "زوجة وابن وبنت، وابن متوفى له ابن وبنت وأرملة، وأمه الزوجة (11520)",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "son": 1,
+    "daughter": 1
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 1,
+     "daughters": 1,
+     "spouse": true,
+     "parent": true
+    }
+   ],
+   "each": {
+    "wife": "361/3840",
+    "son": "2527/5760",
+    "daughter": "2527/11520"
+   },
+   "bequest": [
+    {
+     "son": "119/720",
+     "daughter": "119/1440"
+    }
+   ],
+   "capped": false,
+   "tashih": 11520,
+   "other": "1/3"
+  },
+  {
+   "name": "نفس العائلة، والابن المتوفى لم يترك أرملة",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "son": 1,
+    "daughter": 1
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 1,
+     "daughters": 1,
+     "parent": true
+    }
+   ],
+   "each": {
+    "wife": "17/192",
+    "son": "119/288",
+    "daughter": "119/576"
+   },
+   "bequest": [
+    {
+     "son": "7/36",
+     "daughter": "7/72"
+    }
+   ],
+   "capped": false,
+   "other": "1/3"
+  },
+  {
+   "name": "زوجة وثلاثة أبناء، وبنت متوفاة لها بنتان وزوج، وأمها الزوجة: تعول مسألتها إلى 13",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "son": 3
+   },
+   "predeceased": [
+    {
+     "sex": "f",
+     "sons": 0,
+     "daughters": 2,
+     "spouse": true,
+     "parent": true
+    }
+   ],
+   "each": {
+    "wife": "3/26",
+    "son": "7/26"
+   },
+   "bequest": [
+    {
+     "daughter": "1/26"
+    }
+   ],
+   "capped": false,
+   "other": "1/8"
+  },
+  {
+   "name": "امرأة: زوج وابنان وبنتان، وبنت متوفاة لها ابن وزوج، وأبوها الزوج",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "son": 2,
+    "daughter": 2
+   },
+   "predeceased": [
+    {
+     "sex": "f",
+     "sons": 1,
+     "daughters": 0,
+     "spouse": true,
+     "parent": true
+    }
+   ],
+   "each": {
+    "husband": "15/64",
+    "son": "15/64",
+    "daughter": "15/128"
+   },
+   "bequest": [
+    {
+     "son": "1/16"
+    }
+   ],
+   "capped": false,
+   "other": "3/28"
+  },
+  {
+   "name": "بنتان، وبنت ابن متوفى تحجبها البنتان: لها نصف نصيب أبيها",
+   "deceased": "m",
+   "counts": {
+    "daughter": 2
+   },
+   "predeceased": [
+    {
+     "sex": "m",
+     "sons": 0,
+     "daughters": 1
+    }
+   ],
+   "each": {
+    "daughter": "3/8"
+   },
+   "out": [
+    "sonsDaughter"
+   ],
+   "bequest": [
+    {
+     "daughter": "1/4"
+    }
+   ],
+   "capped": false,
+   "other": "1/3",
+   "radd": true
+  },
+  {
+   "name": "المالكية مع أخت لأب بجانب الأخ: لا تحسب (المادة 362)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "patBrother": 1,
+    "patSister": 1,
+    "matBrother": 2
+   },
+   "stop": true
+  },
+  {
+   "name": "شبه المالكية مع شقيقة بجانب الشقيق: لا تحسب (المادة 363)",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "fullBrother": 1,
+    "fullSister": 1,
+    "matSister": 2
+   },
+   "stop": true
+  },
+  {
+   "name": "شبه المالكية مع أخ لأب بجانب الشقيق: لا تحسب",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "grandmotherM": 1,
+    "grandfather": 1,
+    "fullBrother": 1,
+    "patBrother": 1,
+    "matBrother": 1,
+    "matSister": 1
+   },
+   "stop": true
+  },
+  {
+   "name": "زوج وأم وجد وشقيقة وأخوان لأم: لا أخ، فتحسب بقواعد الجد",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "fullSister": 1,
+    "matBrother": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "grandfather": "2/9",
+    "fullSister": "1/9"
+   },
+   "out": [
+    "matBrother"
+   ]
+  },
+  {
+   "name": "المالكية: سدس الأم لتعدد الإخوة لا لوجود الفرع",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "grandfather": 1,
+    "patBrother": 2,
+    "matSister": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "grandfather": "1/3"
+   },
+   "named": "malikiyya",
+   "why": {
+    "mother": "mother.sixthSiblings"
+   }
+  },
+  {
+   "name": "المشتركة: سدس الأم لتعدد الإخوة",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "mother": 1,
+    "matBrother": 2,
+    "fullBrother": 2
+   },
+   "each": {
+    "husband": "1/2",
+    "mother": "1/6",
+    "matBrother": "1/12",
+    "fullBrother": "1/12"
+   },
+   "named": "mushtaraka",
+   "why": {
+    "mother": "mother.sixthSiblings"
+   }
+  },
+  {
+   "name": "زوجة وثلاث بنات ولا عاصب: الرد يشمل الزوجة (المادة 349)",
+   "deceased": "m",
+   "counts": {
+    "wife": 1,
+    "daughter": 3
+   },
+   "each": {
+    "wife": "3/19",
+    "daughter": "16/57"
+   },
+   "radd": true,
+   "raddSpouse": "1/8"
+  },
+  {
+   "name": "بنت واحدة ولا عاصب: الرد، ولا زوج",
+   "deceased": "m",
+   "counts": {
+    "daughter": 1
+   },
+   "each": {
+    "daughter": "1"
+   },
+   "radd": true,
+   "raddSpouse": null
+  },
+  {
+   "name": "جد وأخ شقيق مع زوج وبنتين وأم: السدس للجد ولا شيء للأخ",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "daughter": 2,
+    "mother": 1,
+    "grandfather": 1,
+    "fullBrother": 1
+   },
+   "each": {
+    "husband": "1/5",
+    "daughter": "4/15",
+    "mother": "2/15",
+    "grandfather": "2/15"
+   },
+   "out": [
+    "fullBrother"
+   ],
+   "awl": 15,
+   "why": {
+    "grandfather": "grandfather.sixthOnly"
+   }
+  },
+  {
+   "name": "جد وابن ابن: السدس للجد",
+   "deceased": "m",
+   "counts": {
+    "grandfather": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "grandfather": "1/6",
+    "sonsSon": "5/6"
+   },
+   "why": {
+    "grandfather": "grandfather.sixth"
+   }
+  },
+  {
+   "name": "بنت ابن وحدها مع عم: النصف",
+   "deceased": "m",
+   "counts": {
+    "sonsDaughter": 1,
+    "fullUncle": 1
+   },
+   "each": {
+    "sonsDaughter": "1/2",
+    "fullUncle": "1/2"
+   },
+   "why": {
+    "sonsDaughter": "sonsDaughter.half"
+   }
+  },
+  {
+   "name": "أختان لأب وعم لأب: الثلثان",
+   "deceased": "m",
+   "counts": {
+    "patSister": 2,
+    "patUncle": 1
+   },
+   "each": {
+    "patSister": "1/3",
+    "patUncle": "1/3"
+   },
+   "why": {
+    "patSister": "patSister.twoThirds"
+   }
+  },
+  {
+   "name": "ابن عم لأب وحده",
+   "deceased": "m",
+   "counts": {
+    "patCousin": 2
+   },
+   "each": {
+    "patCousin": "1/2"
+   },
+   "why": {
+    "patCousin": "patCousin.rest"
+   }
+  },
+  {
+   "name": "ابن وأخ لأب: يحجبه الابن",
+   "deceased": "m",
+   "counts": {
+    "son": 1,
+    "patBrother": 1
+   },
+   "each": {
+    "son": "1"
+   },
+   "out": [
+    "patBrother"
+   ]
+  },
+  {
+   "name": "زوج وبنتان وأبوان وابن ابن: لم يبق له شيء",
+   "deceased": "f",
+   "counts": {
+    "husband": 1,
+    "daughter": 2,
+    "father": 1,
+    "mother": 1,
+    "sonsSon": 1
+   },
+   "each": {
+    "husband": "1/5",
+    "daughter": "4/15",
+    "father": "2/15",
+    "mother": "2/15"
+   },
+   "out": [
+    "sonsSon"
+   ],
+   "awl": 15
+  }
+ ]
+}

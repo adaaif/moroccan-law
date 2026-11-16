@@ -1,0 +1,119 @@
+# «الخبز والغازوال، يوم كانت الجريدة الرسمية تكتب ثمنهما»: the blog's fifteenth post (S2 and S3 of
+# the first-principles review, 6 Nov 2026: «Yes» to both, built as one post). Every price is read in its order's article as the corpus
+# holds it (6 Nov 2026); where the text layer lost a table or a cell (the sugar orders, 1980's sugar and butter, the
+# 1984 base order) on the printed page's image. A person checks every figure on its page before the post is published.
+# The figures (manage.py blog_figures bread-gasoil) tie each order to its page and address, and take the minimum wage
+# from the sixth post's checked steps.
+slug: bread-gasoil
+number: 15
+status: draft
+date: null
+counted_on: 2026-11-06
+title:
+  ar: الخبز والغازوال، يوم كانت الجريدة الرسمية تكتب ثمنهما
+  fr: Le pain et le gasoil, quand le Bulletin officiel en écrivait le prix
+lead:
+  ar: في 28 ماي 1981 نشرت الجريدة الرسمية خمسة قرارات رفعت ثمن الخبز والسكر والزيت والزبدة والدقيق. وفي 10 يونيو نشرت خمسة قرارات أخرى أرجعت من 45 إلى 69 في المائة من كل زيادة. ومن 1975 إلى 2014 كتبت 23 ثمنا للتر الغازوال، ثم قال قرار إن الجمهور يُخبَر به «بكل وسيلة من وسائل الاتصال الملائمة».
+  fr: Le 28 mai 1981, le Bulletin officiel publiait cinq arrêtés qui relevaient le prix du pain, du sucre, de l’huile, du beurre et de la farine. Le 10 juin, il en publiait cinq autres qui retiraient de 45 à 69 % de chaque hausse. De 1975 à 2014, il a écrit 23 prix du litre de gasoil ; puis un arrêté a dit que le public en serait informé « par tout moyen de communication approprié ».
+
+# The three issues that printed the basket: 3 September 1980, 28 May 1981, 10 June 1981. `from`: the day the orders
+# say they apply (in May each order's last article says 29 May, the bread's on page 631; in June, 7 June).
+issues:
+  - {key: sep80, issue: 3540, date: 1980-09-03, from: 1980-09-05}
+  - {key: may81, issue: 3578, bis: true, date: 1981-05-28, from: 1981-05-29}
+  - {key: jun81, issue: 3580, date: 1981-06-10, from: 1981-06-07}
+
+# The basket, each item in the unit its orders print, the three prices in the issues' order, and the order of each.
+# Bread: the 800 g «بوردولي» loaf, «الخبز المصنوع بالدقيق الوطني المستخرج من القمح الطري». Sugar: cones of 2 kg, the
+# factory price a quintal (the retail price adds margins of 0,04 and 0,07–0,11 DH a kg). Oil: a litre bottle of
+# polyethylene, the consumer's price. Butter: imported in bulk, the retail price in the prefecture of Casablanca. Flour:
+# the national soft-wheat flour at the mill, a quintal (1980's consumer price is not printed).
+basket:
+  - key: bread
+    values: [0.70, 0.90, 0.80]
+    orders:
+      - {number: "3.109.80", issue: 3540, page: 1108, akn: /akn/ma/act/decision/1980/3-109-80}
+      - {number: "3.264.81", issue: 3578, bis: true, page: 630, akn: /akn/ma/act/decision/1981/3-264-81}
+      - {number: "3.278.81", issue: 3580, page: 674, akn: /akn/ma/act/decision/1981/3-278-81}
+  - key: sugar
+    values: [273.75, 379.75, 330.75]
+    orders:
+      - {number: "3.108.80", issue: 3540, page: 1108}
+      - {number: "3.263.81", issue: 3578, bis: true, page: 631, akn: /akn/ma/act/arrete/1981/81-263-3}
+      - {number: "3.275.81", issue: 3580, page: 672, akn: /akn/ma/act/decision/1981/81}
+  - key: oil
+    values: [4.00, 5.10, 4.60]
+    orders:
+      - {number: "3.110.80", issue: 3540, page: 1109, akn: /akn/ma/act/decret/3-110-80}
+      - {number: "3.265.81", issue: 3578, bis: true, page: 632, akn: /akn/ma/act/decision/1981/3-265-81}
+      - {number: "3.276.81", issue: 3580, page: 673, akn: /akn/ma/act/arrete/1981/3-276-81}
+  - key: butter
+    values: [10.50, 18.50, 13.00]
+    orders:
+      - {number: "3.111.80", issue: 3540, page: 1110}
+      - {number: "3.266.81", issue: 3578, bis: true, page: 633, akn: /akn/ma/act/decision/1981/3-266-81}
+      - {number: "3.277.81", issue: 3580, page: 673, akn: /akn/ma/act/arrete/1981/3-277-81}
+  - key: flour
+    values: [94, 131, 112]
+    orders:
+      - {number: "1016.80", issue: 3540, page: 1111, akn: /akn/ma/act/arrete/1016-80}
+      - {number: "536.81", issue: 3578, bis: true, page: 630, akn: /akn/ma/act/arrete/536-81}
+      - {number: "587.81", issue: 3580, page: 675, akn: /akn/ma/act/arrete/587-81}
+
+# The loaf before: 0,65 DH from the order of February 1975.
+bread_1975: {value: 0.65, number: "3.374.74", issue: 3250, date: 1975-02-12, page: 521, akn: /akn/ma/act/decision/1975/3-374-74}
+
+# The words that move the price back, from the June bread order's third article.
+june_words:
+  ar: "يعمل بهذا القرار ابتداء من 4 شعبان 1401 (7 يونيه 1981) … وينسخ احكام قرار الوزير الاول رقم 3.264.81 بتاريخ 21 من رجب 1401 (26 مايو 1981)."
+  fr: "Le présent arrêté s’applique à compter du 7 juin 1981 … et abroge l’arrêté du Premier ministre n° 3-264-81 du 26 mai 1981."
+
+# Gasoil at the pump, Casablanca's base price (other provinces add a transport difference), in dirhams a hectolitre,
+# order by order: `from` the day the order says it applies (`printed` when it names none), the product as the order
+# names it. Lines printed as dots in an amending order («الغازوال ……», 2008 and 2010) are unchanged, and listed nowhere.
+gasoil:
+  - {from: 1975-12-25, price: 53.50, name: "الغازوال", number: "1499.75", issue: 3300, date: 1976-01-28, page: 334, akn: /akn/ma/act/decision/1975/1499-75}
+  - {from: 1977-01-05, printed: true, price: 75.00, name: "الغازوال", number: "1444.76", issue: 3349, date: 1977-01-05, page: 11, akn: /akn/ma/act/arrete/1444-76}
+  - {from: 1978-12-29, price: 105.00, name: "الغازوال", number: "22.79", issue: 3459, date: 1979-02-14, page: 544, akn: /akn/ma/act/arrete/22-79}
+  - {from: 1979-09-19, printed: true, price: 125.00, name: "الغازوال", number: "926.79", issue: 3490, date: 1979-09-19, page: 2117, akn: /akn/ma/act/arrete/926-79}
+  - {from: 1980-01-08, price: 140.00, name: "الغازوال", number: "180.80", issue: 3527, date: 1980-06-04, page: 725, akn: /akn/ma/act/arrete/180-80}
+  - {from: 1981-02-12, price: 210.00, name: "الغازوال", number: "481.81", issue: 3579, date: 1981-06-03, page: 641, akn: /akn/ma/act/arrete/481-81}
+  - {from: 1981-10-23, price: 240.00, name: "الغازوال", number: "953.81", issue: 3599, date: 1981-10-21, page: 1169, akn: /akn/ma/act/arrete/953-81}
+  - {from: 1982-11-10, price: 255.00, name: "الغازوال", number: "1406.82", issue: 3655, date: 1982-11-17, page: 1350, akn: /akn/ma/act/arrete/1406-82}
+  - {from: 1983-08-03, price: 273.00, name: "الغازوال", number: "995.83", issue: 3692, date: 1983-08-03, page: 1162, akn: /akn/ma/act/arrete/995-83}
+  - {from: 1983-12-31, price: 313.00, name: "الغازوال", number: "7.84", issue: 3714, date: 1984-01-04, page: 5, akn: /akn/ma/act/arrete/7-84}
+  - {from: 1984-11-09, price: 345.00, name: "الغازوال", number: "1192.84", issue: 3764, date: 1984-12-19, page: 1183}
+  - {from: 1990-10-28, price: 397.00, name: "الغازوال", number: "1183.90", issue: 4072, date: 1990-11-14, page: 1474, akn: /akn/ma/act/arrete/1183-90}
+  - {from: 1995-01-01, price: 423.00, name: "الغازوال", number: "43.95", issue: 4292, date: 1995-02-01, page: 224, akn: /akn/ma/act/arrete/43-95}
+  - {from: 2002-07-16, price: 576.00, name: "الغازوال", number: "1144.02", issue: 5031, date: 2002-08-19, page: 2380, akn: /akn/ma/act/arrete/1144-02}
+  - {from: 2004-08-25, price: 596.00, name: "الغازوال", number: "1616.04", issue: 5247, date: 2004-09-13, page: 3341, akn: /akn/ma/act/arrete/1616-04}
+  - {from: 2006-09-02, price: 798.00, name: "الغازوال", number: "2380.06", issue: 5468, date: 2006-10-26, page: 3303, akn: /akn/ma/act/arrete/2380-06}
+  - {from: 2006-10-06, price: 747.00, name: "الغازوال", number: "2381.06", issue: 5468, date: 2006-10-26, page: 3309, akn: /akn/ma/act/arrete/2381-06}
+  - {from: 2007-01-13, price: 722.00, name: "الغازوال", number: "246.07", issue: 5510, date: 2007-03-22, page: 1039, akn: /akn/ma/act/arrete/246-07}
+  - {from: 2009-02-16, price: 720.00, name: "الغازوال", number: "394.09", issue: 5713, date: 2009-03-02, page: 659, akn: /akn/ma/act/arrete/394-09}
+  - {from: 2009-04-01, price: 715.00, name: "الغازوال 50 ppm", number: "811.09", issue: 5729, date: 2009-04-27, page: 2012, akn: /akn/ma/act/arrete/811-09}
+  - {from: 2012-06-02, price: 815.00, name: "الغازوال 50 ppm", number: "2153.12", issue: 6052, date: 2012-05-31, page: 3439, akn: /akn/ma/act/arrete/2153-12}
+  - {from: 2013-09-16, printed: true, price: 884.00, name: "الغازوال", number: "2688.13", issue: 6187, date: 2013-09-16, page: 6102, akn: /akn/ma/act/arrete/2688-13}
+  - {from: 2013-11-15, printed: true, price: 854.00, name: "الغازوال", number: "3215.13", issue: 6204, bis: true, date: 2013-11-15, page: 7052, akn: /akn/ma/act/arrete/3215-13}
+
+# The last gasoil price an order prints: 854 again, from 16 January 2014 (order 98.14), the day full indexation begins.
+last: {from: 2014-01-16, price: 854.00, number: "98.14", issue: 6222, date: 2014-01-16, page: 188, akn: /akn/ma/act/arrete/98-14}
+
+# Where the Bulletin stops writing the price. From 1 February 1995 order 43.95 ties the purchase prices to world prices
+# each month and the sale prices follow them «وتنشرها الوزارة المكلفة بالطاقة», until order 1144.02 fixes them again from
+# 16 July 2002. From 16 January 2014 decision 3.01.14 revises them on the 1st and 16th of each month; order 4554.14
+# (30 December 2014) says how the public learns them.
+away:
+  - key: ministry
+    from: 1995-02-01
+    to: 2002-07-16
+    text: {number: "43.95", issue: 4292, page: 224, akn: /akn/ma/act/arrete/43-95}
+    words:
+      ar: "تراجع الأسعار الأساسية القصوى التي تباع بها المحروقات السائلة للجمهور على أساس أسعار الشراء … وتنشرها الوزارة المكلفة بالطاقة."
+      fr: "Les prix de base maximaux de vente au public des carburants sont révisés sur la base des prix d’achat … et publiés par le ministère chargé de l’énergie."
+  - key: means
+    from: 2014-01-16
+    text: {number: "4554.14", issue: 6321, bis: true, page: 8778, akn: /akn/ma/act/arrete/4554-14}
+    words:
+      ar: "تحسب الأسعار الأساسية القصوى التي تباع بها المحروقات السائلة للجمهور في اليومين الأول والسادس عشر من كل شهر … يتم إعلام الجمهور بالأسعار الأساسية القصوى لبيع المحروقات السائلة بكل وسيلة من وسائل الاتصال الملائمة."
+      fr: "Les prix de base maximaux de vente au public des carburants sont calculés le 1er et le 16 de chaque mois … Le public est informé de ces prix par tout moyen de communication approprié."

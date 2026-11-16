@@ -1,0 +1,427 @@
+# The digital topic's page (the digital review, 27 Oct 2026, $5 of Haiku at most: what Moroccans need to
+# understand their life online under Moroccan law). One question first, since the law a reader meets depends on what
+# they do online: use apps and sites, suffer an attack, run a business that collects data, create content, ask the
+# administration for information, or sign and buy online. Then the doors, each led by the message bubble every
+# Moroccan's online life runs through (`marks: bubble`), with the one figure the law sets for the door inside it, or its
+# pictogram. Written from the texts as the site holds them on 27 Oct 2026: law 09.08 on personal data and decree 2.09.165,
+# law 31.13 on the right to information, law 2.00 on copyright (the SGG's consolidation with law 13.26 of 10 Aug 2026),
+# the penal code (offences against data systems, privacy, extortion, fraud, harassment), the press code 88.13 (Adala, as
+# published in 2016), law 43.20 on trust services with the DOC's arts 417-1 to 417-3, and law 05.20 on cybersecurity.
+# Nothing here reaches a reader before a person checks it.
+doors_title: {ar: شنو كتحتاج فالأنترنت؟, fr: 'De quoi avez-vous besoin en ligne ?'}
+marks: bubble
+stages:
+  - {key: data, title: {ar: معطياتي الشخصية, fr: Mes données personnelles}, doors: [consent, access, rectify, spam, cndp]}
+  - {key: attack, title: {ar: تعدّاو عليّا فالأنترنت, fr: 'On m’a attaqué en ligne'}, doors: [hacked, scam, extortion, intimate, montage, harassment, defamed]}
+  - {key: info, title: {ar: معلومة من الإدارة, fr: 'Une information de l’administration'}, doors: [request, urgent-info, refused]}
+  - {key: create, title: {ar: المحتوى ديالي وديال الناس, fr: 'Mes contenus et ceux des autres'}, doors: [protection, private-copy, quote, piracy]}
+  - {key: sign, title: {ar: التوقيع والوثائق الإلكترونية, fr: 'Signature et documents électroniques'}, doors: [e-document, e-signature, trusted]}
+  - {key: company, title: {ar: إلا عندي مقاولة ولا تطبيق, fr: 'Si j’ai une entreprise ou une application'}, doors: [declare, sensitive, abroad, incident]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [online-buy, complaint, prescription, violence, card-data], links: true}
+
+# The band: the moment someone threatens to publish your pictures or messages, the online emergency every family
+# fears. Its acts are the extortion journey's first answers; its tool is the offences tool. No number is shown: no
+# official page gives one.
+urgent:
+  title: {ar: كيبتزوك ولا نشرو صورك؟, fr: 'Menacé ou vos photos publiées ?'}
+  lead: {ar: 'شنو كيقول القانون من النهار الأول', fr: 'Ce que dit la loi dès le premier jour'}
+  to: journeys/extortion
+  tone: slate
+  acts: {journey: extortion, steps: [0, 1, 2]}
+  tool: tools/offence
+  tool_label: {ar: 'شنو كيقول القانون على اللي وقع ليك؟', fr: 'Que dit la loi de ce qui vous arrive ?'}
+
+learn: [pages/data, pages/offences, journeys/info-request, pages/copyright, pages/beliefs]
+
+# What people believe, and what the law says, each card leading to the page that answers it.
+beliefs:
+  - claim: {ar: 'اللي سجل مكالمة خاصة ولا صور واحد فدارو ما عندو حتى مشكل', fr: 'Enregistrer un appel privé ou filmer quelqu’un chez lui, ce n’est rien'}
+    truth: {ar: 'تسجيل أو نشر كلام خاص، أو صورة شخص فمكان خاص، بلا موافقتو: الحبس من 6 أشهر حتى 3 سنين.', fr: 'Enregistrer ou diffuser des propos privés, ou l’image d’une personne dans un lieu privé, sans son accord : six mois à trois ans de prison.'}
+    to: pages/beliefs
+  - claim: {ar: 'التشهير فالفيسبوك ماشي صحافة، ما فيه عقوبة', fr: 'Diffamer sur Facebook n’est pas de la presse, ce n’est pas puni'}
+    truth: {ar: 'قانون الصحافة كيشمل الوسائل الإلكترونية: القذف فحق الأفراد غرامتو من 10.000 حتى 100.000 درهم؛ والقانون الجنائي كيعاقب على نشر ادعاءات كاذبة للتشهير بالحبس.', fr: 'Le code de la presse vise les moyens électroniques : la diffamation envers un particulier coûte 10 000 à 100 000 DH ; le code pénal punit de prison la diffusion d’allégations fausses pour diffamer.'}
+    to: pages/beliefs
+  - claim: {ar: 'نقدر نشكي على السب فالأنترنت فوقما بغيت', fr: 'On peut porter plainte pour injure en ligne quand on veut'}
+    truth: {ar: 'جرائم قانون الصحافة كتتقادم بستة أشهر كاملة من نهار النشر.', fr: 'Les délits du code de la presse se prescrivent par six mois révolus à compter de la publication.'}
+    to: pages/beliefs
+  - claim: {ar: 'الشركة عندها نمرتي، يعني تقدر تصيفط ليا الإشهار', fr: 'L’entreprise a mon numéro, elle peut m’envoyer de la publicité'}
+    truth: {ar: 'الاستقراء المباشر بالرسائل والبريد الإلكتروني ممنوع بلا رضاك المسبق.', fr: 'La prospection directe par messages ou courriel est interdite sans votre consentement préalable.'}
+    to: pages/beliefs
+  - claim: {ar: 'الإدارة ما ملزماش تعطيني المعلومة', fr: 'L’administration n’est pas tenue de me répondre'}
+    truth: {ar: 'خاصها تجاوب داخل 20 يوم عمل، والرفض خاصو يكون مكتوب ومعلل، ومن بعد الشكاية واللجنة والمحكمة الإدارية.', fr: 'Elle répond dans les 20 jours ouvrables, tout refus est écrit et motivé, puis viennent la réclamation, la commission et le tribunal administratif.'}
+    to: pages/beliefs
+  - claim: {ar: 'إلا سالات مدة الحماية، الاستغلال التجاري فابور', fr: 'Une œuvre tombée dans le domaine public s’exploite gratuitement'}
+    truth: {ar: 'منذ القانون 13.26، الاستغلال التجاري لمصنف سالات حمايتو خاصو ترخيص من المكتب المغربي لحقوق المؤلف ومستحقات.', fr: 'Depuis la loi 13.26, l’exploitation commerciale d’une œuvre dont la protection a expiré requiert une autorisation du BMDA et une redevance.'}
+    to: pages/beliefs
+  - claim: {ar: 'التوقيع الإلكتروني ما عندو قيمة أمام المحكمة', fr: 'La signature électronique ne vaut rien devant le juge'}
+    truth: {ar: 'الوثيقة الإلكترونية عندها نفس قوة الإثبات ديال الورق؛ والتوقيع المؤهل مع الختم الزمني بحال التوقيع المصادق عليه.', fr: 'Le document électronique a la même force probante que le papier ; la signature qualifiée avec horodatage vaut signature légalisée.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in: the attacks people suffer most first, then their data and the
+# administration's information, then creation, signature and the company's duties.
+waves:
+  1: [journeys/extortion, journeys/hacked, journeys/scam, journeys/defamed, pages/offences, pages/beliefs, tools/offence, checklists/complaint]
+  2: [journeys/data-request, journeys/cndp, journeys/info-request, pages/data, pages/info, tools/letter, tools/info, checklists/data-request, checklists/info-request]
+  3: [journeys/copyright, journeys/company, pages/copyright, pages/esign, pages/company, tools/copyright, checklists/company-duties, reform/access-2019, reform/cyber-2021, reform/trust-2023, reform/copyright-2026]
+
+# The one question: what the reader does online. Each answer names the law that governs it, three figures with their
+# articles, and leads with its own door; it is kept on the phone.
+profile:
+  question: {ar: شنو كتدير فالأنترنت؟, fr: 'Que faites-vous en ligne ?'}
+  options:
+    - key: user
+      first: access
+      main: true
+      label: {ar: كنستعمل التطبيقات والمواقع, fr: 'J’utilise des applications et des sites'}
+      law: {ar: 'القانون 09.08: معطياتك ما كتعالجش بلا رضاك، ومن حقك تعرف شنو عندهم وتصححو ولا تمسحو.', fr: 'La loi 09.08 : vos données ne sont pas traitées sans votre consentement, et vous pouvez savoir ce qu’on détient, le corriger ou l’effacer.'}
+      facts:
+        - {value: {ar: 'الرضى', fr: 'Le consentement'}, label: {ar: 'شرط لمعالجة معطياتك، إلا فحالات يعددها القانون', fr: 'condition du traitement, sauf les cas que la loi énumère'}, cites: [/ma/loi/9-08/art_4]}
+        - {value: {ar: '0 درهم', fr: '0 DH'}, label: {ar: 'باش تعرف شنو كيعالجو من معطياتك، فالحين', fr: 'pour savoir quelles données on traite sur vous, sans délai'}, cites: [/ma/loi/9-08/art_7]}
+        - {value: {ar: '10 أيام', fr: '10 jours'}, label: {ar: 'كاملة باش يصححو ولا يمسحو، وإلا اللجنة الوطنية', fr: 'francs pour corriger ou effacer, sinon la CNDP'}, cites: [/ma/loi/9-08/art_8]}
+    - key: victim
+      first: extortion
+      main: true
+      label: {ar: تعدّاو عليّا فالأنترنت, fr: 'J’ai été attaqué en ligne'}
+      law: {ar: 'القانون الجنائي وقانون الصحافة: القرصنة والنصب والابتزاز ونشر الصور الخاصة والتحرش والتشهير جرائم، والشكاية لوكيل الملك.', fr: 'Le code pénal et le code de la presse : piratage, escroquerie, chantage, diffusion d’images privées, harcèlement et diffamation sont des infractions ; la plainte va au procureur.'}
+      facts:
+        - {value: {ar: '1–5 سنين', fr: '1 à 5 ans'}, label: {ar: 'حبس على الابتزاز بالتهديد بالفضيحة', fr: 'de prison pour le chantage à la révélation'}, cites: [/ma/dahir/1-59-413/art_538]}
+        - {value: {ar: '6 شهور–3 سنين', fr: '6 mois à 3 ans'}, label: {ar: 'حبس على نشر صورة فمكان خاص بلا موافقة', fr: 'de prison pour diffuser une image prise dans un lieu privé sans accord'}, cites: [/ma/dahir/1-59-413/art_447-1]}
+        - {value: {ar: '15 يوم', fr: '15 jours'}, label: {ar: 'باش يعلمك وكيل الملك بمآل الشكاية من نهار القرار', fr: 'pour que le procureur vous informe de la suite, après sa décision'}, cites: [/ma/loi/22-01/art_40]}
+    - key: business
+      first: declare
+      main: true
+      label: {ar: عندي مقاولة ولا تطبيق كيجمع المعطيات, fr: 'J’ai une entreprise ou une application qui collecte des données'}
+      law: {ar: 'القانون 09.08: التصريح للجنة الوطنية قبل المعالجة، وإذن مسبق للمعطيات الحساسة، واحترام حقوق الناس؛ والقانون 05.20 للأمن السيبراني.', fr: 'La loi 09.08 : déclarer à la CNDP avant de traiter, une autorisation préalable pour les données sensibles, respecter les droits des personnes ; et la loi 05.20 sur la cybersécurité.'}
+      facts:
+        - {value: {ar: '10.000–100.000', fr: '10 000 à 100 000'}, label: {ar: 'درهم غرامة على المعالجة بلا تصريح ولا إذن', fr: 'DH d’amende pour un traitement sans déclaration ni autorisation'}, cites: [/ma/loi/9-08/art_52, /ma/loi/9-08/art_12]}
+        - {value: {ar: '20.000–200.000', fr: '20 000 à 200 000'}, label: {ar: 'درهم على كل رفض لحقوق الولوج والتصحيح والتعرض', fr: 'DH pour chaque refus des droits d’accès, de rectification et d’opposition'}, cites: [/ma/loi/9-08/art_53]}
+        - {value: {ar: 'الرضى', fr: 'Le consentement'}, label: {ar: 'مسبق قبل أي رسالة إشهارية', fr: 'préalable avant tout message publicitaire'}, cites: [/ma/loi/9-08/art_10]}
+    - key: creator
+      first: protection
+      main: true
+      label: {ar: كنصنع وننشر محتوى, fr: 'Je crée et je publie des contenus'}
+      law: {ar: 'القانون 2.00: المصنف محمي بلا إجراء، طيلة حياة المؤلف و70 سنة من بعد وفاته، والحقوق المعنوية ديما.', fr: 'La loi 2.00 : l’œuvre est protégée sans formalité, la vie de l’auteur et 70 ans après sa mort, le droit moral pour toujours.'}
+      facts:
+        - {value: {ar: '70 سنة', fr: '70 ans'}, label: {ar: 'من بعد وفاة المؤلف كتبقى الحقوق المادية', fr: 'après la mort de l’auteur pour les droits patrimoniaux'}, cites: [/ma/loi/2-00/art_25]}
+        - {value: {ar: 'الاستشهاد', fr: 'La citation'}, label: {ar: 'مسموح بلا إذن، مع ذكر المصدر واسم المؤلف', fr: 'permise sans autorisation, en citant la source et l’auteur'}, cites: [/ma/loi/2-00/art_14]}
+        - {value: {ar: '2–6 شهور', fr: '2 à 6 mois'}, label: {ar: 'حبس، و10.000 حتى 100.000 درهم، على القرصنة بقصد الاستغلال التجاري', fr: 'de prison et 10 000 à 100 000 DH pour le piratage à but commercial'}, cites: [/ma/loi/2-00/art_64]}
+    - key: citizen
+      first: request
+      label: {ar: بغيت معلومة من الإدارة, fr: 'Je veux une information de l’administration'}
+      law: {ar: 'القانون 31.13: الحق فالمعلومة اللي عند الإدارات والمحاكم والجماعات، مجانا، وبجواب داخل أجل محدد.', fr: 'La loi 31.13 : le droit aux informations détenues par les administrations, tribunaux et collectivités, gratuitement, avec une réponse dans un délai fixé.'}
+      facts:
+        - {value: {ar: '20 يوم عمل', fr: '20 jours ouvrables'}, label: {ar: 'باش تجاوب الإدارة، وتقدر تزيد 20 بإشعار مكتوب', fr: 'pour répondre, prolongeables de 20 avec un avis écrit'}, cites: [/ma/loi/31-13/art_16]}
+        - {value: {ar: '3 أيام', fr: '3 jours'}, label: {ar: 'فالحالة المستعجلة لحماية الحياة والسلامة والحرية', fr: 'en urgence, pour protéger la vie, la sécurité ou la liberté'}, cites: [/ma/loi/31-13/art_17]}
+        - {value: {ar: '60 يوم', fr: '60 jours'}, label: {ar: 'باش تطعن أمام المحكمة الإدارية من جواب اللجنة', fr: 'pour saisir le tribunal administratif après la commission'}, cites: [/ma/loi/31-13/art_21]}
+    - key: signer
+      first: e-document
+      label: {ar: كنوقع ولا كنشري من الأنترنت, fr: 'Je signe ou j’achète en ligne'}
+      law: {ar: 'قانون الالتزامات والعقود والقانون 43.20: الوثيقة الإلكترونية بحال الورق، والتوقيع الإلكتروني ثلاث مستويات؛ وقانون حماية المستهلك للشراء عن بعد.', fr: 'Le DOC et la loi 43.20 : le document électronique vaut le papier, la signature électronique a trois niveaux ; et la loi sur le consommateur pour l’achat à distance.'}
+      facts:
+        - {value: {ar: 'بحال الورق', fr: 'Comme le papier'}, label: {ar: 'قوة إثبات الوثيقة الإلكترونية، إلا تعرفنا على صاحبها وتحفظت مزيان', fr: 'force probante du document électronique, si son auteur est identifié et son intégrité garantie'}, cites: [/ma/code/doc/art_417-1]}
+        - {value: {ar: '3 مستويات', fr: '3 niveaux'}, label: {ar: 'للتوقيع الإلكتروني: بسيط، متقدم، مؤهل', fr: 'de signature électronique : simple, avancée, qualifiée'}, cites: [/ma/loi/43-20/art_5, /ma/loi/43-20/art_6, /ma/loi/43-20/art_7]}
+        - {value: {ar: '7 أيام', fr: '7 jours'}, label: {ar: 'باش تتراجع على شي حاجة شريتيها عن بعد', fr: 'pour se rétracter d’un achat à distance'}, cites: [/ma/loi/31-08/art_36]}
+
+events:
+  # My personal data.
+  - key: consent
+    icon: data
+    words: [المعطيات الشخصية, المعطيات ذات الطابع الشخصي, données personnelles, protection des données maroc, rda, الرضى المسبق, consentement données, واش خاصهم يطلبو موافقتي, حماية المعطيات, تطلب موافقتي, موافقة الشخص المعني, sans consentement, mowafa9a, كيجمعو المعطيات, ذات الطابع الشخصي, المسؤول عن المعالجة]
+    means:
+      لا يمكن القيام بمعالجة المعطيات ذات الطابع الشخصي إلا إذا كان الشخص المعني قد عبر بما لا يترك مجالا للشك عن رضاه: [المعطيات الشخصية, données personnelles, protection des données maroc, الرضى المسبق, consentement données, واش خاصهم يطلبو موافقتي, حماية المعطيات]
+      المعطيات ذات الطابع الشخصي: [المعطيات ذات الطابع الشخصي]
+    title: {ar: 'واش خاصهم يطلبو موافقتي؟', fr: 'Doit-on me demander mon accord ?'}
+    lead: {ar: 'معطياتك ما كتعالجش بلا رضاك، إلا لعقد ولا التزام قانوني ولا مصلحة حيوية', fr: 'Vos données ne sont pas traitées sans votre accord, sauf contrat, obligation légale ou intérêt vital'}
+    to: pages/data
+  - key: access
+    mark: {value: '0', unit: {ar: درهم, fr: DH}}
+    words: [حق الولوج, droit d'accès données, شنو عندهم عليا, شنو كيعرفو عليا, accès à mes données, نعرف المعطيات ديالي, droit d accès, عندهم من معطيات, الاطلاع على معطياتي, 3ndhom men ma3lomat]
+    means:
+      الحق في الولوج: [حق الولوج, droit d'accès données, شنو عندهم عليا, شنو كيعرفو عليا, accès à mes données, نعرف المعطيات ديالي, droit d accès]
+    title: {ar: 'بغيت نعرف شنو عندهم عليا', fr: 'Savoir ce qu’on détient sur moi'}
+    lead: {ar: 'حق الولوج: فالحين وبلا مقابل، من بعد ما تثبت هويتك', fr: 'Le droit d’accès : sans délai et gratuitement, sur justification de votre identité'}
+    to: journeys/data-request
+  - key: rectify
+    mark: {value: '10', unit: {ar: أيام, fr: jours}}
+    words: [نمسح المعطيات ديالي, droit à l'effacement, effacer mes données, الحق في التصحيح, rectification données, معطيات غالطة, نحيد الحساب ديالي, supprimer mes données]
+    means:
+      الحق في التصحيح: [الحق في التصحيح, rectification données, معطيات غالطة]
+      تحيين أو تصحيح أو مسح أو إغلاق الولوج إلى المعطيات ذات الطابع الشخصي: [نمسح المعطيات ديالي, droit à l'effacement, effacer mes données, نحيد الحساب ديالي, supprimer mes données]
+    title: {ar: 'معطيات غالطة ولا بغيت نمسحها', fr: 'Des données fausses, ou à effacer'}
+    lead: {ar: 'التصحيح ولا المسح بلا مقابل داخل 10 أيام كاملة، وإلا اللجنة الوطنية', fr: 'Correction ou effacement gratuits sous 10 jours francs, sinon la CNDP'}
+    to: journeys/data-request
+  - key: spam
+    icon: megaphone
+    words: [الإشهار بلا موافقة, ميساجات الإشهار, spam sms maroc, prospection commerciale, démarchage téléphonique, الاستقراء المباشر, كيصيفطو ليا الإشهار, sms publicitaire, sms publicitaires, messages publicitaires]
+    means:
+      يمنع الاستقراء المباشر: [الإشهار بلا موافقة, ميساجات الإشهار, spam sms maroc, prospection commerciale, démarchage téléphonique, الاستقراء المباشر, كيصيفطو ليا الإشهار, sms publicitaire]
+    title: {ar: 'ميساجات الإشهار بلا ما نوافق', fr: 'Des messages publicitaires sans mon accord'}
+    lead: {ar: 'الاستقراء المباشر بالرسائل والبريد الإلكتروني ممنوع بلا رضاك المسبق', fr: 'La prospection par messages et courriel est interdite sans votre accord préalable'}
+    to: pages/data
+  - key: cndp
+    mark: {value: '200.000', unit: {ar: درهم, fr: DH}}
+    words: [CNDP, اللجنة الوطنية لمراقبة حماية المعطيات, شكاية للجنة الوطنية, plainte cndp, نشكي بشركة على المعطيات, la cndp]
+    means:
+      تلقي شكايات كل شخص معني يعتبر نفسه تضرر بنشر معالجة معطيات ذات طابع شخصي: [CNDP, اللجنة الوطنية لمراقبة حماية المعطيات, شكاية للجنة الوطنية, plainte cndp, نشكي بشركة على المعطيات, la cndp]
+    title: {ar: 'شركة رفضات حقي: اللجنة الوطنية', fr: 'Une entreprise refuse mes droits : la CNDP'}
+    lead: {ar: 'اللجنة كتلقى الشكايات؛ ورفض الحقوق غرامتو حتى 200.000 درهم على كل مخالفة', fr: 'La CNDP reçoit les plaintes ; refuser vos droits coûte jusqu’à 200 000 DH par infraction'}
+    to: journeys/cndp
+  # Attacked online.
+  - key: hacked
+    mark: {value: '3', unit: {ar: شهور حبس, fr: mois de prison}}
+    words: [تقرصن الحساب, تهكر الحساب, سرقو ليا الحساب, compte piraté, piratage compte facebook, ta9rsno lia compte, تقرصن ليا الفيسبوك, الدخول إلى نظام للمعالجة الآلية, piratage informatique maroc, hacker, تقرصن ليا الحساب, dkhel l compte, اختراق حساب, دخل للتيليفون, مسحو ليا المعطيات, écriture informatique, زورو ليا, محاولة الدخول, accès frauduleux]
+    means:
+      كل من دخل إلى مجموع أو بعض نظام للمعالجة الآلية للمعطيات عن طريق الاحتيال: [تقرصن الحساب, تهكر الحساب, سرقو ليا الحساب, compte piraté, piratage compte facebook, ta9rsno lia compte, تقرصن ليا الفيسبوك, الدخول إلى نظام للمعالجة الآلية, piratage informatique maroc, hacker]
+    title: {ar: 'تقرصن ليا الحساب', fr: 'Mon compte a été piraté'}
+    lead: {ar: 'الدخول بالاحتيال: من شهر حتى 3 شهور؛ وتغيير المعطيات ولا حذفها: حتى 3 سنين', fr: 'L’accès frauduleux : un à trois mois ; modifier ou effacer les données : jusqu’à trois ans'}
+    to: journeys/hacked
+  - key: scam
+    mark: {value: '5', unit: {ar: سنين حبس, fr: ans de prison}}
+    words: [تنصب عليا فالأنترنت, نصب إلكتروني, arnaque en ligne, escroquerie internet maroc, النصب, tnsab 3lia, escroquerie sur internet, نصاب, t9ewwed, الاحتيال الإلكتروني]
+    means:
+      يعد مرتكبا لجريمة النصب: [تنصب عليا فالأنترنت, نصب إلكتروني, arnaque en ligne, escroquerie internet maroc, النصب, tnsab 3lia]
+    title: {ar: 'تنصب عليا فالأنترنت', fr: 'Escroqué en ligne'}
+    lead: {ar: 'النصب: الحبس من سنة حتى 5 سنين وغرامة من 500 حتى 5.000 درهم', fr: 'L’escroquerie : un à cinq ans de prison et 500 à 5 000 DH d’amende'}
+    to: journeys/scam
+  - key: extortion
+    mark: {value: '5', unit: {ar: سنين حبس, fr: ans de prison}}
+    words: [الابتزاز, الابتزاز الإلكتروني, كيبتزني, chantage en ligne, sextorsion, sextortion maroc, كيهددني ينشر صوري, ibtizaz, كيطلب الفلوس ولا ينشر, chantage, كيهددني ينشر, kaybtazni]
+    means:
+      بواسطة التهديد بإفشاء أو نسبة أمور شائنة: [الابتزاز, الابتزاز الإلكتروني, كيبتزني, chantage en ligne, sextorsion, sextortion maroc, كيهددني ينشر صوري, ibtizaz, كيطلب الفلوس ولا ينشر]
+    title: {ar: 'كيبتزني ولا كيهددني ينشر', fr: 'On me fait chanter'}
+    lead: {ar: 'الابتزاز بالتهديد بالفضيحة: الحبس من سنة حتى 5 سنين', fr: 'Le chantage à la révélation : un à cinq ans de prison'}
+    to: journeys/extortion
+  - key: intimate
+    mark: {value: '3', unit: {ar: سنين حبس, fr: ans de prison}}
+    words: [نشرو صوري, نشر صور خاصة, صوروني بلا ما نعرف, سجل ليا مكالمة, diffusion photos intimes, enregistrement sans consentement, nchro tsawer dyali, الصور الخاصة, صورة في مكان خاص, نشر صورة شخص, سجلو ليا كلامي, nashro tsawer, نشرو فيديو, نشر صور امرأة, نشر صوري, vie privée aggravée]
+    means:
+      بتثبيت أو تسجيل أو بث أو توزيع صورة شخص أثناء تواجده في مكان خاص، دون موافقته: [نشرو صوري, نشر صور خاصة, صوروني بلا ما نعرف, diffusion photos intimes, nchro tsawer dyali, الصور الخاصة, صورة في مكان خاص]
+      بالتقاط أو تسجيل أو بث أو توزيع أقوال أو معلومات صادرة بشكل خاص أو سري: [سجل ليا مكالمة, enregistrement sans consentement]
+    title: {ar: 'نشرو صوري ولا كلامي الخاص', fr: 'Mes images ou propos privés diffusés'}
+    lead: {ar: 'بلا موافقتك: من 6 شهور حتى 3 سنين، وحتى 5 إلا كان الزوج ولا الخاطب ولا ضد امرأة', fr: 'Sans votre accord : six mois à trois ans, jusqu’à cinq par un conjoint, un fiancé ou contre une femme'}
+    to: journeys/extortion
+  - key: montage
+    mark: {value: '3', unit: {ar: سنين حبس, fr: ans de prison}}
+    words: [مونطاج, صورة مفبركة, deepfake, montage photo, فيديو مفبرك, تركيبة من صورتي, fausses allégations, ادعاءات كاذبة, fausses nouvelles, خبر كاذب]
+    means:
+      ببث أو توزيع تركيبة مكونة من أقوال شخص أو صورته، دون موافقته: [مونطاج, صورة مفبركة, deepfake, montage photo, فيديو مفبرك, تركيبة من صورتي]
+      ببث أو توزيع ادعاءات أو وقائع كاذبة، بقصد المس بالحياة الخاصة للأشخاص أو التشهير بهم: [fausses allégations, ادعاءات كاذبة]
+    title: {ar: 'مونطاج بصورتي ولا كذوب عليا', fr: 'Un montage ou des mensonges sur moi'}
+    lead: {ar: 'تركيبة من صورتك ولا كلامك، ولا ادعاءات كاذبة للتشهير: من سنة حتى 3 سنين', fr: 'Un montage de votre image ou de vos propos, ou des allégations fausses pour diffamer : un à trois ans'}
+    to: journeys/defamed
+  - key: harassment
+    mark: {value: '6', unit: {ar: شهور حبس, fr: mois de prison}}
+    words: [التحرش الإلكتروني, تحرش فالميساجات, harcèlement en ligne, harcèlement sexuel messages, كيتحرش بيا فالأنترنت, رسائل ذات طبيعة جنسية, كيتحرش بيا فالميساجات, t7errech biya]
+    means:
+      بواسطة رسائل مكتوبة أو هاتفية أو إلكترونية أو تسجيلات أو صور ذات طبيعة جنسية: [التحرش الإلكتروني, تحرش فالميساجات, harcèlement en ligne, harcèlement sexuel messages, كيتحرش بيا فالأنترنت, رسائل ذات طبيعة جنسية]
+    title: {ar: 'كيتحرش بيا فالميساجات', fr: 'Harcelé par messages'}
+    lead: {ar: 'التحرش الجنسي بالرسائل الإلكترونية: من شهر حتى 6 شهور، والعقوبة كتضاعف للزميل فالخدمة', fr: 'Le harcèlement sexuel par messages : un à six mois, doublés pour un collègue'}
+    to: journeys/extortion
+  - key: defamed
+    mark: {value: '6', unit: {ar: شهور, fr: mois}}
+    words: [التشهير, شهرو بيا, القذف, السب, سبني فالفيسبوك, diffamation en ligne, diffamation facebook maroc, injure en ligne, tchhir, la diffamation, سبني, diffamation, injure, sebbouni, vérité des faits]
+    means:
+      ادعاء واقعة أو نسبتها إلى شخص أو هيئة: [التشهير, شهرو بيا, القذف, diffamation en ligne, diffamation facebook maroc, tchhir, la diffamation]
+      كل تعبير شائن أو مشين: [السب, سبني فالفيسبوك, injure en ligne]
+    title: {ar: 'شهرو بيا ولا سبوني فالأنترنت', fr: 'Diffamé ou injurié en ligne'}
+    lead: {ar: 'بشكايتك فقط، وداخل 6 شهور من النشر؛ القذف من 10.000 حتى 100.000 درهم', fr: 'Sur votre plainte seulement, dans les 6 mois de la publication ; la diffamation 10 000 à 100 000 DH'}
+    to: journeys/defamed
+  # Information from the administration.
+  - key: request
+    mark: {value: '20', unit: {ar: يوم عمل, fr: jours ouvrables}}
+    words: [الحق في الحصول على المعلومات, طلب معلومة من الإدارة, droit d'accès à l'information, demande d'information administration, la loi 31.13, بغيت وثيقة من الجماعة, chafafiya, معلومة من الجماعة, الحصول على المعلومات, accès à l’information, ma3loma men l idara, طلب المعلومات, informations exclues]
+    means:
+      الحق في الحصول على المعلومات: [الحق في الحصول على المعلومات, droit d'accès à l'information, la loi 31.13]
+      يتم الحصول على المعلومات بناء على طلب يقدمه المعني بالأمر: [طلب معلومة من الإدارة, demande d'information administration, بغيت وثيقة من الجماعة, chafafiya]
+    title: {ar: 'بغيت معلومة من الإدارة', fr: 'Demander une information à l’administration'}
+    lead: {ar: 'الطلب مكتوب، مجانا، والجواب داخل 20 يوم عمل يمكن تمديدها مرة', fr: 'Une demande écrite, gratuite, une réponse en 20 jours ouvrables prolongeables une fois'}
+    to: journeys/info-request
+  - key: urgent-info
+    mark: {value: '3', unit: {ar: أيام, fr: jours}}
+    words: [معلومة مستعجلة, information urgente administration, الحالات المستعجلة]
+    means:
+      داخل أجل ثلاثة (3) أيام في الحالات المستعجلة: [معلومة مستعجلة, information urgente administration, الحالات المستعجلة]
+    title: {ar: 'المعلومة مستعجلة', fr: 'Une information urgente'}
+    lead: {ar: '3 أيام إلا كانت المعلومة ضرورية لحماية الحياة والسلامة والحرية', fr: '3 jours si l’information est nécessaire pour protéger la vie, la sécurité ou la liberté'}
+    to: tools/info
+  - key: refused
+    mark: {value: '60', unit: {ar: يوم, fr: jours}}
+    words: [رفضو يعطيوني المعلومة, الإدارة ما جاوباتنيش, refus d'accès à l'information, لجنة الحق في الحصول على المعلومات, CDAI, recours information, رفضات تعطيني المعلومة]
+    means:
+      يحق لطالب المعلومات عند عدم الرد على طلبه أو عدم الاستجابة له، تقديم شكاية: [رفضو يعطيوني المعلومة, الإدارة ما جاوباتنيش, refus d'accès à l'information, recours information]
+      لجنة الحق في الحصول على المعلومات: [لجنة الحق في الحصول على المعلومات, CDAI]
+    title: {ar: 'الإدارة ما جاوباتش ولا رفضات', fr: 'Pas de réponse, ou un refus'}
+    lead: {ar: 'الشكاية للرئيس، من بعد اللجنة، ومن بعد المحكمة الإدارية داخل 60 يوم', fr: 'La réclamation au chef, puis la commission, puis le tribunal administratif sous 60 jours'}
+    to: journeys/info-request
+  # Creation.
+  - key: protection
+    mark: {value: '70', unit: {ar: سنة, fr: ans}}
+    words: [حقوق المؤلف, droit d'auteur maroc, واش المحتوى ديالي محمي, مدة الحماية, domaine public œuvre, شحال كتدوم حقوق المؤلف, BMDA, المكتب المغربي لحقوق المؤلف, الخدمة ديالي محمية, katb9a l khedma, تحميها حقوق المؤلف, œuvres sont protégées]
+    means:
+      تحمى الحقوق المادية لمؤلف مصنف ما طيلة حياته وخلال سبعين سنة بعد وفاته: [حقوق المؤلف, droit d'auteur maroc, واش المحتوى ديالي محمي, مدة الحماية, domaine public œuvre, شحال كتدوم حقوق المؤلف]
+      المكتب المغربي لحقوق المؤلف والحقوق المجاورة: [BMDA, المكتب المغربي لحقوق المؤلف]
+    title: {ar: 'المحتوى ديالي: شحال محمي؟', fr: 'Mon œuvre : protégée combien de temps ?'}
+    lead: {ar: 'بلا تسجيل ولا إجراء: طيلة حياتك و70 سنة من بعد', fr: 'Sans dépôt ni formalité : votre vie et 70 ans après'}
+    to: tools/copyright
+  - key: private-copy
+    icon: papers
+    words: [النسخة الشخصية, copie privée, نسخ للاستعمال الشخصي, نحمل فيلم, télécharger film légal]
+    means:
+      يرخص دون إذن المؤلف ودون أداء مكافأة باستنساخ مصنف منشور بكيفية مشروعة قصد الاستعمال الشخصي حصرا: [النسخة الشخصية, copie privée, نسخ للاستعمال الشخصي, نحمل فيلم, télécharger film légal]
+    title: {ar: 'نسخة لاستعمالي الشخصي', fr: 'Une copie pour mon usage personnel'}
+    lead: {ar: 'مسموحة بلا إذن، ماشي لكتاب كامل ولا لقواعد البيانات الرقمية', fr: 'Permise sans autorisation, pas pour un livre entier ni pour les bases de données numériques'}
+    to: pages/copyright
+  - key: quote
+    icon: quote
+    words: [الاستشهاد, نستعمل مقطع, citation droit d'auteur, utiliser un extrait, التعليم والاستشهاد, usage pédagogique]
+    means:
+      الاستشهاد بمصنف منشور بصفة مشروعة ضمن مصنف آخر شريطة ذكر المصدر: [الاستشهاد, نستعمل مقطع, citation droit d'auteur, utiliser un extrait]
+      باستعمال مصنف منشور بصفة مشروعة بمثابة توضيح في منشورات أو برامج إذاعية أو تسجيلات صوتية أو مرئية موجهة للتعليم: [التعليم والاستشهاد, usage pédagogique]
+    title: {ar: 'نستعمل مقطع من خدمة ديال شي حد', fr: 'Utiliser un extrait de l’œuvre d’un autre'}
+    lead: {ar: 'الاستشهاد والتعليم مسموحين، مع ذكر المصدر واسم المؤلف', fr: 'La citation et l’enseignement sont permis, en citant la source et l’auteur'}
+    to: pages/copyright
+  - key: piracy
+    mark: {value: '100.000', unit: {ar: درهم, fr: DH}}
+    words: [القرصنة, سرقو ليا الفيديو, سرقو ليا الخدمة, contrefaçon droit d'auteur, piratage œuvre, نشرو المحتوى ديالي بلا إذن, خداو الخدمة ديالي, indemnisation forfaitaire, الأفلام المقرصنة, فقناة أخرى]
+    means:
+      كل من قام بطريقة غير مشروعة وبأي وسيلة كانت بقصد الاستغلال التجاري: [القرصنة, contrefaçon droit d'auteur, piratage œuvre]
+      يخول للمؤلف الحق المطلق في القيام بالأعمال التالية أو منعها أو الترخيص بها: [سرقو ليا الفيديو, سرقو ليا الخدمة, نشرو المحتوى ديالي بلا إذن]
+    title: {ar: 'خداو الخدمة ديالي بلا إذن', fr: 'On a pris mon œuvre sans autorisation'}
+    lead: {ar: 'بقصد الاستغلال التجاري: من شهرين حتى 6 شهور و10.000 حتى 100.000 درهم', fr: 'À but commercial : deux à six mois et 10 000 à 100 000 DH'}
+    to: journeys/copyright
+  # Signature and electronic documents.
+  - key: e-document
+    icon: papers
+    words: [الوثيقة الإلكترونية, document électronique valeur, PDF فالمحكمة, la preuve électronique, الإثبات الإلكتروني, ميساج واتساب كدليل]
+    means:
+      تتمتع الوثيقة المحررة على دعامة إلكترونية بنفس قوة الإثبات التي تتمتع بها الوثيقة المحررة على الورق: [الوثيقة الإلكترونية, document électronique valeur, PDF فالمحكمة, la preuve électronique, الإثبات الإلكتروني, ميساج واتساب كدليل]
+    title: {ar: 'الوثيقة الإلكترونية كتحسب؟', fr: 'Un document électronique fait-il preuve ?'}
+    lead: {ar: 'نفس قوة الإثبات ديال الورق، إلا تعرفنا على صاحبها وتحفظت تامة', fr: 'La même force probante que le papier, si l’auteur est identifié et l’intégrité garantie'}
+    to: pages/esign
+  - key: e-signature
+    mark: {value: '3', unit: {ar: مستويات, fr: niveaux}}
+    words: [التوقيع الإلكتروني, signature électronique maroc, التوقيع الإلكتروني المؤهل, signature électronique qualifiée, نوقع من بعيد, la loi 43.20]
+    means:
+      التوقيع الإلكتروني المؤهل هو توقيع إلكتروني متقدم: [التوقيع الإلكتروني المؤهل, signature électronique qualifiée]
+      لا يمكن رفض الأثر القانوني للتوقيع الإلكتروني البسيط أو المتقدم: [التوقيع الإلكتروني, signature électronique maroc, نوقع من بعيد, la loi 43.20]
+    title: {ar: 'التوقيع الإلكتروني', fr: 'La signature électronique'}
+    lead: {ar: 'بسيط، متقدم ولا مؤهل؛ والمؤهل مع الختم الزمني بحال التوقيع المصادق عليه', fr: 'Simple, avancée ou qualifiée ; la qualifiée avec horodatage vaut signature légalisée'}
+    to: pages/esign
+  - key: trusted
+    icon: seal
+    words: [مقدمي خدمات الثقة, prestataire de services de confiance, شهادة إلكترونية, certificat électronique, السلطة الوطنية للأمن السيبراني, services de confiance]
+    means:
+      تسلم شهادة التوقيع الإلكتروني المؤهلة من قبل مقدم خدمات ثقة معتمد: [مقدمي خدمات الثقة, prestataire de services de confiance, شهادة إلكترونية, certificat électronique]
+    title: {ar: 'شكون كيعطي الشهادة الإلكترونية؟', fr: 'Qui délivre le certificat électronique ?'}
+    lead: {ar: 'مقدم خدمات ثقة معتمد، والسجل ديالهم كيتنشر فالجريدة الرسمية', fr: 'Un prestataire de confiance agréé, dont le registre paraît au Bulletin officiel'}
+    to: pages/esign
+  # A company or an app.
+  - key: declare
+    mark: {value: '100.000', unit: {ar: درهم, fr: DH}}
+    words: [التصريح للجنة الوطنية, déclaration cndp, نصرح بالمعالجة, ملف المعطيات, كاميرات المراقبة, vidéosurveillance cndp, traitement de données entreprise, نصرح للجنة, الإذن المسبق, ضيعات المعطيات]
+    means:
+      كل من أنجز ملف معطيات ذات طابع شخصي دون التصريح بذلك أو الحصول على الإذن: [التصريح للجنة الوطنية, déclaration cndp, نصرح بالمعالجة, ملف المعطيات, traitement de données entreprise]
+      تخضع معالجة المعطيات ذات الطابع الشخصي إلى ما يلي: [كاميرات المراقبة, vidéosurveillance cndp]
+    title: {ar: 'كنجمع المعطيات: التصريح', fr: 'Je collecte des données : la déclaration'}
+    lead: {ar: 'تصريح مسبق للجنة الوطنية، وإلا غرامة من 10.000 حتى 100.000 درهم', fr: 'Une déclaration préalable à la CNDP, sinon 10 000 à 100 000 DH d’amende'}
+    to: journeys/company
+  - key: sensitive
+    mark: {value: '300.000', unit: {ar: درهم, fr: DH}}
+    words: [المعطيات الحساسة, données sensibles, données de santé, المعطيات الصحية]
+    means:
+      الأصول العرقية أو الإثنية، أو الآراء السياسية أو الفلسفية أو الدينية، أو الانتماءات النقابية للأشخاص المعنيين أو المتعلقة بصحة: [المعطيات الحساسة, données sensibles, données de santé, المعطيات الصحية]
+    title: {ar: 'المعطيات الحساسة', fr: 'Les données sensibles'}
+    lead: {ar: 'الصحة، الدين، الآراء، النقابة: إذن مسبق، وبلا موافقة صريحة حتى سنتين و300.000 درهم', fr: 'Santé, religion, opinions, syndicat : autorisation préalable, et sans accord exprès jusqu’à deux ans et 300 000 DH'}
+    to: pages/company
+  - key: abroad
+    icon: where
+    words: [نقل المعطيات للخارج, transfert de données à l'étranger, hébergement hors maroc, نصيفط المعطيات]
+    means:
+      لا يجوز لمسؤول عن معالجة أن ينقل معطيات ذات طابع شخصي إلى دولة أجنبية: [نقل المعطيات للخارج, transfert de données à l'étranger, hébergement hors maroc]
+    title: {ar: 'المعطيات خارج المغرب', fr: 'Des données hors du Maroc'}
+    lead: {ar: 'غير لدولة كتضمن حماية كافية، واللجنة الوطنية كتحدد اللائحة', fr: 'Seulement vers un pays qui assure une protection suffisante, selon la liste de la CNDP'}
+    to: pages/company
+  - key: incident
+    icon: siren
+    words: [حادث سيبراني, incident de cybersécurité, الأمن السيبراني, cybersécurité maroc, la loi 05.20, DGSSI, maCERT, sécurité des systèmes, هجوم سيبراني]
+    means:
+      يجب على كل هيئة فور علمها بأي حادث يؤثر على أمن أو سير نظم المعلومات الخاصة بها أن تقوم بإبلاغ السلطة الوطنية: [حادث سيبراني, incident de cybersécurité, DGSSI, maCERT]
+      الأمن السيبراني: [الأمن السيبراني, cybersécurité maroc, la loi 05.20]
+    title: {ar: 'حادث سيبراني فالهيئة', fr: 'Un incident de cybersécurité'}
+    lead: {ar: 'الهيئات ومقدمو الخدمات الرقمية كيبلغو السلطة الوطنية فور علمهم', fr: 'Les organismes et prestataires numériques avisent l’autorité nationale dès qu’ils le savent'}
+    to: pages/company
+  # Elsewhere.
+  - key: online-buy
+    icon: parcel
+    words: [شريت أونلاين, achat en ligne rétractation]
+    title: {ar: 'شريت من الأنترنت', fr: 'J’ai acheté en ligne'}
+    lead: {ar: 'فموضوع المستهلك', fr: 'Dans le thème du consommateur'}
+    to: consumer:journeys/online
+  - key: complaint
+    icon: scales
+    words: [كيفاش نحط شكاية لوكيل الملك]
+    title: {ar: 'الشكاية خطوة بخطوة', fr: 'La plainte pas à pas'}
+    lead: {ar: 'فموضوع الشرطة والمحاكم', fr: 'Dans le thème Police et tribunaux'}
+    to: justice:journeys/complaint
+  - key: prescription
+    icon: clock
+    words: [حساب أجل التقادم]
+    title: {ar: 'واش مازال الوقت نشكي؟', fr: 'Est-il encore temps de porter plainte ?'}
+    lead: {ar: 'فموضوع الشرطة والمحاكم', fr: 'Dans le thème Police et tribunaux'}
+    to: justice:tools/deadline
+  - key: violence
+    icon: home
+    words: [العنف ضد النساء الإلكتروني]
+    title: {ar: 'العنف ضد النساء', fr: 'Les violences faites aux femmes'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:pages/protection
+  - key: card-data
+    icon: idcard
+    words: [معطيات البطاقة الوطنية]
+    title: {ar: 'المعطيات ديال البطاقة', fr: 'Les données de la carte'}
+    lead: {ar: 'فموضوع الوثائق', fr: 'Dans le thème des papiers'}
+    to: papers:pages/data
+
+tools:
+  # «شنو كيقول القانون؟»: what happened online → the offence the texts name, its penalty as they print it (prison and
+  # fine ranges), whether the victim's complaint is needed, the prescription, where to complain; drawn as the law
+  # answering in a conversation. It never says what a court will decide. It waits for a person's check.
+  - key: offence
+    icon: hush
+    words: [شنو العقوبة على الابتزاز, عقوبة القرصنة, عقوبة التشهير, sanction diffusion photos, peine piratage maroc]
+    means: كل من دخل إلى مجموع أو بعض نظام للمعالجة الآلية للمعطيات عن طريق الاحتيال
+    tool: true
+    title: {ar: 'شنو كيقول القانون على اللي وقع ليا؟', fr: 'Que dit la loi de ce qui m’arrive ?'}
+    lead: {ar: 'قول شنو وقع: الجريمة، العقوبة، التقادم، وفين تشكي', fr: 'Dites ce qui s’est passé : l’infraction, la peine, la prescription, où porter plainte'}
+    cites: [/ma/dahir/1-59-413/art_607-3, /ma/dahir/1-59-413/art_607-6, /ma/dahir/1-59-413/art_540, /ma/dahir/1-59-413/art_538, /ma/dahir/1-59-413/art_447-1, /ma/dahir/1-59-413/art_447-2, /ma/dahir/1-59-413/art_447-3, /ma/dahir/1-59-413/art_503-1-1, /ma/loi/88-13/art_83, /ma/loi/88-13/art_85, /ma/loi/88-13/art_99, /ma/loi/88-13/art_101, /ma/loi/9-08/art_53, /ma/loi/9-08/art_28, /ma/loi/22-01/art_5, /ma/loi/22-01/art_40]
+  # The information request's road (31.13): the day the request was received and whether it is urgent → the last day
+  # to answer, the extension, the window for the complaint to the head, his answer, the commission and the
+  # administrative court, in working days where the law counts them so.
+  - key: info
+    icon: clock
+    words: [حساب أجل جواب الإدارة, délai réponse administration information, شحال باقي باش تجاوب الإدارة]
+    means: يجب على المؤسسة أو الهيئة المعنية الرد على طلب الحصول على المعلومات داخل أجل لا يتعدى عشرين (20) يوما من أيام العمل
+    tool: true
+    title: {ar: 'فوقاش خاص الإدارة تجاوب؟', fr: 'Quand l’administration doit-elle répondre ?'}
+    lead: {ar: 'من نهار توصلات بالطلب: الجواب، التمديد، الشكاية، اللجنة، والمحكمة', fr: 'Du jour de la réception : la réponse, la prolongation, la réclamation, la commission, le tribunal'}
+    cites: [/ma/loi/31-13/art_16, /ma/loi/31-13/art_17, /ma/loi/31-13/art_19, /ma/loi/31-13/art_20, /ma/loi/31-13/art_21, /ma/loi/31-13/art_5]
+  # The data request: which rights, to whom → a letter that names its articles (09.08 arts 7, 8, 9, 10), the ten full
+  # days to correct, and what follows a refusal (the CNDP, art. 28; the fine of art. 53).
+  - key: letter
+    icon: letter
+    words: [نموذج طلب الولوج للمعطيات, lettre droit d'accès données, demande suppression données modèle, طلب مسح المعطيات]
+    means: يحق للشخص المعني بعد الإدلاء بما يثبت هويته أن يحصل من المسؤول عن المعالجة
+    tool: true
+    title: {ar: 'طلب لشركة على معطياتي', fr: 'Une demande à une entreprise sur mes données'}
+    lead: {ar: 'اختار الحق، وكتبنا ليك الطلب بالمواد ديالو والأجل', fr: 'Choisissez le droit : la demande écrite avec ses articles et son délai'}
+    cites: [/ma/loi/9-08/art_7, /ma/loi/9-08/art_8, /ma/loi/9-08/art_9, /ma/loi/9-08/art_10, /ma/loi/9-08/art_28, /ma/loi/9-08/art_53]
+  # Copyright's term (2.00 arts 25–29, 1-7): the kind of work and the death or the first publication → the last day of
+  # protection, the first day it is free, and that commercial use still needs the copyright office's licence.
+  - key: copyright
+    icon: seal
+    words: [حساب مدة حماية حقوق المؤلف, calcul domaine public maroc, واش هاد الكتاب ولا الأغنية مازال محمي]
+    means: تحمى الحقوق المادية لمؤلف مصنف ما طيلة حياته وخلال سبعين سنة بعد وفاته
+    tool: true
+    title: {ar: 'واش هاد العمل مازال محمي؟', fr: 'Cette œuvre est-elle encore protégée ?'}
+    lead: {ar: 'من وفاة المؤلف ولا أول نشر: آخر نهار ديال الحماية', fr: 'De la mort de l’auteur ou de la première publication : le dernier jour de protection'}
+    cites: [/ma/loi/2-00/art_25, /ma/loi/2-00/art_26, /ma/loi/2-00/art_27, /ma/loi/2-00/art_28, /ma/loi/2-00/art_29, /ma/loi/2-00/art_1-7]

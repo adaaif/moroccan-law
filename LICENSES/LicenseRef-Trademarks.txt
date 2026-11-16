@@ -1,0 +1,4 @@
+Not licensed.
+
+The names «قانون» and 3adala as used for this service, its wordmark and its icons are not licensed under any
+licence of this repository, whatever the licence of the file that holds them. See TRADEMARKS.md.

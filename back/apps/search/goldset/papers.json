@@ -1,0 +1,1086 @@
+{
+ "about": "The papers topic's questions (the papers review, 27 Oct 2026): people's words in Darija, Arabic, French and Latin letters about their ID card, passport, civil status, nationality, the counter, the criminal record and their data, each with the articles that answer it. Written by the session from the articles the site holds, before the doors' words were tuned on them; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "فوقاش خاص الواحد يدير لاكارط ناسيونال",
+   "expect": [
+    "/ma/loi/4-20/art_2"
+   ],
+   "lang": "darija",
+   "theme": "card-first"
+  },
+  {
+   "q": "ولدي عندو 16 عام واش خاصو البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_2"
+   ],
+   "lang": "darija",
+   "theme": "card-first"
+  },
+  {
+   "q": "السن الإلزامي للحصول على البطاقة الوطنية للتعريف",
+   "expect": [
+    "/ma/loi/4-20/art_2"
+   ],
+   "lang": "ar",
+   "theme": "card-first"
+  },
+  {
+   "q": "à quel âge la carte nationale est obligatoire",
+   "expect": [
+    "/ma/loi/4-20/art_2"
+   ],
+   "lang": "fr",
+   "theme": "card-first"
+  },
+  {
+   "q": "lakarte nasyonal 16 3am wajiba",
+   "expect": [
+    "/ma/loi/4-20/art_2"
+   ],
+   "lang": "arabizi",
+   "theme": "card-first"
+  },
+  {
+   "q": "شنو الوراق اللي خاصني باش ندير البطاقة الوطنية أول مرة",
+   "expect": [
+    "/ma/decret/2-20-521/art_3"
+   ],
+   "lang": "darija",
+   "theme": "card-docs"
+  },
+  {
+   "q": "الوثائق المطلوبة لأول طلب البطاقة الوطنية للتعريف الإلكترونية",
+   "expect": [
+    "/ma/decret/2-20-521/art_3"
+   ],
+   "lang": "ar",
+   "theme": "card-docs"
+  },
+  {
+   "q": "documents pour la première demande de CNIE",
+   "expect": [
+    "/ma/decret/2-20-521/art_3"
+   ],
+   "lang": "fr",
+   "theme": "card-docs"
+  },
+  {
+   "q": "شحال من تصويرة خاصني للبطاقة الوطنية",
+   "expect": [
+    "/ma/decret/2-20-521/art_3",
+    "/ma/decret/2-20-521/art_5"
+   ],
+   "lang": "darija",
+   "theme": "card-docs"
+  },
+  {
+   "q": "عقد الازدياد ديال البطاقة شحال خاصو يكون جديد",
+   "expect": [
+    "/ma/decret/2-20-521/art_3"
+   ],
+   "lang": "darija",
+   "theme": "card-docs"
+  },
+  {
+   "q": "شحال كتبقى صالحة البطاقة الوطنية",
+   "expect": [
+    "/ma/decret/2-20-521/art_1"
+   ],
+   "lang": "darija",
+   "theme": "card-valid"
+  },
+  {
+   "q": "مدة صلاحية البطاقة الوطنية للتعريف الإلكترونية",
+   "expect": [
+    "/ma/decret/2-20-521/art_1"
+   ],
+   "lang": "ar",
+   "theme": "card-valid"
+  },
+  {
+   "q": "durée de validité de la carte nationale d'identité électronique",
+   "expect": [
+    "/ma/decret/2-20-521/art_1"
+   ],
+   "lang": "fr",
+   "theme": "card-valid"
+  },
+  {
+   "q": "la carte nationale ch7al katb9a salha",
+   "expect": [
+    "/ma/decret/2-20-521/art_1"
+   ],
+   "lang": "arabizi",
+   "theme": "card-valid"
+  },
+  {
+   "q": "بدلت الدار واش خاصني نبدل البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_13"
+   ],
+   "lang": "darija",
+   "theme": "card-renew"
+  },
+  {
+   "q": "تزوجت واش نزيد زوجة فالبطاقة",
+   "expect": [
+    "/ma/loi/4-20/art_4",
+    "/ma/loi/4-20/art_13"
+   ],
+   "lang": "darija",
+   "theme": "card-renew"
+  },
+  {
+   "q": "حالات تجديد البطاقة الوطنية للتعريف الإلكترونية",
+   "expect": [
+    "/ma/loi/4-20/art_13"
+   ],
+   "lang": "ar",
+   "theme": "card-renew"
+  },
+  {
+   "q": "changement d'adresse renouveler la CNIE",
+   "expect": [
+    "/ma/loi/4-20/art_13"
+   ],
+   "lang": "fr",
+   "theme": "card-renew"
+  },
+  {
+   "q": "البطاقة سالات شنو ندير",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_5"
+   ],
+   "lang": "darija",
+   "theme": "card-renew"
+  },
+  {
+   "q": "الوراق اللي خاصين لتجديد لاكارط",
+   "expect": [
+    "/ma/decret/2-20-521/art_5"
+   ],
+   "lang": "darija",
+   "theme": "card-renew"
+  },
+  {
+   "q": "ضاعت ليا البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_6"
+   ],
+   "lang": "darija",
+   "theme": "card-lost"
+  },
+  {
+   "q": "سرقو ليا لاكارط ناسيونال",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_6"
+   ],
+   "lang": "darija",
+   "theme": "card-lost"
+  },
+  {
+   "q": "carte d'identité perdue ou volée",
+   "expect": [
+    "/ma/loi/4-20/art_13",
+    "/ma/decret/2-20-521/art_6"
+   ],
+   "lang": "fr",
+   "theme": "card-lost"
+  },
+  {
+   "q": "dya3at lia la carte",
+   "expect": [
+    "/ma/loi/4-20/art_13"
+   ],
+   "lang": "arabizi",
+   "theme": "card-lost"
+  },
+  {
+   "q": "شحال الذعيرة إلا ما درتش البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_15"
+   ],
+   "lang": "darija",
+   "theme": "card-fine"
+  },
+  {
+   "q": "غرامة عدم تجديد البطاقة الوطنية",
+   "expect": [
+    "/ma/loi/4-20/art_15"
+   ],
+   "lang": "ar",
+   "theme": "card-fine"
+  },
+  {
+   "q": "البوليس طلب مني لاكارط وما كانتش عندي",
+   "expect": [
+    "/ma/loi/4-20/art_15"
+   ],
+   "lang": "darija",
+   "theme": "card-fine"
+  },
+  {
+   "q": "amende pour défaut de carte nationale",
+   "expect": [
+    "/ma/loi/4-20/art_15"
+   ],
+   "lang": "fr",
+   "theme": "card-fine"
+  },
+  {
+   "q": "واش نقدر ندير البطاقة الوطنية لولدي الصغير",
+   "expect": [
+    "/ma/loi/4-20/art_2",
+    "/ma/decret/2-20-521/art_11"
+   ],
+   "lang": "darija",
+   "theme": "card-minor"
+  },
+  {
+   "q": "بطاقة الطفل أقل من 12 عام شحال صالحة",
+   "expect": [
+    "/ma/decret/2-20-521/art_1"
+   ],
+   "lang": "darija",
+   "theme": "card-minor"
+  },
+  {
+   "q": "carte d'identité pour enfant mineur",
+   "expect": [
+    "/ma/loi/4-20/art_2",
+    "/ma/decret/2-20-521/art_11"
+   ],
+   "lang": "fr",
+   "theme": "card-minor"
+  },
+  {
+   "q": "شحال التمبر ديال البطاقة الوطنية",
+   "expect": [
+    "/ma/code/cgi/art_252"
+   ],
+   "lang": "darija",
+   "theme": "card-fee"
+  },
+  {
+   "q": "prix du timbre de la carte nationale",
+   "expect": [
+    "/ma/code/cgi/art_252"
+   ],
+   "lang": "fr",
+   "theme": "card-fee"
+  },
+  {
+   "q": "واش البطاقة الوطنية كتغني على شهادة السكنى",
+   "expect": [
+    "/ma/loi/4-20/art_11"
+   ],
+   "lang": "darija",
+   "theme": "card-replaces"
+  },
+  {
+   "q": "طلبو مني عقد الازدياد وعندي البطاقة",
+   "expect": [
+    "/ma/loi/4-20/art_11"
+   ],
+   "lang": "darija",
+   "theme": "card-replaces"
+  },
+  {
+   "q": "الوثائق التي تعفي منها البطاقة الوطنية للتعريف",
+   "expect": [
+    "/ma/loi/4-20/art_11"
+   ],
+   "lang": "ar",
+   "theme": "card-replaces"
+  },
+  {
+   "q": "la CNIE dispense du certificat de résidence",
+   "expect": [
+    "/ma/loi/4-20/art_11"
+   ],
+   "lang": "fr",
+   "theme": "card-replaces"
+  },
+  {
+   "q": "كنسكن فالخارج فين ندير البطاقة الوطنية",
+   "expect": [
+    "/ma/decret/2-20-521/art_8"
+   ],
+   "lang": "darija",
+   "theme": "card-abroad"
+  },
+  {
+   "q": "CNIE pour marocain résidant à l'étranger consulat",
+   "expect": [
+    "/ma/decret/2-20-521/art_8"
+   ],
+   "lang": "fr",
+   "theme": "card-abroad"
+  },
+  {
+   "q": "شكون عندو الحق يقرا الشريحة ديال البطاقة",
+   "expect": [
+    "/ma/loi/4-20/art_9"
+   ],
+   "lang": "darija",
+   "theme": "card-chip"
+  },
+  {
+   "q": "شحال كيبقى صالح الباسبور",
+   "expect": [
+    "/ma/decret/2-08-310/art_6"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "مدة صلاحية جواز السفر البيومتري",
+   "expect": [
+    "/ma/decret/2-08-310/art_6"
+   ],
+   "lang": "ar",
+   "theme": "passport"
+  },
+  {
+   "q": "validité du passeport biométrique marocain",
+   "expect": [
+    "/ma/decret/2-08-310/art_6"
+   ],
+   "lang": "fr",
+   "theme": "passport"
+  },
+  {
+   "q": "باسبور لولدي عندو عامين",
+   "expect": [
+    "/ma/decret/2-08-310/art_6",
+    "/ma/decret/2-08-310/art_1"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "شحال التمبر ديال الباسبور",
+   "expect": [
+    "/ma/code/cgi/art_252"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "timbre du passeport 500 dirhams",
+   "expect": [
+    "/ma/code/cgi/art_252"
+   ],
+   "lang": "fr",
+   "theme": "passport"
+  },
+  {
+   "q": "الباسبور الجديد بالأمازيغية والإنجليزية",
+   "expect": [
+    "/ma/decret/2-26-551/art_1"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "واش الباسبور القديم باقي صالح",
+   "expect": [
+    "/ma/decret/2-26-551/art_3"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "passport jdid wach l9dim ba9i salh",
+   "expect": [
+    "/ma/decret/2-26-551/art_3"
+   ],
+   "lang": "arabizi",
+   "theme": "passport"
+  },
+  {
+   "q": "باسبور ولدي ساكنين فالخارج واش فابور",
+   "expect": [
+    "/ma/code/cgi/art_250"
+   ],
+   "lang": "darija",
+   "theme": "passport"
+  },
+  {
+   "q": "شحال عندي من وقت باش نسجل ولدي فالحالة المدنية",
+   "expect": [
+    "/ma/decret/2-22-04/art_40"
+   ],
+   "lang": "darija",
+   "theme": "birth"
+  },
+  {
+   "q": "أجل التصريح بالولادة",
+   "expect": [
+    "/ma/decret/2-22-04/art_40"
+   ],
+   "lang": "ar",
+   "theme": "birth"
+  },
+  {
+   "q": "délai de déclaration de naissance au Maroc",
+   "expect": [
+    "/ma/decret/2-22-04/art_40"
+   ],
+   "lang": "fr",
+   "theme": "birth"
+  },
+  {
+   "q": "فاتو 30 يوم وما سجلتش الولد",
+   "expect": [
+    "/ma/loi/36-21/art_21",
+    "/ma/decret/2-22-04/art_41"
+   ],
+   "lang": "darija",
+   "theme": "birth"
+  },
+  {
+   "q": "شكون يقدر يصرح بالولادة",
+   "expect": [
+    "/ma/loi/36-21/art_24"
+   ],
+   "lang": "darija",
+   "theme": "birth"
+  },
+  {
+   "q": "شحال عندي باش نصرح بالوفاة",
+   "expect": [
+    "/ma/decret/2-22-04/art_40"
+   ],
+   "lang": "darija",
+   "theme": "death"
+  },
+  {
+   "q": "الأشخاص المكلفون بالتصريح بالوفاة",
+   "expect": [
+    "/ma/loi/36-21/art_37"
+   ],
+   "lang": "ar",
+   "theme": "death"
+  },
+  {
+   "q": "déclarer un décès état civil délai",
+   "expect": [
+    "/ma/decret/2-22-04/art_40"
+   ],
+   "lang": "fr",
+   "theme": "death"
+  },
+  {
+   "q": "غلط فالسمية فعقد الازدياد",
+   "expect": [
+    "/ma/loi/36-21/art_48",
+    "/ma/loi/36-21/art_49"
+   ],
+   "lang": "darija",
+   "theme": "error"
+  },
+  {
+   "q": "تاريخ الازدياد غالط فالحالة المدنية كيفاش نصححو",
+   "expect": [
+    "/ma/loi/36-21/art_48",
+    "/ma/loi/36-21/art_50"
+   ],
+   "lang": "darija",
+   "theme": "error"
+  },
+  {
+   "q": "تصحيح الأخطاء المادية في رسوم الحالة المدنية",
+   "expect": [
+    "/ma/loi/36-21/art_48",
+    "/ma/loi/36-21/art_51"
+   ],
+   "lang": "ar",
+   "theme": "error"
+  },
+  {
+   "q": "الفرق بين الخطأ المادي والخطأ الجوهري في رسم الحالة المدنية",
+   "expect": [
+    "/ma/loi/36-21/art_49"
+   ],
+   "lang": "ar",
+   "theme": "error"
+  },
+  {
+   "q": "rectifier une erreur dans l'acte de naissance",
+   "expect": [
+    "/ma/loi/36-21/art_48"
+   ],
+   "lang": "fr",
+   "theme": "error"
+  },
+  {
+   "q": "ghalat f smiya f l7ala lmadaniya",
+   "expect": [
+    "/ma/loi/36-21/art_48"
+   ],
+   "lang": "arabizi",
+   "theme": "error"
+  },
+  {
+   "q": "بغيت نبدل سميتي الشخصية",
+   "expect": [
+    "/ma/loi/36-21/art_34"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "بغيت نبدل الكنية ديال العائلة",
+   "expect": [
+    "/ma/loi/36-21/art_35",
+    "/ma/decret/2-22-04/art_30"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "تغيير الاسم العائلي",
+   "expect": [
+    "/ma/loi/36-21/art_35",
+    "/ma/decret/2-22-04/art_30"
+   ],
+   "lang": "ar",
+   "theme": "name"
+  },
+  {
+   "q": "changer de prénom au Maroc",
+   "expect": [
+    "/ma/loi/36-21/art_34"
+   ],
+   "lang": "fr",
+   "theme": "name"
+  },
+  {
+   "q": "واش نقدر نسمي بنتي سمية مركبة",
+   "expect": [
+    "/ma/loi/36-21/art_34"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "ضابط الحالة المدنية رفض السمية اللي اخترت",
+   "expect": [
+    "/ma/decret/2-22-04/art_33",
+    "/ma/loi/36-21/art_34"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "السمية الأمازيغية رفضوها",
+   "expect": [
+    "/ma/loi/36-21/art_34",
+    "/ma/decret/2-22-04/art_33"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "سميتي مكتوبة غالطة بالفرنسية",
+   "expect": [
+    "/ma/loi/36-21/art_47"
+   ],
+   "lang": "darija",
+   "theme": "name"
+  },
+  {
+   "q": "شروط اختيار الاسم الشخصي",
+   "expect": [
+    "/ma/loi/36-21/art_34"
+   ],
+   "lang": "ar",
+   "theme": "name"
+  },
+  {
+   "q": "شكون يقدر ياخد نسخة من عقد الازدياد ديالي",
+   "expect": [
+    "/ma/loi/36-21/art_43"
+   ],
+   "lang": "darija",
+   "theme": "copies"
+  },
+  {
+   "q": "نطلب عقد الازدياد من الأنترنت",
+   "expect": [
+    "/ma/loi/36-21/art_43"
+   ],
+   "lang": "darija",
+   "theme": "copies"
+  },
+  {
+   "q": "أنواع نسخ رسوم الحالة المدنية",
+   "expect": [
+    "/ma/decret/2-22-04/art_44",
+    "/ma/decret/2-22-04/art_45"
+   ],
+   "lang": "ar",
+   "theme": "copies"
+  },
+  {
+   "q": "extrait d'acte de naissance copie intégrale",
+   "expect": [
+    "/ma/decret/2-22-04/art_44",
+    "/ma/loi/36-21/art_43"
+   ],
+   "lang": "fr",
+   "theme": "copies"
+  },
+  {
+   "q": "الدفتر العائلي واش المطلقة تقدر تاخدو",
+   "expect": [
+    "/ma/decret/2-22-04/art_43"
+   ],
+   "lang": "darija",
+   "theme": "booklet"
+  },
+  {
+   "q": "الدفتر العائلي الإلكتروني",
+   "expect": [
+    "/ma/loi/36-21/art_44",
+    "/ma/decret/2-22-04/art_43"
+   ],
+   "lang": "ar",
+   "theme": "booklet"
+  },
+  {
+   "q": "livret de famille électronique",
+   "expect": [
+    "/ma/loi/36-21/art_44"
+   ],
+   "lang": "fr",
+   "theme": "booklet"
+  },
+  {
+   "q": "تزوجت فالخارج كيفاش نسجل الزواج فالحالة المدنية",
+   "expect": [
+    "/ma/loi/36-21/art_36"
+   ],
+   "lang": "darija",
+   "theme": "abroad"
+  },
+  {
+   "q": "ولدي تزاد فالخارج شحال عندي باش نسجلو",
+   "expect": [
+    "/ma/decret/2-22-04/art_40",
+    "/ma/decret/2-22-04/art_23"
+   ],
+   "lang": "darija",
+   "theme": "abroad"
+  },
+  {
+   "q": "transcription du mariage célébré à l'étranger",
+   "expect": [
+    "/ma/loi/36-21/art_36"
+   ],
+   "lang": "fr",
+   "theme": "abroad"
+  },
+  {
+   "q": "ولد المغربية من أب أجنبي واش مغربي",
+   "expect": [
+    "/ma/dahir/1-58-250/art_6"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "الجنسية المغربية عن طريق الأم",
+   "expect": [
+    "/ma/dahir/1-58-250/art_6"
+   ],
+   "lang": "ar",
+   "theme": "nationality"
+  },
+  {
+   "q": "nationalité marocaine par la mère",
+   "expect": [
+    "/ma/dahir/1-58-250/art_6"
+   ],
+   "lang": "fr",
+   "theme": "nationality"
+  },
+  {
+   "q": "مراتي أجنبية واش تقدر تاخد الجنسية المغربية",
+   "expect": [
+    "/ma/dahir/1-58-250/art_10"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "اكتساب الجنسية المغربية عن طريق الزواج",
+   "expect": [
+    "/ma/dahir/1-58-250/art_10"
+   ],
+   "lang": "ar",
+   "theme": "nationality"
+  },
+  {
+   "q": "naturalisation au Maroc conditions",
+   "expect": [
+    "/ma/dahir/1-58-250/art_11"
+   ],
+   "lang": "fr",
+   "theme": "nationality"
+  },
+  {
+   "q": "شهادة الجنسية فين نجيبها",
+   "expect": [
+    "/ma/dahir/1-58-250/art_33"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "بغيت نتخلى على الجنسية المغربية",
+   "expect": [
+    "/ma/dahir/1-58-250/art_19"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "ولدي عندو جوج جنسيات واش يختار وحدة",
+   "expect": [
+    "/ma/dahir/1-58-250/art_19"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "الطفل المكفول واش ياخد الجنسية المغربية",
+   "expect": [
+    "/ma/dahir/1-58-250/art_9"
+   ],
+   "lang": "darija",
+   "theme": "nationality"
+  },
+  {
+   "q": "jinsiya maghribiya mn lom",
+   "expect": [
+    "/ma/dahir/1-58-250/art_6"
+   ],
+   "lang": "arabizi",
+   "theme": "nationality"
+  },
+  {
+   "q": "الإدارة طلبات مني نصحح الإمضاء",
+   "expect": [
+    "/ma/loi/55-19/art_7"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "طلبو مني نسخة مطابقة للأصل",
+   "expect": [
+    "/ma/loi/55-19/art_7"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "لا يمكن للإدارة مطالبة المرتفق بالنسخ المطابقة للأصل",
+   "expect": [
+    "/ma/loi/55-19/art_7"
+   ],
+   "lang": "ar",
+   "theme": "counter"
+  },
+  {
+   "q": "الإدارة ما بغاتش تعطيني وصل الإيداع",
+   "expect": [
+    "/ma/loi/55-19/art_10"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "الإدارة ما جاوباتنيش على الطلب ديالي",
+   "expect": [
+    "/ma/loi/55-19/art_16",
+    "/ma/loi/55-19/art_21"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "الأجل الأقصى لرد الإدارة على طلب المرتفق",
+   "expect": [
+    "/ma/loi/55-19/art_16"
+   ],
+   "lang": "ar",
+   "theme": "counter"
+  },
+  {
+   "q": "رفضو الطلب ديالي بلا ما يقولو علاش",
+   "expect": [
+    "/ma/loi/55-19/art_18"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "كيفاش نطعن فرفض الإدارة",
+   "expect": [
+    "/ma/loi/55-19/art_21"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "délai de réponse de l'administration 60 jours",
+   "expect": [
+    "/ma/loi/55-19/art_16"
+   ],
+   "lang": "fr",
+   "theme": "counter"
+  },
+  {
+   "q": "l'administration exige une copie certifiée conforme",
+   "expect": [
+    "/ma/loi/55-19/art_7"
+   ],
+   "lang": "fr",
+   "theme": "counter"
+  },
+  {
+   "q": "كل مرة كيطلبو مني ورقة جديدة",
+   "expect": [
+    "/ma/loi/55-19/art_10",
+    "/ma/loi/55-19/art_4"
+   ],
+   "lang": "darija",
+   "theme": "counter"
+  },
+  {
+   "q": "سكوت الإدارة بمثابة موافقة",
+   "expect": [
+    "/ma/loi/55-19/art_19"
+   ],
+   "lang": "ar",
+   "theme": "counter"
+  },
+  {
+   "q": "فين نصحح الإمضاء",
+   "expect": [
+    "/ma/decret/2-22-047/art_3"
+   ],
+   "lang": "darija",
+   "theme": "legalize"
+  },
+  {
+   "q": "الإشهاد على صحة الإمضاء",
+   "expect": [
+    "/ma/decret/2-22-047/art_3",
+    "/ma/decret/2-22-047/art_4"
+   ],
+   "lang": "ar",
+   "theme": "legalize"
+  },
+  {
+   "q": "المقاطعة رفضات تصحح ليا الإمضاء",
+   "expect": [
+    "/ma/decret/2-22-047/art_9"
+   ],
+   "lang": "darija",
+   "theme": "legalize"
+  },
+  {
+   "q": "légalisation de signature à la commune",
+   "expect": [
+    "/ma/decret/2-22-047/art_3"
+   ],
+   "lang": "fr",
+   "theme": "legalize"
+  },
+  {
+   "q": "فين نطابق نسخة مع الأصل",
+   "expect": [
+    "/ma/decret/2-22-048/art_3"
+   ],
+   "lang": "darija",
+   "theme": "legalize"
+  },
+  {
+   "q": "الإشهاد على مطابقة النسخ لأصولها",
+   "expect": [
+    "/ma/decret/2-22-048/art_3",
+    "/ma/decret/2-22-048/art_6"
+   ],
+   "lang": "ar",
+   "theme": "legalize"
+  },
+  {
+   "q": "فين نجيب السجل العدلي",
+   "expect": [
+    "/ma/loi/22-01/art_668"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "بغيت فيش السوابق للخدمة",
+   "expect": [
+    "/ma/loi/22-01/art_668",
+    "/ma/loi/22-01/art_667"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "البطاقة رقم 3 من السجل العدلي",
+   "expect": [
+    "/ma/loi/22-01/art_667",
+    "/ma/loi/22-01/art_668"
+   ],
+   "lang": "ar",
+   "theme": "record"
+  },
+  {
+   "q": "extrait du casier judiciaire bulletin n°3",
+   "expect": [
+    "/ma/loi/22-01/art_668"
+   ],
+   "lang": "fr",
+   "theme": "record"
+  },
+  {
+   "q": "عندي حكم قديم واش كيبان فالسجل العدلي",
+   "expect": [
+    "/ma/loi/22-01/art_667",
+    "/ma/loi/22-01/art_688"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "رد الاعتبار شحال خاص من عام",
+   "expect": [
+    "/ma/loi/22-01/art_688",
+    "/ma/loi/22-01/art_692"
+   ],
+   "lang": "darija",
+   "theme": "record"
+  },
+  {
+   "q": "رد الاعتبار بقوة القانون",
+   "expect": [
+    "/ma/loi/22-01/art_688"
+   ],
+   "lang": "ar",
+   "theme": "record"
+  },
+  {
+   "q": "réhabilitation de plein droit casier judiciaire",
+   "expect": [
+    "/ma/loi/22-01/art_688"
+   ],
+   "lang": "fr",
+   "theme": "record"
+  },
+  {
+   "q": "المعرف الرقمي المدني والاجتماعي شنو هو",
+   "expect": [
+    "/ma/loi/72-18/art_8"
+   ],
+   "lang": "darija",
+   "theme": "register"
+  },
+  {
+   "q": "التسجيل في السجل الوطني للسكان",
+   "expect": [
+    "/ma/loi/72-18/art_7",
+    "/ma/loi/72-18/art_4"
+   ],
+   "lang": "ar",
+   "theme": "register"
+  },
+  {
+   "q": "واش عندي الحق نعرف شنو عندهم من معطيات عليا",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "darija",
+   "theme": "data"
+  },
+  {
+   "q": "بغيت نصحح المعطيات ديالي عند شركة",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "darija",
+   "theme": "data"
+  },
+  {
+   "q": "droit d'accès à mes données personnelles",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "fr",
+   "theme": "data"
+  },
+  {
+   "q": "أنا أجنبي بغيت بطاقة الإقامة فالمغرب",
+   "expect": [
+    "/ma/loi/2-03/art_16",
+    "/ma/loi/2-03/art_17"
+   ],
+   "lang": "darija",
+   "theme": "foreigner"
+  },
+  {
+   "q": "carte de séjour au Maroc pour conjoint de marocain",
+   "expect": [
+    "/ma/loi/2-03/art_17"
+   ],
+   "lang": "fr",
+   "theme": "foreigner"
+  },
+  {
+   "q": "carte d'immatriculation étranger Maroc durée",
+   "expect": [
+    "/ma/loi/2-03/art_10",
+    "/ma/loi/2-03/art_8"
+   ],
+   "lang": "fr",
+   "theme": "foreigner"
+  },
+  {
+   "q": "الأجنبي شحال عندو من وقت باش يطلب الإقامة",
+   "expect": [
+    "/ma/decret/2-09-607/art_1"
+   ],
+   "lang": "darija",
+   "theme": "foreigner"
+  },
+  {
+   "q": "الطعن في رفض تسليم سند الإقامة",
+   "expect": [
+    "/ma/loi/2-03/art_20"
+   ],
+   "lang": "ar",
+   "theme": "foreigner"
+  },
+  {
+   "q": "تمبر بطاقة الإقامة ديال الأجانب",
+   "expect": [
+    "/ma/code/cgi/art_252"
+   ],
+   "lang": "darija",
+   "theme": "foreigner"
+  }
+ ]
+}

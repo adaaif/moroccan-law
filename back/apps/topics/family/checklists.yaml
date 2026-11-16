@@ -1,0 +1,73 @@
+# The papers (F5 of the family plan): each list is what an article names, item by item; `when` says when an item is
+# needed. Ticks stay on the reader's phone. What a court or office may ask beyond the law is not listed: the law's
+# list is what the site can stand behind.
+
+- key: marriage-file
+  title: {ar: ملف عقد الزواج, fr: Le dossier de mariage}
+  lead:
+    ar: 'الوثائق التي تنص عليها المادة 65، يودعها الخطيبان بكتابة الضبط لدى قسم قضاء الأسرة لمحل إبرام العقد.'
+    fr: 'Les pièces que prévoit l’article 65, déposées au greffe de la section de la famille du lieu de l’acte.'
+  cites: [/ma/loi/70-03/art_65]
+  items:
+    - label: {ar: مطبوع طلب الإذن بتوثيق الزواج, fr: Le formulaire de demande d’autorisation de l’acte}
+      note: {ar: يحدد شكله بقرار لوزير العدل, fr: Son modèle est fixé par arrêté du ministre de la Justice}
+    - label: {ar: نسخة من رسم الولادة لكل واحد, fr: Une copie de l’acte de naissance de chacun}
+      note: {ar: يشير ضابط الحالة المدنية في الهامش إلى أنها سلمت من أجل الزواج, fr: L’officier d’état civil note en marge qu’elle est délivrée pour le mariage}
+    - label: {ar: شهادة إدارية لكل واحد, fr: Un certificat administratif pour chacun}
+    - label: {ar: شهادة طبية لكل واحد, fr: Un certificat médical pour chacun}
+    - label: {ar: إذن القاضي بالزواج, fr: L’autorisation du juge}
+      when: {ar: 'للزواج دون 18 سنة، أو التعدد، أو زواج المصاب بإعاقة ذهنية، أو زواج معتنقي الإسلام والأجانب', fr: 'pour un mariage avant 18 ans, la polygamie, le mariage d’une personne atteinte d’un handicap mental, celui d’un converti ou d’un étranger'}
+      cites: [/ma/loi/70-03/art_20, /ma/loi/70-03/art_23]
+    - label: {ar: شهادة الكفاءة أو ما يقوم مقامها, fr: Le certificat de capacité matrimoniale ou son équivalent}
+      when: {ar: للأجانب, fr: pour les étrangers}
+    - label: {ar: ما يثبت الوضعية القانونية إزاء زواج سابق, fr: La preuve de la situation au regard d’un mariage antérieur}
+      when: {ar: لمن سبق له الزواج, fr: pour qui a déjà été marié}
+
+- key: talaq-request
+  title: {ar: طلب الإذن بالطلاق, fr: La demande d’autorisation de divorce}
+  lead:
+    ar: 'ما يتضمنه طلب الإذن بالإشهاد على الطلاق وما يرفق به، حسب المادة 80.'
+    fr: 'Ce que contient la demande d’autorisation de divorce et ce qu’on y joint, selon l’article 80.'
+  cites: [/ma/loi/70-03/art_80]
+  items:
+    - label: {ar: هوية الزوجين ومهنتهما وعنوانهما, fr: 'L’identité, la profession et l’adresse des deux époux'}
+    - label: {ar: 'عدد الأطفال وسنهم ووضعهم الصحي والدراسي', fr: 'Le nombre des enfants, leur âge, leur santé et leur scolarité'}
+      when: {ar: إن وجدوا, fr: s’il y en a}
+    - label: {ar: مستند الزوجية, fr: L’acte de mariage}
+    - label: {ar: الحجج المثبتة لوضعية الزوج المادية والتزاماته المالية, fr: 'Les pièces sur la situation financière du mari et ses charges'}
+
+- key: birth
+  title: {ar: التصريح بالولادة, fr: La déclaration de naissance}
+  lead:
+    ar: 'ما يدعم به التصريح بالولادة حسب المادة 22 من المرسوم 2.22.04، داخل ثلاثين يوما.'
+    fr: 'Les pièces qui accompagnent la déclaration de naissance selon l’article 22 du décret 2.22.04, dans les trente jours.'
+  cites: [/ma/decret/2-22-04/art_22, /ma/decret/2-22-04/art_40]
+  items:
+    - label: {ar: شهادة الولادة الإلكترونية, fr: Le certificat de naissance électronique}
+      note: {ar: 'يحررها الطبيب أو القابلة، أو تحرر السلطة المحلية شهادة إدارية للولادة', fr: 'Établi par le médecin ou la sage-femme ; à défaut, l’autorité locale établit un certificat administratif'}
+    - label: {ar: نسخة من عقد الزواج, fr: Une copie de l’acte de mariage}
+      when: {ar: عند التصريح بالولادة الأولى فقط, fr: pour la première naissance seulement}
+    - label: {ar: وثيقة الإقرار بالبنوة ونسختان كاملتان من رسمي ولادة الأبوين, fr: 'L’acte de reconnaissance de filiation et deux copies intégrales des actes de naissance des parents'}
+      when: {ar: إذا كانت البنوة ثابتة بإقرار, fr: si la filiation résulte d’une reconnaissance}
+    - label: {ar: نسخة كاملة من رسم ولادة الأم, fr: Une copie intégrale de l’acte de naissance de la mère}
+      when: {ar: إذا كان المولود من أب مجهول, fr: si le père est inconnu}
+    - label: {ar: نسخة كاملة من رسم الولادة الأجنبي, fr: L’acte de naissance étranger en copie intégrale}
+      when: {ar: للولادة خارج المغرب، مع عقد زواج الأبوين, fr: 'pour une naissance à l’étranger, avec l’acte de mariage des parents'}
+      cites: [/ma/decret/2-22-04/art_23]
+
+- key: kafala
+  title: {ar: طلب الكفالة, fr: La demande de kafala}
+  lead:
+    ar: 'يرفق الطلب بما يثبت شروط المادة 9 وبنسخة من رسم ولادة الطفل، حسب المادة 15 من القانون 15.01.'
+    fr: 'La demande est accompagnée des pièces prouvant les conditions de l’article 9 et d’une copie de l’acte de naissance de l’enfant, selon l’article 15 de la loi 15.01.'
+  cites: [/ma/loi/15-01/art_15, /ma/loi/15-01/art_9]
+  items:
+    - label: {ar: طلب إسناد الكفالة إلى القاضي المكلف بشؤون القاصرين, fr: La demande adressée au juge des tutelles}
+    - label: {ar: نسخة من رسم ولادة الطفل, fr: Une copie de l’acte de naissance de l’enfant}
+      note: {ar: يحق لطالب الكفالة الحصول عليها, fr: Le demandeur a le droit de l’obtenir}
+    - label: {ar: ما يثبت الإسلام وسن الرشد, fr: 'La preuve de l’islam et de la majorité'}
+    - label: {ar: ما يثبت الوسائل المادية الكافية, fr: Les justificatifs de ressources suffisantes}
+    - label: {ar: ما يثبت عدم الحكم في جريمة ماسة بالأخلاق أو ضد الأطفال, fr: 'La preuve de l’absence de condamnation pour atteinte aux mœurs ou contre des enfants'}
+    - label: {ar: ما يثبت السلامة من الأمراض المعدية أو المانعة, fr: 'La preuve de l’absence de maladie contagieuse ou empêchante'}
+    - label: {ar: عقد الزواج, fr: L’acte de mariage}
+      when: {ar: للزوجين, fr: pour un couple}

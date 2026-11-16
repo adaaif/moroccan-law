@@ -1,0 +1,212 @@
+# What changed in tax, year by year (T4 of the tax review): each finance law is a change, its stage said first,
+# its dated record from the BO, and what it changes for a person, each line with its article. The code changes every 1
+# January: a rule read here is right for its year (income of 2025 declared in 2026 is taxed under 2025's law). Checked
+# against the BO as read here on 26 Oct 2026. The 2027 bill (the finance-bill review, P3) is a bill, never
+# law: its `path` is the way a finance bill goes, each stop with the organic law's article (130.13) that sets it, `at`
+# the stop it has reached; the day the BO publishes the law, it becomes `in_force` like the others (P22).
+
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية لسنة 2027 (60.26)', fr: 'Le projet de loi de finances 2027 (60.26)'}
+  stage: bill
+  at: councillors
+  stages: &bill_path
+    - {key: filed, label: {ar: أودع, fr: Déposé}}
+    - {key: committee, label: {ar: لجنة المالية, fr: Commission}}
+    - {key: representatives, label: {ar: مجلس النواب, fr: Représentants}}
+    - {key: councillors, label: {ar: مجلس المستشارين, fr: Conseillers}}
+    - {key: second_reading, label: {ar: القراءة الثانية, fr: Seconde lecture}}
+    - {key: law, label: {ar: الجريدة الرسمية, fr: Bulletin officiel}}
+  path:
+    - key: filed
+      rule: {ar: 'تودعه الحكومة بمكتب مجلس النواب في 20 أكتوبر على أبعد تقدير، ومعه مذكرة التقديم والتقارير.', fr: 'Le gouvernement le dépose au bureau de la Chambre des représentants au plus tard le 20 octobre, avec la note de présentation et les rapports.'}
+      cites: [/ma/loi-organique/130-13/art_48]
+    - key: committee
+      rule: {ar: 'تدرسه لجنة المالية والتنمية الاقتصادية بمجلس النواب: مناقشة عامة، ثم مادة مادة، ثم التعديلات.', fr: 'La commission des finances et du développement économique de la Chambre des représentants l’examine : discussion générale, article par article, amendements.'}
+      cites: [/ma/loi-organique/130-13/art_49]
+    - key: representatives
+      rule: {ar: 'يبت مجلس النواب فيه داخل ثلاثين يوما من إيداعه، الجزء الأول قبل الثاني، مادة مادة.', fr: 'La Chambre des représentants statue dans les trente jours de son dépôt, la première partie avant la seconde, article par article.'}
+      cites: [/ma/loi-organique/130-13/art_49, /ma/loi-organique/130-13/art_52, /ma/loi-organique/130-13/art_53]
+    - key: councillors
+      rule: {ar: 'يبت مجلس المستشارين في النص الذي أقره مجلس النواب داخل اثنين وعشرين يوما.', fr: 'La Chambre des conseillers statue sur le texte adopté par les représentants dans les vingt-deux jours.'}
+      cites: [/ma/loi-organique/130-13/art_49]
+    - key: second_reading
+      rule: {ar: 'يدرس مجلس النواب تعديلات مجلس المستشارين، وله البت النهائي داخل ستة أيام.', fr: 'La Chambre des représentants examine les amendements des conseillers et statue définitivement dans les six jours.'}
+      cites: [/ma/loi-organique/130-13/art_49]
+    - key: law
+      rule: {ar: 'يصدر الأمر بتنفيذه وينشر في الجريدة الرسمية، فيصير قانونا. إذا لم يصوت عليه في 31 دجنبر، تفتح الحكومة بمرسوم الاعتمادات اللازمة لسير المرافق العمومية.', fr: 'Il est promulgué et publié au Bulletin officiel : il devient loi. S’il n’est pas voté au 31 décembre, le gouvernement ouvre par décret les crédits nécessaires à la marche des services publics.'}
+      cites: [/ma/loi-organique/130-13/art_50, /ma/dahir/1-11-91/art_75]
+  # What the Chamber of Representatives did (the Chamber-vote update, 15 Nov 2026): each vote as the record counts
+  # it. `seats` is the Chamber's own number (organic law 27.11, art. 1): the page draws its hemicycle from it.
+  votes:
+    - key: plenary
+      date: '2026-11-14'
+      body: {ar: 'مجلس النواب، جلسة عامة', fr: 'Chambre des représentants, séance plénière'}
+      headline: {ar: 'مجلس النواب صادق على المشروع بالأغلبية', fr: 'La Chambre des représentants adopte le projet à la majorité'}
+      for: 179
+      against: 126
+      abstain: 0
+      seats: 395
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}
+      note: {ar: 'هادي القراءة الأولى. دابا المشروع عند مجلس المستشارين اللي عندو 22 يوم باش يبت فيه، ومن بعد كيرجع لمجلس النواب للقراءة الثانية. حتى يتنشر فالجريدة الرسمية، كيبقى مشروع.', fr: 'C’est la première lecture. Le projet est maintenant devant la Chambre des conseillers, qui a vingt-deux jours pour statuer ; il revient ensuite devant les représentants en seconde lecture. Tant qu’il n’est pas publié au Bulletin officiel, il reste un projet.'}
+      cites: [/ma/loi-organique/27-11/art_1]
+    - key: committee
+      date: '2026-11-12'
+      body: {ar: 'لجنة المالية والتنمية الاقتصادية', fr: 'la commission des finances et du développement économique'}
+      for: 23
+      against: 17
+      abstain: 0
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 12 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 12 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7855', file: sources/mef/plf2027/actualite-7855.html, sha256: 917222b8e5dd4449614a392e7d13be9086330014c7f7cd6877aad01674198832}
+      note: {ar: 'على الجزء الأول، بعد 11 اجتماع و55 ساعة و25 دقيقة ديال الخدمة.', fr: 'Sur la première partie, après 11 réunions et 55 heures 25 de travail.'}
+  # The committee's count of the amendments to the first part, group by group (its report, second part, p. 6). Its
+  # technical card (p. 4) writes 116 rejected and 112 withdrawn for the same 287: the table is what the page draws.
+  amendments:
+    filed: 287
+    accepted: 59
+    page: pages/bill-amendments
+    link: {ar: 'شنو بدلو النواب فالمشروع، تعديل بتعديل', fr: 'Ce que les députés ont changé, amendement par amendement'}
+    groups:
+      - {key: government, side: government, label: {ar: الحكومة, fr: Le gouvernement}, filed: 8, accepted: 8, rejected: 0, withdrawn: 0}
+      - {key: majority, side: majority, label: {ar: فرق الأغلبية, fr: Les groupes de la majorité}, filed: 42, accepted: 33, rejected: 0, withdrawn: 9}
+      - {key: rni, side: opposition, label: {ar: التجمع الوطني للأحرار, fr: Rassemblement national des indépendants}, filed: 23, accepted: 2, rejected: 7, withdrawn: 14}
+      - {key: pjd, side: opposition, label: {ar: العدالة والتنمية, fr: Justice et développement}, filed: 82, accepted: 4, rejected: 53, withdrawn: 25}
+      - {key: mp, side: opposition, label: {ar: الحركة الشعبية, fr: Mouvement populaire}, filed: 65, accepted: 11, rejected: 9, withdrawn: 45}
+      - {key: left, side: opposition, label: {ar: تحالف اليسار, fr: Alliance de la gauche}, filed: 67, accepted: 1, rejected: 45, withdrawn: 21}
+    source: {name: {ar: 'مجلس النواب، تقرير لجنة المالية حول المشروع، الجزء الثاني، ص. 6', fr: 'Chambre des représentants, rapport de la commission des finances sur le projet, deuxième partie, p. 6'}, url: 'https://www.chambredesrepresentants.ma/sites/default/files/2emepUP2.pdf#page=6', file: sources/parliament/plf2027/2emepUP2.pdf, sha256: f983ee219d6e93524606f9b34cd91edfdae03e2331da04113dfb978a141831ca}
+    note: {ar: 'على الجزء الأول من المشروع، فلجنة المالية والتنمية الاقتصادية بمجلس النواب، 11 و12 نونبر 2026. بقاو 4 تعديلات تصوت عليهم فالجزء الثاني.', fr: 'Sur la première partie du projet, à la commission des finances de la Chambre des représentants, les 11 et 12 novembre 2026. Quatre amendements restaient à voter avec la seconde partie.'}
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع قانون، ماشي قانون؛ البرلمان يقدر يبدلو. أودعته الحكومة في 20 أكتوبر 2026؛ لجنة المالية بمجلس النواب قبلات 59 تعديل من 287 وصادقات على الجزء الأول في 12 نونبر، ومجلس النواب صادق على المشروع برمته في 14 نونبر: 179 مع و126 ضد. دابا عند مجلس المستشارين، ومن بعد القراءة الثانية.', fr: 'Un projet, pas une loi : le Parlement peut le changer. Déposé par le gouvernement le 20 octobre 2026 ; la commission des finances de la Chambre des représentants a retenu 59 amendements sur 287 et adopté la première partie le 12 novembre, et la Chambre a adopté l’ensemble du projet le 14 novembre : 179 pour, 126 contre. Il est maintenant devant la Chambre des conseillers, avant la seconde lecture.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26 للسنة المالية 2027 بمكتب مجلس النواب: 48 مادة، مادته 7 كتغير 41 مادة من المدونة العامة للضرائب وكتزيد ثلاثة.', fr: 'Le gouvernement dépose le projet de loi de finances 60.26 pour 2027 au bureau de la Chambre des représentants : 48 articles ; son article 7 modifie 41 articles du Code général des impôts et en ajoute trois.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/projet-loi/60-26/art_7, /ma/loi-organique/130-13/art_48]
+    - date: '2026-10-23'
+      text: {ar: 'قدمته الحكومة في جلسة مشتركة بين مجلسي البرلمان، ثم أمام لجنة المالية والتنمية الاقتصادية بمجلس النواب.', fr: 'Le gouvernement le présente en séance commune des deux Chambres, puis devant la commission des finances de la Chambre des représentants.'}
+      source: {name: {ar: 'مجلس النواب، ملف مشروع قانون المالية 2027', fr: 'Chambre des représentants, dossier du projet de loi de finances 2027'}, url: 'https://www.chambredesrepresentants.ma/ar/DossierPLF2027', file: sources/parliament/dossier_plf2027.html, sha256: 5df91f37c5a28fc573040ceb46dab4078f271e5a62926f1e1afca83b0345115b}
+    - date: '2026-10-28'
+      short: {ar: 'المناقشة العامة فلجنة المالية', fr: 'Discussion générale en commission'}
+      text: {ar: 'بدات لجنة المالية والتنمية الاقتصادية بمجلس النواب المناقشة العامة للمشروع بحضور الوزير: هضرو رؤساء الفرق والمجموعة النيابية. النص ما تبدل فيه والو: التعديلات كتجي من بعد، مادة مادة.', fr: 'La commission des finances et du développement économique de la Chambre des représentants ouvre la discussion générale du projet en présence du ministre : les présidents des groupes prennent la parole. Le texte n’a pas changé : les amendements viennent après, article par article.'}
+      source: {name: {ar: 'مجلس النواب، بلاغ لجنة المالية والتنمية الاقتصادية', fr: 'Chambre des représentants, communiqué de la commission des finances'}, url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-bmjls-alnwab-alshrw-fy-almnaqsht-alamt-lmshrw', file: sources/parliament/plf2027/communique-2026-10-28.html, sha256: cec15eea7d01b5d566e11174fff027ff6fb5851128659000a60df262e9f5164f}
+    - date: '2026-10-29'
+      short: {ar: 'تتمة المناقشة العامة', fr: 'Suite de la discussion générale'}
+      text: {ar: 'تابعت لجنة المالية المناقشة العامة: نواب ثمنو التدابير الاجتماعية والضريبية ورفع الاستثمار العمومي لـ400 مليار درهم، ونواب آخرين شافو فالمشروع استمرارية للحكومة السابقة، بلا جديد فالعالم القروي والمقاولات الصغرى والقدرة الشرائية.', fr: 'La commission poursuit la discussion générale : des députés saluent les mesures sociales et fiscales et l’investissement public porté à 400 milliards de DH ; d’autres y voient la continuité du gouvernement précédent, sans nouveauté pour le monde rural, les petites entreprises et le pouvoir d’achat.'}
+      source: {name: {ar: 'مجلس النواب، بلاغ لجنة المالية ليوم 29 أكتوبر', fr: 'Chambre des représentants, communiqué de la commission des finances du 29 octobre'}, url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-lywm-alkhmys-29-aktwbr-2026', file: sources/parliament/plf2027/communique-2026-10-29.html, sha256: 926b74df60d9b047dd26ff157b2deb15c912cc622127b9c551345ee833c3e8e3}
+    - date: '2026-10-30'
+      short: {ar: 'جواب الحكومة والمواد الأولى', fr: 'Réponse du gouvernement, premiers articles'}
+      text: {ar: 'سالات لجنة المالية المناقشة العامة فالصباح، وفالعشية جاوب الوزير على أسئلة النواب. من بعد بدات المناقشة التفصيلية بالمادة الأولى والثانية: استيفاء الضرائب فـ2027، والإذن للحكومة تبدل ولا توقف بمرسوم الرسوم الجمركية، منها رسم الاستيراد على القمح اللين والأغنام الحية واللحوم. البلاغ ما ذكر حتى تصويت.', fr: 'La commission clôt la discussion générale le matin ; l’après-midi, le ministre répond aux députés. Puis commence la discussion article par article, avec les articles 1 et 2 : la perception des impôts en 2027 et l’autorisation donnée au gouvernement de modifier ou suspendre par décret des droits de douane, dont le droit d’importation sur le blé tendre, les ovins vivants et les viandes. Le communiqué ne mentionne aucun vote.'}
+      source: {name: {ar: 'مجلس النواب، بلاغ لجنة المالية ليوم 30 أكتوبر (اجتماع المساء)', fr: 'Chambre des représentants, communiqué de la commission des finances du 30 octobre (séance du soir)'}, url: 'https://www.chambredesrepresentants.ma/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/blagh-ajtma-ljnt-almalyt-waltnmyt-alaqtsadyt-lywm-aljmt-30-aktwbr-2026-ajtma-almsa', file: sources/parliament/plf2027/communique-2026-10-30-soir.html, sha256: 5453e4f3c78ccc0472d194824ae647dd1499a519a0d678025e0c6a56ad4d3341}
+      cites: [/ma/projet-loi/60-26/art_1, /ma/projet-loi/60-26/art_2]
+    - date: '2026-11-05'
+      short: {ar: 'ميزانيات الوزارات فاللجان', fr: 'Les budgets des ministères en commissions'}
+      text: {ar: 'اللجان القطاعية بمجلس النواب كتدرس الميزانيات الفرعية ديال الوزارات والمؤسسات، الجزء الثاني من المشروع: العدل والسلطة القضائية، إدارة السجون، المحاكم المالية، الأوقاف والشؤون الإسلامية، والباقي فالأيام الجاية.', fr: 'Les commissions sectorielles de la Chambre des représentants examinent les budgets des ministères et institutions, la seconde partie du projet : la Justice et le pouvoir judiciaire, l’administration pénitentiaire, les juridictions financières, les Habous et Affaires islamiques, les autres dans les jours qui viennent.'}
+      source: {name: {ar: 'مجلس النواب، ملف مشروع قانون المالية 2027', fr: 'Chambre des représentants, dossier du projet de loi de finances 2027'}, url: 'https://www.chambredesrepresentants.ma/ar/DossierPLF2027', file: sources/parliament/plf2027/dossier-2026-11-08-b0e5dbb7.html, sha256: b0e5dbb7977b9cb25ebf9a5bc0af976307fdba3bee3aaec457b4e7253ba94d41}
+    - date: '2026-11-10'
+      short: {ar: 'إيداع التعديلات', fr: 'Dépôt des amendements'}
+      text: {ar: 'آخر أجل لتقديم التعديلات على الجزء الأول عند لجنة المالية والتنمية الاقتصادية: الحكومة والفرق والمجموعة النيابية قدمو 287 تعديل.', fr: 'Dernier délai pour déposer les amendements à la première partie devant la commission des finances : le gouvernement, les groupes et le groupement en déposent 287.'}
+      source: {name: {ar: 'مجلس النواب، تقرير لجنة المالية حول المشروع، الجزء الثاني (البطاقة التقنية، ص. 4)', fr: 'Chambre des représentants, rapport de la commission des finances sur le projet, deuxième partie (fiche technique, p. 4)'}, url: 'https://www.chambredesrepresentants.ma/sites/default/files/2emepUP2.pdf', file: sources/parliament/plf2027/2emepUP2.pdf, sha256: f983ee219d6e93524606f9b34cd91edfdae03e2331da04113dfb978a141831ca}
+    - date: '2026-11-12'
+      short: {ar: 'تصويت لجنة المالية', fr: 'Vote de la commission des finances'}
+      text: {ar: 'لجنة المالية والتنمية الاقتصادية بمجلس النواب صوتات على التعديلات يومي 11 و12 نونبر وقبلات 59 من 287، ثم صادقات بالأغلبية على الجزء الأول: 23 مع و17 ضد. تبدلات مواد من المدونة العامة للضرائب، منها التسبيق على الاستيراد (3% عوض 5%)، والمقاول الذاتي (20% فوق 100.000 مع زبون واحد)، والتمبر ديال الطوموبيل فوق مليون (25%).', fr: 'La commission des finances de la Chambre des représentants vote les amendements les 11 et 12 novembre et en retient 59 sur 287, puis adopte la première partie à la majorité : 23 pour, 17 contre. Des articles du Code général des impôts changent, dont l’avance à l’importation (3 % au lieu de 5 %), l’auto-entrepreneur (20 % au-delà de 100 000 avec un même client) et le timbre de la voiture au-delà d’un million (25 %).'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 12 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 12 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7855', file: sources/mef/plf2027/actualite-7855.html, sha256: 917222b8e5dd4449614a392e7d13be9086330014c7f7cd6877aad01674198832}
+      cites: [/ma/projet-loi/60-26/art_7, /ma/code/cgi/art_170, /ma/code/cgi/art_42-bis, /ma/code/cgi/art_252]
+    - date: '2026-11-14'
+      short: {ar: 'مجلس النواب صادق على المشروع', fr: 'Adoption par la Chambre des représentants'}
+      text: {ar: 'مجلس النواب صادق فجلسة عامة على الجزء الأول، ثم على الجزء الثاني وعلى المشروع برمته: 179 مع و126 ضد، بلا حتى ممتنع، من 305 نائب شاركو فالتصويت. هادي القراءة الأولى: الحكومة كتعرض النص على مجلس المستشارين. النص كما وافق عليه مجلس النواب ما تنشرش بعد؛ هاد الصفحة كتقرا التعديلات من تقرير لجنة المالية.', fr: 'La Chambre des représentants adopte en séance plénière la première partie, puis la seconde partie et l’ensemble du projet : 179 pour, 126 contre, aucune abstention, sur 305 députés votants. C’est la première lecture : le gouvernement soumet le texte à la Chambre des conseillers. Le texte tel que la Chambre l’a adopté n’est pas encore publié ; cette page lit les amendements dans le rapport de la commission des finances.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}
+      cites: [/ma/loi-organique/130-13/art_49]
+    - date: '2026-12-31'
+      short: {ar: 'آخر أجل للتصويت على قانون المالية', fr: 'Dernier délai pour voter la loi de finances'}
+      text: {ar: 'قبل هاد التاريخ: مجلس المستشارين عندو 22 يوم من نهار كيتعرض عليه المشروع، ومن بعد مجلس النواب عندو 6 أيام للبت النهائي. إلا ما تصوتش قانون المالية فـ31 دجنبر، الحكومة كتفتح بمرسوم الاعتمادات اللازمة لسير المرافق العمومية.', fr: 'Avant cette date : la Chambre des conseillers a vingt-deux jours à compter de sa saisine, puis la Chambre des représentants six jours pour statuer définitivement. Si la loi de finances n’est pas votée au 31 décembre, le gouvernement ouvre par décret les crédits nécessaires à la marche des services publics.'}
+      source: {name: {ar: 'المادتان 49 و50 من القانون التنظيمي 130.13', fr: 'Articles 49 et 50 de la loi organique 130.13'}, url: 'https://adala.justice.gov.ma/api/uploads/2024/02/13/%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%85%D9%8A%20%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-1707834502972.pdf'}
+      cites: [/ma/loi-organique/130-13/art_49, /ma/loi-organique/130-13/art_50]
+
+- key: lf-2026
+  title: {ar: 'قانون المالية لسنة 2026 (50.25)', fr: 'La loi de finances 2026 (loi 50.25)'}
+  stage: in_force
+  stages: &stages
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-26'
+  line: {ar: 'منذ فاتح يناير 2026: 600 درهم على كل واحد فتكلفك عوض 500 (3.600 على الأكثر)، ومعاشات أنظمة التقاعد الأساسي معفية، وكذلك معاشات التقاعد التكميلي الجماعي للقطاع الخاص عند الصندوق المهني المغربي للتقاعد.', fr: 'Depuis le 1er janvier 2026 : 600 DH par personne à charge au lieu de 500 (3 600 au plus), les pensions des régimes de base exonérées, comme celles de la retraite complémentaire de groupe du privé servies par la CIMR.'}
+  timeline:
+    - date: '2025-12-16'
+      text: {ar: 'نشر قانون المالية 50.25 للسنة المالية 2026 في الجريدة الرسمية؛ مادته 7 كتغير وتتمم أكثر من 50 مادة من المدونة العامة للضرائب.', fr: 'Publication de la loi de finances 50.25 pour 2026 au Bulletin officiel ; son article 7 modifie et complète plus de 50 articles du Code général des impôts.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7465 مكرر', fr: 'BO n° 7465 bis'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7465-bis_Ar.pdf'}
+      cites: [/ma/loi/50-25/art_7]
+    - date: '2026-01-01'
+      text: {ar: 'الخصم عن الأعباء العائلية 600 درهم عن كل شخص و3.600 على الأكثر، على الدخول المكتسبة ابتداء من هذا التاريخ.', fr: 'La réduction pour charges de famille passe à 600 DH par personne et 3 600 au plus, sur les revenus acquis dès cette date.'}
+      source: {name: {ar: 'المادة 7 من قانون المالية 50.25', fr: 'Article 7 de la loi de finances 50.25'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7465-bis_Ar.pdf'}
+      cites: [/ma/code/cgi/art_74, /ma/loi/50-25/art_7]
+    - date: '2026-01-01'
+      text: {ar: 'إعفاء معاشات أنظمة التقاعد الأساسي، ومعاشات عقود التقاعد التكميلي الجماعية للقطاع الخاص عند الصندوق المهني المغربي للتقاعد بنفس شروط المادة 28-III.', fr: 'Exonération des pensions des régimes de base, et de celles des contrats de retraite complémentaire de groupe du privé servies par la CIMR aux conditions de l’article 28-III.'}
+      source: {name: {ar: 'المادة 7 من قانون المالية 50.25', fr: 'Article 7 de la loi de finances 50.25'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2025/BO_7465-bis_Ar.pdf'}
+      cites: [/ma/code/cgi/art_57, /ma/loi/50-25/art_7]
+
+- key: lf-2025
+  title: {ar: 'قانون المالية لسنة 2025 (60.24)', fr: 'La loi de finances 2025 (loi 60.24)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-26'
+  line: {ar: 'منذ فاتح يناير 2025: جدول جديد، الشريحة المعفية 40.000 درهم والسعر الأعلى 37% فوق 180.000؛ 500 درهم على كل واحد فتكلفك؛ السعر الإبرائي 20% على الكراء إلا اخترتيه؛ ونصف الضريبة على معاشات التقاعد الأساسي ديال 2025 قبل إعفائها فـ2026.', fr: 'Depuis le 1er janvier 2025 : un nouveau barème, la tranche exonérée à 40 000 DH et le taux supérieur à 37 % au-delà de 180 000 ; 500 DH par personne à charge ; le taux libératoire de 20 % sur les loyers, sur option ; la moitié de l’impôt sur les pensions de base de 2025 avant leur exonération en 2026.'}
+  timeline:
+    - date: '2024-12-19'
+      text: {ar: 'نشر قانون المالية 60.24 للسنة المالية 2025 في الجريدة الرسمية؛ مادته 8 كتغير وتتمم مواد المدونة العامة للضرائب.', fr: 'Publication de la loi de finances 60.24 pour 2025 au Bulletin officiel ; son article 8 modifie et complète le Code général des impôts.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7362', fr: 'BO n° 7362'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7362_Ar.pdf'}
+      cites: [/ma/loi/60-24/art_8]
+    - date: '2025-01-01'
+      text: {ar: 'الجدول الجديد للضريبة على الدخل والخصم 500 درهم عن كل شخص (3.000 على الأكثر)، على الدخول غير العقارية المكتسبة ابتداء من هذا التاريخ؛ والسعر الإبرائي 20% على الدخول العقارية المحصلة ابتداء منه.', fr: 'Le nouveau barème et la réduction de 500 DH par personne (3 000 au plus), sur les revenus autres que fonciers acquis dès cette date ; le taux libératoire de 20 % sur les revenus fonciers perçus dès cette date.'}
+      source: {name: {ar: 'المادة 8-III من قانون المالية 60.24', fr: 'Article 8-III de la loi de finances 60.24'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7362_Ar.pdf'}
+      cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_74, /ma/code/cgi/art_64, /ma/loi/60-24/art_8]
+    - date: '2025-01-01'
+      text: {ar: 'تخفيض بنسبة 50% من الضريبة على معاشات أنظمة التقاعد الأساسي المكتسبة برسم سنة 2025، قبل إعفائها ابتداء من فاتح يناير 2026.', fr: 'Réduction de 50 % de l’impôt sur les pensions des régimes de base acquises en 2025, avant leur exonération dès le 1er janvier 2026.'}
+      source: {name: {ar: 'المادة 8-III-8 من قانون المالية 60.24', fr: 'Article 8-III-8 de la loi de finances 60.24'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2024/BO_7362_Ar.pdf'}
+      cites: [/ma/code/cgi/art_57, /ma/loi/60-24/art_8]
+
+# Announced with the 2027 bill, not in its articles (P8, C3 «announced»): said as announced, with the page that says it
+# and the text it would need; never written as law. Followed like the others: their record grows when a text appears.
+- key: announced-pensions
+  title: {ar: 'المعاش الأدنى والأرامل (معلن)', fr: 'La pension minimale et les veuves (annoncé)'}
+  stage: announced
+  stages: &announced
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: text, label: {ar: نص منشور, fr: Texte publié}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-31'
+  line: {ar: 'معلن من الوزير، ماشي فمواد المشروع: المعاش الأدنى 1.700 درهم فـ2027، ثم 2.000 فـ2028 و2.500 فـ2029 و3.000 فـ2030 حسب جوابو فلجنة المالية، والأرامل 100% من المعاش عوض 50%. خاص نص ديالو.', fr: 'Annoncé par le ministre, pas dans les articles du projet : la pension minimale à 1 700 DH en 2027, puis 2 000 en 2028, 2 500 en 2029 et 3 000 en 2030 selon sa réponse en commission, les veuves à 100 % de la pension au lieu de 50 %. Il faut un texte à part.'}
+  timeline:
+    - date: '2026-10-23'
+      text: {ar: 'أعلن الوزير أمام البرلمان الرفع التدريجي للحد الأدنى للمعاش إلى 3.000 درهم فالشهر، 1.700 ابتداء من 2027 لحوالي 500.000 متقاعد، والرفع من حصة الأرامل من 50% إلى 100% لحوالي 431.000 أرملة.', fr: 'Le ministre annonce au Parlement la hausse progressive de la pension minimale à 3 000 DH par mois, 1 700 dès 2027 pour environ 500 000 retraités, et la part des veuves portée de 50 % à 100 % pour environ 431 000 veuves.'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 12 من الملف', fr: 'Discours du ministre, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+    - date: '2026-10-30'
+      text: {ar: 'فجوابو فلجنة المالية، عطا الوزير التدرج، حسب ما نقلات ميدياس24: المعاش الأدنى 1.700 درهم فـ2027 (فالقطاع الخاص من 1.000)، ثم 2.000 فـ2028، و2.500 فـ2029، و3.000 فـ2030.', fr: 'Dans sa réponse à la commission, le ministre donne le calendrier, selon Médias24 : pension minimale à 1 700 DH en 2027 (dans le privé, depuis 1 000), puis 2 000 en 2028, 2 500 en 2029 et 3 000 en 2030.'}
+      source: {name: {ar: 'ميدياس24، أجوبة الوزير فلجنة المالية', fr: 'Médias24, les réponses du ministre à la commission des finances'}, url: 'https://medias24.com/2026/10/31/plf-2027-les-reponses-de-lekjaa-a-la-commission-des-finances-1786030/', file: sources/press/plf2027/medias24-1031-lekjaa.html, sha256: f0101a223a1a33349bc6473ed9b12f701af3e752d969672c7e30c64b59ed8e73}
+
+- key: announced-electricity
+  title: {ar: 'فاتورة الضو حتى 100 درهم (معلن)', fr: 'La facture d’électricité jusqu’à 100 DH (annoncé)'}
+  stage: announced
+  stages: *announced
+  checked_on: '2026-10-31'
+  line: {ar: 'معلن: الدولة غادي تتحمل فاتورة الضو ديال 100 درهم فالشهر ولا أقل (حوالي 6 ملايين زبون)، ماشي ديال الديور الخاوية ولا الثانوية (29% منهم، حسب جواب الوزير فلجنة المالية). ما كاينش فمواد المشروع، وكيفاش ومن امتى ما مكتوبش.', fr: 'Annoncé : l’État prendrait en charge la facture d’électricité de 100 DH par mois ou moins (environ 6 millions de clients), sauf celle des logements vacants ou secondaires (29 % d’entre eux, selon la réponse du ministre en commission). Ce n’est pas dans les articles du projet ; comment et à partir de quand n’est pas écrit.'}
+  timeline:
+    - date: '2026-10-23'
+      text: {ar: 'أعلن الوزير أمام البرلمان أن الدولة غادي تتحمل كل فاتورة ضو كتساوي ولا كتقل على 100 درهم فالشهر، بكلفة سنوية مقدرة بـ2,8 مليار درهم.', fr: 'Le ministre annonce au Parlement que l’État prendra en charge toute facture d’électricité inférieure ou égale à 100 DH par mois, pour un coût annuel estimé à 2,8 milliards de DH.'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 12 من الملف', fr: 'Discours du ministre, page 12 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+    - date: '2026-10-30'
+      text: {ar: 'فجوابو فلجنة المالية، حسب ما نقلات ميدياس24: هاد 6 ملايين زبون كيستهلكو فالمتوسط 56 درهم فالشهر؛ 29% منهم ديور خاوية ولا ثانوية وما غاديش يستافدو؛ و71% الباقيين، فيهم اللي كيخلصو مسبقا فالعالم القروي، غادي ياخدو رصيد كل شهر، بكلفة 2,83 مليار درهم فالعام.', fr: 'Dans sa réponse à la commission, selon Médias24 : ces 6 millions de clients consomment en moyenne 56 DH par mois ; 29 % sont des logements vacants ou secondaires et n’en bénéficieront pas ; les 71 % restants, dont les abonnés prépayés du monde rural, recevront un solde mensuel, pour 2,83 milliards de DH par an.'}
+      source: {name: {ar: 'ميدياس24، أجوبة الوزير فلجنة المالية', fr: 'Médias24, les réponses du ministre à la commission des finances'}, url: 'https://medias24.com/2026/10/31/plf-2027-les-reponses-de-lekjaa-a-la-commission-des-finances-1786030/', file: sources/press/plf2027/medias24-1031-lekjaa.html, sha256: f0101a223a1a33349bc6473ed9b12f701af3e752d969672c7e30c64b59ed8e73}
+
+- key: announced-support
+  title: {ar: 'الدعم الاجتماعي المباشر 600 ثم 1.000 درهم (معلن)', fr: 'L’aide sociale directe à 600 puis 1 000 DH (annoncé)'}
+  stage: announced
+  stages: *announced
+  checked_on: '2026-10-31'
+  line: {ar: 'معلن: الحد الأدنى للدعم المباشر من 500 لـ1.000 درهم فآخر الولاية، و100 درهم زايدة فـ2027. اليوم المبلغ كيحددو المرسوم 2.23.1067، وخاص مرسوم جديد.', fr: 'Annoncé : le minimum de l’aide directe de 500 à 1 000 DH à la fin du mandat, 100 DH de plus en 2027. Le montant d’aujourd’hui est fixé par le décret 2.23.1067 ; il faudra un nouveau décret.'}
+  timeline:
+    - date: '2026-10-23'
+      text: {ar: 'أعلن الوزير الرفع التدريجي للحد الأدنى للدعم الاجتماعي المباشر من 500 إلى 1.000 درهم عند نهاية الولاية، مع زيادة 100 درهم سنة 2027، باعتمادات مقدرة بـ3 ملايير درهم.', fr: 'Le ministre annonce la hausse progressive du minimum de l’aide sociale directe de 500 à 1 000 DH à la fin du mandat, avec 100 DH de plus en 2027, pour des crédits estimés à 3 milliards de DH.'}
+      source: {name: {ar: 'خطاب الوزير، الصفحة 13 من الملف', fr: 'Discours du ministre, page 13 du fichier'}, url: 'https://www.finances.gov.ma/Publication/db/2027/DiscoursPLF2027devantlesdeuxChambres.pdf', file: sources/mef/plf2027/DiscoursPLF2027devantlesdeuxChambres.pdf, sha256: cb8fb571874253ea969b35f6bcdfe096c52ae8c90012dbd270e75230560e3ae1}
+      cites: [/ma/decret/2-23-1067/art_1]
+    - date: '2026-10-30'
+      text: {ar: 'فجوابو فلجنة المالية، حسب ما نقلات ميدياس24: المؤشر غادي يبقى، ولكن خاص إصلاح عاجل فالمتغيرات ديال المصاريف، بحال تعبئة الهاتف، اللي كتخرج أسر من الدعم؛ وفي أفق 2029 المؤشر يولي على مداخيل الأسرة وحدها.', fr: 'Dans sa réponse à la commission, selon Médias24 : l’indice reste, mais les variables de dépense, comme la recharge téléphonique, qui rendent des ménages inéligibles doivent être réformées d’urgence ; d’ici 2029, l’indice ne portera plus que sur les revenus des ménages.'}
+      source: {name: {ar: 'ميدياس24، أجوبة الوزير فلجنة المالية', fr: 'Médias24, les réponses du ministre à la commission des finances'}, url: 'https://medias24.com/2026/10/31/plf-2027-les-reponses-de-lekjaa-a-la-commission-des-finances-1786030/', file: sources/press/plf2027/medias24-1031-lekjaa.html, sha256: f0101a223a1a33349bc6473ed9b12f701af3e752d969672c7e30c64b59ed8e73}

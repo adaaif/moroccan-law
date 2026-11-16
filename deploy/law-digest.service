@@ -1,0 +1,17 @@
+[Unit]
+Description=law: a letter to the moderators about what waited twelve hours (review_digest), once a day at most
+After=docker.service
+
+[Service]
+Type=oneshot
+User=@USER@
+WorkingDirectory=@ROOT@/app/back
+EnvironmentFile=@ROOT@/.env
+# manage.py falls back to the development settings: production's are named here, should .env not name them (a line
+# in .env still wins: systemd lets EnvironmentFile= override Environment=).
+Environment=DJANGO_SETTINGS_MODULE=config.settings.prod
+# No setuid program can raise the service's rights (it runs none: sudo is the deploy's, over ssh), and its /tmp is
+# its own, out of other accounts' sight.
+NoNewPrivileges=yes
+PrivateTmp=yes
+ExecStart=@ROOT@/venv/bin/python manage.py review_digest

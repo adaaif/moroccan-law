@@ -1,0 +1,97 @@
+# «ماركيز، قرارا بعد قرار»: the blog's fourteenth post (S1 of the first-principles review, 6 Nov 2026: «Yes», C1 as
+# recommended, the clock then Marquise). Each price is the row of the soft pack of twenty as each order prints it, read
+# in the corpus's text and, where the text was unsure (1992, 1996, 2024), on the printed page's image (6 Nov 2026). The
+# pack kept one line through its names: «مركيز ف.س» (1956), «ماركيز (K.S.F.)» (1961), «ماركيز» (1976–2003), «ماركيز
+# سويل» (2004), «ماركيز سوبل فول فلافور» (2008), renamed «ماركيز كلاسيك» by the order of BO 6364 bis (2015); the box,
+# light, menthol, 100 mm, ten-cigarette and «MQS» packs are other rows, left out. A person checks every price on its
+# page before the post is published. The figures (manage.py blog_figures marquise) tie each order to its page and
+# address, and take the minimum wage from the sixth post's checked steps.
+slug: marquise
+number: 14
+status: draft
+date: null
+counted_on: 2026-11-06
+title:
+  ar: ماركيز، قرارا بعد قرار، من 140 فرنكا إلى 31 درهما، وساعة و44 دقيقة من العمل
+  fr: Marquise, arrêté après arrêté, de 140 francs à 31 dirhams, et toujours 1 h 44 de travail
+lead:
+  ar: في 1960 حدد قرار لوزير الاقتصاد الوطني والمالية ثمن علبة ماركيز في 140 فرنكا. وفي 2026 صادق قرار لوزيرة الاقتصاد والمالية على 31 درهما، فتضاعف الثمن 22 مرة. لكن بالحد الأدنى للأجر، كانت العلبة تكلف ساعة و44 دقيقة من العمل في 1960، وما زالت تكلفها في 2026. قرأنا سطر ماركيز في 36 قرارا.
+  fr: En 1960, un arrêté du ministre de l’Économie nationale et des Finances fixait le paquet de Marquise à 140 francs. En 2026, un arrêté de la ministre de l’Économie et des Finances homologue 31 dirhams, soit 22 fois plus. Mais au salaire minimum, le paquet coûtait 1 h 44 de travail en 1960, et il les coûte toujours en 2026. Nous avons lu la ligne Marquise dans 36 arrêtés.
+
+# The soft pack of twenty, order by order: the day of the issue, its printed page, the price as printed (francs until
+# 1960; the dirham from 1961 in these orders), the name as printed; from 1976 to 1987 the orders print the price in three
+# columns, «شركة التبغ» (the company), «فلسطين» and the public price. kind and number name the order; akn where the site
+# has cut it. 1992's table is not in the page's text layer (read on its image); 1996's columns were read on the image.
+prices:
+  - {date: 1956-06-08, issue: 2276, page: 913, price: 110, unit: franc, name: "مركيز ف.س", kind: decision, akn: /akn/ma/act/decision/1956-06-08/bo2276-9}
+  - {date: 1960-07-22, issue: 2491, page: 2207, price: 140, unit: franc, name: "ماركيز", kind: decision, number: "60.604", akn: /akn/ma/act/decision/1960/60-604}
+  - {date: 1961-01-20, issue: 2517, page: 127, price: 1.60, unit: dirham, name: "ماركيز (K.S.F.)", kind: order, akn: /akn/ma/act/arrete/2-61}
+  - {date: 1962-02-09, issue: 2572, page: 357, price: 1.70, unit: dirham, name: "ماركيز (ك. س. ف)", kind: order, number: "717.61", akn: /akn/ma/act/arrete/717-61}
+  - {date: 1976-06-23, issue: 3321, page: 2155, price: 2.20, unit: dirham, name: "ماركيز", company: 2.10, palestine: 0.10, kind: decision, number: "76.811", akn: /akn/ma/act/decision/1976/76-811}
+  - {date: 1976-12-29, issue: 3348, page: 3992, price: 2.40, unit: dirham, name: "ماركيز", company: 2.30, palestine: 0.10, kind: order, number: "1422.76", akn: /akn/ma/act/arrete/1422-76}
+  - {date: 1979-01-02, issue: 3452, bis: true, page: 3281, price: 2.85, unit: dirham, name: "ماركيز", company: 2.75, palestine: 0.10, kind: order, number: "1247.78", akn: /akn/ma/act/arrete/1247-78}
+  - {date: 1980-01-09, issue: 3506, page: 52, price: 3.30, unit: dirham, name: "ماركيز", company: 3.20, palestine: 0.10, kind: order, number: "1216.79", akn: /akn/ma/act/arrete/1216-79}
+  - {date: 1980-11-05, issue: 3549, page: 1332, price: 3.50, unit: dirham, name: "ماركيز", company: 3.40, palestine: 0.10, kind: order, number: "1291.80", akn: /akn/ma/act/arrete/1291-80}
+  - {date: 1981-12-23, issue: 3608, page: 1446, price: 4.00, unit: dirham, name: "ماركيز", company: 3.90, palestine: 0.10, kind: order, number: "1305.81", akn: /akn/ma/act/arrete/1305-81}
+  - {date: 1983-02-02, issue: 3666, page: 193, price: 4.60, unit: dirham, name: "ماركيز", company: 4.50, palestine: 0.10, kind: order, number: "118.83", akn: /akn/ma/act/arrete/118-83}
+  - {date: 1983-09-28, issue: 3700, page: 1352, price: 5.40, unit: dirham, name: "ماركيز", company: 5.30, palestine: 0.10, kind: order, number: "1145.83", akn: /akn/ma/act/arrete/1145-83}
+  - {date: 1986-07-16, issue: 3846, page: 798, price: 6.00, unit: dirham, name: "ماركيز", company: 5.90, palestine: 0.10, kind: order, number: "867.86", akn: /akn/ma/act/arrete/867-86}
+  - {date: 1987-03-25, issue: 3882, page: 309, price: 6.30, unit: dirham, name: "ماركيز", company: 6.20, palestine: 0.10, kind: order, number: "525.87", akn: /akn/ma/act/arrete/525-87}
+  - {date: 1988-09-21, issue: 3960, page: 890, price: 7.50, unit: dirham, name: "ماركيز", kind: order, number: "1173.88", akn: /akn/ma/act/arrete/1173-88}
+  - {date: 1991-09-04, issue: 4114, page: 975, price: 10.20, unit: dirham, name: "ماركيز", kind: order, number: "1097.91", akn: /akn/ma/act/arrete/1097-91}
+  - {date: 1992-09-16, issue: 4168, page: 1169, price: 11.20, unit: dirham, name: "ماركيز", kind: order, number: "1238.92", akn: /akn/ma/act/arrete/1238-92}
+  - {date: 1996-07-01, issue: 4391, page: 1277, price: 13.00, unit: dirham, name: "ماركيز", kind: order, number: "1229.96", akn: /akn/ma/act/arrete/1229-96}
+  - {date: 1997-03-20, issue: 4466, page: 495, price: 13.50, unit: dirham, name: "ماركيز", kind: order, number: "307.97", akn: /akn/ma/act/arrete/307-97}
+  - {date: 1998-02-05, issue: 4558, page: 482, price: 14.30, unit: dirham, name: "ماركيز", kind: order, number: "223.98", akn: /akn/ma/act/arrete/223-98}
+  - {date: 1999-07-01, issue: 4704, page: 1775, price: 14.50, unit: dirham, name: "ماركيز", kind: order, number: "1021.99", akn: /akn/ma/act/arrete/1021-99}
+  - {date: 2003-08-04, issue: 5131, page: 2876, price: 15.00, unit: dirham, name: "ماركيز", kind: order, number: "1556.03", akn: /akn/ma/act/arrete/1556-03}
+  - {date: 2004-08-02, issue: 5235, page: 3002, price: 15.50, unit: dirham, name: "ماركيز سويل", kind: order, number: "1382.04", akn: /akn/ma/act/arrete/1382-04}
+  - {date: 2005-08-01, issue: 5339, page: 2167, price: 16.50, unit: dirham, name: "ماركيز سويل", kind: order, number: "1489.05", akn: /akn/ma/act/arrete/1489-05}
+  - {date: 2008-08-21, issue: 5658, page: 2462, price: 17.50, unit: dirham, name: "ماركيز سوبل فول فلافور", kind: order, number: "1436.08", akn: /akn/ma/act/arrete/1436-08}
+  - {date: 2013-03-28, issue: 6138, page: 2703, price: 19.00, unit: dirham, name: "ماركيز سوبل فول فلافور", kind: order, number: "771.13", akn: /akn/ma/act/arrete/771-13}
+  - {date: 2013-12-30, issue: 6217, page: 8046, price: 19.50, unit: dirham, name: "ماركيز سوبل فول فلافور", kind: order, number: "3895.13", akn: /akn/ma/act/arrete/3895-13}
+  - {date: 2014-12-30, issue: 6321, bis: true, page: 8791, price: 20.50, unit: dirham, name: "ماركيز سوبل فول فلافور", kind: decision, number: "4555.14", akn: /akn/ma/act/decision/2014/4555-14}
+  - {date: 2018-12-31, issue: 6739, page: 10106, price: 21.50, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "3948.18", akn: /akn/ma/act/arrete/3948-18}
+  - {date: 2020-08-06, issue: 6906, page: 4275, price: 22.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "2104.20", akn: /akn/ma/act/arrete/2104-20}
+  - {date: 2020-12-31, issue: 6948, page: 8647, price: 23.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "3161.20", akn: /akn/ma/act/arrete/3161-20}
+  - {date: 2021-12-31, issue: 7052, page: 11560, price: 24.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "3982.21", akn: /akn/ma/act/arrete/3982-21}
+  - {date: 2022-12-29, issue: 7156, page: 8425, price: 26.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "3586.22", akn: /akn/ma/act/arrete/3586-22}
+  - {date: 2024-12-30, issue: 7365, page: 10666, price: 28.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "3185.24", akn: /akn/ma/act/arrete/3185-24}
+  - {date: 2025-12-29, issue: 7469, page: 10041, price: 30.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "2927.25", akn: /akn/ma/act/arrete/2927-25}
+  - {date: 2026-03-30, issue: 7495, page: 1911, price: 31.00, unit: dirham, name: "ماركيز كلاسيك", kind: order, number: "627.26", akn: /akn/ma/act/arrete/627-26}
+
+# The 2015 order that renamed the soft pack (its table «الاسم الجديد للمنتوج | التسمية القديمة»).
+renamed: {date: 2015-05-29, issue: 6364, bis: true, page: 5459, old: "ماركيز سوبل فول فلافور", new: "ماركيز كلاسيك", number: "1756.15", akn: /akn/ma/act/arrete/1756-15}
+
+# No order between these two printed a tobacco price in the Bulletin as the site reads it (the price went from 1,70 to 2,20).
+gap: {from: 1962-02-09, to: 1976-06-23}
+
+# The verbs of the titles: the orders «تحدد» (set) the prices until order 587.10 (2010); from 1 March 2013 order 771.13
+# «يصادق» (approves) them and repeals 587.10; since 2024 after «استطلاع رأي اللجنة المكلفة بالمصادقة على أسعار بيع التبغ
+# المصنع للعموم» (order 3251.23's visas), under law 46.02 and decree 2.03.199. Decree 2.76.335 (1976) delegated the
+# setting to the Minister of Finance.
+approve: {date: 2013-03-28, issue: 6138, page: 2702, number: "771.13", akn: /akn/ma/act/arrete/771-13, from: 2013-03-01,
+          words: {ar: "يصادق على أسعار بيع منتوجات التبغ المصنع للعموم طبقا للجدول المرفق بهذا القرار.", fr: "Les prix de vente au public des produits du tabac manufacturé sont homologués conformément au tableau annexé au présent arrêté."}}
+delegate: {date: 1976-06-23, issue: 3321, page: 2154, number: "2.76.335", akn: /akn/ma/act/decret/2-76-335}
+
+# The levy for the Palestinian people: dahir 1.70.16 (BO 3023, 7 Oct 1970, p. 2426), in force from 23 January 1970.
+palestine:
+  dahir: {signed: 1970-07-24, from: 1970-01-23, issue: 3023, page: 2426, akn: /akn/ma/act/dahir/1-70-16}
+  ordinary: 0.05
+  premium: 0.10
+  cinema: [0.10, 0.20]
+  theatre: [0.20, 0.50]
+  words:
+    ar: "يفرض لمساعدة الشعب الفلسطيني أداء خاص على جميع أنواع التبغ. ويستخلص هذا الاداء في شكل تصويرات (فنييت) توضع على علب التبغ والسجائر واللفائف (السيكار)"
+    fr: "Une contribution spéciale est perçue sur tous les tabacs pour aider le peuple palestinien ; elle est perçue sous forme de vignettes apposées sur les paquets de tabac, de cigarettes et de cigares."
+  # The orders print its column from 1976 to 1987; the finance laws of 1985 (4.84, art. 18) and 2003 (45.02, art. 18,
+  # the wholesale distributors pay it) and the 1986 issue's article 11 change how it is collected, never its amount; a
+  # 2021 order delegates its collection (art. 2 of the dahir).
+  changed:
+    - {date: 1985-01-02, issue: 3766, page: 10, law: "4.84", akn: /akn/ma/act/loi/4-84}
+    - {date: 1986-01-01, issue: 3818, page: 27}
+    - {date: 2003-01-01, issue: 5069, bis: true, page: 18, law: "45.02", akn: /akn/ma/act/loi/45-02}
+  applied: {date: 2021-12-31, issue: 7052, bis: true, page: 11662, number: "4034.21", akn: /akn/ma/act/arrete/4034-21}
+
+# A month of work at the minimum wage: 2,288 hours a year (Labour Code art. 184), a twelfth of it.
+hours_a_year: 2288

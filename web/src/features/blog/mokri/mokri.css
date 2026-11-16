@@ -1,0 +1,45 @@
+/* «محمد المقري» (the twenty-fifth post). A signature: the name set large in Markazi as the Bulletin's closings print it,
+   over the years it closed; the name's band violet (what the texts printed), the bars in ink, the Residents General in
+   turn light and dark under it. The printed page is the evidence. */
+
+.mk-hero { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: var(--bp-fig); margin-inline: auto; }
+.mk-signature { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(3.4rem, 2.4rem + 5vw, 6rem); line-height: 1.05; color: var(--color-ink);
+  text-align: center; letter-spacing: 0.01em; }
+.mk-count { margin: 0 0 6px; text-align: center; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 4px 12px; }
+.mk-count b { font-weight: 200; font-size: 2.8rem; line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.mk-count span { font-size: 1.05rem; color: var(--color-ink-soft); max-width: 46ch; }
+.mk-relay svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; touch-action: pan-y; cursor: pointer; }
+.mk-relay svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.mk-grid { stroke: var(--color-rule-soft); stroke-width: 1; }
+.mk-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.mk-bar { fill: color-mix(in srgb, var(--color-ink) 78%, transparent); }
+.mk-bar.is-on { fill: var(--color-ink); }
+.mk-name { fill: var(--color-stamp); transform: scaleX(0); transform-origin: left; transform-box: fill-box; transition: transform 1600ms cubic-bezier(0.3, 0, 0.2, 1); }
+.mk-relay.is-drawn .mk-name { transform: scaleX(1); }
+.mk-name-words { font-family: var(--font-law); font-size: 18px; font-weight: 700; fill: var(--color-on-stamp); opacity: 0; transition: opacity 400ms 1400ms; }
+.mk-relay.is-drawn .mk-name-words { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .mk-name, .mk-name-words { transition: none; } }
+.mk-res rect { fill: var(--color-rule); }
+.mk-res.is-dark rect { fill: color-mix(in srgb, var(--color-ink) 45%, transparent); }
+.mk-res text { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink); }
+.mk-pick { stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 2 3; }
+.mk-stamp { vertical-align: middle; }
+.mk-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.mk-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.mk-share:disabled { opacity: 0.6; }
+
+.mk-clip { display: flex; flex-direction: column; gap: 8px; max-width: 560px; }
+.mk-clip .bp-print { box-shadow: 0 1px 0 var(--color-rule), 0 12px 28px -18px color-mix(in srgb, var(--color-ink) 40%, transparent); }
+.mk-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.mk-signed { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-inline-start: 2px solid var(--color-rule); }
+.mk-signed li { display: grid; grid-template-columns: 4rem minmax(0, 1fr); gap: 4px 14px; padding: 10px 0; padding-inline-start: 14px; position: relative; }
+.mk-signed li::before { content: ''; position: absolute; inset-inline-start: -7px; top: 1rem; inline-size: 12px; block-size: 12px; border-radius: 50%; background: var(--color-stamp); box-shadow: 0 0 0 3px var(--color-paper); }
+.mk-signed-year { font-weight: 300; font-size: 1.4rem; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.mk-signed-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.mk-signed-title { font-family: var(--font-law); font-size: 1.2rem; line-height: 1.6; }
+.mk-signed-title a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.mk-ends { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.mk-ends li { display: flex; flex-direction: column; gap: 2px; }
+.mk-ends span { font-size: var(--text-meta); font-weight: 700; color: var(--color-ink-soft); }
+.mk-ends a { font-family: var(--font-law); font-size: 1.15rem; line-height: 1.6; color: var(--color-ink); }

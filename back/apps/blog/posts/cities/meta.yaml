@@ -1,0 +1,55 @@
+# «المغرب في الجريدة الرسمية»: post 2 of the places review (PL13–PL17). Counted by `manage.py blog_figures cities`
+# from what `build_places` found (apps/places): the texts as published that name a city or its province of the same name.
+# From No. 1 since 6 Nov 2026 (BH12 of the posts-from-No.-1 review).
+slug: cities
+number: 12
+status: draft
+date: null
+counted_on: 2026-11-06
+span: [1913, 2025]
+title:
+  ar: "المغرب في الجريدة الرسمية"
+  fr: "Le Maroc au Bulletin officiel"
+lead:
+  ar: "في 1913–1919 كان نص من كل 9 نصوص في الجريدة الرسمية يذكر الدار البيضاء، وفي 1950–1955 نص من كل 5، وفي 2020–2025 نص من كل 16. وقبل 1956 لم تكد تذكر تطوان والحسيمة والناظور. عددنا 243 مدينة في 183.327 نصا منذ العدد الأول، وقرأنا على صفحاتها النص الذي أمر بإحصاء «سكان المنطقة الفرنسوية بالمغرب» سنة 1936، والذي سمّى مدن الشمال سنة 1959، والذي أحدث أقاليم العيون والسمارة وبوجدور سنة 1976."
+  fr: "En 1913–1919, un texte sur 9 du Bulletin officiel citait Casablanca ; en 1950–1955, un sur 5 ; en 2020–2025, un sur 16. Avant 1956, Tétouan, Al Hoceïma et Nador n’y paraissaient presque pas. Nous avons compté 243 villes dans 183 327 textes depuis le numéro 1, et lu sur leurs pages le dahir qui a ordonné le recensement de « la population de la zone française du Maroc » en 1936, le décret qui a nommé les villes du Nord en 1959 et le dahir qui a créé les provinces de Laâyoune, Smara et Boujdour en 1976."
+# Thirteen periods from No. 1 (C3 of the posts-from-No.-1 review: decades, a line at 1956): 1913–1919, the decades, the
+# 1950s cut at independence (1950–1955 | 1956–1959), and the years since 2020.
+periods: [[1913, 1919], [1920, 1929], [1930, 1939], [1940, 1949], [1950, 1955], [1956, 1959], [1960, 1969], [1970, 1979], [1980, 1989],
+          [1990, 1999], [2000, 2009], [2010, 2019], [2020, 2025]]
+moves: {floor: 300, most: 6}
+# Since 2020, texts per 10,000 inhabitants (PL16), for cities of at least this many (the 2024 census decree).
+people_floor: 20000
+
+# Read on their printed pages (1 Nov 2026), each the text that gave a city its name or its province (PL13, PL15).
+stops:
+  # Read on page 67 of BO 1212 (6 Nov 2026; the site holds its first page as 57, the issue's cover and index). The
+  # Bulletin before 1956 in its own words (BH12): the census it orders is the French zone's.
+  - key: zone
+    text: /akn/ma/act/dahir/1936-01-17/bo1212-5
+    issue: "1212"
+    date: 1936-01-17
+    page: 67
+    ar: "ظهير 17 رمضان 1354 (14 دجنبر 1935) أمر بأن «يباشر بتاريخ 8 مارس سنة 1936 باحصاء سكان المنطقة الفرنسوية بالمغرب وذلك بهمة الولاة البلديين وولاة المراقبة المحليين»."
+    fr: "Le dahir du 17 ramadan 1354 (14 décembre 1935) ordonne qu’il soit « procédé le 8 mars 1936 au recensement de la population de la zone française du Maroc », par les autorités municipales et celles du contrôle local (texte arabe)."
+  - key: north
+    text: /akn/ma/act/decret/2-59-514
+    issue: "2447"
+    date: 1959-09-18
+    page: 2786
+    ar: "المرسوم 2.59.514 أطلق على مدن الشمال وقراه أسماءها: أصيلة عوض «أرزيلا»، والمضيق عوض «رينكون»، والفنيدق عوض «كاسطيليخوس»، ومرتيل عوض «ريومرتان»، ورأس كبدانة عوض «كابواكواء»."
+    fr: "Le décret 2.59.514 a donné leurs noms aux villes et villages du Nord : Asilah au lieu d’« Arzila », M’diq au lieu de « Rincón », Fnideq au lieu de « Castillejos », Martil au lieu de « Río Martín », Ras Kebdana au lieu de « Cabo de Agua »."
+  - key: south
+    text: /akn/ma/act/dahir/1-76-468
+    issue: "3328"
+    date: 1976-08-11
+    page: 2610
+    ar: "الظهير 1.76.468 قسم المملكة إلى 31 إقليما وعمالتين، منها أقاليم العيون والسمارة وبوجدور، وأحل اسم «الرشيدية» محل «قصر السوق» في كل النصوص."
+    fr: "Le dahir 1.76.468 divise le Royaume en 31 provinces et 2 préfectures, dont Laâyoune, Smara et Boujdour, et met « Errachidia » à la place de « Ksar es-Souk » dans tous les textes."
+  - key: dakhla
+    text: /akn/ma/act/decret/2-79-430
+    issue: "3485"
+    date: 1979-08-15
+    page: 1969
+    ar: "المرسوم 2.79.430 جعل الأقاليم 36، منها إقليم وادي الذهب."
+    fr: "Le décret 2.79.430 porte les provinces à 36, dont celle d’Oued Eddahab."

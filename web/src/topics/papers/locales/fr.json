@@ -1,0 +1,257 @@
+{
+  "instruments": {
+    "card": "Ma carte",
+    "cardLine": "Quand elle expire, quand la renouveler",
+    "clock": "Les délais de l’état civil",
+    "clockLine": "30 jours pour une naissance ou un décès, un an à l’étranger",
+    "counter": "L’administration n’a pas répondu",
+    "counterLine": "60 jours pour répondre, 30 pour le recours"
+  },
+  "card": {
+    "title": "Ma carte",
+    "lead": "Quand elle expire, quand la renouveler, combien elle coûte, ce que coûte un retard",
+    "start": "Indiquez la date de naissance",
+    "startEnd": "Indiquez la date d’expiration imprimée sur la carte",
+    "startOver": "Votre carte nationale",
+    "renewNow": "À renouveler",
+    "dueNow": "À demander",
+    "dueOn": "Obligatoire dès le {{date}}",
+    "validOver": "Valable jusqu’au {{date}}",
+    "renewOver": "Selon la loi 04.20, article 13",
+    "noneOver": "Pas encore de carte",
+    "under": {
+      "none-young": "Avant 16 ans, elle n’est pas obligatoire ; votre représentant légal peut la demander.",
+      "none-due": "Dès 16 ans, elle est obligatoire ; qui ne la demande pas encourt de {{min}} à {{max}}.",
+      "valid": "Si l’adresse ou le nom change, ou si elle est perdue, il faut la renouveler avant.",
+      "renew": "Le renouvellement est obligatoire dans ce cas, même si la date n’est pas passée."
+    },
+    "faceEnd": "Date d’expiration",
+    "faceIfToday": "Faite aujourd’hui, valable jusqu’au",
+    "birth": "Date de naissance",
+    "birthNote": "Choisissez le jour",
+    "has": "Avez-vous la carte ?",
+    "hasYes": "Oui",
+    "hasNo": "Non",
+    "end": "Date d’expiration imprimée sur la carte",
+    "endNote": "Au recto de la carte",
+    "changed": "Quelque chose a changé depuis ?",
+    "events": {
+      "moved": "J’ai déménagé",
+      "name": "Mon nom a changé",
+      "birthday": "Date ou lieu de naissance corrigé",
+      "marital": "Marié(e) ou veuf/veuve",
+      "lost": "Perdue, volée ou abîmée"
+    },
+    "why": "Pourquoi la renouveler",
+    "reasons": {
+      "moved": "Le changement d’adresse",
+      "name": "Le changement de prénom ou de nom",
+      "birthday": "Le changement de la date de naissance, ou la rectification du lieu, du numéro d’acte ou de la filiation",
+      "marital": "Le changement de la mention «épouse», «veuve» ou «veuf»",
+      "lost": "La perte, le vol ou la détérioration",
+      "expired": "Sa validité est passée",
+      "twelve": "L’enfant a 12 ans : la carte se renouvelle et ses empreintes sont prises"
+    },
+    "fineRenew": "Qui ne demande pas le renouvellement dans ces cas encourt de {{min}} à {{max}}.",
+    "twelve": "La carte d’un enfant expire la veille de ses 12 ans : renouvellement le {{date}}, avec les empreintes.",
+    "fee": "Le timbre : {{fee}}.",
+    "ifToday": "Faite aujourd’hui, elle serait valable jusqu’au {{date}}.",
+    "spares": "La carte dispense de l’acte de naissance, du certificat de résidence, du certificat de vie et du certificat de nationalité.",
+    "toList": "La liste des pièces",
+    "toJourney": "Tout le parcours",
+    "remind": "Rappel deux mois avant",
+    "share": "Partager sur WhatsApp",
+    "remindTitle": "La carte nationale expire dans deux mois",
+    "message": "Ma carte (3adala)",
+    "left_one": "Encore 1 jour",
+    "left_other": "Encore {{count}} jours"
+  },
+  "clock": {
+    "title": "Les délais de l’état civil",
+    "lead": "Dès le jour de l’événement : le dernier jour",
+    "which": "Que s’est-il passé ?",
+    "moments": {
+      "birth": "Une naissance",
+      "death": "Un décès",
+      "birth-abroad": "Une naissance à l’étranger",
+      "death-abroad": "Un décès à l’étranger",
+      "travel": "En avion ou en bateau",
+      "error": "J’ai demandé une correction matérielle",
+      "late": "J’ai demandé l’autorisation après le délai"
+    },
+    "day": {
+      "birth": "Le jour de la naissance",
+      "death": "Le jour du décès",
+      "birth-abroad": "Le jour de la naissance",
+      "death-abroad": "Le jour du décès",
+      "travel": "Le jour d’arrivée au premier aéroport ou port",
+      "error": "Le jour où la demande est parvenue à l’autorité centrale",
+      "late": "Le jour de la demande"
+    },
+    "for": {
+      "birth": "Le dernier jour pour compléter la déclaration de naissance",
+      "death": "Le dernier jour pour compléter la déclaration de décès",
+      "birth-abroad": "Le dernier jour pour déclarer la naissance à l’étranger",
+      "death-abroad": "Le dernier jour pour déclarer le décès à l’étranger",
+      "travel": "Le dernier jour pour déclarer",
+      "error": "Le délai de réponse de l’autorité centrale",
+      "late": "Le délai de réponse de l’autorité centrale"
+    },
+    "after": {
+      "birth": "Après ce jour, l’acte n’est inscrit que sur autorisation de l’autorité centrale, ou par jugement si elle refuse.",
+      "death": "Après ce jour, l’acte n’est inscrit que sur autorisation de l’autorité centrale ; un décès à l’hôpital est inscrit par l’officier lui-même dans les 60 jours.",
+      "birth-abroad": "Les Marocains de l’étranger ont un an ; ensuite, sur autorisation de l’autorité centrale.",
+      "death-abroad": "Les Marocains de l’étranger ont un an ; ensuite, sur autorisation de l’autorité centrale.",
+      "travel": "Le délai court du lendemain de l’arrivée au premier aéroport ou port.",
+      "error": "Si l’autorité centrale refuse, la demande va au président du tribunal compétent.",
+      "late": "En cas de refus, on peut saisir le tribunal compétent."
+    },
+    "passed": "Délai passé",
+    "lastDay": "Dernier jour : {{date}}",
+    "remind": "Ajouter à l’agenda",
+    "remindTitle": "Dernier délai : état civil",
+    "toJourney": "Tout le parcours",
+    "share": "Partager sur WhatsApp",
+    "message": "Les délais de l’état civil (3adala)",
+    "left_one": "Encore 1 jour",
+    "left_other": "Encore {{count}} jours"
+  },
+  "counter": {
+    "title": "L’administration n’a pas répondu",
+    "lead": "Le jour du dossier complet : réponse, recours, réponse au recours",
+    "waitingOver": "L’administration doit répondre au plus tard le {{date}}",
+    "appealOver": "Dernier jour du recours administratif : {{date}}",
+    "lateOver": "Le délai du recours administratif est passé",
+    "late": "Délai passé",
+    "under": {
+      "waiting": "Le délai court du reçu portant «dossier déposé».",
+      "appeal": "Le recours va au supérieur de l’administration qui délivre la décision ; il répond en 15 jours.",
+      "late": "Les trente jours du recours administratif sont passés."
+    },
+    "deposit": "Le jour du dossier complet",
+    "depositNote": "Si le reçu porte «dossier en cours de dépôt», choisissez le jour où vous avez complété les pièces.",
+    "kind": "Quelle décision ?",
+    "kinds": {
+      "general": "Une décision ordinaire (60 jours)",
+      "investment": "Une décision d’investissement (30 jours)",
+      "own": "L’administration a publié son délai"
+    },
+    "own": "Le délai publié",
+    "ownNote": "Pas plus de 60 jours",
+    "refused": "Vous a-t-on opposé un refus ?",
+    "refusedNo": "Non",
+    "refusedYes": "Refus",
+    "refusedOn": "Le jour où le refus vous est parvenu",
+    "stops": {
+      "deposit": {
+        "title": "Le dossier complet",
+        "line": "Le reçu portant «dossier déposé»"
+      },
+      "answer": {
+        "title": "Le dernier jour de la réponse",
+        "line": "Ensuite, le silence ouvre le recours (ou vaut accord pour les décisions listées)"
+      },
+      "refused": {
+        "title": "Le refus",
+        "line": "Il doit être motivé"
+      },
+      "appeal": {
+        "title": "Le dernier jour du recours administratif",
+        "line": "30 jours après la fin du délai ou le refus"
+      },
+      "reply": {
+        "title": "Le dernier jour de la réponse au recours",
+        "line": "15 jours après sa réception (comptés ici du dernier jour du recours)"
+      }
+    },
+    "complete": "Les délais sont francs : ni le jour de départ ni le dernier jour ne comptent.",
+    "rights": "Vos droits au guichet",
+    "right": {
+      "receipt": "Un reçu sur-le-champ ; «dossier en cours de dépôt» écrit la liste complète de ce qui manque, en une fois.",
+      "once": "Aucune pièce ne vous est demandée deux fois, ni légalisation, ni copie conforme.",
+      "reasons": "Un refus doit dire pourquoi.",
+      "silence": "Permis de construire, d’habiter, de lotir, de démolir : le silence après le délai vaut accord."
+    },
+    "toJourney": "Le parcours du recours",
+    "toPage": "Vos droits au guichet",
+    "remind": "Ajouter à l’agenda",
+    "share": "Partager sur WhatsApp",
+    "message": "Les délais de l’administration (loi 55.19, 3adala)",
+    "waiting_one": "Encore 1 jour pour répondre",
+    "waiting_other": "Encore {{count}} jours pour répondre",
+    "appeal_one": "Encore 1 jour pour le recours",
+    "appeal_other": "Encore {{count}} jours pour le recours",
+    "days_one": "{{count}} jour",
+    "days_other": "{{count}} jours"
+  },
+  "names": {
+    "title": "Ce prénom est-il accepté ?",
+    "lead": "Les règles que la loi écrit, et qui décide du reste",
+    "startOver": "Écrivez le prénom choisi",
+    "start": "Le prénom",
+    "over": "«{{name}}»",
+    "clear": "Aucune règle écrite ne l’interdit",
+    "clearUnder": "Le reste relève de l’officier d’état civil, ci-dessous.",
+    "brokenUnder": "Cette règle est écrite dans la loi 36.21, article 34.",
+    "field": "Le prénom",
+    "placeholder": "Par exemple : Younes, Tilila, Mohamed Amine",
+    "rules": {
+      "two": "Pas composé de plus de deux prénoms",
+      "title": "Sans titre devant, comme «Moulay», «Sidi» ou «Lalla»",
+      "number": "Sans numéro ni nombre après"
+    },
+    "found": {
+      "two": "{{found}} prénoms",
+      "title": "«{{found}}»",
+      "number": "«{{found}}»"
+    },
+    "rulesFrom": "Les règles viennent de",
+    "officerTitle": "Ce que l’officier juge",
+    "officer": {
+      "morals": "Pas contraire aux bonnes mœurs ni à l’ordre public",
+      "family": "Pas un nom de famille",
+      "ridicule": "Pas ridicule",
+      "place": "Pas un nom de ville, de village ou de tribu"
+    },
+    "commission": "Si l’officier estime le prénom non conforme et que vous y tenez, il reçoit la déclaration à titre provisoire et saisit la Haute commission de l’état civil, qui accepte ou refuse par une décision motivée.",
+    "scripts": "Le prénom s’écrit en arabe, avec le tifinagh et le latin à côté.",
+    "toBirth": "Déclarer la naissance",
+    "toChange": "Changer de prénom plus tard",
+    "never": "Cet outil ne dit pas qu’un prénom est accepté : il ne lit que les règles que la loi écrit en toutes lettres.",
+    "broken_one": "1 règle non respectée",
+    "broken_other": "{{count}} règles non respectées"
+  },
+  "rehab": {
+    "title": "Quand la condamnation s’efface-t-elle ?",
+    "lead": "Le bulletin n° 3, la réhabilitation de plein droit ou sur demande",
+    "over": "N’apparaît plus au bulletin n° 3 dès le {{date}}",
+    "neverOver": "Le bulletin n° 3",
+    "never": "N’y apparaît pas",
+    "done": "Effacée de plein droit",
+    "under": "Si aucune nouvelle peine de prison pour crime ou délit n’est prononcée pendant ce délai.",
+    "neverUnder": "Le bulletin n° 3 ne porte que les peines de prison fermes ; l’amende, le sursis et les autres peines n’y figurent pas.",
+    "kind": "Quelle était la peine ?",
+    "kinds": {
+      "fine": "Une amende",
+      "short": "Prison de 6 mois au plus",
+      "two": "Prison jusqu’à deux ans",
+      "long": "Prison de plus de deux ans (délit)",
+      "felony": "Une peine criminelle",
+      "other": "Une autre peine criminelle, ni prison ni amende",
+      "suspended": "Avec sursis"
+    },
+    "ended": {
+      "fine": "Le jour où l’amende a été payée",
+      "suspended": "Le jour où la décision est devenue définitive",
+      "served": "Le jour où la peine a pris fin"
+    },
+    "byLaw": "Réhabilitation de plein droit : {{date}}.",
+    "byRequest": "Vous pouvez la demander au juge dès le {{date}}.",
+    "condition": "La loi écrit ces délais sans nouvelle peine privative de liberté pendant leur cours ; en récidive, ils sont plus longs.",
+    "after": "Après la réhabilitation, la peine ne figure plus au bulletin n° 3, et vous obtenez sans frais une copie de la décision et un extrait du casier.",
+    "card2": "Le bulletin n° 2 ne vous est pas remis : il va aux juges et aux administrations pour un recrutement public, et il en dit plus.",
+    "toJourney": "Le bulletin n° 3 : le parcours",
+    "left_one": "Encore 1 jour",
+    "left_other": "Encore {{count}} jours"
+  }
+}

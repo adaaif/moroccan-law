@@ -1,0 +1,74 @@
+# The end of a job: a short summary on the run's page (the result, the command that reproduces it on a developer's
+# machine, and the tests that failed when the job left JUnit files), and the job's reports kept as an artifact named
+# `<name>-reports` when it did not pass. The reports are what the job puts into $RUNNER_TEMP/reports (its log, the
+# smoke's screenshots) and what tools/ci's scripts leave in back/.reports (pytest's JUnit files, coverage's report).
+name: Job report
+description: Writes the job's summary and uploads $RUNNER_TEMP/reports when the job did not pass (or always, if asked).
+inputs:
+  name:
+    description: The job's short name; the artifact is `<name>-reports`.
+    required: true
+  command:
+    description: The command that runs the same check on a developer's machine.
+    required: true
+  status:
+    description: The job's status so far (job.status).
+    required: true
+  keep:
+    description: "'always' to upload the reports whatever the result."
+    required: false
+    default: failure
+runs:
+  using: composite
+  steps:
+    - name: Summary
+      shell: bash
+      env:
+        NAME: ${{ inputs.name }}
+        COMMAND: ${{ inputs.command }}
+        STATUS: ${{ inputs.status }}
+      run: |
+        reports="$RUNNER_TEMP/reports"
+        mkdir -p "$reports"
+        if [ -d back/.reports ]; then mkdir -p "$reports/back" && cp -R back/.reports/. "$reports/back/"; fi
+        xml=()
+        while IFS= read -r -d '' file; do xml+=("$file"); done < <(find "$reports" -name '*.xml' -print0)
+        {
+          echo "### $NAME: $STATUS"
+          echo
+          echo "On your machine: \`$COMMAND\` (docs/ci.md)."
+          if [ ${#xml[@]} -gt 0 ]; then
+            python3 - "${xml[@]}" <<'PY'
+        import sys
+        import xml.etree.ElementTree as ET
+
+        tests = failed = skipped = 0
+        names = []
+        for path in sys.argv[1:]:
+            root = ET.parse(path).getroot()
+            if root.tag not in ('testsuites', 'testsuite'):
+                continue   # not a JUnit file (coverage's report, say)
+            for suite in root.iter('testsuite'):
+                tests += int(suite.get('tests', 0))
+                skipped += int(suite.get('skipped', 0))
+            for case in root.iter('testcase'):
+                if case.find('failure') is not None or case.find('error') is not None:
+                    failed += 1
+                    names.append(f"{case.get('classname', '')}::{case.get('name', '')}")
+        print(f'\n{tests} tests, {failed} failed, {skipped} skipped.')
+        for name in names[:20]:
+            print(f'- `{name}`')
+        if len(names) > 20:
+            print(f'- and {len(names) - 20} more (the reports artifact has them all)')
+        PY
+          fi
+        } >> "$GITHUB_STEP_SUMMARY"
+
+    - name: Keep the reports
+      if: inputs.status != 'success' || inputs.keep == 'always'
+      uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+      with:
+        name: ${{ inputs.name }}-reports
+        path: ${{ runner.temp }}/reports
+        if-no-files-found: ignore
+        retention-days: 14

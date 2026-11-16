@@ -1,0 +1,53 @@
+# The consumer in numbers (N1 of the consumer plan, K7: only the bodies' own reports): the complaints Bank
+# Al-Maghrib's banking supervision department received from the credit institutions' customers, and the files the
+# Moroccan Centre for Banking Mediation received, each year from the annual banking supervision report that prints it,
+# read on its page on 24 Oct 2026 (the PDF's page). A year's figure comes from the newest report that gives it; 2025's
+# CMMB figure is «demandes de médiation», the earlier ones «dossiers complets». The ministry's portal and the ANRT
+# publish no yearly count the site could find on an official page; nothing is drawn for them.
+
+files:
+  dsb2019: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2019', url: 'https://www.bkam.ma/fr/content/download/710853/8205665/Rapport%20SB%202019.pdf', path: sources/consumer/bkam_dsb_2019.pdf, sha256: 1e669e797879de57698fb3ddede3192ad76e50ef6687d26caa5ed14b6e318f7d}
+  dsb2020: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2020', url: 'https://www.bkam.ma/fr/content/download/739538/8419638/BKAM-DSB-2020.pdf', path: sources/consumer/bkam_dsb_2020.pdf, sha256: b1604793cf14d69a4eacbc5ec506fe6ccdb6977115e32964dd4e0e4608720575}
+  dsb2021: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2021', url: 'https://www.bkam.ma/fr/content/download/765225/8597844/Rapport-DSB-2021.pdf', path: sources/consumer/bkam_dsb_2021.pdf, sha256: a3963960f17ec3104a838b5d0d69c817e9b962316ee1862c7e80e6f0a32ed23e}
+  dsb2022: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2022', url: 'https://www.bkam.ma/fr/content/download/788225/8756160/VF%20Rapport%20DSB%202022.pdf', path: sources/consumer/bkam_dsb_2022.pdf, sha256: 69c7395ed9f01c7e34f52c870ed26b68f2e82edfca17b94facfbdf02b34f2b3c}
+  dsb2023: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2023', url: 'https://www.bkam.ma/fr/content/download/809419/8901391/Rapport%20DSB%202023.pdf', path: sources/consumer/bkam_dsb_2023.pdf, sha256: 35af2537d96cb13918e76a08d1a5400ac83c0df621c5d6a6032a5a2c5a835868}
+  dsb2024: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2024', url: 'https://www.bkam.ma/fr/content/download/828688/9035256/Rapport%20DSB%202024.pdf', path: sources/consumer/bkam_dsb_2024.pdf, sha256: 2b39a73ad0322120ee649dd5ce0a760f58f7b19b59d88478eb99eef7ad2c3e8d}
+  dsb2025: {title: 'Bank Al-Maghrib – Rapport annuel sur la supervision bancaire, exercice 2025', url: 'https://www.bkam.ma/fr/content/download/847382/9161972/Rapport%20DSB%202025.pdf', path: sources/consumer/bkam_dsb_2025.pdf, sha256: 7d376375e9b0aad71b7ce14595b2dfe67b4b9c4f199c63819ef742f1b4601db2}
+
+series:
+  - key: bank-complaints
+    title: {ar: 'الشكايات الموجهة إلى بنك المغرب', fr: 'Les réclamations reçues par Bank Al-Maghrib'}
+    lead:
+      ar: 'عدد الشكايات التي توصلت بها مديرية الإشراف البنكي من زبناء مؤسسات الائتمان، حسب التقرير السنوي لبنك المغرب.'
+      fr: 'Le nombre de réclamations reçues par la Direction de la supervision bancaire de la part de la clientèle des établissements de crédit, selon le rapport annuel de Bank Al-Maghrib.'
+    table: 'الشكايات حسب السنة ومصدر كل رقم'
+    unit: count
+    lines:
+      - {key: complaints, label: {ar: الشكايات, fr: Réclamations}}
+    years:
+      - {year: 2019, complaints: 710, from: dsb2021, page: 174}
+      - {year: 2020, complaints: 826, from: dsb2021, page: 174}
+      - {year: 2021, complaints: 1210, from: dsb2021, page: 174}
+      - {year: 2022, complaints: 1009, from: dsb2022, page: 166}
+      - {year: 2023, complaints: 1459, from: dsb2023, page: 165}
+      - {year: 2024, complaints: 2298, from: dsb2024, page: 175}
+      - {year: 2025, complaints: 3591, from: dsb2025, page: 182}
+  - key: mediation
+    title: {ar: 'ملفات الوساطة البنكية', fr: 'Les dossiers de médiation bancaire'}
+    lead:
+      ar: 'عدد الملفات التي توصل بها المركز المغربي للوساطة البنكية، حسب التقرير السنوي لبنك المغرب.'
+      fr: 'Le nombre de dossiers reçus par le Centre marocain de médiation bancaire, selon le rapport annuel de Bank Al-Maghrib.'
+    table: 'ملفات الوساطة حسب السنة ومصدر كل رقم'
+    unit: count
+    lines:
+      - {key: files, label: {ar: الملفات, fr: Dossiers}}
+    years:
+      - {year: 2019, files: 1458, from: dsb2019, page: 121}
+      - {year: 2020, files: 2475, from: dsb2020, page: 174}
+      - {year: 2021, files: 3361, from: dsb2021, page: 176}
+      - {year: 2022, files: 3687, from: dsb2022, page: 168}
+      - {year: 2023, files: 4189, from: dsb2023, page: 167}
+      - {year: 2024, files: 5084, from: dsb2024, page: 177}
+      - {year: 2025, files: 6674, from: dsb2025, page: 184}
+    notes:
+      - {ar: 'رقم 2025 «طلبات وساطة»، والأرقام قبله «ملفات كاملة»، كما يقول كل تقرير.', fr: 'Le chiffre de 2025 compte des « demandes de médiation », les précédents des « dossiers complets », comme le dit chaque rapport.'}

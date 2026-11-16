@@ -1,0 +1,37 @@
+{
+  "close": "Fermer cette partie",
+  "remove": "Retirer",
+  "later": {
+    "title": "Un héritier est-il décédé depuis ?",
+    "lead": "Décédé après le défunt et avant le partage : sa part passe à ses propres héritiers, et la réponse en fait le compte.",
+    "first": "Indiquez d’abord la première famille.",
+    "pick": "Qui ?",
+    "add": "+ {{who}}",
+    "none": "Plus aucun héritier à ajouter ici.",
+    "died_m": "{{who}} · décédé depuis",
+    "died_f": "{{who}} · décédée depuis",
+    "family_m": "Sa famille au jour de son décès",
+    "family_f": "Sa famille au jour de son décès",
+    "hint_m": "Comptez de nouveau ceux d’au-dessus s’ils sont aussi ses héritiers (les enfants de la veuve sont les siens). Le premier défunt ne compte pas ici.",
+    "hint_f": "Comptez de nouveau ceux d’au-dessus s’ils sont aussi ses héritiers (les enfants de la veuve sont les siens). Le premier défunt ne compte pas ici.",
+    "gone": "Cet héritier ne reçoit rien dans la première succession : il n’y a rien à transmettre.",
+    "more": "Un autre héritier est-il décédé depuis ?"
+  },
+  "tanzil": {
+    "title": "Le tanzil (substitution)",
+    "lead": "Le tanzil place une personne qui n’hérite pas (souvent un petit-enfant) à la place d’un fils ou d’une fille : elle reçoit comme lui, dans la limite du tiers.",
+    "as": "À la place de qui ?",
+    "son": "D’un fils",
+    "daughter": "D’une fille",
+    "count": "Combien de personnes ?",
+    "equalYes": "Oui, en termes exprès",
+    "equalNo": "Non, ou nous ne savons pas",
+    "byRise": "Le cas se compte par réduction proportionnelle (‘awl) : la charge pèse sur tous (art. 317, § 1).",
+    "byAmong": "La personne est comptée parmi les héritiers et reçoit la part de celui qu’elle remplace ; le reste se partage comme s’il n’y avait pas de tanzil (art. 317, § 2).",
+    "agreed": "Les héritiers acceptent-ils plus que le tiers ?",
+    "yes": "Oui",
+    "no": "Non",
+    "equal_m": "A-t-il dit : « comme mon enfant, à égalité » ?",
+    "equal_f": "A-t-elle dit : « comme mon enfant, à égalité » ?"
+  }
+}

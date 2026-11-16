@@ -1,0 +1,58 @@
+/* «15 يوما: الأجل المفضل في القانون المغربي» (the twenty-third post). The wall calendar every Moroccan home keeps: leaves
+   with an ink band and three rings, the number large in Readex Pro's lightest weight; the four deadlines the law writes
+   most stacked, the front one tilting forward when picked. The scale of time is the law's own count, its bubbles violet. */
+
+.dl-hero { margin: 0 -16px; padding: 24px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 640px) { .dl-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.dl-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem); line-height: 1.25; }
+.bp:lang(fr) .dl-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.8rem); }
+.dl-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: center; }
+@media (min-width: 760px) { .dl-hero-grid { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 32px; } }
+
+/* The pad of leaves: the front one whole, the others peeking behind it, each a step up and aside. */
+.dl-pad { position: relative; block-size: 350px; max-inline-size: 300px; inline-size: 100%; margin-inline: auto; }
+.dl-leaf { --depth: 0; position: absolute; inset-inline: 0; bottom: 0; block-size: 270px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+  padding: 0 0 14px; border: 2px solid var(--color-ink); border-radius: 6px; background: var(--color-sheet); color: var(--color-ink); font: inherit; cursor: pointer;
+  transform: translate(calc(var(--depth) * 14px), calc(var(--depth) * -30px)) scale(calc(1 - var(--depth) * 0.04)); z-index: calc(10 - var(--depth));
+  transition: transform 380ms cubic-bezier(0.3, 0, 0.2, 1), box-shadow 380ms; box-shadow: 0 10px 24px -16px color-mix(in srgb, var(--color-ink) 60%, transparent); overflow: hidden; }
+.dl-leaf[aria-checked="true"] { box-shadow: 0 18px 36px -18px color-mix(in srgb, var(--color-ink) 70%, transparent); }
+.dl-leaf:not([aria-checked="true"]) > :not(.dl-leaf-rings) { visibility: hidden; }
+.dl-leaf:not([aria-checked="true"]) .dl-leaf-rank { visibility: visible; }
+@media (prefers-reduced-motion: reduce) { .dl-leaf { transition: none; } }
+.dl-leaf-rings { align-self: stretch; display: flex; justify-content: center; gap: 46px; block-size: 40px; align-items: center; background: var(--color-ink); margin-block-end: 8px; }
+.dl-leaf-rings i { inline-size: 12px; block-size: 12px; border-radius: 50%; background: var(--color-paper); }
+.dl-leaf-rank { position: absolute; top: 9px; inset-inline-start: 10px; font-size: 14px; font-weight: 700; color: var(--color-paper); }
+.dl-leaf-n { font-weight: 200; font-size: 7.4rem; line-height: 1; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.dl-leaf-unit { font-weight: 600; font-size: 1.35rem; margin-block-start: 2px; }
+.dl-leaf-times { font-size: var(--text-meta); color: var(--color-ink-soft); margin-block-start: 4px; }
+
+.dl-hero-words { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.dl-say { margin: 0; font-family: var(--font-law); font-size: 1.35rem; line-height: 1.6; text-wrap: pretty; }
+.bp:lang(fr) .dl-say { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; }
+.dl-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-stamp); font-family: var(--font-law); font-size: 1.2rem; line-height: 1.75; text-wrap: pretty; text-align: right; }
+.dl-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.dl-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.dl-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.dl-share:disabled { opacity: 0.6; }
+
+/* ── The scale of time ────────────────────────────────────────────────────────────────────────────────────────── */
+.dl-scale svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; touch-action: pan-y; cursor: pointer; }
+.dl-scale svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.dl-rail { stroke: var(--color-ink); stroke-width: 1.5; }
+.dl-tick { stroke: var(--color-ink); stroke-width: 1.5; }
+.dl-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); }
+.dl-bub line { stroke: color-mix(in srgb, var(--color-stamp) 70%, transparent); stroke-width: 3; stroke-linecap: round; }
+.dl-bub circle { fill: var(--color-stamp); }
+.dl-bub.is-on line { stroke: var(--color-ink); }
+.dl-bub.is-on circle { fill: var(--color-ink); }
+.dl-lead { stroke: var(--color-rule); stroke-width: 1 !important; stroke-dasharray: 2 3; }
+.dl-bub-label { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--color-ink); paint-order: stroke; stroke: var(--color-sheet); stroke-width: 4px; stroke-linejoin: round; }
+
+/* ── The list ─────────────────────────────────────────────────────────────────────────────────────────────────── */
+.dl-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px; }
+.dl-list li { display: flex; flex-direction: column; gap: 6px; padding-block-end: 14px; border-bottom: 1px solid var(--color-rule-soft); }
+.dl-list-head { margin: 0; display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) auto; align-items: center; gap: 10px; }
+.dl-list-head b { font-size: 1.15rem; }
+.dl-bar { block-size: 10px; border-radius: 5px; background: color-mix(in srgb, var(--color-stamp) 55%, transparent); justify-self: start; min-inline-size: 4px; }
+.dl-list-times { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }

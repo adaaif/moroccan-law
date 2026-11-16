@@ -1,0 +1,449 @@
+# The justice topic's journeys (the justice review): what happens, step by step, each step on the articles it rests
+# on, the limits as the texts set them. Written from the criminal procedure 22.01 (Adala's consolidation with law 03.23),
+# the civil procedure 58.25, royal decree 514.65 on legal aid, the lawyers' law 66.23 and the prisons law 10.23, as the site
+# holds them on 27 Oct 2026. Steps say what the law says, never what a reader should do in their own case. A court's
+# limit is `complete` (58.25 art. 602, 22.01 art. 750): neither the first day nor the last counts, and an end on a day off
+# moves to the next working day. A reader sees a journey once a person has checked it.
+
+- key: custody
+  title: {ar: 'الحراسة النظرية: من الإيقاف إلى النيابة العامة', fr: 'La garde à vue : de l’arrestation au parquet'}
+  lead:
+    ar: 'الحراسة النظرية تدبير استثنائي، لا يلجأ إليه إلا لسبب يحدده القانون، بمدة تحسب بالساعة من الإيقاف، وبحقوق يخبر بها الموقوف فورا.'
+    fr: 'La garde à vue est une mesure exceptionnelle, prise seulement pour un motif que la loi fixe, d’une durée comptée en heures dès l’arrestation, avec des droits notifiés aussitôt.'
+  steps:
+    - title: {ar: 'المدة', fr: 'La durée'}
+      answer: {ar: '48 ساعة على الأكثر من ساعة الإيقاف، وتمدد 24 ساعة مرة واحدة بإذن كتابي معلل من النيابة العامة. وتشعر النيابة العامة فورا. وإذا كان الموقوف حدثا، فلا تمديد إلا في الجرائم المنصوص عليها في المادة 108، ويحتفظ به في مكان مخصص للأحداث.', fr: '48 heures au plus dès l’heure de l’arrestation, prolongeables une fois de 24 heures sur autorisation écrite motivée du parquet, informé aussitôt. Pour un mineur, pas de prolongation, sauf pour les crimes de l’article 108, et il est retenu dans un lieu réservé aux mineurs.'}
+      body:
+        ar: 'يمكن لضابط الشرطة القضائية أن يحتفظ بشخص تحت الحراسة النظرية إذا وجدت أسباب للاشتباه في ارتكابه جناية أو جنحة يعاقب عليها بالحبس، لمدة لا تتجاوز ثمانيا وأربعين ساعة تحتسب من ساعة إيقافه، ويشعر النيابة العامة فورا. ويمكن تمديدها أربعا وعشرين ساعة لمرة واحدة بإذن كتابي معلل من النيابة العامة. وفي المس بأمن الدولة تكون المدة ستا وتسعين ساعة قابلة للتمديد مرة واحدة، وفي الجريمة الإرهابية ستا وتسعين ساعة قابلة للتمديد مرتين. ولا تحتسب مدة النقل ولا مدة العلاج، وتخصمان من العقوبة.'
+        fr: 'L’officier de police judiciaire peut garder à vue une personne soupçonnée d’un crime ou d’un délit puni d’emprisonnement, pour quarante-huit heures au plus à compter de l’heure de l’arrestation, en avisant aussitôt le parquet. Elle peut être prolongée une fois de vingt-quatre heures sur autorisation écrite motivée du parquet. Pour une atteinte à la sûreté de l’État, la durée est de quatre-vingt-seize heures prolongeable une fois ; pour un acte terroriste, de quatre-vingt-seize heures prolongeable deux fois. Le temps du transfert et des soins n’est pas compté, et s’impute sur la peine.'
+      cites: [/ma/loi/22-01/art_66, /ma/loi/22-01/art_66-2, /ma/loi/22-01/art_80, /ma/loi/22-01/art_460]
+      delay: {hours: 48, from: {ar: من ساعة الإيقاف, fr: de l’heure de l’arrestation}}
+      tool: tools/custody
+    - title: {ar: 'ما يخبر به فورا', fr: 'Ce qui lui est dit aussitôt'}
+      answer: {ar: 'يخبره الضابط فورا، وبطريقة يفهمها، بسبب إيقافه وبحقوقه، ومنها حقه في الصمت؛ والصمت ليس اعترافا.', fr: 'L’officier lui dit aussitôt, d’une manière qu’il comprend, pourquoi il est arrêté et quels sont ses droits, dont le droit de se taire ; le silence n’est pas un aveu.'}
+      body:
+        ar: 'يتعين على ضابط الشرطة القضائية، بعد التأكد من هوية الشخص، إخباره فورا وبكيفية يفهمها بدواعي إيقافه وبحقوقه، ومن بينها حقه في التزام الصمت بشأن الأفعال موضوع إيقافه. ولا يعتبر الصمت اعترافا ضمنيا بما هو منسوب له. وتنفذ الحراسة النظرية في ظروف تضمن احترام كرامة الشخص، وتتحمل الدولة نفقات تغذيته.'
+        fr: 'L’officier, après avoir vérifié l’identité, informe aussitôt la personne, d’une manière qu’elle comprend, des motifs de son arrestation et de ses droits, dont celui de garder le silence sur les faits. Le silence ne vaut pas aveu tacite. La garde à vue s’exécute dans des conditions qui respectent la dignité, et l’État prend en charge les repas.'
+      cites: [/ma/loi/22-01/art_66-2]
+      papers: checklists/custody-rights
+    - title: {ar: 'المحامي والعائلة', fr: 'L’avocat et la famille'}
+      answer: {ar: 'الاتصال بالمحامي من الساعة الأولى، ثلاثين دقيقة في سرية؛ ويشعر الضابط العائلة فور الوضع تحت الحراسة ما لم يعترض الموقوف.', fr: 'Le contact avec l’avocat dès la première heure, trente minutes en toute confidentialité ; l’officier prévient la famille dès la garde à vue, sauf opposition de la personne.'}
+      body:
+        ar: 'يحق للموقوف الاستفادة من مساعدة قانونية، والاتصال بأحد أقربائه أو محاميه بالهاتف أو بأي وسيلة متاحة، وطلب تعيين محام في إطار المساعدة القضائية فيشعر النقيب. ويتم الاتصال بالمحامي ابتداء من الساعة الأولى لمدة لا تتجاوز ثلاثين دقيقة تحت مراقبة الضابط وفي ظروف تكفل سرية المقابلة؛ ويمكن للنيابة العامة، في الجرائم الإرهابية وجرائم المادة 108، أن تؤخره بصفة استثنائية دون أن يتجاوز التأخير نصف المدة الأصلية. ويشعر الضابط عائلة الموقوف أو من يعنيه الأمر فور اتخاذ قرار الوضع تحت الحراسة، ما لم يعترض الموقوف صراحة.'
+        fr: 'La personne arrêtée a droit à une assistance juridique, à joindre un proche ou son avocat par téléphone ou tout moyen disponible, et à demander un avocat au titre de l’assistance judiciaire, le bâtonnier étant alors avisé. Le contact avec l’avocat a lieu dès la première heure, pour trente minutes au plus, sous le contrôle de l’officier et dans des conditions qui garantissent la confidentialité ; pour le terrorisme et les crimes de l’article 108, le parquet peut exceptionnellement le retarder, de la moitié de la durée initiale au plus. L’officier prévient la famille ou toute personne concernée dès la décision de garde à vue, sauf opposition expresse de la personne.'
+      cites: [/ma/loi/22-01/art_66-2, /ma/loi/22-01/art_67]
+    - title: {ar: 'الفحص الطبي والسجل', fr: 'L’examen médical et le registre'}
+      answer: {ar: 'إذا لاحظ الضابط مرضا أو آثارا، يعرضه على طبيب بعد إشعار النيابة العامة؛ وساعة البداية والنهاية تقيد في سجل يوقعه الموقوف.', fr: 'Si l’officier constate une maladie ou des traces, il le fait examiner par un médecin après avis du parquet ; les heures de début et de fin sont portées sur un registre que la personne signe.'}
+      body:
+        ar: 'يتعين على ضابط الشرطة القضائية إخضاع الموقوف لفحص طبي بعد إشعار النيابة العامة إذا لاحظ عليه مرضا أو علامات أو آثارا تستدعي ذلك، ويضاف التقرير الطبي إلى المحضر. ويبين في محضر الاستماع يوم وساعة الإيقاف ووضع الحراسة ورفعها، ويوقع الموقوف أو يبصم أو يشار إلى رفضه. ويمسك في كل مكان للحراسة سجل مرقم يقيد فيه سبب الحراسة وساعة بدايتها ونهايتها ومدة الاستنطاق وأوقات الراحة والحالة الصحية والتغذية. وفي الجنايات والجنح المعاقب عليها بخمس سنوات فأكثر يسجل سمعيا بصريا وقت قراءة التصريحات والتوقيع.'
+        fr: 'L’officier fait examiner la personne par un médecin, après avis du parquet, s’il constate une maladie, des marques ou des traces ; le rapport est joint au procès-verbal. Le procès-verbal d’audition indique le jour et l’heure de l’arrestation, du début et de la fin de la garde à vue ; la personne signe ou appose son empreinte, ou son refus est mentionné. Chaque lieu de garde à vue tient un registre paginé : motif, heures de début et de fin, durée des interrogatoires, repos, état de santé, repas. Pour les crimes et délits punis de cinq ans ou plus, la lecture des déclarations et la signature sont enregistrées en audio et vidéo.'
+      cites: [/ma/loi/22-01/art_67, /ma/loi/22-01/art_66-5, /ma/loi/22-01/art_66-3]
+    - title: {ar: 'أمام وكيل الملك', fr: 'Devant le procureur'}
+      answer: {ar: 'يقدم إلى وكيل الملك قبل انتهاء المدة؛ فيأمر بإطلاق سراحه، أو بالمراقبة القضائية، أو يحيله على المحكمة، أو يودعه السجن بأمر معلل يقبل الطعن إلى اليوم الموالي.', fr: 'Il est présenté au procureur avant la fin du délai, qui le libère, le place sous contrôle judiciaire, le renvoie devant le tribunal, ou le place en détention par une décision motivée, contestable jusqu’au lendemain.'}
+      body:
+        ar: 'يقدم الموقوف إلى وكيل الملك أو الوكيل العام للملك قبل انتهاء الحراسة. ويستنطقه بعد إشعاره بحقه في تنصيب محام حالا. وفي الجنحة المتلبس بها المعاقب عليها بالحبس، يتخذ تدبيرا أو أكثر من تدابير المراقبة القضائية، فإن لم تكف أمر بإيداعه في السجن وأحال القضية على أول جلسة. ويمكن للمتهم أو لدفاعه الطعن في الأمر بالإيداع في السجن إلى غاية اليوم الموالي لصدوره، وتبت هيئة الحكم داخل أجل يوم واحد.'
+        fr: 'La personne est présentée au procureur du Roi ou au procureur général avant la fin de la garde à vue, qui l’interroge après l’avoir informée de son droit à un avocat sur-le-champ. En flagrant délit puni d’emprisonnement, il prend une ou plusieurs mesures de contrôle judiciaire, ou, si elles ne suffisent pas, la place en détention et renvoie l’affaire à la première audience. L’intéressé ou son avocat peut contester le placement en détention jusqu’au lendemain, et la formation de jugement statue en un jour.'
+      cites: [/ma/loi/22-01/art_80, /ma/loi/22-01/art_74, /ma/loi/22-01/art_47-2]
+    - title: {ar: 'الاعتقال الاحتياطي', fr: 'La détention provisoire'}
+      answer: {ar: 'تدبير استثنائي، مكتوب ومعلل؛ وفي التحقيق في الجنح لا يتجاوز شهرا يمدد مرة واحدة، وإلا أطلق سراح المتهم بقوة القانون.', fr: 'Une mesure exceptionnelle, écrite et motivée ; en instruction correctionnelle, un mois au plus, prolongeable une fois, sinon l’inculpé est libéré de plein droit.'}
+      body:
+        ar: 'الاعتقال الاحتياطي تدبير استثنائي لا يلجأ إليه إلا إذا تعذر تطبيق تدبير آخر بديل عنه، ويجب أن يكون قراره كتابيا يبين أسبابه. ولا يجوز في القضايا الجنحية أن يتجاوز أمام قاضي التحقيق شهرا واحدا، يمدد لمرة واحدة ولنفس المدة بأمر معلل؛ فإن لم يتخذ قاضي التحقيق أمرا داخل هذه المدة أطلق سراح المتهم بقوة القانون واستمر التحقيق.'
+        fr: 'La détention provisoire est exceptionnelle : on n’y recourt que si aucune autre mesure n’est possible, par une décision écrite et motivée. En matière correctionnelle, devant le juge d’instruction, elle ne dépasse pas un mois, prolongeable une fois pour la même durée par ordonnance motivée ; faute de décision dans ce délai, l’inculpé est libéré de plein droit et l’instruction continue.'
+      cites: [/ma/loi/22-01/art_175, /ma/loi/22-01/art_176, /ma/loi/22-01/art_161]
+  ends: {office: court, paper: {ar: 'التقديم أمام وكيل الملك، ومحضر الاستماع', fr: 'La présentation au procureur, et le procès-verbal d’audition'}, cites: [/ma/loi/22-01/art_80]}
+  next: [journeys/trial, journeys/aid]
+
+- key: complaint
+  title: {ar: 'الشكاية: من وكيل الملك إلى المحكمة', fr: 'La plainte : du procureur au tribunal'}
+  lead:
+    ar: 'يتلقى وكيل الملك الشكايات ويقرر ما يراه ملائما: بحث، أو متابعة، أو حفظ يمكن التراجع عنه؛ ويخبر المشتكي بالمآل.'
+    fr: 'Le procureur du Roi reçoit les plaintes et décide de la suite : enquête, poursuites, ou classement sur lequel il peut revenir ; il informe le plaignant.'
+  day: {ar: 'نهار الأفعال؟', fr: 'Le jour des faits ?'}
+  steps:
+    - title: {ar: 'لمن تقدم', fr: 'À qui'}
+      answer: {ar: 'إلى وكيل الملك بالمحكمة الابتدائية، أو إلى الشرطة القضائية التي تحرر محضرا وتحيله عليه. اكتب في الشكاية هاتفك أو بريدك الإلكتروني وعنوانك.', fr: 'Au procureur du Roi près le tribunal de première instance, ou à la police judiciaire qui en dresse procès-verbal et le lui transmet. Indiquez votre téléphone ou courriel et votre adresse.'}
+      body:
+        ar: 'يتلقى وكيل الملك المحاضر والشكايات والوشايات، ويتلقاها كذلك ضباط الشرطة القضائية، ويتخذ بشأنها ما يراه ملائما، ويباشر أو يأمر بمباشرة الإجراءات الضرورية للبحث عن مرتكبي المخالفات للتشريع الجنائي. ويتعين على المشتكين أن يضمنوا شكاياتهم أرقام هواتفهم أو عناوينهم الإلكترونية إضافة إلى عناوين إقامتهم.'
+        fr: 'Le procureur du Roi reçoit procès-verbaux, plaintes et dénonciations, que les officiers de police judiciaire reçoivent aussi, et décide de la suite ; il conduit ou fait conduire les recherches. Les plaignants indiquent dans leur plainte leur téléphone ou courriel en plus de leur adresse.'
+      cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_21]
+    - title: {ar: 'المآل', fr: 'La suite'}
+      answer: {ar: 'يخبرك وكيل الملك بالمآل داخل 15 يوما من القرار؛ وإذا حفظ الشكاية يمكنك أن تتظلم أمام الوكيل العام للملك، والحفظ يمكن التراجع عنه.', fr: 'Le procureur vous informe de la suite dans les 15 jours de sa décision ; s’il classe la plainte, vous pouvez réclamer devant le procureur général, et le classement peut être rapporté.'}
+      body:
+        ar: 'يحيل وكيل الملك ما يتلقاه إلى هيئات التحقيق أو إلى هيئات الحكم المختصة أو يأمر بحفظه بقرار يمكن دائما التراجع عنه. ويقوم بإشعار المحامي، وعند الاقتضاء الضحية أو المشتكي، بالمآل وبالإجراءات المتخذة في الشكايات داخل أجل أقصاه خمسة عشر يوما من تاريخ اتخاذ القرار. وإذا قرر حفظ الشكاية أخبر المشتكي أو دفاعه بذلك خلال خمسة عشر يوما، ويمكن التظلم من قرار الحفظ أمام الوكيل العام للملك لدى محكمة الاستئناف التي يتبع لها.'
+        fr: 'Le procureur saisit les juridictions d’instruction ou de jugement, ou classe par une décision sur laquelle il peut toujours revenir. Il informe l’avocat et, le cas échéant, la victime ou le plaignant de la suite et des mesures prises, dans les quinze jours de sa décision. S’il classe la plainte, il en avise le plaignant ou son avocat dans les quinze jours, et le classement peut être contesté devant le procureur général près la cour d’appel dont il relève.'
+      cites: [/ma/loi/22-01/art_40]
+      delay: {days: 15, from: {ar: من تاريخ قرار وكيل الملك, fr: de la décision du procureur}}
+    - title: {ar: 'الصلح', fr: 'La conciliation'}
+      answer: {ar: 'قبل المتابعة، يمكن تضمين صلح الطرفين في محضر أمام وكيل الملك، أو أن يقترحه هو، أو أن يعهد به إلى وسيط.', fr: 'Avant les poursuites, la conciliation des parties peut être consignée devant le procureur, qu’il peut aussi proposer, ou confier à un médiateur.'}
+      body:
+        ar: 'يعتبر الصلح بديلا عن الدعوى العمومية إذا توفرت شروط إقامتها، ولا يمس بقرينة البراءة. ويمكن للمتضرر أو المشتكى به أو لكليهما، قبل إقامة الدعوى العمومية، أن يطلب من وكيل الملك تضمين الصلح الحاصل بينهما في محضر؛ ويمكنه أن يقترحه أو أن يقترح الصلح بالوساطة يعهد به إلى وسيط أو إلى محامي الطرفين.'
+        fr: 'La conciliation remplace l’action publique quand les conditions des poursuites sont réunies, sans porter atteinte à la présomption d’innocence. La victime, le mis en cause ou les deux peuvent, avant les poursuites, demander au procureur de consigner leur conciliation dans un procès-verbal ; il peut la proposer, ou proposer une médiation confiée à un médiateur ou aux avocats des parties.'
+      cites: [/ma/loi/22-01/art_41]
+    - title: {ar: 'التنازل', fr: 'Le désistement'}
+      answer: {ar: 'التنازل يسقط الدعوى العمومية فقط إذا كانت الشكاية شرطا للمتابعة؛ وفي غير ذلك تستمر النيابة العامة.', fr: 'Le désistement n’éteint l’action publique que si la plainte conditionne les poursuites ; sinon le parquet continue.'}
+      body:
+        ar: 'تسقط الدعوى العمومية بموت الشخص المتابع وبالتقادم وبالعفو وبنسخ المقتضيات الجنائية وبمقرر قضائي اكتسب قوة الشيء المقضي به، وبالصلح عندما ينص القانون صراحة على ذلك، وبتنازل المشتكي عن شكايته إذا كانت الشكاية شرطا للمتابعة، ما لم ينص القانون على خلاف ذلك.'
+        fr: 'L’action publique s’éteint par la mort de la personne poursuivie, la prescription, l’amnistie, l’abrogation de la loi pénale et une décision passée en force de chose jugée, par la conciliation quand la loi le prévoit, et par le désistement du plaignant lorsque la plainte conditionne les poursuites, sauf disposition contraire.'
+      cites: [/ma/loi/22-01/art_4]
+    - title: {ar: 'التقادم', fr: 'La prescription'}
+      answer: {ar: 'تتقادم الدعوى العمومية بخمس عشرة سنة في الجناية، وأربع سنوات في الجنحة، وسنة في المخالفة، من يوم ارتكابها؛ وكل إجراء متابعة أو تحقيق أو محاكمة يقطعها.', fr: 'L’action publique se prescrit par quinze ans pour un crime, quatre pour un délit, un an pour une contravention, du jour des faits ; tout acte de poursuite, d’instruction ou de jugement l’interrompt.'}
+      body:
+        ar: 'تتقادم الدعوى العمومية، ما لم تنص قوانين خاصة على خلاف ذلك، بمرور خمس عشرة سنة ميلادية كاملة من يوم ارتكاب الجناية، وأربع سنوات من يوم ارتكاب الجنحة، وسنة من يوم ارتكاب المخالفة. وإذا كان الضحية قاصرا اعتدى عليه أحد أصوله أو من له عليه رعاية أو كفالة أو سلطة، يبدأ التقادم من جديد من بلوغه سن الرشد. وينقطع التقادم بكل إجراء من إجراءات المتابعة أو التحقيق أو المحاكمة، ولا يعتد بإجراءات البحث والتحري.'
+        fr: 'Sauf loi spéciale, l’action publique se prescrit par quinze années grégoriennes révolues à compter du crime, quatre à compter du délit, une à compter de la contravention. Si la victime est mineure et l’auteur un ascendant ou une personne ayant autorité, la prescription recommence à sa majorité. Elle est interrompue par tout acte de poursuite, d’instruction ou de jugement, non par les actes d’enquête.'
+      cites: [/ma/loi/22-01/art_5, /ma/loi/22-01/art_6]
+      delay: {on_day: true, months: 48, from: {ar: من يوم ارتكاب الجنحة, fr: du jour du délit}}
+      tool: tools/deadline?k=delit
+    - title: {ar: 'التعويض', fr: 'La réparation'}
+      answer: {ar: 'لمن تضرر مباشرة أن يطالب بالتعويض أمام المحكمة الزجرية طرفا مدنيا، كتابة أو بتصريح شفهي في الجلسة، أو أن يرفع الدعوى بالاستدعاء المباشر.', fr: 'Qui a subi un dommage direct peut demander réparation devant la juridiction pénale comme partie civile, par écrit ou de vive voix à l’audience, ou saisir le tribunal par citation directe.'}
+      body:
+        ar: 'يرجع الحق في إقامة الدعوى المدنية للتعويض عن الضرر الناتج عن جناية أو جنحة أو مخالفة لكل من تعرض شخصيا لضرر جسماني أو مادي أو معنوي تسببت فيه الجريمة مباشرة. ويمكن للمتضرر أن يتقدم طرفا مدنيا أمام هيئة الحكم بمذكرة أو بتصريح شفهي يسجله كاتب الضبط، ويؤدي الرسم القضائي الجزافي، ويعين موطنا مختارا. وترفع الدعوى العمومية إلى المحكمة الابتدائية بالاستدعاء المباشر الذي يسلمه الطرف المدني للمتهم، ولا يمكن للمتضرر تحريكها مباشرة أمام غرفة الجنايات.'
+        fr: 'Toute personne ayant personnellement subi un dommage corporel, matériel ou moral causé directement par un crime, un délit ou une contravention peut exercer l’action civile. La victime peut se constituer partie civile devant la juridiction de jugement par mémoire ou par déclaration orale consignée par le greffier, paie le droit forfaitaire et élit domicile. L’action publique peut être portée devant le tribunal de première instance par citation directe de la partie civile, jamais devant la chambre criminelle.'
+      cites: [/ma/loi/22-01/art_7, /ma/loi/22-01/art_350, /ma/loi/22-01/art_384]
+  ends: {office: court, paper: {ar: 'إشعار وكيل الملك بمآل الشكاية', fr: 'L’avis du procureur sur la suite de la plainte'}, cites: [/ma/loi/22-01/art_40]}
+  next: [journeys/trial, journeys/aid]
+
+- key: trial
+  title: {ar: 'المتابعة في جنحة: من الجلسة إلى الحكم', fr: 'Poursuivi pour un délit : de l’audience au jugement'}
+  lead:
+    ar: 'الأصل في المتهم البراءة. والجلسة علنية، والحضور واجب، والمحامي إلزامي في حالات يحددها القانون.'
+    fr: 'Le prévenu est présumé innocent. L’audience est publique, la comparution obligatoire, l’avocat obligatoire dans les cas que fixe la loi.'
+  day: {ar: 'نهار النطق بالحكم؟', fr: 'Le jour du prononcé ?'}
+  steps:
+    - title: {ar: 'المحامي', fr: 'L’avocat'}
+      answer: {ar: 'إلزامي في الجنايات، وفي الجنح إذا كان المتهم قاصرا دون 18 سنة أو أبكم أو أعمى أو به عاهة تخل بدفاعه، أو معرضا للإبعاد.', fr: 'Obligatoire pour les crimes, et pour les délits si le prévenu a moins de 18 ans, est muet, aveugle ou atteint d’une infirmité nuisant à sa défense, ou s’il encourt la relégation.'}
+      body:
+        ar: 'تكون مؤازرة المحامي إلزامية في الجنايات أمام غرفة الجنايات، وفي القضايا الجنحية إذا كان المتهم حدثا يقل عمره عن ثمانية عشر عاما أو أبكم أو أعمى أو مصابا بأية عاهة أخرى من شأنها الإخلال بحقه في الدفاع عن نفسه، أو كان معرضا للحكم عليه بالإبعاد.'
+        fr: 'L’assistance d’un avocat est obligatoire devant la chambre criminelle, et en matière correctionnelle si le prévenu a moins de dix-huit ans, est muet, aveugle ou atteint d’une infirmité nuisant à sa défense, ou encourt la relégation.'
+      cites: [/ma/loi/22-01/art_316]
+    - title: {ar: 'الحضور', fr: 'La comparution'}
+      answer: {ar: 'على المتهم أن يحضر الجلسة؛ وإذا تسلم الاستدعاء شخصيا وتغيب دون عذر، قد يكون الحكم بمثابة حضوري.', fr: 'Le prévenu doit comparaître ; s’il a reçu la convocation en personne et s’absente sans excuse, le jugement peut être réputé contradictoire.'}
+      body:
+        ar: 'يتعين على كل متهم أن يحضر في الجلسة، ويمكن في الجنح إحضار المتهم المعتقل بدون استدعاء. وإذا لم يحضر المستدعى قانونيا حوكم غيابيا، إلا إذا طلب أن تجرى المناقشات في غيبته فيكون الحكم بمثابة حضوري، أو تسلم الاستدعاء شخصيا وتغيب بغير عذر مشروع.'
+        fr: 'Tout prévenu doit comparaître ; en matière correctionnelle, le détenu peut être amené sans convocation. Le prévenu régulièrement cité qui ne comparaît pas est jugé par défaut, sauf s’il a demandé à être jugé en son absence, ou s’il a reçu la citation en personne et s’absente sans excuse légitime : le jugement est alors réputé contradictoire.'
+      cites: [/ma/loi/22-01/art_312, /ma/loi/22-01/art_314]
+    - title: {ar: 'الجلسة', fr: 'L’audience'}
+      answer: {ar: 'البحث والمناقشات في جلسة علنية تحت طائلة البطلان، إلا في الحالات التي يستثنيها القانون.', fr: 'L’instruction et les débats ont lieu en audience publique, à peine de nullité, sauf exceptions légales.'}
+      body:
+        ar: 'يجب تحت طائلة البطلان أن تتم إجراءات البحث والمناقشات في جلسة علنية ما عدا في الحالات المنصوص عليها في المادتين 301 و302.'
+        fr: 'À peine de nullité, l’instruction à l’audience et les débats sont publics, hormis les cas prévus aux articles 301 et 302.'
+      cites: [/ma/loi/22-01/art_300]
+    - title: {ar: 'الحكم', fr: 'Le jugement'}
+      answer: {ar: 'يستهل الحكم بعبارة «المملكة المغربية - باسم جلالة الملك وطبقا للقانون»، ويتضمن أسبابه ولو في حالة البراءة، ومدة الإكراه البدني إن اقتضى الحال.', fr: 'Le jugement commence par «Royaume du Maroc – Au nom de Sa Majesté le Roi et conformément à la loi», donne ses motifs même en cas d’acquittement, et fixe la contrainte par corps le cas échéant.'}
+      body:
+        ar: 'يجب أن يستهل كل حكم بالصيغة: المملكة المغربية - باسم جلالة الملك وطبقا للقانون، وأن يحتوي على الهيئة التي أصدرته وتاريخه والأطراف والوقائع وحضور الأطراف ومؤازرة المحامي، والأسباب الواقعية والقانونية ولو في حالة البراءة، وأنواع الضرر المعوض عنه، والمنطوق، وتصفية المصاريف مع تحديد مدة الإكراه البدني إن اقتضى الحال.'
+        fr: 'Tout jugement commence par la formule «Royaume du Maroc – Au nom de Sa Majesté le Roi et conformément à la loi» et contient la juridiction, la date, les parties, les faits, la présence des parties et l’assistance de l’avocat, les motifs de fait et de droit même en cas d’acquittement, les préjudices réparés, le dispositif, et la liquidation des frais avec la durée de la contrainte par corps le cas échéant.'
+      cites: [/ma/loi/22-01/art_365]
+    - title: {ar: 'الاستئناف', fr: 'L’appel'}
+      answer: {ar: 'عشرة أيام من النطق بالحكم إذا كنت حاضرا أو أشعرت بيومه، وإلا من التبليغ؛ ولغيرك خمسة أيام إضافية إذا استأنف طرف.', fr: 'Dix jours dès le prononcé si vous étiez présent ou avisé du jour, sinon dès la notification ; les autres parties ont cinq jours de plus si l’une fait appel.'}
+      body:
+        ar: 'يحدد أجل الاستئناف في عشرة أيام تبتدئ من تاريخ النطق بالحكم إذا صدر بعد مناقشات حضورية بحضور الطرف أو من يمثله أو إذا وقع إشعاره بيوم النطق به. ويسري من يوم التبليغ إذا لم يكن حاضرا ولم يشعر، أو إذا كان الحكم بمثابة حضوري أو غيابيا. وإذا استأنف أحد الأطراف داخل الأجل فلغيره، عدا الوكيل العام للملك، أجل إضافي مدته خمسة أيام. والأجل كامل لا يشمل اليوم الأول ولا الأخير، ويمتد إلى أول يوم عمل إذا صادف يوم عطلة.'
+        fr: 'Le délai d’appel est de dix jours à compter du prononcé si le jugement a été rendu contradictoirement en présence de la partie ou de son représentant, ou si elle a été avisée du jour du prononcé ; sinon, et pour un jugement réputé contradictoire ou par défaut, de la notification. Si une partie fait appel dans le délai, les autres, sauf le procureur général, ont cinq jours supplémentaires. Le délai est franc et se prolonge au premier jour ouvrable s’il finit un jour férié.'
+      cites: [/ma/loi/22-01/art_400, /ma/loi/22-01/art_750]
+      delay: {on_day: true, days: 10, complete: true, from: {ar: من النطق بالحكم, fr: du prononcé}}
+      tool: tools/deadline?k=crim-appeal
+    - title: {ar: 'التعرض والنقض', fr: 'L’opposition et la cassation'}
+      answer: {ar: 'على الحكم الغيابي: التعرض داخل عشرة أيام من التبليغ. وطلب النقض داخل عشرة أيام من صدور القرار.', fr: 'Contre un jugement par défaut : l’opposition dans les dix jours de la notification. Le pourvoi en cassation dans les dix jours de la décision.'}
+      body:
+        ar: 'يجوز التعرض على الحكم الغيابي بتصريح يقدمه المحكوم عليه أو دفاعه لكتابة الضبط في ظرف العشرة أيام التي تلي التبليغ؛ وإذا لم يتعرض وكان الحكم قابلا للاستئناف فله الاستئناف داخل عشرين يوما من التبليغ. ويحدد أجل طلب النقض في عشرة أيام من يوم صدور المقرر المطعون فيه، ولا يبتدئ إلا من التبليغ في حالات يحددها القانون.'
+        fr: 'L’opposition au jugement par défaut se forme par déclaration au greffe, par le condamné ou son avocat, dans les dix jours de la notification ; à défaut, si le jugement est susceptible d’appel, l’appel est ouvert vingt jours après la notification. Le pourvoi en cassation est formé dans les dix jours de la décision, ou de sa notification dans les cas prévus.'
+      cites: [/ma/loi/22-01/art_393, /ma/loi/22-01/art_527]
+  ends: {office: court, paper: {ar: 'الحكم، ونسخته للطعن', fr: 'Le jugement, et sa copie pour le recours'}, cites: [/ma/loi/22-01/art_365]}
+  next: [journeys/appeal, pages/alternatives]
+
+- key: lawsuit
+  title: {ar: 'رفع دعوى مدنية', fr: 'Intenter une action civile'}
+  lead:
+    ar: 'منذ 23 غشت 2026 يحكم المسطرة المدنية القانون 58.25: الدعوى بمقال مكتوب يودع أو يرسل إلكترونيا، والاستدعاء بواسطة مفوض قضائي.'
+    fr: 'Depuis le 23 août 2026, la procédure civile relève de la loi 58.25 : l’action par requête écrite déposée ou transmise en ligne, la convocation par commissaire de justice.'
+  steps:
+    - title: {ar: 'المحكمة', fr: 'Le tribunal'}
+      answer: {ar: 'المحكمة الابتدائية صاحبة الولاية العامة: المدني والاجتماعي والأسرة والقرب، والتجاري والإداري في أقسامها المتخصصة أو محاكمها.', fr: 'Le tribunal de première instance a compétence générale : civil, social, famille, proximité, et le commercial et l’administratif dans ses sections spécialisées ou leurs tribunaux.'}
+      body:
+        ar: 'تختص المحاكم الابتدائية بالنظر في القضايا المدنية والاجتماعية، والقضايا التجارية والإدارية المسندة إلى الأقسام المتخصصة بها، وقضايا الأسرة وقضايا قضاء القرب، وجميع القضايا التي لم يسند الاختصاص بشأنها صراحة إلى جهة قضائية أخرى. وتبت ابتدائيا وانتهائيا إلى غاية عشرة آلاف درهم، وابتدائيا مع حفظ حق الاستئناف فيما يتجاوزها.'
+        fr: 'Les tribunaux de première instance connaissent des affaires civiles et sociales, des affaires commerciales et administratives confiées à leurs sections spécialisées, de la famille, de la proximité, et de tout ce qui n’est pas attribué à une autre juridiction. Ils jugent en premier et dernier ressort jusqu’à dix mille dirhams, et à charge d’appel au-delà.'
+      cites: [/ma/loi/58-25/art_29, /ma/loi/58-25/art_30]
+      tool: tools/court
+    - title: {ar: 'المقال', fr: 'La requête'}
+      answer: {ar: 'مقال مكتوب، مؤرخ وموقع، يودع بكتابة الضبط أو إلكترونيا، فيه أسماء الأطراف وصفاتهم وعناوينهم ورقم بطاقتك وموجز الوقائع والأسباب، مع الوثائق مقابل وصل.', fr: 'Une requête écrite, datée et signée, déposée au greffe ou en ligne, avec les noms, qualités et adresses des parties, votre numéro de carte et un résumé des faits et motifs, les pièces contre récépissé.'}
+      body:
+        ar: 'تقدم الدعوى بمقال مكتوب يودع بكتابة ضبط المحكمة أو بطريقة إلكترونية، مؤرخ وموقع من المدعي أو وكيله أو محاميه. ويتضمن، تحت طائلة عدم القبول، الاسم الشخصي والعائلي لكل طرف وصفته وموطنه، ورقم البطاقة الوطنية للمدعي، وبيانات الوكيل أو المحامي، وموجزا لموضوع الدعوى والوقائع والأسباب. وترفق به المستندات مقابل وصل يثبت عددها ونوعها.'
+        fr: 'L’action est introduite par une requête écrite déposée au greffe ou par voie électronique, datée et signée par le demandeur, son mandataire ou son avocat. Elle contient, à peine d’irrecevabilité, les nom et prénom, qualité et domicile de chaque partie, le numéro de carte nationale du demandeur, les données du mandataire ou de l’avocat, et un résumé de l’objet, des faits et des moyens. Les pièces y sont jointes contre un récépissé qui en indique le nombre et la nature.'
+      cites: [/ma/loi/58-25/art_76, /ma/loi/58-25/art_77]
+      papers: checklists/claim
+    - title: {ar: 'من يمثلك', fr: 'Qui vous représente'}
+      answer: {ar: 'تترافع بنفسك أمام محاكم الدرجة الأولى، أو بمحام، أو بوكيل من زوجك أو أصهارك أو أقاربك إلى الدرجة الثانية بوكالة مصادق عليها.', fr: 'Vous plaidez vous-même en première instance, ou par avocat, ou par un mandataire — conjoint, allié ou parent jusqu’au deuxième degré — muni d’une procuration légalisée.'}
+      body:
+        ar: 'لا يمكن أن يكون وكيلا للأطراف إلا من كان زوجا أو صهرا أو قريبا من الأصول أو الفروع إلى الدرجة الثانية. ويجب على الوكيل الذي لا يتمتع بحكم مهنته بحق التمثيل أن يثبت وكالته بسند رسمي أو عرفي مصادق على صحة توقيعه، أو بتصريح شفوي من الطرف أمام المحكمة. ويعتبر مكتب المحامي محلا للمخابرة.'
+        fr: 'Seuls le conjoint, les alliés ou les parents en ligne directe jusqu’au deuxième degré peuvent représenter une partie. Le mandataire qui n’en a pas le droit par sa profession justifie sa procuration par acte authentique ou sous seing privé légalisé, ou par déclaration orale de la partie devant le tribunal. Le cabinet de l’avocat vaut élection de domicile.'
+      cites: [/ma/loi/58-25/art_79, /ma/loi/58-25/art_78]
+      next: pages/lawyer
+    - title: {ar: 'الاستدعاء', fr: 'La convocation'}
+      answer: {ar: 'يبلغ المفوض القضائي الاستدعاء مع نسخة من المقال؛ وإذا جهل عنوان المدعى عليه اعتمد عنوان بطاقته الوطنية.', fr: 'Le commissaire de justice remet la convocation avec la copie de la requête ; si l’adresse du défendeur est inconnue, celle de sa carte nationale fait foi.'}
+      body:
+        ar: 'يبلغ الاستدعاء بواسطة أحد المفوضين القضائيين، ويمكن للمحكمة أن تأمر بتبليغه بواسطة كاتب الضبط أو بالطريقة الإدارية أو بالبريد المضمون. ويسلم مرفقا بنسخة من المقال إلى الشخص نفسه أو في موطنه أو محل عمله أو أي مكان يوجد فيه. وإذا تعذر التبليغ لأن المدعى عليه مجهول بالعنوان أو انتقل منه، يعتمد العنوان المسجل في قاعدة معطيات البطاقة الوطنية، ويعتبر الاستدعاء إليه توصلا قانونيا.'
+        fr: 'La convocation est notifiée par un commissaire de justice ; le tribunal peut ordonner qu’elle le soit par un greffier, par voie administrative ou par lettre recommandée. Elle est remise avec la copie de la requête à la personne, à son domicile, à son travail ou là où elle se trouve. Si le défendeur est inconnu à l’adresse ou l’a quittée, l’adresse de la base de la carte nationale fait foi, et la convocation qui y est envoyée vaut réception.'
+      cites: [/ma/loi/58-25/art_83, /ma/loi/58-25/art_84, /ma/loi/58-25/art_86]
+    - title: {ar: 'المسطرة', fr: 'La procédure'}
+      answer: {ar: 'كتابية في الأصل؛ وشفوية في القضايا حتى 10.000 درهم، والنفقة والزواج والطلاق الاتفاقي والحضانة، والحالة المدنية، والاجتماعي، والكراء.', fr: 'Écrite en principe ; orale jusqu’à 10 000 DH, pour la pension, le mariage, le divorce par consentement, la garde, l’état civil, le social et les loyers.'}
+      body:
+        ar: 'تطبق أمام محاكم الدرجة الأولى قواعد المسطرة الكتابية، وتكون شفوية في القضايا التي تبت فيها المحكمة ابتدائيا وانتهائيا، وقضايا الزواج والنفقة وإعداد بيت الزوجية والرجوع إليه والطلاق الاتفاقي وأجرة الحضانة وزيارة المحضون، والحالة المدنية، والقضايا الاجتماعية، واستيفاء ومراجعة وجيبة الكراء.'
+        fr: 'La procédure écrite s’applique en première instance ; elle est orale pour les affaires jugées en premier et dernier ressort, le mariage, la pension, le logement conjugal, le divorce par consentement mutuel, la rémunération de la garde et le droit de visite, l’état civil, le social, le recouvrement et la révision des loyers.'
+      cites: [/ma/loi/58-25/art_95, /ma/loi/58-25/art_96]
+    - title: {ar: 'الحكم والطعن', fr: 'Le jugement et le recours'}
+      answer: {ar: 'إذا صدر الحكم حضوريا وهو قابل للاستئناف يشعرك الرئيس بحقك في الاستئناف داخل 30 يوما؛ والأجل يبدأ من التبليغ.', fr: 'Si le jugement contradictoire est susceptible d’appel, le président vous avise de votre droit d’appel dans les 30 jours ; le délai court de la notification.'}
+      body:
+        ar: 'يبلغ كاتب الضبط فورا الحكم الصادر حضوريا إلى الأطراف الحاضرين ويسلم لهم نسخة منه، ويشعرهم الرئيس إذا كان قابلا للاستئناف بحقهم في الطعن فيه داخل الأجل المحدد في المادة 204، ابتداء من تاريخ تبليغه بالجلسة. وتستأنف الأحكام داخل ثلاثين يوما من التبليغ.'
+        fr: 'Le greffier notifie aussitôt le jugement contradictoire aux parties présentes et leur en remet copie ; s’il est susceptible d’appel, le président les avise de leur droit d’appel dans le délai de l’article 204, à compter de cette notification à l’audience. L’appel est formé dans les trente jours de la notification.'
+      cites: [/ma/loi/58-25/art_111, /ma/loi/58-25/art_204]
+  ends: {office: court, paper: {ar: 'نسخة المقال المؤشر عليها بتاريخ الإيداع: هي الوصل', fr: 'La copie visée de la requête, avec sa date de dépôt : c’est le récépissé'}, cites: [/ma/loi/58-25/art_77]}
+  next: [journeys/appeal, journeys/enforce]
+
+- key: small-claim
+  title: {ar: 'قضاء القرب: دين صغير', fr: 'La justice de proximité : une petite créance'}
+  lead:
+    ar: 'يختص قاضي القرب بالدعاوى الشخصية والمنقولة التي تقل عن خمسة آلاف درهم؛ المسطرة شفوية ومجانية للأشخاص الذاتيين.'
+    fr: 'Le juge de proximité connaît des actions personnelles et mobilières de moins de cinq mille dirhams ; la procédure est orale et gratuite pour les particuliers.'
+  steps:
+    - title: {ar: 'ما يدخل فيه', fr: 'Ce qu’il juge'}
+      answer: {ar: 'الدعاوى الشخصية والمنقولة دون 5.000 درهم؛ ولا يختص في الأسرة والعقار والقضايا الاجتماعية والإدارية والإفراغ.', fr: 'Les actions personnelles et mobilières sous 5 000 DH ; ni la famille, ni l’immobilier, ni le social, ni l’administratif, ni les expulsions.'}
+      body:
+        ar: 'يختص قاضي القرب بالنظر في الدعاوى الشخصية والمنقولة التي تقل قيمتها عن خمسة آلاف درهم، ولا يختص في النزاعات المتعلقة بمدونة الأسرة والعقار والقضايا الاجتماعية والإدارية والإفراغات. والطلب المقابل لا يضاف إلى الأصلي لتحديد المبلغ.'
+        fr: 'Le juge de proximité connaît des actions personnelles et mobilières de moins de cinq mille dirhams, à l’exclusion de la famille, de l’immobilier, du social, de l’administratif et des expulsions. La demande reconventionnelle ne s’ajoute pas à la principale pour fixer le montant.'
+      cites: [/ma/loi/58-25/art_331]
+      tool: tools/court
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      answer: {ar: 'بمقال مكتوب، أو بتصريح شفوي يدونه كاتب الضبط في محضر توقعه؛ بلا رسوم إذا كنت شخصا ذاتيا.', fr: 'Par écrit, ou de vive voix, consignée par le greffier dans un procès-verbal que vous signez ; sans frais pour un particulier.'}
+      body:
+        ar: 'تقدم الدعوى إلى قاضي القرب إما بمقال مكتوب أو بتصريح شفوي يتلقاه كاتب الضبط ويدونه في محضر وفق نموذج، ويوقعه مع المدعي. وتطبق المسطرة الشفوية، وتكون مجانية ومعفاة من الرسوم القضائية بخصوص الطلبات المقدمة من الأشخاص الذاتيين.'
+        fr: 'La demande est présentée au juge de proximité par écrit ou par déclaration orale que le greffier consigne dans un procès-verbal type et signe avec le demandeur. La procédure est orale, gratuite et exonérée des frais de justice pour les demandes des personnes physiques.'
+      cites: [/ma/loi/58-25/art_332, /ma/loi/58-25/art_329]
+    - title: {ar: 'الجلسة', fr: 'L’audience'}
+      answer: {ar: 'إذا لم يحضر المدعى عليه يبلغ في الحال باستدعاء لجلسة لا تتجاوز ثمانية أيام؛ والقاضي يحاول الصلح أولا.', fr: 'Si le défendeur est absent, il est convoqué aussitôt à une audience dans les huit jours ; le juge tente d’abord la conciliation.'}
+      body:
+        ar: 'إذا كان المدعى عليه حاضرا أوضح له القاضي مضمون الطلب، وإذا لم يحضر بلغ له المقال أو نسخة المحضر في الحال مع استدعاء لجلسة لا يتجاوز تاريخها ثمانية أيام. والجلسات علنية.'
+        fr: 'Si le défendeur est présent, le juge lui expose la demande ; sinon, la requête ou le procès-verbal lui est notifié aussitôt avec une convocation à une audience dans les huit jours. Les audiences sont publiques.'
+      cites: [/ma/loi/58-25/art_332, /ma/loi/58-25/art_330]
+      delay: {days: 8, from: {ar: من تقديم الطلب, fr: de la demande}}
+    - title: {ar: 'الحكم', fr: 'Le jugement'}
+      answer: {ar: 'نسخة الحكم تسلم داخل 10 أيام؛ ولا استئناف، بل طلب إلغاء أمام رئيس المحكمة داخل 15 يوما في حالات محددة.', fr: 'La copie est remise dans les 10 jours ; pas d’appel, mais une demande d’annulation au président dans les 15 jours, dans des cas précis.'}
+      body:
+        ar: 'ينطق بالأحكام وهي محررة، وتسلم نسخة منها إلى المعنيين داخل عشرة أيام. ويمكن للمتضرر من الحكم طلب إلغائه أمام رئيس المحكمة الابتدائية داخل خمسة عشر يوما من تبليغه، إذا لم يحترم القاضي اختصاصه، أو لم يجر الصلح، أو بت فيما لم يطلب، أو لم يتحقق من هوية الأطراف، أو حكم دون حجة على التوصل بالاستدعاء، أو تناقض الحكم، أو وقع تدليس. ويبت الرئيس داخل شهر بحكم غير قابل لأي طعن.'
+        fr: 'Les jugements sont prononcés rédigés et leur copie remise dans les dix jours. La partie lésée peut en demander l’annulation au président du tribunal de première instance dans les quinze jours de la notification, si le juge a méconnu sa compétence, n’a pas tenté la conciliation, a statué au-delà de la demande, n’a pas vérifié l’identité des parties, a jugé sans preuve de la convocation, si le jugement se contredit ou en cas de dol. Le président statue dans le mois, sans recours.'
+      cites: [/ma/loi/58-25/art_330, /ma/loi/58-25/art_32]
+      delay: {days: 15, complete: true, from: {ar: من تبليغ الحكم, fr: de la notification}}
+    - title: {ar: 'التنفيذ', fr: 'L’exécution'}
+      answer: {ar: 'تبلغ السلطة الإدارية المحلية الحكم وتنفذه للشخص الذاتي، أو مفوض قضائي تختاره.', fr: 'L’autorité administrative locale notifie et exécute le jugement pour un particulier, ou un commissaire de justice de son choix.'}
+      body:
+        ar: 'تكلف السلطة الإدارية المحلية بتبليغ وتنفيذ أحكام قضاء القرب عندما يكون المستفيد شخصا ذاتيا، غير أنه يمكن لهذا الأخير اختيار مفوض قضائي لذلك.'
+        fr: 'L’autorité administrative locale notifie et exécute les jugements de proximité au profit d’une personne physique, qui peut toutefois choisir un commissaire de justice.'
+      cites: [/ma/loi/58-25/art_334]
+  ends: {office: court, paper: {ar: 'نسخة الحكم، داخل 10 أيام', fr: 'La copie du jugement, dans les 10 jours'}, cites: [/ma/loi/58-25/art_330]}
+
+- key: payment-order
+  title: {ar: 'الأمر بالأداء: دين بورقة', fr: 'L’injonction de payer : une créance sur titre'}
+  lead:
+    ar: 'لمن بيده سند يثبت دينه أن يطلب من رئيس المحكمة أمرا بالأداء، ينفذ بمجرد صدوره، ولا يقبل غير التعرض.'
+    fr: 'Qui détient un titre de sa créance peut demander au président du tribunal une injonction de payer, exécutoire dès qu’elle est rendue, susceptible d’opposition seulement.'
+  day: {ar: 'نهار التبليغ بالأمر؟', fr: 'Le jour de la notification ?'}
+  steps:
+    - title: {ar: 'المقال', fr: 'La requête'}
+      answer: {ar: 'إلى المحكمة التي يوجد بدائرتها موطن المدين، بالمبلغ الدقيق وسببه، مع أصل السند ونسخ بعدد المدينين.', fr: 'Au tribunal du domicile du débiteur, avec le montant exact et sa cause, l’original du titre et des copies pour chaque débiteur.'}
+      body:
+        ar: 'يقدم مقال الأمر بالأداء إلى المحكمة الابتدائية أو التجارية أو القسم التجاري الذي يوجد بدائرته موطن المدين، ويتضمن أسماء الأطراف وموطنهم، والبيان الدقيق للمبلغ المطلوب وموجب الطلب، ويرفق بأصل السند الذي يثبت الدين ونسخ منه بعدد المدينين.'
+        fr: 'La requête en injonction de payer est présentée au tribunal de première instance, au tribunal de commerce ou à la section commerciale du domicile du débiteur ; elle indique les parties et leur domicile, le montant exact et sa cause, et joint l’original du titre et des copies pour chaque débiteur.'
+      cites: [/ma/loi/58-25/art_234]
+    - title: {ar: 'الأمر', fr: 'L’ordonnance'}
+      answer: {ar: 'إذا قبل الطلب، يبلغ الأمر للمدين مع نسخة الطلب والسند؛ وهو قابل للتنفيذ بمجرد صدوره.', fr: 'Si la demande est admise, l’ordonnance est notifiée au débiteur avec la requête et le titre ; elle est exécutoire dès son prononcé.'}
+      body:
+        ar: 'إذا صدر أمر بقبول الطلب كليا أو جزئيا، تبلغ نسخة منه مرفقة بنسخة من الطلب وصورة من السند إلى المدين، بطلب من الدائن. ويكون الأمر بالأداء قابلا للتنفيذ بمجرد صدوره، ولا يقبل أي طعن غير التعرض.'
+        fr: 'Si la demande est admise en tout ou partie, une copie de l’ordonnance, avec la requête et le titre, est notifiée au débiteur à la demande du créancier. L’injonction est exécutoire dès son prononcé et n’est susceptible que d’opposition.'
+      cites: [/ma/loi/58-25/art_238]
+    - title: {ar: 'التعرض', fr: 'L’opposition'}
+      answer: {ar: 'للمدين أن يؤدي، أو أن يتعرض داخل 15 يوما من التبليغ؛ وإلا سقط حقه في أي طعن.', fr: 'Le débiteur paie, ou fait opposition dans les 15 jours de la notification ; sinon il perd tout recours.'}
+      body:
+        ar: 'يجب أن تتضمن وثيقة التبليغ، تحت طائلة البطلان، إعذار المدين بأن يؤدي مبلغ الدين والمصاريف والفوائد، أو أن يتعرض على الأمر داخل خمسة عشر يوما من تاريخ التبليغ، مع إشعاره بأنه إن لم يتعرض داخل هذا الأجل سقط حقه في ممارسة أي طعن. ويمكن للمحكمة أن توقف تنفيذ الأمر بحكم معلل.'
+        fr: 'L’acte de notification doit, à peine de nullité, sommer le débiteur de payer la dette, les frais et intérêts, ou de faire opposition dans les quinze jours de la notification, en l’avertissant qu’à défaut il perd tout recours. Le tribunal saisi peut suspendre l’exécution par décision motivée.'
+      cites: [/ma/loi/58-25/art_239, /ma/loi/58-25/art_241]
+      delay: {on_day: true, days: 15, complete: true, from: {ar: من تبليغ الأمر, fr: de la notification}}
+      tool: tools/deadline?k=payment
+    - title: {ar: 'بعد التعرض', fr: 'Après l’opposition'}
+      answer: {ar: 'الحكم في التعرض يستأنف داخل 15 يوما؛ ويبت فيه داخل 3 أشهر؛ والتعرض للمماطلة غرامته 5 إلى 15% من الدين.', fr: 'Le jugement sur opposition est susceptible d’appel dans les 15 jours ; il est statué en 3 mois ; l’opposition dilatoire coûte 5 à 15 % de la dette.'}
+      body:
+        ar: 'يقبل الحكم الصادر في التعرض الاستئناف داخل خمسة عشر يوما من التبليغ، ويتعين البت في التعرض أو الاستئناف داخل ثلاثة أشهر. وإذا رأت المحكمة أن التعرض أو الاستئناف لم يقصد منهما إلا المماطلة، حكمت على المدين بغرامة لفائدة الخزينة لا تقل عن خمسة في المائة ولا تفوق خمسة عشر في المائة من الدين المحكوم به.'
+        fr: 'Le jugement sur opposition est susceptible d’appel dans les quinze jours de sa notification ; l’opposition ou l’appel est jugé dans les trois mois. Si le tribunal estime qu’ils n’étaient que dilatoires, il condamne le débiteur à une amende au Trésor de cinq à quinze pour cent de la dette.'
+      cites: [/ma/loi/58-25/art_242, /ma/loi/58-25/art_243]
+  ends: {office: court, paper: {ar: 'الأمر بالأداء، قابلا للتنفيذ', fr: 'L’injonction de payer, exécutoire'}, cites: [/ma/loi/58-25/art_238]}
+  next: [journeys/enforce]
+
+- key: appeal
+  title: {ar: 'الطعن في الحكم', fr: 'Attaquer un jugement'}
+  lead:
+    ar: 'لكل حكم طريق طعنه وأجله؛ والآجال كاملة لا يحسب فيها اليوم الأول ولا الأخير، وتمتد إلى أول يوم عمل.'
+    fr: 'Chaque jugement a sa voie de recours et son délai ; les délais sont francs, sans le premier ni le dernier jour, et se prolongent au premier jour ouvrable.'
+  day: {ar: 'نهار التبليغ بالحكم؟', fr: 'Le jour de la notification ?'}
+  steps:
+    - title: {ar: 'الاستئناف في المدني', fr: 'L’appel au civil'}
+      answer: {ar: 'ثلاثون يوما من التبليغ؛ والأجل والاستئناف نفسه يوقفان التنفيذ، إلا إذا كان الحكم مشمولا بالتنفيذ المعجل.', fr: 'Trente jours dès la notification ; le délai et l’appel suspendent l’exécution, sauf exécution provisoire.'}
+      body:
+        ar: 'يجوز الطعن بالاستئناف في الأحكام الصادرة عن محاكم الدرجة الأولى داخل أجل ثلاثين يوما يبتدئ من تاريخ التبليغ. ويوقف أجل الاستئناف والاستئناف نفسه داخل الأجل التنفيذ، عدا إذا كان الحكم مشمولا بالتنفيذ المعجل. والأحكام حتى عشرة آلاف درهم ابتدائية وانتهائية.'
+        fr: 'L’appel contre les jugements de première instance est formé dans les trente jours de la notification. Le délai d’appel et l’appel suspendent l’exécution, sauf exécution provisoire. Les jugements jusqu’à dix mille dirhams sont en premier et dernier ressort.'
+      cites: [/ma/loi/58-25/art_204, /ma/loi/58-25/art_30]
+      delay: {on_day: true, days: 30, complete: true, from: {ar: من تبليغ الحكم, fr: de la notification}}
+      papers: checklists/appeal
+    - title: {ar: 'الآجال الأقصر', fr: 'Les délais plus courts'}
+      answer: {ar: 'الأمر الاستعجالي والحكم في التعرض على الأمر بالأداء والحالة المدنية: 15 يوما. والتعرض على حكم غيابي غير قابل للاستئناف: 15 يوما.', fr: 'Ordonnance de référé, jugement sur opposition à injonction, état civil : 15 jours. Opposition à un jugement par défaut non susceptible d’appel : 15 jours.'}
+      body:
+        ar: 'يقدم الاستئناف في الأوامر الاستعجالية داخل خمسة عشر يوما من تبليغ الأمر، وفي الحكم الصادر في التعرض على الأمر بالأداء داخل خمسة عشر يوما، وفي المقررات الصادرة في قضايا الحالة المدنية داخل خمسة عشر يوما. ويجوز التعرض على الأحكام الغيابية غير القابلة للاستئناف داخل خمسة عشر يوما من التبليغ.'
+        fr: 'L’appel contre une ordonnance de référé est formé dans les quinze jours de sa notification, de même contre le jugement sur opposition à injonction de payer et contre les décisions d’état civil. L’opposition aux jugements par défaut non susceptibles d’appel est ouverte quinze jours après la notification.'
+      cites: [/ma/loi/58-25/art_230, /ma/loi/58-25/art_242, /ma/loi/58-25/art_279, /ma/loi/58-25/art_200]
+      tool: tools/deadline?k=urgent
+    - title: {ar: 'مقال الاستئناف', fr: 'La requête d’appel'}
+      answer: {ar: 'يتضمن أسماء الأطراف وصفاتهم وعناوينهم ورقم بطاقتك، وموضوع الطلب والوقائع والوسائل، مع نسخ بعدد المستأنف عليهم.', fr: 'Elle porte les noms, qualités et adresses des parties, votre numéro de carte, l’objet, les faits et moyens, avec une copie pour chaque intimé.'}
+      body:
+        ar: 'يجب أن يتضمن مقال الاستئناف، تحت طائلة عدم القبول، أسماء المستأنف والمستأنف عليه وصفتهما وموطنهما، ورقم البطاقة الوطنية للمستأنف، وبيانات المحامي عند الاقتضاء، وموضوع الطلب والوقائع والوسائل، مع المستندات، ونسخ مشهود بمطابقتها بعدد المستأنف عليهم؛ وإلا طلبت كتابة الضبط النسخ داخل عشرة أيام.'
+        fr: 'La requête d’appel contient, à peine d’irrecevabilité, les noms, qualités et domiciles de l’appelant et de l’intimé, le numéro de carte de l’appelant, les données de l’avocat le cas échéant, l’objet, les faits et moyens, avec les pièces et des copies certifiées pour chaque intimé ; à défaut, le greffe les demande sous dix jours.'
+      cites: [/ma/loi/58-25/art_216]
+    - title: {ar: 'النقض', fr: 'La cassation'}
+      answer: {ar: 'ثلاثون يوما من التبليغ في المدني، بمقال يوقعه محام مقبول أمام محكمة النقض؛ ولا نقض في الطلبات حتى 30.000 درهم ولا في الكراء.', fr: 'Trente jours dès la notification au civil, par une requête signée d’un avocat agréé près la Cour de cassation ; pas de cassation jusqu’à 30 000 DH ni pour les loyers.'}
+      body:
+        ar: 'يحدد أجل الطعن أمام محكمة النقض في ثلاثين يوما من تاريخ تبليغ الحكم إلى الشخص نفسه أو في موطنه. ويقدم بمقال مكتوب موقع عليه من أحد المحامين المقبولين للترافع أمامها. ولا يقبل النقض في الأحكام الصادرة في الطلبات التي لا تتجاوز ثلاثين ألف درهم، ولا في استيفاء واجبات الكراء ومراجعتها. ولا يوقف النقض التنفيذ إلا في الأحوال الشخصية والزور والتحفيظ العقاري وحالات أخرى يحددها القانون. ويوقف أجله إيداع طلب المساعدة القضائية.'
+        fr: 'Le pourvoi est formé dans les trente jours de la notification du jugement à la personne ou à son domicile, par requête signée d’un avocat agréé près la Cour de cassation. Il n’est pas ouvert contre les jugements sur des demandes de trente mille dirhams ou moins, ni sur le recouvrement et la révision des loyers. Il ne suspend l’exécution qu’en statut personnel, en faux, en immatriculation foncière et dans d’autres cas légaux. Le dépôt d’une demande d’assistance judiciaire suspend son délai.'
+      cites: [/ma/loi/58-25/art_380, /ma/loi/58-25/art_376, /ma/loi/58-25/art_375, /ma/loi/58-25/art_383]
+    - title: {ar: 'في الزجري', fr: 'Au pénal'}
+      answer: {ar: 'الاستئناف عشرة أيام من النطق بالحكم أو من التبليغ، والتعرض عشرة أيام من التبليغ، والنقض عشرة أيام من صدور القرار.', fr: 'L’appel dix jours dès le prononcé ou la notification, l’opposition dix jours dès la notification, la cassation dix jours dès la décision.'}
+      body:
+        ar: 'يحدد أجل الاستئناف في القضايا الجنحية في عشرة أيام من النطق بالحكم الحضوري أو من التبليغ في غيره. ويجوز التعرض على الحكم الغيابي في ظرف العشرة أيام التي تلي التبليغ. ويحدد أجل طلب النقض في عشرة أيام من يوم صدور المقرر المطعون فيه ما لم تنص مقتضيات خاصة على خلاف ذلك.'
+        fr: 'En matière correctionnelle, l’appel est formé dans les dix jours du prononcé contradictoire, ou de la notification sinon. L’opposition au jugement par défaut est ouverte dans les dix jours de la notification. Le pourvoi en cassation est formé dans les dix jours de la décision, sauf disposition contraire.'
+      cites: [/ma/loi/22-01/art_400, /ma/loi/22-01/art_393, /ma/loi/22-01/art_527]
+      tool: tools/deadline?k=crim-appeal
+  ends: {office: court, paper: {ar: 'مقال الطعن المؤشر عليه بتاريخ إيداعه', fr: 'La requête de recours visée à sa date de dépôt'}, cites: [/ma/loi/58-25/art_216, /ma/loi/58-25/art_378]}
+  next: [journeys/enforce, journeys/aid]
+
+- key: enforce
+  title: {ar: 'تنفيذ الحكم', fr: 'Faire exécuter un jugement'}
+  lead:
+    ar: 'لا ينفذ حكم إلا بنسخة تحمل الصيغة التنفيذية، وبطلب إلى قاضي التنفيذ الذي يشرف على المكلف بالتنفيذ.'
+    fr: 'Un jugement ne s’exécute que sur une copie revêtue de la formule exécutoire, et sur demande au juge de l’exécution, qui contrôle l’agent d’exécution.'
+  day: {ar: 'نهار قدمتي طلب التنفيذ؟', fr: 'Le jour de la demande d’exécution ?'}
+  steps:
+    - title: {ar: 'النسخة التنفيذية', fr: 'La copie exécutoire'}
+      answer: {ar: 'التنفيذ بنسخة تحمل صيغة «يأمر جلالة الملك جميع المكلفين بالتنفيذ أن ينفذوا هذا السند».', fr: 'L’exécution se fait sur une copie portant la formule par laquelle Sa Majesté le Roi ordonne à tous les agents d’exécution d’exécuter ce titre.'}
+      body:
+        ar: 'لا يجوز التنفيذ، في غير الأحوال المستثناة بنص، إلا بموجب نسخة تحمل صيغة التنفيذ: «وبناء على ذلك يأمر جلالة الملك جميع المكلفين بالتنفيذ أن ينفذوا هذا السند، كما يأمر الوكلاء العامين للملك ووكلاء الملك لدى مختلف المحاكم أن يمدوا يد المعونة لجميع قواد وضباط القوة العمومية وأن يشدوا أزرهم عندما يطلب منهم ذلك قانونا».'
+        fr: 'Sauf exception légale, l’exécution n’a lieu que sur une copie portant la formule exécutoire, par laquelle Sa Majesté le Roi ordonne à tous les agents d’exécution d’exécuter le titre, et aux procureurs de prêter main-forte aux officiers de la force publique lorsqu’ils en sont légalement requis.'
+      cites: [/ma/loi/58-25/art_457]
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      answer: {ar: 'طلب إلى قاضي التنفيذ بهويتك وهوية المنفذ عليه وموطن مختار في دائرة المحكمة، مع السند التنفيذي ونسخ منه.', fr: 'Une demande au juge de l’exécution avec votre identité, celle du débiteur et un domicile élu dans le ressort, le titre exécutoire et ses copies.'}
+      body:
+        ar: 'يقدم طلب التنفيذ إلى قاضي التنفيذ متضمنا هوية طالب التنفيذ والمطلوب فيه وموطنهما مع تعيين موطن مختار داخل دائرة المحكمة التي يجري التنفيذ بدائرتها، ويرفق بالسند التنفيذي ونسخ من الطلب والسند بقدر عدد المنفذ عليهم؛ وإلا بلغت الإجراءات بكتابة الضبط.'
+        fr: 'La demande d’exécution est présentée au juge de l’exécution avec l’identité et le domicile du demandeur et du débiteur et un domicile élu dans le ressort du tribunal d’exécution ; elle joint le titre exécutoire et des copies pour chaque débiteur ; à défaut d’élection, les actes sont notifiés au greffe.'
+      cites: [/ma/loi/58-25/art_481, /ma/loi/58-25/art_482]
+    - title: {ar: 'الإعذار', fr: 'La sommation'}
+      answer: {ar: 'داخل 10 أيام من الطلب، يبلغ المكلف بالتنفيذ المنفذ عليه بالطلب والسند، ويعذره بالتنفيذ حالا.', fr: 'Dans les 10 jours de la demande, l’agent notifie au débiteur la demande et le titre, et le somme d’exécuter aussitôt.'}
+      body:
+        ar: 'يبلغ المكلف بالتنفيذ، داخل أجل عشرة أيام من تاريخ تقديم الطلب، نسخة من الطلب ومن السند إلى المنفذ عليه شخصيا أو في موطنه، مع إعذاره بالتنفيذ اختياريا حالا أو بتعريفه بنواياه. وإذا طلب أجلا عرض الأمر على قاضي التنفيذ. وإذا رفض أو صرح بعجزه، باشر المكلف بالتنفيذ الإجراءات تحت إشراف قاضي التنفيذ.'
+        fr: 'L’agent d’exécution notifie au débiteur, dans les dix jours de la demande, la demande et le titre, à personne ou à domicile, en le sommant d’exécuter volontairement sur-le-champ ou de faire connaître ses intentions. S’il demande un délai, le juge de l’exécution décide ; s’il refuse ou se dit insolvable, l’agent procède aux mesures sous le contrôle du juge.'
+      cites: [/ma/loi/58-25/art_486]
+      delay: {on_day: true, days: 10, from: {ar: من تقديم طلب التنفيذ, fr: de la demande d’exécution}}
+    - title: {ar: 'الحجز', fr: 'La saisie'}
+      answer: {ar: 'الحجز التحفظي بأمر من الرئيس يرفع بعده الدعوى داخل 10 أيام؛ ثم الحجز التنفيذي والبيع بالمزاد.', fr: 'La saisie conservatoire sur ordonnance du président, l’action au fond dans les 10 jours ; puis la saisie-exécution et la vente aux enchères.'}
+      body:
+        ar: 'يصدر الأمر بالحجز التحفظي عن رئيس المحكمة لضمان دين يرجح جديته، وإذا لم يرفع طالبه دعوى في الموضوع وجب عليه رفعها داخل عشرة أيام من الأمر وإلا شطب عليه. وللمحجوز عليه أن يعترض خلال ثمانية أيام من تبليغه. وينتقل المكلف بالتنفيذ إلى مكان الأموال المراد حجزها، ويستعين عند الاقتضاء بالقوة العمومية.'
+        fr: 'La saisie conservatoire est ordonnée par le président pour une créance qui paraît fondée ; si l’action au fond n’est pas déjà engagée, elle doit l’être dans les dix jours, sinon la saisie est levée. Le saisi peut s’y opposer dans les huit jours de la notification. L’agent se rend sur les lieux des biens, avec la force publique si besoin.'
+      cites: [/ma/loi/58-25/art_496, /ma/loi/58-25/art_508]
+    - title: {ar: 'الصعوبات', fr: 'Les difficultés'}
+      answer: {ar: 'أوامر الرئيس في صعوبات التنفيذ الوقتية تستأنف داخل 10 أيام.', fr: 'Les ordonnances du président sur les difficultés d’exécution provisoires sont susceptibles d’appel dans les 10 jours.'}
+      body:
+        ar: 'تستأنف أوامر رئيس المحكمة الصادرة في صعوبات التنفيذ الوقتية أمام الرئيس الأول لمحكمة الدرجة الثانية داخل عشرة أيام من صدورها إذا كانت حضورية أو من تبليغها إذا كانت غيابية، ويبت فيها على وجه السرعة.'
+        fr: 'Les ordonnances du président sur les difficultés provisoires d’exécution sont portées devant le premier président de la cour dans les dix jours de leur prononcé si elles sont contradictoires, ou de leur notification sinon ; il statue d’urgence.'
+      cites: [/ma/loi/58-25/art_495]
+  ends: {office: court, paper: {ar: 'محضر التنفيذ', fr: 'Le procès-verbal d’exécution'}, cites: [/ma/loi/58-25/art_486]}
+
+- key: aid
+  title: {ar: 'المساعدة القضائية', fr: 'L’assistance judiciaire'}
+  lead:
+    ar: 'تمنح المساعدة القضائية أمام جميع المحاكم لمن لا تكفي موارده للدفاع عن حقوقه: تعفيه مؤقتا من المصاريف، ويعين له النقيب محاميا.'
+    fr: 'L’assistance judiciaire est accordée devant toutes les juridictions à qui n’a pas les ressources pour défendre ses droits : elle le dispense provisoirement des frais, et le bâtonnier lui désigne un avocat.'
+  steps:
+    - title: {ar: 'من يستفيد', fr: 'Qui en bénéficie'}
+      answer: {ar: 'كل شخص لا تكفي موارده؛ والأجير وذوو حقوقه بقوة القانون في القضايا الاجتماعية، حتى في التنفيذ.', fr: 'Toute personne dont les ressources ne suffisent pas ; le salarié et ses ayants droit de plein droit en matière sociale, jusqu’à l’exécution.'}
+      body:
+        ar: 'يمكن منح المساعدة القضائية لدى جميع محاكم المملكة للأشخاص الذين نظرا لعدم كفاية مواردهم يكونون غير قادرين على ممارسة حقوقهم أو الدفاع عنها أمام القضاء، في كل نزاع وفي المطالبة بالحق المدني. ويستفيد الأجير أو ذوو حقوقه بحكم القانون من المساعدة القضائية أمام جميع درجات التقاضي، وفي تبليغ الأحكام وتنفيذها.'
+        fr: 'L’assistance judiciaire peut être accordée devant toutes les juridictions aux personnes qui, faute de ressources suffisantes, ne peuvent exercer ou défendre leurs droits en justice, pour tout litige et pour la constitution de partie civile. Le salarié ou ses ayants droit en bénéficient de plein droit à tous les degrés, ainsi que pour la notification et l’exécution des jugements.'
+      cites: [/ma/decret-loi/514-65/art_1, /ma/loi/58-25/art_311]
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      answer: {ar: 'يقدم إلى وكيل الملك بالمحكمة التي يعرض عليها النزاع، مع شهادة عسر يسلمها الباشا أو القائد تبين وسائل عيشك.', fr: 'Au procureur du Roi du tribunal saisi du litige, avec un certificat d’indigence du pacha ou du caïd indiquant vos moyens d’existence.'}
+      body:
+        ar: 'ترفع طلبات المساعدة القضائية إلى وكيل الملك في المحكمة التي يعرض عليها النزاع أو التي توجد في دائرتها المحكمة الواجب عرضه عليها، فيجري تحقيقا في عسر الطالب وجوهر القضية ويسلم الطلب إلى المكتب. ويقدم الطالب شهادة صحيحة يسلمها الباشا أو القائد تثبت عسره وتتضمن وسائل عيشه.'
+        fr: 'La demande est adressée au procureur du Roi près le tribunal saisi ou appelé à l’être ; il enquête sur l’indigence et le fond de l’affaire et transmet le dossier au bureau. Le demandeur produit un certificat en bonne forme, délivré par le pacha ou le caïd, attestant son indigence et ses moyens d’existence.'
+      cites: [/ma/decret-loi/514-65/art_6, /ma/decret-loi/514-65/art_7]
+      papers: checklists/aid-file
+    - title: {ar: 'المكتب', fr: 'Le bureau'}
+      answer: {ar: 'مكتب المساعدة القضائية يستعلم عن عسرك، وقد يحاول الصلح؛ وفي الاستعجال يمنحها رئيسه مؤقتا.', fr: 'Le bureau d’assistance judiciaire s’informe de votre situation, peut tenter une conciliation ; en urgence son président l’accorde provisoirement.'}
+      body:
+        ar: 'يستخبر المكتب عن المعلومات الضرورية لمعرفة حالة عسر الطالب، ويبذل في حالة حضور الطالب والخصم مساعيه الحميدة للحصول على صلح بالمراضاة، ويمكنه الأمر ببحث تكميلي. وفي حالة الاستعجال يسوغ لرئيس المكتب أن يمنح المساعدة مؤقتا.'
+        fr: 'Le bureau recueille les renseignements sur l’indigence du demandeur et, si les deux parties sont présentes, tente une conciliation amiable ; il peut ordonner un complément d’enquête. En cas d’urgence, son président peut accorder l’assistance à titre provisoire.'
+      cites: [/ma/decret-loi/514-65/art_8, /ma/decret-loi/514-65/art_5]
+    - title: {ar: 'المحامي', fr: 'L’avocat'}
+      answer: {ar: 'يعين النقيب محاميا لا يجوز له أن يمتنع دون سبب مشروع؛ وتؤدي الخزينة أتعابه.', fr: 'Le bâtonnier désigne un avocat qui ne peut refuser sans motif légitime ; le Trésor paie ses honoraires.'}
+      body:
+        ar: 'يوجه كاتب المكتب في الثلاثة أيام الموالية للقبول ملخص المقرر إلى رئيس المحكمة، ويدعو الرئيس نقيب هيئة المحامين لتعيين محام. ويختص النقيب بتعيين محام لكل متقاض مستفيد من المساعدة القضائية، ولا يجوز للمحامي المعين أن يمتنع دون سبب مشروع. ويتقاضى أتعابا من الخزينة العامة، إلا إذا نتجت عن المسطرة استفادة مالية لموكله فيتفقان عليها أو يحددها النقيب.'
+        fr: 'Le secrétaire du bureau transmet au président du tribunal, dans les trois jours de l’admission, un extrait de la décision ; le président invite le bâtonnier à désigner un avocat. Le bâtonnier désigne un avocat pour tout justiciable admis, qui ne peut refuser sans motif légitime. L’avocat est payé par le Trésor, sauf si la procédure procure un gain à son client : les honoraires sont alors convenus entre eux ou fixés par le bâtonnier.'
+      cites: [/ma/decret-loi/514-65/art_9, /ma/loi/66-23/art_51, /ma/loi/66-23/art_53]
+      delay: {days: 3, from: {ar: من قرار القبول, fr: de l’admission}}
+    - title: {ar: 'ما تغطيه', fr: 'Ce qu’elle couvre'}
+      answer: {ar: 'تعفيك مؤقتا من إيداع الصوائر ومن كل أداء، وتمتد إلى التنفيذ؛ وتبقى أمام محكمة الاستئناف إذا استأنف خصمك.', fr: 'Elle vous dispense provisoirement de toute consignation et de tout paiement, s’étend à l’exécution, et vous suit en appel si l’adversaire fait appel.'}
+      body:
+        ar: 'يعفى المنتفع بالمساعدة القضائية مؤقتا من إيداع أي مبلغ برسم الصوائر ومن دفع أي أداء، وتسبق الخزينة صوائر الخبراء والتراجمة والشهود. وتمتد المساعدة بحكم القانون إلى إجراءات تنفيذ الأحكام الصادرة بشأنها. ويحتفظ المستفيد بها أمام محكمة الدرجة الثانية إذا رفع استئناف ضده، أما إذا استأنف هو أو طلب النقض فيحتاج إلى مقرر جديد.'
+        fr: 'Le bénéficiaire est provisoirement dispensé de toute consignation et de tout paiement ; le Trésor avance les frais d’experts, d’interprètes et de témoins. L’assistance s’étend de plein droit à l’exécution des jugements obtenus. Elle est conservée en appel si l’appel est formé contre le bénéficiaire ; s’il fait lui-même appel ou se pourvoit, il lui faut une nouvelle décision.'
+      cites: [/ma/decret-loi/514-65/art_12, /ma/decret-loi/514-65/art_2, /ma/decret-loi/514-65/art_10]
+    - title: {ar: 'الرفض والطعن', fr: 'Le refus et le recours'}
+      answer: {ar: 'يستأنف الرفض داخل 15 يوما من تبليغه؛ ويوقف طلب المساعدة أجل النقض إلى أن يبلغ المقرر.', fr: 'Le refus est contestable dans les 15 jours de sa notification ; la demande d’assistance suspend le délai de cassation jusqu’à la notification de la décision.'}
+      body:
+        ar: 'في حالة الرفض يمكن للطالب والنيابة العامة الطعن أمام مكتب المساعدة القضائية لدى محكمة الاستئناف داخل خمسة عشر يوما من التبليغ بالطريق الإدارية أو بالبريد المضمون. وأمام القضاء الإداري يستأنف قرار الرفض داخل خمسة عشر يوما. ويوقف أجل الطعن بالنقض ابتداء من إيداع طلب المساعدة، ويسري من جديد من تبليغ المقرر.'
+        fr: 'En cas de refus, le demandeur et le parquet peuvent recourir devant le bureau d’assistance judiciaire de la cour d’appel dans les quinze jours de la notification par voie administrative ou lettre recommandée. Devant le juge administratif, le refus est contestable dans les quinze jours. Le délai de cassation est suspendu dès le dépôt de la demande et recommence à la notification de la décision.'
+      cites: [/ma/decret-loi/514-65/art_11, /ma/loi/58-25/art_43, /ma/loi/58-25/art_380]
+      delay: {days: 15, complete: true, from: {ar: من تبليغ الرفض, fr: de la notification du refus}}
+  ends: {office: bar, paper: {ar: 'مقرر منح المساعدة القضائية، وتعيين المحامي من النقيب', fr: 'La décision d’assistance, et la désignation de l’avocat par le bâtonnier'}, cites: [/ma/decret-loi/514-65/art_9, /ma/loi/66-23/art_51]}
+  next: [journeys/lawsuit, journeys/lawyer]
+
+- key: lawyer
+  title: {ar: 'مع المحامي: التكليف والأتعاب والنزاع', fr: 'Avec l’avocat : la mission, les honoraires, le différend'}
+  lead:
+    ar: 'منذ 20 غشت 2026 ينظم المهنة القانون 66.23: تكليف مكتوب، وصل عن كل مبلغ، ونقيب يبت في النزاع.'
+    fr: 'Depuis le 20 août 2026, la profession relève de la loi 66.23 : une mission écrite, un reçu pour toute somme, un bâtonnier qui tranche les différends.'
+  steps:
+    - title: {ar: 'التكليف المكتوب', fr: 'La mission écrite'}
+      answer: {ar: 'يحتفظ المحامي بتكليف مكتوب، ولو إلكترونيا، فيه هويتك وموضوع القضية ومراحلها وكيفية أداء الأتعاب.', fr: 'L’avocat conserve une mission écrite, même électronique, avec votre identité, l’objet, les étapes et le mode de paiement des honoraires.'}
+      body:
+        ar: 'يجب على المحامي أن يحتفظ بتكليف مكتوب من موكله، أو بما يفيده على دعامة ورقية أو إلكترونية، يتضمن الاسم الكامل للموكل وعنوانه ورقم بطاقته، واسم المحامي ورقمه المهني وبريده الإلكتروني، وموضوع القضية ورقم ملفها إن وجد، ومراحل التقاضي المتفق عليها، وكيفية أداء الأتعاب. وبدونه يسقط حقه في الأتعاب أو المنازعة فيها.'
+        fr: 'L’avocat doit conserver une mission écrite de son client, sur papier ou électronique : nom, adresse et numéro de carte du client, nom, numéro professionnel et courriel de l’avocat, objet et numéro du dossier, étapes convenues, mode de paiement des honoraires. Sans elle, il perd son droit aux honoraires ou à les contester.'
+      cites: [/ma/loi/66-23/art_54, /ma/loi/66-23/art_55]
+    - title: {ar: 'الأتعاب والوصل', fr: 'Les honoraires et le reçu'}
+      answer: {ar: 'كل مبلغ مقابل وصل مؤرخ وموقع ومرقم؛ وما فوق 10.000 درهم بشيك أو أداء إلكتروني؛ وربط الأتعاب مسبقا بنتيجة الدعوى باطل.', fr: 'Toute somme contre un reçu daté, signé et numéroté ; au-delà de 10 000 DH par chèque ou paiement électronique ; lier d’avance les honoraires au résultat est nul.'}
+      body:
+        ar: 'لا يجوز للمحامي أن يتسلم أي مبالغ أو سندات إلا مقابل وصل مؤرخ وموقع ومرقم يتضمن اسمه ورقم تعريفه الضريبي وسبب الأداء وتاريخه وكيفيته. وتؤدى الأتعاب التي يتجاوز مبلغها عشرة آلاف درهم بشيك أو بوسيلة أداء إلكترونية. ولا يجوز له أن يتفق مسبقا مع موكله على أن تكون أتعابه مرتبطة بنتيجة الدعوى، أو أن يتسلمها حصصا عينية من مال متنازع فيه، وكل اتفاق مخالف باطل بقوة القانون. ويمكنه طلب تسبيق.'
+        fr: 'L’avocat ne reçoit aucune somme ni titre sans un reçu daté, signé et numéroté, portant son nom, son identifiant fiscal, la cause, la date et le mode de paiement. Les honoraires de plus de dix mille dirhams se paient par chèque ou paiement électronique. Il ne peut convenir d’avance d’honoraires liés au résultat du procès ni se faire payer en parts du bien litigieux : tout accord contraire est nul de plein droit. Il peut demander une provision.'
+      cites: [/ma/loi/66-23/art_72, /ma/loi/66-23/art_69, /ma/loi/66-23/art_67]
+    - title: {ar: 'نزاع الأتعاب', fr: 'Le différend sur les honoraires'}
+      answer: {ar: 'يبت النقيب في النزاع داخل شهر بعد الاستماع إليكما؛ وقراره يطعن فيه أمام غرفة المشورة داخل 15 يوما من التبليغ.', fr: 'Le bâtonnier statue dans le mois après vous avoir entendus ; sa décision est contestable devant la chambre du conseil dans les 15 jours de la notification.'}
+      body:
+        ar: 'يختص نقيب هيئة المحامين بالبت، بناء على طلب، في المنازعات بين المحامي وموكله بشأن الأتعاب والمصروفات، وبتحديدها إذا لم يكن اتفاق مسبق. ويستمع إليهما ويبت داخل أجل شهر من توصله بالطلب. ويطعن في قراره أمام غرفة المشورة بمحكمة الاستئناف داخل خمسة عشر يوما من التبليغ، ويذيله رئيس المحكمة الابتدائية بالصيغة التنفيذية بعد صيرورته نهائيا.'
+        fr: 'Le bâtonnier statue, sur demande, sur les différends entre l’avocat et son client relatifs aux honoraires et frais, et les fixe à défaut d’accord. Il entend les deux et statue dans le mois de la demande. Sa décision est contestable devant la chambre du conseil de la cour d’appel dans les quinze jours de sa notification, et le président du tribunal la rend exécutoire une fois définitive.'
+      cites: [/ma/loi/66-23/art_58, /ma/loi/66-23/art_59]
+      delay: {months: 1, from: {ar: من توصل النقيب بالطلب, fr: de la saisine du bâtonnier}}
+    - title: {ar: 'سحب التوكيل والوثائق', fr: 'Retirer le mandat et les pièces'}
+      answer: {ar: 'لك أن تسحب التوكيل وتؤدي ما استحق؛ ويضع المحامي وثائقك في كتابة الهيئة داخل 15 يوما، ولو نازع في الأتعاب.', fr: 'Vous pouvez retirer le mandat en payant ce qui est dû ; l’avocat dépose vos pièces au secrétariat de l’ordre dans les 15 jours, même en cas de litige sur les honoraires.'}
+      body:
+        ar: 'يمكن للموكل أن يسحب التوكيل من محاميه مع إشعار الطرف الآخر والجهة التي تنظر في القضية، ويؤدي الأتعاب المتفق عليها والمصروفات المستحقة. ولا يحق للمحامي أن يحتفظ بالوثائق المسلمة له ولو في حالة منازعة في الأتعاب، ويضعها بكتابة هيئة المحامين داخل خمسة عشر يوما من سحب التوكيل.'
+        fr: 'Le client peut retirer son mandat en avisant l’autre partie et la juridiction, et paie les honoraires convenus et frais dus. L’avocat ne peut retenir les pièces, même en cas de litige sur les honoraires : il les dépose au secrétariat de l’ordre dans les quinze jours du retrait.'
+      cites: [/ma/loi/66-23/art_63, /ma/loi/66-23/art_64]
+      delay: {days: 15, from: {ar: من سحب التوكيل, fr: du retrait du mandat}}
+    - title: {ar: 'الشكاية', fr: 'La plainte'}
+      answer: {ar: 'الشكاية إلى النقيب، يحيلها على الوكيل العام داخل 10 أيام، ويقرر المتابعة أو الحفظ داخل شهر ويخبرك داخل 7 أيام؛ وسكوته شهرا حفظ.', fr: 'La plainte au bâtonnier, qui la transmet au procureur général dans les 10 jours, décide de poursuivre ou de classer dans le mois et vous en informe dans les 7 jours ; son silence d’un mois vaut classement.'}
+      body:
+        ar: 'تحال إلى النقيب الشكايات المقدمة في مواجهة محام. ويحيلها لزوما إلى الوكيل العام للملك داخل عشرة أيام من توصله بها، ويتخذ قرارا معللا بالمتابعة أو الحفظ داخل شهر، يبلغه إلى الوكيل العام وإلى المشتكي داخل سبعة أيام. وإذا انصرم الشهر دون قرار صريح اعتبر ذلك قرارا ضمنيا بالحفظ.'
+        fr: 'Les plaintes contre un avocat sont transmises au bâtonnier. Il les transmet obligatoirement au procureur général dans les dix jours, décide par décision motivée de poursuivre ou de classer dans le mois, et la notifie au procureur général et au plaignant dans les sept jours. Faute de décision expresse dans le mois, la plainte est réputée classée.'
+      cites: [/ma/loi/66-23/art_99]
+      delay: {months: 1, from: {ar: من توصل النقيب بالشكاية, fr: de la réception de la plainte}}
+  ends: {office: bar, paper: {ar: 'قرار النقيب، قابلا للطعن', fr: 'La décision du bâtonnier, contestable'}, cites: [/ma/loi/66-23/art_58, /ma/loi/66-23/art_99]}

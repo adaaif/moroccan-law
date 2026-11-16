@@ -1,0 +1,50 @@
+/* «ورّيه القانون» (HM28, ShowArticle.tsx): an article on the whole screen, read across a counter. Loaded with the view:
+   the first load's stylesheet has no room. Every colour is a token, so the night theme follows. */
+.sh { position: fixed; inset: 0; z-index: 60; overflow-y: auto; overscroll-behavior: contain; background: var(--color-sheet);
+  color: var(--color-ink); --sh-law: clamp(1.65rem, 1.35rem + 1.4vw, 2.35rem); }
+.sh[data-size="s"] { --sh-law: clamp(1.35rem, 1.2rem + 0.8vw, 1.75rem); }
+.sh[data-size="l"] { --sh-law: clamp(2.05rem, 1.7rem + 1.9vw, 3rem); }
+
+.sh-bar { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.5rem 0.75rem; background: var(--color-sheet); border-bottom: 1px solid var(--color-rule); }
+.sh-btn { display: inline-flex; min-height: 2.75rem; align-items: center; gap: 0.375rem; padding: 0 0.75rem; border-radius: 0.75rem;
+  font-size: var(--text-body); font-weight: 500; color: var(--color-ink); }
+.sh-btn:hover { background: var(--color-paper); color: var(--color-stamp); }
+.sh-btn:disabled { color: var(--color-muted); background: none; }
+.sh-sizes { display: inline-flex; gap: 0.25rem; }
+.sh-sq { width: 2.75rem; justify-content: center; padding: 0; }
+.sh-a { font-family: var(--font-law); font-size: 1.6rem; line-height: 1; font-weight: 600; }
+.sh-a-s { font-size: 1.15rem; }
+
+.sh-page { max-width: 46rem; margin: 0 auto; padding: 1.25rem 1rem 3rem; display: flex; flex-direction: column; }
+.sh-text { margin: 0; font-size: var(--text-body); color: var(--color-ink-soft); }
+.sh-label { margin: 0.125rem 0 0; font-family: var(--font-law); font-size: calc(var(--sh-law) * 1.35); line-height: 1.15;
+  font-weight: 700; color: var(--color-stamp); }
+.sh-label-ar { margin-top: 1.75rem; font-size: calc(var(--sh-law) * 1.05); }
+.sh-now { display: inline-flex; align-items: center; gap: 0.5rem; margin: 0.625rem 0 0; font-size: var(--text-lead); font-weight: 600; }
+.sh-dot { width: 0.625rem; height: 0.625rem; border-radius: 999px; background: currentColor; }
+.sh-on { color: var(--color-in-force); }
+.sh-mid { color: var(--color-amended); }
+.sh-off { color: var(--color-repealed); }
+
+/* The law's words, the loudest thing on the screen: Markazi as large as a phone can hold, under the stamp's violet rule. */
+.sh-law { margin-top: 1.25rem; padding-inline-start: 1rem; border-inline-start: 4px solid var(--color-stamp);
+  font-family: var(--font-law); font-size: var(--sh-law); line-height: 1.7; font-weight: 500; }
+.sh-law-fr { font-family: var(--font-law-fr, var(--font-law)); line-height: 1.55; font-weight: 400; }
+
+.sh-source { display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; margin-top: 1.75rem; }
+.sh-source [data-stamp] { font-size: var(--text-body); padding: 0.375rem 0.875rem; }
+.sh-cite { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+
+/* The printed lines, on white paper in either theme, as the page printed them. */
+.sh-print { margin: 1.75rem 0 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.sh-crop { overflow: hidden; min-width: 0; background: #fff; border-radius: 2px; outline: 8px solid #fff;
+  box-shadow: 0 0 0 9px var(--color-rule); margin: 9px; }
+.sh-crop img { display: block; max-width: none; height: auto; }
+.sh-print figcaption, .sh-awake { font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+.sh-qr { margin: 2rem 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+.sh-qr svg { width: 9.5rem; height: 9.5rem; flex: none; border-radius: 4px; }
+.sh-qr figcaption { flex: 1 1 8rem; font-size: var(--text-body); line-height: 1.5; }
+.sh-url { flex-basis: 100%; margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); overflow-wrap: anywhere; }
+.sh-awake { margin: 1rem 0 0; }

@@ -1,0 +1,567 @@
+# The labour code (law 65.99) as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned around
+# («ثالثة» for «ثلاثة»), a word cut in two («ج سيم»), a letter moved («والي لز مه» for «ولا يلزمه»). Each was read
+# against the page's image on 20 Oct 2026 (T1 of the work plan): the 51 articles the work topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/labour_code_65_99.yaml`; a reload of the text applies them again.
+text: /ma/loi/65-99
+document: sources/adala/labour_65_99.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [13], wrong: فال يمكن, right: فلا يمكن}   # turn, p. 14
+  - {arts: [13], wrong: أج لي, right: أجلي}   # split, p. 14
+  - {arts: [13], wrong: أي ام, right: أيام}   # split, p. 14
+  - {arts: [13], wrong: اخ تب اره, right: اختباره}   # split, p. 14
+  - {arts: [14, 363], wrong: ثالثة أشهر, right: ثلاثة أشهر}   # turn, p. 15, 109
+  - {arts: [14, 161], wrong: ون صف, right: ونصف}   # split, p. 15, 56
+  - {arts: [15], wrong: وبأه ليت هما, right: وبأهليتهما}   # split, p. 15
+  - {arts: [16], wrong: و تنحصر, right: وتنحصر}   # split, p. 15
+  - {arts: [34, 159], wrong: إن هاء, right: إنهاء}   # split, p. 21, 56
+  - {arts: [34], wrong: والي لز مه, right: ولا يلزمه}   # moved, p. 21
+  - {arts: [39], wrong: أن صاف, right: أنصاف}   # split, p. 23
+  - {arts: [40], wrong: الج سيمة, right: الجسيمة}   # split, p. 23
+  - {arts: [40], wrong: إلحداها, right: لإحداها}   # turn, p. 23
+  - {arts: [41], wrong: تعسفي ا, right: تعسفيا}   # split, p. 24
+  - {arts: [43], wrong: ج سيم, right: جسيم}   # split, p. 25
+  - {arts: [43], wrong: وج وب, right: وجوب}   # split, p. 25
+  - {arts: [62], wrong: تت اح, right: تتاح}   # split, p. 29
+  - {arts: [152], wrong: والدة, right: ولادة}   # turn, p. 54
+  - {arts: [153], wrong: الأ سابيع, right: الأسابيع}   # split, p. 54
+  - {arts: [154], wrong: أساب يع, right: أسابيع}   # split, p. 55
+  - {arts: [154], wrong: الو ضع, right: الوضع}   # split, p. 55
+  - {arts: [154], wrong: ت ستغر قها, right: تستغرقها}   # split, p. 55
+  - {arts: [159], wrong: للمشغ لإنهاء, right: للمشغل إنهاء}   # moved, p. 56
+  - {arts: [159], wrong: القانون ية, right: القانونية}   # split, p. 56
+  - {arts: [184], wrong: الاستث ن اءات, right: الاستثناءات}   # split, p. 62
+  - {arts: [184], wrong: إلي ها, right: إليها}   # split, p. 62
+  - {arts: [184], wrong: و ستحدد, right: وستحدد}   # split, p. 63
+  - {arts: [193], wrong: مقابل ها, right: مقابلها}   # split, p. 66
+  - {arts: [193], wrong: إلعطاء, right: لإعطاء}   # turn, p. 66
+  - {arts: [193], wrong: المت قطعة, right: المتقطعة}   # split, p. 66
+  - {arts: [193], wrong: ت خللت, right: تخللت}   # split, p. 66
+  - {arts: [205], wrong: تمت يع, right: تمتيع}   # split, p. 69
+  - {arts: [217], wrong: المشغل نيت شغيل, right: المشغلين تشغيل}   # moved, p. 72
+  - {arts: [217], wrong: لائحتها بنص, right: لائحتها بنص تنظيمي وأيام العطل}   # missing, p. 72
+  - {arts: [231], wrong: فني فس, right: في نفس}   # moved, p. 76
+  - {arts: [251], wrong: المنصرم تين, right: المنصرمتين}   # split, p. 80
+  - {arts: [72], wrong: بالمؤ هالت, right: بالمؤهلات}   # turn, p. 32
+  - {arts: [72], wrong: اشت ملت, right: اشتملت}   # split, p. 32
+  - {arts: [72], wrong: ح ر, right: حر}   # split, p. 32
+  - {arts: [74], wrong: البيان ات, right: البيانات}   # split, p. 33
+  - {arts: [75], wrong: للتراج ع, right: للتراجع}   # split, p. 33
+  - {arts: [269, 274], wrong: ثالثة أيام, right: ثلاثة أيام}   # turn, p. 84, 86
+  - {arts: [269], wrong: كل والدة, right: كل ولادة}   # turn, p. 84
+  - {arts: [269], wrong: الأيام الثالثة, right: الأيام الثلاثة}   # turn, p. 84
+  - {arts: [274], wrong: أخو ات, right: أخوات}   # split, p. 86
+  - {arts: [274], wrong: تغيب ات, right: تغيبات}   # split, p. 86
+  - {arts: [274], wrong: الخ ت ان, right: الختان}   # split, p. 86
+  - {arts: [350], wrong: قضائ ه, right: قضائه}   # split, p. 105
+  - {arts: [356], wrong: 'عن ، بعد استشارة المنظمات المهنية للمش غلين والمنظمات  المبالغ التي تحدد بنص تنظيمي النقابية', right: عن المبالغ التي تحدد بنص تنظيمي، بعد استشارة المنظمات المهنية للمشغلين والمنظمات النقابية}   # moved, p. 107
+  - {arts: [363], wrong: يو ما, right: يوما}   # split, p. 109
+  - {arts: [363], wrong: و الممثلين, right: والممثلين}   # split, p. 109
+  - {arts: [370], wrong: تنازال, right: تنازلا}   # turn, p. 110
+  - {arts: [370], wrong: للو فاء, right: للوفاء}   # split, p. 110
+  - {arts: [370], wrong: ب الأجر, right: بالأجر}   # split, p. 110
+  - {arts: [382], wrong: منقولا ت ه, right: منقولاته}   # split, p. 113
+  - {arts: [526], wrong: و بموافقة, right: وبموافقة}   # split, p. 151
+  - {arts: [526], wrong: ت ؤخر, right: تؤخر}   # split, p. 151
+  - {arts: [532], wrong: ب الأعوان, right: بالأعوان}   # split, p. 153
+  - {arts: [532], wrong: مح او لات, right: محاولات}   # split, p. 153
+  - {arts: [532], wrong: مج لا, right: مجال}   # turn, p. 153
+  - {arts: [532], wrong: الم حاوالت, right: المحاولات}   # turn, p. 153
+headings:
+  - {wrong: عقد الش غل, right: عقد الشغل}   # p. 14
+  - {wrong: مدة الش غل, right: مدة الشغل}   # p. 62
+  - {wrong: وا لتعويض, right: والتعويض}   # p. 80
+  - {wrong: عن لا فصل, right: عن الفصل}   # p. 113
+  - {wrong: وم ندوبو, right: ومندوبو}   # p. 117, Book III
+  - {wrong: ولا ممثلون, right: والممثلون}   # p. 117, Book III
+---
+# 7 Nov 2026 (HM12 of the hard-moment review): every word the PDF's text layer cut apart in the 589 articles, joined
+# as the page prints it. Candidates were found where pdftotext's own reading of the page holds one word for the stored
+# pieces, and where the corpus prints the joined word and hardly ever the pieces side by side; each was read on its page
+# image before it was written here. `split`: a word cut in two or more, joined (a lam-alef the layer turned in it put
+# back as printed: «ولا معاملة» → «والمعاملة»); `moved`: a space the layer moved into the next word («كلم نهما» → «كل
+# منهما»). Words as printed, misprints kept: art. 54 prints «النوافس», art. 358 «للأجرالقيمة» (left two words).
+text: /ma/loi/65-99
+document: sources/adala/labour_65_99.pdf
+read_on: '2026-11-07'
+fixes:
+  - {arts: [1], wrong: لا قانون, right: القانون}   # split, p. 10
+  - {arts: [1], wrong: وتواب عها, right: وتوابعها}   # split, p. 10
+  - {arts: [2], wrong: ويت قيدون, right: ويتقيدون}   # split, p. 10
+  - {arts: [3], wrong: البواب ون, right: البوابون}   # split, p. 11
+  - {arts: [4], wrong: بطاب ع, right: بطابع}   # split, p. 11
+  - {arts: [4], wrong: حرفت ه, right: حرفته}   # split, p. 11
+  - {arts: [5], wrong: الق ان ون, right: القانون}   # split, p. 12
+  - {arts: [7, 144, 317], wrong: إلي هم, right: إليهم}   # split, p. 12, 52, 96
+  - {arts: [8], wrong: المصنو ع, right: المصنوع}   # split, p. 12
+  - {arts: [8], wrong: بمعي ة, right: بمعية}   # split, p. 13
+  - {arts: [8], wrong: تربط هم, right: تربطهم}   # split, p. 12
+  - {arts: [8], wrong: مست نج ز, right: مستنجز}   # split, p. 12
+  - {arts: [8], wrong: واع تي اديا, right: واعتياديا}   # split, p. 12
+  - {arts: [8], wrong: ي شترو ن, right: يشترون}   # split, p. 12
+  - {arts: [8], wrong: يتسلم ونها, right: يتسلمونها}   # split, p. 12
+  - {arts: [8], wrong: يشتغلو ا, right: يشتغلوا}   # split, p. 13
+  - {arts: [9], wrong: ب الاستخدام, right: بالاستخدام}   # split, p. 13
+  - {arts: [9], wrong: كلم س, right: كل مس}   # moved, p. 13
+  - {arts: [10], wrong: ت سخي ر, right: تسخير}   # split, p. 13
+  - {arts: [12], wrong: ت كراره, right: تكراره}   # split, p. 14
+  - {arts: [19, 131], wrong: طرأت غيير, right: طرأ تغيير}   # moved, p. 16, 48
+  - {arts: [22], wrong: نات جان, right: ناتجان}   # split, p. 17
+  - {arts: [22, 91], wrong: ي سأل, right: يسأل}   # split, p. 17, 39
+  - {arts: [24], wrong: م واقي ت, right: مواقيت}   # split, p. 18
+  - {arts: [24], wrong: وبالو قاية, right: وبالوقاية}   # split, p. 18
+  - {arts: [24], wrong: وكرامت هم, right: وكرامتهم}   # split, p. 18
+  - {arts: [25], wrong: بي ان, right: بيان}   # split, p. 18
+  - {arts: [25], wrong: لصدو ر, right: لصدور}   # split, p. 18
+  - {arts: [25, 78], wrong: ي تكرر, right: يتكرر}   # split, p. 18, 34
+  - {arts: [27], wrong: بضمان ها, right: بضمانها}   # split, p. 19
+  - {arts: [31], wrong: احتياج ات, right: احتياجات}   # split, p. 20
+  - {arts: [36], wrong: شك و ى, right: شكوى}   # split, p. 22
+  - {arts: [42], wrong: است مر, right: استمر}   # split, p. 24
+  - {arts: [42], wrong: ت نتفي, right: تنتفي}   # split, p. 24
+  - {arts: [44], wrong: يب دأ, right: يبدأ}   # split, p. 25
+  - {arts: [47], wrong: التزامات هما, right: التزاماتهما}   # split, p. 25
+  - {arts: [54], wrong: است راحة, right: استراحة}   # split, p. 27
+  - {arts: [54, 78, 133, 335, 450, 545], wrong: علي ها, right: عليها}   # split, p. 27, 34, 49, 100, 131, 157
+  - {arts: [55], wrong: الم تقاضاة, right: المتقاضاة}   # split, p. 27
+  - {arts: [57], wrong: المضني ة, right: المضنية}   # split, p. 28
+  - {arts: [57], wrong: بمع ناه, right: بمعناه}   # split, p. 28
+  - {arts: [57], wrong: فئ ته, right: فئته}   # split, p. 28
+  - {arts: [59], wrong: الم نصوص, right: المنصوص}   # split, p. 28
+  - {arts: [66], wrong: اعتي اديا, right: اعتياديا}   # split, p. 30
+  - {arts: [66], wrong: الاستغ الالت, right: الاستغلالات}   # split, p. 30
+  - {arts: [66], wrong: النقابي ين, right: النقابيين}   # split, p. 30
+  - {arts: [66], wrong: ت دارس, right: تدارس}   # split, p. 30
+  - {arts: [66], wrong: والمفاو ضات, right: والمفاوضات}   # split, p. 30
+  - {arts: [66], wrong: وت سلم, right: وتسلم}   # split, p. 30
+  - {arts: [66], wrong: وتو ابعها, right: وتوابعها}   # split, p. 30
+  - {arts: [66], wrong: ي زو دهم, right: يزودهم}   # split, p. 30
+  - {arts: [67, 498], wrong: ألس باب, right: لأسباب}   # split, p. 31, 144
+  - {arts: [67], wrong: الم شار, right: المشار}   # split, p. 30
+  - {arts: [67], wrong: وبم حضر, right: وبمحضر}   # split, p. 31
+  - {arts: [69, 244, 409], wrong: الا ستغ لا لات, right: الاستغلالات}   # split, p. 31, 78, 120
+  - {arts: [69], wrong: ب إغلاق, right: بإغلاق}   # split, p. 31
+  - {arts: [70], wrong: المفص ولين, right: المفصولين}   # split, p. 32
+  - {arts: [71], wrong: الم فصو لون, right: المفصولون}   # split, p. 32
+  - {arts: [76], wrong: ب التوصيل, right: بالتوصيل}   # split, p. 33
+  - {arts: [78], wrong: لم ندوب, right: لمندوب}   # split, p. 34
+  - {arts: [79], wrong: المم ثل, right: الممثل}   # split, p. 35
+  - {arts: [79], wrong: الو كيل, right: الوكيل}   # split, p. 35
+  - {arts: [79], wrong: ب مساع, right: بمساع}   # split, p. 35
+  - {arts: [79], wrong: ب مشغله, right: بمشغله}   # split, p. 35
+  - {arts: [79], wrong: صف ته, right: صفته}   # split, p. 35
+  - {arts: [79], wrong: مح لا, right: محلا}   # split, p. 35
+  - {arts: [79], wrong: ويزاولو ن, right: ويزاولون}   # split, p. 35
+  - {arts: [81], wrong: المت جو ل, right: المتجول}   # split, p. 36
+  - {arts: [81], wrong: ب ندا, right: بندا}   # split, p. 36
+  - {arts: [81], wrong: سري ان, right: سريان}   # split, p. 36
+  - {arts: [81], wrong: يبين ان, right: يبينان}   # split, p. 36
+  - {arts: [82], wrong: أج ره, right: أجره}   # split, p. 36
+  - {arts: [82], wrong: أو لا, right: أولا}   # split, p. 36
+  - {arts: [83], wrong: إن هاء, right: إنهاء}   # split, p. 37
+  - {arts: [83], wrong: ان تهى, right: انتهى}   # split, p. 37
+  - {arts: [84], wrong: الإن هاء, right: الإنهاء}   # split, p. 37
+  - {arts: [89, 96, 522], wrong: الو طني, right: الوطني}   # split, p. 38, 40, 149
+  - {arts: [89], wrong: ملح قاتها, right: ملحقاتها}   # split, p. 38
+  - {arts: [92, 123, 124, 126], wrong: الا تحا دات, right: الاتحادات}   # split, p. 39, 47
+  - {arts: [95], wrong: ن قا بات, right: نقابات}   # split, p. 40
+  - {arts: [95], wrong: وب ين, right: وبين}   # split, p. 40
+  - {arts: [96], wrong: إل جراء, right: لإجراء}   # split, p. 40
+  - {arts: [97, 177, 235, 270, 502, 511, 538, 563], wrong: أي ام, right: أيام}   # split, p. 40, 60, 76, 85, 145, 147, 156, 161
+  - {arts: [97], wrong: إخط ارا, right: إخطارا}   # split, p. 40
+  - {arts: [98], wrong: يح ددا, right: يحددا}   # split, p. 40
+  - {arts: [99], wrong: للطرفي ن, right: للطرفين}   # split, p. 41
+  - {arts: [101], wrong: ماي زيد, right: ما يزيد}   # moved, p. 41
+  - {arts: [103], wrong: المكون ون, right: المكونون}   # split, p. 41
+  - {arts: [104], wrong: مشغلي ن, right: مشغلين}   # split, p. 42
+  - {arts: [105], wrong: ألج ر, right: لأجر}   # split, p. 42
+  - {arts: [105, 472], wrong: التسهي لات, right: التسهيلات}   # split, p. 43, 138
+  - {arts: [105], wrong: و إلغائها, right: وإلغائها}   # split, p. 42
+  - {arts: [111], wrong: فإن ها, right: فإنها}   # split, p. 44
+  - {arts: [111], wrong: لا شأن, right: الشأن}   # split, p. 44
+  - {arts: [112], wrong: وق عتها, right: وقعتها}   # split, p. 44
+  - {arts: [116], wrong: ب إرادة, right: بإرادة}   # split, p. 45
+  - {arts: [117, 122, 397, 557], wrong: للمشغلي ن, right: للمشغلين}   # split, p. 45, 46, 117, 162
+  - {arts: [118], wrong: للمش غلين, right: للمشغلين}   # split, p. 46
+  - {arts: [121], wrong: اكت سبوها, right: اكتسبوها}   # split, p. 46
+  - {arts: [122], wrong: بأمان ة, right: بأمانة}   # split, p. 46
+  - {arts: [122], wrong: باتفاقي ة, right: باتفاقية}   # split, p. 46
+  - {arts: [122], wrong: و اتحاداتها, right: واتحاداتها}   # split, p. 46
+  - {arts: [123], wrong: ارتبطو ا, right: ارتبطوا}   # split, p. 47
+  - {arts: [123], wrong: ولالتح ادات, right: وللاتحادات}   # split, p. 47
+  - {arts: [124], wrong: المرتبطي ن, right: المرتبطين}   # split, p. 47
+  - {arts: [124], wrong: يقيم و ا, right: يقيموا}   # split, p. 47
+  - {arts: [125], wrong: ب اتفاقية, right: باتفاقية}   # split, p. 47
+  - {arts: [125], wrong: للم عني, right: للمعني}   # split, p. 47
+  - {arts: [125], wrong: ولال تحا دات, right: وللاتحادات}   # split, p. 47
+  - {arts: [126], wrong: أ قام, right: أقام}   # split, p. 47
+  - {arts: [126], wrong: ألج راء, right: لأجراء}   # split, p. 47
+  - {arts: [127], wrong: ت سوى, right: تسوى}   # split, p. 47, 48
+  - {arts: [129, 150, 177, 183, 216, 230, 268, 278, 375, 381, 391], wrong: ت تكرر, right: تتكرر}   # split, p. 48, 54, 61, 62, 72, 75, 84, 87, 113, 116
+  - {arts: [135], wrong: يخ ضع, right: يخضع}   # split, p. 50
+  - {arts: [136], wrong: ان تقلت, right: انتقلت}   # split, p. 50
+  - {arts: [136], wrong: غي رت, right: غيرت}   # split, p. 50
+  - {arts: [138], wrong: لشكلي ات, right: لشكليات}   # split, p. 51
+  - {arts: [138], wrong: و الممثلين لا نقا بيني, right: والممثلين النقابيين}   # split, p. 51
+  - {arts: [139], wrong: وبالت دا بير, right: وبالتدابير}   # split, p. 51
+  - {arts: [139], wrong: وبلا محافظة, right: وبالمحافظة}   # split, p. 51
+  - {arts: [139], wrong: ولا تغي بات, right: والتغيبات}   # split, p. 51
+  - {arts: [144, 553, 556], wrong: الم كلف, right: المكلف}   # split, p. 52, 159, 160
+  - {arts: [144], wrong: لامع اقين, right: المعاقين}   # split, p. 52
+  - {arts: [144], wrong: للع ون, right: للعون}   # split, p. 52
+  - {arts: [145], wrong: مش خصا, right: مشخصا}   # split, p. 53
+  - {arts: [146], wrong: طاب عها, right: طابعها}   # split, p. 53
+  - {arts: [147], wrong: ألعب ان, right: ألعبان}   # split, p. 53
+  - {arts: [147], wrong: بح ركات, right: بحركات}   # split, p. 53
+  - {arts: [149], wrong: العموم ية, right: العمومية}   # split, p. 54
+  - {arts: [150], wrong: ت راع, right: تراع}   # split, p. 54
+  - {arts: [150], wrong: عقوب ات, right: عقوبات}   # split, p. 54
+  - {arts: [155], wrong: الأجي رة, right: الأجيرة}   # split, p. 55
+  - {arts: [155], wrong: جد يد, right: جديد}   # split, p. 55
+  - {arts: [156], wrong: قبلت وقف, right: قبل توقف}   # moved, p. 55
+  - {arts: [156, 364], wrong: يو ما, right: يوما}   # split, p. 55, 109
+  - {arts: [158], wrong: أثب تتحملها, right: أثبتت حملها}   # moved, p. 56
+  - {arts: [162], wrong: المو اليد, right: المواليد}   # split, p. 57
+  - {arts: [162, 165], wrong: مستلزم اتها, right: مستلزماتها}   # split, p. 57
+  - {arts: [163, 408], wrong: إن شاء, right: إنشاء}   # split, p. 57, 120
+  - {arts: [165], wrong: الأ جيرة, right: الأجيرة}   # split, p. 57
+  - {arts: [165], wrong: الا ستراحة, right: الاستراحة}   # split, p. 57
+  - {arts: [165], wrong: السب عة, right: السبعة}   # split, p. 57
+  - {arts: [165], wrong: تمتي ع, right: تمتيع}   # split, p. 57
+  - {arts: [165], wrong: مو لو دها, right: مولودها}   # split, p. 57
+  - {arts: [169], wrong: ب الولوجيات, right: بالولوجيات}   # split, p. 58
+  - {arts: [170, 478], wrong: ولا معاملة, right: والمعاملة}   # split, p. 58, 139
+  - {arts: [173, 413], wrong: أم كن, right: أمكن}   # split, p. 59, 121
+  - {arts: [173], wrong: تب ي ح, right: تبيح}   # split, p. 59
+  - {arts: [173, 223, 287, 393], wrong: مو اد, right: مواد}   # split, p. 59, 73, 89, 116
+  - {arts: [173], wrong: موسمي ا, right: موسميا}   # split, p. 59
+  - {arts: [174], wrong: اللي لية, right: الليلية}   # split, p. 60
+  - {arts: [174], wrong: تت اح, right: تتاح}   # split, p. 60
+  - {arts: [177], wrong: و المتعين, right: والمتعين}   # split, p. 60
+  - {arts: [182], wrong: لالست راحة, right: للاستراحة}   # split, p. 62
+  - {arts: [183], wrong: أح داث, right: أحداث}   # split, p. 62
+  - {arts: [183, 216], wrong: حق هم, right: حقهم}   # split, p. 62, 72
+  - {arts: [183], wrong: م جموع, right: مجموع}   # split, p. 62
+  - {arts: [183], wrong: ن م وهم, right: نموهم}   # split, p. 62
+  - {arts: [185, 186, 189, 227, 245, 335, 473], wrong: لا نقا بيني, right: النقابيين}   # split, p. 63, 64, 74, 78, 100, 138
+  - {arts: [185, 227, 307], wrong: و الممثلين, right: والممثلين}   # split, p. 63, 74, 94
+  - {arts: [186], wrong: التقلي ص, right: التقليص}   # split, p. 64
+  - {arts: [186], wrong: لمن دو بي, right: لمندوبي}   # split, p. 64
+  - {arts: [190], wrong: المخ صصين, right: المخصصين}   # split, p. 65
+  - {arts: [191], wrong: الاستث ن اءات, right: الاستثناءات}   # split, p. 65
+  - {arts: [191], wrong: و عائ التهم, right: وعائلاتهم}   # split, p. 65
+  - {arts: [191], wrong: وس عاة, right: وسعاة}   # split, p. 65
+  - {arts: [192], wrong: نج دة, right: نجدة}   # split, p. 65
+  - {arts: [194], wrong: لات زايد, right: التزايد}   # split, p. 66
+  - {arts: [199], wrong: من ها, right: منها}   # split, p. 67
+  - {arts: [200], wrong: ت عرضه, right: تعرضه}   # split, p. 68
+  - {arts: [203], wrong: ان قضاء, right: انقضاء}   # split, p. 69
+  - {arts: [206, 216], wrong: الواح دة, right: الواحدة}   # split, p. 69, 72
+  - {arts: [207], wrong: الأسبوع ية, right: الأسبوعية}   # split, p. 70
+  - {arts: [209, 450], wrong: ي عطى, right: يعطى}   # split, p. 70, 131
+  - {arts: [210], wrong: راح تهم, right: راحتهم}   # split, p. 70
+  - {arts: [212], wrong: ت بررها, right: تبررها}   # split, p. 71
+  - {arts: [213], wrong: وا حد, right: واحد}   # split, p. 71
+  - {arts: [216], wrong: إتاحت ها, right: إتاحتها}   # split, p. 72
+  - {arts: [216], wrong: ي راع, right: يراع}   # split, p. 72
+  - {arts: [218], wrong: وقت ا, right: وقتا}   # split, p. 72
+  - {arts: [218], wrong: ي تقرر, right: يتقرر}   # split, p. 72
+  - {arts: [220], wrong: عليهم ن, right: عليه من}   # moved, p. 73
+  - {arts: [222, 349], wrong: الي وم, right: اليوم}   # split, p. 73, 104
+  - {arts: [224], wrong: تعويض ي ة, right: تعويضية}   # split, p. 74
+  - {arts: [227, 230], wrong: الا ستدراك, right: الاستدراك}   # split, p. 74, 75
+  - {arts: [227], wrong: سيب اشر, right: سيباشر}   # split, p. 74
+  - {arts: [228, 230], wrong: المس تدركة, right: المستدركة}   # split, p. 74, 75
+  - {arts: [230], wrong: بلا تواريخ, right: بالتواريخ}   # split, p. 75
+  - {arts: [230, 278], wrong: يخ الف, right: يخالف}   # split, p. 75, 87
+  - {arts: [235], wrong: لات و قفات, right: التوقفات}   # split, p. 76
+  - {arts: [240], wrong: ي قض يها, right: يقضيها}   # split, p. 78
+  - {arts: [241], wrong: التعويض ية, right: التعويضية}   # split, p. 78
+  - {arts: [253], wrong: التمت ع, right: التمتع}   # split, p. 81
+  - {arts: [253], wrong: ب العطلة, right: بالعطلة}   # split, p. 81
+  - {arts: [255], wrong: أن هى, right: أنهى}   # split, p. 81
+  - {arts: [257], wrong: ي تقاضاه, right: يتقاضاه}   # split, p. 81
+  - {arts: [258], wrong: تحد يد, right: تحديد}   # split, p. 81
+  - {arts: [258], wrong: لات متع, right: التمتع}   # split, p. 81
+  - {arts: [261], wrong: السنو يتين, right: السنويتين}   # split, p. 82
+  - {arts: [262, 263], wrong: عطلت ه, right: عطلته}   # split, p. 82
+  - {arts: [263], wrong: ين جز, right: ينجز}   # split, p. 82
+  - {arts: [264], wrong: ت قاضاه, right: تقاضاه}   # split, p. 83
+  - {arts: [265], wrong: ليت ئم, right: يلتئم}   # split, p. 83
+  - {arts: [270], wrong: إج ازته, right: إجازته}   # split, p. 85
+  - {arts: [270], wrong: مشغ له, right: مشغله}   # split, p. 85
+  - {arts: [270], wrong: ي ست ر ج ع, right: يسترجع}   # split, p. 85
+  - {arts: [271], wrong: طبي ا, right: طبيا}   # split, p. 85
+  - {arts: [271], wrong: والأربعي ن, right: والأربعين}   # split, p. 85
+  - {arts: [276], wrong: أبن ائه, right: أبنائه}   # split, p. 86
+  - {arts: [277], wrong: أج راءهم, right: أجراءهم}   # split, p. 87
+  - {arts: [279], wrong: كو سائل, right: كوسائل}   # split, p. 87
+  - {arts: [281], wrong: الو قاية, right: الوقاية}   # split, p. 88
+  - {arts: [281], wrong: و الأبخ رة, right: والأبخرة}   # split, p. 88
+  - {arts: [281], wrong: ومغت سلا تهم, right: ومغتسلاتهم}   # split, p. 88
+  - {arts: [282], wrong: أما كن, right: أماكن}   # split, p. 88
+  - {arts: [282], wrong: والإ نارة, right: والإنارة}   # split, p. 88
+  - {arts: [285], wrong: تك ون, right: تكون}   # split, p. 89
+  - {arts: [285], wrong: م حاطة, right: محاطة}   # split, p. 89
+  - {arts: [286], wrong: تو فير, right: توفير}   # split, p. 89
+  - {arts: [286], wrong: ك سو اعد, right: كسواعد}   # split, p. 89
+  - {arts: [286], wrong: وت قاس, right: وتقاس}   # split, p. 89
+  - {arts: [286], wrong: ولا مسننات, right: والمسننات}   # split, p. 89
+  - {arts: [287], wrong: ب صح تهم, right: بصحتهم}   # split, p. 89
+  - {arts: [289], wrong: بالاحت راس, right: بالاحتراس}   # split, p. 90
+  - {arts: [289], wrong: ج هزت, right: جهزت}   # split, p. 90
+  - {arts: [289], wrong: ي لصق, right: يلصق}   # split, p. 90
+  - {arts: [289], wrong: يع طل, right: يعطل}   # split, p. 90
+  - {arts: [290], wrong: يح تم, right: يحتم}   # split, p. 90
+  - {arts: [291], wrong: ي قضون ه, right: يقضونه}   # split, p. 90
+  - {arts: [293], wrong: قانون ية, right: قانونية}   # split, p. 91
+  - {arts: [294], wrong: وأمن ية, right: وأمنية}   # split, p. 91
+  - {arts: [300, 533], wrong: التنظيم ية, right: التنظيمية}   # split, p. 92, 154
+  - {arts: [300], wrong: ب الإغلاق, right: بالإغلاق}   # split, p. 92
+  - {arts: [301], wrong: أجرا ؤه, right: أجراؤه}   # split, p. 92
+  - {arts: [301], wrong: يستح قو نها, right: يستحقونها}   # split, p. 92
+  - {arts: [302], wrong: وز نه, right: وزنه}   # split, p. 93
+  - {arts: [302], wrong: وزن ه, right: وزنه}   # split, p. 93
+  - {arts: [303], wrong: بتطب يقها, right: بتطبيقها}   # split, p. 93
+  - {arts: [304, 305], wrong: والغابوي ة, right: والغابوية}   # split, p. 93, 94
+  - {arts: [304], wrong: وت و ابعها, right: وتوابعها}   # split, p. 93
+  - {arts: [305], wrong: المشتر كة, right: المشتركة}   # split, p. 94
+  - {arts: [305], wrong: و تو ابعها, right: وتوابعها}   # split, p. 94
+  - {arts: [307], wrong: الطب ية, right: الطبية}   # split, p. 94
+  - {arts: [307], wrong: النقابيي ن, right: النقابيين}   # split, p. 94
+  - {arts: [310], wrong: مختص ون, right: مختصون}   # split, p. 95
+  - {arts: [314], wrong: بمهن ت ه, right: بمهنته}   # split, p. 95
+  - {arts: [315], wrong: اجتماع يين, right: اجتماعيين}   # split, p. 95
+  - {arts: [318], wrong: وقائي ا, right: وقائيا}   # split, p. 96
+  - {arts: [319], wrong: بالطب ي ب, right: بالطبيب}   # split, p. 96
+  - {arts: [319], wrong: عال جات, right: علاجات}   # split, p. 96
+  - {arts: [320], wrong: تبر رها, right: تبررها}   # split, p. 96
+  - {arts: [320, 461], wrong: عل يه, right: عليه}   # split, p. 96, 134
+  - {arts: [321], wrong: المست حضرات, right: المستحضرات}   # split, p. 97
+  - {arts: [321], wrong: و استبعاد, right: واستبعاد}   # split, p. 97
+  - {arts: [322, 385, 462, 535, 566], wrong: المو اد, right: المواد}   # split, p. 97, 114, 135, 155, 162
+  - {arts: [322], wrong: ولا مستحضرات, right: والمستحضرات}   # split, p. 97
+  - {arts: [323, 411], wrong: المنتج ات, right: المنتجات}   # split, p. 97, 120
+  - {arts: [327], wrong: بلغو ا, right: بلغوا}   # split, p. 98
+  - {arts: [327], wrong: علي هم, right: عليهم}   # split, p. 98
+  - {arts: [327], wrong: غي اب, right: غياب}   # split, p. 98
+  - {arts: [327], wrong: و الحامل, right: والحامل}   # split, p. 98
+  - {arts: [333], wrong: للم شغلي ن, right: للمشغلين}   # split, p. 99
+  - {arts: [337], wrong: تقنيي عمل, right: تقني يعمل}   # moved, p. 101
+  - {arts: [337], wrong: من دوبين, right: مندوبين}   # split, p. 101
+  - {arts: [338], wrong: است قصاء, right: استقصاء}   # split, p. 101
+  - {arts: [338], wrong: الإ ي عزا, right: الإيعاز}   # split, p. 102
+  - {arts: [340], wrong: ب المرض, right: بالمرض}   # split, p. 102
+  - {arts: [341], wrong: بت ف ت يش, right: بتفتيش}   # split, p. 102
+  - {arts: [342], wrong: التسعو ن, right: التسعون}   # split, p. 103
+  - {arts: [343], wrong: خطي رة, right: خطيرة}   # split, p. 103
+  - {arts: [347], wrong: أجري ؤد ى, right: أجر يؤدى}   # moved, p. 104
+  - {arts: [347], wrong: مألو فة, right: مألوفة}   # split, p. 104
+  - {arts: [347], wrong: و يتقاضى, right: ويتقاضى}   # split, p. 104
+  - {arts: [353, 377], wrong: الحلو ان, right: الحلوان}   # split, p. 106, 112
+  - {arts: [353], wrong: من صب, right: منصب}   # split, p. 106
+  - {arts: [357], wrong: للقي مة, right: للقيمة}   # split, p. 107
+  - {arts: [361], wrong: ت كرر, right: تكرر}   # split, p. 108
+  - {arts: [367], wrong: ث ابتا, right: ثابتا}   # split, p. 109
+  - {arts: [368], wrong: علمي ات, right: عمليات}   # split, p. 110
+  - {arts: [368], wrong: في ها, right: فيها}   # split, p. 110
+  - {arts: [368], wrong: لا مسبقة, right: المسبقة}   # split, p. 110
+  - {arts: [369], wrong: عن ها, right: عنها}   # split, p. 110
+  - {arts: [369], wrong: وبا لمقاولات, right: وبالمقاولات}   # split, p. 110
+  - {arts: [372], wrong: الم يكانوغ رافي ة, right: الميكانوغرافية}   # split, p. 111
+  - {arts: [373], wrong: سنت ين, right: سنتين}   # split, p. 111
+  - {arts: [374], wrong: الميكا نوغرافي ة, right: الميكانوغرافية}   # split, p. 111
+  - {arts: [375], wrong: البي ان ات, right: البيانات}   # split, p. 111
+  - {arts: [376], wrong: الح لوان, right: الحلوان}   # split, p. 112
+  - {arts: [376], wrong: يت لقاه, right: يتلقاه}   # split, p. 112
+  - {arts: [378], wrong: يت لق ونه, right: يتلقونه}   # split, p. 112
+  - {arts: [379], wrong: مستر جعة, right: مسترجعة}   # split, p. 112
+  - {arts: [388], wrong: حو الة, right: حوالة}   # split, p. 115
+  - {arts: [390], wrong: عاديي ن ، أو تم عرضي ن, right: عاديين، أو متعرضين}   # split, p. 116
+  - {arts: [390], wrong: لدي ون, right: لديون}   # split, p. 116
+  - {arts: [392], wrong: أج رائه, right: أجرائه}   # split, p. 116
+  - {arts: [392], wrong: لا مقتصد يات, right: المقتصديات}   # split, p. 116
+  - {arts: [393], wrong: م بيعاته, right: مبيعاته}   # split, p. 116
+  - {arts: [394, 422, 494, 505, 529], wrong: الب اب, right: الباب}   # split, p. 117, 123, 143, 145, 152
+  - {arts: [396], wrong: بمج لا, right: بمجال}   # split, p. 117
+  - {arts: [397], wrong: و للأجراء, right: وللأجراء}   # split, p. 117
+  - {arts: [397], wrong: ي ع ت ب ر, right: يعتبر}   # split, p. 118
+  - {arts: [398], wrong: المشت غلين, right: المشتغلين}   # split, p. 118
+  - {arts: [401], wrong: بعضو يتهم, right: بعضويتهم}   # split, p. 118
+  - {arts: [401], wrong: يح ت فظو ا, right: يحتفظوا}   # split, p. 118
+  - {arts: [404], wrong: ت أطيرهم, right: تأطيرهم}   # split, p. 119
+  - {arts: [404], wrong: و بالحق, right: وبالحق}   # split, p. 119
+  - {arts: [407], wrong: لت لقين, right: لتلقين}   # split, p. 119
+  - {arts: [408], wrong: تخص ي ص, right: تخصيص}   # split, p. 119
+  - {arts: [408], wrong: كالتعا ونيات, right: كالتعاونيات}   # split, p. 119
+  - {arts: [409], wrong: ا لت وسط, right: التوسط}   # split, p. 120
+  - {arts: [409], wrong: توزيع ها, right: توزيعها}   # split, p. 120
+  - {arts: [409], wrong: مه نتها, right: مهنتها}   # split, p. 120
+  - {arts: [411], wrong: المعر وضات, right: المعروضات}   # split, p. 120
+  - {arts: [411], wrong: شارات ها, right: شاراتها}   # split, p. 120
+  - {arts: [413], wrong: تؤو ل, right: تؤول}   # split, p. 121
+  - {arts: [413], wrong: مست حقيها, right: مستحقيها}   # split, p. 121
+  - {arts: [414], wrong: المهن ية, right: المهنية}   # split, p. 121
+  - {arts: [414], wrong: تنظيم ها, right: تنظيمها}   # split, p. 121
+  - {arts: [416], wrong: سج ن, right: سجن}   # split, p. 122
+  - {arts: [416], wrong: قاصري ن, right: قاصرين}   # split, p. 122
+  - {arts: [417, 429], wrong: إلي ها, right: إليها}   # split, p. 122, 125
+  - {arts: [417], wrong: ي جرد, right: يجرد}   # split, p. 122
+  - {arts: [419], wrong: ودول ية, right: ودولية}   # split, p. 122
+  - {arts: [420], wrong: لا ثلاث, right: الثالث}   # split, p. 122
+  - {arts: [424], wrong: تقد مها, right: تقدمها}   # split, p. 123
+  - {arts: [425], wrong: الوط ني, right: الوطني}   # split, p. 124
+  - {arts: [426], wrong: لايت عا طو ن, right: لا يتعاطون}   # moved, p. 124
+  - {arts: [427], wrong: ب ردها, right: بردها}   # split, p. 125
+  - {arts: [427], wrong: متصرفو ها, right: متصرفوها}   # split, p. 125
+  - {arts: [428], wrong: مؤ سسو, right: مؤسسو}   # split, p. 125
+  - {arts: [433], wrong: ومندو بن ا ئب, right: ومندوب نائب}   # moved, p. 127
+  - {arts: [434], wrong: في ما, right: فيما}   # split, p. 127
+  - {arts: [434], wrong: للت جديد, right: للتجديد}   # split, p. 127
+  - {arts: [435], wrong: ببلو غه, right: ببلوغه}   # split, p. 127
+  - {arts: [437], wrong: اتفاقي ات, right: اتفاقيات}   # split, p. 128
+  - {arts: [439], wrong: و إخوت ه, right: وإخوته}   # split, p. 128
+  - {arts: [442], wrong: الناخب ين, right: الناخبين}   # split, p. 129
+  - {arts: [444], wrong: و المندوبين, right: والمندوبين}   # split, p. 129
+  - {arts: [445], wrong: و بت سليم هم, right: وبتسليمهم}   # split, p. 130
+  - {arts: [450], wrong: أح رزت, right: أحرزت}   # split, p. 131
+  - {arts: [450], wrong: كلم نهما, right: كل منهما}   # moved, p. 131
+  - {arts: [450], wrong: مقاع دهم, right: مقاعدهم}   # split, p. 131
+  - {arts: [450], wrong: و بعدئذ, right: وبعدئذ}   # split, p. 131
+  - {arts: [450], wrong: يذ كر, right: يذكر}   # split, p. 131
+  - {arts: [451], wrong: ان خفض, right: انخفض}   # split, p. 132
+  - {arts: [451, 465], wrong: مندوبي ن, right: مندوبين}   # split, p. 132, 136
+  - {arts: [452], wrong: انت خبوا, right: انتخبوا}   # split, p. 132
+  - {arts: [454], wrong: يو جد, right: يوجد}   # split, p. 132
+  - {arts: [455], wrong: اجتماعا تهم, right: اجتماعاتهم}   # split, p. 133
+  - {arts: [455], wrong: لمن د وبي, right: لمندوبي}   # split, p. 133
+  - {arts: [455], wrong: يعلن و ا, right: يعلنوا}   # split, p. 133
+  - {arts: [456], wrong: بمهام هم, right: بمهامهم}   # split, p. 133
+  - {arts: [456], wrong: ومندوب ي, right: ومندوبي}   # split, p. 133
+  - {arts: [457], wrong: يو افق, right: يوافق}   # split, p. 133
+  - {arts: [458], wrong: انتداب هم, right: انتدابهم}   # split, p. 133
+  - {arts: [460], wrong: للمن دوبين, right: للمندوبين}   # split, p. 134
+  - {arts: [460], wrong: ي عقدها, right: يعقدها}   # split, p. 134
+  - {arts: [460], wrong: يست قبل, right: يستقبل}   # split, p. 134
+  - {arts: [461], wrong: جو ابه, right: جوابه}   # split, p. 134
+  - {arts: [461], wrong: من دو بو, right: مندوبو}   # split, p. 134
+  - {arts: [461], wrong: يو ضع, right: يوضع}   # split, p. 134
+  - {arts: [462], wrong: الأمكن ة, right: الأمكنة}   # split, p. 135
+  - {arts: [462], wrong: ب الوقت, right: بالوقت}   # split, p. 135
+  - {arts: [462], wrong: بالتو اريخ, right: بالتواريخ}   # split, p. 135
+  - {arts: [470], wrong: للن قابة, right: للنقابة}   # split, p. 137
+  - {arts: [470], wrong: ن قابي, right: نقابي}   # split, p. 137
+  - {arts: [470], wrong: ن قابيان, right: نقابيان}   # split, p. 137
+  - {arts: [470], wrong: ن قابيين, right: نقابيين}   # split, p. 137
+  - {arts: [473], wrong: المؤسست ين, right: المؤسستين}   # split, p. 138
+  - {arts: [473], wrong: الممثل تين, right: الممثلتين}   # split, p. 138
+  - {arts: [473], wrong: ن قابيي ن, right: نقابيين}   # split, p. 138
+  - {arts: [473], wrong: و مندوبين, right: ومندوبين}   # split, p. 138
+  - {arts: [475], wrong: بلاو ساطة, right: بالوساطة}   # split, p. 138
+  - {arts: [476], wrong: وللمشغل ين, right: وللمشغلين}   # split, p. 138
+  - {arts: [477], wrong: ب الوساطة, right: بالوساطة}   # split, p. 139
+  - {arts: [477], wrong: وضع هم, right: وضعهم}   # split, p. 139
+  - {arts: [478], wrong: ح رمانا, right: حرمانا}   # split, p. 139
+  - {arts: [478], wrong: من طل ق, right: منطلق}   # split, p. 139
+  - {arts: [479], wrong: بمؤه لا تهم, right: بمؤهلاتهم}   # split, p. 139
+  - {arts: [483], wrong: ستست عملها, right: ستستعملها}   # split, p. 140
+  - {arts: [483], wrong: لا حقا, right: لاحقا}   # split, p. 140
+  - {arts: [484], wrong: طلبو ا, right: طلبوا}   # split, p. 140
+  - {arts: [484], wrong: وشه ادا تهم, right: وشهاداتهم}   # split, p. 140
+  - {arts: [484], wrong: وم هنهم, right: ومهنهم}   # split, p. 140
+  - {arts: [488], wrong: الو فاء, right: الوفاء}   # split, p. 141
+  - {arts: [489], wrong: إيداع ها, right: إيداعها}   # split, p. 141
+  - {arts: [489], wrong: بالم مارسة, right: بالممارسة}   # split, p. 141
+  - {arts: [490], wrong: إرادت ه, right: إرادته}   # split, p. 141
+  - {arts: [491], wrong: ولل موظفين, right: وللموظفين}   # split, p. 142
+  - {arts: [492], wrong: المو سي ق ية, right: الموسيقية}   # split, p. 142
+  - {arts: [492], wrong: ف نانين, right: فنانين}   # split, p. 142
+  - {arts: [493], wrong: الفنان ين, right: الفنانين}   # split, p. 142
+  - {arts: [493], wrong: تف وق, right: تفوق}   # split, p. 142
+  - {arts: [495], wrong: اع تباري, right: اعتباري}   # split, p. 143
+  - {arts: [495], wrong: بمقاو لات, right: بمقاولات}   # split, p. 143
+  - {arts: [496], wrong: التزاي د, right: التزايد}   # split, p. 143
+  - {arts: [496], wrong: مح دد, right: محدد}   # split, p. 143
+  - {arts: [499], wrong: الموج ب, right: الموجب}   # split, p. 144
+  - {arts: [501], wrong: ان خراط, right: انخراط}   # split, p. 145
+  - {arts: [503], wrong: أج رائهم, right: أجرائهم}   # split, p. 145
+  - {arts: [503], wrong: التزامات هم, right: التزاماتهم}   # split, p. 145
+  - {arts: [503], wrong: ي عفي, right: يعفي}   # split, p. 145
+  - {arts: [504], wrong: والح مائية, right: والحمائية}   # split, p. 145
+  - {arts: [506], wrong: قبلت اريخ, right: قبل تاريخ}   # moved, p. 146
+  - {arts: [508], wrong: تعوي ضهم, right: تعويضهم}   # split, p. 146
+  - {arts: [508], wrong: ش غلهم, right: شغلهم}   # split, p. 146
+  - {arts: [510], wrong: المو الي, right: الموالي}   # split, p. 147
+  - {arts: [512, 569], wrong: اختي ار, right: اختيار}   # split, p. 147, 163
+  - {arts: [512], wrong: لتوج ههم, right: لتوجههم}   # split, p. 147
+  - {arts: [512], wrong: ليشغل وا, right: ليشغلوا}   # split, p. 147
+  - {arts: [513], wrong: تستو جبها, right: تستوجبها}   # split, p. 147
+  - {arts: [514], wrong: لح ادث, right: لحادث}   # split, p. 147
+  - {arts: [516], wrong: للت أشيرة, right: للتأشيرة}   # split, p. 148
+  - {arts: [522], wrong: الديم غرافي, right: الديمغرافي}   # split, p. 150
+  - {arts: [524], wrong: بلا مقترحات, right: بالمقترحات}   # split, p. 151
+  - {arts: [524], wrong: مج الس, right: مجالس}   # split, p. 150
+  - {arts: [530], wrong: التابع ين, right: التابعين}   # split, p. 152
+  - {arts: [530], wrong: الطري قة, right: الطريقة}   # split, p. 152
+  - {arts: [530], wrong: وح سب, right: وحسب}   # split, p. 152
+  - {arts: [531], wrong: ن و فم ب ر, right: نوفمبر}   # split, p. 153
+  - {arts: [533], wrong: ب الأيدي, right: بالأيدي}   # split, p. 154
+  - {arts: [533], wrong: ساكني ه, right: ساكنيه}   # split, p. 154
+  - {arts: [533], wrong: و العاشرة, right: والعاشرة}   # split, p. 153
+  - {arts: [533], wrong: ي ست فسروا, right: يستفسروا}   # split, p. 154
+  - {arts: [533], wrong: يأمرو ا, right: يأمروا}   # split, p. 154
+  - {arts: [533], wrong: يباشرو ا, right: يباشروا}   # split, p. 154
+  - {arts: [533], wrong: يست نسخ وها, right: يستنسخوها}   # split, p. 154
+  - {arts: [534], wrong: قيام هم, right: قيامهم}   # split, p. 154
+  - {arts: [535], wrong: تخ صصه, right: تخصصه}   # split, p. 154
+  - {arts: [535], wrong: و بسراديب, right: وبسراديب}   # split, p. 155
+  - {arts: [536], wrong: التن بيهات, right: التنبيهات}   # split, p. 155
+  - {arts: [536], wrong: للعو ن, right: للعون}   # split, p. 155
+  - {arts: [538], wrong: الترتيب ات, right: الترتيبات}   # split, p. 155
+  - {arts: [539], wrong: يحرر وا, right: يحرروا}   # split, p. 156
+  - {arts: [540], wrong: ت ب دأ, right: تبدأ}   # split, p. 156
+  - {arts: [542], wrong: وبا لسلامة, right: وبالسلامة}   # split, p. 157
+  - {arts: [545], wrong: است نفذت, right: استنفذت}   # split, p. 157
+  - {arts: [546], wrong: ب جعل, right: بجعل}   # split, p. 158
+  - {arts: [547], wrong: المخالفت ين, right: المخالفتين}   # split, p. 158
+  - {arts: [548], wrong: والم سيرين, right: والمسيرين}   # split, p. 158
+  - {arts: [548], wrong: وبت فويض, right: وبتفويض}   # split, p. 158
+  - {arts: [548], wrong: ولا تابعين, right: والتابعين}   # split, p. 158
+  - {arts: [550], wrong: تسو ى, right: تسوى}   # split, p. 159
+  - {arts: [552], wrong: الخ الف, right: الخلاف}   # split, p. 159
+  - {arts: [556], wrong: أيا ت فاق, right: أي اتفاق}   # moved, p. 160
+  - {arts: [557, 560, 566, 570, 573], wrong: والمصالح ة, right: والمصالحة}   # split, p. 160, 161, 162, 163, 164
+  - {arts: [558], wrong: يم ث لو ا, right: يمثلوا}   # split, p. 160
+  - {arts: [559, 563, 566, 567, 581], wrong: و المصالحة, right: والمصالحة}   # split, p. 161, 162, 166
+  - {arts: [560], wrong: بب ذل, right: ببذل}   # split, p. 161
+  - {arts: [560], wrong: لايت عدى, right: لا يتعدى}   # moved, p. 161
+  - {arts: [568], wrong: بات فاق, right: باتفاق}   # split, p. 163
+  - {arts: [570], wrong: ت لقيه, right: تلقيه}   # split, p. 163
+  - {arts: [575], wrong: التح كيمي ة, right: التحكيمية}   # split, p. 164
+  - {arts: [576], wrong: التح كيمية, right: التحكيمية}   # split, p. 165
+  - {arts: [576], wrong: ت حكيمية, right: تحكيمية}   # split, p. 165
+  - {arts: [580], wrong: مق رر, right: مقرر}   # split, p. 165
+  - {arts: [581], wrong: التح كي مي, right: التحكيمي}   # split, p. 166
+  - {arts: [586], wrong: الص ادر, right: الصادر}   # split, p. 167
+  - {arts: [586], wrong: المبي ني ن, right: المبينين}   # split, p. 168
+  - {arts: [586], wrong: ب الرفع, right: بالرفع}   # split, p. 169
+  - {arts: [586], wrong: بالراح ة, right: بالراحة}   # split, p. 169
+  - {arts: [586], wrong: بالم صالحة, right: بالمصالحة}   # split, p. 170
+  - {arts: [586], wrong: بلا كفالات, right: بالكفالات}   # split, p. 167
+  - {arts: [586], wrong: بن قاب ات, right: بنقابات}   # split, p. 170
+  - {arts: [586], wrong: تضب ط, right: تضبط}   # split, p. 168
+  - {arts: [586], wrong: ليسو ا, right: ليسوا}   # split, p. 168
+  - {arts: [586], wrong: م شغلهم, right: مشغلهم}   # split, p. 170
+  - {arts: [586], wrong: و المتضمن, right: والمتضمن}   # split, p. 168
+  - {arts: [586], wrong: والمنظ م, right: والمنظم}   # split, p. 170
+  - {arts: [586], wrong: وبالمقت صديات, right: وبالمقتصديات}   # split, p. 169
+  - {arts: [586], wrong: وح ولاة, right: وحوالة}   # split, p. 169
+  - {arts: [586], wrong: ولا مساومة, right: والمساومة}   # split, p. 169
+  - {arts: [586], wrong: ين اير, right: يناير}   # split, p. 167
+  - {arts: [586], wrong: ين جز ون, right: ينجزون}   # split, p. 169
+  - {arts: [588], wrong: التشريعي ة, right: التشريعية}   # split, p. 171
+  - {arts: [588], wrong: مدلوال تها, right: مدلولاتها}   # split, p. 171
+  - {arts: [589], wrong: الجري دة, right: الجريدة}   # split, p. 171
+headings:
+  - {wrong: الم قتصديات, right: المقتصديات}   # split, p. 116
+  - {wrong: وللترشي ح, right: وللترشيح}   # split, p. 128

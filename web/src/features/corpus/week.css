@@ -1,0 +1,65 @@
+/* The week's Bulletin on the home (30 Oct 2026: the «what's new» column was a plain list, hard to read). Loaded
+   with it, after the page, never in the first load. The Bulletin heads its own front page with its name, a double rule
+   and a dateline of its number and its two dates; the home draws the week the same way, a front page, the week's other
+   issues as sheets under it. Every colour a token: the ink's rules, people's saffron for what an editor told in plain
+   words, the violet of the law's source, a topic's own colour. */
+
+.wk { position: relative; padding-bottom: 6px; }
+/* The week's other issues, as the edges of sheets under the front page. */
+.wk[data-stack] { padding-bottom: 20px; }
+.wk[data-stack]::before, .wk[data-stack]::after { content: ""; position: absolute; height: 48px; border-radius: 0 0 var(--radius-card) var(--radius-card);
+  background: var(--color-sheet); border: 1px solid var(--color-rule); border-top: 0; }
+.wk[data-stack]::before { inset-inline: 22px; bottom: 0; }
+.wk[data-stack]::after { inset-inline: 11px; bottom: 10px; }
+.wk-paper { position: relative; z-index: 1; display: flex; flex-direction: column; border-radius: var(--radius-card); background: var(--color-sheet);
+  padding: 22px 22px 18px; }
+@media (min-width: 640px) and (max-width: 1023px) { .wk-paper { padding: 28px 40px 22px; } }
+.wk a { text-decoration: none; }
+.wk a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 4px; }
+
+/* The masthead: what the Bulletin prints on its front page, in its order. */
+.wk-head { text-align: center; }
+.wk-head h2 { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.wk-kicker { font-size: 0.875rem; font-weight: 500; color: var(--color-ink-soft); }
+.wk-name { font-family: var(--font-law); font-size: 2.125rem; line-height: 1.1; font-weight: 700; color: var(--color-ink); }
+.wk-span { margin: 6px 0 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 2px 14px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.wk-rule { height: 0; margin: 14px 0 0; border: 0; border-top: 3px double var(--color-ink); }
+
+/* The dateline: the number on one side, the two dates on the other, ruled as on the paper. */
+.wk-dateline { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; margin: 0; border-bottom: 1px solid var(--color-ink); }
+.wk-no { display: flex; flex-direction: column; align-items: center; padding-block: 8px; padding-inline-end: 16px; margin-inline-end: 14px;
+  border-inline-end: 1px solid var(--color-rule); color: var(--color-ink); }
+.wk-no span { font-size: 0.875rem; color: var(--color-ink-soft); }
+.wk-no b { font-family: var(--font-law); font-size: 2rem; line-height: 1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.wk-no:hover b { color: var(--color-stamp); }
+.wk-dates { display: flex; flex-direction: column; gap: 2px; padding: 10px 0; font-size: 0.9375rem; line-height: 1.4; color: var(--color-ink); }
+.wk-dates span + span { color: var(--color-ink-soft); }
+
+/* What an editor told in plain words: people's saffron, its topic, its headline, the start of its words. */
+.wk-told { display: flex; flex-direction: column; gap: 12px; margin-top: 16px; }
+.wk-label { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 0.875rem; font-weight: 700; color: var(--color-people); }
+.wk-label::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--color-people-fill); }
+.wk-story { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 14px; background: var(--color-people-wash); }
+.wk-story a.h { color: var(--color-ink); font-size: var(--text-lead); line-height: 1.45; font-weight: 700; }
+.wk-story a.h:hover { color: var(--color-stamp); }
+.wk-story p { margin: 0; font-size: 0.9375rem; line-height: 1.7; color: var(--color-ink);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+
+/* The other texts: kind, topic, page; the title as printed; what it changes. */
+.wk-texts { margin: 14px 0 0; padding: 0; list-style: none; }
+.wk-texts li { display: flex; flex-direction: column; gap: 4px; padding: 12px 0; border-top: 1px solid var(--color-rule-soft); }
+.wk-texts li:first-child { border-top: 0; }
+.wk-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 10px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.wk-type { font-weight: 600; color: var(--color-stamp); }
+.wk-topic { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--t); }
+.wk-page { margin-inline-start: auto; font-variant-numeric: tabular-nums; }
+.wk-title { font-family: var(--font-law); font-size: 1.1875rem; line-height: 1.55; font-weight: 500; color: var(--color-ink);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.wk-title:hover { color: var(--color-stamp); }
+.wk-changes { font-size: 0.875rem; color: var(--color-ink-soft); }
+.wk-changes a { color: var(--color-ink); font-weight: 500; }
+.wk-changes a:hover { color: var(--color-stamp); }
+
+.wk-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; margin-top: 4px; padding-top: 14px; border-top: 1px solid var(--color-rule); font-size: 0.9375rem; }
+.wk-foot a { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; }
+.wk-foot .wk-all { margin-inline-start: auto; }

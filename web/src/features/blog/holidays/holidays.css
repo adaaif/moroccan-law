@@ -1,0 +1,31 @@
+/* «أعيادنا بمرسوم»: a line for each holiday, the national days in the source's violet and the Hijri feasts in ink, a
+   ring where a day left the list; a thin rule for each decree with its year and its count at the foot. */
+.bp-lines { display: flex; flex-direction: column; gap: 8px; }
+.bp-lines rect.hl-hit { fill: transparent; cursor: pointer; }
+.bp-lines .hl-text line { stroke: var(--color-rule); stroke-width: 1; stroke-dasharray: 3 3; }
+.bp-lines .hl-text line.is-picked { stroke: var(--color-ink); stroke-dasharray: none; stroke-width: 2; }
+.hl-texts { display: flex; flex-wrap: wrap; gap: 6px 8px; }
+.hl-texts button { display: inline-flex; align-items: baseline; gap: 6px; min-height: 36px; padding: 4px 12px; border: 1px solid var(--color-rule);
+  border-radius: 18px; background: var(--color-sheet); color: var(--color-ink); font: inherit; font-size: var(--text-meta); cursor: pointer; }
+.hl-texts button b { font-variant-numeric: tabular-nums; color: var(--color-stamp); }
+.hl-texts button[aria-pressed='true'] { border-color: var(--color-ink); box-shadow: inset 0 0 0 1px var(--color-ink); }
+.bp-lines .hl-row line.hl-bar { stroke: var(--color-stamp); stroke-width: 6; stroke-linecap: round; }
+.bp-lines .hl-row circle.hl-dot { fill: var(--color-stamp); }
+.bp-lines .hl-row circle.hl-end { fill: var(--color-sheet); stroke: var(--color-stamp); stroke-width: 2; }
+.bp-lines .hl-row.is-hijri line.hl-bar { stroke: var(--color-ink-soft); }
+.bp-lines .hl-row.is-hijri circle.hl-dot { fill: var(--color-ink-soft); }
+.bp-lines .hl-row text.hl-name { font-size: 14px; fill: var(--color-ink); }
+.bp-lines .hl-row.is-picked text.hl-name { font-weight: 700; }
+.bp-lines .hl-row.is-picked line.hl-bar { stroke: var(--color-ink); }
+
+/* The two lists side by side. */
+.hl-two { display: flex; flex-direction: column; }
+.hl-two-row { display: grid; grid-template-columns: minmax(0, 1fr) 7rem 7rem; align-items: center; min-height: 36px; border-top: 1px solid var(--color-rule-soft); }
+.hl-two-head { min-height: 0; border-top: 0; padding-bottom: 4px; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.hl-two-row > span { font-size: var(--text-meta); }
+.hl-two-row > span[role='cell'], .hl-two-head > span:not(:first-child) { text-align: center; color: var(--color-ink-soft); }
+.hl-two-row.is-diff > span[role='rowheader'] { font-weight: 700; color: var(--color-stamp); }
+.hl-two-row i { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: var(--color-stamp); vertical-align: middle; }
+.hl-two-row i.two { width: auto; height: auto; padding: 1px 8px; border-radius: 10px; font-style: normal; font-size: var(--text-meta); font-weight: 600;
+  color: var(--color-on-stamp); }
+@media (max-width: 639px) { .hl-two-row { grid-template-columns: minmax(0, 1fr) 5rem 5rem; } }

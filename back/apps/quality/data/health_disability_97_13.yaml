@@ -1,0 +1,8 @@
+# Framework law 97.13 on the protection and promotion of the rights of persons with disabilities as Adala's PDF prints
+# it. The cited article (art. 23, the disability card) was read against the page's image on 27 Oct 2026 (
+# the health review, S4): our text reads as printed (the page's own «تبثت» kept), nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_disability_97_13.yaml` (records nothing).
+text: /ma/loi/97-13
+document: sources/adala/disability_97_13.pdf
+read_on: '2026-10-27'
+fixes: []

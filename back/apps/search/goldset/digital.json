@@ -1,0 +1,1932 @@
+{
+ "about": "The digital topic’s questions (the digital review, 27 Oct 2026): people’s words in Darija, Arabic, French and Latin letters about personal data and the CNDP, the right to information, copyright, being hacked, scammed, extorted, harassed or defamed online, e-signatures, cybersecurity incidents and buying online, each with the articles that answer it. Written by the session from the articles the site holds, after the doors’ words; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "واش خاص الشركة تطلب موافقتي باش تجمع المعطيات ديالي",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "darija",
+   "theme": "consent"
+  },
+  {
+   "q": "هل يجب الحصول على رضى الشخص قبل معالجة معطياته الشخصية",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "ar",
+   "theme": "consent"
+  },
+  {
+   "q": "le consentement est-il obligatoire pour traiter mes données personnelles",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "fr",
+   "theme": "consent"
+  },
+  {
+   "q": "wach khasshom ytelbo l mowafa9a dyali 3la donnees",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "arabizi",
+   "theme": "consent"
+  },
+  {
+   "q": "موافقة الشخص المعني على معالجة المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "ar",
+   "theme": "consent"
+  },
+  {
+   "q": "traitement des données sans consentement de la personne",
+   "expect": [
+    "/ma/loi/9-08/art_4"
+   ],
+   "lang": "fr",
+   "theme": "consent"
+  },
+  {
+   "q": "شنو خاصهم يقولو ليا ملي كيجمعو المعطيات ديالي",
+   "expect": [
+    "/ma/loi/9-08/art_5"
+   ],
+   "lang": "darija",
+   "theme": "consent"
+  },
+  {
+   "q": "إخبار الشخص المعني عند جمع المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_5"
+   ],
+   "lang": "ar",
+   "theme": "consent"
+  },
+  {
+   "q": "quelles informations doit-on me donner lors de la collecte de mes données",
+   "expect": [
+    "/ma/loi/9-08/art_5"
+   ],
+   "lang": "fr",
+   "theme": "consent"
+  },
+  {
+   "q": "droit à l’information de la personne concernée collecte des données",
+   "expect": [
+    "/ma/loi/9-08/art_5"
+   ],
+   "lang": "fr",
+   "theme": "consent"
+  },
+  {
+   "q": "بغيت نعرف شنو عندهم من معطيات عليا",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "darija",
+   "theme": "access"
+  },
+  {
+   "q": "حق الولوج إلى المعطيات الشخصية",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "ar",
+   "theme": "access"
+  },
+  {
+   "q": "droit d’accès à mes données personnelles",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "fr",
+   "theme": "access"
+  },
+  {
+   "q": "واش الولوج للمعطيات ديالي بالفلوس",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "darija",
+   "theme": "access"
+  },
+  {
+   "q": "كيف أطلب الاطلاع على معطياتي الشخصية لدى شركة",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "ar",
+   "theme": "access"
+  },
+  {
+   "q": "bghit n3ref chno 3ndhom men ma3lomat 3liya",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "arabizi",
+   "theme": "access"
+  },
+  {
+   "q": "l’accès à mes données est-il gratuit",
+   "expect": [
+    "/ma/loi/9-08/art_7"
+   ],
+   "lang": "fr",
+   "theme": "access"
+  },
+  {
+   "q": "معطيات غالطة عليا بغيت نصححها",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "darija",
+   "theme": "rectify"
+  },
+  {
+   "q": "حق تصحيح المعطيات الشخصية",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "ar",
+   "theme": "rectify"
+  },
+  {
+   "q": "شحال عندهم ديال الوقت باش يصححو المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "darija",
+   "theme": "rectify"
+  },
+  {
+   "q": "droit de rectification des données délai de dix jours",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "fr",
+   "theme": "rectify"
+  },
+  {
+   "q": "بغيت نمسح المعطيات ديالي من عندهم",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "darija",
+   "theme": "rectify"
+  },
+  {
+   "q": "مسح المعطيات الشخصية غير الصحيحة",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "ar",
+   "theme": "rectify"
+  },
+  {
+   "q": "effacer mes données personnelles chez une entreprise",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "fr",
+   "theme": "rectify"
+  },
+  {
+   "q": "أجل عشرة أيام لتصحيح المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_8"
+   ],
+   "lang": "ar",
+   "theme": "rectify"
+  },
+  {
+   "q": "بغيت نتعرض على استعمال المعطيات ديالي",
+   "expect": [
+    "/ma/loi/9-08/art_9"
+   ],
+   "lang": "darija",
+   "theme": "oppose"
+  },
+  {
+   "q": "حق التعرض على معالجة المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_9"
+   ],
+   "lang": "ar",
+   "theme": "oppose"
+  },
+  {
+   "q": "droit d’opposition au traitement de mes données",
+   "expect": [
+    "/ma/loi/9-08/art_9"
+   ],
+   "lang": "fr",
+   "theme": "oppose"
+  },
+  {
+   "q": "je refuse que mes données soient utilisées pour la publicité",
+   "expect": [
+    "/ma/loi/9-08/art_9"
+   ],
+   "lang": "fr",
+   "theme": "oppose"
+  },
+  {
+   "q": "كيصيفطو ليا ميساجات الإشهار بلا ما نوافق",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "darija",
+   "theme": "spam"
+  },
+  {
+   "q": "الاستقراء المباشر بواسطة الرسائل الإلكترونية دون موافقة",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "ar",
+   "theme": "spam"
+  },
+  {
+   "q": "sms publicitaires sans mon accord est-ce interdit",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "fr",
+   "theme": "spam"
+  },
+  {
+   "q": "prospection directe par courrier électronique consentement préalable",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "fr",
+   "theme": "spam"
+  },
+  {
+   "q": "spam d les messages publicitaires wach mamno3",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "arabizi",
+   "theme": "spam"
+  },
+  {
+   "q": "رسائل الإشهار في الهاتف بدون إذن",
+   "expect": [
+    "/ma/loi/9-08/art_10"
+   ],
+   "lang": "ar",
+   "theme": "spam"
+  },
+  {
+   "q": "فين نشكي بشركة رفضات تعطيني المعطيات ديالي",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "darija",
+   "theme": "cndp"
+  },
+  {
+   "q": "تقديم شكاية إلى اللجنة الوطنية لمراقبة حماية المعطيات",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "ar",
+   "theme": "cndp"
+  },
+  {
+   "q": "porter plainte auprès de la CNDP",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "fr",
+   "theme": "cndp"
+  },
+  {
+   "q": "اللجنة الوطنية لمراقبة حماية المعطيات ذات الطابع الشخصي اختصاصاتها",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "ar",
+   "theme": "cndp"
+  },
+  {
+   "q": "la CNDP reçoit les plaintes des personnes concernées",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "fr",
+   "theme": "cndp"
+  },
+  {
+   "q": "chkaya l cndp kifach",
+   "expect": [
+    "/ma/loi/9-08/art_27",
+    "/ma/loi/9-08/art_28"
+   ],
+   "lang": "arabizi",
+   "theme": "cndp"
+  },
+  {
+   "q": "واش خاصني نصرح للجنة الوطنية قبل ما نجمع المعطيات ديال الكليان",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "التصريح المسبق لدى اللجنة الوطنية قبل المعالجة",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "ar",
+   "theme": "declare"
+  },
+  {
+   "q": "déclaration préalable à la CNDP avant un traitement",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "fr",
+   "theme": "declare"
+  },
+  {
+   "q": "كاميرات المراقبة فالمحل واش خاصها تصريح",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "autorisation préalable de la CNDP",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "fr",
+   "theme": "declare"
+  },
+  {
+   "q": "الإذن المسبق للمعالجة",
+   "expect": [
+    "/ma/loi/9-08/art_12",
+    "/ma/loi/9-08/art_13",
+    "/ma/loi/9-08/art_14"
+   ],
+   "lang": "ar",
+   "theme": "declare"
+  },
+  {
+   "q": "المعطيات الحساسة شنو هي",
+   "expect": [
+    "/ma/loi/9-08/art_1",
+    "/ma/loi/9-08/art_12"
+   ],
+   "lang": "darija",
+   "theme": "sensitive"
+  },
+  {
+   "q": "تعريف المعطيات الحساسة في القانون 09.08",
+   "expect": [
+    "/ma/loi/9-08/art_1",
+    "/ma/loi/9-08/art_12"
+   ],
+   "lang": "ar",
+   "theme": "sensitive"
+  },
+  {
+   "q": "données sensibles définition santé religion",
+   "expect": [
+    "/ma/loi/9-08/art_1",
+    "/ma/loi/9-08/art_12"
+   ],
+   "lang": "fr",
+   "theme": "sensitive"
+  },
+  {
+   "q": "المعطيات الصحية والجينية معالجتها",
+   "expect": [
+    "/ma/loi/9-08/art_1",
+    "/ma/loi/9-08/art_12"
+   ],
+   "lang": "ar",
+   "theme": "sensitive"
+  },
+  {
+   "q": "شنو هي المعطيات ذات الطابع الشخصي",
+   "expect": [
+    "/ma/loi/9-08/art_1"
+   ],
+   "lang": "ar",
+   "theme": "definition"
+  },
+  {
+   "q": "définition des données à caractère personnel",
+   "expect": [
+    "/ma/loi/9-08/art_1"
+   ],
+   "lang": "fr",
+   "theme": "definition"
+  },
+  {
+   "q": "شكون هو المسؤول عن المعالجة",
+   "expect": [
+    "/ma/loi/9-08/art_1"
+   ],
+   "lang": "darija",
+   "theme": "definition"
+  },
+  {
+   "q": "حماية المعطيات من الضياع والولوج غير المرخص",
+   "expect": [
+    "/ma/loi/9-08/art_23"
+   ],
+   "lang": "ar",
+   "theme": "security"
+  },
+  {
+   "q": "sécurité des données obligation du responsable de traitement",
+   "expect": [
+    "/ma/loi/9-08/art_23"
+   ],
+   "lang": "fr",
+   "theme": "security"
+  },
+  {
+   "q": "الشركة ضيعات المعطيات ديال الكليان",
+   "expect": [
+    "/ma/loi/9-08/art_23"
+   ],
+   "lang": "darija",
+   "theme": "security"
+  },
+  {
+   "q": "نقل المعطيات الشخصية إلى الخارج",
+   "expect": [
+    "/ma/loi/9-08/art_43",
+    "/ma/loi/9-08/art_44"
+   ],
+   "lang": "ar",
+   "theme": "abroad"
+  },
+  {
+   "q": "transfert de données personnelles vers un pays étranger",
+   "expect": [
+    "/ma/loi/9-08/art_43",
+    "/ma/loi/9-08/art_44"
+   ],
+   "lang": "fr",
+   "theme": "abroad"
+  },
+  {
+   "q": "واش نقدر نصيفط المعطيات ديال الكليان لبرا",
+   "expect": [
+    "/ma/loi/9-08/art_43",
+    "/ma/loi/9-08/art_44"
+   ],
+   "lang": "darija",
+   "theme": "abroad"
+  },
+  {
+   "q": "عقوبة معالجة المعطيات بدون تصريح",
+   "expect": [
+    "/ma/loi/9-08/art_52",
+    "/ma/loi/9-08/art_53",
+    "/ma/loi/9-08/art_54",
+    "/ma/loi/9-08/art_57"
+   ],
+   "lang": "ar",
+   "theme": "penalty"
+  },
+  {
+   "q": "amende traitement de données sans déclaration",
+   "expect": [
+    "/ma/loi/9-08/art_52",
+    "/ma/loi/9-08/art_53",
+    "/ma/loi/9-08/art_54",
+    "/ma/loi/9-08/art_57"
+   ],
+   "lang": "fr",
+   "theme": "penalty"
+  },
+  {
+   "q": "شحال الذعيرة إلا رفضات الشركة حق الولوج",
+   "expect": [
+    "/ma/loi/9-08/art_52",
+    "/ma/loi/9-08/art_53",
+    "/ma/loi/9-08/art_54",
+    "/ma/loi/9-08/art_57"
+   ],
+   "lang": "darija",
+   "theme": "penalty"
+  },
+  {
+   "q": "جمع المعطيات بطريقة تدليسية عقوبة",
+   "expect": [
+    "/ma/loi/9-08/art_52",
+    "/ma/loi/9-08/art_53",
+    "/ma/loi/9-08/art_54",
+    "/ma/loi/9-08/art_57"
+   ],
+   "lang": "ar",
+   "theme": "penalty"
+  },
+  {
+   "q": "sanction collecte frauduleuse de données personnelles",
+   "expect": [
+    "/ma/loi/9-08/art_52",
+    "/ma/loi/9-08/art_53",
+    "/ma/loi/9-08/art_54",
+    "/ma/loi/9-08/art_57"
+   ],
+   "lang": "fr",
+   "theme": "penalty"
+  },
+  {
+   "q": "تقرصن ليا الحساب ديال الفيسبوك",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "darija",
+   "theme": "hacked"
+  },
+  {
+   "q": "الدخول إلى نظام للمعالجة الآلية للمعطيات عن طريق الاحتيال",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "ar",
+   "theme": "hacked"
+  },
+  {
+   "q": "piratage de compte sanction pénale accès frauduleux",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "accès frauduleux à un système de traitement automatisé de données",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "chi wahed dkhel l compte dyali bla idn",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "arabizi",
+   "theme": "hacked"
+  },
+  {
+   "q": "عقوبة اختراق حساب إلكتروني",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "ar",
+   "theme": "hacked"
+  },
+  {
+   "q": "دخل للتيليفون ديالي بلا إذن وشاف كلشي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "darija",
+   "theme": "hacked"
+  },
+  {
+   "q": "hacker a volé mon compte instagram que dit la loi",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-3",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "عرقلة سير نظام معلوماتي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-5",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "ar",
+   "theme": "hacked"
+  },
+  {
+   "q": "entraver le fonctionnement d’un système informatique",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-5",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "مسحو ليا المعطيات من الحساب",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-5",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "darija",
+   "theme": "hacked"
+  },
+  {
+   "q": "حذف أو تغيير المعطيات في نظام معلوماتي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-5",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "ar",
+   "theme": "hacked"
+  },
+  {
+   "q": "suppression ou modification frauduleuse de données",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-5",
+    "/ma/dahir/1-59-413/art_607-6"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "تزوير وثائق المعلوميات",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-7"
+   ],
+   "lang": "ar",
+   "theme": "forgery"
+  },
+  {
+   "q": "faux en écriture informatique documents falsifiés",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-7"
+   ],
+   "lang": "fr",
+   "theme": "forgery"
+  },
+  {
+   "q": "زورو ليا وثيقة إلكترونية",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-7"
+   ],
+   "lang": "darija",
+   "theme": "forgery"
+  },
+  {
+   "q": "محاولة الدخول إلى نظام معلوماتي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-8"
+   ],
+   "lang": "ar",
+   "theme": "hacked"
+  },
+  {
+   "q": "tentative d’accès frauduleux punie",
+   "expect": [
+    "/ma/dahir/1-59-413/art_607-8"
+   ],
+   "lang": "fr",
+   "theme": "hacked"
+  },
+  {
+   "q": "تنصب عليا فالأنترنت خلصت وما وصلني والو",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "darija",
+   "theme": "scam"
+  },
+  {
+   "q": "جريمة النصب عقوبتها",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "ar",
+   "theme": "scam"
+  },
+  {
+   "q": "escroquerie sur internet peine",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "fr",
+   "theme": "scam"
+  },
+  {
+   "q": "نصاب فالفيسبوك داني فلوسي",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "darija",
+   "theme": "scam"
+  },
+  {
+   "q": "t9ewwed 3liya f internet",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "arabizi",
+   "theme": "scam"
+  },
+  {
+   "q": "الاحتيال الإلكتروني للحصول على المال",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "ar",
+   "theme": "scam"
+  },
+  {
+   "q": "arnaque en ligne qu’est-ce que l’escroquerie",
+   "expect": [
+    "/ma/dahir/1-59-413/art_540"
+   ],
+   "lang": "fr",
+   "theme": "scam"
+  },
+  {
+   "q": "كيبتزني بالتصاور ديالي باش نعطيه الفلوس",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "darija",
+   "theme": "extortion"
+  },
+  {
+   "q": "جريمة الابتزاز عقوبتها",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "ar",
+   "theme": "extortion"
+  },
+  {
+   "q": "chantage sur internet sanction",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "fr",
+   "theme": "extortion"
+  },
+  {
+   "q": "كيهددني ينشر الصور إلا ما خلصتوش",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "darija",
+   "theme": "extortion"
+  },
+  {
+   "q": "chantage avec des photos intimes",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "fr",
+   "theme": "extortion"
+  },
+  {
+   "q": "kaybtazni b tsawer dyali",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "arabizi",
+   "theme": "extortion"
+  },
+  {
+   "q": "الحصول على مبلغ مالي بالتهديد بإفشاء أمور شائنة",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "ar",
+   "theme": "extortion"
+  },
+  {
+   "q": "sextorsion que faire plainte",
+   "expect": [
+    "/ma/dahir/1-59-413/art_538"
+   ],
+   "lang": "fr",
+   "theme": "extortion"
+  },
+  {
+   "q": "نشرو صوري بلا إذني",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "darija",
+   "theme": "intimate"
+  },
+  {
+   "q": "التقاط أو نشر صورة شخص في مكان خاص دون موافقته",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "ar",
+   "theme": "intimate"
+  },
+  {
+   "q": "publier la photo de quelqu’un sans son consentement",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "fr",
+   "theme": "intimate"
+  },
+  {
+   "q": "سجلو ليا كلامي بلا ما نعرف",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "darija",
+   "theme": "intimate"
+  },
+  {
+   "q": "التقاط أو تسجيل أقوال صادرة بشكل خاص أو سري",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "ar",
+   "theme": "intimate"
+  },
+  {
+   "q": "enregistrer une conversation privée sans autorisation",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "fr",
+   "theme": "intimate"
+  },
+  {
+   "q": "nashro tsawer dyali bla idni",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "arabizi",
+   "theme": "intimate"
+  },
+  {
+   "q": "نشرو فيديو ديالي فالواتساب",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-1",
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "darija",
+   "theme": "intimate"
+  },
+  {
+   "q": "مونطاج بصورتي ونشروه",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "darija",
+   "theme": "montage"
+  },
+  {
+   "q": "تركيب مكون من أقوال شخص أو صورته دون موافقته",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "ar",
+   "theme": "montage"
+  },
+  {
+   "q": "montage photo d’une personne sans son accord diffusé",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "fr",
+   "theme": "montage"
+  },
+  {
+   "q": "بث ادعاءات أو وقائع كاذبة بقصد المس بالحياة الخاصة",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "ar",
+   "theme": "montage"
+  },
+  {
+   "q": "fausses allégations pour porter atteinte à la vie privée",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-2"
+   ],
+   "lang": "fr",
+   "theme": "montage"
+  },
+  {
+   "q": "نشر صور امرأة بسبب جنسها ظرف تشديد",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-3"
+   ],
+   "lang": "ar",
+   "theme": "intimate"
+  },
+  {
+   "q": "atteinte à la vie privée aggravée par le conjoint ou contre une femme",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-3"
+   ],
+   "lang": "fr",
+   "theme": "intimate"
+  },
+  {
+   "q": "راجلي السابق نشر صوري",
+   "expect": [
+    "/ma/dahir/1-59-413/art_447-3"
+   ],
+   "lang": "darija",
+   "theme": "intimate"
+  },
+  {
+   "q": "كيتحرش بيا فالميساجات",
+   "expect": [
+    "/ma/dahir/1-59-413/art_503-1-1"
+   ],
+   "lang": "darija",
+   "theme": "harassment"
+  },
+  {
+   "q": "التحرش الجنسي بواسطة رسائل مكتوبة أو هاتفية أو إلكترونية",
+   "expect": [
+    "/ma/dahir/1-59-413/art_503-1-1"
+   ],
+   "lang": "ar",
+   "theme": "harassment"
+  },
+  {
+   "q": "harcèlement sexuel par messages électroniques",
+   "expect": [
+    "/ma/dahir/1-59-413/art_503-1-1"
+   ],
+   "lang": "fr",
+   "theme": "harassment"
+  },
+  {
+   "q": "ki t7errech biya f messenger",
+   "expect": [
+    "/ma/dahir/1-59-413/art_503-1-1"
+   ],
+   "lang": "arabizi",
+   "theme": "harassment"
+  },
+  {
+   "q": "زميل فالخدمة كيتحرش بيا بالميساجات",
+   "expect": [
+    "/ma/dahir/1-59-413/art_503-1-1"
+   ],
+   "lang": "darija",
+   "theme": "harassment"
+  },
+  {
+   "q": "سبني شي واحد فالفيسبوك",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "darija",
+   "theme": "defamed"
+  },
+  {
+   "q": "القذف والسب بواسطة الوسائل الإلكترونية",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "ar",
+   "theme": "defamed"
+  },
+  {
+   "q": "diffamation sur les réseaux sociaux sanction",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "fr",
+   "theme": "defamed"
+  },
+  {
+   "q": "تعريف القذف والسب في قانون الصحافة",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "ar",
+   "theme": "defamed"
+  },
+  {
+   "q": "différence entre diffamation et injure",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "fr",
+   "theme": "defamed"
+  },
+  {
+   "q": "شهرو بيا فالأنترنت بالكذوب",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "darija",
+   "theme": "defamed"
+  },
+  {
+   "q": "عقوبة القذف في حق الأفراد",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "ar",
+   "theme": "defamed"
+  },
+  {
+   "q": "amende pour injure publique",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "fr",
+   "theme": "defamed"
+  },
+  {
+   "q": "sebbouni f youtube",
+   "expect": [
+    "/ma/loi/88-13/art_83",
+    "/ma/loi/88-13/art_85"
+   ],
+   "lang": "arabizi",
+   "theme": "defamed"
+  },
+  {
+   "q": "شحال عندي ديال الوقت نشكي بالقذف",
+   "expect": [
+    "/ma/loi/88-13/art_101"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  },
+  {
+   "q": "تقادم دعوى القذف ستة أشهر",
+   "expect": [
+    "/ma/loi/88-13/art_101"
+   ],
+   "lang": "ar",
+   "theme": "prescription"
+  },
+  {
+   "q": "prescription de l’action en diffamation six mois",
+   "expect": [
+    "/ma/loi/88-13/art_101"
+   ],
+   "lang": "fr",
+   "theme": "prescription"
+  },
+  {
+   "q": "واش مازال نقدر نشكي بالسب لي دار عام هادي",
+   "expect": [
+    "/ma/loi/88-13/art_101"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  },
+  {
+   "q": "المتابعة في القذف تتوقف على شكاية المتضرر",
+   "expect": [
+    "/ma/loi/88-13/art_99"
+   ],
+   "lang": "ar",
+   "theme": "defamed"
+  },
+  {
+   "q": "la poursuite pour diffamation nécessite une plainte de la victime",
+   "expect": [
+    "/ma/loi/88-13/art_99"
+   ],
+   "lang": "fr",
+   "theme": "defamed"
+  },
+  {
+   "q": "واش خاص نشكي باش يتابعوه بالسب",
+   "expect": [
+    "/ma/loi/88-13/art_99"
+   ],
+   "lang": "darija",
+   "theme": "defamed"
+  },
+  {
+   "q": "إثبات صحة وقائع القذف",
+   "expect": [
+    "/ma/loi/88-13/art_109"
+   ],
+   "lang": "ar",
+   "theme": "defamed"
+  },
+  {
+   "q": "preuve de la vérité des faits diffamatoires vie privée",
+   "expect": [
+    "/ma/loi/88-13/art_109"
+   ],
+   "lang": "fr",
+   "theme": "defamed"
+  },
+  {
+   "q": "نشر أخبار زائفة عقوبتها",
+   "expect": [
+    "/ma/loi/88-13/art_72"
+   ],
+   "lang": "ar",
+   "theme": "fake-news"
+  },
+  {
+   "q": "fausses nouvelles diffusion de mauvaise foi amende",
+   "expect": [
+    "/ma/loi/88-13/art_72"
+   ],
+   "lang": "fr",
+   "theme": "fake-news"
+  },
+  {
+   "q": "نشر خبر كاذب فالأنترنت",
+   "expect": [
+    "/ma/loi/88-13/art_72"
+   ],
+   "lang": "darija",
+   "theme": "fake-news"
+  },
+  {
+   "q": "بغيت معلومة من الجماعة كيفاش نطلبها",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "darija",
+   "theme": "request"
+  },
+  {
+   "q": "الحق في الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "droit d’accès à l’information détenue par l’administration",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "fr",
+   "theme": "request"
+  },
+  {
+   "q": "طلب الحصول على المعلومات ما يتضمنه",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "demande d’accès à l’information formulaire",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "fr",
+   "theme": "request"
+  },
+  {
+   "q": "bghit ma3loma men l idara",
+   "expect": [
+    "/ma/loi/31-13/art_3",
+    "/ma/loi/31-13/art_14"
+   ],
+   "lang": "arabizi",
+   "theme": "request"
+  },
+  {
+   "q": "شحال عندها الإدارة باش تجاوب على طلب المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_16"
+   ],
+   "lang": "darija",
+   "theme": "request"
+  },
+  {
+   "q": "أجل الرد على طلب الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_16"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "délai de réponse à une demande d’information vingt jours",
+   "expect": [
+    "/ma/loi/31-13/art_16"
+   ],
+   "lang": "fr",
+   "theme": "request"
+  },
+  {
+   "q": "تمديد أجل الرد على طلب المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_16"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "المعلومة ضرورية لحماية حياة شخص أجل ثلاثة أيام",
+   "expect": [
+    "/ma/loi/31-13/art_17"
+   ],
+   "lang": "ar",
+   "theme": "urgent-info"
+  },
+  {
+   "q": "information urgente pour protéger la vie délai trois jours",
+   "expect": [
+    "/ma/loi/31-13/art_17"
+   ],
+   "lang": "fr",
+   "theme": "urgent-info"
+  },
+  {
+   "q": "المعلومة مستعجلة شحال خاصهم يجاوبو",
+   "expect": [
+    "/ma/loi/31-13/art_17"
+   ],
+   "lang": "darija",
+   "theme": "urgent-info"
+  },
+  {
+   "q": "الإدارة رفضات تعطيني المعلومة",
+   "expect": [
+    "/ma/loi/31-13/art_18"
+   ],
+   "lang": "darija",
+   "theme": "refused"
+  },
+  {
+   "q": "تعليل رفض تقديم المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_18"
+   ],
+   "lang": "ar",
+   "theme": "refused"
+  },
+  {
+   "q": "refus motivé de communiquer l’information",
+   "expect": [
+    "/ma/loi/31-13/art_18"
+   ],
+   "lang": "fr",
+   "theme": "refused"
+  },
+  {
+   "q": "الإدارة ما جاوباتنيش على طلب المعلومة شنو ندير",
+   "expect": [
+    "/ma/loi/31-13/art_19"
+   ],
+   "lang": "darija",
+   "theme": "refused"
+  },
+  {
+   "q": "الشكاية إلى رئيس المؤسسة عند عدم الرد على طلب المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_19"
+   ],
+   "lang": "ar",
+   "theme": "refused"
+  },
+  {
+   "q": "réclamation auprès du chef de l’institution absence de réponse",
+   "expect": [
+    "/ma/loi/31-13/art_19"
+   ],
+   "lang": "fr",
+   "theme": "refused"
+  },
+  {
+   "q": "الشكاية إلى لجنة الحق في الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_20",
+    "/ma/loi/31-13/art_22"
+   ],
+   "lang": "ar",
+   "theme": "refused"
+  },
+  {
+   "q": "plainte à la commission du droit d’accès à l’information",
+   "expect": [
+    "/ma/loi/31-13/art_20",
+    "/ma/loi/31-13/art_22"
+   ],
+   "lang": "fr",
+   "theme": "refused"
+  },
+  {
+   "q": "اللجنة ديال الحق فالمعلومة فين نشكي",
+   "expect": [
+    "/ma/loi/31-13/art_20",
+    "/ma/loi/31-13/art_22"
+   ],
+   "lang": "darija",
+   "theme": "refused"
+  },
+  {
+   "q": "الطعن أمام المحكمة الإدارية في رفض تقديم المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_21"
+   ],
+   "lang": "ar",
+   "theme": "refused"
+  },
+  {
+   "q": "recours devant le tribunal administratif refus d’information",
+   "expect": [
+    "/ma/loi/31-13/art_21"
+   ],
+   "lang": "fr",
+   "theme": "refused"
+  },
+  {
+   "q": "الاستثناءات من الحق في الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_7"
+   ],
+   "lang": "ar",
+   "theme": "exceptions"
+  },
+  {
+   "q": "informations exclues du droit d’accès défense nationale",
+   "expect": [
+    "/ma/loi/31-13/art_7"
+   ],
+   "lang": "fr",
+   "theme": "exceptions"
+  },
+  {
+   "q": "شنو المعلومات لي ما يقدروش يعطيوني",
+   "expect": [
+    "/ma/loi/31-13/art_7"
+   ],
+   "lang": "darija",
+   "theme": "exceptions"
+  },
+  {
+   "q": "واش طلب المعلومات بالفلوس",
+   "expect": [
+    "/ma/loi/31-13/art_5"
+   ],
+   "lang": "darija",
+   "theme": "request"
+  },
+  {
+   "q": "مجانية الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_5"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "l’accès à l’information est-il gratuit",
+   "expect": [
+    "/ma/loi/31-13/art_5"
+   ],
+   "lang": "fr",
+   "theme": "request"
+  },
+  {
+   "q": "الأجنبي المقيم بالمغرب حق الحصول على المعلومات",
+   "expect": [
+    "/ma/loi/31-13/art_4"
+   ],
+   "lang": "ar",
+   "theme": "request"
+  },
+  {
+   "q": "un étranger résident peut-il demander une information",
+   "expect": [
+    "/ma/loi/31-13/art_4"
+   ],
+   "lang": "fr",
+   "theme": "request"
+  },
+  {
+   "q": "شحال كتبقى الخدمة ديالي محمية",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "darija",
+   "theme": "protection"
+  },
+  {
+   "q": "مدة حماية حقوق المؤلف",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "ar",
+   "theme": "protection"
+  },
+  {
+   "q": "durée de protection du droit d’auteur",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "fr",
+   "theme": "protection"
+  },
+  {
+   "q": "حماية الحقوق المادية طيلة حياة المؤلف وسبعين سنة بعد وفاته",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "ar",
+   "theme": "protection"
+  },
+  {
+   "q": "droit d’auteur 70 ans après la mort",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "fr",
+   "theme": "protection"
+  },
+  {
+   "q": "ch7al katb9a l khedma dyali m7miya",
+   "expect": [
+    "/ma/loi/2-00/art_25"
+   ],
+   "lang": "arabizi",
+   "theme": "protection"
+  },
+  {
+   "q": "خداو الخدمة ديالي بلا إذن",
+   "expect": [
+    "/ma/loi/2-00/art_10"
+   ],
+   "lang": "darija",
+   "theme": "piracy"
+  },
+  {
+   "q": "الحقوق المادية للمؤلف استنساخ وترجمة",
+   "expect": [
+    "/ma/loi/2-00/art_10"
+   ],
+   "lang": "ar",
+   "theme": "piracy"
+  },
+  {
+   "q": "droits patrimoniaux de l’auteur reproduction",
+   "expect": [
+    "/ma/loi/2-00/art_10"
+   ],
+   "lang": "fr",
+   "theme": "piracy"
+  },
+  {
+   "q": "نشرو الفيديو ديالي فقناة أخرى بلا إذن",
+   "expect": [
+    "/ma/loi/2-00/art_10"
+   ],
+   "lang": "darija",
+   "theme": "piracy"
+  },
+  {
+   "q": "نسخة للاستعمال الشخصي واش مسموحة",
+   "expect": [
+    "/ma/loi/2-00/art_12"
+   ],
+   "lang": "darija",
+   "theme": "private-copy"
+  },
+  {
+   "q": "الاستنساخ للاستعمال الشخصي دون إذن المؤلف",
+   "expect": [
+    "/ma/loi/2-00/art_12"
+   ],
+   "lang": "ar",
+   "theme": "private-copy"
+  },
+  {
+   "q": "copie privée sans autorisation de l’auteur",
+   "expect": [
+    "/ma/loi/2-00/art_12"
+   ],
+   "lang": "fr",
+   "theme": "private-copy"
+  },
+  {
+   "q": "الاستشهاد بمقتطف من مصنف مع ذكر المصدر",
+   "expect": [
+    "/ma/loi/2-00/art_14"
+   ],
+   "lang": "ar",
+   "theme": "quote"
+  },
+  {
+   "q": "droit de citation avec mention de la source",
+   "expect": [
+    "/ma/loi/2-00/art_14"
+   ],
+   "lang": "fr",
+   "theme": "quote"
+  },
+  {
+   "q": "واش نقدر نستعمل مقطع من كتاب مع ذكر المصدر",
+   "expect": [
+    "/ma/loi/2-00/art_14"
+   ],
+   "lang": "darija",
+   "theme": "quote"
+  },
+  {
+   "q": "استعمال المصنفات في التعليم دون إذن",
+   "expect": [
+    "/ma/loi/2-00/art_15"
+   ],
+   "lang": "ar",
+   "theme": "quote"
+  },
+  {
+   "q": "utilisation d’une œuvre pour l’enseignement",
+   "expect": [
+    "/ma/loi/2-00/art_15"
+   ],
+   "lang": "fr",
+   "theme": "quote"
+  },
+  {
+   "q": "التعويض عن خرق حق المؤلف",
+   "expect": [
+    "/ma/loi/2-00/art_61",
+    "/ma/loi/2-00/art_62"
+   ],
+   "lang": "ar",
+   "theme": "piracy"
+  },
+  {
+   "q": "indemnisation forfaitaire contrefaçon droit d’auteur",
+   "expect": [
+    "/ma/loi/2-00/art_61",
+    "/ma/loi/2-00/art_62"
+   ],
+   "lang": "fr",
+   "theme": "piracy"
+  },
+  {
+   "q": "حجز النسخ المقرصنة",
+   "expect": [
+    "/ma/loi/2-00/art_61",
+    "/ma/loi/2-00/art_62"
+   ],
+   "lang": "ar",
+   "theme": "piracy"
+  },
+  {
+   "q": "شحال التعويض إلا خداو الخدمة ديالي",
+   "expect": [
+    "/ma/loi/2-00/art_61",
+    "/ma/loi/2-00/art_62"
+   ],
+   "lang": "darija",
+   "theme": "piracy"
+  },
+  {
+   "q": "عقوبة القرصنة الخرق المتعمد لحقوق المؤلف",
+   "expect": [
+    "/ma/loi/2-00/art_64"
+   ],
+   "lang": "ar",
+   "theme": "piracy"
+  },
+  {
+   "q": "peine pour piratage d’œuvres à des fins commerciales",
+   "expect": [
+    "/ma/loi/2-00/art_64"
+   ],
+   "lang": "fr",
+   "theme": "piracy"
+  },
+  {
+   "q": "بيع الأفلام المقرصنة عقوبة",
+   "expect": [
+    "/ma/loi/2-00/art_64"
+   ],
+   "lang": "darija",
+   "theme": "piracy"
+  },
+  {
+   "q": "المصنفات التي تحميها حقوق المؤلف",
+   "expect": [
+    "/ma/loi/2-00/art_3"
+   ],
+   "lang": "ar",
+   "theme": "protection"
+  },
+  {
+   "q": "quelles œuvres sont protégées par le droit d’auteur programmes d’ordinateur",
+   "expect": [
+    "/ma/loi/2-00/art_3"
+   ],
+   "lang": "fr",
+   "theme": "protection"
+  },
+  {
+   "q": "الوثيقة الإلكترونية حجة في الإثبات",
+   "expect": [
+    "/ma/code/doc/art_417-1"
+   ],
+   "lang": "ar",
+   "theme": "e-document"
+  },
+  {
+   "q": "valeur probante du document électronique",
+   "expect": [
+    "/ma/code/doc/art_417-1"
+   ],
+   "lang": "fr",
+   "theme": "e-document"
+  },
+  {
+   "q": "واش الوثيقة الإلكترونية كتحسب فالمحكمة",
+   "expect": [
+    "/ma/code/doc/art_417-1"
+   ],
+   "lang": "darija",
+   "theme": "e-document"
+  },
+  {
+   "q": "الكتابة الإلكترونية قوة الإثبات",
+   "expect": [
+    "/ma/code/doc/art_417-1"
+   ],
+   "lang": "ar",
+   "theme": "e-document"
+  },
+  {
+   "q": "التوقيع الإلكتروني المؤهل",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "ar",
+   "theme": "e-signature"
+  },
+  {
+   "q": "signature électronique qualifiée certificat",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "fr",
+   "theme": "e-signature"
+  },
+  {
+   "q": "التوقيع الإلكتروني المتقدم شروطه",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "ar",
+   "theme": "e-signature"
+  },
+  {
+   "q": "signature électronique avancée conditions",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "fr",
+   "theme": "e-signature"
+  },
+  {
+   "q": "التوقيع الإلكتروني واش عندو نفس القيمة ديال التوقيع العادي",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "darija",
+   "theme": "e-signature"
+  },
+  {
+   "q": "tawqi3 electroni wach mqbol",
+   "expect": [
+    "/ma/loi/43-20/art_5",
+    "/ma/loi/43-20/art_6",
+    "/ma/loi/43-20/art_7",
+    "/ma/code/doc/art_417-2",
+    "/ma/code/doc/art_417-3"
+   ],
+   "lang": "arabizi",
+   "theme": "e-signature"
+  },
+  {
+   "q": "الأثر القانوني للتوقيع الإلكتروني البسيط أمام القضاء",
+   "expect": [
+    "/ma/loi/43-20/art_7"
+   ],
+   "lang": "ar",
+   "theme": "e-signature"
+  },
+  {
+   "q": "effet juridique de la signature électronique simple en justice",
+   "expect": [
+    "/ma/loi/43-20/art_7"
+   ],
+   "lang": "fr",
+   "theme": "e-signature"
+  },
+  {
+   "q": "شهادة التوقيع الإلكتروني المؤهلة من يسلمها",
+   "expect": [
+    "/ma/loi/43-20/art_9"
+   ],
+   "lang": "ar",
+   "theme": "trusted"
+  },
+  {
+   "q": "prestataire de services de confiance agréé certificat",
+   "expect": [
+    "/ma/loi/43-20/art_9"
+   ],
+   "lang": "fr",
+   "theme": "trusted"
+  },
+  {
+   "q": "شكون كيعطي الشهادة ديال التوقيع الإلكتروني",
+   "expect": [
+    "/ma/loi/43-20/art_9"
+   ],
+   "lang": "darija",
+   "theme": "trusted"
+  },
+  {
+   "q": "سياسة أمن نظم المعلومات للهيئات",
+   "expect": [
+    "/ma/loi/5-20/art_4"
+   ],
+   "lang": "ar",
+   "theme": "incident"
+  },
+  {
+   "q": "politique de sécurité des systèmes d’information cybersécurité",
+   "expect": [
+    "/ma/loi/5-20/art_4"
+   ],
+   "lang": "fr",
+   "theme": "incident"
+  },
+  {
+   "q": "التبليغ عن حادث سيبراني للسلطة الوطنية",
+   "expect": [
+    "/ma/loi/5-20/art_8",
+    "/ma/loi/5-20/art_33"
+   ],
+   "lang": "ar",
+   "theme": "incident"
+  },
+  {
+   "q": "déclarer un incident de cybersécurité à l’autorité nationale",
+   "expect": [
+    "/ma/loi/5-20/art_8",
+    "/ma/loi/5-20/art_33"
+   ],
+   "lang": "fr",
+   "theme": "incident"
+  },
+  {
+   "q": "وقع هجوم سيبراني على الشركة شكون نبلغو",
+   "expect": [
+    "/ma/loi/5-20/art_8",
+    "/ma/loi/5-20/art_33"
+   ],
+   "lang": "darija",
+   "theme": "incident"
+  },
+  {
+   "q": "شريت من الأنترنت وبغيت نرجع السلعة",
+   "expect": [
+    "/ma/loi/31-08/art_36"
+   ],
+   "lang": "darija",
+   "theme": "online-buy"
+  },
+  {
+   "q": "حق التراجع في البيع عن بعد سبعة أيام",
+   "expect": [
+    "/ma/loi/31-08/art_36"
+   ],
+   "lang": "ar",
+   "theme": "online-buy"
+  },
+  {
+   "q": "droit de rétractation achat en ligne sept jours",
+   "expect": [
+    "/ma/loi/31-08/art_36"
+   ],
+   "lang": "fr",
+   "theme": "online-buy"
+  },
+  {
+   "q": "chrit men internet bghit nrje3 sel3a",
+   "expect": [
+    "/ma/loi/31-08/art_36"
+   ],
+   "lang": "arabizi",
+   "theme": "online-buy"
+  },
+  {
+   "q": "المعلومات الواجبة في عرض البيع عن بعد",
+   "expect": [
+    "/ma/loi/31-08/art_29"
+   ],
+   "lang": "ar",
+   "theme": "online-buy"
+  },
+  {
+   "q": "informations obligatoires vente à distance site marchand",
+   "expect": [
+    "/ma/loi/31-08/art_29"
+   ],
+   "lang": "fr",
+   "theme": "online-buy"
+  },
+  {
+   "q": "كيفاش ندير شكاية على الجريمة الإلكترونية",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "darija",
+   "theme": "complaint"
+  },
+  {
+   "q": "تقديم شكاية إلى وكيل الملك",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "ar",
+   "theme": "complaint"
+  }
+ ]
+}

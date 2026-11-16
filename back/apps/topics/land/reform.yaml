@@ -1,0 +1,49 @@
+# What changed for land (M6 of the land review): one item per change, its stage said first, its dated official
+# record. Stages: in_force, coming, bill, announced. Checked against the BO on 26 Oct 2026; each item is followed on its
+# own («تابع»).
+
+- key: sale-2026
+  title: {ar: 'بيع العقار بمحرر رسمي وحده (القانون 41.25)', fr: 'La vente d’un immeuble par acte authentique seulement (loi 41.25)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-26'
+  line: {ar: 'نافذ منذ 16 يوليوز 2026: كل بيع ديال عقار، والوعد بالبيع، والوكالة عليهم، بمحرر رسمي. عقد المحامي ما بقاش كيكفي.', fr: 'En vigueur depuis le 16 juillet 2026 : toute vente d’immeuble, la promesse de vente et leurs procurations par acte authentique. L’acte d’avocat ne suffit plus.'}
+  timeline:
+    - date: '2026-07-16'
+      text: {ar: 'نشر القانون 41.25 في الجريدة الرسمية: المادة 4 من مدونة الحقوق العينية لم تعد تقبل المحرر الثابت التاريخ الذي يحرره المحامي، والحكم نفسه للملكية المشتركة (المادة 12 من القانون 18.00)، والبيع في طور الإنجاز (الفصل 618-3)، والإيجار المفضي إلى التملك (المادة 4 من القانون 51.00).', fr: 'Publication de la loi 41.25 au Bulletin officiel : l’article 4 du code des droits réels n’admet plus l’acte à date certaine rédigé par un avocat ; de même pour la copropriété (art. 12 de la loi 18.00), la vente en l’état futur d’achèvement (art. 618-3) et la location-accession (art. 4 de la loi 51.00).'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7526', fr: 'BO n° 7526'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7526_Ar.pdf'}
+      cites: [/ma/loi/41-25/art_1, /ma/loi/41-25/art_2, /ma/loi/41-25/art_3, /ma/loi/41-25/art_4, /ma/loi/39-08/art_4]
+
+- key: subdivisions-2026
+  title: {ar: 'التجزئات العقارية: آجال حسب المساحة (القانون 34.21)', fr: 'Les lotissements : des délais selon la superficie (loi 34.21)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-26'
+  line: {ar: 'نافذ منذ 10 غشت 2026: أجل الإذن بالتجزئة حسب المساحة، ثلاث سنوات حتى 20 هكتارا، والأحكام اللي خاصها نصوص تنظيمية من نهار نشرها.', fr: 'En vigueur depuis le 10 août 2026 : le délai de l’autorisation de lotir selon la superficie, trois ans jusqu’à 20 hectares ; les dispositions qui attendent un texte réglementaire, dès sa publication.'}
+  timeline:
+    - date: '2026-08-10'
+      text: {ar: 'نشر القانون 34.21 في الجريدة الرسمية: يغير القانون 25.90 ويتممه، ويحدد أجل الإذن بالتجزئة حسب مساحتها، ويطبق الآجال الجديدة على التجزئات التي ما زالت آجالها سارية.', fr: 'Publication de la loi 34.21 au Bulletin officiel : elle modifie et complète la loi 25.90, fixe le délai de l’autorisation de lotir selon la superficie et applique les nouveaux délais aux lotissements dont les délais courent encore.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7533', fr: 'BO n° 7533'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7533_Ar.pdf'}
+      cites: [/ma/loi/34-21/art_3, /ma/loi/34-21/art_5, /ma/loi/34-21/art_6]
+
+# The 2027 finance bill's line for this topic (the finance-bill review, P11, P13): a bill, never law; its way
+# through Parliament is the tax topic's (/topics/tax/reform/lf-2027).
+- key: lf-2027
+  title: {ar: 'مشروع قانون المالية 2027: العقود القديمة', fr: 'Le projet de loi de finances 2027 : les actes anciens'}
+  stage: bill
+  stages: *stages
+  checked_on: '2026-11-15'
+  line: {ar: 'مشروع، ماشي قانون: عقد قديم (عرفي) ما تسجلش وتقادمو الواجبات ديالو، يقدر يتسجل بالأسعار ديال نهار التسجيل بلا ذعيرة ولا زيادات، وكل تسجيل كيعطي شهادة؛ من 2027.', fr: 'Un projet, pas une loi : un acte ancien (sous seing privé) jamais enregistré, aux droits prescrits, pourrait être enregistré aux taux du jour sans pénalité ni majoration, chaque enregistrement donnant une attestation ; dès 2027.'}
+  timeline:
+    - date: '2026-10-20'
+      text: {ar: 'أودعت الحكومة مشروع قانون المالية 60.26؛ مادته 7 كتزيد للمادتين 133 و135 من المدونة العامة للضرائب تسجيل العقود اللي تقادمت واجباتها بلا جزاءات، وكتكمل المادة 126.', fr: 'Dépôt du projet de loi de finances 60.26 ; son article 7 ajoute aux articles 133 et 135 du CGI l’enregistrement sans sanctions des actes aux droits prescrits, et complète l’article 126.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، نص المشروع', fr: 'Ministère de l’Économie et des Finances, texte du projet'}, url: 'https://www.finances.gov.ma/Publication/db/2027/corps-plf-2027_Ar.pdf', file: sources/mef/plf2027/corps-plf-2027_Ar.pdf, sha256: a6a1e342ac4bf36f20dee10206e85e55f3da476a50b32818e9af360382dc54e7}
+      cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_135, /ma/code/cgi/art_126, /ma/projet-loi/60-26/art_7]
+    - date: '2026-11-14'
+      text: {ar: 'مجلس النواب صادق على المشروع فالقراءة الأولى: 179 مع و126 ضد؛ دابا عند مجلس المستشارين. النواب زادو بلي واجبات العقد القديم كتتخلص داخل الآجال العادية ديال التسجيل، محسوبة من نهار طلب التسجيل.', fr: 'La Chambre des représentants adopte le projet en première lecture : 179 pour, 126 contre ; il est maintenant devant la Chambre des conseillers. Les députés ont ajouté que les droits d’un acte ancien se paient dans les délais ordinaires d’enregistrement, comptés du jour de la demande.'}
+      source: {name: {ar: 'وزارة الاقتصاد والمالية، بلاغ 14 نونبر 2026', fr: 'Ministère de l’Économie et des Finances, communiqué du 14 novembre 2026'}, url: 'https://www.finances.gov.ma/Fr/Pages/detail-actualite.aspx?fiche=7861', file: sources/mef/plf2027/actualite-7861.html, sha256: cc406f246a985d226ee03d702794c156c014254c39d68178f08cb5fe9eb9dc35}
+      cites: [/ma/code/cgi/art_128]

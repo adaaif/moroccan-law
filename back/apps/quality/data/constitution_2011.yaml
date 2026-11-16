@@ -1,0 +1,62 @@
+# The 2011 Constitution (dahir 1-11-91) read whole against the pages of the file it came from, the Ministry of Justice's
+# PDF (Adala), on 9 Nov 2026: every one of its 45 pages as an image, each difference with the Bulletin's own pages
+# (BO 5964 bis of 30 July 2011, pp. 3600-3627) decided on the printed line. The PDF's text layer turns «لا» and «ال»
+# round, swaps two letters, cuts a word where a vowel mark stands and sends words to the wrong end of a line; the page
+# prints none of that. 39 fixes in 29 articles and the preamble, 2 in the headings. The vowel mark is put back only
+# where it had cut the word (as article 19's «وتُحدث», famous_articles.yaml); words the layer kept whole stay unmarked.
+# Pages are the PDF's own (1-45; the folio printed at the foot is one less). The Bulletin prints the same words in
+# every place it was looked at.
+# Article 63's «ومجالس العملات والأقاليم» is the file's own misprint (p. 19): corrected to the Bulletin's «العمالات»
+# (p. 3611), since the Bulletin prevails. Not corrected, because the file's page prints them: «ماعدا» in one word in article 42 and «ما عدا» in two in articles 64 and 123 (the
+# Bulletin has them the other way); article 112 without its full stop; article 134's «الفصل 123» (both prints).
+# Not in this file's reach: the heading over articles 161-170, «مؤسسات وهيئات حماية الحقوق والحريات والحكامة الجيدة
+# والتنمية البشرية والمستدامة والديمقراطية التشاركية», and the one over article 168, «هيئات النهوض بالتنمية البشرية
+# والمستدامة والديمقراطية التشاركية»: the cut glued them to articles 160 and 167 (taken out below) and gave them no
+# heading of their own.
+# Applied by `manage.py apply_page_reading <this file>`; a reload of the text applies them again.
+text: /ma/dahir/1-11-91
+document: samples/adala/adala_16.pdf
+read_on: '2026-11-09'
+fixes:
+  - {eids: [preamble], wrong: وبصيانة تالحم وتنوع, right: وبصيانة تلاحم وتنوع}   # turn, p. 3
+  - {arts: [5], wrong: صلاحياته وتركيب ته وكيفيات, right: صلاحياته وتركيبَته وكيفيات}   # a vowel mark cut the word (fatha on the ba), p. 5
+  - {arts: [7], wrong: الأحزاب وت مارس أنشطتها, right: الأحزاب وتُمارس أنشطتها}   # a vowel mark cut the word, p. 5
+  - {arts: [11], wrong: المستقلة والم حايدة للانتخابات, right: المستقلة والمحايدة للانتخابات}   # cut in two (no vowel mark printed), p. 7
+  - {arts: [23], wrong: مقترفيها ألقسى العقوبات, right: مقترفيها لأقسى العقوبات}   # turn, p. 9
+  - {arts: [23], wrong: ر كل تحريض على العنصرية أو الكراهية أو العنف. ظ ي ح يعاقب, right: "يُحظَر كل تحريض على العنصرية أو الكراهية أو العنف.\nيعاقب"}   # the letters of «يُحظَر» scattered by its vowel marks; the sentence is a paragraph of its own, p. 10
+  - {arts: [29], wrong: حيرات الاجتماع والتجمهر, right: حريات الاجتماع والتجمهر}   # two letters swapped, p. 11
+  - {arts: [33], wrong: طاقاتهم الخالقة والإبداعية, right: طاقاتهم الخلاقة والإبداعية}   # turn, p. 12
+  - {arts: [36], wrong: استغلال لا تسري بات المخلة, right: استغلال التسريبات المخلة}   # cut in three and turned (no vowel mark printed), p. 13
+  - {arts: [37], wrong: التي تتالزم فيها, right: التي تتلازم فيها}   # turn, p. 13
+  - {arts: [41], wrong: حمى لالمة والدين, right: حمى الملة والدين}   # turn, p. 14
+  - {arts: [41], wrong: الإسلامي الحنفي، ومقاصده, right: الإسلامي الحنيف، ومقاصده}   # two letters swapped, p. 14
+  - {arts: [42], wrong: وحدة الأمة، وضمان دوام الدولة, right: وحدة الأمة، وضامن دوام الدولة}   # two letters swapped, p. 14
+  - {arts: [42], wrong: الملك هو ضمان استقلال, right: الملك هو ضامن استقلال}   # two letters swapped, p. 14
+  - {arts: [42], wrong: حدودها لاحقة., right: حدودها الحقة.}   # turn, p. 14
+  - {arts: [42], wrong: والرابعة) و.174, right: والرابعة) و174.}   # the full stop before the number, p. 14
+  - {arts: [43], wrong: ذكر من ملك ينتقل إلى أقرب أقربائه من جهة الذكور، ثم إلى ابنه طبق الترتيب ذرية الملك، فال والشروط, right: ذكر من ذرية الملك، فالمُلك ينتقل إلى أقرب أقربائه من جهة الذكور، ثم إلى ابنه طبق الترتيب والشروط}   # a vowel mark sent the line's first words («ذرية الملك، فالمُلك») to its end, p. 15
+  - {arts: [51], wrong: 96 و97 و.98, right: 96 و97 و98.}   # the full stop before the number, p. 17
+  - {arts: [63], wrong: ثالثة أخماس الأعضاء, right: ثلاثة أخماس الأعضاء}   # turn, p. 19
+  - {arts: [63], wrong: ومجالس العملات والأقاليم, right: ومجالس العمالات والأقاليم}   # the file's own misprint (p. 19): the Bulletin prevails and prints «العمالات» (BO 5964 bis, p. 3611)
+  - {arts: [63], wrong: منتصف الوالية التشريعية, right: منتصف الولاية التشريعية}   # turn, p. 19
+  - {arts: [65], wrong: أكتوبر، وت فتتح الدورة, right: أكتوبر، وتُفتتح الدورة}   # a vowel mark cut the word, p. 20
+  - {arts: [66], wrong: الأعمال، ت ختم الدورة, right: الأعمال، تُختم الدورة}   # a vowel mark cut the word, p. 20
+  - {arts: [75], wrong: مقدارها، فت ستخلص على, right: مقدارها، فتُستخلص على}   # a vowel mark cut the word, p. 24
+  - {arts: [75], wrong: "قانون المالية؛\nأما المداخيل", right: قانون المالية؛ أما المداخيل}   # one paragraph on the page: a line broken in two, p. 24
+  - {arts: [79], wrong: كل خالف في هذا الشأن, right: كل خلاف في هذا الشأن}   # turn, p. 25
+  - {arts: [85], wrong: في الفصل ،84 وتتم, right: في الفصل 84، وتتم}   # the comma before the number, p. 26
+  - {arts: [86], wrong: مدة الوالية التشريعية, right: مدة الولاية التشريعية}   # turn, p. 26
+  - {arts: [98], wrong: المجلسين، فال يمكن, right: المجلسين، فلا يمكن}   # turn, p. 29
+  - {arts: [100], wrong: شهر، وت قدم الأجوبة, right: شهر، وتُقدم الأجوبة}   # a vowel mark cut the word, p. 29
+  - {arts: [105], wrong: الرقابة، فال يقبل, right: الرقابة، فلا يقبل}   # turn, p. 30
+  - {arts: [106], wrong: أن ي سائل الحكومة, right: أن يُسائل الحكومة}   # a vowel mark cut the word, p. 31
+  - {arts: [123], wrong: القانون خالف ذلك, right: القانون خلاف ذلك}   # turn, p. 34
+  - {arts: [136], wrong: "والتضامن؛\nويؤمن مشاركة", right: والتضامن؛ ويؤمن مشاركة}   # one paragraph on the page: a line broken in two, p. 37
+  - {arts: [146], wrong: في الفصل ،139 من قبل, right: في الفصل 139، من قبل}   # the comma before the number, p. 38
+  - {arts: [147], wrong: "قوانين المالية.\nويتحقق من", right: قوانين المالية. ويتحقق من}   # one paragraph on the page: a line broken in two, p. 39
+  - {arts: [160], wrong: "من قبل البرلمان.\nمؤسسات وهيئات حماية الحقوق والحريات والحكامة الجيدة والتنمية البشرية والمستدامة والديمقراطية التشاركية هيئات حماية حقوق", right: من قبل البرلمان.}   # the next section's heading (p. 42, three centred lines) glued to the article, which ends on p. 41, p. 42
+  - {arts: [167], wrong: بموجب الفصل ،36 على الخصوص, right: بموجب الفصل 36، على الخصوص}   # the comma before the number, p. 43
+  - {arts: [167], wrong: "وقيم المواطنة المسؤولة.\nهيئات النهوض بالتنمية البشرية والمستدامة والديمقراطية التشاركية", right: وقيم المواطنة المسؤولة.}   # the heading over article 168 glued to the article, p. 43
+headings:
+  - {wrong: العالقة, right: العلاقة}   # turn, the heading over article 95: «العلاقة بين الملك والسلطة التشريعية», p. 29
+  - {wrong: الإنسان والنهوض بها, right: هيئات حماية حقوق الإنسان والنهوض بها}   # the heading over article 161, of which only the third printed line was kept (its start is in the fix of article 160), p. 42

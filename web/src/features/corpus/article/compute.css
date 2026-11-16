@@ -1,0 +1,38 @@
+/* «احسبها بهذه المادة» (HM29, Compute.tsx): the reader's numbers under an article that sets a figure. Loaded with it:
+   the first load's stylesheet has no room. The people's saffron marks what the numbers light; the law's lines are
+   quoted in Markazi. Every colour is a token. */
+.cp { margin-top: 0.75rem; max-width: 64ch; border-inline-start: 3px solid var(--color-people-fill); padding-inline-start: 1rem;
+  display: flex; flex-direction: column; gap: 0.75rem; }
+.cp-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.25rem 0.5rem; min-height: 2.75rem; text-align: start;
+  font-size: var(--text-body); font-weight: 700; color: var(--color-people); }
+.cp-head svg { flex: none; }
+.cp-lead { flex-basis: 100%; font-size: var(--text-meta); font-weight: 400; color: var(--color-ink-soft); }
+
+.cp-inputs { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; }
+.cp-field { display: flex; flex-direction: column; gap: 0.25rem; flex: 1 1 9rem; min-width: 0; font-size: var(--text-meta); font-weight: 600; }
+.cp-field input { height: 3rem; width: 100%; border: 1px solid var(--color-field); border-radius: 0.75rem; background: var(--color-sheet);
+  color: var(--color-ink); padding: 0 0.75rem; font-size: var(--text-lead); font-variant-numeric: tabular-nums; }
+.cp-field input:focus-visible { outline: 2px solid var(--color-people-fill); outline-offset: 1px; }
+.cp-field small { font-size: var(--text-meta); font-weight: 400; color: var(--color-ink-soft); }
+
+.cp-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.cp-chips button { min-height: 2.75rem; padding: 0 1rem; border-radius: 999px; border: 1px solid var(--color-field);
+  background: var(--color-sheet); color: var(--color-ink); font-size: var(--text-body); }
+.cp-chips button[aria-pressed="true"] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-sheet); font-weight: 600; }
+
+/* The article's lines, as printed, each with what the reader's numbers make of it. */
+.cp-lines { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.cp-lines li { display: flex; flex-direction: column; gap: 0.25rem; padding: 0.5rem 0.75rem; border-radius: 0.5rem; color: var(--color-ink-soft); }
+.cp-lines li.is-on { background: var(--color-people-wash); color: var(--color-ink); }
+.cp-lines q { quotes: "«" "»"; font-family: var(--font-law); font-size: 1.125rem; line-height: 1.6; }
+.cp-fig { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem;
+  font-size: var(--text-meta); font-variant-numeric: tabular-nums; }
+.cp-fig b { font-size: var(--text-lead); color: var(--color-ink); }
+.cp-not { color: var(--color-muted); }
+.cp-total { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.25rem 1rem; margin: 0;
+  padding-top: 0.5rem; border-top: 1px solid var(--color-rule); font-size: var(--text-body); font-variant-numeric: tabular-nums; }
+.cp-total b { font-size: var(--text-h3); line-height: 1.2; }
+.cp-how, .cp-why, .cp-note { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.cp-why { color: var(--color-amended); }
+.cp-how a, .cp-note a { font-weight: 600; }
+:lang(fr) .cp-lines q { quotes: "« " " »"; }

@@ -1,0 +1,23 @@
+# «العالم في الجريدة الرسمية»: post 1 of the places review (PL7–PL12, 1 Nov 2026). Counted by `manage.py
+# blog_figures countries` from what `build_places` found (apps/places): the texts as published of the general edition
+# and the conventions edition, a state named in a title or an article. From No. 1 since 6 Nov 2026 (BH12 of
+# the posts-from-No.-1 review: the old title was not right).
+slug: countries
+number: 11
+status: draft
+date: null
+counted_on: 2026-11-06
+span: [1913, 2025]
+title:
+  ar: "العالم في الجريدة الرسمية"
+  fr: "Le monde au Bulletin officiel"
+lead:
+  ar: "في 1913–1919 ذكرت الجريدة الرسمية فرنسا في 50 نصا من كل ألف، وفي 2020–2025 في 6. وصارت أوكرانيا، التي لم تذكرها قبل 1997، أكثر البلدان ذكرا، أغلبها بلوائح معادلة الشهادات الجامعية. عددنا كل بلد في 183.327 نصا منذ العدد الأول: ذكرت الجريدة الرسمية 190 بلدا مرة على الأقل، و10 بلدان لم تعد قائمة."
+  fr: "En 1913–1919, le Bulletin officiel citait la France dans 50 textes sur mille ; en 2020–2025, dans 6. L’Ukraine, qu’il ne citait pas avant 1997, est devenue le pays le plus cité, surtout par les listes d’équivalence des diplômes. Nous avons compté chaque pays dans 183 327 textes depuis le numéro 1 : le Bulletin a cité 190 pays au moins une fois, et 10 pays qui n’existent plus."
+# Thirteen periods from No. 1 (C3 of the posts-from-No.-1 review: decades, a line at 1956): 1913–1919, the decades, the
+# 1950s cut at independence (1950–1955 | 1956–1959), and the years since 2020.
+periods: [[1913, 1919], [1920, 1929], [1930, 1939], [1940, 1949], [1950, 1955], [1956, 1959], [1960, 1969], [1970, 1979], [1980, 1989],
+          [1990, 1999], [2000, 2009], [2010, 2019], [2020, 2025]]
+# Who rose and who fell (PL8): states named in at least `floor` texts, the share of the last two periods against the
+# first two.
+moves: {floor: 60, most: 6}

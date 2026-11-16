@@ -1,0 +1,14 @@
+# The secrets scan (CI's `secrets` job): gitleaks' default rules over the whole history, with one allowance.
+#
+# The generic rule flags any word that follows «key» or «password» and looks random enough. In this repository it
+# finds the topics' entry slugs (`key: companies-2024`) and the tests' throwaway passwords: lowercase words joined
+# by hyphens. A generated key or token is never that, so such a value is allowed for that rule only; every other
+# rule, and every other shape of value, still fails the job.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Slugs and the tests' passwords: two to four lowercase words or numbers joined by hyphens"
+targetRules = ["generic-api-key"]
+regexTarget = "secret"
+regexes = ['''^[a-z]{2,}(?:-[a-z0-9]{2,}){1,3}$''']

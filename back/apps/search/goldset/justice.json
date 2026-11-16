@@ -1,0 +1,1347 @@
+{
+ "about": "The justice topic's questions (the justice review, 27 Oct 2026): people's words in Darija, Arabic, French and Latin letters about custody, complaints, lawyers, legal aid, the courts, deadlines, judgments, enforcement, alternative sentences and prison, each with the articles that answer it. Written by the session from the articles the site holds, after the doors' words; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "شحال يقدر يبقى واحد فالكوميسارية",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "شحال تدوم الحراسة النظرية",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "ar",
+   "theme": "custody"
+  },
+  {
+   "q": "البوليس شدو ولدي شحال غادي يخليوه",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "واش يقدرو يزيدو فالحراسة النظرية",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "custody"
+  },
+  {
+   "q": "تمديد الحراسة النظرية",
+   "expect": [
+    "/ma/loi/22-01/art_66-2",
+    "/ma/loi/22-01/art_80"
+   ],
+   "lang": "ar",
+   "theme": "custody"
+  },
+  {
+   "q": "durée de la garde à vue au maroc",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "fr",
+   "theme": "custody"
+  },
+  {
+   "q": "garde à vue combien d'heures",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "fr",
+   "theme": "custody"
+  },
+  {
+   "q": "prolongation de la garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_66-2",
+    "/ma/loi/22-01/art_80"
+   ],
+   "lang": "fr",
+   "theme": "custody"
+  },
+  {
+   "q": "chhal kaybqa wa7ed f commissariat",
+   "expect": [
+    "/ma/loi/22-01/art_66",
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "arabizi",
+   "theme": "custody"
+  },
+  {
+   "q": "مدة الحراسة النظرية في الجريمة الإرهابية",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "ar",
+   "theme": "custody"
+  },
+  {
+   "q": "واش عندي الحق نسكت عند البوليس",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "silence"
+  },
+  {
+   "q": "الحق في التزام الصمت",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "ar",
+   "theme": "silence"
+  },
+  {
+   "q": "droit au silence garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "fr",
+   "theme": "silence"
+  },
+  {
+   "q": "حقوق الشخص الموضوع تحت الحراسة النظرية",
+   "expect": [
+    "/ma/loi/22-01/art_66-2",
+    "/ma/loi/22-01/art_67"
+   ],
+   "lang": "ar",
+   "theme": "silence"
+  },
+  {
+   "q": "واش البوليس خاصهم يعلمو العائلة",
+   "expect": [
+    "/ma/loi/22-01/art_67"
+   ],
+   "lang": "darija",
+   "theme": "silence"
+  },
+  {
+   "q": "prévenir la famille garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_67"
+   ],
+   "lang": "fr",
+   "theme": "silence"
+  },
+  {
+   "q": "الفحص الطبي للموقوف",
+   "expect": [
+    "/ma/loi/22-01/art_67"
+   ],
+   "lang": "ar",
+   "theme": "silence"
+  },
+  {
+   "q": "examen médical pendant la garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_67"
+   ],
+   "lang": "fr",
+   "theme": "silence"
+  },
+  {
+   "q": "واش نقدر نعيط لمحامي ملي نتشد",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "darija",
+   "theme": "lawyer-hour"
+  },
+  {
+   "q": "الاتصال بالمحامي خلال الحراسة النظرية",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "ar",
+   "theme": "lawyer-hour"
+  },
+  {
+   "q": "avocat dès la première heure de garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "fr",
+   "theme": "lawyer-hour"
+  },
+  {
+   "q": "avocat pendant la garde à vue",
+   "expect": [
+    "/ma/loi/22-01/art_66-2",
+    "/ma/loi/22-01/art_66-4"
+   ],
+   "lang": "fr",
+   "theme": "lawyer-hour"
+  },
+  {
+   "q": "mo7ami f commissariat",
+   "expect": [
+    "/ma/loi/22-01/art_66-2"
+   ],
+   "lang": "arabizi",
+   "theme": "lawyer-hour"
+  },
+  {
+   "q": "الاعتقال الاحتياطي شحال كيدوم",
+   "expect": [
+    "/ma/loi/22-01/art_176",
+    "/ma/loi/22-01/art_175"
+   ],
+   "lang": "darija",
+   "theme": "detention"
+  },
+  {
+   "q": "détention préventive durée maximale",
+   "expect": [
+    "/ma/loi/22-01/art_176",
+    "/ma/loi/22-01/art_175"
+   ],
+   "lang": "fr",
+   "theme": "detention"
+  },
+  {
+   "q": "الطعن في الأمر بالإيداع في السجن",
+   "expect": [
+    "/ma/loi/22-01/art_47-2",
+    "/ma/loi/22-01/art_73-2"
+   ],
+   "lang": "ar",
+   "theme": "detention"
+  },
+  {
+   "q": "تدابير المراقبة القضائية",
+   "expect": [
+    "/ma/loi/22-01/art_161"
+   ],
+   "lang": "ar",
+   "theme": "detention"
+  },
+  {
+   "q": "contrôle judiciaire mesures",
+   "expect": [
+    "/ma/loi/22-01/art_161"
+   ],
+   "lang": "fr",
+   "theme": "detention"
+  },
+  {
+   "q": "كيفاش ندير شكاية",
+   "expect": [
+    "/ma/loi/22-01/art_40",
+    "/ma/loi/22-01/art_21"
+   ],
+   "lang": "darija",
+   "theme": "complaint"
+  },
+  {
+   "q": "فين نحط شكاية",
+   "expect": [
+    "/ma/loi/22-01/art_40",
+    "/ma/loi/22-01/art_21"
+   ],
+   "lang": "darija",
+   "theme": "complaint"
+  },
+  {
+   "q": "déposer plainte auprès du procureur du roi",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "fr",
+   "theme": "complaint"
+  },
+  {
+   "q": "porter plainte au maroc",
+   "expect": [
+    "/ma/loi/22-01/art_40",
+    "/ma/loi/22-01/art_21"
+   ],
+   "lang": "fr",
+   "theme": "complaint"
+  },
+  {
+   "q": "واش وكيل الملك خاصو يجاوبني على الشكاية",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "darija",
+   "theme": "complaint"
+  },
+  {
+   "q": "حفظ الشكاية من طرف وكيل الملك",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "ar",
+   "theme": "complaint"
+  },
+  {
+   "q": "classement sans suite de la plainte",
+   "expect": [
+    "/ma/loi/22-01/art_40"
+   ],
+   "lang": "fr",
+   "theme": "complaint"
+  },
+  {
+   "q": "nchki b chi wa7ed",
+   "expect": [
+    "/ma/loi/22-01/art_40",
+    "/ma/loi/22-01/art_21"
+   ],
+   "lang": "arabizi",
+   "theme": "complaint"
+  },
+  {
+   "q": "تقادم الدعوى العمومية",
+   "expect": [
+    "/ma/loi/22-01/art_5",
+    "/ma/loi/22-01/art_6"
+   ],
+   "lang": "ar",
+   "theme": "prescription"
+  },
+  {
+   "q": "شحال كتتقادم الجنحة",
+   "expect": [
+    "/ma/loi/22-01/art_5"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  },
+  {
+   "q": "prescription d'un délit au maroc",
+   "expect": [
+    "/ma/loi/22-01/art_5"
+   ],
+   "lang": "fr",
+   "theme": "prescription"
+  },
+  {
+   "q": "prescription de l'action publique",
+   "expect": [
+    "/ma/loi/22-01/art_5",
+    "/ma/loi/22-01/art_6"
+   ],
+   "lang": "fr",
+   "theme": "prescription"
+  },
+  {
+   "q": "واش شكاية على حاجة من 5 سنين مازال كتقبل",
+   "expect": [
+    "/ma/loi/22-01/art_5"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  },
+  {
+   "q": "انقطاع تقادم الدعوى العمومية",
+   "expect": [
+    "/ma/loi/22-01/art_6"
+   ],
+   "lang": "ar",
+   "theme": "prescription"
+  },
+  {
+   "q": "تقادم العقوبات الجنحية",
+   "expect": [
+    "/ma/loi/22-01/art_650",
+    "/ma/loi/22-01/art_649",
+    "/ma/loi/22-01/art_651"
+   ],
+   "lang": "ar",
+   "theme": "prescription"
+  },
+  {
+   "q": "prescription de la peine correctionnelle",
+   "expect": [
+    "/ma/loi/22-01/art_650"
+   ],
+   "lang": "fr",
+   "theme": "prescription"
+  },
+  {
+   "q": "الصلح في القضايا الزجرية أمام وكيل الملك",
+   "expect": [
+    "/ma/loi/22-01/art_41"
+   ],
+   "lang": "ar",
+   "theme": "settlement"
+  },
+  {
+   "q": "médiation pénale procureur",
+   "expect": [
+    "/ma/loi/22-01/art_41"
+   ],
+   "lang": "fr",
+   "theme": "settlement"
+  },
+  {
+   "q": "تنازل المشتكي عن شكايته",
+   "expect": [
+    "/ma/loi/22-01/art_4"
+   ],
+   "lang": "ar",
+   "theme": "settlement"
+  },
+  {
+   "q": "effet du désistement de la plainte",
+   "expect": [
+    "/ma/loi/22-01/art_4"
+   ],
+   "lang": "fr",
+   "theme": "settlement"
+  },
+  {
+   "q": "واش التنازل كيوقف المتابعة",
+   "expect": [
+    "/ma/loi/22-01/art_4"
+   ],
+   "lang": "darija",
+   "theme": "settlement"
+  },
+  {
+   "q": "الاستدعاء المباشر",
+   "expect": [
+    "/ma/loi/22-01/art_384"
+   ],
+   "lang": "ar",
+   "theme": "direct"
+  },
+  {
+   "q": "citation directe par la partie civile",
+   "expect": [
+    "/ma/loi/22-01/art_384"
+   ],
+   "lang": "fr",
+   "theme": "direct"
+  },
+  {
+   "q": "المطالبة بالحق المدني أمام المحكمة الزجرية",
+   "expect": [
+    "/ma/loi/22-01/art_350",
+    "/ma/loi/22-01/art_7"
+   ],
+   "lang": "ar",
+   "theme": "direct"
+  },
+  {
+   "q": "constitution de partie civile",
+   "expect": [
+    "/ma/loi/22-01/art_350",
+    "/ma/loi/22-01/art_92"
+   ],
+   "lang": "fr",
+   "theme": "direct"
+  },
+  {
+   "q": "التنصيب طرفا مدنيا أمام قاضي التحقيق",
+   "expect": [
+    "/ma/loi/22-01/art_92"
+   ],
+   "lang": "ar",
+   "theme": "direct"
+  },
+  {
+   "q": "واش المحامي ضروري فالجنايات",
+   "expect": [
+    "/ma/loi/22-01/art_316"
+   ],
+   "lang": "darija",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "assistance d'un avocat obligatoire en matière pénale",
+   "expect": [
+    "/ma/loi/22-01/art_316"
+   ],
+   "lang": "fr",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "واش نقدر نمشي للمحكمة بلا محامي",
+   "expect": [
+    "/ma/loi/58-25/art_79",
+    "/ma/loi/58-25/art_76"
+   ],
+   "lang": "darija",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "واش خاص محامي فالنقض",
+   "expect": [
+    "/ma/loi/58-25/art_376",
+    "/ma/loi/66-23/art_39"
+   ],
+   "lang": "darija",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "avocat agréé près la cour de cassation",
+   "expect": [
+    "/ma/loi/58-25/art_376",
+    "/ma/loi/66-23/art_39"
+   ],
+   "lang": "fr",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "من يمكن أن يكون وكيلا عن الأطراف أمام المحكمة",
+   "expect": [
+    "/ma/loi/58-25/art_79",
+    "/ma/loi/58-25/art_80"
+   ],
+   "lang": "ar",
+   "theme": "need-lawyer"
+  },
+  {
+   "q": "شنو هي المساعدة القضائية",
+   "expect": [
+    "/ma/decret-loi/514-65/art_1"
+   ],
+   "lang": "darija",
+   "theme": "aid"
+  },
+  {
+   "q": "كيفاش نطلب المساعدة القضائية",
+   "expect": [
+    "/ma/decret-loi/514-65/art_6",
+    "/ma/decret-loi/514-65/art_7"
+   ],
+   "lang": "darija",
+   "theme": "aid"
+  },
+  {
+   "q": "شهادة العسر للمساعدة القضائية",
+   "expect": [
+    "/ma/decret-loi/514-65/art_7"
+   ],
+   "lang": "ar",
+   "theme": "aid"
+  },
+  {
+   "q": "assistance judiciaire maroc conditions",
+   "expect": [
+    "/ma/decret-loi/514-65/art_1"
+   ],
+   "lang": "fr",
+   "theme": "aid"
+  },
+  {
+   "q": "demande d'assistance judiciaire",
+   "expect": [
+    "/ma/decret-loi/514-65/art_6",
+    "/ma/decret-loi/514-65/art_7"
+   ],
+   "lang": "fr",
+   "theme": "aid"
+  },
+  {
+   "q": "avocat gratuit au maroc",
+   "expect": [
+    "/ma/decret-loi/514-65/art_1",
+    "/ma/decret-loi/514-65/art_9",
+    "/ma/loi/66-23/art_51"
+   ],
+   "lang": "fr",
+   "theme": "aid"
+  },
+  {
+   "q": "محامي بالمجان",
+   "expect": [
+    "/ma/decret-loi/514-65/art_1",
+    "/ma/decret-loi/514-65/art_9",
+    "/ma/loi/66-23/art_51"
+   ],
+   "lang": "darija",
+   "theme": "aid"
+  },
+  {
+   "q": "المساعدة القضائية للأجير",
+   "expect": [
+    "/ma/loi/58-25/art_311"
+   ],
+   "lang": "ar",
+   "theme": "aid"
+  },
+  {
+   "q": "شحال كتخلص الدولة المحامي ديال المساعدة القضائية",
+   "expect": [
+    "/ma/arrete/2787-19/art_1",
+    "/ma/loi/66-23/art_53"
+   ],
+   "lang": "darija",
+   "theme": "aid"
+  },
+  {
+   "q": "سحب المساعدة القضائية",
+   "expect": [
+    "/ma/decret-loi/514-65/art_14",
+    "/ma/decret-loi/514-65/art_15"
+   ],
+   "lang": "ar",
+   "theme": "aid"
+  },
+  {
+   "q": "m7ami fabor",
+   "expect": [
+    "/ma/decret-loi/514-65/art_1",
+    "/ma/decret-loi/514-65/art_9",
+    "/ma/loi/66-23/art_51"
+   ],
+   "lang": "arabizi",
+   "theme": "aid"
+  },
+  {
+   "q": "أتعاب المحامي",
+   "expect": [
+    "/ma/loi/66-23/art_54",
+    "/ma/loi/66-23/art_58",
+    "/ma/loi/66-23/art_63",
+    "/ma/loi/66-23/art_69",
+    "/ma/loi/66-23/art_72"
+   ],
+   "lang": "ar",
+   "theme": "fees"
+  },
+  {
+   "q": "honoraires d'avocat au maroc",
+   "expect": [
+    "/ma/loi/66-23/art_54",
+    "/ma/loi/66-23/art_58",
+    "/ma/loi/66-23/art_69",
+    "/ma/loi/66-23/art_72"
+   ],
+   "lang": "fr",
+   "theme": "fees"
+  },
+  {
+   "q": "واش المحامي يقدر ياخد نسبة من الحكم",
+   "expect": [
+    "/ma/loi/66-23/art_69"
+   ],
+   "lang": "darija",
+   "theme": "fees"
+  },
+  {
+   "q": "honoraires liés au résultat du procès avocat",
+   "expect": [
+    "/ma/loi/66-23/art_69"
+   ],
+   "lang": "fr",
+   "theme": "fees"
+  },
+  {
+   "q": "المحامي خاصو يعطيني وصل",
+   "expect": [
+    "/ma/loi/66-23/art_72"
+   ],
+   "lang": "darija",
+   "theme": "fees"
+  },
+  {
+   "q": "التكليف المكتوب من الموكل للمحامي",
+   "expect": [
+    "/ma/loi/66-23/art_54",
+    "/ma/loi/66-23/art_55"
+   ],
+   "lang": "ar",
+   "theme": "fees"
+  },
+  {
+   "q": "شكاية ضد محام",
+   "expect": [
+    "/ma/loi/66-23/art_99"
+   ],
+   "lang": "ar",
+   "theme": "lawyer-complaint"
+  },
+  {
+   "q": "plainte contre un avocat bâtonnier",
+   "expect": [
+    "/ma/loi/66-23/art_99"
+   ],
+   "lang": "fr",
+   "theme": "lawyer-complaint"
+  },
+  {
+   "q": "مختالف مع المحامي على الأتعاب",
+   "expect": [
+    "/ma/loi/66-23/art_58",
+    "/ma/loi/66-23/art_63"
+   ],
+   "lang": "darija",
+   "theme": "lawyer-complaint"
+  },
+  {
+   "q": "المحامي ما بغاش يرجع ليا الوثائق",
+   "expect": [
+    "/ma/loi/66-23/art_64"
+   ],
+   "lang": "darija",
+   "theme": "lawyer-complaint"
+  },
+  {
+   "q": "retirer son dossier à son avocat",
+   "expect": [
+    "/ma/loi/66-23/art_63",
+    "/ma/loi/66-23/art_64"
+   ],
+   "lang": "fr",
+   "theme": "lawyer-complaint"
+  },
+  {
+   "q": "المحكمة المختصة في نزاعات الشغل",
+   "expect": [
+    "/ma/loi/58-25/art_33"
+   ],
+   "lang": "ar",
+   "theme": "which-court"
+  },
+  {
+   "q": "tribunal compétent pour un litige du travail",
+   "expect": [
+    "/ma/loi/58-25/art_33"
+   ],
+   "lang": "fr",
+   "theme": "which-court"
+  },
+  {
+   "q": "اختصاص المحاكم الابتدائية الإدارية",
+   "expect": [
+    "/ma/loi/58-25/art_38"
+   ],
+   "lang": "ar",
+   "theme": "which-court"
+  },
+  {
+   "q": "اختصاص المحاكم الابتدائية",
+   "expect": [
+    "/ma/loi/58-25/art_29",
+    "/ma/loi/58-25/art_30"
+   ],
+   "lang": "ar",
+   "theme": "which-court"
+  },
+  {
+   "q": "compétence du tribunal administratif",
+   "expect": [
+    "/ma/loi/58-25/art_38"
+   ],
+   "lang": "fr",
+   "theme": "which-court"
+  },
+  {
+   "q": "قضاء القرب",
+   "expect": [
+    "/ma/loi/58-25/art_331",
+    "/ma/loi/58-25/art_328",
+    "/ma/loi/58-25/art_329"
+   ],
+   "lang": "ar",
+   "theme": "small"
+  },
+  {
+   "q": "قاضي القرب شنو كيحكم",
+   "expect": [
+    "/ma/loi/58-25/art_331"
+   ],
+   "lang": "darija",
+   "theme": "small"
+  },
+  {
+   "q": "compétence du juge de proximité",
+   "expect": [
+    "/ma/loi/58-25/art_331"
+   ],
+   "lang": "fr",
+   "theme": "small"
+  },
+  {
+   "q": "داين ليا شي واحد 3000 درهم فين نمشي",
+   "expect": [
+    "/ma/loi/58-25/art_331"
+   ],
+   "lang": "darija",
+   "theme": "small"
+  },
+  {
+   "q": "واش قضاء القرب بالفلوس",
+   "expect": [
+    "/ma/loi/58-25/art_329"
+   ],
+   "lang": "darija",
+   "theme": "small"
+  },
+  {
+   "q": "petite créance moins de 5000 dirhams tribunal",
+   "expect": [
+    "/ma/loi/58-25/art_331"
+   ],
+   "lang": "fr",
+   "theme": "small"
+  },
+  {
+   "q": "9adi l9orb",
+   "expect": [
+    "/ma/loi/58-25/art_331",
+    "/ma/loi/58-25/art_328"
+   ],
+   "lang": "arabizi",
+   "theme": "small"
+  },
+  {
+   "q": "كيفاش نرفع دعوى",
+   "expect": [
+    "/ma/loi/58-25/art_76",
+    "/ma/loi/58-25/art_77"
+   ],
+   "lang": "darija",
+   "theme": "lawsuit"
+  },
+  {
+   "q": "بيانات المقال الافتتاحي للدعوى",
+   "expect": [
+    "/ma/loi/58-25/art_77"
+   ],
+   "lang": "ar",
+   "theme": "lawsuit"
+  },
+  {
+   "q": "mentions obligatoires de la requête introductive",
+   "expect": [
+    "/ma/loi/58-25/art_77"
+   ],
+   "lang": "fr",
+   "theme": "lawsuit"
+  },
+  {
+   "q": "القضايا التي تطبق فيها المسطرة الشفوية",
+   "expect": [
+    "/ma/loi/58-25/art_96"
+   ],
+   "lang": "ar",
+   "theme": "lawsuit"
+  },
+  {
+   "q": "procédure orale devant le tribunal de première instance",
+   "expect": [
+    "/ma/loi/58-25/art_96",
+    "/ma/loi/58-25/art_95"
+   ],
+   "lang": "fr",
+   "theme": "lawsuit"
+  },
+  {
+   "q": "مسطرة الأمر بالأداء",
+   "expect": [
+    "/ma/loi/58-25/art_234",
+    "/ma/loi/58-25/art_238"
+   ],
+   "lang": "ar",
+   "theme": "debt-paper"
+  },
+  {
+   "q": "injonction de payer au maroc",
+   "expect": [
+    "/ma/loi/58-25/art_234",
+    "/ma/loi/58-25/art_238"
+   ],
+   "lang": "fr",
+   "theme": "debt-paper"
+  },
+  {
+   "q": "أجل التعرض على الأمر بالأداء",
+   "expect": [
+    "/ma/loi/58-25/art_239"
+   ],
+   "lang": "ar",
+   "theme": "debt-paper"
+  },
+  {
+   "q": "délai d'opposition à une injonction de payer",
+   "expect": [
+    "/ma/loi/58-25/art_239"
+   ],
+   "lang": "fr",
+   "theme": "debt-paper"
+  },
+  {
+   "q": "3andi kambiyala ma tkhlsatch",
+   "expect": [
+    "/ma/loi/58-25/art_234",
+    "/ma/loi/58-25/art_238"
+   ],
+   "lang": "arabizi",
+   "theme": "debt-paper"
+  },
+  {
+   "q": "تبليغ الاستدعاء بواسطة المفوض القضائي",
+   "expect": [
+    "/ma/loi/58-25/art_83"
+   ],
+   "lang": "ar",
+   "theme": "summons"
+  },
+  {
+   "q": "كيفاش كيوصل الاستدعاء ديال المحكمة",
+   "expect": [
+    "/ma/loi/58-25/art_84",
+    "/ma/loi/58-25/art_83"
+   ],
+   "lang": "darija",
+   "theme": "summons"
+  },
+  {
+   "q": "convocation au tribunal par commissaire de justice",
+   "expect": [
+    "/ma/loi/58-25/art_83",
+    "/ma/loi/58-25/art_84"
+   ],
+   "lang": "fr",
+   "theme": "summons"
+  },
+  {
+   "q": "تعذر التبليغ لانتقال المدعى عليه من عنوانه",
+   "expect": [
+    "/ma/loi/58-25/art_86"
+   ],
+   "lang": "ar",
+   "theme": "summons"
+  },
+  {
+   "q": "أجل الاستئناف في الأحكام المدنية",
+   "expect": [
+    "/ma/loi/58-25/art_204"
+   ],
+   "lang": "ar",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "شحال عندي باش نستأنف الحكم",
+   "expect": [
+    "/ma/loi/58-25/art_204",
+    "/ma/loi/22-01/art_400"
+   ],
+   "lang": "darija",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "délai d'appel en matière civile au maroc",
+   "expect": [
+    "/ma/loi/58-25/art_204"
+   ],
+   "lang": "fr",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "nst2nf l7okm chhal 3andi",
+   "expect": [
+    "/ma/loi/58-25/art_204",
+    "/ma/loi/22-01/art_400"
+   ],
+   "lang": "arabizi",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "استئناف الأوامر الاستعجالية",
+   "expect": [
+    "/ma/loi/58-25/art_230"
+   ],
+   "lang": "ar",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "بيانات مقال الاستئناف",
+   "expect": [
+    "/ma/loi/58-25/art_216"
+   ],
+   "lang": "ar",
+   "theme": "appeal-civil"
+  },
+  {
+   "q": "أجل الاستئناف في القضايا الجنحية",
+   "expect": [
+    "/ma/loi/22-01/art_400"
+   ],
+   "lang": "ar",
+   "theme": "appeal-criminal"
+  },
+  {
+   "q": "délai d'appel en matière pénale",
+   "expect": [
+    "/ma/loi/22-01/art_400"
+   ],
+   "lang": "fr",
+   "theme": "appeal-criminal"
+  },
+  {
+   "q": "شحال عندي نستأنف حكم الحبس",
+   "expect": [
+    "/ma/loi/22-01/art_400"
+   ],
+   "lang": "darija",
+   "theme": "appeal-criminal"
+  },
+  {
+   "q": "التعرض على الحكم الغيابي",
+   "expect": [
+    "/ma/loi/58-25/art_200",
+    "/ma/loi/22-01/art_393"
+   ],
+   "lang": "ar",
+   "theme": "opposition"
+  },
+  {
+   "q": "délai d'opposition à un jugement par défaut",
+   "expect": [
+    "/ma/loi/58-25/art_200",
+    "/ma/loi/22-01/art_393"
+   ],
+   "lang": "fr",
+   "theme": "opposition"
+  },
+  {
+   "q": "حكمو عليا وأنا غايب",
+   "expect": [
+    "/ma/loi/58-25/art_200",
+    "/ma/loi/22-01/art_393"
+   ],
+   "lang": "darija",
+   "theme": "opposition"
+  },
+  {
+   "q": "أجل الطعن بالنقض",
+   "expect": [
+    "/ma/loi/58-25/art_380",
+    "/ma/loi/22-01/art_527"
+   ],
+   "lang": "ar",
+   "theme": "cassation"
+  },
+  {
+   "q": "délai du pourvoi en cassation",
+   "expect": [
+    "/ma/loi/58-25/art_380",
+    "/ma/loi/22-01/art_527"
+   ],
+   "lang": "fr",
+   "theme": "cassation"
+  },
+  {
+   "q": "واش النقض كيوقف التنفيذ",
+   "expect": [
+    "/ma/loi/58-25/art_383"
+   ],
+   "lang": "darija",
+   "theme": "cassation"
+  },
+  {
+   "q": "الأحكام الابتدائية والانتهائية",
+   "expect": [
+    "/ma/loi/58-25/art_30"
+   ],
+   "lang": "ar",
+   "theme": "final"
+  },
+  {
+   "q": "jugement en premier et dernier ressort 10000 dirhams",
+   "expect": [
+    "/ma/loi/58-25/art_30"
+   ],
+   "lang": "fr",
+   "theme": "final"
+  },
+  {
+   "q": "طلب إلغاء حكم قاضي القرب",
+   "expect": [
+    "/ma/loi/58-25/art_32"
+   ],
+   "lang": "ar",
+   "theme": "final"
+  },
+  {
+   "q": "كيفية احتساب الآجال القضائية",
+   "expect": [
+    "/ma/loi/58-25/art_602",
+    "/ma/loi/22-01/art_750"
+   ],
+   "lang": "ar",
+   "theme": "counting"
+  },
+  {
+   "q": "délai franc procédure maroc",
+   "expect": [
+    "/ma/loi/58-25/art_602",
+    "/ma/loi/22-01/art_750"
+   ],
+   "lang": "fr",
+   "theme": "counting"
+  },
+  {
+   "q": "إلا كان آخر نهار فالأجل عطلة",
+   "expect": [
+    "/ma/loi/58-25/art_602",
+    "/ma/loi/22-01/art_750"
+   ],
+   "lang": "darija",
+   "theme": "counting"
+  },
+  {
+   "q": "طلب التنفيذ إلى قاضي التنفيذ",
+   "expect": [
+    "/ma/loi/58-25/art_481",
+    "/ma/loi/58-25/art_486"
+   ],
+   "lang": "ar",
+   "theme": "enforce"
+  },
+  {
+   "q": "كيفاش ننفذ حكم",
+   "expect": [
+    "/ma/loi/58-25/art_481",
+    "/ma/loi/58-25/art_486"
+   ],
+   "lang": "darija",
+   "theme": "enforce"
+  },
+  {
+   "q": "exécution d'un jugement au maroc",
+   "expect": [
+    "/ma/loi/58-25/art_481",
+    "/ma/loi/58-25/art_486",
+    "/ma/loi/58-25/art_457"
+   ],
+   "lang": "fr",
+   "theme": "enforce"
+  },
+  {
+   "q": "صيغة التنفيذ",
+   "expect": [
+    "/ma/loi/58-25/art_457"
+   ],
+   "lang": "ar",
+   "theme": "enforce"
+  },
+  {
+   "q": "الحجز التحفظي",
+   "expect": [
+    "/ma/loi/58-25/art_496"
+   ],
+   "lang": "ar",
+   "theme": "enforce"
+  },
+  {
+   "q": "saisie conservatoire délai",
+   "expect": [
+    "/ma/loi/58-25/art_496"
+   ],
+   "lang": "fr",
+   "theme": "enforce"
+  },
+  {
+   "q": "الإكراه البدني",
+   "expect": [
+    "/ma/loi/22-01/art_635",
+    "/ma/loi/22-01/art_638"
+   ],
+   "lang": "ar",
+   "theme": "coercion"
+  },
+  {
+   "q": "durée de la contrainte par corps",
+   "expect": [
+    "/ma/loi/22-01/art_638"
+   ],
+   "lang": "fr",
+   "theme": "coercion"
+  },
+  {
+   "q": "واش يحبسوني إلا ما خلصتش الغرامة",
+   "expect": [
+    "/ma/loi/22-01/art_635",
+    "/ma/loi/22-01/art_638"
+   ],
+   "lang": "darija",
+   "theme": "coercion"
+  },
+  {
+   "q": "شهادة عدم الخضوع للضريبة لتفادي الإكراه البدني",
+   "expect": [
+    "/ma/loi/22-01/art_635"
+   ],
+   "lang": "ar",
+   "theme": "coercion"
+  },
+  {
+   "q": "العقوبات البديلة",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-1",
+    "/ma/dahir/1-59-413/art_35-2"
+   ],
+   "lang": "ar",
+   "theme": "alternative"
+  },
+  {
+   "q": "les peines alternatives au maroc",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-1",
+    "/ma/dahir/1-59-413/art_35-2"
+   ],
+   "lang": "fr",
+   "theme": "alternative"
+  },
+  {
+   "q": "العمل لأجل المنفعة العامة",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-6",
+    "/ma/dahir/1-59-413/art_35-5"
+   ],
+   "lang": "ar",
+   "theme": "alternative"
+  },
+  {
+   "q": "travail d'intérêt général nombre d'heures",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-6"
+   ],
+   "lang": "fr",
+   "theme": "alternative"
+  },
+  {
+   "q": "الغرامة اليومية",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-14",
+    "/ma/dahir/1-59-413/art_35-15"
+   ],
+   "lang": "ar",
+   "theme": "alternative"
+  },
+  {
+   "q": "montant du jour-amende",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-15"
+   ],
+   "lang": "fr",
+   "theme": "alternative"
+  },
+  {
+   "q": "السوار الإلكتروني بدل الحبس",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-10"
+   ],
+   "lang": "darija",
+   "theme": "alternative"
+  },
+  {
+   "q": "surveillance électronique peine",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-10"
+   ],
+   "lang": "fr",
+   "theme": "alternative"
+  },
+  {
+   "q": "شكون ما يستافدش من العقوبات البديلة",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-3",
+    "/ma/dahir/1-59-413/art_35-1"
+   ],
+   "lang": "darija",
+   "theme": "alternative"
+  },
+  {
+   "q": "nchri l7bs b flous",
+   "expect": [
+    "/ma/dahir/1-59-413/art_35-15",
+    "/ma/dahir/1-59-413/art_35-14"
+   ],
+   "lang": "arabizi",
+   "theme": "alternative"
+  },
+  {
+   "q": "الإفراج المقيد بشروط",
+   "expect": [
+    "/ma/loi/22-01/art_622",
+    "/ma/loi/22-01/art_625"
+   ],
+   "lang": "ar",
+   "theme": "release"
+  },
+  {
+   "q": "libération conditionnelle au maroc",
+   "expect": [
+    "/ma/loi/22-01/art_622"
+   ],
+   "lang": "fr",
+   "theme": "release"
+  },
+  {
+   "q": "زيارة المعتقل",
+   "expect": [
+    "/ma/loi/10-23/art_69",
+    "/ma/loi/10-23/art_70"
+   ],
+   "lang": "ar",
+   "theme": "visit"
+  },
+  {
+   "q": "شكون يقدر يزور واحد فالحبس",
+   "expect": [
+    "/ma/loi/10-23/art_69"
+   ],
+   "lang": "darija",
+   "theme": "visit"
+  },
+  {
+   "q": "visite d'un détenu en prison",
+   "expect": [
+    "/ma/loi/10-23/art_69",
+    "/ma/loi/10-23/art_70"
+   ],
+   "lang": "fr",
+   "theme": "visit"
+  },
+  {
+   "q": "واش القفة مسموحة فالحبس",
+   "expect": [
+    "/ma/loi/10-23/art_75",
+    "/ma/loi/10-23/art_74"
+   ],
+   "lang": "darija",
+   "theme": "visit"
+  },
+  {
+   "q": "panier de nourriture prison maroc",
+   "expect": [
+    "/ma/loi/10-23/art_75",
+    "/ma/loi/10-23/art_74"
+   ],
+   "lang": "fr",
+   "theme": "visit"
+  },
+  {
+   "q": "مراسلات المعتقل",
+   "expect": [
+    "/ma/loi/10-23/art_94"
+   ],
+   "lang": "ar",
+   "theme": "visit"
+  }
+ ]
+}

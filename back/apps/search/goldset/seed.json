@@ -1,0 +1,128 @@
+{
+ "about": "Seed questions written by Claude from texts known to be in the corpus, as people would type them, each with the text (or article, or issue) that must come back in the top 3. A start for the harness; the gold set itself is 300 questions written with law students and a lawyer (decision 12 of 17 Oct).",
+ "questions": [
+  {
+   "q": "مهنة المحاماة",
+   "expect": "/ma/loi/66-23"
+  },
+  {
+   "q": "قانون المحاماة الجديد",
+   "expect": "/ma/loi/66-23"
+  },
+  {
+   "q": "شروط التسجيل في جدول هيئة المحامين",
+   "expect": "/ma/loi/66-23"
+  },
+  {
+   "q": "المسطرة المدنية",
+   "expect": "/ma/loi/58-25"
+  },
+  {
+   "q": "القانون رقم 58.25",
+   "expect": "/ma/loi/58-25"
+  },
+  {
+   "q": "تنظيم مهنة العدول",
+   "expect": "/ma/loi/51-26"
+  },
+  {
+   "q": "خطة العدالة",
+   "expect": "/ma/loi/51-26"
+  },
+  {
+   "q": "الخبراء القضائيين",
+   "expect": "/ma/loi/1-24"
+  },
+  {
+   "q": "التراجمة المحلفين",
+   "expect": "/ma/loi/52-23"
+  },
+  {
+   "q": "الكلاب الضالة",
+   "expect": "/ma/loi/19-25"
+  },
+  {
+   "q": "حماية الطفولة",
+   "expect": "/ma/loi/29-24"
+  },
+  {
+   "q": "الطفل المهمل",
+   "expect": "/ma/loi/29-24"
+  },
+  {
+   "q": "التعليم العالي الخاص",
+   "expect": "/ma/loi/59-24"
+  },
+  {
+   "q": "التعليم المدرسي الاستدراكي",
+   "expect": "/ma/loi/59-21"
+  },
+  {
+   "q": "المجلس الوطني للصحافة",
+   "expect": "/ma/loi/9-26"
+  },
+  {
+   "q": "الدفع بعدم دستورية قانون",
+   "expect": "/ma/loi-organique/35-24"
+  },
+  {
+   "q": "قانون المالية لسنة 2026",
+   "expect": "/ma/loi/50-25"
+  },
+  {
+   "q": "قانون المالية 2024",
+   "expect": "/ma/loi/55-23"
+  },
+  {
+   "q": "المادة 6 من القانون رقم 50.25",
+   "expect": "/ma/loi/50-25/art_6"
+  },
+  {
+   "q": "ج.ر 7465 مكرر",
+   "expect": "/bo/general_ar/7465-bis"
+  },
+  {
+   "q": "هيئات التوظيف الجماعي للقيم المنقولة",
+   "expect": "/ma/loi/3-25"
+  },
+  {
+   "q": "OPCVM",
+   "expect": "/ma/loi/3-25",
+   "note": "an acronym: needs the everyday-words list"
+  },
+  {
+   "q": "المندوبية السامية للتخطيط",
+   "expect": "/ma/loi/47-26"
+  },
+  {
+   "q": "الإحصاء العمومي",
+   "expect": "/ma/loi/46-26"
+  },
+  {
+   "q": "التأمين الإجباري الأساسي عن المرض",
+   "expect": "/ma/loi/54-23"
+  },
+  {
+   "q": "AMO",
+   "expect": "/ma/loi/54-23",
+   "note": "an acronym: needs the everyday-words list"
+  },
+  {
+   "q": "تحويل المكتب الوطني للهيدروكاربورات والمعادن إلى شركة مساهمة",
+   "expect": "/ma/loi/56-24"
+  },
+  {
+   "q": "معاش العمال المستقلين",
+   "expect": "/ma/loi/99-15"
+  },
+  {
+   "q": "الأعمال الاجتماعية للقضاة",
+   "expect": "/ma/loi/28-25"
+  },
+  {
+   "q": "hglphlhm",
+   "expect": "/ma/loi/66-23",
+   "note": "«المحاماة» typed on a QWERTY keyboard"
+  }
+ ]
+}

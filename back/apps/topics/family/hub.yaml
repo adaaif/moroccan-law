@@ -1,0 +1,235 @@
+# The family topic's page (F3 of the family plan; the family-papers review, 26 Oct 2026): what is happening, said
+# the way people say it, each door leading to its journey or page, in a life's order (G2: marrying, a birth, kafala,
+# separating, the children after, unpaid nafaqa, a death, abroad, protection); the reader's answer to the one question
+# reorders them (G3). A door's `sign` is the office where its passage ends (G1): the adouls' act (act), the civil-status
+# record (record), the family court (court), the consulate (consul); protection has no paper, a shield in ink (shield).
+# A door's `means` is the law's own phrase for its words: a question that is one of them is searched as that phrase
+# first (G15).
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+
+# The question (G3), in the family's plural: the same for women and men. Each answer leads with its door (`first`) and
+# shows the figures that are its own, each with the articles that set it.
+profile:
+  question: {ar: شنو وضعكم؟, fr: 'Quelle est votre situation ?'}
+  we: {ar: حنا, fr: Nous}
+  options:
+    - key: engaged
+      first: marry
+      main: true
+      label: {ar: غادي نتزوجو, fr: Nous allons nous marier}
+      law: {ar: 'الزواج في مدونة الأسرة (المواد 4 إلى 69): الأهلية، والصداق، والملف، والعقد عند العدلين.', fr: 'Le mariage dans le Code de la famille (art. 4 à 69) : la capacité, la dot, le dossier, l’acte chez les adouls.'}
+      facts:
+        - {value: '18', label: {ar: 'سنة لكل واحد منكما: سن الزواج', fr: 'ans pour chacun : l’âge du mariage'}, cites: [/ma/loi/70-03/art_19]}
+        - {value: {ar: الصداق, fr: La dot}, label: {ar: 'ملك للزوجة، ولا يتفق على إسقاطه', fr: 'appartient à l’épouse ; on ne convient pas de la supprimer'}, cites: [/ma/loi/70-03/art_29, /ma/loi/70-03/art_13]}
+        - {value: {ar: الأموال, fr: Les biens}, label: {ar: 'لكل واحد ذمته؛ ويمكن الاتفاق على ما سيكتسب في وثيقة مستقلة', fr: 'chacun son patrimoine ; un accord sur les acquêts dans un document à part'}, cites: [/ma/loi/70-03/art_49]}
+      to: journeys/marry
+    - key: married
+      first: birth
+      label: {ar: مزوجين, fr: Nous sommes mariés}
+      law: {ar: 'حقوق الزوجين وواجباتهما في المواد 51 إلى 53، وأموالهما في المادة 49.', fr: 'Les droits et devoirs des époux aux art. 51 à 53 ; leurs biens à l’art. 49.'}
+      facts:
+        - {value: {ar: الذمة, fr: Patrimoine}, label: {ar: 'لكل واحد منكما ذمة مالية مستقلة', fr: 'chacun des époux a le sien'}, cites: [/ma/loi/70-03/art_49]}
+        - {value: {ar: الشرط, fr: La condition}, label: {ar: 'شرط الزوجة ألا يتزوج عليها يمنع التعدد', fr: 'la condition de l’épouse interdit la polygamie'}, cites: [/ma/loi/70-03/art_40]}
+        - {value: '30', label: {ar: 'يوما للتصريح بمولود من اليوم الموالي لولادته', fr: 'jours pour déclarer une naissance, dès le lendemain'}, cites: [/ma/decret/2-22-04/art_40]}
+    - key: young
+      first: birth
+      main: true
+      label: {ar: عندنا ولاد صغار, fr: Nous avons de jeunes enfants}
+      law: {ar: 'التصريح بالولادة في القانون 36.21 ومرسومه 2.22.04، والدعم المباشر في القانون 58.23.', fr: 'La déclaration de naissance dans la loi 36-21 et son décret 2-22-04 ; l’aide directe dans la loi 58-23.'}
+      facts:
+        - {value: '30', label: {ar: 'يوما للتصريح بالولادة', fr: 'jours pour déclarer la naissance'}, cites: [/ma/decret/2-22-04/art_40]}
+        - {value: '6', label: {ar: 'أشهر لطلب منحة الولادة', fr: 'mois pour demander la prime de naissance'}, cites: [/ma/loi/58-23/art_3]}
+        - {value: '21', label: {ar: 'سنة: يحسب الولد في الدعم المباشر حتى يبلغها', fr: 'ans : l’enfant compte pour l’aide directe jusque-là'}, cites: [/ma/loi/58-23/art_2]}
+      to: tools/support
+    - key: separated
+      first: children
+      main: true
+      label: {ar: تفارقنا وعندنا ولاد, fr: Nous sommes séparés et avons des enfants}
+      law: {ar: 'الحضانة في المواد 163 إلى 186، ونفقة الأولاد في المواد 187 إلى 202 من مدونة الأسرة.', fr: 'La garde aux art. 163 à 186 et la pension des enfants aux art. 187 à 202 du Code de la famille.'}
+      facts:
+        - {value: '18', label: {ar: 'سنة: الحضانة حتى الرشد، للذكر والأنثى', fr: 'ans : la garde jusqu’à la majorité, garçon ou fille'}, cites: [/ma/loi/70-03/art_166]}
+        - {value: '15', label: {ar: 'سنة: يختار الولد من يحضنه من أبيه أو أمه', fr: 'ans : l’enfant choisit lequel de ses parents le garde'}, cites: [/ma/loi/70-03/art_166]}
+        - {value: '25', label: {ar: 'سنة: النفقة لمن يتابع دراسته', fr: 'ans : la pension pour celui qui étudie'}, cites: [/ma/loi/70-03/art_198]}
+      to: pages/child
+    - key: bereaved
+      first: death
+      main: true
+      label: {ar: توفى لينا شي حد, fr: Un proche est décédé}
+      law: {ar: 'التصريح بالوفاة في المرسوم 2.22.04، والتركة والوصية والميراث في الكتابين الخامس والسادس من مدونة الأسرة.', fr: 'La déclaration du décès dans le décret 2-22-04 ; la succession, le testament et l’héritage aux livres V et VI du Code de la famille.'}
+      facts:
+        - {value: '30', label: {ar: 'يوما للتصريح بالوفاة من اليوم الموالي لها', fr: 'jours pour déclarer le décès, dès le lendemain'}, cites: [/ma/decret/2-22-04/art_40]}
+        - {value: {ar: '4 أشهر و10 أيام', fr: '4 mois et 10 jours'}, label: {ar: 'عدة المتوفى عنها غير الحامل', fr: 'la retraite de la veuve non enceinte'}, cites: [/ma/loi/70-03/art_132]}
+        - {value: {ar: الثلث, fr: Le tiers}, label: {ar: 'حد الوصية من مال الميت', fr: 'la limite du testament'}, cites: [/ma/loi/70-03/art_277]}
+      to: journeys/heirs
+    - key: abroad
+      first: abroad
+      label: {ar: ساكنين برا المغرب, fr: Nous vivons à l’étranger}
+      law: {ar: 'زواج المغاربة بالخارج في المادتين 14 و15 من مدونة الأسرة، والتصريح بالولادة والوفاة في المرسوم 2.22.04.', fr: 'Le mariage des Marocains à l’étranger aux art. 14 et 15 du Code ; les déclarations de naissance et de décès dans le décret 2-22-04.'}
+      facts:
+        - {value: '3', label: {ar: 'أشهر لإيداع نسخة عقد زواج أبرم حسب قانون بلد الإقامة', fr: 'mois pour déposer la copie d’un mariage conclu selon la loi locale'}, cites: [/ma/loi/70-03/art_15]}
+        - {value: '1', label: {ar: 'سنة للتصريح بولادة أو وفاة بالخارج', fr: 'an pour déclarer une naissance ou un décès à l’étranger'}, cites: [/ma/decret/2-22-04/art_40]}
+      to: pages/abroad
+
+events:
+  - key: marry
+    sign: act
+    words: [زواج, الزواج, نتزوج, نتزوجو, نزوج, عقد الزواج, ملف الزواج, عقد النكاح, mariage, se marier, acte de mariage,
+            الصداق, dot, سن الزواج, عمر الزواج, باش تزوج, âge du mariage, التعدد, يزوج عليا, نزوج عليها, يتزوج عليها, polygamie]
+    means:
+      عقد الزواج: [زواج, الزواج, نتزوج, نتزوجو, نزوج, عقد الزواج, ملف الزواج, عقد النكاح, mariage, se marier, acte de mariage]
+      الصداق: [الصداق, dot]
+      أهلية الزواج: [سن الزواج, عمر الزواج, باش تزوج, âge du mariage]
+      التعدد: [التعدد, يزوج عليا, نزوج عليها, يتزوج عليها, polygamie]
+    title: {ar: غادي نتزوج, fr: Je vais me marier}
+    lead: {ar: 'الملف بالمحكمة، والعقد عند العدول', fr: 'Le dossier au tribunal, l’acte chez les adouls'}
+    to: journeys/marry
+    for: [engaged, abroad]
+  - key: birth
+    sign: record
+    words: [ولادة, الولادة, مولود, تزاد عندي, تزاد ليا, تسجيل المولود, نسجل ولدي, نسجل بنتي, نسجل المولود, تسجيل الولد, رسم الولادة, عقد الازدياد, الحالة المدنية ديال الولد, naissance, déclarer une naissance, déclaration de naissance]
+    means: التصريح بالولادة
+    title: {ar: تزاد عندي مولود, fr: Un enfant est né}
+    lead: {ar: 'التصريح خلال 30 يوما، والاسم، ومنحة الولادة', fr: 'Déclaration sous 30 jours, prénom, prime de naissance'}
+    to: journeys/birth
+    for: [married, young, abroad]
+  - key: kafala
+    sign: court
+    words: [كفالة, الكفالة, نكفل, نكفلو, كفالة طفل, طفل متخلى عنه, طفل مهمل, kafala, recueillir un enfant]
+    means: كفالة الأطفال المهملين
+    title: {ar: بغيت نكفل طفل, fr: Je veux recueillir un enfant (kafala)}
+    lead: {ar: 'الكفالة خطوة بخطوة، بأمر من القاضي', fr: 'La kafala étape par étape, sur ordonnance du juge'}
+    to: journeys/kafala
+    for: [married, abroad]
+  - key: separate
+    sign: court
+    words: [طلاق, الطلاق, نطلق, نتطلق, تطليق, التطليق, الخلع, خلع, شقاق, الشقاق, نتفارقو, مستحقات المطلقة, المطلقة, المتعة, نفقة العدة, divorce, divorcer, khol,
+            ما بغاش يطلقني, غاب عليا, غاب علي, غيبة الزوج, نستأنف حكم التطليق, الطعن في حكم التطليق, appel du divorce]
+    means:
+      التطليق للشقاق: [شقاق, الشقاق, نتفارقو, ما بغاش يطلقني]
+      غاب الزوج عن زوجته: [غاب عليا, غاب علي, غيبة الزوج]
+      المقررات القضائية الصادرة بالتطليق: [نستأنف حكم التطليق, الطعن في حكم التطليق, appel du divorce]
+      الخلع: [الخلع, خلع, khol]
+      مستحقات الزوجة: [مستحقات المطلقة, المطلقة]
+      المتعة: [المتعة]
+      نفقة العدة: [نفقة العدة]
+    title: {ar: بغينا نتفارقو, fr: Nous voulons nous séparer}
+    lead: {ar: 'شكون يطلب، شنو كيتخلص، وشحال كتاخد', fr: 'Qui le demande, ce qui est dû, combien de temps'}
+    to: pages/ways
+    for: [married, separated, abroad]
+  - key: children
+    sign: court
+    words: [حضانة, الحضانة, الحاضنة, زيارة الولاد, الزيارة, نشوف ولدي, نشوف ولادي, النفقة حتى, pension jusqu'à quel âge, نسافر بولدي, نسافر بالولد, السفر بالولد, سفر المحضون, الولد يختار, garde, droit de visite, voyager avec mon enfant]
+    means:
+      الحضانة: [حضانة, الحضانة, الحاضنة, الولد يختار, garde]
+      زيارة المحضون: [زيارة الولاد, الزيارة, droit de visite, نشوف ولدي, نشوف ولادي]
+      تستمر نفقة الأب على أولاده: [النفقة حتى, pension jusqu'à quel âge]
+      السفر بالمحضون خارج المغرب: [نسافر بولدي, نسافر بالولد, السفر بالولد, سفر المحضون, voyager avec mon enfant]
+    title: {ar: الولاد بعد الفراق, fr: Les enfants après la séparation}
+    lead: {ar: 'الحضانة والنفقة والزيارة والسفر', fr: 'Garde, pension, visites, voyage'}
+    to: pages/child
+    for: [separated]
+  - key: unpaid
+    sign: court
+    words: [النفقة ما كتخلصش, ما كيخلصش النفقة, ما بقاش كيخلص, ماكيصيفطش النفقة, نفقة, النفقة, النفقة ديال الولاد, نفقة الأولاد, إهمال الأسرة, pension alimentaire, pension impayée, abandon de famille]
+    means:
+      إهمال الأسرة: [النفقة ما كتخلصش, ما كيخلصش النفقة, ما بقاش كيخلص, ماكيصيفطش النفقة, إهمال الأسرة, pension impayée, abandon de famille]
+      نفقة الأولاد: [النفقة ديال الولاد, نفقة الأولاد]
+    title: {ar: النفقة ما كتخلصش, fr: La pension n’est pas payée}
+    lead: {ar: 'شهر بلا أداء: إهمال الأسرة (المادة 202)', fr: 'Un mois sans paiement : abandon de famille (art. 202)'}
+    to: pages/money
+    for: [separated, young, married]
+  - key: death
+    sign: act
+    words: [وفاة, الوفاة, توفى, مات, رسم الإراثة, الإراثة, التصريح بالوفاة, عدة الوفاة, التركة, décès, acte d’hérédité, viduité, الوصية, نوصي, testament]
+    means:
+      التصريح بالوفاة: [وفاة, الوفاة, توفى, مات, التصريح بالوفاة, décès]
+      الإراثة: [رسم الإراثة, الإراثة, acte d’hérédité]
+      عدة المتوفى عنها: [عدة الوفاة, viduité]
+      الوصية: [الوصية, نوصي, testament]
+    title: {ar: توفى واحد من العائلة, fr: Un proche est décédé}
+    lead: {ar: 'التصريح خلال 30 يوما، ثم رسم الإراثة', fr: 'Déclaration sous 30 jours, puis l’acte d’hérédité'}
+    to: journeys/heirs
+    for: [bereaved, abroad]
+  - key: abroad
+    sign: consul
+    words: [الخارج, ساكن برا, ساكنين برا, كنسكن برا, القنصلية, مغاربة العالم, الزواج المختلط, étranger, consulat, MRE]
+    means: المغاربة المقيمين بالخارج
+    title: {ar: ساكنين برا المغرب, fr: Nous vivons à l’étranger}
+    lead: {ar: 'الزواج والولادة والأحكام الأجنبية', fr: 'Mariage, naissance, jugements étrangers'}
+    to: pages/abroad
+    for: [abroad]
+  - key: protection
+    sign: shield
+    words: [عنف, العنف, تعنيف, ضرب, يضربني, كيضربني, اغتصاب, تحرش, التحرش, الطرد من بيت الزوجية, طردني من الدار, violence, violences, harcèlement]
+    means:
+      العنف ضد المرأة: [عنف, العنف, تعنيف, ضرب, يضربني, كيضربني, violence, violences]
+      الطرد من بيت الزوجية: [الطرد من بيت الزوجية, طردني من الدار]
+    title: {ar: محتاج حماية, fr: J’ai besoin de protection}
+    lead: {ar: 'ما يحميك، وفين تمشي', fr: 'Ce qui vous protège, où aller'}
+    to: pages/protection
+    discreet: true
+
+# Searches holding one of these words are counted, never kept as typed, nor among the device's last searches (F14).
+private: [عنف, العنف, تعنيف, ضرب, يضربني, كيضربني, اغتصاب, تحرش, التحرش, violence, violences, viol, harcèlement]
+
+# The tools run on the reader's phone; `tool: true` ones wait for a person's check (checked.yaml: tools/<key>), unless
+# `open: true` shows one before, with a note that no professional has reviewed it yet. The three the page draws as
+# instruments (G4: registry INSTRUMENTS) are not listed again; «الأسرة بالأرقام» sits among the texts (`place: whole`).
+tools:
+  - key: inheritance
+    icon: tree
+    words: [ورث, الورث, ميراث, الميراث, إرث, الإرث, تركة, نقسمو, قسمة التركة, الورث ديال البنات, نصيب البنت, نصيب البنات, كتورث الزوجة, نصيب الزوجة, héritage de l'épouse, héritage, succession, part d’héritage, حساب الميراث, حاسبة المواريث, حاسبة الميراث, تقسيم التركة, الفريضة, الوصية الواجبة, نصيب الأحفاد, calcul héritage, calcul de l’héritage, legs obligatoire]
+    means:
+      الميراث: [ورث, الورث, ميراث, الميراث, إرث, الإرث, نقسمو, قسمة التركة, héritage, succession, part d’héritage]
+      أصحاب الثلثين: [الورث ديال البنات, نصيب البنت, نصيب البنات]
+      الزوجة إذا لم يكن للزوج فرع وارث: [كتورث الزوجة, نصيب الزوجة, héritage de l'épouse]
+    tool: true
+    open: true            # a call of 20 Oct 2026: readers see it before an adoul's review
+    title: {ar: حاسبة الإرث, fr: Calculer les parts d’héritage}
+    # The words people type (IR28 of the inheritance review): this line is the page's description for a search engine.
+    lead: {ar: 'حساب الميراث وتقسيم التركة: نصيب الزوجة والأولاد وكل وارث، بمادته من مدونة الأسرة', fr: 'Calcul de l’héritage et partage de la succession : la part de l’épouse, des enfants et de chaque héritier, avec son article du Code de la famille'}
+  - key: years
+    icon: child
+    to: pages/child
+    title: {ar: سنين الولد, fr: Les années de l’enfant}
+    lead: {ar: 'شنو كيتبدل مع العمر', fr: 'Ce qui change avec l’âge'}
+  - key: dates
+    icon: clock
+    words: [آجال مدونة الأسرة, آجال الأسرة, آجال الطلاق, أجل العدة, délais divorce, délai de viduité]
+    tool: true
+    title: {ar: تواريخ يحددها القانون, fr: Les dates que fixe la loi}
+    lead: {ar: 'من يوم الحدث، كل أجل بمادته', fr: 'À partir du jour de l’événement, chaque délai avec son article'}
+  - key: support
+    icon: money
+    words: [الدعم المباشر, دعم الأطفال, منحة الولادة, منحة الدخول المدرسي, aide directe, allocation]
+    means: الدعم الاجتماعي المباشر
+    tool: true
+    title: {ar: الدعم المباشر للأطفال, fr: L’aide directe pour les enfants}
+    lead: {ar: المبلغ الذي يحدده المرسوم, fr: Le montant que fixe le décret}
+    for: [young, separated, bereaved]
+  - key: numbers
+    words: [إحصائيات, أرقام, زواج القاصرين, statistiques]
+    to: pages/numbers
+    place: whole
+    title: {ar: الأسرة بالأرقام, fr: La famille en chiffres}
+    lead: {ar: أرقام رسمية بمصادرها, fr: 'Des chiffres officiels, avec leurs sources'}
+
+# What people say of the reform (G6), from the Ulema's accepted questions: each answered by the article in force, and
+# leading to the reform's page. Drafts until a person checks them with the reform (reform/reform).
+beliefs:
+  - claim: {ar: الأم إلا تزوجات كتبقى عندها الحضانة, fr: 'La mère qui se remarie garde ses enfants'}
+    truth: {ar: 'ماشي بعد: من بعد 7 سنين ديال الولد، زواجها يقدر يسقطها إلا فحالات (المادة 175). البقاء مقترح معلن.', fr: 'Pas encore : passé 7 ans, son remariage peut lui faire perdre la garde, sauf exceptions (art. 175). Son maintien est une proposition annoncée.'}
+    to: reform/reform
+  - claim: {ar: سن الزواج ولا 17 عام, fr: 'L’âge du mariage est passé à 17 ans'}
+    truth: {ar: 'ماشي بعد: 18 عام، وقبلها غير بإذن القاضي (المادتان 19 و20).', fr: 'Pas encore : 18 ans, et avant seulement avec l’autorisation du juge (art. 19 et 20).'}
+    to: reform/reform
+  - claim: {ar: الولاية على الولاد ولات للأب والأم بجوج, fr: 'La tutelle des enfants revient aux deux parents'}
+    truth: {ar: 'ماشي بعد: النائب الشرعي هو الأب، ومن بعدو الأم (المادة 231).', fr: 'Pas encore : le représentant légal est le père, puis la mère (art. 231).'}
+    to: reform/reform
+
+# The order a reviewer opens the topic in (G16): the passages most people meet first; the five ways, the children and
+# nafaqa; then kafala, abroad and protection; the inheritance cases last, with an adoul.
+waves:
+  1: [journeys/birth, journeys/marry, checklists/marriage-file, checklists/birth, journeys/heirs, tools/dates, tools/support]
+  2: [pages/ways, journeys/divorce-agreement, journeys/khul, journeys/talaq, journeys/shiqaq, checklists/talaq-request, pages/child, pages/money, pages/numbers, series/minors, series/divorce, series/marriages, reform/reform]
+  3: [journeys/kafala, checklists/kafala, pages/abroad, pages/protection, tools/inheritance]

@@ -1,0 +1,466 @@
+/* The library and its rooms (drawn again on 30 Oct 2026; and on 9 Nov 2026, the every-code review, every
+   recommendation taken): /library, /codes, /bo, /words, /check, /data. Loaded with
+   them, never in the first load. The library keeps printed things: the codes as the index of a printed code (10 Nov 2026,
+   the library-search review: every name in view, where the piles of 9 Nov showed nine of 67 on a phone), the Bulletin as
+   strata of its issues, an issue stamped on its day in the year, a lexicon in two columns, a document marked up with its
+   notes, the data's record on a catalogue card. Every colour a token but the books' cloth: the ink of print, the violet of
+   the law's source, people's saffron, the statuses. */
+
+.lb { display: flex; flex-direction: column; gap: 40px; }
+.lb a { text-decoration: none; }
+.lb a:focus-visible, .lb button:focus-visible, .lb input:focus-visible, .lb textarea:focus-visible, .lb summary:focus-visible {
+  outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.lb-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* ── A room's head: its name and one line, a box when the room has one, a double rule as printed matter ends a head ─ */
+.lb-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px 40px; padding-bottom: 18px; border-bottom: 4px double var(--color-ink); }
+@media (min-width: 1024px) { .lb-head.side { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: end; } }
+.lb-head h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.lb-head p.lead { margin: 10px 0 0; max-width: 58ch; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink-soft); }
+/* The holdings, said as a library says them on its plaque: one sentence in the law's type. */
+@media (max-width: 767px) {
+  .lb { gap: 26px; }
+  .lb-head { gap: 6px; padding-bottom: 12px; }
+}
+
+/* The catalogue's box (W1, W2 of the library-search review): whatever a reader knows of a text or an issue. Its answer stands
+   directly under the field, above a phone's keyboard; the examples leave at the first letter. */
+.lb-find { display: flex; flex-direction: column; gap: 8px; max-width: 820px; scroll-margin-top: 8px; }
+.lb-find label { font-weight: 700; color: var(--color-ink); }
+.lb-find .row { display: flex; gap: 8px; }
+.lb-find input { flex: 1; min-width: 0; height: 52px; padding: 0 16px; border: 1.5px solid var(--color-field); border-radius: var(--radius-control);
+  background: var(--color-sheet); color: var(--color-ink); font: inherit; font-size: var(--text-lead); }
+.lb-find input:focus { border-color: var(--color-stamp); outline: none; box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-stamp) 20%, transparent); }
+.lb-eg { display: flex; flex-wrap: wrap; gap: 6px; }
+.lb-eg button { min-height: 36px; padding: 0 12px; border: 0; border-radius: 8px; background: var(--color-chip); color: var(--color-ink); font-size: 0.875rem; cursor: pointer; }
+.lb-eg button:hover { background: var(--color-wash); color: var(--color-stamp); }
+.lb-find.typing .lb-eg { display: none; }
+@media (max-width: 767px) { .lb-eg button.wide { display: none; } }
+/* A desk: the examples in one row, past the field's end when they need it. */
+@media (min-width: 1100px) { .lb-eg { flex-wrap: nowrap; width: max-content; } .lb-eg button { white-space: nowrap; } }
+/* What was understood, part by part, in the stamp's wash. */
+.lb-und { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.875rem; }
+.lb-und span { padding: 2px 10px; border-radius: 6px; background: var(--color-wash); color: var(--color-stamp-deep); }
+.lb-und span.warn { background: var(--color-amended-wash); color: var(--color-amended); }
+/* The answers: one sheet, a line each, ruled like a ledger. The line «فتح» opens bears the stamp's violet at its start. */
+.lb-read { display: flex; flex-direction: column; border-radius: var(--radius-control); background: var(--color-sheet); overflow: hidden; }
+.lb-read:empty { display: none; }
+.lb-line { border-top: 1px solid var(--color-rule-soft, var(--color-rule)); border-inline-start: 4px solid transparent; }
+.lb-line:first-child { border-top: 0; }
+.lb-line.sure { border-inline-start-color: var(--color-stamp); }
+.lb a.lb-a, .lb-a { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr) auto; gap: 2px 12px; align-items: center; min-height: 56px; padding: 9px 14px; color: var(--color-ink); }
+.lb a.lb-a:hover { background: var(--color-wash); color: var(--color-ink); }
+.lb-a .k { font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-a .m { min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.lb-a .m b { font-family: var(--font-law); font-size: 1.3125rem; line-height: 1.25; font-weight: 600; overflow-wrap: anywhere; }
+.lb-a .m b:lang(fr) { font-family: "Source Serif 4", Georgia, serif; font-size: 1.0625rem; }
+.lb-a .m small, .lb-a .m > span { font-size: 0.875rem; line-height: 1.45; color: var(--color-ink-soft); }
+.lb-a .m .warn, .lb-a .stale { color: var(--color-amended); }
+.lb-a .m .ok { color: var(--color-in-force); font-weight: 600; }
+.lb-a .m .gone { color: var(--color-repealed); }
+.lb-a .go { max-width: 6.2rem; text-align: end; font-size: 0.875rem; font-weight: 600; line-height: 1.35; color: var(--color-stamp); }
+.lb-line.sure .lb-a .go::before { content: "↵ "; font-weight: 400; }
+p.lb-a.note { margin: 0; display: block; min-height: 0; padding: 12px 14px; font-size: 0.9375rem; color: var(--color-ink-soft); }
+p.lb-a.note.warn { color: var(--color-amended); }
+.lb-read > p.lb-a.note { border-top: 1px solid var(--color-rule-soft, var(--color-rule)); }
+.lb-read > p.lb-a.note:first-child { border-top: 0; }
+/* The source's stamp inside an answer: an issue in violet ink, as wherever a source is named. */
+.lb-stp { display: inline-block; padding: 0 7px; border: 1.5px solid var(--color-stamp); border-radius: 4px; color: var(--color-stamp); font-size: 0.8125rem; font-weight: 600; line-height: 1.5; white-space: nowrap; }
+.lb-bk .card { display: block; min-height: 36px; margin: -6px 0 8px; margin-inline-start: calc(4.2rem + 26px); padding: 0; border: 0; background: none; font: inherit; font-size: 0.875rem;
+  color: var(--color-stamp); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+@media (max-width: 767px) {
+  .lb a.lb-a, .lb-a { grid-template-columns: 3.3rem minmax(0, 1fr) auto; padding: 8px 10px; }
+  .lb-bk .card { margin-inline-start: calc(3.3rem + 22px); }
+  /* A phone keeps its width for the answer's words: the way in is said on the line «فتح» opens only. */
+  .lb-line:not(.sure) .lb-a .go { display: none; }
+  .lb-line:not(.sure) .lb-a { grid-template-columns: 3.3rem minmax(0, 1fr); }
+}
+
+/* ── The two rooms (15 Nov 2026): the codes and the Bulletin as two tabs standing on the double rule that closes the
+   head; the room a reader is in is the inked one. Each tab says what its room holds in one small line. ─────────── */
+.lb-head.plain { border-bottom: 0; padding-bottom: 0; }
+.lb-rooms { display: flex; flex-direction: column; gap: 26px; }
+.lb-doors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; border-bottom: 4px double var(--color-ink); }
+.lb-door { display: grid; gap: 1px; align-content: center; min-height: 68px; padding: 10px 14px 11px; border: 0; border-radius: 16px 16px 0 0; background: none;
+  font: inherit; text-align: start; color: var(--color-ink-soft); cursor: pointer; }
+.lb-door b { font-size: 1rem; line-height: 1.35; font-weight: 700; color: var(--color-ink); }
+.lb-door small { font-size: 0.875rem; line-height: 1.4; font-variant-numeric: tabular-nums; }
+.lb-door:not([aria-selected="true"]):hover { background: var(--color-chip); }
+.lb-door[aria-selected="true"] { background: var(--color-ink); color: color-mix(in srgb, var(--color-paper) 76%, var(--color-ink)); cursor: default; }
+.lb-door[aria-selected="true"] b { color: var(--color-paper); }
+@media (min-width: 768px) {
+  .lb-doors { display: flex; gap: 8px; }
+  .lb-door { min-width: 17rem; padding: 12px 26px 13px; }
+  .lb-door b { font-size: 1.1875rem; }
+}
+
+/* ── A room: one line that says how to read it, then what it holds ─────────────────────────────────────────────────── */
+.lb-room { display: flex; flex-direction: column; gap: 24px; }
+.lb-room[hidden] { display: none; }
+.lb-roomtop { margin: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; color: var(--color-ink-soft); }
+.lb-roomtop span { max-width: 64ch; }
+/* «بالأرقام»: the numbers, sizes and states back on the lines for who wants them. */
+.lb-switch { flex: none; display: inline-flex; align-items: center; gap: 9px; min-height: 44px; padding: 0 4px; border: 0; background: none; font: inherit; font-size: 0.9375rem;
+  font-weight: 600; color: var(--color-ink); cursor: pointer; }
+.lb-switch::before { content: ""; width: 34px; height: 20px; border-radius: 999px; background: var(--color-field);
+  box-shadow: inset 0 0 0 2px var(--color-field), inset -14px 0 0 2px var(--color-sheet); transition: box-shadow 0.15s; }
+.lb-switch:dir(rtl)::before { box-shadow: inset 0 0 0 2px var(--color-field), inset 14px 0 0 2px var(--color-sheet); }
+.lb-switch[aria-pressed="true"]::before { background: var(--color-stamp); box-shadow: inset 0 0 0 2px var(--color-stamp), inset 14px 0 0 2px var(--color-sheet); }
+.lb-switch[aria-pressed="true"]:dir(rtl)::before { box-shadow: inset 0 0 0 2px var(--color-stamp), inset -14px 0 0 2px var(--color-sheet); }
+@media (prefers-reduced-motion: reduce) { .lb-switch::before { transition: none; } }
+.lb-bonow { display: grid; gap: 22px; }
+@media (min-width: 960px) { .lb-bonow { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: start; } }
+.lb-more { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 24px; }
+.lb-more a { min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; }
+.lb-failed { margin: 0; color: var(--color-ink-soft); }
+.lb-failed button { min-height: 44px; border: 0; background: none; color: var(--color-stamp); font: inherit; font-weight: 600; text-decoration: underline; cursor: pointer; }
+
+/* ── The two newest issues as they are (W9), beside the week in the Bulletin's room ─────────────────────────────── */
+.lb-new h2 { margin: 0 0 6px; font-size: 0.9375rem; line-height: 1.4; font-weight: 700; color: var(--color-ink-soft); }
+.lb .lb-new > a { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 14px; align-items: baseline; min-height: 44px; padding: 8px 0; border-top: 1px solid var(--color-rule); color: var(--color-ink); }
+.lb .lb-new > a:hover b { color: var(--color-stamp); }
+.lb-new > a b { font-family: var(--font-law); font-size: 1.625rem; line-height: 1.1; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lb-new > a b em { font-style: normal; font-size: 1.125rem; color: var(--color-stamp); margin-inline-start: 4px; }
+.lb-new > a span { font-size: 0.9375rem; color: var(--color-ink-soft); }
+.lb-new > a strong { font-weight: 600; color: var(--color-ink); }
+.lb-new p { margin: 0; padding-top: 8px; border-top: 1px solid var(--color-rule); font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb .lb-new p a { color: var(--color-stamp); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ── The codes on nine shelves: each branch led by its general code as a bound book in the branch's cloth, the branch's
+   other laws beside it as names alone. The cloths are the topics' own colours a step deeper, the one place a colour
+   here is not a token: bookcloth keeps its colour by night. The spine is on the side a book of the page's language
+   is bound on (the right for Arabic), the fore-edge shows the pages, thicker for a longer code. ─────────────────────── */
+.lb-shelves { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 318px), 1fr)); gap: 40px 44px; }
+.lb-shelf { --cloth: #4a2f86; min-width: 0; }
+.lb-shelf[data-branch="family"] { --cloth: #a52f5d; }
+.lb-shelf[data-branch="civil"] { --cloth: #0d6a57; }
+.lb-shelf[data-branch="criminal"] { --cloth: #7d1b2a; }
+.lb-shelf[data-branch="courts"] { --cloth: #33429a; }
+.lb-shelf[data-branch="business"] { --cloth: #8a4526; }
+.lb-shelf[data-branch="work"] { --cloth: #2255ac; }
+.lb-shelf[data-branch="finance"] { --cloth: #775c00; }
+.lb-shelf[data-branch="public"] { --cloth: #0b6278; }
+.lb-shelf h3 { margin: 0 0 14px; padding-bottom: 7px; display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 1px solid var(--color-rule);
+  font-size: 0.9375rem; line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.lb-shelf h3 small { font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); white-space: nowrap; }
+.lb-shelf > div { display: flex; align-items: flex-start; gap: 18px; }
+.lb .lb-cover { --pages: 3px; position: relative; flex: none; width: 112px; aspect-ratio: 3 / 4; display: flex; flex-direction: column; align-items: center; justify-content: space-between;
+  padding-block: 15px 11px; padding-inline: 20px 11px; border-start-start-radius: 2px; border-end-start-radius: 2px; border-start-end-radius: 5px; border-end-end-radius: 5px;
+  background: var(--cloth); color: #f7f2e7; text-align: center;
+  --leaf: color-mix(in srgb, #fbf8f1 82%, var(--color-paper)); --edge: color-mix(in srgb, #cfc8ba 70%, var(--color-paper));
+  box-shadow: var(--pages) calc(var(--pages) - 1px) 0 -1px var(--leaf), var(--pages) calc(var(--pages) - 1px) 0 0 var(--edge), 0 10px 16px -12px rgba(30, 27, 44, 0.55);
+  transition: transform 0.16s ease; }
+.lb .lb-cover:dir(rtl) { box-shadow: calc(var(--pages) * -1) calc(var(--pages) - 1px) 0 -1px var(--leaf), calc(var(--pages) * -1) calc(var(--pages) - 1px) 0 0 var(--edge), 0 10px 16px -12px rgba(30, 27, 44, 0.55); }
+.lb-cover[data-thick="2"] { --pages: 5px; }
+.lb-cover[data-thick="3"] { --pages: 7px; }
+/* The spine's joint, and the tooled frame a bound code carries on its board. */
+.lb-cover::before { content: ""; position: absolute; inset-block: 0; inset-inline-start: 0; width: 10px; background: rgba(0, 0, 0, 0.22); border-inline-end: 1px solid rgba(255, 255, 255, 0.2); }
+.lb-cover::after { content: ""; position: absolute; inset-block: 7px; inset-inline: 16px 7px; border: 1px solid rgba(247, 242, 231, 0.36); border-radius: 1px; pointer-events: none; }
+.lb-cover .t { margin-block: auto; font-family: var(--font-law); font-size: 1.4375rem; line-height: 1.08; font-weight: 700; text-wrap: balance; }
+.lb-cover:lang(fr) .t { font-family: "Source Serif 4", Georgia, serif; font-size: 0.9375rem; line-height: 1.2; font-weight: 600; hyphens: auto; overflow-wrap: anywhere; }
+.lb-cover .n { font-size: 0.875rem; line-height: 1; font-weight: 500; font-variant-numeric: tabular-nums; opacity: 0.86; }
+a.lb-cover:hover { transform: translateY(-3px); }
+.lb-cover.hit { outline: 3px solid var(--color-stamp-line); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .lb .lb-cover { transition: none; } a.lb-cover:hover { transform: none; } }
+.lb-shelf ul { flex: 1; min-width: 0; margin: -6px 0 0; padding: 0; list-style: none; }
+.lb-shelf li { display: flex; flex-direction: column; align-items: flex-start; }
+.lb .lb-shelf li > a, .lb-shelf li > span { display: block; padding-block: 6px; font-family: var(--font-law); font-size: 1.25rem; line-height: 1.25; font-weight: 500; color: var(--color-ink); }
+.lb .lb-shelf li > a:lang(fr), .lb-shelf li > span:lang(fr) { font-family: "Source Serif 4", Georgia, serif; font-size: 1rem; line-height: 1.35; }
+.lb .lb-shelf li > a:hover { color: var(--color-stamp); }
+.lb-shelf li.hit > a { background: var(--color-wash); box-shadow: 0 0 0 4px var(--color-wash); border-radius: 2px; }
+.lb-shelf i, .lb-stalenote i { font-style: normal; color: var(--color-amended); }
+.lb-shelf li > a i, .lb-shelf li > span i { font-size: 0.6875rem; vertical-align: 3px; margin-inline-start: 5px; }
+/* With «بالأرقام» on: a line's number, its size and what a reader will read, opening its card. */
+.lb-shelf li > button, .lb-shelf li > small { margin: -4px 0 6px; padding: 0 0 4px; border: 0; background: none; font: inherit; font-size: 0.875rem; line-height: 1.4; color: var(--color-ink-soft);
+  font-variant-numeric: tabular-nums; text-align: start; }
+.lb-shelf li > button { cursor: pointer; }
+.lb-shelf li > button:hover { color: var(--color-stamp); }
+.lb .lb-shelf li.old > a { padding-top: 10px; font-family: inherit; font-size: 0.875rem; line-height: 1.5; font-weight: 400; color: var(--color-ink-soft); }
+.lb .lb-shelf li.old > a:hover { color: var(--color-stamp); }
+.lb-stalenote { margin: 0; font-size: 0.875rem; color: var(--color-ink-soft); }
+@media (max-width: 767px) {
+  .lb-shelves { gap: 34px; }
+  .lb-shelf > div { gap: 16px; }
+  .lb .lb-cover { width: 100px; }
+  .lb .lb-shelf li > a, .lb-shelf li > span { padding-block: 9px; }
+}
+
+/* ── The Bulletin as strata (LB8): a row a decade, newest on top, its years left to right, each issue a tick as tall as
+   its texts on one scale; a phone's row is the decade's strip and opens its ten years in a sheet ───────────────── */
+.lb-strata { display: flex; flex-direction: column; gap: 10px; }
+.lb-sgrid { display: none; flex-direction: column; gap: 4px; }
+.lb-decs { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+@media (min-width: 768px) { .lb-sgrid { display: flex; } .lb-decs { display: none; } }
+.lb-dec { display: grid; grid-template-columns: 52px repeat(10, minmax(0, 1fr)); gap: 4px; }
+.lb-dlab { align-self: center; font-size: 0.875rem; font-weight: 600; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lb a.lb-yr, .lb-yr { position: relative; display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 6px 6px 5px; border-radius: 6px; background: var(--color-sheet);
+  color: var(--color-ink); text-align: left; }
+.lb a.lb-yr:hover { background: var(--color-wash); color: var(--color-ink); }
+.lb-yr[aria-current] { box-shadow: inset 0 0 0 2px var(--color-stamp); }
+.lb-yr.none { background: transparent; }
+.lb-yr b { font-size: 0.875rem; line-height: 1; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lb-yr.mk b::after { content: ""; display: inline-block; width: 6px; height: 6px; margin-left: 5px; border-radius: 50%; background: var(--color-stamp); vertical-align: 2px; }
+.lb-yr svg, .lb-yrow svg { display: block; width: 100%; height: 26px; }
+.lb-yr small { display: none; font-size: 0.875rem; line-height: 1.1; color: var(--color-ink-soft); white-space: nowrap; overflow: hidden; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+@media (min-width: 1024px) { .lb-yr small { display: block; } }
+.lb-strata svg path, .lb-decsheet svg path { fill: none; vector-effect: non-scaling-stroke; stroke-width: 1.15px; }
+.lb-strata .ta, .lb-decsheet .ta { stroke: var(--color-stamp); }
+.lb-strata .tf, .lb-decsheet .tf { stroke: var(--color-amended); }
+.lb-strata .tz, .lb-decsheet .tz { stroke: var(--color-muted); }
+.lb-strata .sep { stroke: var(--color-rule); stroke-width: 1px; }
+.lb-decrow { width: 100%; display: grid; grid-template-columns: 46px minmax(0, 1fr); gap: 8px; align-items: center; min-height: 56px; padding: 6px 8px; border: 0;
+  border-radius: 8px; background: var(--color-sheet); color: var(--color-ink); text-align: left; font: inherit; cursor: pointer; }
+.lb-decrow:hover, .lb-decrow.on { background: var(--color-wash); }
+.lb-decrow svg { display: block; width: 100%; height: 28px; }
+.lb-dyrs { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); font-size: 0.875rem; line-height: 1.2; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lb-dyrs span { text-align: center; }
+.lb-key { margin: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-key span { display: inline-flex; align-items: center; gap: 6px; }
+.lb-key i { display: inline-block; width: 2px; height: 14px; background: var(--color-stamp); }
+.lb-key i.f { background: var(--color-amended); }
+.lb-key i.z { height: 5px; background: var(--color-muted); }
+.lb-key i.m { width: 7px; height: 7px; border-radius: 50%; }
+.lb-decsheet h2 { margin: 0 0 10px; font-family: var(--font-law); font-size: 1.75rem; font-weight: 700; color: var(--color-ink); text-align: start; }
+.lb-decsheet ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.lb-yrow { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 2px 10px; align-items: center; min-height: 58px; padding: 6px 10px; border-radius: 8px;
+  background: var(--color-paper); color: var(--color-ink); text-decoration: none; }
+.lb-yrow b { font-size: 1.0625rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lb-yrow small { grid-column: 2; font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-yrow:hover { background: var(--color-wash); color: var(--color-ink); }
+
+/* A year on a phone (LB9): its months, each one row of issues, the day large and the number under it. */
+.lb-yearsec { display: flex; flex-direction: column; gap: 20px; scroll-margin-top: 80px; }
+.lb-yearsec h2:focus { outline: none; }
+.lb-months2 { display: flex; flex-direction: column; gap: 16px; }
+@media (min-width: 640px) { .lb-months2 { display: none; } }
+@media (max-width: 639px) { .lb-yearsec > .lb-months { display: none; } }
+.lb-mo h3 { margin: 0 0 8px; display: flex; align-items: baseline; gap: 10px; font-size: 1rem; font-weight: 700; color: var(--color-ink); }
+.lb-mo h3 small { font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+.lb-chips { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px; }
+.lb a.lb-chip, .lb-chip { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 46px; min-height: 48px; padding: 3px 6px; border-radius: 8px;
+  background: var(--color-wash); color: var(--color-stamp); box-shadow: inset 0 0 0 1.5px var(--color-stamp); }
+.lb-chip b { font-size: 1rem; line-height: 1.1; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lb-chip span { font-size: 0.875rem; line-height: 1.2; font-weight: 600; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.lb a.lb-chip:hover { background: color-mix(in srgb, var(--color-stamp) 16%, var(--color-sheet)); color: var(--color-stamp); }
+.lb a.lb-chip.fr { background: var(--color-amended-wash); color: var(--color-amended); box-shadow: none; border: 1.5px dashed var(--color-amended); }
+.lb a.lb-chip.z { background: transparent; color: var(--color-ink-soft); box-shadow: inset 0 0 0 1.5px var(--color-rule); }
+
+/* ── The tools in four lines at the foot (C3) ──────────────────────────────────────────────────────────────────── */
+.lb-toolshead { margin: 0; font-size: var(--text-h3); font-weight: 700; color: var(--color-ink); }
+.lb-toolrows { margin: 0; padding: 0; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); overflow: hidden; }
+.lb-toolrows a { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr) auto; gap: 4px 16px; align-items: center; min-height: 56px; padding: 10px 20px;
+  border-bottom: 1px solid var(--color-rule-soft); color: var(--color-ink); }
+.lb-toolrows li:last-child a { border-bottom: 0; }
+.lb-toolrows b { font-weight: 600; }
+.lb-toolrows span { color: var(--color-ink-soft); font-size: 0.9375rem; }
+.lb-toolrows small { font-size: 0.875rem; color: var(--color-ink-soft); white-space: nowrap; }
+.lb-toolrows a:hover b { color: var(--color-stamp); }
+@media (max-width: 639px) { .lb-toolrows a { grid-template-columns: minmax(0, 1fr) auto; } .lb-toolrows span { grid-column: 1 / -1; grid-row: 2; } }
+
+/* ── The Bulletin's year: its volume's number large, the year before and after, its months as calendars ─────────── */
+.lb-yearhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; }
+.lb-yearhead h2 { margin: 0; font-family: var(--font-law); font-size: var(--text-display); line-height: 1; font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.lb-yearhead p { margin: 0; font-size: var(--text-lead); color: var(--color-ink-soft); }
+.lb-yearhead nav { margin-inline-start: auto; display: flex; gap: 6px; }
+.lb-step { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 14px; border-radius: 999px; background: var(--color-sheet);
+  color: var(--color-stamp); font-weight: 600; }
+.lb-step:hover { background: var(--color-wash); }
+.lb-step[aria-disabled="true"] { color: var(--color-muted); pointer-events: none; }
+.lb-months { display: grid; gap: 16px; }
+@media (min-width: 640px) { .lb-months { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .lb-months { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.lb-month { padding: 16px 16px 14px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.lb-month h3 { margin: 0 0 10px; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding-bottom: 8px; border-bottom: 2px solid var(--color-ink);
+  font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.lb-month h3 span { font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+.lb-cal { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 4px; margin: 0; padding: 0; list-style: none; }
+.lb-cal .wd { padding-bottom: 2px; text-align: center; font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-cal .d { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; min-height: 46px; padding: 2px 0; border-radius: 8px;
+  font-size: 0.9375rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+/* An issue, stamped on its day: the violet of the source, its number under the day. */
+.lb-cal a.d, .lb-cal .d.two { background: var(--color-wash); color: var(--color-stamp); box-shadow: inset 0 0 0 1.5px var(--color-stamp); }
+.lb-cal a.d:hover { background: color-mix(in srgb, var(--color-stamp) 18%, var(--color-sheet)); }
+.lb-cal .d b { font-size: 0.9375rem; font-weight: 700; line-height: 1.1; }
+.lb-cal .d small { font-size: 0.875rem; font-weight: 700; line-height: 1.15; }
+.lb-cal .d.two a { font-size: 0.875rem; font-weight: 700; line-height: 1.2; color: var(--color-stamp); padding: 1px 2px; min-height: 24px; display: inline-flex; align-items: center; }
+.lb-cal .d.two a:hover { text-decoration: underline; }
+.lb-cal .d.today { box-shadow: inset 0 0 0 2px var(--color-people-fill); }
+/* A French issue of 1912–1925 (texts the Arabic edition never printed, translated): the translation band's colour, dashed. */
+.lb-cal a.d.fr { background: var(--color-amended-wash); color: var(--color-amended); box-shadow: none; border: 1.5px dashed var(--color-amended); }
+.lb-cal .d.two a.fr { color: var(--color-amended); text-decoration: underline dashed; }
+.lb-note { margin: 0; font-size: 0.875rem; color: var(--color-ink-soft); }
+
+/* ── The words: a lexicon, its headwords in the law's type, run on into their meaning, two columns on a desk ───── */
+.lb-lexwrap { display: grid; gap: 24px; }
+@media (min-width: 1024px) { .lb-lexwrap { grid-template-columns: 230px minmax(0, 1fr); gap: 44px; align-items: start; } }
+.lb-index { display: flex; gap: 8px; margin-inline: -16px; padding: 2px 16px 4px; overflow-x: auto; scrollbar-width: none; }
+.lb-index::-webkit-scrollbar { display: none; }
+.lb-index a { flex: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; background: var(--color-sheet);
+  color: var(--color-ink); font-size: 0.9375rem; white-space: nowrap; }
+.lb-index a span { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lb-index a:hover { color: var(--color-stamp); }
+@media (min-width: 1024px) {
+  .lb-index { position: sticky; top: 20px; flex-direction: column; gap: 0; margin: 0; padding: 0; overflow: visible; }
+  .lb-index a { justify-content: space-between; min-height: 42px; padding: 0 4px; border-radius: 0; background: none; border-bottom: 1px solid var(--color-rule); }
+}
+.lb-lex { display: flex; flex-direction: column; gap: 36px; min-width: 0; }
+.lb-lexsec { scroll-margin-top: 20px; }
+.lb-lexhead { margin: 0 0 6px; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding-bottom: 10px; border-bottom: 3px double var(--color-ink); }
+.lb-lexhead h2 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: var(--text-h3); font-weight: 700; color: var(--color-ink); }
+.lb-lexhead .n { font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-lexhead a { margin-inline-start: auto; font-size: 0.875rem; font-weight: 600; min-height: 36px; display: inline-flex; align-items: center; }
+.lb-entries { margin: 0; columns: 2 20rem; column-gap: 44px; column-rule: 1px solid var(--color-rule); }
+.lb-entry { break-inside: avoid; padding: 14px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.lb-entry dt { display: inline; }
+.lb-entry dt a { font-family: var(--font-law); font-size: 1.625rem; line-height: 1.25; font-weight: 700; color: var(--color-ink); }
+.lb-entry dt a:hover { color: var(--color-stamp); }
+.lb-entry dd { display: inline; margin: 0; }
+.lb-entry .def { font-size: var(--text-body); line-height: 1.8; color: var(--color-ink); }
+.lb-entry .def::before { content: " "; }
+.lb-entry .none { font-size: 0.9375rem; color: var(--color-ink-soft); }
+.lb-entry .none::before { content: " "; }
+.lb-entry .where { display: block; margin-top: 4px; font-size: 0.875rem; font-weight: 600; }
+.lb-entry .by { display: inline-block; width: 8px; height: 8px; margin-inline-end: 6px; border-radius: 50%; background: var(--color-people-fill); vertical-align: middle; }
+.lb-empty { margin: 0; padding: 22px; border-radius: var(--radius-card); background: var(--color-sheet); color: var(--color-ink-soft); }
+.lb-empty a { font-weight: 600; }
+
+/* ── The check: the document as a ruled sheet with its margin, marked up with numbered references, the notes beside ─ */
+.lb-private { margin: 12px 0 0; display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+  background: color-mix(in srgb, var(--color-in-force) 10%, var(--color-sheet)); color: var(--color-in-force); font-size: 0.9375rem; font-weight: 600; }
+.lb-check { display: grid; gap: 24px; align-items: start; }
+@media (min-width: 1024px) { .lb-check { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 32px; } }
+.lb-paper { display: flex; flex-direction: column; gap: 14px; padding: 20px 18px; border-radius: var(--radius-card); background: var(--color-sheet); }
+@media (min-width: 640px) { .lb-paper { padding: 24px 28px; } }
+.lb-paper .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.lb-paper .top label, .lb-paper .top b { font-weight: 700; color: var(--color-ink); }
+.lb-paper .top button { font: inherit; font-weight: 600; color: var(--color-stamp); background: none; border: 0; min-height: 44px; cursor: pointer; }
+/* Ruled paper: a line under every line of the law's type, the margin ruled in red on the side one starts writing. */
+.lb-ruled { width: 100%; min-height: 21.6rem; padding: 0 3.25rem 0 0.75rem; border: 1px solid var(--color-rule); border-radius: var(--radius-control);
+  font-family: var(--font-law); font-size: 1.3125rem; line-height: 36px; color: var(--color-ink); background-color: var(--color-paper);
+  background-image: linear-gradient(to left, transparent 2.5rem, color-mix(in srgb, var(--color-repealed) 45%, transparent) 2.5rem calc(2.5rem + 1px), transparent calc(2.5rem + 1px)),
+    repeating-linear-gradient(to bottom, transparent 0 35px, var(--color-rule) 35px 36px);
+  background-attachment: local; white-space: pre-wrap; overflow-wrap: anywhere; }
+:root[dir="ltr"] .lb-ruled { padding: 0 0.75rem 0 3.25rem;
+  background-image: linear-gradient(to right, transparent 2.5rem, color-mix(in srgb, var(--color-repealed) 45%, transparent) 2.5rem calc(2.5rem + 1px), transparent calc(2.5rem + 1px)),
+    repeating-linear-gradient(to bottom, transparent 0 35px, var(--color-rule) 35px 36px); }
+textarea.lb-ruled { resize: vertical; }
+textarea.lb-ruled:focus { outline: none; border-color: var(--color-stamp); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-stamp) 18%, transparent); }
+div.lb-ruled { max-height: 34rem; overflow-y: auto; }
+.lb-paper .foot { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px; }
+.lb-paper .foot label { display: flex; flex-direction: column; gap: 6px; font-weight: 600; }
+.lb-paper .foot input { height: 48px; padding: 0 12px; border: 1.5px solid var(--color-field); border-radius: var(--radius-control); background: var(--color-sheet); color: var(--color-ink); font: inherit; }
+.lb-paper .foot .go { margin-inline-start: auto; display: flex; gap: 8px; }
+
+/* A reference marked in the document: the colour of where it stands, its number raised after it. */
+.lb-ref { padding: 1px 3px; border-radius: 4px; font-weight: 600; text-decoration: none; }
+.lb-ref sup { font-family: var(--font-ui); font-size: 0.875rem; font-weight: 700; margin-inline-start: 2px; }
+.lb-ref.found, .lb-ref.issue { color: var(--color-in-force); background: color-mix(in srgb, var(--color-in-force) 10%, transparent); }
+.lb-ref.text_only { color: var(--color-amended); background: color-mix(in srgb, var(--color-amended) 12%, transparent); }
+.lb-ref.repealed { color: var(--color-repealed); background: color-mix(in srgb, var(--color-repealed) 10%, transparent); }
+.lb-ref.not_in_corpus, .lb-ref.unknown { color: var(--color-ink-soft); background: var(--color-chip); }
+.lb-ref:target, .lb-ref.lit { outline: 2px solid currentColor; }
+
+.lb-notes { display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 1024px) { .lb-notes { position: sticky; top: 20px; max-height: calc(100vh - 40px); overflow-y: auto; } }
+.lb-sum { margin: 0; padding: 16px 18px; border-radius: var(--radius-card); background: var(--color-sheet); font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink); }
+.lb-sum b { font-variant-numeric: tabular-nums; }
+.lb-sum .ok { color: var(--color-in-force); }
+.lb-sum .soft { color: var(--color-ink-soft); }
+.lb-sum .chg { display: block; margin-top: 6px; font-size: 0.9375rem; color: var(--color-amended); font-weight: 600; }
+.lb-noteslist { margin: 0; padding: 4px 18px; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); }
+.lb-noteslist li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; padding: 14px 0; border-top: 1px solid var(--color-rule-soft); scroll-margin-top: 20px; }
+.lb-noteslist li:first-child { border-top: 0; }
+.lb-noteslist .num { grid-row: span 4; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; font-size: 0.875rem; font-weight: 700;
+  color: var(--color-sheet); background: var(--color-ink-soft); }
+.lb-noteslist li.found .num, .lb-noteslist li.issue .num { background: var(--color-in-force); }
+.lb-noteslist li.text_only .num { background: var(--color-amended); }
+.lb-noteslist li.repealed .num { background: var(--color-repealed); }
+.lb-noteslist .raw { font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-noteslist .to { font-family: var(--font-law); font-size: 1.25rem; line-height: 1.5; font-weight: 600; color: var(--color-ink); }
+.lb-noteslist a.to:hover { color: var(--color-stamp); }
+.lb-noteslist .st { font-size: 0.875rem; font-weight: 600; }
+.lb-noteslist li.found .st, .lb-noteslist li.issue .st { color: var(--color-in-force); }
+.lb-noteslist li.text_only .st { color: var(--color-amended); }
+.lb-noteslist li.repealed .st { color: var(--color-repealed); }
+.lb-noteslist li.not_in_corpus .st, .lb-noteslist li.unknown .st { color: var(--color-ink-soft); }
+.lb-noteslist .chg { margin: 0; padding: 0; list-style: none; font-size: 0.875rem; color: var(--color-amended); }
+.lb-noteslist .chg a { color: var(--color-amended); text-decoration: underline; }
+.lb-sample { display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; border-radius: var(--radius-card); border: 2px dashed var(--color-rule); }
+.lb-sample p { margin: 0; }
+.lb-sample .doc { font-family: var(--font-law); font-size: 1.25rem; line-height: 2.1; color: var(--color-ink); }
+.lb-sample ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.lb-sample li { display: flex; align-items: baseline; gap: 10px; }
+
+/* ── The data: the edition on its catalogue record, the files, the licence in two halves, the API answered in place ─ */
+.lb-record { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 18px 20px 34px; border-radius: 6px; background: var(--color-sheet);
+  border-top: 3px solid var(--color-stamp); }
+.lb-record::after { content: ""; position: absolute; bottom: 12px; left: calc(50% - 8px); width: 16px; height: 16px; border-radius: 50%;
+  background: var(--color-paper); box-shadow: inset 0 1px 2px color-mix(in srgb, var(--color-scrim) 20%, transparent); }
+.lb-record .h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--color-repealed); }
+.lb-record .h b { font-size: var(--text-lead); font-weight: 700; }
+.lb-record .h span { font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-record dl { margin: 0; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 16px; }
+.lb-record dt, .lb-record dd { margin: 0; padding: 6px 0; border-bottom: 1px solid var(--color-rule-soft); line-height: 1.5; }
+.lb-record dt { font-size: 0.9375rem; color: var(--color-ink-soft); }
+.lb-record dd { font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; text-align: end; }
+.lb-record .sum { font-size: 0.875rem; }
+.lb-sec { display: flex; flex-direction: column; gap: 14px; }
+.lb-sec > h2 { margin: 0; font-size: var(--text-h3); font-weight: 700; color: var(--color-ink); }
+.lb-sec > p { margin: -6px 0 0; max-width: 65ch; color: var(--color-ink-soft); }
+.lb-rows { margin: 0; padding: 0; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); overflow: hidden; }
+.lb-rows > li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 16px 20px; border-top: 1px solid var(--color-rule-soft); }
+.lb-rows > li:first-child { border-top: 0; }
+.lb-rows .what { flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.lb-rows code { font-size: 0.9375rem; font-weight: 600; color: var(--color-ink); overflow-wrap: anywhere; }
+.lb-rows .fmt { display: inline-block; margin-inline-start: 10px; padding: 0 8px; border-radius: 999px; background: var(--color-chip); font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-rows .sub { font-size: 0.9375rem; color: var(--color-ink-soft); }
+.lb-rows .size { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lb-rows .acts { display: flex; gap: 4px; margin-inline-start: auto; }
+.lb-get { display: inline-flex; align-items: center; padding: 0 8px; border-radius: 6px; background: var(--color-wash); color: var(--color-stamp); font-size: 0.875rem; font-weight: 700; }
+.lb-halves { display: grid; gap: 1px; border-radius: var(--radius-card); overflow: hidden; background: var(--color-rule); }
+@media (min-width: 768px) { .lb-halves { grid-template-columns: 1fr 1fr; } }
+.lb-halves > div { display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; background: var(--color-sheet); }
+.lb-halves h3 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: var(--text-body); font-weight: 700; }
+.lb-halves h3 .badge { padding: 2px 10px; border-radius: 999px; font-size: 0.875rem; }
+.lb-halves .free { background: color-mix(in srgb, var(--color-in-force) 12%, var(--color-sheet)); color: var(--color-in-force); }
+.lb-halves .cc { background: var(--color-wash); color: var(--color-stamp); }
+.lb-halves p { margin: 0; line-height: 1.75; color: var(--color-ink-soft); }
+/* An endpoint's answer, fetched in place: its status, time and size, the JSON's first lines in colour. */
+.lb-answer { flex: 1 1 100%; min-width: 0; display: flex; flex-direction: column; gap: 8px; }
+.lb-answer .meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.lb-answer .meta .ok { color: var(--color-in-force); font-weight: 700; }
+.lb-answer .meta .bad { color: var(--color-repealed); font-weight: 700; }
+.lb-json { margin: 0; width: 100%; max-height: 22rem; overflow: auto; padding: 14px 16px; border-radius: var(--radius-control); background: var(--color-paper);
+  font-size: 0.875rem; line-height: 1.6; color: var(--color-ink); text-align: left; white-space: pre; }
+.lb-json .k { color: var(--color-stamp); }
+.lb-json .s { color: var(--color-in-force); }
+.lb-json .n { color: var(--color-amended); }
+.lb-json .b { color: var(--color-repealed); }
+.lb-limits { width: 100%; max-width: 30rem; border-collapse: collapse; border-radius: var(--radius-card); overflow: hidden; background: var(--color-sheet); }
+.lb-limits caption { padding-bottom: 8px; text-align: start; font-weight: 700; }
+.lb-limits th, .lb-limits td { padding: 12px 20px; border-top: 1px solid var(--color-rule-soft); }
+.lb-limits th { text-align: start; font-weight: 400; color: var(--color-ink-soft); }
+.lb-limits td { text-align: end; font-weight: 700; font-variant-numeric: tabular-nums; }
+.lb-code { display: block; padding: 12px 14px; border-radius: var(--radius-control); background: var(--color-paper); font-size: 0.875rem; color: var(--color-ink);
+  text-align: left; overflow-wrap: anywhere; }
+.lb-embed { width: 100%; height: 420px; border: 0; border-radius: var(--radius-control); background: var(--color-sheet); }
+
+/* ── A year's two views (W8 of the library-search review): its issues, and the laws and dahirs signed in it ──────────────── */
+.lb-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--color-rule); }
+.lb .lb-tabs a { min-height: 44px; display: inline-flex; align-items: center; padding: 0 14px; margin-bottom: -1px; border-bottom: 3px solid transparent; font-weight: 600; color: var(--color-ink-soft); }
+.lb .lb-tabs a[aria-selected="true"] { color: var(--color-ink); border-bottom-color: var(--color-stamp); }
+.lb-yts { display: flex; flex-direction: column; gap: 8px; }
+.lb-yts h3 { margin: 10px 0 0; font-size: 0.9375rem; font-weight: 700; color: var(--color-ink-soft); }
+.lb-yts ul { margin: 0; padding: 0; list-style: none; }
+.lb a.lb-yt, .lb-yt { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr) auto; gap: 2px 12px; align-items: baseline; min-height: 44px; padding: 7px 0; border-top: 1px solid var(--color-rule); color: var(--color-ink); }
+.lb-yt .n { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lb-yt .m { min-width: 0; display: flex; flex-direction: column; }
+.lb-yt .m b { font-family: var(--font-law); font-size: 1.1875rem; line-height: 1.35; font-weight: 500; overflow-wrap: anywhere; }
+.lb a.lb-yt:hover .m b { color: var(--color-stamp); }
+.lb-yt .m small { font-size: 0.8125rem; color: var(--color-ink-soft); }
+.lb-yt .m small.gone { color: var(--color-repealed); }
+.lb-ytf { width: 100%; max-width: 420px; height: 44px; padding: 0 14px; border: 1.5px solid var(--color-field); border-radius: var(--radius-control); background: var(--color-sheet); color: var(--color-ink); font: inherit; }
+.lb-ytmore { align-self: flex-start; min-height: 44px; padding: 0 16px; border: 1.5px solid var(--color-field); border-radius: 999px; background: var(--color-sheet); color: var(--color-ink); font: inherit; font-weight: 600; cursor: pointer; }
+.lb .lb-yts .lb-note a { color: var(--color-stamp); text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 767px) { .lb a.lb-yt, .lb-yt { grid-template-columns: 4.8rem minmax(0, 1fr); } .lb-yt .lb-stp { grid-column: 2; justify-self: start; } }
+@media (min-width: 900px) { .lb-yts ul.cols { columns: 2; column-gap: 44px; } .lb-yts ul.cols li { break-inside: avoid; } }

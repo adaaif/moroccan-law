@@ -1,0 +1,354 @@
+# The road topic's page (R5 of the road plan): where the reader stands, then doors by what just happened, in the words
+# people use, each leading to a journey or a page; then the tools. A door, a tool or a page says whom it is for (`for`,
+# the keys of the profile's answers); the reader's answer, kept on the phone, fades the others with the reason. The
+# insurance of a vehicle lives here (Q7 of the plan). A door's `means` is the law's own phrase for its words: a
+# question that is one of them is searched as that phrase first (R6: search learns the road's words).
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+# The emergency, always in reach at the top of the topic's page (T6, U1 of the road tools review).
+urgent:
+  title: {ar: درت أكسيدة؟, fr: 'Un accident ?'}
+  lead: {ar: 'شنو دير دابا، خطوة بخطوة', fr: 'Que faire maintenant, étape par étape'}
+  to: tools/now
+  # Its first three acts (A7 of the road-signposted review): the answers of the accident journey's steps, as the journey says
+  # them, once it may be shown.
+  acts: {journey: accident, steps: [0, 2, 5]}
+  # A number shows only with the official page that gives it (C1): the DGSN's header links tel:19 (kept with its hash in
+  # data/sources/road/). The Royal Gendarmerie's and the Civil Protection's sites did not answer on 26 Oct 2026, so
+  # their numbers wait for their own pages.
+  numbers:
+    - number: '19'
+      name: {ar: الأمن الوطني, fr: 'Police (Sûreté nationale)'}
+      source:
+        name: {ar: موقع المديرية العامة للأمن الوطني, fr: Site de la DGSN}
+        url: https://www.dgsn.gov.ma/ar
+        file: road/dgsn_home_ar_2026-10-26.html
+        sha256: 6508185563d2a3d3a64418a06946a9ed4713aede103429c6014cc3be48f5e7b6
+# Learning the road as one path (T4): each part's progress kept on the phone.
+learn: [tools/scenes, tools/signs, tools/practice, pages/rules]
+
+# The order a reviewer opens the topic in (R2 of the road tools review): the moments people meet most first; the
+# victim, compensation and insurance with a lawyer last. A wave opens when its items pass the desk (/topics/road/review).
+waves:
+  1: [journeys/radar, journeys/ticket, pages/points, pages/rules, pages/where, tools/fine, tools/speed, tools/points, tools/scenes, tools/signs]
+  2: [journeys/accident, tools/now, journeys/impound, journeys/used-car, journeys/riders, pages/two-wheels, pages/walking, checklists/carry, pages/licence, journeys/foreign, tools/practice, pages/numbers, series/deaths, reform/fines-2025, reform/victims-2026, reform/registration-2026, reform/rules-2026, reform/vehicles-2026]
+  3: [journeys/victim, tools/compensation, pages/insurance, rates/capital, rates/fines]
+
+# Each answer's facts (A4 of the road-signposted review): the two or three figures that are the reader's, each with the
+# articles that set it, said under the one question instead of a line of article numbers.
+profile:
+  question: {ar: شنو وضعك؟, fr: 'Quelle est votre situation ?'}
+  options:
+    - key: learner
+      first: licence
+      main: true
+      label: {ar: كنقرا البيرمي, fr: J’apprends à conduire}
+      law: {ar: 'رخصة السياقة في القانون 52.05 (المواد 7 إلى 12)، ومرسوم رخصة السياقة 2.10.311، وقرار شروط طلبها 2709.10، ومرسوم تعليم السياقة 2.10.432.', fr: 'Le permis dans la loi 52-05 (art. 7 à 12), le décret 2-10-311 sur le permis, l’arrêté 2709-10 sur sa demande et le décret 2-10-432 sur l’enseignement de la conduite.'}
+      facts:
+        - {value: '14', label: {ar: 'عام لصنف «أم»: الموطور الصغير', fr: 'ans pour la catégorie AM : le cyclomoteur'}, cites: [/ma/loi/52-05/art_11]}
+        - {value: '18', label: {ar: 'عام لصنف «ب»: الطوموبيل', fr: 'ans pour la catégorie B : la voiture'}, cites: [/ma/loi/52-05/art_11]}
+        - {value: '20', label: {ar: 'نقطة فالعامين الأولين', fr: 'points les deux premières années'}, cites: [/ma/loi/52-05/art_23]}
+      to: pages/licence
+    - key: probation
+      first: points
+      label: {ar: عندي البيرمي جديد, fr: J’ai un permis récent}
+      law: {ar: 'رخصتك اختبارية: 20 نقطة لمدة سنتين (المادة 23)، وما تفوتش 90 كلم فالساعة حتى فالطريق السيار (المادة 16 من مرسوم قواعد السير).', fr: 'Votre permis est probatoire : 20 points pendant deux ans (art. 23), et jamais plus de 90 km/h, autoroute comprise (art. 16 du décret sur les règles de circulation).'}
+      facts:
+        - {value: '90', label: {ar: 'كلم/س على الأكثر، حتى فالطريق السيار', fr: 'km/h au plus, autoroute comprise'}, cites: [/ma/decret/2-10-420/art_16]}
+        - {value: '20', label: {ar: 'نقطة فرخصتك', fr: 'points sur votre permis'}, cites: [/ma/loi/52-05/art_23]}
+        - {value: '2', label: {ar: 'سنين ديال الفترة الاختبارية', fr: 'ans de période probatoire'}, cites: [/ma/loi/52-05/art_23]}
+    - key: driver
+      first: radar
+      main: true
+      label: {ar: كنسوق طوموبيل, fr: Je conduis une voiture}
+      law: {ar: 'رصيدك 30 نقطة (المادة 27)، والمخالفات ثلاث درجات بغراماتها (المواد 184 إلى 186 و219)، وقواعد السير في المرسوم 2.10.420.', fr: 'Votre solde est de 30 points (art. 27) ; les contraventions sont de trois classes avec leurs amendes (art. 184 à 186 et 219) ; les règles de circulation sont dans le décret 2-10-420.'}
+      facts:
+        - {value: '30', label: {ar: 'نقطة فرخصتك', fr: 'points sur votre permis'}, cites: [/ma/loi/52-05/art_27]}
+        - {value: '60 · 100 · 120', label: {ar: 'كلم/س: المدينة، برا، الطريق السيار', fr: 'km/h : ville, route, autoroute'}, cites: [/ma/decret/2-10-420/art_15, /ma/decret/2-10-420/art_17, /ma/decret/2-10-420/art_18]}
+        - {value: '3', label: {ar: 'درجات للمخالفات، كل وحدة بغرامتها', fr: 'classes de contraventions, chacune son amende'}, cites: [/ma/loi/52-05/art_184, /ma/loi/52-05/art_185, /ma/loi/52-05/art_186]}
+    - key: two-wheels
+      first: two-wheels
+      main: true
+      label: {ar: موطور ولا تروتينيت, fr: Deux-roues ou trottinette}
+      law: {ar: 'الخوذة واجبة (المادة 110 من مرسوم قواعد السير)، والتروتينيت بمحرك 25 كلم فالساعة على الأكثر منذ 24 غشت 2026 (المادة 19)، والموطور الصغير بصنف «أم» من 14 عام (المادتان 7 و11).', fr: 'Le casque est obligatoire (art. 110 du décret sur les règles de circulation) ; la trottinette à moteur roule à 25 km/h au plus depuis le 24 août 2026 (art. 19) ; le cyclomoteur se conduit avec la catégorie AM dès 14 ans (art. 7 et 11).'}
+      facts:
+        - {value: {ar: الكاسك, fr: Casque}, label: {ar: 'واجب على الموطور والتروتينيت', fr: 'obligatoire à deux-roues et en trottinette'}, cites: [/ma/decret/2-10-420/art_110]}
+        - {value: '25', label: {ar: 'كلم/س على الأكثر للتروتينيت بمحرك', fr: 'km/h au plus en trottinette à moteur'}, cites: [/ma/decret/2-10-420/art_19]}
+        - {value: '14', label: {ar: 'عام لصنف «أم»', fr: 'ans pour la catégorie AM'}, cites: [/ma/loi/52-05/art_11]}
+      to: journeys/riders
+    - key: walker
+      first: walking
+      main: true
+      label: {ar: على رجلي, fr: À pied}
+      law: {ar: 'للراجلين فصل في مرسوم قواعد السير (المواد 116 إلى 124)، وللراجل الذي دخل الممر أسبقية المرور (المادة 126).', fr: 'Les piétons ont leur chapitre du décret sur les règles de circulation (art. 116 à 124) ; le piéton engagé sur le passage a la priorité (art. 126).'}
+      facts:
+        - {value: {ar: الممر, fr: Passage}, label: {ar: 'الأسبقية للراجل اللي دخل ليه', fr: 'priorité au piéton engagé'}, cites: [/ma/decret/2-10-420/art_126]}
+        - {value: '116–124', label: {ar: 'مواد الراجلين فمرسوم قواعد السير', fr: 'les articles des piétons dans le décret'}, cites: [/ma/decret/2-10-420/art_116]}
+      to: pages/walking
+    - key: pro
+      first: ticket
+      label: {ar: سائق مهني, fr: Je suis conducteur professionnel}
+      law: {ar: 'البطاقة المهنية والتكوين المستمر (المادتان 40 و41)، وجهاز قياس السرعة وزمن السياقة (المادة 176)، والسياقة المهنية في المرسوم 2.10.314.', fr: 'La carte professionnelle et la formation continue (art. 40 et 41), le chronotachygraphe et les temps de conduite (art. 176), la conduite professionnelle dans le décret 2-10-314.'}
+      facts:
+        - {value: {ar: البطاقة, fr: Carte}, label: {ar: 'المهنية، واجبة للسياقة المهنية', fr: 'professionnelle, obligatoire'}, cites: [/ma/loi/52-05/art_40]}
+        - {value: '5', label: {ar: 'سنين: التكوين المستمر باش تجدد البطاقة', fr: 'ans : la formation continue pour la renouveler'}, cites: [/ma/loi/52-05/art_41]}
+    - key: foreign
+      first: foreign
+      label: {ar: عندي بيرمي ديال برا, fr: J’ai un permis étranger}
+      law: {ar: 'كتسوق بيه عام من نهار الإقامة فالمغرب (المادة 2)، ومن بعد كتبدلو ولا كدوز الامتحان (المادة 3 والقرار 02.11).', fr: 'Il vaut un an à compter de votre installation au Maroc (art. 2) ; ensuite il s’échange, ou vous passez l’examen (art. 3 et arrêté 02-11).'}
+      facts:
+        - {value: '1', label: {ar: 'عام من نهار الإقامة فالمغرب', fr: 'an à compter de l’installation au Maroc'}, cites: [/ma/loi/52-05/art_2]}
+        - {value: {ar: التبديل, fr: Échange}, label: {ar: 'ولا الامتحان من بعد', fr: 'ou l’examen ensuite'}, cites: [/ma/loi/52-05/art_3]}
+      to: journeys/foreign
+    - key: injured
+      first: victim
+      label: {ar: تصابيت فحادثة, fr: J’ai été blessé dans un accident}
+      law: {ar: 'التعويض في ظهير 1.84.177 كما غيره القانون 70.24 للحوادث الواقعة ابتداء من 29 يناير 2026، والتأمين الإجباري في مدونة التأمينات 17.99.', fr: 'L’indemnisation suit le dahir 1-84-177 tel que modifié par la loi 70-24 pour les accidents survenus depuis le 29 janvier 2026 ; l’assurance obligatoire, le code des assurances 17-99.'}
+      facts:
+        - {value: {ar: 29 يناير 2026, fr: 29 janvier 2026}, label: {ar: 'الجدول الجديد للحوادث من هاد النهار', fr: 'le nouveau barème pour les accidents depuis'}, cites: [/ma/loi/70-24/art_7]}
+        - {value: '60', label: {ar: 'يوما لعرض شركة التأمين فالنص الجديد، والقديم باقي حتى يصدرو نصين', fr: 'jours pour l’offre de l’assureur dans le nouveau texte ; l’ancien reste jusqu’à deux textes'}, cites: [/ma/dahir/1-84-177/art_19, /ma/loi/70-24/art_8]}
+      to: journeys/victim
+
+events:
+  - key: radar
+    sign: ring
+    icon: radar
+    words: [جاتني ورقة الرادار, ورقة الرادار, الرادار, شدني الرادار, قبطني الرادار, مخالفة الرادار, الرادار الثابت, amende radar, avis de contravention radar, radar, نخلص المخالفات من الدار, نخلص مخالفات, نحول المخالفات, نحول المخالفة, تعيين السائق, combien de temps pour payer, amende réduction, payer une amende]
+    means: المعاينة الآلية للمخالفات
+    title: {ar: جاتني ورقة الرادار, fr: 'J’ai reçu un avis de radar'}
+    lead: {ar: 'من 150 حتى 700 درهم، حسب الدرجة ونهار الأداء', fr: 'De 150 à 700 dirhams, selon la classe et le jour où vous payez'}
+    to: journeys/radar
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: ticket
+    sign: ring
+    icon: ticket
+    words: [البوليس دار ليا مخالفة, الدرك دار ليا مخالفة, داو ليا البيرمي, شدو ليا البيرمي, خداو ليا البيرمي, الوصل ديال البيرمي, المخالفة, contravention, amende police, retrait du permis, مخالفة لم اقم بها, شرطي سجل لي مخالفة, iyakhdou lia mon permis, mon permis a été retiré, retiré mon permis, سحب رخصة السياقة]
+    means:
+      الغرامة التصالحية والجزافية: [البوليس دار ليا مخالفة, الدرك دار ليا مخالفة, المخالفة, contravention, amende police]
+      الاحتفاظ برخصة السياقة مقابل وصل: [داو ليا البيرمي, شدو ليا البيرمي, خداو ليا البيرمي, الوصل ديال البيرمي, retrait du permis, سحب رخصة السياقة, mon permis a été retiré]
+      تجاوز السرعة القصوى المسموح بها: [مخالفة السرعة, excès de vitesse]
+    title: {ar: 'البوليس دار ليا مخالفة', fr: 'J’ai eu une contravention'}
+    lead: {ar: 'الوصل كيخليك تسوق 30 يوما', fr: 'Le récépissé vous laisse conduire 30 jours'}
+    to: journeys/ticket
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: accident
+    sign: tri
+    listed: false         # the red band is its door (A7)
+    icon: accident
+    words: [درت أكسيدة, درت اكسيدة, ضربت شي واحد بالطوموبيل, ضربت شي واحد, ضربت واحد وهربت, هربت من الحادثة, délit de fuite, أكسيدة, الكسيدة, وقعت لي حادثة, حادثة سير, شنو ندير فحادثة, accident, accident de la route, constat, محضر الحادثة, كوسطا, constat amiable]
+    means: حادثة سير
+    title: {ar: درت أكسيدة, fr: 'J’ai eu un accident'}
+    lead: {ar: 'وقف فالبلاصة: الهروب جنحة (المادة 182)', fr: 'Arrêtez-vous : la fuite est un délit (art. 182)'}
+    to: journeys/accident
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: victim
+    sign: tri
+    icon: hurt
+    words: [تصابيت فحادثة, التعويض على الحادثة, التعويض ديال الأكسيدة, شحال التعويض, لاسورانس ما بغاتش تخلصني, indemnisation accident, victime accident]
+    means: تعويض المصابين في حوادث تسببت فيها مركبات برية ذات محرك
+    title: {ar: تصابيت فحادثة, fr: 'J’ai été blessé dans un accident'}
+    lead: {ar: 'جدول جديد للحوادث من 29 يناير 2026، وشركة التأمين عندها 60 يوما', fr: 'Un nouveau barème depuis le 29 janvier 2026, et 60 jours pour l’assureur'}
+    to: journeys/victim
+    for: [injured]
+  - key: impound
+    sign: ring
+    icon: pound
+    words: [الطوموبيل فالفوريان, الفوريان, دداو ليا الطوموبيل, الديبناج, هز ليا الديبناج, المحجز, fourrière, voiture en fourrière]
+    means:
+      الإيداع في المحجز: [الطوموبيل فالفوريان, الفوريان, دداو ليا الطوموبيل, المحجز, fourrière, voiture en fourrière]
+      توقيف المركبات: [الصابو, sabot]
+      مصاريف الإزاحة والحراسة في المحجز: [الديبناج, هز ليا الديبناج]
+    title: {ar: الطوموبيل فالفوريان, fr: 'Ma voiture est en fourrière'}
+    lead: {ar: 'شكون كيخلص، وشحال من نهار، وكيفاش تخرجها', fr: 'Qui paie, combien de jours, et comment la récupérer'}
+    to: journeys/impound
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: points
+    sign: ring
+    icon: points
+    words: [تقادو ليا النقط, النقط, نقط البيرمي, شحال من نقطة, نقطة فالبيرمي, شحال من نقطة فالبيرمي, رصيد النقط, شحال بقا ليا من نقطة, رجوع النقط, البيرمي بالنقط, permis à points, points du permis, retrait de points, خصم النقاط, كيف يتم خصم النقاط, شحال ديال النقط, ديال النقط]
+    means:
+      رصيد النقط: [النقط, نقط البيرمي, رصيد النقط, شحال بقا ليا من نقطة, البيرمي بالنقط, permis à points, points du permis]
+      نفاد رصيد النقط: [تقادو ليا النقط]
+      خصم النقط: [retrait de points]
+      استرجاع النقط: [رجوع النقط, نسترجع النقط, نسترجعوا النقط, نرجع النقط, récupérer des points, récupération des points]
+      نفاد رصيد النقط: [0 نقطة, صفر نقطة, سالاو ليا النقط, plus de points]
+    title: {ar: تقادو ليا النقط, fr: 'Je n’ai plus de points'}
+    lead: {ar: 'كترجع 4 نقط من بعد عام بلا مخالفة (المادة 35)', fr: 'Quatre points reviennent après un an sans infraction (art. 35)'}
+    to: pages/points
+    for: [probation, driver, two-wheels, pro]
+  - key: licence
+    sign: square
+    icon: licence
+    words: [بغيت ندوز البيرمي, البيرمي, رخصة السياقة, لوطوإيكول, مدرسة السياقة, امتحان البيرمي, الكود, permis de conduire, auto-école, examen du permis, بيرمي جديد, بيرمي جديد 90, permis probatoire]
+    means:
+      رخصة السياقة: [البيرمي, permis de conduire]
+      امتحان الحصول على رخصة السياقة: [بغيت ندوز البيرمي, امتحان البيرمي, الكود, examen du permis]
+      مؤسسات تعليم السياقة: [لوطوإيكول, مدرسة السياقة, مدرسة لتعليم السياقة, auto-école]
+      الفحص الطبي: [لافيزيت, الفيزيت ديال العينين, visite médicale]
+    title: {ar: بغيت ندوز البيرمي, fr: 'Je veux passer le permis'}
+    lead: {ar: '«أم» من 14 عام، «ب» من 18، والامتحان نظري ثم تطبيقي', fr: 'AM dès 14 ans, B dès 18 ; l’examen théorique, puis pratique'}
+    to: pages/licence
+    for: [learner, probation]
+  - key: foreign
+    sign: square
+    icon: foreign
+    words: [عندي بيرمي ديال برا, البيرمي ديال برا, تبديل البيرمي, نبدل البيرمي, بيرمي فرنسي, permis étranger, échange de permis, permis français au Maroc, permis belge, permis dyal france, b permis dyal france, رخصة السياقة لمغاربة العالم, permis de conduire belge, permis étranger valable au maroc]
+    means:
+      رخصة السياقة المسلمة بالخارج: [عندي بيرمي ديال برا, البيرمي ديال برا, بيرمي فرنسي, permis étranger, permis français au Maroc]
+      تبديل رخص السياقة الأجنبية: [تبديل البيرمي, نبدل البيرمي, échange de permis]
+      المغاربة القاطنين بالخارج: [مغاربة العالم, mre, ماريكان]
+    title: {ar: عندي بيرمي ديال برا, fr: 'J’ai un permis étranger'}
+    lead: {ar: 'عام من نهار الإقامة، ومن بعد التبديل ولا الامتحان', fr: 'Un an à compter de l’installation, puis l’échange ou l’examen'}
+    to: journeys/foreign
+    for: [foreign]
+  - key: used-car
+    sign: square
+    icon: car
+    words: [شريت طوموبيل مستعملة, بعت الطوموبيل, الموطاسيون, نقل الملكية, الكارط كريز, لاكارط كريز, البطاقة الرمادية, mutation, carte grise, vente de voiture, vendre une voiture, voiture d’occasion, véhicule d’occasion, vends ou achète]
+    means:
+      نقل ملكية المركبة: [شريت طوموبيل مستعملة, بعت الطوموبيل, الموطاسيون, نقل الملكية, mutation, vente de voiture]
+      شهادة تسجيل المركبة: [الكارط كريز, لاكارط كريز, البطاقة الرمادية, carte grise, كارط غريز]
+      المراقبة التقنية: [الفحص التقني, visite technique, الفيزيت ديال الطوموبيل, contrôle technique]
+    title: {ar: شريت طوموبيل مستعملة, fr: 'J’achète ou je vends une voiture'}
+    lead: {ar: 'المشتري 30 يوما، والبائع 15، وما كاينش نقل الملكية بالمخالفات', fr: 'Trente jours pour l’acheteur, quinze pour le vendeur, et pas de mutation avec des amendes impayées'}
+    to: journeys/used-car
+    for: [driver, two-wheels, pro, foreign]
+  - key: insurance
+    sign: disc
+    icon: insurance
+    words: [لاسورانس, التأمين, تأمين الطوموبيل, بلا تأمين, التأمين سالا, assurance, assurance auto, assurance obligatoire, تامين المطور, تأمين الموطور, بلا تامين]
+    means:
+      تأمين المسؤولية المدنية عن العربات: [لاسورانس, التأمين, تأمين الطوموبيل, assurance, assurance auto, assurance obligatoire]
+      عدم التأمين: [بلا تأمين, التأمين سالا, بلا لاسورانس, assurance expirée]
+    title: {ar: لاسورانس, fr: 'L’assurance'}
+    lead: {ar: 'إجبارية على كل مركبة بمحرك، وما كتغطيش السائق نفسه', fr: 'Obligatoire pour tout véhicule à moteur, et elle ne couvre pas le conducteur'}
+    to: pages/insurance
+  - key: two-wheels
+    sign: disc
+    icon: helmet
+    words: [الموطور, التروتينيت, الكاسك, الخوذة, موطور 49, السكوتر, trottinette, casque, moto, scooter]
+    means:
+      مركبة التنقل الشخصي بمحرك: [التروتينيت, trottinette]
+      خوذات واقية: [الكاسك, كاسك, الخوذة, casque]
+      الدراجات بمحرك: [الموطور, موطور 49, 49cc, موطور 49cc, السكوتر, moto, scooter, cyclomoteur]
+    title: {ar: الموطور والتروتينيت, fr: 'Deux-roues et trottinettes'}
+    lead: {ar: 'الخوذة واجبة، والتروتينيت 25 كلم فالساعة على الأكثر', fr: 'Le casque obligatoire, la trottinette à 25 km/h au plus'}
+    to: journeys/riders
+    for: [two-wheels, learner]
+  - key: walking
+    sign: square
+    icon: walk
+    words: [كنقطع الطريق, كنتمشى, على رجلي, ضربتني طوموبيل, ضربتني سيارة, ضربني موطور, ضربتني طاكسي, الراجل, الراجلين, ممر الراجلين, passage piéton, piéton, traverser la rue]
+    means:
+      ممرات الراجلين: [كنقطع الطريق, ممر الراجلين, passage piéton, traverser la rue]
+      الراجلون: [كنتمشى, على رجلي, الراجل, الراجلين, piéton]
+    title: {ar: كنقطع الطريق, fr: 'Je traverse à pied'}
+    lead: {ar: 'فممر الراجلين، الأسبقية للراجل اللي دخل', fr: 'Sur le passage, le piéton engagé a la priorité'}
+    to: pages/walking
+    for: [walker]
+  - key: carry
+    sign: disc
+    icon: papers
+    words: [شنو خاص يكون معايا, الأوراق ديال الطوموبيل, الوراق, لاكارط كريز والاسورانس, papiers de la voiture, documents à bord, أوراق السيارة, الوثائق الواجب حملها, الواجب على السائق حملها, circuler sans carte grise, sans carte grise, papiers à bord]
+    means: الوثائق الواجب الإدلاء بها
+    title: {ar: حضّر راسك, fr: 'Les papiers à bord'}
+    lead: {ar: 'شنو خاص يكون معاك فالطوموبيل، وشنو كيوقع إلا ما كانش', fr: 'Ce qui doit être dans la voiture, et ce qui arrive sinon'}
+    to: checklists/carry
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: rules
+    sign: square
+    icon: rules
+    words: [شكون عندو الأسبقية, الأسبقية, الرومبوان, السرعة المسموح بها, السرعة القصوى, علامة قف, الضو الحمر, الضو الأحمر, الضوء الأحمر, حرقت الضو, دوزت الضو الحمر, priorité, rond-point, limitation de vitesse, الجلوس في مقدمة السيارة, مقدمة السيارة, حزام السلامة, alcool au volant, السياقة في حالة سكر]
+    means:
+      حق الأسبقية: [شكون عندو الأسبقية, الأسبقية, priorité]
+      ملتقى الطرق ذو اتجاه دائري: [الرومبوان, rond-point]
+      السرعة القصوى المسموح بها: [السرعة المسموح بها, السرعة القصوى, limitation de vitesse]
+      الوقوف المفروض بعلامة قف: [علامة قف, الضو الحمر, الضو الأحمر, حرقت الضو, feu rouge]
+      قطع خط متصل: [تخطي خط متصل, خط متصل, ligne continue]
+      المقاعد الأمامية: [مقدمة السيارة, المقعد الأمامي, siège avant]
+      تحت تأثير الكحول: [حالة سكر, سكران, الشراب, alcool au volant]
+      تتطلب سياقتها الحصول على رخصة سياقة دون أن يكون حاصلا على تلك الرخصة: [بدون رخصة, بلا بيرمي, sans permis]
+      التجمعات العمرانية: [داخل المدينة, en ville, en agglomération]
+    title: {ar: قواعد السير, fr: 'Les règles de circulation'}
+    lead: {ar: '60 فالمدينة، 100 برا، 120 فالطريق السيار', fr: '60 en ville, 100 hors agglomération, 120 sur autoroute'}
+    to: pages/rules
+
+# The tools run on the reader's phone; `tool: true` ones wait for a person's check (checked.yaml: tools/<key>), unless
+# `open: true` shows one before, with a note that no professional has reviewed it yet.
+tools:
+  - key: fine
+    icon: money
+    words: [شحال غادي نخلص فالمخالفة, شحال غادي نخلص فالبروصي, شحال المخالفة, الغرامة, ثمن المخالفة, الذعيرة, شحال الذعيرة, ذعيرة, combien je paie, montant amende]
+    means: الغرامة التصالحية والجزافية
+    tool: true
+    open: true            # call Q1 of the road plan (20 Oct 2026): shown before a professional's review
+    title: {ar: شحال غادي نخلص؟, fr: 'Combien vais-je payer ?'}
+    lead: {ar: 'الثمن حسب نهار الأداء، والنقط، والإيداع باش تنازع', fr: 'Le montant selon le jour du paiement, les points, la consignation pour contester'}
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: speed
+    icon: speed
+    words: [شحال كنت كنسوق, شحال كنتي كتسوق, السرعة ديال الرادار, الهامش ديال الرادار, شحال الهامش, فتت السرعة, vitesse relevée, marge radar]
+    means: تجاوز السرعة القصوى المسموح بها
+    tool: true
+    open: true            # beside the fine (Q1): the same articles; the margin's reading is call K1, said on the page
+    title: {ar: شحال كنتي كتسوق؟, fr: 'À quelle vitesse rouliez-vous ?'}
+    lead: {ar: 'العلامة، الإبرة، وشنو كيقول القانون على الفرق', fr: 'Le panneau, l’aiguille, et ce que dit la loi de l’écart'}
+    for: [probation, driver, two-wheels, pro, foreign]
+  - key: points
+    icon: points
+    words: [شحال بقا ليا من نقطة, رصيد النقط, حساب النقط, solde de points]
+    means: رصيد النقط
+    tool: true
+    open: true            # call K3 of the road tools review: shown before review, said so
+    title: {ar: شحال بقا ليا من نقطة؟, fr: 'Combien de points me reste-t-il ?'}
+    lead: {ar: 'الرصيد، الجدول، وكيفاش كترجع النقط', fr: 'Le solde, le barème, et comment les points reviennent'}
+    for: [probation, driver, two-wheels, pro]
+  - key: compensation
+    icon: hurt
+    words: [شحال التعويض, التعويض عن العجز, جدول التعويض, barème indemnisation]
+    means: الرأسمال المعتمد
+    tool: true            # kept back until a lawyer has reviewed its cases (Q5 of the road plan)
+    listed: false         # reached from the victim's journey (A9 of the road-signposted review)
+    title: {ar: التعويض عن العجز الدائم, fr: 'L’indemnité d’incapacité permanente'}
+    lead: {ar: 'الرأسمال فالجدول الجديد، ضرب نسبة العجز اللي حددها الطبيب', fr: 'Le capital du nouveau barème, multiplié par le taux fixé par le médecin'}
+    for: [injured]
+  - key: scenes
+    icon: scenes
+    words: [مشاهد الطريق, كيفاش ندوز فالرومبوان, شكون يدوز اللول, scènes de la route]
+    tool: true
+    open: true            # call Q2 of the road plan: shown before review, said so («لم يراجعها مختص بعد»)
+    title: {ar: مشاهد الطريق, fr: Scènes de la route}
+    lead: {ar: 'الأسبقية، وقف، الملتقى الدائري، التجاوز، الراجلون، العطب، التروتينيت: كل مشهد بمادته', fr: 'Priorité, stop, giratoire, dépassement, piétons, panne, trottinette : chaque scène avec son article'}
+  - key: signs
+    icon: signs
+    words: [العلامات, علامات الطريق, علامات المرور, panneaux de signalisation]
+    tool: true
+    open: true            # K3, as the points
+    title: {ar: العلامات, fr: Les panneaux}
+    lead: {ar: 'كل علامة برمزها والمادة التي تجعلها واجبا', fr: 'Chaque panneau avec son code et l’article qui l’impose'}
+  - key: practice
+    icon: practice
+    words: [تمرن, أسئلة الكود, امتحان الكود, تمارين البيرمي, s'entraîner au code]
+    tool: true            # cards a person writes, approved by batches (Q3); none written yet
+    title: {ar: تمرن, fr: S’entraîner}
+    lead: {ar: 'بطاقات من القانون، والجواب هو المادة', fr: 'Des cartes tirées de la loi, la réponse est l’article'}
+  - key: now
+    icon: accident
+    urgent_only: true     # reached by the topic's red band (T6), not listed among the tools
+    words: [درت أكسيدة دابا, شنو ندير دابا فالأكسيدة, accident que faire maintenant]
+    tool: true
+    title: {ar: 'درت أكسيدة؟ شنو دير دابا', fr: 'Un accident : que faire maintenant'}
+    lead: {ar: 'خطوة بخطوة، من مادة 94 من مرسوم قواعد السير', fr: 'Étape par étape, d’après l’article 94 du décret'}
+  - key: where
+    icon: where
+    words: [فين نمشي, فين نخلص المخالفة, نارسا, خدمات نارسا, où payer, NARSA]
+    to: pages/where
+    place: whole          # under «القانون كامل» (A9)
+    title: {ar: فين نمشي؟, fr: 'Où aller ?'}
+    lead: {ar: 'الخدمات الرسمية، وكل وحدة بالمادة اللي فيها الأجل', fr: 'Les services officiels, chacun avec l’article qui fixe son délai'}
+  - key: numbers
+    icon: numbers
+    words: [حوادث السير فالمغرب, شحال كيموتو فالطريق, إحصائيات حوادث السير, statistiques accidents]
+    to: pages/numbers
+    place: whole
+    title: {ar: شحال كيموتو فطرقنا؟, fr: 'Combien de morts sur nos routes ?'}
+    lead: {ar: 'أرقام الوكالة الوطنية للسلامة الطرقية بمصادرها', fr: 'Les chiffres de la NARSA, avec leurs sources'}

@@ -1,0 +1,146 @@
+# «حق الإضراب مضمون»: the blog's eighteenth post (S7 of the first-principles review, 6 Nov 2026: «Yes»; built 7 Nov
+# 2026). Each constitution's article is read on the Bulletin's page that printed it (the site holds the constitutions as
+# Adala's copies), and cut from the page's image where Tesseract found its lines; organic law 97.15 and the
+# Constitutional Court's decision 251.25 are read whole on the site (BO 7389); the law's path is the decision's own
+# account. A person checks every quote and date on its page before the post is published.
+slug: strike
+number: 18
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "«حق الإضراب مضمون»: جملة في ستة دساتير، وقانون بعد 62 سنة"
+  fr: "« Le droit de grève est garanti » : une phrase dans six constitutions, une loi 62 ans plus tard"
+lead:
+  ar: "كتب دستور 1962 «حق الإضراب مضمون»، ووعد بقانون تنظيمي يبين شروط ممارسته. وأعادت الدساتير الخمسة التي تلته الجملة الأولى حرفا بحرف. أودع مشروع القانون لدى مجلس النواب في 6 أكتوبر 2016، وصوّت عليه المجلس أول مرة في 24 دجنبر 2024، ونشرته الجريدة الرسمية في 24 مارس 2025: القانون التنظيمي 97.15، في 33 مادة."
+  fr: "La Constitution de 1962 écrivait « le droit de grève est garanti » et promettait une loi organique pour en fixer les conditions. Les cinq constitutions suivantes ont repris la première phrase mot pour mot. Le projet de loi a été déposé à la Chambre des représentants le 6 octobre 2016, voté par elle une première fois le 24 décembre 2024, et publié au Bulletin officiel le 24 mars 2025 : la loi organique 97-15, en 33 articles."
+
+# The six constitutions, each article as its Bulletin printed it, word for word (the spelling of the print, «الاضراب»
+# without its hamza until 1996), where it stands on its page's image (shares of the image; ratio: its height over its
+# width), and the text on the site.
+constitutions:
+  - year: 1962
+    n: 14
+    art: "14"
+    issue: 2616
+    bis: true
+    page: 2994
+    date: "1962-12-19"
+    akn: /akn/ma/act/dahir/constitution-1962
+    words: "حق الاضراب مضمون. وسيبين قانون تنظيمي الشروط والاجراءات اللازمة لممارسة هذا الحق."
+    crop: {left: 0.0439, top: 0.0938, right: 0.4825, bottom: 0.1636, ratio: 1.4167}
+  - year: 1970
+    n: 14
+    art: "14"
+    issue: 3013
+    bis: true
+    page: 1931
+    date: "1970-08-01"
+    akn: /akn/ma/act/dahir/1-70-177
+    words: "حق الاضراب مضمون. وسيبين قانون تنظيمي الشروط والاجراءات التي يمكن معها ممارسة هذا الحق."
+    crop: {left: 0.4793, top: 0.6979, right: 0.9123, bottom: 0.7751, ratio: 1.2425}
+  - year: 1972
+    n: 14
+    art: "14"
+    issue: 3098
+    page: 627
+    date: "1972-03-15"
+    akn: /akn/ma/act/dahir/1-72-061
+    words: "حق الاضراب مضمون. وسيبين قانون تنظيمي الشروط والاجراءات التي يمكن معها ممارسة هذا الحق."
+    crop: {left: 0.5294, top: 0.5453, right: 0.9586, bottom: 0.6236, ratio: 1.2318}
+  - year: 1992
+    n: 14
+    art: "الرابع عشر"
+    issue: 4172
+    page: 1248
+    date: "1992-10-14"
+    akn: /akn/ma/act/dahir/1-92-155
+    words: "حق الاضراب مضمون. وسيبين قانون تنظيمي الشروط والاجراءات التي يمكن معها ممارسة هذا الحق."
+    crop: {left: 0.4981, top: 0.6620, right: 0.9123, bottom: 0.7430, ratio: 1.2531}
+  - year: 1996
+    n: 14
+    art: "الرابع عشر"
+    issue: 4420
+    page: 2283
+    date: "1996-10-10"
+    akn: /akn/ma/act/dahir/1-96-157
+    words: "حق الإضراب مضمون. وسيبين قانون تنظيمي الشروط والإجراءات التي يمكن معها ممارسة هذا الحق."
+    crop: {left: 0.5263, top: 0.2208, right: 0.9461, bottom: 0.3216, ratio: 1.2431}
+  - year: 2011
+    n: 29
+    art: "29"
+    issue: 5964
+    bis: true
+    page: 3606
+    date: "2011-07-30"
+    akn: /akn/ma/act/dahir/1-11-91
+    words: "حق الإضراب مضمون. ويحدد قانون تنظيمي شروط وكيفيات ممارسته."
+    crop: {left: 0.0815, top: 0.2068, right: 0.5044, bottom: 0.2538, ratio: 1.3333}
+
+# The 2011 Constitution's own deadline for its organic laws: article 86, as printed (BO 5964 bis).
+deadline:
+  art: "86"
+  issue: 5964
+  bis: true
+  page: 3616
+  words: "تعرض مشاريع القوانين التنظيمية المنصوص عليها في هذا الدستور وجوبا قصد المصادقة عليها من قبل البرلمان، في أجل لا يتعدى مدة الولاية التشريعية الأولى التي تلي صدور الأمر بتنفيذ هذا الدستور."
+
+# The law, and its path as the Constitutional Court's decision 251.25 tells it (BO 7389, p. 1856).
+law: {number: "97.15", issue: 7389, page: 1848, signed: "2025-03-18", published: "2025-03-24", articles: 33, akn: /akn/ma/act/loi-organique/97-15}
+decision: {number: "251.25", issue: 7389, page: 1856, date: "2025-03-12", akn: /akn/ma/act/decision/2025/251-25}
+opinion: {issue: 7345, page: 7233, date: "2024-10-21", akn: /akn/ma/act/texte/2024/97-15}
+path:
+  - {key: council, date: "2016-09-26"}
+  - {key: filed, date: "2016-10-06"}
+  - {key: house1, date: "2024-12-24"}
+  - {key: councillors, date: "2025-02-03"}
+  - {key: house2, date: "2025-02-05"}
+  - {key: court, date: "2025-03-12"}
+  - {key: signed, date: "2025-03-18"}
+  - {key: printed, date: "2025-03-24"}
+  - {key: force, date: "2025-09-24"}
+# The Court's conclusion, as printed.
+ruling: "تصرح بأن القانون التنظيمي رقم 97.15 بتحديد شروط وكيفيات ممارسة حق الإضراب ليس فيه ما يخالف الدستور، مع مراعاة الملاحظات المتعلقة بالمواد 1 و5 و12"
+
+# The law by its numbers, each read in its article (printed page in BO 7389).
+numbers:
+  - {key: wait, n: "45", art: "13", page: 1851}
+  - {key: notice, n: "7", art: "14", page: 1852}
+  - {key: quorum, n: "25", art: "12", page: 1851}
+  - {key: vital, n: "14", art: "21", page: 1853}
+  - {key: unpaid, n: "0", art: "6", page: 1850}
+  - {key: fine, n: "100.000", art: "24", page: 1854}
+  - {key: force, n: "6", art: "33", page: 1855}
+# Who may not strike (art. 22) and when it may be stopped (art. 19), as printed.
+nostrike: "موظفي إدارة الدفاع الوطني وموظفي وزارة الخارجية وموظفي وزارة الداخلية وأعوان السلطة والعسكريين وأفراد القوة العمومية وضباط الشرطة القضائية، وسائر الموظفين والأعوان المخول لهم حمل السلاح والموظفين الدبلوماسيين والقنصليين"
+stop: "يمكن لرئيس الحكومة، في حالة حدوث آفات أو كوارث طبيعية أو أزمة وطنية حادة التي من شأنها المساس بالنظام العام وحقوق المواطنين، أن يأمر بصفة استثنائية، بمنع الإضراب أو وقفه لمدة محددة بموجب قرار معلل."
+bulletin: "المرفق المكلف بنشر الجريدة الرسمية"
+
+# The organic laws the 2011 Constitution called for: every organic law the Bulletin printed from 30 July 2011 that does
+# not amend another, with its issue, day and page (where the site holds an Adala copy, found by its promulgating dahir on
+# the issue's pages). The first legislature ended with the House election of Friday 7 October 2016 (`election`, the
+# interior minister's order of BO 6501, p. 6724, that names it).
+organic:
+  - {number: "27.11", ar: "مجلس النواب", fr: "La Chambre des représentants", issue: 5987, date: "2011-10-17", page: 5053, akn: /akn/ma/act/loi-organique/27-11}
+  - {number: "29.11", ar: "الأحزاب السياسية", fr: "Les partis politiques", issue: 5989, date: "2011-10-24", page: 5172, akn: /akn/ma/act/loi-organique/29-11}
+  - {number: "28.11", ar: "مجلس المستشارين", fr: "La Chambre des conseillers", issue: 5997, bis: true, date: "2011-11-22", page: 5520, akn: /akn/ma/act/loi-organique/28-11}
+  - {number: "59.11", ar: "انتخاب مجالس الجماعات الترابية", fr: "L’élection des conseils des collectivités territoriales", issue: 5997, bis: true, date: "2011-11-22", page: 5537, akn: /akn/ma/act/loi-organique/59-11}
+  - {number: "02.12", ar: "التعيين في المناصب العليا", fr: "Les nominations aux hautes fonctions", issue: 6066, date: "2012-07-19", page: 4235, akn: /akn/ma/act/loi-organique/2-12}
+  - {number: "128.12", ar: "المجلس الاقتصادي والاجتماعي والبيئي", fr: "Le Conseil économique, social et environnemental", issue: 6282, date: "2014-08-14", page: 6370, akn: /akn/ma/act/loi-organique/128-12}
+  - {number: "085.13", ar: "لجان تقصي الحقائق", fr: "Les commissions d’enquête", issue: 6282, date: "2014-08-14", page: 6375, akn: /akn/ma/act/loi-organique/85-13}
+  - {number: "066.13", ar: "المحكمة الدستورية", fr: "La Cour constitutionnelle", issue: 6288, date: "2014-09-04", page: 6661, akn: /akn/ma/act/loi-organique/66-13}
+  - {number: "065.13", ar: "الحكومة", fr: "Le gouvernement", issue: 6348, date: "2015-04-02", page: 3515, akn: /akn/ma/act/loi-organique/65-13}
+  - {number: "130.13", ar: "قانون المالية", fr: "La loi de finances", issue: 6370, date: "2015-06-18", page: 5810, akn: /akn/ma/act/loi-organique/130-13}
+  - {number: "111.14", ar: "الجهات", fr: "Les régions", issue: 6380, date: "2015-07-23", page: 6585, akn: /akn/ma/act/loi-organique/111-14}
+  - {number: "112.14", ar: "العمالات والأقاليم", fr: "Les préfectures et provinces", issue: 6380, date: "2015-07-23", page: 6625, akn: /akn/ma/act/loi-organique/112-14}
+  - {number: "113.14", ar: "الجماعات", fr: "Les communes", issue: 6380, date: "2015-07-23", page: 6660, akn: /akn/ma/act/loi-organique/113-14}
+  - {number: "100.13", ar: "المجلس الأعلى للسلطة القضائية", fr: "Le Conseil supérieur du pouvoir judiciaire", issue: 6456, date: "2016-04-14", page: 3143, akn: /akn/ma/act/loi-organique/100-13}
+  - {number: "106.13", ar: "النظام الأساسي للقضاة", fr: "Le statut des magistrats", issue: 6456, date: "2016-04-14", page: 3160, akn: /akn/ma/act/loi-organique/106-13}
+  - {number: "90.15", ar: "مجلس الوصاية", fr: "Le Conseil de régence", issue: 6476, date: "2016-06-23", page: 4878, akn: /akn/ma/act/loi-organique/90-15}
+  - {number: "44.14", ar: "العرائض", fr: "Les pétitions", issue: 6492, date: "2016-08-18", page: 6074, akn: /akn/ma/act/loi-organique/44-14}
+  - {number: "64.14", ar: "الملتمسات في مجال التشريع", fr: "Les motions législatives", issue: 6492, date: "2016-08-18", page: 6077, akn: /akn/ma/act/loi-organique/64-14}
+  - {number: "26.16", ar: "الطابع الرسمي للأمازيغية", fr: "Le caractère officiel de l’amazighe", issue: 6816, date: "2019-09-26", page: 9314, akn: /akn/ma/act/loi-organique/26-16}
+  - {number: "04.16", ar: "المجلس الوطني للغات والثقافة المغربية", fr: "Le Conseil national des langues et de la culture marocaine", issue: 6870, date: "2020-04-02", page: 1823, akn: /akn/ma/act/loi-organique/4-16}
+  - {number: "97.15", ar: "حق الإضراب", fr: "Le droit de grève", issue: 7389, date: "2025-03-24", page: 1848, akn: /akn/ma/act/loi-organique/97-15}
+  - {number: "35.24", ar: "الدفع بعدم دستورية قانون", fr: "L’exception d’inconstitutionnalité", issue: 7523, date: "2026-07-06", page: 4180, akn: /akn/ma/act/loi-organique/35-24}
+election: {date: "2016-10-07", issue: 6501, page: 6724, akn: /akn/ma/act/arrete/2733-16}

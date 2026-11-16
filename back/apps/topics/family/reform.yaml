@@ -1,0 +1,114 @@
+# The reform of the family code (F11 of the family plan): where it stands, what the official record says, and what is
+# said that is not so. Every dated line names its official page (kept under CORPUS_DIR/sources/habous/ with its hash);
+# no announced change is ever written as law. What is in force is the code as the site holds it.
+title: {ar: إصلاح مدونة الأسرة, fr: La réforme du Code de la famille}
+lead:
+  ar: 'أين وصل، وما يقوله السجل الرسمي، وما يروج وليس صحيحا.'
+  fr: 'Où elle en est, ce que dit le dossier officiel, et ce qui circule sans être vrai.'
+stage: announced
+checked_on: '2026-10-20'
+line:
+  ar: 'لم يصدر بعد أي قانون جديد للأسرة. المطبق هو مدونة 2004 كما عدلت آخر مرة سنة 2021.'
+  fr: 'Aucune nouvelle loi sur la famille n’est encore publiée. Le Code de 2004, modifié pour la dernière fois en 2021, reste celui qui s’applique.'
+stages:
+  - {key: announced, label: {ar: مقترحات معلنة, fr: Propositions annoncées}}
+  - {key: bill, label: {ar: مشروع قانون بالبرلمان, fr: Projet de loi au Parlement}}
+  - {key: adopted, label: {ar: صادق عليه البرلمان, fr: Adopté par le Parlement}}
+  - {key: law, label: {ar: منشور بالجريدة الرسمية, fr: Publié au Bulletin officiel}}
+timeline:
+  - date: '2023-09-26'
+    text: {ar: 'رسالة ملكية إلى رئيس الحكومة تطلق مراجعة مدونة الأسرة.', fr: 'Une lettre royale au chef du gouvernement lance la révision du Code de la famille.'}
+    source: {name: {ar: وزارة العدل, fr: Ministère de la Justice}, url: 'https://justice.gov.ma/2023/09/26/%D8%A8%D9%84%D8%A7%D8%BA-%D9%84%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A-2/'}
+  - date: '2024-12-23'
+    text: {ar: 'جلسة عمل ملكية: رفعت الهيئة أكثر من مائة مقترح، وأبدى المجلس العلمي الأعلى رأيه في المرتبط منها بنصوص دينية، وكلفت الحكومة بصياغتها في مبادرة تشريعية داخل آجال معقولة.', fr: 'Séance de travail royale : la commission a remis plus de cent propositions, le Conseil supérieur des oulémas a donné son avis sur celles qui touchent aux textes religieux, et le gouvernement est chargé d’en faire une initiative législative dans des délais raisonnables.'}
+    source: {name: {ar: 'بلاغ الديوان الملكي، موقع وزارة الأوقاف', fr: 'Communiqué du Cabinet royal, site du ministère des Habous'}, url: 'https://www.habous.gov.ma/%D9%82%D8%A7%D8%A6%D9%85%D8%A9/%D8%A7%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%A4%D9%85%D9%86%D9%8A%D9%86-2/20573-%D8%A8%D9%84%D8%A7%D8%BA-%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%83%D9%8A-%D8%AD%D9%88%D9%84-%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D8%A9-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D8%A9.html', file: sources/habous/royal_cabinet_2024_12_23.html, sha256: 289db820632205c358f9719ce4c8953f40f7a20cafcaf10bfbebf751077c2ec1}
+  - date: '2024-12-24'
+    text: {ar: 'عرض المقترحات على الرأي العام، ونشر أجوبة المجلس العلمي الأعلى عن سبع عشرة مسألة.', fr: 'Présentation publique des propositions et publication des réponses du Conseil supérieur des oulémas sur dix-sept questions.'}
+    source: {name: {ar: وزارة الأوقاف والشؤون الإسلامية, fr: Ministère des Habous et des Affaires islamiques}, url: 'https://www.habous.gov.ma/%D8%A7%D9%84%D9%88%D8%B2%D9%8A%D8%B1/20578-%D9%85%D8%AF%D9%88%D9%86%D8%A9-%D8%A7%D9%84%D8%A3%D8%B3%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%B9%D9%84%D9%82%D8%A9-%D8%A8%D8%A7%D9%84%D8%B1%D8%A3%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D8%B9%D9%8A-%D8%A7%D9%84%D8%B0%D9%8A-%D8%B1%D9%81%D8%B9%D9%87-%D8%A7%D9%84%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B9%D9%84%D9%85%D9%8A-%D8%A7%D9%84%D8%A3%D8%B9%D9%84%D9%89-%D9%84%D9%85%D9%88%D9%84%D8%A7%D9%86%D8%A7-%D8%A3%D9%85%D9%8A%D8%B1-%D8%A7%D9%84%D9%85%D8%A4%D9%85%D9%86%D9%8A%D9%86.html', file: sources/habous/ulema_opinion_2024_12_24.html, sha256: 1c04bac1dbe8a6d85d76b4849bc044b9868478427f604d3133f10cfe12761db9}
+  - date: '2025-01-28'
+    text: {ar: 'رفض مجلس النواب (125 صوتا ضد، و10 ممتنعين) مقترح قانون بتغيير المادة 20، أحاله عليه مجلس المستشارين سنة 2013.', fr: 'La Chambre des représentants rejette (125 contre, 10 abstentions) une proposition de loi modifiant l’article 20, transmise par la Chambre des conseillers en 2013.'}
+    source: {name: {ar: مجلس النواب, fr: Chambre des représentants}, url: 'https://www.chambredesrepresentants.ma/ar/node/357274', file: sources/parliament/proposal_art20_2013_rejected_2025.html, sha256: 3cb4e6754fbccc54f0a14e4350ee903ff3f573de4f83600f01d1e4b43681246f}
+    cites: [/ma/loi/70-03/art_20]
+  - date: '2026-10-16'
+    text: {ar: 'تعيين الحكومة الجديدة. يبقى عبد اللطيف وهبي وزيرا للعدل.', fr: 'Nomination du nouveau gouvernement ; Abdellatif Ouahbi reste ministre de la Justice.'}
+    source: {name: {ar: وزارة الأوقاف والشؤون الإسلامية, fr: Ministère des Habous et des Affaires islamiques}, url: 'https://www.habous.gov.ma/%D9%82%D8%A7%D8%A6%D9%85%D8%A9/%D8%A7%D9%85%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%A4%D9%85%D9%86%D9%8A%D9%86-2/22913-%D8%AC%D9%84%D8%A7%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D9%83-%D9%8A%D8%AA%D8%B1%D8%A3%D8%B3-%D9%85%D8%B1%D8%A7%D8%B3%D9%8A%D9%85-%D8%AA%D8%B9%D9%8A%D9%8A%D9%86-%D8%A3%D8%B9%D8%B6%D8%A7%D8%A1-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9.html', file: sources/habous/government_2026_10_16.html, sha256: 69d171a251182141bd9d2f1610aad4ec365f49004739f394c368290c4330db59}
+# The Ulema's answers (the table of 24 Dec 2024, numbered as printed). These answer questions put to them; they are
+# not the bill, which the government has yet to write.
+groups:
+  - key: accepted
+    label: {ar: عشر مسائل استجابت فيها لجنة الفتوى استجابة تامة, fr: 'Dix questions où le comité de fatwa a répondu entièrement à la demande'}
+  - key: alternative
+    label: {ar: ثلاث مسائل أعطت فيها اللجنة حلولا بديلة توافق الشرع وتحقق المطلوب ومن الأفضل الأخذ بها, fr: 'Trois questions où le comité propose une autre solution conforme à la charia, qu’il recommande'}
+  - key: ruler
+    label: {ar: مسألتان أعطت فيهما اللجنة حلولا بديلة ويمكن لولي الأمر أن يقرر فيهما ما يراه محققا للمصلحة, fr: 'Deux questions où le comité propose une autre solution, le Commandeur des croyants pouvant décider selon l’intérêt général'}
+  - key: refused
+    label: {ar: مسألة لا يمكن تجاوز رأي اللجنة فيها إلا بقرار من ولي الأمر باعتبار المصلحة, fr: 'Une question où l’avis du comité ne peut être écarté que par décision du Commandeur des croyants'}
+  - key: kept
+    label: {ar: المادة 400, fr: L’article 400}
+questions:
+  - {n: 1, group: accepted, subject: {ar: سن الزواج, fr: L’âge du mariage}, cites: [/ma/loi/70-03/art_19, /ma/loi/70-03/art_20]}
+  - {n: 2, group: accepted, subject: {ar: شهاد شاهدين مسلمين, fr: Les deux témoins musulmans}, cites: [/ma/loi/70-03/art_14]}
+  - {n: 4, group: accepted, subject: {ar: النيابة الشرعية المشتركة, fr: La représentation légale partagée}, cites: [/ma/loi/70-03/art_231, /ma/loi/70-03/art_236]}
+  - {n: 5, group: accepted, subject: {ar: اعتبار العمل المنزلي مساهمة في ثروة الزوج, fr: 'Le travail domestique compté comme contribution au patrimoine du mari'}, cites: [/ma/loi/70-03/art_49]}
+  - {n: 11, group: accepted, subject: {ar: وجوب نفقة الزوجة بالعقد, fr: 'La pension de l’épouse due dès le contrat'}, cites: [/ma/loi/70-03/art_194]}
+  - n: 12
+    group: accepted
+    subject: {ar: العمرى الإجبارية للسكنى للزوج الباقي حيا, fr: 'Le droit d’habiter le logement pour le conjoint survivant'}
+    answer: {ar: 'مع اقتراح استعمال مصطلح «إيقاف السكنى» بدل العمرى الإجبارية حفاظا على المصطلحات الشرعية', fr: 'Avec la proposition de dire «affectation du logement» plutôt que «usufruit obligatoire», pour garder les termes de la charia'}
+    cites: [/ma/loi/70-03/art_322]
+  - {n: 14, group: accepted, subject: {ar: مرتبة ديون الزوجين المتعلقة بالأموال المكتسبة, fr: 'Le rang des dettes entre époux sur les biens acquis'}, cites: [/ma/loi/70-03/art_322, /ma/loi/70-03/art_49]}
+  - {n: 15, group: accepted, subject: {ar: بقاء حضانة من تزوجت, fr: 'La mère qui se remarie garde la garde'}, cites: [/ma/loi/70-03/art_175, /ma/loi/70-03/art_174]}
+  - {n: 10, group: accepted, subject: {ar: المتعة للمرأة طالبة التطليق, fr: 'Le don de consolation pour la femme qui demande le divorce'}, cites: [/ma/loi/70-03/art_84, /ma/loi/70-03/art_97]}
+  - {n: 16, group: accepted, subject: {ar: المساواة بين أبناء الأبناء والبنات في استحقاق الوصية الواجبة مهما نزلوا, fr: 'Les enfants des fils et des filles à égalité pour le legs obligatoire, à tous les degrés'}, cites: [/ma/loi/70-03/art_369, /ma/loi/70-03/art_372]}
+  - n: 6
+    group: alternative
+    subject: {ar: نسب ولد الزنا, fr: 'La filiation de l’enfant né hors mariage'}
+    answer: {ar: 'تحميل الأب كالأم المسؤولية عن حاجيات الولد دون إثبات النسب', fr: 'Mettre à la charge du père, comme de la mère, les besoins de l’enfant, sans établir la filiation'}
+    cites: [/ma/loi/70-03/art_148, /ma/loi/70-03/art_152]
+  - n: 7
+    group: alternative
+    subject: {ar: الوصية للوارث إذا لم يجزها باقي الورثة, fr: 'Le legs à un héritier sans l’accord des autres'}
+    answer: {ar: 'الهبة (عوض الوصية) وعدم اشتراط الحيازة الفعلية', fr: 'La donation (au lieu du legs), sans exiger la prise de possession effective'}
+    cites: [/ma/loi/70-03/art_280]
+  - n: 8
+    group: alternative
+    subject: {ar: إلغاء التعصيب في حالة ترك البنات دون الأبناء, fr: 'Supprimer le ta’sib quand le défunt ne laisse que des filles'}
+    answer: {ar: 'الهبة للبنات وعدم اشتراط الحيازة الفعلية', fr: 'La donation aux filles, sans exiger la prise de possession effective'}
+    cites: [/ma/loi/70-03/art_348, /ma/loi/70-03/art_349]
+  - n: 13
+    group: ruler
+    subject: {ar: التوارث بين الزوجين مختلفي الدين, fr: 'L’héritage entre époux de religions différentes'}
+    answer: {ar: 'يمكن لكل منهما أن يوصي أو يهب للآخر بإرادته، وعدم اشتراط الحيازة الفعلية، مع الإشارة إلى ذلك في المادة 332؛ ويمكن لولي الأمر أن يفرض تنزيلا واجبا لأحد الزوجين للمصلحة', fr: 'Chacun peut léguer ou donner à l’autre, sans prise de possession effective, ce que l’article 332 pourrait dire ; le Commandeur des croyants peut imposer une institution obligatoire au profit du conjoint'}
+    cites: [/ma/loi/70-03/art_332]
+  - n: 9
+    group: ruler
+    subject: {ar: 'التوارث بين الكافل والمكفول، أو التنزيل الواجب', fr: 'L’héritage entre le kafil et l’enfant recueilli, ou l’institution obligatoire'}
+    answer: {ar: 'ثلاثة حلول: حيازة المال إذا لم يوجد ورثة وتنازلت الدولة عن الإرث؛ أو الوصية أو الهبة دون اشتراط الحيازة الفعلية؛ أو تنزيل واجب للمكفول يفرضه ولي الأمر بمقتضى القانون إذا رأى في ذلك مصلحة', fr: 'Trois solutions : recueillir les biens s’il n’y a pas d’héritier et que l’État renonce ; ou le legs ou la donation sans prise de possession effective ; ou une institution obligatoire au profit de l’enfant, imposée par la loi si le Commandeur des croyants y voit un intérêt'}
+    cites: [/ma/loi/15-01/art_2, /ma/loi/15-01/art_23]
+  - n: 3
+    group: refused
+    subject: {ar: إدراج شرط موافقة الزوجة الأولى في التعدد, fr: 'Exiger l’accord de la première épouse pour la polygamie'}
+    answer: {ar: 'جواب لا يستجيب لمشروعية إدراج هذا الشرط؛ ويمكن لولي الأمر أن يقرر إدراجه', fr: 'Le comité ne retient pas la légitimité de cette condition ; le Commandeur des croyants peut décider de l’inscrire'}
+    cites: [/ma/loi/70-03/art_40, /ma/loi/70-03/art_41]
+  - n: 17
+    group: kept
+    subject: {ar: المادة 400, fr: L’article 400}
+    answer: {ar: 'تمسك المجلس بالنص على المذهب المالكي مرجعا', fr: 'Le Conseil maintient la référence au rite malékite'}
+    cites: [/ma/loi/70-03/art_400]
+# Claims that circulate, set against the record. Each says what is so today and what the official record says.
+rumours:
+  - claim: {ar: 'مدونة الأسرة الجديدة دخلت حيز التنفيذ', fr: 'Le nouveau Code de la famille est entré en vigueur'}
+    truth: {ar: 'لم ينشر أي قانون جديد بالجريدة الرسمية. آخر تعديل للمدونة كان سنة 2021 (المادة 15، بالقانون 65.21).', fr: 'Aucune nouvelle loi n’est publiée au Bulletin officiel. La dernière modification du Code date de 2021 (article 15, par la loi 65.21).'}
+    cites: [/ma/loi/70-03/art_15, /ma/loi/65-21/art_1]
+  - claim: {ar: 'ألغي التعصيب وأصبحت البنات يرثن كل شيء', fr: 'Le ta’sib est supprimé et les filles héritent de tout'}
+    truth: {ar: 'لم يستجب المجلس العلمي لإلغاء التعصيب، واقترح بديلا: الهبة للبنات دون اشتراط الحيازة الفعلية. والتعصيب قائم في المدونة.', fr: 'Le Conseil des oulémas n’a pas retenu la suppression du ta’sib ; il propose la donation aux filles sans prise de possession effective. Le ta’sib reste dans le Code.'}
+    cites: [/ma/loi/70-03/art_348, /ma/loi/70-03/art_349]
+  - claim: {ar: 'أموال الزوجين تقسم مناصفة عند الطلاق', fr: 'Les biens des époux sont partagés par moitié au divorce'}
+    truth: {ar: 'لكل زوج ذمة مالية مستقلة. يجوز لهما الاتفاق على تدبير الأموال المكتسبة، وعند غيابه يراعي القاضي عمل كل واحد وما قدمه. ولا يذكر الجدول الرسمي أي قسمة مناصفة.', fr: 'Chaque époux a son propre patrimoine. Ils peuvent convenir de gérer les biens acquis ; sinon le juge tient compte du travail et des apports de chacun. Le tableau officiel ne parle d’aucun partage par moitié.'}
+    cites: [/ma/loi/70-03/art_49]
+  - claim: {ar: 'الطفل المولود خارج الزواج يثبت نسبه لأبيه ويرثه', fr: 'L’enfant né hors mariage a désormais un père légal et hérite de lui'}
+    truth: {ar: 'لم يقبل المجلس العلمي إثبات النسب، واقترح تحميل الأب المسؤولية عن حاجيات الولد دون نسب. واليوم لا يترتب على البنوة غير الشرعية بالنسبة للأب أي أثر.', fr: 'Le Conseil des oulémas n’a pas retenu la filiation ; il propose de faire supporter au père les besoins de l’enfant sans filiation. Aujourd’hui, la filiation hors mariage ne produit aucun effet à l’égard du père.'}
+    cites: [/ma/loi/70-03/art_148]
+  - claim: {ar: 'منع التعدد نهائيا', fr: 'La polygamie est interdite'}
+    truth: {ar: 'التعدد اليوم بإذن المحكمة وبشروط، ويمنع إذا اشترطت الزوجة ألا يتزوج عليها. ولم يقبل المجلس العلمي اشتراط موافقة الزوجة الأولى، وترك القرار لولي الأمر.', fr: 'Aujourd’hui la polygamie exige l’autorisation du tribunal et des conditions, et elle est interdite si l’épouse l’a exclue dans l’acte. Le Conseil des oulémas n’a pas retenu l’accord de la première épouse et a laissé la décision au Commandeur des croyants.'}
+    cites: [/ma/loi/70-03/art_40, /ma/loi/70-03/art_41]

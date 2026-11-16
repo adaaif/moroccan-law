@@ -1,0 +1,65 @@
+/* «ستة دساتير في صفحة واحدة»: its own charts. The squares carry what became of each article: ink kept word for word,
+   the bar's grey rewritten, violet new, pale unsure; the first constitution in paper, having none before it. */
+.bp-squares { display: flex; flex-direction: column; gap: 8px; }
+.bp-squares svg { cursor: crosshair; }
+.sq { stroke: none; }
+.sq.s0 { fill: var(--bp-sheet-b); }
+.sq.s1 { fill: var(--color-ink); }
+.sq.s2 { fill: var(--bp-bar); }
+.sq.s3 { fill: var(--bp-sheet-a); stroke: var(--bp-sheet-b); stroke-width: 1; }
+.sq.s4 { fill: var(--color-stamp); }
+.sq-pick { fill: none; stroke: var(--color-ink); stroke-width: 2; pointer-events: none; }
+.sq-note path { fill: none; stroke: var(--color-ink-soft); stroke-width: 1; }
+.sq-note text { font-size: 14px; fill: var(--color-ink); }
+
+/* The four articles kept word for word, quoted as the constitution prints them. */
+.bp-quotes { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.bp-quotes li { display: flex; flex-direction: column; gap: 2px; padding-inline-start: 16px; border-inline-start: 3px solid var(--color-ink); }
+.bp-quotes q { quotes: '«' '»'; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.7; }
+.bp-quotes a { align-self: flex-start; font-size: var(--text-meta); font-weight: 600; min-height: 32px; display: inline-flex; align-items: center; }
+
+/* What stayed: a bar a constitution, as long as its articles. */
+.bp-kept { display: flex; flex-direction: column; gap: 10px; }
+.bp-kept-row { display: grid; grid-template-columns: 9rem minmax(0, 1fr); align-items: center; gap: 12px; }
+.bp-kept-label { font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.bp-kept-bar { display: flex; width: calc(var(--w) * 100%); height: 30px; gap: 2px; }
+.bp-kept-bar button { min-width: 3px; padding: 0; border: 0; font: inherit; font-size: var(--text-meta); font-weight: 600;
+  font-variant-numeric: tabular-nums; cursor: pointer; color: var(--color-ink); }
+.bp-kept-bar .s1, .bp-kept-key .s1 { background: var(--color-ink); color: var(--color-sheet); }
+.bp-kept-bar .s2, .bp-kept-key .s2 { background: var(--bp-bar); }
+.bp-kept-bar .s3, .bp-kept-key .s3 { background: var(--bp-sheet-a); box-shadow: inset 0 0 0 1px var(--bp-sheet-b); }
+.bp-kept-bar .s4, .bp-kept-key .s4 { background: var(--color-stamp); color: var(--color-on-stamp); }
+.bp-kept-key { display: flex; flex-wrap: wrap; gap: 6px 16px; padding-top: 4px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-kept-key span { display: inline-flex; align-items: center; gap: 6px; }
+.bp-kept-key i { width: 12px; height: 12px; border-radius: 2px; }
+@media (max-width: 639px) { .bp-kept-row { grid-template-columns: minmax(0, 1fr); gap: 4px; } }
+
+/* A grid: a row a theme or a word, a column a constitution. */
+.bp-grid { display: flex; flex-direction: column; overflow-x: auto; }
+.bp-grid-row { display: grid; grid-template-columns: 10rem repeat(6, minmax(3.2rem, 1fr)); align-items: center; min-height: 40px;
+  border-top: 1px solid var(--color-rule-soft); }
+.bp-grid-head { min-height: 0; border-top: 0; padding-bottom: 4px; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft);
+  text-align: center; font-variant-numeric: tabular-nums; }
+.bp-grid-name { font-size: var(--text-meta); line-height: 1.35; padding-inline-end: 8px; }
+.bp-cell { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; min-height: 40px;
+  padding: 4px 2px; border: 0; background: none; color: var(--color-ink); font: inherit; cursor: pointer; }
+.bp-cell:disabled { cursor: default; }
+.bp-cell b { font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+.bp-cell.is-zero b { font-weight: 400; color: var(--color-ink-soft); }
+.bp-cell-none { color: var(--color-ink-soft); }
+.bp-cell.bar i { display: block; width: calc(var(--v) * 100%); min-width: 2px; height: 6px; border-radius: 2px; background: var(--bp-bar); }
+.bp-cell.dot i { display: block; width: calc(var(--v) * 26px); height: calc(var(--v) * 26px); min-width: 4px; min-height: 4px; border-radius: 50%;
+  background: var(--bp-bar); }
+.bp-cell.is-hi i { background: var(--color-stamp); }
+.bp-cell.is-zero i { background: var(--color-rule); }
+@media (max-width: 639px) { .bp-grid-row { grid-template-columns: 6.5rem repeat(6, minmax(2.6rem, 1fr)); } }
+
+/* The days from the referendum to the Bulletin. */
+.bp-days { display: flex; flex-direction: column; gap: 6px; }
+.bp-days-row { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr) 4.5rem; align-items: center; gap: 10px; min-height: 36px;
+  padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; text-align: start; }
+.bp-days-year { font-weight: 600; font-variant-numeric: tabular-nums; }
+.bp-days-track { display: flex; width: calc(var(--w) * 100%); height: 14px; gap: 2px; }
+.bp-days-track .sign { background: var(--bp-bar); border-radius: 2px; }
+.bp-days-track .print { background: var(--color-stamp); border-radius: 2px; }
+.bp-days-row b { font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }

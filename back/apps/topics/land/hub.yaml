@@ -1,0 +1,346 @@
+# The land topic's page (the land review, 26 Oct 2026, M1–M19 all «Yes», C1 band, C2 names, C3 wait): what the plot
+# is first (titled, being titled, not titled, collective), since every rule of land law turns on it; then the doors by
+# what is happening, in the words people use, in a plot's life; the papers that start a clock in a band; the tools.
+# Written from law 39.08 (Adala, to 16 Jul 2026, with law 41.25), the land-registration dahir of 12 Aug 1913 (Adala),
+# law 12.90 (SGG, 2016), law 25.90 (SGG, to 10 Aug 2026, with law 34.21), decree 2.18.577, law 7.81 and laws 62.17
+# and 63.17, as the site holds them on 26 Oct 2026. Flats, off-plan purchases, a building's co-ownership and leases stay in
+# the housing topic, linked at the end.
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+
+# M2: each door is led by its plot as a surveyor draws it (`marks: plot`): a titled plot solid with its stones, an
+# untitled one dashed, what is taken or disputed washed in red; the one number the law sets for the moment (`mark`) is
+# written where a plan writes the area. `plot` names the drawing.
+marks: plot
+stages:
+  - {key: before, title: {ar: قبل ما تملك, fr: 'Avant d’être propriétaire'}, doors: [buy, held]}
+  - {key: prove, title: {ar: تثبت ملكك, fr: 'Prouver que c’est à vous'}, doors: [register, oppose, fraud]}
+  - {key: shared, title: {ar: بين الشركاء, fr: 'Entre copropriétaires'}, doors: [inherit, preempt, divide]}
+  - {key: build, title: {ar: البني, fr: 'Construire'}, doors: [build, nopermit, plan]}
+  - {key: state, title: {ar: الدولة والجماعة, fr: 'L’État et la collectivité'}, doors: [expropriation, collective]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [flat, syndic, property-tax], links: true}
+
+# M5, C1 «band»: the papers that start a clock, in the soil's dark ink (no emergency: rights that close). Each paper
+# with its limit and article; the band leads to the clock, which counts the days once the reader gives the day.
+urgent:
+  title: {ar: توصلت بورقة على أرضك؟, fr: 'Un papier sur votre terrain ?'}
+  lead: {ar: 'الأوراق اللي كيبدا معاها أجل، وإلا فات كيضيع الحق', fr: 'Les papiers qui ouvrent un délai : passé, le droit se perd'}
+  to: tools/clock
+  tone: soil
+  day: {ar: شحال بقا ليك؟, fr: 'Combien de jours ?'}
+  papers:
+    - paper: {ar: إعلان انتهاء التحديد فالجريدة الرسمية, fr: 'L’avis de clôture du bornage au Bulletin officiel'}
+      limit: {ar: شهران, fr: deux mois}
+      for: {ar: للتعرض على مطلب التحفيظ, fr: 'pour faire opposition à la réquisition'}
+      article: {ar: الفصلان 24 و27, fr: art. 24 et 27}
+      cites: [/ma/code/land-registration/art_24, /ma/code/land-registration/art_27]
+      to: journeys/oppose
+      key: oppose
+    - paper: {ar: مشروع مقرر التخلي فالجماعة, fr: 'Le projet d’acte de cessibilité à la commune'}
+      limit: {ar: شهران, fr: deux mois}
+      for: {ar: لكتابة ملاحظاتك فالسجل, fr: 'pour inscrire vos observations au registre'}
+      article: {ar: الفصل 10, fr: art. 10}
+      cites: [/ma/loi/7-81/art_10]
+      to: journeys/expropriation
+      key: inquiry
+    - paper: {ar: تبليغ بشراء حصة شريكك, fr: 'La notification de l’achat de la part d’un copropriétaire'}
+      limit: {ar: 30 يوما, fr: 30 jours}
+      for: {ar: للأخذ بالشفعة, fr: 'pour exercer la préemption'}
+      article: {ar: المادة 304, fr: art. 304}
+      cites: [/ma/loi/39-08/art_304]
+      to: journeys/preempt
+      key: preempt
+    - paper: {ar: مقرر توزيع أرض الجموع, fr: 'La décision de répartition des terres collectives'}
+      limit: {ar: 30 يوما, fr: 30 jours}
+      for: {ar: للطعن أمام مجلس الوصاية الإقليمي, fr: 'pour le recours devant le conseil de tutelle provincial'}
+      article: {ar: المادة 16, fr: art. 16}
+      cites: [/ma/loi/62-17/art_16]
+      to: journeys/collective
+      key: share
+  tool: tools/clock
+
+# M4: one question, «أرضك شنو هي؟»; each answer names its law and three facts with their articles. A door that does not
+# concern the answer fades with the law's own reason (`not`): a titled plot is not acquired by possession (art. 261).
+profile:
+  question: {ar: أرضك شنو هي؟, fr: 'Votre terrain est-il immatriculé ?'}
+  options:
+    - key: titled
+      main: true
+      label: {ar: محفظة (عندها رسم عقاري), fr: 'Immatriculé (titre foncier)'}
+      law: {ar: 'الرسم العقاري نهائي ولا يقبل الطعن (الفصل 62 من ظهير التحفيظ)، والتقييدات فيه حجة على الغير (المادة 2 من مدونة الحقوق العينية)، والعقار المحفظ لا يكتسب بالحيازة (المادة 261).', fr: 'Le titre foncier est définitif et inattaquable (art. 62 du dahir sur l’immatriculation), ses inscriptions font foi à l’égard des tiers (art. 2 du code des droits réels), et un immeuble immatriculé ne s’acquiert pas par la possession (art. 261).'}
+      first: buy
+      facts:
+        - {value: {ar: نهائي, fr: Définitif}, label: {ar: 'الرسم العقاري لا يقبل الطعن', fr: 'le titre foncier est inattaquable'}, cites: [/ma/code/land-registration/art_62]}
+        - {value: {ar: '4 سنوات', fr: '4 ans'}, label: {ar: 'لدعوى المتضرر من تقييد بالتدليس أو الزور', fr: 'pour agir contre une inscription frauduleuse'}, cites: [/ma/loi/39-08/art_2]}
+        - {value: {ar: لا حيازة, fr: 'Pas de possession'}, label: {ar: 'المحفظ لا يكتسب بالحيازة', fr: 'l’immatriculé ne s’acquiert pas en le possédant'}, cites: [/ma/loi/39-08/art_261]}
+    - key: pending
+      main: true
+      label: {ar: فطور التحفيظ (عندها مطلب), fr: 'En cours d’immatriculation (réquisition)'}
+      law: {ar: 'مطلب التحفيظ لا يسحب (الفصل 6)، ومن يدعي حقا يتعرض داخل شهرين من نشر الإعلان عن انتهاء التحديد (الفصلان 24 و27)، والحق الذي ينشأ أثناء المسطرة يودع بسجل التعرضات (الفصل 84).', fr: 'La réquisition ne se retire pas (art. 6) ; qui prétend un droit fait opposition dans les deux mois de la publication de l’avis de clôture du bornage (art. 24 et 27) ; un droit né pendant la procédure se dépose au registre des oppositions (art. 84).'}
+      first: oppose
+      facts:
+        - {value: {ar: شهران, fr: '2 mois'}, label: {ar: 'للتعرض من نشر الإعلان عن انتهاء التحديد', fr: 'pour s’opposer après l’avis de clôture du bornage'}, cites: [/ma/code/land-registration/art_24, /ma/code/land-registration/art_27]}
+        - {value: {ar: الإيداع, fr: 'Le dépôt'}, label: {ar: 'الحق الناشئ أثناء المسطرة يودع بسجل التعرضات', fr: 'un droit né pendant la procédure se dépose au registre'}, cites: [/ma/code/land-registration/art_84]}
+        - {value: {ar: لا سحب, fr: 'Pas de retrait'}, label: {ar: 'مطلب التحفيظ المقدم لا يسحب', fr: 'la réquisition déposée ne se retire pas'}, cites: [/ma/code/land-registration/art_6]}
+    - key: untitled
+      main: true
+      label: {ar: ماشي محفظة (ملكية أو عقد), fr: 'Non immatriculé (acte ou moulkiya)'}
+      law: {ar: 'عقد التفويت لا يفيد ملكية العقار غير المحفظ إلا مع أصل التملك وحيازة مستوفية لشروطها (المادة 3)، وتكتسب الملكية بحيازة عشر سنوات بين الأجانب (المادة 250)، وكل بيع بمحرر رسمي (المادة 4).', fr: 'Un acte de cession ne donne la propriété d’un immeuble non immatriculé qu’avec l’origine de propriété et une possession qui remplit ses conditions (art. 3) ; dix ans de possession entre étrangers donnent la propriété (art. 250) ; toute vente par acte authentique (art. 4).'}
+      first: held
+      facts:
+        - {value: {ar: '10 سنوات', fr: '10 ans'}, label: {ar: 'حيازة الأجنبي غير الشريك كتكسبو الملكية', fr: 'de possession font la propriété d’un tiers non copropriétaire'}, cites: [/ma/loi/39-08/art_250]}
+        - {value: {ar: أصل التملك, fr: 'L’origine'}, label: {ar: 'بلا بيه وبلا حيازة، العقد ما كيفيدش الملكية', fr: 'sans elle et la possession, l’acte ne prouve pas la propriété'}, cites: [/ma/loi/39-08/art_3]}
+        - {value: {ar: محرر رسمي, fr: 'Acte authentique'}, label: {ar: 'كل بيع ديال عقار، تحت طائلة البطلان', fr: 'pour toute vente d’immeuble, à peine de nullité'}, cites: [/ma/loi/39-08/art_4]}
+    - key: collective
+      main: true
+      label: {ar: أرض الجموع (سلالية), fr: 'Terre collective (soulalia)'}
+      law: {ar: 'أعضاء الجماعة السلالية، ذكورا وإناثا، ينتفعون بأملاكها (المادة 6 من القانون 62.17)؛ وهي لا تكتسب بالحيازة ولا بالتقادم ولا تفوت إلا كما يقول القانون (المادة 15)؛ والطعن في التوزيع داخل ثلاثين يوما (المادة 16).', fr: 'Les membres de la collectivité, hommes et femmes, jouissent de ses biens (art. 6 de la loi 62.17) ; ils ne s’acquièrent ni par possession ni par prescription et ne se cèdent que comme la loi le prévoit (art. 15) ; recours contre la répartition dans les trente jours (art. 16).'}
+      first: collective
+      facts:
+        - {value: {ar: ذكورا وإناثا, fr: 'Hommes et femmes'}, label: {ar: 'أعضاء الجماعة كينتفعو بأملاكها', fr: 'les membres jouissent des biens de la collectivité'}, cites: [/ma/loi/62-17/art_6]}
+        - {value: {ar: '30 يوما', fr: '30 jours'}, label: {ar: 'للطعن في مقرر توزيع الانتفاع', fr: 'pour contester la répartition de la jouissance'}, cites: [/ma/loi/62-17/art_16]}
+        - {value: {ar: لا تقادم, fr: 'Pas de prescription'}, label: {ar: 'لا حيازة ولا تقادم ولا حجز', fr: 'ni possession, ni prescription, ni saisie'}, cites: [/ma/loi/62-17/art_15]}
+    - key: unknown
+      label: {ar: ما عرفتش, fr: 'Je ne sais pas'}
+      law: {ar: 'الورقة اللي عندك كتقول: رقم رسم عقاري فهي محفظة، ورقم مطلب تحفيظ فهي فطور التحفيظ، وعقد أو ملكية عدلية بلا رقم فهي ماشي محفظة.', fr: 'Votre papier le dit : un numéro de titre foncier, il est immatriculé ; un numéro de réquisition, en cours ; un acte ou une moulkiya sans numéro, non immatriculé.'}
+      first: register
+      facts:
+        - {value: {ar: رسم عقاري, fr: 'Titre foncier'}, label: {ar: 'رقم مكتوب فيه: الأرض محفظة', fr: 'un numéro de titre : immatriculé'}, cites: [/ma/code/land-registration/art_1]}
+        - {value: {ar: مطلب, fr: 'Réquisition'}, label: {ar: 'رقم مطلب التحفيظ: فطور التحفيظ', fr: 'un numéro de réquisition : en cours'}, cites: [/ma/code/land-registration/art_13]}
+        - {value: {ar: عقد أو ملكية, fr: 'Acte ou moulkiya'}, label: {ar: 'بلا رقم: ماشي محفظة', fr: 'sans numéro : non immatriculé'}, cites: [/ma/loi/39-08/art_3]}
+
+events:
+  - key: buy
+    plot: buy
+    icon: contract
+    words: [شريت أرض, شريت بقعة, شريت عقار, غادي نشري أرض, بغيت نشري أرض, بغيت نشري بقعة, شراء أرض, شراء بقعة, شراء عقار, بيع أرض, بيع بقعة, بيع العقار, عقد البيع العقاري, عقد عرفي أرض, شريت أرض بعقد عرفي, أرض بعقد عرفي, عقد عند المحامي, عقد المحامي, عقد عند الموثق, الوعد بالبيع, achat terrain, acheter un terrain, vente immobilière, acte authentique, promesse de vente, chrit ard, chrit bo9a]
+    means:
+      المحرر الرسمي: [عقد عند المحامي, عقد المحامي, عقد عند الموثق, عقد عرفي أرض, شريت أرض بعقد عرفي, أرض بعقد عرفي, acte authentique]
+      الوعد بالبيع العقاري: [الوعد بالبيع, promesse de vente]
+      نقل ملكية العقار: [شريت أرض, شريت بقعة, شريت عقار, غادي نشري أرض, بغيت نشري أرض, بغيت نشري بقعة, شراء أرض, شراء بقعة, شراء عقار, بيع أرض, بيع بقعة, بيع العقار, achat terrain, acheter un terrain, vente immobilière, chrit ard, chrit bo9a]
+    title: {ar: غادي نشري أرض, fr: 'J’achète un terrain'}
+    lead: {ar: 'بمحرر رسمي وحده منذ 16 يوليوز 2026، وشهادة الملكية قبل التوقيع', fr: 'Par acte authentique seulement depuis le 16 juillet 2026, et le certificat de propriété avant de signer'}
+    to: journeys/buy
+    for: [titled, pending, untitled, unknown]
+  - key: held
+    plot: own
+    mark: {value: '10', unit: {ar: سنوات, fr: ans}}
+    words: [حزت أرض, حزت الأرض, حزت الأرض عشر سنين, حايز أرض, الحيازة, حيازة الأرض, عشر سنين فالأرض, الملكية العدلية, ملكية عدلية, رسم الملكية, شهادة الملكية العدلية, التقادم المكسب, possession, moulkiya, prescription acquisitive, 7azt l2ard]
+    means:
+      الحيازة الاستحقاقية: [حزت أرض, حزت الأرض, حزت الأرض عشر سنين, حايز أرض, الحيازة, حيازة الأرض, عشر سنين فالأرض, التقادم المكسب, possession, prescription acquisitive, 7azt l2ard]
+      أصل التملك: [الملكية العدلية, ملكية عدلية, رسم الملكية, شهادة الملكية العدلية, moulkiya]
+    title: {ar: حزت أرض سنين, fr: 'Je possède un terrain depuis des années'}
+    lead: {ar: 'عشر سنوات بين الأجانب، وأربعين بين الأقارب، ولا تسري على المحفظ', fr: 'Dix ans entre étrangers, quarante entre parents, jamais sur un terrain immatriculé'}
+    to: journeys/held
+    for: [untitled, unknown]
+    not: {ar: 'ما كتطبقش على أرض محفظة ولا على أرض الجموع (المادة 261)', fr: 'Ne vaut ni pour un terrain immatriculé ni pour une terre collective (art. 261)'}
+  - key: register
+    plot: register
+    words: [بغيت نحفظ أرضي, نحفظ الأرض, تحفيظ الأرض, التحفيظ العقاري, مطلب التحفيظ, طلب التحفيظ, الرسم العقاري, نخرج رسم عقاري, التحديد, المحافظة العقارية, المحافظ العقاري, immatriculation foncière, réquisition d’immatriculation, titre foncier, bornage, conservation foncière, n7affed l2ard]
+    means:
+      مطلب التحفيظ: [بغيت نحفظ أرضي, نحفظ الأرض, تحفيظ الأرض, مطلب التحفيظ, طلب التحفيظ, نخرج رسم عقاري, réquisition d’immatriculation, n7affed l2ard]
+      التحديد: [التحديد, bornage]
+      الرسم العقاري: [الرسم العقاري, titre foncier]
+    title: {ar: بغيت نحفظ أرضي, fr: 'Je veux immatriculer mon terrain'}
+    lead: {ar: 'المطلب، والتحديد بالأنصاب، وشهران للتعرضات، ثم الرسم العقاري', fr: 'La réquisition, le bornage, deux mois d’oppositions, puis le titre foncier'}
+    to: journeys/register
+    for: [untitled, pending, unknown]
+    not: {ar: 'أرضك عندها رسم عقاري من قبل', fr: 'Votre terrain a déjà un titre'}
+  - key: oppose
+    plot: oppose
+    mark: {value: '2', unit: {ar: أشهر, fr: mois}}
+    words: [كيحفظ أرضي, حفظ أرضي, حفظو أرضي, جاري حفظ أرضي, كيحفظ أرض فيها حقي, التعرض, تعرض على التحفيظ, التعرض على مطلب التحفيظ, أجل التعرض, نتعرض, opposition immatriculation, opposition à la réquisition, délai d’opposition, 3ta3rd]
+    means:
+      التعرض على مطلب التحفيظ: [كيحفظ أرضي, حفظ أرضي, حفظو أرضي, جاري حفظ أرضي, كيحفظ أرض فيها حقي, التعرض, تعرض على التحفيظ, التعرض على مطلب التحفيظ, نتعرض, opposition immatriculation, opposition à la réquisition, 3ta3rd]
+      أجل التعرض: [أجل التعرض, délai d’opposition]
+    title: {ar: شي واحد كيحفظ أرض فيها حقي, fr: 'Quelqu’un immatricule un terrain où j’ai un droit'}
+    lead: {ar: 'التعرض داخل شهرين من نشر إعلان انتهاء التحديد فالجريدة', fr: 'L’opposition dans les deux mois de la publication de la clôture du bornage'}
+    to: journeys/oppose
+    for: [pending, untitled, unknown]
+  - key: fraud
+    plot: fraud
+    mark: {value: '4', unit: {ar: سنوات, fr: ans}}
+    words: [زوروا عليا الرسم العقاري, زوروا عليا الرسم, زوروا الرسم العقاري, تزوير الرسم العقاري, تزوير عقار, تقيد على رسمي, تقييد بالتدليس, الاستيلاء على عقار, الاستيلاء على العقارات, سرقة العقار, التقييد الاحتياطي, faux titre foncier, spoliation foncière, inscription frauduleuse, prénotation]
+    means:
+      التدليس أو الزور: [زوروا عليا الرسم العقاري, زوروا عليا الرسم, زوروا الرسم العقاري, تزوير الرسم العقاري, تزوير عقار, تقيد على رسمي, تقييد بالتدليس, الاستيلاء على عقار, الاستيلاء على العقارات, سرقة العقار, faux titre foncier, spoliation foncière, inscription frauduleuse]
+      التقييد الاحتياطي: [التقييد الاحتياطي, prénotation]
+    title: {ar: تقيّد شي حاجة على رسمي بالتزوير, fr: 'Une inscription frauduleuse sur mon titre'}
+    lead: {ar: 'الدعوى داخل أربع سنوات من التقييد، والتقييد الاحتياطي باش تحفظ حقك', fr: 'L’action dans les quatre ans de l’inscription, et la prénotation pour garder votre droit'}
+    to: journeys/fraud
+    for: [titled, unknown]
+    not: {ar: 'كتخص أرض محفظة، عندها رسم عقاري', fr: 'Concerne un terrain immatriculé'}
+  - key: inherit
+    plot: heirs
+    words: [ورثنا أرض, الورثة والأرض, الورثة بغاو يقسمو الأرض, الورثة بغاو يقسمو, يقسمو الأرض, قسمة الأرض, قسمة التركة العقارية, نقسمو الأرض, الأرض مشتركة, أرض مشاعة, الشياع, الملك المشاع, القسمة, الخروج من الشياع, indivision, partage terrain, sortir de l’indivision, l9isma]
+    means:
+      الملك المشاع: [ورثنا أرض, الورثة والأرض, الأرض مشتركة, أرض مشاعة, الشياع, الملك المشاع, الخروج من الشياع, indivision, sortir de l’indivision]
+      القسمة: [الورثة بغاو يقسمو الأرض, الورثة بغاو يقسمو, يقسمو الأرض, قسمة الأرض, قسمة التركة العقارية, نقسمو الأرض, القسمة, partage terrain, l9isma]
+    title: {ar: ورثنا أرض, fr: 'Nous avons hérité d’un terrain'}
+    lead: {ar: 'البقاء فالشياع، والقسمة بالتراضي أو بالمحكمة', fr: 'Rester en indivision, ou partager à l’amiable ou en justice'}
+    to: journeys/inherit
+    for: [titled, pending, untitled, unknown]
+  - key: preempt
+    plot: preempt
+    mark: {value: '30', unit: {ar: يوما, fr: jours}}
+    words: [الشفعة, حق الشفعة, أجل الشفعة, نشفع, خويا باع نصيبو, باع نصيبو, شريكي باع نصيبو, باع نصيبو لواحد براني, باع حصتو, بيع الحصة المشاعة, préemption, droit de préemption, chouf3a]
+    means:
+      الشفعة: [الشفعة, حق الشفعة, نشفع, خويا باع نصيبو, باع نصيبو, شريكي باع نصيبو, باع نصيبو لواحد براني, باع حصتو, بيع الحصة المشاعة, préemption, droit de préemption, chouf3a]
+      أجل الشفعة: [أجل الشفعة]
+    title: {ar: شريكي باع نصيبو لبراني, fr: 'Un copropriétaire a vendu sa part à un étranger'}
+    lead: {ar: 'الشفعة: 30 يوما من التبليغ، وإلا سنة', fr: 'La préemption : 30 jours après la notification, sinon un an'}
+    to: journeys/preempt
+    for: [titled, pending, untitled, unknown]
+  - key: divide
+    plot: divide
+    words: [بغيت نقسم البقعة, نقسم البقعة, تقسيم البقعة, تقسيم العقار, تقسيم العقارات, نبيع جزء من الأرض, التجزئة, تجزئة عقارية, التجزئات العقارية, الإذن بالتقسيم, morcellement, lotissement, diviser un terrain]
+    means:
+      تقسيم العقارات: [بغيت نقسم البقعة, نقسم البقعة, تقسيم البقعة, تقسيم العقار, تقسيم العقارات, نبيع جزء من الأرض, الإذن بالتقسيم, morcellement, diviser un terrain]
+      التجزئة العقارية: [التجزئة, تجزئة عقارية, التجزئات العقارية, lotissement]
+    title: {ar: بغيت نقسم البقعة, fr: 'Je veux diviser mon terrain'}
+    lead: {ar: 'التقسيم فمنطقة فيها وثيقة تعمير خاصو إذن من الجماعة', fr: 'Diviser là où un document d’urbanisme s’applique demande une autorisation'}
+    to: journeys/divide
+    for: [titled, pending, untitled, unknown]
+  - key: build
+    plot: build
+    mark: {value: '2', unit: {ar: أشهر, fr: mois}}
+    words: [بغيت نبني, رخصة البناء, رخصة البني, طلب رخصة البناء, رخصة البناء ما جاوبونيش, ما جاوبونيش على الرخصة, شحال كتبقى صالحة رخصة البناء, صالحة رخصة البناء, صلاحية الرخصة, مذكرة المعلومات التعميرية, رخصة السكن, شهادة المطابقة, permis de construire, permis d’habiter, certificat de conformité, note de renseignements urbanistiques, rokhas, ro5sat lbni]
+    means:
+      رخصة البناء: [بغيت نبني, رخصة البناء, رخصة البني, طلب رخصة البناء, permis de construire, rokhas, ro5sat lbni]
+      سكوت رئيس مجلس الجماعة: [رخصة البناء ما جاوبونيش, ما جاوبونيش على الرخصة]
+      تسقط رخصة البناء: [شحال كتبقى صالحة رخصة البناء, صالحة رخصة البناء, صلاحية الرخصة]
+      مذكرة المعلومات التعميرية: [مذكرة المعلومات التعميرية, note de renseignements urbanistiques]
+      رخصة السكن: [رخصة السكن, شهادة المطابقة, permis d’habiter, certificat de conformité]
+    title: {ar: بغيت نبني, fr: 'Je veux construire'}
+    lead: {ar: 'سكوت الجماعة شهرين كيعتبر رخصة، وكتسقط إلا ما بديتيش فعام', fr: 'Deux mois de silence valent permis ; il tombe si les travaux n’ont pas commencé dans l’année'}
+    to: journeys/build
+    for: [titled, pending, untitled, unknown]
+  - key: nopermit
+    plot: nopermit
+    mark: {value: '10.000', unit: {ar: درهم, fr: DH}}
+    words: [بنيت بلا رخصة, البني بلا رخصة, البناء بدون رخصة, بنيت بلا رخصة شحال الغرامة, غرامة البناء, مخالفة التعمير, محضر مخالفة البناء, الهدم, هدمو ليا, البناء العشوائي, construction sans permis, infraction urbanisme, démolition, amende construction]
+    means:
+      البناء من غير رخصة: [بنيت بلا رخصة, البني بلا رخصة, البناء بدون رخصة, بنيت بلا رخصة شحال الغرامة, غرامة البناء, البناء العشوائي, construction sans permis, amende construction]
+      مخالفة في مجال التعمير: [مخالفة التعمير, محضر مخالفة البناء, infraction urbanisme]
+      الهدم: [الهدم, هدمو ليا, démolition]
+    title: {ar: بنيت بلا رخصة, fr: 'J’ai construit sans permis'}
+    lead: {ar: 'غرامة من 10.000 إلى 100.000 درهم، والهدم، والحبس عند العود', fr: 'Une amende de 10 000 à 100 000 DH, la démolition, la prison en cas de récidive'}
+    to: journeys/nopermit
+    for: [titled, pending, untitled, collective, unknown]
+  - key: plan
+    plot: plan
+    mark: {value: '10', unit: {ar: سنوات, fr: ans}}
+    words: [أرضي فتصميم التهيئة, تصميم التهيئة, أرضي مخصصة لمدرسة, مخصصة لمدرسة, أرضي مخصصة لطريق, البقعة مخصصة لمرفق عمومي, مرفق عمومي فالتصميم, تخصيص الأرض, plan d’aménagement, terrain réservé, réservation équipement public]
+    means:
+      تصميم التهيئة: [أرضي فتصميم التهيئة, تصميم التهيئة, plan d’aménagement]
+      المنفعة العامة تستوجب القيام بالعمليات اللازمة لإنجاز التجهيزات: [أرضي مخصصة لمدرسة, مخصصة لمدرسة, أرضي مخصصة لطريق, البقعة مخصصة لمرفق عمومي, مرفق عمومي فالتصميم, تخصيص الأرض, terrain réservé, réservation équipement public]
+    title: {ar: أرضي فتصميم التهيئة, fr: 'Mon terrain est réservé par le plan'}
+    lead: {ar: 'التخصيص لمرفق عمومي كتسالا آثارو بعد 10 سنوات من نشر التصميم', fr: 'La réservation pour un équipement public cesse dix ans après la publication du plan'}
+    to: journeys/plan
+    for: [titled, pending, untitled, unknown]
+  - key: expropriation
+    plot: expro
+    mark: {value: '2', unit: {ar: أشهر, fr: mois}}
+    words: [الدولة غادي تاخذ أرضي, الدولة بغات تاخذ ليا الأرض, تاخذ ليا الأرض, تاخذ أرضي, خذات أرضي, الدولة بغات تاخذ, خذات ليا الأرض, الدولة خذات أرضي, نزع الملكية, نزع ملكية, نزع الملكية لأجل المنفعة العامة, المنفعة العامة, مقرر التخلي, التعويض عن نزع الملكية, الاعتداء المادي, expropriation, utilité publique, acte de cessibilité, indemnité d’expropriation, naz3 lmilkiya]
+    means:
+      نزع الملكية لأجل المنفعة العامة: [الدولة غادي تاخذ أرضي, الدولة بغات تاخذ ليا الأرض, تاخذ ليا الأرض, تاخذ أرضي, خذات أرضي, الدولة بغات تاخذ, خذات ليا الأرض, الدولة خذات أرضي, نزع الملكية, نزع ملكية, نزع الملكية لأجل المنفعة العامة, المنفعة العامة, expropriation, utilité publique, naz3 lmilkiya]
+      مقرر التخلي: [مقرر التخلي, acte de cessibilité]
+      التعويض عن نزع الملكية: [التعويض عن نزع الملكية, indemnité d’expropriation]
+    title: {ar: الدولة غادي تاخذ أرضي, fr: 'L’État va prendre mon terrain'}
+    lead: {ar: 'شهران لملاحظاتك على مشروع مقرر التخلي، والتعويض بقيمة يوم القرار', fr: 'Deux mois pour vos observations sur le projet de cessibilité, l’indemnité à la valeur du jour de la décision'}
+    to: journeys/expropriation
+    for: [titled, pending, untitled, collective, unknown]
+  - key: collective
+    plot: collective
+    mark: {value: '30', unit: {ar: يوما, fr: jours}}
+    words: [أرض الجموع, أراضي الجموع, الأرض السلالية, الأراضي السلالية, الجماعة السلالية, الجماعات السلالية, ذوي الحقوق, النساء السلاليات, حق المرأة في الأرض السلالية, نائب الجماعة السلالية, مجلس الوصاية, التحديد الإداري, terres collectives, soulaliyates, ayants droit, conseil de tutelle, delimitation administrative, ard joumou3]
+    means:
+      الجماعات السلالية: [أرض الجموع, أراضي الجموع, الأرض السلالية, الأراضي السلالية, الجماعة السلالية, الجماعات السلالية, ذوي الحقوق, terres collectives, soulaliyates, ayants droit, ard joumou3]
+      ذكورا وإناثا: [النساء السلاليات, حق المرأة في الأرض السلالية]
+      جماعة النواب: [نائب الجماعة السلالية]
+      مجلس الوصاية: [مجلس الوصاية, conseil de tutelle]
+      التحديد الإداري: [التحديد الإداري, delimitation administrative]
+    title: {ar: أرض الجموع, fr: 'Une terre collective'}
+    lead: {ar: 'الأعضاء ذكورا وإناثا، و30 يوما للطعن فالتوزيع', fr: 'Les membres, hommes et femmes ; 30 jours pour contester la répartition'}
+    to: journeys/collective
+    for: [collective, unknown]
+    not: {ar: 'كتخص أعضاء جماعة سلالية', fr: 'Concerne les membres d’une collectivité'}
+  # Other topics' doors, as links at the end.
+  - key: flat
+    icon: home
+    words: [شريت شقة فالتصميم, شقة قبل ما تتبنى]
+    title: {ar: شقة قبل ما تتبنى, fr: 'Un logement sur plan'}
+    lead: {ar: 'بيع العقار في طور الإنجاز، فموضوع السكن', fr: 'La vente en l’état futur d’achèvement, dans le thème du logement'}
+    to: housing:journeys/offplan
+  - key: syndic
+    icon: home
+    words: [سانديك العمارة, الملكية المشتركة]
+    title: {ar: عمارة فيها ملاك, fr: 'Un immeuble en copropriété'}
+    lead: {ar: 'الملكية المشتركة، فموضوع السكن', fr: 'La copropriété, dans le thème du logement'}
+    to: housing:journeys/syndic
+  - key: property-tax
+    icon: money
+    words: [ضريبة الأراضي غير المبنية]
+    title: {ar: الضرائب على الدار والأرض, fr: 'Les taxes du logement et du terrain'}
+    lead: {ar: 'رسم السكن والخدمات والأراضي غير المبنية، فموضوع السكن', fr: 'Taxes d’habitation, de services et sur les terrains non bâtis, dans le thème du logement'}
+    to: housing:pages/taxes
+
+# What people believe, and what the law says (M15): short cards under the doors, each leading to the page.
+beliefs:
+  - claim: {ar: 'حزت الأرض عشر سنين، ولات ديالي', fr: 'Dix ans sur la terre, elle est à moi'}
+    truth: {ar: 'إلا كانت ماشي محفظة، وماشي ديال الدولة ولا حبس ولا جموع (المادتان 250 و261).', fr: 'Si elle n’est pas immatriculée, ni à l’État, ni habous, ni collective (art. 250 et 261).'}
+    to: pages/beliefs
+  - claim: {ar: 'عقد المحامي كافي', fr: 'L’acte de l’avocat suffit'}
+    truth: {ar: 'ما بقاش منذ 16 يوليوز 2026: بيع العقار بمحرر رسمي، وإلا باطل (المادة 4).', fr: 'Plus depuis le 16 juillet 2026 : la vente d’un immeuble par acte authentique, à peine de nullité (art. 4).'}
+    to: pages/beliefs
+  - claim: {ar: 'الرسم العقاري يتطعن فيه بحال أي عقد', fr: 'Un titre foncier se conteste comme un contrat'}
+    truth: {ar: 'نهائي؛ المتضرر من التدليس عندو دعوى التعويض على المدلس (الفصلان 62 و64).', fr: 'Il est définitif ; la victime d’un dol a une action en dommages contre son auteur (art. 62 et 64).'}
+    to: pages/beliefs
+  - claim: {ar: 'إلا ما جاوبونيش على الرخصة نبقى نتسنى', fr: 'Sans réponse au permis, j’attends'}
+    truth: {ar: 'سكوت رئيس الجماعة شهرين من الإيداع كيعتبر رخصة (المادة 48).', fr: 'Deux mois de silence du président de la commune après le dépôt valent permis (art. 48).'}
+    to: pages/beliefs
+  - claim: {ar: 'الدولة تقدر تاخذ الأرض بلا تعويض', fr: 'L’État peut prendre la terre sans indemnité'}
+    truth: {ar: 'نزع الملكية غير بإعلان المنفعة العامة وبالمسطرة والتعويض (الفصلان 1 و20).', fr: 'L’expropriation exige la déclaration d’utilité publique, la procédure et l’indemnité (art. 1 et 20).'}
+    to: pages/beliefs
+  - claim: {ar: 'أرض الجموع غير للرجال', fr: 'La terre collective, c’est pour les hommes'}
+    truth: {ar: 'الأعضاء ذكورا وإناثا كينتفعو بأملاك الجماعة (المادة 6).', fr: 'Les membres, hommes et femmes, jouissent des biens de la collectivité (art. 6).'}
+    to: pages/beliefs
+
+learn: [pages/beliefs, journeys/buy, journeys/register, journeys/build, journeys/expropriation]
+
+# The order a reviewer opens the topic in (M19): the band and its clock first, then the doors' journeys people meet
+# most, then the finder's sample and the instruments, then the pages.
+waves:
+  1: [tools/clock, journeys/oppose, journeys/preempt, journeys/expropriation, journeys/collective]
+  2: [journeys/buy, journeys/register, journeys/fraud, journeys/held, journeys/inherit, journeys/divide, journeys/build, journeys/nopermit, journeys/plan]
+  3: [tools/find, tools/permit, tools/before, checklists/before-buying, checklists/papers]
+  4: [pages/beliefs, pages/offices, reform/sale-2026, reform/subdivisions-2026]
+
+tools:
+  # The land's clock (M11, C3 «wait»): a paper and its day → the days left, the article. Waits for a person's check.
+  - key: clock
+    icon: clock
+    words: [شحال بقا ليا, شحال بقا ليا نتعرض, حساب أجل التعرض, حساب أجل الشفعة, combien de jours pour l’opposition]
+    tool: true
+    title: {ar: شحال بقا ليا؟, fr: 'Combien de jours me restent ?'}
+    lead: {ar: 'الورقة اللي توصلت بها ونهارها: آخر نهار وشحال باقي', fr: 'Le papier reçu et son jour : le dernier jour et ce qui reste'}
+  # The permit's road (M12): the filing day → each stop dated.
+  - key: permit
+    icon: home
+    words: [طريق الرخصة, آجال رخصة البناء, إمتى تخرج الرخصة, délais permis de construire]
+    means: رخصة البناء
+    tool: true
+    title: {ar: طريق الرخصة, fr: 'Le chemin du permis'}
+    lead: {ar: 'من الإيداع حتى رخصة السكن، كل محطة بتاريخها', fr: 'Du dépôt au permis d’habiter, chaque étape à sa date'}
+  # Before you buy (M13), drawn as the ownership certificate; a check with a verdict.
+  - key: before
+    icon: list
+    words: [قبل ما نشري أرض, شنو نتأكد قبل ما نشري, شهادة الملكية, avant d’acheter un terrain, certificat de propriété]
+    tool: true
+    title: {ar: قبل ما تشري, fr: 'Avant d’acheter'}
+    lead: {ar: 'شهادة الملكية سطر بسطر، وشنو ناقص', fr: 'Le certificat de propriété ligne par ligne, et ce qui manque'}
+  # «أرضي فالجريدة الرسمية» (M8–M10): a commune, a property's name or a title number → the BO's land texts that name it.
+  - key: find
+    icon: where
+    words: [أرضي فالجريدة الرسمية, نزع ملكية جماعة, مرسوم نزع الملكية, مراسيم نزع الملكية, لائحة نزع الملكية, رقم الرسم العقاري فالجريدة, mon terrain au Bulletin officiel]
+    tool: true
+    title: {ar: أرضي فالجريدة الرسمية, fr: 'Mon terrain au Bulletin officiel'}
+    lead: {ar: 'جماعتك أو رسمك العقاري: كل مرسوم ديال الأرض اللي سمّاه', fr: 'Votre commune ou votre titre : chaque texte foncier qui le nomme'}

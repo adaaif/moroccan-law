@@ -1,0 +1,13 @@
+# /ma/decret/2-10-313 as the SGG prints it (consolidated), read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-10-313
+document: sources/sgg_consolidated/2_10_313.pdf
+read_on: '2026-10-20'
+fixes:
+  # art 6, p. 3: the page sets each of the two lists' six items behind a bullet «•»; the site dropped them all
+  - {arts: [6], wrong: 'أصل محضر المخالفة إذا اختار', right: '• أصل محضر المخالفة إذا اختار'}
+  - {arts: [6], wrong: 'نسخة من الوصل المشار', right: '• نسخة من الوصل المشار'}
+  - {arts: [6], wrong: 'الوثيقة المحتفظ بها.', right: '• الوثيقة المحتفظ بها.'}
+  - {arts: [6], wrong: 'بالنسبة للدرك الملكي:', right: '• بالنسبة للدرك الملكي:'}
+  - {arts: [6], wrong: 'بالنسبة للأمن الوطني:', right: '• بالنسبة للأمن الوطني:'}
+  - {arts: [6], wrong: 'بالنسبة لوزارة التجهيز والنقل:', right: '• بالنسبة لوزارة التجهيز والنقل:'}
+checked: [6]

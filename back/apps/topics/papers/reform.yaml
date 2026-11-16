@@ -1,0 +1,42 @@
+# What changed in papers (the papers review): one item per change, its stage said first, its dated official record.
+# Stages: in_force, coming, bill, announced. Checked against the BO on 27 Oct 2026; each item is followed on its own.
+
+- key: passport-2026
+  title: {ar: 'الباسبور الجديد (المرسوم 2.26.551)', fr: 'Le nouveau passeport (décret 2.26.551)'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-27'
+  line: {ar: 'نافذ منذ 16 يوليوز 2026: باسبور بالأمازيغية والإنجليزية، فيه رقم البطاقة الوطنية؛ والقديم صالح حتى تسالي مدتو.', fr: 'En vigueur depuis le 16 juillet 2026 : un passeport en amazighe et en anglais, portant le numéro de carte nationale ; l’ancien vaut jusqu’à son expiration.'}
+  timeline:
+    - date: '2026-07-16'
+      text: {ar: 'نشر المرسوم 2.26.551 في الجريدة الرسمية: يعوض المواد 2 إلى 5 من المرسوم 2.08.310 (الغلاف وصفحة البيانات بالعربية والأمازيغية والفرنسية والإنجليزية، رقم البطاقة الوطنية، صفحة التوقيع، البصمتان في المكون الإلكتروني)، وينسخ المادتين 7 و8 (الجواز المؤقت)، ويبقي الجوازات السابقة صالحة حتى انتهاء مدتها.', fr: 'Publication du décret 2.26.551 au BO : il remplace les articles 2 à 5 du décret 2.08.310 (couverture et page de données en arabe, amazighe, français et anglais, numéro de carte nationale, page de signature, deux empreintes dans la puce), abroge les articles 7 et 8 (le passeport provisoire), et garde les passeports antérieurs valables jusqu’à leur expiration.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7526', fr: 'BO n° 7526'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7526_Ar.pdf'}
+      cites: [/ma/decret/2-26-551/art_1, /ma/decret/2-26-551/art_2, /ma/decret/2-26-551/art_3]
+
+- key: naturalisation-2023
+  title: {ar: 'التجنيس: العربية والأمازيغية أو إحداهما (القانون 08.23)', fr: 'La naturalisation : l’arabe et l’amazighe ou l’une d’elles (loi 08.23)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'نافذ منذ 27 فبراير 2023: شرط اللغة فالتجنيس ولا معرفة كافية بالعربية والأمازيغية أو إحداهما.', fr: 'En vigueur depuis le 27 février 2023 : la condition de langue de la naturalisation devient une connaissance suffisante de l’arabe et de l’amazighe ou de l’une d’elles.'}
+  timeline:
+    - date: '2023-02-27'
+      text: {ar: 'نشر القانون 08.23 في الجريدة الرسمية: يتمم المادة 11 من قانون الجنسية، فيصير من شروط التجنيس «معرفة كافية باللغة العربية والأمازيغية أو إحداهما».', fr: 'Publication de la loi 08.23 au BO : elle complète l’article 11 du code de la nationalité ; la naturalisation demande désormais «une connaissance suffisante de l’arabe et de l’amazighe ou de l’une d’elles».'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7173', fr: 'BO n° 7173'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2023/BO_7173_Ar.pdf'}
+      cites: [/ma/loi/8-23/art_1, /ma/dahir/1-58-250/art_11]
+
+- key: high-commission-2026
+  title: {ar: 'اللجنة العليا للحالة المدنية (القانون 16.25)', fr: 'La Haute commission de l’état civil (loi 16.25)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'نافذ منذ 29 يناير 2026: مؤرخ المملكة «أو من ينوب عنه» يرأس اللجنة اللي كتبث فالأسماء العائلية.', fr: 'En vigueur depuis le 29 janvier 2026 : l’historiographe du Royaume «ou son suppléant» préside la commission qui statue sur les noms de famille.'}
+  timeline:
+    - date: '2026-01-29'
+      text: {ar: 'نشر القانون 16.25 في الجريدة الرسمية: يغير الفقرة الرابعة من المادة 35 من القانون 36.21، فيرأس اللجنة العليا مؤرخ المملكة أو من ينوب عنه.', fr: 'Publication de la loi 16.25 au BO : elle modifie le quatrième alinéa de l’article 35 de la loi 36.21 ; la Haute commission est présidée par l’historiographe du Royaume ou son suppléant.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7478', fr: 'BO n° 7478'}, url: 'https://www.sgg.gov.ma/BO/AR/3111/2026/BO_7478_Ar.pdf'}
+      cites: [/ma/loi/16-25/art_1, /ma/loi/36-21/art_35]

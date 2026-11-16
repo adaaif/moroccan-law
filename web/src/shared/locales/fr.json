@@ -1,0 +1,437 @@
+{
+  "app": {
+    "name": "3adala",
+    "tagline": "Le droit marocain, en mots clairs",
+    "failed": "Cette page n’a pas pu être chargée : vérifiez votre connexion.",
+    "reload": "Recharger"
+  },
+  "nav": {
+    "account": "Mon compte",
+    "signIn": "Connexion",
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "اعرض الموقع بالعربية",
+    "search": "Demander",
+    "budget": "Loi de finances",
+    "check": "Vérifier des références",
+    "words": "Les mots du droit",
+    "saved": "Mes articles",
+    "new": "Nouveautés",
+    "main": "Navigation",
+    "skip": "Aller au contenu",
+    "questions": "Questions sans réponse",
+    "rules": "Règles de la discussion",
+    "privacy": "Confidentialité",
+    "home": "Accueil",
+    "topics": "Thèmes",
+    "talk": "Discussion",
+    "me": "Moi",
+    "library": "Bibliothèque",
+    "corrections": "Nos corrections",
+    "contribute": "Contribuer",
+    "about": "À propos de 3adala",
+    "blog": "3adala en chiffres",
+    "numbers": "En chiffres"
+  },
+  "languages": {
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "corpus": {
+    "heroTitle": "Le droit marocain, en mots clairs",
+    "heroLead": "Une question en darija, en arabe ou en français ; la réponse, dans le texte de loi tel qu’il a paru au Bulletin officiel.",
+    "searchPlaceholder": "Votre question",
+    "search": "Rechercher",
+    "searchHint": "La recherche porte sur tous les numéros traités à ce jour ({{count}}).",
+    "processedIssue": "Derniers numéros traités",
+    "issueTitle": "Bulletin officiel n° {{number}}",
+    "issueTitleShort": "N° {{number}}",
+    "editionGeneral": "Édition générale",
+    "openIssue": "Ouvrir le numéro",
+    "openPdf": "Ouvrir le numéro tel que publié (PDF)",
+    "general": "Textes généraux",
+    "special": "Textes particuliers",
+    "official": "Partie officielle",
+    "unofficial": "Partie non officielle",
+    "other": "Autres textes",
+    "page": "page {{page}}",
+    "pageLong": "Page {{page}}",
+    "onPage": "Page {{page}}",
+    "pageStrip": "Les pages du numéro",
+    "pageStripHint": "Chaque case est une page ; en couleur, celles où un texte commence.",
+    "asPublished": "Tel que publié",
+    "currentVersion": "Le texte aujourd'hui",
+    "versionsTitle": "Le texte dans le temps",
+    "today": "Aujourd'hui",
+    "whereFrom": "Source au Bulletin officiel",
+    "promulgatedByLabel": "Promulgué par",
+    "dahirNumber": "le dahir n° {{number}}",
+    "signedOn": "Daté du",
+    "authority": "Pris par",
+    "source": "D'où vient ce texte",
+    "openPage": "Ouvrir la page",
+    "preamble": "Les textes sur lesquels il se fonde",
+    "showPreamble": "Afficher",
+    "hidePreamble": "Masquer",
+    "articles": "Articles",
+    "amends": "Ce que ce texte modifie",
+    "amendedBy": "Ce qui a modifié ce texte",
+    "cites": "Textes cités",
+    "notInCorpus": "3adala n'a pas encore ce texte. Ce que vous voyez ici vient des textes qui l'ont modifié ou cité.",
+    "frenchMissing": "La version française n'est pas encore disponible.",
+    "copyLink": "Copier le lien de l'article",
+    "copied": "Lien copié",
+    "previous": "Précédente",
+    "next": "Suivante",
+    "noResults": "Aucun article ne contient tous ces mots. Retirez un mot ou essayez une autre forme.",
+    "loading": "Chargement…",
+    "notFound": "Cette page n'existe pas dans 3adala.",
+    "empty": "Aucun numéro traité pour l'instant.",
+    "disclaimer": "Information générale sur la loi, pas un avis sur votre situation. Seul le texte publié au Bulletin officiel fait foi.",
+    "actions": {
+      "modify": "Modifie",
+      "add": "Ajoute",
+      "repeal": "Abroge",
+      "renumber": "Renumérote",
+      "replace_words": "Remplace des termes"
+    },
+    "types": {
+      "law": "Loi",
+      "organic_law": "Loi organique",
+      "dahir": "Dahir",
+      "decree_law": "Décret-loi",
+      "decree": "Décret",
+      "order": "Arrêté",
+      "decision": "Décision",
+      "circular": "Circulaire",
+      "convention": "Convention",
+      "constitution": "Constitution",
+      "other": "Texte",
+      "bill": "Projet de loi"
+    },
+    "listSep": ", ",
+    "articlesCount_one": "{{count}} article",
+    "articlesCount_other": "{{count}} articles",
+    "amendsCount_one": "modifie {{count}} texte",
+    "amendsCount_other": "modifie {{count}} textes",
+    "textsCount_one": "{{count}} texte",
+    "textsCount_other": "{{count}} textes",
+    "pages_one": "{{count}} page",
+    "pages_other": "{{count}} pages",
+    "results_one": "{{count}} article",
+    "results_other": "{{count}} articles",
+    "publishedIn": "Publié au",
+    "suffix": {
+      "bis": "bis",
+      "ter": "ter"
+    },
+    "otherIssues": "Autres numéros",
+    "standing": {
+      "in_force": "En vigueur",
+      "none_found": "Aucune abrogation trouvée",
+      "amended": "Modifié depuis",
+      "repealed": "Abrogé",
+      "partly_repealed": "Abrogé en partie",
+      "not_yet_in_force": "Pas encore en vigueur"
+    },
+    "moreFacts": "Détails",
+    "lessFacts": "Masquer les détails",
+    "titleWhole": "Titre complet",
+    "titleShort": "Titre abrégé",
+    "about": "À propos de ce texte",
+    "parts": "Les parties du texte",
+    "pageAsPrinted": "Page {{page}} telle qu’imprimée",
+    "readTo": "3adala a lu le Bulletin officiel jusqu’au n° {{number}} ({{date}})",
+    "seePrinted": "La page imprimée",
+    "notRead_one": ", et {{count}} numéro paru après n'a pas encore été lu",
+    "notRead_other": ", et {{count}} numéros parus après n'ont pas encore été lus",
+    "readToShort": "Bulletin officiel lu jusqu’au n° {{number}}",
+    "fromStart": "Depuis le début",
+    "ai": "l’intelligence artificielle",
+    "translatedShort": "Traduction non officielle du français",
+    "translatedRefFrenchOnly": "L’édition arabe du Bulletin officiel ne l’a pas publié. Son texte français, à côté de chaque article, fait foi.",
+    "translatedRef": "L’édition arabe du n° {{issue}} n’est pas en ligne sur le site du SGG. L’arabe imprimé fait foi ; la traduction officielle française est à côté de chaque article."
+  },
+  "search": {
+    "suggestions": "Suggestions",
+    "typedLatin": "En lettres arabes :",
+    "issue": "BO n° {{key}}",
+    "openIssue": "Ouvrir le numéro",
+    "openArticle": "Ouvrir l'article",
+    "openText": "Ouvrir le texte",
+    "articleMissing": "Le texte est dans le corpus, l'article {{article}} n'y est pas",
+    "notInCorpus": "Pas encore dans le corpus",
+    "notLoaded": "Titre seulement",
+    "repealedShort": "abrogé",
+    "texts_one": "{{count}} texte",
+    "texts_other": "{{count}} textes",
+    "readOnAdala": "Le lire sur Adala",
+    "adalaWho": "le portail du ministère de la Justice",
+    "groups": {
+      "topics": "Thèmes et guides",
+      "texts": "Lois",
+      "words": "Mots",
+      "recent": "Vos dernières recherches",
+      "try": "Essayez"
+    },
+    "topic": "Thème",
+    "guide": "Guide",
+    "word": "Que veut dire ce mot ?",
+    "searchAll": "Chercher dans tous les textes",
+    "clear": "Effacer",
+    "forget": "Les oublier"
+  },
+  "reading": {
+    "openArticle": "Ouvrir l’article",
+    "definitionOf": "Définition de « {{term}} »",
+    "definedHere": "Ce texte le définit :",
+    "seeDefinition": "L'article qui le définit",
+    "preview": "Aperçu",
+    "unloaded": "Ce texte n'est pas encore dans le corpus : pas de lien pour l'instant.",
+    "copyTable": "Copier le tableau",
+    "tableCopied": "Tableau copié, prêt à coller dans un tableur",
+    "totalOk": "Le total correspond aux lignes au-dessus",
+    "totalOff": "Le total ne correspond pas aux lignes au-dessus : la lecture contient peut-être une erreur",
+    "where": "Où vous en êtes",
+    "outline": "Sommaire",
+    "close": "Fermer",
+    "jumpTo": "Aller à l'article",
+    "jumpPlaceholder": "N°",
+    "jumpNotFound": "Aucun article sous ce numéro",
+    "settings": "Réglages de lecture",
+    "textSize": "Taille du texte",
+    "theme": "Affichage",
+    "theme_auto": "Comme l'appareil",
+    "theme_light": "Jour",
+    "theme_dark": "Nuit",
+    "select": "Choisir des articles",
+    "selectDone": "Terminer le choix",
+    "selectArticle": "Choisir {{label}}",
+    "selected_one": "{{count}} article choisi",
+    "selected_other": "{{count}} articles choisis",
+    "exportTitle": "Exporter les articles choisis",
+    "exportWord": "Fichier Word",
+    "exportPdf": "Imprimer ou PDF",
+    "exportFailed": "Le fichier n'a pas pu être créé. Réessayez.",
+    "clearSelection": "Annuler",
+    "copyWithRef": "Copier l'article et sa référence",
+    "copiedWithRef": "Article et référence copiés",
+    "go": "Aller",
+    "wholeText_one": "Lire le texte entier ({{count}} article)",
+    "wholeText_other": "Lire le texte entier ({{count}} articles)",
+    "earlier": "Articles précédents ({{count}})",
+    "more": "Articles suivants ({{count}})",
+    "find": "Chercher dans ce texte",
+    "findShort": "Chercher",
+    "moreTools": "Autres outils",
+    "sizeShort": "Aa",
+    "goOn": "Reprendre à {{label}}"
+  },
+  "data": {
+    "title": "Données et API",
+    "embedAction": "Intégrer",
+    "embedHelp": "Collez ce code dans votre page pour y afficher cet article avec sa référence :",
+    "copyCode": "Copier le code",
+    "readOnSite": "Lire le texte entier"
+  },
+  "history": {
+    "kinds": {
+      "as_published": "Tel que publié au Bulletin officiel",
+      "sgg": "Texte mis à jour par le Secrétariat général du gouvernement",
+      "adala": "Texte mis à jour par le ministère de la Justice",
+      "dgi": "Texte mis à jour par la Direction générale des impôts",
+      "machine": "Texte mis à jour par 3adala",
+      "checked": "Texte mis à jour, relu par une personne",
+      "bill": "Projet de loi tel que déposé au Parlement",
+      "translation": "Traduction non officielle du texte officiel français"
+    },
+    "consolidatedNote": "Le texte est réuni ici avec les modifications venues après lui, pour le lire tel qu'il est aujourd'hui. C'est une version de lecture, non officielle : seul fait foi ce qui a paru au Bulletin officiel, et chaque modification de l'historique d'un article indique le numéro où elle a paru.",
+    "sggAsOf": "Mise à jour par le Secrétariat général du gouvernement le {{date}}.",
+    "machineNote": "3adala a appliqué par machine à la version précédente les modifications publiées le {{date}}.",
+    "sggName": "Secrétariat général du gouvernement — textes consolidés",
+    "sggFile": "Fichier du SGG (PDF)",
+    "sggSite": "Sur le site du SGG",
+    "adalaAsOf": "Mise à jour par le ministère de la Justice le {{date}}.",
+    "adalaName": "Ministère de la Justice — portail Adala",
+    "adalaFile": "Fichier d’Adala (PDF)",
+    "adalaSite": "Sur le portail Adala",
+    "dgiAsOf": "Édition de la Direction générale des impôts, à jour au {{date}}.",
+    "dgiName": "Direction générale des impôts — Code général des impôts",
+    "dgiFile": "Fichier de la DGI (PDF)",
+    "dgiSite": "Sur le site de la DGI",
+    "firstPublished": "Publié pour la première fois au Bulletin officiel n° {{number}}, page {{page}}",
+    "verdicts": {
+      "agrees": "notre lecture concorde avec le texte du SGG",
+      "partly": "elle concorde en partie",
+      "disagrees": "elle ne concorde pas — à revoir",
+      "absent": "l'article n'est pas dans le texte du SGG"
+    },
+    "who": {
+      "sgg": "Mis à jour par le Secrétariat général du gouvernement",
+      "adala": "Mis à jour par le ministère de la Justice (portail Adala)",
+      "dgi": "Mis à jour par la Direction générale des impôts",
+      "machine": "Mis à jour par 3adala à partir des modifications publiées",
+      "checked": "Mis à jour par 3adala et relu par une personne",
+      "translation": "Traduit par 3adala depuis le texte officiel français"
+    },
+    "whatIsThis": "Qu'est-ce que c'est ?",
+    "whoIssued": "Copie du ministère de la Justice (portail Adala)",
+    "issuedNote": "Le texte tel qu'il fut promulgué, d'après le portail Adala, sans les modifications venues après lui. C'est une version de lecture, non officielle : seul fait foi ce qui a paru au Bulletin officiel."
+  },
+  "french": {
+    "show": "Traduction officielle",
+    "note": "Traduction officielle publiée au Bulletin officiel. Seul le texte arabe fait foi.",
+    "label": "Traduction officielle",
+    "issue": "Bulletin officiel n° {{number}} (édition de traduction officielle), {{date}}",
+    "available": "La traduction officielle en français figure sous chaque article ; seul le texte arabe fait foi.",
+    "labelConsolidated": "Texte français",
+    "consolidated": "Consolidé par Adala au {{date}}, non officiel",
+    "older": "Antérieur à une modification de l’article : l’arabe est à jour.",
+    "showConsolidated": "Texte français"
+  },
+  "article": {
+    "whole": "Texte",
+    "more": "Autres actions",
+    "listen": "Écouter",
+    "stop": "Arrêter",
+    "source": "Source : {{source}}",
+    "sourceSgg": "Texte mis à jour par le Secrétariat général du gouvernement (non officiel)",
+    "sourceAdala": "Texte mis à jour par le ministère de la Justice, portail Adala (non officiel)",
+    "sourceDgi": "Texte mis à jour par la Direction générale des impôts (non officiel)",
+    "pageShort": "page {{page}}",
+    "seePage": "La page imprimée",
+    "arabicText": "Texte arabe, seul à faire foi",
+    "standing": {
+      "in_force": "en vigueur",
+      "none_found": "aucune abrogation trouvée",
+      "amended": "modifié",
+      "repealed": "abrogé",
+      "partly_repealed": "abrogé en partie",
+      "not_yet_in_force": "pas encore en vigueur"
+    },
+    "save": "Garder",
+    "saved": "Gardé",
+    "tools": "Outils : {{label}}",
+    "close": "Fermer",
+    "share": "Partager",
+    "ask": "Discussion",
+    "pageOfficial": "Bulletin officiel, page {{page}}",
+    "pageConsolidated": "Texte mis à jour, page {{page}}",
+    "shareTitle": "Partager {{label}}",
+    "shareWhatsapp": "WhatsApp",
+    "shareWhatsappLead": "Le texte, sa source et son lien",
+    "sharePicture": "Image",
+    "sharePictureLead": "Publication ou story, avec sa source",
+    "shareLink": "Copier le lien",
+    "shareLinkLead": "Le lien de cet article",
+    "shareText": "Copier le texte",
+    "shareTextLead": "Avec la référence complète",
+    "shareOther": "Autre application",
+    "done": "Copié",
+    "knownAs": "Connu dans le débat public sous le nom de {{names}}",
+    "extras": {
+      "french": "En français",
+      "diff": "Ce qui a changé",
+      "history": "Son historique",
+      "applied": "Textes qui l’appliquent ({{count}})",
+      "cited": "Textes qui y renvoient ({{count}})"
+    }
+  },
+  "words": {
+    "title": "Les mots du droit",
+    "lead": "Les mots des pages de textes, chacun en une phrase.",
+    "whatIs": "Que veut dire « {{word}} » ?",
+    "all": "Tous les mots",
+    "items": {
+      "bo": {
+        "term": "Bulletin officiel"
+      },
+      "constitution": {
+        "term": "Constitution"
+      },
+      "organic_law": {
+        "term": "Loi organique"
+      },
+      "law": {
+        "term": "Loi"
+      },
+      "code": {
+        "term": "Code"
+      },
+      "dahir": {
+        "term": "Dahir"
+      },
+      "promulgation": {
+        "term": "Dahir de promulgation"
+      },
+      "decree_law": {
+        "term": "Décret-loi"
+      },
+      "decree": {
+        "term": "Décret"
+      },
+      "order": {
+        "term": "Arrêté"
+      },
+      "decision": {
+        "term": "Décision"
+      },
+      "circular": {
+        "term": "Circulaire"
+      },
+      "convention": {
+        "term": "Convention"
+      },
+      "in_force": {
+        "term": "En vigueur"
+      },
+      "none_found": {
+        "term": "Aucune abrogation trouvée"
+      },
+      "amended": {
+        "term": "Modifié"
+      },
+      "repealed": {
+        "term": "Abrogé"
+      },
+      "not_yet_in_force": {
+        "term": "Pas encore en vigueur"
+      },
+      "as_published": {
+        "term": "Tel que publié"
+      },
+      "consolidated": {
+        "term": "Texte mis à jour"
+      }
+    }
+  },
+  "issues": {
+    "title": "Numéros du Bulletin officiel"
+  },
+  "home": {
+    "allCodes": "Tous les codes",
+    "try": "Par exemple :",
+    "topics": "Les lois de votre quotidien",
+    "allTopics": "Tous les thèmes",
+    "libraryLead": "Textes essentiels, numéros du Bulletin officiel, loi de finances, outils"
+  },
+  "situations": {
+    "home": "Selon votre situation",
+    "all": "Toutes les situations",
+    "homeLead": "Les articles à lire d’abord, pour chaque situation"
+  },
+  "stamp": {
+    "issue": "Bulletin officiel {{number}}",
+    "page": "page {{page}}",
+    "consolidated": "Texte mis à jour",
+    "unofficial": "non officiel",
+    "asIssued": "Texte tel que promulgué",
+    "consolidatedTo": "Texte mis à jour au {{date}}"
+  },
+  "footer": {
+    "law": "Le droit",
+    "talk": "La discussion",
+    "site": "3adala",
+    "ai": "L’intelligence artificielle a lu les textes sur les images du Bulletin officiel et aidé à rédiger les thèmes et les outils ; aucun spécialiste ne les a encore relus.",
+    "who": "Qui a écrit quoi"
+  }
+}

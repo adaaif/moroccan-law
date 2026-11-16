@@ -1,0 +1,9 @@
+# Decree 2.05.733 applying law 65.00 (AMO: refunds, deadlines, medical control) as Adala's PDF prints it. Each cited
+# article was read against the page's image on 27 Oct 2026 (the health review, S4): arts. 10, 11, 12, 13, 36, 38.
+# Our text reads as the page prints them: nothing to put right. The page's own slips are kept, as printed: art. 10
+# «المادة 38 أبناء» (for «أدناه»), art. 12 «الأول عمل» (for «لأول»), art. 13 «سنة (6) أشهر» (for «ستة»).
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_deadlines_2_05_733.yaml` (records nothing).
+text: /ma/decret/2-05-733
+document: sources/adala/amo_deadlines_2_05_733.pdf
+read_on: '2026-10-27'
+fixes: []

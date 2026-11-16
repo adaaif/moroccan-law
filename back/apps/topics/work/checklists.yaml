@@ -1,0 +1,95 @@
+# The papers and checks (T7 of the work plan): each list is what an article names, item by item, or what the law lets
+# a worker use as proof. Ticks stay on the reader's phone.
+
+- key: proof
+  for: [company, farm, guard, home]
+  title: {ar: خبّي هادشي من النهار الأول, fr: Ce qu’il faut garder dès le premier jour}
+  lead:
+    ar: 'يثبت عقد الشغل بجميع وسائل الإثبات. ما تحتفظ به اليوم هو ما يثبت حقك غدا أمام مفتش الشغل والمحكمة.'
+    fr: 'Le contrat de travail se prouve par tous moyens. Ce que vous gardez aujourd’hui prouve vos droits demain devant l’inspecteur et le tribunal.'
+  cites: [/ma/loi/65-99/art_18, /ma/loi/19-12/art_9]
+  items:
+    - label: {ar: عقد الشغل، إن كان مكتوبا, fr: 'Le contrat de travail, s’il est écrit'}
+      note: {ar: 'العقد المكتوب معفى من رسوم التسجيل', fr: Le contrat écrit est exonéré des droits d’enregistrement}
+      cites: [/ma/loi/65-99/art_18]
+    - label: {ar: كل ورقة أداء, fr: Chaque bulletin de paie}
+      note: {ar: 'يسلمها المشغل عند كل أداء', fr: L’employeur la remet à chaque paiement}
+      cites: [/ma/loi/65-99/art_370]
+    - label: {ar: أيامك وأجورك المصرح بها في الضمان الاجتماعي, fr: Vos jours et salaires déclarés à la CNSS}
+      note: {ar: 'من حسابك على بوابة الصندوق أو تطبيقه، كل ثلاثة أشهر', fr: 'Depuis votre espace sur le portail ou l’application de la CNSS, chaque trimestre'}
+      cites: [/ma/dahir/1-72-184/art_19]
+    - label: {ar: الرسائل حول الأجر والساعات والعطل, fr: 'Les messages sur le salaire, les horaires, les congés'}
+    - label: {ar: أسماء من يشهدون على عملك, fr: Le nom des témoins de votre travail}
+    - label: {ar: مقرر الفصل ووصل تسلمه, fr: La décision de licenciement et le reçu de sa remise}
+      when: {ar: عند الفصل, fr: en cas de licenciement}
+      cites: [/ma/loi/65-99/art_63]
+    - label: {ar: محضر الاستماع, fr: Le procès-verbal d’audition}
+      when: {ar: عند الفصل لخطأ, fr: en cas de licenciement pour faute}
+      cites: [/ma/loi/65-99/art_62]
+    - label: {ar: شهادة الشغل, fr: Le certificat de travail}
+      when: {ar: عند نهاية العقد، داخل ثمانية أيام, fr: 'à la fin du contrat, dans les huit jours'}
+      cites: [/ma/loi/65-99/art_72]
+
+- key: final-receipt
+  for: [company, farm, guard]
+  title: {ar: قبل ما توقع توصيل تصفية كل حساب, fr: Avant de signer le reçu pour solde de tout compte}
+  lead:
+    ar: 'يكون التوصيل باطلا إذا نقصه واحد من هذه البيانات. علّم ما تجده في الورقة التي بين يديك.'
+    fr: 'Le reçu est nul s’il lui manque une de ces mentions. Cochez ce que vous trouvez sur le papier que vous avez en main.'
+  cites: [/ma/loi/65-99/art_74]
+  items:
+    - label: {ar: المبلغ الكلي، وكل مبلغ مفصلا, fr: 'La somme totale, et le détail de chaque paiement'}
+      cites: [/ma/loi/65-99/art_74]
+    - label: {ar: أجل الستين يوما مكتوبا بحروف واضحة, fr: Le délai de 60 jours écrit lisiblement}
+      cites: [/ma/loi/65-99/art_74]
+    - label: {ar: أنه حرر في نظيرين، وتسلمت أحدهما, fr: 'Qu’il est établi en deux exemplaires, dont un vous est remis'}
+      cites: [/ma/loi/65-99/art_74]
+    - label: {ar: عبارة «قرأت ووافقت» قبل توقيعك, fr: La mention « lu et approuvé » avant votre signature}
+      cites: [/ma/loi/65-99/art_74]
+    - label: {ar: توقيع مفتش الشغل بالعطف, fr: La contresignature de l’inspecteur du travail}
+      when: {ar: إذا كنت لا تحسن القراءة, fr: si vous ne savez pas lire}
+      cites: [/ma/loi/65-99/art_74]
+    - label: {ar: تاريخ التوقيع، فمنه تحسب الستون يوما للتراجع, fr: 'La date de signature : les 60 jours pour le dénoncer courent d’elle'}
+      cites: [/ma/loi/65-99/art_75]
+
+- key: employer-hire
+  for: [company, farm, guard]
+  title: {ar: غادي نشغّل شي واحد, fr: J’embauche quelqu’un}
+  lead:
+    ar: 'ما يفرضه القانون على المشغل من أول يوم، كل بند بمادته.'
+    fr: 'Ce que la loi impose à l’employeur dès le premier jour, chaque point avec son article.'
+  cites: [/ma/dahir/1-72-184/art_15]
+  items:
+    - label: {ar: الانخراط في الضمان الاجتماعي وتسجيل الأجير, fr: L’affiliation à la CNSS et l’immatriculation du salarié}
+      cites: [/ma/dahir/1-72-184/art_15]
+    - label: {ar: أجر لا يقل عن الحد الأدنى في تاريخه, fr: Un salaire au moins égal au minimum en vigueur}
+      cites: [/ma/loi/65-99/art_356, /ma/decret/2-25-983/art_1]
+    - label: {ar: ورقة أداء عند كل أداء, fr: Un bulletin de paie à chaque paiement}
+      cites: [/ma/loi/65-99/art_370]
+    - label: {ar: 'مدة الشغل: 44 ساعة في الأسبوع، أو 2496 ساعة في السنة في الفلاحة', fr: '44 heures par semaine, ou 2 496 heures par an en agriculture'}
+      cites: [/ma/loi/65-99/art_184]
+    - label: {ar: التأمين عن حوادث الشغل, fr: L’assurance accidents du travail}
+      cites: [/ma/loi/18-12/art_1, /ma/loi/18-12/art_15]
+    - label: {ar: فترة التجربة في حدودها, fr: Une période d’essai dans ses limites}
+      cites: [/ma/loi/65-99/art_13, /ma/loi/65-99/art_14]
+    - label: {ar: عقد محدد المدة في الحالات التي يسمح بها القانون فقط, fr: Un contrat à durée déterminée seulement dans les cas permis}
+      cites: [/ma/loi/65-99/art_16, /ma/loi/65-99/art_17, /ma/decret/2-19-793/art_1]
+
+- key: employer-home
+  for: [home]
+  title: {ar: عندي خدامة فالدار, fr: J’emploie une travailleuse domestique}
+  lead:
+    ar: 'ما يفرضه القانون 19.12 على من يشغل عاملة أو عاملا منزليا.'
+    fr: 'Ce que la loi 19.12 impose à qui emploie un travailleur domestique.'
+  cites: [/ma/loi/19-12/art_3]
+  items:
+    - label: {ar: عقد مكتوب على النموذج الرسمي، يوقعه الطرفان, fr: 'Un contrat écrit sur le modèle officiel, signé des deux parties'}
+      cites: [/ma/loi/19-12/art_3]
+    - label: {ar: سن لا يقل عن 18 سنة, fr: Un âge d’au moins 18 ans}
+      cites: [/ma/loi/19-12/art_6]
+    - label: {ar: أجر نقدي لا يقل عن 60% من الحد الأدنى، دون احتساب الإطعام والسكن, fr: 'Un salaire en espèces d’au moins 60 % du minimum, nourriture et logement non compris'}
+      cites: [/ma/loi/19-12/art_19]
+    - label: {ar: '48 ساعة في الأسبوع، وراحة 24 ساعة متصلة', fr: '48 heures par semaine, 24 heures de repos consécutives'}
+      cites: [/ma/loi/19-12/art_13, /ma/loi/19-12/art_14]
+    - label: {ar: التصريح في الضمان الاجتماعي, fr: La déclaration à la CNSS}
+      cites: [/ma/dahir/1-72-184/art_15, /ma/loi/19-12/art_26]

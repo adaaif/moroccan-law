@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+# A few seconds of checks on the files being committed, before CI runs them all. Switch it on once per clone:
+#
+#   git config core.hooksPath tools/dev/hooks
+#
+# On the staged files only:
+#   - the publishing scan (tools/publish/scan.py) on the staged contents, as they will be committed, where the private
+#     word list exists;
+#   - ruff on the Python files, eslint on the web's files and actionlint on the workflows, each reading the file as it
+#     is in the working tree (a file staged in part is named, since its unstaged lines are read too).
+# A tool that is not installed is skipped with a line saying so: the hook never blocks for a missing tool. CI runs
+# every check again on every push; `git commit --no-verify` skips the hook. Written for the bash of any system
+# (3.2 and later), so no mapfile and no `set -u`.
+set -eo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+say() { printf 'pre-commit: %s\n' "$*" >&2; }
+
+# The staged files (added, copied, modified, renamed: a deleted file has nothing to check), by kind.
+staged=() python_files=() web_files=() workflow_files=()
+while IFS= read -r -d '' file; do
+  staged+=("$file")
+  case "$file" in
+    *.py) python_files+=("$file") ;;
+    web/*.ts|web/*.tsx|web/*.js|web/*.jsx|web/*.mjs) web_files+=("${file#web/}") ;;
+    .github/workflows/*.yml|.github/workflows/*.yaml) workflow_files+=("$file") ;;
+  esac
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
+[ ${#staged[@]} -gt 0 ] || exit 0
+
+while IFS= read -r -d '' file; do
+  say "$file is staged in part: the linters read its working-tree copy"
+done < <(git diff --name-only -z -- "${staged[@]}")
+
+failed=
+work="$(mktemp -d)"
+trap 'rm -rf "$work"' EXIT
+
+# The publishing scan, on the staged contents copied out of the index. Files the export leaves out (export-ignore)
+# never reach the public tree, so they are not scanned.
+words=tools/publish/private-words.txt
+if [ -f "$words" ] && ! command -v python3 > /dev/null; then
+  say "python3 is not installed: the publishing scan did not run"
+elif [ -f "$words" ]; then
+  public=()
+  while IFS= read -r -d '' path && IFS= read -r -d '' _attribute && IFS= read -r -d '' value; do
+    [ "$value" = set ] || public+=("$path")
+  done < <(printf '%s\0' "${staged[@]}" | git check-attr --cached -z --stdin export-ignore)
+  if [ ${#public[@]} -gt 0 ]; then
+    printf '%s\0' "${public[@]}" | git checkout-index -z --stdin --prefix="$work/tree/"
+    if ! python3 tools/publish/scan.py --list --root "$work/tree" "$work/tree" > "$work/scan.out" 2>&1; then
+      # Only the lines of the classes that stop publishing (the `note` classes are for a person to judge).
+      awk -F '\t' 'NR == FNR { if ($2 == "fail") stops[$1]; next } ($1 in stops)' "$words" "$work/scan.out" >&2
+      say "the publishing scan found lines that must not be published (above)"
+      failed=1
+    fi
+  fi
+fi
+
+# ruff, with the backend's settings (back/ruff.toml), on the staged Python files.
+if [ ${#python_files[@]} -gt 0 ]; then
+  ruff=
+  if [ -x back/.venv/bin/ruff ]; then ruff=back/.venv/bin/ruff; elif command -v ruff > /dev/null; then ruff=ruff; fi
+  if [ -n "$ruff" ]; then
+    "$ruff" check --force-exclude --quiet "${python_files[@]}" || failed=1
+  else
+    say "ruff is not installed: the Python files were not linted"
+  fi
+fi
+
+# eslint, with the web's settings, on the staged web files; no warning allowed, as in CI.
+if [ ${#web_files[@]} -gt 0 ]; then
+  if [ -x web/node_modules/.bin/eslint ]; then
+    (cd web && node_modules/.bin/eslint --max-warnings=0 --no-warn-ignored "${web_files[@]}") || failed=1
+  else
+    say "the web's packages are not installed (npm ci in web/): its files were not linted"
+  fi
+fi
+
+# actionlint on the staged workflows.
+if [ ${#workflow_files[@]} -gt 0 ]; then
+  if command -v actionlint > /dev/null; then
+    actionlint "${workflow_files[@]}" || failed=1
+  else
+    say "actionlint is not installed: the workflows were not linted (CI's workflows job lints them)"
+  fi
+fi
+
+if [ -n "$failed" ]; then
+  say "fix the lines above, or commit with --no-verify and let CI judge"
+  exit 1
+fi

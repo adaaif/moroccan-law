@@ -1,0 +1,20 @@
+# Coverage of the backend's code by its tests (tools/ci/coverage.sh): apps/ and config/, branches counted, the
+# migrations and the tests themselves left out. The reports go to back/.reports/, which git ignores.
+[run]
+branch = true
+data_file = .reports/.coverage
+omit =
+    */migrations/*
+    */tests/*
+    */conftest.py
+
+[report]
+# The floor, and the one place it is kept: a point under the figure measured when it was last raised (75.4 %, lines
+# and branches, on 13 Nov 2026; the search tests that need ParadeDB skip in this run). A run under it fails. Raise it
+# when coverage has grown, never lower it to let a change in.
+fail_under = 74.4
+precision = 1
+skip_covered = true
+
+[xml]
+output = .reports/coverage.xml

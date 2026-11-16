@@ -1,0 +1,9 @@
+# /ma/decret/2-10-312 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+language: fr
+text: /ma/decret/2-10-312
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [7], wrong: 'loi n° 52-0$ précitée', right: 'loi n° 52-05 précitée'}      # p. 1720: «$» for «5»
+  - {arts: [10], wrong: 'aux véhicutes de dépannage', right: 'aux véhicules de dépannage'}      # p. 1720: «t» for «l»
+checked: [7, 10]

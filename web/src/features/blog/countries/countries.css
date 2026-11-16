@@ -1,0 +1,109 @@
+/* The places posts (post 1 «العالم في الجريدة الرسمية», post 2 «المغرب في الجريدة الرسمية», 1 Nov 2026): one bold picture,
+   the map of postmarks or dots a reader plays period by period; quiet charts around it. Rising in the in-force green,
+   falling in the amended amber, the Bulletin's violet for a place named. Loaded with a post, never in the first load. */
+.cn-hero { gap: 18px; }
+.cn-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.cn-periods { display: flex; flex-wrap: wrap; gap: 6px; }
+.cn-periods button, .cn-play { font: inherit; font-size: 0.875rem; min-height: 44px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--color-rule);
+  background: var(--color-sheet); color: var(--color-ink); cursor: pointer; font-variant-numeric: tabular-nums; }
+.cn-periods button[aria-pressed='true'] { background: var(--color-stamp); border-color: var(--color-stamp); color: var(--color-on-stamp); font-weight: 500; }
+.cn-play { border-color: var(--color-stamp); color: var(--color-stamp); font-weight: 500; }
+.cn-switch { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 0.9375rem; cursor: pointer; }
+.cn-switch input { width: 20px; height: 20px; accent-color: var(--color-stamp); }
+.cn-stage { display: grid; grid-template-columns: minmax(0, 1fr) 17rem; gap: 20px; align-items: start; }
+.cn-stage.ma { grid-template-columns: minmax(0, 1fr) 17rem; }
+.cn-stage.ma .pl-map { max-height: 560px; }
+.cn-rank { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+.cn-rank button { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 1.4rem minmax(0, 1fr) 3rem; gap: 8px; align-items: center;
+  padding: 4px 8px; min-height: 44px; border-radius: 8px; cursor: pointer; }
+.cn-rank button:hover, .cn-rank button:focus-visible { background: var(--color-wash); }
+.cn-rank .r { color: var(--color-ink-soft); font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.cn-rank .nm { display: grid; min-width: 0; }
+.cn-rank .nm b { font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cn-rank .nm i { display: block; height: 4px; border-radius: 2px; background: var(--color-stamp-line); margin-top: 3px; }
+.cn-rank .v { text-align: end; font-variant-numeric: tabular-nums; }
+.cn-moves { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cn-moves ol { list-style: none; margin: 0; padding: 0; }
+.cn-col { margin: 0 0 6px; font-size: 1rem; font-weight: 600; }
+.cn-col.rise { color: var(--color-in-force); }
+.cn-col.fall { color: var(--color-amended); }
+.cn-move { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center;
+  padding: 8px 4px; border-bottom: 1px solid var(--color-rule); cursor: pointer; min-height: 44px; }
+.cn-move:hover, .cn-move:focus-visible { background: var(--color-wash); }
+.cn-move .nm { display: grid; min-width: 0; }
+.cn-move .nm span { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.cn-line .all { fill: none; stroke-width: 2; stroke-linejoin: round; }
+.cn-line .nodip { fill: none; stroke: var(--color-muted); stroke-width: 1.4; stroke-dasharray: 3 2; }
+.cn-line.rise .all { stroke: var(--color-in-force); }
+.cn-line.rise .end { fill: var(--color-in-force); }
+.cn-line.fall .all { stroke: var(--color-amended); }
+.cn-line.fall .end { fill: var(--color-amended); }
+.cn-key { font-size: 0.875rem; color: var(--color-ink-soft); margin: 8px 0 0; }
+.cn-kinds { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.cn-kinds li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 9.5rem; gap: 10px; align-items: center; font-size: 0.9375rem; }
+.cn-kinds .bar { display: flex; height: 14px; border-radius: 7px; overflow: hidden; background: var(--color-rule-soft); }
+.cn-kinds .bar i { display: block; height: 100%; }
+.cn-kinds .lab { font-size: 0.875rem; color: var(--color-ink-soft); }
+/* A 2 px gap between a bar's kinds, so neighbouring colours never touch. */
+.cn-kinds .bar { gap: 2px; }
+.cn-kinds .nm { text-align: right; }
+.cn-kinds .lab { text-align: left; }
+.cn-gone { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: 14px; }
+.cn-gone button { all: unset; box-sizing: border-box; width: 100%; display: grid; justify-items: center; gap: 4px; text-align: center; cursor: pointer; padding: 6px; border-radius: 10px; }
+.cn-gone button:hover, .cn-gone button:focus-visible { background: var(--color-wash); }
+.cn-gone svg { width: 92px; height: 92px; }
+.cn-gone .o { fill: var(--color-wash); stroke: var(--color-stamp); stroke-width: 1.6; stroke-dasharray: 4 3; }
+.cn-gone .i { fill: none; stroke: var(--color-stamp); stroke-width: .8; }
+.cn-gone .w { fill: none; stroke: var(--color-stamp); stroke-width: .9; opacity: .55; }
+.cn-gone text { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--color-stamp-deep); }
+.cn-gone b { font-weight: 600; }
+.cn-gone span { font-size: 0.875rem; color: var(--color-ink-soft); }
+.cn-climb { display: flex; align-items: flex-end; gap: 1px; height: 150px; border-bottom: 1px solid var(--color-rule); }
+.cn-climb button { flex: 1; min-width: 0; padding: 0; border: 0; background: var(--color-stamp-line); border-radius: 1px 1px 0 0; cursor: pointer; }
+.cn-climb button:hover, .cn-climb button:focus-visible, .cn-climb button.on { background: var(--color-stamp); }
+.cn-axis { display: flex; justify-content: space-between; font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.cn-never { color: var(--color-ink-soft); }
+.cn-spell { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.cn-spell li { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.cn-spell b { min-width: 7rem; }
+.cn-spell span { font-family: var(--font-law); font-size: 1.25rem; padding: 0 10px; border-radius: 10px; background: var(--color-wash); color: var(--color-stamp-deep); }
+.ct-pairs { display: grid; grid-template-columns: repeat(var(--n, 7), minmax(0, 1fr)); gap: 6px; align-items: end; height: 190px; }
+.ct-pairs button { all: unset; box-sizing: border-box; display: grid; grid-template-rows: 1fr auto; height: 100%; gap: 4px; cursor: pointer; border-radius: 6px; }
+.ct-pairs button.on, .ct-pairs button:focus-visible { background: var(--color-wash); }
+.ct-pairs .col { display: flex; align-items: flex-end; justify-content: center; gap: 3px; height: 100%; }
+.ct-pairs .col i { display: block; width: 40%; border-radius: 2px 2px 0 0; }
+.ct-pairs .top { background: var(--color-stamp); }
+.ct-pairs .rest { background: var(--color-share-6); }
+/* A period on two lines, its first year over its last, at the 14 px floor: seven fit a phone. */
+.ct-pairs .p { display: grid; font-size: var(--text-meta); line-height: 1.3; color: var(--color-ink-soft); text-align: center; font-variant-numeric: tabular-nums; }
+.ct-old { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
+.ct-old p { margin: 0 0 6px; }
+.ct-old-bars { display: grid; grid-template-columns: repeat(var(--n, 7), minmax(0, 1fr)); gap: 6px; height: 56px; align-items: end; border-bottom: 1px solid var(--color-rule); }
+.ct-old-bars span { display: flex; flex-direction: column; justify-content: flex-end; height: 100%; border-radius: 3px; overflow: hidden; }
+.ct-old-bars i { display: block; width: 100%; min-height: 0; }
+.ct-old-bars .was { background: var(--color-amended); }
+.ct-old-bars .now { background: var(--color-stamp); }
+@media (max-width: 760px) {
+  .cn-stage, .cn-stage.ma, .cn-moves { grid-template-columns: minmax(0, 1fr); }
+  /* Thirteen periods from 1913 scroll in their own row on a phone, never the page. */
+  .cn-periods { flex: 1 1 100%; min-width: 0; flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x proximity; padding: 2px 2px 6px; }
+  .cn-periods button { flex: none; scroll-snap-align: start; }
+  /* A period by its first year alone, every other one (`labelled`): thirteen columns on 358 px. */
+  .ct-pairs .p span + span { display: none; }
+  .ct-pairs button.minor .p { visibility: hidden; }
+  .cn-kinds li { grid-template-columns: 6rem minmax(0, 1fr); }
+  .cn-kinds .lab { grid-column: 2; }
+}
+.ct-stop { border-inline-start: 3px solid var(--color-stamp-line); padding-inline-start: 12px; }
+/* A link inside a sentence is underlined, not told by its colour alone (the places posts link every place they name). */
+.bp .bp-p a { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+/* 1956, independence (C3 of the posts-from-No.-1 review: decades from 1913, a line at 1956): a rule before its period, a thin
+   upright in each line, a marked year in the climb. The rows run left to right on an Arabic page too. */
+.cn-periods button.y56 { margin-left: 14px; position: relative; }
+.cn-periods button.y56::before { content: ''; position: absolute; left: -11px; top: 8px; bottom: 8px; border-left: 2px solid var(--color-ink-soft); }
+.cn-56 { margin: 0; flex-basis: 100%; }
+.cn-line .y56 { stroke: var(--color-ink-soft); stroke-width: 1; stroke-dasharray: 2 2; opacity: .7; }
+.ct-pairs .y56, .ct-old-bars .y56 { box-shadow: -4px 0 0 -1px var(--color-ink); }   /* in the 6 px gap, clear of the bar */
+.cn-climb button.y56 { background: var(--color-ink-soft); }
+.cn-axis { position: relative; }
+.cn-axis .at56 { position: absolute; transform: translateX(-50%); }

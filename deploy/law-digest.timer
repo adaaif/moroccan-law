@@ -1,0 +1,9 @@
+[Unit]
+Description=law: review_digest each hour
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,49 @@
+# «ستة دساتير في صفحة واحدة»: the blog's second post (B7 of the blog-first-post review, built 31 Oct 2026 in the order
+# chosen). The counts are in figures.json (manage.py blog_figures six-constitutions): each constitution as first issued,
+# Adala's copy of the text as published, read against its Bulletin page when the texts were loaded (branch texts).
+slug: six-constitutions
+number: 2
+status: draft
+date: null
+counted_on: 2026-10-31
+title:
+  ar: ستة دساتير في صفحة واحدة
+  fr: Six constitutions sur une page
+lead:
+  ar: من 110 فصول في 1962 إلى 180 في 2011. وضعنا الدساتير الستة جنبا إلى جنب، فصلا بفصل، ونظرنا في كل فصل ماذا بقي منه في الدستور الذي جاء بعده.
+  fr: De 110 articles en 1962 à 180 en 2011. Nous avons posé les six constitutions côte à côte, article par article, et regardé ce que chacune a gardé de la précédente.
+
+# A title («باب») is matched to a theme by its name, so the same part lines up across the six. Order: as 2011 reads.
+themes:
+  - {key: general, match: 'أحكام عامة', ar: أحكام عامة, fr: Dispositions générales}
+  - {key: rights, match: 'الحريات والحقوق', ar: الحريات والحقوق, fr: Libertés et droits}
+  - {key: monarchy, match: 'الملكية', ar: الملكية, fr: La Royauté}
+  - {key: parliament, match: 'البرلمان|مجلس النواب|السلطة التشريعية', ar: البرلمان, fr: Le Parlement}
+  - {key: government, match: 'الحكومة|السلطة التنفيذية', ar: الحكومة, fr: Le Gouvernement}
+  - {key: relations, match: 'علاقات السلط|العلاقات بين السلط', ar: العلاقات بين السلط, fr: Rapports entre les pouvoirs}
+  - {key: judiciary, match: 'القضاء|السلطة القضائية', ar: القضاء, fr: La Justice}
+  - {key: constitutional, match: 'الغرفة الدستورية|المجلس الدستوري|المحكمة الدستورية', ar: القضاء الدستوري, fr: La justice constitutionnelle}
+  - {key: local, match: 'الجماعات المحلية|الجهات والجماعات الترابية', ar: الجماعات والجهات, fr: Collectivités et régions}
+  - {key: audit, match: 'المجلس الأعلى للحسابات', ar: المجلس الأعلى للحسابات, fr: Cour des comptes}
+  - {key: economic, match: 'المجلس الاقتصادي والاجتماعي', ar: المجلس الاقتصادي والاجتماعي, fr: Conseil économique et social}
+  - {key: governance, match: 'الحكامة الجيدة', ar: الحكامة الجيدة, fr: Bonne gouvernance}
+  - {key: high_court, match: 'المحكمة العليا', ar: المحكمة العليا, fr: La Haute Cour}
+  - {key: planning, match: 'نعاش الوطني', ar: الإنعاش الوطني والتخطيط, fr: Promotion nationale et Plan}
+  - {key: revision, match: 'مراجعة الدستور', ar: مراجعة الدستور, fr: Révision}
+  - {key: transitional, match: 'أحكام انتقالية|أحكام خاصة', ar: أحكام انتقالية وخاصة, fr: Dispositions transitoires}
+
+# Words counted in each constitution, in their forms with «و» «ف» «بال» «لل» «كال» before them read as the word.
+terms:
+  - {key: king, forms: [الملك], ar: الملك, fr: le Roi}
+  - {key: law, forms: [القانون], ar: القانون, fr: la loi}
+  - {key: rights, forms: [الحق, الحقوق, حق, حقوق], ar: الحق والحقوق, fr: droit(s)}
+  - {key: freedoms, forms: [الحرية, الحريات, حرية, حريات], ar: الحرية والحريات, fr: liberté(s)}
+  - {key: islam, forms: [الإسلام, الإسلامية, الإسلامي], ar: الإسلام, fr: l’islam}
+  - {key: women, forms: [المرأة, النساء], ar: المرأة والنساء, fr: "la femme, les femmes"}
+  - {key: regions, forms: [الجهة, الجهات, جهة, جهات, الجهوية], ar: الجهة والجهات, fr: la région}
+  - {key: citizens_f, forms: [المواطنات], ar: المواطنات, fr: les citoyennes}
+  - {key: governance, forms: [الحكامة], ar: الحكامة, fr: la gouvernance}
+  - {key: youth, forms: [الشباب], ar: الشباب, fr: les jeunes}
+  - {key: environment, forms: [البيئة, البيئية, البيئي], ar: البيئة, fr: l’environnement}
+  - {key: amazigh, forms: [الأمازيغية], ar: الأمازيغية, fr: l’amazighe}
+  - {key: parity, forms: [المناصفة], ar: المناصفة, fr: la parité}

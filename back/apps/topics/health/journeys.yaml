@@ -1,0 +1,379 @@
+# The health topic's journeys (S13 of the health review): what happens at a care's moments, step by step, each
+# step on the articles it rests on, the limits as the texts set them. Written from law 65.00 (Adala, to 29 Jan 2026), its
+# decrees 2.05.733, 2.05.736, 2.05.737 (Adala), the code of medical ethics (decree 2.21.225), law 131.13 (SGG), law 98.15
+# (SGG), law 60.22, decree 2.22.797 (SGG), law 08.12 (Adala, to 10 Aug 2026), the DOC, the penal code, the Labour Code,
+# law 58.25 and law 36.21, as the site holds them on 27 Oct 2026. Steps say what the law says, never what a reader should do
+# in their own case. A reader sees a journey once a person has checked it.
+
+- key: emergency
+  title: {ar: 'المستعجلات والمصحة: ما يقوله القانون عند الباب', fr: 'Urgences et clinique : ce que dit la loi à la porte'}
+  lead:
+    ar: 'على كل طبيب أن يسعف من هو في خطر وشيك، والمستشفى العمومي يقبل المستعجل والمرأة في حالة مخاض، والمصحة لا تطلب شيكا من مؤمن له تحمل.'
+    fr: 'Tout médecin doit secourir qui est en danger imminent ; l’hôpital public admet l’urgence et la femme en travail ; la clinique ne demande pas de chèque à un assuré pris en charge.'
+  steps:
+    - title: {ar: 'المريض في خطر', fr: 'Le patient en danger'}
+      answer: {ar: 'كل طبيب، كيفما كان قطاعه، ملزم بإسعاف مريض أو جريح في خطر وشيك لا يجد العلاج الملائم.', fr: 'Tout médecin, quel que soit son secteur, doit secourir un malade ou un blessé en danger imminent qui ne peut être soigné autrement.'}
+      body:
+        ar: 'إلا في حالة القوة القاهرة، يقدم الطبيب المساعدة لكل مريض أو جريح يوجد في حالة خطر وشيك ولا يمكنه الاستفادة من العلاجات الطبية الملائمة. ومن أمسك عمدا عن تقديم مساعدة لشخص في خطر، وكان يستطيع تقديمها بتدخله أو بطلب الإغاثة دون خطر عليه أو على غيره، يعاقب بالحبس من ثلاثة أشهر إلى سنتين وبغرامة من 2.000 إلى 10.000 درهم.'
+        fr: 'Sauf force majeure, le médecin porte secours à tout malade ou blessé en danger imminent qui ne peut bénéficier des soins appropriés. Quiconque s’abstient volontairement de porter à une personne en péril l’assistance qu’il pouvait lui prêter, par son action personnelle ou en appelant des secours, sans risque pour lui ou pour les tiers, est puni de trois mois à deux ans d’emprisonnement et de 2 000 à 10 000 DH d’amende.'
+      cites: [/ma/decret/2-21-225/art_9, /ma/dahir/1-59-413/art_431]
+    - title: {ar: 'المستشفى العمومي', fr: 'L’hôpital public'}
+      answer: {ar: 'المستشفى العمومي يستقبل ويفحص المريض أو الجريح أو المرأة المقبلة على الولادة في حالة استعجال، ويقبلهم ولو لم يكن هناك سرير فارغ، ولا يشرع في الفوترة إلا بعد الالتزام بالتكفل بهم.', fr: 'L’hôpital public accueille et examine le malade, le blessé ou la femme sur le point d’accoucher qui arrive en urgence, l’admet même sans lit libre, et ne facture qu’après s’être engagé à le prendre en charge.'}
+      body:
+        ar: 'يجب استقبال وفحص كل مريض أو جريح أو امرأة مقبلة على الولادة يحضرون في حالة استعجال، وقبولهم للاستشفاء عند الاقتضاء ولو في حالة عدم توفر أسرة فارغة، ولا يشرع في فوترة الخدمات المقدمة إليهم إلا بعد الالتزام بالتكفل الطبي بهم. وإذا كانت الحالة لا تستدعي تدخلا عاجلا، يحال المريض على المصلحة المناسبة، أو يتكفل به مباشرة بعد أدائه مسبقا للمصاريف.'
+        fr: 'Tout malade, blessé ou femme sur le point d’accoucher se présentant en urgence est accueilli, examiné et, au besoin, hospitalisé, même sans lit libre ; la facturation ne commence qu’après l’engagement de la prise en charge médicale. Si son état n’appelle pas d’intervention urgente, le malade est orienté vers le service approprié, ou pris en charge directement après paiement préalable des frais.'
+      cites: [/ma/arrete/456-11/art_42]
+    - title: {ar: 'المصحة والشيك', fr: 'La clinique et le chèque'}
+      answer: {ar: 'إذا كان لك تحمل من التأمين، فلا يحق للمصحة أن تطلب منك ضمانة نقدية أو شيكا، إلا المبلغ المتبقي على عاتقك، وتسلمك وصلا عن كل مبلغ.', fr: 'Avec une prise en charge, la clinique ne peut vous demander ni garantie en espèces ni chèque, hormis votre part, et vous remet un reçu pour chaque somme.'}
+      body:
+        ar: 'في حالة الثالث المؤدي، يمنع على المصحة أن تطلب من الأشخاص المؤمنين أو ذوي حقوقهم ضمانة نقدية أو بواسطة شيك أو بأي وسيلة أخرى من وسائل الأداء، ما عدا المبلغ المتبقي على عاتقهم، ويجب عليها تسليم وصل أداء عن كل مبلغ مالي تم استخلاصه مقابل العلاجات. ويعاقب بغرامة من 10.000 إلى 50.000 درهم عن كل مخالفة لذلك.'
+        fr: 'En tiers payant, la clinique ne peut exiger des assurés ou de leurs ayants droit aucune garantie en espèces, par chèque ou par tout autre moyen de paiement, hormis la part restant à leur charge, et elle remet un reçu pour toute somme encaissée. Chaque infraction est punie de 10 000 à 50 000 DH d’amende.'
+      cites: [/ma/loi/131-13/art_75, /ma/loi/131-13/art_115]
+      next: journeys/clinic
+    - title: {ar: 'أمو تضامن في المستشفى العمومي', fr: 'L’AMO Tadamon à l’hôpital public'}
+      answer: {ar: 'خدمات المؤمن في نظام أمو تضامن داخل المؤسسات الصحية العمومية يتحملها الصندوق الوطني للضمان الاجتماعي مباشرة، وتتحمل الدولة الجزء الباقي في الخدمات المحددة.', fr: 'À l’hôpital public, les soins de l’assuré AMO Tadamon sont pris en charge directement par la CNSS, l’État payant la part restante pour les prestations listées.'}
+      body:
+        ar: 'تتم تغطية مصاريف الخدمات التي تباشر داخل المؤسسات الصحية العمومية عن طريق التحمل المباشر من لدن الصندوق الوطني للضمان الاجتماعي وفق النسب المحددة، وتتحمل الدولة الجزء الباقي على عاتق المؤمن بالنسبة للخدمات المحددة قائمتها بنص تنظيمي.'
+        fr: 'Les soins dispensés dans les établissements de santé publics sont couverts par prise en charge directe de la CNSS selon les taux fixés ; l’État supporte la part restant à la charge de l’assuré pour les prestations dont la liste est fixée par voie réglementaire.'
+      cites: [/ma/loi/65-00/art_120-bis]
+  ends: {office: hospital, paper: {ar: 'وصل عن كل مبلغ دفعته، ونسخة من ملفك الطبي إذا طلبتها', fr: 'Un reçu pour chaque somme payée, et une copie de votre dossier si vous la demandez'}, cites: [/ma/loi/131-13/art_75, /ma/decret/2-21-225/art_49]}
+
+- key: refund
+  day: {ar: 'نهار أول فحص أو أول علاج؟', fr: 'Le jour du premier acte ?'}
+  title: {ar: 'ورقة العلاج: من الطبيب إلى التعويض', fr: 'La feuille de soins : du médecin au remboursement'}
+  lead:
+    ar: 'ترسل ورقة العلاجات ووثائق الإثبات داخل شهرين من أول عمل طبي، وإلا سقط الحق في التعويض إلا في حالة القوة القاهرة؛ ويرجع الصندوق المصاريف داخل تسعين يوما من الإيداع.'
+    fr: 'La feuille de soins et ses justificatifs sont envoyés dans les deux mois du premier acte, sinon le droit au remboursement tombe, sauf force majeure ; la caisse rembourse dans les quatre-vingt-dix jours du dépôt.'
+  steps:
+    - title: {ar: 'عند الطبيب', fr: 'Chez le médecin'}
+      answer: {ar: 'يعوض الصندوق على أساس وثائق الإثبات، ومنها ورقة العلاجات موقعة من المهني أو المهنيين الذين عالجوك.', fr: 'La caisse rembourse sur justificatifs, dont la feuille de soins signée par le ou les praticiens.'}
+      body:
+        ar: 'يتم إرجاع مصاريف خدمات العلاج بناء على وثائق الإثبات المطلوبة ومن بينها ورقة العلاجات الموقعة من طرف المهني أو المهنيين الممارسين. وقبل تسليم أي دواء، يتأكد الصيدلي من أن الوصفة محررة بشكل واضح وتحمل تاريخها وتوقيع محررها وختمه واسمه وصفته وعنوانه، واسم الطفل وسنه إذا كان دون اثنتي عشرة سنة.'
+        fr: 'Les frais de soins sont remboursés sur les justificatifs requis, dont la feuille de soins signée par le ou les praticiens. Avant toute délivrance, le pharmacien vérifie que l’ordonnance est lisible et porte sa date, la signature manuscrite, le cachet, le nom, la qualité et l’adresse du prescripteur, et le nom et l’âge d’un enfant de moins de douze ans.'
+      cites: [/ma/decret/2-05-733/art_11, /ma/loi/17-04/art_34]
+    - title: {ar: 'في الصيدلية', fr: 'À la pharmacie'}
+      answer: {ar: 'التعريفة المرجعية للأدوية هي ثمنها العمومي؛ ويعوض الصندوق نسبة منها حسب نظامك.', fr: 'Le tarif de référence d’un médicament est son prix public ; la caisse en rembourse un taux selon votre régime.'}
+      body:
+        ar: 'بالنسبة للأدوية، التعريفة المرجعية الوطنية هي الثمن العمومي للأدوية. ونسبة التغطية في نظام الضمان الاجتماعي 70% من التعريفة المرجعية الوطنية، وفي نظام الصندوق الوطني لمنظمات الاحتياط الاجتماعي 70% من الثمن العمومي للأدوية المقبول إرجاع مصاريفها.'
+        fr: 'Pour les médicaments, le tarif national de référence est leur prix public. Le taux de couverture est de 70 % du tarif de référence à la CNSS, et de 70 % du prix public des médicaments remboursables à la CNOPS.'
+      cites: [/ma/loi/65-00/art_12, /ma/decret/2-05-737/art_2, /ma/decret/2-05-736/art_1]
+      tool: tools/refund
+    - title: {ar: 'إيداع الملف', fr: 'Le dépôt du dossier'}
+      answer: {ar: 'داخل الشهرين المواليين لأول عمل طبي، أو داخل ستين يوما من نهاية علاج متواصل؛ وبعدها يسقط الحق، إلا في حالة القوة القاهرة.', fr: 'Dans les deux mois qui suivent le premier acte, ou les soixante jours qui suivent la fin d’un traitement continu ; après, le droit tombe, sauf force majeure.'}
+      body:
+        ar: 'يجب إرسال ورقة العلاجات أو تقديمها وكذا وثائق الإثبات إلى الهيئة المكلفة بالتدبير خلال الشهرين المواليين لأول عمل طبي، ما لم يتعلق الأمر بعلاج طبي متواصل، وفي هذه الحالة يقدم الملف خلال الستين يوما الموالية لنهاية العلاج. وباستثناء حالة القوة القاهرة، يؤدي عدم مراعاة ذلك إلى سقوط الحق في إرجاع المصاريف.'
+        fr: 'La feuille de soins et les justificatifs sont envoyés ou remis à l’organisme gestionnaire dans les deux mois qui suivent le premier acte médical, sauf traitement continu, auquel cas le dossier est remis dans les soixante jours qui suivent la fin du traitement. Sauf force majeure, le non-respect de ce délai fait perdre le droit au remboursement.'
+      cites: [/ma/decret/2-05-733/art_12]
+      delay: {months: 2, from: {ar: 'من أول عمل طبي', fr: 'à compter du premier acte médical'}, on_day: true}
+      tool: tools/clock
+      papers: checklists/refund-file
+    - title: {ar: 'التعويض', fr: 'Le remboursement'}
+      answer: {ar: 'يرجع الصندوق المصاريف داخل تسعين يوما من إيداع الملف على أبعد تقدير؛ والقانون يحدد الأجل الأقصى في ثلاثة أشهر.', fr: 'La caisse rembourse au plus tard dans les quatre-vingt-dix jours du dépôt ; la loi fixe le délai maximum à trois mois.'}
+      body:
+        ar: 'يتم الإرجاع على أبعد تقدير داخل تسعين يوما التي تلي تاريخ إيداع أو إرسال الملف، باستثناء الحالات التي تكون موضوع نزاع، وفيها يرجع داخل الثلاثين يوما الموالية بعد أن تشهد المراقبة الطبية بصحة الخدمات. ولا تتجاوز الآجال القصوى لإرجاع المصاريف ثلاثة أشهر.'
+        fr: 'Le remboursement intervient au plus tard dans les quatre-vingt-dix jours qui suivent le dépôt ou l’envoi du dossier, sauf litige ; en ce cas, une fois les prestations attestées par le contrôle médical, il intervient dans les trente jours. Les délais maximaux de remboursement ne dépassent pas trois mois.'
+      cites: [/ma/decret/2-05-733/art_11, /ma/loi/65-00/art_16]
+    - title: {ar: 'المراقبة الطبية', fr: 'Le contrôle médical'}
+      answer: {ar: 'يمكن للصندوق أن يراقب ملفك طبيا، دون أن يؤخر ذلك أجل التعويض؛ وإذا وقع نزاع، يمدد الأجل بثلاثين يوما.', fr: 'La caisse peut contrôler votre dossier médicalement, sans retarder le remboursement ; en cas de litige, le délai est prolongé de trente jours.'}
+      body:
+        ar: 'يجب أن تتم المراقبة الطبية دون المساس بأجل إرجاع مصاريف العلاج أو تحملها، وفي حالة وقوع نزاع، يمدد هذا الأجل بثلاثين يوما كاملة. ولا يجوز للمؤمن أن يتملص من المراقبة الطبية، وإلا أوقف إرجاع المصاريف.'
+        fr: 'Le contrôle médical se fait sans porter atteinte au délai de remboursement ou de prise en charge ; en cas de litige, ce délai est prolongé de trente jours francs. L’assuré ne peut se soustraire au contrôle, sous peine de suspension du remboursement.'
+      cites: [/ma/decret/2-05-733/art_36, /ma/loi/65-00/art_29]
+      next: journeys/refused
+  ends: {office: fund, paper: {ar: 'قرار الصندوق: إرجاع المصاريف أو رفض معلل تطعن فيه داخل سنة', fr: 'La décision de la caisse : le remboursement, ou un refus motivé à contester dans l’année'}, cites: [/ma/decret/2-05-733/art_11, /ma/loi/65-00/art_129], papers: checklists/refund-file}
+
+- key: refused
+  day: {ar: 'نهار توصلتي بقرار الرفض؟', fr: 'Le jour où vous avez reçu le refus ?'}
+  title: {ar: 'رفض التعويض أو تخفيضه: الطعن', fr: 'Un remboursement refusé ou réduit : le recours'}
+  lead:
+    ar: 'يطعن في قرار رفض إرجاع المصاريف داخل سنة من تبليغه، تحت طائلة سقوط الحق؛ وقرار مبني على مراقبة طبية يطعن فيه أمام الوكالة الوطنية للتأمين الصحي التي تعين طبيبا خبيرا.'
+    fr: 'Un refus de remboursement se conteste dans l’année de sa notification, à peine de forclusion ; une décision fondée sur un contrôle médical se conteste devant l’ANAM, qui désigne un médecin expert.'
+  steps:
+    - title: {ar: 'الطعن في الرفض', fr: 'Contester le refus'}
+      answer: {ar: 'يقدم الطعن في قرار رفض إرجاع المصاريف إلى الهيئة المكلفة بالتدبير داخل أجل سنة من تبليغ القرار، وإلا سقط الحق.', fr: 'Le recours contre un refus de remboursement est porté devant l’organisme gestionnaire dans l’année de la notification, à peine de forclusion.'}
+      body:
+        ar: 'يجب، تحت طائلة سقوط الحق، أن يقدم الطعن في قرار رفض طلب إرجاع المصاريف عن خدمات التأمين الإجباري الأساسي عن المرض، أو طلب استرداد الاشتراكات المقبوضة دون سند قانوني، إلى الهيئة المكلفة بالتدبير، داخل أجل سنة يبتدئ من تاريخ تبليغ القرار المطعون فيه إلى الطاعن.'
+        fr: 'Le recours contre une décision refusant le remboursement des prestations, ou une demande de restitution de cotisations indûment perçues, est porté devant l’organisme gestionnaire, à peine de forclusion, dans le délai d’un an à compter de la notification de la décision.'
+      cites: [/ma/loi/65-00/art_129]
+      delay: {months: 12, from: {ar: 'من تبليغ قرار الرفض', fr: 'à compter de la notification du refus'}, on_day: true}
+    - title: {ar: 'قرار بعد مراقبة طبية', fr: 'Une décision après contrôle médical'}
+      answer: {ar: 'يبلغ إليك القرار المتخذ بعد المراقبة الطبية، ولك أن تطعن فيه أمام الوكالة الوطنية للتأمين الصحي، فتعين طبيبا خبيرا تلزم استنتاجاته الطرفين.', fr: 'La décision prise après contrôle médical vous est notifiée ; vous pouvez la contester devant l’ANAM, qui désigne un médecin expert dont les conclusions lient les deux parties.'}
+      body:
+        ar: 'تبلغ الاعتراضات على القرارات المتخذة على إثر مراقبة طبية إلى الوكالة الوطنية للتأمين الصحي، التي تقوم على حسابها بإجراء فحص جديد للمريض من طرف مهني خبير، وتبلغ استنتاجات الخبير إلى الأطراف داخل أجل لا يتعدى الثلاثين يوما. وتلزم استنتاجات الطبيب الخبير الطرفين معا.'
+        fr: 'Les contestations des décisions prises à la suite d’un contrôle médical sont adressées à l’ANAM, qui fait procéder à ses frais à un nouvel examen par un praticien expert ; ses conclusions sont notifiées aux parties dans les trente jours et s’imposent aux deux parties.'
+      cites: [/ma/loi/65-00/art_30, /ma/decret/2-05-733/art_38, /ma/decret/2-05-733/art_36]
+    - title: {ar: 'رفض الإعفاء في مرض طويل', fr: 'Le refus d’exonération pour une longue maladie'}
+      answer: {ar: 'يجب أن يكون رفض الإعفاء معللا ومبلغا برسالة مضمونة، ويطعن فيه أمام الوكالة الوطنية للتأمين الصحي.', fr: 'Le refus d’exonération doit être motivé et notifié par lettre recommandée ; il se conteste devant l’ANAM.'}
+      body:
+        ar: 'يجب أن يكون رفض الإعفاء من الجزء الباقي على عاتق المؤمن معللا وأن يبلغ إلى الطالب بواسطة رسالة مضمونة، ويمكن للطالب أن يطعن فيه لدى الوكالة الوطنية للتأمين الصحي.'
+        fr: 'Le refus d’exonérer l’assuré de sa part doit être motivé et notifié par lettre recommandée ; le demandeur peut le contester devant l’ANAM.'
+      cites: [/ma/decret/2-05-733/art_10]
+      next: journeys/long-illness
+  ends: {office: fund, paper: {ar: 'استنتاجات الطبيب الخبير، ملزمة للطرفين', fr: 'Les conclusions du médecin expert, qui lient les deux parties'}, cites: [/ma/loi/65-00/art_30]}
+
+- key: clinic
+  title: {ar: 'المصحة بالتحمل: بلا شيك، وبوصل', fr: 'La clinique avec prise en charge : sans chèque, avec reçu'}
+  lead:
+    ar: 'التأمين يغطي مصاريف العلاج إما بالتحمل المباشر من الصندوق وإما بالأداء المسبق ثم الإرجاع؛ وفي التحمل لا تطلب المصحة شيك ضمان.'
+    fr: 'L’assurance couvre les soins soit par prise en charge directe de la caisse, soit par avance puis remboursement ; en prise en charge, la clinique ne demande pas de chèque de garantie.'
+  steps:
+    - title: {ar: 'التحمل أو الأداء المسبق', fr: 'Prise en charge ou avance'}
+      answer: {ar: 'حسب نوع الخدمة، إما يتحمل الصندوق المصاريف مباشرة في حدود نسبة التغطية، وإما تؤدي أنت ثم تطلب الإرجاع بوثائق الإثبات.', fr: 'Selon la prestation, la caisse paie directement dans la limite du taux de couverture, ou vous avancez puis demandez le remboursement sur justificatifs.'}
+      body:
+        ar: 'تتم تغطية مصاريف الخدمات الطبية حسب نوع وطبيعة كل خدمة: إما عن طريق التحمل المباشر من لدن الهيئة المكلفة بالتدبير في حدود نسبة التغطية، وإما عن طريق الأداء المسبق من لدن المؤمن أو المستفيد على أن يدلي بالوثائق المبررة.'
+        fr: 'Les frais sont couverts selon la nature de chaque prestation : par prise en charge directe de l’organisme gestionnaire dans la limite du taux de couverture, ou par avance de l’assuré ou du bénéficiaire, qui produit ensuite les justificatifs.'
+      cites: [/ma/loi/65-00/art_15]
+    - title: {ar: 'لا شيك ضمان', fr: 'Pas de chèque de garantie'}
+      answer: {ar: 'في التحمل، يمنع على المصحة أن تطلب ضمانة نقدية أو شيكا أو أي وسيلة أداء أخرى، ما عدا المبلغ الباقي على عاتقك.', fr: 'En prise en charge, la clinique ne peut demander ni garantie en espèces, ni chèque, ni autre moyen de paiement, hormis la part restant à votre charge.'}
+      body:
+        ar: 'في حالة الثالث المؤدي، يمنع على المصحة أن تطلب من الأشخاص المؤمنين أو ذوي حقوقهم ضمانة نقدية أو بواسطة شيك أو بأي وسيلة أخرى من وسائل الأداء، ما عدا المبلغ المتبقي على عاتقهم.'
+        fr: 'En tiers payant, la clinique ne peut exiger des assurés ou de leurs ayants droit aucune garantie en espèces, par chèque ou par tout autre moyen de paiement, hormis la part restant à leur charge.'
+      cites: [/ma/loi/131-13/art_75]
+    - title: {ar: 'وصل عن كل مبلغ', fr: 'Un reçu pour chaque somme'}
+      answer: {ar: 'تسلمك المصحة وصل أداء عن كل مبلغ استخلصته مقابل العلاجات؛ والمخالفة يعاقب عليها بغرامة من 10.000 إلى 50.000 درهم.', fr: 'La clinique vous remet un reçu pour toute somme encaissée ; l’infraction est punie de 10 000 à 50 000 DH d’amende.'}
+      body:
+        ar: 'يجب على المصحة تسليم وصل أداء عن كل مبلغ مالي تم استخلاصه مقابل العلاجات. ويعاقب بغرامة من 10.000 إلى 50.000 درهم عن كل مخالفة لأحكام الفقرتين الثانية والثالثة من المادة 75.'
+        fr: 'La clinique remet un reçu pour toute somme encaissée au titre des soins. Toute infraction aux deuxième et troisième alinéas de l’article 75 est punie de 10 000 à 50 000 DH d’amende.'
+      cites: [/ma/loi/131-13/art_75, /ma/loi/131-13/art_115]
+    - title: {ar: 'الثمن قبل العلاج', fr: 'Le prix avant les soins'}
+      answer: {ar: 'يخبرك الطبيب بخطة العلاج وتكلفتها، ولا يطلب أجرا جزافيا مقابل نجاعة علاج.', fr: 'Le médecin vous informe du plan de soins et de son coût, et ne demande pas d’honoraires forfaitaires pour l’efficacité d’un traitement.'}
+      body:
+        ar: 'ما عدا حالات الاستعجال أو الاستحالة، يخبر الطبيب المريض إخبارا صادقا بلغة واضحة: بالتشخيص، وبالفحوصات الواجب إجراؤها ومخاطرها، وبخطة العلاجات المرتقبة وتكلفتها. ويمنع عليه المطالبة بمبلغ جزافي مقابل نجاعة علاج ما.'
+        fr: 'Sauf urgence ou impossibilité, le médecin informe le malade loyalement, en termes clairs : du diagnostic, des examens et de leurs risques, du plan de soins envisagé et de son coût. Il ne peut réclamer de somme forfaitaire pour l’efficacité d’un traitement.'
+      cites: [/ma/decret/2-21-225/art_40, /ma/decret/2-21-225/art_55]
+  ends: {office: hospital, paper: {ar: 'وصل الأداء عن كل مبلغ دفعته للمصحة', fr: 'Le reçu de chaque somme payée à la clinique'}, cites: [/ma/loi/131-13/art_75]}
+
+- key: long-illness
+  title: {ar: 'مرض طويل أو مكلف: الإعفاء من الجزء الباقي عليك', fr: 'Une maladie longue ou coûteuse : l’exonération de votre part'}
+  lead:
+    ar: 'يعفى المؤمن كليا أو جزئيا من الجزء الباقي على عاتقه في حالة مرض خطير أو مرض يتطلب علاجا طويل الأمد أو باهظ الثمن، وفق قائمة يحددها وزير الصحة، لستة أشهر قابلة للتجديد.'
+    fr: 'L’assuré est exonéré, totalement ou partiellement, de sa part en cas de maladie grave, de longue durée ou coûteuse figurant sur la liste du ministre de la Santé, pour six mois renouvelables.'
+  steps:
+    - title: {ar: 'ما يقوله القانون', fr: 'Ce que dit la loi'}
+      answer: {ar: 'المرض الخطير، أو الذي يتطلب علاجا طويل الأمد أو باهظ الثمن، يعفيك كليا أو جزئيا من الجزء الباقي عليك.', fr: 'Une maladie grave, de longue durée ou coûteuse vous exonère, en tout ou partie, de votre part.'}
+      body:
+        ar: 'يعفى المؤمن كليا أو جزئيا من الجزء الباقي على عاتقه في حالة مرض خطير أو مرض ترتب عنه عجز يتطلب علاجا طويل الأمد، أو في حالة ما إذا كانت تكاليف العلاج باهظة الثمن، وتحدد بنص تنظيمي قائمة الأمراض التي تخول الحق في الإعفاء.'
+        fr: 'L’assuré est exonéré totalement ou partiellement de sa part en cas de maladie grave ou invalidante nécessitant des soins de longue durée, ou de soins particulièrement coûteux ; la liste des maladies ouvrant ce droit est fixée par voie réglementaire.'
+      cites: [/ma/loi/65-00/art_9]
+      tool: tools/illness
+    - title: {ar: 'الطلب والقرار', fr: 'La demande et la décision'}
+      answer: {ar: 'يقرر الصندوق الإعفاء بعد دراسة حالتك ورأي المراقبة الطبية، لستة أشهر قابلة للتجديد بنفس الشروط.', fr: 'La caisse décide après examen de votre dossier et avis du contrôle médical, pour six mois renouvelables aux mêmes conditions.'}
+      body:
+        ar: 'يقرر إعفاء المؤمن من الجزء الباقي على عاتقه بعد دراسة الحالة من لدن الهيئة المكلفة بالتدبير واستطلاع رأي المراقبة الطبية، كل ستة أشهر قابلة للتجديد وفقا للشروط نفسها.'
+        fr: 'L’exonération est décidée après étude du cas par l’organisme gestionnaire et avis du contrôle médical, par périodes de six mois renouvelables aux mêmes conditions.'
+      cites: [/ma/decret/2-05-733/art_10]
+      delay: {months: 6, from: {ar: 'من قرار الإعفاء، قابلة للتجديد', fr: 'à compter de la décision, renouvelables'}}
+    - title: {ar: 'كم يبقى عليك', fr: 'Ce qui reste à votre charge'}
+      answer: {ar: 'في الضمان الاجتماعي ترتفع النسبة إلى 90% حين تعالج في المستشفى العمومي؛ وفي الصندوق الوطني لمنظمات الاحتياط الاجتماعي لا يتجاوز ما يبقى عليك 10%، ويكون الإعفاء تاما في العلاج الباهظ.', fr: 'À la CNSS, le taux passe à 90 % à l’hôpital public ; à la CNOPS, votre part ne dépasse pas 10 %, et l’exonération est totale pour les soins coûteux.'}
+      body:
+        ar: 'في نظام الضمان الاجتماعي، ترفع نسبة التغطية من 70% إلى 90% في حالة الأمراض الخطيرة أو الطويلة الأمد أو الباهظة، عندما تقدم الخدمات بالمستشفيات العمومية. وفي نظام الصندوق الوطني لمنظمات الاحتياط الاجتماعي، لا يتجاوز الجزء الباقي على عاتق المؤمن 10% من التعريفة المرجعية الوطنية، ويكون الإعفاء تاما في العلاجات الباهظة الثمن.'
+        fr: 'À la CNSS, le taux passe de 70 % à 90 % pour les maladies graves, longues ou coûteuses soignées dans les hôpitaux publics. À la CNOPS, la part de l’assuré ne dépasse pas 10 % du tarif de référence, et l’exonération est totale pour les soins coûteux.'
+      cites: [/ma/decret/2-05-737/art_2, /ma/decret/2-05-736/art_2]
+      tool: tools/refund
+    - title: {ar: 'إذا لم يؤد المشغل الاشتراكات', fr: 'Si l’employeur n’a pas payé les cotisations'}
+      answer: {ar: 'إذا كنت أو أحد ذوي حقوقك مصابا بمرض طويل أو مكلف، يبقى الصندوق ملزما بتقديم الخدمات، ويلزم المشغل بتسوية وضعيته.', fr: 'Si vous ou un ayant droit êtes atteint d’une maladie longue ou coûteuse, la caisse doit continuer les prestations et l’employeur régulariser.'}
+      body:
+        ar: 'يتوقف الحق في الخدمات على الأداء المسبق للاشتراك، غير أنه يتعين على الهيئة المكلفة بالتدبير، إذا كان المؤمن أو أحد ذوي حقوقه مصابا بمرض طويل الأمد أو مرض يترتب عنه عجز أو مرض يستلزم علاجا خاصا ومكلفا، تقديم الخدمات لهؤلاء الأشخاص، مع إلزام المشغل بتسوية وضعيته.'
+        fr: 'Le droit aux prestations dépend du paiement préalable des cotisations ; toutefois, si l’assuré ou un ayant droit est atteint d’une maladie de longue durée, invalidante ou nécessitant des soins coûteux, l’organisme doit servir les prestations et contraindre l’employeur à régulariser.'
+      cites: [/ma/loi/65-00/art_32]
+    - title: {ar: 'في أمو تضامن', fr: 'À l’AMO Tadamon'}
+      answer: {ar: 'إذا توفرت لدى المستشفيات العمومية معطيات مرضك الخطير، يحدد الضمان الاجتماعي وضعيتك على أساسها دون أن يطلب منك وثائق.', fr: 'Si les hôpitaux publics disposent des données de votre maladie grave, la CNSS établit votre situation sur cette base, sans vous demander de pièces.'}
+      body:
+        ar: 'إذا توافرت لدى المؤسسات الصحية العمومية المعطيات المتعلقة بالأشخاص المصابين بأمراض خطيرة أو أمراض يترتب عليها عجز يتطلب علاجا طويل الأمد أو باهظ الثمن، يحدد الصندوق الوطني للضمان الاجتماعي وضعيتهم على أساسها، دون حاجة إلى طلب الوثائق المثبتة أو مباشرة المراقبة الطبية.'
+        fr: 'Lorsque les établissements de santé publics disposent des données des personnes atteintes de maladies graves, invalidantes, longues ou coûteuses, la CNSS établit leur situation sur cette base, sans exiger de justificatifs ni de contrôle médical.'
+      cites: [/ma/decret/2-22-797/art_15]
+  ends: {office: fund, paper: {ar: 'قرار الإعفاء، لستة أشهر قابلة للتجديد', fr: 'La décision d’exonération, pour six mois renouvelables'}, cites: [/ma/decret/2-05-733/art_10]}
+
+- key: tadamon-lost
+  title: {ar: 'توقف أمو تضامن: لماذا، وأين بعده', fr: 'L’AMO Tadamon s’arrête : pourquoi, et où ensuite'}
+  lead:
+    ar: 'يتحقق بشكل دوري من أن مؤشرك ما زال تحت العتبة؛ وإذا لم يعد، يخبر الضمان الاجتماعي فيوقف الاستفادة. ومن يستطيع الأداء ولا يزاول نشاطا ينتقل إلى أمو الشامل.'
+    fr: 'Il est vérifié périodiquement que votre indice reste sous le seuil ; sinon, la CNSS en est informée et suspend le bénéfice. Qui peut cotiser sans activité passe à l’AMO Achamil.'
+  steps:
+    - title: {ar: 'التحقق الدوري', fr: 'La vérification périodique'}
+      answer: {ar: 'تتحقق مصالح وزارة الداخلية بشكل دوري من بقاء مؤشرك تحت العتبة، وتخبر الضمان الاجتماعي بمن لم يعد كذلك، فيوقف استفادته.', fr: 'Les services de l’Intérieur vérifient périodiquement que votre indice reste sous le seuil et signalent à la CNSS ceux qui ne le sont plus ; elle suspend leur bénéfice.'}
+      body:
+        ar: 'يتم التحقق بكيفية دورية من استيفاء العتبة، وتخبر المصالح المختصة بوزارة الداخلية الصندوق الوطني للضمان الاجتماعي بقائمة المؤمنين الذين لم يعودوا يستوفون هذه العتبة، ويقوم الصندوق تبعا لذلك بوقف استفادة المؤمن المعني أو أي من ذوي حقوقه. والعتبة محددة في 9,3264284.'
+        fr: 'Le respect du seuil est vérifié périodiquement ; les services compétents de l’Intérieur transmettent à la CNSS la liste des assurés qui n’y satisfont plus, et la CNSS suspend leur bénéfice ou celui de leurs ayants droit. Le seuil est fixé à 9,3264284.'
+      cites: [/ma/decret/2-22-797/art_5, /ma/decret/2-22-923/art_1]
+    - title: {ar: 'نظام آخر', fr: 'Un autre régime'}
+      answer: {ar: 'وتتوقف الاستفادة أيضا إذا صرت خاضعا لنظام آخر للتأمين، كأن تشتغل أجيرا.', fr: 'Le bénéfice cesse aussi si vous relevez d’un autre régime, par exemple comme salarié.'}
+      body:
+        ar: 'يقوم الصندوق الوطني للضمان الاجتماعي، كلما تبين له أن مؤمنا أو أيا من ذوي حقوقه أصبح خاضعا لنظام آخر للتأمين الإجباري الأساسي عن المرض، بوقف استفادته من نظام غير القادرين على تحمل واجبات الاشتراك.'
+        fr: 'Dès qu’il apparaît qu’un assuré ou un ayant droit relève d’un autre régime d’AMO, la CNSS suspend son bénéfice du régime des personnes ne pouvant cotiser.'
+      cites: [/ma/decret/2-22-797/art_5]
+    - title: {ar: 'أمو الشامل', fr: 'L’AMO Achamil'}
+      answer: {ar: 'من يستطيع أداء الاشتراك ولا يزاول أي نشاط يطلب التسجيل في أمو الشامل لدى الضمان الاجتماعي؛ يسري من فاتح الشهر الموالي، والاشتراك الشهري من 144 إلى 1.164 درهم حسب المؤشر، ومدة التدريب ثلاثة أشهر.', fr: 'Qui peut cotiser sans activité demande à être immatriculé à l’AMO Achamil auprès de la CNSS ; effet le 1er du mois suivant, cotisation de 144 à 1 164 DH par mois selon l’indice, trois mois de stage.'}
+      body:
+        ar: 'تثبت القدرة على تحمل واجبات الاشتراك استنادا إلى منظومة استهداف المستفيدين. يقدم الطلب لدى الصندوق الوطني للضمان الاجتماعي، ويسري أثر التسجيل من فاتح الشهر الموالي للشهر الذي تم فيه، وتبدأ الاستفادة بعد مدة تدريب من ثلاثة أشهر. ويحدد الاشتراك الشهري حسب مستوى التنقيط: 144 درهما فوق العتبة مباشرة، إلى 1.164 درهما فوق 11,013068.'
+        fr: 'La capacité de cotiser s’établit par le système de ciblage. La demande est déposée à la CNSS ; l’immatriculation prend effet le 1er du mois suivant, les prestations après trois mois de stage. La cotisation mensuelle dépend du score : 144 DH juste au-dessus du seuil, jusqu’à 1 164 DH au-delà de 11,013068.'
+      cites: [/ma/loi/60-22/art_3, /ma/loi/60-22/art_4, /ma/loi/60-22/art_5, /ma/loi/60-22/art_7, /ma/decret/2-23-690/art_6]
+    - title: {ar: 'إذا كنت تشتغل', fr: 'Si vous travaillez'}
+      answer: {ar: 'الأجير يسجله مشغله، ومن يشتغل لحسابه يخضع لنظام المهنيين والعمال المستقلين.', fr: 'Le salarié est immatriculé par son employeur ; l’indépendant relève du régime des professionnels et travailleurs indépendants.'}
+      body:
+        ar: 'يعاقب بغرامة 1.000 درهم عن كل أجير المشغل الذي لم يسجل مأجوريه داخل الآجال القانونية، ويحتفظ المأجورون بالحق في اللجوء إلى القضاء. ويخضع المهنيون والعمال المستقلون والأشخاص غير الأجراء الذين يزاولون نشاطا خاصا لنظام القانون 98.15.'
+        fr: 'L’employeur qui n’immatricule pas ses salariés dans les délais est puni de 1 000 DH d’amende par salarié, les salariés gardant le droit d’agir en justice. Les professionnels, travailleurs indépendants et non-salariés exerçant une activité privée relèvent de la loi 98.15.'
+      cites: [/ma/loi/65-00/art_131, /ma/loi/98-15/art_3]
+      next: journeys/self
+  ends: {office: fund, paper: {ar: 'التسجيل في أمو الشامل أو في نظامك الجديد', fr: 'L’immatriculation à l’AMO Achamil ou à votre nouveau régime'}, cites: [/ma/loi/60-22/art_4]}
+
+- key: record
+  title: {ar: 'الملف الطبي: الاطلاع والنسخة', fr: 'Le dossier médical : consultation et copie'}
+  lead:
+    ar: 'للمريض أو ممثله أن يطلع على العناصر الموضوعية في ملفه الطبي، شخصيا أو بواسطة طبيب، وأن يحصل على نسخة منه على نفقته؛ ويرسل الطبيب الملف كاملا إلى الطبيب الذي يختاره المريض.'
+    fr: 'Le patient ou son représentant consulte les éléments objectifs de son dossier, lui-même ou par un médecin, et en obtient copie à ses frais ; le médecin transmet le dossier complet au médecin choisi par le patient.'
+  steps:
+    - title: {ar: 'ما في الملف', fr: 'Ce que contient le dossier'}
+      answer: {ar: 'يضم الملف العناصر الموضوعية والقرارات التشخيصية والعلاجية؛ ويحفظ تحت مسؤولية الطبيب الذي أعده.', fr: 'Le dossier réunit les éléments objectifs et les décisions diagnostiques et thérapeutiques ; il est conservé sous la responsabilité du médecin qui l’a établi.'}
+      body:
+        ar: 'يتضمن الملف الطبي العناصر الموضوعية والقرارات التشخيصية والعلاجية التي تثبت التكفل بالمريض وتتبعه. ويمكن للطبيب إعداد بطائق شخصية تظل سرية. وتحفظ الملفات الطبية تحت مسؤولية الطبيب الذي أعدها.'
+        fr: 'Le dossier contient les éléments objectifs et les décisions diagnostiques et thérapeutiques qui attestent la prise en charge et le suivi. Le médecin peut tenir des fiches personnelles, qui restent confidentielles. Les dossiers sont conservés sous la responsabilité du médecin qui les a établis.'
+      cites: [/ma/decret/2-21-225/art_48]
+    - title: {ar: 'الاطلاع والنسخة', fr: 'Consultation et copie'}
+      answer: {ar: 'تطلع على ملفك بنفسك أو بواسطة طبيب، وتحصل على نسخة منه أو من جزء منه على نفقتك.', fr: 'Vous consultez votre dossier vous-même ou par un médecin, et en obtenez copie, en tout ou partie, à vos frais.'}
+      body:
+        ar: 'يحق للمريض أو ممثله القانوني أو نائبه الشرعي أن يطلع، شخصيا أو من خلال طبيب، على العناصر الموضوعية في الملف الطبي، ويحق له الحصول، على نفقته، على نسخة من الملف أو جزء منه.'
+        fr: 'Le patient, son représentant légal ou son tuteur peut consulter, lui-même ou par un médecin, les éléments objectifs du dossier, et en obtenir copie, en tout ou partie, à ses frais.'
+      cites: [/ma/decret/2-21-225/art_49]
+    - title: {ar: 'ذوو الحقوق', fr: 'Les ayants droit'}
+      answer: {ar: 'يحق لذوي حقوق المريض الاطلاع على ملفه، ما لم يعترض على ذلك في حياته، ويجب أن يعلل الطلب.', fr: 'Les ayants droit du patient peuvent consulter son dossier, sauf opposition de son vivant ; la demande doit être motivée.'}
+      body:
+        ar: 'يحق لذوي حقوق المريض الاطلاع على الملف الطبي، ما لم يعترض المريض قيد حياته على ذلك، ويجب أن يعلل طلب الولوج إلى الملف الطبي.'
+        fr: 'Les ayants droit du patient peuvent accéder au dossier, sauf opposition du patient de son vivant ; la demande d’accès doit être motivée.'
+      cites: [/ma/decret/2-21-225/art_49]
+    - title: {ar: 'تغيير الطبيب', fr: 'Changer de médecin'}
+      answer: {ar: 'إذا اخترت طبيبا آخر، يوافيه طبيبك بكل المعلومات اللازمة لمواصلة العلاج، ولا سيما ملفك الطبي الكامل.', fr: 'Si vous choisissez un autre médecin, le vôtre lui transmet tout ce qu’il faut pour poursuivre les soins, notamment votre dossier complet.'}
+      body:
+        ar: 'يوافي الطبيب الطبيب الذي يختاره المريض بكل المعلومات الضرورية لمواصلة العلاج، ولا سيما الملف الطبي الكامل للمريض.'
+        fr: 'Le médecin transmet au médecin choisi par le patient toutes les informations nécessaires à la poursuite des soins, notamment le dossier médical complet.'
+      cites: [/ma/decret/2-21-225/art_14]
+  ends: {office: hospital, paper: {ar: 'نسخة من ملفك الطبي، على نفقتك', fr: 'Une copie de votre dossier, à vos frais'}, cites: [/ma/decret/2-21-225/art_49]}
+
+- key: sick
+  title: {ar: 'المرض والغياب عن العمل', fr: 'La maladie et l’absence au travail'}
+  lead:
+    ar: 'يخبر الأجير مشغله خلال ثمان وأربعين ساعة إلا لقوة قاهرة، وإذا تجاوز الغياب أربعة أيام يخبره بمدته المحتملة ويدلي بشهادة طبية؛ وللمشغل أن يجري على نفقته فحصا مضادا.'
+    fr: 'Le salarié prévient son employeur dans les quarante-huit heures, sauf force majeure ; au-delà de quatre jours, il indique la durée probable et produit un certificat ; l’employeur peut faire faire une contre-visite à ses frais.'
+  steps:
+    - title: {ar: '48 ساعة', fr: '48 heures'}
+      answer: {ar: 'تبرر غيابك بسبب المرض أو الحادثة وتخبر مشغلك خلال الثماني والأربعين ساعة الموالية، إلا إذا حالت قوة قاهرة دون ذلك.', fr: 'Vous justifiez votre absence pour maladie ou accident et prévenez votre employeur dans les quarante-huit heures, sauf force majeure.'}
+      body:
+        ar: 'يجب على كل أجير تعذر عليه الالتحاق بشغله بسبب مرض أو حادثة أن يبرر ذلك ويشعر مشغله خلال الثماني والأربعين ساعة الموالية لذلك، إلا إذا حالت القوة القاهرة دون ذلك.'
+        fr: 'Tout salarié empêché de se rendre au travail pour maladie ou accident le justifie et en avise son employeur dans les quarante-huit heures, sauf force majeure.'
+      cites: [/ma/loi/65-99/art_271]
+      delay: {hours: 48, from: {ar: 'من أول يوم غياب', fr: 'à compter du premier jour d’absence'}}
+    - title: {ar: 'أكثر من أربعة أيام', fr: 'Plus de quatre jours'}
+      answer: {ar: 'إذا استمر الغياب أكثر من أربعة أيام، تخبر مشغلك بمدته المحتملة وتدلي له بشهادة طبية، إلا إذا تعذر عليك ذلك.', fr: 'Au-delà de quatre jours, vous indiquez la durée probable et produisez un certificat médical, sauf impossibilité.'}
+      body:
+        ar: 'يجب على الأجير، إذا استمر الغياب أكثر من أربعة أيام، إخبار مشغله بالمدة المحتملة لغيابه، والإدلاء له بشهادة طبية تبرر غيابه، إلا إذا تعذر عليه ذلك. ويمنع على الطبيب منح أي شهادة مجاملة.'
+        fr: 'Si l’absence dépasse quatre jours, le salarié en indique la durée probable et produit un certificat médical, sauf impossibilité. Le médecin ne peut délivrer de certificat de complaisance.'
+      cites: [/ma/loi/65-99/art_271, /ma/decret/2-21-225/art_52]
+    - title: {ar: 'الفحص المضاد', fr: 'La contre-visite'}
+      answer: {ar: 'للمشغل أن يعهد، على نفقته، إلى طبيب يختاره بفحصك فحصا مضادا خلال مدة الغياب المحددة في الشهادة.', fr: 'L’employeur peut, à ses frais, faire faire une contre-visite par un médecin de son choix pendant l’arrêt indiqué au certificat.'}
+      body:
+        ar: 'يمكن للمشغل أن يعهد على نفقته إلى طبيب يختاره بنفسه بأن يجري على الأجير فحصا طبيا مضادا، داخل مدة التغيب المحددة في الشهادة الطبية المدلى بها.'
+        fr: 'L’employeur peut confier, à ses frais, à un médecin de son choix une contre-visite du salarié pendant la durée d’absence indiquée au certificat.'
+      cites: [/ma/loi/65-99/art_271]
+  ends: {icon: papers, paper: {ar: 'الشهادة الطبية التي تبرر غيابك', fr: 'Le certificat médical qui justifie votre absence'}, cites: [/ma/loi/65-99/art_271]}
+
+- key: error
+  title: {ar: 'غلط طبي: الطرق التي يفتحها القانون', fr: 'Une erreur médicale : les voies que la loi ouvre'}
+  lead:
+    ar: 'أربعة طرق، لكل منها نصها: شكاية تأديبية أمام المجلس الجهوي لهيئة الأطباء، ودعوى تعويض مدنية داخل خمس سنوات من العلم بالضرر، ودعوى أمام المحكمة الإدارية إذا كان الضرر من مرفق عمومي، وشكاية جنائية في الجرح أو القتل غير العمدي. هذه معلومة عامة، والقرار لمحام أو قاض في حالتك.'
+    fr: 'Quatre voies, chacune avec son texte : une plainte disciplinaire devant le conseil régional de l’Ordre, une action civile en réparation dans les cinq ans de la connaissance du dommage, une action devant le tribunal administratif si le dommage vient d’un service public, une plainte pénale pour blessures ou homicide involontaires. Information générale : votre cas relève d’un avocat ou d’un juge.'
+  steps:
+    - title: {ar: 'الملف الطبي أولا', fr: 'D’abord le dossier médical'}
+      answer: {ar: 'تطلب نسخة من ملفك الطبي على نفقتك، شخصيا أو بواسطة طبيب.', fr: 'Vous demandez copie de votre dossier, à vos frais, vous-même ou par un médecin.'}
+      body:
+        ar: 'يحق للمريض أو ممثله القانوني أن يطلع، شخصيا أو من خلال طبيب، على العناصر الموضوعية في الملف الطبي، وأن يحصل على نفقته على نسخة منه.'
+        fr: 'Le patient ou son représentant consulte, lui-même ou par un médecin, les éléments objectifs du dossier et en obtient copie à ses frais.'
+      cites: [/ma/decret/2-21-225/art_49]
+      next: journeys/record
+    - title: {ar: 'الشكاية التأديبية', fr: 'La plainte disciplinaire'}
+      answer: {ar: 'تحال الشكاية كتابة إلى المجلس الجهوي لهيئة الطبيبات والأطباء، وتتضمن اسم الطبيب وعنوانه والأفعال المنسوبة إليه؛ ومقرر عدم المتابعة يستأنف أمام المجلس الوطني.', fr: 'La plainte est adressée par écrit au conseil régional de l’Ordre, avec le nom et l’adresse du médecin et les faits ; un refus de poursuivre se conteste devant le conseil national.'}
+      body:
+        ar: 'تحال الشكاية كتابة إلى المجلس الجهوي من أي شخص يعنيه الأمر ينسب بواسطتها إلى طبيبة أو طبيب ارتكاب خطإ شخصي يبرر إقامة دعوى تأديبية، ويجب أن تتضمن الاسم الكامل للطبيب وعنوانه والأفعال المنسوبة إليه. وإذا قررت الهيئة التأديبية عدم المتابعة، يبلغ المقرر المعلل إلى المشتكي، ويحق له استئنافه لدى المجلس الوطني.'
+        fr: 'Toute personne intéressée peut saisir par écrit le conseil régional d’une plainte imputant à un médecin une faute personnelle justifiant des poursuites disciplinaires ; la plainte indique le nom complet du médecin, son adresse et les faits. La décision motivée de ne pas poursuivre est notifiée au plaignant, qui peut faire appel devant le conseil national.'
+      cites: [/ma/loi/8-12/art_73, /ma/loi/8-12/art_74]
+    - title: {ar: 'التعويض المدني', fr: 'La réparation civile'}
+      answer: {ar: 'من أحدث ضررا بخطئه يلزم بتعويضه إذا كان الخطأ السبب المباشر فيه؛ وتتقادم الدعوى بخمس سنوات من علمك بالضرر والمسؤول عنه، وبعشرين سنة على الأكثر.', fr: 'Qui cause un dommage par sa faute doit le réparer si la faute en est la cause directe ; l’action se prescrit par cinq ans dès que vous connaissez le dommage et son auteur, et vingt ans au plus.'}
+      body:
+        ar: 'كل شخص مسؤول عن الضرر المعنوي أو المادي الذي أحدثه لا بفعله فقط ولكن بخطئه أيضا، عندما يثبت أن هذا الخطأ هو السبب المباشر في ذلك الضرر. وتتقادم دعوى التعويض بمضي خمس سنوات تبتدئ من الوقت الذي بلغ فيه إلى علم المتضرر الضرر ومن هو المسؤول عنه، وتتقادم في جميع الأحوال بمضي عشرين سنة من وقت حدوث الضرر.'
+        fr: 'Chacun est responsable du dommage moral ou matériel qu’il a causé, non seulement par son fait, mais par sa faute, lorsqu’elle en est la cause directe. L’action en réparation se prescrit par cinq ans à partir du moment où la victime a connu le dommage et son responsable, et dans tous les cas par vingt ans à partir du dommage.'
+      cites: [/ma/code/doc/art_77, /ma/code/doc/art_78, /ma/code/doc/art_106]
+      delay: {months: 60, from: {ar: 'من علمك بالضرر والمسؤول عنه', fr: 'dès que vous connaissez le dommage et son auteur'}}
+    - title: {ar: 'المستشفى العمومي', fr: 'L’hôpital public'}
+      answer: {ar: 'دعاوى التعويض عن الأضرار التي تسببها أعمال وأنشطة أشخاص القانون العام، ومنها المستشفيات العمومية، من اختصاص المحاكم الإدارية.', fr: 'Les actions en réparation des dommages causés par les actes et activités des personnes de droit public, dont les hôpitaux publics, relèvent des tribunaux administratifs.'}
+      body:
+        ar: 'تختص المحاكم الإدارية بالنظر في دعاوى التعويض عن الأضرار التي تسببها أعمال وأنشطة أشخاص القانون العام.'
+        fr: 'Les tribunaux administratifs connaissent des actions en réparation des dommages causés par les actes et activités des personnes de droit public.'
+      cites: [/ma/loi/58-25/art_38]
+    - title: {ar: 'الشكاية الجنائية', fr: 'La plainte pénale'}
+      answer: {ar: 'الجرح أو القتل غير العمدي بسبب عدم التبصر أو الإهمال أو عدم مراعاة النظم جنحة؛ ويستعين القضاء بأطباء الطب الشرعي.', fr: 'Les blessures ou l’homicide involontaires par imprudence, négligence ou inobservation des règlements sont des délits ; la justice s’appuie sur les médecins légistes.'}
+      body:
+        ar: 'من تسبب بعدم تبصره أو عدم احتياطه أو عدم انتباهه أو إهماله أو عدم مراعاته النظم أو القوانين في جرح غير عمدي نتج عنه عجز تزيد مدته على ستة أيام، يعاقب بالحبس من شهر إلى سنتين وغرامة، وفي القتل غير العمدي بالحبس من ثلاثة أشهر إلى خمس سنوات. ويعتبر أطباء الطب الشرعي من مساعدي القضاء.'
+        fr: 'Quiconque, par maladresse, imprudence, inattention, négligence ou inobservation des règlements, cause des blessures entraînant une incapacité de plus de six jours est puni d’un mois à deux ans d’emprisonnement et d’une amende ; l’homicide involontaire, de trois mois à cinq ans. Les médecins légistes sont des auxiliaires de justice.'
+      cites: [/ma/dahir/1-59-413/art_433, /ma/dahir/1-59-413/art_432, /ma/loi/77-17/art_2]
+  ends: {office: court, paper: {ar: 'مقرر المجلس الجهوي، أو حكم المحكمة', fr: 'La décision du conseil régional, ou le jugement'}, cites: [/ma/loi/8-12/art_74]}
+
+- key: death
+  title: {ar: 'الوفاة: الشهادة، ورخصة الدفن، والتصريح', fr: 'Le décès : le certificat, le permis d’inhumer, la déclaration'}
+  lead:
+    ar: 'يعاين الطبيب الوفاة بشهادة محدد نموذجها، وتسلم رخصة الدفن بنموذجها، ويصرح أقارب الهالك بالوفاة بترتيب يحدده قانون الحالة المدنية.'
+    fr: 'Le médecin constate le décès sur un certificat au modèle fixé, le permis d’inhumer est délivré à son modèle, et les proches déclarent le décès dans l’ordre fixé par la loi sur l’état civil.'
+  steps:
+    - title: {ar: 'شهادة معاينة الوفاة', fr: 'Le certificat de constatation du décès'}
+      answer: {ar: 'تحرر شهادة معاينة الوفاة وفق النموذج الذي حدده القرار المشترك لوزيري الداخلية والصحة سنة 2025.', fr: 'Le certificat de constatation du décès suit le modèle fixé par l’arrêté conjoint de l’Intérieur et de la Santé de 2025.'}
+      body:
+        ar: 'يحدد نموذج شهادة معاينة الوفاة في الملحق المرفق بالقرار المشترك لوزير الداخلية ووزير الصحة والحماية الاجتماعية رقم 1251.25.'
+        fr: 'Le modèle du certificat de constatation du décès figure en annexe de l’arrêté conjoint n° 1251-25 de l’Intérieur et de la Santé.'
+      cites: [/ma/arrete/1251-25/art_1]
+    - title: {ar: 'رخصة الدفن', fr: 'Le permis d’inhumer'}
+      answer: {ar: 'تسلم رخصة الدفن وفق النموذج الذي حدده قرار وزير الداخلية سنة 2025.', fr: 'Le permis d’inhumer suit le modèle fixé par l’arrêté de l’Intérieur de 2025.'}
+      body:
+        ar: 'يحدد قرار وزير الداخلية رقم 1255.25 نموذج رخصة الدفن في ملحقه.'
+        fr: 'L’arrêté de l’Intérieur n° 1255-25 fixe en annexe le modèle du permis d’inhumer.'
+      cites: [/ma/arrete/1255-25/annex]
+    - title: {ar: 'التصريح بالوفاة', fr: 'La déclaration du décès'}
+      answer: {ar: 'يصرح بالوفاة الزوج أو الزوجة، ثم الابن أو البنت، ثم الأخ أو الأخت، ثم الأب أو الأم، بالترتيب الذي يحدده القانون؛ وإذا وقعت في مؤسسة وتعذر على الأقارب التصريح، يرسمها ضابط الحالة المدنية من معطيات المؤسسة.', fr: 'Le décès est déclaré par le conjoint, puis les enfants, puis les frères et sœurs, puis les parents, dans l’ordre de la loi ; survenu dans un établissement et non déclaré par les proches, il est inscrit par l’officier d’état civil d’après les données de l’établissement.'}
+      body:
+        ar: 'يتم التصريح الأولي بالوفاة من قبل الزوج أو الزوجة، فالابن أو البنت، فالأخ أو الأخت، فالأب أو الأم أو الوصي أو المقدم، فالجد أو الجدة، فالكافل، فالأقربون بالترتيب. وإذا تعذر على الأقارب التصريح بوفاة وقعت في المؤسسات المعنية، يرسمها ضابط الحالة المدنية بالسجل الوطني بناء على معطيات تلك المؤسسات.'
+        fr: 'La déclaration initiale du décès est faite par le conjoint, puis le fils ou la fille, le frère ou la sœur, le père, la mère, le tuteur ou le curateur, les grands-parents, le kafil, puis les plus proches parents dans l’ordre. Si les proches ne peuvent déclarer un décès survenu dans un établissement concerné, l’officier d’état civil l’inscrit au registre national d’après les données de l’établissement.'
+      cites: [/ma/loi/36-21/art_37, /ma/loi/36-21/art_39]
+      next: family:journeys/heirs
+  ends: {office: record, paper: {ar: 'رسم الوفاة في الحالة المدنية', fr: 'L’acte de décès à l’état civil'}, cites: [/ma/loi/36-21/art_37]}
+
+- key: self
+  title: {ar: 'المهنيون والعمال المستقلون: التسجيل والتدريب', fr: 'Indépendants : immatriculation et stage'}
+  lead:
+    ar: 'يخضع المهنيون المستقلون والعمال المستقلون والأشخاص غير الأجراء الذين يزاولون نشاطا خاصا لنظام القانون 98.15 لدى الضمان الاجتماعي: تدريب ثلاثة أشهر، والتصريح بكل تغيير داخل ثلاثين يوما.'
+    fr: 'Les professionnels indépendants, travailleurs indépendants et non-salariés exerçant une activité privée relèvent de la loi 98.15 à la CNSS : trois mois de stage, tout changement déclaré sous trente jours.'
+  steps:
+    - title: {ar: 'من يخضع', fr: 'Qui en relève'}
+      answer: {ar: 'المهنيون المستقلون، والعمال المستقلون، والأشخاص غير الأجراء الذين يزاولون نشاطا خاصا، إذا لم يكونوا خاضعين لنظام آخر.', fr: 'Les professionnels et travailleurs indépendants, et les non-salariés exerçant une activité privée, s’ils ne relèvent d’aucun autre régime.'}
+      body:
+        ar: 'يخضع لهذا النظام الأشخاص المنتمون لإحدى الفئات التالية، شريطة أن لا يكونوا خاضعين لأي نظام آخر للتأمين الإجباري الأساسي عن المرض: المهنيون المستقلون، والعمال المستقلون، والأشخاص غير الأجراء الذين يزاولون نشاطا خاصا؛ وتحدد مكونات الفئات بنص تنظيمي.'
+        fr: 'Relèvent de ce régime, s’ils ne relèvent d’aucun autre régime d’AMO, les professionnels indépendants, les travailleurs indépendants et les non-salariés exerçant une activité privée ; les composantes de ces catégories sont fixées par voie réglementaire.'
+      cites: [/ma/loi/98-15/art_3]
+    - title: {ar: 'التسجيل والطعن', fr: 'L’immatriculation et le recours'}
+      answer: {ar: 'يسري التسجيل من التاريخ الذي يحدده المرسوم الخاص بفئتك، ولك أن تطعن داخل ستة أشهر من الإشعار.', fr: 'L’immatriculation prend effet à la date fixée par le décret de votre catégorie ; vous pouvez la contester dans les six mois de l’avis.'}
+      body:
+        ar: 'يسري أثر التسجيل، الذي يتم بمبادرة من الشخص أو تلقائيا، ابتداء من التاريخ المحدد في النص التنظيمي حسب كل صنف، ويحق للمعني بالأمر الطعن داخل أجل ستة أشهر من تاريخ توجيه الإشعار.'
+        fr: 'L’immatriculation, à l’initiative de l’intéressé ou d’office, prend effet à la date fixée par voie réglementaire pour chaque catégorie ; l’intéressé peut la contester dans les six mois de l’envoi de l’avis.'
+      cites: [/ma/loi/98-15/art_8]
+      delay: {months: 6, from: {ar: 'من توجيه الإشعار', fr: 'à compter de l’envoi de l’avis'}}
+    - title: {ar: 'مدة التدريب', fr: 'Le stage'}
+      answer: {ar: 'تؤدي الاشتراكات ثلاثة أشهر قبل أن يبدأ التعويض أو التحمل.', fr: 'Vous cotisez trois mois avant tout remboursement ou prise en charge.'}
+      body:
+        ar: 'يتعين على كل مؤمن دفع مبلغ الاشتراكات دون الحق في الاستفادة من التحمل بنفقات العلاج واسترجاع المصاريف طوال مدة تدريب محددة في ثلاثة أشهر تبتدئ من تاريخ سريان أثر تسجيله.'
+        fr: 'L’assuré cotise sans droit à prise en charge ni remboursement pendant un stage de trois mois à compter de la prise d’effet de son immatriculation.'
+      cites: [/ma/loi/98-15/art_13]
+      delay: {months: 3, from: {ar: 'من سريان التسجيل', fr: 'à compter de l’immatriculation'}}
+    - title: {ar: 'كل تغيير', fr: 'Tout changement'}
+      answer: {ar: 'كل تغيير في محل إقامتك أو في وضعيتك أو وضعية أفراد عائلتك تصرح به داخل ثلاثين يوما.', fr: 'Tout changement d’adresse ou de situation, la vôtre ou celle de votre famille, se déclare sous trente jours.'}
+      body:
+        ar: 'كل تغيير لمحل الإقامة أو كل تعديل يدخل على وضعية المؤمن أو أفراد عائلته يجب التصريح به لدى الهيئة المكلفة بالتدبير داخل الثلاثين يوما التالية.'
+        fr: 'Tout changement de domicile ou de la situation de l’assuré ou de sa famille est déclaré à l’organisme gestionnaire dans les trente jours.'
+      cites: [/ma/loi/98-15/art_9]
+      delay: {days: 30, from: {ar: 'من التغيير', fr: 'à compter du changement'}}
+  ends: {office: fund, paper: {ar: 'التسجيل في نظام المهنيين والعمال المستقلين', fr: 'L’immatriculation au régime des indépendants'}, cites: [/ma/loi/98-15/art_8]}

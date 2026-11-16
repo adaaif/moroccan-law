@@ -1,0 +1,1176 @@
+{
+ "about": "The business topic's questions (the business review, 27 Oct 2026): people's words in Darija, Arabic, French and Latin letters about the auto-entrepreneur, the company, the trade register, invoices, payment terms, cheques, difficulty, cooperatives, procurement and investment, each with the articles that answer it. Written by the session from the articles the site holds, after the doors' words; owner-provisional until lawyers join.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "شنو هو السقف ديال المقاول الذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_1"
+   ],
+   "lang": "darija",
+   "theme": "auto-who"
+  },
+  {
+   "q": "شحال خاص يكون رقم المعاملات باش نبقى مقاول ذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_1"
+   ],
+   "lang": "darija",
+   "theme": "auto-who"
+  },
+  {
+   "q": "سقف رقم الأعمال السنوي للمقاول الذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_1"
+   ],
+   "lang": "ar",
+   "theme": "auto-who"
+  },
+  {
+   "q": "plafond chiffre d’affaires auto-entrepreneur maroc",
+   "expect": [
+    "/ma/loi/114-13/art_1"
+   ],
+   "lang": "fr",
+   "theme": "auto-who"
+  },
+  {
+   "q": "plafond auto entrepreneur 200000 dh khadamat",
+   "expect": [
+    "/ma/loi/114-13/art_1"
+   ],
+   "lang": "arabizi",
+   "theme": "auto-who"
+  },
+  {
+   "q": "واش المقاول الذاتي خاصو السجل التجاري",
+   "expect": [
+    "/ma/loi/114-13/art_2"
+   ],
+   "lang": "darija",
+   "theme": "auto-benefits"
+  },
+  {
+   "q": "إعفاء المقاول الذاتي من مسك المحاسبة",
+   "expect": [
+    "/ma/loi/114-13/art_2"
+   ],
+   "lang": "ar",
+   "theme": "auto-benefits"
+  },
+  {
+   "q": "auto-entrepreneur dispensé du registre de commerce",
+   "expect": [
+    "/ma/loi/114-13/art_2"
+   ],
+   "lang": "fr",
+   "theme": "auto-benefits"
+  },
+  {
+   "q": "wach auto entrepreneur khaso registre de commerce",
+   "expect": [
+    "/ma/loi/114-13/art_2"
+   ],
+   "lang": "arabizi",
+   "theme": "auto-benefits"
+  },
+  {
+   "q": "واش يقدرو يحجزو ليا الدار إلا كنت مقاول ذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_4"
+   ],
+   "lang": "darija",
+   "theme": "auto-home"
+  },
+  {
+   "q": "الحجز على محل السكنى الرئيسي للمقاول الذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_4"
+   ],
+   "lang": "ar",
+   "theme": "auto-home"
+  },
+  {
+   "q": "saisie de la résidence principale de l’auto-entrepreneur",
+   "expect": [
+    "/ma/loi/114-13/art_4"
+   ],
+   "lang": "fr",
+   "theme": "auto-home"
+  },
+  {
+   "q": "wach y7jzo lia dar ila kont auto entrepreneur",
+   "expect": [
+    "/ma/loi/114-13/art_4"
+   ],
+   "lang": "arabizi",
+   "theme": "auto-home"
+  },
+  {
+   "q": "نقدر نخدم من الدار كمقاول ذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_3"
+   ],
+   "lang": "darija",
+   "theme": "auto-domicile"
+  },
+  {
+   "q": "توطين نشاط المقاول الذاتي في محل سكناه",
+   "expect": [
+    "/ma/loi/114-13/art_3"
+   ],
+   "lang": "ar",
+   "theme": "auto-domicile"
+  },
+  {
+   "q": "auto-entrepreneur domicilier son activité chez soi",
+   "expect": [
+    "/ma/loi/114-13/art_3"
+   ],
+   "lang": "fr",
+   "theme": "auto-domicile"
+  },
+  {
+   "q": "كيفاش نتسجل مقاول ذاتي فبريد المغرب",
+   "expect": [
+    "/ma/decret/2-15-258/art_3"
+   ],
+   "lang": "darija",
+   "theme": "auto-register"
+  },
+  {
+   "q": "وثائق طلب التسجيل في السجل الوطني للمقاول الذاتي",
+   "expect": [
+    "/ma/decret/2-15-258/art_3"
+   ],
+   "lang": "ar",
+   "theme": "auto-register"
+  },
+  {
+   "q": "inscription auto-entrepreneur barid al maghrib documents",
+   "expect": [
+    "/ma/decret/2-15-258/art_3"
+   ],
+   "lang": "fr",
+   "theme": "auto-register"
+  },
+  {
+   "q": "kifach ntsjel auto entrepreneur f barid",
+   "expect": [
+    "/ma/decret/2-15-258/art_3"
+   ],
+   "lang": "arabizi",
+   "theme": "auto-register"
+  },
+  {
+   "q": "إمتى كيتشطبو على المقاول الذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_8"
+   ],
+   "lang": "darija",
+   "theme": "auto-radiation"
+  },
+  {
+   "q": "حالات التشطيب على المقاول الذاتي من السجل الوطني",
+   "expect": [
+    "/ma/loi/114-13/art_8"
+   ],
+   "lang": "ar",
+   "theme": "auto-radiation"
+  },
+  {
+   "q": "radiation auto-entrepreneur dépassement plafond deux années",
+   "expect": [
+    "/ma/loi/114-13/art_8"
+   ],
+   "lang": "fr",
+   "theme": "auto-radiation"
+  },
+  {
+   "q": "فت السقف جوج سنين وأنا مقاول ذاتي",
+   "expect": [
+    "/ma/loi/114-13/art_8"
+   ],
+   "lang": "darija",
+   "theme": "auto-radiation"
+  },
+  {
+   "q": "المهن الممنوعة من المقاول الذاتي",
+   "expect": [
+    "/ma/decret/2-15-263/art_1"
+   ],
+   "lang": "darija",
+   "theme": "auto-excluded"
+  },
+  {
+   "q": "واش الطبيب يقدر يكون مقاول ذاتي",
+   "expect": [
+    "/ma/decret/2-15-263/art_1"
+   ],
+   "lang": "darija",
+   "theme": "auto-excluded"
+  },
+  {
+   "q": "المهن المستثناة من نظام المقاول الذاتي",
+   "expect": [
+    "/ma/decret/2-15-263/art_1"
+   ],
+   "lang": "ar",
+   "theme": "auto-excluded"
+  },
+  {
+   "q": "activités exclues du régime de l’auto-entrepreneur",
+   "expect": [
+    "/ma/decret/2-15-263/art_1"
+   ],
+   "lang": "fr",
+   "theme": "auto-excluded"
+  },
+  {
+   "q": "wach mo7ami ykon auto entrepreneur",
+   "expect": [
+    "/ma/decret/2-15-263/art_1"
+   ],
+   "lang": "arabizi",
+   "theme": "auto-excluded"
+  },
+  {
+   "q": "شحال كيخلص المقاول الذاتي ديال الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "darija",
+   "theme": "auto-tax"
+  },
+  {
+   "q": "taux impôt auto-entrepreneur 0,5% 1%",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "fr",
+   "theme": "auto-tax"
+  },
+  {
+   "q": "سعر الضريبة على الدخل للمقاول الذاتي",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "ar",
+   "theme": "auto-tax"
+  },
+  {
+   "q": "زبون واحد خلصني فوق 80000 درهم وأنا مقاول ذاتي",
+   "expect": [
+    "/ma/code/cgi/art_42-bis",
+    "/ma/code/cgi/art_45-bis"
+   ],
+   "lang": "darija",
+   "theme": "auto-client"
+  },
+  {
+   "q": "retenue à la source auto-entrepreneur même client 80 000 dh",
+   "expect": [
+    "/ma/code/cgi/art_42-bis",
+    "/ma/code/cgi/art_45-bis"
+   ],
+   "lang": "fr",
+   "theme": "auto-client"
+  },
+  {
+   "q": "فوقاش كيصرح المقاول الذاتي برقم المعاملات",
+   "expect": [
+    "/ma/code/cgi/art_82-bis",
+    "/ma/loi/114-13/art_6"
+   ],
+   "lang": "darija",
+   "theme": "auto-declare"
+  },
+  {
+   "q": "déclaration trimestrielle du chiffre d’affaires auto-entrepreneur",
+   "expect": [
+    "/ma/code/cgi/art_82-bis",
+    "/ma/loi/114-13/art_6"
+   ],
+   "lang": "fr",
+   "theme": "auto-declare"
+  },
+  {
+   "q": "آجال تصريح المقاول الذاتي برقم الأعمال",
+   "expect": [
+    "/ma/code/cgi/art_82-bis",
+    "/ma/loi/114-13/art_6"
+   ],
+   "lang": "ar",
+   "theme": "auto-declare"
+  },
+  {
+   "q": "شحال من شريك فالشركة ذات المسؤولية المحدودة",
+   "expect": [
+    "/ma/loi/5-96/art_44",
+    "/ma/loi/5-96/art_47"
+   ],
+   "lang": "darija",
+   "theme": "sarl-partners"
+  },
+  {
+   "q": "SARL nombre maximum d’associés",
+   "expect": [
+    "/ma/loi/5-96/art_44",
+    "/ma/loi/5-96/art_47"
+   ],
+   "lang": "fr",
+   "theme": "sarl-partners"
+  },
+  {
+   "q": "SARL à associé unique",
+   "expect": [
+    "/ma/loi/5-96/art_44",
+    "/ma/loi/5-96/art_47"
+   ],
+   "lang": "fr",
+   "theme": "sarl-partners"
+  },
+  {
+   "q": "نقدر نفتح شركة بوحدي بلا شريك",
+   "expect": [
+    "/ma/loi/5-96/art_44",
+    "/ma/loi/5-96/art_47"
+   ],
+   "lang": "darija",
+   "theme": "sarl-partners"
+  },
+  {
+   "q": "sarl b wa7di bla charik",
+   "expect": [
+    "/ma/loi/5-96/art_44",
+    "/ma/loi/5-96/art_47"
+   ],
+   "lang": "arabizi",
+   "theme": "sarl-partners"
+  },
+  {
+   "q": "شحال الرأسمال الأدنى ديال الصارل",
+   "expect": [
+    "/ma/loi/5-96/art_46",
+    "/ma/loi/5-96/art_51"
+   ],
+   "lang": "darija",
+   "theme": "sarl-capital"
+  },
+  {
+   "q": "capital minimum SARL Maroc",
+   "expect": [
+    "/ma/loi/5-96/art_46",
+    "/ma/loi/5-96/art_51"
+   ],
+   "lang": "fr",
+   "theme": "sarl-capital"
+  },
+  {
+   "q": "واش خاصني نخلص الرأسمال كامل فالأول",
+   "expect": [
+    "/ma/loi/5-96/art_46",
+    "/ma/loi/5-96/art_51"
+   ],
+   "lang": "darija",
+   "theme": "sarl-capital"
+  },
+  {
+   "q": "libération du capital sarl un quart",
+   "expect": [
+    "/ma/loi/5-96/art_46",
+    "/ma/loi/5-96/art_51"
+   ],
+   "lang": "fr",
+   "theme": "sarl-capital"
+  },
+  {
+   "q": "تحرير الحصص النقدية في الشركة ذات المسؤولية المحدودة",
+   "expect": [
+    "/ma/loi/5-96/art_46",
+    "/ma/loi/5-96/art_51"
+   ],
+   "lang": "ar",
+   "theme": "sarl-capital"
+  },
+  {
+   "q": "شنو خاص يكون فالنظام الأساسي ديال الشركة",
+   "expect": [
+    "/ma/loi/5-96/art_50"
+   ],
+   "lang": "darija",
+   "theme": "sarl-statutes"
+  },
+  {
+   "q": "mentions obligatoires des statuts de sarl",
+   "expect": [
+    "/ma/loi/5-96/art_50"
+   ],
+   "lang": "fr",
+   "theme": "sarl-statutes"
+  },
+  {
+   "q": "بيانات النظام الأساسي للشركة ذات المسؤولية المحدودة",
+   "expect": [
+    "/ma/loi/5-96/art_50"
+   ],
+   "lang": "ar",
+   "theme": "sarl-statutes"
+  },
+  {
+   "q": "شكون يقدر يكون مسير الشركة",
+   "expect": [
+    "/ma/loi/5-96/art_62"
+   ],
+   "lang": "darija",
+   "theme": "sarl-manager"
+  },
+  {
+   "q": "gérant de sarl non associé durée",
+   "expect": [
+    "/ma/loi/5-96/art_62"
+   ],
+   "lang": "fr",
+   "theme": "sarl-manager"
+  },
+  {
+   "q": "مدة تعيين المسير في حالة سكوت النظام الأساسي",
+   "expect": [
+    "/ma/loi/5-96/art_62"
+   ],
+   "lang": "ar",
+   "theme": "sarl-manager"
+  },
+  {
+   "q": "فوقاش خاص الجمعية العامة تصادق على الحسابات",
+   "expect": [
+    "/ma/loi/5-96/art_70"
+   ],
+   "lang": "darija",
+   "theme": "sarl-accounts"
+  },
+  {
+   "q": "approbation des comptes sarl délai six mois",
+   "expect": [
+    "/ma/loi/5-96/art_70"
+   ],
+   "lang": "fr",
+   "theme": "sarl-accounts"
+  },
+  {
+   "q": "أجل عرض القوائم التركيبية على جمعية الشركاء",
+   "expect": [
+    "/ma/loi/5-96/art_70"
+   ],
+   "lang": "ar",
+   "theme": "sarl-accounts"
+  },
+  {
+   "q": "الشركة خسرات ربع الرأسمال شنو ندير",
+   "expect": [
+    "/ma/loi/5-96/art_86"
+   ],
+   "lang": "darija",
+   "theme": "sarl-losses"
+  },
+  {
+   "q": "capitaux propres inférieurs au quart du capital sarl",
+   "expect": [
+    "/ma/loi/5-96/art_86"
+   ],
+   "lang": "fr",
+   "theme": "sarl-losses"
+  },
+  {
+   "q": "الوضعية الصافية للشركة تقل عن ربع رأسمالها",
+   "expect": [
+    "/ma/loi/5-96/art_86"
+   ],
+   "lang": "ar",
+   "theme": "sarl-losses"
+  },
+  {
+   "q": "شنو خاص يتكتب فالفاتورة ديال الشركة SARL",
+   "expect": [
+    "/ma/loi/5-96/art_45"
+   ],
+   "lang": "darija",
+   "theme": "sarl-name"
+  },
+  {
+   "q": "dénomination sarl mentions sur les documents",
+   "expect": [
+    "/ma/loi/5-96/art_45"
+   ],
+   "lang": "fr",
+   "theme": "sarl-name"
+  },
+  {
+   "q": "شحال عندي باش نتسجل فالسجل التجاري",
+   "expect": [
+    "/ma/loi/15-95/art_75"
+   ],
+   "lang": "darija",
+   "theme": "rc-deadline"
+  },
+  {
+   "q": "délai immatriculation registre de commerce",
+   "expect": [
+    "/ma/loi/15-95/art_75"
+   ],
+   "lang": "fr",
+   "theme": "rc-deadline"
+  },
+  {
+   "q": "registre de commerce ch7al dyal lwa9t 3andi",
+   "expect": [
+    "/ma/loi/15-95/art_75"
+   ],
+   "lang": "arabizi",
+   "theme": "rc-deadline"
+  },
+  {
+   "q": "أجل طلب التسجيل في السجل التجاري",
+   "expect": [
+    "/ma/loi/15-95/art_75"
+   ],
+   "lang": "ar",
+   "theme": "rc-deadline"
+  },
+  {
+   "q": "شكون ملزم بالتسجيل فالسجل التجاري",
+   "expect": [
+    "/ma/loi/15-95/art_37"
+   ],
+   "lang": "darija",
+   "theme": "rc-who"
+  },
+  {
+   "q": "qui doit s’immatriculer au registre du commerce",
+   "expect": [
+    "/ma/loi/15-95/art_37"
+   ],
+   "lang": "fr",
+   "theme": "rc-who"
+  },
+  {
+   "q": "الغرامة إلا ما تسجلتش فالسجل التجاري",
+   "expect": [
+    "/ma/loi/15-95/art_62"
+   ],
+   "lang": "darija",
+   "theme": "rc-fine"
+  },
+  {
+   "q": "amende défaut d’immatriculation au registre du commerce",
+   "expect": [
+    "/ma/loi/15-95/art_62"
+   ],
+   "lang": "fr",
+   "theme": "rc-fine"
+  },
+  {
+   "q": "شكون هو التاجر فالقانون",
+   "expect": [
+    "/ma/loi/15-95/art_6"
+   ],
+   "lang": "darija",
+   "theme": "trader"
+  },
+  {
+   "q": "acquisition de la qualité de commerçant activités",
+   "expect": [
+    "/ma/loi/15-95/art_6"
+   ],
+   "lang": "fr",
+   "theme": "trader"
+  },
+  {
+   "q": "الأنشطة التي تكتسب بها صفة تاجر",
+   "expect": [
+    "/ma/loi/15-95/art_6"
+   ],
+   "lang": "ar",
+   "theme": "trader"
+  },
+  {
+   "q": "واش التاجر خاصو يمسك المحاسبة",
+   "expect": [
+    "/ma/loi/15-95/art_19"
+   ],
+   "lang": "darija",
+   "theme": "books"
+  },
+  {
+   "q": "obligation comptable du commerçant",
+   "expect": [
+    "/ma/loi/15-95/art_19"
+   ],
+   "lang": "fr",
+   "theme": "books"
+  },
+  {
+   "q": "نفتح شركة من الإنترنت",
+   "expect": [
+    "/ma/decret/2-22-92/art_4"
+   ],
+   "lang": "darija",
+   "theme": "online"
+  },
+  {
+   "q": "création d’entreprise en ligne plateforme électronique",
+   "expect": [
+    "/ma/decret/2-22-92/art_4"
+   ],
+   "lang": "fr",
+   "theme": "online"
+  },
+  {
+   "q": "الشهادة السلبية من المنصة الإلكترونية",
+   "expect": [
+    "/ma/decret/2-22-92/art_4"
+   ],
+   "lang": "darija",
+   "theme": "online"
+  },
+  {
+   "q": "التصريح بالتأسيس للضرائب شحال من يوم",
+   "expect": [
+    "/ma/code/cgi/art_148"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "déclaration d’existence 30 jours début d’activité",
+   "expect": [
+    "/ma/code/cgi/art_148"
+   ],
+   "lang": "fr",
+   "theme": "declare"
+  },
+  {
+   "q": "شنو خاص يكون فالفاتورة",
+   "expect": [
+    "/ma/code/cgi/art_145"
+   ],
+   "lang": "darija",
+   "theme": "invoice"
+  },
+  {
+   "q": "mentions obligatoires facture maroc",
+   "expect": [
+    "/ma/code/cgi/art_145"
+   ],
+   "lang": "fr",
+   "theme": "invoice"
+  },
+  {
+   "q": "واش ICE ديال الزبون واجب فالفاتورة",
+   "expect": [
+    "/ma/code/cgi/art_145"
+   ],
+   "lang": "darija",
+   "theme": "invoice"
+  },
+  {
+   "q": "facture ICE dyal client wajib",
+   "expect": [
+    "/ma/code/cgi/art_145"
+   ],
+   "lang": "arabizi",
+   "theme": "invoice"
+  },
+  {
+   "q": "شحال عندو الزبون باش يخلص الفاتورة",
+   "expect": [
+    "/ma/loi/15-95/art_2-78"
+   ],
+   "lang": "darija",
+   "theme": "terms"
+  },
+  {
+   "q": "délai de paiement 60 jours 120 jours",
+   "expect": [
+    "/ma/loi/15-95/art_2-78"
+   ],
+   "lang": "fr",
+   "theme": "terms"
+  },
+  {
+   "q": "أجل الأداء بين التجار",
+   "expect": [
+    "/ma/loi/15-95/art_2-78"
+   ],
+   "lang": "ar",
+   "theme": "terms"
+  },
+  {
+   "q": "delai paiement maroc facture 60 jours",
+   "expect": [
+    "/ma/loi/15-95/art_2-78"
+   ],
+   "lang": "arabizi",
+   "theme": "terms"
+  },
+  {
+   "q": "الغرامة على التأخر فأداء الفاتورة",
+   "expect": [
+    "/ma/loi/15-95/art_3-78"
+   ],
+   "lang": "darija",
+   "theme": "late-fine"
+  },
+  {
+   "q": "amende retard de paiement taux directeur 0,85%",
+   "expect": [
+    "/ma/loi/15-95/art_3-78"
+   ],
+   "lang": "fr",
+   "theme": "late-fine"
+  },
+  {
+   "q": "الزبون معطل فالخلاص شنو كيقول القانون",
+   "expect": [
+    "/ma/loi/15-95/art_3-78"
+   ],
+   "lang": "darija",
+   "theme": "late-fine"
+  },
+  {
+   "q": "واش آجال الأداء كتطبق على المقاولة الصغيرة",
+   "expect": [
+    "/ma/loi/15-95/art_1-78"
+   ],
+   "lang": "darija",
+   "theme": "terms-scope"
+  },
+  {
+   "q": "délais de paiement chiffre d’affaires 2 millions de dirhams",
+   "expect": [
+    "/ma/loi/15-95/art_1-78"
+   ],
+   "lang": "fr",
+   "theme": "terms-scope"
+  },
+  {
+   "q": "التصريح بآجال الأداء كل ثلاثة أشهر",
+   "expect": [
+    "/ma/loi/15-95/art_4-78"
+   ],
+   "lang": "darija",
+   "theme": "terms-declare"
+  },
+  {
+   "q": "déclaration trimestrielle des délais de paiement",
+   "expect": [
+    "/ma/loi/15-95/art_4-78"
+   ],
+   "lang": "fr",
+   "theme": "terms-declare"
+  },
+  {
+   "q": "شحال كيبقى الشيك صالح",
+   "expect": [
+    "/ma/loi/15-95/art_268"
+   ],
+   "lang": "darija",
+   "theme": "cheque-present"
+  },
+  {
+   "q": "délai de présentation d’un chèque 20 jours",
+   "expect": [
+    "/ma/loi/15-95/art_268"
+   ],
+   "lang": "fr",
+   "theme": "cheque-present"
+  },
+  {
+   "q": "chek ch7al kayb9a salah",
+   "expect": [
+    "/ma/loi/15-95/art_268"
+   ],
+   "lang": "arabizi",
+   "theme": "cheque-present"
+  },
+  {
+   "q": "أجل تقديم الشيك للوفاء",
+   "expect": [
+    "/ma/loi/15-95/art_268"
+   ],
+   "lang": "ar",
+   "theme": "cheque-present"
+  },
+  {
+   "q": "الشيك المؤخر واش يتخلص قبل التاريخ ديالو",
+   "expect": [
+    "/ma/loi/15-95/art_267"
+   ],
+   "lang": "darija",
+   "theme": "cheque-postdated"
+  },
+  {
+   "q": "chèque postdaté encaissé avant la date",
+   "expect": [
+    "/ma/loi/15-95/art_267"
+   ],
+   "lang": "fr",
+   "theme": "cheque-postdated"
+  },
+  {
+   "q": "الشيك رجع بلا رصيد شنو كيدير البنك",
+   "expect": [
+    "/ma/loi/15-95/art_313"
+   ],
+   "lang": "darija",
+   "theme": "cheque-injunction"
+  },
+  {
+   "q": "injonction de ne plus émettre de chèques cinq ans",
+   "expect": [
+    "/ma/loi/15-95/art_313"
+   ],
+   "lang": "fr",
+   "theme": "cheque-injunction"
+  },
+  {
+   "q": "منع إصدار الشيكات بعد رفض الوفاء لعدم كفاية المؤونة",
+   "expect": [
+    "/ma/loi/15-95/art_313"
+   ],
+   "lang": "ar",
+   "theme": "cheque-injunction"
+  },
+  {
+   "q": "شحال الغرامة باش نرجع الشيكات",
+   "expect": [
+    "/ma/loi/15-95/art_314"
+   ],
+   "lang": "darija",
+   "theme": "cheque-fine"
+  },
+  {
+   "q": "amende pour retrouver la faculté d’émettre des chèques",
+   "expect": [
+    "/ma/loi/15-95/art_314"
+   ],
+   "lang": "fr",
+   "theme": "cheque-fine"
+  },
+  {
+   "q": "نسوي الشيك داخل 3 شهور بلا غرامة",
+   "expect": [
+    "/ma/loi/15-95/art_314"
+   ],
+   "lang": "darija",
+   "theme": "cheque-fine"
+  },
+  {
+   "q": "شحال الحبس على شيك بدون رصيد",
+   "expect": [
+    "/ma/loi/15-95/art_316"
+   ],
+   "lang": "darija",
+   "theme": "cheque-penalty"
+  },
+  {
+   "q": "peine de prison chèque sans provision",
+   "expect": [
+    "/ma/loi/15-95/art_316"
+   ],
+   "lang": "fr",
+   "theme": "cheque-penalty"
+  },
+  {
+   "q": "chek bla rassid l7bs ch7al",
+   "expect": [
+    "/ma/loi/15-95/art_316"
+   ],
+   "lang": "arabizi",
+   "theme": "cheque-penalty"
+  },
+  {
+   "q": "إعذار ساحب الشيك 30 يوم قبل المتابعة",
+   "expect": [
+    "/ma/loi/15-95/art_325"
+   ],
+   "lang": "darija",
+   "theme": "cheque-notice"
+  },
+  {
+   "q": "chèque sans provision mise en demeure trente jours",
+   "expect": [
+    "/ma/loi/15-95/art_325"
+   ],
+   "lang": "fr",
+   "theme": "cheque-notice"
+  },
+  {
+   "q": "إلا خلصت الشيك واش كتسقط المتابعة",
+   "expect": [
+    "/ma/loi/15-95/art_325"
+   ],
+   "lang": "darija",
+   "theme": "cheque-notice"
+  },
+  {
+   "q": "شيك الضمانة واش ممنوع",
+   "expect": [
+    "/ma/loi/15-95/art_316"
+   ],
+   "lang": "darija",
+   "theme": "cheque-guarantee"
+  },
+  {
+   "q": "chèque de garantie amende 2%",
+   "expect": [
+    "/ma/loi/15-95/art_316"
+   ],
+   "lang": "fr",
+   "theme": "cheque-guarantee"
+  },
+  {
+   "q": "تقادم دعوى الشيك",
+   "expect": [
+    "/ma/loi/15-95/art_295"
+   ],
+   "lang": "darija",
+   "theme": "cheque-prescription"
+  },
+  {
+   "q": "prescription de l’action du porteur de chèque",
+   "expect": [
+    "/ma/loi/15-95/art_295"
+   ],
+   "lang": "fr",
+   "theme": "cheque-prescription"
+  },
+  {
+   "q": "نقدر نوقف شيك عطيتو",
+   "expect": [
+    "/ma/loi/15-95/art_271"
+   ],
+   "lang": "darija",
+   "theme": "cheque-opposition"
+  },
+  {
+   "q": "opposition au paiement d’un chèque motifs",
+   "expect": [
+    "/ma/loi/15-95/art_271"
+   ],
+   "lang": "fr",
+   "theme": "cheque-opposition"
+  },
+  {
+   "q": "الشركة ما بقاتش قادرة تخلص الديون شنو خاصها دير",
+   "expect": [
+    "/ma/loi/15-95/art_576"
+   ],
+   "lang": "darija",
+   "theme": "stop-paying"
+  },
+  {
+   "q": "délai pour demander le redressement judiciaire cessation des paiements",
+   "expect": [
+    "/ma/loi/15-95/art_576"
+   ],
+   "lang": "fr",
+   "theme": "stop-paying"
+  },
+  {
+   "q": "أجل طلب فتح مسطرة التسوية القضائية",
+   "expect": [
+    "/ma/loi/15-95/art_576"
+   ],
+   "lang": "ar",
+   "theme": "stop-paying"
+  },
+  {
+   "q": "مسطرة الإنقاذ ديال الشركة",
+   "expect": [
+    "/ma/loi/15-95/art_561"
+   ],
+   "lang": "darija",
+   "theme": "safeguard"
+  },
+  {
+   "q": "procédure de sauvegarde conditions d’ouverture",
+   "expect": [
+    "/ma/loi/15-95/art_561"
+   ],
+   "lang": "fr",
+   "theme": "safeguard"
+  },
+  {
+   "q": "مراقب الحسابات نبه المسير بالصعوبات",
+   "expect": [
+    "/ma/loi/15-95/art_547"
+   ],
+   "lang": "darija",
+   "theme": "alert"
+  },
+  {
+   "q": "procédure d’alerte commissaire aux comptes difficultés",
+   "expect": [
+    "/ma/loi/15-95/art_547"
+   ],
+   "lang": "fr",
+   "theme": "alert"
+  },
+  {
+   "q": "بيع الأصل التجاري شنو خاص",
+   "expect": [
+    "/ma/loi/15-95/art_81",
+    "/ma/loi/15-95/art_83",
+    "/ma/loi/15-95/art_84"
+   ],
+   "lang": "darija",
+   "theme": "shop-sale"
+  },
+  {
+   "q": "vente de fonds de commerce opposition des créanciers",
+   "expect": [
+    "/ma/loi/15-95/art_81",
+    "/ma/loi/15-95/art_83",
+    "/ma/loi/15-95/art_84"
+   ],
+   "lang": "fr",
+   "theme": "shop-sale"
+  },
+  {
+   "q": "نبيع الحانوت بالساروت ديالو",
+   "expect": [
+    "/ma/loi/15-95/art_81",
+    "/ma/loi/15-95/art_83",
+    "/ma/loi/15-95/art_84"
+   ],
+   "lang": "darija",
+   "theme": "shop-sale"
+  },
+  {
+   "q": "شحال من عضو خاص باش ندير تعاونية",
+   "expect": [
+    "/ma/loi/112-12/art_14"
+   ],
+   "lang": "darija",
+   "theme": "coop-members"
+  },
+  {
+   "q": "nombre minimum de membres d’une coopérative",
+   "expect": [
+    "/ma/loi/112-12/art_14"
+   ],
+   "lang": "fr",
+   "theme": "coop-members"
+  },
+  {
+   "q": "ta3awoniya ch7al mn 3odw khas",
+   "expect": [
+    "/ma/loi/112-12/art_14"
+   ],
+   "lang": "arabizi",
+   "theme": "coop-members"
+  },
+  {
+   "q": "كيفاش نأسس تعاونية",
+   "expect": [
+    "/ma/loi/112-12/art_7"
+   ],
+   "lang": "darija",
+   "theme": "coop-create"
+  },
+  {
+   "q": "création d’une coopérative étapes office du développement de la coopération",
+   "expect": [
+    "/ma/loi/112-12/art_7"
+   ],
+   "lang": "fr",
+   "theme": "coop-create"
+  },
+  {
+   "q": "واش التعاونية تقدر تبيع للناس من غير الأعضاء",
+   "expect": [
+    "/ma/loi/112-12/art_6"
+   ],
+   "lang": "darija",
+   "theme": "coop-third"
+  },
+  {
+   "q": "coopérative opérations avec les tiers 30%",
+   "expect": [
+    "/ma/loi/112-12/art_6"
+   ],
+   "lang": "fr",
+   "theme": "coop-third"
+  },
+  {
+   "q": "الصفقات العمومية للمقاولات الصغرى 30 فالمية",
+   "expect": [
+    "/ma/decret/2-22-431/art_148"
+   ],
+   "lang": "darija",
+   "theme": "markets-sme"
+  },
+  {
+   "q": "marchés publics réservés aux TPE coopératives auto-entrepreneurs",
+   "expect": [
+    "/ma/decret/2-22-431/art_148"
+   ],
+   "lang": "fr",
+   "theme": "markets-sme"
+  },
+  {
+   "q": "شحال الضمان المؤقت فالصفقات العمومية",
+   "expect": [
+    "/ma/decret/2-22-431/art_24"
+   ],
+   "lang": "darija",
+   "theme": "markets-guarantee"
+  },
+  {
+   "q": "cautionnement provisoire marché public 2%",
+   "expect": [
+    "/ma/decret/2-22-431/art_24"
+   ],
+   "lang": "fr",
+   "theme": "markets-guarantee"
+  },
+  {
+   "q": "شروط منحة الاستثمار",
+   "expect": [
+    "/ma/decret/2-23-1/art_6",
+    "/ma/decret/2-23-1/art_7"
+   ],
+   "lang": "darija",
+   "theme": "investment"
+  },
+  {
+   "q": "prime à l’investissement charte 50 millions de dirhams 150 emplois",
+   "expect": [
+    "/ma/decret/2-23-1/art_6",
+    "/ma/decret/2-23-1/art_7"
+   ],
+   "lang": "fr",
+   "theme": "investment"
+  },
+  {
+   "q": "الطعن فقرار اللجنة الجهوية الموحدة للاستثمار",
+   "expect": [
+    "/ma/loi/47-18/art_37"
+   ],
+   "lang": "darija",
+   "theme": "cri-appeal"
+  },
+  {
+   "q": "recours contre le refus de la commission régionale unifiée d’investissement",
+   "expect": [
+    "/ma/loi/47-18/art_37"
+   ],
+   "lang": "fr",
+   "theme": "cri-appeal"
+  }
+ ]
+}

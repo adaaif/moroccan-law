@@ -1,0 +1,15 @@
+# /ma/loi/70-24 as the BO (issue 7478, folios 842-850) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/loi/70-24
+document: issues/bo_ar/BO_7478_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: "عدد 7478 - 9 شعبان 1447 (29 يناير 2026)\n«المادة الأولى.- بالرغم", right: '«المادة الأولى.- بالرغم'}      # f. 843: «عدد 7478 - 9 شعبان 1447 (29 يناير 2026)» is the page's running header, not the law
+  - {arts: [1], wrong: 'من لدن الملكة المغربية', right: 'من لدن المملكة المغربية'}      # f. 843: «المملكة»
+  - {arts: [1], wrong: 'التي يستوجهها علاج', right: 'التي يستوجبها علاج'}      # f. 843: «يستوجبها»
+  - {arts: [1], wrong: '«((الأجر2 - الأجر1)]', right: '«(الأجر2 - الأجر1)]'}      # f. 843: one opening parenthesis
+  - {arts: [1], wrong: 'طلبات ................................،، «التي', right: 'طلبات ................................، «التي'}      # f. 845: one comma after the dots
+  - {arts: [1], wrong: 'أن تقوم، «........، بإعلام', right: 'أن تقوم، .............. «........، بإعلام'}      # f. 846: the dots of the omitted words after «أن تقوم،» are missing
+notes:
+  - {art: 5, page: 848, what: 'The tables'' figures are right: the four minimum earnings 10270, 11270, 12270, 13270, the dates column, all 48 capitals of folio 848 read on the image, the 136 of folio 849 matched to the page''s text, and 34 of them read on the image (earnings 10270 at ages 30-53, earnings 13270 at ages 54-63). But their layout differs from the page: (1) the tables for ages 30-41, 42-53 and 54-63 are stored in left-to-right order («| 41 | 40 | … | 30 | الأجر أو الكسب المهني السنوي |»), so on the right-to-left page they come out mirrored, the earnings column on the far left and the oldest age first, while the page and the first table (18-29) put the earnings first on the right and the ages rising leftward; (2) in the first table the dates column («ابتداء من …») is the last column, where the page prints it first, right of the earnings. Each figure still sits under its own age.'}
+  - {art: 1, page: 845, what: 'In the new art 18 quoted here, the BO opens every line with «; the site drops it on «- نسخة …» items and on the paragraphs «إذا نتج عن الحادثة …» to «ويتعين على الطبيب المعين …»: punctuation only, the words are right.'}
+checked: [1, 5, 7, 8]

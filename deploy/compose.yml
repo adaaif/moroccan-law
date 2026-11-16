@@ -1,0 +1,39 @@
+# The site's database and caches on its server, pinned by digest (development may run the same images). Every port
+# listens on 127.0.0.1 only. Run from ROOT (deploy/deploy.sh) with its .env: docker compose up -d
+name: law
+services:
+  pg:
+    # ParadeDB: PostgreSQL 18.6, pg_search 0.26.2, pgvector 0.8.6.
+    image: paradedb/paradedb@sha256:c552094b6b68dcb0a4e7a3969963d801eaec02490db4d2dd032dcb096bc86cf8
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: law
+      POSTGRES_DB: law
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /var/lib/postgresql/18/docker
+    volumes:
+      - ./pg:/var/lib/postgresql
+    ports:
+      - 127.0.0.1:5440:5432
+    shm_size: 1gb                              # building the vectors' HNSW index needs ~1 GB
+  redis:
+    # The shared cache: the answers kept by generation and what else is worked out once and kept a while; nothing to
+    # keep across a restart. Full, it evicts the least used.
+    image: redis@sha256:c5e375abb885e6b2021c0377879e4890bf76f9065b8922ffc113f2b226b9fc17
+    restart: unless-stopped
+    command: redis-server --save '' --appendonly no --maxmemory 512mb --maxmemory-policy volatile-lru
+    ports:
+      - 127.0.0.1:6381:6379
+  counters:
+    # The limits' counts (COUNTERS_REDIS_URL): the request limits, the day of reading, the sign-in brake, the
+    # assistants' shares. Apart from the answers, so that a flood of kept answers never evicts a count and starts it
+    # again from zero: it never evicts. Its counts expire by themselves (a minute to a day; the brake keeps a few bytes
+    # an account), so it stays far below its memory, which is set wide: full, a count could not be written and the
+    # limited requests would fail. Written to disk every five minutes, so a restart gives no one a new day.
+    image: redis@sha256:c5e375abb885e6b2021c0377879e4890bf76f9065b8922ffc113f2b226b9fc17
+    restart: unless-stopped
+    command: redis-server --save 300 1 --appendonly no --maxmemory 1gb --maxmemory-policy noeviction
+    volumes:
+      - ./counters:/data
+    ports:
+      - 127.0.0.1:6382:6379

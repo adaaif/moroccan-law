@@ -1,0 +1,12 @@
+# Law 98.15 (AMO for the self-employed, independent workers and non-salaried people with a private activity) as the SGG's
+# consolidated file prints it, where our text reads it wrong: the footnote mark «(2)» read as «(((», the SGG's footnote on
+# law 30.21 glued between art. 13's paragraphs. Read against the page images on 2026-10-27 (the health review, S4):
+# arts 3, 8, 9 and 13, the articles the health topic cites (arts 3, 8 and 9 read as printed). Art. 1 was read for the work
+# topic (loi_98_15.yaml).
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_independents_98_15.yaml`; a reload of the text applies them again.
+text: /ma/loi/98-15
+document: sources/sgg_consolidated/98_15.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [13], wrong: "أشهر((( تبتدئ", right: "أشهر تبتدئ"}   # footnote mark read as «(((», p. 5
+  - {arts: [13], wrong: "أعلاه.\n1 - نصت المادة الرابعة من القانون السالف الذكر رقم 30.21 على أنه:\n« استثناء من أحكام الفقرة الأولى من المادة 13 من القانون السالف الذكر رقم ،98.15 تحدد في ثلاثين (30) يوما مدة التدريب المنصوص عليها في المادة 13 المذكورة، وذلك بصورة انتقالية خلال الفترة المحددة من أجل تعميم التأمين الإجباري الأساسي عن المرض المنصوص عليها في البند الأول من المادة 17 من القانون -الإطار رقم 09.21 المتعلق بالحماية الاجتماعية.».\nغير أنه", right: "أعلاه.\nغير أنه"}   # the SGG's footnote on law 30.21 art. 4 glued between the paragraphs, pp. 5–6

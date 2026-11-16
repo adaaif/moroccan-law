@@ -1,0 +1,13 @@
+# Law 65.00 as BO 5058 (21 Nov 2002, pp. 3449-3467) prints it, where our reading (the scan read by Haiku) misreads it:
+# set beside Adala's copy on 27 Oct 2026 (the health review, S3), every word the two copies part on in the 80
+# articles law 54.23 leaves alone was looked at; most are Adala's layer («بالأوالد», «عمال» for «عملا»). Read against
+# the page images: art. 72 prints «والمددة» (Adala «والممددة»), art. 128 «بإجبارية». The page's own misprint is kept:
+# art. 147's «والنصوص التخذة» (p. 3467). Arts 7 («تغطية المخاطر», Adala «للمخاطر»), 21 («تقرر», Adala «تقر») and 64
+# («توفر», Adala «توافر») part too and were not read against the page yet: the site keeps its reading.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_65_00_bo.yaml`; a reload of the text applies them again.
+text: /ma/loi/65-00
+document: issues/bo_ar/BO_5058_ar.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [72], wrong: "والمدتة", right: "والمددة"}   # p. 3459
+  - {arts: [128], wrong: "بإجارية", right: "بإجبارية"}   # p. 3466

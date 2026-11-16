@@ -1,0 +1,2423 @@
+{
+  "name": "3adala en chiffres",
+  "number": "Numéro {{n}}",
+  "draft": "Brouillon : les chiffres sont comptés dans la base de 3adala le {{date}} ; le texte attend une relecture et une signature avant d’être publié.",
+  "draftShort": "Brouillon",
+  "index": {
+    "lead": "Nous comptons ce que publie le Bulletin officiel, nous le dessinons et nous disons comment nous avons compté. Ni opinion ni actualité : les chiffres du droit marocain, tels qu’ils sont."
+  },
+  "fig": {
+    "so": "Autrement dit :",
+    "table": "Les chiffres en tableau",
+    "source": "Source : Bulletin officiel, {{from}}–{{to}}, tel que 3adala l’a lu.",
+    "open": "Ouvrir le numéro",
+    "hint": "Touchez une barre pour lire son chiffre, ou utilisez les flèches.",
+    "hintDay": "Touchez un jour pour lire combien de numéros y ont paru.",
+    "hintPrice": "Touchez un prix pour savoir depuis quand."
+  },
+  "units": {
+    "franc": "francs",
+    "dirham": "dirham",
+    "dirhams": "dirhams",
+    "centime": "centimes",
+    "franc1": "franc",
+    "francs": "francs"
+  },
+  "days": [
+    "lundi",
+    "mardi",
+    "mercredi",
+    "jeudi",
+    "vendredi",
+    "samedi",
+    "dimanche"
+  ],
+  "seventy": {
+    "piles": {
+      "q": "Combien de pages le Bulletin officiel publie-t-il chaque année, numéro par numéro ?",
+      "how": "Chaque colonne est une année, de {{from}} à gauche à {{to}} à droite. Chaque tranche est un numéro, aussi épaisse que ses pages, de janvier en bas à décembre en haut. En violet : les numéros bis.",
+      "so": "En {{year}}, le Bulletin a publié {{pages}} pages, plus de {{times}} fois plus qu’en {{first}} ; un seul numéro en compte {{one}}.",
+      "hint": "Touchez une tranche pour savoir de quel numéro il s’agit, ou utilisez les flèches.",
+      "year": "{{year}} : {{issues}} numéros, {{pages}} pages, {{texts}} textes.",
+      "issue": "Numéro {{number}}, {{date}} : {{pages}} pages, {{texts}} textes.",
+      "aria": "{{count}} colonnes, une par année de {{from}} à {{to}}, chacune aussi haute que les pages du Bulletin officiel cette année-là.",
+      "notes": {
+        "first": "{{year}} : {{pages}} pages, dès le n° 1",
+        "least": "{{year}} : {{pages}} pages, l’année la plus mince depuis 1956",
+        "twice": "{{year}} : deux numéros par semaine",
+        "most": "{{year}} : {{pages}} pages, dont {{one}} dans un seul numéro",
+        "leastShort": "{{year}} : {{pages}} pages",
+        "mostShort": "{{year}} : {{pages}} pages",
+        "y56": "{{year}} : {{pages}} pages, l’indépendance"
+      },
+      "cols": {
+        "year": "Année",
+        "issues": "Numéros",
+        "bis": "dont bis",
+        "pages": "Pages",
+        "texts": "Textes",
+        "issue": "Numéro"
+      }
+    },
+    "s0": {
+      "h": "Le numéro 1",
+      "p1": "Le numéro 1 du Bulletin officiel en arabe paraît le {{date}} ({{hijri}}), « {{of}} » selon sa couverture, au prix de « vingt centimes », en {{pages}} pages. Voici son sommaire :",
+      "p2": "Le numéro 2 ne paraît que le {{second}}. L’édition française l’avait précédé : son premier numéro est du {{frFirst}}, et {{before}} numéros en français ont paru avant le numéro 1 en arabe.",
+      "open": "Ouvrir le numéro 1"
+    },
+    "s1": {
+      "h": "Année après année",
+      "p1": "En {{first}}, sa première année en arabe, le Bulletin officiel publie {{issues}} numéros, soit {{pages}} pages et {{texts}} textes. L’année de l’indépendance, en 1956, sa couverture indique la « {{age}} » ; il publie {{issues56}} numéros, {{pages56}} pages et {{texts56}} textes. En {{pagesYear}}, il atteint {{pagesMax}} pages, le record en une année ; en {{textsYear}}, {{textsMax}} textes, le record de textes.",
+      "p2": "Les textes de 1920 à {{last}} comptent {{millions}} millions de mots, dans leurs seuls articles, sans les tableaux ni les rapports. À 200 mots par minute, huit heures par jour, il faudrait {{days}} jours pour les lire. Les mots de 1913–1919 ne sont pas comptés : de {{bare}} textes sur {{texts}}, 3adala ne détient que le titre.",
+      "age": "quarante-cinquième année",
+      "q": "Combien de textes le Bulletin publie-t-il par an ?",
+      "so": "En {{year}}, {{max}} textes, plus de {{times}} fois ce qui paraissait en {{first}}.",
+      "pick": "{{year}} : {{texts}} textes.",
+      "p3": "L’édition française publiait aussi des textes que l’arabe ne publiait pas : {{fr}} textes de {{from}} à {{to}}, traduits en arabe par l’intelligence artificielle. Sur le graphique, c’est la bande en pointillés au-dessus des colonnes de ces années ; elle n’entre dans aucun chiffre ici.",
+      "pickFr": " ; l’édition française seule : {{fr}} textes.",
+      "colFr": "Français seul",
+      "keyAr": "Textes de l’édition arabe",
+      "keyFr": "Textes que seule l’édition française a publiés, traduits"
+    },
+    "s2": {
+      "h": "Du vendredi au lundi et au jeudi",
+      "p1": "Le Bulletin n’a pas toujours paru le même jour. Le numéro 1 sort un samedi ; à partir de juillet 1913, le Bulletin paraît le vendredi. Dès le {{mon}}, il paraît le lundi, dès le {{tue}} le mardi, puis de nouveau le vendredi à partir du {{fri}} et jusqu’en mars 1964. À partir du {{wed}}, il paraît le mercredi, et sa couverture l’écrit en 1970 : « paraît le mercredi ». Depuis le {{twice}}, il paraît deux fois par semaine, le lundi et le jeudi : {{before}} numéros ordinaires en 1995, {{after}} en 1996.",
+      "p2": "Les numéros bis, eux, n’ont pas de jour : ils paraissent quand il le faut, sous le numéro de celui qui les précède.",
+      "q": "Quel jour paraît le Bulletin officiel ?",
+      "era": "{{from}}–{{to}}",
+      "eraCount": "{{total}} numéros",
+      "so": "Aujourd’hui, il paraît le lundi et le jeudi ; un numéro bis peut paraître n’importe quel jour.",
+      "pick": "{{day}}, {{from}}–{{to}} : {{total}} numéros."
+    },
+    "s3": {
+      "h": "Les numéros les plus épais ne sont pas des lois",
+      "p1": "Un numéro « bis » est un numéro supplémentaire, sous le numéro de celui qui le précède. Jusqu’en 2010, il n’y en a jamais eu plus de {{maxBefore}} par an. Puis {{y2011}} en 2011, et {{max}} en {{maxYear}}.",
+      "p2": "Les dix numéros les plus épais depuis le n° 1 sont tous des bis ; neuf d’entre eux sont les rapports de la Cour des comptes sur les années 2009 à 2018. Le plus épais, le 6813 bis ({{date}}), compte {{pages}} pages : plus que tout ce que le Bulletin avait publié l’année de l’indépendance, en {{first}} ({{firstPages}}).",
+      "p3": "Depuis 2011, le Bulletin publie aussi les rapports d’autres institutions : le Médiateur, le Conseil national des droits de l’homme, le Conseil supérieur du pouvoir judiciaire, Bank Al-Maghrib, le Conseil de la concurrence. De 2011 à {{to}}, les rapports que nous avons reconnus occupent au moins {{share}} % des pages du Bulletin.",
+      "q": "Que contiennent les dix numéros les plus épais ?",
+      "unit": "Longueur de la barre : nombre de pages",
+      "so": "Neuf sur dix sont des rapports de la Cour des comptes ; le dixième, cinq arrêtés sur le tourisme.",
+      "pages": "{{pages}} pages"
+    },
+    "s4": {
+      "h": "Les années minces",
+      "p1": "Sur l’image, les colonnes baissent de 1979 à 1992. L’année la plus mince depuis l’indépendance est {{year}} : {{pages}} pages, moins du tiers de 1973 ({{pages73}}), pour un nombre de textes voisin : {{texts}} contre {{texts73}}.",
+      "p2": "Nous avons d’abord cru que des pages manquaient aux fichiers numérisés. Mais le Bulletin numérote ses pages à la suite sur toute l’année, et le dernier numéro de {{year}} s’arrête à la page {{printed}} : l’écart est de {{gap}} pages. Le Bulletin était vraiment mince. Pour {{agree}} années, la dernière page imprimée concorde avec les pages de nos fichiers.",
+      "p3": "La page a peu changé : {{wp73}} mots par page en 1973, {{wp}} en {{year}}. C’est la longueur des textes qui a changé : {{wt73}} mots par texte en 1973, {{wt}} en {{year}}.",
+      "q": "Des pages des années 1980 ont-elles disparu ?",
+      "unit": "Barre : pages de nos fichiers ; trait : dernière page imprimée par le Bulletin dans l’année.",
+      "so": "Non. En {{year}}, la dernière page imprimée par le Bulletin est la {{printed}}, et nos fichiers en comptent {{pages}}.",
+      "pick": "{{year}} : {{pages}} pages dans nos fichiers ; dernière page imprimée : {{printed}}.",
+      "pickNone": "{{year}} : {{pages}} pages dans nos fichiers ; le numéro de la dernière page a été mal lu.",
+      "cols": {
+        "pages": "Pages des fichiers",
+        "printed": "Dernière page imprimée"
+      },
+      "p4": "Avant l’indépendance, l’année entière la plus mince est {{year}} : {{pages}} pages et {{texts}} textes."
+    },
+    "s5": {
+      "h": "Du dahir à l’arrêté ministériel",
+      "p1": "De 1913 à 1919, le dahir représentait {{dahirFirst}} % des textes publiés au Bulletin, et les arrêtés {{orderFirst}} %, dont la plupart s’intitulent « arrêté viziriel ». Depuis 2020, le dahir ne dépasse plus {{dahirLast}} % ; les arrêtés, ceux des ministres aujourd’hui, en font {{orderMax}} % entre {{orderFrom}} et {{orderTo}}. Les lois votées par le Parlement n’ont jamais dépassé {{lawMax}} % des textes d’une décennie.",
+      "q": "Que publie le Bulletin, genre par genre ?",
+      "unit": "Chaque barre : la part des textes d’une décennie",
+      "so": "Aujourd’hui, deux textes sur trois sont des arrêtés de ministres.",
+      "kinds": {
+        "dahir": "Dahirs",
+        "law": "Lois",
+        "decree": "Décrets",
+        "order": "Arrêtés"
+      },
+      "pick": "{{kind}}, {{from}}–{{to}} : {{share}} % des textes."
+    },
+    "s6": {
+      "h": "Le prix d’un numéro",
+      "p1": "La couverture imprime le prix du numéro. Le numéro 1 : « vingt centimes ». Puis 50 centimes dès août 1920, un franc dès juillet 1926, un franc et demi dès mars 1938, puis 3 francs dès août 1941, 6 dès septembre 1945, 8 dès avril 1946, 12 dès avril 1948, 16 dès janvier 1949, 25 dès novembre 1950 et 35 francs dès décembre 1951. Puis 80 francs à partir de décembre 1956, 0,80 dirham à partir de juin 1960, le même prix dans la nouvelle monnaie. Puis 1,20 dirham de 1962 à 1975, puis 1,50, puis 2, puis 3, puis 5, et 10 dirhams depuis le premier numéro de 1996, l’année où le Bulletin passe à deux numéros par semaine.",
+      "p2": "La dernière couverture où nous avons lu le prix, en {{lastRead}}, indique 10 dirhams au siège de l’Imprimerie officielle. Aujourd’hui, chaque numéro se lit gratuitement sur le site du Secrétariat général du gouvernement, et l’abonnement à l’édition générale coûte {{sub}} dirhams par an au Maroc, selon la couverture du {{subOn}}.",
+      "q": "Combien coûtait un numéro du Bulletin ?",
+      "unit": "Hauteur de la colonne en dirhams ; le chiffre tel que l’imprime la couverture",
+      "so": "De 20 centimes en 1913 à 10 dirhams en 1996 : {{times}} fois plus.",
+      "pick": "Dès le {{from}} : {{price}}, numéro {{issue}}."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "source": "Source : les fichiers de l’édition générale du Bulletin officiel en arabe, tels que les publie le site du Secrétariat général du gouvernement, de {{from}} à {{to}} : {{issues}} numéros, chaque fichier gardé avec son empreinte. Trois numéros manquent au site comme à nous : 5823 bis (2010), 6017 (2012) et 7410 (2025). Et {{copies}} numéros de 1914 à 1925 ont pour fichier en ligne celui d’un autre numéro : nous ne les comptons pas.",
+      "pages": "Les pages : celles des fichiers. Pour {{agree}} années sur {{years}}, la dernière page imprimée par le Bulletin dans l’année concorde avec elles.",
+      "texts": "Les textes : l’intelligence artificielle a lu les images des pages et les a découpées en textes ; chaque texte compte dans l’année du numéro qui l’a publié en premier, et son genre vient de son titre. {{textless}} numéros n’ont aucun texte dans 3adala : {{reports}} sont des rapports, les autres des listes, des annonces ou des textes pas encore découpés. Le nombre de textes est donc un minimum.",
+      "words": "Les mots : ce qui sépare les espaces dans les articles de chaque texte tel que publié la première fois, sans les tableaux, depuis 1920.",
+      "french": "L’édition française : {{fr}} textes qu’elle seule a publiés de {{from}} à {{to}}, lus par l’intelligence artificielle dans ses numéros et traduits en arabe, marqués comme tels dans 3adala. Les numéros en français de 1926–1955 ne sont pas encore lus.",
+      "reports": "Les rapports : un numéro sans texte dont les premières pages présentent un rapport adressé au Roi ou un « rapport annuel ». Les pages du 6813 bis n’ont pas encore été lues : nous l’avons regardé à l’œil.",
+      "days": "Les jours viennent de la date de chaque numéro ordinaire, telle que l’imprime sa couverture ; les prix tels que la couverture les imprime, à partir du premier numéro qui les porte, chaque changement lu sur sa couverture et sur celle du numéro précédent.",
+      "on": "Tout cela a été compté le {{on}} et peut changer un peu à mesure que nous lisons d’autres pages.",
+      "csv": "Le tableau année par année (CSV)",
+      "reuse": "Réutilisez les chiffres et les graphiques en citant 3adala et le Bulletin officiel."
+    }
+  },
+  "six": {
+    "hero": {
+      "q": "Que reste-t-il de chaque constitution dans la suivante ?",
+      "how": "Chaque colonne est une constitution, de {{first}} à gauche à {{last}} à droite ; chaque carré, un article, titre par titre de haut en bas. Foncé : repris mot pour mot de la précédente ; gris : des mots ont changé ; violet : nouveau, sans article qui lui ressemble avant ; clair : incertain.",
+      "so": "En {{last}}, seuls {{same}} articles sont repris mot pour mot de {{prev}}, et {{fresh}} sont nouveaux, sans antécédent.",
+      "hint": "Touchez un carré pour savoir de quel article il s’agit, ou utilisez les flèches.",
+      "count": "{{n}} articles",
+      "pick": "Constitution de {{year}}, article {{n}} ({{title}}) : {{state}}",
+      "states": [
+        "première constitution, rien avant.",
+        "repris mot pour mot de {{prev}}.",
+        "des mots ont changé depuis {{prev}}.",
+        "l’intelligence artificielle n’a pas pu dire s’il a un antécédent en {{prev}}.",
+        "nouveau : aucun article semblable en {{prev}}."
+      ],
+      "read": "Lire l’article",
+      "aria": "Six colonnes, une par constitution de {{first}} à {{last}}, un carré par article, coloré selon ce qu’il est devenu dans la suivante."
+    },
+    "s1": {
+      "h": "De 110 articles à 180",
+      "p1": "La première constitution du Royaume, en {{first}}, compte {{arts1}} articles. Les quatre suivantes, de 1970, 1972, 1992 et 1996, restent entre {{minMid}} et {{maxMid}}. Puis la constitution de {{last}} arrive avec {{artsN}} articles et {{wordsN}} mots, plus de trois fois ceux de {{first}} ({{words1}}). Son préambule compte à lui seul {{preN}} mots ; celui de {{first}} en comptait {{pre1}}."
+    },
+    "s2": {
+      "h": "Ce qui est resté mot pour mot",
+      "p1": "Nous avons posé chaque article face à ceux de la constitution précédente. Celle de 1972 reprend {{same72}} de ses {{arts72}} articles mot pour mot de 1970 ; celle de 1992, {{same92}} de 1972 ; celle de 1996, {{same96}} de 1992.",
+      "p2": "La constitution de {{last}} ne reprend mot pour mot que {{same}} articles de celle de {{prev}} :",
+      "p3": "Pour {{fresh}} de ses articles, nous n’avons trouvé aucun antécédent en {{prev}} ; pour {{unsure}}, l’intelligence artificielle n’a pas pu trancher.",
+      "q": "Combien d’articles repris, modifiés, nouveaux ?",
+      "row": "{{year}} face à {{prev}}",
+      "legend": [
+        "mot pour mot",
+        "modifiés",
+        "incertains",
+        "nouveaux"
+      ],
+      "so": "De 1972 à 1996, près de la moitié des articles passaient tels quels d’une constitution à l’autre ; en {{last}}, {{same}}.",
+      "pick": "Constitution de {{year}} : {{n}} articles {{state}}."
+    },
+    "s3": {
+      "h": "Les titres : une même charpente trente ans, puis une nouvelle",
+      "p1": "De 1962 à 1992, la constitution garde douze titres, presque dans le même ordre : dispositions générales, la Royauté, le Parlement, le Gouvernement, les rapports entre les pouvoirs. Le titre III s’appelle « la Chambre des représentants » en 1970, 1972 et 1992, et « le Parlement » en 1962 et 1996.",
+      "p2": "En 1992, la chambre constitutionnelle devient un titre « Conseil constitutionnel », et le titre « Conseil économique et social » prend la place de celui du « Conseil supérieur de la promotion nationale et du Plan » ; la constitution de 1996 ajoute un titre pour la Cour des comptes. En {{last}}, la constitution compte {{titlesN}} titres : « Libertés et droits fondamentaux » vient en deuxième, avant la Royauté, en {{rights}} articles ; la justice devient « le pouvoir judiciaire », en {{jud}} articles au lieu de {{judPrev}} ; un titre nouveau, la bonne gouvernance, en compte {{gov}}.",
+      "q": "Combien de mots dans chaque titre ?",
+      "unit": "Nombre de mots ; en violet : la première apparition du titre",
+      "so": "Le Parlement est le titre le plus long de chaque constitution : {{parl1}} mots en {{first}}, {{parlN}} en {{last}}.",
+      "none": "–",
+      "pick": "{{name}}, {{year}} : {{n}} mots."
+    },
+    "s4": {
+      "h": "Les mots des constitutions",
+      "p1": "Nous avons compté quelques mots dans les six textes. « Le Roi » : {{king1}} fois en {{first}}, {{kingN}} en {{last}}. « La loi » : de {{law1}} à {{lawN}}. Et des mots apparaissent en {{last}}, absents de toutes les constitutions précédentes : « les citoyennes » ({{citf}} fois), « la gouvernance » ({{gov}}), « les jeunes » ({{youth}}), « l’environnement » ({{env}}), « l’amazighe » ({{amz}}), « la parité » ({{par}}).",
+      "p2": "La constitution de {{last}} est trois fois plus longue, ses mots reviennent donc plus souvent ; mais les six derniers n’apparaissaient pas une seule fois avant elle.",
+      "q": "Combien de fois revient chaque mot ?",
+      "unit": "Nombre d’occurrences dans le texte (compté en arabe)",
+      "so": "Six de ces mots n’apparaissent dans aucune constitution avant {{last}}.",
+      "pick": "« {{term}} » dans la constitution de {{year}} : {{n}} fois."
+    },
+    "s5": {
+      "h": "Du référendum au Bulletin",
+      "p1": "Entre le référendum et la publication au Bulletin officiel, il s’est écoulé {{days}}. Trois ont paru dans un numéro bis : {{bis}}.",
+      "q": "Combien de temps entre le référendum et le Bulletin officiel ?",
+      "unit": "Gris : du référendum au dahir ; violet : du dahir au Bulletin",
+      "so": "Le délai le plus long, en 1992 : {{max}} jours.",
+      "days": "{{n}} jours",
+      "pick": "{{year}} : référendum le {{referendum}}, dahir le {{signed}}, Bulletin le {{published}} (numéro {{issue}})."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "source": "Le texte : la copie d’Adala de chaque constitution telle que publiée, lue sur sa page du Bulletin lors de son entrée dans 3adala ; la version d’origine de chacune, pas ses versions modifiées.",
+      "words": "Les mots : ce qui sépare les espaces dans chaque article ; le préambule compté à part.",
+      "lineage": "Repris ou modifié : l’intelligence artificielle, sur notre serveur, a comparé le sens de chaque article à ceux de la constitution précédente. « Mot pour mot » veut dire les mêmes mots, hamzas unifiées ; le reste est une estimation qui attend une relecture.",
+      "titles": "Les titres : chacun selon son sujet, d’après son nom (« le Parlement », « la Chambre des représentants » et « le pouvoir législatif » sont un même sujet).",
+      "terms": "Les mots comptés : le mot et ce qui le précède (« و », « ف », « بال », « لل », « كال ») ; « وللملك » compte pour « الملك ».",
+      "dates": "Les dates : le référendum, le dahir de promulgation, le numéro et la page du Bulletin, tels que chaque constitution les imprime.",
+      "on": "Tout cela a été compté le {{on}}."
+    }
+  },
+  "words": {
+    "hero": {
+      "q": "Quand chaque mot est-il entré dans la loi, et quand en est-il sorti ?",
+      "how": "Chaque ligne est un mot, chaque case une année, de {{from}} à gauche à {{to}} à droite. Plus la case est foncée, plus le mot figure dans de textes cette année-là, par rapport à sa meilleure année.",
+      "so": "« Franc » figurait dans {{franc}} textes sur 100 en {{from}}, puis a disparu ; « Internet » commence en 1998.",
+      "hint": "Touchez une case pour savoir combien de textes portent le mot cette année-là, ou utilisez les flèches.",
+      "pick": "« {{word}} » en {{year}} : {{n}} textes sur {{texts}}.",
+      "first": "Première fois : {{date}}.",
+      "aria": "Une grille : une ligne par mot, une case par année de {{from}} à {{to}}, colorée selon le nombre de textes qui portent le mot.",
+      "subject": "Premier texte sur le sujet : {{date}}."
+    },
+    "s1": {
+      "h": "Des mots qui sont entrés",
+      "p1": "Le premier texte où figure « Internet » est un décret fixant la liste des services de télécommunications à valeur ajoutée, publié le {{internet}}. Dans le même numéro, cinq pages plus loin, apparaissent pour la première fois les « données à caractère personnel », dans un autre décret sur les télécommunications.",
+      "p2": "« Amazighe » apparaît le {{amazigh}}, dans le décret sur la licence ès lettres : un mémoire sur la « culture populaire marocaine », « dialectal marocain, amazighe, rifain ou chleuh ». Il entre à l’école avec les lois sur l’enseignement de 2000. Le {{amazighSubject}} paraît le premier texte par lequel l’État prend l’amazighe en charge : le dahir créant l’Institut royal de la culture amazighe. En 2011 la Constitution en fait « également une langue officielle de l’État », en 2019 une loi organique fixe les étapes de son officialisation, et en 2023 le Nouvel An amazigh devient jour férié.",
+      "q": "Chaque mot entré, et ses étapes",
+      "unit": "La première mention, le premier texte sur le sujet, les étapes ensuite ; chacune avec son numéro et sa page du Bulletin officiel",
+      "so": "{{n}} de ces mots n’apparaissaient dans aucun texte avant 1990.",
+      "issue": "BO {{issue}}, p. {{page}}",
+      "p3": "« Gouvernance » apparaît le {{governance}}, avec le fonds de l’Initiative nationale pour le développement humain : « renforcer la gouvernance dans la gestion locale ». « Intelligence artificielle » est plus ancienne qu’on ne le croit : le {{ai}}, une matière du diplôme d’ingénieur d’État de l’École nationale supérieure d’informatique et d’analyse des systèmes ; nous n’avons encore trouvé aucun texte dont le titre la nomme. Et « Covid » le {{covid}}, dans le décret créant le fonds spécial de gestion de la pandémie ; une semaine plus tard, l’état d’urgence sanitaire était proclamé."
+    },
+    "s2": {
+      "h": "Des mots qui sont sortis, d’autres qui en ont remplacé",
+      "p1": "En {{from}}, « franc » figurait dans {{franc}} textes sur {{texts}}. Le {{dirham}}, un dahir fait du « dirham » l’unité monétaire, « divisé en cent francs » : le franc reste dans les textes comme fraction du dirham. En 1960 le dirham paraît dans {{dirham60}} textes, puis dans environ un texte sur cinq au cours des années 1960 ({{sixties}} %), et sa part baisse à mesure que les textes se multiplient : {{now}} % depuis 2020. « Franc » revient encore dans deux ou trois textes par an, quand ils citent un texte ancien.",
+      "p2": "Certains mots en ont remplacé d’autres. « Handicapés » (المعوقين) paraît en {{oldFirst}}, dans les attributions du ministère des Affaires sociales, et la loi sur la protection sociale des « personnes handicapées » suit en {{oldLaw}}. « En situation de handicap » (في وضعية إعاقة) paraît en {{newFirst}}, puis la loi-cadre sur les droits des « personnes en situation de handicap » en {{newLaw}} ; depuis {{cross}}, la seconde expression l’emporte chaque année.",
+      "q1": "« Franc » et « dirham » : combien de textes sur 1 000 ?",
+      "so1": "À partir de fin 1959, le dirham entre et le franc sort en trois ans.",
+      "q2": "« Handicapés » et « en situation de handicap » : combien de textes sur 1 000 ?",
+      "so2": "Depuis {{cross}}, « en situation de handicap » l’emporte chaque année.",
+      "pick": "{{year}} : {{list}}.",
+      "p3": "« Caïd » et « pacha », mots de l’administration de 1956, passent de {{caid}} et {{pacha}} textes pour mille à {{caidN}} et {{pachaN}}. Ils n’ont pas quitté l’administration : pachas et caïds restent deux cadres du corps des agents d’autorité, depuis le dahir de 2008."
+    },
+    "s3": {
+      "h": "Des mots portés par des noms de ministères",
+      "p1": "La meilleure année d’« investissement » est {{invYear}} : {{inv}} textes sur {{invTexts}}. Mais {{invTitle}} d’entre eux portent le mot dans le titre d’un ministre, « ministre des Finances et des Investissements » ou « ministre de l’Agriculture et de la Mise en valeur agricole », chargé d’exécuter ou signataire du texte.",
+      "p2": "De même pour « privatisation » : {{priv}} textes en {{privYear}}, dont {{privTitle}} à cause du « ministre de l’Économie, des Finances, de la Privatisation et du Tourisme ». La loi qui l’a autorisée en 1990 ne dit pas le mot : « transfert d’entreprises publiques au secteur privé ». Et « environnement » : {{envTitlesShare}} % des textes qui le citent depuis 1956 le font dans le nom d’un ministère ou d’un ministre. Un mot dans un texte ne dit donc pas toujours le sujet du texte.",
+      "q": "Combien de textes portent le mot, et combien seulement dans un nom de ministère ?",
+      "unit": "Barre : les textes qui portent le mot ; foncé : seulement dans le nom d’un ministère ou d’un ministre",
+      "so": "En {{invYear}}, {{invShare}} % des textes qui citent « investissement » le doivent à un nom de ministère.",
+      "pick": "« {{word}} » en {{year}} : {{n}} textes, dont {{title}} dans un nom de ministère.",
+      "inTitle": "dont nom de ministère",
+      "charter": "La même année {{invYear}} paraît la loi-cadre portant charte de l’investissement."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "texts": "Les textes : {{texts}} textes du Bulletin officiel, de {{from}} à {{to}}, découpés par 3adala et lus article par article, avec leurs mots tels que publiés la première fois, dans l’année du numéro qui les a publiés ; les mots qu’une modification a apportés ne comptent pas dans sa première année. Ce ne sont pas encore tous les textes : certains numéros anciens ont des textes pas encore découpés, et les décisions particulières de 1956 à 2018 sont encore en lecture.",
+      "words": "Un mot : un texte dont un article porte une de ses formes (« الإرهاب » trouve aussi « الإرهابية »), avec ou sans hamza, madda et allongements confondus (« الامازيغية » telle qu’imprimée en 1983). « درهم » ne compte pas avant la création du dirham en 1959 : c’était un nom de famille ou de lieu. Rapporté aux textes de la même année, pour que les années riches en textes ne grossissent pas le mot à elles seules.",
+      "out": "Nous avons écarté des mots à double sens : « المناصفة » (aussi « moitié-moitié » dans les accords), « الرقمي » (aussi « numérique » au sens de chiffré), « كوفيد » seul (dans une liste de médicaments de 1958). « Covid » est compté sous ses formes de 2020. Les rapports que publie le Bulletin officiel (ceux du wali de Bank Al-Maghrib) ne sont pas des textes de loi : ils ne comptent pas.",
+      "read": "Le texte a été lu par l’intelligence artificielle sur les images des pages ; chaque étape ici a été comparée à sa page imprimée, et renvoie à son article et à sa page, ou au numéro quand son texte n’est pas encore découpé. Une personne la vérifie avant publication.",
+      "copy": "Compté le {{on}} sur la copie de recherche de la base de 3adala, le comptage de chaque article dépassant ce que permet le serveur.",
+      "on": "",
+      "misread": "Relues sur leurs pages imprimées, trois lectures erronées de l’intelligence artificielle ne comptent pas ici : « gouvernance » dans un tableau budgétaire de 2005 (imprimé : « affaires générales »), « handicapés » dans le tarif douanier de 1973 (imprimé : « mutilés »), « Internet » dans un programme de formation de 1990 (imprimé : « classement »)."
+    },
+    "stop": {
+      "first": "Première mention",
+      "subject": "Premier texte sur le sujet",
+      "step": "Étape",
+      "uncut": "texte pas encore découpé : ouvre le numéro"
+    }
+  },
+  "who": {
+    "hero": {
+      "q": "Qui écrit les textes que publie le Bulletin officiel ?",
+      "how": "Chaque colonne est une année, de {{from}} à gauche à {{to}} à droite, partagée selon qui a écrit les textes de l’année.",
+      "so": "En {{last}}, {{ministers}} textes sur 100 sont des arrêtés de ministres, et {{parliament}} des lois du Parlement.",
+      "hint": "Touchez une année pour savoir qui en a écrit les textes, ou utilisez les flèches.",
+      "pick": "{{year}} : {{list}}.",
+      "item": "{{who}} {{n}}",
+      "aria": "Soixante-dix colonnes, une par année, partagées selon qui a écrit les textes : le Roi, le Parlement, le Gouvernement, les ministres, d’autres."
+    },
+    "s1": {
+      "h": "Du dahir à la loi",
+      "p1": "De 1956 à 1959, le dahir représentait {{dahir}} % des textes publiés au Bulletin officiel. La première loi votée par le Parlement paraît en {{firstLaw}}. Depuis, les lois n’ont jamais dépassé {{lawMax}} % des textes d’une décennie : une {{perYear}} de lois par an de 2010 à 2019.",
+      "p2": "De 1965 à 1971 paraissent {{dl}} décrets-lois, plus de la moitié de ceux de soixante-dix ans ({{dlAll}}).",
+      "q": "Combien de décrets-lois par an ?",
+      "so": "{{dl}} d’entre eux entre 1965 et 1971.",
+      "pick": "{{year}} : {{n}} décrets-lois."
+    },
+    "s2": {
+      "h": "Les ministres : la moitié de leurs arrêtés sont des équivalences et des délégations",
+      "p1": "{{orders}} arrêtés en soixante-dix ans, {{share}} % de tous les textes. Les ministres de l’enseignement en signent à eux seuls {{edu}}, près du tiers. Suivent l’agriculture et la pêche ({{agri}}), les finances et l’économie ({{fin}}), puis l’intérieur ({{int}}).",
+      "p2": "Que décident ces arrêtés ? {{eq}} fixent l’équivalence de diplômes étrangers ou privés avec des diplômes nationaux, et {{del}} délèguent la signature d’un ministre à un fonctionnaire. Ces deux-là font à eux seuls {{both}} % des arrêtés. Les équivalences passent de {{eq70}} arrêtés dans les années 1970 à {{eq10}} entre 2010 et 2019.",
+      "q1": "Quel ministère signe le plus d’arrêtés ?",
+      "unit1": "Arrêtés depuis 1956, selon le premier ministre nommé",
+      "so1": "L’enseignement à lui seul : {{edu}} arrêtés.",
+      "q2": "Sur quoi portent les arrêtés des ministres ?",
+      "unit2": "Arrêtés par décennie, selon leur objet",
+      "so2": "De 2010 à 2019, {{eq10}} arrêtés d’équivalence de diplômes.",
+      "other": "Autres objets",
+      "ministryOther": "Autres ministères et organismes"
+    },
+    "s3": {
+      "h": "Le Parlement : une loi sur trois approuve un accord",
+      "p1": "De 2010 à {{last}}, {{laws}} lois ont paru. {{agr}} approuvent un accord international, {{dl}} ratifient un décret-loi, {{fin}} sont des lois de finances ou de règlement. Le reste, {{other}}, posent des règles nouvelles ou modifient des règles existantes.",
+      "q": "Que fait chaque loi ?",
+      "unit": "Lois par décennie, selon leur titre",
+      "so": "Depuis 2010, {{agrShare}} lois sur 100 approuvent un accord international.",
+      "other": "Règles nouvelles ou modifiées"
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "texts": "Les textes : chaque texte publié au Bulletin officiel de {{from}} à {{to}}, dans l’année du numéro qui l’a publié en premier ({{texts}} textes). Son genre et son auteur sont lus sur son titre lors de son découpage (l’intelligence artificielle a lu les pages).",
+      "who": "Qui écrit : le dahir au Roi, la loi et la loi organique au Parlement, le décret et le décret-loi au Gouvernement, l’arrêté aux ministres, le reste (décisions et autres) à d’autres.",
+      "ministries": "Le ministère : le premier ministre que nomme l’auteur ; un arrêté conjoint va à son premier ministre. Les noms des ministères ont changé : nous les avons regroupés par mots (l’enseignement : « enseignement supérieur », « éducation nationale », « formation professionnelle »).",
+      "subjects": "L’objet et le genre de loi : des mots du titre (« équivalences », « délégation de signature », « approuvant »…), le premier qui correspond.",
+      "on": "Compté le {{on}} sur la base vivante de 3adala."
+    }
+  },
+  "months": {
+    "hijri": [
+      "Mouharram",
+      "Safar",
+      "Rabia I",
+      "Rabia II",
+      "Joumada I",
+      "Joumada II",
+      "Rajab",
+      "Chaabane",
+      "Ramadan",
+      "Chaoual",
+      "Dou al-qiida",
+      "Dou al-hijja"
+    ],
+    "hero": {
+      "q": "Quel mois le Bulletin officiel publie-t-il le plus ?",
+      "how": "Chaque ligne est une année, de {{from}} en haut à {{to}} en bas, chaque case un mois, janvier à gauche. La case est foncée quand le mois compte plus de pages que la moyenne de son année ; le point : un numéro bis paru ce mois-là.",
+      "avg": "Une année moyenne : combien de fois chaque mois dépasse la moyenne de son année",
+      "so": "Décembre a été le mois le plus épais {{dec}} années sur {{years}}, plus que tout autre mois.",
+      "hint": "Touchez une case pour connaître son mois.",
+      "pick": "{{month}} {{year}} : {{issues}} numéros ({{bis}} bis), {{pages}} pages, {{texts}} textes.",
+      "aria": "Un calendrier de soixante-dix lignes, une par année, une case par mois, colorée selon les pages du mois par rapport à la moyenne de l’année."
+    },
+    "s1": {
+      "h": "Décembre",
+      "p1": "De 1996 à 2025, les années où le Bulletin paraît deux fois par semaine, il a publié en décembre {{pages}} pages, soit {{more}} % de plus qu’un mois ordinaire, et {{texts}} textes, plus que tout autre mois. Décembre compte aussi {{bis}} numéros bis sur {{bisAll}}.",
+      "p2": "Ce qui alourdit décembre, ce sont les arrêtés des ministres : {{decOrders}} en décembre depuis 1956, pour une moyenne de {{avgOrders}} par mois. Et la loi de finances paraît à la fin de décembre, parfois dans un numéro bis.",
+      "q": "Combien de pages le Bulletin publie-t-il chaque mois ?",
+      "unit": "Pages de 1996 à 2025 ; le chiffre au-dessus : les numéros bis",
+      "so": "Décembre : {{pages}} pages et {{bis}} numéros bis.",
+      "pick": "{{month}} : {{pages}} pages, {{bis}} numéros bis.",
+      "p3": "Le mois le plus léger est août : ses pages n’ont dépassé la moyenne de l’année que {{aug}} années sur {{years}} ; décembre, {{dec}}."
+    },
+    "s2": {
+      "h": "Mars, le mois des lois",
+      "p1": "Les lois ont un autre calendrier. Depuis 1956, {{mar}} lois ont paru en mars, plus que tout autre mois, puis {{sep}} en septembre. Le moins en octobre : {{oct}}. La constitution réunit le Parlement en deux sessions par an, la première à partir du deuxième vendredi d’octobre, la seconde à partir du deuxième vendredi d’avril (article 65 de la constitution de 2011).",
+      "q": "Combien de lois paraissent chaque mois ?",
+      "unit": "Lois et lois organiques depuis 1956",
+      "so": "Mars : {{mar}} lois ; octobre : {{oct}}.",
+      "pick": "{{month}} : {{n}} lois."
+    },
+    "s3": {
+      "h": "Et le ramadan ?",
+      "p1": "Nous avons lu la date hégirienne que chaque numéro imprime sur sa couverture. De 1996 à 2025, un numéro ordinaire de ramadan porte en moyenne {{ram}} textes, pour une moyenne annuelle de {{avg}}. Le mois le plus léger est rabia I ({{low}}), le plus lourd rajab ({{high}}). Le ramadan ne change presque rien.",
+      "q": "Combien de textes par numéro ordinaire, selon le mois hégirien ?",
+      "unit": "Moyenne de textes par numéro ordinaire, 1996–2025, d’après la date hégirienne imprimée sur la couverture",
+      "so": "Ramadan : {{ram}} textes par numéro ; la moyenne, {{avg}}.",
+      "pick": "{{month}} : {{n}} textes par numéro, sur {{issues}} numéros."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "issues": "Les numéros : chaque numéro de l’édition générale en arabe de {{from}} à {{to}}, avec le mois de sa date, les pages de son fichier et les textes qu’il a publiés en premier.",
+      "rel": "La case du calendrier : les pages du mois divisées par la moyenne des mois de son année, pour que les années lourdes ne pèsent pas seules.",
+      "hijri": "Le mois hégirien : tel que l’imprime la couverture (« فاتح رمضان 1447 »), pour les numéros ordinaires de 1996 à 2025 ({{read}} numéros dont la date hégirienne a été lue).",
+      "on": "Compté le {{on}} sur la base vivante de 3adala."
+    }
+  },
+  "wage": {
+    "hero": {
+      "q": "Combien vaut le salaire minimum de l’heure ?",
+      "unit": "En dirhams de l’heure, hors agriculture ; chaque marche est un décret",
+      "so": "De {{first}} dirham en {{from}} à {{last}} dirhams en {{to}} : {{steps}} montants, dans {{decrees}} textes.",
+      "hint": "Touchez une marche pour connaître son décret, ou utilisez les flèches.",
+      "pick": "{{value}} dirhams de l’heure, à partir du {{from}} : {{decree}}.",
+      "pickPublished": "{{value}} dirhams de l’heure, publié le {{from}} : {{decree}}.",
+      "open": "Ouvrir le texte",
+      "aria": "L’escalier du salaire minimum horaire de 1960 à 2026, une marche par montant."
+    },
+    "s1": {
+      "h": "Soixante ans de décrets",
+      "p1": "Le premier texte après l’indépendance relève le salaire minimum en février 1956 de dix francs de l’heure, et en agriculture de 230 à 300 francs par jour. En 1960, le minimum compte quatre zones : de 80 francs 80 de l’heure dans la première à 69 francs 30 dans la quatrième.",
+      "p2": "Puis nous n’avons trouvé aucun texte le relevant pendant {{gap}} ans, jusqu’en décembre 1973. Depuis, {{after}} textes ont fixé de nouveaux montants ; après 1973, le plus long intervalle est de {{gap2}} ans ({{gapFrom}}–{{gapTo}}). En 2008, le décret fixe un montant plus bas pour le textile et l’habillement.",
+      "p3": "Aujourd’hui, depuis le 1er janvier 2026 : {{last}} dirhams de l’heure. Une année de travail hors agriculture compte {{hours}} heures (article 184 du Code du travail), soit {{month}} dirhams par mois.",
+      "q": "Combien valait le salaire minimum dans chaque zone en 1960 ?",
+      "unit": "En francs de l’heure, décret 2.59.1986",
+      "so": "{{diff}} francs de l’heure séparent la première zone de la quatrième.",
+      "zone": "Zone {{n}}",
+      "pick": "Zone {{n}} : {{v}} francs."
+    },
+    "s2": {
+      "h": "En agriculture, un salaire à la journée",
+      "p1": "En agriculture, le minimum se fixe à la journée, pas à l’heure : {{d1}} dirhams en 1975, {{dN}} dirhams depuis le 1er avril 2026. Une journée agricole valait environ {{r1}} heures du minimum hors agriculture de 1975 à 2020, puis {{rN}} depuis 2022.",
+      "q": "Une journée agricole vaut combien d’heures hors agriculture ?",
+      "unit": "Le salaire journalier agricole divisé par le salaire horaire hors agriculture, pour chaque décret qui fixe les deux",
+      "so": "Depuis 2022, une journée agricole vaut {{rN}} heures.",
+      "pick": "{{from}} : {{daily}} dirhams par jour pour {{hourly}} de l’heure, soit {{r}} heures."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les montants : lus dans les articles de chaque texte tels que 3adala les donne, hors agriculture à l’heure (industrie, commerce, professions libérales) et en agriculture à la journée ; les francs divisés par cent. Chaque marche renvoie à son texte, son numéro et sa page.",
+      "dates": "La date : le jour à partir duquel l’article dit que le montant s’applique. Trois marches dont les articles, tels que lus, ne disent pas de jour (1960, 1973, 1980, et la première de 2004) sont placées à la date du numéro.",
+      "gaps": "Nous n’avons pas trouvé dans les articles de 1973 et 1980 le montant agricole : il est laissé de côté. Entre 1960 et 1973, aucun titre du Bulletin ne relève le minimum ; s’il en existe sous un autre titre, il sera ajouté.",
+      "check": "Une personne vérifie chaque montant sur sa page avant publication.",
+      "on": "Lu le {{on}}."
+    }
+  },
+  "holidays": {
+    "hero": {
+      "q": "Combien de jours fériés payés, et d’où vient chacun ?",
+      "how": "Chaque ligne est un jour férié de la liste des entreprises, tracé de l’année où il y entre jusqu’à 2026 ; les traits verticaux sont les décrets qui ont changé la liste, depuis 1977 à gauche.",
+      "so": "De {{first}} jours en 1977 à {{last}} en 2026.",
+      "hint": "Touchez une ligne ou un décret pour connaître son histoire.",
+      "pickDay": "{{day}} : sur la liste depuis {{from}}.",
+      "pickGone": "{{day}} : sur la liste de {{from}} à {{to}}.",
+      "pickText": "{{date}} : {{title}}",
+      "open": "Ouvrir le texte",
+      "count": "{{n}} jours",
+      "aria": "Une ligne par jour férié, de l’année de son entrée dans la liste des entreprises jusqu’à 2026, et un trait par décret."
+    },
+    "s1": {
+      "h": "1958 : la première liste",
+      "p1": "La plus ancienne liste de 3adala est un dahir de 1958 pour les administrations publiques. On y trouve le 1er mai et le 18 novembre, alors appelé « fête du Trône », puis l’Aïd al-Fitr, le 1er janvier, l’Aïd al-Adha, le 1er Moharram et l’Aïd al-Mawlid. Et pour les Marocains israélites, « Roch Hachana (nouvel an) et Yom Kippour ».",
+      "p2": "En 1965, un décret royal fait du 15 juin un jour férié payé à Safi seulement."
+    },
+    "s2": {
+      "h": "La liste des entreprises, décret après décret",
+      "p1": "En 1977, le décret 2.77.249 fixe huit jours : le 1er mai, le 6 novembre, le 18 novembre, le 3 mars, fête du Trône, et quatre fêtes religieuses. Le décret de 1979 ajoute le 14 août. En 2000, la fête du Trône passe du 3 mars au 30 juillet, et entrent le 11 janvier, le 20 et le 21 août : {{y2000}} jours.",
+      "p2": "Le décret de 2004 reprend la même liste après le Code du travail. Puis entrent le Nouvel an amazigh, le 14 janvier, en 2023, et la fête de l’Unité, le 31 octobre, en 2026 : {{y2026}} jours. Le 31 octobre 2026 a été la première fête de l’Unité chômée."
+    },
+    "s3": {
+      "h": "Administration et entreprise : deux listes",
+      "p1": "Les administrations publiques ont leur liste. Le 1er janvier y figure, pas dans celle des entreprises. Et depuis le décret de 2000, l’Aïd al-Mawlid, l’Aïd al-Fitr et l’Aïd al-Adha y comptent deux jours chacun. Le 20 août est entré dans la liste des administrations en 1991, dans celle des entreprises en 2000.",
+      "q": "Quels jours fériés dans les deux listes ?",
+      "unit": "Les deux listes telles qu’elles sont aujourd’hui",
+      "admin": "Administrations",
+      "private": "Entreprises",
+      "twoDays": "deux jours",
+      "so": "Le 1er janvier ne figure que dans la liste des administrations.",
+      "on": "sur la liste"
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les listes : lues dans le premier article de chaque texte tel que 3adala le donne ; chaque ligne et chaque décret renvoient à leur texte, leur numéro et leur page.",
+      "missing": "Trois textes de cette chaîne ne sont pas dans 3adala : le dahir 1.61.327 de 1962 pour les administrations, le décret 2.62.101 pour les entreprises, le décret 2.77.169 pour les administrations ; mais les textes qui les ont modifiés y sont.",
+      "defect": "La copie du dahir de 1958 dans 3adala porte, après ses deux articles, ceux d’un autre texte (le décret 2.58.1244 sur les indemnités des pachas et caïds) : nous n’avons lu que ses deux premiers articles, et les deux textes seront séparés.",
+      "check": "Une personne vérifie chaque liste sur sa page avant publication.",
+      "on": "Lu le {{on}}."
+    }
+  },
+  "waits": {
+    "bands": [
+      "la même semaine",
+      "moins d’un mois",
+      "moins de 3 mois",
+      "moins d’un an",
+      "plus d’un an"
+    ],
+    "kinds": {
+      "law": "Autres lois",
+      "law_agreement": "Lois approuvant un accord",
+      "dahir": "Autres dahirs",
+      "dahir_agreement": "Dahirs publiant un accord",
+      "decree": "Décrets",
+      "order": "Arrêtés ministériels",
+      "decision": "Décisions"
+    },
+    "hero": {
+      "q": "Combien de temps une loi attend-elle entre sa signature et sa publication ?",
+      "how": "Chaque point est une loi, à l’année de sa publication, de {{from}} à gauche à {{to}} à droite, et sur la ligne du délai qu’elle a attendu. En violet : une loi qui approuve un accord international.",
+      "so": "{{share}} lois sur 100 paraissent moins d’un mois après leur dahir.",
+      "hint": "Touchez un point pour connaître sa loi.",
+      "pick": "Loi {{number}}, publiée le {{date}} après {{days}} jours.",
+      "open": "Ouvrir la loi",
+      "aria": "Un point par loi, à son année de publication et sur la ligne du délai attendu."
+    },
+    "s1": {
+      "h": "La moitié des lois en {{median}} jours",
+      "p1": "Sur {{laws}} lois mesurées, la moitié ont paru {{median}} jours ou moins après leur dahir de promulgation, et {{month}} % en moins d’un mois. Le délai médian était de {{d60}} jours dans les années 1960, {{d90}} dans les années 1990, {{d20}} depuis 2020. Et {{same}} lois ont paru le jour même de leur dahir.",
+      "q": "Combien de temps attend une loi, au milieu, par décennie ?",
+      "unit": "En jours, la loi du milieu",
+      "so": "Depuis 2020 : {{d20}} jours.",
+      "pick": "{{decade}} : {{days}} jours."
+    },
+    "s2": {
+      "h": "L’arrêté d’un ministre attend plus, l’accord plus encore",
+      "p1": "Les arrêtés des ministres attendent {{order}} jours au milieu, les décisions {{decision}}, les décrets {{decree}}. Les dahirs qui publient un accord international attendent {{dahirAgr}} jours, les autres dahirs {{dahir}}. Sur les {{late}} lois qui ont attendu plus d’un an, {{lateAgr}} approuvent un accord.",
+      "q": "Combien de temps attend chaque genre de texte, au milieu ?",
+      "unit": "En jours, le texte du milieu, depuis 1956",
+      "so": "Les dahirs qui publient un accord : {{dahirAgr}} jours.",
+      "n": "{{n}} textes"
+    },
+    "s3": {
+      "h": "L’été 1993",
+      "p1": "En juillet, octobre et novembre 1993, le Bulletin officiel publie {{n93}} lois dont les dahirs de promulgation datent de {{fromY}} à {{toY}}, en {{issues}} numéros. La plus ancienne, la loi {{oldest}} : son dahir est signé le {{signed}} et elle paraît le {{published}}, {{days}} jours plus tard.",
+      "q": "Quelles lois ont attendu plus d’un an ?",
+      "unit": "Date du dahir, date de publication, délai",
+      "so": "{{n93}} d’entre elles ont paru en 1993.",
+      "days": "{{n}} jours",
+      "agreement": "accord"
+    },
+    "method": {
+      "h": "Comment nous avons mesuré",
+      "dates": "La signature : la date qu’imprime le titre du texte (pour une loi, celle de son dahir de promulgation), lue lors de son découpage ; la publication : la date du numéro qui l’a publié en premier.",
+      "out": "Écartés : {{after}} textes dont la publication précède la signature telle que lue (des erreurs de lecture), {{none}} textes sans date, et un erratum réimprimé sous un titre de loi.",
+      "kinds": "Un accord : une loi ou un dahir dont le titre porte « يوافق بموجبه », « الموافقة », « تصديق » ou « بنشر الاتفاقية ».",
+      "median": "Le délai médian : la moitié des textes en dessous, la moitié au-dessus ; les longs délais rares ne le gonflent pas.",
+      "check": "Chaque loi qui a attendu plus d’un an est vérifiée sur sa page avant publication.",
+      "on": "Compté le {{on}} sur la base vivante de 3adala."
+    }
+  },
+  "errata": {
+    "kinds": {
+      "names": "des noms dans une liste",
+      "law": "un dahir ou une loi",
+      "decree": "un décret",
+      "order": "un arrêté",
+      "other": "un autre texte",
+      "index": "trouvé dans le sommaire seul"
+    },
+    "hero": {
+      "q": "Combien de fois le Bulletin officiel s’est-il corrigé, et combien de temps après ?",
+      "how": "Chaque arc est un rectificatif : il part du numéro qui portait l’erreur et retombe sur celui qui l’a corrigée, de {{from}} à gauche à {{to}} à droite. Plus l’attente est longue, plus l’arc est grand. En violet, un texte juridique ; en brun, des noms dans une liste ; en gris, un type non lu. Sous la ligne, les rectificatifs de chaque année.",
+      "so": "la moitié des rectificatifs sont venus en {{median}} jours ou moins, et {{over10}} plus de dix ans après.",
+      "hint": "Touchez un arc pour savoir ce qu’il corrige, ou sous la ligne pour lire une année.",
+      "pick": "Le numéro {{printed}} ({{to}}) a corrigé le numéro {{corrected}} ({{from}}), {{days}} jours après : {{kind}}.",
+      "year": "{{year}} : {{n}} rectificatifs.",
+      "open": "Ouvrir le numéro",
+      "longest": "{{years}} ans",
+      "aria": "Un arc par rectificatif, du numéro qu’il corrige au numéro qui l’a publié ; sous la ligne, les rectificatifs de chaque année."
+    },
+    "s1": {
+      "h": "Dans les années 1980, un rectificatif dans plus d’un numéro sur deux",
+      "p1": "De 1956 à 2025, le Bulletin officiel a publié {{notices}} rectificatifs. Dans les seules années 1980, {{n80}} rectificatifs en {{i80}} numéros, soit {{per80}} pour 100 numéros et {{k80}} pour 1 000 textes publiés. Depuis 2020, {{k20}} pour 1 000 textes ; entre 2010 et 2019, le Bulletin a publié {{t10}} textes, contre {{t80}} dans les années 1980.",
+      "q": "Combien de rectificatifs pour 1 000 textes, décennie par décennie ?",
+      "unit": "rectificatifs pour 1 000 textes publiés dans la décennie",
+      "so": "années 1980, {{k80}} ; depuis 2020, {{k20}}.",
+      "pick": "{{decade}} : {{v}} pour 1 000 textes ({{n}} rectificatifs).",
+      "head": [
+        "",
+        "Rectificatifs",
+        "Textes",
+        "Pour 1 000 textes",
+        "Numéros",
+        "Pour 100 numéros"
+      ]
+    },
+    "s2": {
+      "h": "La moitié des rectificatifs des années 1980 portaient sur des noms",
+      "p1": "Dans les années 1980, {{names80}} rectificatifs sur {{n80}} corrigeaient un ou plusieurs noms dans une liste : les admis d’un concours, les titulaires d’une pension. Dans les années 1990, {{names90}} sur {{n90}}. Depuis 2000, {{namesAfter}} seulement sur {{after}} ; l’essentiel corrige désormais des arrêtés ({{orderAfter}}) et des décrets ({{decreeAfter}}).",
+      "q": "Combien de rectificatifs par décennie, et combien sur des noms ?",
+      "unit": "nombre de rectificatifs ; en brun, des noms dans une liste",
+      "so": "depuis 2000, {{namesAfter}} rectificatifs de noms seulement.",
+      "pick": "{{decade}} : {{n}} rectificatifs, dont {{names}} sur des noms.",
+      "head": [
+        "",
+        "Total",
+        "Noms",
+        "Dahirs et lois",
+        "Décrets",
+        "Arrêtés",
+        "Autres",
+        "Sommaire seul"
+      ]
+    },
+    "s3": {
+      "h": "Un mot, un chiffre, un sens",
+      "p1": "Un rectificatif écrit ce qui a été imprimé et ce qu’il faut lire : « عوض … يقرأ … », au lieu de … lire …. En voici quatre, lus sur leurs pages, du plus ancien au plus récent.",
+      "when": "Erreur imprimée au numéro {{corrected}} ({{from}}), corrigée au numéro {{printed}} ({{to}}), {{days}} jours après.",
+      "wrong": "au lieu de",
+      "right": "lire",
+      "open": "Ouvrir le rectificatif"
+    },
+    "s4": {
+      "h": "La moitié en {{median}} jours ou moins",
+      "p1": "Sur {{timed}} rectificatifs dont nous connaissons la date du numéro corrigé, {{week}} sont venus en une semaine ou moins, {{month}} en un mois ou moins, {{year}} plus d’un an après et {{decade}} plus de dix ans après. L’attente médiane est montée à {{d80}} jours dans les années 1980, puis redescendue à {{d20}} jours depuis 2020.",
+      "p2": "Le numéro {{issue}} du {{date}} a été corrigé {{times}} fois, dans {{times}} numéros, la dernière le {{last}}.",
+      "bandsQ": "Combien de temps après vient le rectificatif ?",
+      "bandsUnit": "nombre de rectificatifs par délai",
+      "bandsSo": "{{share}} sur 100 viennent en un an ou moins.",
+      "bands": [
+        "une semaine ou moins",
+        "d’une semaine à un mois",
+        "d’un à 3 mois",
+        "de 3 mois à un an",
+        "d’un an à 10 ans",
+        "plus de 10 ans"
+      ],
+      "q": "Combien de temps attend le rectificatif médian, décennie par décennie ?",
+      "unit": "en jours, le rectificatif médian",
+      "so": "années 1980, {{d80}} jours ; depuis 2020, {{d20}}.",
+      "pick": "{{decade}} : {{days}} jours.",
+      "lateQ": "Quels sont les dix rectificatifs les plus tardifs ?",
+      "lateUnit": "le numéro fautif, le numéro qui corrige, et l’attente",
+      "lateSo": "le plus tardif, {{years}} ans.",
+      "pair": "Le numéro {{corrected}} ({{from}}), corrigé au numéro {{printed}} ({{to}})",
+      "years": "{{years}} ans ({{n}} jours)",
+      "yearsFew": "{{years}} ans ({{n}} jours)"
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "read": "Nous avons lu chaque page de l’édition arabe qui contient le mot « استدراك » et compté chaque titre de rectificatif qui nomme le numéro qu’il corrige (« استدراك خطإ وقع بالجريدة الرسمية عدد … »). La plupart ne font que quelques lignes et n’ont pas été découpés en textes distincts : nous les avons lus sur les pages.",
+      "once": "Un rectificatif compte une fois pour le numéro qui le publie et le numéro qu’il nomme : le sommaire et la page qui le portent ne font qu’un, et deux rectificatifs d’un même numéro dans un même numéro comptent pour un.",
+      "out": "Nous avons écarté {{none}} rectificatifs nommant un numéro introuvable et {{after}} nommant un numéro postérieur (lectures fautives), et n’avons pas mesuré l’attente de {{misread}} rectificatifs dont l’année imprimée n’est pas celle du numéro nommé. Ceux qui ne nomment aucun numéro, comme certaines listes de pensions, ne sont pas comptés.",
+      "kinds": "Le type est ce qui suit le titre : dahir ou loi, décret, arrêté ou décision, liste de noms (résultats de concours, pension). Ce qui n’a été trouvé que dans le sommaire du numéro, sa page n’ayant pas été lue ou l’ayant été autrement, reste sans type.",
+      "rate": "Le taux pour 1 000 textes rapporte les rectificatifs d’une décennie aux textes publiés pour la première fois dans la même décennie.",
+      "check": "Les quatre exemples ont été lus par une personne sur leurs pages.",
+      "on": "Compté le {{on}} sur la base vivante de 3adala."
+    }
+  },
+  "agreements": {
+    "others": "Autres",
+    "borrowerOther": "Autres organismes",
+    "kinds": {
+      "loan": "prêt",
+      "guarantee": "garantie de l’État pour un prêt",
+      "grant": "don"
+    },
+    "regions": {
+      "africa": "Afrique",
+      "multilateral": "Multilatéraux",
+      "europe": "Europe",
+      "arab": "Pays arabes",
+      "asia": "Asie",
+      "americas_oceania": "Amériques et Océanie",
+      "organisations": "Organisations",
+      "lenders": "Prêteurs"
+    },
+    "topics": {
+      "cooperation": "Coopération générale",
+      "trade": "Commerce",
+      "air": "Transport aérien",
+      "investment": "Protection des investissements",
+      "tax": "Double imposition",
+      "transport": "Transport routier et maritime",
+      "culture": "Culture et enseignement",
+      "justice": "Justice",
+      "social": "Sécurité sociale",
+      "customs": "Douanes",
+      "labour": "Travail",
+      "security": "Sécurité et défense",
+      "other": "Autres sujets"
+    },
+    "hero": {
+      "q": "Qui prête au Maroc ?",
+      "how": "Chaque ligne est un prêteur, chaque trait un texte qui a approuvé un prêt de sa part (en violet) ou la garantie de l’État pour un prêt qu’il a fait à un organisme public (en brun), l’année de sa publication, de {{from}} à gauche à {{to}} à droite.",
+      "so": "depuis 2000, Banque mondiale {{wb}} textes, Banque africaine de développement {{afdb}}, KfW allemande {{kfw}}, Banque européenne d’investissement {{eib}}.",
+      "hint": "Touchez un trait pour connaître son texte, ou utilisez les flèches.",
+      "pick": "{{act}} {{number}}, {{date}} : {{kind}}, {{lender}}.",
+      "open": "Ouvrir le texte",
+      "aria": "Une ligne par prêteur, un trait par texte approuvant un prêt ou une garantie, l’année de sa publication."
+    },
+    "s1": {
+      "h": "Dans les années 1990, plus de deux prêts par mois",
+      "p1": "Depuis 1956, l’État a approuvé, par décret le plus souvent et par dahir dans les premières années, {{money}} accords de prêt ou de garantie avec l’étranger : {{loans}} prêts à l’État et {{guarantees}} garanties par lesquelles l’État couvre le prêt d’un organisme public. Le sommet date des années 1990, {{y90}} par an ; depuis 2020, {{y20}} par an. Entre 2010 et 2019, les garanties ont dépassé les prêts : {{g10}} contre {{l10}}.",
+      "p2": "Les prêteurs ont changé : le gouvernement a approuvé {{usa}} prêts des États-Unis, le dernier en {{usaLast}}. Et sur {{banks}} prêts de banques commerciales, de fournisseurs et d’agences d’export, {{banksOld}} sont antérieurs à 2000.",
+      "q": "Combien de prêts et de garanties l’État approuve-t-il par an ?",
+      "unit": "moyenne annuelle par décennie ; en brun, les garanties",
+      "so": "années 1990, {{y90}} par an ; depuis 2020, {{y20}}.",
+      "pick": "{{decade}} : {{v}} par an ({{loans}} prêts et {{guarantees}} garanties).",
+      "head": [
+        "",
+        "Prêts",
+        "Garanties",
+        "Par an"
+      ]
+    },
+    "s2": {
+      "h": "L’électricité et l’eau d’abord",
+      "p1": "Quand l’État garantit un prêt, celui-ci va à un organisme public et l’État s’engage à le rembourser à sa place. Sur {{guarantees}} garanties, {{onee}} sont allées à l’Office national de l’électricité et de l’eau potable, et avant lui aux deux offices qu’il a réunis, {{adm}} à Autoroutes du Maroc et {{masen}} à MASEN.",
+      "q": "À qui l’État garantit-il les prêts ?",
+      "unit": "nombre de garanties depuis 1956",
+      "so": "{{share}} garanties sur 100 sont allées à l’électricité et à l’eau."
+    },
+    "s3": {
+      "h": "Des accords publiés des années plus tard",
+      "p1": "Le Bulletin a publié {{treaties}} accords de 1956 à 2018 : {{y90}} par an dans les années 1990, puis {{y00}} dans les années 2000 et {{y10}} entre 2010 et 2018. La moitié de ceux publiés après 2010 avaient {{m10}} ans ou plus le jour de leur publication : sur {{a10}} dont nous connaissons la date, {{o10}} avaient plus de dix ans et {{o20}} plus de vingt.",
+      "p2": "Depuis 2019, l’édition générale du Bulletin ne publie plus les accords : le décret {{decree}} (BO {{issue}}, {{date}}) leur a donné une « {{words}} », que 3adala n’a pas encore lue. Le dernier accord de l’édition générale a paru le {{last}}.",
+      "open": "Ouvrir le décret",
+      "q": "Combien d’accords le Bulletin publie-t-il par an ?",
+      "unit": "moyenne annuelle par décennie, jusqu’en 2018",
+      "so": "années 1990, {{y90}} par an ; entre 2010 et 2018, {{y10}}.",
+      "pick": "{{decade}} : {{v}} par an ({{n}} accords ; âge médian {{median}} ans).",
+      "head": [
+        "",
+        "Accords",
+        "Par an",
+        "Âge médian",
+        "Plus de 10 ans"
+      ],
+      "oldQ": "Quels accords étaient anciens le jour de leur publication ?",
+      "oldUnit": "l’âge de l’accord à sa publication, et la date que lui donne son titre",
+      "oldSo": "le plus ancien avait {{years}} ans : de {{signed}} à {{published}}.",
+      "years": "{{n}} ans",
+      "when": "de {{signed}}, publié le {{published}}"
+    },
+    "s4": {
+      "h": "L’Afrique d’abord dans les lois d’approbation",
+      "p1": "Certains accords ne sont ratifiés par le Roi qu’après leur approbation par une loi. Entre 2010 et 2019, {{l10}} lois de ce type : {{af10}} pour des accords avec des États africains, {{mu10}} pour des accords multilatéraux, {{eu10}} avec des États européens et {{ar10}} avec des États arabes. Dans les années 1990, les États arabes venaient en tête, {{ar90}} sur {{l90}}, les africains {{af90}}. Depuis 2020 : {{af20}} sur {{l20}} avec des États africains.",
+      "p2": "Parmi les accords publiés jusqu’en 2018, les États les plus cités : {{partners}}.",
+      "q": "Combien de lois approuvent un accord, et combien avec un État africain ?",
+      "unit": "lois par décennie ; en violet, avec un État africain",
+      "so": "entre 2010 et 2019, {{af10}} sur {{l10}} avec des États africains.",
+      "pick": "{{decade}} : {{n}} lois, dont {{africa}} avec des États africains.",
+      "topicsQ": "Sur quoi le Maroc s’accorde-t-il avec les États ?",
+      "topicsUnit": "accords avec un seul État, selon le premier sujet que nomme leur titre",
+      "topicsSo": "{{tax}} accords sur la double imposition et {{investment}} sur la protection des investissements."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "read": "Nous avons réuni chaque texte de l’édition arabe depuis 1956 dont le titre contient « اتفاق », « معاهدة », « بروتوكول », « قرض » ou « عقد الضمان » ({{texts}} textes), et l’avons classé d’après les mots de son titre tels que le Bulletin les écrit. Tous ces mots sont dans un fichier à côté de l’article, qu’une personne relit et corrige.",
+      "what": "Prêt ou garantie : un décret (ou un dahir dans les premières années) qui approuve un accord de prêt, de financement ou de garantie. Accord : un dahir qui le publie ou le ratifie, ou un décret royal dans les années 1960. Loi : une loi qui approuve un accord avant sa ratification ; un accord approuvé par une loi puis publié par un dahir compte dans les deux.",
+      "partner": "Le partenaire est le premier que le titre nomme après « بين », le nom du Maroc retiré : les prêteurs d’abord, puis les organisations, puis les États. Un accord sans partenaire nommé, comme les conventions des Nations unies, est multilatéral.",
+      "out": "Nous avons écarté {{domestic}} textes qui sont des contrats internes (accords pétroliers, concessions, licences d’aquaculture, conventions collectives) et {{other}} textes qui appliquent ou modifient un accord, ou dont le partenaire n’est pas connu.",
+      "regions": "Région : les membres de la Ligue arabe sont « arabes », le reste de l’Afrique « africain ».",
+      "age": "Âge d’un accord : les années entre la première date que donne son titre (signature ou adoption) et l’année de sa publication. Ce n’est pas un retard : le Maroc a pu y adhérer après son adoption. Les protocoles et les amendements ne sont pas comptés, leur titre datant l’accord qu’ils modifient.",
+      "edition": "Depuis 2019, les accords paraissent dans l’édition des conventions internationales (décret {{decree}}), que 3adala n’a pas encore lue ; après 2018, cet article compte les lois et les décrets de prêt de l’édition générale.",
+      "on": "Compté le {{on}} sur la base vivante de 3adala."
+    },
+    "act": {
+      "decret": "Décret",
+      "dahir": "Dahir"
+    }
+  },
+  "countries": {
+    "hero": {
+      "q": "Quels pays le Bulletin officiel nomme-t-il, et comment cela a-t-il changé depuis 1913 ?",
+      "how": "Chaque cachet est un pays. Sa taille : sur mille textes publiés au Bulletin dans la période, combien le nomment. Choisissez une période ou « Lancer », et touchez un cachet pour ouvrir la page du pays.",
+      "periods": "Période",
+      "play": "Lancer de {{from}} à {{to}}",
+      "stop": "Arrêter",
+      "nodip": "Sans les listes d’équivalence des diplômes",
+      "aria": "Carte du monde, {{period}} : chaque pays selon sa part des textes",
+      "rank": "Les pays les plus cités en {{period}}",
+      "pick": "{{period}} : {{texts}} textes. En tête, {{first}}, dans {{v}} textes sur mille.",
+      "so": "La France était citée dans {{fr0}} textes sur mille en {{first}}, et dans {{fr1}} en {{last}}. L’Ukraine, jamais citée avant {{uaFirst}}, atteint {{ua1}} ; sans les listes de diplômes, il lui reste {{ua1x}}.",
+      "periods56": "La ligne : 1956, l’indépendance"
+    },
+    "s1": {
+      "h": "Des pays qui montent, des pays qui descendent",
+      "p1": "En {{first}}, la France était citée dans {{fr0}} textes sur mille, l’Algérie dans {{dz0}}. En {{p56}}, les premières années de l’indépendance, la France l’est dans {{fr56}}. En {{last}}, dans {{fr1}}, l’Algérie dans {{dz1}}. Ce n’est pas un recul du monde entier : les textes qui citent un pays étranger étaient {{base0}} sur mille en {{first}}, et {{base1}} en {{last}}.",
+      "p2": "Ceux qui montent montent surtout par les listes d’équivalence des diplômes, les arrêtés qui disent quel diplôme étranger vaut un diplôme marocain : la Russie est citée dans {{ru1}} textes sur mille dans la dernière période, et dans {{ru1x}} seulement sans elles ; l’Ukraine dans {{ua1}}, et {{ua1x}} sans elles. Ces listes font à elles seules {{share}} % de tout ce qui cite un pays.",
+      "q": "Qui monte, qui descend ?",
+      "unit": "Chaque ligne est un pays : combien de textes sur mille le citent, période par période. Trait plein : tous les textes ; pointillé : sans les listes de diplômes. Les deux chiffres sous chaque pays : {{p0}} et {{p1}}.",
+      "so": "La baisse est réelle dans tous les textes ; la hausse est surtout faite de listes de diplômes.",
+      "rose": "En hausse",
+      "fell": "En baisse",
+      "from": "de {{a}} à {{b}} pour mille ; sans les diplômes {{x}}",
+      "key": "Trait plein : tous les textes. Pointillé : sans les listes d’équivalence des diplômes. Trait vertical : 1956."
+    },
+    "kinds": {
+      "studies": "Équivalence des diplômes",
+      "treaty": "Accords",
+      "missions": "Ambassades et consulats",
+      "loan": "Prêts et garanties",
+      "finance": "Loi de finances",
+      "customs": "Douane et commerce",
+      "people": "Nationalité et séjour",
+      "transport": "Transports",
+      "other": "Autres textes"
+    },
+    "s2": {
+      "h": "Pourquoi le Bulletin cite-t-il un pays ?",
+      "p1": "Nous avons lu le titre de chaque texte qui cite un pays et l’avons classé par ses mots : diplômes, accords, prêts, ambassades, douane. Les listes de diplômes font à elles seules {{share}} % du tout.",
+      "q": "Pourquoi ce pays est-il cité ?",
+      "unit": "Chaque barre est un pays, partagée selon les types de textes qui le citent, d’après les mots de leurs titres.",
+      "so": "{{studies}} : presque tout en diplômes. {{treaties}} : surtout des accords.",
+      "rest": "Autres textes, dont transports, prêts, douane et loi de finances"
+    },
+    "s3": {
+      "h": "Des pays qui n’existent plus",
+      "p1_zero": "",
+      "p1_one": "Un pays cité par le Bulletin a disparu.",
+      "p1_other": "{{count}} pays cités par le Bulletin ont disparu. L’Union soviétique est citée pour la dernière fois en {{ussrLast}}, dans des listes de diplômes de ceux qui y ont étudié.",
+      "texts_zero": "",
+      "texts_one": "un texte",
+      "texts_other": "{{n}} textes",
+      "now": "aujourd’hui : {{name}}",
+      "oldest": "Le plus ancien est {{name}}, que le Bulletin cite pour la première fois en {{year}}."
+    },
+    "s4": {
+      "h": "Le monde se remplit, année après année",
+      "p1": "En 1956, le Bulletin avait déjà cité {{y1956}} pays, en 2000 {{y2000}}. Il en a cité {{all}} aujourd’hui, et {{never}} jamais encore.",
+      "q": "Combien de pays avait-il cités jusqu’à cette année ?",
+      "unit": "Nombre de pays cités au moins une fois au Bulletin, jusqu’à chaque année",
+      "pick": "Jusqu’en {{year}} : {{count}} pays",
+      "so": "En 1956, le Bulletin avait déjà cité {{y1956}} pays, sur les {{all}} cités à ce jour.",
+      "year": "Année",
+      "never_zero": "",
+      "never_one": "Le pays jamais cité : {{list}}.",
+      "never_other": "Les pays jamais cités : {{list}}."
+    },
+    "s5": {
+      "h": "Comment chaque nom a été écrit",
+      "p1": "Le Bulletin n’a pas toujours écrit les noms de la même façon. Voici, pour quelques pays, les graphies les plus fréquentes, telles qu’imprimées."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "read": "Le code a lu le titre de chaque texte arabe du Bulletin officiel tel que publié depuis le numéro 1, en 1913, et chacun de ses articles ({{texts}} textes), sans intelligence artificielle, et compté chaque texte l’année du numéro qui l’a publié.",
+      "names": "Les noms des pays viennent de la liste des Nations unies en arabe, avec chaque graphie imprimée par le Bulletin. Les pays disparus sont comptés à part.",
+      "share": "Chaque chiffre est une part des textes de la période : combien sur mille. Le Bulletin a publié dans les années 2010 bien plus que dans ses premières années ; les nombres seuls feraient monter tous les pays.",
+      "kinds": "Le type de chaque texte vient des mots de son titre : « équivalence », « accord », « prêt », « ambassade »… Le reste va dans « autres textes ».",
+      "traps": "Ne comptent ni un nom de personne (« Marc ben Israël »), ni le nom d’une propriété, ni un mot qui ressemble à un pays : « diamètre » (قطر), « financier » (مالي), « la langue française ».",
+      "edition": "Depuis le décret 2.18.576, les conventions internationales paraissent dans une édition propre du Bulletin.",
+      "check": "Ces chiffres sont comptés par le code et pas encore vérifiés par une personne : l’article reste un brouillon jusqu’à ce qu’une personne lise un échantillon et la première mention de chaque pays sur sa page.",
+      "finder": "Chaque pays, et chaque article qui le cite : Pays et villes",
+      "editionRead": "3adala a lu cette édition : {{n}} de ses textes sont dans ce compte.",
+      "editionNot": "3adala n’a pas encore lu cette édition : les accords publiés après 2018 manquent ici.",
+      "old": "Avant 1956, le Bulletin écrivait les pays autrement (« فرانسا », « انكلترا », « الدولة الفرنسوية ») : nous les avons comptés sous ces formes. Certains noms étaient des noms de personnes, de lieux marocains ou des mots (« بيرو », « كوريا », « اليمن والسعادة », « ايران », des ares) : ils ne comptent qu’à côté d’un mot d’État ou dans une liste de pays, et un pays ne compte pas avant le jour où il a pris son nom (Israël avant 1948). Un tiers des textes de 1913–1919 n’est conservé que par son titre."
+    }
+  },
+  "cities": {
+    "hero": {
+      "q": "Quelles villes le Bulletin officiel nomme-t-il, et comment cela a-t-il changé depuis 1913 ?",
+      "how": "Chaque point est une ville, avec la province qui porte son nom. Sa taille : sur mille textes de la période, combien la citent. Choisissez une période ou « Lancer », et touchez un point pour ouvrir la page de la ville.",
+      "aria": "Carte du Maroc, {{period}} : chaque ville selon sa part des textes",
+      "pick": "{{period}} : {{texts}} textes. En tête, {{first}} : un texte sur {{one}}.",
+      "so": "Casablanca était citée dans un texte sur {{casa0}} en {{first}}, et dans un sur {{casa1}} en {{last}}. Les points verts sont les villes dont la part a grandi."
+    },
+    "s1": {
+      "h": "Les textes de l’État se répandent dans le Royaume",
+      "p1": "En {{first}}, Casablanca était citée dans un texte sur {{casa0}}, Rabat dans un sur {{rabat0}}. En {{last}}, Casablanca l’est dans un sur {{casa1}}, Rabat dans un sur {{rabat1}}. Les cinq villes les plus citées ({{five}}) passent de {{top0}} à {{top1}} textes sur mille, quand les autres restent entre {{rest0}} et {{rest1}}.",
+      "q": "Les cinq grandes gardent-elles la même part ?",
+      "unit": "Pour chaque période : sur mille textes, combien citent l’une des cinq grandes villes (violet), combien une autre ville (gris)",
+      "pick": "{{period}} : {{top}} pour mille pour les cinq grandes, {{rest}} pour les autres",
+      "so": "La part des cinq grandes passe de {{top0}} à {{top1}} pour mille ; celle des autres va de {{rest0}} à {{rest1}}.",
+      "five": "Les cinq grandes",
+      "rest": "Les autres villes",
+      "key": "Violet : {{five}}. Gris : toutes les autres villes. La ligne : 1956."
+    },
+    "s2": {
+      "h": "Des villes qui montent, des villes qui descendent",
+      "p1": "En baisse : {{fell}}. En hausse : {{rose}}.",
+      "q": "Quelles villes montent, lesquelles descendent ?",
+      "so": "Montent des villes moyennes et petites, dont les villes du Nord, presque absentes avant 1956 ; descendent les grandes villes.",
+      "from": "de {{a}} à {{b}} pour mille",
+      "unit": "Chaque ligne est une ville : combien de textes sur mille la citent, période par période. Les deux chiffres sous chaque ville : {{p0}} et {{p1}}.",
+      "reach": "Avant 1956, le Bulletin citait Tétouan dans {{tet0}} textes, Al Hoceïma dans {{hoc0}}, Nador dans {{nad0}} ; depuis 1956, dans {{tet1}}, {{hoc1}} et {{nad1}}.",
+      "zone_one": "Et un titre d’avant 1956 dit où son texte s’applique : « dans la zone française de l’Empire chérifien ».",
+      "zone_other": "Et {{n}} titres d’avant 1956 disent où leur texte s’applique : « dans la zone française de l’Empire chérifien »."
+    },
+    "s3": {
+      "h": "Des noms qui ont changé",
+      "p1": "Certaines villes ont porté au Bulletin un ancien nom avant celui d’aujourd’hui. Voici les deux côte à côte, période par période.",
+      "q": "Quand ces villes ont-elles changé de nom au Bulletin ?",
+      "unit": "Chaque colonne est une période entière : en ambre, la part de ses textes qui écrivent encore l’ancien nom ; en violet, le nouveau",
+      "so": "L’ancien nom s’efface du Bulletin période après période, et le nouveau prend sa place.",
+      "old": "ancien nom"
+    },
+    "s4": {
+      "h": "Rapporté à la population",
+      "p1": "Si l’on divise les textes de {{period}} par la population de chaque ville au recensement de 2024 (une ville avec sa province, par la population de la province), apparaissent les villes dont l’État parle beaucoup pour leur taille.",
+      "q": "De quelles villes l’État parle-t-il le plus, pour leur population ?",
+      "unit": "Textes pour 10 000 habitants",
+      "source": "Source : le Bulletin officiel, {{from}}–{{to}}, et le décret 2.24.1009 (population légale, BO 7356).",
+      "so": "En tête, {{first}} : {{v}} textes pour dix mille habitants."
+    },
+    "s5": {
+      "h": "Ce que l’État a écrit sur chaque ville",
+      "p1": "Nous avons classé chaque texte qui cite une ville par les mots de son titre : foncier et expropriation, découpage territorial, eau et électricité, enseignement, tribunaux, santé, économie. Le reste est hors de la barre.",
+      "q": "Sur quoi l’État écrit-il dans chaque ville ?",
+      "unit": "Chaque barre est une ville, partagée selon les types de textes que les mots de leurs titres désignent",
+      "so": "Le foncier, l’enseignement et l’eau se partagent les textes des grandes villes, dans des proportions qui changent d’une ville à l’autre.",
+      "rest": "Tribunaux, santé, économie et impôts"
+    },
+    "kinds": {
+      "land": "Foncier et expropriation",
+      "territory": "Découpage territorial",
+      "water": "Eau et électricité",
+      "schools": "Enseignement",
+      "courts": "Tribunaux",
+      "health": "Santé",
+      "economy": "Économie et impôts",
+      "other": "Autres textes"
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "read": "Le code a lu le titre de chaque texte arabe du Bulletin officiel tel que publié depuis le numéro 1, en 1913, et chacun de ses articles ({{texts}} textes), sans intelligence artificielle.",
+      "names": "Les noms des villes, communes et provinces viennent du décret du recensement 2.24.1009, tels que ses tableaux ont été imprimés au BO 7356, avec leurs anciens noms. La carte vient de Natural Earth, édition marocaine ; les positions, de GeoNames (CC BY 4.0).",
+      "together": "Une ville compte avec la province ou la préfecture qui porte son nom, chaque texte une fois. La page de la ville, dans « Pays et villes », les sépare.",
+      "traps": "Ne comptent ni un mot qui ressemble à une ville sans l’être (« الداخلة في », « inclus dans » ; « الجديدة », « nouvelle » ; « محمد بن أحمد »), ni l’adresse d’une personne, ni le nom d’une propriété, ni « fait à Rabat » à la fin des dahirs, ni le visa « vu pour promulgation, Rabat, le » sous les dahirs et arrêtés d’avant 1956.",
+      "people": "Le rapport à la population porte sur les textes depuis 2020 seulement, avec la population du recensement de 2024.",
+      "check": "Ces chiffres sont comptés par le code et pas encore vérifiés par une personne : l’article reste un brouillon jusqu’à ce qu’une personne lise un échantillon des noms et la première mention des villes sur leur page.",
+      "old": "Avant 1956, nous avons compté les villes sous les noms imprimés alors : « مرسى ليوطي » et « بور ليوطي » (Port-Lyautey) pour Kénitra, « فضالة » (Fédala) pour Mohammedia, « بتي جان » (Petitjean) pour Sidi Kacem. Les douars, tribus et saints qui portent le nom d’une ville (« دوار وزان », « اهل افران ») ne comptent pas pour la ville."
+    },
+    "stop": "Bulletin officiel {{issue}}, page {{page}} ({{date}}) :"
+  },
+  "clock": {
+    "frEdition": "éd. française",
+    "hero": {
+      "aria": "Une horloge à deux heures du matin, qui revient à une heure",
+      "ahead": "GMT +1",
+      "gmt": "GMT",
+      "replay": "Revoir",
+      "when": "{{day}}, {{hour}} du matin"
+    },
+    "before": {
+      "h": "Avant 1913, chaque ville avait son heure",
+      "p1": "Le 10 octobre 1913, l’édition française du Bulletin officiel l’annonçait : l’heure était unifiée entre Rabat et Casablanca dans les services publics depuis le 3 octobre. « L’heure officielle de Rabat retardait, en effet de {{m}}’ {{s}}” sur celle de Casablanca. »",
+      "casablanca": "Casablanca : {{time}}",
+      "rabat": "Rabat : {{time}}",
+      "casablancaName": "Casablanca",
+      "rabatName": "Rabat",
+      "src": "Bulletin officiel, édition française, n° {{issue}}, p. {{page}}",
+      "p2": "En janvier 1914, « la municipalité de Saffi a fait placer des horloges sur le fronton des portes de l’enceinte » : elles marquaient l’heure de Greenwich. Et le service topographique de Casablanca recevait les signaux horaires de la tour Eiffel.",
+      "p3": "Entre ces deux nouvelles parut le premier texte : le dahir du 26 octobre 1913 relatif à l’heure légale, « considérant qu’il importe de déterminer l’heure légale pour les notifications, exécutions, et les divers actes des Juridictions ». L’heure légale du Protectorat français devint « l’heure du temps moyen du méridien de Greenwich »."
+    },
+    "century": {
+      "h": "{{years}} ans en une image",
+      "p": "Les textes ont déplacé l’horloge {{moves}} fois : elle a été avancée de soixante minutes sur Greenwich pendant {{years}} ans en tout. Chaque ligne ci-dessous est une année, chaque point un jour."
+    },
+    "grid": {
+      "q": "Chaque jour de 1913 à 2026 : l’heure était-elle avancée ?",
+      "aria": "Une ligne par année de 1913 à 2026, un point par jour de janvier à décembre ; en or, les jours où l’heure légale était avancée de soixante minutes.",
+      "hint": "Touchez un jour pour savoir quelle heure la loi donnait, et d’où elle venait ; ou utilisez les flèches.",
+      "none": "pas encore d’heure légale : chaque ville avait la sienne.",
+      "gmt": "heure de Greenwich,",
+      "ahead": "heure avancée de soixante minutes,",
+      "unknown": "l’heure est avancée depuis le 12 septembre 1939, puis revenue un jour dont nous n’avons pas trouvé le texte, avant le 25 février 1940.",
+      "from_to": "du {{from}} au {{to}}, comme l’a fixé le",
+      "from": "depuis le {{from}}, comme l’a fixé le"
+    },
+    "legend": {
+      "ahead": "Avancée de 60 minutes",
+      "gmt": "Heure de Greenwich",
+      "unknown": "Avancée, puis revenue un jour sans texte trouvé",
+      "ramadan": "Ramadan, daté par le Bulletin"
+    },
+    "notes": {
+      "y1918": "premier été",
+      "y1943": "6 ans et 7 mois",
+      "y1950": "la sécheresse",
+      "y1967": "à midi",
+      "y1985": "dix-neuf mois",
+      "y1989": "vingt-sept jours",
+      "y1999": "près de 19 ans",
+      "y2014": "un trou chaque été",
+      "y2022": "toute l’année",
+      "y2026": "20 septembre"
+    },
+    "steps": {
+      "s1913": {
+        "h": "Greenwich",
+        "p": "Depuis le dahir de 1913, une seule heure dans la zone du Protectorat français : celle de Greenwich, été comme hiver."
+      },
+      "s1918": {
+        "h": "Le premier été",
+        "p": "Le dahir du 10 mai 1918 « établissant une heure spéciale pour l’été » avance l’heure de soixante minutes à partir du 16 mai. Elle revient dans la nuit du 14 au 15 juillet, deux mois plus tard, par le dahir du 8 juillet."
+      },
+      "s1919": {
+        "h": "{{years}} ans sans changement",
+        "p": "La plus longue période à l’heure de Greenwich : du 15 juillet 1918 au 12 septembre 1939."
+      },
+      "s1939": {
+        "h": "{{y}} ans et {{m}} mois d’avance",
+        "p1": "Le dahir du 9 septembre 1939 avance l’heure de soixante minutes à partir du 12 septembre, « jusqu’à ce qu’un ordre contraire soit donné ». Puis le dahir du 16 février 1940 l’avance de nouveau à partir du 25 février : elle était donc revenue entre ces deux dates, par un texte que nous n’avons pas trouvé.",
+        "p2": "Le dahir du 22 septembre 1945 fixe son retour à la nuit du 18 novembre 1945, à trois heures. Le 17 novembre, la veille, un autre dahir l’abroge. L’heure ne revient que dans la nuit du 30 septembre 1946 : {{y}} ans et {{m}} mois, la plus longue avance."
+      },
+      "s1950": {
+        "h": "La sécheresse",
+        "p": "Deux seulement des cinquante et un textes disent pourquoi : le dahir de 1913, pour les actes des tribunaux, et ce dahir du 7 juin 1950, qui avance l’heure du 11 juin au 29 octobre 1950 :"
+      },
+      "s1967": {
+        "h": "À midi",
+        "p": "Le décret royal n° 455-67 abroge le dahir de 1913 et pose la règle toujours en vigueur : l’heure de Greenwich, et soixante minutes qui peuvent y être ajoutées chaque année par décret. Il les ajoute la même année, à partir du 3 juin 1967 à midi : le seul changement en plein jour. Le Bulletin le publie {{late}} jours plus tard."
+      },
+      "s1974": {
+        "h": "Un été après l’autre",
+        "p": "Sept saisons en quinze ans, chacune ouverte par un décret et close par un autre. Le décret du 15 mars 1984 avance l’heure à partir du 16 mars ; elle ne revient que le 6 octobre 1985, dix-neuf mois plus tard. La plus courte, l’été 1989 : {{days}} jours, du 4 juin au 1er juillet."
+      },
+      "s1990": {
+        "h": "Près de 19 ans sans changement",
+        "p": "Du 1er juillet 1989 au 1er juin 2008, aucun texte ne déplace l’horloge."
+      },
+      "s2008": {
+        "h": "Un trou chaque été",
+        "p1": "À partir de 2008, l’heure d’été revient chaque année. Depuis 2012, le décret n° 2-12-126 fixe deux dates chaque année et permet au Chef du gouvernement de « décider de suspendre cet horaire » pour une période déterminée. Il l’a suspendu chaque année quelques semaines, au cœur de l’été.",
+        "p2": "Le 29 septembre 2013, le jour même du retour prévu, le Bulletin publie un décret qui repousse le retour au dernier dimanche d’octobre et avance le début au dernier dimanche de mars."
+      },
+      "s2018": {
+        "h": "L’heure avancée toute l’année",
+        "p1": "Le décret n° 2-18-855, du 26 octobre 2018, publié le 27, garde l’heure avancée à partir du 28 octobre, le jour du retour attendu, et laisse au Chef du gouvernement le pouvoir de la suspendre « pour une période déterminée ».",
+        "p2": "Le 13 mars 2019, la Cour constitutionnelle juge le décret de 1967 réglementaire et non législatif : le gouvernement peut le modifier par décret. Chaque année vient ensuite une seule suspension, de cinq ou six semaines, qui recule d’environ onze jours par an : les trous penchent vers la gauche."
+      },
+      "sRamadan": {
+        "h": "{{run}} ans, une semaine avant le ramadan",
+        "p": "Aucun de ces textes ne nomme le ramadan. Mais le Bulletin date aussi chaque numéro selon l’hégire, et nous en avons tiré le premier jour du ramadan de chaque année. De {{from}} à {{to}}, {{n}} années de suite, l’heure est revenue à Greenwich dans la semaine précédant le 1er ramadan ; et depuis 2012, elle a été avancée de nouveau dans la semaine suivant le 1er chaoual."
+      },
+      "s2026": {
+        "h": "Retour à Greenwich",
+        "p": "Le décret n° 2-26-530, publié le 29 juin 2026, {{n}} jours avant la date, ramène l’heure légale du Royaume au temps moyen du méridien de Greenwich et abroge le décret de 2018."
+      },
+      "sAll": {
+        "h": "L’image entière",
+        "p": "{{moves}} changements, et {{years}} ans d’heure avancée en tout. Touchez n’importe quel jour."
+      }
+    },
+    "share": {
+      "button": "Partager l’image",
+      "title": "De Greenwich à Greenwich",
+      "sub": "Chaque jour de {{from}} à {{to}} ; en or, l’heure avancée de 60 minutes",
+      "source": "Source : Bulletin officiel, {{n}} textes, lus par 3adala",
+      "site": "قانون · 3adala.com/blog/clock"
+    },
+    "finder": {
+      "h": "Quelle heure était-il le… ?",
+      "p": "Choisissez un jour de 1913 à aujourd’hui : votre naissance, votre mariage, une date écrite dans un contrat. Nous vous disons quelle était l’heure légale, depuis quand, et par quel texte.",
+      "label": "Le jour",
+      "chips": "Jours à essayer",
+      "birth": "Le jour de ma naissance",
+      "chip": "{{day}}",
+      "today": "Aujourd’hui",
+      "from_to": "Du {{from}} au {{to}}, comme l’a fixé le",
+      "from": "Depuis le {{from}}, comme l’a fixé le",
+      "none": "Avant le dahir du 26 octobre 1913 : pas d’heure légale, chaque ville avait la sienne.",
+      "gmt": "L’heure légale : celle de Greenwich.",
+      "ahead": "L’heure légale avançait de soixante minutes sur Greenwich.",
+      "unknown": "L’heure a été avancée le 12 septembre 1939, puis est revenue un jour dont nous n’avons pas trouvé le texte, avant le 25 février 1940.",
+      "noon_ahead": "Quand il était 12:00 à Greenwich, il était 13:00 au Maroc.",
+      "noon_gmt": "Quand il était 12:00 à Greenwich, il était 12:00 au Maroc.",
+      "face_none": "Pas d’heure légale",
+      "face_ahead": "Une heure de l’après-midi au Maroc quand il est midi à Greenwich",
+      "face_gmt": "Midi au Maroc comme à Greenwich",
+      "zone": "Jusqu’en 1967, les textes visent la zone du Protectorat français ; le décret de 1967 est le premier à dire « le territoire du Royaume ».",
+      "later": "Au {{on}}, aucun texte du Bulletin ne déplace l’heure après le 20 septembre 2026.",
+      "invalid": "Choisissez un jour à partir de 1900."
+    },
+    "notice": {
+      "h": "Avant que l’horloge bouge, ou après",
+      "p1": "Pour chaque changement qu’un texte date, nous avons compté les jours entre le premier numéro qui l’a publié et le jour du changement. {{late}} sur {{all}} ont été publiés après que l’horloge avait bougé.",
+      "q": "Combien de jours avant le changement le Bulletin a-t-il publié le texte ?",
+      "unit": "Un point par changement, de 1918 à gauche à 2026 à droite. Au-dessus de la ligne : texte publié avant ; en dessous : après. Les changements de la règle annuelle (2012–2018) sont à part : leur texte avait paru des années plus tôt.",
+      "hint": "Touchez un point pour voir le texte et le jour de sa publication.",
+      "before_one": "publié le {{printed}}, {{count}} jour avant le changement.",
+      "before_other": "publié le {{printed}}, {{count}} jours avant le changement.",
+      "after_one": "publié le {{printed}}, {{count}} jour après le changement.",
+      "after_other": "publié le {{printed}}, {{count}} jours après le changement.",
+      "same": "publié le {{printed}}, le jour même du changement.",
+      "so": "{{late}} changements sur {{all}} ont été publiés après que l’horloge avait bougé, le dernier en {{last}}.",
+      "thMove": "Changement",
+      "thText": "Texte",
+      "thPrinted": "Première publication",
+      "thDays": "Jours avant (− après)",
+      "keyBefore": "Publié avant le changement",
+      "keyAfter": "Publié après",
+      "aria": "Un point par changement d’heure, à la hauteur des jours entre la publication de son texte et le changement.",
+      "label2026": "2026 : {{n}} jours avant",
+      "label1967": "1967 : {{n}} jours après",
+      "label2011": "2011 : {{n}} jours avant",
+      "p2": "Le texte le plus proche de son échéance est le décret n° 2-18-855 : publié le 27 octobre 2018, la veille d’un retour qui n’a pas eu lieu."
+    },
+    "after": {
+      "h": "Et après le 20 septembre 2026 ?",
+      "p1": "L’heure légale est revenue à Greenwich, comme l’écrivaient le dahir de 1913 puis le décret de 1967 ; le décret de 2018 est abrogé, et avec lui le pouvoir du Chef du gouvernement de la suspendre. Reste l’article premier du décret royal n° 455-67, tel quel :",
+      "p2": "Au {{on}}, aucun texte du Bulletin ne déplace de nouveau l’horloge. Si rien ne change, le prochain ramadan sera le premier depuis 2007 sans changement d’heure avant lui, alors que l’horloge avait bougé avant chaque ramadan de {{from}} à {{to}}."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les changements : dans chaque texte, nous avons lu l’article qui déplace l’horloge sur sa page imprimée, tel que 3adala le tenait le {{on}} ; chaque changement ici est lié à son texte, son numéro et sa page.",
+      "pages": "{{uncut}} de ces textes ne sont pas encore découpés par 3adala comme textes à part, ou l’ont été mal : leur nom ouvre leur page imprimée.",
+      "day": "Le jour : chaque jour est lu à midi, heure légale ; le 3 juin 1967, changé à midi, compte comme avancé. Les années 2012–2018 suivent la règle annuelle du décret n° 2-12-126 puis du n° 2-13-781 quand aucun texte de l’année ne nomme le jour.",
+      "zone": "Avant 1956 : les textes visent la zone du Protectorat français ; nous n’avons pas lu ce qui se passait dans la zone khalifienne ni à Tanger.",
+      "missing": "Nous n’avons pas trouvé le texte qui a ramené l’heure entre le 12 septembre 1939 et le 25 février 1940 ; là où il n’y a pas de texte, nous avons dessiné l’heure de Greenwich.",
+      "ramadan": "Ramadan et chaoual : leur premier jour tel que le Bulletin le date en tête de ses numéros, de 2007 à 2026 ; il peut différer d’un jour d’un autre calendrier.",
+      "french": "En français : les textes de 1913 et 1918 dans les mots de l’édition française du Bulletin ; ensuite, notre traduction, car 3adala n’a pas encore lu l’édition française de ces années.",
+      "check": "Une personne vérifie chaque date sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "seePage": "Ouvrir la page imprimée",
+    "pageShort": "BO {{issue}} · p. {{page}}"
+  },
+  "marquise": {
+    "franc": "francs",
+    "dh": "DH",
+    "hShort": "h",
+    "mShort": "min",
+    "timesLabel": "multiplié",
+    "sameLabel": "mêmes heures",
+    "hm1": "{{h}} h {{m}}",
+    "hm2": "{{h}} h {{m}}",
+    "hmN": "{{h}} h {{m}}",
+    "min_one": "",
+    "min_other": "",
+    "min_many": "",
+    "draw": {
+      "q": "Combien coûtait un paquet de Marquise ? Tracez le prix du doigt, de 1960 à aujourd’hui",
+      "how": "En 1960, il coûtait 140 francs (1,40 dirham). Prolongez la ligne jusqu’en 2026, puis voyez ce qu’écrivaient les arrêtés.",
+      "qDone": "Voici le prix tel que les arrêtés l’ont écrit, arrêté après arrêté",
+      "howDone": "Chaque point est un arrêté publié au Bulletin officiel. En tirets : votre tracé.",
+      "howH": "Le même prix, compté en heures de travail au salaire minimum de l’industrie et du commerce.",
+      "here": "Tracez ici",
+      "keyPrice": "Prix dans les arrêtés",
+      "keyGuess": "Votre tracé",
+      "keyGap": "Aucun arrêté publié",
+      "aria": "Prix du paquet de Marquise de 1956 à 2026, arrêté par arrêté, en dirhams ou en heures de travail au salaire minimum.",
+      "unitDh": "dirhams",
+      "unitH": "heures de travail",
+      "reveal": "Voir la réponse",
+      "skip": "Voir sans tracer",
+      "start": "Posez le doigt sur le point violet et glissez vers la droite.",
+      "more": "Vous êtes en {{year}}. Continuez jusqu’en 2026.",
+      "ready": "Bien. Voyez maintenant la réponse.",
+      "verdict": "En moyenne, vous étiez à {{err}} dirhams du vrai prix. Le plus grand écart en {{year}} : vous avez tracé {{guess}} dirhams, l’arrêté en vigueur disait {{truth}}.",
+      "above": "Et vous l’avez vu plus cher qu’il n’était la plupart des années.",
+      "below": "Et vous l’avez vu moins cher qu’il n’était la plupart des années.",
+      "switch": "L’unité",
+      "mode_dh": "En dirhams",
+      "mode_h": "En heures de travail",
+      "pick": "{{price}} {{unit}} le paquet (« {{name}} »),",
+      "pickHours": "soit {{hm}} de travail au salaire minimum,",
+      "hint": "Touchez une marche pour connaître son arrêté, ou utilisez les flèches.",
+      "ref144": "1960 et 2026 : 1 h 44"
+    },
+    "share": {
+      "title": "Marquise, arrêté après arrêté",
+      "sub": "Mon tracé contre les arrêtés : {{err}} dirhams d’écart en moyenne",
+      "subNone": "Le prix du paquet tel que l’écrivent les arrêtés, 1956–2026",
+      "source": "Source : Bulletin officiel, {{n}} arrêtés, lus par 3adala",
+      "site": "قانون · 3adala.com/blog/marquise",
+      "button": "Partager mon tracé",
+      "buttonNone": "Partager l’image"
+    },
+    "hours": {
+      "h": "{{hm}}, en 1960 comme en 2026",
+      "p1": "En 1960, le salaire minimum de l’industrie et du commerce était de {{w1}} francs de l’heure, et le paquet de Marquise de {{first}} francs. En 2026, le salaire est de {{w2}} dirhams de l’heure, et le paquet de {{now}} dirhams. Le prix a été multiplié par {{times}}, le salaire à peu près autant : le paquet coûte {{hm}} de travail les deux années.",
+      "p2": "Entre les arrêtés, les heures bougent peu : au plus bas {{low}} en {{lowYear}}, après deux hausses du salaire, au plus haut {{high}} en {{highYear}}, avant une hausse. Elles n’en sont pas sorties en soixante-six ans.",
+      "p3": "Entre {{from}} et {{to}}, le Bulletin officiel, tel que 3adala le lit, ne publie aucun arrêté sur le prix des tabacs : la ligne y est en tirets ; le prix est passé de 1,70 à 2,20 dirhams, et nous n’avons pas trouvé les arrêtés entre les deux."
+    },
+    "levy": {
+      "h": "10 centimes pour la Palestine dans chaque paquet",
+      "p1": "Le 24 juillet 1970, un dahir crée le « Fonds de soutien du Maroc au peuple palestinien » et ses ressources, en vigueur depuis le 23 janvier 1970. Son article premier :",
+      "p2": "{{ordinary}} dirham sur les tabacs et cigarettes ordinaires, {{premium}} dirham sur les supérieurs. Et sur les places de cinéma {{c1}} ou {{c2}} dirham, sur celles de théâtre {{t1}} ou {{t2}} dirham, selon le prix du billet.",
+      "q": "Quelle part du prix allait à la Palestine ?",
+      "unit": "Le paquet de Marquise dans chaque arrêté de {{from}} à {{to}} : la part de la Régie en gris, les dix centimes pour la Palestine en violet, comme les arrêtés les impriment en trois colonnes.",
+      "so": "{{a}} % du prix du paquet en {{aYear}}, {{b}} % en {{bYear}} : la somme est fixe, le prix grandit.",
+      "thDay": "Arrêté",
+      "thCompany": "Régie des tabacs",
+      "thPalestine": "Palestine",
+      "thPublic": "Prix public",
+      "p3": "Depuis 1988, les arrêtés n’impriment plus cette colonne. Mais le dahir n’a pas été abrogé : la loi de finances 2003 fait verser la contribution au Trésor par les distributeurs en gros de tabac manufacturé, et en 2021 un arrêté de la ministre de l’Économie et des Finances en délègue le recouvrement. Nous n’avons trouvé aucun texte qui en change le montant."
+    },
+    "who": {
+      "h": "Qui décide du prix ?",
+      "p1": "Depuis 1976, un décret délègue au ministre des Finances la fixation des prix de vente au public des tabacs.",
+      "q": "Les arrêtés sur le prix des tabacs, un à un",
+      "unit": "Un point par arrêté, {{n}} publiés au Bulletin officiel depuis 1956, en couleur selon le verbe de son titre.",
+      "so": "{{set}} arrêtés « fixent » les prix, tous avant 2013 ; {{approve}} les « homologuent », tous depuis 2013.",
+      "keySet": "Fixe les prix",
+      "keyApprove": "Homologue les prix",
+      "l1976": "1976 : délégation au ministre",
+      "l2013": "2013 : l’homologation",
+      "p2": "Le 1er mars 2013, le verbe change : l’arrêté ne « fixe » plus les prix, il les « homologue », et l’arrêté n° 771-13 abroge le dernier arrêté « fixant les prix ». Les arrêtés d’homologation visent l’avis de la commission chargée d’homologuer les prix des tabacs manufacturés, en application de la loi n° 46-02."
+    },
+    "month": {
+      "h": "Un paquet par jour, combien d’heures par mois ?",
+      "p": "Au prix du paquet et au salaire minimum d’aujourd’hui :",
+      "ask": "Combien de paquets par jour ?",
+      "packs": "{{n}}",
+      "dh": "dirhams par mois",
+      "hours": "heures au salaire minimum",
+      "share": "d’un mois de travail ({{h}} heures)",
+      "src": "Paquet à {{price}} dirhams, salaire minimum de {{wage}} dirhams de l’heure, mois de travail : un douzième des {{h}} heures annuelles (article 184 du Code du travail)."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les prix : nous avons lu la ligne du paquet de Marquise dans {{n}} arrêtés tels que 3adala les tient ; chaque prix est lié à son arrêté, son numéro et sa page. Nous retenons le jour du numéro ; l’arrêté peut fixer un autre jour d’application.",
+      "pack": "Le paquet : le paquet souple de vingt, de « Marquise F.S. » (1956) à « Marquise Classic » ; nous avons laissé les boîtes (box), les légères, les mentholées, les 100 mm et le paquet de dix.",
+      "images": "Trois tableaux lus sur l’image de la page : 1992 (le texte de la page ne porte pas le tableau), 1996 et 2024 (la colonne était douteuse).",
+      "wage": "Le salaire : le salaire minimum horaire de l’industrie, du commerce et des professions libérales, tel que le sixième billet l’a lu dans chaque décret ; en 1960, celui de la première zone (80,80 francs).",
+      "gap": "Aucun arrêté sur le prix des tabacs entre février 1962 et juin 1976 dans le Bulletin tel que 3adala le lit ; avant 1960, seulement l’arrêté de 1956 et un prix pour Tanger seule (1958).",
+      "francs": "Le franc : prix en francs jusqu’en 1960 ; un dirham vaut cent francs.",
+      "check": "Une personne vérifie chaque prix sur sa page avant la publication.",
+      "renamed": "Le nom : un arrêté de 2015 renomme « Marquise souple full flavor » en « Marquise Classic ».",
+      "on": "Lu le {{on}}."
+    },
+    "ref": {
+      "order": "arrêté n° {{n}}",
+      "orderOf": "arrêté du {{day}}",
+      "decree": "décret n° {{n}}",
+      "dahir": "dahir n° {{n}}",
+      "financeLaw": "loi de finances n° {{n}} pour {{year}}",
+      "issue": "BO du {{day}}"
+    },
+    "hUnit": "heure"
+  },
+  "staples": {
+    "items": {
+      "bread": "Pain",
+      "sugar": "Sucre",
+      "oil": "Huile",
+      "butter": "Beurre",
+      "flour": "Farine"
+    },
+    "units": {
+      "bread": "dirham le pain de 800 g",
+      "sugar": "dirhams le quintal de pains de sucre à la sortie d’usine",
+      "oil": "dirhams la bouteille d’un litre",
+      "butter": "dirhams le kilo de beurre au détail à Casablanca",
+      "flour": "dirhams le quintal de farine nationale au moulin"
+    },
+    "basket": {
+      "q": "Cinq prix montent dans un même numéro du Bulletin officiel, et redescendent {{n}} plus tard",
+      "how": "Chaque ligne est un produit, de son prix de septembre 1980 (100) à ceux des arrêtés de mai et juin 1981. Touchez une ligne ou un produit.",
+      "aria": "Cinq lignes, une par produit, de son prix au 5 septembre 1980 à son prix au 29 mai 1981, puis au 7 juin 1981.",
+      "issue": "BO n° {{n}}",
+      "pickAria": "Les produits",
+      "pick": "{{name}} : {{a}}, puis {{b}}, puis {{c}} {{unit}}. Hausse de {{up}} % en mai, encore {{kept}} % au-dessus en juin : {{back}} % de la hausse retirés.",
+      "so": "Les arrêtés de juin ont retiré entre {{min}} % et {{max}} % de chaque hausse.",
+      "issueShort": "n° {{n}}"
+    },
+    "bread": {
+      "h": "{{n}} à 0,90 dirham",
+      "p1": "En février 1975, un arrêté du Premier ministre fixait le pain « bordelais » de 800 g, de farine nationale, à {{y75}} dirham, soit {{m75}} minutes de travail au salaire minimum. En septembre 1980, il passait à {{y80}} dirham.",
+      "p2": "Puis le numéro du 28 mai 1981 publie un arrêté qui le porte à {{may}} dirham à compter du 29 mai ({{mMay}} minutes de travail), et celui du 10 juin un arrêté qui le ramène à {{jun}} dirham ({{mJun}} minutes) à compter du 7 juin, en abrogeant celui de mai. Le prix de 0,90 a duré {{n}}. L’article 3 de l’arrêté de juin :",
+      "p3": "Les arrêtés ne disent pas pourquoi. Le Bulletin montre seulement que les cinq prix ont bougé ensemble, dans les deux mêmes numéros, par des arrêtés aux numéros qui se suivent."
+    },
+    "ten": {
+      "q": "Deux numéros, dix arrêtés",
+      "unit": "Le prix écrit par chaque arrêté, dans le numéro du 28 mai et dans celui du 10 juin 1981, dans l’unité de chaque produit. Barré : le prix qu’il remplaçait.",
+      "so": "Les numéros des arrêtés du Premier ministre se suivent : de 3-263 à 3-266 en mai, de 3-275 à 3-278 en juin.",
+      "mast": "Bulletin officiel"
+    },
+    "gas": {
+      "h": "{{n}} prix pour le litre de gasoil",
+      "p1": "De {{first}} dirham le litre en décembre 1975 à {{last}} dirhams en {{lastYear}} : le Bulletin officiel a écrit {{n}} prix du litre de gasoil à Casablanca, augmentés dans les autres provinces d’un différentiel de transport.",
+      "q": "Combien coûtait un litre de gasoil, en dirhams et en minutes de travail ?",
+      "unit": "En haut : le prix de base du litre à Casablanca, tel que l’écrivent les arrêtés. En bas : les minutes de travail au salaire minimum qu’il représente. Hachuré : les années où le Bulletin n’écrit pas le prix.",
+      "pick": "le litre de gasoil à {{dh}} dirhams, soit {{min}} minutes de travail au salaire minimum ; un plein de 40 litres en valait {{tank}} heures.",
+      "since": "Depuis le {{from}}, selon l’",
+      "away_ministry": "{{day}} : les prix de vente suivaient chaque mois les cours mondiaux, publiés par le ministère chargé de l’énergie, non par le Bulletin.",
+      "away_means": "{{day}} : depuis le 16 janvier 2014, les prix sont calculés le 1er et le 16 de chaque mois, et le Bulletin ne les écrit plus.",
+      "before": "Avant décembre 1975, aucun arrêté dans 3adala n’écrit le prix du gasoil.",
+      "hint": "Touchez le graphique pour lire le prix d’un jour, ou utilisez les flèches.",
+      "so": "Un litre de gasoil valait {{a}} minutes de travail en {{aYear}}, {{top}} minutes en {{topYear}}, {{b}} minutes en {{bYear}}.",
+      "thFrom": "En vigueur le",
+      "thPrice": "Dirhams le litre",
+      "thMin": "Minutes de travail",
+      "thOrder": "Arrêté",
+      "thPrinted": "Publié le",
+      "keyDh": "Dirhams le litre",
+      "keyMin": "Minutes de travail au salaire minimum par litre",
+      "keyAway": "Le Bulletin n’écrit pas le prix",
+      "aria": "Prix du litre de gasoil de 1975 à 2014, en dirhams et en minutes de travail au salaire minimum.",
+      "awayMinistry": "par le ministère",
+      "awayMeans": "« par tout moyen »",
+      "unitDh": "dirhams le litre",
+      "unitMin": "minutes de travail",
+      "hour": "une heure",
+      "p2": "{{n}} de ces arrêtés ont été publiés plus de deux mois après leur entrée en vigueur, le plus tardif {{worst}} jours après : l’arrêté n° 180-80, applicable depuis le 8 janvier 1980, publié le 4 juin.",
+      "p3": "Entre les deux numéros du pain, celui du 3 juin 1981 publiait le prix du gasoil en vigueur depuis le 12 février : 2,10 dirhams le litre. Et le numéro du 26 octobre 2006 porte deux arrêtés à la suite : le premier fixe le litre à 7,98 dirhams à compter du 2 septembre, le second à 7,47 à compter du 6 octobre."
+    },
+    "away": {
+      "h": "Quand le prix est sorti du Bulletin",
+      "p1": "Deux fois. D’abord en 1995 : l’arrêté n° 43-95 indexe les prix d’achat sur les cours mondiaux chaque mois à compter du 1er février 1995, et dit des prix de vente :",
+      "p2": "Le Bulletin écrit de nouveau le prix du 16 juillet 2002 au 16 janvier 2014, le dernier à {{price}} dirhams le litre. Le 30 décembre 2014, un arrêté dit :",
+      "p3": "Le Bulletin officiel, tel que 3adala le lit, n’a publié depuis aucun prix du litre de gasoil."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les prix : dans chaque arrêté, nous avons lu l’article qui fixe le prix, tel que 3adala le tient ; chaque prix est lié à son arrêté, son numéro et sa page.",
+      "images": "Nous avons lu sur l’image de la page ce que son texte avait perdu : les trois tableaux du sucre, les arrêtés du sucre et du beurre de 1980, et l’arrêté du gasoil de novembre 1984 (n° 1192-84), que 3adala n’a pas encore découpé.",
+      "basket": "Le panier : le pain « bordelais » de 800 g ; les pains de sucre de 2 kg au prix du quintal à la sortie d’usine (s’y ajoutent les marges de gros et de détail) ; la bouteille d’huile d’un litre ; le beurre importé au détail à Casablanca ; la farine nationale de blé tendre au moulin. 100 est le prix de septembre 1980.",
+      "gasoil": "Le gasoil : le prix de base au public à Casablanca, du jour où l’arrêté dit s’appliquer (ou de sa publication s’il ne le dit pas) ; le « gasoil 50 ppm » à partir d’avril 2009, quand l’arrêté ne cite plus le gasoil ordinaire.",
+      "dots": "Les pointillés : dans un arrêté qui en modifie un autre, la ligne en pointillés (« gasoil …… ») reste inchangée ; le gasoil n’a donc pas bougé dans les arrêtés de juillet 2008 et juillet 2010.",
+      "wage": "Le salaire : le salaire minimum horaire de l’industrie, du commerce et des professions libérales, tel que le sixième billet l’a lu dans chaque décret.",
+      "check": "Une personne vérifie chaque prix sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "ref": {
+      "order": "arrêté n° {{n}}"
+    },
+    "daysFew": "{{n}} jours",
+    "daysMany": "{{n}} jours",
+    "share": {
+      "sub": "{{name}} : {{a}}, puis {{b}}, puis {{c}} {{unit}}",
+      "source": "Source : Bulletin officiel, arrêtés n° {{orders}}, lus par 3adala",
+      "site": "قانون · 3adala.com/blog/bread-gasoil",
+      "button": "Partager l’image ({{name}})"
+    }
+  },
+  "ages": {
+    "unit": {
+      "few": "ans",
+      "many": "ans"
+    },
+    "in": {
+      "one": "Dans un an",
+      "two": "Dans deux ans",
+      "few": "Dans {{n}} ans",
+      "many": "Dans {{n}} ans"
+    },
+    "art": {
+      "article": "article {{n}}",
+      "chapter": "article {{n}}",
+      "single": "article unique"
+    },
+    "hero": {
+      "q": "Quel âge avez-vous ?",
+      "how": "Faites glisser la marque sur la ligne, ou utilisez + et −. Chaque trait violet est un âge qu’une loi marocaine écrit.",
+      "minus": "Un an de moins",
+      "plus": "Un an de plus",
+      "slider": "Votre âge sur la ligne d’une vie",
+      "value": "{{age}} {{unit}}",
+      "now": "Vous avez {{age}} {{unit}}. La loi dit :",
+      "nowNone": "Aucune règle de ces textes ne s’applique à cet âge.",
+      "next": "{{in}}, à {{age}} {{unit}} :",
+      "nextNone": "Après 65 ans, ces textes n’écrivent plus d’âge nouveau.",
+      "more": "{{n}} de plus",
+      "less": "Moins",
+      "share": "Partager votre âge dans la loi"
+    },
+    "since": "Dès {{age}} ans,",
+    "until": "Avant {{age}} ans,",
+    "ruler": {
+      "h": "35 âges, de la naissance à 65 ans",
+      "p1": "{{before}} tombent avant 26 ans. Puis la loi se tait presque : entre 26 et 54 ans, ces textes n’écrivent qu’un âge, 40 ans, le dernier où peut être appelé au service militaire celui dont la dispense a pris fin. Les âges reviennent avec la retraite.",
+      "start": "Commence à cet âge",
+      "end": "Prend fin à cet âge",
+      "gap": "{{n}} {{unit}} sans âge nouveau",
+      "you": "Vous êtes ici : {{age}} {{unit}}",
+      "youShort": "vous"
+    },
+    "at18": {
+      "h": "Le dix-huitième anniversaire",
+      "p1": "En un seul jour, {{texts}} textes écrivent {{n}} choses : la majorité civile dans le code de la famille et la majorité pénale dans la procédure pénale, la capacité de se marier, l’inscription sur les listes électorales, le permis de conduire une voiture, le travail domestique ; et l’interdiction de travailler dans les carrières et au fond des mines prend fin.",
+      "p2": "Deux ans plus tôt, à 16 ans, {{n}} choses : la carte nationale devient obligatoire, le permis de la motocyclette légère possible, on peut demander son émancipation au tribunal et voter pour les délégués des salariés ; l’interdiction du travail de nuit prend fin, et le mineur n’est plus à l’abri de la prison pour un délit."
+    },
+    "moves": {
+      "h": "La majorité était à 21 ans",
+      "p1": "Sept âges ont changé depuis 1957. La majorité a baissé deux fois : de 21 ans dans le code du statut personnel de 1958 à 20 ans en 1992, puis à 18 ans en 2003, un an avant le code de la famille. D’autres âges ont monté : l’âge du mariage de la fille de 15 à 18 ans, la majorité pénale de 16 à 18 ans, et l’âge sous lequel un mineur ne va pas en prison pour un crime de 12 à 14 ans en 2025.",
+      "q": "Comment les âges ont-ils changé ?",
+      "unit": "Chaque âge tel qu’un texte l’a écrit, dans l’ordre des années ; barré, il ne s’applique plus ; en violet, celui en vigueur. Chaque âge ouvre sa page.",
+      "so": "Deux âges ont baissé, la majorité et le début de l’âge scolaire ; cinq ont monté ; le plus grand changement est de trois ans.",
+      "equal": "Le préambule du code de la famille disait en 2004 :",
+      "rows": {
+        "majority": "La majorité",
+        "marriage": "L’âge du mariage de la fille",
+        "criminal": "La majorité pénale",
+        "prison": "Pas de prison pour un mineur avant (crimes)",
+        "school-start": "Début de l’âge scolaire obligatoire",
+        "school-end": "Fin de l’âge scolaire obligatoire",
+        "civil": "La retraite du fonctionnaire"
+      },
+      "up": "+{{n}} {{unit}}",
+      "down": "−{{n}} {{unit}}"
+    },
+    "retire": {
+      "h": "63 ans, sauf pour les nés avant 1962",
+      "p1": "Le fonctionnaire part à la retraite à 63 ans depuis la loi 72-14 de 2016 ; c’était 60 ans depuis 1971. Entre les deux, un escalier : né avant 1957, 60 ans ; né en 1957, 60 ans et demi ; puis six mois de plus chaque année, jusqu’à 63 ans pour les nés en 1962 et après.",
+      "q": "À quel âge part le fonctionnaire ?",
+      "unit": "L’âge de mise à la retraite selon l’année de naissance, article premier de la loi 72-14.",
+      "so": "Cinq années de naissance, de 1957 à 1961, chacune de six mois.",
+      "before": "Avant {{year}}",
+      "after": "{{year}} et après",
+      "half": "{{n}} et demi",
+      "p2": "Et celui dont l’acte de naissance ne précise ni le jour ni le mois, la loi le tient pour né le 31 décembre. L’article 2 :"
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Les âges : nous avons lu chaque âge dans son article, tel que 3adala le tient, dans le texte d’aujourd’hui.",
+      "pages": "Les pages : chaque âge renvoie à la page du Bulletin officiel qui l’a imprimé. Quand 3adala ne tient le texte que dans la consolidation d’Adala, nous avons cherché les mots de l’article dans le numéro qui l’a publié ; un âge écrit par une loi plus tardive renvoie à sa page.",
+      "moved": "Les âges qui ont changé : nous avons lu chaque texte ancien sur sa page, dont la majorité à 21 ans dans le livre IV du code du statut personnel (1958) et la majorité pénale à 16 ans dans le code pénal publié en 1963.",
+      "which": "Nous avons choisi les âges qui comptent dans la vie d’un lecteur ; d’autres textes écrivent bien d’autres âges, pour des métiers, des fonctions et des cas particuliers.",
+      "solar": "Ces textes comptent les âges en années solaires ou grégoriennes révolues, non en années de l’hégire.",
+      "check": "Une personne vérifie chaque âge sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "title": "J’ai {{age}} {{unit}}. La loi marocaine dit :",
+      "next": "{{in}}, à {{age}} :",
+      "source": "Source : Bulletin officiel, lu par 3adala. Ceci n’est pas un conseil juridique.",
+      "site": "قانون · 3adala.com/blog/ages"
+    },
+    "tr": "Traduction de 3adala : « {{text}} »"
+  },
+  "drinks": {
+    "art": "article {{n}}",
+    "arts": "articles {{n}}",
+    "artsTwo": "articles {{n}}",
+    "hero": {
+      "q": "Que dit exactement l’article 28 ?",
+      "how": "Voici l’article tel que le Bulletin officiel l’a imprimé le 26 juillet 1967, et dessous son texte mot pour mot, avec la traduction de 3adala. Touchez les mots soulignés.",
+      "alt": "L’article 28 de l’arrêté 3-177-66 tel qu’imprimé à la page 1661 du Bulletin officiel n° 2856",
+      "order": "Arrêté du directeur général du Cabinet royal n° 3-177-66 du 17 juillet 1967 réglementant le commerce des boissons alcooliques ou alcoolisées",
+      "notes": "Ce que disent les mots",
+      "share": "Partager l’article tel qu’imprimé"
+    },
+    "notes": {
+      "who": "L’article ne nomme qu’une personne : l’exploitant. L’établissement « soumis à licence » est un débit où les boissons sont servies et consommées sur place : café, buvette, restaurant, hôtel, cabaret (article 3) ; l’article 28 est dans le titre II de l’arrêté, « établissements de consommation de boissons alcooliques ». Le commerce de ces boissons, lui, demande une « autorisation » de l’autorité administrative locale (article premier). La licence est accordée par le directeur général de la Sûreté nationale (article 7) et, depuis 2002, par les walis de région pour les établissements touristiques classés.",
+      "what": "Vendre et offrir gratuitement, c’est tout un. L’article ne nomme ni celui qui achète ni celui qui boit.",
+      "whom": "L’arrêté ne définit pas qui sont les « Marocains musulmans » ni comment on le sait, ni dans cet article ni dans ses quarante-six autres.",
+      "penalty": "La prison, l’amende, ou les deux. 300 dirhams valaient en 1967 {{h67}} heures de travail au salaire minimum ; aujourd’hui {{h26}} heures. Le tribunal peut en outre ordonner la fermeture de l’établissement de 20 jours à 3 mois (article 37).",
+      "repeat": "Est récidiviste qui commet une infraction de même nature dans les deux ans d’une condamnation définitive (article 43) ; en récidive, la fermeture est obligatoire (article 37)."
+    },
+    "chain": {
+      "h": "Un arrêté, pas une loi",
+      "p1": "L’article 28 n’est pas passé par le Parlement. En 1966, un décret royal déléguait au directeur général du Cabinet royal :",
+      "p2": "C’est sur cette délégation qu’il a signé l’arrêté le 17 juillet 1967, publié par le Bulletin officiel le 26 juillet, des pages {{first}} à {{last}}, en {{n}} articles.",
+      "rows": {
+        "delegation": "Un décret royal délègue les mesures législatives ou réglementaires sur l’alcool, les vins et les jeux de hasard.",
+        "order": "L’arrêté : {{n}} articles, dont l’article 28.",
+        "commission": "Un arrêté modifie l’article 7 : la commission des licences réunit un représentant de la Gendarmerie royale et un de la Sûreté nationale.",
+        "walis": "Une décision du directeur général de la Sûreté nationale délègue aux walis de région les licences des établissements touristiques classés.",
+        "withdraw": "Une autre leur délègue aussi leur retrait."
+      },
+      "names": {
+        "delegation": "décret royal n° {{n}}",
+        "order": "arrêté n° {{n}}",
+        "commission": "arrêté n° {{n}}",
+        "walis": "décision n° {{n}}",
+        "withdraw": "décision n° {{n}}"
+      },
+      "p3": "Nous n’avons trouvé dans 3adala aucun texte qui abroge l’arrêté ou modifie son article 28. L’arrêté, lui, abrogeait en son article 44 « toutes les dispositions relatives au même objet », dont il nommait quatre textes de 1929 à 1953, le premier :",
+      "law1929": "la loi du 18 mai 1929 sur la vente d’alcools et de boissons alcooliques aux Marocains musulmans (selon les termes de l’article 44)"
+    },
+    "first": {
+      "h": "1913 : l’interdiction faite au musulman lui-même",
+      "p1": "Le plus ancien texte sur le sujet que 3adala conserve est le dahir « réglementant les débits de boissons », daté de Marrakech le {{hijri}} et publié au n° 8 du Bulletin officiel en arabe (29 juin 1913). Il dit que les Européens se sont multipliés et avec eux les débits, que « {{reason}} » (boire était interdit aux musulmans), et charge {{vizier}} d’en écrire le règlement. Son article premier :",
+      "q": "Qui est visé : le musulman ou le vendeur ?",
+      "unit": "L’article premier du règlement de 1913 et l’article 28 de l’arrêté de 1967, tels qu’imprimés. Chaque image ouvre sa page.",
+      "so": "En 1913, l’interdiction s’adresse aux « sujets musulmans » ; en 1967, à « l’exploitant de tout établissement soumis à licence ».",
+      "c1913": "1913, n° 8, page 56 : article premier",
+      "c1967": "1967, n° 2856, page 1661 : article 28",
+      "p2": "Beaucoup du règlement de 1913 est resté dans l’arrêté de 1967 :",
+      "th": [
+        "Sujet",
+        "1913",
+        "1967"
+      ],
+      "rows": {
+        "muslims": "Les Marocains musulmans",
+        "distance": "La distance des mosquées, cimetières, hôpitaux et écoles",
+        "women": "L’emploi de femmes sur autorisation",
+        "minors": "Les mineurs et 16 ans",
+        "drunk": "La personne en état d’ivresse manifeste",
+        "wall": "Le texte affiché dans le débit"
+      }
+    },
+    "fines": {
+      "h": "47 articles, 18 amendes",
+      "p1": "L’arrêté punit 18 infractions d’une amende, la plupart aussi de prison. Les plus lourdes vont de 500 à 2 500 dirhams, dans dix articles, dont le commerce sans autorisation, l’ouverture d’un débit sans licence et le non-respect des heures de fermeture. L’amende de l’article 28 va de 300 à 1 500 dirhams.",
+      "q": "Quelle amende pour chaque infraction ?",
+      "unit": "Les amendes de l’arrêté en dirhams, telles que ses articles les écrivent en 1967, sur une même ligne de 0 à 2 500 dirhams.",
+      "so": "L’amende de l’article 28 est plus basse que celles des dix premiers articles et plus haute que celles des articles 29 et 30 sur les mineurs.",
+      "groups": {
+        "500-2500": "Commerce sans autorisation, débit sans licence, heures de fermeture, emploi de femmes, débauche… ({{arts}})",
+        "600-2000": "Exploiter après une fermeture ordonnée ({{arts}})",
+        "300-1500": "Vendre ou offrir aux Marocains musulmans ({{arts}})",
+        "100-1000": "Enivrer un mineur ({{arts}})",
+        "150-500": "Servir une personne en état d’ivresse manifeste ({{arts}})",
+        "24-360": "Les mineurs ({{arts}})",
+        "120-240": "Absence de l’exploitant, texte non affiché ({{arts}})"
+      },
+      "range": "{{lo}} à {{hi}} dirhams",
+      "prison": "et prison de {{a}} à {{b}} mois",
+      "prisonOr": "ou prison de {{a}} à {{b}} mois",
+      "p2": "L’arrêté dit aussi :",
+      "also": {
+        "9": "pas de licence avant 21 ans ;",
+        "27": "pas d’emploi de femmes de moins de 21 ans ; au-delà, seulement sur autorisation du directeur général de la Sûreté nationale, après une demande accompagnée de la « fiche anthropométrique » ;",
+        "4": "pas de débit près des lieux de culte, des cimetières, des établissements militaires, hospitaliers et scolaires, ni dans les immeubles des Habous ;",
+        "35": "pas de vente d’alcool à crédit ni à tempérament, et pas d’action en paiement pour ce qui a été vendu ainsi ;",
+        "36": "le texte de l’arrêté est affiché dans la salle principale de l’établissement."
+      },
+      "minors": "Les articles 29, 30 et 31 impriment en arabe « les mineurs âgés de seize ans » : nous les citons tels quels.",
+      "prisonSome": "et, pour certains, prison de {{a}} à {{b}} mois"
+    },
+    "drunk": {
+      "h": "Et celui qui boit, dans la rue ?",
+      "p1": "L’article 28 ne nomme pas celui qui boit. L’ivresse dans les lieux publics relève d’un autre texte de la même année, le décret royal 724-66 du 14 novembre 1967, article premier :",
+      "p2": "Cet article ne nomme aucune religion : « toute personne ». Le décret abrogeait, en son article 6, un dahir de 1914 et une loi de 1929 réprimant l’ivresse publique."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "read": "Nous avons lu tout l’arrêté, 47 articles, tel que 3adala le tient, et l’article 28 sur l’image de sa page.",
+      "first": "Nous avons lu le règlement de 1913 sur les images de ses trois pages (56 à 58) : son texte dans 3adala, lu par machine sur une impression médiocre, ne se cite pas.",
+      "law1929": "Nous n’avons pas trouvé dans 3adala la loi du 18 mai 1929 que nomme l’article 44 ; nous rapportons ce qu’en dit l’article 44.",
+      "translation": "La traduction française de l’article 28 est de 3adala ; le texte officiel français de 1967 n’est pas dans 3adala.",
+      "wage": "Les heures : le salaire minimum horaire tel que le sixième billet l’a lu, {{w67}} dirham en 1967 et {{w26}} dirhams en 2026.",
+      "names": "Nous ne nommons de fonctionnaires que ceux dont la charge a pris fin avant 1956.",
+      "check": "Une personne vérifie chaque citation et chaque chiffre sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "title": "L’article 28, tel qu’imprimé en 1967",
+      "line": "Il s’adresse à l’exploitant d’un établissement autorisé. Peine : un à six mois de prison, 300 à 1 500 dirhams d’amende, ou l’une des deux.",
+      "source": "Arrêté du directeur général du Cabinet royal n° 3-177-66 (17 juillet 1967), Bulletin officiel n° 2856, page 1661.",
+      "site": "قانون · 3adala.com/blog/article-28"
+    },
+    "artHead": "Article {{n}}"
+  },
+  "strike": {
+    "years": {
+      "one": "an",
+      "two": "ans",
+      "few": "ans",
+      "many": "ans"
+    },
+    "hero": {
+      "kicker": "Six constitutions, une phrase",
+      "count": "ans",
+      "between": "entre le premier « droit de grève garanti » au Bulletin officiel, le 19 décembre 1962, et la loi qu’il promettait, le 24 mars 2025.",
+      "alt": "{{art}} de la Constitution de {{year}} tel qu’imprimé à la page {{page}} du Bulletin officiel n° {{issue}}",
+      "art": "article {{n}}",
+      "share": "Partager la phrase des six constitutions"
+    },
+    "words": {
+      "h": "La première phrase n’a pas changé, la seconde deux fois",
+      "p1": "« Le droit de grève est garanti » : trois mots, les mêmes dans les six constitutions. La phrase qui promet la loi, elle, a vu sa fin changer en 1970 et a été réécrite en 2011. En violet, ce qui change par rapport à la constitution précédente (le texte arabe, tel qu’imprimé) :",
+      "note": "Nous avons comparé les mots après avoir unifié les hamzas et le ya : les imprimeurs écrivaient « الاضراب » sans hamza jusqu’en 1996."
+    },
+    "wait": {
+      "h": "62 ans sur une ligne",
+      "q": "Combien de temps cette phrase a-t-elle attendu ?",
+      "unit": "Du Bulletin officiel qui a publié la Constitution de 1962 à celui qui a publié la loi organique 97-15. Les cercles : les constitutions qui ont repris la phrase. La bande : le projet de loi à la Chambre des représentants.",
+      "so": "62 ans et six constitutions séparent la promesse de la loi, dont 8 ans et 2 mois du projet à la Chambre des représentants avant son premier vote.",
+      "band": "{{n}} ans à la Chambre",
+      "law": "loi 97-15",
+      "aria": "Une ligne de 1962 à 2025 : six constitutions qui reprennent « le droit de grève est garanti », puis le projet de loi à la Chambre des représentants de 2016 à 2024, puis la loi en 2025.",
+      "p1": "La décision 251.25 de la Cour constitutionnelle raconte le parcours de la loi, telle que le Bulletin officiel l’a publiée :",
+      "steps": {
+        "council": "Le Conseil des ministres en délibère.",
+        "filed": "Déposé au bureau de la Chambre des représentants, la veille du scrutin du 7 octobre 2016 qui élit la Chambre suivante.",
+        "house1": "La Chambre des représentants l’adopte en première lecture.",
+        "councillors": "La Chambre des conseillers l’amende et l’adopte.",
+        "house2": "La Chambre des représentants l’adopte définitivement.",
+        "court": "La Cour constitutionnelle déclare qu’il « ne contient rien de contraire à la Constitution », avec des observations sur les articles 1, 5 et 12.",
+        "signed": "Le dahir portant promulgation est signé.",
+        "printed": "Le Bulletin officiel la publie.",
+        "force": "Elle entre en vigueur, six mois après sa publication (article 33)."
+      },
+      "gapOne": "le lendemain",
+      "gapTwo": "deux jours plus tard",
+      "gapFew": "{{n}} jours plus tard",
+      "gapMany": "{{n}} jours plus tard",
+      "gapUnit": "{{n}} jours plus tard"
+    },
+    "numbers": {
+      "h": "Ce que dit la loi, en chiffres",
+      "p1": "La loi organique 97-15 compte trente-trois articles. Ses chiffres :",
+      "cards": {
+        "wait": {
+          "unit": "jours",
+          "text": "avant d’appeler à une grève nationale sur un cahier revendicatif, prolongeables une fois de quinze jours ; 15 jours dans l’entreprise."
+        },
+        "notice": {
+          "unit": "jours",
+          "text": "au moins pour notifier une grève nationale au Chef du gouvernement et aux ministères concernés ; 5 jours pour une grève d’entreprise ou de service local."
+        },
+        "quorum": {
+          "unit": "%",
+          "text": "des salariés de l’entreprise signent le procès-verbal d’appel à la grève quand aucun syndicat le plus représentatif n’y est présent, en assemblée générale réunissant au moins 35 % d’entre eux."
+        },
+        "vital": {
+          "unit": "services vitaux",
+          "text": "doivent assurer un service minimum pendant la grève, des hôpitaux et tribunaux à l’eau et l’électricité, dont « {{bulletin}} » (le service qui publie le Bulletin officiel)."
+        },
+        "unpaid": {
+          "unit": "dirham",
+          "text": "pour un jour de grève : le salarié gréviste est « en situation d’arrêt temporaire de travail non rémunéré »."
+        },
+        "fine": {
+          "unit": "dirhams",
+          "text": "d’amende au plus pour qui entrave l’exercice de la grève ou ferme l’entreprise pendant ; de 10 000 à 50 000 dirhams pour qui y appelle sans en respecter la procédure (article 28)."
+        },
+        "force": {
+          "unit": "mois",
+          "text": "après sa publication, la loi est entrée en vigueur, le 24 septembre 2025."
+        }
+      },
+      "stop": "Le Chef du gouvernement peut, à titre exceptionnel :",
+      "nostrike": "Et ne font pas grève :",
+      "art": "article {{n}}"
+    },
+    "promises": {
+      "h": "Les promesses de 2011",
+      "p1": "La grève n’était pas seule. La Constitution de 2011 renvoyait à de nombreuses lois organiques, et leur fixait un délai, en son article 86 :",
+      "q": "Quand sont arrivées les lois organiques de la Constitution de 2011 ?",
+      "unit": "Chaque loi organique publiée au Bulletin officiel depuis le 30 juillet 2011 qui ne modifie pas une autre loi, au jour de sa publication. La bande : la première législature, jusqu’au scrutin du 7 octobre 2016. Le pointillé : le projet de loi sur la grève, de son dépôt à sa publication.",
+      "so": "18 lois organiques sur 22 ont été publiées pendant la première législature ; quatre sont venues après : l’amazighe (2019), le Conseil national des langues (2020), la grève (2025) et l’exception d’inconstitutionnalité (2026).",
+      "band": "Première législature",
+      "aria": "Vingt-deux lois organiques sur une ligne de 2011 à 2026, dont quatre après la première législature.",
+      "pickLaw": "Loi organique {{number}}",
+      "pickRest": ", {{name}} : publiée au Bulletin officiel le {{date}}."
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "pages": "Nous avons lu l’article sur la grève de chaque constitution sur la page du Bulletin officiel qui l’a publié, et l’avons découpé de son image là où Tesseract a trouvé ses lignes ; 3adala tient les constitutions dans la version réunie par Adala.",
+      "law": "Nous avons lu toute la loi organique 97-15, et la décision 251.25 de la Cour constitutionnelle qui raconte son parcours, au Bulletin officiel n° 7389.",
+      "organic": "Les lois organiques : chaque loi organique publiée depuis le 30 juillet 2011 qui n’en modifie pas une autre, 22 en tout ; quand 3adala n’en tient que la copie d’Adala, nous avons trouvé le numéro de publication par le dahir de promulgation dans les pages du numéro.",
+      "election": "La fin de la première législature : le scrutin du 7 octobre 2016, tel que le nomme un arrêté du ministre de l’Intérieur au Bulletin officiel.",
+      "check": "Une personne vérifie chaque citation et chaque date sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "title": "« Le droit de grève est garanti » : six constitutions, et 62 ans avant la loi",
+      "source": "Bulletin officiel : constitutions de 1962, 1970, 1972, 1992, 1996 et 2011, et loi organique 97-15 (24 mars 2025).",
+      "site": "قانون · 3adala.com/blog/strike"
+    }
+  },
+  "whatsapp": {
+    "texts": {
+      "zero": "texte",
+      "one": "un texte",
+      "two": "deux textes",
+      "few": "{{n}} textes",
+      "many": "{{n}} textes"
+    },
+    "hero": {
+      "law": "Dans les textes de loi",
+      "people": "Sur les téléphones des Marocains",
+      "lawNote": "Le nombre : les textes de loi en vigueur qui écrivent le mot (dahirs, lois, décrets, arrêtés).",
+      "peopleNote": "Le pourcentage : les Marocains de 16 à 64 ans qui l’utilisaient début 2023. Le zéro : les textes de loi qui le nomment.",
+      "zeroWords": "texte de loi nomme l’un d’eux",
+      "zeroMore": "Ni dahir, ni loi, ni décret, ni arrêté, depuis le premier numéro du Bulletin officiel en 1913. Et {{n}} en vigueur écrivent encore « télégramme ».",
+      "source": "Les pourcentages tels que les a publiés le Conseil économique, social et environnemental dans son avis « Pour un environnement numérique inclusif et protecteur des enfants », d’après We Are Social et Meltwater.",
+      "share": "Partager l’image"
+    },
+    "machines": {
+      "h": "Quatre machines que la loi écrit encore",
+      "p1": "Nous avons compté, décennie par décennie depuis 1910, les textes de loi qui écrivent chaque machine. Le télégramme culmine dans les années 1980 : chaque nouveau bureau de poste était ouvert par un arrêté qui énumérait « les opérations postales, télégraphiques et téléphoniques ». La machine à écrire était une spécialité des concours de la fonction publique. Le fax, lui, est monté avec Internet, et n’est pas redescendu.",
+      "standing": {
+        "zero": "texte de loi en vigueur",
+        "one": "texte de loi en vigueur",
+        "two": "textes de loi en vigueur",
+        "few": "textes de loi en vigueur",
+        "many": "textes de loi en vigueur"
+      },
+      "last": "Le dernier texte à l’écrire :",
+      "aria": "{{name}} : les textes de loi qui l’écrivent, décennie par décennie de 1910 à 2029",
+      "note": "Chaque barre : les textes de loi publiés dans la décennie qui écrivent le mot. Chaque machine a son échelle.",
+      "example": {
+        "telegram": "En 2025, la réforme de la procédure pénale écrit encore « télégrammes de recherche » :",
+        "typewriter": "La dernière fois qu’un texte de loi l’a écrite : le protocole de la zone de libre-échange euro-méditerranéenne, publié par dahir en 2009 :",
+        "fax": "En 2023, le décret sur les marchés publics demande à chaque concurrent, dans sa déclaration sur l’honneur :",
+        "telex": "La dernière fois : un dahir de 2015 publie des modifications de l’Union postale universelle, où le télex s’en va :"
+      },
+      "gloss": {
+        "telegram": "(« Il peut ordonner la diffusion de télégrammes de recherche à l’échelle nationale à l’encontre des personnes soupçonnées… », notre traduction)",
+        "typewriter": "(« L’exportateur établit la déclaration sur facture euro-méditerranéenne en la dactylographiant… », notre traduction)",
+        "fax": "(« … ainsi que les numéros de téléphone et de fax et l’adresse électronique du concurrent », notre traduction)",
+        "telex": "(« … remplacer les ordres de paiement postaux envoyés sur papier, par télégraphe ou par télex, par des ordres transmis par le réseau électronique », notre traduction)"
+      },
+      "text": {
+        "law": "loi {{number}}, article {{art}}",
+        "decree": "décret {{number}}, article {{art}}",
+        "dahir": "dahir {{number}}"
+      }
+    },
+    "firsts": {
+      "h": "Comment ils sont entrés au Bulletin officiel",
+      "p1": "Le Bulletin officiel ne publie pas que la loi : il publie aussi les avis et les rapports des conseils, et les décisions des autorités. C’est là seulement que les noms des réseaux sont apparus. La première fois, le 19 mars 2015, dans un avis qui dit que ces moyens « ne sont pas encore encadrés par des textes juridiques ».",
+      "kinds": {
+        "opinion": "Avis d’un conseil",
+        "report": "Rapport",
+        "quote": "Décision citant des paroles dites à l’antenne"
+      },
+      "what": {
+        "facebook": "Avis du Conseil économique, social et environnemental sur le projet de loi 81-12 relatif au littoral.",
+        "twitter": "Rapport de Bank Al-Maghrib sur l’exercice 2014 : la banque ouvre son compte.",
+        "whatsapp": "Décision {{number}} de la Haute autorité de la communication audiovisuelle sur une émission de radio matinale : elle cite l’animateur en darija, et adresse un avertissement à la radio pour atteinte à la dignité de son invité.",
+        "linkedin": "Rapport de Bank Al-Maghrib sur l’exercice 2017.",
+        "instagram": "Décision de la Haute autorité de la communication audiovisuelle sur une émission de radio, citant un invité.",
+        "telegram_app": "Rapport annuel du Conseil national des droits de l’Homme sur 2020 : l’enseignement à distance pendant la pandémie.",
+        "tiktok": "Avis du Conseil économique, social et environnemental sur les fausses informations.",
+        "chatgpt": "Avis du Conseil économique, social et environnemental sur le cloud et les centres de données.",
+        "snapchat": "Rapport du Conseil de la concurrence : les utilisateurs de chaque réseau au Maroc.",
+        "messenger": "Avis du Conseil économique, social et environnemental sur la protection des enfants en ligne : le tableau des usages."
+      },
+      "and": " et ",
+      "alt": "{{words}} : une ligne de la page {{page}} du Bulletin officiel n° {{issue}}",
+      "gloss": {
+        "facebook": "(« … par des moyens qui ne sont pas encore encadrés par des textes juridiques couvrant leurs différents aspects (Facebook et YouTube) », notre traduction)",
+        "whatsapp": "(« Et moi je lui coupe l’eau, l’électricité, WhatsApp et le téléphone », notre traduction de la darija)"
+      },
+      "telegraph": "Avant l’application, le Bulletin officiel a écrit « التيليغرام » une seule fois, pour le télégraphe : un bureau de poste de Meknès en 1957, « {{words}} »."
+    },
+    "mediator": {
+      "h": "Chez le Médiateur, WhatsApp a dépassé le fax",
+      "p1": "L’institution du Médiateur reçoit les doléances des citoyens contre l’administration, et publie son rapport annuel au Bulletin officiel, avec la voie par laquelle chaque plainte est arrivée. Elle a ouvert WhatsApp en 2022.",
+      "q": "Comment les plaintes sont-elles arrivées au Médiateur ?",
+      "unit": "Plaintes et doléances arrivées par fax et par WhatsApp, chaque année",
+      "so": "En 2023, il en est arrivé deux fois plus par WhatsApp que par fax, et huit fois plus en 2024. La même année 2023, le décret sur les marchés publics demandait le numéro de fax de chaque concurrent.",
+      "pick": "{{year}} : {{fax}} par fax et {{wa}} par WhatsApp, sur {{total}} reçues.",
+      "pickNoWa": "{{year}} : {{fax}} par fax, pas encore de WhatsApp, sur {{total}} reçues.",
+      "pickFiles": "{{year}} : {{fax}} par fax et {{wa}} par WhatsApp, sur {{total}} dossiers enregistrés.",
+      "passed": "WhatsApp passe devant",
+      "fax": "Fax",
+      "whatsapp": "WhatsApp",
+      "aria": "La ligne du fax descend de 129 en 2019 à 11 en 2024 ; celle de WhatsApp monte de 8 en 2022 à 88 en 2024 et passe devant le fax en 2023.",
+      "source": "Source : rapports annuels de l’institution du Médiateur pour 2023 et 2024, Bulletin officiel n° 7364 bis (2024) et 7423 bis (2025). Le rapport 2024 compte les dossiers enregistrés, non tout ce qui est arrivé."
+    },
+    "naming": {
+      "h": "Comment la loi les écrit sans les nommer",
+      "p1": "Quand la loi a besoin de WhatsApp ou de TikTok, elle écrit leur catégorie. La loi organique relative à la Chambre des représentants, telle que modifiée en janvier 2026, écrit cette formule {{times}} :",
+      "times": {
+        "one": "une fois",
+        "two": "deux fois",
+        "few": "{{n}} fois",
+        "many": "{{n}} fois",
+        "zero": "{{n}} fois"
+      },
+      "gloss": "(« … par quelque moyen que ce soit, y compris les réseaux sociaux, les réseaux de diffusion ouverte, les outils d’intelligence artificielle, toute plateforme électronique ou application reposant sur Internet ou les systèmes informatiques… », notre traduction)",
+      "p2": "En juillet 2026, quand le Conseil supérieur du pouvoir judiciaire a réglé la campagne pour l’élection des représentants des magistrats, il a écrit ce qu’un texte de loi a écrit de plus proche d’un « groupe WhatsApp » :",
+      "p3": "Et le code de déontologie médicale, depuis 2021 :",
+      "generics": "Dans les textes de loi en vigueur aujourd’hui : « Internet » dans {{internet}}, « courrier électronique » dans {{email}}, « réseaux sociaux » dans {{social}}. Le nom d’un réseau : dans aucun.",
+      "council": "En 2024, le Conseil économique, social et environnemental recommandait, dans son avis sur la protection des enfants en ligne :",
+      "close": "Entre l’avis de 2015 et celui de 2024, neuf ans."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "rules": "Les textes de loi : dahirs, lois, lois organiques, décrets-lois, décrets et arrêtés, non les décisions des conseils et des autorités, ni les rapports, ni les avis. Un texte compte quand l’une de ses versions arabes porte le mot, telle que publiée ou telle que modifiée ; l’arabe traduit par l’intelligence artificielle de la version française officielle ne compte pas. « En vigueur » : 3adala n’en a pas lu l’abrogation.",
+      "forms": "Chaque mot est lu sous ses formes : « برقية » seul est aussi un nom de famille, il ne compte qu’avec un article ou une préposition, et « البرق » (aussi l’éclair) ne compte pas ; les réseaux sous leurs noms arabes et latins.",
+      "left": "Nous avons écarté cinq erreurs de la copie de 3adala, lues sur leurs pages : des pages de rapports que le découpage a rattachées à quatre arrêtés imprimés avant elles, et le nom d’un douar dans un dahir de 1970 que la machine a lu « twitter ». Du compte des pages, aussi : une autre mauvaise lecture, un auteur nommé Messenger, et le bureau de poste et de télégraphe.",
+      "pages": "Les pages du Bulletin : toute page de l’édition générale en arabe qui imprime le nom du réseau, quoi qu’elle publie.",
+      "check": "Une personne vérifie chaque citation et chaque nombre sur sa page avant la publication.",
+      "on": "Compté le {{on}}."
+    },
+    "share": {
+      "title": "La loi connaît le télégramme, pas WhatsApp",
+      "source": "Bulletin officiel tel que lu par 3adala ; pourcentages : avis du CESE (2024), d’après We Are Social.",
+      "site": "قانون · 3adala.com/blog/whatsapp"
+    }
+  },
+  "death": {
+    "people": {
+      "one": "un condamné",
+      "two": "deux condamnés",
+      "few": "{{n}} condamnés",
+      "many": "{{n}} condamnés"
+    },
+    "groups": {
+      "general": "Dispositions générales",
+      "penalties": "Livre I : les peines et les mesures de sûreté",
+      "applying": "Livre II : l’application des peines",
+      "state": "La sûreté de l’État",
+      "terror": "Le terrorisme",
+      "freedoms": "Les libertés et les droits des citoyens",
+      "officials": "Les fonctionnaires contre l’ordre public",
+      "order": "Les particuliers contre l’ordre public",
+      "security": "La sécurité publique",
+      "forgery": "Les faux, contrefaçons et usurpations",
+      "persons": "Les crimes contre les personnes",
+      "family": "La famille et la moralité publique",
+      "property": "Les biens",
+      "data": "Les systèmes de traitement automatisé des données",
+      "petty": "Les contraventions"
+    },
+    "hero": {
+      "all": "Le code pénal compte {{n}} articles.",
+      "death": "{{n}} d’entre eux punissent de mort.",
+      "more": "{{since}} y sont écrits depuis la promulgation du code en 1962 ; la loi antiterroriste en a ajouté deux en 2003. {{rule}} autres disent comment cette peine se range, s’atténue ou se remplace. Chaque carré est un article, dans l’ordre du code.",
+      "share": "Partager l’image"
+    },
+    "legend": {
+      "death": "Punit de mort",
+      "rule": "Règle cette peine",
+      "other": "Autre article"
+    },
+    "pick": {
+      "art": "Article {{n}}",
+      "labelDeath": "Article {{n}} : punit de mort",
+      "labelRule": "Article {{n}} : règle la peine de mort",
+      "since1962": "Depuis 1962, tel qu’imprimé en 1963",
+      "sinceWas": "Depuis 1962 ; article {{was}} dans l’impression de 1963",
+      "since2003": "Depuis 2003, par la loi 03-03 relative à la lutte contre le terrorisme"
+    },
+    "list": {
+      "summary": "Les {{n}} articles, dans leurs mots"
+    },
+    "others": {
+      "h": "Hors du code pénal",
+      "p1": "Trois autres textes en vigueur punissent de mort : un dahir de 1959 sur les aliments dangereux, un dahir de 1961 sur le sabotage des chemins de fer, et le code de justice militaire de 2015.",
+      "foodH": "Le dahir de 1959 : la mort pour un aliment dangereux, même avant sa publication",
+      "foodP": "Le dahir 1-59-380 « portant répression des crimes contre la santé de la nation » est signé le 29 octobre 1959 et publié au Bulletin officiel le 6 novembre. Son article premier punit de mort quiconque, sciemment et pour en faire commerce, fabrique, détient, distribue, met en vente ou vend un aliment dangereux pour la santé publique. Son article 2 l’applique aux faits commis avant lui :",
+      "victims": "Un an plus tard, un autre dahir crée un droit de timbre supplémentaire sur les cartes grises, comme l’écrit l’arrêté qui l’applique :",
+      "standing": "3adala n’a lu aucun texte qui abroge ce dahir.",
+      "foodAlt": "Le dahir 1-59-380 et ses articles 1 et 2, tels qu’imprimés à la page {{page}} du Bulletin officiel n° {{issue}}",
+      "dahir": "Dahir {{number}}",
+      "militaryH": "Le code de justice militaire : {{n}} articles, tous en temps de guerre ou devant l’ennemi",
+      "military": "Loi {{number}}, article {{n}}",
+      "railwayH": "Le dahir de 1961 sur les chemins de fer",
+      "railway": "Dahir {{number}}, article {{n}}"
+    },
+    "steps": {
+      "h": "Si la peine est prononcée",
+      "p1": "Le code de procédure pénale et le décret sur les prisons tracent le chemin, du prononcé à l’inhumation, pas à pas. Quand un pas avait un texte plus ancien, nous le citons tel qu’imprimé.",
+      "unanimity": "Prononcée seulement à l’unanimité des juges",
+      "minister": "Le ministre de la Justice est informé aussitôt",
+      "proposal": "Le juge de l’application des peines propose d’office la grâce",
+      "cell": "En prison : l’isolement",
+      "never": "Le condamné n’est jamais informé du rejet de sa grâce",
+      "pardon": "Pas d’exécution avant le rejet de la grâce",
+      "pregnant": "Une femme enceinte : deux ans après l’accouchement",
+      "order": "Sur ordre du ministre de la Justice, par fusillade",
+      "witnesses": "Pas en public, devant neuf personnes",
+      "posted": "Le procès-verbal affiché 24 heures à la porte de la prison",
+      "press": "La presse ne publie que le procès-verbal",
+      "body": "Le corps remis à la famille, qui l’inhume sans publicité",
+      "since": "depuis {{year}}",
+      "code": "Procédure pénale, article {{n}}",
+      "decree": "Décret sur les établissements pénitentiaires, article {{n}}"
+    },
+    "witnesses": {
+      "chamber": "Le président de la chambre criminelle",
+      "prosecutor": "Un membre du parquet",
+      "judge": "Un juge d’instruction",
+      "clerk": "Un greffier",
+      "lawyers": "Les avocats du condamné",
+      "director": "Le directeur de la prison",
+      "police": "La Sûreté nationale ou la Gendarmerie",
+      "doctor": "Un médecin",
+      "imam": "Un imam et deux adouls"
+    },
+    "cndh": {
+      "h": "Depuis 1993",
+      "p1": "Le Conseil national des droits de l’Homme publie son rapport annuel au Bulletin officiel. Il écrit dans son rapport sur 2023 :",
+      "haltSrc": "Rapport du CNDH sur 2023.",
+      "q": "Combien de condamnés à mort ?",
+      "unit": "Les condamnés à mort à chaque rapport, un point par personne",
+      "so": "Leur nombre augmente presque chaque année. {{pardons}} condamnés à mort ont été graciés par le Roi entre 2000 et fin 2022, écrit le Conseil.",
+      "pick": "{{year}} : {{people}} à mort, selon le rapport du Conseil.",
+      "aria": "Condamnés à mort : 70 au rapport 2019, 74 en 2020, 78 en 2021, 83 en 2022 et 2023, 86 fin 2024.",
+      "source": "Source : rapports annuels du Conseil national des droits de l’Homme, 2019–2024, publiés au Bulletin officiel.",
+      "vote": "Et dans son rapport sur 2024 :"
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "code": "Le code pénal : chaque article de la copie de 3adala (celle d’Adala, 2024), dans son ordre, et les articles qui nomment la peine de mort dans les mots de cette copie ; leur liste est celle de cet article, et le compte s’arrêterait si elle changeait.",
+      "pages": "Chaque article ouvre sa page dans la première impression du code (Bulletin officiel n° 2640 bis, 5 juin 1963), ou celle de la loi 03-03 qui a ajouté les articles sur le terrorisme en 2003.",
+      "others": "Les autres textes : tout texte en vigueur dans 3adala dont un article porte la peine de mort, lu en entier ; ni les textes d’avant 1956, ni les conventions internationales ne sont comptés ici.",
+      "steps": "Les étapes : le code de procédure pénale tel que publié en 2003 (Bulletin officiel n° 5078) et tel que modifié par la loi 03-23 en 2025, et le décret 2-00-485 sur les établissements pénitentiaires.",
+      "cndh": "Les nombres tels que les écrivent les rapports du CNDH publiés au Bulletin officiel ; celui de 2019 dit « actuellement ».",
+      "check": "Une personne vérifie chaque citation sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "title": "La peine de mort dans le code pénal marocain, article par article",
+      "source": "Bulletin officiel : code pénal (1963) tel que dans la copie de 3adala, et loi 03-03 (2003).",
+      "site": "قانون · 3adala.com/blog/death-penalty"
+    }
+  },
+  "parliament": {
+    "words": {
+      "decrees": {
+        "one": "un décret",
+        "two": "2 décrets",
+        "few": "{{n}} décrets",
+        "many": "{{n}} décrets"
+      },
+      "orders": {
+        "one": "un arrêté",
+        "two": "2 arrêtés",
+        "few": "{{n}} arrêtés",
+        "many": "{{n}} arrêtés"
+      },
+      "voted": {
+        "one": "une loi votée par le Parlement",
+        "two": "2 lois votées par le Parlement",
+        "few": "{{n}} lois votées par le Parlement",
+        "many": "{{n}} lois votées par le Parlement"
+      },
+      "dfl": {
+        "one": "un dahir portant loi",
+        "two": "2 dahirs portant loi",
+        "few": "{{n}} dahirs portant loi",
+        "many": "{{n}} dahirs portant loi"
+      },
+      "rdl": {
+        "one": "un décret royal portant loi",
+        "two": "2 décrets royaux portant loi",
+        "few": "{{n}} décrets royaux portant loi",
+        "many": "{{n}} décrets royaux portant loi"
+      },
+      "dlaw": {
+        "one": "un décret-loi",
+        "two": "2 décrets-lois",
+        "few": "{{n}} décrets-lois",
+        "many": "{{n}} décrets-lois"
+      }
+    },
+    "time": {
+      "years": {
+        "one": "un an",
+        "two": "2 ans",
+        "few": "{{n}} ans",
+        "many": "{{n}} ans"
+      },
+      "months": {
+        "one": "un mois",
+        "two": "2 mois",
+        "few": "{{n}} mois",
+        "many": "{{n}} mois"
+      },
+      "days": {
+        "one": "un jour",
+        "two": "2 jours",
+        "few": "{{n}} jours",
+        "many": "{{n}} jours"
+      },
+      "and": " et "
+    },
+    "hero": {
+      "kicker": "Pour chaque loi votée par le Parlement, le Bulletin officiel publie :",
+      "law": "Une loi",
+      "lawWho": "votée par le Parlement",
+      "decreesWho": "pris par le gouvernement",
+      "ordersWho": "signés par les ministres",
+      "more": "Depuis 1963, le Bulletin officiel a publié {{all}} textes, dont {{voted}} lois votées par le Parlement : un texte sur {{share}}.",
+      "share": "Partager l’image"
+    },
+    "legend": {
+      "voted": "Loi votée par le Parlement",
+      "dfl": "Dahir portant loi",
+      "rdl": "Décret royal portant loi",
+      "dlaw": "Décret-loi"
+    },
+    "hands": {
+      "h": "Des années sans Parlement",
+      "p1": "Le Parlement n’écrit pas seul les lois. Entre deux sessions, le gouvernement peut prendre des décrets-lois qu’il lui soumet ensuite. Et les années sans Chambre des représentants, le Roi a fait les lois : par décrets royaux « portant loi » de 1965 à 1970, puis par dahirs « portant loi » de 1972 à 1977.",
+      "q": "Qui a fait les lois, année par année ?",
+      "unit": "Les textes ayant force de loi, selon qui les a pris, chaque année",
+      "so": "Quand la Chambre manquait, les lois sont devenues des dahirs et des décrets royaux. Depuis 2000, l’année la plus maigre en lois votées est {{thin}} ({{thinN}}), la plus riche {{full}} ({{fullN}}).",
+      "pick": "{{year}} : {{parts}}.",
+      "none": "aucun texte ayant force de loi dans 3adala",
+      "year": "Année",
+      "band": "Sans Chambre",
+      "aria": "Les textes ayant force de loi chaque année de 1963 à 2026, selon qui les a pris : des lois votées la plupart des années, des décrets royaux portant loi de 1965 à 1970, des dahirs portant loi de 1972 à 1977.",
+      "p2": "Le 7 juin 1965, un décret royal proclame l’état d’exception :",
+      "decree": "Décret royal {{number}}",
+      "p3": "Deux semaines plus tard, le Bulletin officiel publie un autre décret royal, intitulé :",
+      "p4": "Trois constitutions ont écrit la même règle dans leurs dispositions transitoires, jusqu’à l’installation du Parlement :",
+      "art": "Article {{n}}"
+    },
+    "reading": {
+      "h": "Combien de temps pour lire la loi ?",
+      "p1": "Les seules lois en vigueur font {{laws}} mots : environ {{hours}} heures de lecture, à {{wpm}} mots par minute. Viennent ensuite les dahirs et les décrets, puis les arrêtés des ministres.",
+      "q": "Combien de temps pour tout lire ?",
+      "unit": "À {{wpm}} mots par minute, chaque jour sans interruption",
+      "so": "À ce rythme, il vous faudrait {{all}} pour tout lire.",
+      "source": "Source : les textes de 3adala dont l’abrogation n’a pas été lue, dans la dernière version arabe de chacun.",
+      "choose": "Combien de temps par jour ?",
+      "minutes": {
+        "10": "10 minutes par jour",
+        "30": "Une demi-heure",
+        "60": "Une heure",
+        "480": "Une journée de travail"
+      },
+      "axis": "En années",
+      "layers": {
+        "laws": "Les lois",
+        "decrees": "Les dahirs et les décrets",
+        "orders": "Les arrêtés des ministres"
+      },
+      "aria": "La durée de lecture des lois, puis des dahirs et des décrets, puis des arrêtés : {{all}} en tout.",
+      "note": "Les lois : {{laws}} textes ; les dahirs et décrets : {{decrees}} ; les arrêtés : {{orders}}. Beaucoup d’anciens arrêtés (concours, nominations) n’ont jamais été abrogés, même si leur effet est passé."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "forms": "Les formes : chaque texte publié par l’édition générale en arabe depuis 1963, selon son type dans 3adala. Les lois votées : tout texte dont le titre commence par « loi » ou « dahir … portant promulgation de la loi ». Le rapport : les décrets (sans les décrets royaux « portant loi ») et les arrêtés, divisés par le nombre de ces lois.",
+      "hands": "Qui a pris le texte : d’après son titre tel qu’imprimé : « décret royal … portant loi », « dahir … portant loi », « loi » ou « portant promulgation de la loi », « décret-loi ». Un texte dont le titre est perdu (dahir 1-63-274) n’est pas compté.",
+      "reading": "La lecture : les mots de chaque texte dont 3adala n’a pas lu l’abrogation, dans sa dernière version arabe (l’arabe traduit du français par l’intelligence artificielle n’est pas compté), à 200 mots par minute.",
+      "check": "Une personne vérifie chaque citation sur sa page avant la publication.",
+      "on": "Compté le {{on}}."
+    },
+    "share": {
+      "source": "Bulletin officiel, 1963–2026 : {{all}} textes, dont {{voted}} lois votées par le Parlement.",
+      "site": "قانون · 3adala.com/blog/parliament"
+    }
+  },
+  "speed": {
+    "unit": "km/h",
+    "kind": {
+      "news": "Nouvelle du Bulletin",
+      "rule": "Texte"
+    },
+    "hero": {
+      "q": "À quelle vitesse ?",
+      "pick": "Choisir une année",
+      "aria": "Compteur : {{kmh}} km/h en {{year}}",
+      "share": "Partager l’image"
+    },
+    "eras": {
+      "y1913": "La première vitesse du Bulletin officiel : une nouvelle, une grosse automobile avec quatre passagers, de Safi à Marrakech en cinq heures.",
+      "y1923": "Les premières limites : un arrêté viziriel sur la police du roulage fixe la vitesse des véhicules lourds selon leur poids.",
+      "y1924": "La première limite sur une route nommée : 12 km/h sur les ponts de la route n° 15 de Fès à Taza et de la route n° 16 d’Oujda à Taza, et cent mètres avant et après.",
+      "y1939": "Une automobile qui tire une autre voiture : 50 km/h, en aucun cas plus.",
+      "y1961": "Après l’indépendance, le ministre fixe la vitesse tronçon par tronçon : 60 km/h sur la route d’El Jadida à Marrakech.",
+      "y1963": "Le premier 100 km/h : la route n° 1 de Casablanca vers l’Algérie, pour les véhicules de moins de 3 500 kilos.",
+      "y1983": "Le premier 120 km/h : la route n° 36 entre Casablanca et Rabat.",
+      "y2010": "Le code de la route et son décret : 120 sur l’autoroute, 100 hors agglomération, 60 en ville."
+    },
+    "marks": {
+      "y1923": "Le même tableau : 40, 35, 25 et 15 km/h, à mesure que le véhicule s’alourdit.",
+      "y2010": "Et 100 hors agglomération (article 17), 60 en la traversant (article 15)."
+    },
+    "gloss1924": "",
+    "openText": "Ouvrir le texte",
+    "first": {
+      "h": "Avant les chiffres",
+      "p1": "Avant tout chiffre, un texte sur la police de la circulation de 1914 écrit que l’autorité peut fixer la vitesse :",
+      "p2": "Puis les chiffres sont venus en 1923, selon le poids du véhicule et non la route. En 1924 commence la limite route par route, pont après pont."
+    },
+    "orders": {
+      "h": "La route, tronçon par tronçon",
+      "p1": "Entre l’indépendance et le code de la route, le ministre des Travaux publics puis de l’Équipement fixait la vitesse par un arrêté pour chaque tronçon : la traversée d’un village, un virage, un pont. Nous en avons compté {{n}} au Bulletin officiel.",
+      "q": "Combien d’arrêtés ont limité la vitesse sur une route donnée ?",
+      "unit": "Chaque point est un arrêté : son année, et la vitesse qu’il fixe",
+      "so": "{{sixty}} des {{n}} arrêtés ont fixé 60 km/h, plus que toute autre vitesse.",
+      "aria": "{{n}} arrêtés ont limité la vitesse sur des tronçons de route entre 1956 et 2009, dont {{sixty}} à 60 km/h."
+    },
+    "today": {
+      "h": "Aujourd’hui",
+      "p1": "Depuis 2010, le décret d’application du code de la route écrit toutes les limites en quelques articles :",
+      "town": "En agglomération",
+      "road": "Hors agglomération, pour les voitures",
+      "motorway": "Sur l’autoroute",
+      "trucks": "Hors agglomération, camions de 3,5 à 12 tonnes et taxis",
+      "novice": "Pour un permis récent",
+      "walkers": "En croisant un groupe de piétons",
+      "art": "Article {{n}}",
+      "note": "Les amendes pour excès de vitesse, selon l’écart, sont dans le code de la route :",
+      "roadTopic": "le thème « La route et la conduite »",
+      "source": "Décret {{number}} d’application du code de la route :"
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "eras": "Chaque vitesse a été lue sur sa page : les nouvelles de 1913, l’arrêté viziriel de 1923, l’arrêté de 1924 dans l’édition française (introuvable dans les numéros arabes de ces semaines), celui de 1939, les arrêtés des ministres, le décret de 2010.",
+      "orders": "Les arrêtés : tout arrêté de l’édition générale en arabe, de 1956 à 2009, dont un article fixe une vitesse en kilomètres à l’heure, en chiffres ou en lettres ; nous comptons la première vitesse qu’il fixe. Certains en fixent plusieurs.",
+      "today": "Aujourd’hui : le décret 2-10-420 tel que publié au Bulletin officiel n° 5878 (30 septembre 2010), articles 13, 15, 16, 17 et 18.",
+      "check": "Une personne vérifie chaque citation sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "title": "La vitesse au Bulletin officiel, de 1913 à aujourd’hui",
+      "source": "Bulletin officiel : 1913, 1923, 1924 (édition française), 1939, 1961, 1963, 1983, 2010.",
+      "site": "قانون · 3adala.com/blog/speed"
+    },
+    "unitShort": "km/h"
+  },
+  "deadlines": {
+    "units": {
+      "h": {
+        "one": "une heure",
+        "two": "2 heures",
+        "few": "{{n}} heures",
+        "many": "{{n}} heures"
+      },
+      "d": {
+        "one": "un jour",
+        "two": "2 jours",
+        "few": "{{n}} jours",
+        "many": "{{n}} jours"
+      },
+      "w": {
+        "one": "une semaine",
+        "two": "2 semaines",
+        "few": "{{n}} semaines",
+        "many": "{{n}} semaines"
+      },
+      "m": {
+        "one": "un mois",
+        "two": "2 mois",
+        "few": "{{n}} mois",
+        "many": "{{n}} mois"
+      },
+      "y": {
+        "one": "un an",
+        "two": "2 ans",
+        "few": "{{n}} ans",
+        "many": "{{n}} ans"
+      }
+    },
+    "leafUnit": {
+      "h": {
+        "one": "heure",
+        "two": "heures",
+        "few": "heures",
+        "many": "heures"
+      },
+      "d": {
+        "one": "jour",
+        "two": "jours",
+        "few": "jours",
+        "many": "jours"
+      },
+      "w": {
+        "one": "semaine",
+        "two": "semaines",
+        "few": "semaines",
+        "many": "semaines"
+      },
+      "m": {
+        "one": "mois",
+        "two": "mois",
+        "few": "mois",
+        "many": "mois"
+      },
+      "y": {
+        "one": "an",
+        "two": "ans",
+        "few": "ans",
+        "many": "ans"
+      }
+    },
+    "times": {
+      "one": "une fois",
+      "two": "2 fois",
+      "few": "{{n}} fois",
+      "many": "{{n}} fois"
+    },
+    "rank": "{{n}}",
+    "laws": {
+      "70-03": "Code de la famille",
+      "65-99": "Code du travail",
+      "67-12": "Baux d’habitation",
+      "31-08": "Protection du consommateur",
+      "58-25": "Procédure civile",
+      "22-01": "Procédure pénale",
+      "52-05": "Code de la route",
+      "31-13": "Droit d’accès à l’information",
+      "49-16": "Baux commerciaux",
+      "15-95": "Code de commerce",
+      "39-08": "Code des droits réels",
+      "112-12": "Coopératives"
+    },
+    "where": "{{law}}, article {{art}}",
+    "noExample": "Aucune des lois dont nous tirons les exemples ne l’écrit.",
+    "hero": {
+      "q": "Combien de temps la loi vous laisse-t-elle ?",
+      "pick": "Les quatre délais les plus fréquents",
+      "first": "{{said}} : le délai que la loi marocaine écrit le plus, {{times}} fois sur {{total}} délais comptés. Par exemple, dans le code de la famille :",
+      "other": "{{said}} : {{times}} dans les textes de loi en vigueur. Par exemple :",
+      "share": "Partager l’image"
+    },
+    "ticks": {
+      "hour": "1 h",
+      "day": "1 jour",
+      "week": "1 sem.",
+      "month": "1 mois",
+      "year": "1 an",
+      "decade": "10 ans"
+    },
+    "scale": {
+      "h": "Tous les délais sur une ligne",
+      "p1": "Nous avons compté {{total}} délais dans les textes de loi en vigueur, de {{kinds}} durées différentes. Sur cette ligne, l’heure à gauche et les décennies à droite ; chaque tige est un délai, sa hauteur le nombre de fois qu’il est écrit.",
+      "q": "Quels délais la loi écrit-elle ?",
+      "unit": "Chaque tige est une durée ; sa hauteur, le nombre de fois. Échelle logarithmique : d’une heure à des décennies",
+      "so": "La loi compte d’abord en jours : 15 et 30 jours, puis en mois : 3 et 6 mois.",
+      "pick": "{{said}} : {{times}}.",
+      "aria": "Les délais des textes de loi, sur une ligne du temps d’une heure à des décennies ; les plus grands : 15 jours, 30 jours, 6 mois et 3 mois.",
+      "source": "Source : les textes de loi en vigueur dans 3adala, dernière version arabe de chacun."
+    },
+    "list": {
+      "h": "Dans les lois que vous vivez",
+      "p1": "Chaque délai a un exemple tiré des lois que les gens rencontrent : la famille, le travail, le bail, la consommation, les tribunaux, la route. Voici les plus fréquents, dans les mots de leurs articles."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "what": "Un délai : un nombre d’heures, de jours, de semaines, de mois ou d’années, en chiffres ou en lettres (« خمسة عشر يوما », « الخمسة عشر يوما », « شهرين »), dans les textes de loi dont 3adala n’a pas lu l’abrogation, dernière version arabe de chacun.",
+      "words": "Le nombre compte comme délai quand l’un de ces mots le précède, à trois mots au plus : أجل, آجال, خلال, داخل, ظرف, مهلة (« في أجل لا يتجاوز ستة أشهر »).",
+      "left": "Les âges (« لا يتجاوز سنه 45 سنة »), les durées d’épreuve (« مدتها ثلاث ساعات ») et les mandats ne sont pas comptés, ces mots ne les précédant pas d’ordinaire. Quelques-uns peuvent échapper, et un délai écrit deux fois dans un article compte deux fois.",
+      "examples": "L’exemple : le premier article qui écrit le délai dans la première de ces lois, dans cet ordre : famille, travail, baux d’habitation, consommateur, procédure civile, procédure pénale, route, accès à l’information, baux commerciaux, commerce, droits réels, coopératives.",
+      "check": "Une personne vérifie chaque exemple sur sa page avant la publication.",
+      "on": "Compté le {{on}}."
+    },
+    "share": {
+      "source": "Textes de loi en vigueur dans 3adala : {{total}} délais.",
+      "site": "قانون · 3adala.com/blog/deadlines"
+    }
+  },
+  "expropriation": {
+    "hero": {
+      "q": "Combien de fois l’État a-t-il exproprié pour un projet ?",
+      "since": "décrets d’expropriation depuis 2020",
+      "pace": "par an, contre {{prev}} la décennie précédente",
+      "water": "pour l’eau, contre {{prev}} % la décennie précédente",
+      "aria": "Les décrets d’expropriation chaque année de 1956 à 2026, la part de l’eau au pied de chaque barre.",
+      "pick": "{{year}} : {{all}} décrets, dont {{water}} pour l’eau.",
+      "share": "Partager l’image"
+    },
+    "legend": {
+      "water": "Pour l’eau",
+      "rest": "Pour autre chose"
+    },
+    "purposes": {
+      "water": "L’eau : barrages, eau potable, assainissement",
+      "road": "Les routes",
+      "school": "Écoles et universités",
+      "rail": "Le rail",
+      "mines": "Phosphate et mines",
+      "power": "Électricité et énergie",
+      "health": "La santé",
+      "sport": "Stades et sport",
+      "port": "Ports et aéroports",
+      "admin": "Administrations",
+      "town": "Souks, places, aménagement",
+      "other": "Autres"
+    },
+    "what": {
+      "h": "Pour quoi ?",
+      "p1": "Chaque décret nomme dans son titre le projet que « l’utilité publique » exige. Nous avons lu les titres et les avons classés : l’eau d’abord, puis les écoles et les routes.",
+      "q": "Pourquoi l’État exproprie-t-il ?",
+      "unit": "La part de chaque objet dans les décrets : la décennie précédente, puis depuis 2020",
+      "so": "L’eau passe de {{prev}} % à {{water}} % des décrets, les routes de {{roadPrev}} % à {{road}} %.",
+      "for": "Objet",
+      "key": "Barre claire : 2010–2019. Foncée : depuis 2020."
+    },
+    "last": {
+      "h": "Le dernier décret pour chaque objet",
+      "p1": "Tel que le Bulletin officiel l’a titré : le projet, la commune, la province. L’article ne nomme aucun propriétaire.",
+      "land": "Pour chercher une terre ou une commune au Bulletin officiel :",
+      "landLink": "le thème « La terre et l’immobilier »"
+    },
+    "law": {
+      "h": "Ce qui le permet",
+      "p1": "La Constitution garantit la propriété et permet de la limiter par la loi :",
+      "const": "Constitution de 2011, article {{art}}",
+      "p2": "La loi est la 7-81 de 1982, publiée en 1983. Son article premier :",
+      "law": "Loi {{number}}, article premier"
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "which": "Un décret : tout texte de l’édition générale en arabe dont le titre nomme l’utilité publique et l’expropriation, à l’année de sa publication.",
+      "what": "L’objet : le premier trouvé dans le titre après « تقضي ب… », dans cet ordre : eau, routes, écoles, rail, mines, électricité, santé, sport, ports, administrations, aménagement ; le reste en « autres ». Un décret qui modifie un décret antérieur compte à nouveau.",
+      "check": "Une personne vérifie chaque exemple sur sa page avant la publication.",
+      "on": "Compté le {{on}}."
+    },
+    "share": {
+      "source": "Bulletin officiel, 1956–2026 : décrets déclarant l’utilité publique et l’expropriation.",
+      "site": "قانون · 3adala.com/blog/expropriation"
+    }
+  },
+  "mokri": {
+    "texts": {
+      "one": "un texte",
+      "two": "deux textes",
+      "few": "{{n}} textes",
+      "many": "{{n}} textes"
+    },
+    "hero": {
+      "count": "textes portent son nom au Bulletin officiel : {{dahirs}} dahirs enregistrés sous son nom, {{orders}} arrêtés viziriels qu’il a signés.",
+      "q": "Combien de textes portent son nom chaque année ?",
+      "unit": "Chaque barre est une année. Dessous : le nom du Grand Vizir, puis les résidents généraux qui autorisaient la publication",
+      "so": "L’année la plus chargée : {{peak}} ({{peakN}} textes). Le résident général a changé {{changes}} ; le nom en bas des textes est resté le même.",
+      "pick": "{{year}} : {{texts}}, dont {{dahirs}} dahirs et {{orders}} arrêtés ; résident général : {{resident}}.",
+      "year": "Année",
+      "dahirs": "Dahirs enregistrés",
+      "orders": "Arrêtés viziriels",
+      "resident": "Résident général",
+      "name": "محمد المقري",
+      "aria": "Les textes portant le nom de Mohammed El Mokri chaque année de 1913 à 1955, et les résidents généraux successifs.",
+      "share": "Partager l’image"
+    },
+    "clip": {
+      "h": "La signature telle qu’imprimée",
+      "p1": "Au millième numéro du Bulletin officiel (25 décembre 1931), un dahir se clôt ainsi : enregistré « au Grand Vizirat » sous le nom de Mohammed El Mokri, puis « vu et autorisé à la publication » par le résident général.",
+      "alt": "La clôture d’un dahir avec la signature de Mohammed El Mokri et l’autorisation de publication du résident général, telle qu’imprimée à la page {{page}} du Bulletin officiel n° {{issue}}",
+      "p2": "Deux formules reviennent : l’arrêté viziriel se clôt « Fait à Rabat le … » puis son nom, le dahir est « enregistré au Grand Vizirat » sous son nom. Dessous, dans les deux cas, l’autorisation de publier du résident général."
+    },
+    "signed": {
+      "h": "Que signe un Grand Vizir ?",
+      "p1": "Presque tout : les impôts, les terres, les tribunaux, et de plus petites choses. Quelques titres tels que le Bulletin officiel les a imprimés :",
+      "what": {
+        "y1925": "La télégraphie sans fil, au service des dirigeables.",
+        "y1927": "Les statuts de l’Aéro-Club du Maroc.",
+        "y1928": "La taxe sur le sucre.",
+        "y1934": "Les maladies contagieuses des abeilles.",
+        "y1941": "La torréfaction et la vente du café.",
+        "y1942": "Le prix des places de cinéma.",
+        "y1955": "Une caisse pour réparer les dégâts des troubles, sa dernière année."
+      }
+    },
+    "end": {
+      "h": "Le premier et le dernier",
+      "p1": "Le premier texte de ce compte qui porte son nom a été publié le {{first}}, le dernier le {{last}} : un arrêté signé en 1955.",
+      "first": "Le premier",
+      "last": "Le dernier",
+      "p2": "Dans les numéros suivants, les clôtures portent les signatures du premier gouvernement de l’indépendance."
+    },
+    "method": {
+      "h": "Comment nous avons compté",
+      "which": "Tout texte de l’édition générale en arabe dont la clôture, telle que publiée, porte le nom « المقري » : les arrêtés viziriels qu’il a signés, les dahirs enregistrés sous son nom au Grand Vizirat. Il peut manquer des textes pas encore découpés, ou une clôture mal lue.",
+      "residents": "Le résident général de chaque année : le nom le plus fréquent dans l’autorisation de publier sous les clôtures de l’année ; ceux restés quelques mois, et les intérimaires, n’apparaissent pas.",
+      "names": "Nous ne nommons que les responsables dont la fonction a pris fin avant 1956.",
+      "check": "Une personne vérifie chaque citation sur sa page avant la publication.",
+      "on": "Compté le {{on}}."
+    },
+    "share": {
+      "source": "Bulletin officiel, 1913–1956 : les clôtures portant le nom de Mohammed El Mokri.",
+      "site": "قانون · 3adala.com/blog/mokri"
+    },
+    "times": {
+      "few": "{{n}} fois",
+      "many": "{{n}} fois"
+    }
+  },
+  "ministry": {
+    "hero": {
+      "q": "Le plus long nom qu’ait porté le ministère chargé de l’enseignement, de 2017 à 2021 :",
+      "ministry": "وزارة",
+      "longest": "{{n}} lettres en arabe, en tête de chaque arrêté qu’il a signé.",
+      "share": "Partager l’image"
+    },
+    "strands": {
+      "school": "Éducation et enseignement scolaire",
+      "higher": "Enseignement supérieur",
+      "both": "Les deux en un seul ministère"
+    },
+    "names": {
+      "h": "{{n}} noms",
+      "p1": "Chaque texte du Bulletin officiel nomme dans son titre l’autorité qui le signe : « arrêté du ministre de … ». Nous avons lu cette autorité dans {{texts}} textes signés par le ministère chargé de l’enseignement depuis 1956, et réuni ses noms tels qu’imprimés.",
+      "q": "Comment s’appelait le ministère ?",
+      "unit": "Chaque ligne est un nom tel qu’imprimé, sa barre de la première à la dernière année où il a signé un texte",
+      "so": "L’enseignement s’est scindé en 1968 en trois ministères, du primaire, du secondaire et du supérieur. Puis le supérieur et le scolaire, réunis en un ministère, ont porté {{merged}}, le dernier de 2017 à 2021.",
+      "name": "Nom",
+      "from": "De",
+      "to": "À",
+      "texts": "Textes",
+      "count": {
+        "one": "un texte",
+        "two": "deux textes",
+        "few": "{{n}} textes",
+        "many": "{{n}} textes"
+      },
+      "p2": "Le nom « Éducation nationale » seul court de 1958 à 2013 : bien des arrêtés ont écrit le nom court dans leur titre, même quand le nom officiel était plus long.",
+      "times": {
+        "one": "un nom",
+        "two": "deux noms",
+        "few": "{{n}} noms",
+        "many": "{{n}} noms"
+      }
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "which": "L’autorité : ce que le titre du texte écrit après « arrêté du » ou « décret … » d’un ministre ; dans un arrêté conjoint, chaque ministre à part. Nous comptons les noms qui contiennent « التربية », « التعليم » ou « التهذيب », depuis 1956, portés par trois textes au moins.",
+      "fold": "Un même nom s’écrit de plusieurs façons : nous avons réuni ce qui ne diffère que par la hamza, le ya final ou l’espace autour de « و ».",
+      "left": "Nous avons écarté le nom de la personne entre parenthèses, « par intérim », les ministres délégués (« auprès du ministre … ») et la seconde fonction (« porte-parole du gouvernement »). Nous nommons des ministères, pas des personnes.",
+      "generic": "Les années d’un nom sont la première et la dernière où il a signé un texte ; le nom court peut figurer dans un titre après un changement du nom officiel.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "source": "Bulletin officiel, 1956–2026 : l’autorité signataire telle qu’imprimée dans le titre des textes du ministère chargé de l’enseignement.",
+      "site": "قانون · 3adala.com/blog/ministry"
+    }
+  },
+  "emergency": {
+    "hero": {
+      "q": "Combien de temps a duré l’état d’urgence sanitaire ?",
+      "decrees": "décrets l’ont prolongé après sa déclaration, mois après mois",
+      "days": "jours, du {{from}} au {{to}} à six heures du soir",
+      "fine": "dirhams : la transaction payée sur-le-champ, depuis août 2020",
+      "share": "Partager l’image"
+    },
+    "cal": {
+      "q": "Jusqu’où chaque décret a-t-il porté l’état d’urgence ?",
+      "unit": "Chaque ligne est une année ; chaque bande, la durée d’un décret, de la fin du précédent au jour qu’il fixe",
+      "so": "Prolongé mois par mois, sauf une fois de deux mois (été 2022), et deux décrets qui ont changé le terme d’un décret en cours (été 2021). Le dernier a pris fin le 28 février 2023 ; aucune prolongation n’a suivi.",
+      "declared": "Déclaration",
+      "extended": "Prolongation",
+      "changed": "Changement du terme d’une prolongation",
+      "pick": "Décret {{number}}, publié le {{printed}} : jusqu’au {{to}}.",
+      "pickDeclared": "Le décret {{number}} l’a déclaré, publié le {{printed}} : jusqu’au {{to}}.",
+      "pickChanged": "Le décret {{number}} a changé le terme de la prolongation en cours, publié le {{printed}} : jusqu’au {{to}}.",
+      "label": "Décret {{number}} : jusqu’au {{to}}"
+    },
+    "fine": {
+      "h": "300 dirhams",
+      "p1": "Le décret-loi publié le jour de la déclaration oblige chacun à suivre les ordres des autorités, et punit qui les enfreint :",
+      "art4": "Décret-loi {{number}}, article 4",
+      "p2": "En août 2020, un autre décret-loi ajoute un article 4 bis : la transaction.",
+      "settlement": "Décret-loi {{number}}",
+      "p3": "Son décret d’application dit comment payer : en espèces à l’officier ou à l’agent, ou dans un délai :",
+      "spot": "Décret {{number}}, article premier"
+    },
+    "stays": {
+      "h": "Le texte qui reste",
+      "p1": "Le Parlement a ratifié le décret-loi par la loi {{number}}. L’état d’urgence a pris fin, le texte est resté : tout état d’urgence sanitaire à venir se déclare par décret, et se prolonge comme celui-ci.",
+      "art2": "Décret-loi {{number}}, article 2"
+    },
+    "method": {
+      "h": "Comment nous avons lu",
+      "which": "Les décrets : tout texte de l’édition générale en arabe depuis 2020 dont le titre porte « بتمديد مدة سريان مفعول حالة الطوارئ الصحية », ou qui change le terme de l’un d’eux, et le décret de déclaration.",
+      "until": "Le terme : ce qu’écrit l’article premier de chaque décret, tel que publié : « jusqu’au … à six heures du soir ».",
+      "start": "Chaque bande commence où finit la précédente ; la première le 24 mars 2020, date du décret de déclaration et de sa publication.",
+      "check": "Une personne vérifie chaque date sur sa page avant la publication.",
+      "on": "Lu le {{on}}."
+    },
+    "share": {
+      "source": "Bulletin officiel, 2020–2023 : le décret de déclaration et les décrets qui ont prolongé l’état d’urgence sanitaire, chacun jusqu’au jour qu’il fixe.",
+      "site": "قانون · 3adala.com/blog/emergency"
+    }
+  }
+}

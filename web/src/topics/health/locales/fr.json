@@ -1,0 +1,112 @@
+{
+  "dh": "{{amount}} DH",
+  "refund": {
+    "title": "Combien vous sera remboursé ?",
+    "lead": "Le prix, le taux de votre caisse, votre part",
+    "over": "Remboursé",
+    "under": "Reste à votre charge : {{left}} · taux {{rate}} %",
+    "fund": "Votre caisse",
+    "funds": {
+      "cnss": "CNSS",
+      "cnops": "CNOPS"
+    },
+    "fundNote": "Salariés, AMO Tadamon, indépendants, AMO Achamil : la CNSS. Fonctionnaires : la CNOPS jusqu’au 31 janvier 2027.",
+    "kind": "Qu’avez-vous payé ?",
+    "kinds": {
+      "medicine": "Un médicament",
+      "care": "Médecin, analyses, radio",
+      "hospital": "Hospitalisation, chirurgie"
+    },
+    "place": "Où ?",
+    "places": {
+      "public": "Hôpital public",
+      "private": "Privé : clinique ou cabinet"
+    },
+    "long": "Une longue maladie ?",
+    "longs": {
+      "no": "Non",
+      "long": "Maladie longue ou grave",
+      "costly": "Soins très coûteux"
+    },
+    "price": "Combien avez-vous payé ?",
+    "priceMedicine": "Le prix public imprimé sur la boîte : c’est la référence du remboursement.",
+    "priceCare": "Le taux s’applique au tarif national de référence ; si vous avez payé plus, vous recevrez moins que ceci.",
+    "q": "Sur {{price}}, combien vous revient ?",
+    "back": "Remboursé",
+    "left": "Pour vous",
+    "means": "Soit : sur {{price}}, {{back}} vous reviennent et {{left}} restent à votre charge.",
+    "source": "Source : {{src}}",
+    "table": "Les chiffres en tableau",
+    "why": {
+      "base": "Le taux de votre caisse pour ce soin",
+      "public": "100 % pour l’hospitalisation à l’hôpital public",
+      "long-public": "90 % pour une longue maladie soignée à l’hôpital public",
+      "cap": "Pour une longue maladie, votre part ne dépasse pas 10 %",
+      "costly": "Pour des soins coûteux, plus rien à votre charge"
+    },
+    "cnops2027": "Dès le 1er février 2027, la CNSS gère l’assurance des fonctionnaires ; ces taux du décret 2.05.736 restent tant qu’il n’est pas modifié.",
+    "estimate": "Un calcul sur les textes, pas la décision de la caisse : c’est elle qui décide sur votre dossier.",
+    "toJourney": "Le parcours de la feuille de soins",
+    "priceRow": "Prix"
+  },
+  "clock": {
+    "title": "L’horloge de la feuille de soins",
+    "lead": "Du jour de l’événement : le dernier jour",
+    "which": "Que s’est-il passé ?",
+    "moments": {
+      "first-act": "Premier acte ou premier soin",
+      "end-treatment": "Fin d’un traitement continu",
+      "deposit": "Dossier déposé",
+      "refusal": "Refus reçu"
+    },
+    "day": {
+      "first-act": "Jour du premier acte",
+      "end-treatment": "Jour de la fin du traitement",
+      "deposit": "Jour du dépôt",
+      "refusal": "Jour du refus"
+    },
+    "for": {
+      "first-act": "Dernier jour pour déposer la feuille de soins",
+      "end-treatment": "Dernier jour pour déposer le dossier",
+      "deposit": "Délai pour être remboursé",
+      "refusal": "Dernier jour pour contester le refus"
+    },
+    "after": {
+      "first-act": "Après ce jour, le droit au remboursement est perdu, sauf force majeure.",
+      "end-treatment": "Après ce jour, le droit au remboursement est perdu, sauf force majeure.",
+      "deposit": "En cas de litige, une fois les soins attestés par le contrôle médical, le remboursement suit sous 30 jours.",
+      "refusal": "Après un an, le droit de recours est perdu."
+    },
+    "left_one": "Encore 1 jour",
+    "left_other": "Encore {{count}} jours",
+    "passed": "Délai dépassé",
+    "lastDay": "Dernier jour : {{date}}",
+    "remind": "Ajouter à l’agenda",
+    "remindTitle": "Dernier délai : feuille de soins",
+    "toJourney": "Tout le parcours",
+    "share": "Envoyer par WhatsApp",
+    "message": "L’horloge de la feuille de soins (3adala)"
+  },
+  "illness": {
+    "title": "Ma maladie est-elle sur la liste ?",
+    "lead": "La liste des maladies longues et coûteuses qui exonèrent de votre part",
+    "search": "Chercher une maladie",
+    "placeholder": "Diabète, rein, cancer…",
+    "found_one": "1 maladie sur 41",
+    "found_other": "{{count}} maladies sur 41",
+    "yes": "Sur la liste : vous pouvez demander l’exonération",
+    "what": "Qu’est-ce que cela vous donne ?",
+    "gives": "Une exonération totale ou partielle de votre part ; la caisse décide après contrôle médical, pour six mois renouvelables.",
+    "costly": "Les soins particulièrement coûteux",
+    "printed": "Tel que le BO l’imprime.",
+    "toJourney": "Le parcours de la longue maladie"
+  },
+  "instruments": {
+    "refund": "Combien est remboursé ?",
+    "clock": "Feuille de soins : le délai",
+    "illness": "41 longues maladies",
+    "refundLine": "Sur 100 DH de médicament : {{back}} remboursés",
+    "clockLine": "Deux mois dès le premier acte",
+    "illnessLine": "La liste qui exonère"
+  }
+}

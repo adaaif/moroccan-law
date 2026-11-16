@@ -1,0 +1,506 @@
+/* The conversation's pages (drawn again on 30 Oct 2026, for a desk and a phone alike). Loaded with them, never in the first load. Every colour a token, so night redefines it; `--t`
+   is a topic's colour, and the general place's is the conversation's teal.
+
+   The idea: the conversation is drawn as a conversation. A question is a bubble from the one who asks, an answer a
+   bubble from the one who knows; the reader's own question is the next bubble. Topics are the home's doors, now with
+   how many questions wait behind them. A list says each question's state the way a chat does: an empty bubble with
+   dots waits for someone to answer. */
+
+.tk { --color-t-general: var(--color-talk); }
+.tk.tk-hub { row-gap: 44px; }
+.tk-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.tk a:focus-visible, .tk button:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+/* Words in another language than the page's read in their own direction but stand on the page's side, as a French
+   question does among Arabic ones. */
+:root[dir="rtl"] .tk [dir="auto"] { text-align: right; }
+:root[dir="ltr"] .tk [dir="auto"] { text-align: left; }
+
+/* ── A person's initial: people are named, never drawn ─────────────────────────────────────────────────────────── */
+.tk-initial { display: inline-grid; place-items: center; flex: none; width: 30px; height: 30px; border-radius: 50%;
+  background: color-mix(in srgb, var(--t, var(--color-talk)) 16%, var(--color-sheet)); color: var(--t, var(--color-talk));
+  font-size: 0.875rem; font-weight: 700; line-height: 1; }
+
+/* ── The hub's opening: the question box beside a real exchange ───────────────────────────────────────────────── */
+.tk-hero { display: grid; gap: 28px; margin-inline: -16px; padding: 28px 20px 30px; background: var(--color-talk-wash); }
+.tk-hero h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.tk-hero-lead { margin: 10px 0 0; max-width: 44ch; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink-soft); }
+@media (min-width: 640px) {
+  .tk-hero { margin-inline: 0; border-radius: var(--radius-card); padding: 36px 36px 38px; }
+}
+@media (min-width: 1024px) {
+  .tk-hero { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 48px; padding: 44px 48px; align-items: start; }
+}
+
+/* The question box is a bubble the reader fills: the one who asks speaks from the start side. */
+.tk-ask { display: flex; flex-direction: column; gap: 14px; margin-top: 24px; }
+.tk-ask-label { font-size: var(--text-lead); font-weight: 600; color: var(--color-ink); }
+.tk-ask-field { display: flex; flex-direction: column; background: var(--color-sheet); border: 1.5px solid color-mix(in srgb, var(--color-talk) 40%, transparent);
+  border-radius: 20px; border-end-start-radius: 6px; padding: 14px 18px; }
+.tk-ask-field:focus-within { border-color: var(--color-talk); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-talk) 22%, transparent); }
+.tk-ask-field textarea:focus-visible { outline: none; }
+.tk-ask-field textarea { font: inherit; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink); background: none; border: 0; outline: none;
+  resize: none; min-height: 3.2em; max-height: 9.6em; field-sizing: content; padding: 0; }
+.tk-ask-field textarea::placeholder { color: var(--color-muted); }
+.tk-ask-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; }
+.tk-ask-where { font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-ask-change { font: inherit; font-size: 0.875rem; min-height: 44px; padding: 0 6px; border: 0; background: none; color: var(--color-stamp); cursor: pointer; }
+.tk-ask-go { margin-inline-start: auto; }
+
+/* A topic to choose: its line icon in its colour, its door's name. On a phone the row scrolls rather than wraps. */
+.tk-chips { display: flex; gap: 8px; margin: 0; padding: 2px 0 6px; list-style: none; overflow-x: auto; scrollbar-width: none;
+  margin-inline: -20px; padding-inline: 20px; }
+.tk-chips::-webkit-scrollbar { display: none; }
+@media (min-width: 640px) { .tk-chips { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding-inline: 0; } }
+.tk-chip { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; padding: 0 14px 0 12px; border-radius: 999px; white-space: nowrap;
+  border: 1px solid var(--color-rule); background: var(--color-sheet); color: var(--color-ink); font: inherit; font-size: 0.9375rem; cursor: pointer; }
+.tk-chip svg { color: var(--t); }
+.tk-chip:hover { border-color: var(--t); }
+.tk-chip[aria-pressed="true"] { border-color: var(--t); background: color-mix(in srgb, var(--t) 13%, var(--color-sheet)); font-weight: 600; }
+
+.tk-similar { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 12px 14px; list-style: none; border-radius: 14px;
+  background: color-mix(in srgb, var(--color-sheet) 70%, transparent); }
+.tk-similar-head { font-size: 0.875rem; font-weight: 600; color: var(--color-ink-soft); }
+.tk-similar a { display: flex; align-items: baseline; gap: 10px; min-height: 36px; padding-block: 4px; color: var(--color-ink); text-decoration: none; }
+.tk-similar a:hover .tk-similar-q { color: var(--color-stamp); }
+.tk-similar-q { flex: 1; min-width: 0; }
+.tk-similar-n { flex: none; font-size: 0.875rem; color: var(--color-talk); font-weight: 600; }
+
+/* A real exchange: the question from the start side, the answer from the end side in the conversation's colour. */
+.tk-exchange { margin: 0; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.tk-exchange-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-say { display: flex; flex-direction: column; gap: 6px; max-width: 34rem; }
+.tk-say-who { display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-say-who b { color: var(--color-ink); font-weight: 600; }
+.tk-bubble { margin: 0; padding: 14px 18px; border-radius: 20px; }
+.tk-say-q .tk-bubble { background: var(--color-sheet); border-end-start-radius: 6px; font-size: var(--text-lead); line-height: 1.55; font-weight: 600; color: var(--color-ink); }
+.tk-say-a { align-self: flex-end; margin-inline-start: 28px; }
+.tk-say-a .tk-say-who { justify-content: flex-end; }
+.tk-say-a .tk-bubble { background: var(--color-talk); color: var(--color-sheet); border-end-end-radius: 6px; line-height: 1.75;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; overflow: hidden; }
+.tk-say-meta { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 14px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-say-meta .yes { color: var(--color-in-force); font-weight: 600; }
+.tk-exchange-more { align-self: flex-end; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; text-decoration: none; }
+/* The page's one moment: the answer arrives after the question, as it did. */
+@media (prefers-reduced-motion: no-preference) {
+  .tk-say-q { animation: tk-arrive 320ms ease-out both; }
+  .tk-say-a { animation: tk-arrive 360ms ease-out 420ms both; }
+}
+@keyframes tk-arrive { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+
+/* ── Sections ────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.tk-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin: 0 0 14px; }
+.tk-head h2 { margin: 0; font-size: var(--text-h3); line-height: 1.35; font-weight: 700; color: var(--color-ink); }
+.tk-head p { margin: 0; flex-basis: 100%; font-size: var(--text-body); color: var(--color-ink-soft); }
+.tk-head a { font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; margin-inline-start: auto; }
+
+/* ── The doors: twelve topics, four a row on a phone as on the home, six on a desk ─────────────────────────────── */
+.tk-doors { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px 8px; margin: 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .tk-doors { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 22px 14px; } }
+.tk-door { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; text-decoration: none; color: var(--color-ink); border-radius: 12px; }
+.tk-door-arch { position: relative; width: 100%; max-width: 92px; }
+.tk-door:hover [data-door] path { fill: color-mix(in srgb, var(--t) 26%, var(--color-sheet)); }
+.tk-door-name { font-size: 0.875rem; font-weight: 600; line-height: 1.35; }
+.tk-door-count { display: none; font-size: 0.875rem; color: var(--color-ink-soft); margin-top: -4px; }
+@media (min-width: 640px) { .tk-door-name { font-size: 0.9375rem; } .tk-door-count { display: block; } }
+/* How many wait behind the door, like the count on a phone's app icon. */
+.tk-wait { position: absolute; top: 2px; inset-inline-end: 0; min-width: 28px; height: 28px; padding: 0 7px; border-radius: 999px;
+  display: grid; place-items: center; background: var(--color-talk); color: var(--color-sheet); font-size: 0.875rem; font-weight: 700;
+  box-shadow: 0 0 0 3px var(--color-paper); font-variant-numeric: tabular-nums; }
+
+.tk-general { display: flex; align-items: center; gap: 14px; margin-top: 18px; padding: 12px 18px; min-height: 64px; border-radius: var(--radius-card);
+  background: var(--color-sheet); color: var(--color-ink); text-decoration: none; }
+.tk-general:hover b { color: var(--color-stamp); }
+.tk-general-icon { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--color-talk-wash); color: var(--color-talk); }
+.tk-general span { display: flex; flex-direction: column; min-width: 0; }
+.tk-general small { font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-general .tk-general-n { margin-inline-start: auto; flex: none; font-size: 0.875rem; color: var(--color-ink-soft); }
+
+/* ── Below the doors: what waits for an answer beside what is new ───────────────────────────────────────────────── */
+.tk-columns { display: grid; gap: 36px; grid-template-areas: "waiting" "latest"; }
+@media (min-width: 1024px) { .tk-columns { grid-template-columns: minmax(0, 1fr) 340px; grid-template-areas: "latest waiting"; gap: 48px; align-items: start; } }
+.tk-latest { grid-area: latest; min-width: 0; }
+.tk-waiting { grid-area: waiting; min-width: 0; }
+@media (min-width: 1024px) { .tk-waiting { position: sticky; top: 88px; } }
+
+.tk-wlist { margin: 0; padding: 4px 18px; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-wlist li { display: flex; flex-direction: column; gap: 6px; padding: 14px 0; border-top: 1px solid var(--color-rule-soft); }
+.tk-wlist li:first-child { border-top: 0; }
+.tk-wlist a.tk-wq { color: var(--color-ink); text-decoration: none; font-weight: 600; line-height: 1.5;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.tk-wlist a.tk-wq:hover { color: var(--color-stamp); }
+.tk-wmeta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-wmeta .tk-answer { margin-inline-start: auto; font-weight: 600; color: var(--color-talk); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+
+/* A list's orders: one line that scrolls on a phone. */
+.tk-tabs { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding: 2px 16px; }
+.tk-tabs::-webkit-scrollbar { display: none; }
+.tk-tabs > * { flex: none; }
+@media (min-width: 640px) { .tk-tabs { flex-wrap: wrap; margin-inline: 0; padding-inline: 0; } }
+
+/* A topic named by its icon in its colour. */
+.tk-tag { display: inline-flex; align-items: center; gap: 5px; font-size: 0.875rem; font-weight: 600; color: var(--t); white-space: nowrap; }
+
+/* ── A post in a list: its words, and its answers as a bubble at the end ────────────────────────────────────────── */
+.tk-posts { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.tk-post { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 18px; padding: 18px 20px;
+  border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-post:hover { background: color-mix(in srgb, var(--color-talk) 4%, var(--color-sheet)); }
+.tk-post.held { background: var(--color-amended-wash); }
+.tk-post-main { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.tk-post-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-post-top:empty { display: none; }
+.tk-post-kind { font-weight: 600; color: var(--color-people); }
+.tk-post-held { font-weight: 600; color: var(--color-amended); }
+.tk-post-title { margin: 0; font-size: var(--text-lead); line-height: 1.5; font-weight: 600; }
+/* The title is the way in, and the whole card answers a finger (the author and the articles keep their own links). */
+.tk-post-title a { color: var(--color-ink); text-decoration: none; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+.tk-post-title a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.tk-post:hover .tk-post-title a { color: var(--color-stamp); }
+.tk-post-excerpt { margin: 0; max-width: 70ch; color: var(--color-ink-soft); line-height: 1.7;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.tk-post-cites { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 0; padding: 0; list-style: none; position: relative; z-index: 1; }
+.tk-post-cites a { display: inline-flex; align-items: center; gap: 6px; min-height: 36px; padding: 0 12px; border-radius: 999px; background: var(--color-paper);
+  font-size: 0.875rem; color: var(--color-ink); text-decoration: none; }
+.tk-post-cites a:hover { color: var(--color-stamp); }
+.tk-post-by { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-top: 4px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-post-by a, .tk-post-by button { position: relative; z-index: 1; }
+
+/* The answers' bubble: dots in a dashed bubble while nobody answered, the count once someone did, green and ticked
+   once the asker marked an answer. A post (not a question) counts its comments in a quiet bubble. */
+.tk-count { grid-row: 1 / span 2; grid-column: 2; align-self: start; display: flex; flex-direction: column; align-items: center; gap: 4px; width: 64px; }
+.tk-count-b { position: relative; display: grid; place-items: center; width: 52px; height: 44px; border-radius: 16px; border-end-end-radius: 5px;
+  font-size: 1.125rem; font-weight: 700; font-variant-numeric: tabular-nums; background: var(--color-talk-wash); color: var(--color-talk); }
+.tk-count-l { font-size: 0.875rem; line-height: 1.3; text-align: center; color: var(--color-ink-soft); }
+.tk-count[data-state="waiting"] .tk-count-b { background: none; border: 1.5px dashed var(--color-field); color: var(--color-ink-soft); }
+.tk-count[data-state="waiting"] .tk-count-l { color: var(--color-talk); font-weight: 600; }
+.tk-count[data-state="solved"] .tk-count-b { background: var(--color-in-force); color: var(--color-sheet); }
+.tk-count[data-state="solved"] .tk-count-l { color: var(--color-in-force); font-weight: 600; }
+.tk-count[data-state="post"] .tk-count-b { background: var(--color-chip); color: var(--color-ink-soft); }
+.tk-dots { display: flex; gap: 4px; }
+.tk-dots i { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: 0.55; }
+@media (max-width: 639px) {
+  .tk-post { padding: 16px; gap: 4px 12px; }
+  .tk-count { width: 56px; }
+  .tk-count-b { width: 46px; height: 40px; font-size: 1rem; }
+}
+
+/* ── A topic's room: its window, its name, who looks after it ─────────────────────────────────────────────────────── */
+.tk-room { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px 20px; align-items: center; margin-inline: -16px; padding: 22px 20px;
+  background: color-mix(in srgb, var(--t) 9%, var(--color-sheet)); }
+@media (min-width: 640px) { .tk-room { margin-inline: 0; border-radius: var(--radius-card); padding: 28px 32px; gap: 16px 28px; } }
+.tk-room-window { width: 72px; }
+@media (min-width: 640px) { .tk-room-window { width: 104px; } }
+.tk-room-text { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.tk-room-back { align-self: flex-start; font-size: 0.875rem; color: var(--color-ink-soft); text-decoration: none; min-height: 32px; display: inline-flex; align-items: center; }
+.tk-room-back:hover { color: var(--color-stamp); }
+.tk-room h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.tk-room-facts { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 0; font-size: var(--text-body); color: var(--color-ink-soft); }
+.tk-room-facts .open { color: color-mix(in srgb, var(--t) 72%, var(--color-ink)); font-weight: 600; }
+.tk-room-foot { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.tk-mods { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-mods a { display: inline-flex; align-items: center; gap: 7px; color: var(--color-ink); font-weight: 600; text-decoration: none; min-height: 36px; }
+.tk-mods a:hover { color: var(--color-stamp); }
+.tk-mods .k { font-weight: 400; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.tk-room-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-inline-start: auto; }
+.tk-room-acts > a { font-size: 0.875rem; font-weight: 600; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
+.tk-arch { display: block; width: 100%; height: auto; color: var(--color-talk); }
+.tk-arch > path { fill: color-mix(in srgb, var(--color-talk) 15%, var(--color-sheet)); stroke: color-mix(in srgb, var(--color-talk) 40%, transparent); stroke-width: 2.5; }
+
+/* ── The conversation as a feed (30 Oct 2026: topics as a forum's boards, adapted to the law) ──────────────────────
+   The topics on a rail at the start, each its arch for a face, how many questions wait in it, a dot when it lived
+   today; on a phone the same arches in one row to swipe. The feed in the middle, under one line to ask; what waits for
+   an answer and the rules beside it on a wide desk. A topic's own page keeps the same rail. */
+/* Its width set, not drawn from what it holds: a page still loading kept to its skeleton's width and pulled the rail in
+   (31 Oct 2026). */
+.tk-shell { width: 100%; max-width: 1280px; margin: 0 auto; padding: 16px 16px 56px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+@media (min-width: 640px) { .tk-shell { padding: 24px 24px 64px; } }
+@media (min-width: 1024px) { .tk-shell { grid-template-columns: 236px minmax(0, 1fr); gap: 28px; align-items: start; } }
+@media (min-width: 1240px) { .tk-shell { grid-template-columns: 236px minmax(0, 1fr) 300px; } }
+.tk-feedcol { min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.tk-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* A topic's face: its arch in its tint, its line icon in it; a badge for what waits, a dot when it lived today. */
+.tk-av { position: relative; flex: none; display: inline-block; width: var(--w, 34px); color: var(--t); }
+.tk-av svg.arch { display: block; width: 100%; height: auto; }
+.tk-av svg.arch path { fill: color-mix(in srgb, var(--t) 15%, var(--color-sheet)); stroke: color-mix(in srgb, var(--t) 45%, transparent); stroke-width: 4; }
+.tk-av .ic { position: absolute; inset-inline: 0; top: 46%; display: flex; justify-content: center; }
+.tk-av .live { position: absolute; bottom: 1px; inset-inline-end: -1px; width: 10px; height: 10px; border-radius: 50%; background: var(--color-in-force);
+  box-shadow: 0 0 0 2px var(--color-paper); }
+.tk-badge { min-width: 22px; height: 22px; padding: 0 6px; border-radius: 999px; display: inline-grid; place-items: center; background: var(--color-talk);
+  color: var(--color-sheet); font-size: 0.875rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+
+.tk-rail { display: none; }
+@media (min-width: 1024px) {
+  .tk-rail { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; display: flex; flex-direction: column; gap: 2px;
+    padding-inline-end: 6px; scrollbar-width: thin; }
+}
+.tk-rail h2 { margin: 14px 10px 6px; font-size: 0.875rem; font-weight: 700; color: var(--color-ink-soft); }
+.tk-rail a { display: flex; align-items: center; gap: 12px; min-height: 46px; padding: 4px 10px; border-radius: 12px; color: var(--color-ink); text-decoration: none; }
+.tk-rail a:hover { background: var(--color-sheet); }
+.tk-rail a[aria-current="page"] { background: var(--color-sheet); font-weight: 700; box-shadow: inset 3px 0 0 var(--t, var(--color-talk)); }
+:root[dir="rtl"] .tk-rail a[aria-current="page"] { box-shadow: inset -3px 0 0 var(--t, var(--color-talk)); }
+.tk-rail a .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tk-rail .ico { flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--color-talk-wash); color: var(--color-talk); }
+.tk-rail .foot { margin: 14px 10px 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.875rem; }
+
+.tk-strip { display: flex; gap: 10px; margin: 0 -16px; padding: 2px 16px 6px; overflow-x: auto; scrollbar-width: none; scroll-snap-type: x proximity; list-style: none; }
+.tk-strip::-webkit-scrollbar { display: none; }
+@media (min-width: 640px) { .tk-strip { margin-inline: -24px; padding-inline: 24px; } }
+@media (min-width: 1024px) { .tk-strip { display: none; } }
+.tk-strip li { flex: none; scroll-snap-align: start; }
+.tk-strip a { width: 70px; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 4px 0; border-radius: 12px; color: var(--color-ink);
+  text-decoration: none; text-align: center; }
+.tk-strip .tk-av { --w: 52px; }
+.tk-strip .tk-badge { position: absolute; top: -4px; inset-inline-end: -6px; box-shadow: 0 0 0 2px var(--color-paper); }
+.tk-strip .nm { font-size: 0.875rem; line-height: 1.25; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.tk-strip a[aria-current="page"] .nm { font-weight: 700; color: var(--t, var(--color-talk)); }
+.tk-strip a[aria-current="page"] svg.arch path { stroke: var(--t, var(--color-talk)); stroke-width: 7; }
+.tk-strip .ico { display: grid; place-items: center; width: 52px; height: 57px; border-radius: 26px 26px 10px 10px; background: var(--color-talk-wash); color: var(--color-talk); }
+.tk-strip a[aria-current="page"] .ico { box-shadow: inset 0 0 0 2.5px var(--color-talk); }
+
+/* The feed's head: the conversation's name in one line, then one line to ask. */
+.tk-feedhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; }
+.tk-feedhead h1 { margin: 0; font-size: var(--text-h2); line-height: 1.2; font-weight: 700; color: var(--color-ink); }
+.tk-feedhead p { margin: 0; font-size: var(--text-body); color: var(--color-ink-soft); }
+@media (max-width: 639px) { .tk-feedhead p { display: none; } }
+.tk-askbar { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-askbar .fake { flex: 1; min-width: 0; min-height: 48px; padding: 0 18px; border: 1px solid var(--color-rule); border-radius: 999px; background: var(--color-paper);
+  color: var(--color-ink-soft); font: inherit; font-size: var(--text-body); text-align: start; cursor: text; }
+.tk-askbar .fake:hover { border-color: var(--color-talk); }
+.tk-askbar .go { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--color-talk-wash); color: var(--color-talk); }
+.tk-askcard { position: relative; padding: 16px 18px 18px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-askcard .tk-ask { margin-top: 0; }
+.tk-askcard .x { position: absolute; top: 8px; inset-inline-end: 8px; width: 44px; height: 44px; border: 0; border-radius: 50%; background: none;
+  color: var(--color-ink-soft); font: inherit; font-size: 1.25rem; cursor: pointer; }
+.tk-askcard .x:hover { background: var(--color-paper); }
+.tk-more { display: grid; place-items: center; min-height: 48px; color: var(--color-ink-soft); font-size: 0.9375rem; }
+.tk-none { margin: 0; padding: 22px; border-radius: var(--radius-card); background: var(--color-sheet); color: var(--color-ink-soft); line-height: 1.7; }
+.tk-none a { font-weight: 600; }
+
+/* Beside the feed on a wide desk. */
+.tk-side { display: none; }
+@media (min-width: 1240px) { .tk-side { display: flex; flex-direction: column; gap: 16px; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; scrollbar-width: thin; } }
+.tk-card { display: flex; flex-direction: column; gap: 10px; padding: 18px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-card h2 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.tk-card p { margin: 0; font-size: 0.9375rem; line-height: 1.7; color: var(--color-ink-soft); }
+.tk-card .facts { display: flex; flex-wrap: wrap; gap: 2px 16px; font-size: 0.9375rem; color: var(--color-ink); }
+.tk-card .facts .open { color: var(--color-talk); font-weight: 600; }
+.tk-card ul.rules { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.tk-card ul.rules li { padding-inline-start: 14px; position: relative; }
+.tk-card ul.rules li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.7em; width: 5px; height: 5px; border-radius: 50%; background: var(--color-talk); }
+.tk-card .links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.875rem; font-weight: 600; }
+.tk-card .tk-wlist { padding: 0; border-radius: 0; background: none; }
+.tk-card .tk-wlist li { padding: 10px 0; }
+.tk-card .tk-exchange { gap: 8px; }
+.tk-card .tk-say-q .tk-bubble { font-size: var(--text-body); }
+.tk-card .tk-say-a .tk-bubble { font-size: 0.9375rem; -webkit-line-clamp: 4; }
+
+/* «دابا فالنقاش» on the home: the feed's liveliest posts, each its answers' bubble. */
+.tk-pulse { display: flex; flex-direction: column; gap: 4px; padding: 18px 20px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.tk-pulse-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-bottom: 6px; }
+.tk-pulse-head h2 { margin: 0; display: flex; align-items: center; gap: 10px; font-size: var(--text-h3); font-weight: 700; color: var(--color-ink); }
+.tk-pulse-head .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-in-force); box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-in-force) 22%, transparent); }
+.tk-pulse-head a { font-weight: 600; min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; }
+.tk-pulse ol { margin: 0; padding: 0; list-style: none; }
+.tk-pulse li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: start; padding: 12px 0; border-top: 1px solid var(--color-rule-soft); }
+.tk-pulse li .tk-count { grid-row: auto; grid-column: auto; width: 56px; }
+.tk-pulse li .tk-count-b { width: 46px; height: 38px; font-size: 1rem; }
+.tk-pulse .body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.tk-pulse .meta { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.tk-pulse .ttl { font-size: var(--text-lead); line-height: 1.45; font-weight: 700; color: var(--color-ink); text-decoration: none;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.tk-pulse .ttl:hover { color: var(--color-stamp); }
+.tk-pulse-ask { margin-top: 8px; display: flex; align-items: center; min-height: 48px; padding: 0 18px; border: 1px solid var(--color-rule); border-radius: 999px;
+  background: var(--color-paper); color: var(--color-ink-soft); text-decoration: none; }
+.tk-pulse-ask:hover { border-color: var(--color-talk); color: var(--color-ink); }
+
+/* ── A post's page (30 Oct 2026, drawn again): the conversation drawn as one.
+   The question is its asker's message: their name over one bubble with the title, their words and the article they
+   started from, clipped in it as a messaging app shows a link. The answer replies from the other side in the
+   conversation's teal: the one the asker marked «أفادني», or else the comment people found most useful, said as such;
+   while neither exists, an empty bubble with dots waits. Then the comments on one sheet, as a threaded forum draws its
+   thread (the same evening, one design settled for every thread): a tree, each comment beside a circle in the topic's colour that folds it with every reply under it, the rail
+   under the circle the law's margin rule drawn down its replies, «عرض الردود» hanging on that rail by an elbow and
+   bringing the rest in place, one level per tap. `--t` is the post's topic. */
+.tk-pp { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
+.tk-crumb { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; }
+.tk-crumb > a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 600; text-decoration: none;
+  color: color-mix(in srgb, var(--t) 78%, var(--color-ink)); }
+.tk-crumb > a:hover { color: var(--color-ink); }
+
+/* A comment: who and when on one line (the one who asked and the answer they marked by a chip), the words, the acts. */
+.tk-msg { display: flex; flex-direction: column; gap: 6px; min-width: 0; scroll-margin-top: 112px; }
+.tk-msg-who { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: var(--text-meta); line-height: 1.5; }
+.tk-msg-who[data-folds] { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.tk-msg-when { color: var(--color-ink-soft); }
+.tk-mark { padding: 0 8px; border: 1px solid color-mix(in srgb, var(--t, var(--color-talk)) 55%, transparent); border-radius: 999px;
+  font-weight: 600; line-height: 1.6; color: color-mix(in srgb, var(--t, var(--color-talk)) 72%, var(--color-ink)); }
+.tk-yes { padding: 0 8px; border-radius: 999px; font-weight: 600; line-height: 1.6; color: var(--color-in-force);
+  background: color-mix(in srgb, var(--color-in-force) 12%, var(--color-sheet)); }
+.tk-kind { padding: 0 8px; border: 1px solid var(--color-stamp); border-radius: 999px; font-weight: 600; line-height: 1.6; color: var(--color-stamp); }
+.tk-msg-row { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-width: 0; }
+.tk-msg-row > * { max-width: 100%; }
+.tk-msg-b { display: flex; flex-direction: column; gap: 10px; min-width: 0; color: var(--color-ink); }
+.tk-msg-b:has(form) { align-self: stretch; }
+.tk-msg-b > p { max-width: 68ch; overflow-wrap: anywhere; }
+.tk-gone { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+/* Where a link took her: the comment's own words washed (never its replies), and the wash stays while she reads (the
+   receiver of a shared comment must still find it); a reviewer's flagged one, amber. */
+.tk-msg.hit, .tk-msg[data-flag] { border-radius: 8px; background: var(--color-target-wash); box-shadow: 0 0 0 8px var(--color-target-wash); }
+.tk-msg[data-flag] { background: var(--color-amended-wash); box-shadow: 0 0 0 8px var(--color-amended-wash); }
+@media (prefers-reduced-motion: no-preference) {
+  .tk-msg.hit { animation: tk-hit 2s ease-out 300ms both; }
+}
+@keyframes tk-hit { from { background: var(--color-stamp-line); box-shadow: 0 0 0 8px var(--color-stamp-line); } }
+/* Folded: its byline, quieter, and how many replies it hides. */
+.tk-msg[data-folded] .tk-msg-who > :not(.tk-hides) { opacity: 0.72; }
+.tk-hides { position: relative; min-height: 32px; padding: 0 10px; border: 0; border-radius: 999px; background: var(--color-wash); color: var(--color-stamp);
+  font: inherit; font-weight: 600; cursor: pointer; }
+.tk-hides::after { content: ""; position: absolute; inset: -6px 0; }
+
+/* The message a reply answers, as a messaging app quotes it: its writer, its first line. */
+.tk-quoted { display: flex; flex-direction: column; gap: 1px; min-width: 0; margin-inline: -6px; padding: 6px 10px; border-radius: 10px;
+  border-inline-start: 3px solid var(--color-talk); background: color-mix(in srgb, var(--color-ink) 5%, transparent);
+  font-size: var(--text-meta); line-height: 1.45; color: var(--color-ink-soft); text-decoration: none; }
+.tk-quoted:hover { background: color-mix(in srgb, var(--color-ink) 9%, transparent); }
+.tk-quoted b { font-weight: 700; color: var(--color-talk); }
+.tk-quoted span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; }
+
+/* The acts, quiet: 32 px drawn, 44 px to a finger, the first one's words in line with the comment's. */
+.tk-acts { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; margin-inline-start: -10px; font-size: var(--text-meta);
+  color: var(--color-ink-soft); }
+.tk-act { position: relative; display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 0 10px; border: 0; border-radius: 999px;
+  background: none; color: inherit; font: inherit; cursor: pointer; }
+.tk-act::after { content: ""; position: absolute; inset: -6px 0; }
+.tk-act:hover:not(:disabled) { background: color-mix(in srgb, var(--color-ink) 6%, transparent); color: var(--color-ink); }
+.tk-act:disabled { cursor: default; }
+.tk-act[aria-pressed="true"] { font-weight: 600; color: var(--color-stamp); }
+.tk-act.yes { font-weight: 600; color: var(--color-in-force); }
+
+/* The question: its asker larger, the bubble the page's width, the title in it. */
+.tk-q { display: flex; flex-direction: column; gap: 10px; }
+.tk-q .tk-msg { gap: 10px; }
+.tk-q .tk-msg-who { font-size: var(--text-body); }
+.tk-q .tk-initial { width: 40px; height: 40px; font-size: 1.0625rem; }
+.tk-q .tk-msg-b { align-self: stretch; gap: 14px; padding: 18px 20px 20px; border-radius: 26px; border-start-start-radius: 6px;
+  background: var(--color-sheet); }
+.tk-q .tk-msg-row { gap: 6px; }
+.tk-q .tk-acts { margin-inline-start: -2px; }
+.tk-q h1 { margin: 0; font-size: var(--text-h3); line-height: 1.35; font-weight: 700; text-wrap: pretty; }
+.tk-q .tk-msg-b > p { font-size: var(--text-lead); line-height: 1.8; }
+@media (min-width: 640px) {
+  .tk-q .tk-msg-b { padding: 26px 30px 28px; }
+  .tk-q h1 { font-size: var(--text-h2); line-height: 1.3; }
+}
+.tk-changed { margin: 0; font-size: var(--text-meta); color: var(--color-amended); }
+/* The article, clipped in the question: its name and stamp, its words in the law's type. */
+.tk-law { display: flex; flex-direction: column; gap: 6px; padding: 12px 16px 14px; border-radius: 14px; border-inline-start: 3px solid var(--color-stamp);
+  background: var(--color-paper); }
+.tk-law-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.tk-law-head > a { font-weight: 700; text-decoration: none; }
+.tk-law-text { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; margin: 0; quotes: none;
+  font-family: var(--font-law); font-size: var(--text-law); line-height: 1.85; color: var(--color-ink); }
+
+/* The comments on one sheet: how many and from how many people, the order, the form, the thread. */
+.tk-comments { display: flex; flex-direction: column; gap: 18px; margin: 6px -16px 0; padding: 20px 16px 22px; background: var(--color-sheet); }
+@media (min-width: 640px) { .tk-comments { margin-inline: 0; padding: 24px 28px 26px; border-radius: var(--radius-card); } }
+.tk-chead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.tk-chead h2 { margin: 0; font-size: var(--text-h3); line-height: 1.3; font-weight: 700; color: var(--color-ink); }
+.tk-chead-n { color: var(--color-ink-soft); }
+.tk-seg { display: inline-flex; gap: 2px; padding: 3px; margin-inline-start: auto; align-self: center; border-radius: 999px; background: var(--color-chip); }
+@media (max-width: 639px) { .tk-seg { margin-inline-start: 0; } }
+.tk-seg button { position: relative; min-height: 38px; padding: 0 16px; border: 0; border-radius: 999px; background: none; color: var(--color-ink-soft);
+  font: inherit; font-size: var(--text-meta); cursor: pointer; }
+.tk-seg button::after { content: ""; position: absolute; inset: -3px 0; }
+.tk-seg button:hover { color: var(--color-ink); }
+.tk-seg button[aria-selected="true"] { background: var(--color-sheet); color: var(--color-ink); font-weight: 600;
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--color-ink) 16%, transparent); }
+/* A feed's orders, and under «الأنفع» its period, the width of a phone. */
+.tk-sorts { display: flex; flex-direction: column; gap: 10px; }
+.tk-period { margin-inline-start: 0; align-self: flex-start; }
+@media (max-width: 639px) { .tk-period { align-self: stretch; } .tk-period button { flex: 1 1 auto; padding: 0 8px; } }
+.tk-write { display: flex; flex-direction: column; }
+/* A link's court: one conversation, and the way to every comment. */
+.tk-court { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; padding-block: 6px; padding-inline: 14px 6px; border-radius: 12px;
+  background: var(--color-target-wash); font-size: var(--text-meta); color: var(--color-ink-soft); }
+.tk-court button { min-height: 44px; margin-inline-start: auto; padding: 0 14px; border: 0; border-radius: 999px; background: var(--color-sheet);
+  color: var(--color-stamp); font: inherit; font-weight: 600; cursor: pointer; }
+
+/* The thread: each comment beside its handle, the circle that folds it on the rail drawn down its replies. One level costs
+   28 px (the side 20, the gap 8); past the fourth, on a phone, 16. */
+.tk-thread { display: flex; flex-direction: column; gap: 10px; }
+.tk-node { display: flex; gap: 8px; min-width: 0; }
+.tk-handle { flex: none; display: flex; flex-direction: column; align-items: center; width: 20px; padding: 4px 0 0; border: 0;
+  background: none; color: color-mix(in srgb, var(--t, var(--color-talk)) 78%, var(--color-ink)); cursor: pointer; }
+.tk-handle:focus-visible { outline: 2px solid var(--color-stamp); outline-offset: 2px; border-radius: 10px; }
+.tk-khatam { flex: none; display: grid; place-items: center; width: 20px; height: 20px; border: 1.5px solid currentColor; border-radius: 50%;
+  background: var(--color-sheet); }
+.tk-handle[aria-expanded="false"] .tk-khatam { background: color-mix(in srgb, var(--t, var(--color-talk)) 16%, var(--color-sheet)); }
+.tk-line { flex: 1; width: 2px; margin-top: 4px; border-radius: 2px; background: color-mix(in srgb, var(--t, var(--color-talk)) 30%, transparent);
+  transition: background-color 120ms ease; }
+.tk-handle:hover .tk-line, .tk-handle:focus-visible .tk-line { background: color-mix(in srgb, var(--t, var(--color-talk)) 85%, var(--color-ink)); }
+.tk-main { flex: 1; min-width: 0; padding-bottom: 14px; }
+.tk-kids { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; }
+/* «عرض الردود»: hung on the rail it continues, an elbow curving from the rail to the words. */
+.tk-moredoor { position: relative; display: flex; align-items: center; width: fit-content; min-height: 44px; padding: 0; border: 0; background: none;
+  color: color-mix(in srgb, var(--t, var(--color-talk)) 80%, var(--color-ink)); font: inherit; font-size: var(--text-meta); font-weight: 700;
+  cursor: pointer; }
+.tk-moredoor::before { content: ""; flex: none; align-self: flex-start; width: 14px; height: 22px; margin-inline: -19px 6px;
+  border-inline-start: 2px solid color-mix(in srgb, var(--t, var(--color-talk)) 45%, transparent);
+  border-bottom: 2px solid color-mix(in srgb, var(--t, var(--color-talk)) 45%, transparent); border-end-start-radius: 10px; pointer-events: none; }
+.tk-moredoor:hover { text-decoration: underline; text-underline-offset: 3px; }
+.tk-moredoor[aria-disabled="true"] { opacity: 0.6; cursor: default; text-decoration: none; }
+@media (max-width: 639px) {
+  .tk-node .tk-node .tk-node .tk-node .tk-node { gap: 4px; }
+  .tk-node .tk-node .tk-node .tk-node .tk-node > .tk-handle { width: 12px; }
+}
+/* «التعليق التالي», a phone's: from one first-level comment to the next, above the bottom bar. */
+.tk-next { display: none; }
+@media (max-width: 639px) {
+  .tk-next { position: fixed; inset-inline-end: 16px; bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 25; display: grid;
+    place-items: center; width: 48px; height: 48px; border: 0; border-radius: 50%; background: var(--color-stamp); color: var(--color-on-stamp);
+    box-shadow: 0 10px 24px -12px color-mix(in srgb, var(--color-ink) 70%, transparent); cursor: pointer; }
+  .tk-next:focus-visible { outline: 3px solid var(--color-stamp-line); outline-offset: 2px; }
+}
+.tk-morebtn { align-self: center; min-height: 48px; padding: 0 24px; border: 1px solid var(--color-rule); border-radius: 999px; background: var(--color-sheet);
+  color: var(--color-stamp); font: inherit; font-weight: 600; cursor: pointer; }
+.tk-morebtn:hover:not(:disabled) { border-color: var(--color-stamp); }
+.tk-morebtn:disabled { opacity: 0.6; cursor: default; }
+
+/* ── A post's page while it comes (31 Oct 2026: the page used to change shape as the post arrived): the page as it
+   will stand. What is known is shown (the topic, its card, the question when a list
+   held it); what is not is drawn in the topic's ink at the size it will take, one bar to a line box, so nothing moves
+   when the words arrive. Its one moment: the answer's bubble arrives from the other side and types, as a chat does
+   while someone writes; the thread's rails rule down once, as the margin of the law is ruled. */
+.tk-ld { --ld: color-mix(in srgb, var(--t, var(--color-talk)) 14%, var(--color-paper)); }
+.tk-ld-l { display: block; height: 1lh; }
+.tk-ld-l::before { content: ""; display: block; height: 0.6em; margin-top: calc((1lh - 0.6em) / 2); border-radius: 999px; background: var(--ld); }
+.tk-ld-b { display: inline-block; width: var(--w); height: 0.75em; border-radius: 999px; background: var(--ld); vertical-align: middle; }
+.tk-ld-title { display: block; font-size: var(--text-h3); line-height: 1.35; }
+.tk-ld-lead { display: block; font-size: var(--text-lead); line-height: 1.8; }
+@media (min-width: 640px) { .tk-ld-title { font-size: var(--text-h2); line-height: 1.3; } }
+.tk-ld-h { display: block; flex: 0 1 auto; font-size: var(--text-h3); line-height: 1.3; }
+.tk-ld-said { display: block; font-size: var(--text-body); line-height: 1.8; }
+.tk-ld-crumb { display: inline-flex; align-items: center; min-height: 44px; }
+.tk-ld-acts { display: flex; gap: 14px; min-height: 32px; align-items: center; padding-inline: 2px; }
+.tk-ld .tk-initial { background: var(--ld); }
+.tk-ld-seg { width: 13.5rem; height: 44px; justify-content: space-around; align-items: center; }
+.tk-ld-seg i { width: 3em; height: 0.7em; border-radius: 999px; background: color-mix(in srgb, var(--t, var(--color-talk)) 18%, var(--color-chip)); }
+.tk-ld-box { display: block; height: 56px; border-radius: var(--radius-control); background: var(--color-paper); }
+.tk-ld .tk-handle { cursor: default; }
+.tk-ld .tk-khatam { border-color: color-mix(in srgb, var(--t, var(--color-talk)) 60%, transparent); }
+.tk-ld-card { gap: 14px; }
+@media (prefers-reduced-motion: no-preference) {
+  .tk-ld-sheet { animation: tk-ld-in 420ms ease-out 480ms both; }
+  .tk-ld .tk-line { transform-origin: top; animation: tk-ld-rule 820ms cubic-bezier(0.2, 0.7, 0.2, 1) 640ms both; }
+  .tk-ld .tk-kids .tk-line { animation-delay: 860ms; }
+  .tk-ld .tk-thread > .tk-node:nth-child(2) > .tk-handle .tk-line { animation-delay: 760ms; }
+  .tk-ld .tk-thread > .tk-node:nth-child(3) > .tk-handle .tk-line { animation-delay: 880ms; }
+}
+@keyframes tk-ld-in { from { opacity: 0; } }
+@keyframes tk-ld-rule { from { transform: scaleY(0); } }
+
+@media print {
+  .tk-q .tk-msg-b { background: none; color: inherit; box-shadow: none; border: 1px solid var(--color-rule); }
+  .tk-acts, .tk-moredoor, .tk-seg, .tk-write, .tk-court, .tk-morebtn, .tk-next, .tk-khatam { display: none; }
+}

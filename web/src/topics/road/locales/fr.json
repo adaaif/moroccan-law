@@ -1,0 +1,367 @@
+{
+  "dh": "{{amount}} DH",
+  "share": "Envoyer par WhatsApp",
+  "message": "Calculé sur 3adala, d’après la loi :",
+  "points_n_one": "{{count}} point",
+  "points_n_other": "{{count}} points",
+  "offences": {
+    "speed20": "Excès de vitesse de 20 à moins de 30 km/h",
+    "speed30": "Excès de vitesse de 30 à moins de 50 km/h",
+    "redLight": "Stop ou feu rouge non respecté",
+    "phone": "Téléphone tenu en main en conduisant",
+    "belt": "Ceinture non attachée",
+    "child": "Enfant de moins de 10 ans à l’avant",
+    "priority": "Refus de priorité",
+    "pedestrians": "Priorité des piétons non respectée",
+    "overtaking": "Dépassement irrégulier",
+    "line": "Franchissement d’une ligne continue",
+    "wrongWay": "Circulation en sens interdit",
+    "inspection": "Défaut de contrôle technique",
+    "nightLights": "Rouler de nuit sans éclairage hors agglomération",
+    "pavement": "Stationnement sur le trottoir ou un passage piéton",
+    "medical": "Visite médicale obligatoire non passée",
+    "walk": "Piéton qui ne respecte pas les règles (hors passage, par exemple)",
+    "speed50": "Excès de vitesse de 50 km/h ou plus (délit)",
+    "alcohol": "Conduite sous l’effet de l’alcool ou de stupéfiants (délit)",
+    "hitRun": "Délit de fuite (délit)",
+    "suspended": "Conduite malgré une suspension (délit)",
+    "injuries": "Blessures involontaires sans circonstance aggravante (délit)",
+    "injuriesAgg": "Blessures involontaires avec circonstance aggravante (délit)",
+    "helmet": "Moto sans casque homologué",
+    "sirens": "Ne pas laisser passer une ambulance ou la police qui signale son approche"
+  },
+  "classes": {
+    "1": "Contravention de 1re classe",
+    "2": "Contravention de 2e classe",
+    "3": "Contravention de 3e classe",
+    "walk": "Contravention aux règles des piétons"
+  },
+  "fine": {
+    "title": "Combien vais-je payer ?",
+    "lead": "Le montant selon le jour du paiement, les points, la consignation pour contester. Calculé sur votre téléphone, rien n’en sort.",
+    "offence": "L’infraction",
+    "start": "Comment a-t-elle été constatée ?",
+    "starts": {
+      "officer": "Police ou gendarmerie",
+      "radar": "Avis de radar"
+    },
+    "day": {
+      "officer": "Jour de l’infraction",
+      "radar": "Jour où l’avis vous a été remis"
+    },
+    "until": "jusqu’au {{date}}",
+    "steps": {
+      "officer": [
+        "le jour même",
+        "dans les 15 jours francs dès le lendemain",
+        "dans les 30 jours francs dès le lendemain"
+      ],
+      "radar": [
+        "dans les 24 heures dès le lendemain",
+        "dans les 15 jours francs suivants",
+        "dans les 30 jours francs dès le lendemain"
+      ],
+      "walk": [
+        "dans les 30 jours"
+      ]
+    },
+    "points": "Points retirés au paiement",
+    "noPoints": "Cette infraction ne retire pas de points dans le barème de l’article 99.",
+    "paying": "Payer vaut reconnaissance de l’infraction : les points sont retirés (art. 28).",
+    "contest": "Pour contester dans le même délai, jusqu’au {{date}} : une plainte motivée et la consignation de {{amount}}, le maximum de l’amende. Avant le jugement, vous pouvez payer les deux tiers, {{two}}, et retirer la plainte.",
+    "afterwards": "Faute de paiement dans le délai, le dossier va au procureur du Roi et le permis est suspendu de plein droit (art. 227 et 228).",
+    "noDeal": "Pas de transaction en cas de récidive d’une contravention de 1re classe, d’un délit qui l’accompagne, ou de plusieurs infractions dont une ne s’y prête pas (art. 219).",
+    "radarMargin": "Radar : la vitesse n’est une infraction qu’au-delà de 10 % de la limite, et 7 km/h au plus (art. 195).",
+    "notice": "Ce calcul ne dit pas s’il faut payer ou contester ; il dit ce que dit la loi.",
+    "message": "Combien vais-je payer ?",
+    "stepsShort": {
+      "officer": [
+        "Le jour même",
+        "15 jours",
+        "30 jours"
+      ],
+      "radar": [
+        "24 heures",
+        "15 jours",
+        "30 jours"
+      ],
+      "walk": [
+        "30 jours"
+      ]
+    },
+    "till": "jusqu’au {{date}}",
+    "today": "Aujourd’hui",
+    "pointsTaken": "{{points}} retirés au paiement",
+    "noDealOver": "Pas de transaction dans ce cas",
+    "noDealValue": "Le tribunal",
+    "noDealLine": "Pas d’amende transactionnelle : le procès-verbal va au procureur du Roi (art. 219).",
+    "lateOver": "Le délai de trente jours est passé",
+    "lateValue": "Plus de montant forfaitaire",
+    "payToday": "Si vous payez aujourd’hui, {{date}}",
+    "fromTomorrow": "Dès demain : {{amount}}",
+    "next": "{{amount}} dans {{days}}",
+    "lastDay": "Dernier jour à ce prix : {{date}}",
+    "bySpeed": "Calculer avec la vitesse relevée",
+    "dealAsk": "Cette infraction admet-elle la transaction ? Deux questions de l’article 219",
+    "againAsk": "Est-ce une récidive d’une contravention de 1re classe ?",
+    "delitAsk": "Un délit l’a-t-il précédée, accompagnée ou suivie ?",
+    "paths": "Payer ou contester",
+    "pay": "Si vous payez",
+    "payNow": "{{amount}} aujourd’hui. Payer, c’est reconnaître l’infraction.",
+    "contestTitle": "Si vous contestez",
+    "contestDeposit": "Une réclamation motivée jusqu’au {{date}}, avec une consignation de {{amount}}, le maximum de l’amende.",
+    "contestTwo": "Avant que le tribunal statue : payer les deux tiers, {{amount}}, et retirer la réclamation.",
+    "ratesFrom": "Les montants en vigueur depuis le {{date}}, gardés dans l’outil pour fonctionner hors connexion.",
+    "remindTitle": "Dernier jour pour payer {{amount}}",
+    "toPoints": "Calculer les points qui me restent"
+  },
+  "points": {
+    "example": "Exemple :",
+    "title": "Combien de points me reste-t-il ?",
+    "lead": "Une simulation d’après la loi, pas votre vrai solde : celui-là, c’est la NARSA qui le connaît.",
+    "licence": "Le permis",
+    "licences": {
+      "probation": "En période probatoire (20 points)",
+      "full": "Après la période probatoire (30 points)"
+    },
+    "pick": "Les infractions constatées en même temps",
+    "taken_one": "{{count}} point retiré",
+    "taken_other": "{{count}} points retirés",
+    "capped": "Plusieurs infractions à la fois : le retrait s’arrête à {{cap}} (art. 100).",
+    "left": "Solde",
+    "zero": "Solde épuisé : le permis est annulé de plein droit ; un nouvel examen seulement six mois après sa remise, et après un stage de sécurité routière (art. 22, 24 et 34).",
+    "twoThirds": "Plus des deux tiers des points perdus en période probatoire : le stage de sécurité routière est obligatoire (art. 26).",
+    "back": "Comment les points reviennent sans infraction",
+    "backRules": {
+      "plus4": "+4 après un an",
+      "to12": "12 après deux ans si le solde était sous 8",
+      "full": "Solde complet après 3 ans"
+    },
+    "course": "Stage de sécurité routière : +4 points une fois, sans dépasser le maximum (art. 33 et 35).",
+    "official": "Voir votre vrai solde",
+    "ofMax": "Permis de {{max}} points",
+    "takenAll": "{{points}} retirés en {{stops}}",
+    "nothing": "Choisissez ce qui a été relevé",
+    "backTo": "{{points}} revenus (art. 33 et 35)",
+    "balance": "{{now}} sur {{max}}",
+    "card": "Permis de conduire",
+    "stops": "Les contrôles",
+    "stop": "Contrôle {{n}} · ⁦−{{points}}⁩",
+    "delits": "Délits jugés par un tribunal",
+    "delitsLead": "Ce ne sont pas des contraventions qu’on règle par une amende : leurs points sont retirés par un jugement définitif.",
+    "addStop": "Ajouter un autre contrôle",
+    "removeStop": "Retirer ce contrôle",
+    "years": "Sans infraction à points depuis",
+    "yearsN": {
+      "0": "rien",
+      "1": "un an",
+      "2": "deux ans",
+      "3": "trois ans"
+    },
+    "courseToggle": "Un stage de sensibilisation à la sécurité routière (+4 une fois)",
+    "backRule": "Un an sans infraction : +4. Deux ans et moins de 8 : remonte à 12. Trois ans : le solde complet. Compté depuis le dernier paiement ou jugement."
+  },
+  "compensation": {
+    "title": "L’indemnité d’incapacité permanente",
+    "lead": "Le capital du nouveau barème, multiplié par le taux fixé par le médecin. Pour les accidents depuis le 29 janvier 2026.",
+    "day": "Jour de l’accident",
+    "age": "Âge le jour de l’accident",
+    "earnings": "Salaire ou gain annuel net",
+    "earningsHint": "Laissez vide sans revenu prouvé : le minimum est retenu.",
+    "rate": "Taux d’incapacité (%), fixé par le médecin",
+    "before": "Accident avant le 29 janvier 2026 : l’ancien barème s’applique, ce calcul ne le couvre pas (loi 70-24, art. 7).",
+    "capital": "Capital de référence",
+    "indemnity": "Indemnité de base pour l’incapacité",
+    "minimum": "Salaire minimum de cette année : {{amount}}",
+    "between": "Le salaire est entre deux lignes du barème : le capital est calculé par la formule de l’article 5.",
+    "floor": "Le point d’incapacité ne vaut pas moins d’un cinquième du salaire minimum ({{amount}}).",
+    "misprint": "Dans cette case, le Bulletin officiel imprime {{printed}} et le barème donne {{steps}} (p. {{page}}). Nous calculons avec le chiffre imprimé : c’est le Bulletin officiel qui fait foi.",
+    "rows": "Lignes utilisées : {{rows}}",
+    "doctor": "C’est le médecin qui fixe le taux, et le tribunal tranche à défaut d’accord. Le dahir prévoit d’autres indemnités (incapacité temporaire, souffrances, préjudice esthétique…) que ce calcul ne compte pas.",
+    "review": "Ce calcul attend la relecture d’un avocat avant d’être montré au public.",
+    "mapAlt": "Le barème des capitaux : le salaire en hauteur, l’âge en largeur, votre case allumée",
+    "mapCaption": "Chaque case est un capital : plus elle est foncée, plus il est élevé. Le cercle est votre case ; un trait entre deux lignes veut dire que votre salaire est entre elles. Les cases bordées de rouge sont celles que le BO a mal imprimées.",
+    "beforeOver": "Accident avant le 29 janvier 2026",
+    "beforeValue": "L’ancien barème",
+    "indemnityAt": "L’indemnité de base pour une incapacité de {{rate}} %",
+    "capitalLine": "Le capital de référence {{capital}}, pour {{age}} ans et un salaire annuel de {{earnings}}.",
+    "steps": "Les étapes",
+    "stepNames": {
+      "day": "Le jour",
+      "age": "L’âge",
+      "earnings": "Le salaire",
+      "rate": "Le taux"
+    },
+    "back": "Précédent",
+    "next": "Suivant",
+    "where": "Où vous êtes dans le barème"
+  },
+  "scenes": {
+    "title": "Scènes de la route",
+    "lead": "Chaque règle en scène, dessinée d’après son article, avec ce que coûte l’infraction. Lancez la scène ou parcourez ses étapes.",
+    "play": "Lire",
+    "pause": "Pause",
+    "step": "Étape {{n}} sur {{of}}",
+    "cost": "{{offence}} : {{klass}}, {{full}} ({{day}} payés le jour même ou dans les 24 heures de l’avis), {{points}}.",
+    "costWalk": "{{offence}} : {{amount}} dans les 30 jours.",
+    "noPoints": "sans retrait de points",
+    "skip": "Voir la scène sans question",
+    "right": "Exact.",
+    "wrong": "Non. Voici ce qui se serait passé :",
+    "scrub": "Aller à un moment de la scène",
+    "slow": "Lentement",
+    "showRight": "Voir la bonne façon",
+    "again": "Répondre de nouveau",
+    "toFine": "Combien coûte cette infraction ?"
+  },
+  "signs": {
+    "title": "Les panneaux",
+    "lead": "Les panneaux dessinés d’après leur description dans l’arrêté conjoint 2805-14, chacun avec son code et l’article qui en fait une obligation.",
+    "code": "Panneau {{code}} de l’arrêté conjoint 2805-14",
+    "source": "Codes tels que les imprime l’arrêté conjoint 2805-14 (BO 6332, édition de traduction officielle, p. 774–777), modifié par l’arrêté 3106-19 (BO 6832). Tailles et couleurs exactes relèvent d’une « instruction générale » non publiée : les dessins sont approximatifs.",
+    "mixed": "Chaque panneau dit par sa forme ce qu’il fait, avant son dessin. Regardez-les se ranger…",
+    "more": "Les autres panneaux s’ajouteront famille par famille quand l’arrêté conjoint 2805.14 sera dans 3adala.",
+    "seeScene": "Voir sa scène",
+    "cost": "Combien coûte de l’ignorer ?",
+    "close": "Fermer"
+  },
+  "practice": {
+    "title": "S’entraîner",
+    "lead": "Entraînez-vous sur les panneaux et sur des cartes tirées de la loi, une à une. Ce que vous ratez revient d’abord, sur cet appareil seulement.",
+    "notExam": "Ce n’est pas l’examen officiel ni une copie : rien n’est pris de la banque de questions.",
+    "none": "Pas encore de cartes ici : une personne les écrit, chacune d’un article, et elles paraissent une fois relues. Les panneaux sont prêts.",
+    "count": "Carte {{n}} sur {{of}}",
+    "right": "Exact.",
+    "wrong": "Non. La réponse est dans l’article :",
+    "next": "Suivante",
+    "decks": {
+      "signs": "Les panneaux",
+      "cards": "Cartes tirées de la loi"
+    },
+    "learned": "{{done}} sur {{total}} appris",
+    "signAlt": "Le panneau",
+    "thisIs": "C’est le panneau « {{name}} »."
+  },
+  "yes": "Oui",
+  "no": "Non",
+  "picture": "Image à partager",
+  "remind": "Me prévenir avant que le prix monte",
+  "site": "قانون · 3adala.com",
+  "daysLeft_one": "{{count}} jour",
+  "daysLeft_other": "{{count}} jours",
+  "classesShort": {
+    "1": "1re classe",
+    "2": "2e classe",
+    "3": "3e classe",
+    "walk": "Piétons"
+  },
+  "tiles": {
+    "change": "Changer",
+    "search": "Chercher : téléphone, feu rouge, ceinture…",
+    "none": "Rien avec ces mots. Essayez-en un autre."
+  },
+  "groups": {
+    "speed": "La vitesse",
+    "signs": "Panneaux et priorités",
+    "inside": "Dans la voiture",
+    "vehicle": "Le véhicule et le conducteur",
+    "parking": "Le stationnement",
+    "walking": "Les piétons"
+  },
+  "offenceWords": {
+    "speed20": "سرعة السرعة رادار فوق الحد 20 25 vitesse excès",
+    "speed30": "سرعة السرعة رادار فوق الحد 30 40 vitesse excès",
+    "redLight": "الضو الحمر الضوء الاحمر قف ستوب stop feu rouge",
+    "priority": "الاسبقية الأولوية اليمين priorité",
+    "pedestrians": "الراجلين ممر passage piéton",
+    "overtaking": "تجاوز دوبلي doubler dépassement",
+    "line": "خط متصل الخط ligne continue",
+    "wrongWay": "اتجاه ممنوع سانس sens interdit",
+    "phone": "التيليفون الهاتف البورطابل téléphone portable",
+    "belt": "الحزام السمطة سمطة ceinture",
+    "child": "طفل الدراري المقعد الامامي enfant",
+    "inspection": "الفيزيت الفحص التقني visite technique contrôle",
+    "nightLights": "الضو الليل الأضواء phares feux nuit",
+    "medical": "الفحص الطبي visite médicale",
+    "pavement": "الطروطوار الرصيف باركينغ stationnement trottoir",
+    "walk": "راجل ماشي على رجلي piéton",
+    "helmet": "الكاسك الخوذة موطور casque moto",
+    "sirens": "الاسعاف لانبيلانس ambulance pompiers sirène police"
+  },
+  "speed": {
+    "title": "À quelle vitesse rouliez-vous ?",
+    "lead": "Choisissez le panneau et déplacez l’aiguille : ce que dit la loi de l’écart entre votre vitesse et la limite.",
+    "limit": "La limite",
+    "limitsHint": "60 en ville, 100 hors agglomération, 120 sur autoroute, 90 en période probatoire, 40 pour un cyclomoteur en ville.",
+    "measured": "La vitesse relevée",
+    "unit": "km/h",
+    "kmh": "{{n}} km/h",
+    "plus": "+{{over}} km/h",
+    "by": "Qui l’a relevée ?",
+    "officer": "La police ou la gendarmerie",
+    "over": "Le radar a relevé {{measured}} km/h ; après sa marge ({{margin}}), {{kept}} sont retenus.",
+    "overOfficer": "Vitesse relevée : {{measured}} km/h",
+    "none": "Pas d’infraction",
+    "delit": "Un délit",
+    "band": {
+      "within": "Sous la limite.",
+      "margin": "Dans la marge du radar : pas d’infraction (art. 195).",
+      "under20": "{{over}} km/h au-dessus de la limite. La loi ne donne à cet écart aucune classe de contravention.",
+      "c2": "+{{over}} km/h : 2e classe, {{points}}. C’est le montant dans les 24 heures ; il monte jusqu’à {{last}}.",
+      "c1": "+{{over}} km/h : 1re classe, {{points}}. C’est le montant dans les 24 heures ; il monte jusqu’à {{last}}.",
+      "delit": "+{{over}} km/h : à partir de 50, un délit (art. 175), {{points}}. Pas d’amende forfaitaire que cet outil calcule."
+    },
+    "reading": "La lecture que fait 3adala de l’article 195 : la marge est de 10 % de la limite, sans dépasser 7 km/h, retranchée de la vitesse relevée.",
+    "under20Note": "Les deux articles que lit l’outil ne classent pas cet écart ; cela ne veut pas dire qu’il est permis.",
+    "toFine": "Le montant selon le jour du paiement"
+  },
+  "stops_n_one": "un contrôle",
+  "stops_n_other": "{{count}} contrôles",
+  "inline": {
+    "rises": "{{amount}} après le {{date}}"
+  },
+  "now": {
+    "title": "Un accident : que faire maintenant",
+    "lead": "Quatre étapes, dans l’ordre, d’après l’article 94 du décret sur les règles de circulation et le code des assurances. Cochez chacune une fois faite.",
+    "offline": "Ouvrez cette page une fois connecté : elle reste sur votre téléphone et s’ouvre ensuite sans connexion.",
+    "until": "Dernier délai : {{date}}.",
+    "flight": "Ne quittez pas les lieux : la fuite après un accident est un délit, et coûte six points (art. 182).",
+    "all": "Toutes les étapes, avec les articles",
+    "numbers": "Numéros à appeler",
+    "copy": "Copier le numéro",
+    "copied": "Copié",
+    "source": "Numéro donné par {{source}}"
+  },
+  "answer": {
+    "when": "le jour même ou dans les 24 heures de l’avis radar ; jusqu’à {{full}}",
+    "walk": "dans les 30 jours",
+    "noPoints": "sans retrait de points",
+    "open": "Calculer selon votre jour ›"
+  },
+  "workshop": {
+    "title": "L’atelier des cartes",
+    "lead": "Une personne écrit chaque carte d’après un seul article ; le premier choix est le bon. Copiez la carte dans cards.yaml ; elle paraît quand une autre personne approuve son lot.",
+    "kinds": {
+      "scene": "Scène",
+      "sign": "Panneau",
+      "figure": "Chiffre"
+    },
+    "key": "Clé de la carte (lettres latines)",
+    "at": "Le moment : {{ms}} ms",
+    "question": "La question",
+    "right": "La bonne réponse",
+    "choice": "Choix {{n}}",
+    "quote": "Les mots de l’article",
+    "cite": "L’adresse de l’article",
+    "found": "L’article existe",
+    "missing": "Cet article n’est pas dans 3adala",
+    "preview": "Comme les lecteurs la verront",
+    "copy": "Copier la carte",
+    "copied": "Copiée"
+  },
+  "instruments": {
+    "fine": "Deuxième classe : {{amount}} payés à temps",
+    "speed": "Le panneau, l’aiguille, l’écart",
+    "points": "Un permis de {{count}} points"
+  }
+}

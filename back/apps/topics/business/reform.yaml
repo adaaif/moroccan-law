@@ -1,0 +1,49 @@
+# What changed in business (the business review): one item per change, its stage said first, its dated official
+# record. Stages: in_force, coming, bill, announced. Checked against the BO on 27 Oct 2026; each item is followed on its
+# own.
+
+- key: cheque-2026
+  title: {ar: 'الشيك بعد القانون 71.24', fr: 'Le chèque après la loi 71.24'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ 29 يناير 2026: إعذار لثلاثين يوما قبل المتابعة، وأداء الشيك يوقف الدعوى ويمحو آثار الحكم، والحبس من 6 أشهر إلى 3 سنوات.', fr: 'Depuis le 29 janvier 2026 : trente jours de mise en demeure avant les poursuites, le paiement arrête l’action et efface la peine, six mois à trois ans de prison.'}
+  timeline:
+    - date: '2026-01-29'
+      text: {ar: 'نشر القانون 71.24 في الجريدة الرسمية: يغير مواد الشيك (313، 314، 317، 318…)، ويعوض المادتين 316 و325 (العقوبة، والإعذار لثلاثين يوما، وأثر الأداء والتنازل، والإعفاء بين الأزواج والأصول والفروع)، ويضيف أحكاما للكمبيالة المسحوبة على بنك.', fr: 'Publication de la loi 71.24 au BO : elle modifie les articles du chèque (313, 314, 317, 318…), remplace les articles 316 et 325 (la peine, la mise en demeure de trente jours, l’effet du paiement et du désistement, l’exemption entre époux, ascendants et descendants), et ajoute des règles pour la lettre de change tirée sur une banque.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7478', fr: 'BO n° 7478'}}
+      cites: [/ma/loi/71-24/art_1, /ma/loi/71-24/art_2, /ma/loi/71-24/art_3]
+
+- key: terms-2023
+  title: {ar: 'آجال الأداء والغرامة (القانون 69.21)', fr: 'Les délais de paiement et l’amende (loi 69.21)'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ 2023: 60 يوما بلا اتفاق و120 على الأكثر، غرامة لفائدة الخزينة وتصريح كل ثلاثة أشهر، طبقت على مراحل حتى يناير 2025.', fr: 'Depuis 2023 : 60 jours sans accord et 120 au plus, une amende au Trésor et une déclaration trimestrielle, appliquées par étapes jusqu’en janvier 2025.'}
+  timeline:
+    - date: '2023-06-15'
+      text: {ar: 'نشر القانون 69.21 في الجريدة الرسمية: يعوض باب آجال الأداء في مدونة التجارة (المواد 1-78 إلى 10-78)؛ والغرامة والتصريح تطبق أولا على من يفوق رقم معاملاته 50 مليون درهم.', fr: 'Publication de la loi 69.21 au BO : elle remplace le chapitre des délais de paiement du code de commerce (articles 78-1 à 78-10) ; l’amende et la déclaration s’appliquent d’abord au-delà de 50 millions de DH de chiffre.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7204', fr: 'BO n° 7204'}}
+      cites: [/ma/loi/69-21/art_1, /ma/loi/69-21/art_2]
+    - date: '2024-01-01'
+      text: {ar: 'الغرامة والتصريح لمن يحقق بين 10 و50 مليون درهم.', fr: 'L’amende et la déclaration entre 10 et 50 millions de DH.'}
+      cites: [/ma/loi/69-21/art_2]
+    - date: '2025-01-01'
+      text: {ar: 'الغرامة والتصريح لمن يحقق بين 2 و10 ملايين درهم؛ والفواتير قبل هذا التاريخ التي لا تتجاوز 10.000 درهم لا غرامة عليها.', fr: 'L’amende et la déclaration entre 2 et 10 millions de DH ; les factures antérieures de 10 000 DH ou moins sont sans amende.'}
+      cites: [/ma/loi/69-21/art_2]
+
+- key: companies-2024
+  title: {ar: 'تعديلات القانون 5.96 لسنة 2024', fr: 'Les retouches de la loi 5.96 en 2024'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'في 22 غشت 2024: القانونان 44.24 و45.24 يتممان المادتين 71 و85 من قانون الشركة ذات المسؤولية المحدودة.', fr: 'Le 22 août 2024 : les lois 44.24 et 45.24 complètent les articles 71 et 85 de la loi sur la SARL.'}
+  timeline:
+    - date: '2024-08-22'
+      text: {ar: 'نشر القانونين 44.24 (المادة 71، الفقرة الرابعة) و45.24 (المادة 85: حالات لا تحل فيها الشركة) في الجريدة الرسمية.', fr: 'Publication des lois 44.24 (article 71, quatrième alinéa) et 45.24 (article 85 : les cas où la société n’est pas dissoute) au BO.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7328', fr: 'BO n° 7328'}}
+      cites: [/ma/loi/44-24/art_1, /ma/loi/45-24/art_1]

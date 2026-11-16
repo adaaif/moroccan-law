@@ -1,0 +1,11 @@
+# Law 62.17 on the administrative trusteeship of the collective communities as BO 6807 prints it, where our text misreads
+# it: the page's running header glued into the text, a letter of another alphabet. Each was read against the page's image on
+# 26 Oct 2026 (the land review, M16), in the articles the land topic cites (3 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/collective_62_17.yaml`; a reload of the text applies them again.
+text: /ma/loi/62-17
+document: issues/bo_ar/BO_6807_ar.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [7], wrong: "السلالية ؛\nلرسمية\nعدد 6807 - 24 ذو الحجة 1440 (26 أغسطس 2019)\n- الترامي", right: "السلالية ؛\n- الترامي"}   # header, p. 5888: the left column's running header between two indents
+  - {arts: [8], wrong: تمادیه, right: تماديه}   # letter, p. 5888: Persian yeh (U+06CC) for the Arabic «ي»
+  - {arts: [9], wrong: "هذا القانون.\nعدد 6807 - 24 ذو الحجة 1440 (26 أغسطس 2019)", right: هذا القانون.}   # header, p. 5888: the next page's running header after the article's end

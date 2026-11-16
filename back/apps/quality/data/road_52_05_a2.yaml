@@ -1,0 +1,9 @@
+# /ma/loi/52-05 as the SGG's consolidation prints it: three stretches of road_52_05_a.yaml widened to a space at each end,
+# as the corrector finds a stretch only between words (read against the page images on 20 Oct 2026).
+text: /ma/loi/52-05
+document: sources/sgg_consolidated/52_05.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [7], right: 'هي: «أم» (AM)و«أ1» (A1)و«أ» (A)و«ب» (B)و«ج» (C)و«د» (D)و«هـ (ب)» (E(B)) و«هـ (ج)» (E(C)) و«ه(د)» (E(D)).', wrong: 'هي: «أم» (AM)و«أ1» (1A)و«أ» (A)و«ب» (B)و«ج» (C)و«د» (D)و«هـ (ب)» ((B)E (و«هـ (ج)» ((C)E (و«ه(د)» ((D)E(.'}
+  - {arts: [14], right: الأصناف «ب» (B)و«ه (ب)» (E(B)) و«ج» (C)و«ه (ج)» (E(C)) و«د» (D)و«ه (د)» (E(D)) عند, wrong: الأصناف «ب» (B)و«ه (ب)» ((B)E ( و«ج» (C)و«ه (ج)» ((C)E (و«د» (D)و«ه (د)» ((D)E (عند}
+  - {arts: [23], right: الأصناف «أ 1» (A 1)و«أ», wrong: الأصناف «أ 1» (1 A)و«أ»}

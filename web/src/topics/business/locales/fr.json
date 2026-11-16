@@ -1,0 +1,277 @@
+{
+  "form": {
+    "title": "Auto-entrepreneur, commerçant ou société ?",
+    "lead": "Quatre questions, et nous vous disons ce que la loi permet dans votre cas et ce qu’impose chaque forme.",
+    "over": "La loi vous ouvre",
+    "under": "C’est ce qu’écrivent les textes ; le choix vous appartient.",
+    "who": "Qui va travailler ?",
+    "whos": {
+      "alone": "Moi seul",
+      "few": "Avec 1 à 4 associés",
+      "five": "5 ou plus"
+    },
+    "activity": "Quelle activité ?",
+    "activities": {
+      "trade": "Commerce, industrie ou artisanat",
+      "service": "Services"
+    },
+    "turnover": "Chiffre d’affaires annuel attendu (DH)",
+    "turnoverNote": "Le chiffre encaissé ; le plafond de l’auto-entrepreneur est ici de {{cap}}",
+    "trade": "Votre métier",
+    "tradeHint": "Ex. : médecin, bijoutier, auto-école",
+    "tradeNote": "Écrivez-le pour vérifier s’il fait partie des 41 métiers exclus du régime.",
+    "listed_one": "Il figure sur la liste des exclus",
+    "listed_other": "{{count}} métiers de la liste des exclus",
+    "notListed": "Absent des 41 métiers exclus.",
+    "allowed": "Ouvert",
+    "closed": "Fermé",
+    "why": {
+      "alone": "Réservé à une personne qui travaille seule.",
+      "ceiling": "Le chiffre attendu dépasse le plafond ({{cap}}).",
+      "trade": "Votre métier figure parmi ceux qu’exclut le décret 2.15.263.",
+      "members": "Il faut cinq membres au moins."
+    },
+    "rows": {
+      "register": "Inscription",
+      "books": "Comptabilité",
+      "debts": "Les dettes"
+    },
+    "forms": {
+      "auto": {
+        "name": "Auto-entrepreneur",
+        "register": "Registre national de l’AE (Barid Al-Maghrib)",
+        "books": "Dispensé",
+        "debts": "Résidence principale insaisissable"
+      },
+      "trader": {
+        "name": "Commerçant en nom propre",
+        "register": "Registre du commerce, en 3 mois",
+        "books": "Obligatoire (loi 9.88)",
+        "debts": "Vos biens"
+      },
+      "sarl": {
+        "name": "SARL",
+        "register": "RC via la plateforme",
+        "books": "Obligatoire",
+        "debts": "À hauteur des apports"
+      },
+      "coop": {
+        "name": "Coopérative",
+        "register": "Registre des coopératives",
+        "books": "Obligatoire",
+        "debts": "Les biens de la coopérative"
+      }
+    },
+    "never": "Cet outil lit les conditions écrites dans les textes et ne choisit pas pour vous ; l’impôt et la couverture se calculent ailleurs.",
+    "toPage": "Les formes côte à côte",
+    "toAuto": "Devenir auto-entrepreneur",
+    "toSarl": "Créer une SARL",
+    "toTax": "L’impôt de l’auto-entrepreneur"
+  },
+  "cheque": {
+    "title": "Le chèque : dates et amendes",
+    "lead": "De la date écrite sur le chèque et du jour du rejet : délais, injonction, régularisation sans amende, actions.",
+    "presentOver": "Dernier jour pour le présenter : {{date}}",
+    "daysLeft_one": "Encore {{count}} jour",
+    "daysLeft_other": "Encore {{count}} jours",
+    "presentPast": "Délai de présentation passé",
+    "holderPresent": "Présentez-le à la banque avant ce jour ; la banque doit payer même après.",
+    "holderLate": "La banque doit payer même après le délai, mais vos actions courent dès sa fin.",
+    "drawerPresent": "La provision doit être là le jour de la présentation ; un chèque postdaté se paie le jour où il est présenté.",
+    "drawerOver": "Vous pouvez agir contre le tireur jusqu’au {{date}}",
+    "lapsed": "L’action cambiaire est prescrite",
+    "holderRejected": "Un an après la fin du délai contre le tireur et les endosseurs, deux contre la banque ; l’action reste ouverte contre le tireur qui n’a pas fourni la provision.",
+    "freeOver": "Régulariser sans amende avant le {{date}}",
+    "drawerFree": "Si vous payez le chèque ou constituez la provision dans les 3 mois de l’injonction, aucune amende.",
+    "fineOver": "L’amende pour retrouver les chèques",
+    "drawerFine": "Payez le chèque et cette amende avant le {{date}} pour retrouver vos chèques.",
+    "drawerBanned": "Les deux ans sont passés : l’interdiction de 5 ans demeure.",
+    "stops": {
+      "written": {
+        "title": "La date écrite sur le chèque",
+        "line": "Le délai de présentation en part."
+      },
+      "present": {
+        "title": "Dernier jour de présentation",
+        "line": "20 jours s’il est émis au Maroc, 60 à l’étranger."
+      },
+      "rejected": {
+        "title": "Revenu impayé",
+        "line": "La banque a refusé faute de provision suffisante."
+      },
+      "injunction": {
+        "title": "L’injonction bancaire, au plus tard",
+        "line": "Restituer les chèques, n’en plus émettre pendant 5 ans."
+      },
+      "free": {
+        "title": "Dernier jour pour régulariser sans amende",
+        "line": "3 mois après l’injonction ; comptés ici du jour du rejet."
+      },
+      "recover": {
+        "title": "Dernier jour pour retrouver les chèques",
+        "line": "Deux ans après la fin du délai de présentation, paiement et amende faits."
+      },
+      "drawer": {
+        "title": "Prescription contre le tireur",
+        "line": "Un an après la fin du délai de présentation."
+      },
+      "bank": {
+        "title": "Prescription contre la banque",
+        "line": "Deux ans après la fin du délai de présentation."
+      }
+    },
+    "message": "Les dates du chèque :",
+    "face": "Date",
+    "side": "Vous êtes",
+    "sides": {
+      "holder": "Le porteur",
+      "drawer": "Le tireur"
+    },
+    "written": "La date écrite sur le chèque",
+    "writtenNote": "Même postdatée",
+    "where": "Émis où ?",
+    "wheres": {
+      "morocco": "Au Maroc ({{days}} jours)",
+      "abroad": "À l’étranger ({{days}} jours)"
+    },
+    "rejected": "Revenu impayé ?",
+    "rejectedNo": "Non",
+    "rejectedYes": "Oui",
+    "rejectedOn": "Jour du rejet",
+    "amount": "Montant du chèque ou du manque (DH)",
+    "amountNote": "S’il y avait une provision partielle, l’amende porte sur le seul manque.",
+    "nth": "Quelle injonction ?",
+    "nths": {
+      "1": "La première",
+      "2": "La deuxième",
+      "3": "La troisième ou plus"
+    },
+    "lawTitle": "Ce que dit la loi",
+    "law": {
+      "fine": "L’amende pour retrouver les chèques après 3 mois : 0,5 % à la première injonction, 1 % à la deuxième, 1,5 % à la troisième, entre 500 et 50 000 DH : ici {{fine}}.",
+      "notice": "Avant toute poursuite : 30 jours de mise en demeure pour régulariser, par une audition de la police judiciaire sur instruction du parquet.",
+      "penalty": "La peine : six mois à trois ans de prison et 5 000 à 20 000 DH d’amende.",
+      "settle": "Le paiement ou le désistement arrête l’action, et même après jugement l’exécution, contre 2 % : ici {{amount}}.",
+      "family": "Entre époux, ascendants et descendants au premier degré : ni infraction ni peine pour la provision ; la voie civile reste ouverte."
+    },
+    "toJourney": "Le chemin pas à pas",
+    "toPage": "Tout sur le chèque",
+    "remind": "Ajouter à l’agenda",
+    "share": "Envoyer sur WhatsApp"
+  },
+  "late": {
+    "title": "Facture en retard : combien d’amende ?",
+    "lead": "De la date de facture et du délai convenu : le dernier jour pour payer, les mois de retard, et l’amende due au Trésor.",
+    "sparedOver": "Le chapitre des délais de paiement",
+    "spared": "Ne s’applique pas",
+    "sparedUnder": "Il ne s’applique pas sous un chiffre annuel de {{amount}} ou moins, hors taxe.",
+    "fineOver": "L’amende due au Trésor",
+    "dueOver": "Dernier jour pour payer",
+    "fineUnder_one": "Le paiement était dû le {{date}} ; {{count}} mois de retard, commencé.",
+    "fineUnder_other": "Le paiement était dû le {{date}} ; {{count}} mois de retard, le dernier commencé.",
+    "onTime": "Payée avant le {{date}}, elle ne coûte aucune amende.",
+    "big": "Chiffre d’affaires annuel du débiteur",
+    "bigYes": "Plus de {{amount}}",
+    "bigNo": "{{amount}} ou moins",
+    "invoice": "Date de la facture",
+    "sameMonth": "Facturée le mois de la livraison ?",
+    "sameMonthYes": "Oui",
+    "sameMonthNo": "Non, après",
+    "delivered": "Jour de la livraison ou du service",
+    "deliveredNote": "Le délai court du dernier jour de ce mois",
+    "term": "Un délai a-t-il été convenu ?",
+    "termNone": "Non : 60 jours",
+    "termAgreed": "Oui",
+    "termDays": "Délai convenu (jours)",
+    "termOver": "L’accord ne peut dépasser {{max}} jours ; le calcul retient {{max}}.",
+    "termNote": "{{max}} jours au plus après la facture.",
+    "paidQ": "Payée ?",
+    "paidNo": "Pas encore",
+    "paidYes": "Oui",
+    "paidOn": "Jour du paiement",
+    "amount": "Montant impayé à l’échéance, TTC (DH)",
+    "amountNote": "Facture par facture.",
+    "rate": "Taux directeur de Bank Al-Maghrib (%)",
+    "rateNote": "2,25 % depuis la décision du 20 mars 2025, tel que Bank Al-Maghrib le publie ; changez-le s’il a changé à la fin du premier mois.",
+    "linesTitle": "Le calcul ligne à ligne",
+    "from": "Délai depuis le {{date}}, dernier jour",
+    "first": "Le premier mois au taux directeur ({{rate}} %)",
+    "rest_one": "{{count}} mois supplémentaire × {{rate}} %",
+    "rest_other": "{{count}} mois supplémentaires × {{rate}} %",
+    "total": "Total",
+    "treasury": "L’amende va au Trésor, pas à vous ; vous gardez le droit de demander une indemnité de retard.",
+    "law": {
+      "declare": "Au-delà de 2 millions de DH, une déclaration électronique avant la fin du mois suivant chaque trimestre, même sans facture en retard.",
+      "sanction": "Défaut ou retard de déclaration : de 5 000 à 250 000 DH selon le chiffre, et 5 000 par facture incomplète.",
+      "court": "Une facture portée devant le tribunal : l’amende est suspendue jusqu’au jugement définitif.",
+      "claim": "Le créancier peut demander au débiteur une indemnité de retard selon la loi."
+    },
+    "toJourney": "Le chemin pas à pas",
+    "toPage": "Les délais de paiement"
+  },
+  "year": {
+    "title": "Le calendrier de la société",
+    "lead": "De la constitution et de la clôture de l’exercice : chaque échéance à son jour.",
+    "nextOver": "Prochaine : {{what}}",
+    "noneOver": "Aucune échéance à venir",
+    "daysLeft_one": "Encore {{count}} jour",
+    "daysLeft_other": "Encore {{count}} jours",
+    "none": "Toutes passées",
+    "noneUnder": "Changez la clôture pour voir l’année suivante.",
+    "close": "Clôture de l’exercice",
+    "closeNote": "Le plus souvent le 31 décembre",
+    "new": "Société nouvelle ?",
+    "newNo": "Non",
+    "newYes": "Oui",
+    "created": "Jour de la constitution",
+    "createdNote": "La date des statuts",
+    "registered": "Jour de l’immatriculation au RC",
+    "registeredNote": "Les cinq ans du capital en partent",
+    "stops": {
+      "created": {
+        "title": "La constitution",
+        "line": "Les statuts signés."
+      },
+      "declare": {
+        "title": "Déclaration d’existence aux impôts",
+        "line": "30 jours après la constitution."
+      },
+      "register": {
+        "title": "Dernier jour pour le RC",
+        "line": "3 mois après la constitution."
+      },
+      "capital": {
+        "title": "Dernier jour pour libérer le capital",
+        "line": "5 ans après l’immatriculation."
+      },
+      "close": {
+        "title": "Clôture de l’exercice",
+        "line": "Le bilan et l’assemblée en partent."
+      },
+      "taxReturn": {
+        "title": "Déclaration du résultat fiscal",
+        "line": "3 mois après la clôture."
+      },
+      "papers": {
+        "title": "Dernier jour pour envoyer les documents aux associés",
+        "line": "15 jours au moins avant l’assemblée ; ici avant son dernier jour."
+      },
+      "assembly": {
+        "title": "Dernier jour pour l’assemblée générale",
+        "line": "6 mois après la clôture pour approuver les comptes."
+      }
+    },
+    "losses": "Si les capitaux propres tombent sous le quart du capital par des pertes : 3 mois après l’approbation des comptes pour que les associés décident d’une dissolution.",
+    "remind": "Ajouter à l’agenda",
+    "toSarl": "Constituer une SARL",
+    "toTax": "Les impôts de la société"
+  },
+  "instruments": {
+    "form": "Auto-entrepreneur ou société ?",
+    "formLine": "Ce que la loi permet dans votre cas",
+    "cheque": "Le chèque",
+    "chequeLine": "Délais, régularisation sans amende, amende",
+    "late": "Facture en retard",
+    "lateLine": "Le dernier jour pour payer et l’amende au Trésor"
+  }
+}

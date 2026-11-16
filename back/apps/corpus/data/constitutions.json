@@ -1,0 +1,232 @@
+{
+ "about": "Morocco's constitutions since independence, for reference (25 Oct 2026), from Adala's «دساتير المملكة» folder as first published: the 1980 revision of the 1972 constitution and the 1995 revision of the 1992 one are not in these files. Each BO issue and page is the file's own footnote, or (1992, 1996) the issue's first page read in the session from the SGG's archive. The 1962 dahir prints no number: its address is the year's. load_constitutions loads them. Each later one says how it replaces the one before (repeals): read in its text, written as a whole-text repeal (consolidation.Change, source reading). Each referendum date is as the constitution's dahir prints it; «cited_as» is how people name it in a citation («الفصل 19 من الدستور», «… من دستور 1996»). `revisions` (C10 of the constitution review): a revision adopted by referendum, read on its BO page on 25 Oct 2026: 1980's projects annexed to the dahirs that called the referendums (BO 3523 bis, final once adopted, art. 100, from the Constitutional Chamber's proclamation), 1995's promulgated by its dahir (BO 4330); each article's paragraph as printed, or the words it changes where the BO prints «باقي الفقرة لا تغيير فيه». `french` (C9): the official French in the French BO's edition, read with Tesseract by load_bo_french (pages by their printed folios, `start` the words its text opens with); `align` numbers the articles by the Arabic they say, for the 1960s' and 1970s' type.",
+ "constitutions": [
+  {
+   "year": 1962,
+   "file": "sources/adala/constitution_1962.pdf",
+   "uri": "/akn/ma/act/dahir/constitution-1962",
+   "signed": "1962-12-14",
+   "issue": "2616 مكرر",
+   "published": "1962-12-19",
+   "page": 2994,
+   "in_force": false,
+   "referendum": "1962-12-07",
+   "cited_as": "دستور 1962",
+   "french": {
+    "file": "issues/bo_fr/BO_2616-bis_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/1962/bo_2616-bis_fr.pdf",
+    "issue": "2616-bis",
+    "date": "1962-12-19",
+    "pages": "153-158",
+    "start": "AMBULE",
+    "title": "Dahir de promulgation et texte de la Constitution",
+    "align": true
+   }
+  },
+  {
+   "year": 1970,
+   "file": "sources/adala/constitution_1970.pdf",
+   "uri": "/akn/ma/act/dahir/1-70-177",
+   "signed": "1970-07-31",
+   "issue": "3013 مكرر",
+   "published": "1970-08-01",
+   "page": 1930,
+   "in_force": false,
+   "repeals": {
+    "article": "الفصل الثاني من الظهير الشريف رقم 1.70.177",
+    "clause": "يلغى الدستور الصادر الأمر بتنفيذه يوم 17 رجب 1382 (14 دجنبر 1962)."
+   },
+   "referendum": "1970-07-24",
+   "cited_as": "دستور 1970",
+   "french": {
+    "file": "issues/bo_fr/BO_3013-bis_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/1970/bo_3013-bis_fr.pdf",
+    "issue": "3013-bis",
+    "date": "1970-08-01",
+    "pages": "1106-1111",
+    "start": "AMBULE",
+    "title": "Dahir n° 1-70-177 du 27 joumada I 1390 (31 juillet 1970) portant promulgation de la Constitution",
+    "align": true
+   }
+  },
+  {
+   "year": 1972,
+   "file": "sources/adala/constitution_1972.pdf",
+   "uri": "/akn/ma/act/dahir/1-72-061",
+   "signed": "1972-03-10",
+   "issue": "3098",
+   "published": "1972-03-15",
+   "page": 626,
+   "in_force": false,
+   "repeals": {
+    "article": "الفصل 103",
+    "clause": "يلغى الدستور الصادر الأمر بتنفيذه بمقتضى الظهير الشريف رقم 1.70.177 بتاريخ 27 جمادى الأولى 1390 (31 يوليوز 1970)."
+   },
+   "referendum": "1972-03-01",
+   "cited_as": "دستور 1972",
+   "revisions": [
+    {
+     "dahir": "1-80-271",
+     "title": "ظهير شريف رقم 1.80.271 بتاريخ 23 جمادى الآخرة 1400 (9 مايو 1980) بإجراء استفتاء بشأن مشروع يرمي إلى مراجعة الفصل 21 من الدستور",
+     "issue": "3523 bis",
+     "page": 586,
+     "published": "1980-05-09",
+     "referendum": "1980-05-23",
+     "effective": "1980-06-03",
+     "effective_words": "تصير المراجعة نهائية بعد إقرارها بالاستفتاء (الفصل 100)؛ أعلنت الغرفة الدستورية نتيجة الاستفتاء بقرارها رقم 33 بتاريخ 3 يونيو 1980 (الجريدة الرسمية عدد 3528)",
+     "articles": [
+      {
+       "number": "21",
+       "paragraph": 1,
+       "wording": "يعتبر الملك غير بالغ سن الرشد قبل نهاية السنة السادسة عشرة من عمره، والى أن يبلغ سن الرشد يمارس مجلس وصاية اختصاصات العرش وحقوقه الدستورية باستثناء ما يتعلق منها بمراجعة الدستور، ويعمل مجلس الوصاية كهيئة استشارية بجانب الملك حتى يدرك تمام السنة العشرين من عمره."
+      },
+      {
+       "number": "21",
+       "paragraph": 2,
+       "wording": "يرأس مجلس الوصاية الرئيس الاول للمجلس الاعلى ويتركب، بالاضافة الى رئيسه، من رئيس مجلس النواب ورئيس المجلس العلمي الاقليمي لمدينة الرباط وعشر شخصيات يعينهم الملك بمحض اختياره."
+      }
+     ]
+    },
+    {
+     "dahir": "1-80-272",
+     "title": "ظهير شريف رقم 1.80.272 بتاريخ 23 جمادى الآخرة 1400 (9 مايو 1980) بإجراء استفتاء بشأن مشروع يرمي إلى مراجعة الفصلين 43 و95 من الدستور",
+     "issue": "3523 bis",
+     "page": 586,
+     "published": "1980-05-09",
+     "referendum": "1980-05-30",
+     "effective": "1980-06-13",
+     "effective_words": "تصير المراجعة نهائية بعد إقرارها بالاستفتاء (الفصل 100)؛ أعلنت الغرفة الدستورية نتيجة الاستفتاء بقرارها رقم 37 بتاريخ 13 يونيو 1980 (الجريدة الرسمية عدد 3536)",
+     "articles": [
+      {
+       "number": "43",
+       "paragraph": 1,
+       "printed": "ينتخب اعضاء مجلس النواب لمدة ست سنوات . . . (باقي الفقرة لا تغيير فيه)",
+       "words": [
+        [
+         "لمدة أربع سنوات",
+         "لمدة ست سنوات"
+        ]
+       ]
+      },
+      {
+       "number": "43",
+       "paragraph": 3,
+       "wording": "ويجرى انتخاب رئيس مجلس النواب واعضاء مكتبه في بداية دورة اكتوبر وينتخب الرئيس لمدة ثلاث سنوات وباقي اعضاء المكتب لمدة سنة واحدة، وينتخب المكتب على اساس التمثيل النسبي لكل فريق."
+      },
+      {
+       "number": "95",
+       "paragraph": 2,
+       "wording": "- ثلاثة اعضاء يعينون بظهير شريف لمدة النيابة التشريعية؛"
+      }
+     ]
+    }
+   ],
+   "french": {
+    "file": "issues/bo_fr/BO_3098_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/1972/bo_3098_fr.pdf",
+    "issue": "3098",
+    "date": "1972-03-15",
+    "pages": "456-461",
+    "start": "AMBULE",
+    "title": "Dahir n° 1-72-061 du 23 moharrem 1392 (10 mars 1972) portant promulgation de la Constitution",
+    "align": true
+   }
+  },
+  {
+   "year": 1992,
+   "file": "sources/adala/constitution_1992.pdf",
+   "uri": "/akn/ma/act/dahir/1-92-155",
+   "signed": "1992-10-09",
+   "issue": "4172",
+   "published": "1992-10-14",
+   "page": 1247,
+   "in_force": false,
+   "repeals": {
+    "article": "",
+    "clause": "ينفذ وينشر بالجريدة الرسمية على ظهيرنا الشريف هذا نص مراجعة الدستور الذي تم إقراره عن طريق الاستفتاء المجرى يوم الجمعة 6 ربيع الأول 1413 (4 سبتمبر 1992)",
+    "note": "A revision promulgated whole: its text takes the place of the constitution of 1972; the dahir prints no repealing article."
+   },
+   "referendum": "1992-09-04",
+   "cited_as": "دستور 1992",
+   "revisions": [
+    {
+     "dahir": "1-95-201",
+     "title": "ظهير شريف رقم 1.95.201 صادر في 21 من جمادى الأولى 1416 (17 أكتوبر 1995) بتنفيذ نص مراجعة الفقرة الثالثة من الفصل 49 من الدستور",
+     "issue": "4330",
+     "page": 2737,
+     "published": "1995-10-25",
+     "referendum": "1995-09-15",
+     "effective": "1995-10-25",
+     "effective_words": "",
+     "articles": [
+      {
+       "number": "49",
+       "paragraph": 3,
+       "wording": "إذا لم يتم في نهاية السنة المالية التصويت على قانون المالية أو صدور الأمر بتنفيذه بسبب إحالته إلى المجلس الدستوري تطبيقا للفصل 79، فإن الحكومة تفتح بمرسوم الاعتمادات اللازمة لسير المرافق العمومية والقيام بالمهام المنوطة بها على أساس أحكام النص المعروض بقصد المصادقة عليه."
+      }
+     ]
+    }
+   ],
+   "french": {
+    "file": "issues/bo_fr/BO_4173_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/1992/bo_4173_fr.pdf",
+    "issue": "4173",
+    "date": "1992-10-21",
+    "pages": "420-428",
+    "start": "AMBULE",
+    "title": "Dahir n° 1-92-155 du 11 rebia II 1413 (9 octobre 1992) portant promulgation du texte de la Constitution révisée"
+   }
+  },
+  {
+   "year": 1996,
+   "file": "sources/adala/constitution_1996.pdf",
+   "uri": "/akn/ma/act/dahir/1-96-157",
+   "signed": "1996-10-07",
+   "issue": "4420",
+   "published": "1996-10-10",
+   "page": 2281,
+   "in_force": false,
+   "repeals": {
+    "article": "",
+    "clause": "ينفذ وينشر بالجريدة الرسمية عقب ظهيرنا الشريف هذا نص الدستور المراجع الذي تم إقراره عن طريق الاستفتاء المجرى يوم الجمعة 28 من ربيع الآخر 1417 (13 سبتمبر 1996)",
+    "note": "A revision promulgated whole: its text takes the place of the constitution of 1992; the dahir prints no repealing article."
+   },
+   "referendum": "1996-09-13",
+   "cited_as": "دستور 1996",
+   "french": {
+    "file": "issues/bo_fr/BO_4420-bis_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/1996/bo_4420-bis_fr.pdf",
+    "issue": "4420-bis",
+    "date": "1996-10-10",
+    "pages": "644-655",
+    "start": "AMBULE",
+    "title": "Dahir n° 1-96-157 du 23 joumada I 1417 (7 octobre 1996) portant promulgation du texte de la Constitution révisée"
+   }
+  },
+  {
+   "year": 2011,
+   "file": "samples/adala/adala_16.pdf",
+   "uri": "/akn/ma/act/dahir/1-11-91",
+   "signed": "2011-07-29",
+   "issue": "5964 مكرر",
+   "published": "2011-07-30",
+   "page": 3600,
+   "in_force": true,
+   "repeals": {
+    "article": "الفصل 180",
+    "clause": "مع مراعاة المقتضيات الانتقالية الواردة في هذا الباب، ينسخ نص الدستور المراجع الصادر بتنفيذه الظهير الشريف رقم 1.96.157 المؤرخ في 23 من جمادى الأولى 1417 (7 أكتوبر 1996)."
+   },
+   "referendum": "2011-07-01",
+   "cited_as": "الدستور",
+   "french": {
+    "file": "issues/bo_fr/BO_5964-bis_fr.pdf",
+    "url": "https://www.sgg.gov.ma/BO/bo_fr/2011/bo_5964-bis_fr.pdf",
+    "issue": "5964-bis",
+    "date": "2011-07-30",
+    "pages": "1903-1928",
+    "start": "PREAMBULE",
+    "title": "Dahir n° 1-11-91 du 27 chaabane 1432 (29 juillet 2011) portant promulgation du texte de la Constitution"
+   }
+  }
+ ]
+}

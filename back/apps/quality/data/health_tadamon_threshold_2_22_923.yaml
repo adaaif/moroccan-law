@@ -1,0 +1,8 @@
+# Decree 2.22.923 (the AMO Tadamon eligibility threshold) as BO 7147 bis (30 Nov 2022) prints it. The article the health
+# topic cites (art. 1, p. 7681) was read word by word against the page image on 27 Oct 2026 (the health review,
+# S4): it reads as printed, the threshold 9,3264284 included. Kept so the reading is on record.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_tadamon_threshold_2_22_923.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-22-923
+document: issues/bo_ar/BO_7147-bis_ar.pdf
+read_on: '2026-10-27'
+fixes: []

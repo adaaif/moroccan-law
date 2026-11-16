@@ -1,0 +1,164 @@
+# «الإعدام في القانون المغربي»: the blog's twentieth post (S12 of the first-principles review, 6 Nov 2026: «Yes», C4
+# as recommended: documentary, every line a quoted article; built 7 Nov 2026). No position: every sentence is an article
+# or a report the Bulletin printed. The penal code is read in our copy (Adala's, 2024) and each article that names
+# the death penalty is found on the page of its first printing (BO 2640 bis, 5 June 1963) or of the law that added it
+# (03.03, BO 5112); the procedure is the code of criminal procedure as printed (BO 5078, 2003) and as amended (03.23, BO
+# 7437, 2025); the figures are the CNDH's annual reports, printed in the Bulletin. A person checks every quote on its
+# page before the post is published.
+slug: death-penalty
+number: 20
+status: draft
+date: null
+counted_on: 2026-11-07
+title:
+  ar: "الإعدام في القانون المغربي: 30 فصلا في القانون الجنائي، وظهير من 1959 على بيع طعام خطر"
+  fr: "La peine de mort dans la loi marocaine : 30 articles du code pénal, et un dahir de 1959 sur la vente d’aliments dangereux"
+lead:
+  ar: "يعاقب القانون الجنائي بالإعدام في 30 فصلا، 28 منها مكتوبة منذ صدوره سنة 1962. ويعاقب به قانون القضاء العسكري في 5 مواد، وظهير من 1961 على تخريب السكك الحديدية إذا نتج عنه قتل، وظهير من 1959 على صنع طعام خطر على الصحة أو بيعه، ولو قبل صدوره. ولم يُنفَّذ حكم بالإعدام منذ 1993، كما كتب المجلس الوطني لحقوق الإنسان في تقريره المنشور بالجريدة الرسمية، وكان في السجون 86 محكوما به في نهاية 2024."
+  fr: "Le code pénal punit de mort dans 30 articles, dont 28 y sont écrits depuis sa promulgation en 1962. Le code de justice militaire la prévoit dans 5 articles, un dahir de 1961 pour le sabotage d’une voie ferrée qui tue, et un dahir de 1959 pour qui fabrique ou vend un aliment dangereux pour la santé, même avant sa publication. Aucune exécution n’a eu lieu depuis 1993, écrit le Conseil national des droits de l’Homme dans son rapport publié au Bulletin officiel ; 86 condamnés à mort étaient en prison fin 2024."
+
+# The code as the site holds it (Adala's 2024 copy), its first printing, and the groups its articles fall in, each from its
+# first article: the general provisions, books one and two, the ten titles of book three and the contraventions.
+code: {akn: /akn/ma/act/dahir/1-59-413, issue: 2640, bis: true, signed: "1962-11-26", printed: "1963-06-05"}
+groups:
+  - {key: general, from: art_1}
+  - {key: penalties, from: art_13}
+  - {key: applying, from: art_110}
+  - {key: state, from: art_163}
+  - {key: terror, from: art_218-1}
+  - {key: freedoms, from: art_219}
+  - {key: officials, from: art_233}
+  - {key: order, from: art_263}
+  - {key: security, from: art_293}
+  - {key: forgery, from: art_334}
+  - {key: persons, from: art_392}
+  - {key: family, from: art_449}
+  - {key: property, from: art_505}
+  - {key: data, from: art_607-3}
+  - {key: petty, from: art_608}
+
+# Every article of the code whose words name the death penalty. `death`: it punishes an act with death; `rule`: it says
+# how the penalty is ranked, softened or replaced. `page`: where its words stand in the 1963 printing (`was`: the
+# article's number there); the terrorism articles came with law 03.03 (BO 5112, 2003).
+articles:
+  - {n: "16", kind: rule, page: 1255}
+  - {n: "41", kind: rule, page: 1257}
+  - {n: "147", kind: rule, page: 1266}
+  - {n: "155", kind: death, page: 1267}
+  - {n: "163", kind: death, page: 1267}
+  - {n: "165", kind: death, page: 1267}
+  - {n: "167", kind: death, page: 1268}
+  - {n: "181", kind: death, page: 1268}
+  - {n: "182", kind: death, page: 1268}
+  - {n: "185", kind: death, page: 1269}
+  - {n: "190", kind: death, page: 1270}
+  - {n: "201", kind: death, page: 1271}
+  - {n: "202", kind: death, page: 1271}
+  - {n: "203", kind: death, page: 1271}
+  - {n: "218-3", kind: death, since: 2003, issue: 5112, page: 1756, akn: /akn/ma/act/loi/3-03}
+  - {n: "218-7", kind: death, since: 2003, issue: 5112, page: 1756, akn: /akn/ma/act/loi/3-03}
+  - {n: "218-9", kind: rule, since: 2003, issue: 5112, page: 1756, akn: /akn/ma/act/loi/3-03}
+  - {n: "235", kind: death, page: 1274}
+  - {n: "267", kind: death, page: 1277}
+  - {n: "392", kind: death, page: 1288}
+  - {n: "393", kind: death, page: 1288}
+  - {n: "396", kind: death, page: 1288}
+  - {n: "398", kind: death, page: 1288}
+  - {n: "399", kind: death, page: 1288}
+  - {n: "410", kind: death, page: 1290}
+  - {n: "411", kind: death, page: 1290}
+  - {n: "412", kind: death, page: 1291}
+  - {n: "423", kind: rule, page: 1291}
+  - {n: "438", kind: death, page: 1292, was: "439"}
+  - {n: "474", kind: death, page: 1296}
+  - {n: "572", kind: rule, page: 1305}
+  - {n: "580", kind: death, page: 1306}
+  - {n: "584", kind: death, page: 1306}
+  - {n: "588", kind: death, page: 1306}
+  - {n: "590", kind: death, page: 1306}
+  - {n: "591", kind: death, page: 1306}
+
+# The other texts in force that punish with death, each article as printed.
+others:
+  military:
+    akn: /akn/ma/act/loi/108-13
+    number: "108.13"
+    issue: 6322
+    date: "2015-01-01"
+    arts:
+      - {n: "162", page: 26, words: "يعاقب بالإعدام مع التجريد من الرتبة العسكرية كل عسكري أو شبه عسكري فر إلى صفوف العدو أو إلى عصابة ثائرة أو جماعة ثائرة"}
+      - {n: "163", page: 26, words: "يعاقب بالإعدام وقت الحرب أو في مواقع العمليات العسكرية مع التجريد من الرتبة العسكرية … من فر من الجندية مع التآمر أمام العدو"}
+      - {n: "170", page: 28, words: "يعاقب بالإعدام كل تمرد أمام العدو"}
+      - {n: "171", page: 28, words: "يعاقب بالإعدام مع التجريد من الرتبة العسكرية كل عسكري أو شبه عسكري يمتنع عن الامتثال للأمر بالزحف على العدو"}
+      - {n: "206", page: 33, words: "يعاقب بالإعدام وقت الحرب، كل من ترأس عصابة مسلحة أو تولى فيها مهمة أو قيادة ما … بقصد الإعداد لتغيير النظام أو الاستيلاء على جزء من التراب الوطني"}
+  railway:
+    akn: /akn/ma/act/dahir/1-60-110
+    number: "1.60.110"
+    art: "9"
+    issue: 2533
+    page: 2095
+    date: "1961-05-12"
+    words: "كل من قام عمدا بتدمير خطوط أو أجهزة السكة الحديدية … واذا ما نجم عن ذلك قتل أو جرح، يعاقب المجرم في الحالة الاولى بالاعدام"
+  food:
+    akn: /akn/ma/act/dahir/1-59-380
+    number: "1.59.380"
+    issue: 2454
+    page: 3203
+    date: "1959-11-06"
+    signed: "1959-10-29"
+    art1: "يعاقب بالاعدام ـ الاشخاص الذين قاموا عن تبصر قصد الاتجار بصنع منتوجات أو مواد معدة للتغذية البشرية وخطرة على الصحة العمومية أو باشروا مسكها أو توزيعها أو عرضها للبيع أو بيعها"
+    art2: "يعاقب عن الجرائم المبينة فى الفصل الاول ولو سبق اقترافها تاريخ صدور ظهيرنا الشريف هذا"
+    crop: {left: 0.5169, top: 0.4659, right: 0.9430, bottom: 0.8131, ratio: 1.2506}
+  # The victims, as the Bulletin names them: the order applying dahir 1.60.231's extra stamp duty for them.
+  victims:
+    issue: 2519
+    page: 285
+    date: "1961-02-03"
+    number: "1.60.231"
+    words: "المحدث بمقتضاه لفائدة المصابين بالزيوت المسمومة حق تنبر اضافى فى وصـولات التصريح بالعربـات ذات المحـرك"
+
+# From the sentence to the burial, as the code of criminal procedure (22.01) and the prisons' decree (2.00.485) write it,
+# in that order. `was`: what the 1962 penal code or the 1959 dahir said first.
+steps:
+  - {key: unanimity, akn: /akn/ma/act/loi/22-01, art: "430", issue: 7437, page: 6969, since: 2025,
+     words: "لا يمكن النطق بعقوبة الإعدام إلا بإجماع القضاة الذين تتألف منهم هيئة الحكم، ويشار إلى الإجماع في منطوق الحكم"}
+  - {key: minister, akn: /akn/ma/act/loi/22-01, art: "601", issue: 5078, page: 482,
+     words: "يتعين على النيابة العامة أن تنهي إلى علم وزير العدل كل قرار بعقوبة الإعدام بمجرد صدوره"}
+  - {key: proposal, akn: /akn/ma/act/loi/22-01, art: "596", issue: 7437, page: 7002, since: 2025,
+     words: "يتعين عليه تقديم مقترحات للعفو التلقائي بالنسبة للأشخاص المحكوم عليهم بالإعدام"}
+  - {key: cell, akn: /akn/ma/act/decret/2-00-485, art: "143", issue: 4848, page: 3042,
+     words: "يخضع المحكوم عليهم بالإعدام لنظام الاعتقال الانفرادي حسب الإمكان"}
+  - {key: never, akn: /akn/ma/act/decret/2-00-485, art: "145", issue: 4848, page: 3043,
+     words: "يمنع في أي حال من الأحوال تبليغ المحكوم عليه بالإعدام بقرار رفض طلب العفو"}
+  - {key: pardon, akn: /akn/ma/act/loi/22-01, art: "602", issue: 5078, page: 482,
+     words: "لا يمكن تنفيذ عقوبة الإعدام إلا بعد رفض طلب العفو"}
+  - {key: pregnant, akn: /akn/ma/act/loi/22-01, art: "602", issue: 5078, page: 482,
+     words: "إذا كانت المحكوم عليها امرأة ثبت حملها، فإنها لا تعدم إلا بعد مرور سنتين على وضع حملها",
+     was: {issue: 2640, bis: true, page: 1255, art: "21", year: 1962, words: "لا تعدم الا بعد أن تضع حملها باربعين يوما"}}
+  - {key: order, akn: /akn/ma/act/loi/22-01, art: "602", issue: 5078, page: 482,
+     words: "تنفذ عقوبة الإعدام بأمر من وزير العدل رميا بالرصاص، وتقوم بذلك السلطة العسكرية"}
+  - {key: witnesses, akn: /akn/ma/act/loi/22-01, art: "603", issue: 5078, page: 483,
+     words: "لا يكون التنفيذ علنيا إلا إذا قرر وزير العدل ذلك"}
+  - {key: posted, akn: /akn/ma/act/loi/22-01, art: "605", issue: 5078, page: 483,
+     words: "تعلق مباشرة بعد التنفيذ نسخة من هذا المحضر بباب المؤسسة السجنية التي وقع فيها التنفيذ وتبقى معلقة لمدة أربع وعشرين ساعة"}
+  - {key: press, akn: /akn/ma/act/loi/22-01, art: "606", issue: 5078, page: 483,
+     words: "لا يمكن أن ينشر عن طريق الصحافة أي بيان أو مستند يتعلق بالتنفيذ ما عدا المحضر المذكور، وإلا تعرض المخالف لغرامة تتراوح بين 10.000 و60.000 درهم",
+     was: {issue: 2435, page: 1951, art: "8", year: 1959, akn: /akn/ma/act/dahir/1-59-023, words: "بغرامة يتراوح قدرها بين 20.000 و 2.000.000 من الفرنكات"}}
+  - {key: body, akn: /akn/ma/act/loi/22-01, art: "607", issue: 5078, page: 484,
+     words: "تسلم جثة المحكوم عليه إثر التنفيذ إلى عائلته إذا طلبت ذلك، على أن تلتزم بدفنه في غير علانية"}
+# The nine the execution's article names (art. 603, BO 5078 p. 483), in its order.
+witnesses: [chamber, prosecutor, judge, clerk, lawyers, director, police, doctor, imam]
+
+# The CNDH's annual reports, printed in the Bulletin: the people under a death sentence at each report, its words on
+# the halt since 1993, the pardons, and the vote of December 2024.
+cndh:
+  years:
+    - {year: 2019, n: 70, issue: 6895, bis: true, page: 3603, date: "2020-06-29"}
+    - {year: 2020, n: 74, issue: 7003, bis: true, page: 5262, date: "2021-07-12"}
+    - {year: 2021, n: 78, issue: 7112, bis: true, page: 4863, date: "2022-07-28"}
+    - {year: 2022, n: 83, issue: 7223, page: 6773, date: "2023-08-21"}
+    - {year: 2023, n: 83, issue: 7329, bis: true, page: 5482, date: "2024-08-26"}
+    - {year: 2024, n: 86, issue: 7517, bis: true, page: 3307, date: "2026-06-15"}
+  halt: {issue: 7329, bis: true, page: 5482, words: "المغرب وإن كان قد أوقف تنفيذ عقوبة الإعدام منذ سنة 1993، إلا أنه لم يتخذ خطوات تشريعية فعالة في اتجاه إلغائها، حيث ما زال القضاة يصدرون أحكاما بها"}
+  pardons: {issue: 7223, page: 6773, n: 213, words: "استفادة 213 محكوما بالإعدام من العفو الملكي منذ سنة 2000 إلى غاية نهاية 2022"}
+  vote: {issue: 7517, bis: true, page: 3307, words: "يرحب المجلس بقرار الحكومة بالتصويت على قرار الجمعية العامة للأمم المتحدة الداعي إلى وقف تنفيذ عقوبة الإعدام خلال شهر دجنبر 2024"}

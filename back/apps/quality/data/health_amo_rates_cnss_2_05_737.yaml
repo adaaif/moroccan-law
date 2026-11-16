@@ -1,0 +1,8 @@
+# Decree 2.05.737 setting the AMO coverage rates of the CNSS as Adala's PDF prints it. The cited article (art. 2) was
+# read against the page's image on 27 Oct 2026 (the health review, S4): our text reads as printed, nothing to
+# put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_rates_cnss_2_05_737.yaml` (records nothing).
+text: /ma/decret/2-05-737
+document: sources/adala/amo_rates_cnss_2_05_737.pdf
+read_on: '2026-10-27'
+fixes: []

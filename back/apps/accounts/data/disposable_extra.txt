@@ -1,0 +1,3 @@
+# Our own throwaway / no-inbox domains, on top of the generated list.
+# One domain per line; a sub-domain of a listed domain is caught too.
+# Add a domain the day someone signs up with one the public lists missed.

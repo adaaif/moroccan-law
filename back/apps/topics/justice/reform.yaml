@@ -1,0 +1,81 @@
+# What changed in justice (the justice review): one item per change, its stage said first, its dated official record.
+# Stages: in_force, coming, bill, announced. Checked against the BO and the texts' own dates on 27 Oct 2026; each item is
+# followed on its own.
+
+- key: civil-2026
+  title: {ar: 'قانون المسطرة المدنية الجديد 58.25', fr: 'Le nouveau code de procédure civile 58.25'}
+  stage: in_force
+  stages: &stages
+    - {key: announced, label: {ar: معلن, fr: Annoncé}}
+    - {key: bill, label: {ar: مشروع في البرلمان, fr: Projet au Parlement}}
+    - {key: coming, label: {ar: قانون لم يدخل حيز التنفيذ, fr: Loi pas encore en vigueur}}
+    - {key: in_force, label: {ar: نافذ, fr: En vigueur}}
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ 23 غشت 2026: قانون واحد يعوض قانون 1974 ويضم المحاكم التجارية والإدارية وقضاء القرب المدني، مع عنوان البطاقة الوطنية للتبليغ والإجراءات الإلكترونية.', fr: 'Depuis le 23 août 2026 : une loi unique remplace celle de 1974 et absorbe les juridictions commerciales, administratives et la proximité civile, avec l’adresse de la carte nationale pour les notifications et les procédures en ligne.'}
+  timeline:
+    - date: '2026-02-23'
+      text: {ar: 'نشر القانون 58.25 المتعلق بالمسطرة المدنية في الجريدة الرسمية؛ يدخل حيز التنفيذ بعد ستة أشهر من نشره، وينسخ ظهير 1974 وقانوني المحاكم التجارية والإدارية ومواد من قانون قضاء القرب.', fr: 'Publication au BO de la loi 58.25 relative à la procédure civile ; entrée en vigueur six mois après, abrogation du dahir de 1974, des lois sur les tribunaux de commerce et administratifs et d’articles de la loi sur la proximité.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7485', fr: 'BO n° 7485'}}
+      cites: [/ma/loi/58-25/art_643, /ma/loi/58-25/art_644]
+    - date: '2026-08-23'
+      text: {ar: 'دخول القانون 58.25 حيز التنفيذ؛ وتبقى قواعد الاختصاص القديمة للقضايا الجاهزة للحكم، والآجال التي بدأت، وطرق الطعن في الأحكام الصادرة قبله.', fr: 'Entrée en vigueur de la loi 58.25 ; les anciennes règles de compétence restent pour les affaires en état, les délais en cours, et les voies de recours contre les jugements antérieurs.'}
+      cites: [/ma/loi/58-25/art_643]
+
+- key: criminal-2025
+  title: {ar: 'تعديل المسطرة الجنائية بالقانون 03.23', fr: 'La réforme de la procédure pénale par la loi 03.23'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ 8 دجنبر 2025: المحامي من الساعة الأولى، الحق في الصمت، التسجيل السمعي البصري، سجل إلكتروني للحراسة النظرية، والصلح والوساطة أمام وكيل الملك.', fr: 'Depuis le 8 décembre 2025 : l’avocat dès la première heure, le droit au silence, l’enregistrement audiovisuel, un registre électronique de garde à vue, la conciliation et la médiation devant le procureur.'}
+  timeline:
+    - date: '2025-09-08'
+      text: {ar: 'نشر القانون 03.23 بتغيير وتتميم قانون المسطرة الجنائية في الجريدة الرسمية؛ يدخل حيز التنفيذ بعد ثلاثة أشهر من نشره.', fr: 'Publication au BO de la loi 03.23 modifiant et complétant le code de procédure pénale ; entrée en vigueur trois mois après.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7437', fr: 'BO n° 7437'}}
+      cites: [/ma/loi/3-23/art_2, /ma/loi/3-23/art_3, /ma/loi/3-23/art_6]
+    - date: '2025-12-08'
+      text: {ar: 'دخول القانون 03.23 حيز التنفيذ.', fr: 'Entrée en vigueur de la loi 03.23.'}
+      cites: [/ma/loi/3-23/art_6]
+
+- key: alternatives-2025
+  title: {ar: 'العقوبات البديلة', fr: 'Les peines alternatives'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ غشت 2025: العمل لأجل المنفعة العامة، والمراقبة الإلكترونية، وتقييد بعض الحقوق، والغرامة اليومية، بدل الحبس في الجنح حتى خمس سنوات.', fr: 'Depuis août 2025 : travail d’intérêt général, surveillance électronique, restrictions de droits et jours-amende, au lieu de la prison pour les délits jusqu’à cinq ans.'}
+  timeline:
+    - date: '2024-08-22'
+      text: {ar: 'نشر القانون 43.22 المتعلق بالعقوبات البديلة؛ يدخل حيز التنفيذ بصدور نصوصه التنظيمية في أجل أقصاه سنة.', fr: 'Publication de la loi 43.22 sur les peines alternatives ; entrée en vigueur avec ses textes d’application, dans un an au plus.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7328', fr: 'BO n° 7328'}}
+      cites: [/ma/loi/43-22/art_1, /ma/loi/43-22/art_4]
+    - date: '2025-08-18'
+      text: {ar: 'نشر المرسوم 2.25.386 بتحديد كيفيات تطبيق العقوبات البديلة.', fr: 'Publication du décret 2.25.386 fixant les modalités d’application des peines alternatives.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7431', fr: 'BO n° 7431'}}
+      cites: [/ma/decret/2-25-386/art_2]
+
+- key: lawyers-2026
+  title: {ar: 'قانون مهنة المحاماة الجديد 66.23', fr: 'La nouvelle loi sur la profession d’avocat 66.23'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'منذ 20 غشت 2026: تكليف مكتوب، وصل عن كل مبلغ، الأداء فوق 10.000 درهم بشيك أو إلكترونيا، وآجال للنقيب في الشكايات والأتعاب؛ وينسخ القانون 28.08.', fr: 'Depuis le 20 août 2026 : mission écrite, reçu pour toute somme, paiement au-delà de 10 000 DH par chèque ou en ligne, délais pour le bâtonnier sur les plaintes et honoraires ; la loi 28.08 est abrogée.'}
+  timeline:
+    - date: '2026-08-20'
+      text: {ar: 'نشر القانون 66.23 المتعلق بتنظيم مهنة المحاماة، ودخوله حيز التنفيذ من تاريخ نشره، عدا مواد تنتظر نصوصها التنظيمية.', fr: 'Publication de la loi 66.23 sur la profession d’avocat, en vigueur dès sa publication, sauf des articles qui attendent leurs textes d’application.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7536', fr: 'BO n° 7536'}}
+      cites: [/ma/loi/66-23/art_146]
+
+- key: bailiffs-2025
+  title: {ar: 'قانون المفوضين القضائيين 46.21', fr: 'La loi sur les commissaires de justice 46.21'}
+  stage: in_force
+  stages: *stages
+  checked_on: '2026-10-27'
+  line: {ar: 'نشر في 12 يونيو 2025: القانون 46.21 يعوض القانون 81.03 في تنظيم المفوضين القضائيين الذين يبلغون الاستدعاءات وينفذون الأحكام؛ ومرسومه 2.25.885 في ماي 2026.', fr: 'Publiée le 12 juin 2025 : la loi 46.21 remplace la loi 81.03 pour les commissaires de justice qui notifient et exécutent ; son décret 2.25.885 en mai 2026.'}
+  timeline:
+    - date: '2025-06-12'
+      text: {ar: 'نشر القانون 46.21 المتعلق بتنظيم مهنة المفوضين القضائيين؛ الإحالات إلى القانون 81.03 تصير إحالات إليه.', fr: 'Publication de la loi 46.21 sur la profession de commissaire de justice ; les renvois à la loi 81.03 valent renvois à elle.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7412', fr: 'BO n° 7412'}}
+      cites: [/ma/loi/46-21/art_175]
+    - date: '2026-05-07'
+      text: {ar: 'نشر المرسوم 2.25.885 بتطبيق القانون 46.21.', fr: 'Publication du décret 2.25.885 d’application de la loi 46.21.'}
+      source: {name: {ar: 'الجريدة الرسمية عدد 7506', fr: 'BO n° 7506'}}
+      cites: [/ma/decret/2-25-885/art_1]

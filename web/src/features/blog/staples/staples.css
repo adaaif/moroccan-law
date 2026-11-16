@@ -1,0 +1,110 @@
+/* «الخبز والغازوال» (the fifteenth post). Violet is what the orders printed: the picked staple's line, the litre's
+   staircase. Ink is work: the minutes of minimum wage a litre cost. Hatching is the Bulletin's silence, the years it did
+   not write the price. The five staples are the same quiet grey until one is picked; the bread is picked first. */
+
+.sp { --sp-line: var(--color-ink-soft); --sp-pick: var(--color-stamp); }
+
+/* ── The basket ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 12px; }
+@media (min-width: 640px) { .sp-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.sp-hero-head { display: flex; flex-direction: column; gap: 6px; }
+.sp-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.7rem, 1.4rem + 1.2vw, 2.3rem); line-height: 1.2; text-wrap: balance; }
+.bp:lang(fr) .sp-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.4rem, 1.2rem + 0.9vw, 1.9rem); }
+.sp-how { margin: 0; color: var(--color-ink-soft); max-width: 62ch; }
+.sp-basket svg, .sp-gasoil svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; }
+.sp-gasoil svg { touch-action: pan-y; }
+.sp-gasoil svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.sp-col { stroke: var(--color-rule); stroke-width: 1; }
+.sp-col-day { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--color-ink); }
+.sp-col-issue { font-family: var(--font-ui); font-size: 14px; fill: var(--sp-pick); font-weight: 500; }
+.sp-tick { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.sp-tick.is-unit { font-weight: 600; }
+.sp-tick.is-strong { fill: var(--color-ink); font-weight: 600; }
+.sp-line { cursor: pointer; }
+.sp-hit { fill: none; stroke: transparent; stroke-width: 18; }
+.sp-up, .sp-back { fill: none; stroke: var(--sp-line); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; }
+.sp-basket.is-on .sp-up { animation: sp-draw 900ms cubic-bezier(0.45, 0, 0.2, 1) calc(var(--k) * 90ms) forwards; }
+.sp-basket.is-on .sp-back { animation: sp-draw 700ms cubic-bezier(0.45, 0, 0.2, 1) calc(1300ms + var(--k) * 90ms) forwards; }
+@keyframes sp-draw { to { stroke-dashoffset: 0; } }
+.sp-dot { fill: var(--color-sheet); stroke: var(--sp-line); stroke-width: 2; opacity: 0; }
+.sp-basket.is-on .sp-dot.is-0 { animation: sp-in 200ms ease calc(var(--k) * 90ms) forwards; }
+.sp-basket.is-on .sp-dot.is-1 { animation: sp-in 200ms ease calc(850ms + var(--k) * 90ms) forwards; }
+.sp-basket.is-on .sp-dot.is-2 { animation: sp-in 200ms ease calc(1950ms + var(--k) * 90ms) forwards; }
+@keyframes sp-in { to { opacity: 1; } }
+.sp-peak, .sp-end-pct, .sp-end-name { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.sp-peak { font-size: 16px; font-weight: 700; fill: var(--sp-pick); opacity: 0; }
+.sp-basket.is-on .sp-peak { animation: sp-in 300ms ease 950ms forwards; }
+.sp-end { opacity: 0; }
+.sp-basket.is-on .sp-end { animation: sp-in 300ms ease calc(2050ms + var(--k) * 90ms) forwards; }
+.sp-span path { fill: none; stroke: var(--color-tick); stroke-width: 1.2; }
+.sp-span text { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--color-ink-soft); }
+.sp-span.is-1 text { fill: var(--color-ink); font-weight: 700; }
+.sp-line.is-picked .sp-up, .sp-line.is-picked .sp-back { stroke: var(--sp-pick); stroke-width: 4; }
+.sp-line.is-picked .sp-dot { stroke: var(--sp-pick); stroke-width: 3; }
+.sp-line.is-picked .sp-end-pct, .sp-line.is-picked .sp-end-name { fill: var(--color-ink); font-weight: 700; }
+.sp-line.is-picked .sp-end-pct { fill: var(--sp-pick); }
+.sp-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.sp-chip { min-height: 44px; padding: 6px 16px; border: 1px solid var(--color-rule); border-radius: 999px; background: var(--color-sheet); color: var(--color-ink);
+  font: inherit; font-weight: 600; cursor: pointer; }
+.sp-chip[aria-pressed='true'] { background: var(--sp-pick); border-color: var(--sp-pick); color: var(--color-on-stamp); }
+.sp-pick { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border-radius: var(--radius-control); background: var(--color-paper); }
+.sp-pick-line { margin: 0; font-size: var(--text-body); line-height: 1.7; }
+.sp-pick-orders { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; }
+.sp-pick-day { display: inline-block; min-width: 8.5em; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+
+.sp-share-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.sp-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.sp-share:disabled { opacity: 0.6; }
+
+/* ── A text named ─────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-ref { font-family: var(--font-ui); font-size: var(--text-meta); line-height: 2; }
+.sp-ref > a:first-child { font-weight: 600; }
+.sp-ref-stamp { vertical-align: middle; }
+.sp-quote { margin: 0; padding-inline-start: 16px; border-inline-start: 3px solid var(--sp-pick); font-family: var(--font-law); font-size: var(--text-law);
+  line-height: 1.75; text-wrap: pretty; }
+.sp-quote.is-last { border-inline-start-width: 6px; font-weight: 600; }
+.bp:lang(fr) .sp-quote { font-family: "Source Serif 4", Georgia, serif; font-size: 1.1rem; line-height: 1.7; }
+
+/* ── Two issues ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-ten { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+@media (max-width: 640px) { .sp-ten { grid-template-columns: minmax(0, 1fr); } }
+.sp-issue { display: flex; flex-direction: column; gap: 8px; padding: 12px 14px 10px; border: 1px solid var(--color-rule); border-radius: 6px; background: var(--color-paper); min-width: 0; }
+.sp-issue-mast { display: flex; flex-direction: column; align-items: center; gap: 2px; padding-bottom: 6px; border-bottom: 3px double var(--color-ink); }
+.sp-issue-mast > b { font-family: var(--font-law); font-size: 1.45rem; line-height: 1.2; color: var(--color-ink); }
+.bp:lang(fr) .sp-issue-mast > b { font-family: "Source Serif 4", Georgia, serif; font-size: 1.25rem; }
+.sp-issue-mast > span { align-self: stretch; display: flex; justify-content: space-between; gap: 10px; font-size: var(--text-meta); color: var(--color-ink-soft);
+  font-variant-numeric: tabular-nums; }
+.sp-issue-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.sp-issue-list li { display: grid; grid-template-columns: 4.6em 8.6em minmax(0, 1fr); align-items: baseline; gap: 6px; padding: 4px 0; border-bottom: 1px solid var(--color-rule-soft);
+  font-size: var(--text-meta); }
+.sp-issue-price { display: inline-flex; align-items: baseline; gap: 8px; font-variant-numeric: tabular-nums; }
+.sp-issue-price b { font-size: 1.05rem; }
+.sp-issue-price s { color: var(--color-ink-soft); text-decoration-thickness: 1.5px; }
+.sp-issue-list .sp-ref { line-height: 1.5; min-width: 0; }
+.sp-issue-list .sp-ref-stamp { display: none; }
+
+/* ── Gasoil ───────────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0; padding: 0; list-style: none; font-size: var(--text-meta); }
+.sp-legend li { display: inline-flex; align-items: center; gap: 7px; }
+.sp-legend i { display: inline-block; width: 22px; height: 14px; flex: none; }
+.sp-key-gas { height: 0 !important; border-top: 3px solid var(--sp-pick); }
+.sp-key-min { height: 0 !important; border-top: 3px solid var(--color-ink); }
+.sp-key-away { background: repeating-linear-gradient(45deg, var(--color-tick) 0 2px, transparent 2px 6px); border-radius: 3px; }
+.sp-axis { stroke: var(--color-ink); stroke-width: 1.2; }
+.sp-rule { stroke: var(--color-rule); stroke-width: 1; }
+.sp-hour { stroke: var(--color-ink-soft); stroke-width: 1.2; stroke-dasharray: 3 4; }
+.sp-away { pointer-events: none; }
+.sp-away-line { stroke: var(--color-tick); stroke-width: 2; }
+.sp-away-words { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--color-ink-soft); }
+.sp-gas { fill: none; stroke: var(--sp-pick); stroke-width: 3; stroke-linejoin: round; }
+.sp-gas-dot { fill: var(--sp-pick); stroke: var(--color-sheet); stroke-width: 1.5; }
+.sp-min { fill: none; stroke: var(--color-ink); stroke-width: 2.2; stroke-linejoin: round; }
+.sp-cursor { stroke: var(--color-ink); stroke-width: 1.5; }
+
+.sp-basket.is-on.is-done .sp-up, .sp-basket.is-on.is-done .sp-back { stroke-dashoffset: 0; animation: none; }
+.sp-basket.is-on.is-done .sp-dot, .sp-basket.is-on.is-done .sp-peak, .sp-basket.is-on.is-done .sp-end { opacity: 1; animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .sp-up, .sp-back { stroke-dashoffset: 0; animation: none !important; }
+  .sp-dot, .sp-peak, .sp-end { opacity: 1; animation: none !important; }
+}

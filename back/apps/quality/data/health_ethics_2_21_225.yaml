@@ -1,0 +1,10 @@
+# Decree 2.21.225 (the code of medical ethics) as BO 7002 (8 Jul 2021) prints it, where our reading of the issue
+# misreads it: a running page number glued into an article. Each of the eleven articles the health topic cites (arts 9,
+# 11, 14, 40, 41, 42, 43, 48, 49, 52, 55; pp. 5169–5175) was read word by word against the page images on 27 Oct 2026
+# (the health review, S4); the others read as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_ethics_2_21_225.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-21-225
+document: issues/bo_ar/BO_7002_ar.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [40], wrong: "5173\n2 - الفحوصات", right: "2 - الفحوصات"}   # page number glued in between items 1 and 2, pp. 5172–5173

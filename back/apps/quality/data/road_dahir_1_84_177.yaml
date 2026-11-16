@@ -1,0 +1,22 @@
+# /ma/dahir/1-84-177 as Adala's consolidation (as law 70.24 changed it) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/dahir/1-84-177
+document: sources/road/adala_1_84_177_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [5], wrong: '-1 رأس المال المعتمد كما', right: '1- رأس المال المعتمد كما'}      # p. 7: the page prints «1-», the number before its dash
+  - {arts: [5], wrong: '(الأجر 2 - الأجر 1)[ ×', right: '(الأجر 2 - الأجر 1)] ×'}      # p. 8: the bracket closes «]»
+  - {arts: [5], wrong: 'الأجر :1 هو', right: 'الأجر 1: هو'}      # p. 8: «الأجر 1:», the colon after the number
+  - {arts: [5], wrong: 'الأجر :2 هو', right: 'الأجر 2: هو'}      # p. 8: «الأجر 2:»
+  - {arts: [5], wrong: 'رأس المال :1 هو', right: 'رأس المال 1: هو'}      # p. 8: «رأس المال 1:»
+  - {arts: [5], wrong: 'رأس المال :2 هو', right: 'رأس المال 2: هو'}      # p. 8: «رأس المال 2:»
+  - {arts: [5], wrong: '-2 نسبة عجز', right: '2- نسبة عجز'}      # p. 8: the page prints «2-»
+  - {arts: [8], wrong: 'ثالثة أنصاف', right: 'ثلاثة أنصاف'}      # p. 9: «ثلاثة» (three halves), Adala's «لا» read as «ال» (art. 8 is outside the cited list; read while checking art. 5's minimum)
+  - {arts: [8], wrong: 'ثالثة أمثال', right: 'ثلاثة أمثال'}      # p. 9: «ثلاثة أمثال» (three times)
+notes:
+  - {art: 18, page: 15, what: 'Wrong cut (all of this text): an article whose heading carries a footnote mark of two digits (arts 8, 11, 13, 16, 17, 19, 20, 20 bis, 21, 22, 24, 25, 27, 27 bis) loses the first line of its run-in text to the end of the article before, where it is stored after «. -»; art 20 bis is not an article of its own (its text is inside art 20), art 27 bis sits inside art 27 with the words «المادة السابعة والعشرون مكررة» in mid-sentence, and art 28 ends with the annex''s title. Single-digit marks (arts 1, 1 bis, 2, 4, 5, 6) are cut right. Here: art 18 ends with art 19''s first line «. - يجب على مقاولة التأمين أن تقوم، خلال الستين يوما التالية», which belongs at the head of art 19.'}
+  - {art: 19, page: 15, what: 'Starts mid-sentence: its first line «يجب على مقاولة التأمين أن تقوم، خلال الستين يوما التالية» is at the end of art 18; it ends with art 20''s first line «. - يجوز للمصاب أو للمستحقين من ذويه إثر وفاته، في حالة تفاقم». Its 60, 30 and 30 days read right.'}
+  - {art: 21, page: 16, what: 'Starts mid-sentence: its first line «إذا لم تدفع مقاولة التأمين جميع أو بعض ما عليها من» is at the end of art 20 (after art 20 bis); it ends with art 22''s first line «. - تطبق أحكام المادة 1-279 من القانون رقم 17.99 السالف». Its 30 % and 50 % read right.'}
+  - {art: 23, page: 16, what: 'Ends with art 24''s first line «. - تتقادم طلبات التعويض عن تفاقم الضرر إذا لم تقدم إلى». Its five years, 60 days and 30 days read right.'}
+  - {art: 27, page: 18, what: 'Lacks its opening «لا تطبق أحكام ظهيرنا الشريف هذا المعتبر بمثابة قانون» (stored at the end of art 26), and holds the whole of art 27 bis («. - يحدد الإيراد، بصفة انتقالية، إلى حين نشر النص  المادة السابعة والعشرون مكررة التنظيمي …»), which should be an article of its own: «يحدد الإيراد، بصفة انتقالية، إلى حين نشر النص التنظيمي المشار إليه في المادة السادسة عشرة أعلاه بالجريدة الرسمية، بتطبيق التعريفات المستعملة في تقدير الاحتياطي الحسابي الملزم به النظام الجماعي لمنح رواتب التقاعد المحدث بالظهير الشريف رقم 1.77.216 الصادر بتاريخ 20 من شوال 1397 (4 أكتوبر 1977) المعتبر بمثابة قانون، كما تم تغييره وتتميمه.»'}
+  - {art: 18, page: 14, what: 'Its deadlines read right: fifteen days for the joint medical report, five days to name the insurer''s doctor, five days then fifteen days for the expert.'}
+checked: [1, 1-bis, 5, 6, 8, 9, 18, 19, 21, 23, 27]

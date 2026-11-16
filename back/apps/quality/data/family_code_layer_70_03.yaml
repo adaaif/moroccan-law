@@ -1,0 +1,31 @@
+# The Family Code (law 70.03) read against the pages of the file it came from, the Ministry of Justice's PDF (Adala,
+# samples/adala/adala_118.pdf), on 10 Nov 2026. Its text was set word by word against the Bulletin's own pages
+# (BO 5184 of 5 February 2004, pp. 418-452: `witness_pages`), which found 48 small differences in 386 witnessed
+# articles; each was then read on the printed page of the Ministry's file (300 dpi crops, one-dot differences measured;
+# articles 38 and 39 read a second time). 15 are the text layer's slips, put right below: it turns «لا» and «ال» round
+# («الثالث» for «الثلاث», three divorces), swaps two letters («بنية» for «بينة», a proof) and cuts a word («الم تزو
+# جان»). Article 38 said that suckling forbids what kinship forbids «ولا مصاهرة»; the page prints «والمصاهرة».
+# 19 were the Bulletin reading's own slips or a hamza's seat, and 14 are places where the file prints the site's words
+# and the Bulletin's reading is another real word («بحقه» / «بحقها» in art. 119, «يراه» / «تراه» in art. 248, corrected
+# by BO 5328 of 23 June 2005): left as the file prints them, listed in the review's notes (kept outside the repository).
+# Article 397's «والمح عليها» is cut on the Ministry's own page (the Bulletin reads «والمحال»): left, not a layer slip.
+# Applied by `manage.py apply_page_reading <this file>`; a reload of the text applies them again.
+text: /ma/loi/70-03
+document: samples/adala/adala_118.pdf
+read_on: '2026-11-10'
+fixes:
+  - {arts: [22], wrong: "يكتسب الم تزو جان طبقا", right: "يكتسب المتزوجان طبقا"}   # cut in three, p. 16
+  - {arts: [34], wrong: "منهما بنية،", right: "منهما بينة،"}   # ي and ن swapped: «بينة», a proof, p. 19
+  - {arts: [38], wrong: "النسب ولا مصاهرة.\nيعد", right: "النسب والمصاهرة.\nيعد"}   # turned and cut: the page says affinity forbids as kinship does, p. 20
+  - {arts: [39], wrong: "عليها ثالثا جديدة؛\n4", right: "عليها ثلاثا جديدة؛\n4"}   # turned, p. 20
+  - {arts: [39], wrong: "يبطل الثالث السابقة،", right: "يبطل الثلاث السابقة،"}   # turned, p. 20
+  - {arts: [59], wrong: "بعده ومهن ما", right: "بعده ومنه ما"}   # two letters swapped, p. 27
+  - {arts: [59], wrong: "بعده، ومهن ما", right: "بعده، ومنه ما"}   # two letters swapped, p. 27
+  - {arts: [61], wrong: "طلقها ثالثا؛\n-", right: "طلقها ثلاثا؛\n-"}   # turned, p. 28
+  - {arts: [73], wrong: "له وبا لكتابة،", right: "له وبالكتابة،"}   # cut in two, p. 33
+  - {arts: [126], wrong: "دون الثالث يزيل", right: "دون الثلاث يزيل"}   # turned, p. 45
+  - {arts: [169], wrong: "الشرعي و الأم الحاضنة،", right: "الشرعي والأم الحاضنة،"}   # a space after the waw, p. 55
+  - {arts: [226], wrong: "له و في التقاضي", right: "له وفي التقاضي"}   # a space after the waw, p. 67
+  - {arts: [255], wrong: "ملاحظته خلال في", right: "ملاحظته خللا في"}   # turned, p. 74
+  - {arts: [271], wrong: "يمتد مفع ولها إلى", right: "يمتد مفعولها إلى"}   # cut in two, p. 78
+  - {arts: [327], wrong: "فيها الهالك بعد", right: "فيها الهلاك بعد"}   # turned, p. 89

@@ -1,0 +1,13 @@
+# Law 58.25 (the code of civil procedure) as BO 7485 (23 Feb 2026) prints it, where our text misreads it. Read against
+# the page image on 2026-10-27 (the health review, S4): art. 38 (the administrative courts' jurisdiction, the route
+# of a claim against a public hospital), the article the health topic cites. Its words read as printed; the heading of
+# Part III above it lost its middle line («والأقسام المتخصصة في القضاء الإداري», p. 1226), mended here. Its last words
+# («بالمحاكم الابتدائية») were cut into a heading of their own over art. 38 alone: a heading fix cannot move them, so
+# arts 39–42 still miss them.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_civil_procedure_58_25.yaml`; a reload of the text applies them again.
+text: /ma/loi/58-25
+document: issues/bo_ar/BO_7485_ar.pdf
+read_on: '2026-10-27'
+fixes: []
+headings:
+  - {wrong: "الجزء الثالث: اختصاص المحاكم الابتدائية الإدارية", right: "الجزء الثالث: اختصاص المحاكم الابتدائية الإدارية والأقسام المتخصصة في القضاء الإداري"}   # a heading's line dropped, p. 1226

@@ -1,0 +1,133 @@
+# The tax topic's journeys (the tax review, T12, T13, T17, T18): what happens, step by step, each step answered
+# first and resting on its articles, the limits as the code sets them. Written from the DGI's 2026 edition of the code
+# (unofficial; the BO prevails) and law 47.06. A reader sees a journey once a person has checked it (`manage.py
+# approve_topic tax journeys/<key> --by …`). Steps say what the law says, never what a reader should do in their case.
+
+- key: declare
+  title: {ar: 'التصريح بالدخل: واش خاصني، وإمتى، وكيفاش نسترجع', fr: 'Déclarer ses revenus : faut-il, quand, comment être remboursé'}
+  lead:
+    ar: 'التصريح بالدخل الإجمالي ديال العام اللي فات كيتدار قبل فاتح مارس (وقبل فاتح ماي للدخل المهني). شي ناس معفيين منو، وشي ناس عندهم مصلحة يصرحو باش يسترجعو.'
+    fr: 'La déclaration du revenu global de l’année passée se fait avant le 1er mars (avant le 1er mai pour les revenus professionnels). Certains en sont dispensés ; d’autres ont intérêt à déclarer pour être remboursés.'
+  steps:
+    - title: {ar: 'واش خاصني نصرح؟', fr: 'Dois-je déclarer ?'}
+      answer: {ar: 'ما مطلوبش التصريح من اللي عندو غير أجر واحد كيحجز عليه المشغل، ولا غير دخول بسعر إبرائي، ولا غير معاشات معفية؛ إلا بغا يستافد من خصم ولا شاف راسو خلص بزاف.', fr: 'Ne déclarent pas : qui n’a qu’un salaire retenu par un seul employeur, que des revenus au taux libératoire, ou que des pensions exonérées ; sauf pour obtenir une déduction ou s’il s’estime surtaxé.'}
+      cites: [/ma/code/cgi/art_86]
+    - title: {ar: 'الأجل', fr: 'Le délai'}
+      answer: {ar: 'قبل فاتح مارس للدخول ماشي مهنية (الأجور من عدة مشغلين، الكراء، المعاشات…)، وقبل فاتح ماي للدخل المهني حسب النتيجة الصافية الحقيقية ولا المبسطة.', fr: 'Avant le 1er mars pour les revenus non professionnels (plusieurs employeurs, loyers, pensions…), avant le 1er mai pour les revenus professionnels au résultat net réel ou simplifié.'}
+      cites: [/ma/code/cgi/art_82]
+    - title: {ar: 'شنو كيكون فالتصريح', fr: 'Ce que contient la déclaration'}
+      answer: {ar: 'الهوية والعنوان، رقم البطاقة والتعريف الضريبي، الدخول بأنواعها، وما تحجز فالمنبع ومن طرف من؛ وللكراء: كل مكتري، والعقار ديالو، والمبلغ الإجمالي والصافي.', fr: 'L’identité et l’adresse, les numéros de carte et d’identification fiscale, les revenus par catégorie, ce qui a été retenu à la source et par qui ; pour les loyers : chaque locataire, chaque bien, les montants brut et net.'}
+      cites: [/ma/code/cgi/art_82]
+    - title: {ar: 'الخصومات اللي كتنقص', fr: 'Les déductions'}
+      answer: {ar: 'الأعباء العائلية (600 درهم على كل واحد منذ 2026) وخصومات المادة 28 (مثلا فوائد قرض السكن الرئيسي بشروطها) كيطلبوها فالتصريح.', fr: 'Les charges de famille (600 DH par personne depuis 2026) et les déductions de l’article 28 (par exemple les intérêts d’un prêt pour l’habitation principale, à leurs conditions) se demandent dans la déclaration.'}
+      cites: [/ma/code/cgi/art_74, /ma/code/cgi/art_28]
+    - title: {ar: 'الاسترداد', fr: 'Le remboursement'}
+      answer: {ar: 'إلا كان اللي تحجز فالمنبع أكثر من الضريبة على الدخل الإجمالي ديال العام، كترجع ليك الزيادة تلقائيا من التصريح، قبل نهاية عام التصريح.', fr: 'Si les retenues à la source dépassent l’impôt sur le revenu global de l’année, l’excédent est restitué d’office au vu de la déclaration, avant la fin de l’année de la déclaration.'}
+      cites: [/ma/code/cgi/art_241-bis]
+    - title: {ar: 'إلا تأخرتي', fr: 'En cas de retard'}
+      answer: {ar: 'زيادة 5% إلا صرحتي داخل 30 يوما من الأجل، و15% من بعد، و20% إلا فرضاتها الإدارة تلقائيا؛ وما تقلش على 500 درهم.', fr: 'Une majoration de 5 % sous 30 jours de retard, 15 % au-delà, 20 % en cas d’imposition d’office ; jamais moins de 500 dirhams.'}
+      cites: [/ma/code/cgi/art_184]
+      tool: tools/late
+
+- key: sell
+  for: [property, rent, abroad]
+  title: {ar: 'بيع دار ولا أرض: الربح والتصريح والأداء', fr: 'Vendre un logement ou un terrain : le profit, la déclaration, le paiement'}
+  lead:
+    ar: 'الضريبة على الربح العقاري 20% من الربح، وما تقلش على 3% من ثمن البيع ولو ما ربحتي والو؛ التصريح والأداء داخل 30 يوما من البيع. والسكن الرئيسي بعد خمس سنين معفي.'
+    fr: 'L’impôt sur le profit foncier est de 20 % du profit, jamais moins de 3 % du prix, même sans profit ; déclaration et paiement dans les 30 jours de la vente. L’habitation principale après cinq ans est exonérée.'
+  day: {ar: 'نهار البيع؟', fr: 'Le jour de la vente ?'}
+  steps:
+    - title: {ar: 'واش معفي؟', fr: 'Est-ce exonéré ?'}
+      answer: {ar: 'معفي: السكن الرئيسي اللي سكنتي فيه خمس سنين على الأقل (مرة وحدة فخمس سنين، والأرض حتى خمس مرات المساحة المبنية)؛ والسكن الاجتماعي بعد أربع سنين؛ والبيوع اللي ما كتفوتش 140.000 درهم فالعام؛ والهبة فالعائلة.', fr: 'Exonérés : l’habitation principale occupée au moins cinq ans (une fois en cinq ans, le terrain jusqu’à cinq fois la surface bâtie) ; le logement social après quatre ans ; les cessions de 140 000 dirhams au plus dans l’année ; la donation en famille.'}
+      cites: [/ma/code/cgi/art_63]
+    - title: {ar: 'الربح', fr: 'Le profit'}
+      answer: {ar: 'الربح هو ثمن البيع ناقص مصاريف البيع، ناقص ثمن الشرا مع مصاريفو (15% جزافيا إلا ما بينتيش أكثر) والأشغال، والثمن هاد كيتعاود يتقيم بمعامل كتحسبو الإدارة حسب عام الشرا.', fr: 'Le profit est le prix de vente moins les frais de cession, moins le prix d’achat avec ses frais (15 % forfaitaires sauf justification supérieure) et les travaux, ce coût étant réévalué par un coefficient que l’administration calcule selon l’année d’achat.'}
+      cites: [/ma/code/cgi/art_65]
+      tool: tools/sell
+    - title: {ar: 'السعر والحد الأدنى', fr: 'Le taux et le minimum'}
+      answer: {ar: '20% من الربح الصافي، وما تقلش على 3% من ثمن البيع؛ والسكن الرئيسي المعفي كيخلص 3% على الجزء من الثمن اللي فوق 4 ملايين درهم.', fr: '20 % du profit net, jamais moins de 3 % du prix ; l’habitation principale exonérée paie 3 % sur la part du prix au-delà de 4 millions de dirhams.'}
+      cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_144]
+    - title: {ar: 'التصريح والأداء', fr: 'Déclarer et payer'}
+      answer: {ar: 'التصريح بالربح لقابض إدارة الضرائب وأداء الضريبة معاه، داخل 30 يوما من البيع، مع الوثائق اللي كتبين مصاريف الشرا والأشغال.', fr: 'La déclaration du profit au receveur de l’administration fiscale, avec le paiement, dans les 30 jours de la vente, accompagnée des pièces justifiant les frais d’achat et les travaux.'}
+      cites: [/ma/code/cgi/art_83, /ma/code/cgi/art_173]
+      delay: {days: 30, from: {ar: 'من تاريخ البيع', fr: 'à compter de la date de la cession'}}
+      papers: checklists/sell-papers
+    - title: {ar: 'إلا صححات الإدارة الثمن', fr: 'Si l’administration rectifie le prix'}
+      answer: {ar: 'المفتش يقدر يصحح الثمن ولا يقدر ثمن الشرا والأشغال اللي ما تبيناتش؛ كيبلغك، وعندك 30 يوما باش ترد.', fr: 'L’inspecteur peut rectifier le prix ou estimer le coût d’achat et les travaux non justifiés ; il vous le notifie, et vous avez 30 jours pour répondre.'}
+      cites: [/ma/code/cgi/art_224, /ma/code/cgi/art_220]
+      next: journeys/notice
+  ends:
+    icon: sold
+    paper: {ar: 'وصل أداء الضريبة على الربح العقاري', fr: 'La quittance de l’impôt sur le profit foncier'}
+    cites: [/ma/code/cgi/art_173]
+
+- key: rent-out
+  for: [rent, property, abroad]
+  title: {ar: 'كنكري دار ولا محل: شنو خاصني', fr: 'Je donne un bien en location : ce que je dois'}
+  lead:
+    ar: 'الكراء دخل عقاري: كيتنقص منو 40% وكيتزاد للدخل الإجمالي فالتصريح قبل فاتح مارس، إلا ما كانش محجوز بسعر إبرائي.'
+    fr: 'Le loyer est un revenu foncier : abattu de 40 %, il s’ajoute au revenu global déclaré avant le 1er mars, sauf retenue au taux libératoire.'
+  steps:
+    - title: {ar: 'شنو كيتحسب', fr: 'Ce qui compte'}
+      answer: {ar: 'المبلغ الإجمالي ديال الكراء، مع المصاريف اللي على المالك وحطيتيها على المكتري (بحال الإصلاحات الكبرى)، وناقص اللي خلصتي على المكتري؛ ومن بعد ناقص 40%.', fr: 'Le montant brut des loyers, augmenté des charges du propriétaire mises sur le locataire (comme les grosses réparations), diminué de celles payées pour lui ; puis moins 40 %.'}
+      cites: [/ma/code/cgi/art_64]
+      tool: tools/rent
+    - title: {ar: 'المكتري شركة ولا إدارة', fr: 'Un locataire société ou administration'}
+      answer: {ar: 'كيحجز الضريبة فالمنبع: 10% إلا كان الكراء الإجمالي أقل من 120.000 درهم فالعام، و15% إلا كان أكثر.', fr: 'Il retient l’impôt à la source : 10 % si le loyer brut annuel est inférieur à 120 000 dirhams, 15 % au-delà.'}
+      cites: [/ma/code/cgi/art_160-bis, /ma/code/cgi/art_73]
+    - title: {ar: 'السعر الإبرائي 20%', fr: 'Le taux libératoire de 20 %'}
+      answer: {ar: 'اللي كراه محجوز فالمنبع يقدر يختار 20% على المبلغ الإجمالي وصافي: طلب إلكتروني للإدارة، ونسخة من الوصل للمكتري 30 يوما قبل أجل الكراء ديال الشهر الموالي؛ وكيبدا من الشهر اللي من بعد.', fr: 'Celui dont le loyer est retenu à la source peut opter pour 20 % du brut, pour solde : une demande électronique à l’administration, une copie du récépissé au locataire 30 jours avant l’échéance du loyer du mois suivant ; l’option court dès le mois d’après.'}
+      cites: [/ma/code/cgi/art_64, /ma/code/cgi/art_73]
+    - title: {ar: 'التصريح', fr: 'La déclaration'}
+      answer: {ar: 'قبل فاتح مارس، كل مكتري وكل عقار والمبلغ الإجمالي والصافي؛ والجزء المحجوز بالسعر الإبرائي 20% ما كيتصرحش.', fr: 'Avant le 1er mars, chaque locataire, chaque bien, les montants brut et net ; la part retenue au taux libératoire de 20 % ne se déclare pas.'}
+      cites: [/ma/code/cgi/art_82, /ma/code/cgi/art_86]
+      next: journeys/declare
+
+- key: notice
+  title: {ar: 'توصلت برسالة من الضرائب', fr: 'J’ai reçu une lettre des impôts'}
+  lead:
+    ar: 'رسالة التصحيح كتعطيك 30 يوما باش ترد؛ ومن بعد اللجان والمحكمة، كل مرحلة بأجلها. وإلا شفتي الضريبة غالطة بلا رسالة، عندك 6 أشهر للتظلم.'
+    fr: 'Une lettre de rectification vous donne 30 jours pour répondre ; puis les commissions et le juge, chaque étape avec son délai. Si un impôt vous paraît faux sans lettre, vous avez 6 mois pour réclamer.'
+  day: {ar: 'نهار توصلت بالرسالة؟', fr: 'Le jour où vous avez reçu la lettre ?'}
+  steps:
+    - title: {ar: 'رسالة التصحيح', fr: 'La lettre de rectification'}
+      answer: {ar: 'الإدارة كتبلغك الأسباب والمبالغ؛ عندك 30 يوما من التوصل باش ترد بالملاحظات ديالك، وإلا ما رديتيش كتتفرض الزيادة وما بقا غير التظلم.', fr: 'L’administration vous notifie les motifs et les montants ; vous avez 30 jours dès la réception pour répondre, sinon le complément est mis en recouvrement et seule la réclamation reste.'}
+      cites: [/ma/code/cgi/art_220, /ma/code/cgi/art_219]
+      delay: {days: 30, from: {ar: 'من تاريخ التوصل بالرسالة', fr: 'à compter de la réception de la lettre'}}
+    - title: {ar: 'الرسالة الثانية واللجنة', fr: 'La seconde lettre et la commission'}
+      answer: {ar: 'إلا رفضات الإدارة ملاحظاتك، كتبلغك داخل 60 يوما بالأساس اللي بغات؛ وعندك 30 يوما باش تمشي للجنة المحلية ولا الجهوية ولا الوطنية حسب الحالة.', fr: 'Si l’administration rejette vos observations, elle vous notifie dans les 60 jours la base qu’elle retient ; vous avez 30 jours pour saisir la commission locale, régionale ou nationale selon le cas.'}
+      cites: [/ma/code/cgi/art_220, /ma/code/cgi/art_225, /ma/code/cgi/art_225-bis, /ma/code/cgi/art_226]
+    - title: {ar: 'المحكمة', fr: 'Le tribunal'}
+      answer: {ar: 'قرار اللجنة كيتطعن فيه أمام المحكمة داخل 60 يوما من تبليغه، من طرفك ولا من طرف الإدارة.', fr: 'La décision de la commission peut être contestée devant le tribunal dans les 60 jours de sa notification, par vous ou par l’administration.'}
+      cites: [/ma/code/cgi/art_242]
+    - title: {ar: 'التظلم بلا رسالة', fr: 'Réclamer sans lettre'}
+      answer: {ar: 'ضريبة كتشوفها غالطة: التظلم للمدير العام للضرائب داخل 6 أشهر من انتهاء الأجل (الأداء التلقائي) ولا من الشهر اللي تحطات فيه للتحصيل (الجدول).', fr: 'Un impôt qui vous paraît faux : la réclamation au directeur général des impôts dans les 6 mois de l’expiration du délai (paiement spontané) ou de la mise en recouvrement (rôle).'}
+      cites: [/ma/code/cgi/art_235]
+    - title: {ar: 'جواب التظلم', fr: 'La réponse à la réclamation'}
+      answer: {ar: 'إلا ما قبلتيش الجواب، ولا ما جاكش جواب داخل 3 أشهر، عندك 30 يوما باش تمشي للمحكمة؛ والتظلم ما كيوقفش الأداء.', fr: 'Si vous n’acceptez pas la réponse, ou sans réponse dans les 3 mois, vous avez 30 jours pour saisir le tribunal ; la réclamation ne suspend pas le paiement.'}
+      cites: [/ma/code/cgi/art_235, /ma/code/cgi/art_243]
+    - title: {ar: 'الاسترداد', fr: 'Le remboursement'}
+      answer: {ar: 'الضريبة المحجوزة فالمنبع اللي فاتت الضريبة على الدخل الإجمالي كترجع تلقائيا من التصريح؛ وبعد تظلم مقبول كترجع اللي تخلص بلا موجب.', fr: 'L’impôt retenu à la source au-delà de l’impôt sur le revenu global est restitué d’office au vu de la déclaration ; après une réclamation admise, ce qui a été payé à tort est rendu.'}
+      cites: [/ma/code/cgi/art_241-bis, /ma/code/cgi/art_236]
+      next: journeys/declare
+
+- key: own
+  for: [self, company]
+  title: {ar: 'خدام بحسابي: المقاول الذاتي ولا المساهمة الموحدة', fr: 'À mon compte : auto-entrepreneur ou contribution unique'}
+  lead:
+    ar: 'جوج أنظمة بسيطة للي خدام بحسابو: المقاول الذاتي، بسعر على رقم المعاملات المحصل؛ والمساهمة المهنية الموحدة، بدخل كيتحسب من رقم المعاملات بمعامل المهنة.'
+    fr: 'Deux régimes simples pour qui travaille à son compte : l’auto-entrepreneur, un taux sur le chiffre d’affaires encaissé ; la contribution professionnelle unique, un revenu tiré du chiffre d’affaires par le coefficient du métier.'
+  steps:
+    - title: {ar: 'المقاول الذاتي: الشروط', fr: 'L’auto-entrepreneur : les conditions'}
+      answer: {ar: 'رقم معاملات محصل ما كيفوتش 500.000 درهم فالعام للتجارة والصناعة والحرف، ولا 200.000 للخدمات، والانخراط فالضمان الاجتماعي؛ وشي مهن مستثناة بنص تنظيمي.', fr: 'Un chiffre d’affaires encaissé de 500 000 dirhams au plus par an pour le commerce, l’industrie et l’artisanat, 200 000 pour les services, et l’adhésion à la sécurité sociale ; certaines professions sont exclues par voie réglementaire.'}
+      cites: [/ma/code/cgi/art_42-ter]
+    - title: {ar: 'المقاول الذاتي: شحال', fr: 'L’auto-entrepreneur : combien'}
+      answer: {ar: '0,5% من رقم المعاملات المحصل للتجارة والصناعة والحرف، و1% للخدمات، مع واجب تكميلي حسب الجدول؛ ومع زبون واحد فوق 80.000 درهم فالعام فالخدمات، الزبون كيحجز 30% على الزائد.', fr: '0,5 % du chiffre d’affaires encaissé pour le commerce, l’industrie et l’artisanat, 1 % pour les services, plus un droit complémentaire selon le tableau ; au-delà de 80 000 dirhams par an chez un même client pour des services, celui-ci retient 30 % sur l’excédent.'}
+      cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_42-bis]
+      tool: tools/own
+    - title: {ar: 'المقاول الذاتي: التصريح', fr: 'L’auto-entrepreneur : la déclaration'}
+      answer: {ar: 'كل شهر ولا كل ربع، حسب اختيارك: التصريح والأداء قبل نهاية الشهر اللي من بعد الشهر ولا الربع.', fr: 'Chaque mois ou chaque trimestre, selon votre option : déclaration et paiement avant la fin du mois qui suit le mois ou le trimestre.'}
+      cites: [/ma/code/cgi/art_82-bis]
+    - title: {ar: 'المساهمة المهنية الموحدة', fr: 'La contribution professionnelle unique'}
+      answer: {ar: 'رقم المعاملات مضروب فمعامل المهنة (6% للمواد الغذائية العامة، 20% للمطاعم والحلاقة، 10% للنقل…) هو الدخل، وعليه 10% مع واجب تكميلي؛ حتى مليونين درهم للتجارة و500.000 للخدمات، والانخراط فالتأمين الإجباري عن المرض.', fr: 'Le chiffre d’affaires multiplié par le coefficient du métier (6 % pour l’alimentation générale, 20 % pour la restauration et la coiffure, 10 % pour le transport…) donne le revenu, taxé à 10 % plus un droit complémentaire ; jusqu’à 2 millions de dirhams pour le commerce et 500 000 pour les services, avec l’adhésion à l’AMO.'}
+      cites: [/ma/code/cgi/art_40, /ma/code/cgi/art_41, /ma/code/cgi/art_73]

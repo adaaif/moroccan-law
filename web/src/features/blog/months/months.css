@@ -1,0 +1,10 @@
+/* «دجنبر، شهر الأعداد المكررة»: the calendar. A month above its year's mean in the source's violet, as dark as it is
+   above; below, the bars' grey, as pale as it is below; a «bis» issue a dot of ink. */
+.bp-cal { display: flex; flex-direction: column; gap: 6px; }
+.bp-cal svg { cursor: crosshair; }
+.bp-cal rect.cal-up { fill: var(--color-stamp); }
+.bp-cal rect.cal-down { fill: var(--bp-bar); }
+.bp-cal rect.cal-pick { fill: var(--color-ink); opacity: 1; }
+.bp-cal circle.cal-bis { fill: var(--color-ink); }
+.bp-cal rect.cal-avg { fill: var(--bp-bar); }
+.bp-cal rect.cal-avg.is-hi { fill: var(--color-stamp); }

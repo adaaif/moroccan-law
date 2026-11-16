@@ -1,0 +1,222 @@
+/* A person on the site (30 Oct 2026: the public and the private profile, and a menu with the entries a reader needs).
+   Loaded with the menu, the account page and a person's page, never in the
+   first load. Every colour a token; `--t` is the colour of the topic a person writes in most, so a face says where
+   they help, and the conversation's teal for someone who has not written yet.
+
+   People are named, never drawn: a face is the first letter of the name. */
+
+.ac { --color-t-general: var(--color-talk); }
+.ac a:focus-visible, .ac button:focus-visible, .ac-menu a:focus-visible, .ac-menu button:focus-visible, .ac-trigger:focus-visible {
+  outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.ac-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+:root[dir="rtl"] .ac-flip { transform: scaleX(-1); }
+
+.ac-face { display: inline-grid; place-items: center; flex: none; width: var(--s, 32px); height: var(--s, 32px); border-radius: 50%;
+  background: color-mix(in srgb, var(--t, var(--color-talk)) 16%, var(--color-sheet)); color: var(--t, var(--color-talk));
+  font-weight: 700; font-size: max(0.875rem, calc(var(--s, 32px) * 0.44)); line-height: 1; }
+
+/* ── The header's button: a face, a dot for what is new, a moderator's count ─────────────────────────────────────── */
+.ac-trigger { position: relative; display: inline-flex; align-items: center; gap: 8px; height: 44px; padding-inline: 4px; margin-inline-start: 2px;
+  border: 0; border-radius: 999px; background: none; color: var(--color-ink); font: inherit; cursor: pointer; }
+.ac-trigger:hover, .ac-trigger[aria-expanded="true"] { background: var(--color-paper); }
+.ac-trigger-name { display: none; max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+@media (min-width: 768px) { .ac-trigger { padding-inline: 12px 4px; } .ac-trigger-name { display: block; } }
+.ac-dot { position: absolute; top: 6px; inset-inline-end: 2px; width: 11px; height: 11px; border-radius: 50%; background: var(--color-stamp);
+  box-shadow: 0 0 0 2.5px var(--color-sheet); }
+.ac-review { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 7px; border-radius: 999px;
+  border: 1.5px solid var(--color-amended); color: var(--color-amended); font-size: 0.875rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+
+/* The menu: a panel under the button on a desk, the app's sheet on a phone. */
+.ac-pop { position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 60; width: 330px; max-height: calc(100vh - 90px); overflow-y: auto;
+  border-radius: var(--radius-card); background: var(--color-sheet); border: 1px solid var(--color-rule);
+  box-shadow: 0 18px 48px -12px color-mix(in srgb, var(--color-scrim) 30%, transparent); }
+@media (prefers-reduced-motion: no-preference) { .ac-pop { animation: ac-drop 140ms ease-out both; } }
+@keyframes ac-drop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.ac-menu { display: flex; flex-direction: column; padding: 8px; }
+.ac-menu-who { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 2px 14px; align-items: center; padding: 12px 12px 14px; border-radius: 14px;
+  color: var(--color-ink); text-decoration: none; }
+.ac-menu-who:hover { background: var(--color-paper); }
+.ac-menu-who .ac-face { grid-row: span 3; }
+.ac-menu-who b { font-size: var(--text-lead); line-height: 1.35; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ac-menu-who small { font-size: 0.875rem; color: var(--color-ink-soft); display: flex; flex-wrap: wrap; gap: 2px 10px; }
+.ac-menu-who em { font-style: normal; font-size: 0.875rem; font-weight: 600; color: var(--color-stamp); }
+.ac-menu-alert { display: flex; gap: 10px; align-items: flex-start; margin: 2px 4px 8px; padding: 10px 12px; border-radius: 12px; background: var(--color-wash);
+  color: var(--color-ink); font-size: 0.875rem; line-height: 1.5; text-decoration: none; }
+.ac-menu-alert b { color: var(--color-stamp); }
+.ac-menu-alert.warn { background: var(--color-amended-wash); }
+.ac-menu-alert.warn b { color: var(--color-amended); }
+.ac-menu hr { margin: 6px 12px; border: 0; border-top: 1px solid var(--color-rule-soft); }
+.ac-item { display: flex; align-items: center; gap: 14px; min-height: 48px; padding: 0 12px; border-radius: 12px; border: 0; background: none;
+  width: 100%; color: var(--color-ink); font: inherit; text-align: start; text-decoration: none; cursor: pointer; }
+.ac-item:hover { background: var(--color-paper); }
+.ac-item svg { flex: none; color: var(--color-ink-soft); }
+.ac-item span { flex: 1; min-width: 0; }
+.ac-item small { display: block; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ac-item .ac-n { flex: none; min-width: 26px; height: 26px; padding: 0 8px; border-radius: 999px; display: grid; place-items: center;
+  background: var(--color-chip); color: var(--color-ink-soft); font-size: 0.875rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.ac-item .ac-n.new { background: var(--color-stamp); color: var(--color-on-stamp); }
+.ac-item.mod svg, .ac-item.mod .ac-n { color: var(--color-amended); }
+.ac-item.mod .ac-n { background: var(--color-amended-wash); }
+.ac-item.out { color: var(--color-ink-soft); }
+
+/* ── A person's card: their face in their topic's colour, what they did, where they write ────────────────────────── */
+.ac-hero { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px 22px; align-items: center; margin-inline: -16px; padding: 26px 20px;
+  background: color-mix(in srgb, var(--t, var(--color-talk)) 9%, var(--color-sheet)); }
+@media (min-width: 640px) { .ac-hero { margin-inline: 0; border-radius: var(--radius-card); padding: 34px 36px; gap: 20px 30px; } }
+.ac-hero > .ac-face { --s: 72px; }
+@media (min-width: 640px) { .ac-hero > .ac-face { --s: 104px; } }
+.ac-hero-text { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ac-hero h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); overflow-wrap: anywhere; }
+.ac-hero-handle { margin: 0; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.ac-hero-facts { display: flex; flex-wrap: wrap; gap: 4px 18px; margin: 4px 0 0; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.ac-hero-facts .on { color: var(--color-in-force); font-weight: 600; }
+.ac-hero-facts .off { color: var(--color-amended); font-weight: 600; }
+.ac-hero-row { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; }
+.ac-hero-row > span { font-size: 0.875rem; color: var(--color-ink-soft); }
+/* On the card's tint a topic's name takes a step toward the ink, to keep its contrast (darker by day, lighter by night). */
+.ac-hero .tk-tag { color: color-mix(in srgb, var(--t) 72%, var(--color-ink)); }
+.ac-hero-acts { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* What they did, said with its words: the figures in the topic's colour. */
+.ac-stats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; margin: 0;
+  padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--t, var(--color-talk)) 22%, transparent); }
+@media (min-width: 640px) { .ac-stats { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.ac-stats div { display: flex; flex-direction: column-reverse; gap: 2px; min-width: 0; }
+.ac-stats dt { font-size: 0.875rem; line-height: 1.4; color: var(--color-ink-soft); }
+.ac-stats dd { margin: 0; font-size: var(--text-h2); line-height: 1.1; font-weight: 700; color: var(--t, var(--color-talk)); font-variant-numeric: tabular-nums; }
+
+/* ── The account's two pages (16 Nov 2026): a short head, two tabs that are addresses on the double rule a printed
+   head ends on (the library's rooms), then titles on rules and rows under them. Nothing is a card: one block is set
+   apart, what needs the person now. ──────────────────────────────────────────────────────────────────────────────── */
+.ac { display: flex; flex-direction: column; gap: 18px; }
+.ac-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 16px; align-items: start; }
+.ac-head > .ac-face { --s: 56px; margin-top: 2px; }
+.ac-head-text { display: flex; flex-direction: column; min-width: 0; }
+.ac-head h1 { margin: 0; font-size: var(--text-h2); line-height: 1.25; font-weight: 700; color: var(--color-ink); overflow-wrap: anywhere; }
+.ac-head-line { margin: 4px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; font-size: 0.9375rem; line-height: 1.5;
+  color: var(--color-ink-soft); }
+.ac-head-line b { font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; }
+.ac-head-line .on { color: var(--color-in-force); font-weight: 600; }
+.ac .ac-head-line a.off { color: var(--color-amended); font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+.ac .ac-head-link { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--color-stamp);
+  text-decoration: none; }
+.ac .ac-head-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 640px) { .ac-head > .ac-face { --s: 72px; } .ac-head { gap: 0 22px; } }
+
+.ac-tabs { display: flex; gap: 6px; border-bottom: 4px double var(--color-ink); }
+.ac .ac-tabs a { display: inline-flex; align-items: center; min-height: 46px; padding: 0 22px; border-radius: 12px 12px 0 0; font-weight: 700;
+  color: var(--color-ink-soft); text-decoration: none; }
+.ac .ac-tabs a:hover { background: var(--color-chip); color: var(--color-ink); }
+.ac .ac-tabs a[aria-current="page"] { background: var(--color-ink); color: var(--color-paper); }
+
+/* «أنا»: on a desk, what the person did beside what they follow. */
+.ac-body { display: grid; gap: 30px; margin-top: 6px; }
+@media (min-width: 1024px) { .ac-body { grid-template-columns: minmax(0, 1fr) 330px; gap: 56px; align-items: start; } }
+.ac-me-main, .ac-me-side { display: flex; flex-direction: column; gap: 30px; min-width: 0; }
+.ac-settings { display: flex; flex-direction: column; gap: 36px; max-width: 46rem; margin-top: 6px; }
+
+/* A part: its title on a rule, rows under it. */
+.ac-part { display: flex; flex-direction: column; gap: 10px; min-width: 0; scroll-margin-top: 80px; }
+.ac-part-head { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; min-height: 44px; border-bottom: 2px solid var(--color-ink); }
+.ac-part-head h2, .ac-part > h2 { margin: 0; font-size: var(--text-lead); line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.ac-part-head > :not(h2) { margin-inline-start: auto; }
+.ac-lead { margin: 0; color: var(--color-ink-soft); }
+/* A part with nothing in it: its title and its one line, on one rule. */
+.ac-part.ac-line { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--color-rule); }
+.ac-line p { margin: 0; color: var(--color-ink-soft); }
+.ac .ac-inline { color: var(--color-stamp); font-weight: 600; }
+
+/* What needs the person now: the one block set apart, on the sheet, its edge in the stamp's ink. */
+.ac-now { display: flex; flex-direction: column; border-inline-start: 4px solid var(--color-stamp); background: var(--color-sheet);
+  border-start-end-radius: var(--radius-control); border-end-end-radius: var(--radius-control); }
+.ac-now > * { padding: 14px 18px; }
+.ac-now > * + * { border-top: 1px solid var(--color-rule-soft); }
+.ac-now > .ac-part { gap: 12px; }
+.ac-now > .ac-part.stop > h2 { color: var(--color-repealed); }
+@media (min-width: 640px) { .ac-now > * { padding: 18px 24px; } }
+
+.ac-rows, .ac-list { margin: 0; padding: 0; list-style: none; }
+.ac-rows > li { display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.ac-rows > li:last-child, .ac-list > li:last-child { border-bottom: 0; }
+.ac-list > li { border-bottom: 1px solid var(--color-rule-soft); }
+.ac-list.ac-ruled { border-top: 2px solid var(--color-ink); }
+.ac-row-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.ac-row-head a { color: var(--color-ink); font-weight: 600; text-decoration: none; }
+.ac-row-head a:hover { color: var(--color-stamp); }
+.ac-row-head time { margin-inline-start: auto; font-size: 0.875rem; color: var(--color-ink-soft); white-space: nowrap; }
+.ac-row-body { margin: 0; color: var(--color-ink-soft); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.ac-state { display: inline-flex; align-items: center; gap: 5px; font-size: 0.875rem; font-weight: 600; }
+.ac-state.ok { color: var(--color-in-force); }
+.ac-state.wait { color: var(--color-amended); }
+.ac-state.gone { color: var(--color-repealed); }
+.ac-notice { flex-direction: row !important; align-items: baseline; gap: 12px !important; }
+.ac-notice::before { content: ""; flex: none; width: 9px; height: 9px; border-radius: 50%; background: transparent; transform: translateY(-1px); }
+.ac-notice.new::before { background: var(--color-stamp); }
+.ac-notice > :first-child { flex: 1; min-width: 0; }
+.ac-notice a { color: var(--color-ink); text-decoration: none; }
+.ac-notice.seen a { color: var(--color-ink-soft); }
+.ac-notice a:hover { color: var(--color-stamp); }
+.ac-notice time { flex: none; font-size: 0.875rem; color: var(--color-ink-soft); }
+/* A row of two: what it is, and its day or the act on it at the end. */
+.ac-rows > li.ac-pair, .ac-list > li.ac-pair { display: flex; flex-direction: row; align-items: center; gap: 4px 12px; }
+.ac-list > li.ac-pair { padding: 4px 0; }
+.ac-pair > :first-child { flex: 1; min-width: 0; }
+.ac-pair a { color: var(--color-ink); text-decoration: none; }
+.ac-pair a:hover { color: var(--color-stamp); }
+.ac-pair time { flex: none; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ac-quiet { margin: 0; color: var(--color-ink-soft); }
+/* A small act at a rule's end or under a row: words in the stamp's ink, a finger's height. */
+.ac-more { flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: none; font: inherit;
+  font-size: 0.9375rem; font-weight: 600; color: var(--color-stamp); cursor: pointer; }
+.ac-more:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ac-more.quiet { color: var(--color-ink-soft); font-weight: 500; }
+.ac-more.quiet:hover { color: var(--color-repealed); }
+
+/* The settings' forms and their folds. */
+.ac-form { display: flex; flex-direction: column; gap: 22px; }
+.ac-seg { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: var(--radius-control); background: var(--color-chip); width: fit-content; max-width: 100%; }
+.ac-seg label { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 6.5rem; padding: 0 16px; border-radius: 8px;
+  cursor: pointer; color: var(--color-ink-soft); }
+.ac-seg label:has(input:checked) { background: var(--color-sheet); color: var(--color-ink); font-weight: 600; box-shadow: 0 1px 2px color-mix(in srgb, var(--color-scrim) 12%, transparent); }
+.ac-seg label:has(input:focus-visible) { outline: 3px solid var(--color-stamp); outline-offset: 1px; }
+/* On a phone the choices share the width on one row, whatever their words' length. */
+@media (max-width: 639px) {
+  .ac-seg { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); width: 100%; }
+  .ac-seg label { min-width: 0; padding: 4px 6px; text-align: center; line-height: 1.3; }
+}
+.ac-legend { margin: 0 0 8px; padding: 0; font-size: 0.875rem; font-weight: 600; color: var(--color-ink); }
+.ac-check { display: flex; align-items: flex-start; gap: 12px; cursor: pointer; }
+.ac-check input { margin-top: 4px; width: 18px; height: 18px; accent-color: var(--color-stamp); flex: none; }
+.ac-save { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.ac-fold { display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--color-rule-soft); }
+.ac-fold > summary { display: flex; align-items: center; gap: 12px; min-height: 48px; font-weight: 600; color: var(--color-ink); cursor: pointer;
+  list-style: none; }
+.ac-fold > summary::-webkit-details-marker { display: none; }
+/* A chevron at the row's end says the row opens, and turns when it is open. */
+.ac-fold > summary::after { content: ""; flex: none; width: 8px; height: 8px; margin-inline: auto 6px; border: solid currentColor;
+  border-width: 0 2px 2px 0; transform: translateY(-2px) rotate(45deg); }
+.ac-fold[open] > summary::after { transform: translateY(2px) rotate(-135deg); }
+.ac-fold > summary:hover { color: var(--color-stamp); }
+.ac-fold[open] { padding-bottom: 8px; }
+.ac-fold.danger > summary { color: var(--color-repealed); }
+
+/* ── A person's page: their questions and posts, and their answers as the answers they were ───────────────────── */
+.ac-person { display: grid; gap: 28px; }
+@media (min-width: 1024px) { .ac-person { grid-template-columns: minmax(0, 1fr) 300px; gap: 44px; align-items: start; } }
+.ac-side { display: flex; flex-direction: column; gap: 14px; }
+.ac-side h2 { margin: 0; font-size: var(--text-lead); font-weight: 700; }
+.ac-where { margin: 0; padding: 6px 18px; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); }
+.ac-where li { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; border-top: 1px solid var(--color-rule-soft); }
+.ac-where li:first-child { border-top: 0; }
+.ac-where a { text-decoration: none; }
+.ac-where .n { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ac-answer { display: flex !important; flex-direction: column; gap: 10px; }
+.ac-answer-to { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ac-answer-to a { color: var(--color-ink); font-weight: 600; font-size: var(--text-body); text-decoration: none; }
+.ac-answer-to a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.ac-answer:hover .ac-answer-to a { color: var(--color-stamp); }
+.ac-answer-to .tk-tag { position: relative; z-index: 1; }
+.ac-answer-body { margin: 0; padding: 12px 16px; border-radius: 18px; border-end-end-radius: 5px; background: var(--color-talk-wash); color: var(--color-ink);
+  line-height: 1.75; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; overflow: hidden; }
+.ac-answer-meta { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ac-answer-meta .yes { color: var(--color-in-force); font-weight: 600; }

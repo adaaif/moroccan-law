@@ -1,0 +1,59 @@
+/* «نزع الملكية» (the twenty-fourth post). Blue is water, the one purpose the post follows; every other purpose is the
+   grey of the rest; ink is the reader's pick. Facts in three short columns over the chart; the decrees as the Bulletin
+   titled them, on cards with their pages. */
+
+.ex { --ex-water: var(--kc-4); --ex-rest: var(--kc-rest); }
+.ex-hero { margin: 0 -16px; padding: 24px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 640px) { .ex-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.ex-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem); line-height: 1.25; }
+.bp:lang(fr) .ex-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.8rem); }
+.ex-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 560px) { .ex-facts { grid-template-columns: minmax(0, 1fr); } }
+.ex-facts p { margin: 0; display: flex; flex-direction: column; gap: 2px; padding-inline-start: 12px; border-inline-start: 3px solid var(--color-ink); }
+.ex-facts p.is-water { border-color: var(--ex-water); }
+.ex-facts b { font-weight: 200; font-size: 2.6rem; line-height: 1.05; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.ex-facts p.is-water b { color: var(--ex-water); font-weight: 300; }
+.ex-facts span { font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.5; }
+.ex-legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ex-legend li { display: inline-flex; align-items: center; gap: 8px; }
+.ex-legend i { inline-size: 12px; block-size: 12px; border-radius: 2px; }
+i.ex-water { background: var(--ex-water); } i.ex-rest { background: var(--ex-rest); }
+.ex-years svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; touch-action: pan-y; cursor: pointer; }
+.ex-years svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.ex-years rect.ex-water { fill: var(--ex-water); } .ex-years rect.ex-rest { fill: var(--ex-rest); }
+.ex-years .is-now rect.ex-rest { fill: color-mix(in srgb, var(--ex-rest) 70%, var(--color-ink)); }
+.ex-grid { stroke: var(--color-rule-soft); stroke-width: 1; }
+.ex-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ex-pick { margin: 0; font-weight: 600; min-height: 1.6em; }
+line.ex-pick { stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 2 3; }
+.ex-stamp { vertical-align: middle; }
+.ex-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.ex-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.ex-share:disabled { opacity: 0.6; }
+
+/* ── What for ─────────────────────────────────────────────────────────────────────────────────────────────────── */
+.ex-what { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.ex-what li { display: grid; grid-template-columns: 9rem minmax(0, 1fr) 4.6rem; align-items: center; gap: 10px; }
+@media (max-width: 420px) { .ex-what li { grid-template-columns: 7rem minmax(0, 1fr) 4.4rem; } }
+.ex-what-name { font-size: 14px; line-height: 1.3; }
+.ex-what li.is-water .ex-what-name { font-weight: 700; color: var(--ex-water); }
+.ex-what-bars { display: flex; flex-direction: column; gap: 3px; }
+.ex-bar { block-size: 8px; border-radius: 4px; min-inline-size: 2px; }
+.ex-bar.is-prev { background: color-mix(in srgb, var(--color-ink) 22%, transparent); }
+.ex-bar.is-now { background: var(--color-ink); }
+.ex-what li.is-water .ex-bar.is-now { background: var(--ex-water); }
+.ex-what-n { font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; text-align: end; white-space: nowrap; }
+.ex-what-n b { color: var(--color-ink); }
+.ex-what-key { margin: 6px 0 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── The decrees ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.ex-cards { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 12px; }
+@media (min-width: 1100px) { .ex-cards { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); } }
+.ex-card { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; background: var(--color-sheet); border-radius: var(--radius-card); border-inline-start: 4px solid var(--ex-rest); }
+.ex-card.is-water { border-inline-start-color: var(--ex-water); }
+.ex-card-kind { margin: 0; font-size: var(--text-meta); font-weight: 700; color: var(--color-ink-soft); }
+.ex-card-title { margin: 0; font-family: var(--font-law); font-size: 1.15rem; line-height: 1.6; text-wrap: pretty; }
+.ex-card-title a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 35%, transparent); }
+.ex-src, .ex-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.ex-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-ink); font-family: var(--font-law); font-size: 1.3rem; line-height: 1.75; text-wrap: pretty; text-align: right; }

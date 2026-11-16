@@ -1,0 +1,75 @@
+# The business topic's lists (the business review): each list is what an article names, item by item. Ticks stay
+# on the reader's phone.
+
+- key: auto-file
+  title: {ar: 'ملف التسجيل كمقاول ذاتي', fr: 'Le dossier d’inscription de l’auto-entrepreneur'}
+  lead:
+    ar: 'ما يطلبه المرسوم 2.15.258: طلب يملأ إلكترونيا ويودع شخصيا في شباك لبريد المغرب داخل 30 يوما.'
+    fr: 'Ce que demande le décret 2.15.258 : une demande remplie en ligne, déposée en personne à un guichet de Barid Al-Maghrib dans les 30 jours.'
+  cites: [/ma/decret/2-15-258/art_3]
+  items:
+    - label: {ar: 'طلب التسجيل، مملوءا على البوابة الإلكترونية للسجل الوطني، مسحوبا وموقعا', fr: 'La demande d’inscription remplie sur le portail du registre national, imprimée et signée'}
+      cites: [/ma/decret/2-15-258/art_3]
+    - label: {ar: 'التصريح بالتأسيس (المادة 148-V من المدونة العامة للضرائب)، ومعه اختيار نظام المقاول الذاتي', fr: 'La déclaration d’existence (art. 148-V du code des impôts), avec l’option pour le régime'}
+      cites: [/ma/decret/2-15-258/art_3, /ma/code/cgi/art_44]
+    - label: {ar: 'صورة شخصية', fr: 'Une photo d’identité'}
+      cites: [/ma/decret/2-15-258/art_3]
+    - label: {ar: 'نسخة من البطاقة الوطنية للتعريف', fr: 'La copie de la carte nationale'}
+      cites: [/ma/decret/2-15-258/art_3]
+    - label: {ar: 'الإيداع شخصيا داخل 30 يوما من ملء الطلب', fr: 'Le dépôt en personne dans les 30 jours de la saisie'}
+      when: {ar: '30 يوما', fr: '30 jours'}
+      cites: [/ma/decret/2-15-258/art_3]
+
+- key: sarl-statutes
+  title: {ar: 'ما يجب أن يتضمنه النظام الأساسي للشركة ذات المسؤولية المحدودة', fr: 'Ce que doivent contenir les statuts de la SARL'}
+  lead:
+    ar: 'البيانات التي تعددها المادة 50 من القانون 5.96، تحت طائلة بطلان الشركة؛ والنظام الأساسي مؤرخ.'
+    fr: 'Les mentions de l’article 50 de la loi 5.96, à peine de nullité de la société ; les statuts sont datés.'
+  cites: [/ma/loi/5-96/art_50]
+  items:
+    - label: {ar: 'الاسم والموطن لكل شريك (أو تسمية الشخص المعنوي وشكله ومقره)', fr: 'Le nom et le domicile de chaque associé (ou dénomination, forme et siège d’une personne morale)'}
+    - label: {ar: 'إنشاء الشركة في شكل شركة ذات مسؤولية محدودة', fr: 'La forme de SARL'}
+    - label: {ar: 'غرض الشركة', fr: 'L’objet social'}
+    - label: {ar: 'تسمية الشركة', fr: 'La dénomination'}
+    - label: {ar: 'مقر الشركة', fr: 'Le siège'}
+    - label: {ar: 'مبلغ رأس المال', fr: 'Le montant du capital'}
+    - label: {ar: 'حصة كل شريك، وقيمتها إذا كانت عينية', fr: 'L’apport de chaque associé, et sa valeur s’il est en nature'}
+    - label: {ar: 'توزيع الأنصبة على الشركاء', fr: 'La répartition des parts'}
+    - label: {ar: 'مدة الشركة', fr: 'La durée'}
+    - label: {ar: 'أسماء ومواطن من يحق لهم إلزام الشركة، إن اقتضى الحال', fr: 'Les noms et domiciles de ceux qui engagent la société, le cas échéant'}
+    - label: {ar: 'كتابة ضبط المحكمة التي سيودع بها', fr: 'Le greffe du tribunal où il sera déposé'}
+    - label: {ar: 'إمضاء كل الشركاء', fr: 'La signature de tous les associés'}
+
+- key: invoice
+  title: {ar: 'ما تحمله الفاتورة', fr: 'Ce que porte une facture'}
+  lead:
+    ar: 'البيانات التي تطلبها المادة 145 من المدونة العامة للضرائب، زيادة على البيانات التجارية المعتادة؛ وفي البيع للخواص، تقوم بطاقة الصندوق مقامها.'
+    fr: 'Les mentions de l’article 145 du code des impôts, en plus des mentions commerciales habituelles ; pour une vente aux particuliers, le ticket de caisse en tient lieu.'
+  cites: [/ma/code/cgi/art_145]
+  items:
+    - label: {ar: 'فاتورة مرقمة مسبقا من سلسلة متصلة، أو مطبوعة بنظام معلوماتي متصل', fr: 'Une facture prénumérotée d’une série continue, ou imprimée par un système en série continue'}
+    - label: {ar: 'هوية البائع', fr: 'L’identité du vendeur'}
+    - label: {ar: 'رقم التعريف الضريبي ورقم القيد في الرسم المهني', fr: 'L’identifiant fiscal et le numéro de taxe professionnelle'}
+    - label: {ar: 'تاريخ العملية', fr: 'La date de l’opération'}
+    - label: {ar: 'اسم الزبون وعنوانه التجاري ومقره ورقم التعريف الموحد للمقاولة (ICE)', fr: 'Le nom du client, sa raison sociale, son adresse et son identifiant commun de l’entreprise (ICE)'}
+    - label: {ar: 'الثمن والكمية وطبيعة البضائع أو الأشغال أو الخدمات', fr: 'Le prix, la quantité et la nature des biens, travaux ou services'}
+    - label: {ar: 'مبلغ الضريبة على القيمة المضافة مستقلا، أو بيان الإعفاء', fr: 'Le montant de la TVA à part, ou la mention de l’exonération'}
+    - label: {ar: 'مراجع الأداء وكيفيته', fr: 'Les références et le mode de paiement'}
+    - label: {ar: 'وللشركة ذات المسؤولية المحدودة: تسميتها وعبارة «ش.ذ.م.م» ورأسمالها ومقرها ورقم سجلها التجاري', fr: 'Pour une SARL : sa dénomination, la mention «SARL», son capital, son siège et son numéro de RC'}
+      cites: [/ma/loi/5-96/art_45]
+
+- key: stop-file
+  title: {ar: 'ملف طلب الإنقاذ أو التسوية القضائية', fr: 'Le dossier de sauvegarde ou de redressement'}
+  lead:
+    ar: 'ما ترفقه المادة 577 بالطلب، مؤرخا ومؤشرا عليه من رئيس المقاولة؛ وما تعذر يبين سببه.'
+    fr: 'Ce que l’article 577 joint à la demande, daté et visé par le dirigeant ; ce qui manque, avec la raison.'
+  cites: [/ma/loi/15-95/art_577]
+  items:
+    - label: {ar: 'القوائم التركيبية لآخر سنة مالية، مؤشرا عليها من مراقب الحسابات إن وجد', fr: 'Les états de synthèse du dernier exercice, visés par le commissaire aux comptes s’il y en a'}
+    - label: {ar: 'جرد وتحديد قيمة جميع أموال المقاولة المنقولة والعقارية', fr: 'L’inventaire et l’évaluation de tous les biens meubles et immeubles'}
+    - label: {ar: 'قائمة المدينين بعناوينهم ومبالغهم وضماناتهم', fr: 'La liste des débiteurs, adresses, montants et garanties'}
+    - label: {ar: 'قائمة الدائنين بعناوينهم وديونهم وضماناتهم', fr: 'La liste des créanciers, adresses, créances et garanties'}
+    - label: {ar: 'جدول التحملات', fr: 'Le tableau des charges'}
+    - label: {ar: 'قائمة الأجراء وممثليهم', fr: 'La liste des salariés et de leurs représentants'}
+    - label: {ar: 'نسخة من النموذج 7 من السجل التجاري', fr: 'Une copie du modèle 7 du RC'}
+    - label: {ar: 'وضعية الموازنة خلال الأشهر الثلاثة الأخيرة', fr: 'La situation de trésorerie des trois derniers mois'}

@@ -1,0 +1,74 @@
+# The figures the work tools read (T17 of the work plan): each set by a decree or a law, in force from a date, with the
+# article that sets it. A new decree is one row more. `open: true`: the end-of-contract tool, shown, as chosen, before a
+# professional's review, reads them; they are the decrees' own numbers.
+
+- key: smig
+  open: true
+  title: {ar: 'الحد الأدنى للأجر عن ساعة الشغل (غير الفلاحة)', fr: 'Salaire minimum horaire (hors agriculture)'}
+  unit: {ar: درهم للساعة, fr: DH de l’heure}
+  rows:
+    - {from: '2019-07-01', values: {hour: 14.13}, cites: [/ma/decret/2-19-424/art_1]}
+    - {from: '2020-07-01', values: {hour: 14.81}, cites: [/ma/decret/2-19-424/art_2]}
+    - {from: '2022-09-01', values: {hour: 15.55}, cites: [/ma/decret/2-22-606/art_1],
+       note: {ar: 'في القطاع السياحي من فاتح يناير 2023', fr: 'dans le tourisme à partir du 1er janvier 2023'}}
+    - {from: '2023-09-01', values: {hour: 16.29}, cites: [/ma/decret/2-23-799/art_1]}
+    - {from: '2025-01-01', values: {hour: 17.10}, cites: [/ma/decret/2-24-1122/art_1]}
+    - {from: '2026-01-01', values: {hour: 17.92}, cites: [/ma/decret/2-25-983/art_1]}
+
+- key: smag
+  open: true
+  title: {ar: 'الحد الأدنى للأجر عن يوم الشغل (الفلاحة)', fr: 'Salaire minimum journalier (agriculture)'}
+  unit: {ar: درهم لليوم, fr: DH la journée}
+  rows:
+    - {from: '2019-07-01', values: {day: 73.22}, cites: [/ma/decret/2-19-424/art_1]}
+    - {from: '2020-07-01', values: {day: 76.70}, cites: [/ma/decret/2-19-424/art_2]}
+    - {from: '2022-09-01', values: {day: 84.37}, cites: [/ma/decret/2-22-606/art_2]}
+    - {from: '2023-09-01', values: {day: 88.58}, cites: [/ma/decret/2-23-799/art_1]}
+    - {from: '2025-04-01', values: {day: 93.00}, cites: [/ma/decret/2-24-1122/art_2]}
+    - {from: '2026-04-01', values: {day: 97.44}, cites: [/ma/decret/2-25-983/art_2]}
+
+- key: notice
+  open: true
+  title: {ar: 'أجل الإخطار لإنهاء العقد غير محدد المدة', fr: 'Délai de préavis du contrat à durée indéterminée'}
+  rows:
+    # Months for managers; days then months for employees and workers, by seniority: under 1 year, 1 to 5, over 5.
+    - {from: '2005-01-03', values: {cadre_under1_months: 1, cadre_1to5_months: 2, cadre_over5_months: 3,
+                                    worker_under1_days: 8, worker_1to5_months: 1, worker_over5_months: 2},
+       cites: [/ma/decret/2-04-469/art_1, /ma/loi/65-99/art_43]}
+
+- key: cnss
+  open: true
+  title: {ar: 'اشتراكات الضمان الاجتماعي والتأمين عن المرض', fr: 'Cotisations CNSS et AMO'}
+  unit: {ar: بالمائة من الأجر الإجمالي, fr: en % du salaire brut}
+  rows:
+    # Worker's shares and employer's, in percent; the short- and long-term ones on wages up to the ceiling only.
+    - {from: '2015-01-01', values: {worker_long: 3.96, worker_short: 0.33, worker_ipe: 0.19, worker_amo: 2.26,
+                                    employer_long: 7.93, employer_short: 0.67, employer_ipe: 0.38, employer_family: 6.40,
+                                    employer_amo: 2.26, employer_amo_solidarity: 1.85, ceiling: 6000},
+       cites: [/ma/decret/2-01-2723/art_1, /ma/decret/2-01-2723/art_2, /ma/decret/2-01-2723/art_3,
+               /ma/decret/2-01-2723/art_4, /ma/decret/2-05-734/art_1]}
+
+- key: pension
+  open: true
+  title: {ar: 'معاش الشيخوخة من الضمان الاجتماعي', fr: 'Pension de vieillesse de la CNSS'}
+  rows:
+    # From 1,320 days: 50% × days ÷ 3,240 (two decimals) × the average of 96 months, at least the floor by days;
+    # from 3,240: 50%, plus 1% per 216 days beyond, at most 70%. Wages counted up to the 6,000 DH ceiling.
+    - {from: '2025-04-01', values: {min_days: 1320, full_days: 3240, base_rate: 50, step_days: 216, step_rate: 1,
+                                    max_rate: 70, months: 96, ceiling: 6000, floor_1320: 600, floor_1705: 700,
+                                    floor_2089: 800, floor_2473: 900, floor_2857: 1000},
+       cites: [/ma/dahir/1-72-184/art_53, /ma/dahir/1-72-184/art_55, /ma/dahir/1-72-184/art_56,
+               /ma/decret/2-25-265/art_1, /ma/decret/2-25-265/art_2, /ma/decret/2-01-2723/art_4]}
+
+- key: ipe
+  open: true
+  title: {ar: 'التعويض عن فقدان الشغل', fr: 'Indemnité pour perte d’emploi'}
+  rows:
+    - {from: '2014-09-11', values: {days_36_months: 780, days_12_months: 260, rate: 70, months: 6, claim_days: 60},
+       cites: [/ma/dahir/1-72-184/art_46-bis, /ma/dahir/1-72-184/art_46-ter, /ma/dahir/1-72-184/art_46-quater]}
+
+- key: home
+  open: true
+  title: {ar: 'أجر العاملة أو العامل المنزلي', fr: 'Salaire du travailleur domestique'}
+  rows:
+    - {from: '2018-10-02', values: {share_of_smig: 60, hours_week: 48}, cites: [/ma/loi/19-12/art_19, /ma/loi/19-12/art_13]}

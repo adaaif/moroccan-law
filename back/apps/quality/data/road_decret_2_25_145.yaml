@@ -1,0 +1,12 @@
+# /ma/decret/2-25-145 as the BO (issue 7537, folios 5444-5445) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-25-145
+document: issues/bo_ar/BO_7537_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: 'لا يضايق حركة السير.»', right: 'لا يضايق حركة السير.'}      # f. 5444: no closing » here, art 46 goes on with «يعتبر الوقوف …»
+  - {arts: [1], wrong: 'النارية المقرونة ....................................................»', right: 'النارية المقرونة ....................................................'}      # f. 5444: no closing » after the dots of art 110
+  - {arts: [1], wrong: 'الخوذات بقرار للسلطة الحكومية المكلفة بالنقل.»', right: 'الخوذات بقرار للسلطة الحكومية المكلفة بالنقل.'}      # f. 5444: no closing » here, art 110 goes on with «يجب على سائقي وراكبي الدراجات بدوس مساعد …»
+  - {arts: [1], wrong: 'وغير ممتاطة.', right: 'وغير ممتطاة.'}      # f. 5445: «ممتطاة» (ridden)
+notes:
+  - {art: 1, page: 5444, what: 'The new wordings of arts 9, 19, 23 (para. 4), 46, 110 and 112 read right apart from the fixes; the 25 km/h of art 19 reads right. The 50 m is in art 2 (new art 94 bis), which reads right: «على مسافة لا تقل عن 50 مترا من المركبة عكس اتجاه السير».'}
+checked: [1, 2]

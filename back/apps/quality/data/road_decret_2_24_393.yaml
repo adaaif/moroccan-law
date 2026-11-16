@@ -1,0 +1,13 @@
+# /ma/decret/2-24-393 as the BO (issue 7537, folios 5439-5443) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-24-393
+document: issues/bo_ar/BO_7537_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: "وأمتعتهم ؛\n»..............................................................................«\n»..............................................................................«\n«13", right: "وأمتعتهم ؛\n«..............................................................................\n«..............................................................................\n«13"}      # f. 5439: each dotted line opens with «; no closing » (it would end the quotation)
+  - {arts: [1], wrong: 'المركبات : مترين (2,00).»', right: 'المركبات : مترين (2,00).'}      # f. 5439: no closing » after (2,00): the quotation of art 11 goes on with «3 - العلو»
+  - {arts: [1], wrong: 'العلو : مترانٍ ونصف', right: 'العلو : متران ونصف'}      # f. 5440: «متران», no tanwin mark
+  - {arts: [1], wrong: "عدد 7537 - 11 ربيع الأول 1448 (24 أغسطس 2026)\n«المادة 101.", right: '«المادة 101.'}      # f. 5443: the page's running header, not the decree
+  - {arts: [4], wrong: 'والدراجة بدون مساعد', right: 'والدراجة بدوس مساعد'}      # f. 5443: «بدوس» (pedal-assisted bicycle), not «بدون»
+notes:
+  - {art: 1, page: 5439, what: 'Item 15''s line lacks the opening « the page prints before it («15 - «دراجة بدوس مساعد» …» for «15 - …»): punctuation only. The 25 km/h, 6 km/h and 250 W of items 14 and 15 read right.'}
+checked: [1, 4]

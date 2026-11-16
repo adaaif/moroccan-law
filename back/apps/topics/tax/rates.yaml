@@ -1,0 +1,144 @@
+# The figures the tax tools read (the tax review, T10–T18), each row from the date it is in force, with the
+# articles that set it: the code as the DGI's 2026 edition prints it (/ma/code/cgi), the finance law that wrote the
+# figure as the BO printed it, law 47.06 for the communes' taxes. A finance law's new figure is a row more (T4, T23):
+# the tools read the row in force on the day they are asked about. Rows start in 2025: 2024's code is not held here
+# (C4: the years the site can cite). Rates are in percent, amounts in dirhams a year.
+
+# Income tax's scale (art. 73-I), as finance law 60.24 art. 8 wrote it for income from 1 January 2025 (art. 8-III-12;
+# finance law 50.25 left it): each slice taxed at its own rate, the first exempt.
+- key: scale
+  title: {ar: 'جدول حساب الضريبة على الدخل', fr: 'Le barème de l’impôt sur le revenu'}
+  unit: {ar: درهم فالعام, fr: dirhams par an}
+  rows:
+    - from: '2025-01-01'
+      values: {s1: 40000, s2: 60000, s3: 80000, s4: 100000, s5: 180000, r1: 10, r2: 20, r3: 30, r4: 34, r5: 37}
+      cites: [/ma/code/cgi/art_73, /ma/loi/60-24/art_8]
+
+# The family deduction (art. 74-I): off the year's tax for each dependent, to a total at most.
+- key: family
+  title: {ar: 'الخصم عن الأعباء العائلية', fr: 'La réduction pour charges de famille'}
+  unit: {ar: درهم فالعام, fr: dirhams par an}
+  rows:
+    - from: '2025-01-01'
+      to: '2026-01-01'
+      values: {per: 500, max: 3000}
+      cites: [/ma/loi/60-24/art_8]
+    - from: '2026-01-01'
+      values: {per: 600, max: 3600}
+      cites: [/ma/code/cgi/art_74, /ma/loi/50-25/art_7]
+
+# Professional expenses (art. 59-I-A): a flat share of the gross taxable salary, the whole of it at the lower rate's
+# share up to the threshold, at most the cap above it (the professions of 59-I-B and C have their own rates).
+- key: expenses
+  title: {ar: 'المصاريف المرتبطة بالوظيفة أو العمل', fr: 'Les frais inhérents à la fonction ou à l’emploi'}
+  rows:
+    - from: '2025-01-01'
+      values: {low_rate: 35, threshold: 78000, high_rate: 25, cap: 35000}
+      cites: [/ma/code/cgi/art_59]
+
+# Pensions (art. 57-27°, 60-I): the basic schemes' pensions exempt from 1 January 2026 (finance law 60.24 art. 8-III-8),
+# with half the tax off 2025's; the others abated 70% to the threshold and 40% above.
+- key: pension
+  title: {ar: 'المعاشات', fr: 'Les pensions'}
+  rows:
+    - from: '2025-01-01'
+      to: '2026-01-01'
+      values: {basic_exempt: 0, basic_reduction: 50, low_rate: 70, threshold: 168000, high_rate: 40, foreign_reduction: 80}
+      cites: [/ma/loi/60-24/art_8, /ma/code/cgi/art_60, /ma/code/cgi/art_76]
+    - from: '2026-01-01'
+      values: {basic_exempt: 1, basic_reduction: 0, low_rate: 70, threshold: 168000, high_rate: 40, foreign_reduction: 80}
+      cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_60, /ma/code/cgi/art_76, /ma/loi/50-25/art_7]
+
+# Rent (art. 64, 73-II, 160 bis): 40% off the gross rent before the scale; a company or administration tenant withholds
+# 10% below 120,000 dirhams a year and 15% above; the 20% final rate on option (64-IV, from 2025).
+- key: rent
+  title: {ar: 'الدخول العقارية', fr: 'Les revenus fonciers'}
+  rows:
+    - from: '2025-01-01'
+      values: {abatement: 40, withhold_low: 10, withhold_high: 15, withhold_threshold: 120000, final: 20}
+      cites: [/ma/code/cgi/art_64, /ma/code/cgi/art_73, /ma/code/cgi/art_160-bis, /ma/loi/60-24/art_8]
+
+# A property's gain (art. 63, 65, 73-II-F-6°, 144-II): 20% of the profit, never under 3% of the price; acquisition costs
+# 15% of the purchase price unless proven higher; the main home exempt after 5 years (3% minimum on the price above 4
+# million); sales of 140,000 dirhams in a year exempt.
+- key: property
+  title: {ar: 'الأرباح العقارية', fr: 'Les profits fonciers'}
+  rows:
+    - from: '2025-01-01'
+      values: {rate: 20, minimum: 3, costs: 15, home_years: 5, home_cap: 4000000, small: 140000, social_years: 4}
+      cites: [/ma/code/cgi/art_63, /ma/code/cgi/art_65, /ma/code/cgi/art_73, /ma/code/cgi/art_144]
+
+# Registration duties (art. 133, 128): 4% on built premises (and their land to five times the covered area), 5% on bare
+# land, 3% on the first sale of social housing, 1.5% on a gift in the family; registered within 30 days.
+- key: registration
+  title: {ar: 'واجبات التسجيل', fr: 'Les droits d’enregistrement'}
+  rows:
+    - from: '2025-01-01'
+      values: {built: 4, land: 5, social: 3, family_gift: 1.5, days: 30}
+      cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_128]
+
+# The vehicle tax (art. 262-I-A): cars of 3,000 kg or less, and 4x4s for private use whatever their weight, by fiscal
+# horsepower and fuel; a diesel pick-up of a private person pays the petrol tariff. Electric and hybrid cars exempt
+# (art. 260-15°). Paid in January (art. 261); a car put on the road during the year pays a twelfth a month left.
+- key: car
+  title: {ar: 'الضريبة الخصوصية السنوية على المركبات', fr: 'La taxe spéciale annuelle sur les véhicules'}
+  unit: {ar: درهم فالعام, fr: dirhams par an}
+  rows:
+    - from: '2025-01-01'
+      values: {petrol_lt8: 350, petrol_8_10: 650, petrol_11_14: 3000, petrol_15: 8000,
+               diesel_lt8: 700, diesel_8_10: 1500, diesel_11_14: 6000, diesel_15: 20000, newcar_days: 60}
+      cites: [/ma/code/cgi/art_262, /ma/code/cgi/art_261, /ma/code/cgi/art_260]
+
+# Working for oneself (art. 42 bis, 42 ter, 73-III): the auto-entrepreneur's rates on turnover collected and their
+# ceilings, the client's withholding above 80,000 dirhams a year, and the complementary duty the scale of 73-II-B-6°
+# adds by the year's tax (`d1`…`d7` the tranches' upper bounds, `c1`…`c8` the yearly duty).
+- key: own
+  title: {ar: 'المقاول الذاتي', fr: 'L’auto-entrepreneur'}
+  rows:
+    - from: '2025-01-01'
+      values: {trade: 0.5, trade_cap: 500000, service: 1, service_cap: 200000, client: 80000, client_rate: 30,
+               d1: 499, d2: 1000, d3: 2500, d4: 5000, d5: 10000, d6: 25000, d7: 50000,
+               c1: 1200, c2: 1560, c3: 2280, c4: 2880, c5: 4200, c6: 6000, c7: 9000, c8: 14400}
+      cites: [/ma/code/cgi/art_42-bis, /ma/code/cgi/art_42-ter, /ma/code/cgi/art_73]
+
+# Paying late (art. 208 of the code; law 47.06 art. 147 for the communes' taxes): a penalty of 10% (5% within 30 days),
+# 5% for the first month and 0.5% for each month or part after; for a commune's housing or services tax of 1,000
+# dirhams or less, none.
+- key: late
+  title: {ar: 'الأداء المتأخر', fr: 'Le paiement tardif'}
+  rows:
+    - from: '2025-01-01'
+      values: {penalty: 10, penalty_30: 5, first_month: 5, per_month: 0.5, local_free: 1000, registration_min: 100}
+      cites: [/ma/code/cgi/art_208, /ma/loi/47-06/art_147]
+
+# The communes' taxes on a home and a plot (law 47.06): the housing tax's scale on the rental value (art. 27; the SGG's
+# text prints «40.0001»), 75% off a main residence (art. 24); the services tax 10.5% of the rental value in towns, 6.5%
+# elsewhere under a plan (art. 36); urban land by square metre and the zone's equipment, set by each commune within
+# these bounds (art. 45), no tax under 200 dirhams.
+- key: local
+  title: {ar: 'رسوم الجماعة على الدار والأرض', fr: 'Les taxes communales du logement et du terrain'}
+  rows:
+    - from: '2025-06-12'
+      values: {h1: 5000, h2: 20000, h3: 40000, r1: 10, r2: 20, r3: 30, abatement: 75, services_urban: 10.5, services_other: 6.5,
+               land_full_min: 15, land_full_max: 30, land_mid_min: 5, land_mid_max: 15, land_low_min: 0.5, land_low_max: 2, land_floor: 200}
+      cites: [/ma/loi/47-06/art_24, /ma/loi/47-06/art_27, /ma/loi/47-06/art_36, /ma/loi/47-06/art_45]
+
+# The 2027 bill's scales and professional expenses (the finance-bill review, P6): a bill's, never law. Kept in
+# tables of their own, each row `proposed` by the bill, so no tool reads them as the law in force (the kit's `inForce`
+# also passes over a proposed row); only the bill's tool asks for them, by year. 2027–2030 are art. 247-XXXXVII's
+# transitional scales, 2031 art. 73-I's (a scale's empty slices, a threshold repeated, are drawn as none). The day the
+# BO publishes the law, its rows move into `scale` and `expenses` without the flag (P22).
+- key: bill-scale
+  title: {ar: 'جدول الضريبة على الدخل حسب مشروع قانون المالية 2027', fr: 'Le barème de l’IR selon le projet de loi de finances 2027'}
+  unit: {ar: درهم فالعام, fr: dirhams par an}
+  rows:
+    - {from: '2027-01-01', to: '2028-01-01', proposed: /ma/projet-loi/60-26, values: {s1: 60000, s2: 80000, s3: 100000, s4: 180000, s5: 180000, r1: 10, r2: 20, r3: 34, r4: 37, r5: 37}, cites: [/ma/code/cgi/art_247, /ma/projet-loi/60-26/art_7]}
+    - {from: '2028-01-01', to: '2029-01-01', proposed: /ma/projet-loi/60-26, values: {s1: 60000, s2: 100000, s3: 200000, s4: 200000, s5: 200000, r1: 10, r2: 25, r3: 37, r4: 37, r5: 37}, cites: [/ma/code/cgi/art_247, /ma/projet-loi/60-26/art_7]}
+    - {from: '2029-01-01', to: '2030-01-01', proposed: /ma/projet-loi/60-26, values: {s1: 60000, s2: 130000, s3: 200000, s4: 200000, s5: 200000, r1: 10, r2: 20, r3: 35, r4: 35, r5: 35}, cites: [/ma/code/cgi/art_247, /ma/projet-loi/60-26/art_7]}
+    - {from: '2030-01-01', to: '2031-01-01', proposed: /ma/projet-loi/60-26, values: {s1: 60000, s2: 150000, s3: 200000, s4: 200000, s5: 200000, r1: 10, r2: 20, r3: 30, r4: 30, r5: 30}, cites: [/ma/code/cgi/art_247, /ma/projet-loi/60-26/art_7]}
+    - {from: '2031-01-01', proposed: /ma/projet-loi/60-26, values: {s1: 60000, s2: 150000, s3: 500000, s4: 500000, s5: 500000, r1: 10, r2: 20, r3: 30, r4: 30, r5: 30}, cites: [/ma/code/cgi/art_73, /ma/projet-loi/60-26/art_7]}
+
+- key: bill-expenses
+  title: {ar: 'المصاريف المهنية حسب مشروع قانون المالية 2027', fr: 'Les frais professionnels selon le projet de loi de finances 2027'}
+  rows:
+    - {from: '2027-01-01', proposed: /ma/projet-loi/60-26, values: {low_rate: 45, threshold: 0, high_rate: 45, cap: 35000}, cites: [/ma/code/cgi/art_59, /ma/projet-loi/60-26/art_7]}

@@ -1,0 +1,29 @@
+# Law 39.08, the real-rights code, as Adala's PDF prints it, where our text misreads it: a ligature turned around, a word
+# cut in pieces, two letters swapped («بنية» for the page's «بينة», «تولاي» for «توالي», «يعبر» for «يعرب»), a line break
+# inside a date. Each was read against the page's image on 26 Oct 2026 (the land review, M16), in the articles the land
+# topic cites (13 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/real_rights_39_08.yaml`; a reload of the text applies them again.
+text: /ma/loi/39-08
+document: sources/adala/real_rights_39_08.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [2], wrong: هو فعال صاحب, right: هو فعلا صاحب}   # turn, p. 4
+  - {arts: [3], wrong: إذا تعارضت البنيات المدلى, right: إذا تعارضت البينات المدلى}   # moved, p. 4
+  - {arts: [3], wrong: تقديم بنية الملك على بنية الحوز, right: تقديم بينة الملك على بينة الحوز}   # moved, p. 4
+  - {arts: [3], wrong: تقديم بنية النقل على بنية الا ستصحاب, right: تقديم بينة النقل على بينة الاستصحاب}   # moved and split, p. 4
+  - {arts: [3], wrong: تقديم بنية الإثبات على بنية النفي, right: تقديم بينة الإثبات على بينة النفي}   # moved, p. 5
+  - {arts: [3], wrong: تقديم بنية الأصالة على, right: تقديم بينة الأصالة على}   # moved, p. 5
+  - {arts: [3], wrong: تقدم البنية المؤرخة على البنية غير, right: تقدم البينة المؤرخة على البينة غير}   # moved, p. 5
+  - {arts: [3], wrong: تقديم البنية السابقة على البنية اللاحقة, right: تقديم البينة السابقة على البينة اللاحقة}   # moved, p. 5
+  - {arts: [3], wrong: تقديم بنية التفصيل على بنية الإجمال, right: تقديم بينة التفصيل على بينة الإجمال}   # moved, p. 5
+  - {arts: [245], wrong: لبس فال يكون, right: لبس فلا يكون}   # turn, p. 45
+  - {arts: [253], wrong: حالة تولاي التفويتات, right: حالة توالي التفويتات}   # turn, p. 46
+  - {arts: [296], wrong: ما لم يعبر عن رغبته, right: ما لم يعرب عن رغبته}   # moved, p. 54: the page prints «يعرب»
+  - {arts: [300], wrong: أو تعدد، فال يجوز, right: أو تعدد، فلا يجوز}   # turn, p. 55
+  - {arts: [302], wrong: في القانون فال يجوز, right: في القانون فلا يجوز}   # turn, p. 55
+  - {arts: [303], wrong: صوريا أو تحايال, right: صوريا أو تحايلا}   # turn, p. 55
+  - {arts: [305], wrong: التحفيظ فال يعتد, right: التحفيظ فلا يعتد}   # turn, p. 56
+  - {arts: [307], wrong: "(12 أغسطس\n1913) المتعلق", right: '(12 أغسطس 1913) المتعلق'}   # p. 56: the page's line break inside the date, not a new paragraph
+  - {arts: [324], wrong: يضمن الم تقاس مون بعضهم, right: يضمن المتقاسمون بعضهم}   # split, p. 59
+  - {arts: [327], wrong: إذا وقع خالف بين, right: إذا وقع خلاف بين}   # turn, p. 59
+  - {arts: [332], wrong: يتحملها الم تقاس مون جميعا, right: يتحملها المتقاسمون جميعا}   # split, p. 60

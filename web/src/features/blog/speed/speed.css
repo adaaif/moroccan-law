@@ -1,0 +1,68 @@
+/* «السرعة في الجريدة الرسمية» (the twenty-second post). An instrument: a speedometer in ink on the sheet, its rim dotted
+   in violet where the Bulletin wrote a speed (what the texts printed), the needle the reader moves by the years. Today's
+   limits are the road's own round signs, a red ring on white, as every driver knows them. */
+
+.sp { --sp-sign: #c8102e; }
+
+/* ── The dial ─────────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-hero { margin: 0 -16px; padding: 24px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 640px) { .sp-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 30px 32px 24px; } }
+.sp-q { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem); line-height: 1.25; }
+.bp:lang(fr) .sp-q { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.8rem); }
+.sp-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; align-items: center; }
+@media (min-width: 760px) { .sp-hero-grid { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: 28px; } }
+.sp-dial { inline-size: 100%; max-inline-size: 420px; margin-inline: auto; }
+.sp-dial svg { display: block; inline-size: 100%; block-size: auto; overflow: visible; }
+.sp-arc { fill: none; stroke: var(--color-ink); stroke-width: 3; }
+.sp-tick { stroke: var(--color-ink); stroke-width: 1.5; }
+.sp-tick.is-major { stroke-width: 2.5; }
+.sp-num { font-family: var(--font-ui); font-size: 15px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.sp-mark { fill: color-mix(in srgb, var(--color-stamp) 55%, transparent); }
+.sp-mark.is-on { fill: var(--color-stamp); }
+.sp-needle path { fill: var(--color-ink); }
+.sp-needle { transition: transform 900ms cubic-bezier(0.25, 1.35, 0.4, 1); }
+@media (prefers-reduced-motion: reduce) { .sp-needle { transition: none; } }
+.sp-hub { fill: var(--color-ink); }
+.sp-big { font-family: var(--font-ui); font-weight: 200; font-size: 40px; fill: var(--color-sheet); font-variant-numeric: tabular-nums; }
+.sp-unit { font-family: var(--font-ui); font-size: 14px; fill: var(--color-sheet); }
+.sp-year { font-family: var(--font-ui); font-weight: 600; font-size: 22px; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+
+.sp-era { display: flex; flex-direction: column; gap: 8px; min-width: 0; min-height: 15rem; }
+.sp-era-head { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.sp-kind { font-weight: 700; padding: 1px 10px; border-radius: 999px; }
+.sp-kind.is-rule { background: var(--color-ink); color: var(--color-sheet); }
+.sp-kind.is-news { box-shadow: inset 0 0 0 1.5px var(--color-ink); color: var(--color-ink); }
+.sp-era-say { margin: 0; font-weight: 600; font-size: 1.12rem; line-height: 1.5; }
+.sp-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--color-stamp); font-family: var(--font-law); font-size: 1.25rem; line-height: 1.75; text-wrap: pretty; }
+.sp-quote[lang="ar"] { text-align: right; }
+.sp-quote[lang="fr"] { font-family: "Source Serif 4", Georgia, serif; font-size: 1.05rem; line-height: 1.65; border-inline-start: 0; border-left: 3px solid var(--color-stamp); padding-left: 14px; padding-right: 0; }
+.sp-gloss, .sp-marks, .sp-src, .sp-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.65; }
+.sp-stamp { vertical-align: middle; }
+.sp-years { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding: 2px 2px 6px; direction: ltr; }
+.sp-years::-webkit-scrollbar { display: none; }
+.sp-years button { flex: none; display: flex; flex-direction: column; align-items: center; gap: 0; min-block-size: 52px; min-inline-size: 64px; padding: 4px 10px;
+  border-radius: 12px; border: 1.5px solid var(--color-rule); background: var(--color-paper); color: var(--color-ink); font: inherit; cursor: pointer; }
+.sp-years button b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.sp-years button span { font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.sp-years button.is-on { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+.sp-years button.is-on span { color: color-mix(in srgb, var(--color-sheet) 80%, transparent); }
+.sp-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.sp-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.sp-share:disabled { opacity: 0.6; }
+
+/* ── The orders ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-orders svg { display: block; overflow: visible; }
+.sp-grid { stroke: var(--color-rule-soft); stroke-width: 1; }
+.sp-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.sp-dot { fill: color-mix(in srgb, var(--color-stamp) 70%, transparent); stroke: var(--color-sheet); stroke-width: 1; }
+
+/* ── Today's signs ────────────────────────────────────────────────────────────────────────────────────────────── */
+.sp-signs { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 18px 14px; }
+@media (min-width: 1100px) { .sp-signs { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+.sp-signs li { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; }
+.sp-sign { display: grid; place-items: center; inline-size: 84px; block-size: 84px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 9px var(--sp-sign), 0 1px 0 var(--color-rule); }
+.sp-sign b { font-family: var(--font-ui); font-weight: 700; font-size: 30px; color: #000; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.sp-sign-words { font-weight: 600; line-height: 1.4; }
+.sp-sign-src { font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.6; }
+.sp-instrument { display: flex; flex-direction: column; gap: 10px; min-width: 0; }

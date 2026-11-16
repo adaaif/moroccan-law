@@ -1,0 +1,19 @@
+# The articles people know by their number (9 Nov 2026, the famous-articles review, apps/search/data/famous.json), read against
+# their page images before search shows them on a card: where the PDF's text layer turned a ligature round or a vowel
+# mark cut a word in two. Applied by `manage.py apply_page_reading apps/quality/data/famous_articles.yaml`; a reload of
+# a text applies them again. The other articles on the list read as printed (penal 222, 288, 449, 453, 475, 490, 491,
+# 493; family 16, 20, 49, 332; constitution 47, whose fourth paragraph the 2011 text itself prints twice; labour 53).
+text: /ma/dahir/1-59-413
+document: samples/adala/adala_89.pdf
+read_on: '2026-11-09'
+fixes:
+  - {arts: [220], wrong: التهديد إلكراه شخص, right: التهديد لإكراه شخص}   # turn, p. 72
+  - {arts: [220], wrong: الصحة أو المالجئ, right: الصحة أو الملاجئ}   # turn, p. 72
+  - {arts: [489], wrong: من ارتكب فعال من أفعال, right: من ارتكب فعلا من أفعال}   # turn, p. 163
+  - {arts: [492], wrong: يضع حدا الثار الحكم, right: يضع حدا لاثار الحكم}   # turn, p. 163 (as printed, «لاثار»)
+---
+text: /ma/dahir/1-11-91
+document: samples/adala/adala_16.pdf
+read_on: '2026-11-09'
+fixes:
+  - {arts: [19], wrong: وت حدث لهذه الغاية, right: وتُحدث لهذه الغاية}   # a vowel mark cut the word, p. 8 of the print

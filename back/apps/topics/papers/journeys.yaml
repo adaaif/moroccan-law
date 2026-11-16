@@ -1,0 +1,329 @@
+# The papers topic's journeys (the papers review): what happens, step by step, each step on the articles it rests on,
+# the limits as the texts set them. Written from law 04.20 and decree 2.20.521 (the card), law 36.21 and decree 2.22.04
+# (civil status), dahir 1.58.250 (nationality), law 55.19 (the administration), the criminal procedure 22.01, the tax code
+# (arts 250, 252), as the site holds them on 27 Oct 2026. Steps say what the law says, never what a reader should do in their
+# own case. A reader sees a journey once a person has checked it.
+
+- key: card-first
+  title: {ar: 'أول بطاقة وطنية', fr: 'La première carte nationale'}
+  lead:
+    ar: 'كل مغربي يبلغ 16 سنة شمسية كاملة يجب أن يتوفر على البطاقة الوطنية للتعريف الإلكترونية؛ تثبت هويته، ومنها هويته الرقمية، برقم وطني واحد خاص به.'
+    fr: 'Tout Marocain de 16 ans révolus doit avoir la carte nationale d’identité électronique ; elle prouve son identité, numérique comprise, par un numéro national unique.'
+  steps:
+    - title: {ar: 'متى', fr: 'Quand'}
+      answer: {ar: 'من 16 سنة كاملة هي واجبة؛ وقبلها يمكن طلبها للقاصر بطلب من نائبه الشرعي.', fr: 'Obligatoire dès 16 ans révolus ; avant, elle peut être demandée pour le mineur par son représentant légal.'}
+      body:
+        ar: 'يجب على كل مواطن مغربي يبلغ 16 سنة شمسية كاملة أن يتوفر على البطاقة، ويمكن إصدارها للقاصر الذي تقل سنه عن 16 سنة بطلب من نائبه الشرعي. ومن بلغ 16 سنة وأغفل تقديم طلبها يعاقب بغرامة من 300 إلى 400 درهم.'
+        fr: 'Tout Marocain de 16 ans révolus doit avoir la carte ; elle peut être délivrée au mineur de moins de 16 ans à la demande de son représentant légal. Qui, à 16 ans, omet de la demander encourt 300 à 400 DH d’amende.'
+      cites: [/ma/loi/4-20/art_2, /ma/loi/4-20/art_15]
+    - title: {ar: 'الوثائق', fr: 'Les pièces'}
+      answer: {ar: 'نسخة من الحالة المدنية لا تتجاوز ثلاثة أشهر (أو صفحة الدفتر العائلي مع الدفتر)، شهادة الإقامة، أربع صور، وواجبات التمبر.', fr: 'Une copie d’état civil de moins de trois mois (ou la page du livret avec le livret), le certificat de résidence, quatre photos, le timbre.'}
+      body:
+        ar: 'عند أول طلب: نسخة من صفحة الدفتر العائلي للمعني بالأمر مع تقديم الدفتر، أو نسخة كاملة من سجل الحالة المدنية، أو نسخة موجزة من رسم الولادة لا تتجاوز صلاحيتهما ثلاثة أشهر؛ وشهادة الإقامة تسلمها مصالح الأمن الوطني أو الدرك الملكي أو السلطة الإدارية المحلية؛ وأربع صور متشابهة بالألوان حديثة وأمامية بخلفية رمادية فاتحة أو زرقاء فاتحة، من حجم 3,5 × 4,5 سنتمتر، بوجه وأذنين مكشوفة وبدون نظارات قاتمة؛ ونسخة من بطاقة النائب الشرعي للقاصر؛ وواجبات التمبر. ومن اكتسب الجنسية يدلي بنسخة من الوثيقة التي منحتها، وتطلب شهادة الجنسية إذا وقع شك.'
+        fr: 'À la première demande : la copie de la page du livret de famille avec le livret, ou une copie intégrale de l’état civil, ou un extrait d’acte de naissance de moins de trois mois ; le certificat de résidence de la Sûreté nationale, de la Gendarmerie ou de l’autorité locale ; quatre photos identiques en couleur, récentes, de face, fond gris ou bleu clair, 3,5 × 4,5 cm, visage et oreilles dégagés, sans lunettes sombres ; la copie de la carte du représentant légal pour un mineur ; le timbre. Qui a acquis la nationalité joint copie de l’acte qui la lui a donnée ; le certificat de nationalité n’est demandé qu’en cas de doute.'
+      cites: [/ma/decret/2-20-521/art_3]
+      papers: checklists/card-first
+    - title: {ar: 'الإيداع', fr: 'Le dépôt'}
+      answer: {ar: 'يودع الطلب شخصيا، لدى مصلحة البطاقة التابع لها مقر سكناك، مقابل وصل مؤرخ؛ والقاصر يحضر مع نائبه الشرعي.', fr: 'Le dossier se dépose en personne au service de la carte de votre résidence, contre un reçu daté ; le mineur vient avec son représentant légal.'}
+      body:
+        ar: 'يودع الطلب من قبل المعني بالأمر شخصيا أو من قبل النائب الشرعي للقاصر، لدى المصلحة المكلفة بالبطاقة التابع لها مقر إقامته، مقابل وصل مؤرخ، مع مراعاة حالات الأشخاص ذوي القدرة المحدودة على الحركة. وتتم إجراءات بطاقة القاصر بحضوره مرفوقا بنائبه الشرعي الذي يدلي ببطاقته وبما يثبت صفته.'
+        fr: 'La demande est déposée par l’intéressé en personne ou par le représentant légal du mineur, au service de la carte de sa résidence, contre un reçu daté, en tenant compte des personnes à mobilité réduite. Pour un mineur, tout se fait en sa présence, avec son représentant légal qui présente sa carte et la preuve de sa qualité.'
+      cites: [/ma/decret/2-20-521/art_7, /ma/decret/2-20-521/art_11]
+    - title: {ar: 'البصمات والتمبر', fr: 'Les empreintes et le timbre'}
+      answer: {ar: 'تؤخذ بصماتك إذا تجاوزت 12 سنة؛ والتمبر 75 درهما، و50 درهما لمن هو دون 12 سنة.', fr: 'Vos empreintes sont prises au-delà de 12 ans ; le timbre est de 75 DH, 50 DH avant 12 ans.'}
+      body:
+        ar: 'تؤخذ بصمات أصابع اليد لمن تتجاوز سنه 12 سنة شمسية كاملة عند أول طلب. وتخضع البطاقة لواجب تمبر ثابت قدره 75 درهما عند تسليمها أو تجديدها أو منح نظير لها، و50 درهما لمن تقل سنه عن اثنتي عشرة سنة.'
+        fr: 'Les empreintes digitales sont prises au-delà de 12 ans révolus, à la première demande. La carte est soumise à un droit de timbre fixe de 75 DH à sa délivrance, son renouvellement ou un duplicata, 50 DH avant douze ans.'
+      cites: [/ma/decret/2-20-521/art_10, /ma/code/cgi/art_252]
+    - title: {ar: 'السحب', fr: 'Le retrait'}
+      answer: {ar: 'تسحبها شخصيا بالوصل المؤرخ، ومعها رمز سري؛ صالحة عشر سنوات.', fr: 'Vous la retirez en personne avec le reçu daté, accompagnée d’un code secret ; valable dix ans.'}
+      body:
+        ar: 'تسحب البطاقة من قبل المعني بالأمر شخصيا أو النائب الشرعي للقاصر مقابل الوصل المؤرخ. ويسلمها المدير العام للأمن الوطني مرفقة برمز سري مرتبط بها. وصلاحيتها عشر سنوات لمن تتجاوز سنه 12 سنة، وسبع سنوات على الأكثر لمن تقل سنه عنها، دون أن تتجاوز اليوم السابق لبلوغه 12 سنة.'
+        fr: 'La carte est retirée par l’intéressé en personne ou le représentant légal du mineur, contre le reçu daté. Le directeur général de la Sûreté nationale la délivre avec un code secret. Elle vaut dix ans au-delà de 12 ans, sept ans au plus avant, sans dépasser la veille des 12 ans.'
+      cites: [/ma/decret/2-20-521/art_9, /ma/decret/2-20-521/art_2, /ma/decret/2-20-521/art_1]
+      tool: tools/card
+    - title: {ar: 'ما تعفيك منه', fr: 'Ce dont elle dispense'}
+      answer: {ar: 'البطاقة تعفيك من رسم الولادة، وشهادة الإقامة، وشهادة الحياة، وشهادة الجنسية.', fr: 'La carte dispense de l’acte de naissance, du certificat de résidence, du certificat de vie et du certificat de nationalité.'}
+      body:
+        ar: 'تعفي البطاقة الوطنية للتعريف الإلكترونية من الإدلاء برسم الولادة، وشهادة الإقامة، وشهادة الحياة، وشهادة الجنسية، ويمكن تتميم هذه القائمة بنص تنظيمي.'
+        fr: 'La carte nationale d’identité électronique dispense de produire l’acte de naissance, le certificat de résidence, le certificat de vie et le certificat de nationalité ; la liste peut être complétée par voie réglementaire.'
+      cites: [/ma/loi/4-20/art_11]
+  ends: {office: police, paper: {ar: 'البطاقة الوطنية للتعريف الإلكترونية ورمزها السري', fr: 'La carte nationale d’identité électronique et son code secret'}, cites: [/ma/decret/2-20-521/art_2]}
+  next: [journeys/card-renew]
+
+- key: card-renew
+  title: {ar: 'تجديد البطاقة', fr: 'Renouveler la carte'}
+  lead:
+    ar: 'القانون يسمي سبع حالات يجب فيها تجديد البطاقة، ومنها تغيير عنوان السكنى؛ ومن لم يطلب التجديد فيها يعاقب بغرامة من 200 إلى 300 درهم.'
+    fr: 'La loi nomme sept cas où la carte doit être renouvelée, dont le changement d’adresse ; qui ne la renouvelle pas encourt 200 à 300 DH d’amende.'
+  steps:
+    - title: {ar: 'متى يجب', fr: 'Quand c’est obligatoire'}
+      answer: {ar: 'تغيير الاسم أو تاريخ الولادة، تصحيح مكان الولادة أو رقم الرسم أو النسب، تغيير العنوان، الضياع أو السرقة أو التلف، انتهاء الصلاحية، تغيير عبارة «زوجة» أو «أرملة» أو «أرمل»، وبلوغ القاصر 12 سنة.', fr: 'Un changement de nom ou de date de naissance, une rectification du lieu de naissance, du numéro d’acte ou de la filiation, un changement d’adresse, la perte, le vol ou la détérioration, l’expiration, un changement de la mention «épouse», «veuve» ou «veuf», et les 12 ans du mineur.'}
+      body:
+        ar: 'يجب تجديد البطاقة في الحالات التالية: تغيير الاسم الشخصي أو الاسم العائلي أو تاريخ الولادة؛ تصحيح مكان الولادة أو رقم رسم الحالة المدنية أو النسب؛ تغيير عنوان السكن؛ ضياع البطاقة أو سرقتها أو تعرضها للتلف؛ انتهاء صلاحيتها؛ تغيير إحدى المعلومات المتعلقة بالعبارات الاختيارية «زوجة» أو «أرملة» أو «أرمل»؛ بلوغ القاصر 12 سنة شمسية كاملة. أما البريد الإلكتروني ورقم الهاتف وأسماء من يتصل بهم عند الضرورة، فتغير أو تحذف بطلب دون بطاقة جديدة.'
+        fr: 'La carte doit être renouvelée en cas de : changement du prénom, du nom ou de la date de naissance ; rectification du lieu de naissance, du numéro d’acte d’état civil ou de la filiation ; changement d’adresse ; perte, vol ou détérioration ; expiration ; changement d’une mention «épouse», «veuve» ou «veuf» ; 12 ans révolus du mineur. L’adresse électronique, le téléphone et les personnes à prévenir se changent ou s’effacent sur demande, sans nouvelle carte.'
+      cites: [/ma/loi/4-20/art_13]
+    - title: {ar: 'الغرامة', fr: 'L’amende'}
+      answer: {ar: 'من لم يطلب التجديد في هذه الحالات يعاقب بغرامة من 200 إلى 300 درهم.', fr: 'Qui ne demande pas le renouvellement dans ces cas encourt 200 à 300 DH d’amende.'}
+      body:
+        ar: 'يعاقب بغرامة من 200 إلى 300 درهم كل شخص لم يطلب تجديد بطاقته طبقا للمادة 13. ويعاقب بغرامة من 100 إلى 150 درهما من يتوفر على البطاقة ولم يتمكن من تقديمها إلى ضباط وأعوان الشرطة القضائية بطلب منهم.'
+        fr: 'Est puni de 200 à 300 DH d’amende quiconque ne demande pas le renouvellement de sa carte selon l’article 13 ; de 100 à 150 DH qui, titulaire de la carte, ne peut la présenter aux officiers et agents de police judiciaire qui la lui demandent.'
+      cites: [/ma/loi/4-20/art_15]
+    - title: {ar: 'الوثائق', fr: 'Les pièces'}
+      answer: {ar: 'البطاقة القديمة، وما يبرر التجديد، وشهادة الإقامة، وأربع صور، وواجبات التمبر.', fr: 'L’ancienne carte, la pièce qui justifie le renouvellement, le certificat de résidence, quatre photos, le timbre.'}
+      body:
+        ar: 'يتم التجديد بطلب من صاحب البطاقة أو النائب الشرعي للقاصر، مقابل إرجاع البطاقة التي بحوزته مرفقة بالوثائق الإدارية أو القضائية التي تبرر دواعي التجديد، وشهادة الإقامة، وأربع صور بالمواصفات نفسها، ونسخة من بطاقة النائب الشرعي للقاصر، وواجبات التمبر.'
+        fr: 'Le renouvellement se demande par le titulaire ou le représentant légal du mineur, en rendant la carte détenue, avec les pièces administratives ou judiciaires qui le justifient, le certificat de résidence, quatre photos aux mêmes normes, la copie de la carte du représentant légal du mineur, le timbre.'
+      cites: [/ma/decret/2-20-521/art_5]
+      papers: checklists/card-renew
+    - title: {ar: '«زوجة» أو «أرملة»', fr: '«Épouse» ou «veuve»'}
+      answer: {ar: 'العبارة اختيارية؛ من يطلبها يدلي بعقد الزواج أو رسم الوفاة ورسم ولادة الزوج.', fr: 'La mention est facultative ; qui la demande produit l’acte de mariage, ou l’acte de décès et l’acte de naissance du conjoint.'}
+      body:
+        ar: 'يمكن أن تدرج في البطاقة العبارة الاختيارية «زوجة» أو «أرملة» أو «أرمل» مع اسم المعني بها. ومن يطلبها يدلي، حسب الحالة، بنسخة مطابقة للأصل من عقد الزواج، أو نسخة من رسم وفاة الزوج أو الزوجة، ونسخة من رسم ولادة الزوج، وشهادة الإقامة، والبطاقة التي بحوزته.'
+        fr: 'La carte peut porter la mention facultative «épouse», «veuve» ou «veuf» avec le nom concerné. Qui la demande produit, selon le cas, une copie conforme de l’acte de mariage, ou une copie de l’acte de décès du conjoint, une copie de l’acte de naissance du conjoint, le certificat de résidence et sa carte.'
+      cites: [/ma/loi/4-20/art_4, /ma/decret/2-20-521/art_4]
+      papers: checklists/card-marital
+    - title: {ar: 'عند 12 سنة', fr: 'À 12 ans'}
+      answer: {ar: 'بطاقة القاصر تنتهي قبل يوم من بلوغه 12 سنة، وتؤخذ بصماته عند تجديدها.', fr: 'La carte du mineur prend fin la veille de ses 12 ans ; ses empreintes sont prises au renouvellement.'}
+      body:
+        ar: 'صلاحية بطاقة من تقل سنه عن 12 سنة سبع سنوات على الأكثر، ولا تتجاوز اليوم السابق لبلوغه 12 سنة. ويجب تجديدها عند بلوغه هذه السن، وتؤخذ بصمات أصابعه عند هذا التجديد.'
+        fr: 'La carte d’un enfant de moins de 12 ans vaut sept ans au plus, sans dépasser la veille de ses 12 ans. Elle doit être renouvelée à cet âge, et ses empreintes sont prises à ce renouvellement.'
+      cites: [/ma/decret/2-20-521/art_1, /ma/loi/4-20/art_13, /ma/decret/2-20-521/art_10]
+      tool: tools/card
+  ends: {office: police, paper: {ar: 'بطاقة جديدة، والقديمة ترجع', fr: 'Une nouvelle carte ; l’ancienne est rendue'}, cites: [/ma/decret/2-20-521/art_5]}
+
+- key: card-lost
+  title: {ar: 'ضاعت البطاقة أو سرقت', fr: 'La carte perdue ou volée'}
+  lead:
+    ar: 'الضياع والسرقة والتلف من حالات التجديد الواجب؛ تلغي المديرية العامة للأمن الوطني شهادات الأمان الرقمية لكل بطاقة صرح بضياعها أو سرقتها.'
+    fr: 'La perte, le vol et la détérioration obligent au renouvellement ; la DGSN annule les certificats de sécurité numériques de toute carte déclarée perdue ou volée.'
+  steps:
+    - title: {ar: 'التصريح', fr: 'La déclaration'}
+      answer: {ar: 'التصريح بالضياع أو السرقة لدى السلطات المختصة يلغي شهادات الأمان الرقمية للبطاقة، فلا تعود تثبت بها هويتك عن بعد.', fr: 'La perte ou le vol déclaré aux autorités compétentes annule les certificats de sécurité numériques de la carte : elle ne prouve plus votre identité à distance.'}
+      body:
+        ar: 'تقوم المديرية العامة للأمن الوطني بإلغاء شهادات الأمان الرقمية المتعلقة بكل بطاقة وطنية تم التصريح لدى السلطات المختصة بضياعها أو سرقتها أو تعرضها للتلف. وهذه الشهادات مستندات إلكترونية مشفرة مرتبطة بالبطاقة وبصاحبها، بها يثبت هويته عن بعد.'
+        fr: 'La DGSN annule les certificats de sécurité numériques de toute carte déclarée perdue, volée ou détériorée auprès des autorités compétentes. Ces certificats, documents électroniques chiffrés liés à la carte et à son titulaire, servent à prouver son identité à distance.'
+      cites: [/ma/decret/2-20-521/art_6, /ma/loi/4-20/art_3, /ma/loi/4-20/art_10]
+    - title: {ar: 'التجديد واجب', fr: 'Le renouvellement est obligatoire'}
+      answer: {ar: 'الضياع أو السرقة أو التلف يوجب طلب بطاقة جديدة، وإلا غرامة من 200 إلى 300 درهم.', fr: 'La perte, le vol ou la détérioration obligent à demander une nouvelle carte, sinon 200 à 300 DH d’amende.'}
+      body:
+        ar: 'يجب تجديد البطاقة في حالة ضياعها أو سرقتها أو تعرضها للتلف، ويعاقب بغرامة من 200 إلى 300 درهم من لم يطلب تجديدها.'
+        fr: 'La carte doit être renouvelée en cas de perte, de vol ou de détérioration ; qui ne le demande pas encourt 200 à 300 DH d’amende.'
+      cites: [/ma/loi/4-20/art_13, /ma/loi/4-20/art_15]
+    - title: {ar: 'الملف', fr: 'Le dossier'}
+      answer: {ar: 'ما يثبت الضياع أو السرقة، وشهادة الإقامة، وأربع صور، والتمبر؛ وتؤخذ بصماتك من جديد.', fr: 'La pièce qui prouve la perte ou le vol, le certificat de résidence, quatre photos, le timbre ; vos empreintes sont reprises.'}
+      body:
+        ar: 'يرفق طلب التجديد بالوثائق الإدارية أو القضائية التي تبرر دواعيه، وشهادة الإقامة، وأربع صور، وواجبات التمبر. وتؤخذ بصمات الأصابع لمن تجاوز 12 سنة عند تجديد البطاقة بسبب ضياعها أو سرقتها أو تلفها.'
+        fr: 'La demande joint les pièces administratives ou judiciaires qui la justifient, le certificat de résidence, quatre photos, le timbre. Les empreintes sont reprises au-delà de 12 ans lors d’un renouvellement pour perte, vol ou détérioration.'
+      cites: [/ma/decret/2-20-521/art_5, /ma/decret/2-20-521/art_10]
+      papers: checklists/card-renew
+    - title: {ar: 'التمبر', fr: 'Le timbre'}
+      answer: {ar: 'النظير يخضع للتمبر نفسه: 75 درهما، و50 لمن هو دون 12 سنة.', fr: 'Le duplicata paie le même timbre : 75 DH, 50 DH avant 12 ans.'}
+      cites: [/ma/code/cgi/art_252]
+    - title: {ar: 'والباسبور', fr: 'Et le passeport'}
+      answer: {ar: 'الباسبور يسلم وفق الشكليات التي يحددها قرار مشترك لوزيري الداخلية والخارجية؛ والتمبر 500 درهم لكل تسليم.', fr: 'Le passeport se délivre selon les formalités d’un arrêté conjoint de l’Intérieur et des Affaires étrangères ; le timbre est de 500 DH à chaque délivrance.'}
+      cites: [/ma/decret/2-08-310/art_2, /ma/code/cgi/art_252]
+      next: pages/passport
+  ends: {office: police, paper: {ar: 'بطاقة جديدة برقمك الوطني نفسه', fr: 'Une nouvelle carte, au même numéro national'}, cites: [/ma/loi/4-20/art_1]}
+
+- key: correct
+  title: {ar: 'تصحيح غلط في رسم الحالة المدنية', fr: 'Corriger une erreur d’acte d’état civil'}
+  lead:
+    ar: 'القانون يفرق بين الخطأ المادي، الذي تأذن بتصحيحه السلطة المركزية في خمسة عشر يوما، والخطأ الجوهري، الذي تبت فيه المحكمة.'
+    fr: 'La loi distingue l’erreur matérielle, dont l’autorité centrale autorise la correction en quinze jours, et l’erreur substantielle, que le tribunal tranche.'
+  day: {ar: 'نهار وصل الطلب للسلطة المركزية؟', fr: 'Le jour où la demande est parvenue à l’autorité centrale ?'}
+  steps:
+    - title: {ar: 'مادي أم جوهري', fr: 'Matérielle ou substantielle'}
+      answer: {ar: 'مادي: صرحت ببيان وأغفل، أو كتب خلاف ما صرحت به ووثائقك. جوهري: بيان لم يصرح به، أو مخالف للواقع، أو ممنوع، أو رسم مسجل أكثر من مرة.', fr: 'Matérielle : une mention déclarée et omise, ou écrite autrement que déclaré, d’après vos pièces. Substantielle : une mention jamais déclarée, contraire à la réalité, interdite, ou un acte inscrit plusieurs fois.'}
+      body:
+        ar: 'يعتبر الرسم مشوبا بخطإ مادي إذا أغفل بيان رغم أن المصرح صرح به وثبت بالوثائق، أو ضمن بيان على خلاف ما صرح به استنادا إلى الوثائق المدعمة للتصريح. ويعتبر مشوبا بخطإ جوهري إذا أغفل بيان لعدم التصريح به، أو تبين أن بيانا مخالف للواقع، أو اشتمل على بيان ممنوع قانونا، أو سجل أكثر من مرة ببيانات وهوية مختلفة.'
+        fr: 'L’acte comporte une erreur matérielle si une mention déclarée et prouvée par les pièces a été omise, ou inscrite autrement que déclarée d’après les pièces jointes. Il comporte une erreur substantielle si une mention a été omise faute d’avoir été déclarée, si une mention est contraire à la réalité, si l’acte porte une mention légalement interdite, ou s’il a été inscrit plusieurs fois sous des identités différentes.'
+      cites: [/ma/loi/36-21/art_49]
+    - title: {ar: 'الخطأ المادي', fr: 'L’erreur matérielle'}
+      answer: {ar: 'يوجه الطلب عبر المنظومة الرقمية بعد تأشير أي ضابط للحالة المدنية، في المغرب أو خارجه، والسلطة المركزية تقبل أو ترفض في 15 يوما على الأكثر.', fr: 'La demande passe par le système numérique après le visa de tout officier d’état civil, au Maroc ou à l’étranger ; l’autorité centrale accepte ou refuse en 15 jours au plus.'}
+      body:
+        ar: 'يوجه طلب الإذن بتصحيح الأخطاء المادية عبر المنظومة الرقمية بعد التأشير عليه من قبل ضابط الحالة المدنية داخل المغرب أو خارجه إلى السلطة المركزية أو من تفوض له، التي تأذن فيه بالقبول أو بالرفض في أجل أقصاه خمسة عشر يوما من التوصل به. ويجوز للمرتفق توجيه طلبه بعد تأشير أي ضابط للحالة المدنية، مبينا البيان الذي تسرب إليه الخطأ.'
+        fr: 'La demande d’autorisation de corriger une erreur matérielle passe par le système numérique, après le visa d’un officier d’état civil au Maroc ou à l’étranger, vers l’autorité centrale ou son délégué, qui accepte ou refuse dans quinze jours au plus de sa réception. L’usager peut l’adresser après le visa de tout officier, en indiquant la mention erronée.'
+      cites: [/ma/loi/36-21/art_51, /ma/decret/2-22-04/art_36]
+      delay: {on_day: true, days: 15, from: {ar: من توصل السلطة المركزية بالطلب, fr: de la réception de la demande par l’autorité centrale}}
+    - title: {ar: 'إذا رفضت', fr: 'En cas de refus'}
+      answer: {ar: 'إذا رفضت السلطة المركزية الإذن، يقدم من يعنيه الأمر طلبه إلى رئيس المحكمة المختصة.', fr: 'Si l’autorité centrale refuse, l’intéressé saisit le président du tribunal compétent.'}
+      cites: [/ma/loi/36-21/art_48]
+    - title: {ar: 'الخطأ الجوهري', fr: 'L’erreur substantielle'}
+      answer: {ar: 'يقدم طلب تصحيحه إلى المحكمة المختصة، وتبت فيه وفق قانون المسطرة المدنية.', fr: 'Sa correction se demande au tribunal compétent, qui statue selon le code de procédure civile.'}
+      body:
+        ar: 'تبت المحاكم المختصة في طلبات تصحيح البيانات المشوبة بأخطاء جوهرية، ويقدم الطلب إلى المحكمة المختصة ويبت فيه وفق القواعد المقررة في قانون المسطرة المدنية. وتبت المحاكم كذلك في طلبات إضافة أو تصحيح كل بيان من بيانات رسوم الولادة والوفاة.'
+        fr: 'Les tribunaux statuent sur les erreurs substantielles ; la demande est portée devant le tribunal compétent et jugée selon le code de procédure civile. Ils statuent aussi sur l’ajout ou la correction de toute mention des actes de naissance et de décès.'
+      cites: [/ma/loi/36-21/art_48, /ma/loi/36-21/art_50, /ma/loi/36-21/art_52]
+    - title: {ar: 'بعد الحكم أو الإذن', fr: 'Après le jugement ou l’autorisation'}
+      answer: {ar: 'يوجه الحكم أو الإذن إلى أي ضابط للحالة المدنية، ويجب عليه أن يضمن ملخصه في رسمك.', fr: 'Le jugement ou l’autorisation est adressé à tout officier d’état civil, qui doit en porter le résumé sur votre acte.'}
+      body:
+        ar: 'يوجه الحكم بالتصحيح أو الإذن وجوبا عبر المنظومة الرقمية، أو بحامل ورقي عند الاقتضاء، إلى أي ضابط للحالة المدنية، الذي يجب عليه أن يضمن ملخصه بالرسم المراد تصحيحه، تحت طائلة مسؤوليته. وإذا تغير الاسم أو تاريخ الولادة أو صحح مكان الولادة أو رقم الرسم، وجب تجديد البطاقة الوطنية.'
+        fr: 'Le jugement ou l’autorisation est obligatoirement transmis par le système numérique, ou sur papier au besoin, à tout officier d’état civil, qui doit en porter le résumé sur l’acte, sous sa responsabilité. Si le nom ou la date de naissance change, ou si le lieu de naissance ou le numéro d’acte est corrigé, la carte nationale doit être renouvelée.'
+      cites: [/ma/loi/36-21/art_53, /ma/loi/4-20/art_13]
+      next: journeys/card-renew
+  ends: {office: commune, paper: {ar: 'نسخة كاملة من رسمك بعد التصحيح', fr: 'Une copie intégrale de votre acte corrigé'}, cites: [/ma/decret/2-22-04/art_45]}
+
+- key: name
+  title: {ar: 'تغيير الاسم الشخصي أو العائلي', fr: 'Changer de prénom ou de nom'}
+  lead:
+    ar: 'الاسم العائلي المسجل يلزم صاحبه وأعقابه، ولا يغير إلا بمرسوم بعد قرار اللجنة العليا للحالة المدنية؛ والاسم الشخصي يغير بحكم قضائي لمبرر مقبول.'
+    fr: 'Le nom de famille inscrit lie son titulaire et ses descendants ; il ne change que par décret après la Haute commission de l’état civil. Le prénom change par jugement, pour un motif admis.'
+  steps:
+    - title: {ar: 'الاسم الشخصي', fr: 'Le prénom'}
+      answer: {ar: 'لكل مغربي مسجل أن يطلب تغيير اسمه الشخصي بحكم قضائي إذا كان له مبرر مقبول.', fr: 'Tout Marocain inscrit peut demander à changer de prénom par jugement, avec un motif admis.'}
+      cites: [/ma/loi/36-21/art_34]
+    - title: {ar: 'الاسم الشخصي الأجنبي', fr: 'Un prénom étranger'}
+      answer: {ar: 'تغيير اسم شخصي أجنبي يطلب من اللجنة العليا عبر المنظومة الرقمية، أو لدى أي ضابط للحالة المدنية.', fr: 'Le changement d’un prénom étranger se demande à la Haute commission par le système numérique, ou auprès de tout officier d’état civil.'}
+      body:
+        ar: 'يقدم طلب تغيير الاسم الشخصي الأجنبي للمغاربة المسجلين إلى اللجنة العليا عبر المنظومة الرقمية من المعني بالأمر إذا كان راشدا، أو من أبيه أو أمه أو نائبه الشرعي، مبينا سبب التغيير ومدعما بالوثائق؛ وإذا تعذر ذلك يودع لدى أي ضابط للحالة المدنية.'
+        fr: 'Le changement d’un prénom étranger d’un Marocain inscrit se demande à la Haute commission par le système numérique, par l’intéressé majeur ou par son père, sa mère ou son représentant légal, avec le motif et les pièces ; à défaut, auprès de tout officier d’état civil.'
+      cites: [/ma/decret/2-22-04/art_34, /ma/loi/36-21/art_35]
+    - title: {ar: 'الاسم العائلي', fr: 'Le nom de famille'}
+      answer: {ar: 'يقدم الطلب إلى اللجنة العليا عبر المنظومة الرقمية أو لدى أي ضابط، بأسبابه الموضوعية ووثائقه؛ والموافقة تنفذ بمرسوم.', fr: 'La demande va à la Haute commission par le système numérique ou chez tout officier, avec ses motifs objectifs et ses pièces ; l’accord s’exécute par décret.'}
+      body:
+        ar: 'يصبح الاسم العائلي المسجل لازما لصاحبه ولأعقابه، ولا يغير إلا بإذن بمرسوم. ويقدم كل مغربي مسجل طلب تغيير اسمه العائلي إلى اللجنة العليا عبر المنظومة الرقمية، مبينا الأسباب الموضوعية ومدعما بالوثائق، أو لدى أي ضابط للحالة المدنية. وتنفذ قرارات الموافقة بمرسوم ينشر بالجريدة الرسمية للجماعات الترابية أو بأي دعامة، ويحين السجل الوطني آليا.'
+        fr: 'Le nom inscrit lie son titulaire et ses descendants ; il ne change que par décret. Tout Marocain inscrit adresse sa demande à la Haute commission par le système numérique, avec ses motifs objectifs et ses pièces, ou auprès de tout officier d’état civil. Les accords s’exécutent par un décret publié au Bulletin officiel des collectivités territoriales ou sur tout support ; le registre national est mis à jour.'
+      cites: [/ma/loi/36-21/art_33, /ma/decret/2-22-04/art_30, /ma/decret/2-22-04/art_31]
+    - title: {ar: 'اللجنة العليا', fr: 'La Haute commission'}
+      answer: {ar: 'يرأسها مؤرخ المملكة أو من ينوب عنه، مع قاض وممثل لوزارة الداخلية؛ وقراراتها يطعن فيها أمام المحكمة الإدارية بالرباط.', fr: 'Présidée par l’historiographe du Royaume ou son suppléant, avec un juge et un représentant de l’Intérieur ; ses décisions se contestent au tribunal administratif de Rabat.'}
+      body:
+        ar: 'تختص اللجنة العليا للحالة المدنية بالنظر في مطابقة الأسماء العائلية المختارة، وفي طلبات تغيير الأسماء العائلية والأسماء الشخصية الأجنبية، وتبت في النزاعات حول الأسماء الشخصية المعروضة عليها من ضباط الحالة المدنية. ويجوز الطعن في قراراتها أمام المحكمة الإدارية بالرباط. وتتألف من مؤرخ المملكة أو من ينوب عنه رئيسا، وقاض يعينه المجلس الأعلى للسلطة القضائية، وممثل عن السلطة الحكومية المكلفة بالداخلية.'
+        fr: 'La Haute commission de l’état civil examine la conformité des noms de famille choisis, les demandes de changement de nom et de prénom étranger, et tranche les litiges sur les prénoms que lui soumettent les officiers. Ses décisions peuvent être attaquées devant le tribunal administratif de Rabat. Elle comprend l’historiographe du Royaume ou son suppléant, président, un juge désigné par le Conseil supérieur du pouvoir judiciaire et un représentant de l’Intérieur.'
+      cites: [/ma/loi/36-21/art_35]
+    - title: {ar: 'الكتابة بتيفيناغ واللاتينية', fr: 'L’écriture en tifinagh et en latin'}
+      answer: {ar: 'إضافة أو تصحيح كتابة اسمك بحروف تيفيناغ أو اللاتينية يقوم بها ضابط الحالة المدنية بإذن من السلطة المركزية.', fr: 'L’ajout ou la correction de votre nom en tifinagh ou en latin se fait par l’officier, sur autorisation de l’autorité centrale.'}
+      cites: [/ma/loi/36-21/art_47, /ma/loi/36-21/art_19]
+    - title: {ar: 'ثم البطاقة', fr: 'Puis la carte'}
+      answer: {ar: 'تغيير الاسم الشخصي أو العائلي يوجب تجديد البطاقة الوطنية.', fr: 'Un changement de prénom ou de nom oblige à renouveler la carte nationale.'}
+      cites: [/ma/loi/4-20/art_13]
+      next: journeys/card-renew
+  ends: {office: commune, paper: {ar: 'رسم الولادة محينا بالاسم الجديد', fr: 'L’acte de naissance mis à jour au nouveau nom'}, cites: [/ma/decret/2-22-04/art_31]}
+
+- key: abroad-marriage
+  title: {ar: 'تسجيل زواج أبرم في الخارج', fr: 'Inscrire un mariage conclu à l’étranger'}
+  lead:
+    ar: 'يضمن ضابط الحالة المدنية في رسم الولادة بيانات عقد زواج المغاربة المقيمين بالخارج المبرم طبقا للقانون المحلي، دون التقيد بأي أجل.'
+    fr: 'L’officier d’état civil porte sur l’acte de naissance les données du mariage des Marocains de l’étranger conclu selon la loi locale, sans aucun délai.'
+  steps:
+    - title: {ar: 'بلا أجل', fr: 'Sans délai'}
+      answer: {ar: 'بالرغم من كل الأحكام المخالفة، يضمن زواج المغاربة المقيمين بالخارج المبرم طبقا لقانون بلد الإقامة دون التقيد بأي أجل.', fr: 'Malgré toute disposition contraire, le mariage des Marocains de l’étranger conclu selon la loi du pays de résidence s’inscrit sans aucun délai.'}
+      body:
+        ar: 'يضمن ضابط الحالة المدنية في رسم الولادة البيانات الأساسية لملخص رسم الزواج، أو لعقد زواج المغاربة المقيمين بالخارج في حالة إبرامه طبقا للقانون المحلي لبلد الإقامة، وفقا لمدونة الأسرة. وبالرغم من جميع الأحكام المخالفة، يتم هذا التضمين دون التقيد بأي آجال.'
+        fr: 'L’officier porte sur l’acte de naissance les données essentielles du résumé de l’acte de mariage, ou du mariage des Marocains de l’étranger conclu selon la loi locale, conformément au code de la famille. Malgré toute disposition contraire, cette inscription se fait sans aucun délai.'
+      cites: [/ma/loi/36-21/art_36]
+    - title: {ar: 'أين', fr: 'Où'}
+      answer: {ar: 'يقدم طلب إدراج بيان الزواج في أي مكتب للحالة المدنية، أو عبر المنظومة الرقمية.', fr: 'La demande d’inscription se dépose dans tout bureau d’état civil, ou par le système numérique.'}
+      cites: [/ma/loi/36-21/art_36, /ma/decret/2-22-04/art_16]
+    - title: {ar: 'مكتبك في الخارج', fr: 'Votre bureau à l’étranger'}
+      answer: {ar: 'للمغاربة المقيمين بالخارج مكاتب حالة مدنية في القنصليات، والقناصل ضباطها.', fr: 'Les Marocains de l’étranger ont des bureaux d’état civil dans les consulats, dont les consuls sont les officiers.'}
+      cites: [/ma/loi/36-21/art_4, /ma/loi/36-21/art_7]
+    - title: {ar: 'الطلاق', fr: 'Le divorce'}
+      answer: {ar: 'ملخص وثيقة انحلال الزواج يحال على ضابط الحالة المدنية من قاضي الأسرة أو من القنصلية، فيضمنه في رسم الولادة.', fr: 'Le résumé de la dissolution est transmis à l’officier par le juge de la famille ou par le consulat, qui le porte sur l’acte de naissance.'}
+      cites: [/ma/loi/36-21/art_36, /ma/decret/2-22-04/art_15]
+    - title: {ar: 'الدفتر العائلي', fr: 'Le livret de famille'}
+      answer: {ar: 'بعد التضمين، يحصل كل من الزوجين على نسخة مستخرجة من الدفتر العائلي الإلكتروني.', fr: 'Une fois inscrit, chacun des époux obtient une copie extraite du livret de famille électronique.'}
+      cites: [/ma/loi/36-21/art_44, /ma/decret/2-22-04/art_43]
+  ends: {office: consul, paper: {ar: 'رسم ولادتك وفيه بيان الزواج', fr: 'Votre acte de naissance portant la mention du mariage'}, cites: [/ma/loi/36-21/art_36]}
+
+- key: spouse
+  title: {ar: 'الجنسية المغربية للزوجة الأجنبية', fr: 'La nationalité marocaine de l’épouse étrangère'}
+  lead:
+    ar: 'للمرأة الأجنبية المتزوجة من مغربي، بعد خمس سنوات على الأقل من إقامتهما معا في المغرب بكيفية اعتيادية ومنتظمة، أن تتقدم إلى وزير العدل بتصريح لاكتساب الجنسية.'
+    fr: 'La femme étrangère mariée à un Marocain peut, après au moins cinq ans de résidence commune habituelle et régulière au Maroc, souscrire une déclaration au ministre de la Justice pour acquérir la nationalité.'
+  day: {ar: 'نهار إيداع التصريح؟', fr: 'Le jour du dépôt de la déclaration ?'}
+  steps:
+    - title: {ar: 'الشرط', fr: 'La condition'}
+      answer: {ar: 'خمس سنوات على الأقل من الإقامة معا في المغرب، والتصريح يقدم أثناء قيام العلاقة الزوجية.', fr: 'Au moins cinq ans de résidence commune au Maroc ; la déclaration se fait pendant le mariage.'}
+      body:
+        ar: 'يمكن للمرأة الأجنبية المتزوجة من مغربي بعد مرور خمس سنوات على الأقل على إقامتهما معا في المغرب بكيفية اعتيادية ومنتظمة أن تتقدم أثناء قيام العلاقة الزوجية إلى وزير العدل بتصريح لاكتساب الجنسية المغربية. ولا يؤثر انتهاء العلاقة الزوجية على التصريح المقدم قبل انتهائها.'
+        fr: 'La femme étrangère mariée à un Marocain peut, après au moins cinq ans de résidence commune habituelle et régulière au Maroc, souscrire pendant le mariage une déclaration au ministre de la Justice. La fin du mariage n’affecte pas la déclaration faite avant.'
+      cites: [/ma/dahir/1-58-250/art_10]
+    - title: {ar: 'الإيداع', fr: 'Le dépôt'}
+      answer: {ar: 'يرفع التصريح إلى وزير العدل مع ما يثبت الشروط؛ ومن يقيم في الخارج يوجهه إلى القنصلية، وتاريخه هو تاريخ الوصل.', fr: 'La déclaration va au ministre de la Justice avec ses justificatifs ; qui vit à l’étranger la remet au consulat ; sa date est celle du reçu.'}
+      cites: [/ma/dahir/1-58-250/art_25]
+    - title: {ar: 'سنة للبت', fr: 'Un an pour statuer'}
+      answer: {ar: 'يبت الوزير داخل سنة من الإيداع، وعدم البت داخل هذا الأجل يعتبر معارضة.', fr: 'Le ministre statue dans l’année du dépôt ; son silence dans ce délai vaut opposition.'}
+      cites: [/ma/dahir/1-58-250/art_10, /ma/dahir/1-58-250/art_27]
+      delay: {on_day: true, months: 12, from: {ar: من تاريخ إيداع التصريح, fr: du dépôt de la déclaration}}
+    - title: {ar: 'من متى', fr: 'Depuis quand'}
+      answer: {ar: 'تسري الجنسية من تاريخ إيداع التصريح، وتبقى صحيحة التصرفات التي أبرمتها قبل الموافقة.', fr: 'La nationalité court du dépôt de la déclaration ; les actes conclus avant l’accord restent valables.'}
+      cites: [/ma/dahir/1-58-250/art_10]
+    - title: {ar: 'الاسم والحالة المدنية', fr: 'Le nom et l’état civil'}
+      answer: {ar: 'قد يتضمن مقرر الموافقة، بطلبها، تغيير اسمها؛ وتسجل ولادتها في الحالة المدنية المغربية.', fr: 'La décision d’accord peut, à sa demande, changer son nom ; sa naissance est inscrite à l’état civil marocain.'}
+      cites: [/ma/dahir/1-58-250/art_27, /ma/loi/36-21/art_32, /ma/decret/2-22-04/art_35]
+    - title: {ar: 'خمس سنوات من القيود', fr: 'Cinq ans de restrictions'}
+      answer: {ar: 'من اكتسب الجنسية بالتجنيس يخضع خمس سنوات لقيود في الوظيفة العمومية والنيابة الانتخابية والتسجيل في اللوائح؛ والقيود تخص المتجنس.', fr: 'Le naturalisé reste cinq ans sous des restrictions pour la fonction publique, les mandats et les listes électorales ; elles visent le naturalisé.'}
+      cites: [/ma/dahir/1-58-250/art_17]
+  ends: {office: court, paper: {ar: 'مقرر وزير العدل بالموافقة على التصريح', fr: 'La décision du ministre de la Justice approuvant la déclaration'}, cites: [/ma/dahir/1-58-250/art_32]}
+
+- key: appeal
+  title: {ar: 'الإدارة رفضت أو سكتت', fr: 'L’administration refuse ou se tait'}
+  lead:
+    ar: 'القانون 55.19 يلزم الإدارة بأجل أقصاه ستون يوما، وبتعليل الرفض، ويعطيك ثلاثين يوما للطعن أمام رئيسها، الذي يرد في خمسة عشر يوما.'
+    fr: 'La loi 55.19 impose à l’administration soixante jours au plus et un refus motivé, et vous donne trente jours pour un recours auprès de son supérieur, qui répond en quinze jours.'
+  day: {ar: 'نهار الرفض، ولا نهار سالا الأجل؟', fr: 'Le jour du refus, ou de la fin du délai ?'}
+  steps:
+    - title: {ar: 'الوصل أولا', fr: 'D’abord le reçu'}
+      answer: {ar: 'عند الإيداع، تعطيك الإدارة وصلا فورا: «ملف مودع»، أو «ملف في طور الإيداع» مع لائحة ما ينقص كاملة ودفعة واحدة.', fr: 'Au dépôt, l’administration vous remet un reçu sur-le-champ : «dossier déposé», ou «dossier en cours de dépôt» avec la liste complète, en une fois, de ce qui manque.'}
+      body:
+        ar: 'تودع الطلبات مقابل وصل يسلم فورا، يتضمن عبارة «ملف مودع» إذا كان الملف كاملا، أو «ملف في طور الإيداع» إذا نقصت وثيقة، وفي هذه الحالة تحدد الإدارة في الوصل، بشكل حصري ودفعة واحدة، لائحة ما يتعين الإدلاء به داخل أجل أقصاه 30 يوما. ويعتد بهذا الوصل لتقديم الطعون والمطالبة بسكوت الإدارة بمثابة موافقة.'
+        fr: 'Les demandes se déposent contre un reçu remis sur-le-champ, portant «dossier déposé» si le dossier est complet, ou «dossier en cours de dépôt» s’il manque une pièce : l’administration y fixe alors, limitativement et en une fois, la liste à produire dans 30 jours au plus. Ce reçu fait foi pour les recours et pour faire valoir le silence valant accord.'
+      cites: [/ma/loi/55-19/art_10, /ma/loi/55-19/art_12]
+    - title: {ar: 'ستون يوما', fr: 'Soixante jours'}
+      answer: {ar: 'أجل معالجة كل طلب لا يتعدى 60 يوما من إيداع الملف كاملا، و30 يوما لقرارات الاستثمار المحددة.', fr: 'Le délai de traitement ne dépasse pas 60 jours dès le dépôt du dossier complet, 30 jours pour les décisions d’investissement listées.'}
+      cites: [/ma/loi/55-19/art_16, /ma/loi/55-19/art_17]
+      tool: tools/counter
+    - title: {ar: 'الرفض معلل', fr: 'Un refus motivé'}
+      answer: {ar: 'على الإدارة أن تذكر في صلب قرار الرفض أسبابه، وتخبرك به.', fr: 'L’administration doit écrire les motifs du refus dans la décision et vous en informer.'}
+      cites: [/ma/loi/55-19/art_18]
+    - title: {ar: 'ثلاثون يوما للطعن', fr: 'Trente jours pour le recours'}
+      answer: {ar: 'داخل 30 يوما من انقضاء الأجل أو من الرد السلبي، تطعن أمام الوزير المعني أو مسؤول المؤسسة أو الوالي أو العامل أو رئيس الجماعة، حسب من سلم القرار.', fr: 'Dans les 30 jours de la fin du délai ou du refus, vous formez un recours auprès du ministre, du responsable de l’établissement, du wali ou du gouverneur, ou du président de la collectivité, selon qui délivre la décision.'}
+      body:
+        ar: 'في حالة سكوت الإدارة داخل الآجال المحددة أو ردها السلبي، يجوز للمرتفق، داخل أجل لا يتعدى 30 يوما من انقضاء الآجال أو من تلقي الرد السلبي، أن يطعن أمام: السلطة الحكومية المعنية للقرارات المسلمة مركزيا؛ أو المسؤول عن المؤسسة العمومية أو الهيئة؛ أو والي الجهة أو عامل العمالة أو الإقليم للمصالح اللاممركزة؛ أو رئيس الجماعة الترابية للقرارات التي تسلمها.'
+        fr: 'En cas de silence dans les délais ou de refus, l’usager peut, dans 30 jours au plus de la fin des délais ou de la réception du refus, former un recours auprès : de l’autorité gouvernementale pour les décisions centrales ; du responsable de l’établissement public ou de l’organisme ; du wali ou du gouverneur pour les services déconcentrés ; du président de la collectivité territoriale pour les siennes.'
+      cites: [/ma/loi/55-19/art_21]
+      delay: {on_day: true, days: 30, from: {ar: من انقضاء الأجل أو من الرد السلبي, fr: de la fin du délai ou du refus}}
+    - title: {ar: 'خمسة عشر يوما للرد', fr: 'Quinze jours pour répondre'}
+      answer: {ar: 'من يرفع إليه الطعن يرد عليك داخل 15 يوما؛ وإذا لم يرد رئيس الجماعة، يحال الأمر على الوالي أو العامل الذي يراسله ليبت في 10 أيام.', fr: 'Qui reçoit le recours vous répond dans 15 jours ; si le président de la commune ne répond pas, le wali ou le gouverneur le saisit pour qu’il statue en 10 jours.'}
+      cites: [/ma/loi/55-19/art_21]
+    - title: {ar: 'حين يكون السكوت موافقة', fr: 'Quand le silence vaut accord'}
+      answer: {ar: 'في القرارات التي تحددها لائحة بنص تنظيمي، يعتبر السكوت بعد الأجل موافقة، ويسلمك المسؤول القرار في 7 أيام من طلبك.', fr: 'Pour les décisions listées par voie réglementaire, le silence après le délai vaut accord ; le responsable vous remet la décision dans 7 jours de votre demande.'}
+      body:
+        ar: 'يعتبر سكوت الإدارة بعد انقضاء الآجال بمثابة موافقة في الطلبات المتعلقة بالقرارات التي يحدد لائحتها نص تنظيمي، ويسلم المسؤول التسلسلي القرار بطلب داخل أجل أقصاه 7 أيام. وإذا لم يسلم، أمكن اللجوء إلى الوزير أو المسؤول أو الوالي أو العامل الذي يمنحه داخل 15 يوما؛ وفي قرارات الجماعات يطلب من الوالي أو العامل إشهاد بالسكوت. ولائحة قرارات الجماعات هذه: رخص البناء والتجزئة والتقسيم والسكن والإصلاح والهدم، واستغلال المؤسسات المرتبة من الصنفين الثاني والثالث.'
+        fr: 'Le silence après les délais vaut accord pour les décisions dont un texte réglementaire fixe la liste ; le supérieur hiérarchique remet la décision, sur demande, dans 7 jours au plus. À défaut, le ministre, le responsable, le wali ou le gouverneur l’accorde dans 15 jours ; pour les communes, on demande au wali ou au gouverneur une attestation de silence. Cette liste communale : permis de construire, de lotir, de morceler, d’habiter, de réparer, de démolir, et l’exploitation d’établissements classés de 2e et 3e catégorie.'
+      cites: [/ma/loi/55-19/art_19, /ma/loi/55-19/art_20, /ma/decret/2-22-141/art_1, /ma/decret/2-22-141/annex]
+  ends: {office: commune, paper: {ar: 'الوصل، وقرار الرفض المعلل أو الإشهاد بالسكوت', fr: 'Le reçu, et la décision motivée ou l’attestation de silence'}, cites: [/ma/loi/55-19/art_12]}
+
+- key: record
+  title: {ar: 'البطاقة رقم 3 من السجل العدلي', fr: 'Le bulletin n° 3 du casier judiciaire'}
+  lead:
+    ar: 'البطاقة رقم 3 بيان بالأحكام الصادرة بعقوبات سالبة للحرية من أجل جناية أو جنحة؛ لا يطلبها إلا صاحبها، ولا تتضمن ما محي برد الاعتبار ولا ما أوقف تنفيذه.'
+    fr: 'Le bulletin n° 3 relève les peines privatives de liberté prononcées pour crime ou délit ; seul l’intéressé le demande, et il ne porte ni ce que la réhabilitation a effacé ni le sursis.'
+  steps:
+    - title: {ar: 'من يطلبها', fr: 'Qui le demande'}
+      answer: {ar: 'لا يطلبها إلا الشخص المعني بما يثبت هويته، ولا تسلم لغيره إلا بتوكيل خاص.', fr: 'Seul l’intéressé le demande, sur justification de son identité ; il n’est remis à un autre qu’avec une procuration spéciale.'}
+      cites: [/ma/loi/22-01/art_668]
+    - title: {ar: 'أين', fr: 'Où'}
+      answer: {ar: 'في مركز السجل العدلي بالمحكمة الابتدائية لمكان ولادتك، أو لمكان سكناك، أو أي مركز، مباشرة أو إلكترونيا؛ ومن في الخارج عبر القنصلية.', fr: 'Au casier du tribunal de première instance du lieu de naissance, de votre domicile, ou de tout centre, directement ou en ligne ; à l’étranger, par le consulat.'}
+      body:
+        ar: 'يقدم الطلب، بالنسبة لمن ولد بالمغرب، إلى مركز السجل العدلي بالمحكمة الابتدائية التابع لها مكان ولادته. ويمكن طلبها من مركز المحكمة التابع لها محل سكناه، ومن أي مركز للسجل العدلي، والحصول عليها مباشرة أو بطريقة إلكترونية وفق ما تسمح به الوسائل التقنية. ومن يقيم في الخارج تطلب له وتوجه إليه عبر السلطات الدبلوماسية والقنصلية.'
+        fr: 'Pour qui est né au Maroc, la demande va au casier du tribunal de première instance de son lieu de naissance. On peut aussi la faire au centre du tribunal de son domicile, et à tout centre du casier, et l’obtenir directement ou en ligne selon les moyens techniques. Pour qui réside à l’étranger, elle passe par les autorités diplomatiques et consulaires.'
+      cites: [/ma/loi/22-01/art_668]
+    - title: {ar: 'ما فيها', fr: 'Ce qu’il contient'}
+      answer: {ar: 'العقوبات السالبة للحرية من أجل جناية أو جنحة فقط، ما لم تمح برد الاعتبار ولم يأمر فيها بإيقاف التنفيذ؛ وإذا لم يكن ما يدرج يكتفى بسطر منحرف.', fr: 'Les seules peines privatives de liberté pour crime ou délit, non effacées par la réhabilitation et sans sursis ; s’il n’y a rien à porter, un trait en travers.'}
+      body:
+        ar: 'تعتبر البطاقة رقم 3 بيانا بالأحكام الصادرة بعقوبات سالبة للحرية من أجل جناية أو جنحة، ولا تدرج فيها إلا هذه العقوبات التي لم تمح برد الاعتبار ولم تأمر المحكمة بإيقاف تنفيذها، ما لم تصدر عقوبة جديدة تحرم من هذا التدبير. ويكتفى بوضع سطر منحرف على البطاقة إذا كانت بيانات البطاقة رقم 1 لا يجوز إدراجها فيها.'
+        fr: 'Le bulletin n° 3 relève les condamnations à des peines privatives de liberté pour crime ou délit ; il ne porte que celles non effacées par la réhabilitation et non assorties du sursis, sauf nouvelle peine qui en prive. Un trait en travers est porté si aucune donnée du bulletin n° 1 ne peut y figurer.'
+      cites: [/ma/loi/22-01/art_667, /ma/loi/22-01/art_669]
+    - title: {ar: 'البطاقة رقم 2', fr: 'Le bulletin n° 2'}
+      answer: {ar: 'البطاقة رقم 2 أوسع، ولا تسلم إليك: تطلبها الإدارات العمومية للتوظيف، والقضاة، والسلطات العسكرية للتجنيد، وغيرها.', fr: 'Le bulletin n° 2, plus complet, ne vous est pas remis : les administrations le demandent pour un recrutement public, comme les juges, l’armée pour l’engagement, et d’autres.'}
+      cites: [/ma/loi/22-01/art_665]
+    - title: {ar: 'التمبر', fr: 'Le timbre'}
+      answer: {ar: 'جذاذات القيس الجسماني تخضع لواجب ثابت قدره 30 درهما عن كل مستخرج.', fr: 'Les fiches anthropométriques paient un droit fixe de 30 DH par extrait.'}
+      cites: [/ma/code/cgi/art_252]
+    - title: {ar: 'خطأ في السجل', fr: 'Une erreur au casier'}
+      answer: {ar: 'يمكن لمن يوجد في بطاقته رقم 1 بيان خاطئ أن يطلب تصحيحه، ويمكن للنيابة العامة ذلك تلقائيا.', fr: 'Qui a une mention erronée au bulletin n° 1 peut en demander la rectification ; le parquet peut le faire d’office.'}
+      cites: [/ma/loi/22-01/art_671]
+      next: tools/rehab
+  ends: {office: court, paper: {ar: 'البطاقة رقم 3، موقعة ومؤشر عليها', fr: 'Le bulletin n° 3, signé et visé'}, cites: [/ma/loi/22-01/art_670]}

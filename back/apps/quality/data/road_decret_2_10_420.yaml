@@ -1,0 +1,42 @@
+# /ma/decret/2-10-420 as Adala prints it (consolidated to 24 Aug 2026), read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-10-420
+document: sources/road/adala_2_10_420_ar_2026.pdf
+read_on: '2026-10-20'
+fixes:
+  # art 17, p. 10: the list numbers print «1.» (digit, then its point); the site holds «.1»
+  - {arts: [17], wrong: '.1 100 كيلومتر في الساعة', right: '1. 100 كيلومتر في الساعة'}
+  - {arts: [17], wrong: '.2 90 كيلومترا في الساعة', right: '2. 90 كيلومترا في الساعة'}
+  - {arts: [17], wrong: '.3 80 كيلومترا في الساعة', right: '3. 80 كيلومترا في الساعة'}
+  - {arts: [17], wrong: '.4 70 كيلومترا في الساعة', right: '4. 70 كيلومترا في الساعة'}
+  - {arts: [17], wrong: '.5 40 كيلومترا في الساعة', right: '5. 40 كيلومترا في الساعة'}
+  - {arts: [17], wrong: '.6 30 كيلومترا في الساعة', right: '6. 30 كيلومترا في الساعة'}
+  # arts 17 and 18, pp. 10-11: «لا» read «ال», twice in each
+  - {arts: [17, 18], wrong: 'عند إجالئها لمركبة أخرى يقل', right: 'عند إجلائها لمركبة أخرى يقل'}
+  - {arts: [17, 18], wrong: 'عند إجالئها لمركبة أخرى يفوق', right: 'عند إجلائها لمركبة أخرى يفوق'}
+  # art 18, pp. 10-11: the same list numbers
+  - {arts: [18], wrong: '.1 120 كيلومترا في الساعة', right: '1. 120 كيلومترا في الساعة'}
+  - {arts: [18], wrong: '.2 100 كيلومتر في الساعة', right: '2. 100 كيلومتر في الساعة'}
+  - {arts: [18], wrong: '.3 90 كيلومترا في الساعة', right: '3. 90 كيلومترا في الساعة'}
+  - {arts: [18], wrong: '.4 80 كيلومترا في الساعة', right: '4. 80 كيلومترا في الساعة'}
+  - {arts: [18], wrong: '.5 70 كيلومترا في الساعة', right: '5. 70 كيلومترا في الساعة'}
+  - {arts: [18], wrong: '.6 60 كيلومترا في الساعة', right: '6. 60 كيلومترا في الساعة'}
+  # art 18, p. 11: a word glued to the weight that follows it (the text layer has the space, as art 17 has it on the site)
+  - {arts: [18], wrong: 'دون تجاوز12.000 كيلوغرام', right: 'دون تجاوز 12.000 كيلوغرام'}
+  # art 27, p. 14: list numbers print «1-»; the site holds «-1»
+  - {arts: [27], wrong: '-1 إذا كانت له', right: '1- إذا كانت له'}
+  - {arts: [27], wrong: '-2 إذا كانت السرعة', right: '2- إذا كانت السرعة'}
+  - {arts: [27], wrong: '-3 إذا لم يكن', right: '3- إذا لم يكن'}
+  # art 27, p. 14: «أقل من متر» stands after «جانبياً» on the page, not after «يصدم» (a line-end word moved up a line)
+  - {arts: [27], wrong: 'حتى لا يصدم أقل من متر مستعمل الطريق الذي يريد تجاوزه، ويجب عليه في جميع الحالات ألا يقترب جانبياً إذا كان', right: 'حتى لا يصدم مستعمل الطريق الذي يريد تجاوزه، ويجب عليه في جميع الحالات ألا يقترب جانبياً أقل من متر إذا كان'}
+  # art 38, p. 17: the guillemets around Stop
+  - {arts: [38], wrong: 'بإشارة قف «Stop «أن يتوقف', right: 'بإشارة قف «Stop» أن يتوقف'}
+  # art 78, p. 30: «لا» read «ال»
+  - {arts: [78], wrong: 'معلن عنه بالعالمة الملائمة', right: 'معلن عنه بالعلامة الملائمة'}
+  # art 87, p. 33: a word cut in two
+  - {arts: [87], wrong: 'للراجلين الم توغلين أو', right: 'للراجلين المتوغلين أو'}
+  # art 94, p. 34: list numbers print «1-»; the site holds «-1»
+  - {arts: [94], wrong: '-1 أن يتوقف بمجرد', right: '1- أن يتوقف بمجرد'}
+  - {arts: [94], wrong: '-2 أن يعمل على', right: '2- أن يعمل على'}
+  - {arts: [94], wrong: '-3 إذا لم تؤد', right: '3- إذا لم تؤد'}
+  - {arts: [94], wrong: '-4 إذا كان في', right: '4- إذا كان في'}
+checked: [7, 8, 9, 15, 16, 17, 18, 19, 27, 36, 38, 78, 87, 94, 94-bis, 110, 112]

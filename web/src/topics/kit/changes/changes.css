@@ -1,0 +1,352 @@
+/* A bill's pages (the bill-page review, 26 Oct 2026; one sheet under the pen, 15 Nov 2026). Loaded with them, never
+   in the first load. Every colour a token, so night redefines it. Four inks: grey for the law as it stands, `--t` (the
+   topic's colour: the tax ochre) under dashes for the bill, `--pen` (the corrector's red) for what Parliament wrote over
+   it, and the page's ink for the reader. */
+
+/* The sheet: the whole page one piece of paper, edge to edge on a phone, lying on the desk on a wide screen. Each block
+   opens under a rule; nothing sits in a box of its own. */
+.bl { --pen: var(--color-repealed); --band-bg: var(--color-sheet); position: relative; isolation: isolate; display: flex; flex-direction: column; gap: 30px;
+  background: var(--color-sheet); margin-inline: -16px; padding: 2px 16px 34px; }
+.bl > :where(* + *) { border-top: 1px solid var(--color-rule); padding-top: 30px; }
+.bl > .bl-wm + *, .bl > .ch-band + * { border-top: 0; padding-top: 0; }
+@media (min-width: 640px) { .bl { margin-inline: -24px; padding-inline: 24px; } }
+@media (min-width: 1024px) { .bl { margin-inline: 0; padding: 12px 48px 52px; gap: 40px; border-radius: 3px; } .bl > :where(* + *) { padding-top: 40px; } }
+/* «مشروع» across it, as on every draft: behind the words, once a screen. */
+.bl-wm { position: absolute; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; }
+.bl-wm span { position: absolute; inset-inline: 0; text-align: center; white-space: nowrap; user-select: none;
+  font: 700 clamp(8rem, 32vw, 12.5rem)/1 var(--font-law); color: color-mix(in srgb, var(--color-ink) 5%, var(--color-sheet)); transform: rotate(-14deg); }
+.bl-wm span::before { content: var(--mark); }
+.bl-grid { display: grid; gap: 30px; }
+.bl-main { display: flex; flex-direction: column; min-width: 0; container-type: inline-size; }
+.bl-aside { display: none; }
+.bl-lead { margin: 0 0 14px; max-width: 62ch; font-size: 1.125rem; line-height: 1.7; color: var(--color-ink-soft); }
+@media (min-width: 1024px) {
+  .bl-grid.side { grid-template-columns: minmax(0, 1fr) 272px; gap: 56px; align-items: start; }
+  .bl-aside { display: flex; flex-direction: column; gap: 28px; position: sticky; top: 24px; }
+}
+
+/* The running head: not law; one line through the bill's stops, solid where it has passed, in a bill's dashes ahead. */
+.ch-band { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "what links" "stops stops" "next next"; align-items: center; gap: 4px 22px;
+  padding-block: 12px 14px; border-bottom: 1.5px dashed var(--color-field); }
+.ch-band-what { grid-area: what; margin: 0; display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.ch-band-links { grid-area: links; margin: 0; display: flex; flex-wrap: wrap; gap: 2px 18px; font-size: 0.875rem; }
+.ch-band-links a { min-height: 32px; display: inline-flex; align-items: center; }
+.ch-band-next { grid-area: next; margin: 0; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ch-stops { grid-area: stops; margin: 10px 0 2px; padding: 0; list-style: none; display: flex; min-width: 0; }
+.ch-stops li { flex: 1 1 0; min-width: 0; position: relative; display: flex; justify-content: center; padding-top: 24px; font-size: 0.875rem; line-height: 1.35; color: var(--color-ink-soft); }
+.ch-stops li span { flex: none; width: max-content; max-width: 8rem; text-align: center; }
+.ch-stops li::before { content: ""; position: absolute; top: 7px; inset-inline-start: 50%; width: 100%; border-top: 2px dashed var(--color-field); }
+.ch-stops li:last-child::before { display: none; }
+.ch-stops li.done::before { border-top-style: solid; border-top-color: var(--color-ink); }
+.ch-stops li::after { content: ""; position: absolute; z-index: 1; top: 2px; inset-inline-start: calc(50% - 6px); width: 12px; height: 12px; box-sizing: border-box; border-radius: 50%;
+  background: var(--band-bg, var(--color-paper)); border: 2px solid var(--color-field); }
+.ch-stops li.done::after { background: var(--color-ink); border-color: var(--color-ink); }
+.ch-stops li.at::after { top: -2px; inset-inline-start: calc(50% - 10px); width: 20px; height: 20px; border-color: var(--color-ink); background: var(--color-ink);
+  box-shadow: inset 0 0 0 4px var(--band-bg, var(--color-paper)); }
+.ch-stops li.at { color: var(--color-ink); font-weight: 600; }
+
+/* A chamber's vote: the bill went through the Chamber, so its seats are the stones of a horseshoe arch and the count
+   stands in the doorway as a score. */
+.vt { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px 56px; }
+.vt-words { display: flex; flex-direction: column; gap: 6px; }
+.vt-day { margin: 0; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.vt-h { margin: 0; font-family: var(--font-law); font-size: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem); line-height: 1.06; font-weight: 700; text-wrap: balance; }
+.vt-room { display: block; width: 100%; max-width: 31rem; height: auto; margin-inline: auto; }
+.vt-seat { fill: none; stroke: var(--color-tick); stroke-width: 1.2; }
+.vt-seat.f { fill: var(--t); stroke: none; }
+.vt-seat.a { fill: var(--color-ink); stroke: none; }
+.vt-seat.b { stroke: var(--color-ink); }
+.vt-room text { font-family: var(--font-ui); }
+.vt-n { font-size: 40px; font-weight: 700; fill: var(--color-ink); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.vt-n.f { fill: var(--t); }
+.vt-dash { stroke: var(--color-field); stroke-width: 2.5; stroke-linecap: round; }
+.vt-l { font-size: 14.5px; fill: var(--color-ink-soft); }
+.vt-mid { font-size: 15.5px; font-weight: 600; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+.vt-count { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.vt-tally { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 26px; }
+.vt-tally li { display: flex; align-items: baseline; gap: 8px; }
+.vt-tally b { font-weight: 700; font-variant-numeric: tabular-nums; }
+.vt-tally em { font-style: normal; color: var(--color-ink-soft); }
+.vt-key { align-self: center; width: 12px; height: 12px; box-sizing: border-box; border-radius: 50%; border: 1.5px solid var(--color-tick); }
+.vt-tally li.b .vt-key { border-color: var(--color-ink); }
+.vt-how, .vt-src { margin: 0; font-size: 0.875rem; line-height: 1.6; color: var(--color-ink-soft); }
+.vt-how a { text-decoration-thickness: 1px; }
+.vt-after { display: flex; flex-direction: column; gap: 12px; }
+.vt-after p { max-width: 45rem; }
+.vt-next { margin: 0; font-size: 1.0625rem; line-height: 1.75; }
+.vt-before { margin: 0; display: flex; flex-direction: column; gap: 6px; line-height: 1.75; color: var(--color-ink-soft); }
+.vt-am { margin: 0; line-height: 1.75; }
+.vt-am b { font-weight: 700; }
+.vt-am a { font-weight: 600; }
+.vt-src { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 18px; }
+.vt-src a { min-height: 32px; display: inline-flex; align-items: center; color: var(--color-ink-soft); }
+@media (min-width: 900px) {
+  .vt { grid-template-columns: minmax(0, 1fr) minmax(0, 30rem); grid-template-areas: "words room" "count room" "after after"; grid-template-rows: auto 1fr auto; align-items: start; }
+  .vt-words { grid-area: words; padding-top: 18px; }
+  .vt-room { grid-area: room; }
+  .vt-count { grid-area: count; }
+  .vt-after { grid-area: after; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 30rem); gap: 12px 56px; padding-top: 14px; }
+  .vt-next, .vt-before { grid-column: 1; }
+  .vt-am { grid-column: 2; grid-row: 1 / span 2; padding-inline-start: 18px; border-inline-start: 1px solid var(--color-rule); }
+  .vt-src { grid-column: 1 / -1; }
+}
+/* The one moment that moves: the seats fill in a sweep, as a count is read. */
+@media (prefers-reduced-motion: no-preference) {
+  .vt-seat.f, .vt-seat.a { animation: vt-sit 260ms ease-out both; animation-delay: calc(var(--i) * 2.6ms); }
+}
+@keyframes vt-sit { from { fill: transparent; stroke: var(--color-tick); } }
+
+/* A count as dots, one a voice or an amendment: for in the topic's colour, against in ink, the rest hollow. */
+.dv { display: inline-flex; flex-wrap: wrap; align-content: flex-start; gap: 4px; }
+.dv i { width: 10px; height: 10px; box-sizing: border-box; border-radius: 50%; background: var(--t); }
+.dv i.a { background: var(--color-ink); }
+.dv i.b { background: none; border: 1.5px solid var(--color-field); }
+.vt-before .dv i, .lg-am .dv i { width: 6px; height: 6px; }
+.vt-before .dv, .lg-am .dv { gap: 2px; }
+.vt-before .dv i.b, .lg-am .dv i.b { border-width: 1px; border-color: var(--color-ink); }
+
+/* The committee's amendments, one dot each, beside the group that filed them. */
+.am { display: flex; flex-direction: column; gap: 18px; }
+.am-h { margin: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 16px; font-family: var(--font-law); font-size: clamp(1.75rem, 1.4rem + 1.6vw, 2.5rem); line-height: 1.15; font-weight: 500; }
+.am-h b { font-family: var(--font-ui); font-size: clamp(4rem, 2.8rem + 5vw, 6.5rem); line-height: 0.85; font-weight: 700; color: var(--t); font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+.am-h span { flex: 1 1 12rem; max-width: 22ch; text-wrap: balance; }
+.am-groups { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: max-content max-content minmax(0, 1fr); gap: 14px 20px; align-items: start; }
+.am-groups li { display: contents; }
+.am-who { font-weight: 600; text-align: left; }
+.am-n { font-variant-numeric: tabular-nums; color: var(--color-ink-soft); white-space: nowrap; text-align: left; }
+.am-n b { color: var(--color-ink); font-size: 1.125rem; }
+.am-groups .dv { padding-top: 7px; }
+.am-key { margin: 0; display: flex; flex-wrap: wrap; justify-content: flex-start; gap: 4px 20px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.am-key span { display: inline-flex; align-items: center; gap: 6px; }
+.am-sw { width: 10px; height: 10px; box-sizing: border-box; border-radius: 50%; background: var(--t); }
+.am-sw.a { background: var(--color-ink); }
+.am-sw.b { background: none; border: 1.5px solid var(--color-field); }
+.am .vt-how { max-width: 45rem; }
+@media (max-width: 640px) {
+  .am-groups { grid-template-columns: minmax(0, 1fr) max-content; gap: 0 12px; }
+  .am-groups .dv { grid-column: 1 / -1; padding-block: 6px 16px; }
+}
+
+/* «شنو حالتك؟»: the readers as tabs along the sheet; the one read is underlined in ink. */
+.lg-tabs { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; display: flex; flex-wrap: wrap; align-items: stretch; gap: 0 22px;
+  background: var(--color-sheet); border-bottom: 1px solid var(--color-rule); }
+.lg-ask { align-self: center; font-weight: 600; white-space: nowrap; }
+.lg-tab { font: inherit; min-height: 48px; margin-bottom: -1px; padding: 0 2px; border: 0; border-bottom: 3px solid transparent; background: none;
+  color: var(--color-ink-soft); white-space: nowrap; cursor: pointer; }
+.lg-tab:hover { color: var(--color-ink); }
+.lg-tab[aria-pressed="true"] { color: var(--color-ink); font-weight: 600; border-bottom-color: var(--color-ink); }
+.lg-tab:focus-visible, .lg-others button:focus-visible, .lg-cal button:focus-visible, .lg-strip button:focus-visible, .lg-more:focus-visible, .lg-share:focus-visible,
+.ch-chip:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+
+/* A reader's section: its title in the law's face, then its lines. */
+.lg-sec { display: flex; flex-direction: column; }
+.lg-sec-h, .ch-sec-h { margin: 22px 0 4px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px;
+  font-family: var(--font-law); font-size: clamp(1.875rem, 1.6rem + 1.2vw, 2.375rem); line-height: 1.2; font-weight: 700; }
+.lg-sec-h small { font-family: var(--font-ui); font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+.lg-note { margin: 0 0 6px; max-width: 62ch; line-height: 1.75; color: var(--color-ink-soft); }
+/* The calendar of effects on a phone: its dates as ticks on one rule; a date lights its lines and says what starts. */
+.lg-strip { display: flex; flex-direction: column; gap: 8px; margin-block: 10px 0; }
+.lg-strip > div { display: flex; overflow-x: auto; scrollbar-width: none; border-top: 2px solid var(--color-rule); }
+.lg-strip button { flex: 1 0 auto; position: relative; font: inherit; font-size: 0.875rem; min-height: 44px; padding: 8px 12px 0; border: 0; background: none;
+  color: var(--color-ink-soft); white-space: nowrap; text-align: start; cursor: pointer; }
+.lg-strip button::before { content: ""; position: absolute; top: -2px; inset-inline-start: 0; width: 2px; height: 12px; background: var(--color-field); }
+.lg-strip button.mine { color: var(--color-ink); font-weight: 600; }
+.lg-strip button.mine::before { width: 3px; background: var(--t); }
+.lg-strip button[aria-pressed="true"] { background: color-mix(in srgb, var(--t) 13%, var(--color-sheet)); }
+.lg-strip p { margin: 0; font-size: 0.9375rem; line-height: 1.65; }
+@media (min-width: 1024px) { .lg-strip { display: none; } }
+
+/* The comparative table. A line: what it is, then today's figure and the bill's in two columns that hold down the whole
+   section; the bill's under its dashes. */
+.ch-fig { font-weight: 700; color: var(--t); font-variant-numeric: tabular-nums; line-height: 1.05;
+  text-decoration: underline dashed var(--color-field) 1.5px; text-underline-offset: 0.22em; }
+.ch-fig.quiet { color: var(--color-ink-soft); }
+.ch-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.lg-rows { margin: 0; padding: 0; list-style: none; }
+.lg-row { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); align-items: start; gap: 0 18px; padding-block: 24px;
+  grid-template-areas: "head head" "today bill" "am am" "you you" "meta meta" "det det" "more more";
+  border-top: 1px solid var(--color-rule); scroll-margin-top: 72px; transition: background-color 220ms ease; }
+.lg-row:first-child { border-top: 0; }
+.lg-row.long, .lg-row.one { grid-template-areas: "head head" "today today" "bill bill" "am am" "you you" "meta meta" "det det" "more more"; }
+.lg-row.lit { background: color-mix(in srgb, var(--t) 9%, var(--color-sheet)); }
+.lg-head { grid-area: head; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.lg-h { margin: 0; font-size: 1.1875rem; font-weight: 600; line-height: 1.45; }
+.lg-plain { margin: 0; max-width: 58ch; line-height: 1.75; color: var(--color-ink-soft); }
+.lg-today { grid-area: today; display: flex; flex-direction: column; gap: 2px; min-width: 0; margin-top: 14px; }
+.lg-bill { grid-area: bill; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; row-gap: 2px; min-width: 0; margin-top: 14px; }
+.lg-am, .ch-you, .lg-meta, .lg-d { margin-top: 12px; }
+.lg-bill > * { grid-column: 2; }
+.lg-arrow { grid-column: 1; grid-row: 1 / span 6; align-self: start; margin-top: 1.75rem; color: var(--color-field); }
+.lg-arrow:dir(rtl) { transform: scaleX(-1); }
+.lg-l { font-size: 0.875rem; color: var(--color-ink-soft); }
+.lg-v { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 6px; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.lg-today .lg-v { font-size: 1.375rem; font-weight: 600; color: var(--color-ink-soft); }
+.lg-bill .lg-v { row-gap: 9px; }
+.lg-bill .ch-fig { font-size: 1.875rem; }
+.lg-row.long .lg-bill .ch-fig { font-size: 1.5rem; line-height: 1.3; }
+.lg-row.long .lg-today .lg-v { font-size: 1.25rem; }
+.lg-unit { font-size: 0.9375rem; font-weight: 600; color: var(--color-ink-soft); }
+.lg-n { font-size: 0.875rem; line-height: 1.55; color: var(--color-ink-soft); }
+/* The section's first line, set large. */
+.lg-row.hero .lg-h { font-size: 1.375rem; }
+.lg-row.hero .lg-bill .ch-fig { font-size: clamp(3rem, 2rem + 4.4vw, 4.25rem); letter-spacing: -0.02em; }
+.lg-row.hero.long .lg-bill .ch-fig { font-size: 2rem; letter-spacing: 0; }
+.lg-row.hero .lg-today .lg-v { font-size: 1.75rem; }
+.lg-row.hero .lg-arrow { margin-top: 2.4rem; }
+.lg-row.long .lg-arrow, .lg-row.long .lg-arrow:dir(rtl) { grid-column: 2; grid-row: auto; margin: 0 0 2px; transform: rotate(90deg); }
+/* A line Parliament wrote over: the figure the government filed struck in the pen's red above the voted one, a change
+   bar in the margin as in any amended text, and beside it who, how the committee voted and its page in the report. */
+.lg-row.pen::before { content: ""; position: absolute; inset-inline-start: -11px; top: 26px; bottom: 26px; width: 3px; border-radius: 2px; background: var(--pen); }
+.lg-filed { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 8px; font-size: 1.25rem; font-weight: 600; line-height: 1.3; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.lg-filed s { text-decoration: line-through 2.5px var(--pen); }
+.lg-filed small { font-size: 0.875rem; font-weight: 400; }
+.lg-row.no .ch-fig { text-decoration-style: dotted; }
+.lg-am { grid-area: am; margin-bottom: 0; display: grid; grid-template-columns: 16px minmax(0, 1fr); gap: 2px 8px; align-items: start; font-size: 0.9375rem; line-height: 1.6; }
+.lg-am > svg { margin-top: 4px; color: var(--pen); }
+.lg-am > .dv, .lg-am > a { grid-column: 2; justify-self: start; }
+.lg-am > .dv { padding-block: 3px; }
+.lg-am a { min-height: 32px; display: inline-flex; align-items: center; font-size: 0.875rem; }
+.lg-am.no, .lg-am.no > svg { color: var(--color-ink-soft); }
+/* «لك»: the reader's own figure, in the reader's ink. */
+.ch-you { grid-area: you; display: flex; flex-direction: column; gap: 10px; padding: 12px 16px; border-inline-start: 3px solid var(--color-ink);
+  background: var(--color-paper); color: var(--color-ink); line-height: 1.75; }
+.ch-you p { margin: 0; max-width: 60ch; }
+.ch-you b { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ch-you small { font-size: 0.875rem; color: var(--color-ink-soft); }
+.ch-you-g { font: inherit; font-weight: 700; color: var(--color-ink); background: none; border: 0; padding: 0; cursor: pointer; white-space: nowrap;
+  text-decoration: underline dotted var(--color-ink-soft) 1.5px; text-underline-offset: 0.25em; min-height: 32px; }
+.ch-you-g:hover { color: var(--color-stamp); }
+.ch-you-g:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 4px; }
+.ch-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ch-ask { font-weight: 600; margin-inline-end: 4px; }
+.ch-chip { font: inherit; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--color-field); background: var(--color-sheet);
+  color: var(--color-ink); white-space: nowrap; cursor: pointer; }
+.ch-chip[aria-pressed="true"] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+/* The rate on the reader's last dirham, year by year: today grey, the bill's years in the topic's colour. */
+.ch-yrs { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--color-field); }
+.ch-yrs li { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 8px 2px 2px; }
+.ch-yrs li + li { border-inline-start: 1px solid var(--color-rule); }
+.ch-yrs li span { font-size: 0.875rem; color: var(--color-ink-soft); }
+.ch-yrs li b { font-size: 1.125rem; color: var(--t); }
+.ch-yrs li.law b { color: var(--color-ink-soft); }
+/* When, where in the code, and the picture to forward. */
+.lg-meta { grid-area: meta; margin-bottom: 0; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 16px; }
+.lg-when { padding-inline-start: 9px; border-inline-start: 3px solid var(--t); font-size: 0.875rem; font-weight: 600; line-height: 1.5; }
+.lg-when.check { border-color: var(--color-amended); color: var(--color-amended); }
+.lg-when.not { border-inline-start-style: dotted; border-color: var(--color-field); color: var(--color-ink-soft); font-weight: 500; }
+.lg-when.same { border-color: var(--color-tick); color: var(--color-ink-soft); font-weight: 500; }
+.lg-cites { display: inline-flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.875rem; }
+.lg-cites a { min-height: 32px; display: inline-flex; align-items: center; }
+.lg-share { margin-inline-start: auto; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 10px; border: 0; background: transparent;
+  color: var(--color-ink-soft); cursor: pointer; }
+.lg-share:hover { background: var(--color-paper); color: var(--color-stamp); }
+.lg-d { grid-area: det; margin-bottom: 0; max-width: 62ch; line-height: 1.8; color: var(--color-ink-soft); }
+.lg-more { grid-area: more; display: none; justify-self: start; align-self: flex-start; min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: var(--color-stamp); cursor: pointer; }
+.ch-foot { margin: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--color-rule); padding-block: 12px 6px; font-weight: 600; }
+.ch-foot a { min-height: 44px; display: inline-flex; align-items: center; }
+.lg-phone { display: none; }
+.lg-widget-open { display: none; }
+
+/* The other readers, one line each: an index under a strong rule. */
+.lg-others { display: flex; flex-direction: column; gap: 10px; margin-top: 30px; }
+.lg-side-h { margin: 0; font-size: 1.0625rem; font-weight: 600; }
+.lg-others ul { margin: 0; padding: 0; list-style: none; border-top: 2px solid var(--color-ink); }
+.lg-others li { border-bottom: 1px solid var(--color-rule); }
+.lg-others button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px 0; border: 0; background: none;
+  font: inherit; color: var(--color-ink); text-align: start; cursor: pointer; min-height: 56px; }
+.lg-others button > span { display: flex; flex-direction: column; gap: 2px; }
+.lg-others button span span { color: var(--color-ink-soft); font-size: 0.9375rem; }
+.lg-others button:hover b { color: var(--color-stamp); }
+.lg-others i { font-style: normal; color: var(--color-stamp); font-size: 0.875rem; white-space: nowrap; }
+
+/* The side column on a desk (V9): the section's calculator and the calendar of effects (V7), each under a strong rule. */
+.lg-side { display: flex; flex-direction: column; gap: 10px; padding-top: 14px; border-top: 2px solid var(--color-ink); }
+.lg-cal { margin: 0; padding: 0; list-style: none; }
+.lg-cal li { position: relative; padding-inline-start: 24px; padding-bottom: 12px; }
+.lg-cal li::before { content: ""; position: absolute; inset-inline-start: 0; top: 7px; width: 12px; height: 12px; box-sizing: border-box; border-radius: 50%;
+  border: 2px solid var(--t); background: var(--color-sheet); }
+.lg-cal li.mine::before { background: var(--t); }
+.lg-cal li::after { content: ""; position: absolute; inset-inline-start: 5px; top: 21px; bottom: -4px; width: 2px; background: var(--color-rule); }
+.lg-cal li:last-child::after { display: none; }
+.lg-cal button { display: flex; flex-direction: column; gap: 2px; width: 100%; padding: 2px 6px; border: 0; border-radius: 6px; background: none; font: inherit;
+  color: var(--color-ink-soft); text-align: start; cursor: pointer; }
+.lg-cal li.mine button { color: var(--color-ink); }
+.lg-cal button b { color: var(--color-ink); font-size: 0.9375rem; }
+.lg-cal button span { font-size: 0.875rem; line-height: 1.6; }
+.lg-cal button[aria-pressed="true"] { background: color-mix(in srgb, var(--t) 13%, var(--color-sheet)); }
+
+/* A wide sheet with no side column (the page of amendments on a desk): what it is, today, the bill, as three columns. */
+@container (min-width: 880px) {
+  .lg-row, .lg-row.long { grid-template-columns: minmax(0, 1fr) 12rem 17rem; grid-template-rows: auto auto 1fr; column-gap: 36px;
+    grid-template-areas: "head today bill" "am today bill" "meta today bill" "you you you" "det det det"; }
+  .lg-row.one { grid-template-areas: "head bill bill" "am bill bill" "meta bill bill" "you you you" "det det det"; }
+  .lg-row.long .lg-arrow, .lg-row.long .lg-arrow:dir(rtl) { grid-column: 1; grid-row: 1 / span 6; margin: 1.75rem 0 0; transform: none; }
+  .lg-row.long .lg-arrow:dir(rtl) { transform: scaleX(-1); }
+  .lg-row.pen::before { inset-inline-start: -22px; }
+}
+@media (max-width: 1023px) { .lg-phone { display: flex; flex-direction: column; margin-top: 8px; } }
+@media (max-width: 640px) {
+  .ch-band { grid-template-columns: minmax(0, 1fr); grid-template-areas: "what" "stops" "next" "links"; }
+  .ch-stops li span { display: none; }
+  .ch-stops li:first-child span, .ch-stops li.at span, .ch-stops li:last-child span { display: block; max-width: 6.5rem; }
+  .ch-stops li:first-child, .ch-stops li:last-child, .ch-stops li.at { min-height: 64px; }
+  .ch-stops li:first-child { justify-content: flex-start; }
+  .ch-stops li:last-child { justify-content: flex-end; }
+  .ch-stops li:first-child span { text-align: start; }
+  .ch-stops li:last-child span { text-align: end; max-width: 4.5rem; }
+  .lg-tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; }
+  .lg-widget-open { display: inline-flex; align-items: center; }
+  .lg-widget-body { display: none; }
+  .lg-widget.open .lg-widget-body { display: block; }
+  .ch-you { padding: 10px 12px; }
+  .ch-you .ch-ask { flex-basis: 100%; }
+  .ch-you .ch-chip { min-height: 44px; padding: 0 14px; }
+  .lg-d { display: none; }
+  .lg-row.open .lg-d { display: block; }
+  .lg-more { display: inline-flex; align-items: center; }
+}
+
+/* «قالو | مكتوب» (V13): the sentence as said beside what the text gives, figure first, under a neutral marker. */
+.cl-list { background: var(--color-sheet); border-radius: 18px; padding: 6px 26px; margin: 0; list-style: none; }
+.cl-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; padding: 12px 0 6px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.cl-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; padding: 20px 0; border-top: 1px solid var(--color-rule); }
+.cl-said { display: flex; flex-direction: column; gap: 6px; border-inline-start: 3px solid var(--color-rule); padding-inline-start: 16px; }
+.cl-said q { font-size: 1.1875rem; font-weight: 500; line-height: 1.6; quotes: "«" "»"; }
+.cl-said a { font-size: 0.875rem; color: var(--color-ink-soft); }
+.cl-text { display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+.cl-mark { border-radius: 999px; padding: 3px 12px; font-size: 0.875rem; font-weight: 600; }
+.cl-mark.as { background: color-mix(in srgb, var(--color-in-force) 14%, var(--color-sheet)); color: var(--color-in-force); }
+.cl-mark.if, .cl-mark.later, .cl-mark.other { background: var(--color-amended-wash); color: var(--color-amended); }
+.cl-mark.not { border: 1.5px dashed var(--color-field); color: var(--color-ink-soft); }
+.cl-text .cl-fig { margin: 0; font-size: 1.75rem; color: var(--color-ink); font-weight: 700; line-height: 1.2; font-variant-numeric: tabular-nums; }
+.cl-text p { margin: 0; max-width: 58ch; font-size: 1rem; line-height: 1.8; color: var(--color-ink-soft); }
+.cl-text .ch-foot { border: 0; padding: 0; }
+@media (max-width: 760px) {
+  .cl-list { padding: 4px 16px; }
+  .cl-head { display: none; }
+  .cl-row { grid-template-columns: 1fr; gap: 12px; }
+  .cl-said q { font-size: 1.0625rem; }
+}
+
+/* What people say (Y8–Y10). */
+.pr-panel { display: flex; flex-direction: column; gap: 8px; }
+.pr-panel .ch-sec-h { margin-top: 0; }
+.pr-lead { margin: 0; color: var(--color-ink-soft); font-size: 0.9375rem; line-height: 1.7; }
+.pr-list { display: flex; flex-direction: column; gap: 6px; }
+.pr-group ul { margin: 0; padding: 0; list-style: none; }
+.pr-type { margin: 10px 0 2px; font-size: 0.875rem; font-weight: 600; color: var(--color-ink-soft); }
+.pr-item { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 14px; padding: 12px 0; border-top: 1px solid var(--color-rule); }
+.pr-who { display: flex; flex-direction: column; font-size: 0.875rem; color: var(--color-ink-soft); }
+.pr-who b { color: var(--color-ink); font-size: 0.9375rem; }
+.pr-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.pr-title { font-weight: 600; line-height: 1.5; }
+.pr-said { font-size: 0.9375rem; line-height: 1.7; color: var(--color-ink-soft); }
+.pr-said b { color: var(--color-ink); font-weight: 600; }
+.pr-prop { display: inline-block; margin-inline-start: 6px; border-radius: 999px; padding: 0 9px; font-size: 0.875rem; font-weight: 600;
+  background: var(--color-amended-wash); color: var(--color-amended); }
+.pr-repeat { margin: 4px 0 0; display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; font-size: 0.875rem; color: var(--color-ink-soft); }
+.pr-repeat a { border-radius: 999px; padding: 2px 10px; background: var(--color-paper); min-height: 32px; display: inline-flex; align-items: center; }
+.ch-updated { margin: 0; max-width: 45rem; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.ch-updated ol { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 2px; width: 100%; }
+.ch-updated li b { color: var(--color-ink); font-weight: 600; }
+@media (max-width: 640px) { .pr-item { grid-template-columns: 1fr; gap: 4px; } .pr-who { flex-direction: row; gap: 10px; } }

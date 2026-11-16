@@ -1,0 +1,29 @@
+{
+  "about": "Twelve situations people meet (row 4 of the reader-experience review), each with the searches that find its articles and the shelf texts it rests on. The words a reader sees are drafted by Claude Haiku from the site's own articles (manage.py draft_situations) and shown only once an editor approves them (decision C2).",
+  "situations": [
+    {"slug": "road-accident", "title": {"ar": "وقعت لي حادثة سير", "fr": "J'ai eu un accident de la route"},
+     "searches": ["حادثة سير", "تصريح بالحادثة", "الفرار بعد ارتكاب حادثة", "التأمين على العربات"], "shelf": ["road"]},
+    {"slug": "driving-licence", "title": {"ar": "رخصة السياقة والمخالفات", "fr": "Permis de conduire et infractions"},
+     "searches": ["رخصة السياقة", "نظام النقط", "سحب رخصة السياقة", "الغرامة التصالحية الجزافية"], "shelf": ["road"]},
+    {"slug": "renting", "title": {"ar": "أكتري سكنا أو أكريه", "fr": "Je loue un logement"},
+     "searches": ["كراء المحلات المعدة للسكنى", "عقد الكراء", "الوجيبة الكرائية"], "shelf": ["housing_lease", "doc"]},
+    {"slug": "divorce", "title": {"ar": "الطلاق والنفقة وحضانة الأطفال", "fr": "Divorce, pension et garde des enfants"},
+     "searches": ["الطلاق", "النفقة", "الحضانة"], "shelf": ["family", "civil_procedure"]},
+    {"slug": "dismissal", "title": {"ar": "طُردت من العمل", "fr": "J'ai été licencié"},
+     "searches": ["الفصل من الشغل", "التعويض عن الفصل", "عقد الشغل"], "shelf": ["labour"]},
+    {"slug": "birth", "title": {"ar": "تسجيل مولود في الحالة المدنية", "fr": "Déclarer une naissance à l'état civil"},
+     "searches": ["التصريح بالولادة", "رسم الولادة", "الحالة المدنية"], "shelf": ["civil_status"]},
+    {"slug": "consumer", "title": {"ar": "اشتريت منتجا معيبا أو خدمة لم تُنجز", "fr": "J'ai acheté un produit défectueux"},
+     "searches": ["حماية المستهلك", "الضمان القانوني لعيوب الشيء المبيع", "حق التراجع", "الشروط التعسفية"], "shelf": ["consumer"]},
+    {"slug": "co-ownership", "title": {"ar": "أسكن في عمارة: السانديك والتكاليف المشتركة", "fr": "J'habite un immeuble : syndic et charges"},
+     "searches": ["الملكية المشتركة", "اتحاد الملاك", "وكيل الاتحاد", "التكاليف المشتركة"], "shelf": ["co_ownership"]},
+    {"slug": "building", "title": {"ar": "أريد البناء أو تقسيم أرض", "fr": "Je veux construire ou diviser un terrain"},
+     "searches": ["رخصة البناء", "التجزئات العقارية", "تقسيم العقارات"], "shelf": ["urbanism"]},
+    {"slug": "expropriation", "title": {"ar": "الدولة تريد نزع ملكية أرضي", "fr": "L'État veut exproprier mon terrain"},
+     "searches": ["نزع الملكية لأجل المنفعة العامة", "التعويض عن نزع الملكية", "الاحتلال المؤقت"], "shelf": []},
+    {"slug": "copyright", "title": {"ar": "أنا مؤلف أو فنان: حقوقي على أعمالي", "fr": "Je suis auteur ou artiste : mes droits"},
+     "searches": ["حقوق المؤلف", "الحقوق المادية للمؤلف", "مدة الحماية"], "shelf": ["copyright"]},
+    {"slug": "property", "title": {"ar": "شراء عقار أو إثبات ملكيته", "fr": "Acheter un bien immobilier ou prouver sa propriété"},
+     "searches": ["الحقوق العينية", "التحفيظ العقاري", "البيع العقاري", "الحيازة"], "shelf": ["real_rights"]}
+  ]
+}

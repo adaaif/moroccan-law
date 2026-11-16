@@ -1,0 +1,226 @@
+/* /open-source, «قانون المغرب، كلمة كلمة» (16 Nov 2026). Loaded with the page, never in the first load.
+
+   The page is about print, so it is set as print: the title, the headings and the essay's own sentences in the law's
+   face (Markazi; in French, Source Serif 4, as the site sets French law), the reference rows and the interface in the
+   site's face. On a desk it is two columns down the whole page: the argument on the reading side, its evidence beside
+   it (the word to settle, the correction marked by hand, how far everyone is); then, on the same two columns, what
+   helping gives and the three rules, the project's addresses and what each length of time can do. On a phone, one
+   column: each claim, then its evidence.
+
+   One pen: the site's violet marks the word in question wherever it shows (on the printed strip, in the blank, under
+   the corrected word) and nothing else but links. One sheet: the word. The rest is type on the page's ground and
+   hairlines. Every colour a token, so night is the site's own. One-off sizes live here, not in the shared stylesheet. */
+
+.os { --os-evidence: 27rem; --os-gutter: clamp(3rem, 7vw, 6rem); gap: 0; }
+
+/* ── The title and the essay ─────────────────────────────────────────────────────────────────────────────────────── */
+.os-title { margin: 0.5rem 0 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(3rem, 1.75rem + 5.6vw, 5.25rem);
+  line-height: 1.1; color: var(--color-ink); text-wrap: balance; }
+.os-lead { max-width: 31rem; margin: 1.1rem 0 0; font-size: var(--text-lead); line-height: 1.8; color: var(--color-ink-soft);
+  text-wrap: pretty; }
+/* The essay's own sentences, as a printed page sets them. */
+.os-essay { margin: 0; font-family: var(--font-law); font-size: clamp(1.4375rem, 1.36rem + 0.36vw, 1.5625rem); line-height: 1.62;
+  color: var(--color-ink); text-wrap: pretty; }
+.os-essay p { margin: 0; text-wrap: pretty; }
+.os-essay p + p { margin-top: 0.75em; }
+.os-a, .os-b1, .os-c { margin-top: 2.5rem; }
+.os-b2 { margin-top: 1.5rem; }
+/* A live figure inside a sentence: heavier, its digits even; no colour and no box (the violet is the pen's). */
+.os-n { font-weight: 600; font-variant-numeric: tabular-nums; }
+/* Links inside the prose: the violet, on a light line under it. */
+.os-essay a, .os-defs a { color: var(--color-stamp); text-decoration: underline; text-decoration-thickness: 1px;
+  text-underline-offset: 0.3em; text-decoration-color: var(--color-stamp-line); }
+.os-essay a:hover, .os-defs a:hover { text-decoration-color: currentColor; }
+
+/* The example, marked as a proofreader marks a proof: a quiet line, the law's three words large with the misread word
+   struck by hand in the colour of what was amended; a quiet line, the same words with the right one underlined in the
+   site's ink. A hairline at the reading side, as a quotation is set, and no frame. */
+.os-erratum { display: flex; flex-direction: column; margin: 1.75rem 0 0; padding-inline-start: 1.5rem;
+  border-inline-start: 1px solid var(--color-stamp-line); }
+.os-erratum .os-said { margin: 0; font-size: var(--text-body); line-height: 1.6; color: var(--color-ink-soft); }
+.os-erratum .os-law { margin: 0 0 1rem; font-family: var(--font-law); font-weight: 600;
+  font-size: clamp(2.75rem, 2rem + 3vw, 3.75rem); line-height: 1.35; color: var(--color-ink); }
+.os-law del, .os-law ins { position: relative; text-decoration: none; }
+.os-law del { color: var(--color-amended); }
+.os-law ins { color: var(--color-stamp); }
+.os-pen { position: absolute; inset-inline: -0.07em; width: calc(100% + 0.14em); height: 0.3em; overflow: visible; pointer-events: none; }
+.os-law del .os-pen { top: 49%; }
+.os-law ins .os-pen { top: 93%; }
+.os-pen path { fill: none; stroke: currentColor; stroke-width: 3px; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+/* The strokes drawn when the figure is first seen, from the right as Arabic is written; the underline after the strike. */
+.os-erratum[data-pen="held"] .os-pen { clip-path: inset(-100% -6% -100% 106%); }
+.os-erratum[data-pen="drawn"] .os-pen { clip-path: inset(-100% -6% -100% -6%); transition: clip-path 520ms cubic-bezier(0.3, 0.7, 0.2, 1) 120ms; }
+.os-erratum[data-pen="drawn"] ins .os-pen { transition-delay: 720ms; }
+.os-erratum .os-gloss { margin: -0.85rem 0 1rem; font-size: var(--text-meta); line-height: 1.5; color: var(--color-ink-soft); }
+.os-erratum figcaption { margin-top: -0.5rem; }
+
+/* ── The word ────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.os-first { margin: 2rem -16px 0; }
+.os-word { --pad: 16px; display: flex; flex-direction: column; padding: 22px var(--pad) 12px; background: var(--color-sheet);
+  border-block: 1px solid var(--color-rule); scroll-margin-top: 16px; }
+@media (min-width: 640px) {
+  .os-first { max-width: 34rem; margin-inline: 0; }
+  .os-word { --pad: 28px; padding-top: 26px; border: 1px solid var(--color-rule); border-radius: var(--radius-card); }
+}
+
+.os-word-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 16px; }
+.os-word-head h2 { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.75rem, 1.55rem + 0.8vw, 2.125rem);
+  line-height: 1.25; color: var(--color-ink); }
+.os-mine { min-height: 1.5em; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.os-mine .os-n { color: var(--color-ink); }
+.os-mine[data-thanks] { font-weight: 600; color: var(--color-stamp); }
+.os-note { margin: 8px 0 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.os-body { display: flex; flex-direction: column; margin-top: 14px; }
+
+/* The strip: the printed page cut around the word, at the sheet's whole width, its box kept before it loads. */
+.os-strip { position: relative; margin-inline: calc(-1 * var(--pad)); overflow: hidden; background: var(--color-paper); }
+.os-strip img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 0; }
+.os-strip img[data-in] { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) { .os-strip img { transition: opacity 180ms ease-out; } }
+@media (prefers-reduced-motion: reduce) { .os-strip img { opacity: 1; } }
+/* The word's own line: a bar at each edge of the strip, and a rule just under the word. Nothing covers a letter. */
+.os-here { position: absolute; left: 0; right: 0; pointer-events: none; border-inline: 4px solid var(--color-stamp); }
+.os-here i { position: absolute; top: calc(100% + 1px); height: 3px; min-width: 6px; border-radius: 2px; background: var(--color-stamp); }
+/* A word placed before its line was kept: a short tick under the strip. */
+.os-mark { position: relative; height: 12px; margin-inline: calc(-1 * var(--pad)); }
+.os-mark i { position: absolute; top: 4px; height: 3px; min-width: 6px; border-radius: 2px; background: var(--color-stamp); }
+
+/* The line as read, a blank where the word goes. */
+.os-line { margin: 6px 0 0; font-family: var(--font-law); font-size: clamp(1.5rem, 1.35rem + 0.6vw, 1.75rem); line-height: 1.7;
+  text-align: center; color: var(--color-ink); text-wrap: balance; }
+.os-blank { display: inline-block; width: 3em; height: 0.9em; margin-inline: 0.12em; border-bottom: 3px solid var(--color-stamp); }
+
+/* The two readings: two keys of one width, the law's face, the violet on focus and under the finger. */
+.os-keys { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.os-key { min-height: 72px; padding: 4px 12px; border: 1.5px solid var(--color-ink); border-radius: var(--radius-control);
+  background: var(--color-sheet); color: var(--color-ink); font-family: var(--font-law); font-size: 2.125rem; font-weight: 600;
+  line-height: 1.3; overflow-wrap: anywhere; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+@media (hover: hover) { .os-key:hover { border-color: var(--color-stamp); color: var(--color-stamp); background: var(--color-target-wash); } }
+.os-key:focus-visible { outline: 2px solid var(--color-stamp); outline-offset: 2px; border-color: var(--color-stamp); color: var(--color-stamp); }
+.os-key:active { border-color: var(--color-stamp); background: var(--color-wash); color: var(--color-stamp); }
+/* The arrows' line, only where a fine pointer and a keyboard are likely. */
+.os-hint { display: none; margin: 10px 0 0; text-align: center; font-size: var(--text-meta); color: var(--color-ink-soft); }
+@media (hover: hover) and (pointer: fine) { .os-hint { display: block; } }
+
+.os-also { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 20px; margin-top: 4px; }
+.os-also button { min-height: 44px; padding: 0 6px; border: 0; background: none; font: inherit; font-size: var(--text-body);
+  color: var(--color-ink-soft); cursor: pointer; }
+.os-also button:hover, .os-also button:active { color: var(--color-stamp); }
+.os-source { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; margin-top: 8px; padding-top: 6px;
+  border-top: 1px solid var(--color-rule-soft); }
+.os-date { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.os-page { display: inline-flex; align-items: center; min-height: 44px; margin-inline-start: auto; font-size: var(--text-meta);
+  font-weight: 600; text-decoration: none; }
+
+/* No word to show: the line that says why, where the word stood. A pause or a lost connection is pressed to try again. */
+.os-state { display: flex; flex: 1; align-items: center; justify-content: center; min-height: 12rem; margin: 0; padding: 24px 8px;
+  text-align: center; font-size: var(--text-lead); line-height: 1.7; color: var(--color-ink-soft); text-wrap: balance; }
+.os-again { width: 100%; border: 0; background: none; font-family: inherit; color: var(--color-stamp); cursor: pointer; }
+.os-sk-line { width: 70%; height: 1.5rem; margin: 0.6rem auto; }
+.os-sk-key { height: 72px; }
+.os-sk-also { width: 7rem; height: 1.25rem; margin: 12px 0; }
+.os-sk-source { width: 14rem; height: 1.75rem; margin: 8px 0; border-radius: 999px; }
+
+.os-private { margin: 10px 16px 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+@media (min-width: 640px) { .os-private { margin-inline: 4px; } }
+
+/* ── How far everyone is: the count, then the task as a field of squares, left to right on every page ───────────── */
+.os-progress { display: flex; flex-direction: column; gap: 10px; margin-top: 1.75rem; font-size: var(--text-meta); line-height: 1.6;
+  color: var(--color-ink-soft); }
+.os-tally { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 0.4em; margin: 0; font-family: var(--font-law);
+  font-size: clamp(1.625rem, 1.5rem + 0.5vw, 1.875rem); line-height: 1.3; color: var(--color-ink); }
+.os-tally > span { flex-basis: 100%; font-family: var(--font-ui); font-size: var(--text-meta); line-height: 1.7; color: var(--color-ink-soft); }
+.os-tally > .os-n:first-of-type { font-size: 1.5em; font-weight: 700; line-height: 1; color: var(--color-stamp); }
+/* The whole task as a field: a square for every hundred words, filled from the left as they are settled. */
+.os-field { display: grid; grid-template-columns: repeat(auto-fill, 10px); gap: 4px; direction: ltr; }
+.os-field i { aspect-ratio: 1; border-radius: 2px; background: var(--color-tick); }
+.os-field i[data-on] { background: var(--color-stamp); }
+.os-legend { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin: 0; direction: ltr; }
+.os-pct { font-weight: 600; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.os-counts { display: flex; flex-direction: column; gap: 0; margin: 0; }
+.os-counts .os-n { color: var(--color-ink); }
+
+/* ── Under the argument: what is open, the rules, the ways, the addresses ────────────────────────────────────────── */
+.os-below { margin-top: 4rem; padding-top: 0.5rem; border-top: 1px solid var(--color-rule); }
+.os-part { display: flex; flex-direction: column; gap: 0.85rem; margin-top: 3rem; }
+.os-part h2 { margin: 0 0 0.15rem; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.875rem, 1.65rem + 0.9vw, 2.375rem);
+  line-height: 1.2; color: var(--color-ink); text-wrap: balance; }
+.os-rows { margin: 0; padding: 0; list-style: none; }
+.os-rows > li { padding: 0.75rem 0; border-top: 1px solid var(--color-rule); text-wrap: pretty; }
+.os-rows > li:first-child { border-top: 0; padding-top: 0.15rem; }
+
+/* What is open: the thing, then its terms. */
+.os-defs { display: flex; flex-direction: column; margin: 0; font-size: var(--text-body); line-height: 1.8; color: var(--color-ink); }
+.os-defs > div { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 20px; padding: 0.75rem 0; border-top: 1px solid var(--color-rule); }
+.os-defs > div:last-child { border-bottom: 1px solid var(--color-rule); }
+.os-defs dt { font-weight: 600; }
+.os-defs dd { margin: 0; color: var(--color-ink-soft); text-wrap: pretty; }
+@media (min-width: 640px) { .os-defs > div { grid-template-columns: 9.5rem minmax(0, 1fr); } }
+
+/* «على قدر الوقت»: how long, then what, then its way under it. */
+.os-ways { font-size: var(--text-body); line-height: 1.75; color: var(--color-ink); }
+.os-ways > li { display: flex; flex-direction: column; align-items: flex-start; }
+.os-ways p { margin: 0; color: var(--color-ink-soft); }
+.os-when { font-weight: 600; color: var(--color-ink); }
+.os-to { margin-top: -2px; }
+.os-go { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: none; font-family: inherit;
+  font-size: var(--text-body); font-weight: 600; line-height: 1.4; color: var(--color-stamp); white-space: nowrap; text-decoration: none;
+  cursor: pointer; }
+.os-go:hover { color: var(--color-stamp-deep); }
+.os-soon { font-size: var(--text-body); color: var(--color-ink-soft); }
+
+/* The project by its addresses: what it is, then the address written out, left to right. The whole row is the link. */
+.os-addrs { font-size: var(--text-body); line-height: 1.6; }
+.os-addrs > li { padding: 0; }
+.os-addrs > li:first-child { padding: 0; }
+.os-addrs a { display: flex; flex-direction: column; align-items: flex-start; gap: 0; min-height: 48px; padding: 0.7rem 0;
+  color: var(--color-ink); font-weight: 500; text-decoration: none; }
+.os-url { font-size: 0.9375rem; font-weight: 400; color: var(--color-stamp); overflow-wrap: anywhere; }
+.os-addrs a:hover .os-url, .os-addrs a:focus-visible .os-url { color: var(--color-stamp-deep); text-decoration: underline 1px;
+  text-underline-offset: 0.3em; }
+@media (min-width: 640px) {
+  .os-addrs a { flex-direction: row; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 24px; }
+}
+.os-addrs > .os-unpublished { padding: 0.7rem 0; color: var(--color-ink-soft); }
+.os-fine { margin: 0.25rem 0 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+
+.os-last { margin: 5rem auto 1.5rem; max-width: 34rem; text-align: center; font-family: var(--font-law); font-weight: 600;
+  font-size: clamp(2rem, 1.55rem + 2vw, 3rem); line-height: 1.35; color: var(--color-ink); text-wrap: balance; }
+
+/* Between a phone and a desk: one column, held to a line a reader can follow. */
+.os-top > *, .os-below > * { max-width: 38rem; }
+
+/* ── A desk: two columns down the page, the argument beside its evidence ─────────────────────────────────────────── */
+@media (min-width: 64rem) {
+  .os-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, var(--os-evidence)); grid-template-rows: auto 1fr;
+    column-gap: var(--os-gutter); padding-top: 1.5rem; }
+  .os-top > *, .os-below > * { max-width: none; }
+  .os-head { grid-area: 1 / 1; }
+  .os-first { grid-area: 1 / 2 / span 2 / auto; align-self: start; max-width: none; margin: 1.1rem 0 0; }
+  .os-a { grid-area: 2 / 1; margin-top: 2.25rem; }
+  .os-b1 { grid-area: 3 / 1; align-self: end; margin-top: 5rem; }
+  .os-erratum { grid-area: 3 / 2 / span 2 / auto; align-self: center; margin-top: 5rem; }
+  .os-b2 { grid-area: 4 / 1; align-self: start; margin-top: 0.8em; }
+  .os-c { grid-area: 5 / 1; align-self: center; margin-top: 5rem; }
+  .os-progress { grid-area: 5 / 2; align-self: center; margin-top: 5rem; }
+
+  .os-below { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, var(--os-evidence)); column-gap: var(--os-gutter);
+    row-gap: 1.5rem; margin-top: 5.5rem; padding-top: 1.5rem; }
+  .os-gains { grid-area: 1 / 1; }
+  .os-rules { grid-area: 1 / 2; }
+  .os-links { grid-area: 2 / 1; }
+  .os-time { grid-area: 2 / 2; }
+  .os-last { margin-top: 6.5rem; }
+}
+
+/* French: the title, the headings, the essay and the last line in Source Serif 4, as the site sets French law. */
+.os-title:lang(fr), .os-word-head h2:lang(fr), .os-part h2:lang(fr), .os-last:lang(fr), .os-essay:lang(fr), .os-tally:lang(fr) {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif; }
+.os-title:lang(fr), .os-word-head h2:lang(fr), .os-part h2:lang(fr), .os-last:lang(fr) { font-weight: 600; }
+.os-title:lang(fr) { font-size: clamp(2.5rem, 1.6rem + 4vw, 4rem); line-height: 1.06; letter-spacing: -0.01em; }
+.os-essay:lang(fr) { font-size: clamp(1.125rem, 1.08rem + 0.25vw, 1.25rem); line-height: 1.72; }
+.os-word-head h2:lang(fr), .os-part h2:lang(fr) { font-size: clamp(1.5rem, 1.35rem + 0.6vw, 1.875rem); }
+.os-tally:lang(fr) { font-size: 1.25rem; }
+.os-last:lang(fr) { font-size: clamp(1.625rem, 1.35rem + 1.2vw, 2.25rem); line-height: 1.3; }
+/* The lines of law in the example stay Arabic on a French page. */
+.os-erratum .os-law:lang(ar) { font-family: var(--font-law); }

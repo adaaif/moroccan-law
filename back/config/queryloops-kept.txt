@@ -1,0 +1,48 @@
+# The functions known to run one SQL statement many times in one call from a test (config/queryloops.py), one
+# <file>::<function> a line. tools/ci/loops.sh fails when the suite finds a function that is not listed here; one that
+# is listed and no longer found is only reported. `tools/ci/loops.sh --update` writes this file again from a run, whose
+# JSON (back/.reports/loops.json) has each function's query, how often it repeats and a test that reaches it.
+apps/accounts/api/views.py::TokenRefresh.post
+apps/budget/services/checks.py::run_checks
+apps/consolidation/services/engine/pipeline.py::run
+apps/consolidation/services/engine/status.py::standing
+apps/consolidation/services/engine/weighing.py::later_texts
+apps/consolidation/services/engine/when.py::as_published
+apps/consolidation/services/engine/when.py::own_start
+apps/consolidation/services/history.py::pick
+apps/corpus/management/commands/load_sample.py::Command.handle
+apps/corpus/models.py::Text.latest_version
+apps/corpus/services/archive_run/steps.py::Steps.tocs
+apps/corpus/services/archive_run/steps.py::Steps.tocs.<locals>.content
+apps/corpus/services/archive_run/work.py::Work.pages
+apps/corpus/services/articles.py::_paths_moved
+apps/corpus/services/citations.py::held
+apps/corpus/services/codes.py::texts_of
+apps/corpus/services/issue_structure/load.py::load_texts
+apps/corpus/services/issue_structure/load.py::settle
+apps/corpus/services/issue_structure/segment.py::issue_lines
+apps/corpus/services/recut.py::_held.<locals>.<genexpr>
+apps/corpus/services/works/identity.py::follow
+apps/corpus/services/works/identity.py::resolve
+apps/corpus/services/works/moves.py::_repath
+apps/corpus/services/works/moves.py::mergeable
+apps/corpus/services/works/moves.py::move
+apps/discussion/management/commands/seed_load_test.py::Command.handle
+apps/discussion/services/anchors.py::find
+apps/discussion/services/anchors.py::find_many
+apps/discussion/services/counters.py::_demo_ids
+apps/discussion/services/gates.py::running_ban
+apps/discussion/services/review/reviewers.py::reviewer
+apps/follows/services/following.py::send_letters
+apps/opendata/services/dump.py::_by_pk
+apps/opendata/services/dump.py::_chunks
+apps/opendata/services/dump.py::_french
+apps/opendata/services/dump.py::_versions
+apps/quality/management/commands/apply_page_reading.py::Command.text_spec
+apps/quality/management/commands/reader_report.py::Command.handle
+apps/search/services/search/titles.py::_titles_table
+apps/sources/services/archive.py::keep
+apps/sources/services/archive.py::unread
+apps/sources/services/quality.py::store
+apps/sources/services/witness.py::of
+config/timing.py::ServerTiming.__call__

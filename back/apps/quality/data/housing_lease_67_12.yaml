@@ -1,0 +1,18 @@
+# Law 67.12 on home leases as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (9 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/housing_lease_67_12.yaml`; a reload of the text applies them again.
+text: /ma/loi/67-12
+document: samples/adala/adala_67_12.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [3], wrong: بالمثل القانوني, right: بالممثل القانوني}   # missing, p. 4
+  - {arts: [6], wrong: على توقيعها لدى, right: على توقيعهما لدى}   # missing, p. 6
+  - {arts: [11], wrong: إذا تم بالوسيلة َضّمَن الوجيبة والتكاليف الكرائية بكاملها. المتفق عليها في العقد، وتَ, right: إذا تم بالوسيلة المتفق عليها في العقد، وتَضَمّنَ الوجيبة والتكاليف الكرائية بكاملها.}   # moved, p. 7
+  - {arts: [17, 22], wrong: العالقة الكرائية, right: العلاقة الكرائية}   # turn, p. 9 and p. 11
+  - {arts: [19], wrong: الزجاجية ولا ترابيس, right: الزجاجية والترابيس}   # turn, p. 10
+  - {arts: [19], wrong: الداخلية كلا تجهيزات, right: الداخلية كالتجهيزات}   # turn, p. 10
+  - {arts: [19], wrong: والستائر ولا شبابيك, right: والستائر والشبابيك}   # turn, p. 10
+  - {arts: [25], wrong: الإنذار أجال لا, right: الإنذار أجلا لا}   # turn, p. 12
+  - {arts: [35], wrong: بالنسب تين المذكورتين, right: بالنسبتين المذكورتين}   # split, p. 14
+  - {arts: [37], wrong: أجل الثالثة أشهر, right: أجل الثلاثة أشهر}   # turn, p. 14

@@ -1,0 +1,9 @@
+# Order 2519.05 of the Minister of Health (5 Sep 2005: the medical follow-up of pregnancy, birth and after birth that AMO
+# covers), as BO 5384 (5 Jan 2006, pp. 76-77) prints it. The articles the health topic cites (arts 2, 3, 9, 10, 11) were read
+# word by word against the page images on 2026-10-27 (the health review, S4): our reading (the scan read by Haiku)
+# holds every word as printed, so nothing is put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_pregnancy_2519_05.yaml` (no fixes).
+text: /ma/arrete/2519-05
+document: issues/bo_ar/BO_5384_ar.pdf
+read_on: '2026-10-27'
+fixes: []

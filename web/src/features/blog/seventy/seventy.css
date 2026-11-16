@@ -1,0 +1,58 @@
+/* «الجريدة الرسمية من العدد 1 في صورة واحدة»: the charts of its own (the piles are drawn on a canvas, their tones in
+   post.css). */
+/* No. 1's contents as its first page lists them («فهرسة الجريدة الرسمية»): numbered, in a column ruled like a page. */
+.bp-contents { margin: 4px 0 14px; padding: 6px 0; padding-inline-start: 2.2em; max-width: 60ch; border-inline-start: 3px double var(--color-rule);
+  list-style: decimal; font-family: var(--font-law); font-size: 1.3rem; line-height: 1.7; }
+.bp-contents li { padding-inline-start: 0.3em; }
+.bp-contents li::marker { font-family: var(--font-ui); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+/* The week: an era a row, a stamp on each day the Bulletin came out, as large as the issues it carried. On a phone the
+   week stands on its side, a day a row and an era a column. */
+.bp-week { display: flex; flex-direction: column; }
+.bp-week-row { display: grid; grid-template-columns: 9.5rem repeat(7, minmax(0, 1fr)); align-items: center; min-height: 64px;
+  border-top: 1px solid var(--color-rule-soft); }
+.bp-week.is-narrow .bp-week-row { grid-template-columns: 4.6rem repeat(var(--eras, 3), minmax(0, 1fr)); min-height: 50px; }
+.bp-week.is-narrow .bp-week-head .bp-week-era b { font-size: 13px; line-height: 1.3; }
+.bp-week.is-narrow .bp-week-head .bp-week-era span { font-size: 12px; }
+.bp-week.is-narrow .bp-day span { min-width: 24px; min-height: 24px; }
+.bp-week-head { min-height: 0; border-top: 0; padding-bottom: 6px; }
+.bp-week-day { font-size: var(--text-meta); color: var(--color-ink-soft); text-align: center; }
+.bp-week.is-narrow .bp-week-day { text-align: start; color: var(--color-ink); }
+.bp-week-era { display: flex; flex-direction: column; font-size: var(--text-meta); line-height: 1.4; font-variant-numeric: tabular-nums; }
+.bp-week.is-narrow .bp-week-head .bp-week-era { align-items: center; text-align: center; }
+.bp-week-era b { font-size: var(--text-body); font-weight: 600; }
+.bp-week-era span { color: var(--color-ink-soft); }
+.bp-day { display: grid; place-items: center; min-height: 52px; padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.bp-day:disabled { cursor: default; }
+.bp-day:disabled::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--color-rule); }
+.bp-day span { display: grid; place-items: center; width: calc(var(--s) * 52px); height: calc(var(--s) * 52px); min-width: 28px; min-height: 28px;
+  border-radius: 50%; border: 1.5px solid var(--color-stamp); color: var(--color-stamp); font-size: var(--text-meta); font-weight: 600;
+  font-variant-numeric: tabular-nums; }
+.bp-day.main span { min-width: 40px; min-height: 40px; background: var(--color-stamp); color: var(--color-on-stamp); }
+
+/* The ten thickest issues, a strip each, its length its pages. */
+.bp-thick { display: flex; flex-direction: column; margin: 4px 0 0; padding: 0; list-style: none; }
+.bp-thick li + li { border-top: 1px solid var(--color-rule-soft); }
+.bp-thick a { display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 4px 16px; padding: 10px 0; text-decoration: none; color: inherit; }
+.bp-thick-id { grid-row: span 2; display: flex; flex-direction: column; font-weight: 700; color: var(--color-stamp); font-variant-numeric: tabular-nums; }
+.bp-thick-id small { font-size: var(--text-meta); font-weight: 400; color: var(--color-ink-soft); }
+.bp-thick-what { font-size: var(--text-body); line-height: 1.5; }
+.bp-thick-bar { display: flex; align-items: center; gap: 10px; }
+.bp-thick-bar i { flex: none; width: calc(var(--w) * (100% - 6.5rem)); height: 12px; border-radius: 2px; background: var(--bp-bar); }
+.bp-thick-bar.is-report i { background: var(--color-stamp); }
+.bp-thick-bar b { flex: none; font-size: var(--text-meta); font-weight: 600; font-variant-numeric: tabular-nums; }
+.bp-thick a:hover .bp-thick-what { color: var(--color-stamp); }
+@media (max-width: 639px) { .bp-thick a { grid-template-columns: minmax(0, 1fr); } .bp-thick-id { grid-row: auto; flex-direction: row; gap: 10px; align-items: baseline; } }
+
+/* The price on the masthead, a column a price. */
+.bp-prices { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); align-items: end; gap: 6px; margin: 6px 0 0; padding: 0; list-style: none; }
+.bp-prices button { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 6px; width: 100%; height: 220px;
+  padding: 0; border: 0; background: none; color: inherit; font: inherit; cursor: pointer; }
+.bp-price-tag { display: flex; flex-direction: column; align-items: center; line-height: 1.15; }
+.bp-price-tag b { font-size: var(--text-body); font-weight: 700; font-variant-numeric: tabular-nums; }
+.bp-price-tag small { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-price-bar { width: 100%; height: calc(var(--h) * 140px); min-height: 3px; border-radius: 3px 3px 0 0; background: var(--bp-bar); }
+.bp-prices li:last-child .bp-price-bar { background: var(--color-stamp); }
+.bp-prices button[aria-pressed='true'] .bp-price-bar { background: var(--color-ink); }
+.bp-price-year { padding-top: 4px; width: 100%; border-top: 1px solid var(--color-ink); text-align: center; font-size: var(--text-meta);
+  color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+

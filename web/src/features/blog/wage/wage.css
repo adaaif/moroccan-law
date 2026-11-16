@@ -1,0 +1,6 @@
+/* «الحد الأدنى للأجر»: the staircase in the decrees' violet, a dot on each tread, the grid at every five dirhams. */
+.bp-stairs { display: flex; flex-direction: column; gap: 8px; }
+.bp-stairs path.stairs-line { fill: none; stroke: var(--color-stamp); stroke-width: 3; stroke-linejoin: round; }
+.bp-stairs circle.stairs-dot { fill: var(--color-stamp); stroke: var(--color-sheet); stroke-width: 2; cursor: pointer; }
+.bp-stairs circle.stairs-dot.is-picked { fill: var(--color-ink); }
+.bp-stairs line.stairs-grid { stroke: var(--color-rule-soft); stroke-width: 1; }

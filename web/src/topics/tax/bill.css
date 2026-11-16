@@ -1,0 +1,35 @@
+/* The bill page's tax widgets (the bill-page review, V6, V8). Loaded with them, never in the first load. */
+.bw-gain, .bw-scales { display: flex; flex-direction: column; gap: 14px; padding-top: 14px; border-top: 2px solid var(--color-ink); }
+.bw-inputs { display: flex; flex-direction: column; gap: 12px; }
+.bw-h { margin: 0; font-size: 1.0625rem; font-weight: 600; line-height: 1.4; }
+.bw-big { margin: 0; font-size: 2.125rem; font-weight: 700; line-height: 1.15; color: var(--t); font-variant-numeric: tabular-nums; }
+.bw-big span { display: block; margin-top: 4px; font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+.bw-bars { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.bw-bars li { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr) 4rem; gap: 10px; align-items: center; font-size: 0.875rem; font-variant-numeric: tabular-nums; }
+.bw-bar { height: 10px; border-radius: 999px; background: var(--t); opacity: .45; }
+.bw-bars li.on .bw-bar { opacity: 1; }
+.bw-bars li span:last-child { text-align: end; }
+.bw-note { margin: 0; font-size: 0.875rem; line-height: 1.6; color: var(--color-ink-soft); }
+.bw-link { align-self: flex-start; min-height: 44px; display: inline-flex; align-items: center; font-weight: 600; }
+.bw-years { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.bw-years li { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr) 5.6rem; gap: 12px; align-items: end; min-height: 42px; }
+.bw-y { font-size: 0.9375rem; font-weight: 600; line-height: 1.15; }
+.bw-y small { display: block; font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+.bw-steps { position: relative; height: 38px; display: flex; align-items: flex-end; gap: 2px; }
+.bw-steps i { display: block; position: relative; overflow: hidden; background: var(--color-rule); border-radius: 3px 3px 0 0; }
+.bw-steps b { position: absolute; inset-block: 0; inset-inline-start: 0; background: var(--t); opacity: .9; }
+.bw-years li.law .bw-steps b { background: var(--color-ink-soft); }
+.bw-steps em { position: absolute; top: -4px; bottom: 0; width: 2px; background: var(--color-ink); }
+.bw-end { font-weight: 700; font-variant-numeric: tabular-nums; text-align: end; color: var(--t); font-size: 0.9375rem; }
+.bw-years li.law .bw-end { color: var(--color-ink-soft); font-weight: 500; font-size: 0.875rem; }
+.bw-axis { margin: 0; display: flex; justify-content: space-between; font-size: 0.875rem; color: var(--color-ink-soft); padding-inline: 5.4rem 6.4rem; font-variant-numeric: tabular-nums; }
+@media (max-width: 1023px) {
+  .bw-inputs { flex-direction: row; flex-wrap: wrap; align-items: flex-end; }
+  .bw-gain { gap: 10px; }
+  .bw-bars { gap: 4px; }
+  .bw-bar { height: 8px; }
+}
+@media (max-width: 640px) {
+  .bw-years li { grid-template-columns: 3.4rem minmax(0, 1fr) 4.4rem; gap: 8px; }
+  .bw-axis { padding-inline: 4rem 4.8rem; }
+}

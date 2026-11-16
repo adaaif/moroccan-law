@@ -1,0 +1,366 @@
+# The digital topic's journeys (the digital review): what happens, step by step, each step on the articles it
+# rests on. Written from the penal code, the press code 88.13, the criminal procedure 22.01, law 09.08, law 31.13 and
+# law 2.00, as the site holds them on 27 Oct 2026. Steps say what the law says, never what a reader should do in their own
+# case. A reader sees a journey once a person has checked it.
+
+- key: extortion
+  title: {ar: 'الابتزاز ونشر الصور الخاصة', fr: 'Le chantage et la diffusion d’images privées'}
+  lead:
+    ar: 'التهديد بإفشاء أمور شائنة للحصول على المال جريمة، وكذلك التقاط أو نشر صورة شخص في مكان خاص أو كلامه الخاص دون موافقته.'
+    fr: 'Menacer de révéler des faits infamants pour obtenir de l’argent est un délit, comme capter ou diffuser l’image d’une personne dans un lieu privé ou ses propos privés sans son accord.'
+  steps:
+    - title: {ar: 'الابتزاز جريمة', fr: 'Le chantage est un délit'}
+      answer: {ar: 'من حصل على مال أو توقيع أو ورقة بالتهديد بإفشاء أو نسبة أمور شائنة، شفويا أو كتابة، يعاقب بالحبس من سنة إلى خمس سنوات وغرامة من 200 إلى 2.000 درهم.', fr: 'Obtenir de l’argent, une signature ou un document en menaçant de révéler ou d’imputer des faits infamants, oralement ou par écrit, est puni d’un à cinq ans de prison et de 200 à 2 000 DH d’amende.'}
+      body:
+        ar: 'من حصل على مبلغ من المال، أو الأوراق المالية أو على توقيع أو على تسليم ورقة مما أشير إليه في الفصل السابق، وكان ذلك بواسطة التهديد بإفشاء أو نسبة أمور شائنة، سواء كان التهديد شفويا أو كتابيا، يعاقب بالحبس من سنة إلى خمس سنوات وغرامة من مائتين إلى ألفي درهم.'
+        fr: 'Quiconque obtient une somme d’argent, des valeurs, une signature ou la remise d’un document en menaçant de révéler ou d’imputer des faits infamants, que la menace soit verbale ou écrite, est puni d’un à cinq ans d’emprisonnement et de deux cents à deux mille dirhams d’amende.'
+      cites: [/ma/dahir/1-59-413/art_538]
+      tool: tools/offence
+    - title: {ar: 'الصور والكلام الخاص', fr: 'Les images et propos privés'}
+      answer: {ar: 'التقاط أو تسجيل أو نشر كلام خاص، أو صورة شخص في مكان خاص، دون موافقته، بأي وسيلة ومنها الأنظمة المعلوماتية: الحبس من ستة أشهر إلى ثلاث سنوات وغرامة من 2.000 إلى 20.000 درهم.', fr: 'Capter, enregistrer ou diffuser des propos privés, ou l’image d’une personne dans un lieu privé, sans son accord, par tout moyen dont l’informatique : six mois à trois ans de prison et 2 000 à 20 000 DH.'}
+      body:
+        ar: 'يعاقب بالحبس من ستة أشهر إلى ثلاث سنوات وغرامة من 2.000 إلى 20.000 درهم كل من قام عمدا، وبأي وسيلة بما في ذلك الأنظمة المعلوماتية، بالتقاط أو تسجيل أو بث أو توزيع أقوال أو معلومات صادرة بشكل خاص أو سري دون موافقة أصحابها، أو بتثبيت أو تسجيل أو بث أو توزيع صورة شخص أثناء تواجده في مكان خاص دون موافقته.'
+        fr: 'Est puni de six mois à trois ans d’emprisonnement et de 2 000 à 20 000 dirhams quiconque, intentionnellement et par tout moyen y compris les systèmes informatiques, capte, enregistre, diffuse ou distribue des propos ou informations émis à titre privé ou confidentiel sans l’accord de leurs auteurs, ou fixe, enregistre, diffuse ou distribue l’image d’une personne se trouvant dans un lieu privé sans son accord.'
+      cites: [/ma/dahir/1-59-413/art_447-1]
+    - title: {ar: 'حين تشتد العقوبة', fr: 'Quand la peine s’aggrave'}
+      answer: {ar: 'من سنة إلى خمس سنوات وغرامة من 5.000 إلى 50.000 درهم في العود، أو إذا كان الفاعل الزوج أو الطليق أو الخاطب أو أحد الأصول أو الفروع أو من له سلطة على الضحية، أو كان الفعل ضد امرأة بسبب جنسها أو ضد قاصر.', fr: 'Un à cinq ans et 5 000 à 50 000 DH en récidive, ou si l’auteur est le conjoint, l’ex-conjoint, le fiancé, un ascendant ou descendant ou une personne ayant autorité sur la victime, ou si l’acte vise une femme en raison de son sexe ou un mineur.'}
+      body:
+        ar: 'يعاقب بالحبس من سنة واحدة إلى خمس سنوات وغرامة من 5.000 إلى 50.000 درهم، إذا ارتكبت الأفعال المنصوص عليها في الفصلين 447-1 و447-2 في حالة العود، أو من طرف الزوج أو الطليق أو الخاطب أو أحد الفروع أو أحد الأصول أو الكافل أو شخص له ولاية أو سلطة على الضحية أو مكلف برعايتها، أو ضد امرأة بسبب جنسها أو ضد قاصر.'
+        fr: 'La peine est d’un à cinq ans et de 5 000 à 50 000 dirhams si les faits des articles 447-1 et 447-2 sont commis en récidive, par le conjoint, l’ex-conjoint, le fiancé, un descendant, un ascendant, le kafil ou une personne ayant tutelle ou autorité sur la victime ou chargée d’elle, ou contre une femme en raison de son sexe ou contre un mineur.'
+      cites: [/ma/dahir/1-59-413/art_447-3]
+    - title: {ar: 'التحرش بالرسائل', fr: 'Le harcèlement par messages'}
+      answer: {ar: 'الإمعان في مضايقة الغير برسائل مكتوبة أو هاتفية أو إلكترونية أو صور ذات طبيعة جنسية: الحبس من شهر إلى ستة أشهر وغرامة من 2.000 إلى 10.000 درهم، وتضاعف إذا كان الفاعل زميلا في العمل.', fr: 'Harceler autrui par messages écrits, téléphoniques ou électroniques ou par des images à caractère sexuel : un à six mois et 2 000 à 10 000 DH, doublés si l’auteur est un collègue.'}
+      body:
+        ar: 'يعتبر مرتكبا لجريمة التحرش الجنسي ويعاقب بالحبس من شهر واحد إلى ستة أشهر وغرامة من 2.000 إلى 10.000 درهم أو بإحدى هاتين العقوبتين كل من أمعن في مضايقة الغير بواسطة رسائل مكتوبة أو هاتفية أو إلكترونية أو تسجيلات أو صور ذات طبيعة جنسية أو لأغراض جنسية. وتضاعف العقوبة إذا كان مرتكب الفعل زميلا في العمل.'
+        fr: 'Commet le délit de harcèlement sexuel et est puni d’un à six mois d’emprisonnement et de 2 000 à 10 000 dirhams, ou de l’une de ces peines, quiconque persiste à importuner autrui par des messages écrits, téléphoniques ou électroniques, des enregistrements ou des images à caractère sexuel. La peine est doublée si l’auteur est un collègue de travail.'
+      cites: [/ma/dahir/1-59-413/art_503-1-1]
+    - title: {ar: 'الشكاية', fr: 'La plainte'}
+      answer: {ar: 'إلى وكيل الملك أو إلى الشرطة القضائية؛ ويخبرك وكيل الملك بالمآل داخل خمسة عشر يوما من قراره، ويمكن التظلم من الحفظ أمام الوكيل العام للملك.', fr: 'Au procureur du Roi ou à la police judiciaire ; le procureur vous informe de la suite dans les quinze jours de sa décision, et un classement peut être contesté devant le procureur général.'}
+      body:
+        ar: 'يتلقى وكيل الملك المحاضر والشكايات والوشايات ويتخذ بشأنها ما يراه ملائما، ويتلقاها كذلك ضباط الشرطة القضائية. ويضمن المشتكي شكايته رقم هاتفه أو عنوانه الإلكتروني وعنوان إقامته. ويخبر وكيل الملك المشتكي بالمآل داخل أجل أقصاه خمسة عشر يوما من تاريخ القرار، ويمكن التظلم من قرار الحفظ أمام الوكيل العام للملك.'
+        fr: 'Le procureur du Roi reçoit procès-verbaux, plaintes et dénonciations, que reçoivent aussi les officiers de police judiciaire. Le plaignant indique son téléphone ou son courriel et son adresse. Le procureur l’informe de la suite dans les quinze jours de sa décision, et un classement peut être contesté devant le procureur général.'
+      cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_21]
+      papers: checklists/complaint
+    - title: {ar: 'التقادم', fr: 'La prescription'}
+      answer: {ar: 'هذه جنح: تتقادم الدعوى العمومية بأربع سنوات من يوم ارتكابها، ما لم ينقطع التقادم.', fr: 'Ce sont des délits : l’action publique se prescrit par quatre ans à compter des faits, sauf interruption.'}
+      body:
+        ar: 'تتقادم الدعوى العمومية، ما لم تنص قوانين خاصة على خلاف ذلك، بمرور أربع سنوات ميلادية كاملة تبتدئ من يوم ارتكاب الجنحة. وإذا كان الضحية قاصرا واعتدى عليه أحد أصوله أو من له عليه سلطة، يبدأ التقادم من جديد من بلوغه سن الرشد.'
+        fr: 'Sauf loi spéciale, l’action publique se prescrit par quatre années grégoriennes révolues à compter du délit. Si la victime est mineure et l’auteur un ascendant ou une personne ayant autorité, la prescription recommence à sa majorité.'
+      cites: [/ma/loi/22-01/art_5]
+  ends: {office: court, paper: {ar: 'الشكاية لدى وكيل الملك، وإشعاره بمآلها', fr: 'La plainte au procureur, et son avis sur la suite'}, cites: [/ma/loi/22-01/art_40]}
+  next: [journeys/defamed, justice:journeys/complaint]
+
+- key: hacked
+  title: {ar: 'تقرصن ليا الحساب', fr: 'Mon compte a été piraté'}
+  lead:
+    ar: 'القانون الجنائي يعاقب على الدخول إلى نظام معلوماتي بالاحتيال، وعلى البقاء فيه، وعلى تغيير معطياته أو حذفها، وعلى عرقلته، وعلى تزوير الوثائق المعلوماتية.'
+    fr: 'Le code pénal punit l’accès frauduleux à un système informatique, le maintien, la modification ou la suppression de ses données, l’entrave et le faux informatique.'
+  steps:
+    - title: {ar: 'الدخول بالاحتيال', fr: 'L’accès frauduleux'}
+      answer: {ar: 'من دخل إلى نظام للمعالجة الآلية للمعطيات بالاحتيال، أو بقي فيه: الحبس من شهر إلى ثلاثة أشهر وغرامة من 2.000 إلى 10.000 درهم أو إحداهما.', fr: 'Accéder frauduleusement à un système de traitement automatisé, ou s’y maintenir : un à trois mois et 2 000 à 10 000 DH, ou l’une de ces peines.'}
+      body:
+        ar: 'يعاقب بالحبس من شهر إلى ثلاثة أشهر وبالغرامة من 2.000 إلى 10.000 درهم أو بإحدى هاتين العقوبتين فقط كل من دخل إلى مجموع أو بعض نظام للمعالجة الآلية للمعطيات عن طريق الاحتيال، ومن بقي في نظام أو جزء منه كان قد دخله عن طريق الخطأ وهو غير مخول له حق دخوله.'
+        fr: 'Est puni d’un à trois mois d’emprisonnement et de 2 000 à 10 000 dirhams, ou de l’une de ces peines, quiconque accède frauduleusement à tout ou partie d’un système de traitement automatisé de données, ou s’y maintient après y être entré par erreur sans en avoir le droit.'
+      cites: [/ma/dahir/1-59-413/art_607-3]
+      tool: tools/offence
+    - title: {ar: 'تغيير المعطيات أو حذفها', fr: 'Modifier ou effacer les données'}
+      answer: {ar: 'إدخال معطيات أو إتلافها أو حذفها أو تغييرها بالاحتيال: الحبس من سنة إلى ثلاث سنوات وغرامة من 10.000 إلى 200.000 درهم؛ وعرقلة النظام: نفس العقوبة.', fr: 'Introduire, détruire, supprimer ou modifier frauduleusement des données : un à trois ans et 10 000 à 200 000 DH ; entraver le système : la même peine.'}
+      body:
+        ar: 'يعاقب بالحبس من سنة إلى ثلاث سنوات وبالغرامة من 10.000 إلى 200.000 درهم أو بإحدى هاتين العقوبتين كل من عرقل عمدا سير نظام للمعالجة الآلية للمعطيات أو أحدث فيه خللا، وكل من أدخل معطيات في نظام أو أتلفها أو حذفها منه أو غير المعطيات المدرجة فيه أو طريقة معالجتها أو إرسالها عن طريق الاحتيال. ويعاقب على المحاولة بعقوبة الجريمة التامة.'
+        fr: 'Est puni d’un à trois ans et de 10 000 à 200 000 dirhams, ou de l’une de ces peines, quiconque entrave ou fausse intentionnellement le fonctionnement d’un système, ou y introduit, détruit, supprime ou modifie frauduleusement des données ou leur mode de traitement ou de transmission. La tentative est punie comme l’infraction consommée.'
+      cites: [/ma/dahir/1-59-413/art_607-5, /ma/dahir/1-59-413/art_607-6, /ma/dahir/1-59-413/art_607-8]
+    - title: {ar: 'التزوير المعلوماتي', fr: 'Le faux informatique'}
+      answer: {ar: 'تزوير وثائق المعلوميات أو تزييفها إذا أضر بالغير، واستعمالها: الحبس من سنة إلى خمس سنوات وغرامة من 10.000 إلى 1.000.000 درهم.', fr: 'Falsifier des documents informatiques au préjudice d’autrui, et en faire usage : un à cinq ans et 10 000 à 1 000 000 DH.'}
+      body:
+        ar: 'دون الإخلال بالمقتضيات الجنائية الأشد، يعاقب بالحبس من سنة إلى خمس سنوات وبالغرامة من 10.000 إلى 1.000.000 درهم كل من زور أو زيف وثائق المعلوميات أيا كان شكلها إذا كان من شأن التزوير أو التزييف إلحاق ضرر بالغير، ومن استعملها عن علم.'
+        fr: 'Sans préjudice de peines plus graves, est puni d’un à cinq ans et de 10 000 à 1 000 000 dirhams quiconque falsifie ou contrefait des documents informatiques, quelle qu’en soit la forme, de nature à causer un préjudice à autrui, et qui en fait sciemment usage.'
+      cites: [/ma/dahir/1-59-413/art_607-7]
+    - title: {ar: 'المصادرة والحرمان', fr: 'Confiscation et interdictions'}
+      answer: {ar: 'للمحكمة أن تصادر الأدوات المستعملة والمتحصل منها، وأن تحرم الفاعل من بعض الحقوق.', fr: 'Le tribunal peut confisquer les outils utilisés et le produit de l’infraction, et priver l’auteur de certains droits.'}
+      body:
+        ar: 'يجوز للمحكمة مع مراعاة حقوق الغير حسن النية أن تحكم بمصادرة الأدوات التي استعملت في ارتكاب الجرائم والمتحصل عليه منها، ويمكن الحكم على الفاعل بالحرمان من ممارسة حق أو أكثر من الحقوق المنصوص عليها في الفصل 40.'
+        fr: 'Le tribunal peut, sous réserve des droits des tiers de bonne foi, ordonner la confiscation des instruments et du produit de l’infraction, et priver l’auteur d’un ou plusieurs des droits de l’article 40.'
+      cites: [/ma/dahir/1-59-413/art_607-11]
+    - title: {ar: 'الشكاية والتقادم', fr: 'La plainte et la prescription'}
+      answer: {ar: 'الشكاية إلى وكيل الملك أو الشرطة القضائية؛ وتتقادم الجنحة بأربع سنوات من يوم ارتكابها.', fr: 'La plainte au procureur ou à la police judiciaire ; le délit se prescrit par quatre ans à compter des faits.'}
+      body:
+        ar: 'يتلقى وكيل الملك وضباط الشرطة القضائية الشكايات، ويخبر وكيل الملك المشتكي بالمآل داخل خمسة عشر يوما من قراره. وتتقادم الدعوى العمومية بمرور أربع سنوات ميلادية كاملة من يوم ارتكاب الجنحة، ما لم ينقطع التقادم.'
+        fr: 'Le procureur et les officiers de police judiciaire reçoivent les plaintes ; le procureur informe le plaignant de la suite dans les quinze jours de sa décision. L’action publique se prescrit par quatre années révolues à compter du délit, sauf interruption.'
+      cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_5]
+      papers: checklists/complaint
+  ends: {office: court, paper: {ar: 'الشكاية لدى وكيل الملك', fr: 'La plainte au procureur'}, cites: [/ma/loi/22-01/art_40]}
+
+- key: scam
+  title: {ar: 'تنصب عليا فالأنترنت', fr: 'Escroqué en ligne'}
+  lead:
+    ar: 'النصب هو استعمال الاحتيال لإيقاع شخص في الغلط بتأكيدات خادعة أو إخفاء وقائع، ودفعه إلى ما يضر بمصالحه المالية.'
+    fr: 'L’escroquerie consiste à tromper une personne par des affirmations mensongères ou la dissimulation de faits pour la conduire à des actes contraires à ses intérêts pécuniaires.'
+  steps:
+    - title: {ar: 'النصب جريمة', fr: 'L’escroquerie est un délit'}
+      answer: {ar: 'الحبس من سنة إلى خمس سنوات وغرامة من 500 إلى 5.000 درهم.', fr: 'Un à cinq ans de prison et 500 à 5 000 DH d’amende.'}
+      body:
+        ar: 'يعد مرتكبا لجريمة النصب، ويعاقب بالحبس من سنة إلى خمس سنوات وغرامة من خمسمائة إلى خمسة آلاف درهم، من استعمل الاحتيال ليوقع شخصا في الغلط بتأكيدات خادعة أو إخفاء وقائع صحيحة أو استغلال ماكر لخطأ وقع فيه غيره ويدفعه بذلك إلى أعمال تمس مصالحه أو مصالح الغير المالية بقصد الحصول على منفعة مالية له أو لشخص آخر.'
+        fr: 'Commet une escroquerie, punie d’un à cinq ans d’emprisonnement et de cinq cents à cinq mille dirhams, quiconque emploie la fraude pour induire une personne en erreur par des affirmations fallacieuses, la dissimulation de faits vrais ou l’exploitation astucieuse de son erreur, et la détermine ainsi à des actes préjudiciables à ses intérêts pécuniaires ou à ceux d’un tiers, en vue d’un profit pour lui-même ou un autre.'
+      cites: [/ma/dahir/1-59-413/art_540]
+      tool: tools/offence
+    - title: {ar: 'الشكاية', fr: 'La plainte'}
+      answer: {ar: 'إلى وكيل الملك أو الشرطة القضائية، برقم هاتفك أو بريدك وعنوانك؛ ويخبرك بالمآل داخل خمسة عشر يوما من قراره.', fr: 'Au procureur ou à la police judiciaire, avec votre téléphone ou courriel et votre adresse ; il vous informe de la suite dans les quinze jours de sa décision.'}
+      body:
+        ar: 'يتلقى وكيل الملك وضباط الشرطة القضائية الشكايات. ويتعين على المشتكين أن يضمنوا شكاياتهم أرقام هواتفهم أو عناوينهم الإلكترونية وعناوين إقامتهم. ويخبر وكيل الملك المشتكي بالمآل داخل أجل أقصاه خمسة عشر يوما من تاريخ اتخاذ القرار.'
+        fr: 'Le procureur et les officiers de police judiciaire reçoivent les plaintes. Les plaignants y indiquent leur téléphone ou courriel et leur adresse. Le procureur les informe de la suite dans les quinze jours de sa décision.'
+      cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_21]
+      papers: checklists/complaint
+    - title: {ar: 'التعويض', fr: 'La réparation'}
+      answer: {ar: 'لمن تضرر مباشرة أن يطالب بالتعويض طرفا مدنيا أمام المحكمة الزجرية.', fr: 'Qui a subi un dommage direct peut demander réparation comme partie civile devant le tribunal pénal.'}
+      body:
+        ar: 'يرجع الحق في إقامة الدعوى المدنية للتعويض عن الضرر الناتج عن جناية أو جنحة أو مخالفة لكل من تعرض شخصيا لضرر جسماني أو مادي أو معنوي تسببت فيه الجريمة مباشرة. ويمكن للمتضرر أن يتقدم طرفا مدنيا أمام هيئة الحكم بمذكرة أو بتصريح شفهي يسجله كاتب الضبط.'
+        fr: 'Toute personne ayant personnellement subi un dommage causé directement par l’infraction peut exercer l’action civile, et se constituer partie civile devant la juridiction de jugement par mémoire ou déclaration orale consignée par le greffier.'
+      cites: [/ma/loi/22-01/art_7, /ma/loi/22-01/art_350]
+    - title: {ar: 'إذا كان شراء عن بعد', fr: 'S’il s’agit d’un achat à distance'}
+      answer: {ar: 'للمستهلك أن يتراجع عن شراء عن بعد داخل سبعة أيام؛ وتفاصيل ذلك في موضوع المستهلك.', fr: 'Le consommateur peut se rétracter d’un achat à distance dans les sept jours ; le détail est dans le thème du consommateur.'}
+      body:
+        ar: 'يتوفر المستهلك على أجل سبعة أيام كاملة لممارسة حقه في التراجع عن البيع عن بعد، وفق ما يفصله قانون حماية المستهلك.'
+        fr: 'Le consommateur dispose de sept jours francs pour exercer son droit de rétractation d’une vente à distance, selon ce que détaille la loi sur la protection du consommateur.'
+      cites: [/ma/loi/31-08/art_36]
+      next: consumer:journeys/online
+  ends: {office: court, paper: {ar: 'الشكاية لدى وكيل الملك', fr: 'La plainte au procureur'}, cites: [/ma/loi/22-01/art_40]}
+
+- key: defamed
+  title: {ar: 'التشهير والسب فالأنترنت', fr: 'La diffamation et l’injure en ligne'}
+  lead:
+    ar: 'قانون الصحافة والنشر يعاقب على القذف والسب المنشور بأي وسيلة ومنها الوسائل الإلكترونية، والقانون الجنائي على نشر تركيبة من صورة شخص أو ادعاءات كاذبة للتشهير به.'
+    fr: 'Le code de la presse punit la diffamation et l’injure publiées par tout moyen, électronique compris ; le code pénal punit la diffusion d’un montage de l’image d’une personne ou d’allégations fausses pour la diffamer.'
+  day: {ar: 'نهار النشر؟', fr: 'Le jour de la publication ?'}
+  steps:
+    - title: {ar: 'القذف والسب', fr: 'Diffamation et injure'}
+      answer: {ar: 'القذف ادعاء واقعة تمس شرف الشخص أو اعتباره؛ والسب تعبير شائن أو عبارة تحقير لا تتضمن واقعة. القذف في حق الأفراد: غرامة من 10.000 إلى 100.000 درهم؛ والسب: من 10.000 إلى 50.000 درهم.', fr: 'La diffamation impute un fait portant atteinte à l’honneur ; l’injure est une expression outrageante sans fait précis. Diffamation envers un particulier : 10 000 à 100 000 DH ; injure : 10 000 à 50 000 DH.'}
+      body:
+        ar: 'القذف ادعاء واقعة أو نسبتها إلى شخص أو هيئة إذا كانت تمس شرف أو اعتبار الشخص أو الهيئة، والسب كل تعبير شائن أو مشين أو عبارة تحقير حاطة من الكرامة أو قدح لا تتضمن نسبة أية واقعة معينة. ويعاقب بغرامة من 10.000 إلى 100.000 درهم عن القذف الموجه إلى الأفراد بإحدى الوسائل المبينة في المادة 72، ومنها الوسائل الإلكترونية، وبغرامة من 10.000 إلى 50.000 درهم على السب الموجه بنفس الطريقة.'
+        fr: 'La diffamation est l’allégation ou l’imputation d’un fait portant atteinte à l’honneur ou à la considération d’une personne ; l’injure, toute expression outrageante, méprisante ou invective sans imputation d’un fait. La diffamation envers les particuliers par l’un des moyens de l’article 72, électroniques compris, est punie de 10 000 à 100 000 dirhams ; l’injure, de 10 000 à 50 000 dirhams.'
+      cites: [/ma/loi/88-13/art_83, /ma/loi/88-13/art_85, /ma/loi/88-13/art_72]
+      tool: tools/offence
+    - title: {ar: 'المونطاج والادعاءات الكاذبة', fr: 'Montages et fausses allégations'}
+      answer: {ar: 'نشر تركيبة من كلام شخص أو صورته دون موافقته، أو ادعاءات كاذبة بقصد التشهير به: الحبس من سنة إلى ثلاث سنوات وغرامة من 2.000 إلى 20.000 درهم.', fr: 'Diffuser un montage des propos ou de l’image d’une personne sans son accord, ou des allégations fausses pour la diffamer : un à trois ans et 2 000 à 20 000 DH.'}
+      body:
+        ar: 'يعاقب بالحبس من سنة واحدة إلى ثلاث سنوات وغرامة من 2.000 إلى 20.000 درهم كل من قام بأي وسيلة بما في ذلك الأنظمة المعلوماتية، ببث أو توزيع تركيبة مكونة من أقوال شخص أو صورته دون موافقته، أو ببث أو توزيع ادعاءات أو وقائع كاذبة، بقصد المس بالحياة الخاصة للأشخاص أو التشهير بهم.'
+        fr: 'Est puni d’un à trois ans d’emprisonnement et de 2 000 à 20 000 dirhams quiconque, par tout moyen y compris informatique, diffuse un montage composé des propos ou de l’image d’une personne sans son accord, ou des allégations ou faits mensongers, dans le but de porter atteinte à la vie privée ou de diffamer.'
+      cites: [/ma/dahir/1-59-413/art_447-2, /ma/dahir/1-59-413/art_447-3]
+    - title: {ar: 'الشكاية شرط', fr: 'La plainte est nécessaire'}
+      answer: {ar: 'في القذف أو السب الموجه إلى الأفراد لا تحرك المتابعة إلا بشكاية من الشخص المعني، إلا إذا كان بسبب الأصل أو العرق أو الجنس أو الدين.', fr: 'Pour la diffamation ou l’injure envers un particulier, les poursuites n’ont lieu que sur plainte de la personne visée, sauf si elle est visée pour son origine, sa race, son sexe ou sa religion.'}
+      body:
+        ar: 'تكون الشكاية لازمة لتحريك المتابعة في حالة القذف أو السب أو المس بالحياة الخاصة للأشخاص أو المس بالحق في الصورة. وفي القذف أو السب الموجه إلى الأفراد لا يقع إجراء المتابعة إلا بشكاية من الشخص الموجه إليه، غير أنه يمكن للنيابة العامة تحريكها تلقائيا إذا وجه بسبب الأصل أو الانتماء إلى عرق أو وطن أو جنس أو دين.'
+        fr: 'La plainte est nécessaire pour poursuivre la diffamation, l’injure, l’atteinte à la vie privée ou au droit à l’image. Pour la diffamation ou l’injure envers un particulier, les poursuites n’ont lieu que sur plainte de la personne visée ; le parquet peut toutefois agir d’office si elle vise une personne en raison de son origine ou de son appartenance à une race, une nation, un sexe ou une religion.'
+      cites: [/ma/loi/88-13/art_99]
+    - title: {ar: 'ستة أشهر', fr: 'Six mois'}
+      answer: {ar: 'تتقادم الدعوى العمومية في جرائم قانون الصحافة بمضي ستة أشهر كاملة من يوم النشر.', fr: 'L’action publique pour les délits du code de la presse se prescrit par six mois révolus à compter de la publication.'}
+      body:
+        ar: 'تتقادم الدعوى العمومية المتعلقة بالجرائم المنصوص عليها في هذا القانون بمضي ستة أشهر كاملة تبتدئ من يوم ارتكاب الفعل موضوع المتابعة، وينقطع ويتوقف أمد تقادمها وفق قانون المسطرة الجنائية.'
+        fr: 'L’action publique relative aux infractions de cette loi se prescrit par six mois révolus à compter du jour du fait poursuivi ; la prescription est interrompue ou suspendue selon le code de procédure pénale.'
+      cites: [/ma/loi/88-13/art_101]
+      delay: {on_day: true, months: 6, from: {ar: من يوم النشر, fr: de la publication}}
+    - title: {ar: 'إثبات الصحة', fr: 'La preuve de la vérité'}
+      answer: {ar: 'يجوز إثبات صحة القذف، إلا إذا تعلق بالحياة الخاصة أو بجريمة شملها العفو أو التقادم أو رد الاعتبار.', fr: 'La vérité du fait diffamatoire peut être prouvée, sauf s’il touche la vie privée ou une infraction amnistiée, prescrite ou effacée par la réhabilitation.'}
+      body:
+        ar: 'يحق في كل الحالات إثبات صحة ما يتضمنه القذف، باستثناء ما إذا كان القذف يتعلق بالحياة الخاصة، أو يرجع إلى جريمة شملها العفو أو سقطت بالتقادم أو صدرت في شأنها عقوبة تم محوها برد الاعتبار أو المراجعة.'
+        fr: 'La vérité des faits diffamatoires peut toujours être prouvée, sauf lorsqu’ils concernent la vie privée, ou se rapportent à une infraction amnistiée, prescrite ou dont la peine a été effacée par la réhabilitation ou la révision.'
+      cites: [/ma/loi/88-13/art_109]
+  ends: {office: court, paper: {ar: 'الشكاية داخل ستة أشهر من النشر', fr: 'La plainte dans les six mois de la publication'}, cites: [/ma/loi/88-13/art_99, /ma/loi/88-13/art_101]}
+
+- key: data-request
+  title: {ar: 'نعرف ونصحح معطياتي عند شركة', fr: 'Connaître et corriger mes données chez une entreprise'}
+  lead:
+    ar: 'القانون 09.08 يعطيك حق الإخبار عند جمع معطياتك، وحق الولوج إليها، وحق تصحيحها أو مسحها، وحق التعرض على معالجتها.'
+    fr: 'La loi 09.08 vous donne le droit d’être informé lors de la collecte, d’accéder à vos données, de les faire corriger ou effacer, et de vous opposer à leur traitement.'
+  day: {ar: 'نهار توصلات الشركة بطلب التصحيح؟', fr: 'Le jour où l’entreprise a reçu la demande de correction ?'}
+  steps:
+    - title: {ar: 'الإخبار', fr: 'L’information'}
+      answer: {ar: 'عند جمع معطياتك يخبرك المسؤول بهويته وبغاية المعالجة وبمن ستوصل إليه وبحقك في الولوج والتصحيح.', fr: 'Lors de la collecte, le responsable vous informe de son identité, de la finalité, des destinataires et de vos droits d’accès et de rectification.'}
+      body:
+        ar: 'يجب على المسؤول عن المعالجة إخبار كل شخص يتصل به لجمع معطياته إخبارا مسبقا وصريحا بهويته، وغايات المعالجة، والمرسل إليهم، وما إذا كان الجواب إجباريا أو اختياريا وعواقب عدمه، ووجود حق الولوج إلى المعطيات وتصحيحها.'
+        fr: 'Le responsable doit informer préalablement et expressément toute personne sollicitée de son identité, des finalités, des destinataires, du caractère obligatoire ou facultatif des réponses et de leurs conséquences, et de l’existence des droits d’accès et de rectification.'
+      cites: [/ma/loi/9-08/art_5]
+    - title: {ar: 'الولوج', fr: 'L’accès'}
+      answer: {ar: 'بعد إثبات هويتك تحصل فورا وبلا مقابل على تأكيد معالجة معطياتك، وغاياتها، ومن أوصلت إليه، ونسخة مفهومة منها.', fr: 'Sur justification de votre identité, vous obtenez sans délai et gratuitement la confirmation du traitement, ses finalités, ses destinataires et une copie compréhensible.'}
+      body:
+        ar: 'يحق للشخص المعني بعد الإدلاء بما يثبت هويته أن يحصل من المسؤول عن المعالجة في فترات معقولة وعلى الفور ودون عوض على تأكيد أن معطياته تعالج أو لا تعالج، ومعلومات عن غايات المعالجة وفئات المعطيات والمرسل إليهم، وإحاطة بالمعطيات في شكل مفهوم وبمصدرها.'
+        fr: 'La personne concernée, justifiant de son identité, obtient du responsable, à intervalles raisonnables, sans délai et gratuitement, la confirmation que ses données sont ou non traitées, des informations sur les finalités, catégories et destinataires, et la communication sous forme intelligible des données et de leur origine.'
+      cites: [/ma/loi/9-08/art_7]
+      tool: tools/letter
+      papers: checklists/data-request
+    - title: {ar: 'التصحيح والمسح', fr: 'Rectification et effacement'}
+      answer: {ar: 'يصحح المسؤول أو يمسح أو يغلق الولوج إلى المعطيات غير الصحيحة أو غير المطابقة للقانون بلا مقابل داخل عشرة أيام كاملة.', fr: 'Le responsable corrige, efface ou verrouille gratuitement les données inexactes ou illicites dans les dix jours francs.'}
+      body:
+        ar: 'يحق للشخص المعني أن يحصل على تحيين أو تصحيح أو مسح أو إغلاق الولوج إلى المعطيات التي تكون معالجتها غير مطابقة للقانون، ولا سيما لطابعها غير المكتمل أو غير الصحيح، ويلزم المسؤول عن المعالجة بالقيام بذلك دون عوض داخل أجل عشرة أيام كاملة؛ وتبليغ الأغيار الذين أوصلت إليهم.'
+        fr: 'La personne obtient la mise à jour, la rectification, l’effacement ou le verrouillage des données dont le traitement n’est pas conforme, notamment parce qu’elles sont incomplètes ou inexactes ; le responsable s’exécute gratuitement dans les dix jours francs et le notifie aux tiers destinataires.'
+      cites: [/ma/loi/9-08/art_8]
+      delay: {on_day: true, days: 10, complete: true, from: {ar: من توصل المسؤول بالطلب, fr: de la réception de la demande}}
+    - title: {ar: 'التعرض والإشهار', fr: 'L’opposition et la prospection'}
+      answer: {ar: 'لك أن تتعرض لأسباب مشروعة، وبلا مصاريف على الاستقراء التجاري؛ والرسائل الإشهارية ممنوعة بلا رضاك المسبق.', fr: 'Vous pouvez vous opposer pour un motif légitime, et sans frais à la prospection ; les messages publicitaires sont interdits sans accord préalable.'}
+      body:
+        ar: 'يحق للشخص المعني أن يتعرض لأسباب مشروعة على معالجة معطيات تخصه، وأن يتعرض دون مصاريف على استعمالها لأغراض الاستقراء ولا سيما التجاري. ويمنع الاستقراء المباشر بواسطة آلية اتصال أو بريد إلكتروني أو وسيلة مماثلة باستعمال بيانات شخص لم يعبر عن رضاه المسبق.'
+        fr: 'La personne peut s’opposer pour motif légitime au traitement, et sans frais à l’usage de ses données à des fins de prospection, notamment commerciale. La prospection directe par automate d’appel, courriel ou moyen analogue est interdite sans consentement préalable.'
+      cites: [/ma/loi/9-08/art_9, /ma/loi/9-08/art_10]
+    - title: {ar: 'إذا رفضوا', fr: 'S’ils refusent'}
+      answer: {ar: 'إذا رفض المسؤول أو لم يجب داخل الأجل، تودع طلبك لدى اللجنة الوطنية؛ ورفض هذه الحقوق غرامته من 20.000 إلى 200.000 درهم عن كل مخالفة.', fr: 'En cas de refus ou de silence dans le délai, vous saisissez la CNDP ; refuser ces droits coûte 20 000 à 200 000 DH par infraction.'}
+      body:
+        ar: 'في حالة الرفض أو عدم الاستجابة للطلب داخل الأجل، يحق للمعني بالأمر إيداع طلب تصحيح لدى اللجنة الوطنية، التي تكلف أحد أعضائها بالتحقيق وإجراء التصحيحات وتخبره بالمآل. ويعاقب بغرامة من 20.000 إلى 200.000 درهم عن كل مخالفة كل مسؤول يرفض حقوق الولوج أو التصحيح أو التعرض.'
+        fr: 'En cas de refus ou de silence dans le délai, l’intéressé dépose une demande de rectification auprès de la CNDP, qui charge un membre d’enquêter, fait rectifier et l’informe de la suite. Le responsable qui refuse les droits d’accès, de rectification ou d’opposition est puni de 20 000 à 200 000 dirhams par infraction.'
+      cites: [/ma/loi/9-08/art_8, /ma/loi/9-08/art_53]
+      next: journeys/cndp
+  ends: {office: privacy, paper: {ar: 'طلبك المكتوب، مع ما يثبت هويتك', fr: 'Votre demande écrite, avec un justificatif d’identité'}, cites: [/ma/loi/9-08/art_7]}
+  next: [journeys/cndp]
+
+- key: cndp
+  title: {ar: 'الشكاية للجنة الوطنية لحماية المعطيات', fr: 'La plainte à la CNDP'}
+  lead:
+    ar: 'اللجنة الوطنية لمراقبة حماية المعطيات ذات الطابع الشخصي تسهر على تطبيق القانون 09.08، وتتلقى شكايات كل شخص تضرر من معالجة معطياته.'
+    fr: 'La Commission nationale de contrôle de la protection des données à caractère personnel veille à l’application de la loi 09.08 et reçoit les plaintes de toute personne lésée par un traitement.'
+  steps:
+    - title: {ar: 'من تكون', fr: 'Ce qu’elle est'}
+      answer: {ar: 'لجنة أحدثت لدى رئيس الحكومة للسهر على تطبيق القانون 09.08 ونصوصه.', fr: 'Une commission instituée auprès du chef du gouvernement pour veiller à l’application de la loi 09.08 et de ses textes.'}
+      body:
+        ar: 'تحدث لدى الوزير الأول لجنة وطنية لمراقبة حماية المعطيات الشخصية تكلف بإعمال أحكام هذا القانون والنصوص المتخذة لتطبيقه والسهر على التقيد به.'
+        fr: 'Il est institué auprès du Premier ministre une Commission nationale de contrôle de la protection des données à caractère personnel, chargée de mettre en œuvre la loi et ses textes d’application et d’en assurer le respect.'
+      cites: [/ma/loi/9-08/art_27]
+    - title: {ar: 'الشكاية', fr: 'La plainte'}
+      answer: {ar: 'تتلقى شكايتك، وتحقق، وترد بالأمر بنشر تصحيحات أو بإحالة الأمر على وكيل الملك أو بهما معا.', fr: 'Elle reçoit votre plainte, enquête, et y répond en ordonnant la publication de rectifications, en saisissant le procureur, ou les deux.'}
+      body:
+        ar: 'تؤهل اللجنة الوطنية لتلقي شكايات كل شخص معني يعتبر نفسه تضرر بنشر معالجة معطيات ذات طابع شخصي والتحقيق بشأنها والاستجابة لها والرد عليها بالأمر بنشر تصحيحات أو إحالتها على وكيل الملك قصد المتابعة أو هما معا.'
+        fr: 'La CNDP reçoit les plaintes de toute personne s’estimant lésée par la publication d’un traitement, enquête, y donne suite en ordonnant la publication de rectifications, en les transmettant au procureur aux fins de poursuites, ou les deux.'
+      cites: [/ma/loi/9-08/art_28]
+    - title: {ar: 'سلطاتها', fr: 'Ses pouvoirs'}
+      answer: {ar: 'لأعوانها الولوج إلى المعطيات والمحال وطلب الوثائق؛ ولها أن تسحب وصل التصريح أو الإذن.', fr: 'Ses agents accèdent aux données et aux locaux et exigent des documents ; elle peut retirer le récépissé de déclaration ou l’autorisation.'}
+      body:
+        ar: 'تتوفر اللجنة الوطنية على سلط التحري والبحث التي تمكن أعوانها من الولوج إلى المعطيات المعالجة والمحال التي تتم فيها المعالجة وتجميع المعلومات والوثائق، وعلى سلطة الأمر بتزويدها بالوثائق. ويمكنها سحب وصل التصريح أو الإذن إذا تبين أن المعالجة تمس بالأمن أو النظام العام أو الأخلاق.'
+        fr: 'La CNDP dispose de pouvoirs d’investigation permettant à ses agents d’accéder aux données et aux locaux et de recueillir informations et documents, et du pouvoir d’en ordonner la communication. Elle peut retirer le récépissé ou l’autorisation si le traitement porte atteinte à la sécurité, à l’ordre public ou aux bonnes mœurs.'
+      cites: [/ma/loi/9-08/art_30, /ma/loi/9-08/art_51]
+    - title: {ar: 'العقوبات', fr: 'Les sanctions'}
+      answer: {ar: 'المعالجة بلا تصريح: من 10.000 إلى 100.000 درهم؛ رفض الحقوق: من 20.000 إلى 200.000 عن كل مخالفة؛ الجمع بالتدليس: حبس من 3 أشهر إلى سنة.', fr: 'Un traitement sans déclaration : 10 000 à 100 000 DH ; refuser les droits : 20 000 à 200 000 DH par infraction ; une collecte déloyale : trois mois à un an.'}
+      body:
+        ar: 'يعاقب بغرامة من 10.000 إلى 100.000 درهم من أنجز ملف معطيات دون تصريح أو إذن، وبغرامة من 20.000 إلى 200.000 درهم عن كل مخالفة من رفض حقوق الولوج أو التصحيح أو التعرض، وبالحبس من ثلاثة أشهر إلى سنة وغرامة من 20.000 إلى 200.000 درهم من جمع المعطيات بطريقة تدليسية أو غير مشروعة أو عالجها لأغراض غير المصرح بها.'
+        fr: 'Sont punis de 10 000 à 100 000 dirhams le traitement sans déclaration ni autorisation, de 20 000 à 200 000 dirhams par infraction le refus des droits d’accès, de rectification ou d’opposition, et de trois mois à un an et 20 000 à 200 000 dirhams la collecte frauduleuse ou illicite ou le traitement à d’autres fins que celles déclarées.'
+      cites: [/ma/loi/9-08/art_52, /ma/loi/9-08/art_53, /ma/loi/9-08/art_54]
+  ends: {office: privacy, paper: {ar: 'شكايتك لدى اللجنة الوطنية', fr: 'Votre plainte à la CNDP'}, cites: [/ma/loi/9-08/art_28]}
+
+- key: info-request
+  title: {ar: 'طلب معلومة من الإدارة', fr: 'Demander une information à l’administration'}
+  lead:
+    ar: 'للمواطنات والمواطنين وللأجانب المقيمين بصفة قانونية الحق في المعلومات التي في حوزة الإدارات والمحاكم والجماعات الترابية والمؤسسات العمومية، مجانا، مع استثناءات يحددها القانون.'
+    fr: 'Les citoyens et les étrangers en résidence régulière ont droit aux informations détenues par les administrations, tribunaux, collectivités et établissements publics, gratuitement, sous les exceptions que fixe la loi.'
+  steps:
+    - title: {ar: 'الطلب', fr: 'La demande'}
+      answer: {ar: 'طلب وفق نموذج اللجنة: اسمك وعنوانك ورقم بطاقتك والمعلومات المطلوبة، يوجه إلى رئيس المؤسسة مقابل وصل أو بالبريد أو البريد الإلكتروني.', fr: 'Une demande sur le modèle de la commission : nom, adresse, numéro de carte et informations voulues, adressée au chef de l’institution contre récépissé, par courrier ou courriel.'}
+      body:
+        ar: 'يتم الحصول على المعلومات بناء على طلب وفق نموذج تعده لجنة الحق في الحصول على المعلومات، يتضمن الاسم الشخصي والعائلي لصاحب الطلب وعنوانه ورقم بطاقته الوطنية وعند الاقتضاء بريده الإلكتروني والمعلومات المطلوبة، يوجه إلى رئيس المؤسسة أو الهيئة بالإيداع المباشر مقابل وصل أو بالبريد العادي أو الإلكتروني مقابل إشعار بالتوصل. والحصول على المعلومات مجاني، إلا تكاليف النسخ والإرسال.'
+        fr: 'L’information est obtenue sur demande établie selon le modèle de la commission, portant les nom, adresse, numéro de carte nationale et, le cas échéant, le courriel du demandeur et l’information voulue, adressée au chef de l’institution par dépôt contre récépissé, par courrier ou courriel avec accusé de réception. L’accès est gratuit, hors frais de copie et d’envoi.'
+      cites: [/ma/loi/31-13/art_14, /ma/loi/31-13/art_5]
+      papers: checklists/info-request
+    - title: {ar: 'الجواب', fr: 'La réponse'}
+      answer: {ar: 'داخل عشرين يوم عمل من تسلم الطلب، يمكن تمديدها مثلها بإشعار مكتوب معلل؛ وثلاثة أيام إذا كانت المعلومة ضرورية لحماية الحياة أو السلامة أو الحرية.', fr: 'Dans les vingt jours ouvrables de la réception, prolongeables d’autant par avis écrit motivé ; trois jours si l’information protège la vie, la sécurité ou la liberté.'}
+      body:
+        ar: 'يجب على المؤسسة أو الهيئة الرد على الطلب داخل أجل لا يتعدى عشرين يوما من أيام العمل من تاريخ تسلمه، ويمكن تمديد هذا الأجل لمدة مماثلة مع إشعار المعني مسبقا كتابة بمبررات التمديد. وفي الحالات المستعجلة التي يكون فيها الحصول على المعلومات ضروريا لحماية حياة وسلامة وحرية الأشخاص، يكون الأجل ثلاثة أيام.'
+        fr: 'L’institution répond dans un délai de vingt jours ouvrables à compter de la réception, prolongeable d’une durée égale sur avis écrit préalable motivé. En urgence, lorsque l’information est nécessaire pour protéger la vie, la sécurité ou la liberté des personnes, le délai est de trois jours.'
+      cites: [/ma/loi/31-13/art_16, /ma/loi/31-13/art_17]
+      tool: tools/info
+    - title: {ar: 'الرفض', fr: 'Le refus'}
+      answer: {ar: 'كل رفض كتابي ومعلل: المعلومة غير متوفرة، أو مستثناة، أو منشورة مع مرجعها، أو سبق تقديمها في نفس السنة، أو الطلب غير واضح.', fr: 'Tout refus est écrit et motivé : information indisponible, exceptée, déjà publiée avec sa référence, déjà fournie la même année, ou demande imprécise.'}
+      body:
+        ar: 'تلزم المؤسسة بتعليل ردها القاضي برفض تقديم المعلومات كتابة، كليا أو جزئيا، ولا سيما إذا كانت غير متوفرة، أو مستثناة بمقتضى المادة 7 مع ذكر الاستثناء، أو منشورة ومتاحة مع ذكر مرجعها، أو سبق تقديمها لنفس الطالب خلال نفس السنة، أو كان الطلب غير واضح.'
+        fr: 'Tout refus, total ou partiel, est motivé par écrit, notamment si l’information n’est pas disponible, relève des exceptions de l’article 7 (à préciser), est déjà publiée (avec sa référence), a déjà été fournie au même demandeur la même année, ou si la demande est imprécise.'
+      cites: [/ma/loi/31-13/art_18, /ma/loi/31-13/art_7]
+    - title: {ar: 'الشكاية للرئيس', fr: 'La réclamation au chef'}
+      answer: {ar: 'داخل عشرين يوم عمل من انقضاء أجل الرد أو من الجواب؛ ويجيبك الرئيس داخل خمسة عشر يوما.', fr: 'Dans les vingt jours ouvrables suivant la fin du délai ou la réponse ; le chef répond dans les quinze jours.'}
+      body:
+        ar: 'يحق لطالب المعلومات عند عدم الرد أو عدم الاستجابة تقديم شكاية إلى رئيس المؤسسة في غضون عشرين يوم عمل من انقضاء الأجل القانوني للرد أو من التوصل بالرد، ويتعين على الرئيس إخباره بقراره خلال خمسة عشر يوما من التوصل بها.'
+        fr: 'En l’absence de réponse ou de satisfaction, le demandeur adresse une réclamation au chef de l’institution dans les vingt jours ouvrables suivant l’expiration du délai ou la réponse ; le chef lui fait connaître sa décision dans les quinze jours.'
+      cites: [/ma/loi/31-13/art_19]
+    - title: {ar: 'اللجنة', fr: 'La commission'}
+      answer: {ar: 'شكاية إلى لجنة الحق في الحصول على المعلومات داخل ثلاثين يوما، وتخبرك بمآلها داخل ثلاثين يوما.', fr: 'Une plainte à la Commission du droit d’accès à l’information dans les trente jours ; elle vous informe de la suite dans les trente jours.'}
+      body:
+        ar: 'يحق لطالب المعلومات تقديم شكاية إلى لجنة الحق في الحصول على المعلومات داخل ثلاثين يوما من انصرام أجل الرد على شكايته إلى الرئيس أو من التوصل بالرد، بالبريد المضمون أو الإلكتروني مقابل إشعار بالتوصل، وتخبره اللجنة بمآلها داخل ثلاثين يوما من التوصل بها.'
+        fr: 'Le demandeur saisit la Commission du droit d’accès à l’information dans les trente jours suivant l’expiration du délai de réponse du chef ou sa réponse, par recommandé ou courriel avec accusé de réception ; la commission l’informe de la suite dans les trente jours.'
+      cites: [/ma/loi/31-13/art_20, /ma/loi/31-13/art_22]
+    - title: {ar: 'المحكمة الإدارية', fr: 'Le tribunal administratif'}
+      answer: {ar: 'الطعن في قرار الرئيس أمام المحكمة الإدارية داخل ستين يوما من جواب اللجنة أو من انصرام أجله.', fr: 'Le recours contre la décision du chef devant le tribunal administratif dans les soixante jours de la réponse de la commission ou de l’expiration de son délai.'}
+      body:
+        ar: 'يحق لطالب المعلومات الطعن أمام المحكمة الإدارية المختصة في قرار رئيس المؤسسة داخل أجل ستين يوما من تاريخ التوصل بجواب اللجنة بشأن شكايته أو من تاريخ انصرام الأجل القانوني المخصص للرد عليها.'
+        fr: 'Le demandeur peut attaquer la décision du chef de l’institution devant le tribunal administratif compétent dans les soixante jours de la réponse de la commission ou de l’expiration du délai qui lui était imparti.'
+      cites: [/ma/loi/31-13/art_21]
+  ends: {office: commune, paper: {ar: 'الوصل أو الإشعار بالتوصل بطلبك', fr: 'Le récépissé ou l’accusé de réception de votre demande'}, cites: [/ma/loi/31-13/art_14]}
+
+- key: copyright
+  title: {ar: 'خداو الخدمة ديالي بلا إذن', fr: 'On a pris mon œuvre sans autorisation'}
+  lead:
+    ar: 'المؤلف وحده يأذن باستنساخ مصنفه ونشره وترجمته وتحويله وتبليغه إلى الجمهور، إلا في الاستثناءات التي يعددها القانون 2.00.'
+    fr: 'L’auteur seul autorise la reproduction, la publication, la traduction, l’adaptation et la communication au public de son œuvre, sauf les exceptions de la loi 2.00.'
+  steps:
+    - title: {ar: 'حقك', fr: 'Votre droit'}
+      answer: {ar: 'للمؤلف الحق المطلق في الإذن باستنساخ مصنفه بأي طريقة، وترجمته، واقتباسه، وتأجيره، وتبليغه إلى الجمهور، أو منعها.', fr: 'L’auteur a le droit exclusif d’autoriser ou d’interdire la reproduction de son œuvre sous toute forme, sa traduction, son adaptation, sa location et sa communication au public.'}
+      body:
+        ar: 'يخول للمؤلف الحق المطلق في القيام بالأعمال التالية أو منعها أو الترخيص بها: إعادة نشر واستنساخ مصنفه بأية طريقة، بما فيه التوثيق المؤقت بوسيلة إلكترونية؛ وترجمته؛ وإعداد اقتباسات أو تعديلات له؛ وتأجيره أو إعارته؛ وتبليغه إلى الجمهور.'
+        fr: 'L’auteur a le droit exclusif d’accomplir, d’autoriser ou d’interdire la reproduction de son œuvre de quelque manière que ce soit, y compris le stockage temporaire électronique, sa traduction, son adaptation, sa location ou son prêt, et sa communication au public.'
+      cites: [/ma/loi/2-00/art_10]
+    - title: {ar: 'ما يسمح به القانون', fr: 'Ce que la loi permet'}
+      answer: {ar: 'النسخة للاستعمال الشخصي، والاستشهاد بذكر المصدر، والاستعمال في التعليم: بلا إذن ولا مكافأة.', fr: 'La copie à usage personnel, la citation avec la source, l’usage pour l’enseignement : sans autorisation ni rémunération.'}
+      body:
+        ar: 'يرخص دون إذن المؤلف ودون أداء مكافأة باستنساخ مصنف منشور بكيفية مشروعة قصد الاستعمال الشخصي حصرا، إلا الكتاب كاملا والمصنف الموسيقي في شكل توليفة وقواعد البيانات الرقمية؛ وبالاستشهاد بمصنف منشور ضمن مصنف آخر بذكر المصدر واسم المؤلف وبقدر ما تبرره الغاية؛ وباستعماله للتوضيح في التعليم.'
+        fr: 'Sont permis sans autorisation ni rémunération : la reproduction d’une œuvre licitement publiée pour un usage strictement personnel, sauf un livre entier, une partition sous forme graphique et les bases de données numériques ; la citation dans une autre œuvre avec la source et le nom de l’auteur, dans la mesure justifiée par le but ; l’illustration pour l’enseignement.'
+      cites: [/ma/loi/2-00/art_12, /ma/loi/2-00/art_14, /ma/loi/2-00/art_15]
+    - title: {ar: 'أمام المحكمة', fr: 'Devant le tribunal'}
+      answer: {ar: 'للمحكمة أن تأمر بإيقاف الخرق وبحجز النسخ؛ ولك التعويض عن الضرر والأرباح، أو تعويض محدد سلفا من 5.000 إلى 25.000 درهم.', fr: 'Le tribunal peut ordonner l’arrêt de l’atteinte et la saisie des copies ; vous obtenez des dommages-intérêts et les profits, ou une indemnité forfaitaire de 5 000 à 25 000 DH.'}
+      body:
+        ar: 'للمحكمة أن تصدر حكما أو أمرا بمنع أو إيقاف أي خرق لحق محمي، وأن تأمر بحجز النسخ المشتبه فيها. ولصاحب الحق الحصول على تعويضات عن الضرر المادي والمعنوي تراعي الأرباح التي حققها المخالف، أو أن يختار تعويضا محددا سلفا بين 5.000 و25.000 درهم حسب ما تعتبره المحكمة عادلا، وللمحكمة أن تأمر بإتلاف النسخ.'
+        fr: 'Le tribunal peut interdire ou faire cesser toute atteinte et ordonner la saisie des copies suspectes. Le titulaire obtient réparation du préjudice matériel et moral en tenant compte des profits du contrefacteur, ou choisit une indemnité forfaitaire entre 5 000 et 25 000 dirhams fixée par le tribunal, qui peut ordonner la destruction des copies.'
+      cites: [/ma/loi/2-00/art_61, /ma/loi/2-00/art_62]
+    - title: {ar: 'العقوبة', fr: 'La peine'}
+      answer: {ar: 'الخرق المتعمد بقصد الاستغلال التجاري: الحبس من شهرين إلى ستة أشهر وغرامة من 10.000 إلى 100.000 درهم أو إحداهما.', fr: 'L’atteinte délibérée à but commercial : deux à six mois et 10 000 à 100 000 DH, ou l’une de ces peines.'}
+      body:
+        ar: 'يعاقب بالحبس من شهرين إلى ستة أشهر وبغرامة تتراوح بين 10.000 و100.000 درهم أو بإحدى هاتين العقوبتين كل من قام بطريقة غير مشروعة وبأي وسيلة كانت، بقصد الاستغلال التجاري، بخرق متعمد لحقوق المؤلف أو فناني الأداء أو منتجي التسجيلات أو هيئات الإذاعة.'
+        fr: 'Est puni de deux à six mois d’emprisonnement et de 10 000 à 100 000 dirhams, ou de l’une de ces peines, quiconque porte atteinte délibérément et illicitement, par tout moyen et à des fins commerciales, aux droits des auteurs, artistes interprètes, producteurs ou organismes de radiodiffusion.'
+      cites: [/ma/loi/2-00/art_64]
+    - title: {ar: 'المكتب المغربي لحقوق المؤلف', fr: 'Le Bureau marocain du droit d’auteur'}
+      answer: {ar: 'يعهد إليه بحماية واستغلال حقوق المؤلف والحقوق المجاورة؛ وهو من يرخص بالاستغلال التجاري للمصنفات التي انقضت حمايتها.', fr: 'Il est chargé de protéger et d’exploiter les droits d’auteur et voisins ; c’est lui qui autorise l’exploitation commerciale des œuvres dont la protection a expiré.'}
+      body:
+        ar: 'يعهد بحماية واستغلال حقوق المؤلف والحقوق المجاورة إلى المكتب المغربي لحقوق المؤلفين. ويخضع استغلال المصنفات التي استوفت مدة حمايتها لترخيص منه حينما يكون لأهداف تجارية، ويتولى استخلاص المستحقات على أساس جزافي.'
+        fr: 'La protection et l’exploitation des droits d’auteur et voisins sont confiées au Bureau marocain du droit d’auteur. L’exploitation commerciale des œuvres dont la protection a expiré est soumise à son autorisation, et il en perçoit une redevance forfaitaire.'
+      cites: [/ma/loi/2-00/art_60, /ma/loi/2-00/art_1-7]
+  ends: {office: court, paper: {ar: 'الدعوى أمام المحكمة، أو الشكاية لوكيل الملك', fr: 'L’action devant le tribunal, ou la plainte au procureur'}, cites: [/ma/loi/2-00/art_61, /ma/loi/2-00/art_64]}
+
+- key: company
+  title: {ar: 'مقاولة كتجمع المعطيات: الواجبات', fr: 'Une entreprise qui collecte des données : ses obligations'}
+  lead:
+    ar: 'كل من يعالج معطيات ذات طابع شخصي يصرح بذلك مسبقا للجنة الوطنية، ويحتاج إذنا مسبقا للمعطيات الحساسة، ويحمي المعطيات، ويحترم حقوق أصحابها.'
+    fr: 'Quiconque traite des données personnelles le déclare préalablement à la CNDP, obtient une autorisation préalable pour les données sensibles, sécurise les données et respecte les droits des personnes.'
+  steps:
+    - title: {ar: 'الجودة والغاية', fr: 'Qualité et finalité'}
+      answer: {ar: 'معطيات تجمع بنزاهة لغاية محددة ومعلنة، ملائمة وغير مفرطة، صحيحة، ولا تحفظ أكثر من المدة الضرورية.', fr: 'Des données collectées loyalement pour une finalité déterminée et déclarée, adéquates et non excessives, exactes, conservées pas plus que nécessaire.'}
+      body:
+        ar: 'يجب أن تكون المعطيات معالجة بطريقة نزيهة ومشروعة، ومجمعة لغايات محددة ومعلنة ومشروعة، وملائمة وغير مفرطة بالنظر إلى الغايات، وصحيحة ومحينة، ومحفوظة مدة لا تتجاوز الضرورية لإنجاز الغايات.'
+        fr: 'Les données doivent être traitées loyalement et licitement, collectées pour des finalités déterminées, explicites et légitimes, adéquates et non excessives, exactes et à jour, et conservées pas plus longtemps que nécessaire.'
+      cites: [/ma/loi/9-08/art_3]
+    - title: {ar: 'التصريح والإذن', fr: 'Déclaration et autorisation'}
+      answer: {ar: 'تصريح مسبق لدى اللجنة الوطنية قبل أي معالجة آلية؛ وإذن مسبق للمعطيات الحساسة.', fr: 'Une déclaration préalable à la CNDP avant tout traitement automatisé ; une autorisation préalable pour les données sensibles.'}
+      body:
+        ar: 'يجب على المسؤول عن المعالجة أن يوجه تصريحا إلى اللجنة الوطنية قبل إنجاز معالجة آلية كاملة أو جزئية، ويتضمن التصريح الالتزام بإجراء المعالجة وفقا للقانون. وتخضع لإذن مسبق معالجة المعطيات الحساسة.'
+        fr: 'Le responsable adresse une déclaration à la CNDP avant tout traitement automatisé total ou partiel, comportant l’engagement de traiter conformément à la loi. Le traitement des données sensibles est soumis à autorisation préalable.'
+      cites: [/ma/loi/9-08/art_12, /ma/loi/9-08/art_13, /ma/loi/9-08/art_14]
+      papers: checklists/company-duties
+    - title: {ar: 'السلامة', fr: 'La sécurité'}
+      answer: {ar: 'إجراءات تقنية وتنظيمية لحماية المعطيات من الإتلاف والضياع والإذاعة والولوج غير المرخص.', fr: 'Des mesures techniques et organisationnelles contre la destruction, la perte, la divulgation et l’accès non autorisé.'}
+      body:
+        ar: 'يجب على المسؤول عن المعالجة القيام بالإجراءات التقنية والتنظيمية الملائمة لحماية المعطيات من الإتلاف العرضي أو غير المشروع أو الضياع أو التلف أو الإذاعة أو الولوج غير المرخص، خصوصا عند إرسالها عبر شبكة.'
+        fr: 'Le responsable met en œuvre les mesures techniques et organisationnelles appropriées pour protéger les données contre la destruction accidentelle ou illicite, la perte, l’altération, la diffusion ou l’accès non autorisés, notamment lors d’une transmission en réseau.'
+      cites: [/ma/loi/9-08/art_23]
+    - title: {ar: 'الحوادث السيبرانية', fr: 'Les incidents de cybersécurité'}
+      answer: {ar: 'الهيئات ومقدمو الخدمات الرقمية يبلغون السلطة الوطنية فور علمهم بحادث يؤثر على أمن نظمهم.', fr: 'Les organismes et prestataires numériques avisent l’autorité nationale dès qu’ils ont connaissance d’un incident affectant leurs systèmes.'}
+      body:
+        ar: 'يجب على كل هيئة فور علمها بأي حادث يؤثر على أمن أو سير نظم معلوماتها أن تبلغ السلطة الوطنية، ويجب على مقدمي الخدمات الرقمية إبلاغها بالحوادث ذات الوقع البالغ على تقديم خدماتهم.'
+        fr: 'Tout organisme avise l’autorité nationale dès qu’il a connaissance d’un incident affectant la sécurité ou le fonctionnement de ses systèmes ; les prestataires de services numériques l’avisent des incidents ayant un impact significatif sur leurs services.'
+      cites: [/ma/loi/5-20/art_8, /ma/loi/5-20/art_33]
+    - title: {ar: 'العقوبات', fr: 'Les sanctions'}
+      answer: {ar: 'بلا تصريح: من 10.000 إلى 100.000 درهم؛ رفض الحقوق: من 20.000 إلى 200.000 عن كل مخالفة؛ المعطيات الحساسة بلا موافقة صريحة: حبس من 6 أشهر إلى سنتين وغرامة من 50.000 إلى 300.000.', fr: 'Sans déclaration : 10 000 à 100 000 DH ; refus des droits : 20 000 à 200 000 DH par infraction ; données sensibles sans accord exprès : six mois à deux ans et 50 000 à 300 000 DH.'}
+      body:
+        ar: 'يعاقب بغرامة من 10.000 إلى 100.000 درهم من أنجز ملف معطيات دون تصريح أو إذن، وبغرامة من 20.000 إلى 200.000 درهم عن كل مخالفة من رفض حقوق الولوج أو التصحيح أو التعرض، وبالحبس من ستة أشهر إلى سنتين وبغرامة من 50.000 إلى 300.000 درهم من عالج دون موافقة صريحة معطيات تبين الأصول العرقية أو الآراء السياسية أو الدينية أو الانتماءات النقابية أو الصحة.'
+        fr: 'Sont punis de 10 000 à 100 000 dirhams le traitement sans déclaration ni autorisation, de 20 000 à 200 000 dirhams par infraction le refus des droits, et de six mois à deux ans et 50 000 à 300 000 dirhams le traitement sans accord exprès de données révélant l’origine, les opinions politiques ou religieuses, l’appartenance syndicale ou la santé.'
+      cites: [/ma/loi/9-08/art_52, /ma/loi/9-08/art_53, /ma/loi/9-08/art_57]
+  ends: {office: privacy, paper: {ar: 'وصل التصريح من اللجنة الوطنية', fr: 'Le récépissé de déclaration de la CNDP'}, cites: [/ma/loi/9-08/art_13, /ma/loi/9-08/art_28]}

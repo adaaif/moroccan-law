@@ -1,0 +1,31 @@
+# The prices the state sets that the consumer tools read (T7 of the consumer plan, K4): each fixed by an order, in
+# force from a date, with the article that fixes it. Sugar: order 1964.06 of 15 Aug 2006 sets the maximum prices of
+# refined sugar at every stage; each order since 2020 restates its article 1 whole (the ex-factory price per kilogram,
+# by presentation), and order 3243.23 restates article 2 (the wholesalers' and retailers' maximum margins, each a share
+# of the ex-factory price). The base order itself is not held here: rows start with the first restatement the site holds.
+# Medicines wait for a person's check of the price list (K4).
+
+- key: sugar
+  title: {ar: 'الأسعار القصوى لبيع السكر المصفى', fr: 'Les prix maximaux du sucre raffiné'}
+  unit: {ar: درهم للكيلوغرام, fr: dirhams le kilogramme}
+  rows:
+    # Keys: loaf (قوالب السكر من وزن كيلوغرامين), lump (قطع السكر), bulk50 (محبب درجة 99.5، أكياس 50 كلغ), g5, g2, g1
+    # (محبب مسحوق السكر، أكياس 5 و2 و1 كلغ). Margins in hundredths of a percent of the ex-factory price.
+    - from: '2020-04-23'
+      to: '2024-01-01'
+      values: {loaf: 5.008, lump: 5.008, bulk50: 4.118, g5: 4.174, g2: 4.178, g1: 4.218}
+      cites: [/ma/arrete/1071-20/art_1]
+    - from: '2024-01-01'
+      to: '2025-01-01'
+      values: {loaf: 5.0548, lump: 5.0548, bulk50: 4.1565, g5: 4.2130, g2: 4.2171, g1: 4.2574,
+               wholesale_block: 236, wholesale_granulated: 235, retail_block: 377, retail_granulated: 357}
+      cites: [/ma/arrete/3243-23/art_1, /ma/arrete/3243-23/art_2]
+    - from: '2025-01-01'
+      to: '2026-01-01'
+      values: {loaf: 5.1016, lump: 5.1016, bulk50: 4.1950, g5: 4.2520, g2: 4.2561, g1: 4.2968,
+               wholesale_block: 236, wholesale_granulated: 235, retail_block: 377, retail_granulated: 357}
+      cites: [/ma/arrete/2900-24/art_1, /ma/arrete/2900-24/art_2, /ma/arrete/3243-23/art_1]
+    - from: '2026-01-01'
+      values: {loaf: 5.1484, lump: 5.1484, bulk50: 4.2335, g5: 4.2910, g2: 4.2951, g1: 4.3363,
+               wholesale_block: 236, wholesale_granulated: 235, retail_block: 377, retail_granulated: 357}
+      cites: [/ma/arrete/2889-25/art_1, /ma/arrete/2889-25/art_2, /ma/arrete/3243-23/art_1]

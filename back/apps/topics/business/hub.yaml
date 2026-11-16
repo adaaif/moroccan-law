@@ -1,0 +1,412 @@
+# The business topic's page (the business review, 27 Oct 2026, built as the papers topic was, $5 of Haiku at most).
+# One question first, since the law, the register and the duties depend on how the reader works: alone as an
+# auto-entrepreneur (law 114.13), as a trader in their own name (the commerce code 15.95), through a company (law 5.96),
+# in a cooperative (law 112.12), or selling to the administration (decree 2.22.431). Then the doors in a business's
+# life, each led by the rubber stamp every Moroccan business presses on its invoices and letters (`marks: cachet`), with
+# the one figure the law sets for it in the middle, or its pictogram. Written from the texts as the site holds them on 27
+# Oct 2026: the commerce code (Adala's consolidation of 29 Jan 2026, with law 71.24 on cheques and law 69.21 on payment
+# terms), 5.96 (Adala, 22 Aug 2024), 114.13 and decrees 2.15.258, 2.15.263 and 2.21.928, 112.12 (Adala, 21 Aug 2017),
+# decree 2.22.92 on creating a business online, decree 2.22.431 on public procurement, the investment charter 03.22,
+# decree 2.23.1 and law 47.18, and the tax code (arts 20, 42 bis, 42 ter, 73, 82 bis, 145, 148). Nothing here reaches a
+# reader before a person checks it.
+doors_title: {ar: شنو كتحتاج فالمقاولة ديالك؟, fr: 'De quoi votre activité a-t-elle besoin ?'}
+marks: cachet
+stages:
+  - {key: start, title: {ar: كنبدا, fr: Je démarre}, doors: [auto, auto-excluded, sarl, capital, register, online, cooperative, declare]}
+  - {key: run, title: {ar: كنخدم, fr: Je travaille}, doors: [invoice, terms, late, books, accounts, shop-sale]}
+  - {key: cheque, title: {ar: الشيك, fr: Le chèque}, doors: [cheque-present, cheque-bounced, cheque-penalty, cheque-guarantee]}
+  - {key: trouble, title: {ar: إلا تعقدات, fr: 'Quand ça se complique'}, doors: [alert, safeguard, stop-paying, losses]}
+  - {key: grow, title: {ar: كنكبر, fr: Je grandis}, doors: [markets, markets-guarantee, investment, investment-appeal]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [tax-own, shop-lease, employer], links: true}
+
+# The band: the moment a cheque comes back unpaid, the business emergency everyone in Morocco knows. Its acts are the
+# bounced-cheque journey's first answers. No number is shown: no official page gives one for this.
+urgent:
+  title: {ar: شيك رجع بلا رصيد؟, fr: 'Un chèque revenu impayé ?'}
+  lead: {ar: 'شنو كيقول القانون من النهار الأول، للي عندو الشيك وللي كتبو', fr: 'Ce que dit la loi dès le premier jour, à qui le détient et à qui l’a signé'}
+  to: journeys/cheque-bounced
+  tone: umber
+  acts: {journey: cheque-bounced, steps: [0, 1, 2]}
+
+learn: [pages/forms, journeys/auto-start, pages/invoice, pages/cheque, pages/beliefs]
+
+# What people believe, and what the law says, each card leading to the page that answers it.
+beliefs:
+  - claim: {ar: 'باش تدير SARL خاصك 10.000 درهم', fr: 'Il faut 10 000 DH pour créer une SARL'}
+    truth: {ar: 'الرأسمال كيحددوه الشركاء بحرية فالنظام الأساسي، والربع ديال الحصص النقدية هو اللي كيتخلص فالأول.', fr: 'Le capital est fixé librement par les associés dans les statuts, et un quart des apports en numéraire est versé d’abord.'}
+    to: pages/beliefs
+  - claim: {ar: 'الشيك ديال الضمانة ماشي مشكل', fr: 'Le chèque de garantie ne pose pas de problème'}
+    truth: {ar: 'اللي قبل شيك على أساس ما يخلصوش دابا ويخليه ضمانة كيتعاقب بغرامة 2% من قيمتو.', fr: 'Qui accepte un chèque pour ne pas l’encaisser et le garder en garantie encourt une amende de 2 % de son montant.'}
+    to: pages/beliefs
+  - claim: {ar: 'المقاول الذاتي ممكن يحجزو ليه الدار', fr: 'On peut saisir la maison de l’auto-entrepreneur'}
+    truth: {ar: 'محل السكنى الرئيسي ديال المقاول الذاتي ما يتحجزش بسبب ديون النشاط ديالو.', fr: 'La résidence principale de l’auto-entrepreneur est insaisissable pour les dettes de son activité.'}
+    to: pages/beliefs
+  - claim: {ar: 'الزبون يقدر يخلصني فوقما بغا', fr: 'Le client paie quand il veut'}
+    truth: {ar: 'بلا اتفاق: 60 يوم من الفاتورة. بالاتفاق: 120 يوم على الأكثر؛ ومن بعد غرامة لفائدة الخزينة.', fr: 'Sans accord : 60 jours après la facture. Avec accord : 120 jours au plus ; au-delà, une amende au Trésor.'}
+    to: pages/beliefs
+  - claim: {ar: 'الشيك المؤخر ما يتخلصش قبل التاريخ ديالو', fr: 'Un chèque postdaté ne se paie pas avant sa date'}
+    truth: {ar: 'الشيك كيتخلص بمجرد الاطلاع؛ واللي تقدم قبل التاريخ ديالو كيتخلص نهار تقديمه.', fr: 'Le chèque est payable à vue ; présenté avant sa date, il se paie le jour de sa présentation.'}
+    to: pages/beliefs
+  - claim: {ar: 'المقاول الذاتي خاصو السجل التجاري', fr: 'L’auto-entrepreneur doit s’inscrire au registre du commerce'}
+    truth: {ar: 'معفي من التقييد فالسجل التجاري ومن مسك المحاسبة؛ كيتسجل فالسجل الوطني للمقاول الذاتي.', fr: 'Il est dispensé du registre du commerce et de la comptabilité ; il s’inscrit au registre national de l’auto-entrepreneur.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in: what people meet most first (the auto-entrepreneur, the cheque, the company),
+# then payment terms and invoices, then difficulty, procurement and investment.
+waves:
+  1: [journeys/auto-start, journeys/cheque-bounced, journeys/cheque-written, journeys/sarl-start, pages/forms, pages/cheque, pages/beliefs, tools/form, tools/cheque, checklists/auto-file]
+  2: [journeys/register, journeys/late-payment, journeys/cooperative, pages/invoice, pages/terms, pages/excluded, tools/late, tools/year, checklists/sarl-statutes, checklists/invoice]
+  3: [journeys/difficulty, journeys/shop-sale, pages/markets, pages/investment, checklists/stop-file, reform/cheque-2026, reform/terms-2023, reform/companies-2024]
+
+# The one question: how the reader works. Each answer names its law and where it registers, three figures with their
+# articles, and leads with its own door; it is kept on the phone.
+profile:
+  question: {ar: شنو كتدير؟, fr: 'Comment travaillez-vous ?'}
+  options:
+    - key: auto
+      first: auto
+      main: true
+      label: {ar: خدام بحسابي (مقاول ذاتي), fr: 'À mon compte (auto-entrepreneur)'}
+      law: {ar: 'القانون 114.13: كتتسجل فالسجل الوطني للمقاول الذاتي عند بريد المغرب، بلا سجل تجاري وبلا محاسبة، وكتخلص الضريبة على رقم المعاملات.', fr: 'La loi 114.13 : vous vous inscrivez au registre national de l’auto-entrepreneur chez Barid Al-Maghrib, sans registre du commerce ni comptabilité, et payez l’impôt sur le chiffre d’affaires.'}
+      facts:
+        - {value: {ar: '500.000 درهم', fr: '500 000 DH'}, label: {ar: 'سقف رقم المعاملات فالتجارة والصناعة والحرف، و200.000 فالخدمات', fr: 'plafond de chiffre d’affaires en commerce, industrie, artisanat ; 200 000 en services'}, cites: [/ma/loi/114-13/art_1]}
+        - {value: {ar: '0,5%', fr: '0,5 %'}, label: {ar: 'الضريبة على رقم المعاملات المحصل فالتجارة، و1% فالخدمات', fr: 'd’impôt sur le chiffre encaissé en commerce ; 1 % en services'}, cites: [/ma/code/cgi/art_73]}
+        - {value: {ar: 'الدار', fr: 'La maison'}, label: {ar: 'محل السكنى الرئيسي ما يتحجزش بسبب ديون النشاط', fr: 'la résidence principale est insaisissable pour les dettes de l’activité'}, cites: [/ma/loi/114-13/art_4]}
+    - key: trader
+      first: register
+      main: true
+      label: {ar: تاجر باسمي (حانوت، ورشة), fr: 'Commerçant en nom propre (boutique, atelier)'}
+      law: {ar: 'مدونة التجارة: الممارسة الاعتيادية لنشاط تجاري كتعطيك صفة تاجر، وكتلزمك بالسجل التجاري وبمسك المحاسبة.', fr: 'Le code de commerce : l’exercice habituel d’une activité commerciale vous donne la qualité de commerçant, et vous oblige au registre du commerce et à la comptabilité.'}
+      facts:
+        - {value: {ar: '3 شهور', fr: '3 mois'}, label: {ar: 'باش تطلب التسجيل فالسجل التجاري من نهار فتحتي', fr: 'pour demander l’immatriculation au registre dès l’ouverture'}, cites: [/ma/loi/15-95/art_75]}
+        - {value: {ar: '1.000 – 5.000', fr: '1 000 – 5 000'}, label: {ar: 'درهم غرامة على اللي ما طلبش التقييد، شهر من بعد الإنذار', fr: 'DH d’amende pour qui ne demande pas l’inscription, un mois après la mise en demeure'}, cites: [/ma/loi/15-95/art_62]}
+        - {value: {ar: '30 يوم', fr: '30 jours'}, label: {ar: 'باش توجه التصريح بالتأسيس للضرائب من بداية النشاط', fr: 'pour la déclaration d’existence aux impôts dès le début de l’activité'}, cites: [/ma/code/cgi/art_148]}
+    - key: company
+      first: sarl
+      main: true
+      label: {ar: عندي شركة (SARL), fr: 'J’ai une société (SARL)'}
+      law: {ar: 'القانون 5.96: الشركة ذات المسؤولية المحدودة من شخص واحد حتى 50، كل واحد مسؤول فحدود حصصو، وكتتسجل فالسجل التجاري عبر المنصة الإلكترونية.', fr: 'La loi 5.96 : la SARL, d’une à cinquante personnes, chacune responsable à hauteur de ses apports, immatriculée au registre du commerce via la plateforme électronique.'}
+      facts:
+        - {value: {ar: '1 – 50', fr: '1 – 50'}, label: {ar: 'عدد الشركاء؛ الشريك الوحيد كيمارس سلطات الجمعية', fr: 'associés ; l’associé unique exerce les pouvoirs de l’assemblée'}, cites: [/ma/loi/5-96/art_44, /ma/loi/5-96/art_47]}
+        - {value: {ar: 'الربع', fr: 'Le quart'}, label: {ar: 'من الحصص النقدية كيتخلص فالأول، والباقي فـ5 سنين', fr: 'des apports en numéraire versé d’abord, le reste en 5 ans'}, cites: [/ma/loi/5-96/art_51]}
+        - {value: {ar: '6 شهور', fr: '6 mois'}, label: {ar: 'من نهاية السنة المحاسبية باش تصادق الجمعية على الحسابات', fr: 'après la clôture pour que l’assemblée approuve les comptes'}, cites: [/ma/loi/5-96/art_70]}
+    - key: cooperative
+      first: cooperative
+      label: {ar: فتعاونية, fr: 'Dans une coopérative'}
+      law: {ar: 'القانون 112.12: التعاونية خمسة أعضاء على الأقل، صوت واحد لكل عضو، كتتسجل فسجل التعاونيات عند كتابة الضبط بالمحكمة الابتدائية.', fr: 'La loi 112.12 : cinq membres au moins, une voix par membre, inscrite au registre des coopératives au greffe du tribunal de première instance.'}
+      facts:
+        - {value: {ar: '5 أعضاء', fr: '5 membres'}, label: {ar: 'على الأقل، عند التأسيس وطول حياة التعاونية', fr: 'au moins, à la création et toute la vie de la coopérative'}, cites: [/ma/loi/112-12/art_14]}
+        - {value: {ar: '2 أيام', fr: '2 jours'}, label: {ar: 'باش يصادق مكتب تنمية التعاون على السمية', fr: 'pour que l’Office du développement de la coopération approuve le nom'}, cites: [/ma/loi/112-12/art_7]}
+        - {value: {ar: '30%', fr: '30 %'}, label: {ar: 'حد المعاملات مع الأغيار، من بعد عام من التسجيل', fr: 'limite des opérations avec les tiers, un an après l’inscription'}, cites: [/ma/loi/112-12/art_6]}
+    - key: supplier
+      first: markets
+      label: {ar: كنبيع للإدارة (الصفقات), fr: 'Je vends à l’administration (marchés)'}
+      law: {ar: 'المرسوم 2.22.431: كل صاحب مشروع كيخصص 30% من صفقاتو للمقاولات الصغيرة والتعاونيات والمقاولين الذاتيين، والضمان المؤقت ما يفوتش 2%.', fr: 'Le décret 2.22.431 : chaque maître d’ouvrage réserve 30 % de ses marchés aux petites entreprises, coopératives et auto-entrepreneurs, et le cautionnement provisoire ne dépasse pas 2 %.'}
+      facts:
+        - {value: {ar: '30%', fr: '30 %'}, label: {ar: 'من المبلغ المتوقع للصفقات محفوظ للمقاولات الصغرى والتعاونيات والمقاولين الذاتيين', fr: 'du montant prévu des marchés réservé aux TPME, coopératives et auto-entrepreneurs'}, cites: [/ma/decret/2-22-431/art_148]}
+        - {value: {ar: '2%', fr: '2 %'}, label: {ar: 'أقصى الضمان المؤقت من الكلفة التقديرية', fr: 'au plus de cautionnement provisoire sur le coût estimé'}, cites: [/ma/decret/2-22-431/art_24]}
+        - {value: {ar: '60 يوم', fr: '60 jours'}, label: {ar: 'كيبقى العرض ديالك ملزم من فتح الأظرفة', fr: 'votre offre vous engage dès l’ouverture des plis'}, cites: [/ma/decret/2-22-431/art_36]}
+      to: pages/markets
+
+events:
+  # Starting.
+  - key: auto
+    mark: {value: '500', unit: {ar: ألف درهم, fr: mille DH}}
+    words: [نبقى مقاول ذاتي, résidence principale de l’auto-entrepreneur, y7jzo lia dar, يحجزو ليا الدار, saisie maison auto-entrepreneur, المقاول الذاتي, نولي مقاول ذاتي, نتسجل مقاول ذاتي, auto entrepreneur, auto-entrepreneur, statut auto entrepreneur, لوطو أونتروبرونور, otto entrepreneur, بطاقة المقاول الذاتي, خدام بحسابي, نخدم بحسابي]
+    means:
+      كل شخص ذاتي يزاول بصفة فردية نشاطا صناعيا أو تجاريا أو حرفيا أو يقدم خدمات: [المقاول الذاتي, نولي مقاول ذاتي, auto entrepreneur, auto-entrepreneur, statut auto entrepreneur, لوطو أونتروبرونور, otto entrepreneur, خدام بحسابي, نخدم بحسابي]
+      طلبا للتسجيل بالسجل الوطني للمقاول الذاتي: [نتسجل مقاول ذاتي, بطاقة المقاول الذاتي]
+      ولا يتجاوز رقم الأعمال السنوي المحصل عليه: [نبقى مقاول ذاتي]
+      لا يجوز، في أي حال من الأحوال، الحجز على محل السكنى الرئيسي للمقاول الذاتي: [résidence principale de l’auto-entrepreneur, y7jzo lia dar, يحجزو ليا الدار, saisie maison auto-entrepreneur]
+    title: {ar: بغيت نولي مقاول ذاتي, fr: 'Devenir auto-entrepreneur'}
+    lead: {ar: '500.000 درهم فالتجارة و200.000 فالخدمات: السقف، التسجيل، والضريبة', fr: '500 000 DH en commerce, 200 000 en services : le plafond, l’inscription, l’impôt'}
+    to: journeys/auto-start
+  - key: auto-excluded
+    mark: {value: '41', unit: {ar: مهنة, fr: métiers}}
+    words: [يقدر يكون مقاول ذاتي, ykon auto entrepreneur, المهن الممنوعة على المقاول الذاتي, المهن المستثناة من المقاول الذاتي, واش مهنتي مقبولة فالمقاول الذاتي, activités exclues auto entrepreneur, professions exclues auto-entrepreneur, liste exclusion auto entrepreneur]
+    means: يستثنى من الاستفادة من تطبيق نظام المقاول الذاتي
+    title: {ar: 'واش المهنة ديالي مقبولة؟', fr: 'Mon métier est-il admis ?'}
+    lead: {ar: '41 مهنة مستثناة من النظام الجبائي ديال المقاول الذاتي بمرسوم', fr: '41 métiers exclus du régime fiscal de l’auto-entrepreneur par décret'}
+    to: tools/form
+  - key: sarl
+    mark: {value: '1–50', unit: {ar: شريك, fr: associés}}
+    words: [bla charik, بوحدي بلا شريك, النظام الأساسي ديال الشركة, mentions obligatoires des statuts, statuts de sarl, مسير الشركة, gérant de sarl, نفتح شركة, ندير شركة, تأسيس شركة, الشركة ذات المسؤولية المحدودة, SARL, sarl au, الصارل, صارل, شركة بشريك واحد, créer une sarl, création société maroc, شركة ذات مسؤولية محدودة]
+    means:
+      الشركة ذات المسؤولية المحدودة: [نفتح شركة, ندير شركة, تأسيس شركة, SARL, الصارل, صارل, créer une sarl, création société maroc, شركة ذات مسؤولية محدودة]
+      الشريك الوحيد: [sarl au, شركة بشريك واحد, bla charik, بوحدي بلا شريك]
+      يجب، تحت طائلة بطلان الشركة، أن يؤرخ نظامها الأساسي: [النظام الأساسي ديال الشركة, mentions obligatoires des statuts, statuts de sarl]
+      تسير الشركة ذات المسؤولية المحدودة من طرف واحد أو أكثر من الأشخاص الطبيعيين: [مسير الشركة, gérant de sarl]
+    title: {ar: بغيت نفتح شركة (SARL), fr: 'Créer une SARL'}
+    lead: {ar: 'من شريك واحد حتى 50، والمسؤولية فحدود الحصص', fr: 'D’un à cinquante associés, la responsabilité limitée aux apports'}
+    to: journeys/sarl-start
+  - key: capital
+    mark: {value: '¼', unit: {ar: الرأسمال, fr: du capital}}
+    words: [تحرير الحصص النقدية, رأسمال الشركة, شحال خاص رأسمال, الرأسمال الأدنى, capital minimum sarl, capital social sarl maroc, نخلص الرأسمال, الحساب المجمد]
+    means:
+      يحدد رأسمال الشركة ذات المسؤولية المحدودة بحرية من طرف الشركاء: [رأسمال الشركة, شحال خاص رأسمال, الرأسمال الأدنى, capital minimum sarl, capital social sarl maroc]
+      يجب أن تدفع نسبة الربع على الأقل من مجموع مبالغ الأنصبة الممثلة للحصص النقدية: [نخلص الرأسمال, الحساب المجمد, تحرير الحصص النقدية]
+    title: {ar: 'شحال خاص من رأسمال؟', fr: 'Combien de capital faut-il ?'}
+    lead: {ar: 'بحرية فالنظام الأساسي؛ الربع كيتخلص فالأول والباقي فـ5 سنين', fr: 'Librement dans les statuts ; un quart d’abord, le reste en 5 ans'}
+    to: pages/forms
+  - key: register
+    mark: {value: '3', unit: {ar: شهور, fr: mois}}
+    words: [هو التاجر, صفة تاجر, qualité de commerçant, السجل التجاري, الرجيستر, نتسجل فالسجل التجاري, registre de commerce, registre du commerce, RC, immatriculation registre commerce, نموذج 7, النموذج 7, modèle 7, لاريجيستر]
+    means:
+      يلزم بالتسجيل في السجل التجاري الأشخاص الذاتيين والاعتباريين: [السجل التجاري, الرجيستر, نتسجل فالسجل التجاري, registre de commerce, registre du commerce, RC, immatriculation registre commerce, لاريجيستر]
+      نسخة من النموذج 7 من السجل التجاري: [نموذج 7, النموذج 7, modèle 7]
+      تكتسب صفة تاجر بالممارسة الاعتيادية أو الاحترافية للأنشطة التالية: [هو التاجر, صفة تاجر, qualité de commerçant]
+    title: {ar: السجل التجاري, fr: 'Le registre du commerce'}
+    lead: {ar: 'خلال 3 شهور من فتح المحل ولا تأسيس الشركة، وإلا غرامة', fr: 'Dans les 3 mois de l’ouverture ou de la constitution, sinon une amende'}
+    to: journeys/register
+  - key: online
+    icon: wifi
+    words: [إحداث المقاولة إلكترونيا, المنصة الإلكترونية لإحداث المقاولات, création entreprise en ligne, plateforme création entreprise, الشهادة السلبية, certificat négatif, la certificat négatif, نخرج الشهادة السلبية]
+    means:
+      المنصة الإلكترونية لإحداث المقاولات بطريقة إلكترونية ومواكبتها: [إحداث المقاولة إلكترونيا, المنصة الإلكترونية لإحداث المقاولات, création entreprise en ligne, plateforme création entreprise]
+      الشهادة السلبية المسلمة من قبل المكتب المغربي للملكية الصناعية والتجارية: [الشهادة السلبية, certificat négatif, la certificat négatif, نخرج الشهادة السلبية]
+    title: {ar: 'نفتح المقاولة من الإنترنت', fr: 'Créer son entreprise en ligne'}
+    lead: {ar: 'طلب واحد: الشهادة السلبية، الرسم المهني، السجل التجاري، الضرائب، الجريدة الرسمية وCNSS', fr: 'Une demande : certificat négatif, taxe professionnelle, RC, impôts, BO et CNSS'}
+    to: pages/forms
+  - key: cooperative
+    mark: {value: '5', unit: {ar: أعضاء, fr: membres}}
+    words: [ta3awoniya, mn 3odw, من غير الأعضاء, opérations avec les tiers, تعاونية, نفتح تعاونية, تأسيس تعاونية, coopérative, créer une coopérative, سجل التعاونيات, مكتب تنمية التعاون, ODCO]
+    means:
+      التعاونية مجموعة تتألف من أشخاص ذاتيين أو اعتباريين: [تعاونية, نفتح تعاونية, تأسيس تعاونية, coopérative, créer une coopérative]
+      سجل التعاونيات: [سجل التعاونيات, مكتب تنمية التعاون, ODCO]
+      على ألا يقل عددهم عن خمسة: [ta3awoniya, mn 3odw]
+      تنجز عمليات أو تباشر أعمالا مرتبطة بغرضها المحدد في نظامها الأساسي مع الأغيار: [من غير الأعضاء, opérations avec les tiers]
+    title: {ar: بغيت نفتح تعاونية, fr: 'Créer une coopérative'}
+    lead: {ar: '5 أعضاء على الأقل، صوت لكل واحد، والتسجيل فسجل التعاونيات', fr: 'Cinq membres au moins, une voix chacun, l’inscription au registre'}
+    to: journeys/cooperative
+  - key: declare
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [التصريح بالتأسيس, déclaration d'existence, l'identifiant fiscal, التعريف الضريبي, IF, نخرج IF, الرسم المهني, الباتنتا, la patente, taxe professionnelle]
+    means:
+      تصريحا بالتأسيس وفق مطبوع نموذجي تعده الإدارة: [التصريح بالتأسيس, déclaration d'existence, l'identifiant fiscal, التعريف الضريبي, IF, نخرج IF]
+      للتسجيل في جدول الرسم المهني: [الرسم المهني, الباتنتا, la patente, taxe professionnelle]
+    title: {ar: 'الضرائب من النهار الأول', fr: 'Les impôts dès le premier jour'}
+    lead: {ar: 'التصريح بالتأسيس داخل 30 يوم من بداية النشاط ولا التأسيس', fr: 'La déclaration d’existence dans les 30 jours du début ou de la constitution'}
+    to: tax:pages/business
+  # Working.
+  - key: invoice
+    icon: receipt
+    words: [الفاتورة, الفاكتورة, لافاكتور, facture, mentions obligatoires facture, ICE, رقم التعريف الموحد للمقاولة, شنو خاص يكون فالفاتورة, ticket de caisse, بطاقة الصندوق]
+    means:
+      أن يسلموا إلى المشترين منهم أو إلى زبنائهم فاتورات: [الفاتورة, الفاكتورة, لافاكتور, facture, mentions obligatoires facture, شنو خاص يكون فالفاتورة]
+      رقم التعريف الموحد للمقاولة: [ICE, رقم التعريف الموحد للمقاولة]
+      بطاقة الصندوق: [ticket de caisse, بطاقة الصندوق]
+    title: {ar: 'شنو خاص يكون فالفاتورة؟', fr: 'Que doit porter une facture ?'}
+    lead: {ar: 'هوية البائع، التعريف الضريبي، ICE ديال الزبون، الثمن والضريبة', fr: 'Le vendeur, l’IF, l’ICE du client, le prix et la TVA'}
+    to: pages/invoice
+  - key: terms
+    mark: {value: '60', unit: {ar: يوم, fr: jours}}
+    words: [آجال الأداء, أجل الأداء, délais de paiement, délai de paiement maroc, 60 jours facture, 120 jours, شحال عندو الزبون باش يخلص, الكريدي بين التجار]
+    means: يحدد أجل أداء المبالغ المستحقة على المعاملات المنجزة في ستين (60) يوما
+    title: {ar: 'شحال عندو الزبون باش يخلص؟', fr: 'Combien de temps le client a-t-il pour payer ?'}
+    lead: {ar: '60 يوم من الفاتورة بلا اتفاق، و120 على الأكثر بالاتفاق', fr: '60 jours après la facture sans accord, 120 au plus avec accord'}
+    to: pages/terms
+  - key: late
+    mark: {value: '0,85%', unit: {ar: فالشهر, fr: par mois}}
+    words: [taux directeur, الغرامة على التأخر فالأداء, غرامة آجال الأداء, amende retard de paiement, pénalités de retard facture, ما خلصنيش الزبون, الزبون معطل, التصريح بآجال الأداء, déclaration délais de paiement]
+    means:
+      تفرض، عن كل مخالفة لأحكام المادة 2-78 أعلاه، غرامة مالية لصالح الخزينة: [taux directeur, الغرامة على التأخر فالأداء, غرامة آجال الأداء, amende retard de paiement, pénalités de retard facture, ما خلصنيش الزبون, الزبون معطل]
+      أن يقدموا للإدارة تصريحا بطريقة إلكترونية: [التصريح بآجال الأداء, déclaration délais de paiement]
+    title: {ar: 'الفاتورة تعطلات: الغرامة', fr: 'Facture payée en retard : l’amende'}
+    lead: {ar: 'سعر بنك المغرب للشهر الأول و0,85% لكل شهر من بعد، لفائدة الخزينة', fr: 'Le taux directeur le premier mois et 0,85 % par mois ensuite, au Trésor'}
+    to: tools/late
+  - key: books
+    icon: list
+    words: [المحاسبة, مسك المحاسبة, comptabilité obligatoire, الكونطابل, كونطابلي, tenue de comptabilité, nisab comptable]
+    means: يتعين على التاجر أن يمسك محاسبة طبقا لأحكام القانون رقم 9.88
+    title: {ar: 'واش خاصني محاسبة؟', fr: 'Dois-je tenir une comptabilité ?'}
+    lead: {ar: 'التاجر خاصو؛ المقاول الذاتي معفي', fr: 'Le commerçant oui ; l’auto-entrepreneur en est dispensé'}
+    to: pages/forms
+  - key: accounts
+    mark: {value: '6', unit: {ar: شهور, fr: mois}}
+    words: [تصادق على الحسابات, المصادقة على الحسابات, الجمعية العامة العادية, approbation des comptes, assemblée générale sarl, dépôt des comptes, le bilan, الحصيلة, القوائم التركيبية]
+    means:
+      على جمعية الشركاء لأجل المصادقة عليها داخل أجل ستة أشهر: [تصادق على الحسابات, المصادقة على الحسابات, الجمعية العامة العادية, approbation des comptes, assemblée générale sarl, dépôt des comptes]
+      إقرارا بحصيلتها الخاضعة للضريبة: [le bilan, الحصيلة, القوائم التركيبية]
+    title: {ar: 'التواريخ ديال الشركة فالعام', fr: 'Le calendrier annuel de la société'}
+    lead: {ar: 'الحصيلة للضرائب فـ3 شهور، والجمعية فـ6 شهور من نهاية السنة', fr: 'Le bilan aux impôts en 3 mois, l’assemblée en 6 mois après la clôture'}
+    to: tools/year
+  - key: shop-sale
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [بيع الأصل التجاري, بيع المحل التجاري, نبيع الحانوت, الساروت, vente fonds de commerce, cession fonds de commerce, le fonds de commerce, الأصل التجاري]
+    means:
+      يتم بيع الأصل التجاري أو تفويته: [بيع الأصل التجاري, بيع المحل التجاري, نبيع الحانوت, vente fonds de commerce, cession fonds de commerce]
+      الأصل التجاري مال منقول معنوي: [الساروت, le fonds de commerce, الأصل التجاري]
+    title: {ar: 'نبيع ولا نشري أصل تجاري', fr: 'Vendre ou acheter un fonds de commerce'}
+    lead: {ar: 'العقد، النشر مرتين، و15 يوم لتعرضات الدائنين', fr: 'L’acte, deux publications, 15 jours pour les oppositions des créanciers'}
+    to: journeys/shop-sale
+  # The cheque.
+  - key: cheque-present
+    mark: {value: '20', unit: {ar: يوم, fr: jours}}
+    words: [kayb9a salah, chek kayb9a, نوقف شيك, opposition au paiement d’un chèque, opposition chèque, أجل تقديم الشيك, شحال كيبقى الشيك صالح, الشيك سالا, délai présentation chèque, validité chèque maroc, شيك قديم, الشيك المؤخر, chèque postdaté]
+    means:
+      إذا كان الشيك صادرا بالمغرب ومستحق الوفاء به، وجب تقديمه للوفاء داخل أجل عشرين يوما: [أجل تقديم الشيك, شحال كيبقى الشيك صالح, الشيك سالا, délai présentation chèque, validité chèque maroc, شيك قديم]
+      الشيك مستحق الوفاء بمجرد الاطلاع: [الشيك المؤخر, chèque postdaté]
+      وجب تقديمه للوفاء داخل أجل عشرين يوما: [kayb9a salah, chek kayb9a]
+      لا يقبل تعرض الساحب على وفاء الشيك إلا في حالة فقدانه أو سرقته: [نوقف شيك, opposition au paiement d’un chèque, opposition chèque]
+    title: {ar: 'فوقاش خاصني نقدم الشيك؟', fr: 'Quand présenter un chèque ?'}
+    lead: {ar: '20 يوم من تاريخو إلا كان صادر فالمغرب، و60 من الخارج', fr: '20 jours après sa date s’il est émis au Maroc, 60 de l’étranger'}
+    to: tools/cheque
+  - key: cheque-bounced
+    mark: {value: '3', unit: {ar: شهور, fr: mois}}
+    words: [ne plus émettre de chèques, منع إصدار الشيكات, نرجع الشيكات, retrouver la faculté d’émettre des chèques, amende libératoire, شيك بلا رصيد, شيك بدون رصيد, الشيك رجع, chèque sans provision, chèque impayé, chèque rejeté, الإنذار البنكي, injonction bancaire, شيك ما تخلصش, chek bla rassid]
+    means:
+      رفضت وفاء شيك لعدم توفر أو كفاية المؤونة: [شيك بلا رصيد, شيك بدون رصيد, الشيك رجع, chèque sans provision, chèque impayé, chèque rejeté, شيك ما تخلصش, chek bla rassid]
+      أن تأمر صاحب الحساب: [الإنذار البنكي, injonction bancaire]
+      وألا يصدر خلال مدة خمس سنوات شيكات: [ne plus émettre de chèques, منع إصدار الشيكات]
+      الغرامة المالية التي يجب على صاحب الحساب أن يؤديها لاسترجاع إمكانية إصدار الشيكات: [نرجع الشيكات, retrouver la faculté d’émettre des chèques, amende libératoire]
+    title: {ar: 'الشيك رجع بلا رصيد', fr: 'Le chèque est revenu impayé'}
+    lead: {ar: 'إنذار البنك فيومين، و3 شهور باش تسوي بلا غرامة', fr: 'L’injonction de la banque en deux jours, 3 mois pour régulariser sans amende'}
+    to: journeys/cheque-bounced
+  - key: cheque-penalty
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [chek bla rassid l7bs, عقوبة الشيك بدون رصيد, الحبس على الشيك, la prison chèque sans provision, sanction chèque sans provision, إعذار الشيك, تسوية الشيك, régularisation chèque]
+    means:
+      يعاقب بالحبس من ستة أشهر إلى ثلاث سنوات وبغرامة تتراوح بين 5.000 و 20.000 درهم: [chek bla rassid l7bs, عقوبة الشيك بدون رصيد, الحبس على الشيك, la prison chèque sans provision, sanction chèque sans provision]
+      يجب أن يسبق المتابعة إعذار ساحب الشيك بأن يقوم بتسوية وضعيته خلال أجل ثلاثين (30) يوما: [إعذار الشيك, تسوية الشيك, régularisation chèque]
+    title: {ar: 'كتبت شيك وما كانش الرصيد', fr: 'J’ai émis un chèque sans provision'}
+    lead: {ar: '30 يوم إعذار قبل المتابعة؛ الأداء كيوقف الدعوى بغرامة 2%', fr: '30 jours de mise en demeure avant les poursuites ; payer les éteint contre 2 %'}
+    to: journeys/cheque-written
+  - key: cheque-guarantee
+    mark: {value: '2%', unit: {ar: غرامة, fr: amende}}
+    words: [شيك الضمانة, الشيك كضمانة, chèque de garantie, chèque caution, شيك ديال الضمان]
+    means: قام عن علم بقبول تسلم أو تظهير شيك شرط أن لا يستخلص فورا وأن يحتفظ به على سبيل الضمان
+    title: {ar: 'شيك الضمانة', fr: 'Le chèque de garantie'}
+    lead: {ar: 'اللي قبلو كضمانة كيتعاقب بغرامة 2% من قيمتو', fr: 'Qui l’accepte en garantie encourt une amende de 2 % de son montant'}
+    to: pages/cheque
+  # When it goes wrong.
+  - key: alert
+    mark: {value: '8', unit: {ar: أيام, fr: jours}}
+    words: [نبه المسير, مراقب الحسابات نبه, صعوبات المقاولة, الوقاية من الصعوبات, prévention des difficultés entreprise, procédure d'alerte, الشركة فيها مشاكل]
+    means: الوقائع أو الصعوبات، خاصة الصعوبات ذات الطبيعة القانونية أو الاقتصادية أو المالية أو الاجتماعية
+    title: {ar: 'المقاولة بدات تعاني', fr: 'L’entreprise commence à souffrir'}
+    lead: {ar: 'مراقب الحسابات ولا الشريك كينبه الرئيس فـ8 أيام', fr: 'Le commissaire aux comptes ou un associé alerte le dirigeant en 8 jours'}
+    to: journeys/difficulty
+  - key: safeguard
+    icon: repeat
+    words: [مسطرة الإنقاذ, sauvegarde entreprise maroc, procédure de sauvegarde, ننقذ الشركة]
+    means: يمكن أن تفتح مسطرة الإنقاذ بطلب من كل مقاولة
+    title: {ar: 'مسطرة الإنقاذ قبل التوقف عن الدفع', fr: 'La sauvegarde, avant la cessation des paiements'}
+    lead: {ar: 'بطلب من المقاولة اللي عندها صعوبات ما تقدرش تتجاوزها', fr: 'À la demande de l’entreprise aux difficultés insurmontables'}
+    to: journeys/difficulty
+  - key: stop-paying
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [ما بقاتش قادرة تخلص, التوقف عن الدفع, التسوية القضائية, التصفية القضائية, الإفلاس, cessation des paiements, redressement judiciaire, liquidation judiciaire, faillite, لافاييت]
+    means:
+      يجب على رئيس المقاولة أن يطلب فتح مسطرة التسوية القضائية في أجل أقصاه ثلاثون يوما من تاريخ توقف المقاولة عن الدفع: [ما بقاتش قادرة تخلص, التوقف عن الدفع, التسوية القضائية, cessation des paiements, redressement judiciaire, faillite, لافاييت, الإفلاس]
+      التصفية القضائية: [التصفية القضائية, liquidation judiciaire]
+    title: {ar: 'ما بقيتش قادر نخلص الديون', fr: 'Je ne peux plus payer mes dettes'}
+    lead: {ar: '30 يوم من التوقف عن الدفع باش تطلب التسوية القضائية', fr: '30 jours après la cessation des paiements pour demander le redressement'}
+    to: journeys/difficulty
+  - key: losses
+    mark: {value: '¼', unit: {ar: الرأسمال, fr: du capital}}
+    words: [الخسائر فالشركة, الوضعية الصافية, capitaux propres inférieurs au quart, pertes sarl, حل الشركة, dissolution sarl, نسد الشركة, نحل الشركة]
+    means:
+      إذا أصبحت الوضعية الصافية للشركة تقل عن ربع رأسمالها: [الخسائر فالشركة, الوضعية الصافية, capitaux propres inférieurs au quart, pertes sarl]
+      إمكانية حل الشركة قبل الأوان: [حل الشركة, dissolution sarl, نسد الشركة, نحل الشركة]
+    title: {ar: 'الخسائر كلات الرأسمال', fr: 'Les pertes ont mangé le capital'}
+    lead: {ar: 'تحت ربع الرأسمال: 3 شهور باش يقرر الشركاء واش يحلوها', fr: 'Sous le quart du capital : 3 mois pour décider d’une dissolution'}
+    to: pages/forms
+  # Growing.
+  - key: markets
+    mark: {value: '30%', unit: {ar: محفوظة, fr: réservés}}
+    words: [الصفقات العمومية, صفقة عمومية, طلب العروض, marchés publics, appel d'offres, marché public maroc, بوابة الصفقات العمومية, الماركي]
+    means:
+      أن يخصص نسبة ثلاثين بالمائة (30%) من المبلغ المتوقع للصفقات: [الصفقات العمومية, صفقة عمومية, marchés publics, marché public maroc, الماركي]
+      طلب العروض: [طلب العروض, appel d'offres, بوابة الصفقات العمومية]
+    title: {ar: 'بغيت ناخد صفقة عمومية', fr: 'Décrocher un marché public'}
+    lead: {ar: '30% من الصفقات محفوظة للمقاولات الصغرى والتعاونيات والمقاولين الذاتيين', fr: '30 % des marchés réservés aux TPME, coopératives et auto-entrepreneurs'}
+    to: pages/markets
+  - key: markets-guarantee
+    mark: {value: '2%', unit: {ar: الأقصى, fr: maximum}}
+    words: [الضمان المؤقت, الكوسيون, cautionnement provisoire, caution provisoire, الكفالة البنكية للصفقة]
+    means: يجب أن يعبر عن مبلغ الضمان المؤقت بالقيمة دون أن يتجاوز اثنين بالمائة (2%)
+    title: {ar: 'الضمان المؤقت ديال الصفقة', fr: 'Le cautionnement provisoire'}
+    lead: {ar: 'ما يفوتش 2% من الكلفة التقديرية، وكيرجع فـ48 ساعة', fr: '2 % au plus du coût estimé, rendu en 48 heures'}
+    to: pages/markets
+  - key: investment
+    mark: {value: '50', unit: {ar: مليون, fr: millions}}
+    words: [prime à l’investissement, 150 emplois, 50 millions de dirhams, ميثاق الاستثمار, منح الاستثمار, دعم الاستثمار, charte de l'investissement, prime à l'investissement, aide investissement maroc, المركز الجهوي للاستثمار, CRI]
+    means:
+      المنح المشتركة للاستثمار: [منح الاستثمار, دعم الاستثمار, prime à l'investissement, aide investissement maroc]
+      ميثاق الاستثمار: [ميثاق الاستثمار, charte de l'investissement]
+      مشاريع الاستثمار التي يساوي مبلغها الإجمالي أو يفوق خمسين مليون: [prime à l’investissement, 150 emplois, 50 millions de dirhams]
+      المراكز الجهوية للاستثمار: [المركز الجهوي للاستثمار, CRI]
+    title: {ar: 'دعم الاستثمار', fr: 'Les aides à l’investissement'}
+    lead: {ar: 'المنح من 50 مليون درهم ولا 150 منصب شغل، والمراكز الجهوية للمقاولات الصغرى', fr: 'Les primes dès 50 millions de DH ou 150 emplois, et les CRI pour les petites entreprises'}
+    to: pages/investment
+  - key: investment-appeal
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [اللجنة الجهوية الموحدة للاستثمار, commission régionale unifiée d’investissement, الطعن فرفض اللجنة الجهوية للاستثمار, رفض ملف الاستثمار, recours refus commission régionale investissement]
+    means: إذا اعترض المستثمر المعني على قرار الرفض الصادر عن اللجنة الجهوية
+    title: {ar: 'اللجنة الجهوية رفضات المشروع', fr: 'La commission régionale a refusé le projet'}
+    lead: {ar: '15 يوم للطعن عند الوالي، و15 من بعد للجنة الوزارية', fr: '15 jours pour le recours au wali, puis 15 pour la commission ministérielle'}
+    to: pages/investment
+  # Elsewhere.
+  - key: tax-own
+    icon: coins
+    words: [شحال كيخلص المقاول الذاتي, حساب ضريبة المقاول الذاتي, calcul impôt auto entrepreneur]
+    title: {ar: 'المقاول الذاتي: شحال نخلص؟', fr: 'Auto-entrepreneur : combien je paie ?'}
+    lead: {ar: 'فموضوع الضرائب', fr: 'Dans le thème des impôts'}
+    to: tax:tools/own
+  - key: shop-lease
+    icon: key
+    words: [كراء المحل التجاري, الكراء التجاري, bail commercial]
+    title: {ar: 'كراء المحل التجاري', fr: 'Le bail commercial'}
+    lead: {ar: 'فموضوع السكن والكراء', fr: 'Dans le thème du logement'}
+    to: housing:journeys/shop
+  - key: employer
+    icon: cnss
+    words: [نشغل أجير, التصريح فالضمان الاجتماعي, déclarer un salarié cnss]
+    title: {ar: 'نشغل أول أجير', fr: 'Embaucher un premier salarié'}
+    lead: {ar: 'فموضوع الشغل', fr: 'Dans le thème du travail'}
+    to: work:pages/employers
+
+tools:
+  # «شنو الشكل اللي يسمح لي القانون؟»: alone or with others, the activity, the year's expected turnover, a trade among
+  # the 41 of decree 2.15.263 → the forms the texts allow, each with its register, its books and what answers for its
+  # debts. It never says which to choose. It waits for a person's check.
+  - key: form
+    icon: briefcase
+    words: [شنو الشكل القانوني اللي يناسبني, مقاول ذاتي ولا شركة, auto entrepreneur ou sarl, quel statut choisir maroc]
+    means: يقصد بالمقاول الذاتي في مدلول هذا القانون كل شخص ذاتي يزاول بصفة فردية
+    tool: true
+    title: {ar: 'مقاول ذاتي، تاجر، ولا شركة؟', fr: 'Auto-entrepreneur, commerçant ou société ?'}
+    lead: {ar: 'شنو كيسمح بيه القانون فالحالة ديالك، وشنو كيلزمك', fr: 'Ce que la loi permet dans votre cas, et ce qu’elle impose'}
+    cites: [/ma/loi/114-13/art_1, /ma/loi/114-13/art_2, /ma/loi/114-13/art_4, /ma/decret/2-15-263/art_1, /ma/loi/5-96/art_44, /ma/loi/5-96/art_46, /ma/loi/5-96/art_47, /ma/loi/112-12/art_14, /ma/loi/15-95/art_19, /ma/loi/15-95/art_75]
+  # The cheque's dates: its date, where it was issued, the day it came back → the last day to present it, the bank's
+  # injunction, the three months without a fine, the two years to recover cheques, the actions' prescription; on the
+  # drawer's side the 30 days' notice and the 2 % that ends a prosecution.
+  - key: cheque
+    icon: bank
+    words: [آجال الشيك, حساب آجال الشيك, délais chèque, chèque sans provision délais]
+    means: يبدأ حساب الآجال السالف ذكرها من التاريخ المبين في الشيك كتاريخ لإصداره
+    tool: true
+    title: {ar: 'الشيك: التواريخ والغرامات', fr: 'Le chèque : dates et amendes'}
+    lead: {ar: 'من تاريخ الشيك ونهار رجع: آخر أجل، التسوية، والغرامة', fr: 'De sa date et du jour du rejet : délais, régularisation, amende'}
+    cites: [/ma/loi/15-95/art_268, /ma/loi/15-95/art_313, /ma/loi/15-95/art_314, /ma/loi/15-95/art_295, /ma/loi/15-95/art_316, /ma/loi/15-95/art_325]
+  # Late payment between traders: the invoice's date, the agreed term, the day paid, the amount with tax → the due day,
+  # the months late, the fine owed to the Treasury at Bank Al-Maghrib's key rate and 0.85 % a month (78-1 … 78-3).
+  - key: late
+    icon: clock
+    words: [حساب غرامة التأخر فالأداء, calcul amende délais de paiement, simulateur délais de paiement]
+    means: غرامة مالية لصالح الخزينة تحدد نسبتها في السعر المديري لبنك المغرب
+    tool: true
+    title: {ar: 'الفاتورة تعطلات: شحال الغرامة؟', fr: 'Facture en retard : combien d’amende ?'}
+    lead: {ar: 'من تاريخ الفاتورة والأجل المتفق: نهار الاستحقاق والغرامة', fr: 'De la date de facture et du délai convenu : l’échéance et l’amende'}
+    cites: [/ma/loi/15-95/art_1-78, /ma/loi/15-95/art_2-78, /ma/loi/15-95/art_3-78, /ma/loi/15-95/art_4-78, /ma/loi/15-95/art_6-78]
+  # The company's year: the financial year's end → the tax return (3 months), the documents to partners (15 days before),
+  # the assembly (6 months); from a creation date, the register (3 months), the tax declaration (30 days), the capital's
+  # balance (5 years).
+  - key: year
+    icon: clock
+    words: [التواريخ ديال الشركة, آجال الشركة, calendrier société maroc, échéances sarl]
+    means: داخل أجل ستة أشهر من تاريخ اختتام السنة المحاسبية
+    tool: true
+    title: {ar: 'التواريخ ديال الشركة', fr: 'Le calendrier de la société'}
+    lead: {ar: 'من التأسيس ومن نهاية السنة: كل أجل بنهارو', fr: 'De la constitution et de la clôture : chaque échéance à son jour'}
+    cites: [/ma/loi/15-95/art_75, /ma/code/cgi/art_148, /ma/loi/5-96/art_51, /ma/code/cgi/art_20, /ma/loi/5-96/art_70, /ma/loi/5-96/art_86]

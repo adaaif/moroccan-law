@@ -1,0 +1,159 @@
+# The family code (law 70.03) as Adala's PDF of 22 Jul 2024 (consolidated 29 Jul 2021) prints it, where the PDF's text
+# layer misreads it: a ligature turned around («ثالثة» for «ثلاثة», «ألب» for «لأب», «العالقة» for «العلاقة») or a
+# word cut in two («الإ بن»). Each was read against the page's image on 20 Oct 2026 (F1 of the family plan). Applied by
+# `manage.py apply_page_reading apps/quality/data/family_code_70_03.yaml`; a reload of the text applies them again.
+# Not corrected: art. 397's «والمح عليها», which Adala's page itself prints so.
+text: /ma/loi/70-03
+document: samples/adala/adala_118.pdf
+read_on: '2026-10-20'
+fixes:
+  # Numbers: «ثالثة» (third) for «ثلاثة» (three).
+  - {arts: [15, 136, 346, 348, 354, 367, 368], wrong: ثالثة, right: ثلاثة}
+  # «لا» and «ال» turned around.
+  - {arts: [16, 45, 99, 114, 128, 166, 167], wrong: العالقة, right: العلاقة}
+  - {arts: [15, 68, 141], wrong: والدة, right: ولادة}
+  - {arts: [88], wrong: والدتهما, right: ولادتهما}
+  - {arts: [36, 342, 345, 349, 358], wrong: عال, right: علا}
+  - {arts: [17, 18, 24, 211, 233], wrong: الوالية, right: الولاية}
+  - {arts: [312, 326, 328], wrong: فال, right: فلا}
+  - {arts: [247], wrong: خالف, right: خلاف}
+  - {arts: [102], wrong: أجال, right: أجلا}
+  - {arts: [118], wrong: بدال, right: بدلا}
+  - {arts: [168], wrong: محال, right: محلا}
+  - {arts: [118], wrong: مغاالة, right: مغالاة}
+  - {arts: [98], wrong: الإيالء, right: الإيلاء}
+  - {arts: [122], wrong: لإليالء, right: للإيلاء}
+  - {arts: [76], wrong: وببطالن, right: وببطلان}
+  - {arts: [141], wrong: ببطالنه, right: ببطلانه}
+  - {arts: [51], wrong: وإخالصه, right: وإخلاصه}
+  - {arts: [160], wrong: عاقال, right: عاقلا}
+  - {arts: [90], wrong: بطالق, right: بطلاق}
+  - {arts: [207], wrong: مالزمة, right: ملازمة}
+  - {arts: [215], wrong: العقالء, right: العقلاء}
+  - {arts: [247], wrong: بالإفالس, right: بالإفلاس}
+  - {arts: [397], wrong: بانحالل, right: بانحلال}
+  - {arts: [314], wrong: بهالك, right: بهلاك}
+  - {arts: [385], wrong: ومنقوالت, right: ومنقولات}
+  - {arts: [41], wrong: إلعالة, right: لإعالة}
+  - {arts: [34], wrong: لإلثبات, right: للإثبات}
+  - {arts: [54], wrong: لالسم, right: للاسم}
+  - {arts: [54], wrong: وعالجا, right: وعلاجا}
+  - {arts: [67], wrong: بعالمته, right: بعلامته}
+  - {arts: [308], wrong: وألعمال, right: ولأعمال}
+  - {arts: [218], wrong: ألمواله, right: لأمواله}
+  - {arts: [54], wrong: ألوالدهم, right: لأولادهم}
+  - {arts: [168], wrong: ألوالده, right: لأولاده}
+  - {arts: [236], wrong: ألوالدها, right: لأولادها}
+  - {arts: [372], wrong: وألوالد, right: ولأولاد}
+  - {arts: [369], wrong: ألحفاده, right: لأحفاده}
+  # Kin «لأم», «لأب», «لأبوين» (maternal, paternal, full siblings) and «للأخت», «للأم», «للأب», «للأبوين».
+  - {arts: [347, 362, 363, 365], wrong: ألم, right: لأم}
+  - {arts: [347, 349, 351, 352, 361, 364, 367], wrong: ألب, right: لأب}
+  - {arts: [349, 351, 352], wrong: ألبوين, right: لأبوين}
+  - {arts: [361], wrong: لألخت, right: للأخت}
+  - {arts: [367], wrong: ولألخت, right: وللأخت}
+  - {arts: [366, 367], wrong: ولألم, right: وللأم}
+  - {arts: [366], wrong: ولألب, right: وللأب}
+  - {arts: [368], wrong: ولألبوين, right: وللأبوين}
+  # Words cut in two.
+  - {arts: [345, 347, 351, 358, 359, 369, 372], wrong: الإ بن, right: الإبن}
+  - {arts: [358], wrong: والإ بن, right: والإبن}
+  - {arts: [345, 358], wrong: الشق يقتان, right: الشقيقتان}
+  - {arts: [345], wrong: الشق يقتني, right: الشقيقتين}
+  - {arts: [327], wrong: ح الة, right: حالة}
+  - {arts: [333], wrong: خ طأ, right: خطأ}
+  - {arts: [335], wrong: أخ ذ, right: أخذ}
+  - {arts: [15], wrong: نف س, right: نفس}
+  - {arts: [17], wrong: راش دا, right: راشدا}
+  - {arts: [17], wrong: الاقتض اء, right: الاقتضاء}
+  - {arts: [20], wrong: الاستجا بة, right: الاستجابة}
+  - {arts: [31], wrong: قب ل, right: قبل}
+  - {arts: [38], wrong: ي عد, right: يعد}
+  - {arts: [43], wrong: المح كمة, right: المحكمة}
+  - {arts: [44], wrong: وأط فال هما, right: وأطفالهما}
+  - {arts: [67], wrong: القانو نية, right: القانونية}
+  - {arts: [67], wrong: ت غيير, right: تغيير}
+  - {arts: [69], wrong: من ه, right: منه}
+  - {arts: [82], wrong: يو ما, right: يوما}
+  - {arts: [82], wrong: بمحاول تين, right: بمحاولتين}
+  - {arts: [87], wrong: الطال ق, right: الطلاق}
+  - {arts: [88], wrong: و مكان, right: ومكان}
+  - {arts: [94], wrong: الزو جان, right: الزوجان}
+  - {arts: [94], wrong: الم حاوالت, right: المحاولات}
+  - {arts: [97], wrong: وبا لمستحقات, right: وبالمستحقات}
+  - {arts: [97], wrong: مراعي ة, right: مراعية}
+  - {arts: [114], wrong: ب توثيقه, right: بتوثيقه}
+  - {arts: [121], wrong: فو را, right: فورا}
+  - {arts: [134], wrong: لت قرر, right: لتقرر}
+  - {arts: [141], wrong: الاب تدائية, right: الابتدائية}
+  - {arts: [145], wrong: أ و, right: أو}
+  - {arts: [145], wrong: ويتوار ثان, right: ويتوارثان}
+  - {arts: [147], wrong: البنو ة, right: البنوة}
+  - {arts: [172], wrong: تقري ر, right: تقرير}
+  - {arts: [173], wrong: وص حة, right: وصحة}
+  - {arts: [177], wrong: ب إسقاط, right: بإسقاط}
+  - {arts: [13], wrong: ب الإيجاب, right: بالإيجاب}
+  - {arts: [191], wrong: منب ع, right: منبع}
+  - {arts: [193], wrong: الذكو ر, right: الذكور}
+  - {arts: [195], wrong: الزوج ية, right: الزوجية}
+  - {arts: [199], wrong: م وسرة, right: موسرة}
+  - {arts: [219], wrong: وت عتمد, right: وتعتمد}
+  - {arts: [233], wrong: ع نهما, right: عنهما}
+  - {arts: [235], wrong: المنقو لة, right: المنقولة}
+  - {arts: [242], wrong: أ موال, right: أموال}
+  - {arts: [252], wrong: القاصري ن, right: القاصرين}
+  - {arts: [260], wrong: ت أخير, right: تأخير}
+  - {arts: [264], wrong: المطالب ة, right: المطالبة}
+  - {arts: [283], wrong: تكو ن, right: تكون}
+  - {arts: [293], wrong: بن فسه, right: بنفسه}
+  - {arts: [352], wrong: لب اقي, right: لباقي}
+  - {arts: [393], wrong: الا نتهاء, right: الانتهاء}
+  - {arts: [399], wrong: الطعو ن, right: الطعون}
+  # Found while writing the family topic's journeys (20 Oct 2026), read against the same pages.
+  - {arts: [20, 51], wrong: ألبوي, right: لأبوي}
+  - {arts: [25], wrong: ألبيها, right: لأبيها}
+  - {arts: [236, 361, 362], wrong: ولألم, right: وللأم}
+  - {arts: [361], wrong: ولألخت, right: وللأخت}
+  - {arts: [238, 266], wrong: لألهلية, right: للأهلية}
+  - {arts: [11, 54], wrong: الا ستطاعة, right: الاستطاعة}
+  - {arts: [11], wrong: فبا لكتابة, right: فبالكتابة}
+  - {arts: [43], wrong: است دعاؤها, right: استدعاؤها}
+  - {arts: [51], wrong: واحترا مهم, right: واحترامهم}
+  - {arts: [7, 51, 371], wrong: لآلخر, right: للآخر}
+  - {arts: [111], wrong: الأخ صائيين, right: الأخصائيين}
+  - {arts: [119], wrong: المخ تلعة, right: المختلعة}
+  - {arts: [180], wrong: واست زارة, right: واستزارة}
+  - {arts: [308], wrong: هلل, right: لله}
+  - {arts: [400], wrong: معا شرة, right: معاشرة}
+  - {arts: [5], wrong: علي ها, right: عليها}
+  - {arts: [34], wrong: ويقتسم انه, right: ويقتسمانه}
+  - {arts: [45], wrong: وأولاده ما, right: وأولادهما}
+  - {arts: [80], wrong: وعنوانه ما, right: وعنوانهما}
+  - {arts: [88], wrong: وطلبات هما, right: وطلباتهما}
+  - {arts: [95], wrong: ويرفع انها, right: ويرفعانها}
+  - {arts: [197], wrong: لأولاد هما, right: لأولادهما}
+  - {arts: [309], wrong: شؤون ها, right: شؤونها}
+  - {arts: [345], wrong: انفراد هما, right: انفرادهما}
+  - {arts: [91, 122, 123, 167], wrong: طالق, right: طلاق}
+  - {arts: [124, 137, 196], wrong: طالقا, right: طلاقا}
+  - {arts: [124], wrong: إلخبارها, right: لإخبارها}
+  - {arts: [127], wrong: فعال, right: فعلا}
+  - {arts: [313], wrong: حمال, right: حملا}
+  - {arts: [167], wrong: ومصار فيها, right: ومصاريفها}
+  - {arts: [179], wrong: قرار الحق, right: قرار لاحق}
+  - {arts: [182], wrong: والمال بسات, right: والملابسات}
+  - {arts: [375], wrong: وتحفظ اتهم, right: وتحفظاتهم}
+  - {arts: [347], wrong: وان فرادها, right: وانفرادها}
+  - {arts: [391], wrong: وعق ارا تها, right: وعقاراتها}
+  # «ال» read as a lone «لا» («ولا عاج زين» for «والعاجزين»: the meaning turned around).
+  - {arts: [198], wrong: ولا عاج زين, right: والعاجزين}
+  - {arts: [8], wrong: ولا مخط وبة, right: والمخطوبة}
+  - {arts: [156], wrong: بلا مخط وبة, right: بالمخطوبة}
+  - {arts: [37, 157], wrong: بلا مصاهرة, right: بالمصاهرة}
+  - {arts: [400], wrong: ولا معاشرة, right: والمعاشرة}
+# The divisions' headings, wherever they stand.
+headings:
+  - {wrong: والوالية, right: والولاية}
+  - {wrong: الإ جراءات, right: الإجراءات}
+  - {wrong: الإيالء, right: الإيلاء}
+  - {wrong: أح كام, right: أحكام}

@@ -1,0 +1,51 @@
+/* The home's lower half (30 Oct 2026, the home drawn again). Loaded after the page, never in
+   the first load. The law's calendar around today: what changes next above a line that says today, what changed lately
+   under it, each on one spine in its topic's colour, a bill in a bill's dashes. Every colour a token. */
+
+.hm-cal { display: flex; flex-direction: column; gap: 14px; }
+.hm-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 16px; }
+.hm-head h2 { margin: 0; font-size: var(--text-h3); line-height: 1.35; font-weight: 700; color: var(--color-ink); }
+.hm-head p { margin: 0; flex-basis: 100%; color: var(--color-ink-soft); }
+.hm-line { margin: 0; padding: 10px 0; list-style: none; border-radius: var(--radius-card); background: var(--color-sheet); }
+.hm-line a { text-decoration: none; }
+.hm-line a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 8px; }
+
+/* An entry: its date as a calendar leaf, its node on the spine, its words. */
+.hm-ev { position: relative; display: grid; grid-template-columns: 64px 26px minmax(0, 1fr); align-items: start; padding: 0 16px 0 10px; }
+@media (min-width: 640px) { .hm-ev { grid-template-columns: 76px 30px minmax(0, 1fr); padding-inline: 18px 22px; } }
+.hm-ev::before { content: ""; position: absolute; top: 0; bottom: 0; inset-inline-start: calc(10px + 64px + 12px); width: 2px; background: var(--color-rule); }
+@media (min-width: 640px) { .hm-ev::before { inset-inline-start: calc(18px + 76px + 14px); } }
+.hm-line > li:first-child::before { top: 22px; }
+.hm-line > li:last-child::before { bottom: calc(100% - 22px); }
+.hm-d { display: flex; flex-direction: column; align-items: center; padding: 10px 0; line-height: 1.1; color: var(--color-ink); text-align: center; }
+.hm-d b { font-size: var(--text-h3); font-weight: 700; font-variant-numeric: tabular-nums; }
+.hm-d span { font-size: 0.875rem; font-weight: 600; }
+.hm-d small { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.hm-node { position: relative; z-index: 1; justify-self: center; margin-top: 17px; width: 14px; height: 14px; border-radius: 50%; background: var(--t, var(--color-ink-soft)); }
+.hm-ev.ahead .hm-node { background: var(--color-sheet); box-shadow: inset 0 0 0 3px var(--t, var(--color-ink-soft)); }
+.hm-ev.bill .hm-node { background: var(--color-sheet); box-shadow: none; border: 2px dashed var(--color-ink-soft); }
+.hm-body { display: flex; flex-direction: column; gap: 3px; padding: 10px 0 14px; color: var(--color-ink); }
+.hm-ev + .hm-ev .hm-body { border-top: 1px solid var(--color-rule-soft); }
+.hm-today + .hm-ev .hm-body { border-top: 0; }
+.hm-body:hover .hm-t { color: var(--color-stamp); }
+.hm-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; font-size: 0.875rem; color: var(--color-ink-soft); }
+.hm-meta .tag { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; color: color-mix(in srgb, var(--t, var(--color-ink-soft)) 80%, var(--color-ink)); }
+.hm-meta .new { font-weight: 700; color: var(--color-people); }
+.hm-meta .soon { font-weight: 700; color: var(--color-ink); }
+.hm-t { font-size: var(--text-lead); line-height: 1.45; font-weight: 700; }
+.hm-l { font-size: 0.9375rem; line-height: 1.7; color: var(--color-ink-soft); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.hm-ev.bill .hm-t { text-decoration: underline dashed var(--color-field) 1.5px; text-underline-offset: 0.3em; }
+
+/* Today: a line across the calendar, its node alive. */
+.hm-today { position: relative; display: grid; grid-template-columns: 64px 26px minmax(0, 1fr); align-items: center; padding: 6px 16px 6px 10px;
+  background: var(--color-talk-wash); }
+@media (min-width: 640px) { .hm-today { grid-template-columns: 76px 30px minmax(0, 1fr); padding-inline: 18px 22px; } }
+.hm-today::before { content: ""; position: absolute; top: 0; bottom: 0; inset-inline-start: calc(10px + 64px + 12px); width: 2px; background: var(--color-rule); }
+@media (min-width: 640px) { .hm-today::before { inset-inline-start: calc(18px + 76px + 14px); } }
+.hm-today b { text-align: center; font-size: 0.9375rem; font-weight: 700; color: var(--color-talk); }
+.hm-today .now { position: relative; z-index: 1; justify-self: center; width: 16px; height: 16px; border-radius: 50%; background: var(--color-talk);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-talk) 25%, transparent); }
+@media (prefers-reduced-motion: no-preference) { .hm-today .now { animation: hm-beat 2.4s ease-in-out infinite; } }
+@keyframes hm-beat { 0%, 100% { box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-talk) 25%, transparent); }
+  50% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--color-talk) 0%, transparent); } }
+.hm-today span { font-size: 0.9375rem; font-weight: 600; color: var(--color-talk); }

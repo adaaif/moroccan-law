@@ -1,0 +1,10 @@
+# Law 07.03 on rent revision as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (2 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/rent_revision_07_03.yaml`; a reload of the text applies them again.
+text: /ma/loi/7-03
+document: sources/adala/rent_revision_07_03.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [5], wrong: بالنسب تين المذكورتين, right: بالنسبتين المذكورتين}   # split, p. 4
+  - {arts: [7], wrong: أجل الثالثة أشهر, right: أجل الثلاثة أشهر}   # turn, p. 4

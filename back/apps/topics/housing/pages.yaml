@@ -1,0 +1,110 @@
+# The housing topic's pages (H6, H11, H14–H15 of the housing plan): facts, each on its articles, and the official
+# services by name and link (`links`: cited and linked, never copied). A page says whom it is for (`for`).
+
+- key: taxes
+  for: [owner, landlord, buyer]
+  title: {ar: 'رسم السكن ورسم الخدمات الجماعية', fr: 'Taxe d’habitation et taxe de services communaux'}
+  lead:
+    ar: 'رسمان محليان على المالك، لا على المكتري. ومنذ 2025 تفرضهما وتستخلصهما المديرية العامة للضرائب.'
+    fr: 'Deux taxes locales à la charge du propriétaire, pas du locataire. Depuis 2025, la Direction générale des impôts les établit et les recouvre.'
+  sections:
+    - title: {ar: رسم السكن, fr: La taxe d’habitation}
+      facts:
+        - text: {ar: 'يفرض على المباني التي يتخذها مالكوها سكنا رئيسيا أو ثانويا، أو يضعونها مجانا رهن إشارة أزواجهم أو أصولهم أو فروعهم، باسم المالك أو صاحب حق الانتفاع. فالدار المكراة لا يؤدى عنها رسم السكن.', fr: 'Elle frappe les immeubles que leurs propriétaires occupent en résidence principale ou secondaire, ou prêtent gratuitement à leur conjoint, ascendants ou descendants, au nom du propriétaire ou de l’usufruitier. Un logement loué n’y est pas soumis.'}
+          cites: [/ma/loi/47-06/art_19, /ma/loi/47-06/art_20]
+        - text: {ar: 'يطبق إسقاط بنسبة 75% من القيمة الإيجارية على السكن الرئيسي. وتعفى المباني الجديدة المعدة للسكن الرئيسي خلال السنوات الخمس الموالية لسنة انتهاء بنائها.', fr: 'Un abattement de 75 % de la valeur locative s’applique à la résidence principale. Les constructions nouvelles destinées à la résidence principale sont exonérées pendant les cinq années suivant celle de leur achèvement.'}
+          cites: [/ma/loi/47-06/art_22, /ma/loi/47-06/art_24]
+        - text: {ar: 'السعر حسب القيمة الإيجارية السنوية: معفى إلى 5.000 درهم، ثم 10% و20% و30%. ولا يصدر رسم يقل عن 200 درهم.', fr: 'Le taux suit la valeur locative annuelle : exonérée jusqu’à 5 000 dirhams, puis 10 %, 20 % et 30 %. Aucune taxe inférieure à 200 dirhams n’est émise.'}
+          cites: [/ma/loi/47-06/art_27, /ma/loi/47-06/art_28]
+    - title: {ar: رسم الخدمات الجماعية, fr: La taxe de services communaux}
+      facts:
+        - text: {ar: 'يفرض سنويا على العقارات المبنية باسم المالك أو صاحب حق الانتفاع، ولو كانت معفاة مؤقتا من رسم السكن. وللدار المكراة، أساسه مبلغ الكراء الإجمالي.', fr: 'Elle est due chaque année sur les immeubles bâtis au nom du propriétaire ou de l’usufruitier, même exonérés temporairement de la taxe d’habitation. Pour un logement loué, sa base est le loyer brut.'}
+          cites: [/ma/loi/47-06/art_33, /ma/loi/47-06/art_34, /ma/loi/47-06/art_35]
+        - text: {ar: 'سعره 10.50% داخل المدارات الحضرية والمراكز المحددة والمحطات، و6.50% في المناطق الأخرى المشمولة بتصميم التهيئة.', fr: 'Son taux est de 10,50 % dans les périmètres urbains, centres délimités et stations, et de 6,50 % dans les autres zones couvertes par un plan d’aménagement.'}
+          cites: [/ma/loi/47-06/art_36]
+    - title: {ar: بين المكري والمكتري, fr: Entre bailleur et locataire}
+      facts:
+        - text: {ar: 'الضرائب والتكاليف المفروضة على العين المكتراة على المكري، ما لم يقض الاتفاق أو العرف بغير ذلك.', fr: 'Les impôts et charges qui frappent la chose louée incombent au bailleur, sauf convention ou usage contraire.'}
+          cites: [/ma/code/doc/art_642]
+  links:
+    - name: {ar: 'أداء رسم السكن ورسم الخدمات الجماعية', fr: 'Payer la taxe d’habitation et la taxe de services communaux'}
+      url: https://tl.tax.gov.ma/tl/public/login.do?method=connectAnonymous&forward=paiementTHTSC
+      note: {ar: المديرية العامة للضرائب, fr: Direction générale des impôts}
+
+- key: rent-to-own
+  for: [buyer, tenant]
+  title: {ar: 'الإيجار المفضي إلى تملك العقار', fr: 'La location-accession à la propriété'}
+  lead:
+    ar: 'تسكن وتؤدي وجيبة، جزء منها تسبيق من الثمن، حتى تاريخ الخيار. القانون 51.00، لا قانون الكراء.'
+    fr: 'Vous habitez et payez une redevance dont une part avance le prix, jusqu’à la date d’option. C’est la loi 51.00, pas la loi sur les baux.'
+  sections:
+    - title: {ar: العقد, fr: Le contrat}
+      facts:
+        - text: {ar: 'يطبق على العقارات المنجزة المعدة للسكنى. ويحرر العقد في محرر رسمي تحت طائلة البطلان، ويتضمن ثمن البيع غير القابل للمراجعة، والوجيبة ومواعيدها، وكيفية خصمها من الثمن، وتاريخ الخيار.', fr: 'Elle porte sur les logements achevés. Le contrat est passé par acte authentique, à peine de nullité, et fixe un prix de vente non révisable, la redevance et ses échéances, son imputation sur le prix et la date d’option.'}
+          cites: [/ma/loi/51-00/art_1, /ma/loi/51-00/art_4, /ma/loi/51-00/art_7]
+        - text: {ar: 'يحمي المكتري المتملك حقه بتقييد احتياطي في الرسم العقاري، أو في سجل خاص بالمحكمة إذا كان العقار غير محفظ.', fr: 'L’accédant protège son droit par une inscription provisoire sur le titre foncier, ou dans un registre spécial au tribunal si l’immeuble n’est pas immatriculé.'}
+          cites: [/ma/loi/51-00/art_5, /ma/loi/51-00/art_6]
+    - title: {ar: الخيار والفسخ, fr: L’option et la résiliation}
+      facts:
+        - text: {ar: 'قبل تاريخ الخيار بثلاثة أشهر، يطلب البائع من المكتري المتملك، برسالة مضمونة مع الإشعار بالتسلم، أن يمارس خياره داخل الأجل المتفق عليه. وإذا رفض البائع إتمام البيع ثلاثين يوما بعد الإنذار، فلمن أدى الثمن كاملا أن يلجأ إلى المحكمة.', fr: 'Trois mois avant la date d’option, le vendeur invite l’accédant, par lettre recommandée avec accusé de réception, à lever l’option dans le délai convenu. Si le vendeur refuse de conclure trente jours après une mise en demeure, l’accédant qui a tout payé peut saisir le tribunal.'}
+          cites: [/ma/loi/51-00/art_15, /ma/loi/51-00/art_16, /ma/loi/51-00/art_19]
+        - text: {ar: 'إذا فسخ العقد بسبب البائع، يسترجع المكتري المتملك التسبيق وأقساط الثمن مع تعويض قدره 10%، داخل ثلاثة أشهر، ولا يفرغ قبل ذلك. وإذا فسخه باختياره، يسترجع أقساط الثمن مع خصم 10% لفائدة البائع.', fr: 'Si le contrat est résilié du fait du vendeur, l’accédant récupère l’avance et la part de prix versée, plus 10 %, dans les trois mois, et ne peut être expulsé avant. S’il résilie de son propre chef, il récupère la part de prix moins 10 % au profit du vendeur.'}
+          cites: [/ma/loi/51-00/art_20, /ma/loi/51-00/art_21]
+
+- key: where
+  title: {ar: 'فين نمشي؟', fr: 'Où aller ?'}
+  lead:
+    ar: 'المحكمة الابتدائية لمكان المحل في الكراء السكني، والمحكمة التجارية في الكراء التجاري في الغالب، والجماعة في المبنى الآيل للسقوط، والموثق في الشراء والدعم.'
+    fr: 'Le tribunal de première instance du lieu du logement pour un bail d’habitation, le tribunal de commerce, le plus souvent, pour un bail commercial, la commune pour un bâtiment menaçant ruine, le notaire pour l’achat et l’aide.'
+  sections:
+    - title: {ar: المحكمة, fr: Le tribunal}
+      facts:
+        - text: {ar: 'تختص المحكمة الابتدائية لمكان المحل بنزاعات كراء السكن والاستعمال المهني. ولا يختص قاضي القرب بالإفراغ. وطلبات استيفاء الكراء ومراجعته تتبع المسطرة الشفوية، ولا طعن بالنقض فيها.', fr: 'Le tribunal de première instance du lieu du logement connaît des litiges de baux d’habitation et professionnels. Le juge de proximité ne connaît pas des expulsions. Les demandes en paiement et en révision du loyer suivent la procédure orale, sans pourvoi en cassation.'}
+          cites: [/ma/loi/67-12/art_71, /ma/loi/58-25/art_331, /ma/loi/58-25/art_96, /ma/loi/58-25/art_375]
+        - text: {ar: 'تختص المحاكم التجارية بنزاعات كراء المحلات التجارية والصناعية والحرفية، إلا ما تختص به المحاكم الابتدائية طبقا للقانون المتعلق بالتنظيم القضائي.', fr: 'Les tribunaux de commerce connaissent des litiges de baux commerciaux, industriels et artisanaux, sauf ce que la loi d’organisation judiciaire réserve aux tribunaux de première instance.'}
+          cites: [/ma/loi/49-16/art_35]
+        - text: {ar: 'لرئيس المحكمة الابتدائية، بصفته قاضيا للمستعجلات، أن يأمر بكل إجراء تحفظي أو وقتي عند الاستعجال، وتستأنف أوامره داخل خمسة عشر يوما.', fr: 'Le président du tribunal de première instance, juge des référés, ordonne toute mesure conservatoire ou provisoire en cas d’urgence ; ses ordonnances sont susceptibles d’appel dans les quinze jours.'}
+          cites: [/ma/loi/58-25/art_226, /ma/loi/58-25/art_230]
+    - title: {ar: الجماعة والسلطة المحلية, fr: La commune et l’autorité locale}
+      facts:
+        - text: {ar: 'يشعر المكتري أو الشاغل المالك ورئيس المجلس الجماعي والسلطة المحلية بالخطر. ويأمر رئيس المجلس الجماعي بالتدعيم أو الهدم، وتتولى السلطة المحلية الإيواء المؤقت إذا تعذر على الشاغلين ولوج سكن لائق بإمكانياتهم.', fr: 'Le locataire ou l’occupant signale le danger au propriétaire, au président du conseil communal et à l’autorité locale. Le président du conseil communal ordonne la consolidation ou la démolition ; l’autorité locale assure l’hébergement provisoire si les occupants ne peuvent accéder par leurs propres moyens à un logement décent.'}
+          cites: [/ma/loi/94-12/art_5, /ma/loi/94-12/art_6, /ma/loi/94-12/art_19]
+    - title: {ar: الموثق والعدول, fr: Le notaire et les adouls}
+      facts:
+        - text: {ar: 'منذ 16 يوليوز 2026، تحرر بيوع العقار وشقق العمارات والبيع في طور الإنجاز والإيجار المفضي إلى التملك في محرر رسمي. والدعم المباشر للسكن يمر عبر الموثق.', fr: 'Depuis le 16 juillet 2026, les ventes d’immeubles, de lots de copropriété, en l’état futur d’achèvement et la location-accession se font par acte authentique. L’aide directe au logement passe par le notaire.'}
+          cites: [/ma/loi/39-08/art_4, /ma/loi/18-00/art_12, /ma/code/doc/art_618-3, /ma/loi/51-00/art_4, /ma/decret/2-23-350/art_4]
+  links:
+    - name: {ar: 'منصة الدعم المباشر للسكن', fr: 'La plateforme de l’aide directe au logement'}
+      url: https://www.daamsakane.ma
+      note: {ar: وزارة إعداد التراب الوطني والتعمير والإسكان, fr: Ministère de l’Aménagement du territoire et de l’Habitat}
+    - name: {ar: 'شهادة الملكية عبر الإنترنت', fr: 'Le certificat de propriété en ligne'}
+      url: https://www.ancfcc.gov.ma/CertificatPropriete
+      note: {ar: الوكالة الوطنية للمحافظة العقارية, fr: ANCFCC}
+    - name: {ar: '«محافظتي»: إشعار بكل تقييد في رسمك العقاري', fr: '« Mohafadati » : une alerte à chaque inscription sur votre titre'}
+      url: https://www.ancfcc.gov.ma/DemandeSuiviTitresPage
+      note: {ar: الوكالة الوطنية للمحافظة العقارية, fr: ANCFCC}
+    - name: {ar: 'رخص التعمير (رخص)', fr: 'Les autorisations d’urbanisme (Rokhas)'}
+      url: https://www.rokhas.ma
+    - name: {ar: 'تصاميم التهيئة (تعمير)', fr: 'Les plans d’aménagement (Taamir)'}
+      url: https://taamir.gov.ma
+    - name: {ar: 'أداء رسم السكن ورسم الخدمات الجماعية', fr: 'Payer la taxe d’habitation et la taxe de services communaux'}
+      url: https://tl.tax.gov.ma/tl/public/login.do?method=connectAnonymous&forward=paiementTHTSC
+
+- key: numbers
+  title: {ar: 'السكن بالأرقام', fr: 'Le logement en chiffres'}
+  lead:
+    ar: 'من يملك ومن يكتري، من الإحصاء العام. ولكل رقم ملفه وصفحته.'
+    fr: 'Qui possède et qui loue, d’après le recensement. Chaque chiffre avec son fichier et sa page.'
+  series: [tenure]
+  sections:
+    - title: {ar: أسعار العقار السكني, fr: Les prix de l’immobilier résidentiel}
+      facts:
+        - text: {ar: 'حسب مؤشر أسعار الأصول العقارية لبنك المغرب: تراجعت أسعار العقار السكني 1.2% سنة 2020 و4% سنة 2021 و1.3% سنة 2022، وشبه استقرت سنتي 2023 و2024، وارتفعت 0.8% سنة 2025.', fr: 'Selon l’indice des prix des actifs immobiliers de Bank Al-Maghrib : les prix du résidentiel ont baissé de 1,2 % en 2020, 4 % en 2021 et 1,3 % en 2022, ont quasiment stagné en 2023 et 2024, et ont augmenté de 0,8 % en 2025.'}
+        - text: {ar: 'ولا ينشر عدد البيوع، بل تطوره فقط: البيوع السكنية زادت 1.3% سنة 2025.', fr: 'Le nombre de ventes n’est pas publié, seulement son évolution : les ventes résidentielles ont augmenté de 1,3 % en 2025.'}
+  links:
+    - name: {ar: 'مؤشر أسعار الأصول العقارية، الفصل الرابع 2025', fr: 'Indice des prix des actifs immobiliers, T4 2025'}
+      url: https://www.bkam.ma/content/download/840349/9114486/Publication-IPAI%20T4%202025.pdf
+      note: {ar: بنك المغرب, fr: Bank Al-Maghrib}
+    - name: {ar: 'نشرات المؤشر حسب السنة', fr: 'Les notes de l’indice par année'}
+      url: https://www.bkam.ma/Statistiques/Prix/Publications-ipai/Indice-des-prix-des-actifs-immobiliers
+      note: {ar: بنك المغرب, fr: Bank Al-Maghrib}

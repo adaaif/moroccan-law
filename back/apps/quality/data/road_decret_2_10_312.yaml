@@ -1,0 +1,8 @@
+# /ma/decret/2-10-312 as Adala prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/decret/2-10-312
+document: sources/road/adala_2_10_312_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [10], wrong: 'شروط إزاح ة المركبات', right: 'شروط إزاحة المركبات'}                  # p. 4: a word cut in two
+  - {arts: [10], wrong: 'المستعملة إلزاحة المركبات', right: 'المستعملة لإزاحة المركبات'}       # p. 4: «لإ» read «إل»
+checked: [7, 10]

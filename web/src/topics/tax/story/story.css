@@ -1,0 +1,93 @@
+/* The bill's story (the bill-story review). Loaded with it. Every word at 14 px or more, every colour a token. */
+.st-story, .st-block, .st-guess { display: flex; flex-direction: column; gap: 14px; }
+.st-q { margin: 0; font-family: var(--font-law); font-size: clamp(1.875rem, 1.6rem + 1.2vw, 2.375rem); line-height: 1.2; font-weight: 700; text-wrap: balance; }
+.st-sub { margin: 0; color: var(--color-ink-soft); font-size: 1rem; line-height: 1.7; }
+.st-source { margin: 0; padding-top: 8px; border-top: 1px solid var(--color-rule); font-size: 0.875rem; color: var(--color-ink-soft); line-height: 1.6; }
+.st-wait { min-height: 300px; }
+
+/* The guess (C2): one question on the sheet, the reader's answer in the reader's ink. */
+.st-guess .st-q { max-width: 26ch; }
+.st-guess-v { margin: 0; font-size: clamp(2.125rem, 1.6rem + 2.4vw, 3.5rem); line-height: 1.1; font-weight: 700; color: var(--color-ink); font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.st-guess .st-range, .st-guess-ends { max-width: 34rem; }
+.st-range { width: 100%; min-height: 44px; accent-color: var(--t); }
+.st-guess-ends { margin: -6px 0 0; display: flex; justify-content: space-between; font-size: 0.875rem; color: var(--color-ink-soft); }
+.st-guess-acts { display: flex; gap: 10px; flex-wrap: wrap; }
+.st-go, .st-skip { font: inherit; min-height: 48px; padding: 0 22px; border-radius: 999px; cursor: pointer; }
+.st-go { border: 0; background: var(--color-ink); color: var(--color-sheet); font-weight: 600; }
+.st-skip { border: 1px solid var(--color-field); background: transparent; color: var(--color-ink); }
+.st-guessed { margin: 0; max-width: 45rem; padding: 10px 14px; border-inline-start: 3px solid var(--color-ink); background: var(--color-paper); font-size: 1rem; line-height: 1.7; }
+
+/* The curve (Y1, Y5, Y14). */
+.st-curve { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.st-svg { display: block; touch-action: pan-y; cursor: crosshair; }
+.st-svg text { font-family: inherit; }
+.st-tick { font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.st-law { fill: var(--color-ink-soft); }
+.st-axis { font-size: 14px; fill: var(--color-ink-soft); }
+.st-label { font-size: 15px; font-weight: 600; fill: var(--t); }
+.st-strong { font-weight: 700; }
+.st-note { font-size: 14px; fill: var(--color-ink); }
+.st-handle { cursor: grab; outline: none; }
+.st-handle:focus-visible circle:last-child { stroke: var(--color-stamp); stroke-width: 4; }
+.st-read { margin: 0; max-width: 45rem; font-size: 1.0625rem; line-height: 1.7; }
+.st-more { align-self: flex-start; min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: var(--color-stamp); cursor: pointer; }
+.st-table-wrap { overflow-x: auto; }
+.st-table { border-collapse: collapse; width: 100%; font-size: 0.9375rem; font-variant-numeric: tabular-nums; }
+.st-table th, .st-table td { padding: 6px 8px; border-top: 1px solid var(--color-rule); text-align: start; }
+.st-table th { color: var(--color-ink-soft); font-weight: 600; border-top: 0; }
+
+/* The steps (Y2): beside the curve on a desk, a row of four on a phone. */
+.st-scrolly { display: grid; grid-template-columns: minmax(0, 17rem) minmax(0, 1fr); gap: 20px; align-items: start; }
+.st-steps { margin: 0; padding: 30vh 0 30vh; list-style: none; display: flex; flex-direction: column; gap: 40vh; }
+.st-steps li { padding: 4px 16px; border-inline-start: 3px solid var(--color-rule); font-size: 1.0625rem; line-height: 1.75; color: var(--color-ink-soft); cursor: pointer;
+  transition: border-color 200ms ease, color 200ms ease; }
+.st-steps li.on { border-color: var(--t); color: var(--color-ink); }
+.st-sticky { position: sticky; top: 72px; }
+.st-phone { display: flex; flex-direction: column; gap: 10px; }
+.st-tabs { display: flex; gap: 8px; }
+.st-tabs button { font: inherit; min-width: 48px; min-height: 48px; border-radius: 999px; border: 1px solid var(--color-field); background: var(--color-sheet); color: var(--color-ink); font-weight: 600; cursor: pointer; }
+.st-tabs button[aria-selected="true"] { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+.st-step-text { margin: 0; min-height: 5.25em; padding: 2px 14px; border-inline-start: 3px solid var(--t); font-size: 1.0625rem; line-height: 1.75; }
+
+/* Four people (Y3): four columns on one scale, so who gains what is seen across them; no box around any. */
+.st-people { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: minmax(0, 1fr); }
+.st-person { border-top: 1px solid var(--color-rule); }
+.st-person button { width: 100%; height: 100%; display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "who gain" "bars bars" "now now"; gap: 8px 14px; align-items: start;
+  padding: 16px 0; border: 0; background: none; font: inherit; color: var(--color-ink); text-align: start; cursor: pointer; }
+.st-person button:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.st-person button[aria-pressed="true"] { box-shadow: inset 0 3px 0 var(--color-ink); }
+.st-who { grid-area: who; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.st-who b { font-size: 1.125rem; }
+.st-person button:hover .st-who b { color: var(--color-stamp); }
+.st-person-line { font-size: 0.9375rem; color: var(--color-ink-soft); }
+.st-gain { grid-area: gain; display: flex; flex-direction: column; align-items: flex-end; }
+.st-person-big { font-size: 1.75rem; line-height: 1.15; font-weight: 700; color: var(--t); font-variant-numeric: tabular-nums; }
+.st-gain small { font-size: 0.875rem; color: var(--color-ink-soft); }
+.st-now { grid-area: now; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.st-now.st-freed { color: var(--color-in-force); font-weight: 600; }
+.st-bars { grid-area: bars; display: flex; gap: 6px; align-items: flex-end; height: 88px; border-bottom: 1px solid var(--color-field); }
+.st-bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 3px; min-width: 0; height: 100%; }
+.st-bar { width: 100%; background: var(--t); }
+.st-bar-v { font-size: 0.875rem; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.st-years { display: flex; gap: 6px; margin-top: -4px; }
+.st-years span { flex: 1; text-align: center; font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+@media (min-width: 620px) {
+  .st-people { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
+}
+@media (min-width: 1024px) {
+  .st-people { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 0; border-top: 1px solid var(--color-rule); }
+  .st-person { border-top: 0; padding-inline: 22px; }
+  .st-person + .st-person { border-inline-start: 1px solid var(--color-rule); }
+  .st-person:first-child { padding-inline-start: 0; }
+  .st-person:last-child { padding-inline-end: 0; }
+  .st-person button { grid-template-columns: minmax(0, 1fr); grid-template-areas: "who" "gain" "bars" "now"; }
+  .st-gain { align-items: flex-start; flex-direction: row; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+}
+
+/* The road to 2031 (Y4) and the method (Y7). */
+.st-road { min-width: 0; }
+.st-method summary { min-height: 44px; display: flex; align-items: center; gap: 8px; font-weight: 600; cursor: pointer; }
+.st-method ul { max-width: 45rem; }
+.st-method ul { margin: 6px 0 4px; padding-inline-start: 20px; display: flex; flex-direction: column; gap: 6px; line-height: 1.7; color: var(--color-ink-soft); }
+
+@media (max-width: 1023px) { .st-scrolly { grid-template-columns: 1fr; } .st-steps { padding: 0; gap: 12px; } .st-sticky { position: static; } }

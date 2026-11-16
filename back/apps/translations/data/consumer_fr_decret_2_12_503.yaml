@@ -1,0 +1,20 @@
+# /ma/decret/2-12-503 (French) as the BO, édition de traduction officielle n° 6192 (3 Oct 2013) prints it, read against the page images on 24 Oct 2026 (the consumer topic's cited articles: 15, 25, 28, 33, 35, 37).
+language: fr
+text: /ma/decret/2-12-503
+document: issues/bo_fr/BO_6192_fr.pdf
+read_on: '2026-10-24'
+fixes:
+  - {arts: [25], wrong: ":\nl'identification du fournisseur", right: ":\n— l'identification du fournisseur"}      # p. 2397: the dash dropped
+  - {arts: [25], wrong: "\n-la désignation", right: "\n— la désignation"}
+  - {arts: [25], wrong: "\na date et le lieu", right: "\n— la date et le lieu"}      # p. 2397: «— l» read «a»
+  - {arts: [25], wrong: "\n—la quantité", right: "\n— la quantité"}
+  - {arts: [25], wrong: "\nContenu et forme de l'étiquette des biens ou des produits mis en vente", right: ''}      # p. 2397: chapter IV's name, glued at the article's end
+  - {arts: [28], wrong: "\nDémarchage", right: ''}      # p. 2398: chapter I of title III's name
+  - {arts: [33], wrong: "\n—les caractéristiques", right: "\n— les caractéristiques"}
+  - {arts: [33], wrong: "\n—les modèles", right: "\n— les modèles"}
+  - {arts: [33], wrong: "\n—le taux", right: "\n— le taux"}
+  - {arts: [35], wrong: "aux autorités :", right: "aux autorités ;"}      # p. 2398
+  - {arts: [35], wrong: "\n- justifier pendant", right: "\n— justifier pendant"}
+  - {arts: [35], wrong: "\n= — disposer", right: "\n— disposer"}      # p. 2398: a speck read «=»
+  - {arts: [35], wrong: "concemée", right: "concernée"}      # p. 2399: «rn» read «m»
+checked: [15, 25, 28, 33, 35, 37]

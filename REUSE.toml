@@ -1,0 +1,146 @@
+# Which licence covers which path (https://reuse.software). When several annotations match a file, the last one wins.
+# The texts are in LICENSES/. In short:
+#   the application (Django, React, the deploy templates, the tools)      AGPL-3.0-only
+#   the Rust crates, and their build for the browser                      MIT OR Apache-2.0
+#   database-like data (data folders, test sets, the sample, figures)     ODbL-1.0
+#   editorial text (topic folders, the tools' and pages' words, the blog) CC-BY-NC-SA-4.0
+#   third-party files                                                      their own licence, as published
+#   the name, the wordmark and the icons                                   not licensed (TRADEMARKS.md)
+# The law itself carries no copyright (law 2-00, art. 8): the official texts in the data are free; the ODbL covers
+# the database made from them.
+version = 1
+
+# ── The application ─────────────────────────────────────────────────────────────────────────────────────────────────
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+# ── The Rust crates, and the browser's build of them ────────────────────────────────────────────────────────────────
+[[annotations]]
+path = ["crates/**", "web/src/shared/wasm/ma_law/**"]
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
+
+# The compiled reader links other crates (NOTICE lists each with its copyright line), and the Unicode data tables.
+[[annotations]]
+path = "web/src/shared/wasm/ma_law/ma_law_bg.wasm"
+SPDX-FileCopyrightText = ["2026 3adala.com", "2014 The Rust Project Developers", "2015 The Rust Project Developers",
+                          "2015 Andrew Gallant", "2014 Alex Crichton", "1991-2023 Unicode, Inc.", "Lokathor",
+                          "Erick Tryzelaar", "David Tolnay", "Aleksey Kladov", "The serde-rs project"]
+SPDX-License-Identifier = "(MIT OR Apache-2.0) AND MIT AND Unicode-3.0"
+
+# ── Database-like data ──────────────────────────────────────────────────────────────────────────────────────────────
+[[annotations]]
+path = [
+  "back/apps/*/data/**",
+  "back/apps/search/goldset/**",
+  "back/apps/corpus/fixtures/**",
+]
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "ODbL-1.0"
+
+# The places' positions come mostly from GeoNames (CC BY 4.0), the states' from Natural Earth (public domain), their
+# names from the United Nations' M49; all attributed in NOTICE.
+[[annotations]]
+path = "back/apps/places/data/places.json"
+SPDX-FileCopyrightText = ["2026 3adala.com", "GeoNames (https://www.geonames.org)",
+                          "Natural Earth (https://www.naturalearthdata.com)", "United Nations Statistics Division (M49)"]
+SPDX-License-Identifier = "ODbL-1.0 AND CC-BY-4.0"
+
+# The maps, simplified from Natural Earth 5.1 (public domain), attributed in NOTICE: CC0 is the closest identifier.
+[[annotations]]
+path = "web/public/geo/**"
+SPDX-FileCopyrightText = "Natural Earth (https://www.naturalearthdata.com)"
+SPDX-License-Identifier = "CC0-1.0"
+
+# The README reproduces fakefilter's notice (BSD 3-Clause) beside the project's own words.
+[[annotations]]
+path = "back/apps/accounts/data/README.md"
+SPDX-FileCopyrightText = ["2026 3adala.com", "2022 7c"]
+SPDX-License-Identifier = "ODbL-1.0 AND BSD-3-Clause"
+
+# ── Editorial text ──────────────────────────────────────────────────────────────────────────────────────────────────
+[[annotations]]
+path = [
+  "back/apps/topics/business/**",
+  "back/apps/topics/consumer/**",
+  "back/apps/topics/digital/**",
+  "back/apps/topics/family/**",
+  "back/apps/topics/health/**",
+  "back/apps/topics/housing/**",
+  "back/apps/topics/justice/**",
+  "back/apps/topics/land/**",
+  "back/apps/topics/papers/**",
+  "back/apps/topics/road/**",
+  "back/apps/topics/tax/**",
+  "back/apps/topics/work/**",
+  "back/apps/blog/posts/**",
+  "web/public/blog/**",
+  "web/src/features/blog/locales/**",
+  "web/src/topics/*/locales/**",
+  "web/src/topics/*/*/locales/**",
+]
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "CC-BY-NC-SA-4.0"
+
+# The topic kit's words are the interface's, like every page's and feature's: the application's licence.
+[[annotations]]
+path = "web/src/topics/kit/**"
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "AGPL-3.0-only"
+
+# A topic's yearly figures and legal rates, and a post's counts, are data again.
+[[annotations]]
+path = ["back/apps/topics/*/series.yaml", "back/apps/topics/*/rates.yaml", "back/apps/blog/posts/*/figures.json"]
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "ODbL-1.0"
+
+# ── Third-party files ───────────────────────────────────────────────────────────────────────────────────────────────
+[[annotations]]
+path = ["web/public/fonts/markazi-text-*.woff2", "web/public/fonts/OFL-MarkaziText.txt",
+        "back/apps/corpus/fonts/MarkaziText.ttf", "back/apps/corpus/fonts/OFL-markazitext.txt"]
+SPDX-FileCopyrightText = "2017 The Markazi Text Project Authors (https://github.com/BornaIz/markazitext)"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["web/public/fonts/readex-pro-*.woff2", "web/public/fonts/OFL-ReadexPro.txt",
+        "back/apps/corpus/fonts/ReadexPro.ttf", "back/apps/corpus/fonts/OFL-readexpro.txt"]
+SPDX-FileCopyrightText = "2018 The Readex Pro Project Authors (https://github.com/ThomasJockin/readexpro)"
+SPDX-License-Identifier = "OFL-1.1"
+
+[[annotations]]
+path = ["web/public/fonts/source-serif-4-*.woff2", "web/public/fonts/OFL-SourceSerif4.txt"]
+SPDX-FileCopyrightText = ["2014 The Source Serif 4 Project Authors (https://github.com/adobe-fonts/source-serif)",
+                          "2014 - 2021 Adobe Systems Incorporated (http://www.adobe.com/)"]
+SPDX-License-Identifier = "OFL-1.1"
+
+# lean-qr 2.7.4, copied as published.
+[[annotations]]
+path = "web/src/features/corpus/article/qr.js"
+SPDX-FileCopyrightText = "2021-2025 David Evans"
+SPDX-License-Identifier = "MIT"
+
+# Throwaway-inbox domains merged from disposable-email-domains (CC0 1.0) and fakefilter (BSD 3-Clause).
+[[annotations]]
+path = "back/apps/accounts/data/disposable_domains.txt"
+SPDX-FileCopyrightText = ["disposable-email-domains contributors", "2022 7c"]
+SPDX-License-Identifier = "CC0-1.0 AND BSD-3-Clause"
+
+# The Contributor Covenant 2.1, as published (its contact filled in).
+[[annotations]]
+path = "CODE_OF_CONDUCT.md"
+SPDX-FileCopyrightText = "Contributor Covenant contributors (https://www.contributor-covenant.org)"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# ── The name, the wordmark and the icons: not licensed ──────────────────────────────────────────────────────────────
+[[annotations]]
+path = [
+  "web/public/brand/**",
+  "web/public/icons/**",
+  "web/public/favicon.ico",
+  "web/public/apple-touch-icon.png",
+  "back/apps/corpus/data/wordmark.svg",
+]
+SPDX-FileCopyrightText = "2026 3adala.com"
+SPDX-License-Identifier = "LicenseRef-Trademarks"

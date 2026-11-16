@@ -1,0 +1,223 @@
+# /ma/loi/52-05 in French as the BO prints it (n° 5874 of 16 Sept 2010, the official translation, folios 1646-1691),
+# read against the page images on 20 Oct 2026 (the road topic's cited articles). The French is the 2010 text as first
+# published; the site holds it as Tesseract read it. The Arabic letters the page prints beside each licence category
+# («A1» (أ1), «E (B)» (هـ (ب))) are given in reading order.
+language: fr
+text: /ma/loi/52-05
+document: sources/road/sgg_bo_5874_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [2], wrong: 'délivré à Pétranger', right: 'délivré à l’étranger'}   # p. 1646: «l’étranger»
+  - {arts: [2], wrong: 'GENERAUX 2. les conducteurs', right: '2. les conducteurs'}   # p. 1646: the running title «TEXTES GENERAUX» glued before 2.
+  - {arts: [3], wrong: 'par l’administration, Les Marocains', right: "par l’administration.\nLes Marocains"}   # p. 1646: a full stop and a new paragraph
+  - {arts: [3], wrong: 'par FPadministration.', right: 'par l’administration.'}   # p. 1646: «l’administration»
+  - {arts: [7], wrong: 'concerné, ‘Les catégories', right: "concerné.\nLes catégories"}   # p. 1647: a full stop and a new paragraph
+  - {arts: [7], wrong: 'sont « AÏ » (11), A» (1), « B» (Q), «Co» (), «D» (5), «E (B)» ( (0) s) LE (C)» ((e)=)et« E(D)»( (3) =).', right: 'sont « A1 » (أ1), « A » (أ), « B » (ب), « C » (ج), « D » (د), « E (B) » (هـ (ب)), « E (C) » (هـ (ج)) et « E (D) » (هـ (د)).'}   # p. 1647: the categories with their Arabic letters
+  - {arts: [7], wrong: 'Catégorie « A1» (11):', right: 'Catégorie « A1» (أ1):'}   # p. 1647: Arabic letters of A1
+  - {arts: [7], wrong: 'Catégorie « A» (1):', right: 'Catégorie « A» (أ):'}   # p. 1647: Arabic letter of A
+  - {arts: [7], wrong: 'Catégorie «B»(<):', right: 'Catégorie «B» (ب):'}   # p. 1647: Arabic letter of B
+  - {arts: [7], wrong: 'au Maximum', right: 'au maximum'}   # p. 1647: lower case
+  - {arts: [7], wrong: 'Catégorie « C » @) :', right: 'Catégorie « C » (ج) :'}   # p. 1647: Arabic letter of C
+  - {arts: [7], wrong: '3,500 Kilogrammes', right: '3.500 Kilogrammes'}   # p. 1647: 3.500
+  - {arts: [7], wrong: 'poids totai en charge', right: 'poids total en charge'}   # p. 1647: «total»
+  - {arts: [7], wrong: 'Catégorie « D » (4) :', right: 'Catégorie « D » (د) :'}   # p. 1647: Arabic letter of D
+  - {arts: [7], wrong: 'kilogrammies', right: 'kilogrammes'}   # p. 1647: «kilogrammes»
+  - {arts: [7], wrong: 'D PP PP Catégorie « E (B) » ((L) + ):', right: 'Catégorie « E (B) » (هـ (ب)):'}   # p. 1647: stray letters; Arabic letters of E (B)
+  - {arts: [7], wrong: 'catégorie « B » (D), attelés', right: 'catégorie « B » (ب), attelés'}   # p. 1647: Arabic letter of B
+  - {arts: [7], wrong: 'Catégorie « E (C) » (( c)=):', right: 'Catégorie « E (C) » (هـ (ج)):'}   # p. 1647: Arabic letters of E (C)
+  - {arts: [7], wrong: 'catégorie « C » (&), attelé', right: 'catégorie « C » (ج), attelé'}   # p. 1647: Arabic letter of C
+  - {arts: [7], wrong: 'Catégorie « E (D) » ((:) a ) :', right: 'Catégorie « E (D) » (هـ (د)) :'}   # p. 1647: Arabic letters of E (D)
+  - {arts: [7], wrong: 'catégorie « D » (5), attelé', right: 'catégorie « D » (د), attelé'}   # p. 1647: Arabic letter of D
+  - {arts: [7], wrong: "« A1 » (11), « À » (D et « B »\n(L) sont", right: '« A1 » (أ1), « A » (أ) et « B » (ب) sont'}   # p. 1647: Arabic letters; one sentence, not cut
+  - {arts: [8], wrong: '« E (C) » (( c) a) ou « E (D) » ((:) a) est', right: '« E (C) » (هـ (ج)) ou « E (D) » (هـ (د)) est'}   # p. 1647: Arabic letters
+  - {arts: [8], wrong: '«E (B) » (( =) ), à condition', right: '«E (B) » (هـ (ب)), à condition'}   # p. 1647: Arabic letters
+  - {arts: [8], wrong: '« B » () ;', right: '« B » (ب) ;'}   # p. 1647: Arabic letter
+  - {arts: [8], wrong: '« E (C) » (( c) ) est', right: '« E (C) » (هـ (ج)) est'}   # p. 1647: Arabic letters
+  - {arts: [8], wrong: '« E (D) » ((-) _ }, à condition', right: '« E (D) » (هـ (د)), à condition'}   # p. 1647: Arabic letters
+  - {arts: [8], wrong: '« D » (4) ;', right: '« D » (د) ;'}   # p. 1647: Arabic letter
+  - {arts: [8], wrong: '« A» (i} est', right: '« A» (أ) est'}   # p. 1647: Arabic letter
+  - {arts: [8], wrong: '« Al » (15) ;', right: '« A1 » (أ1) ;'}   # p. 1647: A1 and its Arabic letters
+  - {arts: [8], wrong: '« J » (5 ) délivré', right: '« J » (ي) délivré'}   # p. 1647: Arabic letter of J
+  - {arts: [8], wrong: '« À 1 » (1).', right: '« A 1 » (أ1).'}   # p. 1647: A 1 and its Arabic letters
+  - {arts: [10], wrong: 'l.une épreuve', right: '1. une épreuve'}   # p. 1647: «1.»
+  - {arts: [10], wrong: 'ayant “pour objet', right: 'ayant pour objet'}   # p. 1648: a speck read as a quote
+  - {arts: [11], wrong: 'l''obtention. du permis', right: 'l''obtention du permis'}   # p. 1648: a speck read as a full stop
+  - {arts: [11], wrong: '« A1 » {1i) ;', right: '« A1 » (أ1) ;'}   # p. 1648: Arabic letters
+  - {arts: [11], wrong: '« A » (1), « B » (L)et« E(B) » ( (=) =)', right: '« A » (أ), « B » (ب) et « E (B) » (هـ (ب)) ;'}   # p. 1648: Arabic letters; the closing «;»
+  - {arts: [11], wrong: '« C » (g}, « D» (4), «E (C)» ((&)=) et «E (D)» (2) a).', right: '« C » (ج), « D» (د), «E (C)» (هـ (ج)) et «E (D)» (هـ (د)).'}   # p. 1648: Arabic letters
+  - {arts: [11], wrong: 'catégorie « B » (D) affecté', right: 'catégorie « B » (ب) affecté'}   # p. 1648: Arabic letter
+  - {arts: [11], wrong: "section 2 ci-après, 3. justifier, pour es catégories « € » (x), « D»(s), «E(C) »\n(()=) et «&E (D)» (()=). avoir suivi", right: "section 2 ci-après.\n3. justifier, pour les catégories « C » (ج), « D » (د), « E (C) » (هـ (ج)) et « E (D) » (هـ (د)), avoir suivi"}   # p. 1648: point 3 is its own paragraph; «les», C and the Arabic letters
+  - {arts: [11], wrong: 'à cet effet. “ .', right: 'à cet effet.'}   # p. 1648: stray marks
+  - {arts: [11], wrong: '«B» (S). depuis', right: '«B» (ب), depuis'}   # p. 1648: Arabic letter; a comma
+  - {arts: [11], wrong: '« C » (c)et« D» (s);', right: '« C » (ج) et « D» (د) ;'}   # p. 1648: Arabic letters
+  - {arts: [11], wrong: 'catégorie « B » (D), depuis', right: 'catégorie « B » (ب), depuis'}   # p. 1648: Arabic letter
+  - {arts: [11], wrong: '« E (B) » (D) a ) ;', right: '« E (B) » (هـ (ب)) ;'}   # p. 1648: Arabic letters
+  - {arts: [11], wrong: '« C » () pour', right: '« C » (ج) pour'}   # p. 1648: Arabic letter
+  - {arts: [11], wrong: '« E (C) » ((e) a ) :', right: '« E (C) » (هـ (ج)) ;'}   # p. 1648: Arabic letters; «;»
+  - {arts: [11], wrong: '« D » {3) pour', right: '« D » (د) pour'}   # p. 1648: Arabic letter
+  - {arts: [11], wrong: '« E(D) » (2) ”) Section 2. — De l’aptitude physique et mentale', right: '« E(D) » (هـ (د)).'}   # p. 1648: Arabic letters; the next section title glued
+  - {arts: [12], wrong: 'véhicule Sans danger', right: 'véhicule sans danger'}   # p. 1648: lower case
+  - {arts: [12], wrong: 'postule te candidat', right: 'postule le candidat'}   # p. 1648: «le»
+  - {arts: [14], wrong: 'titülaires', right: 'titùlaires'}   # p. 1648: the page prints «titùlaires» (sic)
+  - {arts: [22], wrong: 'loi. | . Le permis', right: "loi.\nLe permis"}   # p. 1649: stray marks; a new paragraph
+  - {arts: [22], wrong: "épuisé.\nSection 2. - Du permis de conduire de la période probatoire", right: 'épuisé.'}   # p. 1649: the next section title glued
+  - {arts: [24], wrong: 'ES To Le titulaire', right: 'Le titulaire'}   # p. 1650: stray letters
+  - {arts: [26], wrong: "l'administration.\nSection 3. — Du permis de conduire à l'issue de la période probatoire", right: 'l''administration.'}   # p. 1650: the next section title glued
+  - {arts: [27], wrong: 'À l''issue', right: 'A l''issue'}   # p. 1650: the page prints «A»
+  - {arts: [27], wrong: "(30) points.\nSection 4. — Du retrait des points et de leur récupération", right: '(30) points.'}   # p. 1650: the next section title glued
+  - {arts: [28], wrong: 'correspondants à infraction reconnue', right: 'correspondants à l’infraction reconnue'}   # p. 1650: «l’infraction»
+  - {arts: [31], wrong: 'fixés par administration, à {a rétention', right: 'fixés par l’administration, à la rétention'}   # p. 1650: «l’administration», «la»
+  - {arts: [32], wrong: 'à : l’adresse déclarée', right: 'à l’adresse déclarée'}   # p. 1650: a speck read as a colon
+  - {arts: [34], wrong: 'présente loi, Toutefois, le titulaire', right: "présente loi.\nToutefois, le titulaire"}   # p. 1650: a full stop and a new paragraph
+  - {arts: [35], wrong: 'par dérogation. aux', right: 'par dérogation aux'}   # p. 1651: a speck read as a full stop
+  - {arts: [35], wrong: 'visée à Particle 34', right: 'visée à l’article 34'}   # p. 1651: «l’article»
+  - {arts: [35], wrong: 'du 1% alinéa', right: 'du 1er alinéa'}   # p. 1651: «1er»
+  - {arts: [35], wrong: "ci-dessus :\n_ si le titulaire", right: "ci-dessus :\n– si le titulaire"}   # p. 1651: the list dash
+  - {arts: [35], wrong: "points ;\n_ si le titulaire", right: "points ;\n– si le titulaire"}   # p. 1651: the list dash
+  - {arts: [35], wrong: "douze (12) points.\nDu support du permis de conduire", right: 'douze (12) points.'}   # p. 1651: the next chapter title glued
+  - {arts: [38], wrong: 'a subi examen médical prévu au 1 alinéa', right: 'a subi l’examen médical prévu au 1er alinéa'}   # p. 1651: «l’examen», «1er»
+  - {arts: [38], wrong: 'présente loi ; ;', right: 'présente loi ;'}   # p. 1651: one «;»
+  - {arts: [38], wrong: 'tout changernent', right: 'tout changement'}   # p. 1651: «changement»
+  - {arts: [38], wrong: 'S)toute dégradation', right: '5) toute dégradation'}   # p. 1651: «5)»
+  - {arts: [38], wrong: '_ Le titulaire du permis de conduire doit aviser administration', right: 'Le titulaire du permis de conduire doit aviser l’administration'}   # p. 1651: stray mark; «l’administration»
+  - {arts: [59], wrong: 'au 1* alinéa', right: 'au 1er alinéa'}   # p. 1655: «1er»
+  - {arts: [59], wrong: 'et Le délivrer', right: 'et le délivrer'}   # p. 1655: lower case
+  - {arts: [60], wrong: 'à l’alinéa 1% de Particle 59', right: 'à l’alinéa 1er de l’article 59'}   # p. 1655: «1er», «l’article»
+  - {arts: [99], wrong: 'visé au 1° alinéa', right: 'visé au 1er alinéa'}   # p. 1660: «1er»
+  - {arts: [99], wrong: 'circonstances 7 aggravantes', right: 'circonstances aggravantes'}   # p. 1660: a stray figure in row 02
+  - {arts: [99], wrong: 'aggravanles', right: 'aggravantes'}   # p. 1660: row 03
+  - {arts: [99], wrong: 'de lPalcool', right: 'de l’alcool'}   # p. 1660: row 07
+  - {arts: [99], wrong: 's’arrêtcr', right: 's’arrêter'}   # p. 1660: row 09
+  - {arts: [99], wrong: 'une roule expresse', right: 'une route expresse'}   # p. 1661: row 16
+  - {arts: [100], wrong: 'parmi lesqueis', right: 'parmi lesquels'}   # p. 1661: «lesquels»
+  - {arts: [100], wrong: '99 cidessus', right: '99 ci-dessus'}   # p. 1661: the line-end hyphen is the word’s
+  - {arts: [100], wrong: 'la timite de 14 points', right: 'la limite de 14 points'}   # p. 1661: «limite»
+  - {arts: [100], wrong: "14 points.\nDe l’immobilisation et de la mise en fourrière des véhicules", right: '14 points.'}   # p. 1661: the next chapter title glued
+  - {arts: [103], wrong: '1, le défaut', right: '1. le défaut'}   # p. 1661: «1.»
+  - {arts: [103], wrong: '9, les dispositifs', right: '9. les dispositifs'}   # p. 1661: «9.»
+  - {arts: [103], wrong: 'd’en être équipés :', right: 'd’en être équipés ;'}   # p. 1662: «;»
+  - {arts: [103], wrong: '14. Pémission', right: '14. l’émission'}   # p. 1662: «l’émission»
+  - {arts: [103], wrong: 'l''alcool où de substances', right: 'l''alcool ou de substances'}   # p. 1662: «ou»
+  - {arts: [103], wrong: 'du véhicule. Ù', right: 'du véhicule.'}   # p. 1662: a stray letter
+  - {arts: [103], wrong: '-— les bâches', right: '— les bâches'}   # p. 1662: the list dash, as in the items before
+  - {arts: [109], wrong: 'd''immobilisation. | Toutefois, dans les cas visés aux 5, 6, 7,9 ct [1 de', right: "d'immobilisation.\nToutefois, dans les cas visés aux 5, 6, 7, 9 et 11 de"}   # p. 1663: a new paragraph; «et 11»
+  - {arts: [109], wrong: "(7) jours.\nSection 2.— De la mise en fourrière des véhicules", right: '(7) jours.'}   # p. 1663: the next section title glued
+  - {arts: [111], wrong: 'li. lorsque', right: '1. lorsque'}   # p. 1663: «1.»
+  - {arts: [111], wrong: 'y à usage', right: 'y a usage'}   # p. 1663: «a»
+  - {arts: [111], wrong: '4. ie défaut', right: '4. le défaut'}   # p. 1663: «le»
+  - {arts: [111], wrong: 'ayant.causé', right: 'ayant causé'}   # p. 1663: a speck read as a full stop
+  - {arts: [111], wrong: '10. Pusage', right: '10. l’usage'}   # p. 1663: «l’usage»
+  - {arts: [111], wrong: 'I1.les véhicules', right: '11. les véhicules'}   # p. 1663: «11.»
+  - {arts: [111], wrong: 'relatives à homologation', right: 'relatives à l’homologation'}   # p. 1663: «l’homologation»
+  - {arts: [111], wrong: 'véhicules où remorques', right: 'véhicules ou remorques'}   # p. 1663: «ou»
+  - {arts: [111], wrong: 'modifiée: et', right: 'modifiées et'}   # p. 1663: «modifiées»
+  - {arts: [112], wrong: '3, le non respect', right: '3. le non respect'}   # p. 1663: «3.»
+  - {arts: [112], wrong: 'établissant équipement', right: 'établissant l’équipement'}   # p. 1663: «l’équipement»
+  - {arts: [112], wrong: 'au 2€ alinéa', right: 'au 2e alinéa'}   # p. 1664: «2e»
+  - {arts: [112], wrong: '3, 6 et 8 ci-dessus :', right: '3, 6 et 8 ci-dessus ;'}   # p. 1664: «;»
+  - {arts: [117], wrong: "d'expertise.\nDispositions diverses", right: 'd''expertise.'}   # p. 1665: the next chapter title glued
+  - {arts: [141], wrong: 'de linfraction', right: 'de l’infraction'}   # p. 1668: «l’infraction»
+  - {arts: [142], wrong: 'la personn: morale', right: 'la personne morale'}   # p. 1668: «personne»
+  - {arts: [142], wrong: 'précitées. | En cas', right: "précitées.\nEn cas"}   # p. 1668: a stray mark; a new paragraph
+  - {arts: [142], wrong: 'visée au 1 alinéa', right: 'visée au 1er alinéa'}   # p. 1668: «1er»
+  - {arts: [147], wrong: 'exécutoire .rendue', right: 'exécutoire rendue'}   # p. 1669: a speck read as a full stop
+  - {arts: [147], wrong: "application.\nDes délits Section première. — Des délits concernant le permis de conduire", right: 'application.'}   # p. 1669: the next chapter and section titles glued
+  - {arts: [184], wrong: '.3)le stationnement', right: '3) le stationnement'}   # p. 1674: a stray full stop
+  - {arts: [184], wrong: 'S)le stationnement dangereux', right: '5) le stationnement dangereux'}   # p. 1674: «5)»
+  - {arts: [184], wrong: 'l1)le défaut de freins réglernentaires', right: '11) le défaut de freins réglementaires'}   # p. 1674: «11)», «réglementaires»
+  - {arts: [184], wrong: '12) absence de dispositifs', right: '12) l’absence de dispositifs'}   # p. 1674: «l’absence»
+  - {arts: [184], wrong: 'accordée par Padministration', right: 'accordée par l’administration'}   # p. 1674: «l’administration»
+  - {arts: [184], wrong: 'bande de roulement :', right: 'bande de roulement ;'}   # p. 1674: «;»
+  - {arts: [184], wrong: 'du sable où tout', right: 'du sable ou tout'}   # p. 1675: «ou»
+  - {arts: [184], wrong: 'de personnes, L’amende est appliquée par personne en surnombre', right: "de personnes.\nL’amende est appliquée par personne en surnombre"}   # p. 1675: a full stop and a new paragraph
+  - {arts: [184], wrong: 'sur {es autoroutes', right: 'sur les autoroutes'}   # p. 1675: «les»
+  - {arts: [184], wrong: 'et ieurs bretelles', right: 'et leurs bretelles'}   # p. 1675: «leurs»
+  - {arts: [184], wrong: 'conditiôns', right: 'conditions'}   # p. 1675: «conditions»
+  - {arts: [184], wrong: 'ou accidentés, En cas de récidive', right: "ou accidentés.\nEn cas de récidive"}   # p. 1675: a full stop and a new paragraph
+  - {arts: [184], wrong: "au double.\nSection 2. — Des contraventions de la deuxième classe", right: 'au double.'}   # p. 1675: the next section title glued
+  - {arts: [185], wrong: 'deuxième ‘classe', right: 'deuxième classe'}   # p. 1675: a stray mark
+  - {arts: [185], wrong: 'pour ‘tous. les conducteurs ; ‘', right: 'pour tous les conducteurs ;'}   # p. 1675: stray marks
+  - {arts: [185], wrong: 'pendant ia conduite', right: 'pendant la conduite'}   # p. 1675: «la»
+  - {arts: [185], wrong: "mouvement ;\nQC, QU TS\n5)le non respect de ia priorité", right: "mouvement ;\n5) le non respect de la priorité"}   # p. 1675: a stray line; «la»
+  - {arts: [185], wrong: '.. 6)l’accès', right: '6) l’accès'}   # p. 1675: stray marks
+  - {arts: [185], wrong: 'traction non mécanique :', right: 'traction non mécanique ;'}   # p. 1675: «;»
+  - {arts: [185], wrong: 'inférieure à 125 cm ;', right: 'inférieure à 125 cm³ ;'}   # p. 1675: «cm³»
+  - {arts: [185], wrong: '9}les leçons', right: '9) les leçons'}   # p. 1675: «9)»
+  - {arts: [185], wrong: '10) larrêt', right: '10) l’arrêt'}   # p. 1675: «l’arrêt»
+  - {arts: [185], wrong: 'raccordement ‘une autoroute', right: 'raccordement d’une autoroute'}   # p. 1675: «d’une»
+  - {arts: [185], wrong: 'un vébicule', right: 'un véhicule'}   # p. 1675: «véhicule»
+  - {arts: [185], wrong: 'circulant sur l’autoroute :', right: 'circulant sur l’autoroute ;'}   # p. 1675: «;»
+  - {arts: [185], wrong: 'stabilité où la conduite du véhicule :', right: 'stabilité ou la conduite du véhicule ;'}   # p. 1675: «ou», «;»
+  - {arts: [185], wrong: '19} le non respect', right: '19) le non respect'}   # p. 1675: «19)»
+  - {arts: [185], wrong: '21}le non fonctionnement', right: '21) le non fonctionnement'}   # p. 1675: «21)»
+  - {arts: [185], wrong: 'de 18% à moins de 30%', right: 'de 10% à moins de 30%'}   # p. 1676: the page prints 10%
+  - {arts: [185], wrong: 'L’''amende', right: 'L’amende'}   # p. 1676: one apostrophe
+  - {arts: [185], wrong: '30} l’absence', right: '30) l’absence'}   # p. 1676: «30)»
+  - {arts: [185], wrong: '32} le véhicule', right: '32) le véhicule'}   # p. 1676: «32)»
+  - {arts: [185], wrong: 'portée au double, Section 3.— Des contraventions de la troisième classe', right: 'portée au double.'}   # p. 1676: a full stop; the next section title glued
+  - {arts: [186], wrong: '(600) dirhams, En cas de récidive', right: "(600) dirhams.\nEn cas de récidive"}   # p. 1676: a full stop and a new paragraph
+  - {arts: [187], wrong: "dirhams.\nSection 4 .— Contravention particulière aux conducteurs et gardiens d'animaux", right: 'dirhams.'}   # p. 1676: the next section title glued
+  - {arts: [195], wrong: 'tout procèsverbal', right: 'tout procès-verbal'}   # p. 1677: the line-end hyphen is the word’s
+  - {arts: [195], wrong: 'S) le numéro du permis', right: '5) le numéro du permis'}   # p. 1677: «5)»
+  - {arts: [195], wrong: '‘ Ne constitue pas', right: 'Ne constitue pas'}   # p. 1677: a stray mark
+  - {arts: [195], wrong: 'du véhicule, Ne constitue', right: 'du véhicule. Ne constitue'}   # p. 1677: a full stop
+  - {arts: [195], wrong: '-— la vitesse retenue', right: '— la vitesse retenue'}   # p. 1677: the list dash, as in the item before
+  - {arts: [197], wrong: 'de l’infraction, A cet effet', right: "de l’infraction.\nA cet effet"}   # p. 1678: a full stop and a new paragraph
+  - {arts: [197], wrong: 'système de: contrôle', right: 'système de contrôle'}   # p. 1678: a stray colon
+  - {arts: [200], wrong: '1) identification du véhicule', right: '1) l’identification du véhicule'}   # p. 1678: «l’identification»
+  - {arts: [200], wrong: 'l’appareïl', right: 'l’appareil'}   # p. 1678: «appareil»
+  - {arts: [204], wrong: 'conformément ‘aux modalités', right: 'conformément aux modalités'}   # p. 1679: a stray mark
+  - {arts: [207], wrong: 'soit Sur. instruction .du procureur', right: 'soit sur instruction du procureur'}   # p. 1679: stray marks
+  - {arts: [219], wrong: 'faire Pobjet de transaction', right: 'faire l’objet de transaction'}   # p. 1680: «l’objet»
+  - {arts: [219], wrong: 'ou à suivi un délit', right: 'ou a suivi un délit'}   # p. 1680: «a»
+  - {arts: [222], wrong: 'de lavis de contravention', right: 'de l’avis de contravention'}   # p. 1680: «l’avis»
+  - {arts: [228], wrong: 'loi, agent verbalisateur doit', right: 'loi, l’agent verbalisateur doit'}   # p. 1681: «l’agent»
+  - {arts: [228], wrong: 'de Particle 185', right: 'de l’article 185'}   # p. 1681: «l’article»
+  - {arts: [228], wrong: 'qui a rekvé la contravention', right: 'qui a relevé la contravention'}   # p. 1681: «relevé»
+  - {arts: [228], wrong: 'à autorité chargée', right: 'à l’autorité chargée'}   # p. 1681: «l’autorité»
+  - {arts: [228], wrong: '1} une décision', right: '1) une décision'}   # p. 1681: «1)»
+  - {arts: [231], wrong: 'lui est restitué, L''administration fixe les modalités de ladite restitution,', right: 'lui est restitué. L''administration fixe les modalités de ladite restitution.'}   # p. 1682: two full stops
+notes:
+  - {art: 99, page: 1660, what: 'The table after «comme suit :» (pp. 1660-1661) is read without its columns. The site holds the 31 offences in the page''s order, but: the headings stand inside rows («DELITS POINTS RETIRER LE DELIT» before row 01, «POINTS RETIRER LE DELIT» before row 10, «POINTS A RETIRER» before row 19, and the heading CONTRAVENTIONS over rows 19-31 is lost); most row numbers are lost (only 02, 03, 12, 17, 20, 21, 24, 25, 26, 30, 31 remain, 12 and 17 glued inside the line before); the points to withdraw are lost for nearly every row, and the few figures left stand in the wrong place («14 02 ...», «| 6.», «3 17 ...», «... circulation. 4 Le dépassement», «3 25», a line «2 .»); rows 11 and 12, 15 and 16, 17 and 18 are glued in one line each («... permis de conduire, 12 Le fait ...», «... maximale autorisée, La marche arrière ...»); rows 21 and 22 read «[ 21 | Circulation en sens interdit. | en sens | Circulation en sens interdit. | EE e non respect du droit de priorité.»; row 30 is cut («... de la |.» then «ceinture de sécurité.») and row 31 reads «inférieur à Fr, | 10 ans». The fixes above mend only the words inside rows. The page prints (N° d''ordre | the offence | points à retirer): [DELITS] ; 01 | Homicide involontaire avec circonstances aggravantes, suite à un accident de la circulation (si l’annulation du permis de conduire n’est pas prononcée). | 14 ; 02 | Homicide involontaire sans circonstances aggravantes, suite à un accident de la circulation. | 6 ; 03 | Blessures involontaires, entraînant une infirmité permanente, avec circonstances aggravantes, suite à un accident de circulation (si l’annulation du permis de conduire n’est pas prononcée). | 10 ; 04 | Blessures involontaires, entraînant une infirmité permanente, sans circonstances aggravantes, suite à un accident de la circulation. | 4 ; 05 | Blessures involontaires, consécutives à un accident de la circulation, avec circonstances aggravantes. | 6 ; 06 | Blessures involontaires, consécutives à un accident de la circulation, sans circonstances aggravantes. | 3 ; 07 | Conduite d''un véhicule sous l’influence de l’alcool ou sous l’effet de substances stupéfiantes. | 6 ; 08 | Conduite d''un véhicule sous l’effet de substances médicamenteuses contre-indiquées pour la conduite d’un véhicule. | 2 ; 09 | Le fait de ne pas s’arrêter, après avoir causé ou occasionné un accident de la circulation et de tenter ainsi d’échapper à la responsabilité, en prenant la fuite ou en modifiant l’état des lieux ou par tout autre moyen. | 6 ; 10 | Conduite d''un véhicule, dont la conduite nécessite l’obtention d’un permis de conduire, malgré une suspension administrative ou judiciaire du permis de conduire. | 4 ; 11 | Conduite d''un véhicule, dont la conduite nécessite l’obtention d’un permis de conduire, pendant la durée de la rétention du permis de conduire. | 4 ; 12 | Le fait de ne pas déposer un permis de conduire suspendu. | 4 ; 13 | Conducteur, sommé de s''arrêter, a refusé de s''exécuter ou de se soumettre aux vérifications prescrites ou ne respecte pas l’ordre d''immobilisation du véhicule ou refuse de conduire ou de faire conduire son véhicule en fourrière ou refuse d''obtempérer aux injonctions légales qui lui sont faites. | 2 ; 14 | La conduite à titre professionnel sans disposer de la carte de conducteur professionnel. | 2 ; 15 | Le dépassement de la vitesse de 50 Km/h ou plus, au dessus de la vitesse maximale autorisée. | 6 ; 16 | La marche arrière ou le demi-tour sur une autoroute notamment ou une route expresse en traversant la bande centrale séparative des chaussées. | 3 ; 17 | L’emprunt de l’autoroute ou d’une route expresse à contre courant de la circulation. | 4 ; 18 | Le dépassement du poids autorisé au passage d''un ouvrage de franchissement. | 4 ; [CONTRAVENTIONS] ; 19 | Le non-respect, par un conducteur d’un véhicule, de l''arrêt imposé par un panneau de STOP ou par un feu rouge de signalisation. | 4 ; 20 | Le dépassement de la vitesse de plus de 30 à moins de 50 Km/h, au dessus de la vitesse autorisée. | 4 ; 21 | Circulation en sens interdit. | 4 ; 22 | Le non respect du droit de priorité. | 2 ; 23 | Dépassement non réglementaire. | 4 ; 24 | Circulation de véhicule sur la voie publique, de nuit, sans éclairage, hors agglomération. | 3 ; 25 | Conduite d’un véhicule en absence du certificat de contrôle technique. | 3 ; 26 | Circulation sur une bande d''arrêt d''urgence d''une autoroute ou arrêt non justifié sur une autoroute. | 3 ; 27 | Arrêt ou stationnement de véhicule, de nuit ou dans un lieu avec visibilité insuffisante, sans éclairage ou sans signalisation, sur une chaussée dépourvue d''éclairage public. | 3 ; 28 | Le dépassement de la vitesse de plus de 20 à 30 Km/h, au dessus de la vitesse autorisée. | 2 ; 29 | Conduite d''un motocycle, d’un tricycle à moteur ou d’un quadricycle à moteur, non carrossé, sans port d''un casque homologué. | 2 ; 30 | Non respect de l’obligation d’utilisation de la ceinture de sécurité. | 1 ; 31 | Transport d’un enfant dont l’âge est inférieur à 10 ans sur le siège avant d’un véhicule. | 1'}
+checked: [2, 3, 4, 7, 8, 10, 11, 12, 14, 22, 23, 24, 26, 27, 28, 30, 31, 32, 33, 34, 35, 38, 59, 60, 66, 99, 100, 103, 109, 111, 112, 117, 118, 141, 142, 147, 182, 184, 185, 186, 187, 195, 197, 200, 203, 204, 207, 219, 220, 221, 222, 223, 227, 228, 230, 231, 234, 308]
+# Art. 99's table, which Tesseract read without its columns: its rows as pp. 1660–1661 print them (the note above).
+bodies:
+  '99': |
+    Conformément aux dispositions de l’article 29 de la présente loi, l’autorité, auprès de laquelle est institué le fichier national du permis de conduire visé à l’article 120 ci-dessous, procède, de plein droit, au retrait des points du capital affecté au permis de conduire, dans les cas visé au 1er alinéa de l’article 28 ci-dessus, au vu des copies de décisions judiciaires ayant acquis la force de la chose jugée que lui transmet le ministère public ou de documents établissant le paiement de l’amende transactionnelle et forfaitaire, comme suit :
+    Delits
+    | N° d’ordre | Délits / contraventions | Points à retirer |
+    |---|---|---|
+    | 01 | Homicide involontaire avec circonstances aggravantes, suite à un accident de la circulation (si l’annulation du permis de conduire n’est pas prononcée). | 14 |
+    | 02 | Homicide involontaire sans circonstances aggravantes, suite à un accident de la circulation. | 6 |
+    | 03 | Blessures involontaires, entraînant une infirmité permanente, avec circonstances aggravantes, suite à un accident de circulation (si l’annulation du permis de conduire n’est pas prononcée). | 10 |
+    | 04 | Blessures involontaires, entraînant une infirmité permanente, sans circonstances aggravantes, suite à un accident de la circulation. | 4 |
+    | 05 | Blessures involontaires, consécutives à un accident de la circulation, avec circonstances aggravantes. | 6 |
+    | 06 | Blessures involontaires, consécutives à un accident de la circulation, sans circonstances aggravantes. | 3 |
+    | 07 | Conduite d'un véhicule sous l’influence de l’alcool ou sous l’effet de substances stupéfiantes. | 6 |
+    | 08 | Conduite d'un véhicule sous l’effet de substances médicamenteuses contre-indiquées pour la conduite d’un véhicule. | 2 |
+    | 09 | Le fait de ne pas s’arrêter, après avoir causé ou occasionné un accident de la circulation et de tenter ainsi d’échapper à la responsabilité, en prenant la fuite ou en modifiant l’état des lieux ou par tout autre moyen. | 6 |
+    | 10 | Conduite d'un véhicule, dont la conduite nécessite l’obtention d’un permis de conduire, malgré une suspension administrative ou judiciaire du permis de conduire. | 4 |
+    | 11 | Conduite d'un véhicule, dont la conduite nécessite l’obtention d’un permis de conduire, pendant la durée de la rétention du permis de conduire. | 4 |
+    | 12 | Le fait de ne pas déposer un permis de conduire suspendu. | 4 |
+    | 13 | Conducteur, sommé de s'arrêter, a refusé de s'exécuter ou de se soumettre aux vérifications prescrites ou ne respecte pas l’ordre d'immobilisation du véhicule ou refuse de conduire ou de faire conduire son véhicule en fourrière ou refuse d'obtempérer aux injonctions légales qui lui sont faites. | 2 |
+    | 14 | La conduite à titre professionnel sans disposer de la carte de conducteur professionnel. | 2 |
+    | 15 | Le dépassement de la vitesse de 50 Km/h ou plus, au dessus de la vitesse maximale autorisée. | 6 |
+    | 16 | La marche arrière ou le demi-tour sur une autoroute notamment ou une route expresse en traversant la bande centrale séparative des chaussées. | 3 |
+    | 17 | L’emprunt de l’autoroute ou d’une route expresse à contre courant de la circulation. | 4 |
+    | 18 | Le dépassement du poids autorisé au passage d'un ouvrage de franchissement. | 4 |
+    Contraventions
+    | N° d’ordre | Délits / contraventions | Points à retirer |
+    |---|---|---|
+    | 19 | Le non-respect, par un conducteur d’un véhicule, de l'arrêt imposé par un panneau de STOP ou par un feu rouge de signalisation. | 4 |
+    | 20 | Le dépassement de la vitesse de plus de 30 à moins de 50 Km/h, au dessus de la vitesse autorisée. | 4 |
+    | 21 | Circulation en sens interdit. | 4 |
+    | 22 | Le non respect du droit de priorité. | 2 |
+    | 23 | Dépassement non réglementaire. | 4 |
+    | 24 | Circulation de véhicule sur la voie publique, de nuit, sans éclairage, hors agglomération. | 3 |
+    | 25 | Conduite d’un véhicule en absence du certificat de contrôle technique. | 3 |
+    | 26 | Circulation sur une bande d'arrêt d'urgence d'une autoroute ou arrêt non justifié sur une autoroute. | 3 |
+    | 27 | Arrêt ou stationnement de véhicule, de nuit ou dans un lieu avec visibilité insuffisante, sans éclairage ou sans signalisation, sur une chaussée dépourvue d'éclairage public. | 3 |
+    | 28 | Le dépassement de la vitesse de plus de 20 à 30 Km/h, au dessus de la vitesse autorisée. | 2 |
+    | 29 | Conduite d'un motocycle, d’un tricycle à moteur ou d’un quadricycle à moteur, non carrossé, sans port d'un casque homologué. | 2 |
+    | 30 | Non respect de l’obligation d’utilisation de la ceinture de sécurité. | 1 |
+    | 31 | Transport d’un enfant dont l’âge est inférieur à 10 ans sur le siège avant d’un véhicule. | 1 |

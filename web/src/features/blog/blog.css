@@ -1,0 +1,30 @@
+/* «قانون بالأرقام», the list of posts (31 Oct 2026): the blog's name over a double rule, each post as a poster since
+   HM41 (7 Nov 2026): its picture, its number and its day, its headline in the law's type, two lines of its lead. */
+.bi { gap: 28px; }
+.bi-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 20px; border-bottom: 4px double var(--color-ink); }
+.bi-head h1 { margin: 0; font-family: var(--font-law); font-size: var(--text-display); line-height: 1.05; font-weight: 700; color: var(--color-ink); }
+.bi-head p { margin: 0; max-width: 60ch; font-size: var(--text-lead); line-height: 1.7; color: var(--color-ink-soft); }
+.bi-list { display: grid; gap: 0 32px; margin: 0; padding: 0; list-style: none; }
+@media (min-width: 640px) { .bi-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bi-list li { border-bottom: 1px solid var(--color-rule); }
+/* A post as a poster (HM41): its picture beside its words, a print on the page, not a card. */
+.bi-list a { display: flex; align-items: flex-start; gap: 16px; padding: 18px 0; text-decoration: none; color: var(--color-ink); }
+.bi-list a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 6px; }
+.bi-poster { position: relative; flex: none; display: grid; place-items: center; inline-size: 104px; aspect-ratio: 4 / 5; overflow: hidden;
+  border: 1px solid var(--color-rule); background: var(--color-sheet); font-family: var(--font-law); font-size: var(--text-h1); font-weight: 700;
+  color: var(--color-stamp-line); }
+.bi-poster img { position: absolute; inset: 0; inline-size: 100%; block-size: 100%; object-fit: cover; object-position: top; }
+@media (min-width: 640px) { .bi-poster { inline-size: 120px; } }
+.bi-list a:hover .bi-poster { border-color: var(--color-stamp-line); }
+/* By night the posters, drawn in the light theme, are a print a shade dimmer. */
+@media (prefers-color-scheme: dark) { :root:not([data-theme='light']) .bi-poster img { filter: brightness(0.88); } }
+:root[data-theme='dark'] .bi-poster img { filter: brightness(0.88); }
+.bi-words { display: flex; min-inline-size: 0; flex-direction: column; gap: 6px; }
+.bi-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font-size: var(--text-meta); font-weight: 700; color: var(--color-stamp); }
+.bi-meta span { font-weight: 400; color: var(--color-ink-soft); }
+.bi-meta .bi-draft { padding: 0 10px; border: 1px dashed var(--color-ink-soft); border-radius: 12px; color: var(--color-ink-soft); font-weight: 600; }
+.bi-list h2 { margin: 0; font-family: var(--font-law); font-size: var(--text-h3); line-height: 1.2; font-weight: 700; text-wrap: balance; }
+.bi-list a:hover h2 { color: var(--color-stamp); }
+.bi-list p { margin: 0; font-family: var(--font-law); font-size: var(--text-lead); line-height: 1.55; color: var(--color-ink-soft);
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.bi:lang(fr) .bi-list h2, .bi:lang(fr) .bi-list p { font-family: "Source Serif 4", Georgia, serif; }

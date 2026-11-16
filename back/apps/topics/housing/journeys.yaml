@@ -1,0 +1,421 @@
+# The housing topic's journeys (H8 of the housing plan): what happens, step by step, each step on the articles it rests
+# on, for the tenant and for the landlord alike. Written from the texts as the site holds them on 20 Oct 2026: law 67.12
+# (Adala's consolidation of 21 Feb 2019), the DOC, laws 18.00, 49.16, 51.00 and 94.12 (Adala, to July 2026), the aid
+# decree 2.23.350 and finance law 50.22 art. 8 (cited with the 2024 and 2026 finance laws that amended it: the site shows
+# it as first published, the amendments not placed), law 58.25 on civil procedure. A reader sees a journey once a
+# person has checked it (`manage.py approve_topic housing journeys/<key> --by …`). Steps say what the law says, never
+# what a reader should do in their own case.
+
+- key: eviction
+  for: [tenant, landlord]
+  day: {ar: 'نهار توصلت بالإشعار بالإفراغ؟', fr: 'Congé reçu quand ?'}
+  title: {ar: 'الإفراغ من السكن: من الإشعار إلى التنفيذ', fr: 'Quitter un logement loué : du congé à l’exécution'}
+  lead:
+    ar: 'لا ينتهي كراء السكن إلا بإشعار بالإفراغ يصححه القضاء، لسبب من الأسباب التي حددها القانون. ولكل خطوة أجلها ومادتها.'
+    fr: 'Un bail d’habitation ne prend fin que par un congé que le juge valide, pour l’une des raisons que la loi fixe. Chaque étape a son délai et son article.'
+  steps:
+    - title: {ar: الأسباب, fr: Les motifs}
+      answer: {ar: 'لا يطلب منك المكري الإفراغ إلا لسبب جدي ومشروع: أن يسكن المحل هو أو أقاربه المباشرون، أو أن يهدمه ويعيد بناءه أو يصلحه إصلاحا يقتضي الإفراغ، أو لأنك تماطلت في الأداء.', fr: 'Le bailleur ne vous donne congé que pour un motif sérieux et légitime : y habiter lui-même ou un proche direct, démolir et reconstruire ou faire des travaux qui exigent votre départ, ou votre retard persistant à payer.'}
+      body:
+        ar: 'يجب أن يستند الإشعار بالإفراغ إلى سبب جدي ومشروع، منها: رغبة المكري في استرجاع المحل لسكناه أو لسكنى زوجه أو أصوله أو فروعه المباشرين من الدرجة الأولى أو المستفيدين من الوصية الواجبة أو المكفول؛ أو هدم المحل وإعادة بنائه أو إدخال إصلاحات ضرورية تقتضي إفراغه؛ أو تماطل المكتري في الأداء. ولا تصحح المحكمة الإشعار إلا للأسباب الواردة في المادة 45.'
+        fr: 'Le congé doit reposer sur un motif sérieux et légitime, dont : la reprise du logement par le bailleur pour y habiter, lui, son conjoint, ses ascendants ou descendants directs au premier degré, les bénéficiaires du legs obligatoire ou l’enfant recueilli ; la démolition et la reconstruction, ou des travaux nécessaires qui exigent le départ ; le retard persistant du locataire à payer. Le tribunal ne valide le congé que pour les motifs de l’article 45.'
+      cites: [/ma/loi/67-12/art_44, /ma/loi/67-12/art_45, /ma/loi/67-12/art_48]
+    - title: {ar: الاسترجاع للسكن, fr: La reprise pour habiter}
+      answer: {ar: 'إذا أراد المحل ليسكنه، يجب أن يملكه منذ 18 شهرا على الأقل يوم الإشعار، إلا إذا عرض عليك سكنا مماثلا بنفس الوجيبة.', fr: 'S’il reprend pour habiter, il doit être propriétaire depuis au moins 18 mois au jour du congé, sauf s’il vous offre un logement semblable au même loyer.'}
+      body:
+        ar: 'إذا كان السبب هو السكن، وجب أن يكون المحل في ملك المكري منذ ثمانية عشر شهرا على الأقل من تاريخ الإشعار، وألا يشغل المستفيد سكنا في ملكه أو كافيا لحاجياته العادية. ويحتسب للوارث والموصى له والمكفول ملك من سبقه. ولا يشترط ذلك إذا عرض المكري على المكتري سكنا مماثلا بنفس المواصفات والوجيبة.'
+        fr: 'Pour la reprise, le bailleur doit être propriétaire depuis au moins dix-huit mois à la date du congé, et le bénéficiaire ne doit pas occuper un logement qui lui appartient ou qui suffit à ses besoins normaux ; l’héritier, le légataire et l’enfant recueilli comptent le temps de leur prédécesseur. Ces conditions tombent si le bailleur offre un logement semblable, aux mêmes caractéristiques et au même loyer.'
+      cites: [/ma/loi/67-12/art_49]
+    - title: {ar: الإشعار نفسه, fr: Le congé lui-même}
+      answer: {ar: 'الإشعار باطل إذا لم يذكر السبب والمحل كله وأجلا لا يقل عن شهرين من يوم توصلك به.', fr: 'Le congé est nul s’il ne donne pas le motif, le logement entier et un délai d’au moins deux mois à compter de sa réception.'}
+      body:
+        ar: 'يتضمن الإشعار، تحت طائلة البطلان، الأسباب التي يعتمدها المكري، والمحل كله بمرافقه، وأجلا لا يقل عن شهرين يبتدئ من تاريخ التوصل به. ويبلغ وفق قواعد قانون المسطرة المدنية.'
+        fr: 'Le congé doit indiquer, à peine de nullité, les motifs du bailleur, le logement entier avec ses dépendances, et un délai d’au moins deux mois à compter de sa réception. Il est notifié selon les règles de la procédure civile.'
+      cites: [/ma/loi/67-12/art_46]
+      papers: checklists/eviction-notice
+      delay: {months: 2, on_day: true, from: {ar: من التوصل بالإشعار, fr: après la réception du congé}}
+    - title: {ar: المحكمة, fr: Le tribunal}
+      answer: {ar: 'إذا بقيت بعد الأجل، لا يخرجك إلا حكم من المحكمة الابتدائية يصحح الإشعار؛ ولا يحكم قاضي القرب بالإفراغ.', fr: 'Si vous restez au-delà du délai, seul un jugement du tribunal de première instance validant le congé vous fait partir ; le juge de proximité ne prononce pas d’expulsion.'}
+      body:
+        ar: 'إذا بقي المكتري في المحل بعد انصرام الأجل، يطلب المكري من المحكمة الابتدائية لمكان المحل تصحيح الإشعار والحكم بالإفراغ. ولا يمكن لقاضي القرب أن يحكم بالإفراغ.'
+        fr: 'Si le locataire est toujours dans les lieux au terme du délai, le bailleur demande au tribunal de première instance du lieu du logement de valider le congé et d’ordonner l’expulsion. Le juge de proximité ne peut pas ordonner une expulsion.'
+      cites: [/ma/loi/67-12/art_47, /ma/loi/67-12/art_71, /ma/loi/58-25/art_331]
+    - title: {ar: ما يستحقه المكتري, fr: Ce qui revient au locataire}
+      answer: {ar: 'إذا صحح الإشعار، لك صوائر الانتقال وتعويض يساوي كراء سنة؛ وإذا تبين أن السبب غير صحيح، تعويض لا يقل عن كراء سنة.', fr: 'Si le congé est validé, vous avez vos frais de déménagement et une indemnité d’une année de loyer ; si le motif s’avère faux, une indemnité d’au moins une année de loyer.'}
+      body:
+        ar: 'إذا صحح الإشعار، يؤدي المكري للمكتري، إضافة إلى صوائر الانتقال المثبتة، تعويضا قيمته وجيبة كراء سنة حسب آخر مبلغ أداه. وإذا تبين أن السبب غير صحيح أو لم ينفذ، فللمكتري المطالبة بتعويض يساوي الضرر ولا يقل عن وجيبة سنة. وفي الهدم وإعادة البناء، للمكتري أسبقية الرجوع إلى المحل إذا عبر عن ذلك داخل الشهرين المواليين لإخبار المكري.'
+        fr: 'Si le congé est validé, le bailleur verse au locataire, en plus des frais de déménagement justifiés, une indemnité égale à une année du dernier loyer payé. Si le motif s’avère faux ou n’est pas mis en œuvre, le locataire peut réclamer une indemnité égale au préjudice, d’au moins une année de loyer. En cas de démolition et de reconstruction, le locataire a priorité pour revenir s’il le demande dans les deux mois de l’avis du bailleur.'
+      cites: [/ma/loi/67-12/art_50, /ma/loi/67-12/art_51, /ma/loi/67-12/art_52]
+      tool: tools/eviction
+    - title: {ar: الطعن والتنفيذ, fr: Le recours et l’exécution}
+      answer: {ar: 'تستأنف الحكم داخل 30 يوما من تبليغه، ولرئيس المحكمة أن يمنحك عند التنفيذ أجلا لا يتعدى شهرين.', fr: 'Vous faites appel dans les 30 jours de la notification ; à l’exécution, le président peut vous accorder un délai qui ne dépasse pas deux mois.'}
+      body:
+        ar: 'يستأنف الحكم داخل ثلاثين يوما من تبليغه. ولا يوقف الطعن بالنقض التنفيذ، غير أن محكمة النقض يمكن أن تأمر بإيقاف تنفيذ مقررات الإفراغ. وعند التنفيذ، يمكن لرئيس المحكمة أن يمنح، لظروف خاصة، أجلا استرحاميا لا يتعدى في مجموعه شهرين.'
+        fr: 'L’appel est formé dans les trente jours de la notification. Le pourvoi en cassation ne suspend pas l’exécution, mais la Cour de cassation peut ordonner la suspension des décisions d’expulsion. À l’exécution, le président peut accorder, pour des circonstances particulières, un délai de grâce qui ne dépasse pas deux mois en tout.'
+      cites: [/ma/loi/58-25/art_204, /ma/loi/58-25/art_383, /ma/loi/58-25/art_477]
+      note:
+        ar: 'لا ينتهي الكراء إلا بإشعار يصححه القضاء. ودخول مسكن الغير أو محاولة دخوله بالتدليس أو التهديد أو العنف، وانتزاع عقار من حيازة الغير خلسة أو بالتدليس، جريمتان.'
+        fr: 'Le bail ne prend fin que par un congé validé par le juge. Entrer ou tenter d’entrer dans le domicile d’autrui par ruse, menace ou violence, et déposséder autrui d’un immeuble clandestinement ou par ruse, sont des délits.'
+        cites: [/ma/loi/67-12/art_44, /ma/loi/67-12/art_47, /ma/dahir/1-59-413/art_441, /ma/dahir/1-59-413/art_570]
+
+- key: increase
+  for: [tenant, landlord, shop]
+  title: {ar: 'الزيادة في الكراء', fr: 'L’augmentation du loyer'}
+  lead:
+    ar: 'تحدد الوجيبة بالتراضي، لكن الزيادة فيها محدودة بالقانون: مرة كل ثلاث سنوات على الأكثر، وبنسبة لا تتعداها.'
+    fr: 'Le loyer est fixé librement, mais son augmentation est encadrée : au plus une fois tous les trois ans, et dans une limite fixée.'
+  steps:
+    - title: {ar: ثلاث سنوات, fr: Trois ans}
+      body:
+        ar: 'لا يجوز الاتفاق على رفع الوجيبة قبل مرور ثلاث سنوات على العقد أو على آخر مراجعة. وإذا لم يتفق الطرفان، أمكن مراجعتها بعد مرور ثلاث سنوات على الأقل من الاتفاق على الوجيبة أو من آخر مراجعة، وفق النسب المقررة في المادة 34.'
+        fr: 'Aucune hausse ne peut être convenue avant trois ans à compter du contrat ou de la dernière révision. À défaut d’accord, le loyer peut être révisé au plus une fois tous les trois ans.'
+      cites: [/ma/loi/67-12/art_31, /ma/loi/67-12/art_32, /ma/loi/67-12/art_33, /ma/loi/7-03/art_2, /ma/loi/7-03/art_3]
+      tool: tools/rent
+    - title: {ar: النسبة, fr: Le taux}
+      body:
+        ar: 'تحدد نسبة الزيادة في 8% للمحلات المعدة للسكنى و10% للمحلات المعدة للاستعمال المهني. وإذا كانت الوجيبة لا تتجاوز أربعمائة درهم في الشهر، يمكن للمحكمة أن تحدد الزيادة على ألا تتعدى 50%. وللمحلات التجارية نسبة 10% كذلك.'
+        fr: 'Le taux est de 8 % pour les locaux d’habitation et de 10 % pour les locaux à usage professionnel. Si le loyer ne dépasse pas quatre cents dirhams par mois, le tribunal peut fixer la hausse sans dépasser 50 %. Les locaux commerciaux suivent aussi le taux de 10 %.'
+      cites: [/ma/loi/67-12/art_34, /ma/loi/67-12/art_35, /ma/loi/7-03/art_4, /ma/loi/7-03/art_5]
+    - title: {ar: 'من متى؟', fr: 'À partir de quand ?'}
+      body:
+        ar: 'تستحق الوجيبة الجديدة من تاريخ رفع الدعوى، أو من تاريخ توصل المكتري بالإنذار إذا رفع المكري الدعوى داخل الثلاثة أشهر الموالية. ويستأنف الحكم داخل ثلاثين يوما، ولا طعن بالنقض في مراجعة الوجيبة. وفي المحلات التجارية، لا يوقف الاستئناف تنفيذ الحكم بالزيادة، إلا إذا أوقفته محكمة الاستئناف بقرار معلل.'
+        fr: 'Le nouveau loyer est dû à compter de la demande en justice, ou de la réception de l’avis si le bailleur saisit le tribunal dans les trois mois qui suivent. L’appel est formé dans les trente jours ; il n’y a pas de pourvoi en cassation en matière de révision du loyer. Pour les locaux commerciaux, l’appel ne suspend pas l’exécution du jugement de hausse, sauf si la cour d’appel la suspend par décision motivée.'
+      cites: [/ma/loi/67-12/art_37, /ma/loi/67-12/art_38, /ma/loi/58-25/art_375, /ma/loi/7-03/art_7, /ma/loi/7-03/art_8]
+      delay: {months: 3, from: {ar: من توصل المكتري بالإنذار, fr: après la réception de l’avis}}
+    - title: {ar: التخفيض, fr: La baisse}
+      body:
+        ar: 'يمكن للمكتري أن يطلب تخفيض الوجيبة إذا طرأت ظروف أثرت على استعمال المحل.'
+        fr: 'Le locataire peut demander une baisse du loyer si des circonstances ont affecté l’usage du logement.'
+      cites: [/ma/loi/67-12/art_36]
+
+- key: leaving
+  for: [tenant, landlord]
+  title: {ar: 'الضمانة والخروج من الدار', fr: 'La garantie et le départ'}
+  lead:
+    ar: 'الضمانة محدودة وترد في أجل محدد، والبيان الوصفي يحرر عند الدخول وعند الخروج.'
+    fr: 'La garantie est plafonnée et rendue dans un délai fixé ; l’état des lieux se fait à l’entrée et à la sortie.'
+  steps:
+    - title: {ar: البيان الوصفي, fr: L’état des lieux}
+      body:
+        ar: 'يحرر بيان وصفي لحالة المحل عند تسلمه وعند استرجاعه، ثابت التاريخ ومفصل، ويرفق بالعقد. ويتجنب عبارات من قبيل «حالة جيدة» أو «حالة متوسطة». وإذا لم يحرر، يفترض أن المكتري تسلم المحل في حالة صالحة للاستعمال.'
+        fr: 'Un état des lieux daté et détaillé est établi à l’entrée et à la sortie, et joint au contrat. Il évite les formules du type « bon état » ou « état moyen ». À défaut, le locataire est présumé avoir reçu le logement en bon état d’usage.'
+      cites: [/ma/loi/67-12/art_7, /ma/loi/67-12/art_8]
+      papers: checklists/before-renting
+    - title: {ar: الضمانة, fr: La garantie}
+      body:
+        ar: 'لا تتجاوز الضمانة وجيبة شهرين، وترد في أجل أقصاه شهر من تاريخ إرجاع المحل، بعد خصم المبالغ المستحقة المثبتة بصفة قانونية. ويمكن الاتفاق على أن تغطي الأشهر الأخيرة من الكراء.'
+        fr: 'La garantie ne dépasse pas deux mois de loyer. Elle est rendue au plus tard un mois après la restitution du logement, déduction faite des sommes dues et légalement prouvées. Les parties peuvent convenir qu’elle couvre les derniers mois de loyer.'
+      cites: [/ma/loi/67-12/art_20]
+      delay: {months: 1, from: {ar: من إرجاع المحل, fr: après la restitution du logement}}
+      tool: tools/rent
+    - title: {ar: التغييرات والتلف, fr: Les transformations et les dégâts}
+      body:
+        ar: 'لا يسأل المكتري عن التلف الناتج عن الاستعمال العادي أو القوة القاهرة أو قدم البناء. ولا يدخل تغييرات دون موافقة مكتوبة، وإلا جاز للمكري أن يلزمه بإرجاع الحالة أو أن يحتفظ بها دون تعويض. وتتقادم دعوى المكري في ذلك بعد ثلاثة أشهر من تسلمه المحل.'
+        fr: 'Le locataire ne répond pas de l’usure normale, de la force majeure ni de la vétusté. Il ne transforme rien sans accord écrit ; sinon le bailleur peut exiger la remise en état ou garder les travaux sans indemnité. Son action à ce titre se prescrit trois mois après la reprise du logement.'
+      cites: [/ma/loi/67-12/art_14, /ma/loi/67-12/art_15, /ma/loi/67-12/art_16]
+    - title: {ar: البقاء بعد نهاية العقد, fr: Rester après la fin du bail}
+      body:
+        ar: 'من بقي في المحل بعد إنهاء العقد أو فسخه وفق أحكام هذا القانون يعتبر محتلا دون سند، ويؤدي تعويضا تحدده المحكمة لا يقل عن ضعف الوجيبة.'
+        fr: 'Celui qui reste après la fin ou la résiliation du bail selon cette loi est occupant sans titre et doit une indemnité fixée par le tribunal, au moins égale au double du loyer.'
+      cites: [/ma/loi/67-12/art_13, /ma/loi/67-12/art_44]
+
+- key: arrears
+  for: [tenant, landlord]
+  day: {ar: 'نهار توصلت بالإنذار بالأداء؟', fr: 'Mise en demeure reçue quand ?'}
+  title: {ar: 'الكراء غير المؤدى: الإنذار والأمر بالأداء', fr: 'Le loyer impayé : la mise en demeure et l’ordonnance'}
+  lead:
+    ar: 'للمكري مسطرة خاصة لاستيفاء الوجيبة، بأجل للمكتري وأمر سريع من رئيس المحكمة. وللمكتري ضماناته.'
+    fr: 'Le bailleur dispose d’une procédure propre pour recouvrer le loyer, avec un délai pour le locataire et une ordonnance rapide du président du tribunal. Le locataire a ses garanties.'
+  steps:
+    - title: {ar: الأداء والوصل, fr: Le paiement et la quittance}
+      answer: {ar: 'تؤدي الكراء في أجله، ولك وصل موقع يفصل الكراء عن التكاليف؛ ولا تمتنع عن الأداء بسبب عيب، بل اطلب من المحكمة تخفيضا.', fr: 'Vous payez le loyer à l’échéance et recevez une quittance signée qui distingue le loyer des charges ; ne suspendez pas le paiement pour un défaut, demandez une réduction au tribunal.'}
+      body:
+        ar: 'يؤدي المكتري الوجيبة في الأجل المحدد في العقد. ويسلمه المكري وصلا موقعا يميز بين الوجيبة والتكاليف. ولا يجوز للمكتري أن يمتنع عن الأداء بسبب عيب أو تعرض، وله أن يطلب من المحكمة تخفيضا بقدر الضرر.'
+        fr: 'Le locataire paie le loyer à l’échéance prévue. Le bailleur lui remet une quittance signée qui distingue le loyer des charges. Le locataire ne peut pas suspendre le paiement pour un trouble ou un défaut ; il peut demander au tribunal une réduction à la mesure du préjudice.'
+      cites: [/ma/loi/67-12/art_11, /ma/loi/67-12/art_12, /ma/loi/67-12/art_21]
+    - title: {ar: الإنذار بالأداء, fr: La mise en demeure}
+      answer: {ar: 'الإنذار بالأداء يمنحك 15 يوما على الأقل من تبليغه لتؤدي، بوصل أو بتحويل أو بإيداع في صندوق المحكمة.', fr: 'La mise en demeure vous laisse au moins 15 jours à compter de sa notification pour payer, contre quittance, par virement ou par dépôt à la caisse du tribunal.'}
+      body:
+        ar: 'إذا كان الكراء ثابتا بمحرر ثابت التاريخ أو بحكم نهائي، يطلب المكري من رئيس المحكمة الابتدائية الإذن بتوجيه إنذار بالأداء، يمنح المكتري أجلا لا يقل عن خمسة عشر يوما من تبليغه، يؤدي فيه يدا بيد مقابل وصل أو بتحويل أو بإيداع في صندوق المحكمة أو بأي وسيلة تثبت الأداء وتاريخه.'
+        fr: 'Si le bail est établi par un écrit à date certaine ou par un jugement définitif, le bailleur demande au président du tribunal de première instance l’autorisation d’adresser une mise en demeure, qui laisse au locataire au moins quinze jours à compter de sa notification pour payer, de la main à la main contre quittance, par virement, par dépôt à la caisse du tribunal ou par tout moyen qui prouve le paiement et sa date.'
+      cites: [/ma/loi/67-12/art_22, /ma/loi/67-12/art_23, /ma/loi/67-12/art_24, /ma/loi/67-12/art_25]
+      delay: {days: 15, on_day: true, from: {ar: من تبليغ الإنذار, fr: après la notification de la mise en demeure}}
+      papers: checklists/payment-notice
+    - title: {ar: الأمر بالأداء, fr: L’ordonnance de paiement}
+      answer: {ar: 'إذا لم تؤد داخل الأجل، يصدر رئيس المحكمة الأمر بالأداء داخل 48 ساعة من الطلب، ولك أن تعرض النزاع على المحكمة.', fr: 'Sans paiement dans le délai, le président rend l’ordonnance de paiement dans les 48 heures de la demande ; vous pouvez porter le litige devant le tribunal.'}
+      body:
+        ar: 'إذا لم يؤد المكتري داخل الأجل، يمكن للمكري أن يطلب من رئيس المحكمة المصادقة على الإنذار والأمر بالأداء، فيصدره داخل ثمان وأربعين ساعة من تسجيل الطلب. وللمكتري أن يعرض النزاع على المحكمة. وإذا واصل المكري المسطرة بسوء نية بعد أن استوفى حقه، فللمكتري أن يطالب بتعويض بين وجيبة شهرين وستة أشهر.'
+        fr: 'À défaut de paiement dans le délai, le bailleur peut demander au président de valider la mise en demeure et d’ordonner le paiement ; l’ordonnance est rendue dans les quarante-huit heures de l’enregistrement de la demande. Le locataire peut porter le litige devant le tribunal. Si le bailleur poursuit de mauvaise foi alors qu’il a été payé, le locataire peut réclamer une indemnité de deux à six mois de loyer.'
+      cites: [/ma/loi/67-12/art_26, /ma/loi/67-12/art_27, /ma/loi/67-12/art_29, /ma/loi/67-12/art_30]
+    - title: {ar: الفسخ والإفراغ, fr: La résiliation et l’expulsion}
+      answer: {ar: 'إذا بقي الكراء غير مؤدى رغم الإنذار، يمكن للمكري أن يطلب من المحكمة الفسخ والإفراغ دون إشعار بالإفراغ.', fr: 'Si le loyer reste impayé malgré la mise en demeure, le bailleur peut demander au tribunal la résiliation et l’expulsion sans congé.'}
+      body:
+        ar: 'إذا ظلت الوجيبة غير مؤداة رغم الإنذار، يمكن للمكري أن يطلب من المحكمة فسخ العقد والإفراغ دون إشعار بالإفراغ. ويمكن للمكري أيضا أن يطلب الحجز الارتهاني على منقولات المكتري الموجودة بالمحل، وللمكتري ثمانية أيام من تبليغه الحجز للأداء قبل المصادقة والبيع.'
+        fr: 'Si le loyer reste impayé malgré la mise en demeure, le bailleur peut demander au tribunal la résiliation et l’expulsion sans congé. Il peut aussi demander la saisie-gagerie des meubles du locataire dans les lieux ; le locataire a huit jours à compter de la notification de la saisie pour payer avant validation et vente.'
+      cites: [/ma/loi/67-12/art_56, /ma/loi/58-25/art_584, /ma/loi/58-25/art_586]
+
+- key: repairs
+  for: [tenant, landlord]
+  title: {ar: 'الإصلاحات: شكون كيصلح شنو؟', fr: 'Les réparations : qui répare quoi ?'}
+  lead:
+    ar: 'على المكري الإصلاحات الضرورية، وعلى المكتري الإصلاحات البسيطة. وإذا تأخر المكري شهرا بعد إخباره، يمكن اللجوء إلى رئيس المحكمة.'
+    fr: 'Les réparations nécessaires incombent au bailleur, les menues réparations au locataire. Si le bailleur tarde un mois après avoir été averti, on peut saisir le président du tribunal.'
+  steps:
+    - title: {ar: ما على المكري, fr: Ce qui incombe au bailleur}
+      body:
+        ar: 'يسلم المكري المحل بالمواصفات الضرورية من أجزاء وتهوية ومطبخ ودورة مياه وكهرباء وماء، ويضمن الانتفاع الهادئ به، ويقوم بجميع الإصلاحات الضرورية لصيانته.'
+        fr: 'Le bailleur remet le logement avec ses éléments nécessaires (pièces, aération, cuisine, sanitaires, électricité, eau), garantit une jouissance paisible et fait toutes les réparations nécessaires à son entretien.'
+      cites: [/ma/loi/67-12/art_5, /ma/loi/67-12/art_9, /ma/loi/67-12/art_10]
+    - title: {ar: ما على المكتري, fr: Ce qui incombe au locataire}
+      body:
+        ar: 'على المكتري الإصلاحات البسيطة: الأبواب والنوافذ والزجاج والأقفال، والتجهيزات الكهربائية والزليج والصباغة والحديد والستائر والشبابيك، والصنابير ولوازم المرافق الصحية، ما لم ينص العقد على غير ذلك. ويخبر المكري بكل ما يستوجب تدخله في أسرع الآجال، وإلا تحمل إصلاح الأضرار.'
+        fr: 'Les menues réparations incombent au locataire : portes, fenêtres, vitres, serrures, installations électriques, carrelage, peinture, ferronnerie, rideaux et grilles, robinets et sanitaires, sauf clause contraire. Il avertit le bailleur au plus vite de ce qui exige son intervention, sous peine de réparer les dommages.'
+      cites: [/ma/loi/67-12/art_18, /ma/loi/67-12/art_19]
+    - title: {ar: إذا لم يصلح المكري, fr: Si le bailleur ne répare pas}
+      body:
+        ar: 'إذا أشعر المكتري المكري بالطرق المنصوص عليها قانونا بالإصلاحات الضرورية ولم ينجزها داخل شهر، يمكنه أن يستصدر أمرا من رئيس المحكمة الابتدائية يحدد كلفتها ويأذن له بإنجازها وخصمها من الوجيبة.'
+        fr: 'Si le bailleur, averti selon les formes légales, ne fait pas les réparations nécessaires dans le mois, le locataire peut obtenir du président du tribunal de première instance une ordonnance qui en fixe le coût et l’autorise à les faire et à les déduire du loyer.'
+      cites: [/ma/loi/67-12/art_10]
+      delay: {months: 1, from: {ar: من إخبار المكري, fr: après l’avis au bailleur}}
+    - title: {ar: الأشغال المستعجلة, fr: Les travaux urgents}
+      body:
+        ar: 'يجب على المكتري أن يسمح للمكري بإنجاز الأشغال الضرورية والإصلاحات المستعجلة. وإذا حرمته من المحل كليا أو جزئيا أكثر من ثلاثة أيام، جاز له فسخ العقد أو أن يطلب من المحكمة خصما من الوجيبة بقدر المدة.'
+        fr: 'Le locataire doit laisser le bailleur faire les travaux nécessaires et les réparations urgentes. S’ils le privent du logement, en tout ou en partie, plus de trois jours, il peut résilier le bail ou demander au tribunal une réduction au prorata.'
+      cites: [/ma/loi/67-12/art_17]
+
+- key: family
+  for: [tenant, landlord]
+  title: {ar: 'وفاة المكتري أو الطلاق: من يحتفظ بالكراء؟', fr: 'Décès du locataire ou divorce : qui garde le bail ?'}
+  lead:
+    ar: 'لا ينتهي الكراء دائما بوفاة المكتري، ويمكن أن يستمر بعد الطلاق لفائدة الأم الحاضنة.'
+    fr: 'Le bail ne prend pas toujours fin au décès du locataire, et il peut continuer après un divorce au profit de la mère qui a la garde.'
+  steps:
+    - title: {ar: عند الوفاة, fr: Au décès}
+      body:
+        ar: 'يستمر كراء السكن لفائدة زوج المتوفى أو فروعه أو أصوله المباشرين من الدرجة الأولى أو المستفيد من الوصية الواجبة أو المكفول، الذين كانوا تحت كفالته بصفة قانونية ويعيشون معه فعليا عند وفاته.'
+        fr: 'Le bail d’habitation continue au profit du conjoint du défunt, de ses descendants ou ascendants directs au premier degré, du bénéficiaire du legs obligatoire ou de l’enfant recueilli, qui étaient légalement à sa charge et vivaient effectivement avec lui à son décès.'
+      cites: [/ma/loi/67-12/art_53]
+    - title: {ar: عند الطلاق, fr: Au divorce}
+      body:
+        ar: 'يمكن أن يستمر الكراء، بنفس الشروط، لفائدة الأم الحاضنة لأطفالها.'
+        fr: 'Le bail peut continuer, aux mêmes conditions, au profit de la mère qui a la garde des enfants.'
+      cites: [/ma/loi/67-12/art_54]
+      more: family:journeys/talaq
+    - title: {ar: في غير ذلك, fr: Sinon}
+      body:
+        ar: 'ينتهي الكراء بالوفاة في غير هذه الحالات، ويعتبر من بقي في المحل محتلا دون سند، ويمكن لقاضي المستعجلات أن يأمر بإفراغه.'
+        fr: 'Hors de ces cas, le bail prend fin au décès ; qui reste dans les lieux est occupant sans titre, et le juge des référés peut ordonner son expulsion.'
+      cites: [/ma/loi/67-12/art_55]
+
+- key: syndic
+  for: [building]
+  title: {ar: 'العمارة: الجمع العام ووكيل الاتحاد والتكاليف', fr: 'L’immeuble : l’assemblée, le syndic, les charges'}
+  lead:
+    ar: 'في كل عمارة مقسمة إلى شقق اتحاد للملاك بقوة القانون. يقرر الجمع العام، وينفذ الوكيل، ويساهم كل مالك في التكاليف.'
+    fr: 'Tout immeuble divisé en appartements a, par la loi, un syndicat des copropriétaires. L’assemblée décide, le syndic exécute, chaque copropriétaire contribue aux charges.'
+  steps:
+    - title: {ar: الاتحاد, fr: Le syndicat}
+      body:
+        ar: 'ينشأ اتحاد الملاك المشتركين بقوة القانون، ويتمتع بالشخصية المعنوية والاستقلال المالي، ويحافظ على الأجزاء المشتركة ويديرها، ويسأل عن الضرر الناتج عن إهمالها. وكل مالك مشترك عضو فيه بقوة القانون. وعلى المالك الذي يكري شقته أن يسلم المكتري نسخة من نظام الملكية المشتركة.'
+        fr: 'Le syndicat des copropriétaires existe de plein droit, avec la personnalité morale et l’autonomie financière ; il conserve et gère les parties communes et répond du dommage causé par leur défaut d’entretien. Chaque copropriétaire en est membre de plein droit. Le propriétaire qui loue son lot remet au locataire une copie du règlement de copropriété.'
+      cites: [/ma/loi/18-00/art_13, /ma/loi/18-00/art_14, /ma/loi/18-00/art_31]
+    - title: {ar: الجمع العام, fr: L’assemblée générale}
+      body:
+        ar: 'ينعقد الجمع العام العادي مرة في السنة على الأقل، داخل ثلاثين يوما من انتهاء السنة. ويستدعي الوكيل كل مالك قبل خمسة عشر يوما على الأقل، بكل وسيلة من وسائل التبليغ القانونية. ولا يقبل حضور من لم يؤد واجباته في التكاليف المشتركة. وإذا لم يستدع الوكيل الجمع، فلثلث الملاك أن يطلبوا ذلك، فإن لم يستجب الوكيل ثمانية أيام بعد إنذاره، فلمالك واحد أن يدعو إليه.'
+        fr: 'L’assemblée ordinaire se réunit au moins une fois par an, dans les trente jours de la fin de l’année. Le syndic convoque chaque copropriétaire au moins quinze jours à l’avance, par tout moyen légal de notification. N’est pas admis celui qui n’a pas payé ses charges. Si le syndic ne convoque pas, le tiers des copropriétaires peut le lui demander, et, à défaut de réponse huit jours après une mise en demeure, un seul copropriétaire peut convoquer.'
+      cites: [/ma/loi/18-00/art_16-bis-2, /ma/loi/18-00/art_16-bis-3, /ma/loi/18-00/art_16-bis-4]
+      delay: {days: 15, from: {ar: قبل تاريخ الجمع على الأقل, fr: au moins avant l’assemblée}}
+      papers: checklists/assembly
+    - title: {ar: الأغلبيات, fr: Les majorités}
+      body:
+        ar: 'يصح الاجتماع بحضور نصف الملاك، وإلا عقد اجتماع ثان داخل ثلاثين يوما. وتتخذ قرارات الصيانة والأمن بالأغلبية النسبية للحاضرين؛ وتعيين الوكيل وعزله والميزانية والأشغال الكبرى بثلاثة أرباع الأصوات؛ والبناء أو التعلية وبيع الأجزاء المشتركة بالإجماع. ولا ينوب شخص واحد، بوكالة مكتوبة، عن أكثر من ثلاثة ملاك لا تتجاوز أنصبتهم 10%.'
+        fr: 'L’assemblée délibère valablement si la moitié des copropriétaires est présente, sinon une deuxième se tient dans les trente jours. L’entretien et la sécurité se décident à la majorité relative des présents ; la désignation et la révocation du syndic, le budget et les gros travaux aux trois quarts des voix ; la construction, la surélévation et la vente des parties communes à l’unanimité. Une même personne ne représente pas, par procuration écrite, plus de trois copropriétaires détenant au plus 10 % des voix.'
+      cites: [/ma/loi/18-00/art_18, /ma/loi/18-00/art_20, /ma/loi/18-00/art_21, /ma/loi/18-00/art_22, /ma/loi/18-00/art_16-bis-9]
+    - title: {ar: الوكيل, fr: Le syndic}
+      body:
+        ar: 'يعين الجمع الوكيل ونائبه بثلاثة أرباع الأصوات لمدة سنتين قابلة للتجديد، ويمكن أن يكون من غير الملاك. ويخبر الملاك كل ستة أشهر على الأقل بالوضعية المالية للاتحاد، ويفتح حسابا بنكيا باسمه، ويسلم وصلا عن كل مساهمة. وعند انتهاء مهمته، يسلم كل الوثائق والأموال لخلفه داخل خمسة عشر يوما.'
+        fr: 'L’assemblée désigne le syndic et son adjoint aux trois quarts des voix, pour deux ans renouvelables ; il peut être extérieur à la copropriété. Il informe les copropriétaires au moins tous les six mois de la situation financière du syndicat, ouvre un compte bancaire au nom du syndicat et délivre un reçu pour chaque contribution. À la fin de son mandat, il remet documents et fonds à son successeur dans les quinze jours.'
+      cites: [/ma/loi/18-00/art_19, /ma/loi/18-00/art_26, /ma/loi/18-00/art_28]
+    - title: {ar: التكاليف, fr: Les charges}
+      body:
+        ar: 'يساهم كل مالك في تكاليف حفظ الأجزاء المشتركة وصيانتها وتسييرها، وتستحق المساهمة في اليوم الأول من كل ثلاثة أشهر أو في المواعيد التي يحددها الجمع. ولمن يرى نصيبه مرتفعا أن يطلب من المحكمة مراجعته.'
+        fr: 'Chaque copropriétaire contribue aux charges de conservation, d’entretien et de gestion des parties communes ; la contribution est due le premier jour de chaque trimestre ou aux dates fixées par l’assemblée. Celui qui juge sa quote-part excessive peut demander au tribunal de la réviser.'
+      cites: [/ma/loi/18-00/art_24, /ma/loi/18-00/art_36, /ma/loi/18-00/art_38]
+    - title: {ar: إذا لم تؤد التكاليف, fr: Si les charges ne sont pas payées}
+      body:
+        ar: 'إذا لم تؤد مساهمة، توجه رسالة مضمونة، وبعد ثلاثين يوما دون جدوى، من اليوم الموالي لتبليغها، تصبح باقي مساهمات الميزانية التي لم يحل أجلها مستحقة فورا. ويلجأ الوكيل إلى مسطرة الأمر بالأداء، ويصدر رئيس المحكمة الأمر في أجل لا يتعدى ثلاثة أشهر. ولديون الاتحاد رهن إجباري على شقة المدين، والمشتري متضامن مع البائع فيما بذمته للاتحاد. وتتقادم المطالبة بالتكاليف بخمس سنوات من إقرارها.'
+        fr: 'Si une contribution reste impayée, une lettre recommandée est envoyée ; trente jours après sans effet, à compter du lendemain de sa notification, les autres contributions du budget non encore échues deviennent exigibles. Le syndic recourt à l’injonction de payer, que le président du tribunal rend dans un délai de trois mois au plus. Les créances du syndicat portent une hypothèque forcée sur le lot du débiteur, et l’acquéreur répond avec le vendeur de ce que celui-ci doit au syndicat. L’action en paiement des charges se prescrit par cinq ans à compter de leur approbation.'
+      cites: [/ma/loi/18-00/art_25, /ma/loi/18-00/art_25-bis, /ma/loi/18-00/art_36-bis, /ma/loi/18-00/art_40, /ma/loi/18-00/art_42, /ma/loi/18-00/art_43]
+      delay: {days: 30, from: {ar: من الرسالة المضمونة, fr: après la lettre recommandée}}
+    - title: {ar: الطعن في قرار, fr: Contester une décision}
+      body:
+        ar: 'يبلغ الوكيل المحضر والقرارات لكل الملاك داخل ثمانية أيام. ولكل مالك تضرر من قرار أن يطعن فيه، لمخالفته القوانين والأنظمة، أمام رئيس المحكمة الابتدائية بصفته قاضيا للمستعجلات، داخل شهرين من إخباره به، تحت طائلة التقادم.'
+        fr: 'Le syndic notifie le procès-verbal et les décisions à tous les copropriétaires dans les huit jours. Tout copropriétaire lésé peut contester une décision, pour violation des lois et règlements, devant le président du tribunal de première instance statuant en référé, dans les deux mois de sa notification, sous peine de prescription.'
+      cites: [/ma/loi/18-00/art_30, /ma/loi/18-00/art_59-bis-11]
+      delay: {months: 2, from: {ar: من الإخبار بالقرار, fr: après la notification de la décision}}
+      note:
+        ar: 'منذ القانون 39.24 (2024)، يحق للاتحاد، إذا تعذر الصلح والوساطة، أن يتقاضى ولو ضد أحد الملاك، منفردا أو مع الملاك المتضررين.'
+        fr: 'Depuis la loi 39.24 (2024), si la conciliation et la médiation échouent, le syndicat peut agir en justice, même contre un copropriétaire, seul ou avec les copropriétaires lésés.'
+        cites: [/ma/loi/18-00/art_13, /ma/loi/39-24/art_1]
+
+- key: offplan
+  for: [buyer]
+  title: {ar: 'الشراء على التصميم: البيع في طور الإنجاز', fr: 'Acheter sur plan : la vente en l’état futur d’achèvement'}
+  lead:
+    ar: 'نظام إلزامي في قانون الالتزامات والعقود: عقد رسمي، وأقساط بقدر تقدم الأشغال، وضمانة، وتعويض عن التأخير.'
+    fr: 'Un régime obligatoire du DOC : un acte authentique, des versements au rythme des travaux, une garantie, une indemnité de retard.'
+  steps:
+    - title: {ar: نظام إلزامي, fr: Un régime obligatoire}
+      body:
+        ar: 'البيع في طور الإنجاز عقد يلتزم فيه البائع بإنجاز العقار داخل أجل محدد ونقل ملكيته مقابل ثمن يؤدى تبعا لتقدم الأشغال. ويطبق، تحت طائلة البطلان، على المحلات المعدة للسكنى أو للاستعمال المهني أو التجاري أو الصناعي أو الحرفي.'
+        fr: 'La vente en l’état futur d’achèvement oblige le vendeur à achever l’immeuble dans un délai fixé et à en transférer la propriété contre un prix payé au fur et à mesure des travaux. Elle s’impose, à peine de nullité, pour les locaux d’habitation et à usage professionnel, commercial, industriel ou artisanal.'
+      cites: [/ma/code/doc/art_618-1, /ma/code/doc/art_618-2]
+    - title: {ar: عقد التخصيص, fr: Le contrat de réservation}
+      body:
+        ar: 'يمكن إبرام عقد تخصيص بعد الحصول على رخصة البناء. وللمشتري أن يتراجع عنه داخل شهر، ويسترجع ما دفعه كاملا داخل سبعة أيام. ولا تتجاوز مدته ستة أشهر غير قابلة للتجديد. وكل أداء قبل توقيع عقد التخصيص أو العقد الابتدائي باطل.'
+        fr: 'Un contrat de réservation peut être signé une fois le permis de construire obtenu. L’acheteur peut s’en retirer dans le mois et récupérer tout ce qu’il a versé dans les sept jours. Il dure six mois au plus, sans renouvellement. Tout paiement avant la signature de la réservation ou du contrat préliminaire est nul.'
+      cites: [/ma/code/doc/art_618-3-ter, /ma/code/doc/art_618-3-quater, /ma/code/doc/art_618-8]
+      delay: {months: 1, from: {ar: من إبرام عقد التخصيص, fr: après la réservation}}
+    - title: {ar: العقد الابتدائي, fr: Le contrat préliminaire}
+      body:
+        ar: 'يحرر العقد الابتدائي في محرر رسمي تحت طائلة البطلان، منذ القانون 41.25 (يوليوز 2026). ويتضمن مراجع الرسم العقاري ورخصة البناء، ووصف المحل ومساحته التقريبية، والثمن وكيفية أدائه، وأجل التسليم، ومراجع ضمانة استرجاع الأقساط أو ضمانة إنهاء الأشغال أو التأمين. ولا يبرم قبل رخصة البناء.'
+        fr: 'Le contrat préliminaire est passé par acte authentique, à peine de nullité, depuis la loi 41.25 (juillet 2026). Il indique le titre foncier et le permis de construire, la description et la superficie approximative, le prix et ses modalités, la date de livraison, et les références de la garantie de remboursement, de la garantie d’achèvement ou de l’assurance. Il n’est jamais signé avant le permis de construire.'
+      cites: [/ma/code/doc/art_618-3, /ma/code/doc/art_618-3-bis, /ma/code/doc/art_618-5, /ma/code/doc/art_618-9]
+      papers: checklists/offplan-contract
+    - title: {ar: الأقساط, fr: Les versements}
+      body:
+        ar: 'لا يتجاوز ما يؤديه المشتري: 5% عند عقد التخصيص؛ 5% عند العقد الابتدائي، أو 10% إذا لم يكن هناك عقد تخصيص؛ 10% عند بداية الأشغال؛ 60% مقسمة على ثلاث مراحل؛ و20% عند العقد النهائي وتسلم المفاتيح. وإذا تجاوزت التسبيقات 50% من الثمن، للمشتري أن يطلب تقييد العقد الابتدائي تقييدا احتياطيا بالرسم العقاري، إذا كان العقار محفظا.'
+        fr: 'L’acheteur ne verse pas plus de : 5 % à la réservation ; 5 % au contrat préliminaire, ou 10 % sans réservation ; 10 % au début des travaux ; 60 % en trois étapes ; 20 % à l’acte définitif et à la remise des clés. Quand les avances dépassent 50 % du prix, l’acheteur peut demander l’inscription provisoire du contrat préliminaire sur le titre foncier, si l’immeuble est immatriculé.'
+      cites: [/ma/code/doc/art_618-6, /ma/code/doc/art_618-10]
+      tool: tools/offplan
+    - title: {ar: التأخير, fr: Le retard}
+      body:
+        ar: 'للبائع أن يمدد الأجل ستة أشهر على الأكثر إذا أخبر المشتري قبل الأجل بشهر. وعلى المشتري المتأخر تعويض لا يتعدى 1% شهريا من المبلغ الواجب دفعه، وعلى البائع المتأخر 1% شهريا من المبلغ المؤدى، دون تجاوز 10% في السنة، ولا يسري إلا بعد شهر من الإنذار. وإذا تجاوز البائع أجل التسليم، فللمشتري أن يفسخ العقد دون أي تعويض عليه، ويستحق 20% من المبالغ المؤداة.'
+        fr: 'Le vendeur peut prolonger le délai de six mois au plus s’il en avertit l’acheteur un mois avant l’échéance. L’acheteur en retard doit au plus 1 % par mois de la somme due ; le vendeur en retard 1 % par mois des sommes versées ; sans dépasser 10 % par an, et seulement un mois après une mise en demeure. Si le vendeur dépasse la date de livraison, l’acheteur peut résoudre le contrat sans indemnité à sa charge et reçoit 20 % des sommes versées.'
+      cites: [/ma/code/doc/art_618-7, /ma/code/doc/art_618-12, /ma/code/doc/art_618-14]
+      delay: {months: 1, from: {ar: من الإنذار قبل أن يسري التعويض, fr: 'après la mise en demeure, avant que l’indemnité ne coure'}}
+      tool: tools/offplan
+    - title: {ar: العقد النهائي, fr: L’acte définitif}
+      body:
+        ar: 'لا يعتبر البناء منجزا إلا برخصة السكن أو شهادة المطابقة. ويخبر البائع المشتري داخل ستين يوما من الحصول عليها. وإذا رفض طرف إتمام البيع داخل ستين يوما من توصله بالإشعار، فللآخر الفسخ أو اللجوء إلى التحكيم أو المحكمة لإتمامه. ولا تنتقل الملكية في العقار المحفظ إلا بالتقييد.'
+        fr: 'L’immeuble n’est achevé qu’avec le permis d’habiter ou le certificat de conformité ; le vendeur en informe l’acheteur dans les soixante jours. Si une partie refuse de conclure dans les soixante jours de la réception de l’avis, l’autre peut résoudre le contrat ou recourir à l’arbitrage ou au tribunal pour parfaire la vente. Pour un immeuble immatriculé, la propriété ne passe qu’à l’inscription.'
+      cites: [/ma/code/doc/art_618-15, /ma/code/doc/art_618-16, /ma/code/doc/art_618-18, /ma/code/doc/art_618-19, /ma/code/doc/art_618-20]
+      delay: {days: 60, from: {ar: من رخصة السكن, fr: après le permis d’habiter}}
+    - title: {ar: العيوب بعد التسليم, fr: Les défauts après la livraison}
+      body:
+        ar: 'ترفع دعوى العيب الخفي في العقار داخل سنتين من التسليم، وفي جميع الأحوال داخل خمس سنوات من البيع. ويسأل المهندس والمقاول المكلفان مباشرة من رب العمل عشر سنوات من تسلم البناء عن انهياره أو تهديده بالانهيار، وترفع الدعوى داخل ثلاثين يوما من ظهور الواقعة.'
+        fr: 'L’action pour vice caché d’un immeuble est intentée dans les deux ans de la livraison, et en tout cas dans les cinq ans de la vente. L’architecte et l’entrepreneur liés directement au maître de l’ouvrage répondent pendant dix ans à compter de la réception de l’écroulement de l’ouvrage ou de sa menace ; l’action est intentée dans les trente jours de l’apparition du fait.'
+      cites: [/ma/code/doc/art_573, /ma/code/doc/art_769]
+  next: [journeys/aid, pages/where]
+
+- key: aid
+  for: [buyer]
+  title: {ar: 'الدعم المباشر لاقتناء السكن', fr: 'L’aide directe à l’achat d’un logement'}
+  lead:
+    ar: 'إعانة من الدولة لمن يشتري سكنه الرئيسي الأول: مائة ألف أو سبعون ألف درهم، بشروط قبل الشراء وبعده.'
+    fr: 'Une aide de l’État pour acheter sa première résidence principale : cent mille ou soixante-dix mille dirhams, sous conditions avant et après l’achat.'
+  steps:
+    - title: {ar: المبلغ, fr: Le montant}
+      body:
+        ar: 'مائة ألف درهم لسكن ثمنه ثلاثمائة ألف درهم أو أقل مع احتساب الرسوم، وسبعون ألف درهم لسكن يفوق ثمنه ثلاثمائة ألف ولا يتجاوز سبعمائة ألف درهم.'
+        fr: 'Cent mille dirhams pour un logement de trois cent mille dirhams ou moins, taxes comprises ; soixante-dix mille dirhams au-delà de trois cent mille et jusqu’à sept cent mille dirhams.'
+      cites: [/ma/decret/2-23-350/art_2]
+      tool: tools/aid
+    - title: {ar: من يستفيد, fr: Qui en bénéficie}
+      body:
+        ar: 'مغربي لم يسبق له أن استفاد من امتياز من الدولة في السكن، ولا يملك سكنا يوم الشراء؛ ويمكن للمالكين على الشياع الاستفادة منذ فاتح يناير 2026. والسكن حاصل على رخصة السكن ابتداء من فاتح يناير 2023، فيه غرفتان على الأقل، وموضوع بيع أول. ويوقع الوعد بالبيع والعقد النهائي أمام موثق.'
+        fr: 'Un Marocain qui n’a jamais bénéficié d’un avantage de l’État pour le logement et ne possède pas de logement le jour de l’achat ; les propriétaires en indivision peuvent en bénéficier depuis le 1er janvier 2026. Le logement a un permis d’habiter délivré à partir du 1er janvier 2023, au moins deux pièces, et c’est une première vente. La promesse et l’acte définitif sont signés devant notaire.'
+      cites: [/ma/loi/50-22/art_8, /ma/loi/55-23/art_10, /ma/loi/50-25/art_8]
+    - title: {ar: الطلب والأداء, fr: La demande et le versement}
+      body:
+        ar: 'يقدم الطلب في المنصة، والموافقة الأولية داخل سبعة أيام. ويرفع الموثق الوعد بالبيع ورخصة السكن داخل سبعة أيام من توقيعه. وتؤدى الإعانة للموثق داخل خمسة عشر يوما. وللمشتري ستون يوما من توصل الموثق بها لإبرام العقد النهائي (كانت ثلاثين يوما قبل المرسوم 2.26.578 المنشور في فاتح أكتوبر 2026).'
+        fr: 'La demande se fait sur la plateforme ; l’accord initial vient dans les sept jours. Le notaire charge la promesse et le permis d’habiter dans les sept jours de la signature. L’aide est versée au notaire dans les quinze jours. L’acheteur a soixante jours, à compter de sa réception par le notaire, pour signer l’acte définitif (trente jours avant le décret 2.26.578, publié le 1er octobre 2026).'
+      cites: [/ma/decret/2-23-350/art_3, /ma/decret/2-23-350/art_4, /ma/decret/2-23-350/art_5, /ma/decret/2-23-350/art_6, /ma/decret/2-26-578/art_2]
+      delay: {days: 60, from: {ar: من توصل الموثق بالإعانة, fr: après la réception de l’aide par le notaire}}
+    - title: {ar: الخمس سنوات, fr: Les cinq ans}
+      body:
+        ar: 'يخصص السكن للسكن الرئيسي خمس سنوات من العقد النهائي، أي لا يكرى ولا يخصص لغرض مهني. وتمنح للدولة رهن من الدرجة الأولى أو الثانية، ولا يفوت السكن إلا بعد رفعه. ومن باع قبل خمس سنوات أو لم يتخذه سكنا رئيسيا يرد الإعانة.'
+        fr: 'Le logement est la résidence principale pendant cinq ans à compter de l’acte définitif : ni loué ni affecté à un usage professionnel. L’État reçoit une hypothèque de premier ou de second rang, et le logement n’est cédé qu’après sa mainlevée. Qui vend avant cinq ans ou n’y habite pas à titre principal rembourse l’aide.'
+      cites: [/ma/loi/50-22/art_8, /ma/loi/55-23/art_10, /ma/loi/50-25/art_8]
+    - title: {ar: رفع الرهن, fr: La mainlevée}
+      body:
+        ar: 'يرفع الرهن بعد رد الإعانة، أو بإثبات خمس سنوات من السكن الرئيسي: عقد البيع، وبطاقة التعريف بالعنوان أو شهادة إدارية تبين المدة الفعلية للإقامة، ووصولات أداء رسم الخدمات الجماعية. ومنذ فاتح أكتوبر 2026، يقدم الطلب في المنصة، وتبت فيه الهيئة المكلفة داخل ثلاثين يوما على الأكثر.'
+        fr: 'L’hypothèque est levée après remboursement de l’aide, ou sur preuve de cinq ans de résidence principale : l’acte de vente, la carte d’identité à cette adresse ou une attestation administrative indiquant la durée effective de résidence, et les quittances de la taxe de services communaux. Depuis le 1er octobre 2026, la demande se fait sur la plateforme, et l’organisme gestionnaire l’examine dans les trente jours au plus.'
+      cites: [/ma/loi/50-22/art_8, /ma/loi/55-23/art_10, /ma/loi/50-25/art_8, /ma/decret/2-23-350/art_6-bis]
+      note:
+        ar: 'لا يحدد القانون ولا المرسوم تاريخا لانتهاء الدعم.'
+        fr: 'Ni la loi ni le décret ne fixent de date de fin à l’aide.'
+        cites: [/ma/decret/2-23-350/art_8]
+  next: [journeys/offplan, pages/where]
+
+- key: ruin
+  title: {ar: 'المباني الآيلة للسقوط', fr: 'Les bâtiments menaçant ruine'}
+  lead:
+    ar: 'على المالك صيانة بنائه، وعلى الساكن أن يخبر بالخطر. ورئيس المجلس الجماعي هو الذي يأمر بالتدعيم أو الهدم أو الإخلاء.'
+    fr: 'Le propriétaire entretient son bâtiment, l’occupant signale le danger. C’est le président du conseil communal qui ordonne la consolidation, la démolition ou l’évacuation.'
+  steps:
+    - title: {ar: الإخبار بالخطر, fr: Signaler le danger}
+      body:
+        ar: 'المبنى الآيل للسقوط هو الذي قد يمس انهياره الكلي أو الجزئي بسلامة شاغليه أو المارة أو الجيران. وعلى كل مكتر أو شاغل أن يشعر مالك المبنى ورئيس المجلس الجماعي والسلطات المحلية.'
+        fr: 'Un bâtiment menaçant ruine est celui dont l’effondrement total ou partiel peut porter atteinte à la sécurité de ses occupants, des passants ou des voisins. Tout locataire ou occupant doit en avertir le propriétaire, le président du conseil communal et les autorités locales.'
+      cites: [/ma/loi/94-12/art_2, /ma/loi/94-12/art_3, /ma/loi/94-12/art_5]
+    - title: {ar: قرار الرئيس, fr: La décision du président}
+      body:
+        ar: 'يأمر رئيس المجلس الجماعي بالتدعيم أو الهدم بناء على خبرة تقنية، ويحدد الأشغال وأجلها. وفي الخطر الحال، يأمر بالتدابير الاستعجالية، ومنها الإخلاء ومنع الاستعمال. وإذا امتنع، طالبه العامل بمزاولة مهامه، ثم أحال الأمر بعد سبعة أيام على القضاء الاستعجالي الإداري، فإذا أقر الحكم الامتناع جاز للعامل الحلول محله.'
+        fr: 'Le président du conseil communal ordonne la consolidation ou la démolition sur expertise technique, avec les travaux et leur délai. En cas de péril imminent, il ordonne les mesures d’urgence, dont l’évacuation et l’interdiction d’usage. S’il s’abstient, le gouverneur le met en demeure, saisit après sept jours le juge administratif des référés et, si celui-ci constate le refus, peut se substituer à lui.'
+      cites: [/ma/loi/94-12/art_6, /ma/loi/94-12/art_8, /ma/loi/94-12/art_9, /ma/loi/94-12/art_17]
+    - title: {ar: الطعن, fr: Le recours}
+      body:
+        ar: 'للمعني أن يقترح أشغاله أو خبرة جديدة، وأن يطعن في القرار أمام رئيس المحكمة الإدارية داخل عشرة أيام، ويبت فيه داخل ثلاثة أيام، ويوقف القرار خلال ذلك. أما قرارات الخطر الحال فلا يوقف الطعن تنفيذها.'
+        fr: 'L’intéressé peut proposer ses propres travaux ou une nouvelle expertise, et contester la décision devant le président du tribunal administratif dans les dix jours ; celui-ci statue dans les trois jours, la décision étant suspendue entre-temps. Les décisions de péril imminent ne sont pas suspendues par un recours.'
+      cites: [/ma/loi/94-12/art_11, /ma/loi/94-12/art_12, /ma/loi/94-12/art_18]
+    - title: {ar: الكراء والإيواء, fr: Le loyer et le relogement}
+      body:
+        ar: 'يتوقف المكتري الذي تقرر إفراغه عن أداء الوجيبة من اليوم الأول من الشهر الموالي لتبليغ القرار، إلى اليوم الأول من الشهر الموالي لانتهاء الأشغال. وإذا لم يجد الساكنون سكنا لائقا، تتخذ السلطة المحلية الإجراءات اللازمة لإيوائهم مؤقتا. ويمكن للمالك، إذا تقرر الهدم، أن يطلب من المحكمة فسخ الكراء دون تعويض، وللمكتري أسبقية الرجوع بعد الأشغال.'
+        fr: 'Le locataire évacué cesse de payer le loyer du premier jour du mois qui suit la notification au premier jour du mois qui suit la fin des travaux. Si les occupants ne trouvent pas de logement décent, l’autorité locale prend les mesures pour les héberger temporairement. Si la démolition est décidée, le propriétaire peut demander au tribunal la résiliation du bail sans indemnité ; le locataire a priorité pour revenir après les travaux.'
+      cites: [/ma/loi/94-12/art_4, /ma/loi/94-12/art_19, /ma/loi/94-12/art_21]
+      note:
+        ar: 'يعاقب من وضع رهن إشارة الغير، بأي صفة كانت، مبنى مصنفا آيلا للسقوط، أو أتلف مبنى للحصول على دعم أو لإفراغه من ساكنيه، بالحبس من ثلاثة أشهر إلى سنة وبغرامة من 50.000 إلى 300.000 درهم، أو بإحدى هاتين العقوبتين فقط.'
+        fr: 'Mettre à la disposition d’autrui, à quelque titre que ce soit, un bâtiment classé menaçant ruine, ou dégrader un bâtiment pour obtenir une aide ou le vider de ses occupants, est puni de trois mois à un an d’emprisonnement et de 50 000 à 300 000 dirhams d’amende, ou de l’une de ces peines seulement.'
+        cites: [/ma/loi/94-12/art_52]
+
+- key: shop
+  for: [shop]
+  title: {ar: 'كراء المحل التجاري', fr: 'Le bail commercial'}
+  lead:
+    ar: 'للتاجر والحرفي حق في تجديد الكراء، ولا يفرغ إلا بإنذار يذكر سببه، وبتعويض يساوي الضرر إلا في حالات محددة.'
+    fr: 'Le commerçant et l’artisan ont droit au renouvellement ; ils ne partent que sur un congé motivé, et contre une indemnité égale au préjudice, sauf cas précis.'
+  steps:
+    - title: {ar: العقد والحق في التجديد, fr: Le bail et le droit au renouvellement}
+      body:
+        ar: 'يبرم العقد كتابة بتاريخ ثابت، ويحرر بيان بحالة المحل عند تسليمه. ويستفيد المكتري من الحق في تجديد العقد إذا أثبت انتفاعه بالمحل بصفة مستمرة سنتين على الأقل، أو فورا إذا أدى مبلغا مقابل الحق في الكراء ثابتا كتابة. وكل شرط يخالف ذلك باطل.'
+        fr: 'Le bail est écrit, à date certaine, et un état des lieux est dressé à la remise du local. Le locataire a droit au renouvellement s’il prouve deux ans au moins de jouissance continue, ou dès l’entrée s’il a payé un droit au bail constaté par écrit. Toute clause contraire est nulle.'
+      cites: [/ma/loi/49-16/art_3, /ma/loi/49-16/art_4, /ma/loi/49-16/art_6]
+    - title: {ar: الإنذار, fr: Le congé}
+      body:
+        ar: 'يوجه المكري إنذارا يذكر سببه ويمنح أجلا: خمسة عشر يوما لعدم الأداء أو لكون المحل آيلا للسقوط، وثلاثة أشهر للاستعمال الشخصي أو الهدم أو التوسيع أو الإخلال الجسيم. ويسقط حقه في المصادقة على الإنذار بمرور ستة أشهر من انتهاء الأجل.'
+        fr: 'Le bailleur adresse un congé motivé avec un délai : quinze jours pour un impayé ou un local menaçant ruine ; trois mois pour l’usage personnel, la démolition, l’extension ou un manquement grave. Son droit à faire valider le congé s’éteint six mois après la fin du délai.'
+      cites: [/ma/loi/49-16/art_26]
+      delay: {months: 3, from: {ar: 'من التوصل بالإنذار، للاستعمال الشخصي أو الهدم أو التوسيع', fr: 'après la réception du congé, pour l’usage personnel, la démolition ou l’extension'}}
+    - title: {ar: التعويض, fr: L’indemnité}
+      body:
+        ar: 'يساوي التعويض الضرر الناتج عن الإفراغ، ويشمل قيمة الأصل التجاري المحددة من التصريحات الضريبية للسنوات الأربع الأخيرة، ومصاريف التحسينات والانتقال، ما لم يثبت المكري أن الضرر أخف. ولا يقل عن المبلغ المؤدى مقابل الحق في الكراء. ولا تعويض إذا لم يؤد المكتري الكراء خمسة عشر يوما بعد الإنذار وكان ما بذمته ثلاثة أشهر على الأقل، وفي حالات أخرى تعددها المادة 8.'
+        fr: 'L’indemnité égale le préjudice causé par l’éviction : la valeur du fonds, établie sur les déclarations fiscales des quatre dernières années, les améliorations et les frais de déménagement, sauf si le bailleur prouve un préjudice moindre. Elle n’est jamais inférieure au droit au bail payé. Aucune indemnité si le locataire n’a pas payé quinze jours après la mise en demeure avec au moins trois mois d’arriérés, ni dans les autres cas que l’article 8 énumère.'
+      cites: [/ma/loi/49-16/art_7, /ma/loi/49-16/art_8]
+      tool: tools/eviction
+    - title: {ar: الهدم وإعادة البناء, fr: Démolition et reconstruction}
+      body:
+        ar: 'يؤدي المكري الذي يملك المحل منذ سنة على الأقل من تاريخ الإنذار تعويضا مؤقتا يوازي كراء ثلاث سنوات، وللمكتري حق الرجوع إذا اشتملت البناية الجديدة على محلات لنشاط مماثل، وإلا استحق التعويض الكامل. ويبدأ البناء داخل شهرين من الإفراغ، ويسلم المحل الجديد داخل ثلاث سنوات.'
+        fr: 'Le bailleur propriétaire depuis un an au moins à la date du congé verse une indemnité provisoire égale à trois ans de loyer ; le locataire peut revenir si le nouvel immeuble comporte des locaux pour une activité similaire, sinon il a droit à l’indemnité entière. La construction commence dans les deux mois de l’éviction, et le nouveau local est remis dans les trois ans.'
+      cites: [/ma/loi/49-16/art_9, /ma/loi/49-16/art_10, /ma/loi/49-16/art_11]
+    - title: {ar: الزيادة في الكراء, fr: La hausse du loyer}
+      body:
+        ar: 'تحدد الوجيبة بالتراضي، وتراجع وفق القانون 07.03: لا زيادة قبل ثلاث سنوات، وبنسبة 10%، ويمكن للمحكمة أن تحدد زيادة تصل إلى 50% إذا كانت الوجيبة لا تتجاوز أربعمائة درهم في الشهر.'
+        fr: 'Le loyer est fixé librement et révisé selon la loi 07.03 : pas de hausse avant trois ans, un taux de 10 %, et jusqu’à 50 % fixés par le tribunal si le loyer ne dépasse pas quatre cents dirhams par mois.'
+      cites: [/ma/loi/49-16/art_5, /ma/loi/7-03/art_2, /ma/loi/7-03/art_4, /ma/loi/7-03/art_5]
+      tool: tools/rent
+    - title: {ar: الشرط الفاسخ والمحكمة, fr: La clause résolutoire et le tribunal}
+      body:
+        ar: 'إذا تضمن العقد شرطا فاسخا، فبعد ثلاثة أشهر من الكراء غير المؤدى وإنذار بقي دون جدوى خمسة عشر يوما، يعاين قاضي المستعجلات تحقق الشرط ويأمر بإرجاع المحل. وتختص المحاكم التجارية بهذه النزاعات، مع استثناء للمحاكم الابتدائية تحدده المادة 35، والآجال كاملة. ولا ينفذ الإفراغ إلا بعد إيداع التعويض، داخل ثلاثة أشهر وإلا اعتبر المكري متنازلا عن التنفيذ.'
+        fr: 'Si le bail contient une clause résolutoire, après trois mois d’impayés et une mise en demeure restée sans effet quinze jours, le juge des référés la constate et ordonne la restitution. Les tribunaux de commerce sont compétents, sauf l’exception que l’article 35 réserve aux tribunaux de première instance, et les délais sont francs. L’éviction n’est exécutée qu’après consignation de l’indemnité, dans les trois mois, faute de quoi le bailleur est réputé avoir renoncé à l’exécution.'
+      cites: [/ma/loi/49-16/art_27, /ma/loi/49-16/art_28, /ma/loi/49-16/art_33, /ma/loi/49-16/art_35, /ma/loi/49-16/art_36]

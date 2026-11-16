@@ -1,0 +1,9 @@
+# /ma/decret/2-10-376 (French) as the BO, édition de traduction officielle n° 5878 bis (30 Sept 2010) prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+# Strings holding a line break are double-quoted ("\n" is the break in our body); all others single-quoted.
+language: fr
+text: /ma/decret/2-10-376
+document: sources/road/sgg_bo_5878-bis_fr.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [3], wrong: "des transports.\nDispositions relatives aux établissements d'éducation à la sécurite routière", right: 'des transports.'}      # p. 1726: the name of Chapitre II (which follows the article) glued at its end
+checked: [3]

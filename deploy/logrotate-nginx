@@ -1,0 +1,19 @@
+# The site's access log (deploy/nginx.conf, log_format law), installed by deploy.sh --system as
+# /etc/logrotate.d/law-nginx. Rotated each night and 7 rotated files kept, so a line is gone after 7 to 8 days. Its folder
+# is its own: the stock rule (/etc/logrotate.d/nginx: /var/log/nginx/*.log, 14 days) never names the same file.
+# delaycompress leaves last night's file plain beside today's, and the night before's is the first compressed one: the
+# three `count_machines` reads (NGINX_LOGS, deploy/nightly.sh), since the rotation comes up to an hour after midnight.
+# The postrotate is the stock rule's: nginx told to open its logs again.
+/var/log/nginx/law/*.log {
+	daily
+	rotate 7
+	missingok
+	notifempty
+	compress
+	delaycompress
+	create 0640 www-data adm
+	sharedscripts
+	postrotate
+		invoke-rc.d nginx rotate >/dev/null 2>&1
+	endscript
+}

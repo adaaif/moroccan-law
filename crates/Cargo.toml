@@ -1,0 +1,14 @@
+[workspace]
+members = ["ma-text", "ma-cite", "ma-py", "ma-wasm"]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+# Never published to crates.io by accident: the crates are opened with the repository.
+publish = false
+
+[profile.release]
+opt-level = "s"
+lto = true

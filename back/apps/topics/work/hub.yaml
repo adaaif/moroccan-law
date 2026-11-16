@@ -1,0 +1,327 @@
+# The work topic's page (T4–T5 of the work plan; the work-counted review, 26 Oct 2026): who you are, then what is happening,
+# in the words people use, in a working life's order (E2: starting, pay, the CNSS, leave, a child, an accident,
+# resigning, retiring), each door leading to a journey or a page; then the tools. A door, a tool or a page says whom it
+# is for (`for`, the keys of the profile's answers); the reader's answer, kept on the phone, fades the others with the
+# reason. A door marked `own` is listed only for the answers its `for` names: it is that answer's first door.
+#
+# A door's `mark` (E1) is the one number the law sets for it, drawn on a punch card with its unit: the reader came for
+# it. `by` gives an answer its own number (the minimum by the day on a farm, as a share at home). A door no single
+# number governs carries its paper instead (`icon` on the same card).
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+
+# The first days after a dismissal (E5, C1 «band»): the kit's band in ink, its acts the answers of the dismissal
+# journey's steps (the decision, the receipt, the papers after), the days left once the reader gave that journey its
+# day. Drawn whole for the readers the Labour Code governs and those who have not answered; one line for the others.
+urgent:
+  title: {ar: طردوك؟, fr: 'Licencié ?'}
+  lead: {ar: 'الأيام الأولى بعد مقرر الفصل', fr: 'Les premiers jours après la décision de licenciement'}
+  to: journeys/dismissed
+  tone: ink
+  day: {ar: نهار توصلت بالمقرر؟, fr: 'Décision reçue quand ?'}
+  for: [company, farm, guard]
+  acts: {journey: dismissed, steps: [2, 3, 7]}
+  tool: tools/end
+
+profile:
+  question: {ar: فين خدام؟, fr: 'Où travaillez-vous ?'}
+  options:
+    - key: company
+      label: {ar: شركة أو محل أو ورشة, fr: 'Entreprise, commerce, atelier'}
+      law: {ar: 'قانونك هو مدونة الشغل (القانون 65.99).', fr: 'Votre loi est le Code du travail (loi 65.99).'}
+      facts:
+        - {value: '17,92', label: {ar: 'درهم للساعة: الحد الأدنى للأجر منذ فاتح يناير 2026', fr: 'DH de l’heure : le salaire minimum depuis le 1er janvier 2026'}, cites: [/ma/decret/2-25-983/art_1]}
+        - {value: {ar: '44 ساعة', fr: '44 heures'}, label: {ar: 'مدة الشغل العادية في الأسبوع', fr: 'la durée normale de travail par semaine'}, cites: [/ma/loi/65-99/art_184]}
+        - {value: {ar: '1,5 يوم', fr: '1,5 jour'}, label: {ar: 'عطلة سنوية عن كل شهر شغل', fr: 'de congé annuel par mois de travail'}, cites: [/ma/loi/65-99/art_231]}
+    - key: farm
+      label: {ar: فالفلاحة, fr: Agriculture}
+      law: {ar: 'مدونة الشغل بقواعد الفلاحة: 2496 ساعة فالعام، والحد الأدنى للأجر محسوب باليوم.', fr: 'Le Code du travail, avec ses règles agricoles : 2 496 heures par an, un salaire minimum à la journée.'}
+      facts:
+        - {value: '97,44', label: {ar: 'درهم لليوم: الحد الأدنى في الفلاحة منذ فاتح أبريل 2026', fr: 'DH la journée : le minimum agricole depuis le 1er avril 2026'}, cites: [/ma/decret/2-25-983/art_2]}
+        - {value: {ar: '2496 ساعة', fr: '2 496 heures'}, label: {ar: 'مدة الشغل العادية في السنة', fr: 'la durée normale de travail par an'}, cites: [/ma/loi/65-99/art_184]}
+        - {value: {ar: '1,5 يوم', fr: '1,5 jour'}, label: {ar: 'عطلة سنوية عن كل شهر شغل', fr: 'de congé annuel par mois de travail'}, cites: [/ma/loi/65-99/art_231]}
+    - key: guard
+      first: guards
+      label: {ar: سيكيريتي أو نظافة عند شركة, fr: Gardiennage ou nettoyage pour une société}
+      law: {ar: 'مدونة الشغل. حراس شركات الحراسة خرجوا من نظام «ساعات الحضور» منذ 16 يوليوز 2026 (القانون 032.26).', fr: 'Le Code du travail. Les gardiens des sociétés de gardiennage sortent du régime des heures de présence depuis le 16 juillet 2026 (loi 032.26).'}
+      facts:
+        - {value: {ar: '16 يوليوز', fr: '16 juillet'}, label: {ar: '2026: ساعات الحراس ساعات شغل فعلي، لا ساعات حضور', fr: '2026 : les heures des gardiens sont du travail effectif, non de la présence'}, cites: [/ma/loi/32-26/art_1]}
+        - {value: '17,92', label: {ar: 'درهم للساعة: الحد الأدنى للأجر', fr: 'DH de l’heure : le salaire minimum'}, cites: [/ma/decret/2-25-983/art_1, /ma/loi/65-99/art_356]}
+        - {value: {ar: '1,5 يوم', fr: '1,5 jour'}, label: {ar: 'عطلة سنوية عن كل شهر، عند مقاولتك', fr: 'de congé par mois, chez votre entreprise'}, cites: [/ma/loi/65-99/art_231]}
+      to: pages/guards
+    - key: home
+      first: home
+      label: {ar: فدار (خدمة منزلية), fr: Dans une maison (travail domestique)}
+      law: {ar: 'قانونك هو القانون 19.12 الخاص بالعاملات والعمال المنزليين، وليس مدونة الشغل.', fr: 'Votre loi est la loi 19.12 sur les travailleurs domestiques, pas le Code du travail.'}
+      facts:
+        - {value: '60%', label: {ar: 'من الحد الأدنى للأجر، نقدا، دون الأكل والسكن', fr: 'du salaire minimum, en espèces, hors repas et logement'}, cites: [/ma/loi/19-12/art_19]}
+        - {value: {ar: '48 ساعة', fr: '48 heures'}, label: {ar: 'مدة الشغل في الأسبوع', fr: 'de travail par semaine'}, cites: [/ma/loi/19-12/art_13]}
+        - {value: {ar: '18 سنة', fr: '18 ans'}, label: {ar: 'السن الأدنى للشغل في البيوت', fr: 'l’âge minimum du travail domestique'}, cites: [/ma/loi/19-12/art_6]}
+      to: journeys/home
+    - key: state
+      first: civil-servants
+      label: {ar: موظف فالدولة أو الجماعة, fr: Fonctionnaire de l’État ou d’une commune}
+      law: {ar: 'قانونك هو النظام الأساسي العام للوظيفة العمومية، ونزاعاتك أمام المحكمة الإدارية. قانون الإضراب يشملك.', fr: 'Votre loi est le statut général de la fonction publique ; vos litiges vont au tribunal administratif. La loi sur la grève vous concerne.'}
+      facts:
+        - {value: {ar: 'النظام الأساسي', fr: 'Le statut'}, label: {ar: 'العام للوظيفة العمومية، لا مدونة الشغل', fr: 'général de la fonction publique, pas le Code du travail'}, cites: [/ma/dahir/1-58-008/art_1]}
+        - {value: {ar: 'الإضراب', fr: 'La grève'}, label: {ar: 'قانونه يسري على القطاع العام كذلك', fr: 'sa loi s’applique aussi au secteur public'}, cites: [/ma/loi-organique/97-15/art_4]}
+      to: pages/civil-servants
+    - key: self
+      first: self-employed
+      label: {ar: بوحدي, fr: À mon compte}
+      law: {ar: 'مدونة الشغل لا تحكمك: لك التأمين عن المرض (98.15) والتقاعد (99.15) ونظام المقاول الذاتي (114.13).', fr: 'Le Code du travail ne vous régit pas : vous relevez de l’AMO des indépendants (98.15), de leur retraite (99.15) et du statut d’auto-entrepreneur (114.13).'}
+      facts:
+        - {value: '98.15', label: {ar: 'التأمين عن المرض للمستقلين', fr: 'l’assurance maladie des indépendants'}, cites: [/ma/loi/98-15/art_1]}
+        - {value: '99.15', label: {ar: 'التقاعد للمستقلين', fr: 'la retraite des indépendants'}, cites: [/ma/loi/99-15/art_1]}
+        - {value: '114.13', label: {ar: 'نظام المقاول الذاتي', fr: 'le statut d’auto-entrepreneur'}, cites: [/ma/loi/114-13/art_1]}
+      to: pages/self-employed
+    # The employer (E4): the same articles from the other side, a door rather than a tool card.
+    - key: employer
+      first: employer-hire
+      label: {ar: أنا اللي كنشغّل, fr: 'J’emploie quelqu’un'}
+      law: {ar: 'نفس المواد من الجهة الأخرى: ما يفرضه القانون على المشغل.', fr: 'Les mêmes articles, de l’autre côté : ce que la loi impose à l’employeur.'}
+      facts:
+        - {value: '17,92', label: {ar: 'درهم للساعة: أقل أجر يؤديه المشغل', fr: 'DH de l’heure : le salaire le plus bas que verse l’employeur'}, cites: [/ma/decret/2-25-983/art_1]}
+        - {value: {ar: 'ورقة الأداء', fr: 'Le bulletin'}, label: {ar: 'تسلم للأجير عند كل أداء', fr: 'remis au salarié à chaque paie'}, cites: [/ma/loi/65-99/art_370]}
+        - {value: {ar: 'الضمان', fr: 'La CNSS'}, label: {ar: 'تسجيل الأجير والتصريح به', fr: 'immatriculer et déclarer le salarié'}, cites: [/ma/dahir/1-72-184/art_15]}
+      to: pages/employers
+
+events:
+  # The notice before a dismissal (HM9 of the hard-moment review, 7 Nov 2026): asked «شحال ديال الإنذار», answered
+  # by its own figure, never by the 90 days to sue. Found by search, never listed; it opens the end tool, which counts it
+  # (decree 2.04.469 art. 1: executives one to three months, employees and workers eight days to two months).
+  - key: notice
+    listed: false
+    moment: false         # search's alone: the topics page lists the moments people live, not their figures
+    mark: {value: '3', unit: {ar: شهور على الأكثر, fr: mois au plus}}
+    to: tools/end
+    words: [الإنذار قبل الطرد, الإنذار قبل الفصل, شحال ديال الإنذار, مدة الإنذار, أجل الإخطار, مهلة الإخطار, الإخطار قبل الفصل,
+            الإنذار ديال الطرد, préavis, préavis de licenciement, durée du préavis, délai de préavis, l2indar, l'indar]
+    means:
+      أجل الإخطار: [الإنذار قبل الطرد, الإنذار قبل الفصل, شحال ديال الإنذار, مدة الإنذار, مهلة الإخطار, الإخطار قبل الفصل,
+                    الإنذار ديال الطرد, préavis, préavis de licenciement, durée du préavis, délai de préavis]
+    title: {ar: 'أجل الإخطار قبل الطرد', fr: 'Le préavis avant le licenciement'}
+    lead: {ar: 'من 8 أيام حتى 3 شهور، حسب الأقدمية والصنف', fr: 'De 8 jours à 3 mois, selon l’ancienneté et la catégorie'}
+    for: [company, farm, guard, employer]
+  # The dismissal is the band's (E5): found by search, never listed twice.
+  - key: dismissed
+    listed: false
+    mark: {value: '90', unit: {ar: يوم, fr: jours}}
+    words: [طردوني, طردني, tradouni, tardouni, الطرد, الفصل من العمل, التعويض عن الفصل, الطرد التعسفي, جراو عليا, سرحوني, licenciement, licencié, licenciement abusif,
+            يسمع ليا, يسمعني قبل, نمشي للمحكمة على الطرد, contester un licenciement, شهادة العمل, شهادة الشغل, certificat de travail]
+    means:
+      فصل الأجير: [طردوني, طردني, tradouni, tardouni, الطرد, الفصل من العمل, جراو عليا, سرحوني, licenciement, licencié]
+      إنهاء الطرف الآخر للعقد تعسفيا: [الطرد التعسفي, licenciement abusif]
+      الاستماع إليه من طرف المشغل: [يسمع ليا, يسمعني قبل]
+      رفع دعوى الفصل أمام المحكمة المختصة: [نمشي للمحكمة على الطرد, contester un licenciement]
+      شهادة شغل: [شهادة العمل, شهادة الشغل, certificat de travail]
+    title: {ar: طردوني, fr: J’ai été licencié}
+    lead: {ar: '90 يوم باش تمشي للمحكمة، وشنو كيتسالك', fr: '90 jours pour saisir le tribunal, ce qui vous est dû'}
+    to: journeys/dismissed
+    for: [company, farm, guard, employer]
+  - key: new-job
+    icon: contract
+    words: [خدمة جديدة, الكونطرا, عقد الشغل, فترة التجربة, contrat de travail, période d’essai, cdd]
+    title: {ar: بديت خدمة جديدة, fr: Je commence un nouveau travail}
+    lead: {ar: 'العقد فنظيرين، فترة التجربة، والأوراق اللي خاصك تخبي', fr: 'Le contrat en deux exemplaires, la période d’essai, les papiers à garder'}
+    to: pages/new-job
+    for: [company, farm, guard, employer]
+  - key: unpaid
+    mark:
+      value: '17,92'
+      unit: {ar: د / ساعة, fr: DH / h}
+      by:
+        farm: {value: '97,44', unit: {ar: د / يوم, fr: DH / jour}}
+        home: {value: '60%', unit: {ar: من السميك, fr: du SMIG}}
+    words: [ما خلصونيش, الخلصة, الأجرة, الشهرية, الصالير, السميك, الحد الأدنى للأجر, salaire impayé, smig, salaire minimum,
+            الساعات الزايدة, الساعات الإضافية, heures supplémentaires, منحة الأقدمية, الأقدمية, prime d'ancienneté, ورقة الأداء, bulletin de paie]
+    means:
+      الحد الأدنى القانوني للأجر: [السميك, الحد الأدنى للأجر, smig, salaire minimum]
+      الساعات الإضافية: [الساعات الزايدة, الساعات الإضافية, heures supplémentaires]
+      علاوة الأقدمية: [منحة الأقدمية, الأقدمية, prime d'ancienneté]
+      ورقة الأداء: [ورقة الأداء, bulletin de paie]
+      أداء الأجر: [ما خلصونيش, الخلصة, الشهرية, salaire impayé]
+    title: {ar: ما خلصونيش, fr: Je n’ai pas été payé}
+    lead: {ar: 'الأجرة فوقتها، وورقة الأداء عند كل أداء', fr: 'Le salaire à temps, un bulletin à chaque paie'}
+    to: journeys/unpaid
+    for: [company, farm, guard, home, employer]
+  - key: not-declared
+    icon: cnss
+    words: [مصرحش, صرحش, ما صرحش بيا, ما مصرحش بيا, التصريح فالضمان, الضمان الاجتماعي, الكنوس, cnss, non déclaré, déclaration cnss, déclare pas,
+            كيصرحو فالشهر, نهار فالضمان, كونطرا مكتوبة, ما عنديش كونطرا]
+    means:
+      الانخراط في الصندوق الوطني للضمان الاجتماعي: [مصرحش, صرحش, ما صرحش بيا, ما مصرحش بيا, التصريح فالضمان, الكنوس, non déclaré, déclaration cnss, déclare pas]
+      ستة وعشرين يوما: [كيصرحو فالشهر, نهار فالضمان]
+      إثبات عقد الشغل: [كونطرا مكتوبة, ما عنديش كونطرا]
+    title: {ar: ما مصرحش بيا فالضمان, fr: Je ne suis pas déclaré à la CNSS}
+    lead: {ar: 'أيامك فـ Ma CNSS، وشنو كيفرض القانون على المشغل', fr: 'Vos jours sur Ma CNSS, ce que la loi impose à l’employeur'}
+    to: journeys/not-declared
+    for: [company, farm, guard, home, employer]
+  - key: leave
+    mark: {value: '1,5', unit: {ar: يوم / شهر, fr: jour / mois}}
+    words: [الكونجي, العطلة السنوية, العطلة, أيام العطل, congé, congé payé, jours fériés, كونجي الزواج, عطلة الوفاة, عطلة الزواج]
+    means:
+      عطلة سنوية مؤدى عنها: [الكونجي, العطلة السنوية, congé, congé payé]
+      رخص تغيب بسبب أحداث عائلية: [كونجي الزواج, عطلة الوفاة, عطلة الزواج]
+    title: {ar: الكونجي والعطل, fr: Congés et jours fériés}
+    lead: {ar: 'العطلة السنوية، الأعياد، والمناسبات العائلية', fr: 'Le congé annuel, les fêtes, les événements familiaux'}
+    to: pages/leave
+    for: [company, farm, guard, employer]
+  - key: maternity
+    mark: {value: '14', unit: {ar: أسبوع, fr: semaines}}
+    words: [عطلة الأمومة, كونجي الولادة, إجازة الولادة, رخصة الولادة, الحمل, الحاملة, الرضاعة, congé de maternité, grossesse, allaitement, congé de paternité, كونجي الأب]
+    means:
+      رخصة ولادة: [عطلة الأمومة, كونجي الولادة, إجازة الولادة, رخصة الولادة, congé de maternité]
+      الأجيرة الحامل: [الحمل, الحاملة, grossesse]
+    title: {ar: غادي نولد, fr: Je vais avoir un enfant}
+    lead: {ar: 'الرخصة، الحماية من الطرد، وساعة الرضاعة', fr: 'Le congé, la protection contre le licenciement, l’heure d’allaitement'}
+    to: journeys/maternity
+    for: [company, farm, guard, employer]
+  - key: accident
+    mark: {value: '48', unit: {ar: ساعة, fr: heures}}
+    words: [حادثة شغل, حادثة الشغل, تصابت فالخدمة, أكسيدة فالخدمة, accident de travail, accident du travail]
+    means: حادثة الشغل
+    title: {ar: تصابت فالخدمة, fr: J’ai eu un accident du travail}
+    lead: {ar: 'خبّر المشغل، والشهادة الطبية، والتعويض', fr: 'Prévenir l’employeur, le certificat médical, l’indemnisation'}
+    to: journeys/accident
+    for: [company, farm, guard, home, employer]
+  - key: resign
+    icon: resign
+    words: [الاستقالة, نستاقل, الديميسيون, démission, démissionner]
+    title: {ar: بغيت نستاقل, fr: Je veux démissionner}
+    lead: {ar: 'استقالة مكتوبة ومصادق عليها، وأجل الإخطار', fr: 'Une démission écrite et légalisée, le préavis'}
+    to: journeys/resign
+    for: [company, farm, guard, employer]
+  - key: retire
+    mark: {value: '1320', unit: {ar: يوم, fr: jours}}
+    words: [التقاعد, فالتقاعد, لاريتريت, المعاش, راتب الشيخوخة, tta9a3od, ta9a3od, retraite, pension de retraite]
+    means:
+      راتب عن الشيخوخة: [التقاعد, فالتقاعد, لاريتريت, المعاش, tta9a3od, ta9a3od, retraite, pension de retraite]
+    title: {ar: وصلت للتقاعد, fr: J’arrive à la retraite}
+    lead: {ar: 'المعاش من 1320 يوم فالضمان، ومبلغه بمرسوم', fr: 'Une pension dès 1 320 jours CNSS, son montant par décret'}
+    to: journeys/retire
+    for: [company, farm, guard, home]
+  # Each answer's own door (E2): listed first for it, never for the others.
+  - key: home
+    own: true
+    icon: home
+    words: [خدامة, الخدامة, العاملة المنزلية, البونة, خدمة الدار, travailleuse domestique, employée de maison, bonne]
+    title: {ar: خدامة فالدار, fr: Travail domestique}
+    lead: {ar: 'العقد، 60% من السميك، 48 ساعة: للعاملة وللمشغل', fr: 'Le contrat, 60 % du SMIG, 48 heures : pour les deux côtés'}
+    to: journeys/home
+    for: [home]
+  - key: guards
+    own: true
+    icon: guard
+    words: [السيكيريتي, حارس الأمن, الحراسة, الطاشرون, النظافة, gardiennage, agent de sécurité, sous-traitance]
+    title: {ar: السيكيريتي والنظافة, fr: Gardiennage et nettoyage}
+    lead: {ar: 'من 16 يوليوز 2026: الساعات العادية لحراس الشركات', fr: 'Depuis le 16 juillet 2026 : les heures normales pour les gardiens des sociétés'}
+    to: pages/guards
+    for: [guard]
+  - key: civil-servants
+    own: true
+    icon: bank
+    words: [موظف, الموظفين, الوظيفة العمومية, fonctionnaire, fonction publique]
+    title: {ar: موظف فالدولة, fr: Fonctionnaire}
+    lead: {ar: 'النظام الأساسي، والمحكمة الإدارية، والإضراب', fr: 'Le statut, le tribunal administratif, la grève'}
+    to: pages/civil-servants
+    for: [state]
+  - key: self-employed
+    own: true
+    icon: self
+    words: [بوحدي, المقاول الذاتي, auto-entrepreneur, indépendant]
+    title: {ar: خدام بوحدي, fr: À mon compte}
+    lead: {ar: 'المقاول الذاتي، والتأمين عن المرض، والتقاعد', fr: 'L’auto-entrepreneur, l’assurance maladie, la retraite'}
+    to: pages/self-employed
+    for: [self]
+  - key: employer-hire
+    own: true
+    icon: contract
+    words: [غادي نشغل, نشغل, مشغل, employeur, embaucher]
+    title: {ar: غادي نشغّل شي واحد, fr: J’embauche quelqu’un}
+    lead: {ar: 'العقد، التسجيل فالضمان، ورقة الأداء', fr: 'Le contrat, l’immatriculation CNSS, le bulletin de paie'}
+    to: checklists/employer-hire
+    for: [employer]
+  - key: employer-home
+    own: true
+    icon: home
+    words: [عندي خدامة, نشغل خدامة, employer une domestique]
+    title: {ar: عندي خدامة فالدار, fr: J’emploie une travailleuse domestique}
+    lead: {ar: 'العقد النموذجي، 60% من السميك، 48 ساعة', fr: 'Le contrat type, 60 % du SMIG, 48 heures'}
+    to: checklists/employer-home
+    for: [employer]
+
+# The tools run on the reader's phone; `tool: true` ones wait for a person's check (checked.yaml: tools/<key>), unless
+# `open: true` shows one before, with a note that no professional has reviewed it yet (C2 «wait»: the end tool alone).
+# The three the page draws as instruments (E6: registry INSTRUMENTS) are not listed again; the strike and the numbers
+# sit among the texts (`place: whole`, E2 and E8).
+tools:
+  - key: end
+    words: [شنو كيتسالني, التعويض عن الفصل, مستحقات, indemnité de licenciement, solde de tout compte]
+    cites: [/ma/loi/65-99/art_43, /ma/decret/2-04-469/art_1, /ma/loi/65-99/art_53, /ma/loi/65-99/art_52, /ma/loi/65-99/art_41]
+    tool: true
+    open: true            # call T8 of the work plan (20 Oct 2026): shown before a professional's review
+    title: {ar: شنو كيتسالني؟, fr: 'Qu’est-ce qui m’est dû ?'}
+    lead: {ar: 'كل عام خدمة بساعاتو، وكل مبلغ بمادتو', fr: 'Chaque année de service en heures, chaque somme avec son article'}
+    for: [company, farm, guard, employer]
+  - key: pay
+    words: [واش الخلصة قانونية, السميك, الساعات الإضافية, الأقدمية, ورقة الأداء, heures supplémentaires, prime d’ancienneté, bulletin de paie]
+    tool: true
+    title: {ar: ورقة الأداء, fr: Le bulletin de paie}
+    lead: {ar: 'كل سطر كما يكتبه القانون، بمادته', fr: 'Chaque ligne comme la loi l’écrit, avec son article'}
+    for: [company, farm, guard, home, employer]
+  - key: cnss
+    words: [التقاعد, الشوماج, التعويض عن فقدان الشغل, المعاش, أيامي فالضمان, retraite, chômage, ipe, perte d’emploi]
+    tool: true
+    title: {ar: أيامي فالضمان, fr: Mes jours à la CNSS}
+    lead: {ar: 'المعاش والتعويض عن فقدان الشغل من أيامك', fr: 'La pension et l’indemnité pour perte d’emploi d’après vos jours'}
+    for: [company, farm, guard, home]
+  - key: dates
+    icon: clock
+    words: [آجال الشغل, آجال الخدمة, الآجال ديال الخدمة, آجال مدونة الشغل, délais du travail, délais code du travail]
+    tool: true
+    title: {ar: الآجال, fr: Les délais}
+    lead: {ar: 'من نهار الحدث، كل أجل بتاريخه ومادته', fr: 'À partir du jour de l’événement, chaque délai à sa date'}
+  - key: where
+    icon: where
+    words: [مفتش الشغل, مفتشية الشغل, فين نمشي, نشتكي, نشكي بالباطرون, فين نشكي بالباطرون, نشكي بالمشغل, inspecteur du travail, se plaindre]
+    to: pages/where
+    title: {ar: فين نمشي؟, fr: 'Où aller ?'}
+    lead: {ar: 'مفتش الشغل، الضمان، المحكمة: ما يعطيه القانون عند كل باب', fr: 'Inspecteur, CNSS, tribunal : ce que la loi donne à chaque porte'}
+  - key: proof
+    icon: list
+    words: [نثبت, الإثبات, الأوراق, preuve, prouver]
+    to: checklists/proof
+    title: {ar: خبّي هادشي من النهار الأول, fr: Ce qu’il faut garder dès le premier jour}
+    lead: {ar: 'العقد، أوراق الأداء، كشف الضمان، والشهود', fr: 'Le contrat, les bulletins, le relevé CNSS, les témoins'}
+  - key: strike
+    words: [الإضراب, إضراب, قانون الإضراب, grève, droit de grève]
+    to: pages/strike
+    place: whole
+    title: {ar: الإضراب, fr: La grève}
+    lead: {ar: 'قانون الإضراب منذ 24 شتنبر 2025', fr: 'La loi sur la grève depuis le 24 septembre 2025'}
+  - key: numbers
+    words: [إحصائيات, أرقام, البطالة, statistiques, chômage]
+    to: pages/numbers
+    place: whole
+    title: {ar: الشغل بالأرقام, fr: Le travail en chiffres}
+    lead: {ar: 'أرقام رسمية بمصادرها', fr: 'Des chiffres officiels, avec leurs sources'}
+
+# What workers believe (E17), each answered by the article in force and leading to its door. Drafts until a person
+# checks them with the page they lead to.
+beliefs:
+  - claim: {ar: ما عنديش كونطرا مكتوبة، إذن ما عندي حتى حق, fr: 'Sans contrat écrit, je n’ai aucun droit'}
+    truth: {ar: 'عقد الشغل يثبت بجميع وسائل الإثبات، مكتوبا كان أو لا (المادة 18).', fr: 'Le contrat de travail se prouve par tous moyens, écrit ou non (art. 18).'}
+    to: checklists/proof
+  - claim: {ar: وقعت توصيل تصفية كل حساب، سالات, fr: 'J’ai signé le reçu pour solde de tout compte, c’est fini'}
+    truth: {ar: 'يمكن التراجع عن التوصيل داخل 60 يوما من توقيعه، برسالة مضمونة أو بدعوى (المادة 75).', fr: 'Le reçu peut être dénoncé dans les 60 jours de sa signature, par lettre recommandée ou en justice (art. 75).'}
+    to: checklists/final-receipt
+  - claim: {ar: التقاعد خاصو 3240 يوم فالضمان, fr: 'Il faut 3 240 jours CNSS pour une pension'}
+    truth: {ar: 'المعاش يستحق من 1320 يوما منذ القانون 02.24؛ و3240 يوما تعطي نسبة 50%.', fr: 'La pension est due dès 1 320 jours depuis la loi 02.24 ; 3 240 jours donnent 50 %.'}
+    to: journeys/retire
+
+# The order a reviewer opens the topic in (E18): the dismissal, wages and the CNSS first, with the open tool and the
+# band's articles; then the moments of a working life; the particular statuses and the numbers last.
+waves:
+  1: [journeys/dismissed, journeys/unpaid, journeys/not-declared, tools/end, checklists/final-receipt, checklists/proof]
+  2: [journeys/accident, journeys/maternity, pages/leave, pages/new-job, journeys/resign, tools/pay, tools/cnss, tools/dates, pages/where]
+  3: [journeys/home, pages/guards, pages/strike, journeys/retire, pages/civil-servants, pages/self-employed, pages/employers, checklists/employer-hire, checklists/employer-home, pages/numbers, reform/minimum-wage, reform/strike]

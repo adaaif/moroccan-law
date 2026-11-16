@@ -1,0 +1,290 @@
+# The justice topic's pages (the justice review): the courts and what each decides, every deadline in one table, the
+# lawyer, legal aid, the alternative sentences, prison, unpaid fines and the prescription of sentences, and what people
+# believe. Every fact names its articles, as the site holds them on 27 Oct 2026.
+
+- key: courts
+  title: {ar: 'المحاكم: من يحكم في ماذا', fr: 'Les tribunaux : qui juge quoi'}
+  lead:
+    ar: 'منذ 23 غشت 2026 يوزع القانون 58.25 القضايا المدنية بين قضاء القرب والمحاكم الابتدائية وأقسامها المتخصصة والمحاكم الإدارية والتجارية، ثم محاكم الاستئناف ومحكمة النقض.'
+    fr: 'Depuis le 23 août 2026, la loi 58.25 répartit les affaires civiles entre la proximité, les tribunaux de première instance et leurs sections, les juridictions administratives et commerciales, puis les cours d’appel et la Cour de cassation.'
+  cites: [/ma/loi/58-25/art_29]
+  sections:
+    - title: {ar: 'جنبا إلى جنب', fr: 'Côte à côte'}
+      table:
+        head: [{ar: '', fr: ''}, {ar: 'ما يحكم فيه', fr: 'Ce qu’il juge'}, {ar: 'الطعن', fr: 'Le recours'}]
+        rows:
+          - [{ar: 'قاضي القرب', fr: 'Juge de proximité'}, {ar: 'الدعاوى الشخصية والمنقولة دون 5.000 درهم، لا الأسرة ولا العقار ولا الاجتماعي ولا الإداري ولا الإفراغ', fr: 'Actions personnelles et mobilières sous 5 000 DH, hors famille, immobilier, social, administratif, expulsions'}, {ar: 'طلب الإلغاء داخل 15 يوما في حالات محددة', fr: 'Demande d’annulation sous 15 jours dans des cas précis'}]
+          - [{ar: 'المحكمة الابتدائية', fr: 'Tribunal de première instance'}, {ar: 'المدني والاجتماعي والأسرة، وكل ما لم يسند لغيرها', fr: 'Civil, social, famille, et tout ce qui n’est pas attribué ailleurs'}, {ar: 'حتى 10.000 درهم لا استئناف؛ وفوقها الاستئناف داخل 30 يوما', fr: 'Jusqu’à 10 000 DH sans appel ; au-delà, appel sous 30 jours'}]
+          - [{ar: 'القسم التجاري أو المحكمة التجارية', fr: 'Section ou tribunal de commerce'}, {ar: 'القضايا التجارية؛ والمحكمة الابتدائية تحكم فيها حتى 80.000 درهم حيث لا محكمة تجارية', fr: 'Affaires commerciales ; le tribunal de première instance en juge jusqu’à 80 000 DH là où il n’y a pas de tribunal de commerce'}, {ar: 'الاستئناف داخل 30 يوما', fr: 'Appel sous 30 jours'}]
+          - [{ar: 'القسم الإداري أو المحكمة الإدارية', fr: 'Section ou tribunal administratif'}, {ar: 'إلغاء قرارات الإدارة، العقود الإدارية، تعويض أضرار أشخاص القانون العام، المعاشات، الانتخابات، نزع الملكية', fr: 'Annulation des décisions, contrats administratifs, dommages des personnes publiques, pensions, élections, expropriation'}, {ar: 'الاستئناف معفى من الرسم القضائي', fr: 'Appel exonéré du droit judiciaire'}]
+          - [{ar: 'محكمة النقض', fr: 'Cour de cassation'}, {ar: 'النقض في الأحكام الانتهائية، فوق 30.000 درهم وخارج الكراء', fr: 'Pourvois contre les décisions en dernier ressort, au-delà de 30 000 DH et hors loyers'}, {ar: 'بمحام مقبول أمامها، داخل 30 يوما', fr: 'Par avocat agréé, sous 30 jours'}]
+      cites: [/ma/loi/58-25/art_331, /ma/loi/58-25/art_32, /ma/loi/58-25/art_29, /ma/loi/58-25/art_30, /ma/loi/58-25/art_31, /ma/loi/58-25/art_38, /ma/loi/58-25/art_215, /ma/loi/58-25/art_375, /ma/loi/58-25/art_376]
+      tool: tools/court
+    - title: {ar: 'القضايا الاجتماعية', fr: 'Les affaires sociales'}
+      facts:
+        - text: {ar: 'تختص المحاكم الابتدائية بنزاعات عقود الشغل والتدريب، وتعويض حوادث الشغل والأمراض المهنية، ونزاعات الضمان الاجتماعي.', fr: 'Les tribunaux de première instance connaissent des litiges du contrat de travail et de stage, de la réparation des accidents du travail et maladies professionnelles, et de la sécurité sociale.'}
+          cites: [/ma/loi/58-25/art_33]
+        - text: {ar: 'يستفيد الأجير وذوو حقوقه من المساعدة القضائية بقوة القانون في جميع الدرجات وفي التنفيذ.', fr: 'Le salarié et ses ayants droit bénéficient de plein droit de l’assistance judiciaire à tous les degrés et pour l’exécution.'}
+          cites: [/ma/loi/58-25/art_311]
+    - title: {ar: 'المسطرة الشفوية', fr: 'La procédure orale'}
+      facts:
+        - text: {ar: 'المسطرة كتابية في الأصل، وشفوية في القضايا حتى 10.000 درهم، والزواج والنفقة وبيت الزوجية والطلاق الاتفاقي والحضانة والزيارة، والحالة المدنية، والاجتماعي، والكراء.', fr: 'La procédure est écrite en principe, orale jusqu’à 10 000 DH, pour le mariage, la pension, le logement conjugal, le divorce par consentement, la garde et la visite, l’état civil, le social et les loyers.'}
+          cites: [/ma/loi/58-25/art_95, /ma/loi/58-25/art_96]
+    - title: {ar: 'في القضايا الزجرية', fr: 'Au pénal'}
+      facts:
+        - text: {ar: 'ترفع الدعوى العمومية إلى المحكمة الابتدائية بالاستدعاء المباشر أو بإحالة من النيابة العامة أو من قاضي التحقيق أو بالتقديم الفوري؛ والجنايات أمام غرفة الجنايات بمحكمة الاستئناف، بمحام إلزاما.', fr: 'L’action publique est portée devant le tribunal de première instance par citation directe, renvoi du parquet ou du juge d’instruction, ou comparution immédiate ; les crimes devant la chambre criminelle de la cour d’appel, avec un avocat obligatoire.'}
+          cites: [/ma/loi/22-01/art_384, /ma/loi/22-01/art_316]
+
+- key: deadlines
+  title: {ar: 'الآجال: كل أجل بمادته', fr: 'Les délais : chacun avec son article'}
+  lead:
+    ar: 'في القانونين معا الأجل كامل: لا يحسب يوم التبليغ ولا اليوم الأخير، وإذا صادف اليوم الأخير يوم عطلة امتد إلى أول يوم عمل.'
+    fr: 'Dans les deux codes, le délai est franc : ni le jour de la notification ni le dernier ne comptent, et un dernier jour férié reporte au premier jour ouvrable.'
+  cites: [/ma/loi/58-25/art_602, /ma/loi/22-01/art_750]
+  sections:
+    - title: {ar: 'في المدني', fr: 'Au civil'}
+      table:
+        head: [{ar: 'ماذا', fr: 'Quoi'}, {ar: 'الأجل', fr: 'Délai'}, {ar: 'من', fr: 'À compter de'}]
+        rows:
+          - [{ar: 'استئناف حكم ابتدائي', fr: 'Appel d’un jugement'}, {ar: '30 يوما', fr: '30 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'التعرض على حكم غيابي غير قابل للاستئناف', fr: 'Opposition à un jugement par défaut sans appel'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'استئناف أمر استعجالي', fr: 'Appel d’une ordonnance de référé'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'التعرض على الأمر بالأداء', fr: 'Opposition à injonction de payer'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'استئناف الحكم في التعرض على الأمر بالأداء', fr: 'Appel du jugement sur opposition à injonction'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'استئناف مقرر في الحالة المدنية', fr: 'Appel d’une décision d’état civil'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'طلب إلغاء حكم انتهائي (القرب، أو حتى 10.000 درهم)', fr: 'Annulation d’un jugement en dernier ressort (proximité, ou jusqu’à 10 000 DH)'}, {ar: '15 يوما', fr: '15 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'الطعن بالنقض', fr: 'Pourvoi en cassation'}, {ar: '30 يوما', fr: '30 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'الاعتراض على الحجز التحفظي', fr: 'Contester une saisie conservatoire'}, {ar: '8 أيام', fr: '8 jours'}, {ar: 'تبليغ الأمر', fr: 'la notification de l’ordonnance'}]
+      cites: [/ma/loi/58-25/art_204, /ma/loi/58-25/art_200, /ma/loi/58-25/art_230, /ma/loi/58-25/art_239, /ma/loi/58-25/art_242, /ma/loi/58-25/art_279, /ma/loi/58-25/art_32, /ma/loi/58-25/art_380, /ma/loi/58-25/art_496]
+      tool: tools/deadline
+    - title: {ar: 'في الزجري', fr: 'Au pénal'}
+      table:
+        head: [{ar: 'ماذا', fr: 'Quoi'}, {ar: 'الأجل', fr: 'Délai'}, {ar: 'من', fr: 'À compter de'}]
+        rows:
+          - [{ar: 'استئناف حكم جنحي حضوري', fr: 'Appel d’un jugement correctionnel contradictoire'}, {ar: '10 أيام', fr: '10 jours'}, {ar: 'النطق بالحكم', fr: 'le prononcé'}]
+          - [{ar: 'استئناف من لم يحضر ولم يشعر', fr: 'Appel de qui n’était ni présent ni avisé'}, {ar: '10 أيام', fr: '10 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'التعرض على حكم غيابي', fr: 'Opposition à un jugement par défaut'}, {ar: '10 أيام', fr: '10 jours'}, {ar: 'التبليغ', fr: 'la notification'}]
+          - [{ar: 'طلب النقض', fr: 'Pourvoi en cassation'}, {ar: '10 أيام', fr: '10 jours'}, {ar: 'صدور القرار', fr: 'la décision'}]
+          - [{ar: 'الطعن في أمر الإيداع في السجن', fr: 'Contester un placement en détention'}, {ar: 'إلى اليوم الموالي', fr: 'jusqu’au lendemain'}, {ar: 'صدور الأمر', fr: 'l’ordonnance'}]
+      cites: [/ma/loi/22-01/art_400, /ma/loi/22-01/art_393, /ma/loi/22-01/art_527, /ma/loi/22-01/art_47-2]
+      tool: tools/deadline
+    - title: {ar: 'التقادم', fr: 'La prescription'}
+      table:
+        head: [{ar: '', fr: ''}, {ar: 'الدعوى العمومية (من يوم الأفعال)', fr: 'L’action publique (du jour des faits)'}, {ar: 'العقوبة (من صيرورة الحكم نهائيا)', fr: 'La peine (du jugement définitif)'}]
+        rows:
+          - [{ar: 'الجناية', fr: 'Crime'}, {ar: '15 سنة', fr: '15 ans'}, {ar: '15 سنة', fr: '15 ans'}]
+          - [{ar: 'الجنحة', fr: 'Délit'}, {ar: '4 سنوات', fr: '4 ans'}, {ar: '4 سنوات، أو مدة العقوبة إذا تجاوزت 5 سنوات', fr: '4 ans, ou la durée de la peine au-delà de 5 ans'}]
+          - [{ar: 'المخالفة', fr: 'Contravention'}, {ar: 'سنة', fr: '1 an'}, {ar: 'سنة', fr: '1 an'}]
+      cites: [/ma/loi/22-01/art_5, /ma/loi/22-01/art_649, /ma/loi/22-01/art_650, /ma/loi/22-01/art_651]
+      tool: tools/deadline
+
+- key: lawyer
+  title: {ar: 'المحامي', fr: 'L’avocat'}
+  lead:
+    ar: 'منذ 20 غشت 2026 ينظم المهنة القانون 66.23. متى يكون المحامي ضروريا، وكيف تحدد الأتعاب، وأين تشتكي.'
+    fr: 'Depuis le 20 août 2026, la profession relève de la loi 66.23. Quand l’avocat est obligatoire, comment se fixent les honoraires, où se plaindre.'
+  cites: [/ma/loi/66-23/art_1]
+  sections:
+    - title: {ar: 'متى يكون ضروريا', fr: 'Quand il est obligatoire'}
+      facts:
+        - text: {ar: 'في الجنايات أمام غرفة الجنايات، وفي الجنح للمتهم دون 18 سنة أو الأبكم أو الأعمى أو المصاب بعاهة تخل بدفاعه، أو المعرض للإبعاد.', fr: 'Pour les crimes devant la chambre criminelle, et pour les délits si le prévenu a moins de 18 ans, est muet, aveugle ou atteint d’une infirmité nuisant à sa défense, ou encourt la relégation.'}
+          cites: [/ma/loi/22-01/art_316]
+        - text: {ar: 'أمام محكمة النقض: مقال يوقعه محام مقبول أمامها، وهو محام مسجل منذ عشر سنوات على الأقل أو من في حكمه.', fr: 'Devant la Cour de cassation : une requête signée d’un avocat agréé, inscrit depuis dix ans au moins ou assimilé.'}
+          cites: [/ma/loi/58-25/art_376, /ma/loi/66-23/art_39]
+        - text: {ar: 'أمام المحاكم الابتدائية في المدني يمكنك أن ترفع الدعوى بنفسك، أو بوكيل من أقاربك إلى الدرجة الثانية.', fr: 'En première instance au civil, vous pouvez agir vous-même, ou par un mandataire parent jusqu’au deuxième degré.'}
+          cites: [/ma/loi/58-25/art_76, /ma/loi/58-25/art_79]
+      tool: tools/court
+    - title: {ar: 'الأتعاب', fr: 'Les honoraires'}
+      facts:
+        - text: {ar: 'تكليف مكتوب، ولو إلكترونيا، يبين الموضوع والمراحل وكيفية أداء الأتعاب؛ وبدونه يسقط حق المحامي في الأتعاب أو المنازعة فيها.', fr: 'Une mission écrite, même électronique, indiquant l’objet, les étapes et le mode de paiement ; sans elle, l’avocat perd son droit aux honoraires ou à les contester.'}
+          cites: [/ma/loi/66-23/art_54, /ma/loi/66-23/art_55]
+        - text: {ar: 'كل مبلغ مقابل وصل مؤرخ وموقع ومرقم؛ وما فوق 10.000 درهم بشيك أو أداء إلكتروني.', fr: 'Toute somme contre un reçu daté, signé et numéroté ; au-delà de 10 000 DH par chèque ou paiement électronique.'}
+          cites: [/ma/loi/66-23/art_72]
+        - text: {ar: 'ربط الأتعاب مسبقا بنتيجة الدعوى، أو أخذها حصة من المال المتنازع فيه، باطل بقوة القانون؛ ويجوز الاتفاق على أتعاب إضافية بحسب المجهود.', fr: 'Lier d’avance les honoraires au résultat, ou les prendre en parts du bien litigieux, est nul de plein droit ; un complément selon l’effort peut être convenu.'}
+          cites: [/ma/loi/66-23/art_69, /ma/loi/66-23/art_57]
+          more: journeys/lawyer
+    - title: {ar: 'إذا لم تجد محاميا', fr: 'Si vous ne trouvez pas d’avocat'}
+      facts:
+        - text: {ar: 'يعين النقيب محاميا لمن تعذر عليه توكيل محام لأسباب غير المساعدة القضائية، داخل ثلاثة أيام من الطلب.', fr: 'Le bâtonnier désigne, dans les trois jours de la demande, un avocat à qui n’a pu en constituer un pour une autre raison que l’assistance judiciaire.'}
+          cites: [/ma/loi/66-23/art_52]
+        - text: {ar: 'ولمن لا تكفي موارده: المساعدة القضائية، والمحامي المعين لا يمتنع دون سبب مشروع.', fr: 'À qui manque de ressources : l’assistance judiciaire, et l’avocat désigné ne peut refuser sans motif légitime.'}
+          cites: [/ma/loi/66-23/art_51]
+          more: journeys/aid
+    - title: {ar: 'الشكاية والنزاع', fr: 'Plainte et différend'}
+      facts:
+        - text: {ar: 'نزاع الأتعاب أمام النقيب، يبت فيه داخل شهر؛ والطعن أمام غرفة المشورة داخل 15 يوما.', fr: 'Le différend sur les honoraires devant le bâtonnier, qui statue dans le mois ; recours devant la chambre du conseil sous 15 jours.'}
+          cites: [/ma/loi/66-23/art_58]
+        - text: {ar: 'الشكاية إلى النقيب: يحيلها على الوكيل العام داخل 10 أيام، ويقرر داخل شهر، ويخبر المشتكي داخل 7 أيام؛ وسكوته شهرا حفظ ضمني.', fr: 'La plainte au bâtonnier : transmise au procureur général dans les 10 jours, décision dans le mois, avis au plaignant dans les 7 jours ; un mois de silence vaut classement.'}
+          cites: [/ma/loi/66-23/art_99]
+        - text: {ar: 'لا يحتفظ المحامي بوثائقك بعد سحب التوكيل، ولو نازع في الأتعاب: يضعها بكتابة الهيئة داخل 15 يوما.', fr: 'L’avocat ne garde pas vos pièces après le retrait du mandat, même s’il conteste les honoraires : il les dépose à l’ordre dans les 15 jours.'}
+          cites: [/ma/loi/66-23/art_64]
+          more: journeys/lawyer
+
+- key: aid
+  title: {ar: 'المساعدة القضائية', fr: 'L’assistance judiciaire'}
+  lead:
+    ar: 'المرسوم الملكي 514.65 (1966) كما حينته عدالة في 26 أكتوبر 2011، مع القانون 58.25 والقانون 66.23: من يستفيد، أين يطلب، وماذا تغطي.'
+    fr: 'Le décret royal 514.65 (1966), dans la version d’Adala du 26 octobre 2011, avec les lois 58.25 et 66.23 : qui en bénéficie, où la demander, ce qu’elle couvre.'
+  cites: [/ma/decret-loi/514-65/art_1]
+  sections:
+    - title: {ar: 'من يستفيد', fr: 'Qui en bénéficie'}
+      facts:
+        - text: {ar: 'الأشخاص والجمعيات الخيرية المغربية التي لا تكفي مواردها للدفاع عن حقوقها أمام القضاء، والأجانب إذا نصت عليه معاهدة.', fr: 'Les personnes et associations de bienfaisance marocaines dont les ressources ne suffisent pas pour défendre leurs droits en justice, et les étrangers quand un traité le prévoit.'}
+          cites: [/ma/decret-loi/514-65/art_1]
+        - text: {ar: 'الأجير وذوو حقوقه بقوة القانون في القضايا الاجتماعية.', fr: 'Le salarié et ses ayants droit de plein droit en matière sociale.'}
+          cites: [/ma/loi/58-25/art_311]
+        - text: {ar: 'المتهم الذي يقدم شهادة العسر يعين له رئيس المحكمة مدافعا؛ والموقوف يطلب محاميا منذ الحراسة النظرية.', fr: 'Le prévenu qui produit le certificat d’indigence se voit désigner un défenseur ; la personne gardée à vue en demande un dès la garde à vue.'}
+          cites: [/ma/decret-loi/514-65/art_18, /ma/loi/22-01/art_66-2]
+    - title: {ar: 'كيف تطلب', fr: 'Comment la demander'}
+      facts:
+        - text: {ar: 'طلب إلى وكيل الملك بالمحكمة المختصة، مع شهادة عسر من الباشا أو القائد.', fr: 'Une demande au procureur du Roi du tribunal compétent, avec un certificat d’indigence du pacha ou du caïd.'}
+          cites: [/ma/decret-loi/514-65/art_6, /ma/decret-loi/514-65/art_7]
+          more: checklists/aid-file
+        - text: {ar: 'أمام القضاء الإداري يمنحها رئيس المحكمة أو القسم، ويستأنف رفضها داخل 15 يوما.', fr: 'Devant le juge administratif, le président du tribunal ou de la section l’accorde ; le refus est contestable sous 15 jours.'}
+          cites: [/ma/loi/58-25/art_43]
+    - title: {ar: 'ما تغطيه', fr: 'Ce qu’elle couvre'}
+      facts:
+        - text: {ar: 'إعفاء مؤقت من كل إيداع وأداء، وتسبق الخزينة صوائر الخبراء والتراجمة والشهود؛ وتمتد إلى التنفيذ.', fr: 'Une dispense provisoire de toute consignation et de tout paiement ; le Trésor avance experts, interprètes et témoins ; elle s’étend à l’exécution.'}
+          cites: [/ma/decret-loi/514-65/art_12, /ma/decret-loi/514-65/art_2]
+        - text: {ar: 'إذا خسر خصمك، يحكم عليه بالمصاريف لفائدة الخزينة، بما فيها الأتعاب التي كانت ستلزمك.', fr: 'Si votre adversaire perd, il est condamné aux frais au profit du Trésor, honoraires compris.'}
+          cites: [/ma/decret-loi/514-65/art_13]
+        - text: {ar: 'تؤدي الخزينة للمحامي المعين 2.500 درهم أمام المحاكم الابتدائية، و3.000 أمام محاكم الاستئناف، و3.500 أمام محكمة النقض.', fr: 'Le Trésor verse à l’avocat désigné 2 500 DH devant les tribunaux de première instance, 3 000 devant les cours d’appel, 3 500 devant la Cour de cassation.'}
+          cites: [/ma/arrete/2787-19/art_1, /ma/loi/66-23/art_53]
+    - title: {ar: 'متى تسحب', fr: 'Quand elle est retirée'}
+      facts:
+        - text: {ar: 'إذا صارت لك موارد كافية، أو طلبت شطب الدعوى أو تصالحت، أو أظهرت فتورا طويلا في متابعتها؛ ويطالب عندها بما أعفيت منه.', fr: 'Si vous avez désormais des ressources suffisantes, si vous vous désistez ou transigez, ou si vous délaissez longtemps la procédure ; ce dont vous étiez dispensé est alors réclamé.'}
+          cites: [/ma/decret-loi/514-65/art_14, /ma/decret-loi/514-65/art_16]
+
+- key: alternatives
+  title: {ar: 'العقوبات البديلة', fr: 'Les peines alternatives'}
+  lead:
+    ar: 'أضافها القانون 43.22 (الجريدة الرسمية 7328، 22 غشت 2024) إلى القانون الجنائي في الفصول 35-1 إلى 35-15، وطبقها المرسوم 2.25.386 (غشت 2025).'
+    fr: 'Ajoutées au code pénal par la loi 43.22 (BO 7328, 22 août 2024), articles 35-1 à 35-15, mises en œuvre par le décret 2.25.386 (août 2025).'
+  cites: [/ma/dahir/1-59-413/art_35-1, /ma/loi/43-22/art_4]
+  sections:
+    - title: {ar: 'متى', fr: 'Quand'}
+      facts:
+        - text: {ar: 'في الجنح التي لا تتجاوز العقوبة المحكوم بها فيها خمس سنوات حبسا نافذا، ولا يحكم بها في حالة العود.', fr: 'Pour les délits dont la peine prononcée ne dépasse pas cinq ans d’emprisonnement ferme, jamais en récidive.'}
+          cites: [/ma/dahir/1-59-413/art_35-1]
+        - text: {ar: 'لا يحكم بها في جرائم أمن الدولة والإرهاب، والاختلاس والغدر والرشوة واستغلال النفوذ وتبديد الأموال العمومية، وغسل الأموال، والجرائم العسكرية، والاتجار الدولي في المخدرات وفي المؤثرات العقلية وفي الأعضاء، والاستغلال الجنسي للقاصرين أو ذوي الإعاقة.', fr: 'Jamais pour la sûreté de l’État et le terrorisme, le détournement, la concussion, la corruption, le trafic d’influence, la dilapidation des deniers publics, le blanchiment, les infractions militaires, le trafic international de drogue, de psychotropes et d’organes, l’exploitation sexuelle des mineurs ou des personnes handicapées.'}
+          cites: [/ma/dahir/1-59-413/art_35-3]
+        - text: {ar: 'تحكم بها المحكمة تلقائيا أو بطلب من النيابة العامة أو المحكوم عليه أو دفاعه أو مدير المؤسسة السجنية، وتحدد العقوبة الحبسية الأصلية التي تنفذ إن لم يحترم المحكوم عليه التزاماته.', fr: 'Le tribunal la prononce d’office ou à la demande du parquet, du condamné, de son avocat ou du directeur de la prison, et fixe la peine de prison initiale, exécutée si le condamné manque à ses obligations.'}
+          cites: [/ma/dahir/1-59-413/art_35-4]
+      tool: tools/alternative
+    - title: {ar: 'الأنواع الأربعة', fr: 'Les quatre peines'}
+      facts:
+        - text: {ar: 'العمل لأجل المنفعة العامة: من 40 إلى 3.600 ساعة، ثلاث ساعات عن كل يوم حبس، لمن بلغ 15 سنة، داخل ستة أشهر.', fr: 'Le travail d’intérêt général : de 40 à 3 600 heures, trois heures par jour de prison, dès 15 ans, dans les six mois.'}
+          cites: [/ma/dahir/1-59-413/art_35-5, /ma/dahir/1-59-413/art_35-6, /ma/dahir/1-59-413/art_35-7]
+        - text: {ar: 'المراقبة الإلكترونية: مكانها ومدتها تحددهما المحكمة.', fr: 'La surveillance électronique : son lieu et sa durée fixés par le tribunal.'}
+          cites: [/ma/dahir/1-59-413/art_35-10]
+        - text: {ar: 'تقييد بعض الحقوق أو تدابير رقابية أو علاجية أو تأهيلية: عمل أو دراسة، إقامة محددة، الحضور الدوري، عدم الاتصال بالضحايا، العلاج، إصلاح الضرر.', fr: 'Des restrictions de droits ou mesures de contrôle, de soin ou de réinsertion : activité ou formation, résidence fixée, pointage, interdiction de contacter les victimes, soins, réparation du dommage.'}
+          cites: [/ma/dahir/1-59-413/art_35-12]
+        - text: {ar: 'الغرامة اليومية: من 100 إلى 2.000 درهم عن كل يوم حبس، بعد صلح أو تنازل أو تعويض الضحية، تؤدى داخل ستة أشهر.', fr: 'Le jour-amende : de 100 à 2 000 DH par jour de prison, après conciliation, désistement ou indemnisation de la victime, payé dans les six mois.'}
+          cites: [/ma/dahir/1-59-413/art_35-14, /ma/dahir/1-59-413/art_35-15]
+      tool: tools/alternative
+    - title: {ar: 'التنفيذ', fr: 'L’exécution'}
+      facts:
+        - text: {ar: 'تحيل النيابة العامة الحكم إلى قاضي تطبيق العقوبات الذي يصدر مقررا تنفيذيا، وتتتبع الإدارة المكلفة بالسجون التنفيذ.', fr: 'Le parquet transmet le jugement au juge de l’application des peines, qui rend une décision d’exécution ; l’administration pénitentiaire suit l’exécution.'}
+          cites: [/ma/loi/43-22/art_3, /ma/decret/2-25-386/art_4]
+
+- key: prison
+  title: {ar: 'عندي شي حد فالحبس', fr: 'Un proche en prison'}
+  lead:
+    ar: 'القانون 10.23 المتعلق بتنظيم وتدبير المؤسسات السجنية (الجريدة الرسمية 7328، 22 غشت 2024)، وقانون المسطرة الجنائية في الإفراج المقيد بشروط.'
+    fr: 'La loi 10.23 sur l’organisation et la gestion des établissements pénitentiaires (BO 7328, 22 août 2024), et le code de procédure pénale pour la libération conditionnelle.'
+  cites: [/ma/loi/10-23/art_69]
+  sections:
+    - title: {ar: 'الزيارة', fr: 'Les visites'}
+      facts:
+        - text: {ar: 'للمعتقل أن يزوره زوجه وأصوله وفروعه وإخوته ونائبه الشرعي؛ ولغيرهم بترخيص من المدير.', fr: 'Le détenu reçoit la visite de son conjoint, ses ascendants, descendants, frères et sœurs et son représentant légal ; d’autres avec l’autorisation du directeur.'}
+          cites: [/ma/loi/10-23/art_69]
+        - text: {ar: 'الزيارة في مزار دون فاصل، إلا لأسباب يعددها القانون؛ ويفتش الزوار بكرامة من موظفين من نفس الجنس.', fr: 'La visite a lieu au parloir sans séparation, sauf motifs légaux ; les visiteurs sont fouillés dignement par des agents du même sexe.'}
+          cites: [/ma/loi/10-23/art_70, /ma/loi/10-23/art_73]
+        - text: {ar: 'يمنع على المعتقل التوصل بالمؤونة، إلا في أحوال ومناسبات خاصة تسمح بها الإدارة؛ والأشياء المسموح بها يحددها نص تنظيمي.', fr: 'Le détenu ne peut recevoir de provisions, sauf cas et occasions particuliers autorisés ; les objets permis sont fixés par voie réglementaire.'}
+          cites: [/ma/loi/10-23/art_75, /ma/loi/10-23/art_74]
+    - title: {ar: 'المراسلة والشكاية', fr: 'Le courrier et les plaintes'}
+      facts:
+        - text: {ar: 'الرسائل بخط مقروء ودون إشارة متفق عليها؛ وتحجز إذا تضمنت أفعالا مخالفة للقانون.', fr: 'Les lettres lisibles, sans signe convenu ; elles sont retenues si elles contiennent des faits illicites.'}
+          cites: [/ma/loi/10-23/art_94]
+        - text: {ar: 'للمعتقل أن يقدم شكايته شفويا أو كتابة، وأن يطلب الاستماع إليه بعيدا عن مسمع الموظف.', fr: 'Le détenu peut se plaindre oralement ou par écrit, et demander à être entendu hors de portée d’oreille du surveillant.'}
+          cites: [/ma/loi/10-23/art_133]
+        - text: {ar: 'يحتفظ المعتقل دائما بحق الاتصال بحرية بمحاميه، ولو كان في زنزانة التأديب.', fr: 'Le détenu garde toujours le droit de communiquer librement avec son avocat, même en cellule disciplinaire.'}
+          cites: [/ma/loi/10-23/art_205]
+    - title: {ar: 'الإفراج المقيد بشروط', fr: 'La libération conditionnelle'}
+      facts:
+        - text: {ar: 'لمن برهن على تحسن سلوكه: بعد قضاء نصف العقوبة في الجنحة، وثلثيها في الجناية أو في جنحة يتجاوز حدها الأقصى خمس سنوات.', fr: 'Pour qui a montré une meilleure conduite : après la moitié de la peine pour un délit, les deux tiers pour un crime ou un délit puni de plus de cinq ans.'}
+          cites: [/ma/loi/22-01/art_622]
+        - text: {ar: 'يعد مدير المؤسسة السجنية الاقتراح تلقائيا أو بطلب من المعتقل أو عائلته.', fr: 'Le directeur de la prison prépare la proposition d’office ou à la demande du détenu ou de sa famille.'}
+          cites: [/ma/loi/22-01/art_625]
+
+- key: coercion
+  title: {ar: 'الغرامة والإكراه البدني والتقادم', fr: 'Amendes, contrainte par corps et prescription'}
+  lead:
+    ar: 'إذا لم تؤد الغرامة أو التعويض أو المصاريف ولم تنفع إجراءات التحصيل، يمكن الإكراه البدني بالسجن مدة يحددها المبلغ؛ وهو لا يسقط الدين.'
+    fr: 'Si l’amende, les réparations ou les frais restent impayés malgré le recouvrement, la contrainte par corps peut s’appliquer, pour une durée fixée par le montant ; elle n’éteint pas la dette.'
+  cites: [/ma/loi/22-01/art_635, /ma/loi/22-01/art_638]
+  sections:
+    - title: {ar: 'المدة حسب المبلغ', fr: 'La durée selon le montant'}
+      table:
+        head: [{ar: 'المبلغ', fr: 'Montant'}, {ar: 'المدة', fr: 'Durée'}]
+        rows:
+          - [{ar: 'من 8.000 إلى أقل من 20.000 درهم', fr: 'De 8 000 à moins de 20 000 DH'}, {ar: 'من 15 إلى 21 يوما', fr: '15 à 21 jours'}]
+          - [{ar: 'من 20.000 إلى أقل من 50.000 درهم', fr: 'De 20 000 à moins de 50 000 DH'}, {ar: 'من شهر إلى شهرين', fr: '1 à 2 mois'}]
+          - [{ar: 'من 50.000 إلى أقل من 200.000 درهم', fr: 'De 50 000 à moins de 200 000 DH'}, {ar: 'من 3 إلى 5 أشهر', fr: '3 à 5 mois'}]
+          - [{ar: 'من 200.000 إلى أقل من مليون درهم', fr: 'De 200 000 à moins d’1 million de DH'}, {ar: 'من 6 إلى 9 أشهر', fr: '6 à 9 mois'}]
+          - [{ar: 'مليون درهم فأكثر', fr: '1 million de DH ou plus'}, {ar: 'من 10 إلى 15 شهرا', fr: '10 à 15 mois'}]
+      cites: [/ma/loi/22-01/art_638]
+    - title: {ar: 'من يعفى', fr: 'Qui en est dispensé'}
+      facts:
+        - text: {ar: 'لا ينفذ الإكراه البدني على من يثبت عسره بشهادة عدم الخضوع للضريبة على المستوى الوطني من مصلحة الضرائب بموطنه؛ وللنيابة العامة أن تتحقق.', fr: 'La contrainte ne s’exécute pas contre qui prouve son insolvabilité par une attestation nationale de non-imposition délivrée par le service des impôts de son domicile ; le parquet peut vérifier.'}
+          cites: [/ma/loi/22-01/art_635]
+        - text: {ar: 'إذا تعددت الديون، تحسب المدة بمجموع المبالغ المحكوم بها.', fr: 'Pour plusieurs dettes, la durée se calcule sur le total des sommes.'}
+          cites: [/ma/loi/22-01/art_638]
+    - title: {ar: 'تقادم العقوبات', fr: 'La prescription des peines'}
+      facts:
+        - text: {ar: 'العقوبة الجنائية تتقادم بخمس عشرة سنة، والجنحية بأربع سنوات أو بمدة العقوبة إذا تجاوزت خمس سنوات، وعقوبة المخالفة بسنة، من صيرورة الحكم نهائيا.', fr: 'La peine criminelle se prescrit par quinze ans, la peine correctionnelle par quatre ans ou par sa durée au-delà de cinq ans, la peine de contravention par un an, du jour où le jugement est définitif.'}
+          cites: [/ma/loi/22-01/art_649, /ma/loi/22-01/art_650, /ma/loi/22-01/art_651]
+        - text: {ar: 'تقادم العقوبة يخلص من آثار الإدانة، لكن حالات انعدام الأهلية تبقى؛ ومن تقادمت عقوبته الجنائية يمنع طول حياته من الإقامة حيث يستقر الضحية.', fr: 'La prescription libère des effets de la condamnation, mais les incapacités demeurent ; qui voit sa peine criminelle prescrite est interdit à vie de séjour là où vit la victime.'}
+          cites: [/ma/loi/22-01/art_648, /ma/loi/22-01/art_649]
+
+- key: beliefs
+  title: {ar: 'شنو كيقولو الناس، وشنو كيقول القانون', fr: 'Ce que l’on croit, ce que dit la loi'}
+  lead:
+    ar: 'أفكار شائعة عن البوليس والمحكمة والمحامي والحبس، وما تكتبه النصوص.'
+    fr: 'Des idées répandues sur la police, le tribunal, l’avocat et la prison, et ce qu’écrivent les textes.'
+  cites: [/ma/loi/22-01/art_66-2]
+  sections:
+    - title: {ar: '«البوليس يقدر يخليك حتى يكمل البحث»', fr: '«La police peut vous garder jusqu’à la fin de l’enquête»'}
+      facts:
+        - text: {ar: 'الحراسة النظرية 48 ساعة على الأكثر، تمدد 24 ساعة مرة واحدة بإذن كتابي معلل؛ وفي أمن الدولة 96 ساعة تمدد مرة، وفي الإرهاب 96 ساعة تمدد مرتين.', fr: 'La garde à vue dure 48 heures au plus, prolongeable une fois de 24 heures sur autorisation écrite motivée ; 96 heures prolongeables une fois pour la sûreté de l’État, deux fois pour le terrorisme.'}
+          cites: [/ma/loi/22-01/art_66, /ma/loi/22-01/art_66-2]
+          more: tools/custody
+    - title: {ar: '«إلا سكتي، كيحسبوها عليك»', fr: '«Se taire, c’est avouer»'}
+      facts:
+        - text: {ar: 'يخبر الموقوف بحقه في التزام الصمت، ولا يعتبر الصمت اعترافا ضمنيا.', fr: 'La personne arrêtée est informée de son droit de se taire, et le silence ne vaut pas aveu tacite.'}
+          cites: [/ma/loi/22-01/art_66-2]
+    - title: {ar: '«المحامي ما كيدخلش حتى تمشي للمحكمة»', fr: '«L’avocat n’intervient qu’au tribunal»'}
+      facts:
+        - text: {ar: 'الاتصال بالمحامي من الساعة الأولى للحراسة النظرية، ثلاثين دقيقة في سرية.', fr: 'Le contact avec l’avocat a lieu dès la première heure de garde à vue, trente minutes en confidentialité.'}
+          cites: [/ma/loi/22-01/art_66-2]
+          more: journeys/custody
+    - title: {ar: '«إلا تنازل المشتكي، القضية كتسالي»', fr: '«Si la victime retire sa plainte, l’affaire s’arrête»'}
+      facts:
+        - text: {ar: 'التنازل يسقط الدعوى العمومية فقط إذا كانت الشكاية شرطا للمتابعة.', fr: 'Le désistement n’éteint l’action publique que si la plainte conditionne les poursuites.'}
+          cites: [/ma/loi/22-01/art_4]
+          more: journeys/complaint
+    - title: {ar: '«القفة مسموحة فالحبس»', fr: '«On peut apporter le panier à la prison»'}
+      facts:
+        - text: {ar: 'يمنع على المعتقل التوصل بالمؤونة، إلا في أحوال ومناسبات خاصة تسمح بها الإدارة المكلفة بالسجون.', fr: 'Le détenu ne peut recevoir de provisions, sauf cas et occasions particuliers autorisés par l’administration pénitentiaire.'}
+          cites: [/ma/loi/10-23/art_75]
+          more: pages/prison
+    - title: {ar: '«المحامي ياخد نسبة من الحكم»', fr: '«L’avocat prend un pourcentage du jugement»'}
+      facts:
+        - text: {ar: 'الاتفاق المسبق على أتعاب مرتبطة بنتيجة الدعوى باطل بقوة القانون؛ والأتعاب بتكليف مكتوب ووصل.', fr: 'Convenir d’avance d’honoraires liés au résultat est nul de plein droit ; les honoraires passent par une mission écrite et un reçu.'}
+          cites: [/ma/loi/66-23/art_69, /ma/loi/66-23/art_72]
+          more: pages/lawyer
+    - title: {ar: '«الحكم الصغير ما فيهش استئناف، يعني ما عندي ما ندير»', fr: '«Un petit jugement sans appel, il n’y a rien à faire»'}
+      facts:
+        - text: {ar: 'الأحكام حتى 10.000 درهم وأحكام القرب لا تستأنف، لكن يمكن طلب إلغائها أمام رئيس المحكمة داخل 15 يوما في حالات محددة.', fr: 'Les jugements jusqu’à 10 000 DH et ceux de proximité sont sans appel, mais leur annulation peut être demandée au président dans les 15 jours, dans des cas précis.'}
+          cites: [/ma/loi/58-25/art_30, /ma/loi/58-25/art_32]
+          more: tools/deadline

@@ -1,0 +1,373 @@
+@import "tailwindcss";
+
+/* The design direction's tokens (the design-direction review, 18 Oct 2026).
+   Stamp violet marks sources, versions and links; status colours differ in
+   lightness as well as hue. */
+/* Markazi Text and Readex Pro (SIL OFL 1.1, public/fonts/OFL-*.txt), variable in weight, each cut in two by
+   web/scripts/fonts.md: the Arabic letters with digits and punctuation, and the Latin letters, fetched only when a
+   page has some. */
+@font-face {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/markazi-text-arabic.woff2") format("woff2");
+  unicode-range: U+0020-0040, U+005B-0060, U+007B-007E, U+00A0, U+00AB, U+00B0, U+00BB, U+00D7, U+0600-06FF, U+200C-200F, U+2010-2026, U+2039-203A, U+2212, U+25CC;
+}
+@font-face {
+  font-family: "Markazi Text";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/markazi-text-latin.woff2") format("woff2");
+  unicode-range: U+0041-005A, U+0061-007A, U+00C0-00FF, U+0152-0153, U+20AC;
+}
+@font-face {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/fonts/readex-pro-arabic.woff2") format("woff2");
+  unicode-range: U+0020-0040, U+005B-0060, U+007B-007E, U+00A0, U+00AB, U+00B0, U+00BB, U+00D7, U+0600-06FF, U+200C-200F, U+2010-2026, U+2039-203A, U+2212, U+25CC;
+}
+@font-face {
+  font-family: "Readex Pro";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/fonts/readex-pro-latin.woff2") format("woff2");
+  unicode-range: U+0041-005A, U+0061-007A, U+00C0-00FF, U+0152-0153, U+20AC;
+}
+
+@theme {
+  /* The for-everyone review (19 Oct 2026, R15): the violet stays the site's colour, and the law's own (its words, its
+     source); it no longer draws an office stamp. People's words are saffron, the conversation teal, each life topic
+     has its colour. A warm light ground under white sheets and cards. */
+  --color-ink: #1e1b2c;
+  --color-ink-soft: #5d586e;
+  --color-stamp: #5b3a9e;
+  --color-stamp-deep: #3f2876;
+  --color-wash: #efe9f8;
+  --color-paper: #f4f2ee;
+  --color-sheet: #ffffff;
+  --color-rule: #e4e0da;
+  --color-rule-soft: #efece6;
+  /* An input's edge: 3:1 on white and on the paper (WCAG 1.4.11; P2 of the polish review). */
+  --color-field: #8a8478;
+  --color-stamp-line: #c9b9ee;
+  --color-target-wash: #f4effa;
+  --color-chip: #ebe8e2;
+  --color-tick: #ddd9d2;
+  --color-muted: #8a8598;
+  --color-on-stamp: #ffffff;
+  --color-in-force: #0e7157;      /* a step darker (UX15): 4.4 : 1 on the wash, now 5.0 */
+  --color-amended: #93540a;       /* a step darker (UX15): 4.4 : 1 on the wash, now 5.0 */
+  --color-repealed: #b42318;
+  /* The road's signs (A13 of the road-signposted review): order 2805.14's red and blue, for the signs and the red band only;
+     a status colour never draws a sign. */
+  --color-sign-red: #c1272d;
+  --color-sign-blue: #1d5ba8;
+  --color-on-sign: #ffffff;
+  /* The work's band (E5 of the work-counted review): ink navy, kept by night like the signs; no one is hurt, red stays the road's. */
+  --color-band-ink: #1f3a72;
+  --color-amended-wash: #fdf3e6;
+  /* People's words (explanations, guides) and the conversation (questions, answers). */
+  --color-people: #a35a00;
+  --color-people-fill: #f0a21b;
+  --color-people-wash: #fff1d9;
+  --color-on-people: #241400;
+  --color-talk: #126b60;
+  --color-talk-wash: #e1f2ee;
+  /* Two series on one chart (the family's numbers): validated for colour blindness on the sheet, light and dark. */
+  --color-chart-1: #5b3a9e;
+  --color-chart-2: #d97706;
+  /* Under a sheet or a drawer: dark by day and by night (the ink turns light at night). */
+  --color-scrim: #080710;
+
+  /* Budget shares, in the order a chart uses them: the stamp's violets, then
+     building (green), then debt (amber), then the rest. */
+  --color-share-1: #5b3a9e;
+  --color-share-2: #8a6fc9;
+  --color-share-3: #c4b4ea;
+  --color-share-4: #0f7b5f;
+  --color-share-5: #a15c07;
+  --color-share-6: #a3a1b6;
+
+  /* Markazi Text sets the law's own words; Readex Pro everything people say, and the interface. */
+  --font-law: "Markazi Text", serif;
+  --font-ui: "Readex Pro", sans-serif;
+
+  /* The type scale (P3 of the polish review, 19 Oct 2026): eight sizes, used by name, never an arbitrary value. Titles
+     grow with the screen between a phone (390 px) and a desk (1200 px). `law` is the law's own words in Markazi, whose
+     small x-height reads a size smaller than Readex at the same pixels. */
+  --text-meta: 0.875rem;
+  --text-meta--line-height: 1.5;
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.6;
+  --text-law: clamp(1.3125rem, 1.25rem + 0.25vw, 1.375rem);
+  --text-law--line-height: 1.85;
+  --text-h3: 1.375rem;
+  --text-h3--line-height: 1.35;
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.25;
+  --text-h1: clamp(2rem, 1.7rem + 1.2vw, 2.75rem);
+  --text-h1--line-height: 1.15;
+  --text-display: clamp(3rem, 2.5rem + 1.6vw, 3.75rem);
+  --text-display--line-height: 1.1;
+
+  /* Three corners (P4): controls, cards and sheets; pills are `rounded-full`. */
+  --radius-control: 10px;
+  --radius-card: 18px;
+}
+
+/* The life topics (R2 of the for-everyone review), in data/topics.json's order: plain custom properties, read through
+   `--t` by the topic pages (no utility names them, so @theme would leave them out). */
+:root {
+  --color-t-family: #c2417a;
+  --color-t-work: #2b66c9;        /* a step darker (UX15): its figures read 4.2 : 1 on their wash, now 4.8 */
+  --color-t-housing: #11806a;
+  --color-t-road: #b86e00;
+  --color-t-consumer: #a6338f;
+  --color-t-land: #5e7f1f;
+  --color-t-tax: #8d6e00;
+  --color-t-health: #c8463d;
+  --color-t-papers: #0e7490;
+  --color-t-business: #a0522d;
+  --color-t-justice: #3f51b5;
+  --color-t-digital: #455a64;
+}
+
+/* Night: the phone's choice unless the reader picked one (html[data-theme], set from the reading settings).
+   The same tokens, lighter ink on a dark sheet; the violet lifts so links keep their contrast. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --blend-ink: normal; /* ink pressed on paper multiplies by day; at night it would vanish (PX26) */
+    --color-ink: #ece9f4;
+    --color-ink-soft: #b2adc3;
+    --color-stamp: #b9a5f3;
+    --color-stamp-deep: #d6cbf8;
+    --color-wash: #2a2446;
+    --color-paper: #13111a;
+    --color-sheet: #1c1925;
+    --color-rule: #2f2b3c;
+    --color-rule-soft: #262333;
+    --color-field: #6e6888;
+    --color-stamp-line: #5a4a94;
+    --color-target-wash: #242040;
+    --color-chip: #2b2839;
+    --color-tick: #44405a;
+    --color-muted: #7f7992;
+    --color-on-stamp: #10131a;
+    --color-in-force: #4fc39a;
+    --color-amended: #e3a651;
+    --color-repealed: #f0796d;
+    --color-sign-red: #c8333a;
+    --color-sign-blue: #2b67b8;
+    --color-band-ink: #26467f;
+    --color-amended-wash: #3a2c17;
+    --color-people: #f2b44a;
+    --color-people-fill: #f0a21b;
+    --color-people-wash: #33270f;
+    --color-on-people: #241400;
+    --color-talk: #5cc8b6;
+    --color-talk-wash: #143029;
+    --color-chart-1: #9479dc;
+    --color-chart-2: #cf7d14;
+    --color-t-family: #ef7aa8;
+    --color-t-work: #7fa8ff;
+    --color-t-housing: #4fc3a6;
+    --color-t-road: #f0b34a;
+    --color-t-consumer: #e07cc9;
+    --color-t-land: #a8c45a;
+    --color-t-tax: #e0c24a;
+    --color-t-health: #f08a80;
+    --color-t-papers: #4cc3dc;
+    --color-t-business: #e09a6e;
+    --color-t-justice: #9aa8f0;
+    --color-t-digital: #a7b9c2;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --blend-ink: normal;
+  --color-ink: #ece9f4;
+  --color-ink-soft: #b2adc3;
+  --color-stamp: #b9a5f3;
+  --color-stamp-deep: #d6cbf8;
+  --color-wash: #2a2446;
+  --color-paper: #13111a;
+  --color-sheet: #1c1925;
+  --color-rule: #2f2b3c;
+  --color-rule-soft: #262333;
+  --color-field: #6e6888;
+  --color-stamp-line: #5a4a94;
+  --color-target-wash: #242040;
+  --color-chip: #2b2839;
+  --color-tick: #44405a;
+  --color-muted: #7f7992;
+  --color-on-stamp: #10131a;
+  --color-in-force: #4fc39a;
+  --color-amended: #e3a651;
+  --color-repealed: #f0796d;
+  --color-sign-red: #c8333a;
+  --color-sign-blue: #2b67b8;
+  --color-band-ink: #26467f;
+  --color-amended-wash: #3a2c17;
+  --color-people: #f2b44a;
+  --color-people-fill: #f0a21b;
+  --color-people-wash: #33270f;
+  --color-on-people: #241400;
+  --color-talk: #5cc8b6;
+  --color-talk-wash: #143029;
+  --color-chart-1: #9479dc;
+  --color-chart-2: #cf7d14;
+  --color-t-family: #ef7aa8;
+  --color-t-work: #7fa8ff;
+  --color-t-housing: #4fc3a6;
+  --color-t-road: #f0b34a;
+  --color-t-consumer: #e07cc9;
+  --color-t-land: #a8c45a;
+  --color-t-tax: #e0c24a;
+  --color-t-health: #f08a80;
+  --color-t-papers: #4cc3dc;
+  --color-t-business: #e09a6e;
+  --color-t-justice: #9aa8f0;
+  --color-t-digital: #a7b9c2;
+  color-scheme: dark;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  /* What the keyboard reaches is scrolled above the phone's bottom bar (HM30: «المادة 35» landed wholly under it). */
+  scroll-padding-bottom: 4rem;
+}
+
+body {
+  margin: 0;
+}
+
+@layer base {
+  a {
+    color: var(--color-stamp);
+  }
+  a:hover {
+    color: var(--color-stamp-deep);
+  }
+}
+
+/* Motion with a purpose (P19 of the polish review): a sheet comes up from the bottom, a panel from its side, a scrim
+   and a page's content fade in. Every one is off with reduced motion (motion-safe:). */
+/* Where you went (U7 of the Moroccan-design review): a door into its topic's window, an article's number into its
+   discussion's, a result's label into its article's number (shared/services/motion.ts `go`); the rest of the page a
+   short crossfade. The browser does nothing of it under reduced motion, and `go` does not ask. */
+::view-transition-group(topic-arch),
+::view-transition-group(article-talk),
+::view-transition-group(article-label) {
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(.2, .7, .2, 1);
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 160ms;
+}
+
+@keyframes sheet-up {
+  from { transform: translateY(28px); opacity: 0.5; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes panel-in-start {
+  from { transform: translateX(var(--panel-from, 24px)); opacity: 0.5; }
+  to { transform: none; opacity: 1; }
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* The topic tools (F5 of the road tools review): what a tool lays down rises into place, in order. */
+@keyframes rise {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+/* The one motion: an article reached by its link presses its stamp once. */
+@keyframes stamp-press {
+  from { transform: scale(1.08); opacity: 0.4; }
+  to { transform: none; opacity: 1; }
+}
+article:target [data-stamp] {
+  animation: stamp-press 180ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  article:target [data-stamp] {
+    animation: none;
+  }
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--color-stamp);
+    outline-offset: 2px;
+  }
+}
+
+/* Print: the law, never the tools. While articles are chosen for export, only the chosen ones print. */
+@media print {
+  header,
+  nav,
+  aside,
+  [data-noprint] {
+    display: none !important;
+  }
+  body[data-printing='selection'] article[data-selected='false'] {
+    display: none !important;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* The search box draws its own clear button (P8 of the polish review); the browser's blue × goes. */
+input[type='search']::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; }
+
+/* A field for what people type (`dir="auto"`): empty, the browser takes it as left to right, so on an Arabic page its
+   placeholder and caret sat on the left, by the button. It keeps the page's direction instead, and each line of what is
+   typed takes its own: «كراء» from the right, «bail» from the left. */
+:is(input, textarea)[dir='auto'] { direction: inherit; unicode-bidi: plaintext; text-align: start; }
+
+/* A stamp and a word's meaning are small marks a finger must hit: 44 px tall to the touch, the same size to the eye
+   (UX14 of the phone-test review: the stamp, the way to the printed page, was 26 px). */
+[data-hit] { position: relative; }
+[data-hit]::after { content: ''; position: absolute; inset: -9px 0; }
+
+/* The logo, the wordmark «قانون المغرب» (9 Nov 2026: drawn with Gemini, its spelling mended, traced; public/
+   brand/wordmark.svg and its bolder cut wordmark-bold.svg), cut out of the text's colour, so the dark theme's violet too.
+   The header carries it in place of the arch and «ق» (public/brand/mark.svg, still the icons' and the cards'). */
+.wordmark { display: inline-block; flex: none; aspect-ratio: 1.022; background-color: currentColor;
+  -webkit-mask: url(/brand/wordmark.svg) center / contain no-repeat; mask: url(/brand/wordmark.svg) center / contain no-repeat; }
+.wordmark-bold { aspect-ratio: 1.508; -webkit-mask-image: url(/brand/wordmark-bold.svg); mask-image: url(/brand/wordmark-bold.svg); }
+
+/* Large text (HM18 of the hard-moment review): from about 140 % of the phone's text size the shell's rows ran
+   past a phone's width (at 200 % «Français» left the screen, the bar's words ran together). The header's row wraps its
+   tools under the name; under 17.5rem (a container's rem follows the reader's size, a media query's does not) the
+   reading bar gives the law's name its own line and its tools' words to their titles, and the bottom bar its words to
+   its icons, still read aloud. */
+#root>div>header>div:first-child{flex-wrap:wrap}
+#root>div>nav,.sticky[data-noprint]{container-type:inline-size}
+@container (width<17.5rem){
+.sticky[data-noprint]>div:first-child{flex-wrap:wrap}
+.sticky[data-noprint]>div>div:first-child{flex-basis:100%}
+.sticky[data-noprint]>div>button{min-width:44px;height:44px}
+.sticky[data-noprint]>div>button>span{display:none}
+#root>div>nav a{font-size:0;height:56px}
+}

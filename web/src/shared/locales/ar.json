@@ -1,0 +1,473 @@
+{
+  "app": {
+    "name": "قانون",
+    "tagline": "قانون المغرب، بكلام مفهوم",
+    "failed": "تعذر تحميل هذه الصفحة: تحقق من الاتصال.",
+    "reload": "إعادة التحميل"
+  },
+  "nav": {
+    "account": "حسابي",
+    "signIn": "دخول",
+    "switchLanguage": "Français",
+    "switchLanguageLabel": "Afficher le site en français",
+    "search": "بحث",
+    "budget": "قانون المالية",
+    "check": "التحقق من الإحالات",
+    "words": "كلمات القانون",
+    "saved": "محفوظاتي",
+    "new": "الجديد",
+    "main": "التنقل",
+    "skip": "تجاوز إلى المحتوى",
+    "questions": "أسئلة تنتظر جوابا",
+    "rules": "قواعد النقاش",
+    "privacy": "الخصوصية",
+    "home": "الرئيسية",
+    "topics": "المواضيع",
+    "talk": "النقاش",
+    "me": "أنا",
+    "library": "المكتبة",
+    "corrections": "ما صححناه",
+    "contribute": "ساهم",
+    "about": "عن «قانون»",
+    "blog": "قانون بالأرقام",
+    "numbers": "بالأرقام"
+  },
+  "languages": {
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "corpus": {
+    "heroTitle": "قانون المغرب، بكلام مفهوم",
+    "heroLead": "السؤال بالدارجة أو العربية أو الفرنسية، والجواب من نص القانون كما نُشر في الجريدة الرسمية.",
+    "searchPlaceholder": "شنو بغيتي تعرف؟",
+    "search": "بحث",
+    "searchHint": "البحث يشمل كل الأعداد المعالجة إلى الآن ({{count}}).",
+    "processedIssue": "آخر الأعداد المعالجة",
+    "issueTitle": "الجريدة الرسمية عدد {{number}}",
+    "issueTitleShort": "العدد {{number}}",
+    "editionGeneral": "النشرة العامة",
+    "openIssue": "فتح العدد",
+    "openPdf": "العدد كما نُشر",
+    "general": "نصوص عامة",
+    "special": "نصوص خاصة",
+    "official": "القسم الرسمي",
+    "unofficial": "القسم الغير الرسمي",
+    "other": "نصوص أخرى",
+    "page": "الصفحة {{page}}",
+    "pageLong": "الصفحة {{page}}",
+    "onPage": "في الصفحة {{page}}",
+    "pageStrip": "صفحات العدد",
+    "pageStripHint": "كل خانة صفحة، والملونة صفحة يبدأ فيها نص.",
+    "asPublished": "كما نُشر",
+    "currentVersion": "النص اليوم",
+    "versionsTitle": "النص عبر الزمن",
+    "today": "اليوم",
+    "whereFrom": "مصدر النص في الجريدة الرسمية",
+    "promulgatedByLabel": "أمر بتنفيذه",
+    "dahirNumber": "الظهير الشريف رقم {{number}}",
+    "signedOn": "بتاريخ",
+    "authority": "أصدره",
+    "source": "من أين هذا النص",
+    "openPage": "فتح الصفحة",
+    "preamble": "النصوص التي بُني عليها",
+    "showPreamble": "عرض",
+    "hidePreamble": "أخفِ",
+    "articles": "المواد",
+    "amends": "ما يغيّره هذا النص",
+    "amendedBy": "ما غيّر هذا النص",
+    "cites": "النصوص التي يحيل إليها",
+    "notInCorpus": "لم يُدخل «قانون» نص هذا القانون بعد. ما تراه هنا ما تقوله عنه النصوص التي غيّرته أو أحالت إليه.",
+    "frenchMissing": "النص الفرنسي غير متوفر بعد.",
+    "copyLink": "نسخ رابط المادة",
+    "copied": "نُسخ الرابط",
+    "previous": "السابقة",
+    "next": "التالية",
+    "noResults": "لا مادة تحتوي كل هذه الكلمات. احذف كلمة أو جرّب صيغة أخرى.",
+    "loading": "جارٍ التحميل…",
+    "notFound": "لم نجد هذه الصفحة في «قانون».",
+    "empty": "لا عدد معالَجا بعد.",
+    "disclaimer": "هذه معلومة عامة عن القانون، وليست رأيا في حالتك. القانون هو النص المنشور في الجريدة الرسمية.",
+    "actions": {
+      "modify": "يغيّر",
+      "add": "يضيف",
+      "repeal": "ينسخ",
+      "renumber": "يعيد ترقيم",
+      "replace_words": "يعوّض عبارات"
+    },
+    "types": {
+      "law": "قانون",
+      "organic_law": "قانون تنظيمي",
+      "dahir": "ظهير",
+      "decree_law": "مرسوم بقانون",
+      "decree": "مرسوم",
+      "order": "قرار",
+      "decision": "مقرر",
+      "circular": "دورية",
+      "convention": "اتفاقية",
+      "constitution": "دستور",
+      "other": "نص",
+      "bill": "مشروع قانون"
+    },
+    "listSep": "، ",
+    "articlesCount_zero": "بلا مواد",
+    "articlesCount_one": "مادة واحدة",
+    "articlesCount_two": "مادتان",
+    "articlesCount_few": "{{count}} مواد",
+    "articlesCount_many": "{{count}} مادة",
+    "articlesCount_other": "{{count}} مادة",
+    "amendsCount_zero": "لا يغيّر نصا",
+    "amendsCount_one": "يغيّر نصا واحدا",
+    "amendsCount_two": "يغيّر نصين",
+    "amendsCount_few": "يغيّر {{count}} نصوص",
+    "amendsCount_many": "يغيّر {{count}} نصا",
+    "amendsCount_other": "يغيّر {{count}} نص",
+    "textsCount_zero": "لا نصوص",
+    "textsCount_one": "نص واحد",
+    "textsCount_two": "نصان",
+    "textsCount_few": "{{count}} نصوص",
+    "textsCount_many": "{{count}} نصا",
+    "textsCount_other": "{{count}} نص",
+    "pages_zero": "لا صفحات",
+    "pages_one": "صفحة واحدة",
+    "pages_two": "صفحتان",
+    "pages_few": "{{count}} صفحات",
+    "pages_many": "{{count}} صفحة",
+    "pages_other": "{{count}} صفحة",
+    "results_zero": "لا مادة",
+    "results_one": "مادة واحدة",
+    "results_two": "مادتان",
+    "results_few": "{{count}} مواد",
+    "results_many": "{{count}} مادة",
+    "results_other": "{{count}} مادة",
+    "publishedIn": "نُشر في",
+    "suffix": {
+      "bis": "مكرر",
+      "ter": "مكرر مرتين"
+    },
+    "otherIssues": "أعداد أخرى",
+    "standing": {
+      "in_force": "نافذ",
+      "none_found": "لم نجد ما ينسخه",
+      "amended": "عُدّل بعد صدوره",
+      "repealed": "منسوخ",
+      "partly_repealed": "منسوخ جزئيا",
+      "not_yet_in_force": "لم يدخل حيز التنفيذ بعد"
+    },
+    "moreFacts": "التفاصيل",
+    "lessFacts": "أخفِ التفاصيل",
+    "titleWhole": "العنوان كاملا",
+    "titleShort": "عنوان أقصر",
+    "about": "حول هذا النص",
+    "parts": "أجزاء النص",
+    "pageAsPrinted": "الصفحة {{page}} كما طُبعت",
+    "readTo": "قرينا الجريدة الرسمية حتى العدد {{number}} ({{date}})",
+    "seePrinted": "الصفحة كما طُبعت",
+    "notRead_zero": "",
+    "notRead_one": "، ولم نقرأ بعد عددا واحدا صدر بعده",
+    "notRead_two": "، ولم نقرأ بعد عددين صدرا بعده",
+    "notRead_few": "، ولم نقرأ بعد {{count}} أعداد صدرت بعده",
+    "notRead_many": "، ولم نقرأ بعد {{count}} عددا صدر بعده",
+    "notRead_other": "، ولم نقرأ بعد {{count}} عدد صدر بعده",
+    "readToShort": "قرينا الجريدة الرسمية حتى العدد {{number}}",
+    "fromStart": "من البداية",
+    "ai": "الذكاء الاصطناعي",
+    "translatedShort": "ترجمة غير رسمية من الفرنسية",
+    "translatedRefFrenchOnly": "لم تنشره النسخة العربية من الجريدة الرسمية. المرجع نصه الفرنسي، بجانب كل مادة.",
+    "translatedRef": "العدد {{issue}} بالعربية غير منشور على موقع الأمانة العامة للحكومة. المرجع النص العربي المطبوع، والترجمة الرسمية الفرنسية بجانب كل مادة."
+  },
+  "search": {
+    "suggestions": "اقتراحات",
+    "typedLatin": "بالحروف العربية:",
+    "issue": "الجريدة الرسمية عدد {{key}}",
+    "openIssue": "فتح العدد",
+    "openArticle": "فتح المادة",
+    "openText": "فتح النص",
+    "articleMissing": "النص في «قانون»، والمادة {{article}} ليست فيه",
+    "notInCorpus": "ليس في «قانون» بعد",
+    "notLoaded": "عنوانه فقط",
+    "repealedShort": "منسوخ",
+    "texts_zero": "لا نص",
+    "texts_one": "نص واحد",
+    "texts_two": "نصان",
+    "texts_few": "{{count}} نصوص",
+    "texts_many": "{{count}} نصا",
+    "texts_other": "{{count}} نص",
+    "readOnAdala": "قراءته على بوابة عدالة",
+    "adalaWho": "موقع وزارة العدل",
+    "groups": {
+      "topics": "مواضيع ودلائل",
+      "texts": "قوانين",
+      "words": "كلمات",
+      "recent": "بحثت مؤخرا عن",
+      "try": "أمثلة"
+    },
+    "topic": "موضوع",
+    "guide": "دليل",
+    "word": "ما معناها؟",
+    "searchAll": "بحث في كل النصوص",
+    "clear": "مسح ما كُتب",
+    "forget": "انسَها"
+  },
+  "reading": {
+    "openArticle": "فتح المادة",
+    "definitionOf": "تعريف «{{term}}»",
+    "definedHere": "يعرّفه هذا النص:",
+    "seeDefinition": "المادة التي تعرّفه",
+    "preview": "معاينة",
+    "unloaded": "هذا النص ليس في «قانون» بعد، فلا رابط إليه الآن.",
+    "copyTable": "نسخ الجدول",
+    "tableCopied": "نُسخ الجدول، ويمكن لصقه في جدول بيانات",
+    "totalOk": "المجموع يطابق ما فوقه",
+    "totalOff": "المجموع لا يطابق ما فوقه، وقد يكون في القراءة خطأ",
+    "where": "مكانك في النص",
+    "outline": "الفهرس",
+    "close": "إغلاق",
+    "jumpTo": "الانتقال إلى {{word}}",
+    "jumpPlaceholder": "رقمها",
+    "jumpNotFound": "لا مادة بهذا الرقم",
+    "settings": "إعدادات القراءة",
+    "textSize": "حجم النص",
+    "theme": "الإضاءة",
+    "theme_auto": "مثل الجهاز",
+    "theme_light": "نهار",
+    "theme_dark": "ليل",
+    "select": "اختيار مواد",
+    "selectDone": "إنهاء الاختيار",
+    "selectArticle": "اختيار {{label}}",
+    "selected_zero": "لم تُختر أي مادة",
+    "selected_one": "مادة واحدة مختارة",
+    "selected_two": "مادتان مختارتان",
+    "selected_few": "{{count}} مواد مختارة",
+    "selected_many": "{{count}} مادة مختارة",
+    "selected_other": "{{count}} مادة مختارة",
+    "exportTitle": "تصدير المواد المختارة",
+    "exportWord": "ملف Word",
+    "exportPdf": "طباعة أو PDF",
+    "exportFailed": "تعذّر إنشاء الملف. أعد المحاولة.",
+    "clearSelection": "إلغاء",
+    "copyWithRef": "نسخ المادة ومرجعها",
+    "copiedWithRef": "نُسخت المادة ومرجعها",
+    "go": "انتقال",
+    "wholeText_zero": "النص كاملا",
+    "wholeText_one": "النص كاملا (مادة واحدة)",
+    "wholeText_two": "النص كاملا (مادتان)",
+    "wholeText_few": "النص كاملا ({{count}} مواد)",
+    "wholeText_many": "النص كاملا ({{count}} مادة)",
+    "wholeText_other": "النص كاملا ({{count}} مادة)",
+    "earlier": "المواد السابقة ({{count}})",
+    "more": "المواد الباقية ({{count}})",
+    "find": "بحث في هذا النص",
+    "findShort": "بحث",
+    "moreTools": "أدوات أخرى",
+    "sizeShort": "Aa",
+    "goOn": "كمل من {{label}}"
+  },
+  "data": {
+    "title": "البيانات والواجهة البرمجية",
+    "embedAction": "تضمين",
+    "embedHelp": "الصق هذا الرمز في صفحتك لتظهر فيها هذه المادة بمرجعها:",
+    "copyCode": "نسخ الرمز",
+    "readOnSite": "النص كاملا في «قانون»"
+  },
+  "history": {
+    "kinds": {
+      "as_published": "كما نُشر في الجريدة الرسمية",
+      "sgg": "نص بعد التعديلات، جمعته الأمانة العامة للحكومة",
+      "adala": "نص بعد التعديلات، جمعته وزارة العدل",
+      "dgi": "نص بعد التعديلات، جمعته المديرية العامة للضرائب",
+      "machine": "نص بعد التعديلات، جمعه «قانون»",
+      "checked": "نص بعد التعديلات، راجعه شخص",
+      "bill": "مشروع قانون أودع في البرلمان",
+      "translation": "ترجمة غير رسمية من النص الفرنسي الرسمي"
+    },
+    "consolidatedNote": "جُمع هنا النص مع التعديلات التي جاءت بعده، لتقرأه كما هو اليوم. هذه نسخة للقراءة وليست رسمية: الرسمي هو ما نُشر في الجريدة الرسمية، وكل تعديل في تاريخ المادة يدلّك على العدد الذي جاء فيه.",
+    "sggAsOf": "حيّنتها الأمانة العامة للحكومة بتاريخ {{date}}.",
+    "machineNote": "طبّق «قانون» آليًا على الصيغة السابقة التعديلات المنشورة في {{date}}.",
+    "sggName": "الأمانة العامة للحكومة — النصوص المحيّنة",
+    "sggFile": "ملف الأمانة العامة كما نشرته",
+    "sggSite": "على موقع الأمانة العامة",
+    "adalaAsOf": "حيّنتها وزارة العدل بتاريخ {{date}}.",
+    "adalaName": "وزارة العدل — بوابة عدالة",
+    "adalaFile": "ملف بوابة عدالة كما نشرته",
+    "adalaSite": "على بوابة عدالة",
+    "dgiAsOf": "طبعة المديرية العامة للضرائب المحيّنة إلى {{date}}.",
+    "dgiName": "المديرية العامة للضرائب — المدونة العامة للضرائب",
+    "dgiFile": "ملف المديرية العامة للضرائب كما نشرته",
+    "dgiSite": "على موقع المديرية العامة للضرائب",
+    "firstPublished": "نُشر أول مرة في الجريدة الرسمية عدد {{number}}، الصفحة {{page}}",
+    "verdicts": {
+      "agrees": "قراءتنا تطابق نص الأمانة العامة",
+      "partly": "قراءتنا تطابقه جزئيًا",
+      "disagrees": "قراءتنا لا تطابقه — في انتظار مراجعة",
+      "absent": "المادة غير موجودة في نص الأمانة العامة"
+    },
+    "who": {
+      "sgg": "جمعته الأمانة العامة للحكومة",
+      "adala": "جمعته وزارة العدل (بوابة عدالة)",
+      "dgi": "جمعته المديرية العامة للضرائب",
+      "machine": "جمعه «قانون» من التعديلات المنشورة",
+      "checked": "جمعه «قانون» وراجعه شخص",
+      "translation": "ترجمه «قانون» من النص الفرنسي الرسمي"
+    },
+    "whatIsThis": "ما معنى هذا؟",
+    "whoIssued": "نسخة وزارة العدل (بوابة عدالة)",
+    "issuedNote": "هذا هو النص كما صدر، نقلا عن بوابة عدالة، دون التعديلات التي جاءت بعده. هذه نسخة للقراءة وليست رسمية: الرسمي هو ما نُشر في الجريدة الرسمية."
+  },
+  "french": {
+    "show": "Traduction officielle",
+    "note": "Traduction officielle publiée au Bulletin officiel. Seul le texte arabe fait foi.",
+    "label": "الترجمة الفرنسية الرسمية",
+    "issue": "Bulletin officiel n° {{number}} (édition de traduction officielle), {{date}}",
+    "available": "الترجمة الفرنسية الرسمية متوفرة تحت كل مادة؛ النص العربي وحده هو المعتمد.",
+    "labelConsolidated": "النص الفرنسي",
+    "consolidated": "Consolidé par Adala au {{date}}, non officiel",
+    "older": "Antérieur à une modification de l’article : l’arabe est à jour.",
+    "showConsolidated": "Texte français"
+  },
+  "article": {
+    "whole": "النص",
+    "more": "إجراءات أخرى",
+    "listen": "استماع",
+    "stop": "إيقاف",
+    "source": "المصدر: {{source}}",
+    "sourceSgg": "النص بعد التعديلات كما جمعته الأمانة العامة للحكومة (غير رسمي)",
+    "sourceAdala": "النص بعد التعديلات كما جمعته وزارة العدل، بوابة عدالة (غير رسمي)",
+    "sourceDgi": "النص بعد التعديلات كما جمعته المديرية العامة للضرائب (غير رسمي)",
+    "pageShort": "الصفحة {{page}}",
+    "seePage": "الصفحة كما طُبعت",
+    "arabicText": "النص العربي، وهو وحده المعتمد",
+    "standing": {
+      "in_force": "نافذة",
+      "none_found": "لم نجد ما ينسخها",
+      "amended": "عُدّلت",
+      "repealed": "منسوخة",
+      "partly_repealed": "منسوخة جزئيا",
+      "not_yet_in_force": "لم تدخل حيز التنفيذ"
+    },
+    "save": "حفظ",
+    "saved": "محفوظة",
+    "tools": "أدوات {{label}}",
+    "close": "إغلاق",
+    "share": "مشاركة",
+    "ask": "النقاش",
+    "pageOfficial": "الجريدة الرسمية، الصفحة {{page}}",
+    "pageConsolidated": "النص بعد التعديلات، الصفحة {{page}}",
+    "shareTitle": "مشاركة {{label}}",
+    "shareWhatsapp": "واتساب",
+    "shareWhatsappLead": "نص المادة ومصدرها ورابطها",
+    "sharePicture": "صورة",
+    "sharePictureLead": "منشور أو قصة، بمصدرها",
+    "shareLink": "نسخ الرابط",
+    "shareLinkLead": "رابط هذه المادة",
+    "shareText": "نسخ النص",
+    "shareTextLead": "مع الإحالة الكاملة",
+    "shareOther": "تطبيق آخر",
+    "done": "نُسخ",
+    "knownAs": "يُعرف في النقاش العام باسم {{names}}",
+    "extras": {
+      "french": "بالفرنسية",
+      "diff": "ما تغيّر",
+      "history": "تاريخها",
+      "applied": "نصوص تطبقها ({{count}})",
+      "cited": "نصوص تحيل إليها ({{count}})"
+    }
+  },
+  "words": {
+    "title": "كلمات القانون",
+    "lead": "الكلمات التي تجدها في صفحات النصوص، كل واحدة في جملة.",
+    "whatIs": "ما معنى «{{word}}»؟",
+    "all": "كل الكلمات",
+    "items": {
+      "bo": {
+        "term": "الجريدة الرسمية"
+      },
+      "constitution": {
+        "term": "الدستور"
+      },
+      "organic_law": {
+        "term": "القانون التنظيمي"
+      },
+      "law": {
+        "term": "القانون"
+      },
+      "code": {
+        "term": "المدونة"
+      },
+      "dahir": {
+        "term": "الظهير الشريف"
+      },
+      "promulgation": {
+        "term": "ظهير التنفيذ"
+      },
+      "decree_law": {
+        "term": "المرسوم بقانون"
+      },
+      "decree": {
+        "term": "المرسوم"
+      },
+      "order": {
+        "term": "القرار"
+      },
+      "decision": {
+        "term": "المقرر"
+      },
+      "circular": {
+        "term": "الدورية"
+      },
+      "convention": {
+        "term": "الاتفاقية"
+      },
+      "in_force": {
+        "term": "نافذ"
+      },
+      "none_found": {
+        "term": "لم نجد ما ينسخه"
+      },
+      "amended": {
+        "term": "عُدّل"
+      },
+      "repealed": {
+        "term": "منسوخ"
+      },
+      "not_yet_in_force": {
+        "term": "لم يدخل حيز التنفيذ"
+      },
+      "as_published": {
+        "term": "كما نُشر"
+      },
+      "consolidated": {
+        "term": "النص بعد التعديلات"
+      }
+    }
+  },
+  "issues": {
+    "title": "أعداد الجريدة الرسمية"
+  },
+  "home": {
+    "allCodes": "كل المدونات",
+    "try": "مثلا:",
+    "topics": "قوانين حياتك اليومية",
+    "allTopics": "كل المواضيع",
+    "libraryLead": "النصوص الأساسية، أعداد الجريدة الرسمية، قانون المالية، والأدوات"
+  },
+  "situations": {
+    "home": "حسب حالتك",
+    "all": "كل الحالات",
+    "homeLead": "المواد التي تُقرأ أولا، لكل حالة"
+  },
+  "stamp": {
+    "issue": "الجريدة الرسمية {{number}}",
+    "page": "الصفحة {{page}}",
+    "consolidated": "نص بعد التعديلات",
+    "unofficial": "غير رسمي",
+    "asIssued": "النص كما صدر",
+    "consolidatedTo": "نص بعد التعديلات حتى {{date}}"
+  },
+  "footer": {
+    "law": "القانون",
+    "talk": "النقاش",
+    "site": "«قانون»",
+    "ai": "قرأ الذكاء الاصطناعي نصوص الجريدة الرسمية من صور صفحاتها، وساعد في كتابة المواضيع والأدوات، ولم يراجعها مختص بعد.",
+    "who": "من كتب ماذا"
+  }
+}

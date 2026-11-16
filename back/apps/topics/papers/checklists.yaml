@@ -1,0 +1,72 @@
+# The papers topic's lists (the papers review): each list is what an article names, item by item. Ticks stay on the
+# reader's phone.
+
+- key: card-first
+  title: {ar: 'ملف أول بطاقة وطنية', fr: 'Le dossier de la première carte'}
+  lead:
+    ar: 'ما يطلبه المرسوم 2.20.521 عند أول طلب، يودع شخصيا مقابل وصل مؤرخ.'
+    fr: 'Ce que le décret 2.20.521 demande à la première demande, déposé en personne contre un reçu daté.'
+  cites: [/ma/decret/2-20-521/art_3, /ma/decret/2-20-521/art_7]
+  items:
+    - label: {ar: 'صفحة الدفتر العائلي مع الدفتر، أو نسخة كاملة من الحالة المدنية، أو نسخة موجزة من رسم الولادة', fr: 'La page du livret de famille avec le livret, ou une copie intégrale d’état civil, ou un extrait d’acte de naissance'}
+      note: {ar: 'النسختان الأخيرتان لا تتجاوزان ثلاثة أشهر', fr: 'Les deux dernières de moins de trois mois'}
+      cites: [/ma/decret/2-20-521/art_3]
+    - label: {ar: 'شهادة الإقامة من الأمن الوطني أو الدرك الملكي، أو السلطة المحلية', fr: 'Le certificat de résidence de la Sûreté, de la Gendarmerie, ou de l’autorité locale'}
+      cites: [/ma/decret/2-20-521/art_3]
+    - label: {ar: 'أربع صور متشابهة بالألوان، حديثة وأمامية، 3,5 × 4,5 سنتمتر، بخلفية رمادية أو زرقاء فاتحة', fr: 'Quatre photos identiques en couleur, récentes, de face, 3,5 × 4,5 cm, fond gris ou bleu clair'}
+      note: {ar: 'الوجه والأذنان مكشوفة، وبدون نظارات قاتمة', fr: 'Visage et oreilles dégagés, sans lunettes sombres'}
+      cites: [/ma/decret/2-20-521/art_3]
+    - label: {ar: 'واجبات التمبر: 75 درهما، و50 درهما لمن هو دون 12 سنة', fr: 'Le timbre : 75 DH, 50 DH avant 12 ans'}
+      cites: [/ma/decret/2-20-521/art_3, /ma/code/cgi/art_252]
+    - label: {ar: 'للقاصر: نسخة من بطاقة نائبه الشرعي، وحضورهما معا', fr: 'Pour un mineur : la copie de la carte de son représentant légal, et leur présence à tous deux'}
+      cites: [/ma/decret/2-20-521/art_3, /ma/decret/2-20-521/art_11]
+    - label: {ar: 'لمن اكتسب الجنسية: نظير أو نسخة مصادق عليها من الوثيقة التي منحتها', fr: 'Pour qui a acquis la nationalité : l’ampliation ou une copie certifiée de l’acte qui l’a accordée'}
+      cites: [/ma/decret/2-20-521/art_3]
+
+- key: card-renew
+  title: {ar: 'ملف تجديد البطاقة', fr: 'Le dossier du renouvellement'}
+  lead:
+    ar: 'ما يطلبه المرسوم 2.20.521 للتجديد في حالات المادة 13 من القانون 04.20، مقابل إرجاع البطاقة.'
+    fr: 'Ce que le décret 2.20.521 demande pour un renouvellement dans les cas de l’article 13 de la loi 04.20, contre la carte rendue.'
+  cites: [/ma/decret/2-20-521/art_5]
+  items:
+    - label: {ar: 'البطاقة التي بحوزتك، إلا إذا ضاعت أو سرقت', fr: 'La carte que vous détenez, sauf perte ou vol'}
+      cites: [/ma/decret/2-20-521/art_5]
+    - label: {ar: 'الوثيقة الإدارية أو القضائية التي تبرر التجديد (تصريح بالضياع، حكم، رسم محين…)', fr: 'La pièce administrative ou judiciaire qui justifie le renouvellement (déclaration de perte, jugement, acte mis à jour…)'}
+      cites: [/ma/decret/2-20-521/art_5]
+    - label: {ar: 'شهادة الإقامة', fr: 'Le certificat de résidence'}
+      cites: [/ma/decret/2-20-521/art_5]
+    - label: {ar: 'أربع صور بالمواصفات نفسها', fr: 'Quatre photos aux mêmes normes'}
+      cites: [/ma/decret/2-20-521/art_5]
+    - label: {ar: 'واجبات التمبر', fr: 'Le timbre'}
+      cites: [/ma/decret/2-20-521/art_5, /ma/code/cgi/art_252]
+
+- key: card-marital
+  title: {ar: 'عبارة «زوجة» أو «أرملة» في البطاقة', fr: 'La mention «épouse» ou «veuve» sur la carte'}
+  lead:
+    ar: 'العبارة اختيارية؛ هذه وثائقها حسب الحالة.'
+    fr: 'La mention est facultative ; voici ses pièces selon le cas.'
+  cites: [/ma/loi/4-20/art_4, /ma/decret/2-20-521/art_4]
+  items:
+    - label: {ar: 'نسخة مطابقة للأصل من عقد الزواج', fr: 'Une copie conforme de l’acte de mariage'}
+      cites: [/ma/decret/2-20-521/art_4]
+    - label: {ar: 'أو نسخة من رسم وفاة الزوج أو الزوجة', fr: 'Ou une copie de l’acte de décès du conjoint'}
+      cites: [/ma/decret/2-20-521/art_4]
+    - label: {ar: 'نسخة من رسم ولادة الزوج', fr: 'Une copie de l’acte de naissance du conjoint'}
+      cites: [/ma/decret/2-20-521/art_4]
+    - label: {ar: 'شهادة الإقامة، والبطاقة التي بحوزتك', fr: 'Le certificat de résidence, et votre carte'}
+      cites: [/ma/decret/2-20-521/art_4]
+
+- key: card-abroad
+  title: {ar: 'البطاقة لمن يقيم في الخارج', fr: 'La carte pour qui vit à l’étranger'}
+  lead:
+    ar: 'يودع الطلب في القنصلية أو في المغرب، مقابل وصل مؤرخ، بوثائق المواد 3 و4 و5 ما عدا شهادة الإقامة.'
+    fr: 'La demande se dépose au consulat ou au Maroc, contre un reçu daté, avec les pièces des articles 3, 4 et 5 sauf le certificat de résidence.'
+  cites: [/ma/decret/2-20-521/art_8]
+  items:
+    - label: {ar: 'شهادة التسجيل القنصلي وفيها عنوان سكناك', fr: 'Le certificat d’immatriculation consulaire portant votre adresse'}
+      cites: [/ma/decret/2-20-521/art_8]
+    - label: {ar: 'وثائق الحالة المدنية والصور والتمبر، كما في المغرب', fr: 'Les pièces d’état civil, les photos et le timbre, comme au Maroc'}
+      cites: [/ma/decret/2-20-521/art_8, /ma/decret/2-20-521/art_3]
+    - label: {ar: 'لا شهادة إقامة', fr: 'Pas de certificat de résidence'}
+      cites: [/ma/decret/2-20-521/art_8]

@@ -1,0 +1,11 @@
+# Law 65.00's art. 147 makes its entry into force wait for a condition no code can date: as law 01.05 wrote it (BO 5294,
+# 24 Feb 2005), «ابتداء من تاريخ النشر بالجريدة الرسمية للنصوص التطبيقية اللازمة لتنصيب أجهزة إدارة وتسيير الوكالة الوطنية
+# للتأمين الصحي والصندوق الوطني لمنظمات الاحتياط الاجتماعي والصندوق الوطني للضمان الاجتماعي». The decrees applying it
+# (2.05.733 to 2.05.740, of 18 Jul 2005) were published in BO 5344 of 18 Aug 2005, the day AMO began.
+# The health review, S3; 27 Oct 2026, owner-provisional. Applied by `manage.py apply_wordings <this file>`.
+text: /akn/ma/act/loi/65-00
+by: /akn/ma/act/loi/65-00
+checked: owner-provisional
+in_force:
+  since: '2005-08-18'
+  because: 'المراسيم المتخذة لتطبيقه، الجريدة الرسمية عدد 5344 بتاريخ 18 غشت 2005'

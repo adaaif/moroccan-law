@@ -1,0 +1,12 @@
+# Law 41.10 on the Family Mutual Aid Fund (repealed by law 58.23, art. 19, except for those already paid) as Adala's
+# PDF of 7 Feb 2024 prints it. Read against the page images on 20 Oct 2026 (F2 of the family plan).
+text: /ma/loi/41-10
+document: sources/adala/fund_41_10.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [2], wrong: العالقة, right: العلاقة}
+  - {arts: [9], wrong: ثالثة, right: ثلاثة}
+  - {arts: [9], wrong: بأي ة, right: بأية}
+  - {arts: [11], wrong: جدي د, right: جديد}
+  - {arts: [12], wrong: ب الاستفادة, right: بالاستفادة}
+  - {arts: [12], wrong: أل ي, right: لأي}

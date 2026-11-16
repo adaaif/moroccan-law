@@ -1,0 +1,457 @@
+{
+  "title": "Gestion des accès",
+  "retry": "Réessayer",
+  "more": "Plus",
+  "close": "Fermer",
+  "copy": "Copier",
+  "copied": "Copié",
+  "yes": "Oui",
+  "no": "Non",
+  "back": "Retour",
+  "strip": {
+    "label": "État du programme",
+    "position": {
+      "request": "Demandes ouvertes",
+      "closed": "Demandes fermées",
+      "open": "Fichiers ouverts à tous"
+    },
+    "letterTo": "Vos messages vont à {{to}}",
+    "noLetter": "Aucune adresse pour vos messages",
+    "terms": "Conditions du {{date}}",
+    "edition": "Dernière édition : {{date}}",
+    "noEdition": "Aucune édition encore",
+    "next": "Prochaine : {{date}}"
+  },
+  "parts": {
+    "label": "Parties de la gestion des accès",
+    "waiting": "À traiter",
+    "accesses": "Accès",
+    "use": "Usage",
+    "editions": "Éditions",
+    "log": "Journal"
+  },
+  "due": {
+    "today": "Aujourd’hui",
+    "left_one": "Encore un jour",
+    "left_other": "Encore {{count}} jours",
+    "late_one": "En retard d’un jour",
+    "late_other": "En retard de {{count}} jours"
+  },
+  "waiting": {
+    "title": "Demandes qui attendent votre réponse",
+    "lead": "Les plus anciennes d’abord. Le délai est de {{days}} jours ouvrables, du lundi au vendredi.",
+    "none": "Rien ne vous attend.",
+    "asked": "En attente de la réponse de leur auteur",
+    "askedLead": "Vous leur avez posé une question ; ils n’ont pas encore répondu.",
+    "ending": "Accès qui prennent fin d’ici 30 jours",
+    "renew": "Renouveler",
+    "renewOf": "Renouveler l’accès de {{name}}",
+    "shown": "Les 50 premières s’affichent ici ; les autres dans « Toutes les demandes ».",
+    "figures": "Les 30 derniers jours",
+    "all": "Toutes les demandes",
+    "allLead": "Chaque demande reçue, et ce qui en a été décidé."
+  },
+  "row": {
+    "change": "Demande de changement",
+    "answered": "A répondu à votre question",
+    "sent": "Envoyée le {{date}}",
+    "states": {
+      "waiting": "Attend votre réponse",
+      "more": "Attend sa réponse",
+      "accepted": "Acceptée",
+      "declined": "Refusée"
+    }
+  },
+  "figures": {
+    "received": "Demandes reçues",
+    "accepted": "Acceptées",
+    "declined": "Refusées",
+    "median": "Délai médian de réponse, en jours",
+    "waiting": "Attendent votre réponse",
+    "oldest": "La plus ancienne attend depuis, en jours",
+    "live": "Accès en cours",
+    "keys": "Clés actives",
+    "ending": "Prennent fin d’ici 30 jours",
+    "none": "—"
+  },
+  "filters": {
+    "label": "Afficher",
+    "search": "Chercher par nom, nom d’utilisateur ou adresse",
+    "requests": {
+      "waiting": "Attendent votre réponse",
+      "more": "Attendent la leur",
+      "accepted": "Acceptées",
+      "declined": "Refusées",
+      "all": "Toutes"
+    },
+    "accesses": {
+      "live": "En cours",
+      "ending": "Bientôt finis",
+      "ended": "Terminés",
+      "unused": "Jamais utilisés",
+      "all": "Tous"
+    },
+    "nothing": "Rien ici.",
+    "nothingFound": "Rien ne correspond à « {{q}} »."
+  },
+  "accesses": {
+    "title": "Registre des accès",
+    "until": "Jusqu’au {{date}}",
+    "ended": "Terminé",
+    "lastUsed": "Dernier usage le {{date}}",
+    "neverUsed": "Jamais utilisé",
+    "spark": "Requêtes sur 30 jours : {{n}}",
+    "keys_zero": "Aucune clé",
+    "keys_one": "Une clé",
+    "keys_other": "{{count}} clés"
+  },
+  "use": {
+    "title": "L’usage sur 30 jours",
+    "totals": "Requêtes : {{calls}} · Articles : {{articles}} · Accès utilisés : {{accesses}}",
+    "nothing": "Aucun accès n’a été utilisé en 30 jours.",
+    "calls": "Requêtes par jour",
+    "articles": "Articles par jour",
+    "most": "Jour le plus haut : {{n}}",
+    "numbers": "Les chiffres, jour par jour",
+    "day": "Jour",
+    "doors": "Les requêtes par porte",
+    "doorsLead": "Ce qui est demandé n’est pas gardé, ni d’où : le nombre seul.",
+    "busiest": "Les plus utilisés",
+    "busyLine": "Requêtes : {{calls}} · Articles : {{articles}}",
+    "limited": "Ont atteint une limite aujourd’hui",
+    "limitedNone": "Personne n’a atteint de limite aujourd’hui.",
+    "limits": {
+      "minute": "Limite par minute · requêtes refusées : {{n}}",
+      "calls": "Limite de requêtes par jour · refusées : {{n}}",
+      "articles": "Limite d’articles par jour · requêtes refusées : {{n}}"
+    }
+  },
+  "doors": {
+    "v1_search": "Recherche",
+    "v1_text": "Un texte",
+    "v1_articles": "Articles",
+    "v1_references": "Références",
+    "v1_bulletin": "Le Bulletin officiel",
+    "v1_changes": "Changements",
+    "mcp": "Assistants connectés",
+    "site": "L’API du site",
+    "open": "Téléchargement de l’édition"
+  },
+  "editions": {
+    "title": "Les éditions de la base de données",
+    "next": "La prochaine édition sera écrite le {{date}}.",
+    "none": "Aucune édition n’a encore été écrite.",
+    "edition": "Édition du {{date}}",
+    "onDisk": "Sur le serveur",
+    "gone": "Plus sur le serveur",
+    "texts": "Textes",
+    "articles": "Articles",
+    "versions": "Versions",
+    "size": "Taille",
+    "hash": "Empreinte du manifeste",
+    "files": "Fichiers",
+    "file": "Fichier",
+    "taken": "Téléchargé",
+    "downloads": "Qui l’a prise",
+    "noDownloads": "Personne ne l’a prise.",
+    "byKey": "avec une clé",
+    "byAccount": "depuis sa page"
+  },
+  "log": {
+    "title": "Tout ce qui s’est passé",
+    "lead": "Chaque acte sur une demande ou un accès, le plus récent d’abord.",
+    "none": "Rien encore.",
+    "noName": "sans nom",
+    "sent": "{{name}} a envoyé une demande : {{what}}",
+    "sentChange": "{{name}} demande à changer son accès : {{what}}",
+    "answered": "{{name}} a répondu à la question",
+    "asked": "{{by}} a demandé à {{name}} : « {{line}} »",
+    "accepted": "{{by}} a accepté la demande de {{name}} : {{held}}",
+    "acceptedChange": "{{by}} a accepté le changement d’accès de {{name}} : {{held}}",
+    "declined": "{{by}} a refusé la demande de {{name}} : {{reason}}",
+    "changed": "{{by}} a changé l’accès de {{name}} : {{after}}, au lieu de {{before}}",
+    "renewed": "{{by}} a renouvelé l’accès de {{name}} jusqu’au {{date}}, au lieu du {{before}}",
+    "renewedFirst": "{{by}} a renouvelé l’accès de {{name}} jusqu’au {{date}}",
+    "ended": "{{by}} a mis fin à l’accès de {{name}} : {{reason}}",
+    "endedOwn": "{{name}} a mis fin à son accès",
+    "endedItself": "L’accès de {{name}} a pris fin : {{reason}}",
+    "keyMade": "{{name}} a créé une clé",
+    "keyEnded": "{{by}} a mis fin à une clé de {{name}}",
+    "keyEndedItself": "Une clé de {{name}} a pris fin",
+    "other": "{{act}} : {{name}}"
+  },
+  "granted": {
+    "api": "l’API",
+    "data": "la base de données",
+    "both": "l’API et la base de données",
+    "none": "rien"
+  },
+  "sizes": {
+    "try": "Essai",
+    "app": "Application",
+    "partner": "Partenaire"
+  },
+  "held": {
+    "size": "{{granted}}, taille « {{size}} »",
+    "numbers": " (par minute : {{minute}}, requêtes par jour : {{calls}}, articles par jour : {{articles}})",
+    "asApp": "comme l’application",
+    "until": ", jusqu’au {{date}}"
+  },
+  "restate": {
+    "accept": "Vous donnerez : {{held}}.",
+    "change": "Son accès deviendra : {{held}}.",
+    "changed": "Il deviendra : {{after}}, au lieu de {{before}}."
+  },
+  "kinds": {
+    "person": "Une personne",
+    "school": "Une université ou une école",
+    "newsroom": "Une rédaction",
+    "association": "Une association",
+    "public": "Un organisme public",
+    "company": "Une entreprise"
+  },
+  "volumes": {
+    "small": "Quelques centaines de requêtes par jour, ou une copie par mois",
+    "medium": "Quelques milliers de requêtes par jour",
+    "large": "Davantage"
+  },
+  "reasons": {
+    "unclear": "Usage peu clair",
+    "identity": "On ne sait pas qui demande",
+    "scope": "Plus que nécessaire",
+    "terms": "Contraire aux conditions",
+    "later": "Pas maintenant"
+  },
+  "reasonSaid": {
+    "unclear": "Nous ne voyons pas assez ce que vous ferez des données ; dites-en plus dans votre prochaine demande.",
+    "identity": "Nous ne pouvons pas savoir qui demande.",
+    "scope": "Vous demandez plus que l’usage décrit n’en a besoin.",
+    "terms": "L’usage décrit enfreint les conditions d’accès.",
+    "later": "Nous n’ouvrons pas de nouvel accès pour le moment."
+  },
+  "ended": {
+    "asked": "son titulaire y a mis fin",
+    "terms": "contraire aux conditions",
+    "leaked": "une clé a fuité",
+    "unused": "inutilisé",
+    "expired": "sa date de fin est passée",
+    "account": "le compte a été supprimé"
+  },
+  "endedSaid": {
+    "terms": "Il a été utilisé contre les conditions d’accès.",
+    "leaked": "Une de ses clés est apparue là où d’autres peuvent la lire.",
+    "unused": "Il n’était plus utilisé."
+  },
+  "sheet": {
+    "requestLabel": "Une demande d’accès",
+    "accessLabel": "Un accès",
+    "loading": "Chargement…",
+    "answers": "Ses réponses",
+    "fields": {
+      "purpose": "Ce qu’il fera",
+      "why": "Pourquoi ce changement",
+      "wants": "Ce qu’il demande",
+      "size": "Taille demandée",
+      "runs_at": "Où cela tournera",
+      "volume": "Combien il en faut",
+      "commercial": "Rapporte de l’argent",
+      "terms": "Conditions acceptées",
+      "sent": "Envoyée",
+      "asked": "Votre question",
+      "answer": "Sa réponse"
+    },
+    "notSaid": "Non précisé",
+    "change": "Ce qu’il a aujourd’hui et ce qu’il demande",
+    "now": "Aujourd’hui",
+    "asks": "Demande",
+    "sameSize": "La même taille",
+    "account": "Le compte",
+    "proven": "Adresse confirmée",
+    "unproven": "Adresse non confirmée",
+    "joinedToday": "Inscrit aujourd’hui",
+    "joined_one": "Inscrit depuis un jour",
+    "joined_other": "Inscrit depuis {{count}} jours",
+    "posts_zero": "N’a rien écrit dans la discussion",
+    "posts_one": "Une publication dans la discussion",
+    "posts_other": "{{count}} publications dans la discussion",
+    "removedNone": "rien n’en a été retiré",
+    "removed": "les relecteurs en ont retiré {{count}}",
+    "paused": "Suspendu d’écriture en ce moment",
+    "earlier": "Demandes précédentes",
+    "earlierNone": "Aucune demande avant celle-ci.",
+    "earlierLine": "{{date}} : {{what}} · {{state}}",
+    "holds": "Son accès",
+    "holdsNone": "Aucun accès.",
+    "history": "Son historique",
+    "own": "C’est votre demande : un autre administrateur en décide.",
+    "decidedAccepted": "Acceptée le {{date}} par {{by}}.",
+    "decidedDeclined": "Refusée le {{date}} : {{reason}}",
+    "openAccess": "Ouvrir son accès"
+  },
+  "act": {
+    "label": "Votre décision",
+    "accept": "Accepter",
+    "ask": "Question",
+    "decline": "Refuser",
+    "cancel": "Annuler",
+    "next": "Suivant : le message",
+    "letter": "Ce qu’il lira",
+    "letterTo": "Part à {{to}}, {{lang}}, quand vous appuyez.",
+    "langs": {
+      "ar": "en arabe",
+      "fr": "en français"
+    },
+    "acceptTitle": "Accepter la demande",
+    "changeTitle": "Accepter le changement",
+    "give": "Ce que vous donnez",
+    "size": "Taille",
+    "proposed": "proposée",
+    "sizeLine": "Par minute : {{minute}} · requêtes par jour : {{calls}} · articles par jour : {{articles}}",
+    "partnerLine": "Des chiffres que vous fixez",
+    "numbers": "Les chiffres du partenaire",
+    "numbersLead": "Vide : le chiffre de « Application ».",
+    "minute": "Requêtes par minute",
+    "calls": "Requêtes par jour",
+    "articles": "Articles par jour",
+    "ends": "Jusqu’au",
+    "endsKept": "La date de son accès, sauf si vous la changez.",
+    "acceptSend": "Donner l’accès",
+    "changeSend": "Changer son accès",
+    "accepted": "Demande acceptée ; le message est parti.",
+    "askTitle": "Poser une question",
+    "line": "Votre question, en une ligne",
+    "left": "Encore {{n}} caractères",
+    "again": "Vos dernières questions",
+    "askSend": "Envoyer la question",
+    "asked": "La question est partie ; la demande attend sa réponse.",
+    "declineTitle": "Refuser la demande",
+    "reason": "La raison, et ce qu’il lira",
+    "declineSend": "Envoyer le refus",
+    "declined": "Demande refusée ; le message est parti."
+  },
+  "access": {
+    "state": {
+      "live": "En cours",
+      "ended": "Terminé le {{date}} : {{reason}}"
+    },
+    "endedBy": "Fin donnée par",
+    "holds": "Ce qu’il a",
+    "renewedOn": "Renouvelé le",
+    "request": "Sa demande",
+    "use": "Son usage sur 30 jours",
+    "noUse": "Pas utilisé en 30 jours.",
+    "byDoor": "Par porte",
+    "keys": "Ses clés",
+    "keysNone": "Aucune clé créée.",
+    "keyMade": "Créée le {{date}}",
+    "keyUsed": "Dernier usage le {{date}}",
+    "keyUnused": "Jamais utilisée",
+    "keyEnded": "Terminée le {{date}}",
+    "unnamed": "sans nom",
+    "endKey": "Mettre fin à la clé",
+    "endKeyWhat": "Cette clé s’arrête maintenant ; un message dit à son titulaire d’en créer une nouvelle.",
+    "endKeyYes": "Oui, mettre fin à la clé",
+    "keyDone": "La clé a pris fin ; le message est parti.",
+    "downloads": "Ce qu’il a téléchargé",
+    "downloadsNone": "Rien téléchargé.",
+    "acts": "Ce que vous pouvez faire",
+    "change": "Changer",
+    "renew": "Renouveler",
+    "end": "Mettre fin",
+    "changeTitle": "Changer ce qu’il a",
+    "changeNext": "Suivant",
+    "changeYes": "Oui, changer",
+    "changed": "L’accès a changé ; le message est parti.",
+    "renewTitle": "Renouveler l’accès",
+    "renewLead": "Un an à partir d’aujourd’hui, sauf si vous choisissez une autre date.",
+    "renewYes": "Renouveler jusqu’au {{date}}",
+    "renewed": "L’accès est renouvelé ; le message est parti.",
+    "endTitle": "Mettre fin à l’accès",
+    "endReason": "La raison, et ce qu’il lira",
+    "endWhat": "L’accès de {{name}} prend fin maintenant, et toutes ses clés s’arrêtent.",
+    "endYes": "Oui, mettre fin à l’accès",
+    "endedDone": "L’accès a pris fin ; le message est parti.",
+    "told": "Un message le dit à son titulaire.",
+    "given": "Donné le"
+  },
+  "errors": {
+    "unknown": "Une erreur est survenue. Réessayez.",
+    "network": "Connexion impossible. Vérifiez votre connexion, puis réessayez.",
+    "desk": {
+      "forbidden": "Cette page est réservée à qui administre le site."
+    },
+    "request": {
+      "decided": "Cette demande a déjà été décidée.",
+      "not_found": "Cette demande est introuvable.",
+      "throttled": "Trop de requêtes en peu de temps. Attendez un peu, puis réessayez.",
+      "not_authenticated": "Votre session a pris fin. Reconnectez-vous."
+    },
+    "access": {
+      "not_found": "Cet accès est introuvable.",
+      "ended": "Cet accès a déjà pris fin.",
+      "live": "Ce compte a un accès en cours : changez-le depuis la page de son accès."
+    },
+    "key": {
+      "not_found": "Cette clé est introuvable.",
+      "ended": "Cette clé a déjà pris fin."
+    },
+    "by": {
+      "own": "Vous ne décidez pas de votre propre demande : un autre administrateur en décide.",
+      "not_superuser": "Cette page est réservée à qui administre le site."
+    },
+    "size": {
+      "invalid": "Choisissez une taille."
+    },
+    "ends_on": {
+      "past": "Choisissez une date après aujourd’hui.",
+      "invalid": "Cette date n’est pas valide."
+    },
+    "wants": {
+      "required": "Choisissez l’API ou la base de données, ou les deux."
+    },
+    "reason": {
+      "invalid": "Choisissez une raison."
+    },
+    "line": {
+      "required": "Écrivez votre question.",
+      "too_long": "300 caractères au plus.",
+      "invalid": "Écrivez votre question en une ligne."
+    },
+    "confirm": {
+      "required": "Confirmez la décision avant qu’elle parte."
+    },
+    "change": {
+      "nothing": "C’est déjà ce qu’il a : rien ne change."
+    },
+    "minute": {
+      "invalid": "Un nombre entier, à partir de 1."
+    },
+    "calls": {
+      "invalid": "Un nombre entier, à partir de 1."
+    },
+    "articles": {
+      "invalid": "Un nombre entier, à partir de 1."
+    },
+    "api": {
+      "invalid": "Choix non valide."
+    },
+    "data": {
+      "invalid": "Choix non valide."
+    },
+    "act": {
+      "invalid": "Acte inconnu."
+    },
+    "cursor": {
+      "invalid": "Cette page n’existe plus. Rechargez."
+    },
+    "state": {
+      "invalid": "Ce choix est inconnu."
+    },
+    "days": {
+      "invalid": "Le nombre de jours n’est pas valide."
+    },
+    "q": {
+      "invalid": "Cette recherche n’est pas valide."
+    }
+  }
+}

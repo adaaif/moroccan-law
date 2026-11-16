@@ -1,0 +1,440 @@
+# The tax topic's page (the tax review, T5–T9, T19, T22–T23; 26 Oct 2026): where a Moroccan's money meets the
+# tax code. One question first, «منين كيجيك الدخل؟», since the rules hang on where income comes from; then the doors in
+# the life of a taxpayer, each led by a fiscal stamp carrying the one figure the law sets for it (a rate, an amount, a
+# deadline); the deadlines band; the beliefs the law answers. Written from the DGI's 2026 edition of the CGI
+# (/ma/code/cgi, unofficial: the BO prevails), finance laws 60.24 (art. 8) and 50.25 (art. 7) as the BO printed them,
+# and law 47.06 on local taxes as the SGG consolidated it (June 2025). Every sentence is a draft until a person checks it.
+doors_title: {ar: شنو كيهمك فالضريبة؟, fr: 'Qu’est-ce qui vous concerne ?'}
+# T6: a door's `mark` is drawn on a fiscal stamp (`marks: stamp`), the perforated edge everyone knows tax by; a door no
+# single figure governs carries its pictogram on the same stamp. The doors stand in the life of a taxpayer (`stages`),
+# all in view, no fold (T8).
+marks: stamp
+stages:
+  # The 2027 bill while Parliament debates it (the finance-bill review, P5): one door, first, said as a bill.
+  - {key: bill, title: {ar: فالبرلمان دابا, fr: 'Au Parlement en ce moment'}, doors: [bill2027]}
+  - {key: income, title: {ar: شنو كيدخل ليك, fr: 'Ce que vous gagnez'}, doors: [salary, children, pension, rent, savings, declare]}
+  - {key: own, title: {ar: شنو عندك, fr: 'Ce que vous possédez'}, doors: [housing, land, car]}
+  - {key: deal, title: {ar: بعتي، شريتي ولا ورثتي, fr: 'Vendre, acheter, hériter'}, doors: [sell, buy, gift]}
+  - {key: work, title: {ar: خدام بحسابك, fr: 'À votre compte'}, doors: [own]}
+  - {key: wrong, title: {ar: إلا ما تحلاتش, fr: 'Si ça se passe mal'}, doors: [late, notice]}
+  - {key: more, title: {ar: فالخارج ولا عندك شركة, fr: 'À l’étranger ou en société'}, doors: [abroad, company]}
+learn: [pages/map, tools/salary, pages/beliefs, journeys/declare, pages/business]
+
+# The deadlines band (T9, C1 «band»): the tax year's dates, the next two for the reader's answer with the days left. In
+# the ochre's dark: no one is hurt, but a penalty starts the day after (art. 184, 208; law 47.06 art. 147). A date is the
+# day the law says «before» (`before`, month-day: the last day is the one before it) or the month it names (`in`).
+urgent:
+  title: {ar: الآجال ديالك, fr: 'Vos échéances'}
+  lead: {ar: 'من بعد الأجل كتزاد الذعيرة', fr: 'Après l’échéance, la pénalité s’ajoute'}
+  to: pages/calendar
+  tone: ochre
+  dates:
+    - key: car
+      what: {ar: 'الضريبة الخصوصية على المركبات (الفينييت)', fr: 'La taxe spéciale annuelle sur les véhicules (vignette)'}
+      in: '01'
+      article: {ar: المادة 261, fr: art. 261}
+      cites: [/ma/code/cgi/art_261]
+      to: tools/car
+    - key: income
+      what: {ar: 'التصريح بالدخل الإجمالي (الكراء، أكثر من أجر، معاش…)', fr: 'La déclaration du revenu global (loyers, plusieurs salaires, pension…)'}
+      before: '03-01'
+      for: [salary, pension, rent, abroad]
+      article: {ar: المادة 82, fr: art. 82}
+      cites: [/ma/code/cgi/art_82, /ma/code/cgi/art_86]
+      to: journeys/declare
+    - key: land
+      what: {ar: 'الإقرار بالأرض الحضرية غير المبنية وأداء رسمها', fr: 'La déclaration et le paiement de la taxe sur les terrains urbains non bâtis'}
+      before: '03-01'
+      for: [property]
+      article: {ar: 'القانون 47.06، المادتان 46 و47', fr: 'loi 47.06, art. 46 et 47'}
+      cites: [/ma/loi/47-06/art_46, /ma/loi/47-06/art_47]
+      to: tools/local
+    - key: professional
+      what: {ar: 'التصريح بالدخل المهني (النتيجة الصافية الحقيقية ولا المبسطة)', fr: 'La déclaration des revenus professionnels (résultat net réel ou simplifié)'}
+      before: '05-01'
+      for: [self, company]
+      article: {ar: المادة 82, fr: art. 82}
+      cites: [/ma/code/cgi/art_82]
+      to: pages/calendar
+    - key: quarter
+      what: {ar: 'تصريح المقاول الذاتي ديال الربع وأداؤه', fr: 'La déclaration trimestrielle de l’auto-entrepreneur et son paiement'}
+      quarterly: true
+      for: [self]
+      article: {ar: 'المادة 82 المكررة', fr: 'art. 82 bis'}
+      cites: [/ma/code/cgi/art_82-bis]
+      to: tools/own
+  for: [salary, pension, rent, property, self, abroad, company]
+
+beliefs:
+  - claim: {ar: إلا زادت ليا الأجرة نقدر نخسر, fr: 'Une augmentation peut me faire perdre de l’argent'}
+    truth: {ar: 'غير الدرهم اللي فوق العتبة كيتخلص بالسعر الأعلى؛ الأجرة الصافية ديما كتزيد (المادة 73).', fr: 'Seul le dirham au-dessus du seuil paie le taux supérieur ; le net augmente toujours (art. 73).'}
+    to: pages/beliefs
+  - claim: {ar: المعاش ما فيهش الضريبة, fr: 'La pension n’est pas imposée'}
+    truth: {ar: 'منذ 2026 معاشات أنظمة التقاعد الأساسي معفية؛ المعاشات التكميلية الأخرى لا (المادة 57).', fr: 'Depuis 2026, les pensions des régimes de base sont exonérées ; les autres régimes complémentaires non (art. 57).'}
+    to: pages/beliefs
+  - claim: {ar: رسم السكن كيخلصو الكاري, fr: 'La taxe d’habitation est payée par le locataire'}
+    truth: {ar: 'كيتفرض باسم المالك ولا صاحب حق الانتفاع (القانون 47.06، المادة 20).', fr: 'Elle est établie au nom du propriétaire ou de l’usufruitier (loi 47.06, art. 20).'}
+    to: pages/beliefs
+  - claim: {ar: بعت الدار ديالي، ما عليا والو, fr: 'J’ai vendu ma maison, je ne dois rien'}
+    truth: {ar: 'السكن الرئيسي معفي إلا سكنتي فيه 5 سنين على الأقل، وفوق 4 ملايين درهم كتبقى 3% على الزائد (المادتان 63 و144).', fr: 'L’habitation principale est exonérée après 5 ans d’occupation ; au-delà de 4 millions de dirhams, 3 % restent dus sur l’excédent (art. 63 et 144).'}
+    to: pages/beliefs
+  - claim: {ar: الأجير ديما خاصو يصرح, fr: 'Un salarié doit toujours déclarer'}
+    truth: {ar: 'اللي عندو غير أجر واحد كيحجزو المشغل ما مطلوبش يصرح، إلا بغا يستافد من خصم ولا شاف راسو خلص بزاف (المادة 86).', fr: 'Un seul salaire retenu à la source dispense de déclarer, sauf pour une déduction ou si l’on s’estime surtaxé (art. 86).'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in (T23): the salary and the year's changes, the home's local taxes, rent and
+# property, then the rest.
+waves:
+  # P23: the bill's salary tool and the claims first, each claim read by two people.
+  1: [tools/bill, pages/bill-claims, pages/bill-2027, reform/lf-2027, reform/announced-pensions, reform/announced-electricity,
+      reform/announced-support, pages/allowances-2031, pages/fifa-2030]
+  2: [tools/salary, reform/lf-2026, reform/lf-2025, pages/beliefs, pages/calendar, journeys/declare]
+  3: [tools/local, tools/car, pages/map, journeys/notice, tools/late]
+  4: [tools/rent, tools/pension, tools/sell, tools/buy, journeys/sell, journeys/rent-out]
+  5: [tools/own, journeys/own, pages/business, pages/abroad, checklists/sell-papers]
+
+# T7: one question, «منين كيجيك الدخل؟»; each answer names its rules and three figures with their articles. A door that
+# does not concern the answer fades, with the law's reason (`not`).
+profile:
+  question: {ar: منين كيجيك الدخل؟, fr: 'D’où viennent vos revenus ?'}
+  options:
+    - key: salary
+      first: salary
+      main: true
+      label: {ar: أجير, fr: Salarié}
+      law: {ar: 'من الأجر الإجمالي كيتنقصو المصاريف المهنية (35%، و25% فوق 78.000 درهم فالعام، 35.000 على الأكثر) والاقتطاعات ديال التقاعد والتغطية الصحية (المادة 59)، ومن بعد كيتطبق الجدول شريحة بشريحة (المادة 73) وكتنقص 600 درهم على كل واحد فتكلفك (المادة 74). المشغل كيحجز الضريبة فالمنبع (المادة 156)؛ إلا عندك غير مشغل واحد ما خاصكش تصرح (المادة 86).', fr: 'Du salaire brut se déduisent les frais professionnels (35 %, 25 % au-delà de 78 000 dirhams par an, 35 000 au plus) et les cotisations de retraite et de santé (art. 59) ; le barème s’applique ensuite tranche par tranche (art. 73), moins 600 dirhams par personne à charge (art. 74). L’employeur retient l’impôt à la source (art. 156) ; avec un seul employeur, aucune déclaration n’est due (art. 86).'}
+      facts:
+        - {value: {ar: '40.000 درهم', fr: '40 000 DH'}, label: {ar: 'فالعام بلا ضريبة: الشريحة الأولى معفية', fr: 'par an sans impôt : la première tranche est exonérée'}, cites: [/ma/code/cgi/art_73]}
+        - {value: '37%', label: {ar: 'على ما فوق 180.000 درهم فالعام، غير على داك الجزء', fr: 'sur la part au-delà de 180 000 DH par an, elle seule'}, cites: [/ma/code/cgi/art_73]}
+        - {value: {ar: '600 درهم', fr: '600 DH'}, label: {ar: 'على كل واحد فتكلفك، 3.600 على الأكثر', fr: 'par personne à charge, 3 600 au plus'}, cites: [/ma/code/cgi/art_74]}
+      to: tools/salary
+    - key: pension
+      first: pension
+      main: true
+      label: {ar: متقاعد, fr: Retraité}
+      law: {ar: 'منذ فاتح يناير 2026 معاشات أنظمة التقاعد الأساسي معفية، وكذلك معاشات عقود التقاعد التكميلي الجماعية للقطاع الخاص عند الصندوق المهني المغربي للتقاعد بشروطها (المادة 57-27°). المعاشات التكميلية الأخرى: إسقاط 70% حتى 168.000 درهم فالعام و40% على الزائد (المادة 60)، ومن بعد الجدول.', fr: 'Depuis le 1er janvier 2026, les pensions des régimes de retraite de base sont exonérées, comme celles des contrats de retraite complémentaire de groupe du privé servies par la CIMR, à leurs conditions (art. 57-27°). Les autres pensions complémentaires : abattement de 70 % jusqu’à 168 000 dirhams par an et 40 % au-delà (art. 60), puis le barème.'}
+      facts:
+        - {value: '0%', label: {ar: 'على معاش نظام التقاعد الأساسي منذ 2026', fr: 'sur la pension d’un régime de base depuis 2026'}, cites: [/ma/code/cgi/art_57]}
+        - {value: '70%', label: {ar: 'إسقاط على المعاش التكميلي حتى 168.000 درهم', fr: 'd’abattement sur une pension complémentaire jusqu’à 168 000 DH'}, cites: [/ma/code/cgi/art_60]}
+        - {value: '80%', label: {ar: 'تخفيض على ضريبة معاش أجنبي محول بالدرهم', fr: 'de réduction sur l’impôt d’une pension étrangère transférée en dirhams'}, cites: [/ma/code/cgi/art_76]}
+      to: tools/pension
+    - key: rent
+      first: rent
+      main: true
+      label: {ar: كنكري دار ولا محل, fr: 'Je loue un bien'}
+      law: {ar: 'الكراء كيتنقص منو 40% (المادة 64-II) ويتزاد للدخل الإجمالي فالتصريح قبل فاتح مارس (المادة 82). إلا كان المكتري شركة ولا إدارة، كيحجز 10% تحت 120.000 درهم فالعام و15% فوقها (المادتان 73 و160 المكررة)؛ وتقدر تختار السعر الإبرائي 20% على المبلغ الإجمالي (المادة 64-IV).', fr: 'Le loyer est abattu de 40 % (art. 64-II) et ajouté au revenu global déclaré avant le 1er mars (art. 82). Si le locataire est une société ou une administration, il retient 10 % sous 120 000 dirhams par an et 15 % au-delà (art. 73 et 160 bis) ; vous pouvez opter pour le taux libératoire de 20 % sur le montant brut (art. 64-IV).'}
+      facts:
+        - {value: '40%', label: {ar: 'إسقاط من الكراء الإجمالي', fr: 'd’abattement sur le loyer brut'}, cites: [/ma/code/cgi/art_64]}
+        - {value: '20%', label: {ar: 'السعر الإبرائي إلا اخترتيه', fr: 'le taux libératoire, sur option'}, cites: [/ma/code/cgi/art_64, /ma/code/cgi/art_73]}
+        - {value: {ar: 'قبل 1 مارس', fr: 'Avant le 1er mars'}, label: {ar: 'التصريح بالدخل ديال العام اللي فات', fr: 'la déclaration des revenus de l’année passée'}, cites: [/ma/code/cgi/art_82]}
+      to: tools/rent
+    - key: property
+      first: sell
+      main: true
+      label: {ar: بعت ولا شريت عقار, fr: 'J’ai vendu ou acheté un bien'}
+      law: {ar: 'البيع: 20% من الربح العقاري، وما تقلش الضريبة على 3% من ثمن البيع (المادتان 73 و144)؛ السكن الرئيسي معفي بعد 5 سنين ديال السكنى (المادة 63)؛ التصريح والأداء داخل 30 يوما من البيع (المادتان 83 و173). الشرا: واجبات التسجيل 4% على المحل المبني و5% على الأرض العارية (المادة 133)، داخل 30 يوما (المادة 128).', fr: 'La vente : 20 % du profit foncier, jamais moins de 3 % du prix (art. 73 et 144) ; l’habitation principale est exonérée après 5 ans d’occupation (art. 63) ; déclaration et paiement dans les 30 jours de la vente (art. 83 et 173). L’achat : droits d’enregistrement de 4 % sur un local construit et 5 % sur un terrain nu (art. 133), dans les 30 jours (art. 128).'}
+      facts:
+        - {value: '20%', label: {ar: 'من الربح، و3% من الثمن على الأقل', fr: 'du profit, 3 % du prix au moins'}, cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_144]}
+        - {value: {ar: '5 سنين', fr: '5 ans'}, label: {ar: 'ديال السكنى كتعفي السكن الرئيسي', fr: 'd’occupation exonèrent l’habitation principale'}, cites: [/ma/code/cgi/art_63]}
+        - {value: '4%', label: {ar: 'واجبات التسجيل على مسكن مبني', fr: 'de droits d’enregistrement sur un logement construit'}, cites: [/ma/code/cgi/art_133]}
+      to: journeys/sell
+    - key: self
+      first: own
+      label: {ar: خدام بحسابي, fr: 'À mon compte'}
+      law: {ar: 'المقاول الذاتي: 0,5% من رقم المعاملات المحصل للتجارة والصناعة والحرف حتى 500.000 درهم فالعام، و1% للخدمات حتى 200.000 (المادتان 42 المكررة مرتين و73-III)؛ ومع زبون واحد فوق 80.000 درهم فالعام، الزبون كيحجز 30% على الزائد (المادة 42 المكررة). المساهمة المهنية الموحدة: 10% على دخل كيتحسب من رقم المعاملات بمعامل المهنة (المادتان 40 و73).', fr: 'L’auto-entrepreneur : 0,5 % du chiffre d’affaires encaissé pour le commerce, l’industrie et l’artisanat jusqu’à 500 000 dirhams par an, 1 % pour les services jusqu’à 200 000 (art. 42 ter et 73-III) ; au-delà de 80 000 dirhams par an chez un même client, celui-ci retient 30 % sur l’excédent (art. 42 bis). La contribution professionnelle unique : 10 % d’un revenu tiré du chiffre d’affaires par le coefficient de la profession (art. 40 et 73).'}
+      facts:
+        - {value: '0,5%', label: {ar: 'التجارة والصناعة والحرف، حتى 500.000 درهم', fr: 'commerce, industrie, artisanat, jusqu’à 500 000 DH'}, cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_42-ter]}
+        - {value: '1%', label: {ar: 'الخدمات، حتى 200.000 درهم', fr: 'services, jusqu’à 200 000 DH'}, cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_42-ter]}
+        - {value: {ar: '80.000 درهم', fr: '80 000 DH'}, label: {ar: 'مع زبون واحد: فوقها كيحجز 30%', fr: 'chez un même client : au-delà, il retient 30 %'}, cites: [/ma/code/cgi/art_42-bis]}
+      to: journeys/own
+    - key: abroad
+      first: abroad
+      label: {ar: ساكن فالخارج, fr: 'Je vis à l’étranger'}
+      law: {ar: 'اللي ما عندوش موطنه الضريبي فالمغرب كيخلص غير على الدخل اللي مصدره المغرب، واللي عندو كيخلص على كلشي (المادة 23)؛ والموطن فالمغرب: السكن الدائم، ولا مركز المصالح الاقتصادية، ولا إقامة كتفوت 183 يوما فـ365 يوما (المادة 23-II). المسكن اللي كيحتفظ بيه المغاربة المقيمين فالخارج كسكن رئيسي كيستافد من إعفاء الربح العقاري (المادة 63).', fr: 'Sans domicile fiscal au Maroc, seuls les revenus de source marocaine sont imposés ; avec, tous le sont (art. 23). Le domicile au Maroc : le foyer permanent, le centre des intérêts économiques, ou plus de 183 jours de séjour sur 365 (art. 23-II). Le logement que les Marocains résidant à l’étranger gardent comme habitation principale bénéficie de l’exonération du profit foncier (art. 63).'}
+      facts:
+        - {value: {ar: '183 يوما', fr: '183 jours'}, label: {ar: 'فالمغرب فـ365 يوما كتعطيك موطنا ضريبيا', fr: 'au Maroc sur 365 font un domicile fiscal'}, cites: [/ma/code/cgi/art_23]}
+        - {value: {ar: 'مصدر مغربي', fr: 'Source marocaine'}, label: {ar: 'هو اللي كيتخلص بلا موطن فالمغرب', fr: 'seule imposée sans domicile au Maroc'}, cites: [/ma/code/cgi/art_23]}
+        - {value: '0%', label: {ar: 'على ربح السكن الرئيسي اللي كتحتفظ بيه فالمغرب', fr: 'sur le profit de l’habitation principale gardée au Maroc'}, cites: [/ma/code/cgi/art_63]}
+      to: pages/abroad
+    - key: company
+      first: company
+      label: {ar: عندي شركة, fr: 'J’ai une société'}
+      law: {ar: 'الضريبة على الشركات 20%، و35% على ربح صافي كيوصل 100 مليون درهم (المادة 19)؛ الضريبة على القيمة المضافة 20% فالأصل (المادة 99)؛ الرسم المهني ورسم الخدمات الجماعية ديال الجماعة (القانون 47.06). صفحة قصيرة كتجمع الأساسي.', fr: 'L’impôt sur les sociétés : 20 %, 35 % sur un bénéfice net de 100 millions de dirhams ou plus (art. 19) ; la TVA : 20 % au taux normal (art. 99) ; la taxe professionnelle et la taxe de services communaux (loi 47.06). Une page courte rassemble l’essentiel.'}
+      facts:
+        - {value: '20%', label: {ar: 'الضريبة على الشركات فالأصل', fr: 'l’impôt sur les sociétés, en principe'}, cites: [/ma/code/cgi/art_19]}
+        - {value: '35%', label: {ar: 'على ربح صافي من 100 مليون درهم فما فوق', fr: 'sur un bénéfice net de 100 millions de DH ou plus'}, cites: [/ma/code/cgi/art_19]}
+        - {value: '20%', label: {ar: 'السعر العادي للضريبة على القيمة المضافة', fr: 'le taux normal de la TVA'}, cites: [/ma/code/cgi/art_99]}
+      to: pages/business
+
+events:
+  - key: bill2027
+    mark: {value: '2027', unit: {ar: مشروع, fr: projet}}
+    icon: briefcase
+    words: [قانون المالية 2027, مشروع قانون المالية, مشروع قانون المالية 2027, PLF 2027, loi de finances 2027, projet de loi de finances, الضريبة على الدخل 2027, barème IR 2027, IR 2027, شحال غادي نربح, الإعفاء ديال 10.000 درهم, 10.000 درهم معفية, الأجور تحت 10000, الجدول الجديد, الإصلاح الضريبي 2027, réforme IR 2027, التعديل الضريبي, la9anoun lmalia 2027, 10.000 درهم, 10000 درهم, تحت 10000, تحت 10.000, impôt 2027, revenu 2027, finances 2027, الرسم المهني 2027, نتسجل فالرسم المهني, عقد عرفي قديم, عقد قديم ما تسجلش, تسجيل عقد قديم]
+    means:
+      مشروع قانون المالية رقم 60.26: [قانون المالية 2027, مشروع قانون المالية, مشروع قانون المالية 2027, PLF 2027, loi de finances 2027, projet de loi de finances]
+    title: {ar: 'مشروع 2027: شنو غادي يتبدل ليك؟', fr: '2027 : qu’est-ce qui changerait pour vous ?'}
+    lead: {ar: 'مشروع، ماشي قانون: الجدول الجديد، 45%، والتواريخ، كل سطر بمادتو', fr: 'Un projet, pas une loi : le nouveau barème, les 45 %, les dates, chaque ligne avec son article'}
+    to: pages/bill-2027
+  - key: salary
+    mark: {value: '37%', unit: {ar: الأعلى, fr: 'au plus'}}
+    icon: money
+    words: [شحال كيقطعو ليا من الأجرة, الضريبة على الأجر, الضريبة على الأجرة, الضريبة على الدخل, لاكس, IR, impôt sur le revenu, impôt sur salaire, retenue sur salaire, barème IR, barème impôt sur le revenu, جدول الضريبة على الدخل, شحال الضريبة على الأجر, l'IR, salaire net impôt, daribat, dariba 3la salaire, كيقطعو ليا, المصاريف المهنية, tranche exonérée, frais professionnels, salaire, prime exonérée, l2ojra]
+    means:
+      جدول حساب الضريبة على الدخل: [جدول الضريبة على الدخل, barème IR, barème impôt sur le revenu, شريحة الدخل, الشرائح, tranches IR]
+      الأجور والدخول المعتبرة في حكمها: [الضريبة على الأجر, الضريبة على الأجرة, شحال كيقطعو ليا من الأجرة, impôt sur salaire, retenue sur salaire, l'IR sur salaire, شحال الضريبة على الأجر]
+    title: {ar: شحال كيقطعو ليا من الأجرة؟, fr: 'Combien d’impôt sur mon salaire ?'}
+    lead: {ar: 'شريحة بشريحة، وغير اللي فوق العتبة كيتخلص بالسعر الأعلى', fr: 'Tranche par tranche ; seule la part au-dessus d’un seuil paie le taux supérieur'}
+    to: tools/salary
+    for: [salary]
+    not: {ar: 'الضريبة على الأجر كيحجزها المشغل (المادة 156)', fr: 'L’impôt sur le salaire est retenu par l’employeur (art. 156)'}
+  - key: children
+    mark: {value: '600', unit: {ar: درهم, fr: DH}}
+    icon: child
+    words: [شحال كينقص على الدراري, الأعباء العائلية, الخصم عن الأعباء العائلية, الدراري والضريبة, الأولاد والضريبة, réduction pour charges de famille, charges de famille, personnes à charge impôt, enfants impôt, على الدراري, الدراري فالضريبة]
+    means:
+      الخصم عن الأعباء العائلية: [شحال كينقص على الدراري, الأعباء العائلية, الدراري والضريبة, الأولاد والضريبة, réduction pour charges de famille, charges de famille, personnes à charge impôt, enfants impôt]
+    title: {ar: شحال كينقص على الدراري؟, fr: 'Combien pour mes enfants ?'}
+    lead: {ar: '600 درهم على كل واحد فتكلفك من الضريبة، 3.600 على الأكثر (المادة 74)', fr: '600 DH d’impôt en moins par personne à charge, 3 600 au plus (art. 74)'}
+    to: tools/salary
+  - key: pension
+    mark: {value: '0%', unit: {ar: '2026', fr: '2026'}}
+    icon: elder
+    words: [واش المعاش فيه الضريبة, الضريبة على المعاش, الضريبة على المعاش ديال التقاعد, معاش التقاعد معفي, retraite impôt, impôt sur la pension, pension exonérée, CMR impôt, CNSS retraite impôt, CIMR impôt, المعاش فيه, فيه الضريبة, المعاش التكميلي, abattement pensions]
+    means:
+      المعاشات والإيرادات العمرية: [الضريبة على المعاش, الضريبة على المعاش ديال التقاعد, واش المعاش فيه الضريبة, retraite impôt, impôt sur la pension, pension exonérée]
+    title: {ar: واش المعاش فيه الضريبة؟, fr: 'Ma pension est-elle imposée ?'}
+    lead: {ar: 'معاشات أنظمة التقاعد الأساسي معفية منذ 2026', fr: 'Les pensions des régimes de base sont exonérées depuis 2026'}
+    to: tools/pension
+    for: [pension, abroad]
+    not: {ar: 'المعاش وحدو، بقواعدو (المادتان 57 و60)', fr: 'La pension a ses propres règles (art. 57 et 60)'}
+  - key: rent
+    mark: {value: '20%', unit: {ar: إبرائي, fr: option}}
+    icon: key
+    words: [كنكري دار, نصرح بمدخول الكراء, مدخول الكراء, التصريح بمدخول الكراء, الضريبة على الكراء, الضريبة على الكراء ديال الدار, الدخل العقاري, الدخول العقارية, impôt sur les loyers, revenus fonciers, retenue à la source loyer, taux libératoire loyer, kanakri dar, dariba 3la lkra, من الكراء, على الكراء, الكراء ديال, lkra, loyer]
+    means:
+      الدخول العقارية: [الضريبة على الكراء, الضريبة على الكراء ديال الدار, كنكري دار, impôt sur les loyers, revenus fonciers, kanakri dar]
+      السعر الإبرائي: [taux libératoire loyer, السعر الإبرائي ديال الكراء]
+    title: {ar: كنكري دار ولا محل, fr: 'Je loue un logement ou un local'}
+    lead: {ar: 'إسقاط 40%، والحجز فالمنبع، والسعر الإبرائي 20% إلا اخترتيه', fr: 'L’abattement de 40 %, la retenue à la source, le taux libératoire de 20 % sur option'}
+    to: tools/rent
+    for: [rent, property, abroad]
+    not: {ar: 'الكراء كيخص اللي كيكري لغيرو (المادة 61)', fr: 'Les revenus fonciers concernent qui donne en location (art. 61)'}
+  - key: declare
+    mark: {value: '1', unit: {ar: مارس, fr: mars}}
+    icon: letter
+    words: [نصرح بالدخل, التصريح بالدخل, أجل التصريح, خاصو يصرح, واش نصرح, déclaration revenu, déclaration IR, revenu global, date limite]
+    means:
+      الإقرار السنوي بمجموع الدخل: [نصرح بالدخل, التصريح بالدخل, أجل التصريح, déclaration revenu, déclaration IR, revenu global]
+    title: {ar: واش خاصني نصرح بالدخل؟, fr: 'Dois-je déclarer mes revenus ?'}
+    lead: {ar: 'قبل فاتح مارس لأغلب الدخول، وشكون معفي من التصريح، وكيفاش كترجع الزيادة', fr: 'Avant le 1er mars pour la plupart des revenus ; qui en est dispensé ; comment l’excédent est rendu'}
+    to: journeys/declare
+  - key: savings
+    icon: coins
+    words: [الضريبة على الفوائد, الضريبة على الأرباح الموزعة, الضريبة على البورصة, الأسهم والضريبة, impôt sur les dividendes, intérêts compte épargne impôt, plus-value bourse, actions impôt, dividendes, PEA, الأسهم]
+    means:
+      الدخول والأرباح الناشئة عن رؤوس الأموال المنقولة: [الضريبة على الفوائد, الضريبة على الأرباح الموزعة, الضريبة على البورصة, الأسهم والضريبة, impôt sur les dividendes, intérêts compte épargne impôt, plus-value bourse, actions impôt]
+    title: {ar: الفوائد والأسهم, fr: 'Intérêts et actions'}
+    lead: {ar: 'كتتحجز فالمنبع بسعر إبرائي: 30% على الفوائد، 15% على ربح الأسهم المدرجة (المادة 73)', fr: 'Retenus à la source à un taux libératoire : 30 % sur les intérêts, 15 % sur le profit d’actions cotées (art. 73)'}
+    to: pages/savings
+  - key: housing
+    mark: {value: '75%', unit: {ar: إسقاط, fr: 'en moins'}}
+    icon: home
+    words: [رسم السكن, ضريبة السكن, الطاكس ديال الدار, رسم الخدمات الجماعية, taxe d'habitation, taxe de services communaux, TSC, tasse dyal dar, taxe habitation maroc, شكون كيخلص رسم السكن]
+    means:
+      رسم السكن: [رسم السكن, ضريبة السكن, الطاكس ديال الدار, taxe d'habitation, taxe habitation maroc, tasse dyal dar, شكون كيخلص رسم السكن]
+      رسم الخدمات الجماعية: [رسم الخدمات الجماعية, taxe de services communaux, TSC]
+    title: {ar: رسم السكن ورسم الخدمات, fr: 'La taxe d’habitation et de services'}
+    lead: {ar: 'باسم المالك، وإسقاط 75% على السكن الرئيسي (القانون 47.06)', fr: 'Au nom du propriétaire, 75 % d’abattement sur l’habitation principale (loi 47.06)'}
+    to: tools/local
+  - key: land
+    mark: {value: '15–30', unit: {ar: للمتر, fr: 'DH/m²'}}
+    icon: plot
+    words: [الضريبة على الأراضي غير المبنية, الرسم على الأراضي الحضرية غير المبنية, أرض ما مبنياش, TNB, taxe sur les terrains non bâtis, terrain non bâti impôt, لاتي إن بي, ما بنيتهاش, أرض فالمدينة, الأراضي الحضرية]
+    means:
+      الرسم على الأراضي الحضرية غير المبنية: [الضريبة على الأراضي غير المبنية, أرض ما مبنياش, TNB, taxe sur les terrains non bâtis, terrain non bâti impôt, لاتي إن بي]
+    title: {ar: عندي أرض ما مبنياش فالمدينة, fr: 'J’ai un terrain non bâti en ville'}
+    lead: {ar: 'إقرار وأداء قبل فاتح مارس، بالمتر حسب تجهيز المنطقة', fr: 'Déclarée et payée avant le 1er mars, au mètre selon l’équipement de la zone'}
+    to: tools/local
+  - key: car
+    mark: {value: '350', unit: {ar: فما فوق, fr: 'et plus'}}
+    icon: car
+    words: [الفينييت, الفينييت ديال الطوموبيل شحال, الضريبة على السيارات, الضريبة الخصوصية السنوية على المركبات, vignette, vignette auto, vignette maroc prix, taxe spéciale annuelle sur les véhicules, lvinyit, الضريبة الخصوصية, الخصوصية السنوية, taxe spéciale annuelle]
+    means:
+      الضريبة الخصوصية السنوية على المركبات: [الفينييت, الفينييت ديال الطوموبيل شحال, الضريبة على السيارات, vignette, vignette auto, vignette maroc prix, lvinyit]
+    title: {ar: الفينييت ديالي شحال؟, fr: 'Combien pour ma vignette ?'}
+    lead: {ar: 'حسب القوة الجبائية ونوع المحرك، فشهر يناير (المادتان 261 و262)', fr: 'Selon la puissance fiscale et le carburant, en janvier (art. 261 et 262)'}
+    to: tools/car
+  - key: sell
+    mark: {value: '20%', unit: {ar: الربح, fr: profit}}
+    icon: sold
+    words: [بعت دار شحال الضريبة, الربح العقاري, الضريبة على الربح العقاري, الضريبة على بيع الدار, الربح العقاري السكن الرئيسي معفي, plus-value immobilière, profit foncier, impôt vente maison, plus-value cession logement principal exonération, ba3t dar, بيع الدار, بعت دار, بعت الدار, vente appartement, مصاريف الاقتناء, الأرباح العقارية]
+    means:
+      الأرباح العقارية: [الربح العقاري, الضريبة على الربح العقاري, الضريبة على بيع الدار, بعت دار شحال الضريبة, plus-value immobilière, profit foncier, impôt vente maison, ba3t dar]
+    title: {ar: بعت دار ولا أرض, fr: 'J’ai vendu un logement ou un terrain'}
+    lead: {ar: '20% من الربح، 3% من الثمن على الأقل، والسكن الرئيسي معفي بعد 5 سنين', fr: '20 % du profit, au moins 3 % du prix ; l’habitation principale exonérée après 5 ans'}
+    to: journeys/sell
+  - key: buy
+    mark: {value: '4%', unit: {ar: التسجيل, fr: droits}}
+    icon: contract
+    words: [واجبات التسجيل, واجبات التسجيل فشراء دار, شريت دار شحال الضريبة, droits d'enregistrement, frais d'enregistrement achat appartement, enregistrement achat maison, شحال التسجيل, تسجيل العقد, الواجبات النسبية, التسجيل على]
+    means:
+      واجبات التسجيل: [واجبات التسجيل, واجبات التسجيل فشراء دار, شريت دار شحال الضريبة, droits d'enregistrement, frais d'enregistrement achat appartement, enregistrement achat maison]
+    title: {ar: شريت دار ولا أرض, fr: 'J’achète un logement ou un terrain'}
+    lead: {ar: '4% على المحل المبني، 5% على الأرض العارية، داخل 30 يوما', fr: '4 % sur un local construit, 5 % sur un terrain nu, dans les 30 jours'}
+    to: tools/buy
+  - key: gift
+    mark: {value: '1,5%', unit: {ar: العائلة, fr: famille}}
+    icon: gift
+    words: [الهبة بين الأقارب, الصدقة, هبة دار للولد, الإرث والضريبة, donation entre parents, donation maison enfant impôt, héritage impôt maroc, الهبة بين]
+    means:
+      التفويتات بدون عوض: [الهبة بين الأقارب, الصدقة, هبة دار للولد, donation entre parents, donation maison enfant impôt]
+    title: {ar: عطيت ولا ورثت عقار, fr: 'Une donation ou un héritage'}
+    lead: {ar: 'الهبة بين الأصول والفروع والأزواج والإخوة: معفية من الربح و1,5% تسجيل (المادتان 63 و133)', fr: 'Entre ascendants, descendants, époux, frères et sœurs : sans impôt sur le profit, 1,5 % d’enregistrement (art. 63 et 133)'}
+    to: pages/gift
+  - key: own
+    mark: {value: '0,5%', unit: {ar: من الرقم, fr: recettes}}
+    icon: briefcase
+    words: [المقاول الذاتي شحال كيخلص الضريبة, المقاول الذاتي, الضريبة على المقاول الذاتي, المساهمة المهنية الموحدة, CPU, auto-entrepreneur impôt, auto entrepreneur maroc taux, contribution professionnelle unique, خدام بحسابي, auto entrepreneur, auto-entrepreneur]
+    means:
+      المقاول الذاتي: [المقاول الذاتي شحال كيخلص الضريبة, المقاول الذاتي, الضريبة على المقاول الذاتي, auto-entrepreneur impôt, auto entrepreneur maroc taux]
+      المساهمة المهنية الموحدة: [المساهمة المهنية الموحدة, CPU, contribution professionnelle unique]
+    title: {ar: خدام بحسابي, fr: 'Je travaille à mon compte'}
+    lead: {ar: 'المقاول الذاتي ولا المساهمة المهنية الموحدة: السعر والسقف والتصريح', fr: 'Auto-entrepreneur ou contribution professionnelle unique : le taux, le plafond, la déclaration'}
+    to: journeys/own
+    for: [self, company]
+    not: {ar: 'كيخص اللي خدام بحسابو (المادتان 40 و42 المكررة)', fr: 'Concerne qui travaille à son compte (art. 40 et 42 bis)'}
+  - key: late
+    mark: {value: '10%', unit: {ar: ذعيرة, fr: pénalité}}
+    icon: clock
+    words: [ذعيرة التأخير في التصريح الضريبي, ذعيرة التأخير, تأخرت فالخلاص ديال الضريبة, ما خلصتش الضريبة, خلصت الضريبة معطل, majoration de retard impôt, pénalité de retard, retard paiement impôt, retard déclaration, إيداع الإقرارات]
+    means:
+      الجزاءات المترتبة على الأداء المتأخر: [تأخرت فالخلاص ديال الضريبة, majoration de retard impôt, retard paiement impôt]
+      الجزاءات المترتبة على عدم الإيداع أو الإيداع المتأخر للإقرارات: [ذعيرة التأخير في التصريح الضريبي, retard déclaration]
+    title: {ar: تأخرت فالأداء ولا التصريح, fr: 'Je suis en retard'}
+    lead: {ar: '10% (5% داخل 30 يوما)، 5% عن الشهر الأول و0,5% عن كل شهر من بعد', fr: '10 % (5 % sous 30 jours), 5 % le premier mois et 0,5 % par mois ensuite'}
+    to: tools/late
+  - key: notice
+    mark: {value: '30', unit: {ar: يوما, fr: jours}}
+    icon: letter
+    words: [توصلت برسالة من الضرائب, إشعار بالتصحيح, المراجعة الضريبية, شكاية ضريبية, كيفاش نشكي على الضريبة, كيفاش نسترجع الضريبة, réclamation fiscale, notification de redressement, contrôle fiscal, restitution impôt, remboursement impôt, نسترجع الضريبة, حق التظلم, الطعن القضائي, اللجنة المحلية]
+    means:
+      مسطرة تصحيح الضرائب: [توصلت برسالة من الضرائب, إشعار بالتصحيح, notification de redressement, contrôle fiscal]
+      حق التظلم: [شكاية ضريبية, كيفاش نشكي على الضريبة, réclamation fiscale]
+      الاسترداد: [كيفاش نسترجع الضريبة, restitution impôt, remboursement impôt]
+    title: {ar: توصلت برسالة من الضرائب, fr: 'J’ai reçu une lettre des impôts'}
+    lead: {ar: '30 يوما للرد على التصحيح، و6 أشهر للتظلم من ضريبة كتشوفها غالطة', fr: '30 jours pour répondre à un redressement, 6 mois pour réclamer'}
+    to: journeys/notice
+  - key: abroad
+    mark: {value: '183', unit: {ar: يوما, fr: jours}}
+    icon: foreign
+    words: [ساكن فالخارج والضريبة, مغاربة العالم الضريبة, MRE impôt, domicile fiscal maroc, résident à l'étranger impôt, 183 jours]
+    means:
+      الموطن الضريبي: [ساكن فالخارج والضريبة, domicile fiscal maroc, résident à l'étranger impôt, 183 jours, MRE impôt]
+    title: {ar: ساكن فالخارج, fr: 'Je vis à l’étranger'}
+    lead: {ar: 'شنو كيتخلص فالمغرب، والموطن الضريبي، والسكن اللي كتحتفظ بيه', fr: 'Ce qui est imposé au Maroc, le domicile fiscal, le logement gardé'}
+    to: pages/abroad
+    for: [abroad]
+    not: {ar: 'كيخص اللي موطنه الضريبي ماشي فالمغرب (المادة 23)', fr: 'Concerne qui n’a pas son domicile fiscal au Maroc (art. 23)'}
+  - key: company
+    icon: building
+    words: [الضريبة على الشركات, الضريبة على القيمة المضافة, سعر الضريبة على القيمة المضافة, TVA, IS, impôt sur les sociétés, taux TVA maroc, taxe professionnelle, القيمة المضافة]
+    means:
+      الضريبة على الشركات: [الضريبة على الشركات, IS, impôt sur les sociétés]
+      الضريبة على القيمة المضافة: [الضريبة على القيمة المضافة, سعر الضريبة على القيمة المضافة, TVA, taux TVA maroc]
+    title: {ar: عندي شركة, fr: 'J’ai une société'}
+    lead: {ar: 'الضريبة على الشركات، والقيمة المضافة، والرسم المهني: الأساسي فصفحة', fr: 'IS, TVA, taxe professionnelle : l’essentiel en une page'}
+    to: pages/business
+    for: [company, self]
+    not: {ar: 'كيخص الشركات (المادة 2)', fr: 'Concerne les sociétés (art. 2)'}
+
+# The tools run on the reader's phone; every one waits for a person's check (C3 «wait»: twenty salaries against the DGI's
+# own simulator first). The instruments on the page: the salary's staircase, the home's local taxes, the vignette. A
+# tool's `cites` are the articles it rests on: search answers a door that opens it with them.
+tools:
+  # C4 «open»: the bill's years open now, with the note that they are the bill's arithmetic, not law (P6).
+  - key: bill
+    open: true
+    cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_247, /ma/code/cgi/art_59, /ma/code/cgi/art_74, /ma/projet-loi/60-26/art_7]
+    icon: money
+    words: [شحال غادي نربح, شحال غادي نربح بالمشروع, simulateur IR 2027, calcul IR 2027, الضريبة على الأجر 2027, gain réforme IR]
+    tool: true
+    title: {ar: شحال غادي نربح بالمشروع؟, fr: 'Combien le projet me ferait-il gagner ?'}
+    lead: {ar: 'أجرتك تحت جداول المشروع من 2027 حتى 2031، عام بعام، حدا اليوم', fr: 'Votre salaire sous les barèmes du projet de 2027 à 2031, année par année, face à aujourd’hui'}
+    for: [salary]
+  - key: salary
+    cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_59, /ma/code/cgi/art_74, /ma/code/cgi/art_56, /ma/code/cgi/art_156]
+    icon: money
+    words: [حساب الضريبة على الدخل, simulateur IR, calcul impôt salaire, حساب الأجرة الصافية, salaire net maroc, calcul salaire net]
+    means: جدول حساب الضريبة على الدخل
+    tool: true
+    title: {ar: شحال كيقطعو ليا من الأجرة؟, fr: 'Combien d’impôt sur mon salaire ?'}
+    lead: {ar: 'من الأجر الإجمالي للصافي: الاقتطاعات، المصاريف المهنية، الجدول شريحة بشريحة، والأعباء العائلية', fr: 'Du brut au net : cotisations, frais professionnels, barème tranche par tranche, charges de famille'}
+    for: [salary]
+  - key: local
+    cites: [/ma/loi/47-06/art_27, /ma/loi/47-06/art_24, /ma/loi/47-06/art_45, /ma/loi/47-06/art_36, /ma/loi/47-06/art_20, /ma/loi/47-06/art_46, /ma/loi/47-06/art_47]
+    icon: home
+    words: [حساب رسم السكن, calcul taxe d'habitation, calcul TNB]
+    means: رسم السكن
+    tool: true
+    title: {ar: رسوم الدار والأرض, fr: 'Les taxes du logement et du terrain'}
+    lead: {ar: 'رسم السكن ورسم الخدمات من القيمة الإيجارية، والأرض غير المبنية بالمتر', fr: 'Habitation et services depuis la valeur locative ; le terrain non bâti au mètre'}
+  - key: car
+    cites: [/ma/code/cgi/art_262, /ma/code/cgi/art_261, /ma/code/cgi/art_260]
+    icon: car
+    words: [حساب الفينييت, prix vignette, calcul vignette]
+    means: الضريبة الخصوصية السنوية على المركبات
+    tool: true
+    title: {ar: الفينييت ديالي شحال؟, fr: 'Combien pour ma vignette ?'}
+    lead: {ar: 'القوة الجبائية والمحرك: المبلغ والأجل، والطوموبيل الجديدة بالشهور', fr: 'Puissance et carburant : le montant et l’échéance, au prorata pour un véhicule neuf'}
+  - key: pension
+    cites: [/ma/code/cgi/art_57, /ma/code/cgi/art_60, /ma/code/cgi/art_76]
+    icon: elder
+    words: [حساب الضريبة على المعاش, calcul impôt retraite]
+    means: المعاشات والإيرادات العمرية
+    tool: true
+    title: {ar: واش المعاش ديالي فيه الضريبة؟, fr: 'Ma pension est-elle imposée ?'}
+    lead: {ar: 'النظام اللي كيخلصك، الإسقاط، والجدول', fr: 'Le régime qui vous paie, l’abattement, le barème'}
+    for: [pension, abroad]
+  - key: rent
+    cites: [/ma/code/cgi/art_64, /ma/code/cgi/art_73, /ma/code/cgi/art_160-bis, /ma/code/cgi/art_61]
+    icon: key
+    words: [حساب الضريبة على الكراء, calcul impôt loyer]
+    means: الدخول العقارية
+    tool: true
+    title: {ar: شحال على الكراء ديالي؟, fr: 'Combien sur mes loyers ?'}
+    lead: {ar: 'الجدول مع إسقاط 40%، الحجز فالمنبع، ولا السعر الإبرائي 20%', fr: 'Le barème après 40 % d’abattement, la retenue à la source, ou le taux libératoire de 20 %'}
+    for: [rent, property, abroad]
+  - key: sell
+    cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_144, /ma/code/cgi/art_63, /ma/code/cgi/art_65, /ma/code/cgi/art_83]
+    icon: sold
+    words: [حساب الربح العقاري, calcul plus-value immobilière]
+    means: الأرباح العقارية
+    tool: true
+    title: {ar: 'بعت عقار: شحال الضريبة؟', fr: 'J’ai vendu : combien d’impôt ?'}
+    lead: {ar: 'الثمن، ثمن الشرا والمصاريف: الربح، 20%، والحد الأدنى 3%، والإعفاءات', fr: 'Le prix, le coût d’achat et les frais : le profit, 20 %, le minimum de 3 %, les exonérations'}
+  - key: buy
+    cites: [/ma/code/cgi/art_133, /ma/code/cgi/art_128]
+    icon: contract
+    words: [حساب واجبات التسجيل, calcul droits d'enregistrement]
+    means: واجبات التسجيل
+    tool: true
+    title: {ar: 'شريت عقار: شحال التسجيل؟', fr: 'J’achète : combien d’enregistrement ?'}
+    lead: {ar: 'نوع العقار والثمن: الواجبات وأجل 30 يوما', fr: 'Le type de bien et le prix : les droits et le délai de 30 jours'}
+  - key: own
+    cites: [/ma/code/cgi/art_73, /ma/code/cgi/art_42-bis, /ma/code/cgi/art_42-ter, /ma/code/cgi/art_82-bis]
+    icon: briefcase
+    words: [حساب ضريبة المقاول الذاتي, calcul impôt auto-entrepreneur]
+    means: المقاول الذاتي
+    tool: true
+    title: {ar: 'المقاول الذاتي: شحال نخلص؟', fr: 'Auto-entrepreneur : combien payer ?'}
+    lead: {ar: 'رقم المعاملات حسب النشاط: الضريبة، السقف، والزبون فوق 80.000', fr: 'Le chiffre d’affaires par activité : l’impôt, le plafond, le client au-delà de 80 000'}
+    for: [self, company]
+  - key: late
+    cites: [/ma/code/cgi/art_208, /ma/code/cgi/art_184, /ma/loi/47-06/art_147]
+    icon: clock
+    words: [حساب ذعيرة التأخير, calcul pénalité de retard]
+    means: الجزاءات المترتبة على الأداء المتأخر
+    tool: true
+    title: {ar: 'تأخرت: شحال الزيادة؟', fr: 'En retard : combien de plus ?'}
+    lead: {ar: 'المبلغ ونهار الأجل: الذعيرة والزيادة شهر بشهر', fr: 'Le montant et l’échéance : la pénalité et la majoration mois par mois'}

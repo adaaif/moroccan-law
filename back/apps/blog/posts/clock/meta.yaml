@@ -1,0 +1,335 @@
+# «من غرينيتش إلى غرينيتش»: the blog's thirteenth post (S6 of the first-principles review, 6 Nov 2026: «Yes», C1
+# left as recommended: the clock first). Every move below was read in its text's article on the printed page (6 Nov
+# 2026): the day and hour as the text words them, local legal time before the move. A person checks each one on its page
+# before the post is published. The figures (manage.py blog_figures clock) tie each text to its issue, its printed page
+# and, when the site has cut it, its address; and read Ramadan's first day from the Bulletin's own Hijri dates.
+slug: clock
+number: 13
+status: draft
+date: null
+counted_on: 2026-11-06
+title:
+  ar: من غرينيتش إلى غرينيتش، 51 نصا حرّكت ساعة المغرب
+  fr: De Greenwich à Greenwich, les 51 textes qui ont déplacé l’heure du Maroc
+lead:
+  ar: في 26 أكتوبر 1913 جعل ظهير شريف توقيت غرينيتش ساعة المغرب القانونية. وفي 20 شتنبر 2026، في الساعة الثانية صباحا، عادت إليه. وبين التاريخين حرّكت الجريدة الرسمية الساعة 75 مرة. قرأنا النصوص الواحد والخمسين كلها، ورسمنا كل يوم من أيامها.
+  fr: Le 26 octobre 1913, un dahir fit de l’heure de Greenwich l’heure légale du Maroc. Le 20 septembre 2026, à deux heures du matin, le Royaume y est revenu. Entre les deux, le Bulletin officiel a déplacé l’horloge 75 fois. Nous avons lu les cinquante et un textes et dessiné chacun de leurs jours.
+
+# Before the legal time: the French edition's chronicle of 10 October 1913 (BO 50, p. 417) and of 2 January 1914 (BO 62,
+# pp. 9 and 10), quoted as printed.
+before:
+  rabat: {issue: 50, edition: translation_fr, page: 417, minutes: 27, seconds: 30, date: 1913-10-03,
+          fr: "L’heure officielle de Rabat retardait, en effet de 27’ 30” sur celle de Casablanca."}
+  safi: {issue: 62, edition: translation_fr, page: 10,
+         fr: "La municipalité de Saffi a fait placer des horloges sur le fronton des portes de l’enceinte de Saffi. Ces horloges marquent l’heure officielle du Maroc qui est celle du Bureau horaire de Greenwich."}
+  eiffel: {issue: 62, edition: translation_fr, page: 9,
+           fr: "Un dispositif spécial a été établi à Casablanca (local du service topographique) pour la réception des signaux horaires de la Tour Eiffel (heure légale)."}
+
+# The legal time begins with the dahir of 26 October 1913; before it the post draws no day.
+legal_from: 1913-10-26
+
+# The texts, in the order they were signed. kind: dahir, royal (royal decree), decree, decision (the Head of
+# Government's), court. `page` is the printed page; `index` where the issue prints none (the two «bis» issues).
+# `akn` where the site has cut the text with its words (the 1946 dahir's address holds another text's articles; the 1945
+# dahir's holds only its first words: both open their page). `also`: the other edition, when it printed the text first.
+texts:
+  - {key: d1913, kind: dahir, signed: 1913-10-26, edition: translation_fr, issue: 55, page: 487, akn: /akn/ma/act/dahir/1913-11-14/bofr55-1}
+  - {key: d1918a, kind: dahir, signed: 1918-05-10, edition: general_ar, issue: 265, page: 537, also: {edition: translation_fr, issue: 290, page: 489}}
+  - {key: d1918b, kind: dahir, signed: 1918-07-08, edition: general_ar, issue: 274, page: 738, akn: /akn/ma/act/dahir/1918-07-29/bo274-1, also: {edition: translation_fr, issue: 299, page: 673}}
+  - {key: d1939, kind: dahir, signed: 1939-09-09, edition: general_ar, issue: 1403, page: 1678}
+  - {key: d1940, kind: dahir, signed: 1940-02-16, edition: general_ar, issue: 1428, page: 263}
+  - {key: d1945a, kind: dahir, signed: 1945-09-22, edition: general_ar, issue: 1724, page: 1045}
+  - {key: d1945b, kind: dahir, signed: 1945-11-17, edition: general_ar, issue: 1730, page: 2066, akn: /akn/ma/act/dahir/1945-12-21/bo1730-2}
+  - {key: d1946, kind: dahir, signed: 1946-09-20, edition: general_ar, issue: 1776, page: 1327}
+  - {key: d1950a, kind: dahir, signed: 1950-06-07, edition: general_ar, issue: 1963, page: 1213, akn: /akn/ma/act/dahir/1950-06-09/bo1963-1}
+  - {key: d1950b, kind: dahir, signed: 1950-10-03, edition: general_ar, issue: 1981, page: 1913, akn: /akn/ma/act/dahir/1950-10-13/bo1981-1}
+  - {key: r45567, kind: royal, number: "455.67", signed: 1967-06-02, edition: general_ar, issue: 2854, page: 1547, akn: /akn/ma/act/decret/455-67}
+  - {key: r72667, kind: royal, number: "726.67", signed: 1967-09-30, edition: general_ar, issue: 2868, page: 2284}
+  - {key: d274459, kind: decree, number: "2.74.459", signed: 1974-06-18, edition: general_ar, issue: 3216, page: 1729, akn: /akn/ma/act/decret/2-74-459}
+  - {key: d274595, kind: decree, number: "2.74.595", signed: 1974-08-31, edition: general_ar, issue: 3228, page: 2582}
+  - {key: d276188, kind: decree, number: "2.76.188", signed: 1976-04-12, edition: general_ar, issue: 3311, page: 1279, akn: /akn/ma/act/decret/2-76-188}
+  - {key: d276437, kind: decree, number: "2.76.437", signed: 1976-07-28, edition: general_ar, issue: 3330, page: 2716, akn: /akn/ma/act/decret/2-76-437}
+  - {key: d278252, kind: decree, number: "2.78.252", signed: 1978-05-26, edition: general_ar, issue: 3422, page: 1576}
+  - {key: d278385, kind: decree, number: "2.78.385", signed: 1978-08-01, edition: general_ar, issue: 3431, page: 2064}
+  - {key: d279184, kind: decree, number: "2.79.184", signed: 1979-04-25, edition: general_ar, issue: 3469, page: 1204}
+  - {key: d279545, kind: decree, number: "2.79.545", signed: 1979-09-21, edition: general_ar, issue: 3492, page: 2551, akn: /akn/ma/act/decret/2-79-545}
+  - {key: d284215, kind: decree, number: "2.84.215", signed: 1984-03-15, edition: general_ar, issue: 3725, page: 327, akn: /akn/ma/act/decret/2-84-215}
+  - {key: d285735, kind: decree, number: "2.85.735", signed: 1985-10-01, edition: general_ar, issue: 3805, page: 1180, akn: /akn/ma/act/decret/2-85-735}
+  - {key: d286365, kind: decree, number: "2.86.365", signed: 1986-06-02, edition: general_ar, issue: 3840, page: 568, akn: /akn/ma/act/decret/2-86-365}
+  - {key: d286574, kind: decree, number: "2.86.574", signed: 1986-09-12, edition: general_ar, issue: 3855, page: 997, akn: /akn/ma/act/decret/2-86-574}
+  - {key: d289262, kind: decree, number: "2.89.262", signed: 1989-05-09, edition: general_ar, issue: 3993, page: 561, akn: /akn/ma/act/decret/2-89-262}
+  - {key: d289357, kind: decree, number: "2.89.357", signed: 1989-06-14, edition: general_ar, issue: 3999, page: 704, akn: /akn/ma/act/decret/2-89-357}
+  - {key: d208224, kind: decree, number: "2.08.224", signed: 2008-05-22, edition: general_ar, issue: 5634, page: 1281, akn: /akn/ma/act/decret/2-08-224}
+  - {key: d208480, kind: decree, number: "2.08.480", signed: 2008-08-28, edition: general_ar, issue: 5661, page: 2505, akn: /akn/ma/act/decret/2-08-480}
+  - {key: d209148, kind: decree, number: "2.09.148", signed: 2009-05-21, edition: general_ar, issue: 5738, page: 3107, akn: /akn/ma/act/decret/2-09-148}
+  - {key: d210154, kind: decree, number: "2.10.154", signed: 2010-04-26, edition: general_ar, issue: 5833, page: 2616, akn: /akn/ma/act/decret/2-10-154}
+  - {key: d211170, kind: decree, number: "2.11.170", signed: 2011-04-01, edition: general_ar, issue: 5933, page: 2116, akn: /akn/ma/act/decret/2-11-170}
+  - {key: d212126, kind: decree, number: "2.12.126", signed: 2012-04-18, edition: general_ar, issue: 6040, page: 2737, akn: /akn/ma/act/decret/2-12-126}
+  - {key: h34712, kind: decision, number: "3.47.12", signed: 2012-07-11, edition: general_ar, issue: 6064, page: 4166, akn: /akn/ma/act/decision/2012/3-47-12}
+  - {key: h35913, kind: decision, number: "3.59.13", signed: 2013-06-27, edition: general_ar, issue: 6165, page: 4855, akn: /akn/ma/act/decision/2013/3-59-13}
+  - {key: d213781, kind: decree, number: "2.13.781", signed: 2013-09-28, edition: general_ar, issue: 6190, bis: true, page: 6272, index: 1}
+  - {key: h321114, kind: decision, number: "3.211.14", signed: 2014-05-30, edition: general_ar, issue: 6264, page: 4897, akn: /akn/ma/act/decision/2014/3-211-14}
+  - {key: h32915, kind: decision, number: "3.29.15", signed: 2015-06-04, edition: general_ar, issue: 6367, page: 5612, akn: /akn/ma/act/decision/2015/3-29-15}
+  - {key: h32916, kind: decision, number: "3.29.16", signed: 2016-04-14, edition: general_ar, issue: 6465, page: 3795, akn: /akn/ma/act/decision/2016/3-29-16}
+  - {key: h37717, kind: decision, number: "3.77.17", signed: 2017-04-28, edition: general_ar, issue: 6570, page: 3296, akn: /akn/ma/act/decision/2017/3-77-17}
+  - {key: h31418, kind: decision, number: "3.14.18", signed: 2018-05-07, edition: general_ar, issue: 6672, page: 2671, akn: /akn/ma/act/decision/2018/3-14-18}
+  - {key: d218855, kind: decree, number: "2.18.855", signed: 2018-10-26, edition: general_ar, issue: 6720, bis: true, page: 8880, index: 1}
+  - {key: c9019, kind: court, number: "90.19", signed: 2019-03-13, edition: general_ar, issue: 6761, page: 1534, akn: /akn/ma/act/texte/2019/90-19}
+  - {key: h31919, kind: decision, number: "3.19.19", signed: 2019-04-15, edition: general_ar, issue: 6773, page: 2183, akn: /akn/ma/act/decision/2019/3-19-19}
+  - {key: h32520, kind: decision, number: "3.25.20", signed: 2020-04-09, edition: general_ar, issue: 6873, page: 2082, akn: /akn/ma/act/decision/2020/3-25-20}
+  - {key: h31721, kind: decision, number: "3.17.21", signed: 2021-03-30, edition: general_ar, issue: 6974, page: 2075, akn: /akn/ma/act/decision/2021/3-17-21}
+  - {key: h31522, kind: decision, number: "3.15.22", signed: 2022-03-08, edition: general_ar, issue: 7076, page: 1915, akn: /akn/ma/act/decision/2022/3-15-22}
+  - {key: h31723, kind: decision, number: "3.17.23", signed: 2023-03-06, edition: general_ar, issue: 7177, page: 2966, akn: /akn/ma/act/decision/2023/3-17-23}
+  - {key: h31024, kind: decision, number: "3.10.24", signed: 2024-02-22, edition: general_ar, issue: 7279, page: 1437, akn: /akn/ma/act/decision/2024/3-10-24}
+  - {key: h30525, kind: decision, number: "3.05.25", signed: 2025-02-04, edition: general_ar, issue: 7377, page: 1112, akn: /akn/ma/act/decision/2025/3-05-25}
+  - {key: h30626, kind: decision, number: "3.06.26", signed: 2026-01-29, edition: general_ar, issue: 7480, page: 912, akn: /akn/ma/act/decision/2026/3-06-26}
+  - {key: d226530, kind: decree, number: "2.26.530", signed: 2026-06-25, edition: general_ar, issue: 7521, page: 3768, akn: /akn/ma/act/decret/2-26-530}
+
+# Every move of the clock: `at` the local legal time the text names, before the move; `to` the minutes ahead of Greenwich
+# after it; `text` the text that orders it. `rule` marks a move no text of its year names: the decree's yearly rule
+# (2.12.126 art. 1 and 2, the last Sunday of April and of September; from 2.13.781, of March and of October).
+moves:
+  - {at: "1918-05-16T00:00", to: 60, text: d1918a}
+  - {at: "1918-07-15T00:00", to: 0, text: d1918b}
+  - {at: "1939-09-12T00:00", to: 60, text: d1939}
+  - {at: "1940-02-25T02:00", to: 60, text: d1940}
+  - {at: "1946-09-30T01:00", to: 0, text: d1946}
+  - {at: "1950-06-11T02:00", to: 60, text: d1950a}
+  - {at: "1950-10-29T01:00", to: 0, text: d1950b}
+  - {at: "1967-06-03T12:00", to: 60, text: r45567}
+  - {at: "1967-10-01T00:00", to: 0, text: r72667}
+  - {at: "1974-06-24T00:00", to: 60, text: d274459}
+  - {at: "1974-09-01T00:00", to: 0, text: d274595}
+  - {at: "1976-05-01T00:00", to: 60, text: d276188}
+  - {at: "1976-08-01T00:00", to: 0, text: d276437}
+  - {at: "1978-06-01T00:00", to: 60, text: d278252}
+  - {at: "1978-08-04T00:00", to: 0, text: d278385}
+  - {at: "1979-05-01T00:00", to: 60, text: d279184}
+  - {at: "1979-09-24T00:00", to: 0, text: d279545}
+  - {at: "1984-03-16T00:00", to: 60, text: d284215}
+  - {at: "1985-10-06T00:00", to: 0, text: d285735}
+  - {at: "1986-06-15T00:00", to: 60, text: d286365}
+  - {at: "1986-09-16T00:00", to: 0, text: d286574}
+  - {at: "1989-06-04T00:00", to: 60, text: d289262}
+  - {at: "1989-07-01T00:00", to: 0, text: d289357}
+  - {at: "2008-06-01T00:00", to: 60, text: d208224}
+  - {at: "2008-09-01T00:00", to: 0, text: d208480}
+  - {at: "2009-06-01T00:00", to: 60, text: d209148}
+  - {at: "2009-08-21T00:00", to: 0, text: d209148}
+  - {at: "2010-05-02T00:00", to: 60, text: d210154}
+  - {at: "2010-08-08T00:00", to: 0, text: d210154}
+  - {at: "2011-04-03T00:00", to: 60, text: d211170}
+  - {at: "2011-07-31T00:00", to: 0, text: d211170}
+  - {at: "2012-04-29T02:00", to: 60, text: d212126}
+  - {at: "2012-07-20T03:00", to: 0, text: h34712}
+  - {at: "2012-08-20T02:00", to: 60, text: h34712}
+  - {at: "2012-09-30T03:00", to: 0, text: d212126, rule: true}
+  - {at: "2013-04-28T02:00", to: 60, text: d212126, rule: true}
+  - {at: "2013-07-07T03:00", to: 0, text: h35913}
+  - {at: "2013-08-10T02:00", to: 60, text: h35913}
+  - {at: "2013-10-27T03:00", to: 0, text: d213781}
+  - {at: "2014-03-30T02:00", to: 60, text: d213781, rule: true}
+  - {at: "2014-06-28T03:00", to: 0, text: h321114}
+  - {at: "2014-08-02T02:00", to: 60, text: h321114}
+  - {at: "2014-10-26T03:00", to: 0, text: d213781, rule: true}
+  - {at: "2015-03-29T02:00", to: 60, text: d213781, rule: true}
+  - {at: "2015-06-14T03:00", to: 0, text: h32915}
+  - {at: "2015-07-19T02:00", to: 60, text: h32915}
+  - {at: "2015-10-25T03:00", to: 0, text: d213781, rule: true}
+  - {at: "2016-03-27T02:00", to: 60, text: d213781, rule: true}
+  - {at: "2016-06-05T03:00", to: 0, text: h32916}
+  - {at: "2016-07-10T02:00", to: 60, text: h32916}
+  - {at: "2016-10-30T03:00", to: 0, text: d213781, rule: true}
+  - {at: "2017-03-26T02:00", to: 60, text: d213781, rule: true}
+  - {at: "2017-05-21T03:00", to: 0, text: h37717}
+  - {at: "2017-07-02T02:00", to: 60, text: h37717}
+  - {at: "2017-10-29T03:00", to: 0, text: d213781, rule: true}
+  - {at: "2018-03-25T02:00", to: 60, text: d213781, rule: true}
+  - {at: "2018-05-13T03:00", to: 0, text: h31418}
+  - {at: "2018-06-17T02:00", to: 60, text: h31418}
+  - {at: "2019-05-05T03:00", to: 0, text: h31919}
+  - {at: "2019-06-09T02:00", to: 60, text: h31919}
+  - {at: "2020-04-19T03:00", to: 0, text: h32520}
+  - {at: "2020-05-31T02:00", to: 60, text: h32520}
+  - {at: "2021-04-11T03:00", to: 0, text: h31721}
+  - {at: "2021-05-16T02:00", to: 60, text: h31721}
+  - {at: "2022-03-27T03:00", to: 0, text: h31522}
+  - {at: "2022-05-08T02:00", to: 60, text: h31522}
+  - {at: "2023-03-19T03:00", to: 0, text: h31723}
+  - {at: "2023-04-23T02:00", to: 60, text: h31723}
+  - {at: "2024-03-10T03:00", to: 0, text: h31024}
+  - {at: "2024-04-14T02:00", to: 60, text: h31024}
+  - {at: "2025-02-23T03:00", to: 0, text: h30525}
+  - {at: "2025-04-06T02:00", to: 60, text: h30525}
+  - {at: "2026-02-15T03:00", to: 0, text: h30626}
+  - {at: "2026-03-22T02:00", to: 60, text: h30626}
+  - {at: "2026-09-20T02:00", to: 0, text: d226530}
+
+# What no move shows. The clock went back between these two days, by a text not found in the Bulletin as the site reads
+# it: the 1939 dahir sets the hour «الى ان يصدر امر يخالف ذلك», and the 1940 dahir sets it again from 25 February 1940.
+unknown: [{from: "1939-09-12T00:00", to: "1940-02-25T02:00"}]
+
+# Dates a text set and another text undid before they came.
+undone:
+  - {at: "1945-11-18T03:00", set: d1945a, by: d1945b}
+  - {at: "2008-09-28T00:00", set: d208224, by: d208480}
+  - {at: "2013-09-29T03:00", set: d212126, by: d213781}
+  - {at: "2018-10-28T03:00", set: d213781, by: d218855}
+
+# The words of each text that matter, as printed (Arabic), and in French: the French BO's own words for 1913 and 1918,
+# ours after (the French edition of the later texts is not read).
+words:
+  d1913:
+    ar: "التوقيت القانوني بتراب الحماية الفرنسية بالمغرب، هو توقيت الزمن المتوسط لخط غرينيتش."
+    fr: "L’heure légale sur le territoire du Protectorat de la France au Maroc, est l’heure du temps moyen du méridien de Greenwich."
+    translated: true
+  d1918a:
+    ar: "تقدم لستين دقيقة ابتداء من 16 مايو سنة 1918 … ويقع هذا التغير في منتصف الليل بين الخامس عشر والسادس عشر من مايو"
+    fr: "L’heure légale … sera avancée de 60 minutes à partir du 16 mai 1918."
+  d1918b:
+    ar: "ويعمل بالساعة القانونية القديمة المشار اليها في منتصف الليل الرابع عشر والخامس عشر من يوليو"
+    fr: "Le retour à l’heure légale ancienne sera effectué dans la nuit du 14 au 15 juillet, à minuit."
+  d1939:
+    ar: "تستقدم بستين دقيقة ابتداء من 27 رجب عام 1358 الموافق 12 شتنبر سنة 1939 وذلك الى ان يصدر امر يخالف ذلك"
+    fr: "avancée de soixante minutes à partir du 12 septembre 1939, jusqu’à ce qu’un ordre contraire soit donné"
+  d1940:
+    ar: "تقدم بستين دقيقة (60) ابتداء من 25 يبراير 1940 … والى ان يصدر امر يخالف ذلك"
+    fr: "avancée de soixante minutes à partir du 25 février 1940, jusqu’à ce qu’un ordre contraire soit donné"
+  d1945a:
+    ar: "سيعاد الى اجراء العمل بها في ليلة 18 نونبر سنة 1945 على الساعة الثالثة صباحا"
+    fr: "l’heure légale sera rétablie dans la nuit du 18 novembre 1945, à trois heures du matin"
+  d1945b:
+    ar: "يأذن جنابنا الشريف بالغاء ظهيرنا الشريف المورخ في 15 شوال عام 1364 الموافق 22 شتنبر سنة 1945 الصادر في تعيين تاريخ اعادة اجراء العمل بالساعة القانونية"
+    fr: "le dahir du 22 septembre 1945 fixant la date du rétablissement de l’heure légale est abrogé"
+  d1946:
+    ar: "باعادة اجراء العمل بالساعة القانونية … وذلك في ليلة 30 شتنبر 1946 على الساعة الاولى صباحا"
+    fr: "l’heure légale est rétablie dans la nuit du 30 septembre 1946, à une heure du matin"
+  d1950a:
+    ar: "حيث أن كمية الامطار التي نزلت في فصل الربيع كانت جد ضئيلة وأدت الى حالة حرجة فيما يخص انتاج القوى الكهربائية المائية … وحيث أن تغيير الساعة القانونية بتقديمها على الساعة الشمسية بستين دقيقة سيؤدي الى الخفض من استهلاك كمية القوى الكهربائية"
+    fr: "Considérant que les pluies du printemps ont été très faibles et ont créé une situation critique pour la production d’énergie hydroélectrique … et que l’avance de l’heure légale de soixante minutes sur l’heure solaire réduira la consommation d’électricité"
+  d1950b:
+    ar: "وسيقع هذا التغيير ليلة 29 اكتوبر على الساعة الواحدة صباحا"
+    fr: "ce changement aura lieu dans la nuit du 29 octobre, à une heure du matin"
+  r45567:
+    ar: "الساعة القانونية في تراب المملكة هي التوقيت الزمني المتوسط لخط كرينويتش. غير أن هذه الساعة يمكن أن تضاف اليها كل سنة ستون دقيقة ابتداء من تاريخ يحدد بموجب مرسوم … تضاف الى التوقيت في هذه السنة ستون دقيقة ابتداء من 3 يونيه 1967 في الساعة الثانية عشرة زوالا."
+    fr: "L’heure légale sur le territoire du Royaume est le temps moyen du méridien de Greenwich ; soixante minutes peuvent toutefois y être ajoutées chaque année à partir d’une date fixée par décret. Cette année, soixante minutes sont ajoutées à partir du 3 juin 1967, à midi."
+  r72667:
+    ar: "يتم في الليلة الفاصلة بين يوم 30 شتنبر ويوم فاتح أكتوبر 1967، وعليه ففي التاريخ المحدد المذكور عند منتصف الليل تؤخر الساعة بستين دقيقة."
+    fr: "le retour à l’heure normale a lieu dans la nuit du 30 septembre au 1er octobre 1967 : à minuit, l’horloge est retardée de soixante minutes"
+  d274459:
+    ar: "تضاف اليها ستون دقيقة ابتداء من 3 جمادى الثانية 1394 (24 يونيه 1974)"
+    fr: "soixante minutes ajoutées à partir du 24 juin 1974"
+  d274595:
+    ar: "يتم في الليلة الفاصلة بين يوم 12 شعبان (31 غشت) ويوم 13 شعبان 1394 (فاتح شتنبر 1974)"
+    fr: "retour à l’heure normale dans la nuit du 31 août au 1er septembre 1974"
+  d276188:
+    ar: "تضاف اليها ستون دقيقة ابتداء من فاتح مايو 1976"
+    fr: "soixante minutes ajoutées à partir du 1er mai 1976"
+  d276437:
+    ar: "يتم يوم الاحد 4 شعبان 1396 (فاتح غشت 1976)"
+    fr: "retour à l’heure légale le dimanche 1er août 1976"
+  d278252:
+    ar: "تضاف اليها ستون دقيقة ابتداء من يوم 24 من جمادى الآخرة 1398 (فاتح يونيه 1978)"
+    fr: "soixante minutes ajoutées à partir du 1er juin 1978"
+  d278385:
+    ar: "يتم فى الليلة الفاصلة بين يوم 27 ويوم 28 من شعبان 1398 (3 و4 غشت 1978)"
+    fr: "retour à l’heure légale dans la nuit du 3 au 4 août 1978"
+  d279184:
+    ar: "تضاف اليها ستون دقيقة ابتداء من يوم 4 جمادى الاخرة 1399 (فاتح مايو 1979)"
+    fr: "soixante minutes ajoutées à partir du 1er mai 1979"
+  d279545:
+    ar: "يتم في الليلة الفاصلة بين يـوم فاتـح ويوم 2 من ذي القعدة 1399 (23 و24 شتنبر 1979)"
+    fr: "retour à l’heure légale dans la nuit du 23 au 24 septembre 1979"
+  d284215:
+    ar: "تضاف اليها ستون دقيقة ابتداء من يوم 12 من جمادى الآخرة 1404 (16 مارس 1984)"
+    fr: "soixante minutes ajoutées à partir du 16 mars 1984"
+  d285735:
+    ar: "يستأنف العمل بالساعة القانونية … في الليلة الفاصلة بين 19 و20 من محرم 1406 (5 و6 أكتوبر 1985)"
+    fr: "l’heure légale reprend dans la nuit du 5 au 6 octobre 1985"
+  d286365:
+    ar: "إبتداء من 8 شوال 1406 (15 يونيو 1986) تضاف ستون دقيقة الى الساعة القانونية"
+    fr: "à partir du 15 juin 1986, soixante minutes sont ajoutées à l’heure légale"
+  d286574:
+    ar: "في منتصف الليلة الفاصلة بين 10 و11 محرم 1407 (15 و16 سبتمبر 1986) وتؤخر حينئذ الساعة بستين (60) دقيقة"
+    fr: "à minuit, dans la nuit du 15 au 16 septembre 1986, l’horloge est retardée de soixante minutes"
+  d289262:
+    ar: "تضاف اليها ستون (60) دقيقة ابتداء من يوم 29 من شوال 1409 (4 يونيو 1989)"
+    fr: "soixante minutes ajoutées à partir du 4 juin 1989"
+  d289357:
+    ar: "يستأنف العمل بالساعة القانونية … بجميع المملكة المغربية في الليلة الفاصلة بين 26 و27 من ذي القعدة 1409 (30 يونيو وفاتح يوليو 1989)"
+    fr: "l’heure légale reprend dans tout le Royaume dans la nuit du 30 juin au 1er juillet 1989"
+  d208224:
+    ar: "يتم الرجوع إلى الساعة القانونية من يوم الأحد 28 سبتمبر 2008"
+    fr: "le retour à l’heure légale a lieu le dimanche 28 septembre 2008"
+  d208480:
+    ar: "يتم الرجوع إلى الساعة القانونية … من يوم الإثنين فاتح سبتمبر 2008"
+    fr: "le retour à l’heure légale a lieu le lundi 1er septembre 2008"
+  d209148:
+    ar: "يتم الرجوع إلى الساعة القانونية يوم الجمعة 21 أغسطس 2009"
+    fr: "retour à l’heure légale le vendredi 21 août 2009"
+  d210154:
+    ar: "يتم الرجوع إلى الساعة القانونية يوم الأحد 8 أغسطس 2010"
+    fr: "retour à l’heure légale le dimanche 8 août 2010"
+  d211170:
+    ar: "يتم الرجوع إلى الساعة القانونية يوم الأحد 31 يوليو 2011"
+    fr: "retour à l’heure légale le dimanche 31 juillet 2011"
+  d212126:
+    ar: "تضاف عند حلول الساعة الثانية صباحا من يوم الأحد الأخير من شهر أبريل من كل سنة، ستون (60) دقيقة … يمكن لرئيس الحكومة، ولفترة محددة، أن يقرر توقيف العمل بهذا التوقيت."
+    fr: "soixante minutes sont ajoutées à deux heures du matin le dernier dimanche d’avril de chaque année … Le Chef du gouvernement peut, pour une période déterminée, décider de suspendre cet horaire."
+  h34712:
+    ar: "يتم عند حلول الساعة الثالثة (3) صباحا من يوم الجمعة 20 يوليو 2012 تأخير الساعة بستين (60) دقيقة"
+    fr: "le vendredi 20 juillet 2012 à trois heures du matin, l’horloge est retardée de soixante minutes"
+  h35913:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 7 يوليو 2013 تأخير الساعة بستين (60) دقيقة"
+    fr: "le dimanche 7 juillet 2013 à trois heures, l’horloge est retardée de soixante minutes"
+  d213781:
+    ar: "«تضاف عند حلول الساعة الثانية صباحا من يوم الأحد الأخير من شهر مارس من كل سنة، ستون (60) دقيقة» … «يتم عند حلول الساعة الثالثة صباحا من يوم الأحد الأخير من شهر أكتوبر من كل سنة تأخير الساعة»"
+    fr: "soixante minutes sont ajoutées le dernier dimanche de mars de chaque année ; l’horloge est retardée le dernier dimanche d’octobre"
+  h321114:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم السبت 28 يونيو 2014 تأخير الساعة بستين (60) دقيقة"
+    fr: "le samedi 28 juin 2014 à trois heures, l’horloge est retardée de soixante minutes"
+  h32915:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 14 يونيو 2015 تأخير الساعة بستين (60) دقيقة"
+    fr: "le dimanche 14 juin 2015 à trois heures, l’horloge est retardée de soixante minutes"
+  h32916:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 05 يونيو 2016 تأخير الساعة بستين (60) دقيقة"
+    fr: "le dimanche 5 juin 2016 à trois heures, l’horloge est retardée de soixante minutes"
+  h37717:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 21 ماي 2017 تأخير الساعة بستين (60) دقيقة"
+    fr: "le dimanche 21 mai 2017 à trois heures, l’horloge est retardée de soixante minutes"
+  h31418:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 13 ماي 2018 تأخير الساعة بستين (60) دقيقة"
+    fr: "le dimanche 13 mai 2018 à trois heures, l’horloge est retardée de soixante minutes"
+  d218855:
+    ar: "تضاف ستون (60) دقيقة إلى الساعة القانونية المحددة في تراب المملكة … يمكن لرئيس الحكومة، ولفترة محددة، توقيف العمل بالتوقيت المشار إليه في المادة الأولى أعلاه، عند الاقتضاء … ويعمل به ابتداء من 28 أكتوبر 2018."
+    fr: "soixante minutes sont ajoutées à l’heure légale du Royaume ; le Chef du gouvernement peut, pour une période déterminée, suspendre cet horaire si besoin. Le décret s’applique à partir du 28 octobre 2018."
+  c9019:
+    ar: "التصريح بأن مقتضيات المرسوم الملكي رقم 67. 455 … بشأن الساعة القانونية، لا تكتسي طابعا تشريعيا بالرغم من ورودها في نص تشريعي بل يشملها اختصاص السلطة التنظيمية"
+    fr: "déclarer que les dispositions du décret royal n° 455-67 relatif à l’heure légale n’ont pas un caractère législatif, bien qu’elles figurent dans un texte législatif, et relèvent du pouvoir réglementaire"
+  h31919:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 5 ماي 2019، توقيف العمل بالتوقيت المشار إليه في المادة الأولى من المرسوم المذكور"
+    fr: "le dimanche 5 mai 2019 à trois heures, l’horaire prévu à l’article premier du décret est suspendu"
+  h32520:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 19 أبريل 2020، توقيف العمل بالتوقيت"
+    fr: "le dimanche 19 avril 2020 à trois heures, l’horaire est suspendu"
+  h31721:
+    ar: "يتم عند حلول الساعة الثالثة صباحا من يوم الأحد 11 أبريل 2021، توقيف العمل بالتوقيت"
+    fr: "le dimanche 11 avril 2021 à trois heures, l’horaire est suspendu"
+  h31522:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 27 مارس 2022، توقيف العمل بالتوقيت"
+    fr: "le dimanche 27 mars 2022 à trois heures, l’horaire est suspendu"
+  h31723:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 19 مارس 2023، توقيف العمل بالتوقيت"
+    fr: "le dimanche 19 mars 2023 à trois heures, l’horaire est suspendu"
+  h31024:
+    ar: "عند حلول الساعة الثالثة صباحا من يوم الأحد 10 مارس 2024، توقيف العمل بالتوقيت"
+    fr: "le dimanche 10 mars 2024 à trois heures, l’horaire est suspendu"
+  h30525:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 23 فبراير 2025، توقيف العمل بالتوقيت"
+    fr: "le dimanche 23 février 2025 à trois heures, l’horaire est suspendu"
+  h30626:
+    ar: "يتم، عند حلول الساعة الثالثة صباحا من يوم الأحد 15 فبراير 2026، توقيف العمل بالتوقيت"
+    fr: "le dimanche 15 février 2026 à trois heures, l’horaire est suspendu"
+  d226530:
+    ar: "يتم، عند حلول الساعة الثانية صباحا من يوم الأحد 20 سبتمبر 2026، الرجوع إلى الساعة القانونية المحددة في تراب المملكة في التوقيت الزمني المتوسط لخط كرينويتش … وذلك بتأخير الساعة بستين (60) دقيقة."
+    fr: "Le dimanche 20 septembre 2026 à deux heures du matin, retour à l’heure légale du Royaume, le temps moyen du méridien de Greenwich : l’horloge est retardée de soixante minutes."

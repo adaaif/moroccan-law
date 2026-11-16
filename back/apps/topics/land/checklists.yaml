@@ -1,0 +1,60 @@
+# The land topic's papers and checks (M13 of the land review): each list is what an article names, item by item. A
+# check (`verdict`) says which of the conditions the reader has not ticked, each with its article: it reads the papers
+# against the law, never decides a case. Ticks stay on the reader's phone.
+
+- key: before-buying
+  for: [titled, pending, untitled, unknown]
+  title: {ar: قبل ما تشري أرض, fr: 'Avant d’acheter un terrain'}
+  lead:
+    ar: 'ما تذكره النصوص قبل بيع أرض أو عقار: من هو المالك، وما يثقل الأرض، وما تخصص له في وثيقة التعمير، ومن يمكنه أن يشفع، وشكل العقد. علّم ما تأكدت منه.'
+    fr: 'Ce que disent les textes avant la vente d’un terrain : qui en est propriétaire, ce qui le grève, son affectation dans le document d’urbanisme, qui peut préempter, la forme de l’acte. Cochez ce que vous avez vérifié.'
+  cites: [/ma/loi/39-08/art_4]
+  items:
+    - label: {ar: 'الأرض ليست من أملاك الجماعات السلالية، أو أن تفويتها يتم في الحالات وبالشروط التي يحددها القانون 62.17', fr: 'Le terrain n’est pas une terre collective, ou sa cession se fait dans les cas et conditions de la loi 62.17'}
+      note: {ar: 'تفويت أملاك الجماعات السلالية خارج هذه الحالات باطل', fr: 'Hors de ces cas, la cession d’une terre collective est nulle'}
+      cites: [/ma/loi/62-17/art_15]
+    - label: {ar: 'إذا كانت محفظة: البائع هو المالك المقيد في الرسم العقاري', fr: 'Si le terrain est immatriculé : le vendeur est le propriétaire inscrit au titre foncier'}
+      note: {ar: 'الحق العيني على عقار محفظ لا يوجد بالنسبة للغير إلا بتقييده', fr: 'Un droit réel sur un immeuble immatriculé n’existe à l’égard des tiers que par son inscription'}
+      cites: [/ma/code/land-registration/art_66, /ma/loi/39-08/art_2]
+    - label: {ar: 'إذا كانت محفظة: قرأت ما في الرسم العقاري من تقييدات وتحملات وتقييدات احتياطية', fr: 'Si le terrain est immatriculé : vous avez lu les inscriptions, charges et prénotations du titre'}
+      note: {ar: 'المالك وحده يأخذ نظير الرسم العقاري، ولغيره من أصحاب الحقوق شهادة خاصة بالتقييد', fr: 'Seul le propriétaire reçoit le duplicata du titre ; les autres titulaires de droits, un certificat spécial d’inscription'}
+      cites: [/ma/code/land-registration/art_58, /ma/code/land-registration/art_85]
+    - label: {ar: 'إذا لم تكن محفظة: للبائع أصل تملك وحيازة مستوفية لشروطها', fr: 'Si le terrain n’est pas immatriculé : le vendeur a une origine de propriété et une possession qui remplit ses conditions'}
+      note: {ar: 'عقد التفويت وحده لا يفيد ملكية العقار غير المحفظ', fr: 'L’acte de cession seul ne prouve pas la propriété d’un immeuble non immatriculé'}
+      cites: [/ma/loi/39-08/art_3, /ma/loi/39-08/art_240]
+    - label: {ar: 'عندك مذكرة المعلومات التعميرية: ما تخصص له الأرض في وثيقة التعمير', fr: 'Vous avez la note de renseignements urbanistiques : l’affectation du terrain dans le document d’urbanisme'}
+      note: {ar: 'تسلمها الوكالة الحضرية داخل يومين مفتوحين، وليست موافقة على مشروع', fr: 'L’agence urbaine la délivre en deux jours ouvrables ; ce n’est pas un accord sur un projet'}
+      cites: [/ma/decret/2-18-577/art_6, /ma/decret/2-18-577/art_7]
+    - label: {ar: 'الأرض ليست مخصصة في تصميم التهيئة لتجهيز عمومي، أو مرت عشر سنوات على نشره', fr: 'Le plan d’aménagement ne réserve pas le terrain à un équipement public, ou dix ans ont passé depuis sa publication'}
+      cites: [/ma/loi/12-90/art_28]
+    - label: {ar: 'إذا كانت مشاعة: تعرف الشركاء، ولهم حق الشفعة في الحصة المبيعة لأجنبي', fr: 'Si le terrain est en indivision : vous connaissez les copropriétaires, qui peuvent préempter la part vendue à un tiers'}
+      note: {ar: 'ثلاثون يوما من تبليغهم بالعقد، وإلا سنة', fr: 'Trente jours après qu’on leur a notifié l’acte, sinon un an'}
+      cites: [/ma/loi/39-08/art_292, /ma/loi/39-08/art_304]
+    - label: {ar: 'البيع، أو الوعد بالبيع، أو الوكالة عليه، بمحرر رسمي', fr: 'La vente, la promesse ou la procuration par acte authentique'}
+      note: {ar: 'تحت طائلة البطلان، منذ 16 يوليوز 2026', fr: 'À peine de nullité, depuis le 16 juillet 2026'}
+      cites: [/ma/loi/39-08/art_4, /ma/loi/41-25/art_1]
+    - label: {ar: 'إذا كانت محفظة: سيقيد البيع في الرسم العقاري', fr: 'Si le terrain est immatriculé : la vente sera inscrite au titre foncier'}
+      note: {ar: 'لا ينتج البيع أثره، ولو بين الطرفين، إلا من تاريخ التقييد', fr: 'La vente ne produit d’effet, même entre les parties, qu’à compter de l’inscription'}
+      cites: [/ma/code/land-registration/art_67]
+  verdict:
+    ok: {ar: 'علّمت على كل ما تذكره هذه المواد. البيع وتقييده يبقيان للموثق أو العدول والمحافظ.', fr: 'Vous avez coché tout ce que ces articles mentionnent. L’acte et son inscription restent au notaire ou aux adouls et au conservateur.'}
+    missing: {ar: 'لم تعلّم على هذه النقط، وكل واحدة شرط تذكره مادتها:', fr: 'Vous n’avez pas coché ces points ; chacun est une condition que pose son article :'}
+
+- key: papers
+  title: {ar: الأوراق اللي خاصك تحتفظ بها, fr: 'Les papiers à garder'}
+  lead:
+    ar: 'الأوراق التي تذكرها النصوص في حياة قطعة أرض، من شرائها إلى البناء عليها.'
+    fr: 'Les papiers que les textes citent dans la vie d’un terrain, de l’achat à la construction.'
+  items:
+    - label: {ar: 'نظير الرسم العقاري والتصميم الملحق به، إذا كانت الأرض محفظة', fr: 'Le duplicata du titre foncier et son plan, si le terrain est immatriculé'}
+      cites: [/ma/code/land-registration/art_58]
+    - label: {ar: 'وصل إيداع مطلب التحفيظ، إذا كانت في طور التحفيظ', fr: 'Le récépissé de la réquisition d’immatriculation, si l’immatriculation est en cours'}
+      cites: [/ma/code/land-registration/art_13]
+    - label: {ar: 'المحرر الرسمي للبيع', fr: 'L’acte authentique de vente'}
+      cites: [/ma/loi/39-08/art_4]
+    - label: {ar: 'مذكرة المعلومات التعميرية', fr: 'La note de renseignements urbanistiques'}
+      cites: [/ma/decret/2-18-577/art_7]
+    - label: {ar: 'رخصة البناء ووصل إيداع طلبها', fr: 'Le permis de construire et le récépissé de la demande'}
+      cites: [/ma/loi/12-90/art_41, /ma/loi/12-90/art_48]
+    - label: {ar: 'رخصة السكن أو شهادة المطابقة', fr: 'Le permis d’habiter ou le certificat de conformité'}
+      cites: [/ma/loi/12-90/art_55]

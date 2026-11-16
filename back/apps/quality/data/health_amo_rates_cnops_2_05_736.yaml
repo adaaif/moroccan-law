@@ -1,0 +1,12 @@
+# Decree 2.05.736 setting the AMO coverage rates of the CNOPS as Adala's PDF prints it, where the PDF's text layer turns
+# three list numbers around («-3» for «3-»). Each cited article was read against the page's image on 27 Oct 2026
+# (the health review, S4): arts. 1 and 2; art. 2 reads as printed. The page's own slips are kept, as printed:
+# art. 1, 7° «بالنسبة التقويم الأسنان اللازم طبيبا».
+# Applied by `manage.py apply_page_reading apps/quality/data/health_amo_rates_cnops_2_05_736.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-05-736
+document: sources/adala/amo_rates_cnops_2_05_736.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [1], wrong: "-3 70%", right: "3- 70%"}   # list number turned, p. 2
+  - {arts: [1], wrong: "-5 المبالغ", right: "5- المبالغ"}   # list number turned, p. 2
+  - {arts: [1], wrong: "-7 المبلغ", right: "7- المبلغ"}   # list number turned, p. 3

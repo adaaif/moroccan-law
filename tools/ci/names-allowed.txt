@@ -1,0 +1,30 @@
+# What tools/ci/names.py lets through: `path pattern<TAB>regular expression`. A hit inside a match of the expression, in
+# a file the pattern names (fnmatch: `*` crosses folders), passes. Keep it short: each line is a reason.
+
+# How people type «القانون» in Latin letters: search questions, the Darija vocabulary and their tests.
+back/apps/search/*	[a-z0-9-]*(9anoun|qanoun)[a-z0-9]*
+back/apps/discussion/*	(?i)\b[a-z]*[lb]-?(9anoun|qanoun)[a-z0-9]*
+back/apps/topics/*	(?i)\b[a-z]*[lb]a?-?(9anoun|qanoun)[a-z0-9]*
+back/apps/corpus/*	(?i)\b[a-z]*[lb]-?(9anoun|qanoun)[a-z0-9]*
+web/src/*	(?i)\b[a-z]*[lb]-?(9anoun|qanoun)[a-z0-9]*
+crates/*	[a-z0-9]*9anoun[a-z0-9]*
+
+# Two real web addresses that happen to contain the letters.
+*	khadamatnarsa\.ma|matnuhpv\.gov\.ma
+
+# What a device kept under the first name is carried over once (remove with these files after 15 May 2027).
+web/src/shared/services/oldKeys.ts	«matn\.…»|'matn\.'
+web/src/shared/services/savedMove.ts	'matn'
+web/e2e/saved-move.e2e.mjs	'matn(\.[a-z.]+)?'
+
+# Accounts made under the first name's reserved mail domains are moved once to law's (the migration and its test).
+back/apps/accounts/*reserved*	(?i)[a-z0-9.-]*\.matn\.invalid
+
+# The check itself says what it looks for.
+tools/ci/names.py	«(Matn|Qanoun|9anoun)»|re\.compile\(r'matn\|.*\)
+
+# A caller's own name, as the removed request log recorded it in the day totals the measures brought in (15 Nov 2026).
+back/apps/analytics/data/past_counts.json	qanoun-live-check
+
+# The brand files' old addresses, sent to today's until 15 Feb 2027.
+deploy/nginx.conf	/brand/qanoun-[a-z()|\\.]*

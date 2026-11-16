@@ -1,0 +1,106 @@
+{
+  "title": "Le droit marocain, un mot à la fois",
+  "description": "L'intelligence artificielle a lu un siècle de Bulletin officiel. Il reste des mots douteux. Dix secondes suffisent pour en trancher un.",
+  "intro": {
+    "public": "Le droit marocain est public. Il reste difficile à lire.",
+    "printed": "Il s'imprime au Bulletin officiel depuis 1913 : {{issues}} numéros, {{pages}} pages. La plupart sont des photos de papier, et l'on ne cherche pas dans une photo.",
+    "read": "Nous les avons donc fait lire par l'intelligence artificielle, page après page. Résultat : {{texts}} textes et {{articles}} articles, où l'on cherche en une seconde.",
+    "wrong": "La machine se trompe. Peu par page, mais les pages sont nombreuses.",
+    "swap": "Deux lettres ont échangé leur place. Dans un roman, c'est une coquille. Dans une loi, c'est un délai.",
+    "doubt": "Nous savons où douter : {{words}} mots lus de deux façons, ou absents de toute autre page. La page imprimée tranche chacun d'eux.",
+    "many": "Aucune équipe ne peut tous les vérifier. Il n'en faut pas : une correction se fait une fois, puis elle reste, pour tout le monde. Chaque mot est montré à trois personnes. Trois mille personnes, cinq minutes chacune, et c'est fini."
+  },
+  "example": {
+    "was": "À l'article 563 du Code du travail, nous avions",
+    "law": "أجل {{word}} أيام",
+    "wrong": "ثالثة",
+    "right": "ثلاثة",
+    "wrongGloss": "« un délai de troisième jours »",
+    "printed": "La page imprime",
+    "rightGloss": "« un délai de trois jours »",
+    "link": "Code du travail, article 563"
+  },
+  "word": {
+    "title": "Lequel est sur la page ?",
+    "alt": "La ligne telle qu'imprimée",
+    "neither": "Ni l'un ni l'autre",
+    "unclear": "Image illisible",
+    "page": "La page entière",
+    "thanks": "Merci.",
+    "mine": "Vos mots : {{count}}",
+    "none": "Aucun mot prêt pour l'instant. De nouveaux mots sont préparés chaque nuit.",
+    "error": "Connexion impossible. Réessayez dans un instant.",
+    "paused": "Merci pour tout cela. Une courte pause, puis revenez.",
+    "private": "Nous ne gardons rien sur vous : le mot et la réponse, c'est tout.",
+    "keys": "Au clavier : les flèches pour choisir.",
+    "arabic": "Les mots à trancher sont en arabe : il faut lire l'arabe pour aider ici.",
+    "settled": "Tranchés : {{settled}} sur {{words}}",
+    "today": "Réponses aujourd'hui : {{today}}",
+    "applied": "Corrections appliquées à ce jour : {{corrections}}",
+    "of": "sur {{words}} mots",
+    "settledLabel": "Tranchés",
+    "cell": "Un carré : {{n}} mots"
+  },
+  "gains": {
+    "title": "Et celui qui aide, qu'y gagne-t-il ?",
+    "all": "Ce que tout le monde y gagne.",
+    "law": "Il n'appartient à personne (loi 2-00, article 8).",
+    "data": "Sous licence ODbL : on la copie, on construit dessus, y compris pour le commerce. Deux conditions : citer la source, et laisser ouvert ce qu'on y ajoute.",
+    "dataLink": "Comment l'obtenir",
+    "code": "Sous licence AGPL : qui modifie le site et le fait tourner pour le public publie sa modification.",
+    "codeSoon": "Bientôt publié sous licence AGPL : qui modifie le site et le fait tourner pour le public publie sa modification.",
+    "people": "Une étudiante à Oujda, un avocat à Agadir, un développeur qui écrit une application pour les adouls : tous partent du même texte propre, au lieu de nettoyer chacun sa copie.",
+    "lawTerm": "Le texte de la loi",
+    "dataTerm": "La base de données",
+    "codeTerm": "Le code"
+  },
+  "rules": {
+    "title": "Trois règles",
+    "printed": "La page imprimée fait foi. Ni la mémoire, ni un autre site.",
+    "person": "Aucun texte ne change avant qu'une personne ait confirmé la correction devant l'image de la page.",
+    "public": "Chaque correction est publiée avec sa page, pour qui veut la vérifier.",
+    "publicLink": "Les corrections"
+  },
+  "time": {
+    "title": "Selon le temps dont vous disposez",
+    "word": {
+      "when": "Dix secondes",
+      "what": "Trancher un mot.",
+      "go": "Vers les mots"
+    },
+    "reading": {
+      "when": "En lisant",
+      "what": "Sous chaque article : « {{report}} ». Ce que la machine ne voit pas, l'œil le voit."
+    },
+    "send": {
+      "when": "Une minute",
+      "what": "Envoyer cette page à quelqu'un qui lit l'arabe et dispose de cinq minutes.",
+      "go": "Envoyer"
+    },
+    "code": {
+      "when": "Un week-end",
+      "what": "Le code : Django, React et Rust. Commencez par CONTRIBUTING.md.",
+      "go": "Le code",
+      "soon": "Bientôt"
+    },
+    "law": {
+      "when": "Si le droit est votre métier",
+      "what": "Les explications et les outils des thèmes n'ont pas encore été relus par un spécialiste. Si c'est votre domaine, écrivez-nous."
+    }
+  },
+  "last": "L'essentiel est fait. Ce qui reste est petit, et nous sommes nombreux.",
+  "links": {
+    "title": "Le projet, par ses adresses",
+    "source": "Le code source",
+    "contributing": "Le guide de contribution",
+    "issues": "Signaler un mot ou une panne",
+    "licences": "Les licences",
+    "security": "Signaler une faille de sécurité",
+    "data": "Les données et l'API",
+    "corrections": "Les corrections appliquées",
+    "assistants": "Pour les assistants",
+    "mail": "Nous écrire",
+    "soon": "Le code sera bientôt publié ; ses adresses seront écrites ici.",
+    "draft": "L'accord de contribution est encore un brouillon : aucun avocat ne l'a lu."
+  }
+}

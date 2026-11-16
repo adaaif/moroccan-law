@@ -1,0 +1,407 @@
+# The road topic's journeys (R7 of the road plan): what happens after an offence, an accident or an impound, step by
+# step, each step on the articles it rests on, with the deadlines as the code counts them (a «full» period starts the
+# next day). Written from the texts as the site holds them on 20 Oct 2026: code 52.05 as the SGG consolidated it (to law
+# 116.14), the decrees of 29 September 2010 from Adala's consolidations (2.10.420 and 2.10.421 to 24 August 2026,
+# 2.10.313 from the SGG to 2025), order 02.11 with its annex, dahir 1.84.177 as law 70.24 changed it (Adala, to
+# 29 January 2026), and the insurance code 17.99 (Adala, to August 2024). A reader sees a journey once a person has
+# checked it (`manage.py approve_topic road journeys/<key> --by …`). Steps say what the law says, never what a reader
+# should do in their own case, and never whether to pay or to contest.
+
+- key: radar
+  for: [probation, driver, two-wheels, pro, foreign]
+  title: {ar: 'ورقة الرادار: من الإشعار إلى الأداء أو المنازعة', fr: 'L’avis de radar : de la notification au paiement ou à la contestation'}
+  lead:
+    ar: 'المخالفة التي يعاينها جهاز آلي يبلغ إشعارها إلى صاحب شهادة التسجيل، ومن اليوم الموالي لتبليغه تبدأ الآجال: 24 ساعة، ثم 15 يوما، ثم 30 يوما. والثمن ينزل كلما أدى المخالف أبكر.'
+    fr: 'L’infraction relevée par un appareil automatique est notifiée au titulaire de la carte grise ; les délais courent du lendemain de la notification : 24 heures, puis 15 jours, puis 30 jours. Plus le paiement est rapide, plus le montant est bas.'
+  day: {ar: 'متى توصلت بالإشعار؟', fr: 'Quand avez-vous reçu l’avis ?'}
+  steps:
+    - title: {ar: الإشعار, fr: L’avis}
+      answer: {ar: 'يصل الإشعار إلى صاحب البطاقة الرمادية، ومعه صورة الصفيحة والسرعة المعتمدة.', fr: 'L’avis arrive au titulaire de la carte grise, avec la photo de la plaque et la vitesse retenue.'}
+      body:
+        ar: 'يوجه الإشعار بالمخالفة إلى صاحب شهادة تسجيل المركبة، بالعنوان المصرح به إلى الإدارة، برسالة مضمونة مع الإشعار بالاستلام أو عن طريق مفوض قضائي. ويذكر التعريف بالمركبة، وتاريخ المخالفة وساعتها ومكانها، ووسيلة المراقبة، وصورة صفيحة التسجيل، ومبلغ الغرامة وكيفيات أدائها؛ وفي السرعة: السرعة المسجلة والسرعة المعتمدة.'
+        fr: 'L’avis est adressé au titulaire du certificat d’immatriculation, à l’adresse déclarée à l’administration, par lettre recommandée avec accusé de réception ou par commissaire de justice. Il indique le véhicule, la date, l’heure et le lieu de l’infraction, le moyen de contrôle, la photo de la plaque, le montant de l’amende et la façon de la payer ; pour la vitesse, la vitesse relevée et la vitesse retenue.'
+      cites: [/ma/loi/52-05/art_197, /ma/loi/52-05/art_200]
+    - title: {ar: الهامش, fr: La marge}
+      answer: {ar: 'يترك الرادار هامشا: 10% على ألا يتجاوز 7 كلم/س.', fr: 'Le radar laisse une marge : 10 %, sans dépasser 7 km/h.'}
+      body:
+        ar: 'لا تعتبر مخالفة السرعة المسجلة إذا تجاوزت السرعة المسموح بها بهامش لا يزيد على 10%، على ألا يتجاوز سبعة كيلومترات في الساعة.'
+        fr: 'La vitesse relevée n’est pas une infraction si elle dépasse la limite de 10 % au plus, sans dépasser sept kilomètres à l’heure.'
+      cites: [/ma/loi/52-05/art_195]
+    - title: {ar: 'الثمن حسب نهار الأداء', fr: 'Le montant selon le jour du paiement'}
+      answer: {ar: 'كلما أديت أبكر دفعت أقل: من 150 إلى 400 درهم داخل 24 ساعة، حسب الدرجة.', fr: 'Plus vous payez tôt, moins vous payez : de 150 à 400 DH dans les 24 heures, selon la classe.'}
+      services: [{name: {ar: 'المخالفات الطرقية ورصيد النقط', fr: 'Infractions routières et solde de points'}, url: 'https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/'}, {name: {ar: 'أداء الغرامات التصالحية', fr: 'Paiement des amendes transactionnelles'}, url: 'https://www.tgr.gov.ma'}]
+      body:
+        ar: 'داخل 24 ساعة من اليوم الموالي ليوم التبليغ: 400 درهم للدرجة الأولى، و300 للثانية، و150 للثالثة. وداخل 15 يوما كاملة بعدها: 500 و350 و200. وداخل 30 يوما كاملة من اليوم الموالي ليوم التبليغ: 700 و500 و300.'
+        fr: 'Dans les 24 heures qui suivent le lendemain de la notification : 400 dirhams en 1re classe, 300 en 2e, 150 en 3e. Dans les 15 jours francs suivants : 500, 350 et 200. Dans les 30 jours francs à compter du lendemain de la notification : 700, 500 et 300.'
+      cites: [/ma/loi/52-05/art_219, /ma/loi/52-05/art_222]
+      tool: tools/fine
+      delay: {on_day: true, days: 30, from: {ar: من اليوم الموالي ليوم التبليغ, fr: à compter du lendemain de la notification}}
+    - title: {ar: 'ماشي أنا اللي كنت سايق', fr: 'Ce n’était pas vous au volant'}
+      answer: {ar: 'يمكن إثبات أن شخصا آخر كان يسوق؛ والشركة تكشف عن السائق داخل 30 يوما.', fr: 'On peut prouver qu’une autre personne conduisait ; une société désigne le conducteur dans les 30 jours.'}
+      services: [{name: {ar: 'تعيين السائق', fr: 'Désigner le conducteur'}, url: 'https://khadamatnarsa.ma/fr/declaration'}]
+      body:
+        ar: 'تعتبر المخالفة كما لو ارتكبها صاحب شهادة التسجيل، ويمكنه إثبات ما يخالف ذلك بكل وسيلة. وإذا كانت المركبة في اسم شخص معنوي، وجب على ممثليه الكشف عن هوية السائق داخل الثلاثين يوما التالية ليوم تبليغ الإشعار.'
+        fr: 'L’infraction est réputée commise par le titulaire de la carte grise, qui peut prouver le contraire par tout moyen. Si le véhicule est au nom d’une personne morale, ses représentants doivent désigner le conducteur dans les trente jours qui suivent la notification.'
+      cites: [/ma/loi/52-05/art_141, /ma/loi/52-05/art_142]
+      delay: {on_day: true, days: 30, from: {ar: من يوم تبليغ الإشعار, fr: après la notification}}
+    - title: {ar: المنازعة, fr: La contestation}
+      answer: {ar: 'للمنازعة نفس الأجل، بشكاية معللة وإيداع الحد الأقصى للغرامة.', fr: 'Pour contester, le même délai, une réclamation motivée et la consignation du maximum de l’amende.'}
+      services: [{name: {ar: 'المنازعة في إشعار', fr: 'Contester un avis'}, url: 'https://khadamatnarsa.ma/fr/reclamation'}]
+      body:
+        ar: 'تقدم المنازعة داخل نفس الأجل، بشكاية معللة إلى المصلحة التي صدر عنها الإشعار. ولا تقبل إلا بإيداع الحد الأقصى للغرامة (1.400 درهم للدرجة الأولى، و1.000 للثانية، و600 للثالثة) لدى كتابة ضبط المحكمة أو قباضات المالية. وقبل أن تبت المحكمة، يمكن أداء ثلثي الحد الأقصى وسحب الشكاية. وتسلم نسخة من صورة المخالفة بطلب صريح.'
+        fr: 'La contestation se fait dans le même délai, par une plainte motivée adressée au service qui a émis l’avis. Elle n’est recevable qu’après consignation du maximum de l’amende (1 400 dirhams en 1re classe, 1 000 en 2e, 600 en 3e) au greffe du tribunal ou à une perception. Avant le jugement, on peut payer les deux tiers du maximum et retirer la plainte. Une copie de la photo est remise sur demande expresse.'
+      cites: [/ma/loi/52-05/art_230, /ma/loi/52-05/art_231, /ma/loi/52-05/art_234, /ma/loi/52-05/art_204, /ma/loi/52-05/art_184, /ma/loi/52-05/art_185, /ma/loi/52-05/art_186]
+    - title: {ar: 'إلا ما تخلصاتش', fr: 'Faute de paiement'}
+      answer: {ar: 'بعد الأجل دون أداء: توقف الرخصة بقوة القانون، ويذهب المحضر إلى وكيل الملك.', fr: 'Le délai passé sans paiement : le permis est suspendu de plein droit et le procès-verbal va au procureur du Roi.'}
+      body:
+        ar: 'إذا لم تؤد الغرامة داخل الأجل، وجب أداؤها أو تسليم رخصة السياقة أو شهادة التسجيل داخل نفس الأجل، وإلا توقف رخصة السياقة بقوة القانون، ويوجه المحضر إلى وكيل الملك.'
+        fr: 'Si l’amende n’est pas payée dans le délai, il faut la payer ou remettre le permis ou la carte grise dans ce même délai ; sinon le permis est suspendu de plein droit et le procès-verbal est transmis au procureur du Roi.'
+      cites: [/ma/loi/52-05/art_228, /ma/loi/52-05/art_203, /ma/loi/52-05/art_227]
+    - title: {ar: النقط, fr: Les points}
+      answer: {ar: 'الأداء اعتراف بالمخالفة: تخصم النقط معه.', fr: 'Payer, c’est reconnaître l’infraction : les points sont retirés avec.'}
+      body:
+        ar: 'أداء الغرامة التصالحية والجزافية اعتراف بالمخالفة: تخصم معه النقط المقررة في جدول المادة 99، مثلا نقطتان لتجاوز السرعة بأكثر من 20 كلم/س دون أن يتجاوز 30، وأربع نقط بين 30 و50 أو عند عدم الوقوف بعلامة قف أو بالضوء الأحمر.'
+        fr: 'Payer l’amende transactionnelle vaut reconnaissance de l’infraction : les points du barème de l’article 99 sont retirés, par exemple deux points pour un excès de plus de 20 km/h sans dépasser 30, quatre entre 30 et 50 ou pour un stop ou un feu rouge grillé.'
+      cites: [/ma/loi/52-05/art_28, /ma/loi/52-05/art_99]
+      tool: tools/points
+
+- key: ticket
+  for: [probation, driver, two-wheels, pro, foreign]
+  title: {ar: 'مخالفة عاينها البوليس أو الدرك', fr: 'Une contravention relevée par la police ou la gendarmerie'}
+  lead:
+    ar: 'تؤدى الغرامة فورا، وإلا احتفظ العون برخصة السياقة أو شهادة التسجيل مقابل وصل يسمح بالسياقة ثلاثين يوما.'
+    fr: 'L’amende se paie sur-le-champ ; sinon l’agent garde le permis ou la carte grise contre un récépissé qui permet de conduire trente jours.'
+  day: {ar: 'متى سجلت المخالفة؟', fr: 'Quand l’infraction a-t-elle été relevée ?'}
+  steps:
+    - title: {ar: 'الأداء فالبلاصة', fr: 'Payer sur place'}
+      answer: {ar: 'يمكن الأداء في المكان، وهو أرخص ثمن: من 150 إلى 400 درهم حسب الدرجة.', fr: 'On peut payer sur place, au prix le plus bas : de 150 à 400 DH selon la classe.'}
+      body:
+        ar: 'يقترح العون على المخالف أداء الغرامة التصالحية والجزافية، ويمكن للمخالف أن يطلبه. والأداء نفس اليوم أرخص: 400 درهم للدرجة الأولى، و300 للثانية، و150 للثالثة. وإذا أدى بشيك، وجب أن يكون الساحب هو المخالف.'
+        fr: 'L’agent propose au contrevenant de payer l’amende transactionnelle et forfaitaire, et le contrevenant peut le demander. Le même jour, c’est moins cher : 400 dirhams en 1re classe, 300 en 2e, 150 en 3e. Un chèque doit être tiré par le contrevenant lui-même.'
+      cites: [/ma/loi/52-05/art_220, /ma/loi/52-05/art_219, /ma/loi/52-05/art_223]
+      tool: tools/fine?s=officer
+    - title: {ar: الوصل, fr: Le récépissé}
+      answer: {ar: 'إن لم تؤد فورا، تؤخذ الرخصة مقابل وصل يسمح بالسياقة 30 يوما.', fr: 'Sans paiement immédiat, le permis est retenu contre un récépissé qui permet de conduire 30 jours.'}
+      body:
+        ar: 'إذا لم تؤد الغرامة فورا، يتسلم العون رخصة السياقة أو شهادة التسجيل أو سند الملكية مقابل وصل. والوصل إذن بالسياقة لمدة ثلاثين يوما كاملة تبدأ من اليوم الموالي ليوم التسليم.'
+        fr: 'Si l’amende n’est pas payée sur-le-champ, l’agent retient le permis, la carte grise ou le titre de propriété contre un récépissé. Le récépissé vaut autorisation de conduire pendant trente jours francs à compter du lendemain de la remise.'
+      cites: [/ma/loi/52-05/art_228]
+      delay: {on_day: true, days: 30, from: {ar: من اليوم الموالي لتسليم الرخصة, fr: à compter du lendemain de la remise du permis}}
+    - title: {ar: 'الأداء داخل الأجل', fr: 'Payer dans le délai'}
+      answer: {ar: 'الأداء داخل 30 يوما، والثمن يرتفع بعد الخمسة عشر يوما الأولى.', fr: 'Le paiement dans les 30 jours ; le montant monte après les quinze premiers.'}
+      services: [{name: {ar: 'أداء الغرامات التصالحية', fr: 'Paiement des amendes transactionnelles'}, url: 'https://www.tgr.gov.ma'}]
+      body:
+        ar: 'تؤدى الغرامة داخل ثلاثين يوما كاملة من اليوم الموالي ليوم المخالفة، في أماكن الأداء التي تحددها الإدارة: 500 و350 و200 درهم داخل الخمسة عشر يوما الأولى، ثم 700 و500 و300.'
+        fr: 'L’amende se paie dans les trente jours francs à compter du lendemain de l’infraction, aux lieux fixés par l’administration : 500, 350 et 200 dirhams dans les quinze premiers jours, puis 700, 500 et 300.'
+      cites: [/ma/loi/52-05/art_221, /ma/loi/52-05/art_219]
+      delay: {on_day: true, days: 30, from: {ar: من اليوم الموالي ليوم المخالفة, fr: à compter du lendemain de l’infraction}}
+    - title: {ar: 'استرجاع الرخصة', fr: 'Récupérer le permis'}
+      answer: {ar: 'بعد الأداء، ترجع الرخصة من المصلحة، أو من قرب السكنى إن كانت تبعد بخمسين كيلومترا على الأقل.', fr: 'Après paiement, le permis se récupère au service, ou près de chez vous s’il est à cinquante kilomètres au moins.'}
+      body:
+        ar: 'بعد الأداء، ترجع الوثيقة من المصلحة التي سجلت المخالفة، أو، باختيار المخالف، من السلطة التابع لها محل سكناه أو محل الأداء إذا كان يبعد بخمسين كيلومترا على الأقل، داخل ثلاثين يوما من اليوم الموالي للمخالفة. وإذا لم تسحب داخل خمسة عشر يوما بعد ذلك، توجه إلى المديرية الجهوية أو الإقليمية للنقل إن أديت الغرامة، أو إلى وكيل الملك إن لم تؤد.'
+        fr: 'Après paiement, le document se récupère au service qui a relevé l’infraction ou, au choix, auprès de l’autorité du lieu de résidence ou de paiement s’il est à cinquante kilomètres au moins, dans les trente jours qui suivent le lendemain de l’infraction. S’il n’est pas retiré dans les quinze jours suivants, il est envoyé à la direction régionale ou provinciale du transport si l’amende est payée, au procureur du Roi sinon.'
+      cites: [/ma/loi/52-05/art_228, /ma/decret/2-10-313/art_6]
+    - title: {ar: 'المنازعة', fr: 'Contester'}
+      answer: {ar: 'للمنازعة 30 يوما، بشكاية معللة وإيداع الحد الأقصى للغرامة.', fr: 'Pour contester, 30 jours, une réclamation motivée et la consignation du maximum.'}
+      body:
+        ar: 'تقدم المنازعة داخل نفس الثلاثين يوما بشكاية معللة إلى وكيل الملك أو إلى العون محرر المحضر، مع إيداع الحد الأقصى للغرامة. وبالوصل ترجع رخصة السياقة أو شهادة التسجيل.'
+        fr: 'La contestation se fait dans les mêmes trente jours par une plainte motivée au procureur du Roi ou à l’agent verbalisateur, avec consignation du maximum de l’amende. Sur présentation du reçu, le permis ou la carte grise est rendu.'
+      cites: [/ma/loi/52-05/art_230, /ma/loi/52-05/art_231]
+    - title: {ar: 'ما كاينش صلح', fr: 'Quand il n’y a pas de transaction'}
+      answer: {ar: 'في ثلاث حالات لا أداء جزافي: يذهب الملف إلى وكيل الملك.', fr: 'Dans trois cas, pas de paiement forfaitaire : le dossier va au procureur du Roi.'}
+      body:
+        ar: 'لا تكون المخالفة موضوع مصالحة في ثلاث حالات: العود في مخالفة من الدرجة الأولى؛ ومخالفة سبقتها جنحة أو صاحبتها أو أعقبتها؛ وعدة مخالفات عوينت في آن واحد من بينها واحدة لا تقبل المصالحة. وإذا لم تؤد الغرامة، يوجه الملف إلى وكيل الملك وتوقف الرخصة بقوة القانون.'
+        fr: 'Il n’y a pas de transaction dans trois cas : la récidive d’une contravention de 1re classe ; une contravention précédée, accompagnée ou suivie d’un délit ; plusieurs infractions constatées à la fois dont une ne peut faire l’objet de transaction. Si l’amende n’est pas payée, le dossier va au procureur du Roi et le permis est suspendu de plein droit.'
+      cites: [/ma/loi/52-05/art_219, /ma/loi/52-05/art_227, /ma/loi/52-05/art_228]
+      note:
+        ar: 'يقول المرسوم 2.10.311 (المادة 22) «داخل أجل 15 يوما» للأداء، والقانون يقول ثلاثين يوما منذ تغييره في 2016. والقانون هو الذي يسري.'
+        fr: 'Le décret 2-10-311 (art. 22) parle encore d’un délai de 15 jours pour payer ; la loi dit trente jours depuis sa modification de 2016. C’est la loi qui s’applique.'
+        cites: [/ma/decret/2-10-311/art_22, /ma/loi/52-05/art_221]
+
+- key: accident
+  for: [probation, driver, two-wheels, pro, foreign]
+  title: {ar: 'حادثة سير: الدقائق الأولى، ثم التأمين', fr: 'Un accident : les premières minutes, puis l’assurance'}
+  lead:
+    ar: 'يفرض مرسوم قواعد السير على كل من تورط في حادثة أن يتوقف ويؤمن المكان، ثم يفرض قانون التأمين التصريح للمؤمن داخل خمسة أيام. والهروب جنحة.'
+    fr: 'Le décret sur les règles de circulation oblige toute personne impliquée dans un accident à s’arrêter et à sécuriser les lieux ; le code des assurances impose de déclarer l’accident à l’assureur dans les cinq jours. La fuite est un délit.'
+  day: {ar: 'متى وقعت الحادثة؟', fr: 'Quand l’accident a-t-il eu lieu ?'}
+  steps:
+    - title: {ar: الوقوف, fr: S’arrêter}
+      answer: {ar: 'التوقف فورا دون إحداث خطر جديد، وتأمين المكان.', fr: 'S’arrêter aussitôt sans créer de nouveau danger, et sécuriser les lieux.'}
+      body:
+        ar: 'يجب على كل سائق أو مستعمل للطريق تورط في حادثة سير أن يتوقف بمجرد ما يمكنه ذلك دون أن يحدث خطرا إضافيا، وأن يعمل على ضمان سلامة السير في مكان الحادثة. وعند عطب أو سقوط حمولة، تشغل أضواء الاستغاثة وتوضع معدة التشوير القبلي على مسافة لا تقل عن 50 مترا.'
+        fr: 'Tout conducteur ou usager impliqué dans un accident doit s’arrêter dès que possible sans créer de danger supplémentaire, et assurer la sécurité de la circulation sur les lieux. En cas de panne ou de chute de chargement, il allume les feux de détresse et place le dispositif de pré-signalisation à 50 mètres au moins.'
+      cites: [/ma/decret/2-10-420/art_94, /ma/decret/2-10-420/art_94-bis]
+    - title: {ar: 'أضرار مادية فقط', fr: 'Des dégâts matériels seulement'}
+      answer: {ar: 'أضرار مادية فقط: تبادل الهوية والعنوان مع كل من تورط.', fr: 'Des dégâts matériels seulement : échanger son identité et son adresse avec chaque personne impliquée.'}
+      body:
+        ar: 'إذا لم تؤد الحادثة إلا إلى أضرار مادية، يدلي السائق بهويته وعنوانه لكل شخص متورط فيها.'
+        fr: 'Si l’accident n’a causé que des dégâts matériels, le conducteur communique son identité et son adresse à toute personne impliquée.'
+      cites: [/ma/decret/2-10-420/art_94]
+    - title: {ar: 'مجروح أو ميت', fr: 'Un blessé ou un mort'}
+      answer: {ar: 'إذا كان هناك جريح: إخبار الأمن الوطني أو الدرك الملكي، والبقاء في المكان حتى وصولهم.', fr: 'S’il y a un blessé : prévenir la Sûreté nationale ou la Gendarmerie royale, et rester sur place jusqu’à leur arrivée.'}
+      body:
+        ar: 'إذا جرح شخص أو توفي: يخبر السائق أو يجعل من يخبر الأمن الوطني أو الدرك الملكي، ويدلي بهويته وعنوانه، ويبقى في المكان أو يرجع إليه حتى وصولهم، إلا إذا أذنوا له أو كان يسعف الجرحى أو يحتاج هو نفسه إلى العلاج، ويتجنب تغيير حالة المكان. والامتناع عمدا عن تقديم المساعدة لشخص في خطر جريمة.'
+        fr: 'Si une personne est blessée ou tuée : le conducteur avertit ou fait avertir la Sûreté nationale ou la Gendarmerie royale, donne son identité et son adresse, reste sur place ou y revient jusqu’à leur arrivée, sauf autorisation, secours aux blessés ou soins pour lui-même, et évite de modifier l’état des lieux. S’abstenir volontairement de porter secours à une personne en péril est un délit.'
+      cites: [/ma/decret/2-10-420/art_94, /ma/dahir/1-59-413/art_431]
+    - title: {ar: الهروب, fr: La fuite}
+      answer: {ar: 'الهروب جنحة: حبس أو غرامة، وست نقط، والمحجز.', fr: 'La fuite est un délit : prison ou amende, six points, et la fourrière.'}
+      body:
+        ar: 'السائق الذي ارتكب حادثة أو تسبب فيها ولم يتوقف، وحاول الإفلات من المسؤولية بالفرار أو بتغيير حالة المكان، يعاقب بالحبس من شهر إلى ستة أشهر وبغرامة من 2.000 إلى 10.000 درهم أو بإحداهما، وتخصم ست نقط، وتودع المركبة في المحجز.'
+        fr: 'Le conducteur qui a causé un accident et ne s’est pas arrêté, cherchant à échapper à sa responsabilité par la fuite ou en modifiant les lieux, encourt un à six mois de prison et 2 000 à 10 000 dirhams d’amende, ou l’une des deux ; six points sont retirés et le véhicule va en fourrière.'
+      cites: [/ma/loi/52-05/art_182, /ma/loi/52-05/art_99, /ma/loi/52-05/art_111]
+    - title: {ar: 'اختبار الكحول', fr: 'Le dépistage d’alcool'}
+      answer: {ar: 'يمكن إخضاع كل من في الحادثة لاختبار الكحول، ولو كان الضحية.', fr: 'Toute personne impliquée peut être soumise au dépistage d’alcool, même la victime.'}
+      body:
+        ar: 'يمكن إخضاع كل من يفترض أنه ارتكب حادثة سير أو اشترك في حدوثها، ولو كان هو الضحية، لاختبار الكشف عن الكحول.'
+        fr: 'Toute personne présumée avoir causé un accident ou y avoir participé, même victime, peut être soumise au dépistage de l’alcool.'
+      cites: [/ma/loi/52-05/art_207]
+    - title: {ar: 'التصريح للمؤمن', fr: 'Déclarer à l’assureur'}
+      answer: {ar: 'التصريح للمؤمن داخل 5 أيام.', fr: 'Déclarer l’accident à l’assureur dans les 5 jours.'}
+      body:
+        ar: 'يجب على المؤمن له أن يشعر المؤمن بكل حادث من شأنه أن يترتب عنه الضمان، بمجرد علمه به وعلى أبعد تقدير داخل الخمسة أيام الموالية لوقوعه. ولا يمكن تقليص هذا الأجل بالعقد.'
+        fr: 'L’assuré doit aviser l’assureur de tout sinistre de nature à entraîner sa garantie dès qu’il en a connaissance et au plus tard dans les cinq jours qui suivent. Ce délai ne peut être réduit par le contrat.'
+      cites: [/ma/loi/17-99/art_20]
+      delay: {on_day: true, days: 5, from: {ar: من يوم الحادثة, fr: après l’accident}}
+    - title: {ar: 'ما لا يغطيه التأمين الإجباري', fr: 'Ce que l’assurance obligatoire ne couvre pas'}
+      answer: {ar: 'التأمين الإجباري لا يغطي الأضرار اللاحقة بالسائق نفسه ولا بمالك المركبة.', fr: 'L’assurance obligatoire ne couvre ni le conducteur lui-même ni le propriétaire du véhicule.'}
+      body:
+        ar: 'لا يشمل التأمين الإجباري الأضرار اللاحقة بالسائق نفسه، ولا بالمكتتب ومالك المركبة، ولا بالأجراء أثناء العمل. والتعويض عن الأضرار البدنية للضحايا في ظهير 1.84.177، أما الأضرار المادية اللاحقة بالمركبات فلا يشملها.'
+        fr: 'L’assurance obligatoire ne couvre pas les dommages subis par le conducteur lui-même, ni par le souscripteur et le propriétaire, ni par les salariés au travail. L’indemnisation des dommages corporels des victimes suit le dahir 1-84-177, qui ne couvre pas les dégâts aux véhicules.'
+      cites: [/ma/loi/17-99/art_124, /ma/dahir/1-84-177/art_1, /ma/dahir/1-84-177/art_27]
+      to: journeys/victim
+
+- key: victim
+  for: [injured]
+  title: {ar: 'تعويض المصاب في حادثة سير', fr: 'L’indemnisation d’une victime d’accident'}
+  lead:
+    ar: 'منذ 29 يناير 2026، يعوض المصاب في حادثة سير وفق جدول جديد وآجال جديدة. لكن بعض أحكام طلبات التعويض والتقادم تنتظر نصوصا تنظيمية، وتبقى القديمة سارية إلى حين صدورها.'
+    fr: 'Depuis le 29 janvier 2026, la victime d’un accident est indemnisée selon un nouveau barème et de nouveaux délais. Mais certaines règles sur les demandes et la prescription attendent des textes d’application ; les anciennes restent en vigueur jusque-là.'
+  steps:
+    - title: {ar: 'أي حادثة؟', fr: 'Quel accident ?'}
+      answer: {ar: 'القواعد الجديدة للحوادث الواقعة منذ 29 يناير 2026.', fr: 'Les nouvelles règles valent pour les accidents survenus depuis le 29 janvier 2026.'}
+      body:
+        ar: 'يطبق الظهير، كما غيره القانون 70.24، على الأضرار البدنية التي تسببت فيها مركبات برية ذات محرك خاضعة للتأمين الإجباري، أو مركبات تسير على سكة، أو مركبات بمحرك كهربائي، الواقعة ابتداء من 29 يناير 2026؛ وتبقى الحوادث السابقة خاضعة للنص القديم.'
+        fr: 'Le dahir, tel que modifié par la loi 70-24, s’applique aux dommages corporels causés par des véhicules terrestres à moteur soumis à l’assurance obligatoire, des véhicules sur rails ou des véhicules à moteur électrique, pour les accidents survenus depuis le 29 janvier 2026 ; les accidents antérieurs restent sous l’ancien texte.'
+      cites: [/ma/dahir/1-84-177/art_1, /ma/loi/70-24/art_7]
+    - title: {ar: 'الأجر المعتمد', fr: 'Le salaire retenu'}
+      answer: {ar: 'الأجر هو الصافي خلال 12 شهرا قبل الحادثة، ولا يقل عن الحد الأدنى.', fr: 'Le salaire retenu est le net des 12 mois avant l’accident, jamais moins que le minimum.'}
+      body:
+        ar: 'الأجر هو الأجر الصافي من الضريبة خلال الاثني عشر شهرا السابقة للحادثة، ولا يقل عن الحد الأدنى المحدد في الجدول. ومن لا يثبت دخلا يعتبر أجره مساويا لهذا الحد الأدنى: 10.270 درهما في السنة للحوادث الواقعة سنة 2026.'
+        fr: 'Le salaire est le salaire net d’impôt des douze mois qui précèdent l’accident, jamais inférieur au minimum du barème. Faute de revenu prouvé, il est égal à ce minimum : 10 270 dirhams par an pour les accidents de 2026.'
+      cites: [/ma/dahir/1-84-177/art_1-bis, /ma/dahir/1-84-177/art_6, /ma/loi/70-24/art_5]
+    - title: {ar: 'الطلب لشركة التأمين', fr: 'La demande à l’assureur'}
+      answer: {ar: 'قبل المحكمة: طلب التعويض لشركة التأمين.', fr: 'Avant le tribunal : la demande d’indemnisation à l’assureur.'}
+      body:
+        ar: 'قبل اللجوء إلى القضاء، يقدم المصاب طلب التعويض إلى مقاولة التأمين. ويحدد الطبيب المعالج والطبيب الذي تنتدبه المقاولة نسبة العجز باتفاق مشترك.'
+        fr: 'Avant de saisir le tribunal, la victime adresse sa demande d’indemnisation à l’entreprise d’assurance. Le médecin traitant et le médecin désigné par l’assureur fixent ensemble le taux d’incapacité.'
+      cites: [/ma/dahir/1-84-177/art_18]
+    - title: {ar: 'جواب شركة التأمين', fr: 'La réponse de l’assureur'}
+      answer: {ar: 'النص الجديد يعطي الشركة 60 يوما، لكن الأحكام القديمة باقية حتى صدور نصين تنظيميين.', fr: 'Le nouveau texte donne 60 jours à l’assureur, mais les anciennes règles restent jusqu’à deux textes d’application.'}
+      body:
+        ar: 'في النص كما غيره القانون 70.24: تقدم المقاولة اقتراح التعويض داخل ستين يوما، ويعتبر سكوتها رفضا؛ وللمصاب ثلاثون يوما ليجيب، وتدفع المقاولة داخل الثلاثين يوما التالية لتوصلها بقبوله؛ وعلى المبالغ المحجوزة بغير موجب تعويض بين 30% و50%. غير أن القانون 70.24 أبقى الأحكام السابقة المتعلقة بطلبات التعويض والتقادم سارية إلى أن يصدر النصان التنظيميان المنصوص عليهما في المادتين 4 المكررة و16، وكان عليهما أن يصدرا داخل سنة من نشره.'
+        fr: 'Dans le texte modifié par la loi 70-24 : l’assureur fait son offre dans les soixante jours, son silence valant refus ; la victime a trente jours pour répondre, et l’assureur paie dans les trente jours qui suivent la réception de l’acceptation ; sur les sommes retenues sans motif, une pénalité de 30 % à 50 %. Mais la loi 70-24 maintient les anciennes règles sur les demandes d’indemnisation et la prescription jusqu’à la parution des deux textes d’application prévus aux articles 4 bis et 16, attendus dans l’année de sa publication.'
+      cites: [/ma/dahir/1-84-177/art_19, /ma/dahir/1-84-177/art_21, /ma/loi/70-24/art_8]
+    - title: {ar: 'العجز الدائم', fr: 'L’incapacité permanente'}
+      answer: {ar: 'الرأسمال في الجدول، ضرب نسبة العجز التي يحددها الطبيب.', fr: 'Le capital du barème, multiplié par le taux d’incapacité que fixe le médecin.'}
+      body:
+        ar: 'يحسب التعويض عن العجز البدني الدائم بضرب الرأسمال المعتمد، المحدد في الجدول حسب سن المصاب وأجره، في نسبة العجز. والطبيب هو من يحدد النسبة.'
+        fr: 'L’indemnité d’incapacité permanente est le capital du barème, fixé selon l’âge et le salaire de la victime, multiplié par le taux d’incapacité. C’est le médecin qui fixe le taux.'
+      cites: [/ma/dahir/1-84-177/art_5, /ma/dahir/1-84-177/art_9]
+      tool: tools/compensation
+    - title: {ar: 'الأجل للذهاب إلى المحكمة', fr: 'Le délai pour aller au tribunal'}
+      answer: {ar: 'حتى الآن: ثلاث سنوات للذهاب إلى المحكمة من رسالة الرفض.', fr: 'Pour l’instant : trois ans pour saisir le tribunal à compter de la lettre de refus.'}
+      body:
+        ar: 'إلى أن تصدر النصوص التنظيمية التي ينص عليها القانون 70.24، تبقى الأحكام القديمة المتعلقة بطلبات التعويض والتقادم سارية: ترفع الدعوى داخل ثلاث سنوات من تاريخ الرسالة التي ترفض فيها مقاولة التأمين التعويض. والنص الجديد يجعلها خمس سنوات.'
+        fr: 'Tant que les textes d’application prévus par la loi 70-24 ne sont pas parus, les anciennes règles sur les demandes et la prescription restent en vigueur : l’action est intentée dans les trois ans de la lettre par laquelle l’assureur refuse l’indemnisation. Le nouveau texte porte ce délai à cinq ans.'
+      cites: [/ma/loi/70-24/art_8, /ma/dahir/1-84-177/art_23]
+    - title: {ar: 'صندوق ضمان حوادث السير', fr: 'Le Fonds de garantie des accidents de la circulation'}
+      answer: {ar: 'إذا كان المسؤول مجهولا أو غير مؤمن: صندوق ضمان حوادث السير.', fr: 'Si le responsable est inconnu ou non assuré : le Fonds de garantie des accidents de la circulation.'}
+      body:
+        ar: 'إذا كان المسؤول عن الحادثة مجهولا، أو غير مؤمن وعاجزا عن الأداء، يعوض صندوق ضمان حوادث السير الأضرار البدنية. ويوجه الطلب إليه داخل ثلاث سنوات من الحادثة إذا كان المسؤول مجهولا.'
+        fr: 'Si le responsable est inconnu, ou non assuré et insolvable, le Fonds de garantie indemnise les dommages corporels. Si le responsable est inconnu, la demande lui est adressée dans les trois ans de l’accident.'
+      cites: [/ma/loi/17-99/art_134, /ma/loi/17-99/art_148]
+      note:
+        ar: 'تمنع الاتفاقات التي يتكلف بموجبها وسطاء، مقابل أجر متفق عليه مسبقا، بالحصول على التعويض لفائدة الضحايا.'
+        fr: 'Sont interdites les conventions par lesquelles des intermédiaires se chargent, contre une rémunération convenue d’avance, d’obtenir l’indemnisation des victimes.'
+        cites: [/ma/loi/17-99/art_132]
+
+- key: impound
+  for: [probation, driver, two-wheels, pro, foreign]
+  title: {ar: 'المركبة في المحجز', fr: 'Le véhicule en fourrière'}
+  lead:
+    ar: 'يأمر بالإيداع في المحجز العون أو ضابط الشرطة القضائية في حالات حددها القانون، أو المدير الجهوي أو الإقليمي للنقل. ومصاريف الإزاحة والحراسة على المالك.'
+    fr: 'La mise en fourrière est ordonnée par l’agent ou l’officier de police judiciaire dans des cas fixés par la loi, ou par le directeur régional ou provincial du transport. Les frais d’enlèvement et de garde sont à la charge du propriétaire.'
+  steps:
+    - title: {ar: 'التوقيف قبل المحجز', fr: 'L’immobilisation avant la fourrière'}
+      answer: {ar: '72 ساعة لإنهاء المخالفة قبل المحجز.', fr: '72 heures pour mettre fin à l’infraction avant la fourrière.'}
+      body:
+        ar: 'توقف المركبة في عين المكان في حالات منها: عدم الإدلاء برخصة السياقة أو بشهادة التسجيل أو بشهادة التأمين، أو خلل في الفرامل أو الإطارات. وإذا لم يثبت المخالف انتهاء المخالفة داخل 72 ساعة من ساعة التوقيف، تودع المركبة في المحجز.'
+        fr: 'Le véhicule est immobilisé sur place notamment faute de permis, de carte grise ou d’attestation d’assurance, ou pour des freins ou pneus défectueux. Si le contrevenant ne prouve pas dans les 72 heures que l’infraction a cessé, le véhicule va en fourrière.'
+      cites: [/ma/loi/52-05/art_103, /ma/loi/52-05/art_109]
+      delay: {hours: 72, from: {ar: من ساعة التوقيف, fr: après l’immobilisation}}
+    - title: {ar: 'الإيداع فورا', fr: 'La fourrière immédiate'}
+      answer: {ar: 'في حالات خطيرة، المحجز فورا، والقضاء يحدد المدة.', fr: 'Dans les cas graves, la fourrière tout de suite ; la justice fixe la durée.'}
+      body:
+        ar: 'يأمر العون فورا بالإيداع في المحجز في حالات منها: انعدام التأمين، وانعدام شهادة التسجيل أو الصفائح، والسياقة بدون رخصة، والفرار بعد حادثة. ويحدد القضاء مدة الإيداع في هذه الحالات.'
+        fr: 'L’agent ordonne la mise en fourrière immédiate notamment pour défaut d’assurance, absence de carte grise ou de plaques, conduite sans permis, délit de fuite. L’autorité judiciaire fixe alors la durée.'
+      cites: [/ma/loi/52-05/art_111]
+    - title: {ar: 'الوقوف الخطير', fr: 'Le stationnement dangereux'}
+      answer: {ar: 'الوقوف الخطير: تبقى المركبة حتى أداء الغرامة.', fr: 'Le stationnement dangereux : le véhicule reste jusqu’au paiement de l’amende.'}
+      body:
+        ar: 'وفي التوقف غير القانوني أو الخطير، مع غياب السائق أو رفضه إنهاء المخالفة، تبقى المركبة في المحجز إلى أن يثبت المخالف أداء الغرامة.'
+        fr: 'Pour un arrêt illégal ou dangereux, conducteur absent ou refusant de mettre fin à l’infraction, le véhicule reste en fourrière jusqu’à la preuve du paiement de l’amende.'
+      cites: [/ma/loi/52-05/art_112-1]
+    - title: {ar: 'بأمر من مديرية النقل', fr: 'Sur ordre de la direction du transport'}
+      answer: {ar: 'مديرية النقل قد تأمر بالمحجز سبعة أيام أو عشرة.', fr: 'La direction du transport peut ordonner sept ou dix jours de fourrière.'}
+      body:
+        ar: 'يأمر المدير الجهوي أو الإقليمي للتجهيز والنقل بالإيداع في المحجز في حالات المادة 112، لمدة سبعة أيام أو عشرة حسب الحالة.'
+        fr: 'Le directeur régional ou provincial de l’équipement et du transport ordonne la fourrière dans les cas de l’article 112, pour sept ou dix jours selon le cas.'
+      cites: [/ma/loi/52-05/art_112, /ma/decret/2-10-312/art_7]
+    - title: {ar: 'المصاريف', fr: 'Les frais'}
+      answer: {ar: 'المصاريف على مالك المركبة.', fr: 'Les frais sont pour le propriétaire du véhicule.'}
+      body:
+        ar: 'يتحمل مالك المركبة أو المسؤول المدني عنها مصاريف الإزاحة والحراسة في المحجز والخبرة. وتحدد تعريفات الإزاحة بقرار لوزير النقل.'
+        fr: 'Le propriétaire du véhicule ou son civilement responsable supporte les frais d’enlèvement, de garde en fourrière et d’expertise. Les tarifs d’enlèvement sont fixés par arrêté du ministre du transport.'
+      cites: [/ma/loi/52-05/art_117, /ma/decret/2-10-312/art_10]
+
+- key: foreign
+  for: [foreign]
+  title: {ar: 'رخصة سياقة مسلمة بالخارج', fr: 'Un permis délivré à l’étranger'}
+  lead:
+    ar: 'تكفي الرخصة الأجنبية السارية مدة سنة من الإقامة بالمغرب. بعدها: الامتحان المغربي، أو تبديلها برخصة مغربية في الحالات التي حددها القانون.'
+    fr: 'Un permis étranger valide suffit pendant un an de résidence au Maroc. Ensuite : l’examen marocain, ou l’échange contre un permis marocain dans les cas que la loi prévoit.'
+  day: {ar: 'متى بدأت إقامتك بالمغرب؟', fr: 'Quand vous êtes-vous installé au Maroc ?'}
+  steps:
+    - title: {ar: السنة الأولى, fr: La première année}
+      answer: {ar: 'الرخصة الأجنبية تكفي سنة من الإقامة بالمغرب.', fr: 'Le permis étranger suffit un an à compter de l’installation au Maroc.'}
+      body:
+        ar: 'يسوق المغاربة القاطنون بالخارج برخصتهم الأجنبية السارية مدة أقصاها سنة من إقامتهم بالمغرب، والأجانب سنة من تاريخ إقامتهم المؤقتة.'
+        fr: 'Les Marocains résidant à l’étranger conduisent avec leur permis étranger valide pendant un an au plus à compter de leur installation au Maroc ; les étrangers, un an à compter de leur résidence temporaire.'
+      cites: [/ma/loi/52-05/art_2]
+      delay: {on_day: true, months: 12, from: {ar: من الإقامة بالمغرب, fr: après l’installation au Maroc}}
+    - title: {ar: 'بلد بيناتو وبين المغرب اتفاق', fr: 'Un pays lié au Maroc par un accord'}
+      answer: {ar: 'بلد له اتفاق مع المغرب: التبديل حسب الاتفاق.', fr: 'Un pays lié au Maroc par un accord : l’échange selon l’accord.'}
+      body:
+        ar: 'من حصل على رخصته من دولة يربطها بالمغرب اتفاق اعتراف متبادل يبدلها وفق شروط الاتفاق. ويذكر ملحق القرار 02.11 (2011) هذه الدول: البحرين وبلجيكا والبنين ومصر وإسبانيا (الصنفان «أ» و«ب») وإيطاليا والأردن (الصنف «ب») وعمان ودول المغرب العربي والبرتغال وسويسرا وسوريا، مع الإقامة بالمغرب.'
+        fr: 'Le titulaire d’un permis d’un pays lié au Maroc par un accord de reconnaissance mutuelle l’échange selon cet accord. L’annexe de l’arrêté 02-11 (2011) cite : Bahreïn, Belgique, Bénin, Égypte, Espagne (catégories A et B), Italie, Jordanie (catégorie B), Oman, les pays de l’UMA, Portugal, Suisse et Syrie, avec la résidence au Maroc.'
+      cites: [/ma/loi/52-05/art_3, /ma/arrete/2-11/art_1, /ma/arrete/2-11/annex]
+      note:
+        ar: 'هذا الملحق هو لائحة 2011. والاتفاقات التي أبرمت بعده توافق عليها قوانين خاصة.'
+        fr: 'Cette annexe est la liste de 2011 ; les accords conclus depuis sont approuvés par des lois propres.'
+    - title: {ar: 'بلد كيبدل البيرمي المغربي', fr: 'Un pays qui échange le permis marocain'}
+      answer: {ar: 'بلد يبدل الرخصة المغربية: التبديل ممكن.', fr: 'Un pays qui échange le permis marocain : l’échange est possible.'}
+      body:
+        ar: 'ويمكن تبديل الرخص المسلمة من دول تعترف بتبديل الرخصة المغربية مقابل رخصتها: كوريا الجنوبية وفرنسا واليابان وبولونيا ورومانيا حسب القرار 02.11.'
+        fr: 'Peuvent aussi s’échanger les permis des pays qui échangent le permis marocain contre le leur : Corée du Sud, France, Japon, Pologne et Roumanie selon l’arrêté 02-11.'
+      cites: [/ma/loi/52-05/art_3, /ma/arrete/2-11/art_2]
+    - title: {ar: 'المغاربة العائدون نهائيا', fr: 'Les Marocains de retour définitif'}
+      answer: {ar: 'المغاربة العائدون نهائيا يمكنهم التبديل.', fr: 'Les Marocains revenus définitivement peuvent l’échanger.'}
+      body:
+        ar: 'يمكن للمغاربة القاطنين بالخارج العائدين بصفة نهائية تبديل رخصهم برخصة مغربية وفق الشروط التي تحددها الإدارة.'
+        fr: 'Les Marocains résidant à l’étranger qui rentrent définitivement peuvent échanger leur permis contre un permis marocain selon les conditions de l’administration.'
+      cites: [/ma/loi/52-05/art_3]
+    - title: {ar: 'الرخصة الدولية', fr: 'Le permis international'}
+      answer: {ar: 'الرخصة الدولية تكفي الأجانب حتى سنة، ولا تصلح للمغاربة في المغرب.', fr: 'Le permis international suffit aux étrangers jusqu’à un an ; il ne vaut pas pour les Marocains au Maroc.'}
+      body:
+        ar: 'يمكن للأجانب السياقة بالرخصة الدولية خلال مدة صلاحيتها دون تجاوز السنة. أما الرخصة الدولية التي تسلم للمغاربة فللسياقة في الخارج، ولا تصلح للسياقة في المغرب.'
+        fr: 'Les étrangers peuvent conduire avec un permis international pendant sa validité, sans dépasser l’année. Le permis international délivré aux Marocains sert à conduire à l’étranger ; il ne vaut pas au Maroc.'
+      cites: [/ma/loi/52-05/art_4]
+
+- key: used-car
+  for: [driver, two-wheels, pro, foreign]
+  title: {ar: 'شراء أو بيع مركبة', fr: 'Acheter ou vendre un véhicule'}
+  lead:
+    ar: 'للمشتري ثلاثون يوما لإيداع ملف نقل الملكية، وللبائع خمسة عشر يوما للتصريح بالبيع. ولا تنقل ملكية مركبة صدرت على مالكها غرامات غير مؤداة.'
+    fr: 'L’acheteur a trente jours pour déposer le dossier de mutation, le vendeur quinze pour déclarer la vente. Un véhicule dont le propriétaire a des amendes exécutoires impayées ne peut changer de main.'
+  day: {ar: 'متى تم البيع؟', fr: 'Quand la vente a-t-elle eu lieu ?'}
+  steps:
+    - title: {ar: 'قبل البيع', fr: 'Avant la vente'}
+      answer: {ar: 'لا نقل للملكية قبل أداء الغرامات المحكوم بها.', fr: 'Pas de mutation avant le paiement des amendes jugées.'}
+      body:
+        ar: 'لا يمكن نقل ملكية مركبة إلا بعد إثبات أداء الغرامات التي صدر في شأنها على المالك مقرر قابل للتنفيذ، ما لم يقرر القضاء خلاف ذلك. وتخضع المركبة للمراقبة التقنية عند تغيير المالك.'
+        fr: 'Un véhicule ne peut changer de propriétaire qu’après preuve du paiement des amendes exécutoires prononcées contre le propriétaire, sauf décision judiciaire contraire. Le véhicule passe le contrôle technique lors d’un changement de propriétaire.'
+      cites: [/ma/loi/52-05/art_147, /ma/loi/52-05/art_66]
+    - title: {ar: البائع, fr: Le vendeur}
+      answer: {ar: 'البائع يصرح بالبيع داخل 15 يوما.', fr: 'Le vendeur déclare la vente dans les 15 jours.'}
+      services: [{name: {ar: 'نقل ملكية المركبة', fr: 'Mutation du véhicule'}, url: 'https://www.mutationvehicule.ma'}]
+      body:
+        ar: 'يودع البائع لدى الإدارة، مقابل وصل، تصريحا بالتفويت داخل أجل لا يتعدى خمسة عشر يوما من تاريخ المعاملة.'
+        fr: 'Le vendeur dépose à l’administration, contre récépissé, une déclaration de cession dans les quinze jours de la vente.'
+      cites: [/ma/loi/52-05/art_59]
+      delay: {on_day: true, days: 15, from: {ar: من تاريخ البيع, fr: après la vente}}
+    - title: {ar: المشتري, fr: L’acheteur}
+      answer: {ar: 'المشتري يودع ملف نقل الملكية داخل 30 يوما.', fr: 'L’acheteur dépose le dossier de mutation dans les 30 jours.'}
+      services: [{name: {ar: 'نقل ملكية المركبة', fr: 'Mutation du véhicule'}, url: 'https://www.mutationvehicule.ma'}]
+      body:
+        ar: 'يودع المشتري ملف نقل الملكية داخل أجل لا يتعدى ثلاثين يوما من تاريخ المعاملة، وتسعين يوما في الإرث والهبة والبيع القضائي والمزاد، وفي المركبات المهنية للمادة 40. وتسلم شهادة التسجيل الجديدة داخل ثلاثة أشهر من إيداع الملف.'
+        fr: 'L’acheteur dépose le dossier de mutation dans les trente jours de la vente ; quatre-vingt-dix jours en cas d’héritage, de donation, de vente judiciaire ou aux enchères, et pour les véhicules professionnels de l’article 40. La nouvelle carte grise est remise dans les trois mois du dépôt.'
+      cites: [/ma/loi/52-05/art_59, /ma/loi/52-05/art_60]
+      delay: {on_day: true, days: 30, from: {ar: من تاريخ البيع, fr: après la vente}}
+    - title: {ar: التأخير, fr: Le retard}
+      answer: {ar: 'التأخير: 500 درهم، و10% عن كل شهر.', fr: 'Le retard : 500 DH, et 10 % par mois.'}
+      body:
+        ar: 'من لم يحترم هذه الآجال يؤدي غرامة إدارية قدرها 500 درهم، وغرامة إضافية نسبتها 10% عن كل شهر من التأخير، وكل جزء من شهر يعتبر شهرا.'
+        fr: 'Qui ne respecte pas ces délais paie une amende administrative de 500 dirhams, plus 10 % par mois de retard ; tout mois commencé compte.'
+      cites: [/ma/loi/52-05/art_118]
+
+# Riders (V1 of the road tools review): the moped, the motorcycle and the scooter, each step from its article as the
+# two-wheels page cites it; 45 % of the road's dead in 2025 were on motorised two- or three-wheelers (series.yaml).
+- key: riders
+  for: [two-wheels, learner]
+  title: {ar: 'الموطور والتروتينيت: من الرخصة إلى الطريق', fr: 'Deux-roues et trottinettes : du permis à la route'}
+  lead:
+    ar: 'الرخصة والخوذة والسرعة والطريق، كما يحددها القانون 52.05 ومرسوم قواعد السير 2.10.420 في صيغته إلى 24 غشت 2026.'
+    fr: 'Le permis, le casque, la vitesse et la route, tels que les fixent la loi 52-05 et le décret 2-10-420 dans sa version au 24 août 2026.'
+  steps:
+    - title: {ar: الرخصة, fr: Le permis}
+      answer: {ar: 'صنف «أم» من 14 سنة، بالاختبار النظري وحده.', fr: 'La catégorie AM dès 14 ans, avec l’examen théorique seul.'}
+      body:
+        ar: 'تساق الدراجة بمحرك بصنف «أم» من 14 سنة، بالاختبار النظري وحده؛ ورخصة «ب» أو «أ1» تقبل لها.'
+        fr: 'Le cyclomoteur se conduit avec la catégorie AM dès 14 ans, après le seul examen théorique ; les permis B et A1 la valent.'
+      cites: [/ma/loi/52-05/art_7, /ma/loi/52-05/art_8, /ma/loi/52-05/art_10, /ma/loi/52-05/art_11]
+    - title: {ar: الخوذة, fr: Le casque}
+      answer: {ar: 'خوذة مربوطة ومصادق عليها، للسائق والراكب.', fr: 'Un casque attaché et homologué, pour le conducteur et le passager.'}
+      body:
+        ar: 'يضع سائقو وراكبو الدراجات بمحرك والدراجات النارية خوذات واقية مربوطة ومصادقا عليها، وكذلك سائقو الدراجات العادية ومركبات التنقل الشخصي بمحرك.'
+        fr: 'Conducteurs et passagers de cyclomoteurs et de motos portent un casque attaché et homologué, comme les cyclistes et les conducteurs d’engins de déplacement personnel motorisés.'
+      cites: [/ma/decret/2-10-420/art_110]
+    - title: {ar: السرعة, fr: La vitesse}
+      answer: {ar: '40 كلم/س في المدينة و60 خارجها؛ والتروتينيت بمحرك 25.', fr: '40 km/h en ville, 60 hors agglomération ; la trottinette à moteur, 25.'}
+      body:
+        ar: 'لا تتجاوز الدراجة بمحرك 40 كيلومترا في الساعة داخل التجمعات العمرانية و60 خارجها، ولا تتجاوز مركبة التنقل الشخصي بمحرك 25 كيلومترا في الساعة.'
+        fr: 'Le cyclomoteur ne dépasse pas 40 km/h en agglomération et 60 en dehors ; l’engin de déplacement personnel motorisé, 25 km/h.'
+      cites: [/ma/decret/2-10-420/art_19]
+      tool: tools/speed
+    - title: {ar: الطريق, fr: La route}
+      answer: {ar: 'مسلك الدراجات حيث وجد؛ والتروتينيت خارج المدينة فيه وحده.', fr: 'La piste cyclable là où il y en a une ; hors agglomération, la trottinette n’y roule que là.'}
+      body:
+        ar: 'يستعمل سائقو الدراجات والدراجات بمحرك والدراجات النارية الأشرطة أو المسالك الخاصة بهم عندما تكون موجودة. ولا يسير سائقو مركبات التنقل الشخصي بمحرك خارج التجمعات العمرانية إلا حيث توجد ممرات خاصة بالدراجات.'
+        fr: 'Cyclistes, cyclomotoristes et motards empruntent les bandes ou pistes qui leur sont réservées quand il y en a. Hors agglomération, les engins de déplacement personnel motorisés ne roulent que là où existent des pistes cyclables.'
+      cites: [/ma/decret/2-10-420/art_112]
+    - title: {ar: السماعات, fr: Les écouteurs}
+      answer: {ar: 'لا سماعات على أي دراجة، بمحرك أو بدونه.', fr: 'Pas d’écouteurs à deux-roues, à moteur ou non.'}
+      body:
+        ar: 'يمنع استعمال السماعات على كل سائق دراجة أو دراجة بمحرك أو دراجة نارية، سواء كانت مزودة أو غير مزودة بمحرك.'
+        fr: 'L’usage d’écouteurs est interdit à tout conducteur de bicyclette, de cyclomoteur ou de moto, qu’elle ait un moteur ou non.'
+      cites: [/ma/decret/2-10-420/art_9]
+    - title: {ar: الراكب, fr: Le passager}
+      answer: {ar: 'راكب واحد على مقعد مثبت له، غير مقعد السائق.', fr: 'Un passager, sur un siège fixé pour lui, distinct de celui du conducteur.'}
+      body:
+        ar: 'لا يسمح بنقل راكب زيادة عن السائق على متن الدراجات والدراجات بمحرك والدراجات النارية إلا على مقعد مثبت على المركبة مخالف لمقعد السائق؛ والسرج المزدوج يعد مقعدين.'
+        fr: 'On ne transporte un passager à deux-roues que sur un siège fixé au véhicule, distinct de celui du conducteur ; une selle double vaut deux sièges.'
+      cites: [/ma/decret/2-10-420/art_113]
+    - title: {ar: النقط, fr: Les points}
+      answer: {ar: 'الدراجة النارية بلا خوذة معتمدة: نقطتان.', fr: 'La moto sans casque homologué : deux points.'}
+      body:
+        ar: 'سياقة الدراجات النارية أو الدراجات ثلاثية أو رباعية العجلات بمحرك التي لا تتوفر على هيكل، دون خوذة معتمدة، تخصم نقطتين (الصف 29 من جدول المادة 99).'
+        fr: 'Conduire une moto, un tricycle ou un quadricycle à moteur sans carrosserie sans casque homologué coûte deux points (ligne 29 du tableau de l’article 99).'
+      cites: [/ma/loi/52-05/art_99]
+      tool: tools/points
+    - title: {ar: التأمين, fr: L’assurance}
+      answer: {ar: 'التأمين إجباري على الموطور أيضا.', fr: 'L’assurance est obligatoire pour le deux-roues aussi.'}
+      body:
+        ar: 'يجب على كل من يمكن أن تثار مسؤوليته المدنية بسبب مركبة برية ذات محرك أن يغطيها بعقد تأمين، ولا يقل الضمان عن 25 مليون درهم لمركبة ذات عجلتين لا تتجاوز قوتها حصانين.'
+        fr: 'Quiconque peut voir sa responsabilité civile engagée du fait d’un véhicule terrestre à moteur l’assure ; la garantie n’est pas inférieure à 25 millions de dirhams pour un deux-roues de deux chevaux au plus.'
+      cites: [/ma/loi/17-99/art_120, /ma/loi/17-99/art_123]
+  next: [pages/two-wheels, tools/scenes]

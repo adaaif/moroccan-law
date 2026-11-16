@@ -1,0 +1,377 @@
+# The family's journeys (F4 of the family plan): what happens, step by step, each step on the articles it rests on.
+# Written from the texts as the site holds them on 20 Oct 2026; a reader sees a journey once a person has checked it
+# (`manage.py approve_topic family journeys/<key> --by …`). Steps say what the law says, never what a reader should do
+# in their own case; `note` is a fact a reader is likely to miss, `delay` a time limit the law sets.
+
+- key: marry
+  title: {ar: 'الزواج: من الملف إلى العقد', fr: 'Le mariage : du dossier à l’acte'}
+  lead:
+    ar: يوثق الزواج عدلان بإذن من قاضي الأسرة المكلف بالزواج، بعد إيداع ملف بقسم قضاء الأسرة.
+    fr: 'Deux adouls dressent l’acte de mariage, sur autorisation du juge de la famille chargé du mariage, après le dépôt d’un dossier à la section de la famille du tribunal.'
+  steps:
+    - title: {ar: الشروط, fr: Les conditions}
+      answer: {ar: 'يجب أن يكون عمر كل واحد منكما 18 سنة؛ قبلها لا يتم الزواج إلا بإذن القاضي.', fr: 'Vous devez avoir 18 ans chacun ; avant, le mariage n’a lieu qu’avec l’autorisation du juge.'}
+      body:
+        ar: 'سن الزواج 18 سنة شمسية لكل واحد من الزوجين. قبلها، لا يتم الزواج إلا بإذن من القاضي بمقرر معلل بعد خبرة طبية أو بحث اجتماعي، وبموافقة النائب الشرعي. للراشدة أن تعقد زواجها بنفسها أو تفوض ذلك لأبيها أو لأحد أقاربها. لا يجوز الاتفاق على إسقاط الصداق، وهو ملك للزوجة.'
+        fr: 'L’âge du mariage est de 18 ans révolus pour chacun. Avant, le mariage n’a lieu qu’avec l’autorisation motivée du juge, après expertise médicale ou enquête sociale, et l’accord du représentant légal. La femme majeure conclut elle-même son mariage ou le délègue à son père ou à un proche. On ne peut convenir de supprimer la dot, qui appartient à l’épouse.'
+      cites: [/ma/loi/70-03/art_19, /ma/loi/70-03/art_20, /ma/loi/70-03/art_21, /ma/loi/70-03/art_25, /ma/loi/70-03/art_13, /ma/loi/70-03/art_29]
+    - title: {ar: ما تتفقان عليه, fr: Ce que vous convenez}
+      answer: {ar: 'يمكنكما وضع شروط في العقد، والاتفاق في وثيقة مستقلة على الأموال التي ستكتسبانها أثناء الزواج.', fr: 'Vous pouvez mettre des conditions dans l’acte et convenir, dans un document à part, des biens acquis pendant le mariage.'}
+      body:
+        ar: 'يمكن أن يتضمن العقد شروطا، وهي ملزمة ما لم تخالف أحكام العقد ومقاصده. ولكل من الزوجين ذمة مالية مستقلة، ويجوز لهما الاتفاق في وثيقة مستقلة عن العقد على تدبير الأموال التي ستكتسب أثناء الزواج؛ وعلى العدلين إشعارهما بذلك.'
+        fr: 'Le contrat peut contenir des conditions, obligatoires sauf si elles contredisent l’acte et ses finalités. Chaque époux a son propre patrimoine ; ils peuvent convenir, dans un document distinct de l’acte, de la gestion des biens acquis pendant le mariage, et les adouls doivent les en informer.'
+      cites: [/ma/loi/70-03/art_49, /ma/loi/70-03/art_47, /ma/loi/70-03/art_48]
+      note:
+        ar: 'شرط الزوجة ألا يتزوج عليها يمنع التعدد.'
+        fr: 'La condition de l’épouse que son mari n’épouse pas d’autre femme interdit la polygamie.'
+        cites: [/ma/loi/70-03/art_40]
+    - title: {ar: الملف, fr: Le dossier}
+      answer: {ar: 'يفتح ملف الزواج بقسم قضاء الأسرة لمكان إبرام العقد.', fr: 'Le dossier s’ouvre à la section de la famille du lieu où l’acte sera conclu.'}
+      body:
+        ar: 'يحدث ملف لعقد الزواج يحفظ بكتابة الضبط لدى قسم قضاء الأسرة لمحل إبرام العقد.'
+        fr: 'Un dossier de mariage est ouvert et conservé au greffe de la section de la famille du lieu où l’acte sera conclu.'
+      cites: [/ma/loi/70-03/art_65]
+      papers: checklists/marriage-file
+    - title: {ar: إذن القاضي, fr: L’autorisation du juge}
+      answer: {ar: 'يؤشر القاضي على الملف ويأذن للعدلين بتوثيق الزواج.', fr: 'Le juge vise le dossier et autorise les adouls à dresser l’acte.'}
+      body:
+        ar: 'يؤشر قاضي الأسرة المكلف بالزواج على الملف، ثم يأذن للعدلين بتوثيق العقد.'
+        fr: 'Le juge de la famille chargé du mariage vise le dossier, puis autorise les adouls à dresser l’acte.'
+      cites: [/ma/loi/70-03/art_65]
+    - title: {ar: العقد عند العدلين, fr: L’acte chez les adouls}
+      answer: {ar: 'يوثق العدلان الزواج بعد أن يسمعا قبولكما، ويكتبان الصداق والشروط.', fr: 'Les adouls dressent l’acte après avoir entendu votre consentement, avec la dot et les conditions.'}
+      body:
+        ar: 'يسمع العدلان الإيجاب والقبول من الزوجين ويوثقانه، ويصرح كل واحد منهما هل سبق له الزواج. يتضمن العقد إذن القاضي، وهوية الزوجين، والصداق المعجل منه والمؤجل، والشروط المتفق عليها.'
+        fr: 'Les adouls entendent l’offre et l’acceptation des deux époux et les consignent ; chacun déclare s’il a déjà été marié. L’acte mentionne l’autorisation du juge, l’identité des époux, la dot (payée ou différée) et les conditions convenues.'
+      cites: [/ma/loi/70-03/art_67, /ma/loi/70-03/art_10, /ma/loi/70-03/art_65]
+    - title: {ar: بعد العقد, fr: Après l’acte}
+      answer: {ar: 'تتسلم الزوجة أصل رسم الزواج والزوج نظيرا منه، ويسجل الزواج في رسم ولادة كل منكما.', fr: 'L’épouse reçoit l’original de l’acte, l’époux une copie ; le mariage est porté sur l’acte de naissance de chacun.'}
+      body:
+        ar: 'يسلم أصل رسم الزواج للزوجة ونظير منه للزوج فور خطاب القاضي عليه. ويوجه ملخصه إلى ضابط الحالة المدنية لمحل ولادة الزوجين خلال خمسة عشر يوما، فيضمنه في رسم ولادتهما.'
+        fr: 'L’original de l’acte est remis à l’épouse et une copie à l’époux dès l’homologation par le juge. Un extrait est envoyé dans les quinze jours à l’officier d’état civil du lieu de naissance des époux, qui le mentionne sur leur acte de naissance.'
+      cites: [/ma/loi/70-03/art_69, /ma/loi/70-03/art_68, /ma/loi/36-21/art_36]
+      delay: {days: 15, from: {ar: من خطاب القاضي على العقد, fr: de l’homologation de l’acte}}
+  ends: {office: act, paper: {ar: 'رسم الزواج: أصله للزوجة، ونظير منه للزوج', fr: 'L’acte de mariage : l’original à l’épouse, une copie à l’époux'}, cites: [/ma/loi/70-03/art_69]}
+  next: [pages/abroad, pages/ways]
+
+- key: divorce-agreement
+  title: {ar: الطلاق بالاتفاق, fr: Le divorce par consentement mutuel}
+  lead:
+    ar: 'يتفق الزوجان على إنهاء الزواج، بشروط أو بدونها، ويطلبان من المحكمة الإذن بتوثيقه. هو أكثر أنواع الطلاق التي يوثقها العدول.'
+    fr: 'Les époux conviennent de mettre fin au mariage, avec ou sans conditions, et demandent au tribunal l’autorisation de le faire constater. C’est le divorce que les adouls dressent le plus.'
+  day: {ar: 'يوم الإشهاد على الطلاق', fr: 'Le jour de l’acte de divorce'}
+  steps:
+    - title: {ar: الاتفاق, fr: L’accord}
+      answer: {ar: 'تتفقان على الطلاق، بشروط أو بدونها، ما دامت لا تضر بالأطفال.', fr: 'Vous convenez du divorce, avec ou sans conditions, tant qu’elles ne nuisent pas aux enfants.'}
+      body:
+        ar: 'يتفق الزوجان على مبدأ إنهاء العلاقة الزوجية دون شروط، أو بشروط لا تتنافى مع أحكام المدونة ولا تضر بمصالح الأطفال.'
+        fr: 'Les époux s’accordent sur le principe de mettre fin au mariage, sans conditions ou avec des conditions qui ne contredisent pas le Code et ne nuisent pas aux enfants.'
+      cites: [/ma/loi/70-03/art_114]
+    - title: {ar: الطلب, fr: La demande}
+      answer: {ar: 'يقدم أحدكما أو كلاكما الطلب إلى المحكمة مع الاتفاق.', fr: 'L’un de vous, ou les deux, dépose la demande au tribunal avec l’accord.'}
+      body:
+        ar: 'يقدم الزوجان أو أحدهما طلب التطليق إلى المحكمة مرفقا بالاتفاق، للإذن بتوثيقه.'
+        fr: 'Les deux époux, ou l’un d’eux, déposent la demande au tribunal avec l’accord, pour être autorisés à le faire constater.'
+      cites: [/ma/loi/70-03/art_114]
+    - title: {ar: محاولة الصلح, fr: La tentative de conciliation}
+      answer: {ar: 'تحاول المحكمة الصلح أولا، ثم تأذن بتوثيق الطلاق إن تعذر.', fr: 'Le tribunal tente d’abord la conciliation, puis autorise le divorce si elle échoue.'}
+      body:
+        ar: 'تحاول المحكمة الإصلاح بين الزوجين ما أمكن. فإذا تعذر، أذنت بالإشهاد على الطلاق وتوثيقه.'
+        fr: 'Le tribunal tente autant que possible de réconcilier les époux. Si c’est impossible, il autorise la constatation du divorce.'
+      cites: [/ma/loi/70-03/art_114]
+    - title: {ar: الإشهاد عند العدلين, fr: L’acte chez les adouls}
+      answer: {ar: 'يوثق عدلان الطلاق، وهو بائن: لا رجعة فيه، ويمكنكما الزواج من جديد بعقد جديد.', fr: 'Deux adouls dressent l’acte ; le divorce est irrévocable, mais vous pouvez vous remarier par un nouvel acte.'}
+      body:
+        ar: 'يشهد عدلان على الطلاق بعد إذن المحكمة وبعد الإدلاء بعقد الزواج. والطلاق بالاتفاق بائن: لا رجعة فيه أثناء العدة، ويجوز تجديد العقد.'
+        fr: 'Deux adouls constatent le divorce après l’autorisation du tribunal, sur présentation de l’acte de mariage. Le divorce par consentement est irrévocable : pas de reprise pendant la retraite, mais un nouveau mariage reste possible.'
+      cites: [/ma/loi/70-03/art_138, /ma/loi/70-03/art_123, /ma/loi/70-03/art_126]
+    - title: {ar: بعد الطلاق, fr: Après le divorce}
+      answer: {ar: 'تتسلم الزوجة وثيقة الطلاق خلال 15 يوما، وتبدأ العدة من يوم الطلاق.', fr: 'L’épouse reçoit l’acte de divorce dans les 15 jours ; la retraite court du jour du divorce.'}
+      body:
+        ar: 'وثيقة الطلاق حق للزوجة تحوزها خلال خمسة عشر يوما، وللزوج نظير منها. وتوجه المحكمة ملخصها إلى ضابط الحالة المدنية خلال خمسة عشر يوما. وتبدأ العدة من تاريخ الطلاق.'
+        fr: 'L’acte de divorce revient à l’épouse, qui doit l’avoir dans les quinze jours ; l’époux en reçoit une copie. Le tribunal en envoie l’extrait à l’officier d’état civil dans les quinze jours. La retraite (idda) court du jour du divorce.'
+      cites: [/ma/loi/70-03/art_140, /ma/loi/70-03/art_129, /ma/loi/70-03/art_141]
+      delay: {on_day: true, days: 15, from: {ar: من الإشهاد على الطلاق, fr: de la constatation du divorce}}
+  ends: {office: act, paper: {ar: 'وثيقة الطلاق: حق للزوجة، وللزوج نظير منها', fr: 'L’acte de divorce : il revient à l’épouse, l’époux en a une copie'}, cites: [/ma/loi/70-03/art_140]}
+  next: [pages/child, pages/money]
+
+- key: khul
+  title: {ar: الخلع, fr: Le divorce moyennant compensation (khol’)}
+  lead:
+    ar: 'تطلب الزوجة الطلاق مقابل شيء تبذله للزوج، باتفاقهما. إذا رفض الزوج، بقي لها طريق الشقاق.'
+    fr: 'L’épouse obtient le divorce contre une compensation versée à son mari, d’un commun accord. Si le mari refuse, la voie de la discorde (chiqaq) lui reste ouverte.'
+  steps:
+    - title: {ar: الاتفاق على الخلع, fr: L’accord sur le khol’}
+      answer: {ar: 'تطلب الزوجة الطلاق مقابل شيء تعطيه للزوج إذا وافق، بمسطرة الطلاق بالاتفاق.', fr: 'L’épouse demande le divorce contre une compensation, si le mari accepte, par la procédure du consentement mutuel.'}
+      body:
+        ar: 'للزوجين أن يتراضيا على الطلاق بالخلع، ويتبعان نفس مسطرة الطلاق بالاتفاق.'
+        fr: 'Les époux peuvent convenir d’un divorce par khol’ ; ils suivent la procédure du divorce par consentement mutuel.'
+      cites: [/ma/loi/70-03/art_115, /ma/loi/70-03/art_114]
+    - title: {ar: المقابل, fr: La compensation}
+      answer: {ar: 'يمكن أن يكون المقابل أي شيء مشروع، دون مغالاة، ولا يمس حق الأطفال.', fr: 'La compensation peut être tout bien licite, sans excès, et ne touche pas aux droits des enfants.'}
+      body:
+        ar: 'كل ما صح الالتزام به شرعا يصلح أن يكون مقابلا للخلع، دون تعسف ولا مغالاة. ولا يجوز الخلع بشيء تعلق به حق الأطفال أو بنفقتهم إذا كانت الأم معسرة.'
+        fr: 'Tout ce qui peut licitement faire l’objet d’un engagement peut servir de compensation, sans abus ni excès. Le khol’ ne peut porter sur un droit des enfants ni sur leur pension si la mère est sans ressources.'
+      cites: [/ma/loi/70-03/art_118, /ma/loi/70-03/art_119]
+    - title: {ar: إذا اختلفا في المقابل, fr: En cas de désaccord sur la compensation}
+      answer: {ar: 'إذا لم تتفقا على المقابل، تحدده المحكمة.', fr: 'Si vous ne vous entendez pas sur la compensation, le tribunal la fixe.'}
+      body:
+        ar: 'إذا اتفقا على مبدأ الخلع واختلفا في المقابل، تحاول المحكمة الصلح، فإن تعذر حكمت بنفاذ الخلع وقدرت مقابله مراعية الصداق ومدة الزواج وأسباب الطلب وحال الزوجة المادية.'
+        fr: 'S’ils s’accordent sur le principe mais pas sur la compensation, le tribunal tente la conciliation ; à défaut, il prononce le khol’ et fixe la compensation selon la dot, la durée du mariage, les motifs et la situation financière de l’épouse.'
+      cites: [/ma/loi/70-03/art_120]
+    - title: {ar: إذا رفض الزوج, fr: Si le mari refuse}
+      answer: {ar: 'إذا رفض الزوج الخلع، يمكن للزوجة طلب التطليق للشقاق.', fr: 'Si le mari refuse, l’épouse peut demander le divorce pour discorde.'}
+      body:
+        ar: 'إذا أصرت الزوجة على الخلع ولم يستجب لها الزوج، يمكنها اللجوء إلى مسطرة الشقاق.'
+        fr: 'Si l’épouse maintient sa demande et que le mari refuse, elle peut recourir à la procédure de discorde.'
+      cites: [/ma/loi/70-03/art_120]
+      next: journeys/shiqaq
+    - title: {ar: بعد الخلع, fr: Après le khol’}
+      answer: {ar: 'الخلع طلاق بائن، وتسترجع الزوجة ما أعطته إذا أثبتت أنها أكرهت عليه أو أضر بها الزوج.', fr: 'Le khol’ est irrévocable ; l’épouse récupère ce qu’elle a versé si elle prouve la contrainte ou le préjudice.'}
+      body:
+        ar: 'الخلع طلاق بائن. وللزوجة أن تسترجع ما خالعت به إذا أثبتت أن خلعها كان نتيجة إكراه أو إضرار من الزوج، ويبقى الطلاق نافذا.'
+        fr: 'Le khol’ est un divorce irrévocable. L’épouse peut récupérer ce qu’elle a versé si elle prouve qu’elle y a été contrainte ou que le mari lui a nui ; le divorce reste acquis.'
+      cites: [/ma/loi/70-03/art_123, /ma/loi/70-03/art_117]
+  ends: {office: act, paper: {ar: 'وثيقة الطلاق: حق للزوجة، وللزوج نظير منها', fr: 'L’acte de divorce : il revient à l’épouse, l’époux en a une copie'}, cites: [/ma/loi/70-03/art_140]}
+  next: [pages/child, pages/ways]
+
+- key: talaq
+  title: {ar: 'الطلاق بطلب من الزوج', fr: 'Le divorce à la demande du mari (talaq)'}
+  lead:
+    ar: 'لا يقع الطلاق إلا بإذن من المحكمة، بعد محاولة الصلح وإيداع مستحقات الزوجة والأطفال.'
+    fr: 'Le divorce n’a lieu qu’avec l’autorisation du tribunal, après une tentative de conciliation et le dépôt des droits de l’épouse et des enfants.'
+  day: {ar: 'يوم تحديد المبلغ', fr: 'Le jour où le montant est fixé'}
+  steps:
+    - title: {ar: طلب الإذن, fr: La demande d’autorisation}
+      answer: {ar: 'يطلب الزوج الإذن من المحكمة، وأولاها محكمة بيت الزوجية.', fr: 'Le mari demande l’autorisation au tribunal, d’abord celui du domicile conjugal.'}
+      body:
+        ar: 'يطلب من يريد الطلاق الإذن من المحكمة التي يوجد بها بيت الزوجية، أو موطن الزوجة، أو محل إقامتها، أو التي أبرم فيها العقد، حسب هذا الترتيب.'
+        fr: 'Celui qui veut divorcer demande l’autorisation au tribunal du domicile conjugal, ou du domicile de l’épouse, ou de sa résidence, ou du lieu de l’acte, dans cet ordre.'
+      cites: [/ma/loi/70-03/art_79]
+      papers: checklists/talaq-request
+    - title: {ar: الاستدعاء, fr: La convocation}
+      answer: {ar: 'تستدعي المحكمة الزوجين؛ وإذا توصل الزوج شخصيا ولم يحضر، اعتبر متراجعا.', fr: 'Le tribunal convoque les époux ; le mari touché en personne qui ne vient pas est réputé renoncer.'}
+      body:
+        ar: 'تستدعي المحكمة الزوجين. إذا توصل الزوج شخصيا ولم يحضر، اعتبر متراجعا عن طلبه. وإذا لم تحضر الزوجة بعد توصلها شخصيا، تنذرها المحكمة عن طريق النيابة العامة بأنه سيبت في الملف.'
+        fr: 'Le tribunal convoque les deux époux. Si le mari, touché en personne, ne vient pas, il est réputé renoncer. Si l’épouse ne vient pas, le tribunal l’avertit par le parquet que l’affaire sera tranchée.'
+      cites: [/ma/loi/70-03/art_81]
+    - title: {ar: الصلح, fr: La conciliation}
+      answer: {ar: 'تحاول المحكمة الصلح، ومرتين بينهما 30 يوما على الأقل إذا كان للزوجين أطفال.', fr: 'Le tribunal tente la conciliation, deux fois à 30 jours d’intervalle au moins s’il y a des enfants.'}
+      body:
+        ar: 'تجري المناقشات بغرفة المشورة، ويمكن للمحكمة انتداب حكمين أو مجلس العائلة. إذا كان للزوجين أطفال، تقوم المحكمة بمحاولتين للصلح بينهما ثلاثون يوما على الأقل.'
+        fr: 'Les débats ont lieu en chambre du conseil ; le tribunal peut désigner deux arbitres ou le conseil de famille. S’il y a des enfants, il fait deux tentatives de conciliation à au moins trente jours d’intervalle.'
+      cites: [/ma/loi/70-03/art_82]
+      delay: {days: 30, from: {ar: بين محاولتي الصلح إذا كان للزوجين أطفال, fr: 'entre les deux tentatives, s’il y a des enfants'}}
+    - title: {ar: إيداع المستحقات, fr: Le dépôt des droits}
+      answer: {ar: 'إذا تعذر الصلح، يودع الزوج مستحقات الزوجة والأطفال خلال 30 يوما، وإلا اعتبر متراجعا.', fr: 'Si la conciliation échoue, le mari dépose les droits de l’épouse et des enfants sous 30 jours, sinon il est réputé renoncer.'}
+      body:
+        ar: 'إذا تعذر الصلح، تحدد المحكمة مبلغا يودعه الزوج بكتابة الضبط داخل أجل أقصاه ثلاثون يوما: الصداق المؤخر، ونفقة العدة، والمتعة، وسكنى العدة، ومستحقات الأطفال. إذا لم يودعه في الأجل اعتبر متراجعا عن الطلاق.'
+        fr: 'Si la conciliation échoue, le tribunal fixe une somme que le mari dépose au greffe dans un délai maximum de trente jours : dot différée, pension de la retraite, don de consolation (mut’a), logement pendant la retraite, droits des enfants. Faute de dépôt, il est réputé renoncer.'
+      cites: [/ma/loi/70-03/art_83, /ma/loi/70-03/art_84, /ma/loi/70-03/art_85, /ma/loi/70-03/art_86]
+      delay: {on_day: true, days: 30, from: {ar: من تحديد المبلغ, fr: de la fixation de la somme}}
+    - title: {ar: الإذن والقرار, fr: L’autorisation et la décision}
+      answer: {ar: 'بعد الإيداع يوثق الطلاق، وتحدد المحكمة المستحقات والحضانة والزيارة بقرار يمكن الطعن فيه.', fr: 'Après le dépôt, le divorce est dressé ; le tribunal fixe droits, garde et visites par une décision susceptible de recours.'}
+      body:
+        ar: 'بمجرد الإيداع، تأذن المحكمة بتوثيق الطلاق عند العدلين، ثم تصدر قرارا معللا يحدد المستحقات والحضانة وتنظيم الزيارة. هذا القرار قابل للطعن.'
+        fr: 'Dès le dépôt, le tribunal autorise les adouls à dresser l’acte, puis rend une décision motivée fixant les droits, la garde et les visites. Cette décision est susceptible de recours.'
+      cites: [/ma/loi/70-03/art_87, /ma/loi/70-03/art_88]
+    - title: {ar: الرجعة, fr: La reprise}
+      answer: {ar: 'يمكن للزوج أن يراجع زوجته أثناء العدة، ولها إن رفضت أن تطلب التطليق للشقاق.', fr: 'Le mari peut reprendre son épouse pendant la retraite ; si elle refuse, elle peut demander le divorce pour discorde.'}
+      body:
+        ar: 'الطلاق الذي يوقعه الزوج رجعي في الغالب: له أن يراجع زوجته أثناء العدة بإشهاد عدلين، ويستدعيها القاضي لإخبارها؛ فإن رفضت، يمكنها اللجوء إلى مسطرة الشقاق.'
+        fr: 'Le divorce prononcé par le mari est en général révocable : il peut reprendre son épouse pendant la retraite devant deux adouls, et le juge la convoque pour l’en informer ; si elle refuse, elle peut recourir à la discorde.'
+      cites: [/ma/loi/70-03/art_124, /ma/loi/70-03/art_123]
+  ends: {office: court, paper: {ar: 'قرار المحكمة بالمستحقات والحضانة والزيارة، ووثيقة الطلاق', fr: 'La décision fixant droits, garde et visites, et l’acte de divorce'}, cites: [/ma/loi/70-03/art_88, /ma/loi/70-03/art_140]}
+  next: [pages/child, pages/money]
+
+- key: shiqaq
+  title: {ar: التطليق للشقاق, fr: Le divorce pour discorde (chiqaq)}
+  lead:
+    ar: 'يطلبه الزوج أو الزوجة إذا اشتد الخلاف بينهما. هو أكثر طرق التطليق أمام المحاكم.'
+    fr: 'L’un ou l’autre des époux le demande quand le différend devient grave. C’est la voie de divorce judiciaire la plus fréquente.'
+  day: {ar: 'يوم تقديم الطلب', fr: 'Le jour de la demande'}
+  steps:
+    - title: {ar: الطلب, fr: La demande}
+      answer: {ar: 'يطلبه الزوج أو الزوجة أو هما معا، وتحاول المحكمة الصلح أولا.', fr: 'Le mari, l’épouse ou les deux le demandent ; le tribunal tente d’abord la conciliation.'}
+      body:
+        ar: 'إذا طلب الزوجان أو أحدهما من المحكمة حل نزاع بينهما يخاف منه الشقاق، وجب عليها أن تقوم بكل المحاولات لإصلاح ذات البين.'
+        fr: 'Si les époux, ou l’un d’eux, demandent au tribunal de régler un différend qui fait craindre la discorde, il doit tout tenter pour les réconcilier.'
+      cites: [/ma/loi/70-03/art_94, /ma/loi/70-03/art_82]
+    - title: {ar: الحكمان, fr: Les deux arbitres}
+      answer: {ar: 'يحاول حكمان إنهاء الخلاف، ويكتبان تقريرا إذا تصالح الزوجان.', fr: 'Deux arbitres tentent de mettre fin au différend et dressent un rapport si les époux se réconcilient.'}
+      body:
+        ar: 'يبحث الحكمان في أسباب الخلاف ويبذلان جهدهما لإنهاء النزاع. إذا أصلحا بين الزوجين، حررا تقريرا من ثلاث نسخ.'
+        fr: 'Les deux arbitres recherchent les causes du différend et s’efforcent d’y mettre fin. S’ils réconcilient les époux, ils en dressent un rapport en trois exemplaires.'
+      cites: [/ma/loi/70-03/art_95, /ma/loi/70-03/art_96]
+    - title: {ar: الحكم, fr: Le jugement}
+      answer: {ar: 'إذا تعذر الصلح، تحكم المحكمة بالتطليق والمستحقات خلال ستة أشهر على الأكثر.', fr: 'Si la réconciliation échoue, le tribunal prononce le divorce et les droits, dans les six mois au plus.'}
+      body:
+        ar: 'إذا تعذر الإصلاح، تحكم المحكمة بالتطليق وبالمستحقات، مراعية مسؤولية كل من الزوجين عن سبب الفراق. ويفصل في الدعوى في أجل لا يتجاوز ستة أشهر من تقديم الطلب.'
+        fr: 'Si la réconciliation échoue, le tribunal prononce le divorce et fixe les droits, en tenant compte de la responsabilité de chacun. L’affaire est jugée dans les six mois de la demande au plus.'
+      cites: [/ma/loi/70-03/art_97]
+      delay: {on_day: true, months: 6, from: {ar: من تقديم الطلب, fr: de la demande}}
+    - title: {ar: بعد الحكم, fr: Après le jugement}
+      answer: {ar: 'لا يطعن في إنهاء الزواج، ويمكن الطعن في المستحقات.', fr: 'La fin du mariage ne peut être contestée ; les droits peuvent l’être.'}
+      body:
+        ar: 'الحكم بالتطليق غير قابل لأي طعن في جزئه القاضي بإنهاء العلاقة الزوجية، ويبقى الطعن ممكنا في الباقي. وكل طلاق قضت به المحكمة بائن، إلا التطليق للإيلاء ولعدم الإنفاق.'
+        fr: 'Le jugement n’est susceptible d’aucun recours dans sa partie qui met fin au mariage ; le reste peut être contesté. Tout divorce prononcé par le tribunal est irrévocable, sauf pour serment de continence et défaut d’entretien.'
+      cites: [/ma/loi/70-03/art_128, /ma/loi/70-03/art_122]
+  ends: {office: court, paper: {ar: 'حكم التطليق والمستحقات', fr: 'Le jugement de divorce et des droits'}, cites: [/ma/loi/70-03/art_97, /ma/loi/70-03/art_128]}
+  next: [pages/ways, pages/child]
+
+- key: birth
+  title: {ar: التصريح بالولادة, fr: Déclarer une naissance}
+  lead:
+    ar: 'يسجل المولود في السجل الوطني للحالة المدنية. أجل التصريح ثلاثون يوما من اليوم الموالي للولادة.'
+    fr: 'L’enfant est inscrit au registre national de l’état civil. Le délai de déclaration est de trente jours à partir du lendemain de la naissance.'
+  day: {ar: 'يوم الولادة', fr: 'Le jour de la naissance'}
+  steps:
+    - title: {ar: التصريح الأولي, fr: La déclaration initiale}
+      answer: {ar: 'يصرح المستشفى بالولادة التي تقع فيه، ويمكن للأسرة أيضا التصريح الأولي عبر بوابة الحالة المدنية.', fr: 'L’hôpital déclare la naissance qui y a lieu ; la famille peut aussi faire la déclaration initiale sur le portail de l’état civil.'}
+      body:
+        ar: 'تصرح المستشفيات والمصحات بالولادات التي تقع فيها، وتصرح السلطة المحلية بغيرها. ويمكن للأسرة القيام بالتصريح الأولي عبر بوابة الحالة المدنية.'
+        fr: 'Les établissements de santé déclarent les naissances qui y ont lieu ; l’autorité locale déclare les autres. La famille peut aussi faire la déclaration initiale sur le portail de l’état civil.'
+      cites: [/ma/loi/36-21/art_20, /ma/decret/2-22-04/art_14, /ma/decret/2-22-04/art_16]
+    - title: {ar: إتمام التصريح, fr: Compléter la déclaration}
+      answer: {ar: 'يتمم الأب أو الأم التصريح خلال 30 يوما من اليوم الموالي للولادة، وخلال سنة لمن يقيم بالخارج.', fr: 'Le père ou la mère complète la déclaration dans les 30 jours à partir du lendemain, dans l’année pour qui vit à l’étranger.'}
+      body:
+        ar: 'لا يصبح التصريح نهائيا إلا بعد أن يتممه أقرباء المولود حسب الترتيب: الأب أو الأم، ثم الجد أو الجدة، ثم العم أو العمة، ثم الخال أو الخالة… ويقوم الوكيل مقام موكله.'
+        fr: 'La déclaration ne devient définitive qu’une fois complétée par les proches, dans l’ordre : le père ou la mère, puis le grand-père ou la grand-mère, l’oncle ou la tante paternels, maternels… Un mandataire peut agir à leur place.'
+      cites: [/ma/decret/2-22-04/art_40, /ma/loi/36-21/art_20, /ma/loi/36-21/art_24]
+      delay: {on_day: true, rolls: true, days: 30, from: {ar: من اليوم الموالي للولادة (سنة للمقيمين بالخارج), fr: 'du lendemain de la naissance (un an pour les Marocains de l’étranger)'}}
+      papers: checklists/birth
+    - title: {ar: الاسم, fr: Le prénom et le nom}
+      answer: {ar: 'لا يكون الاسم الشخصي اسما عائليا، ولا اسم مدينة أو قبيلة، ولا مركبا من أكثر من اسمين.', fr: 'Le prénom ne peut être un nom de famille, un nom de ville ou de tribu, ni composé de plus de deux prénoms.'}
+      body:
+        ar: 'لا يكون الاسم الشخصي ماسا بالأخلاق أو النظام العام، ولا اسما عائليا، ولا مثيرا للسخرية، ولا اسم مدينة أو قرية أو قبيلة، ولا مركبا من أكثر من اسمين، ولا مسبوقا بكنية مثل «مولاي» أو «لالة». ويكون للتوائم رسم لكل واحد واسم خاص به.'
+        fr: 'Le prénom ne peut porter atteinte aux bonnes mœurs ou à l’ordre public, ni être un nom de famille, ridicule, un nom de ville, de village ou de tribu, ni composé de plus de deux prénoms, ni précédé d’un titre comme «Moulay» ou «Lalla». Chaque jumeau a son acte et son prénom.'
+      cites: [/ma/loi/36-21/art_34, /ma/loi/36-21/art_33, /ma/loi/36-21/art_27]
+    - title: {ar: بعد الأجل, fr: Après le délai}
+      answer: {ar: 'بعد الأجل، لا يسجل المولود إلا بإذن من السلطة المركزية، تبت فيه خلال 60 يوما.', fr: 'Passé le délai, l’inscription demande l’autorisation de l’autorité centrale, qui statue dans les 60 jours.'}
+      body:
+        ar: 'بعد انصرام الأجل، لا يسجل الرسم إلا بإذن من السلطة المركزية، تبت فيه خلال ستين يوما. وإذا رفضت، يمكن رفع دعوى أمام المحكمة.'
+        fr: 'Passé le délai, l’acte n’est inscrit qu’avec l’autorisation de l’autorité centrale, qui statue dans les soixante jours. En cas de refus, on peut saisir le tribunal.'
+      cites: [/ma/loi/36-21/art_21, /ma/decret/2-22-04/art_41]
+      delay: {days: 60, from: {ar: من تقديم طلب الإذن, fr: de la demande d’autorisation}}
+    - title: {ar: منحة الولادة, fr: La prime de naissance}
+      answer: {ar: 'للأسر المستفيدة من الدعم المباشر: 2000 درهم عن الولادة الأولى و1000 عن الثانية، بطلب خلال 6 أشهر.', fr: 'Pour les familles bénéficiaires de l’aide directe : 2 000 DH pour la première naissance, 1 000 pour la deuxième, demandés dans les 6 mois.'}
+      body:
+        ar: 'تمنح الأسر المستفيدة من الدعم الاجتماعي المباشر منحة عن الولادتين الأولى والثانية: 2000 درهم عن الأولى و1000 درهم عن الثانية. يودع الطلب داخل ستة أشهر من تاريخ الولادة.'
+        fr: 'Les familles éligibles à l’aide sociale directe reçoivent une prime pour les deux premières naissances : 2 000 DH pour la première, 1 000 DH pour la deuxième. La demande se fait dans les six mois de la naissance.'
+      cites: [/ma/loi/58-23/art_2, /ma/loi/58-23/art_3, /ma/decret/2-23-1067/art_12]
+      delay: {on_day: true, months: 6, from: {ar: من تاريخ الولادة, fr: de la naissance}}
+  ends: {office: record, paper: {ar: 'رسم الولادة في السجل الوطني للحالة المدنية', fr: 'L’acte de naissance au registre national de l’état civil'}, cites: [/ma/loi/36-21/art_20]}
+  next: [tools/support]
+
+- key: kafala
+  title: {ar: كفالة طفل مهمل, fr: Recueillir un enfant abandonné (kafala)}
+  lead:
+    ar: 'الكفالة التزام برعاية طفل مهمل وتربيته وحمايته والنفقة عليه كما يفعل الأب مع ولده، دون أن يترتب عنها نسب ولا إرث.'
+    fr: 'La kafala est l’engagement de prendre en charge, d’élever et de protéger un enfant abandonné comme un père le fait pour son enfant, sans filiation ni héritage.'
+  day: {ar: 'يوم صدور الأمر بالكفالة', fr: 'Le jour de l’ordonnance de kafala'}
+  steps:
+    - title: {ar: الطفل المهمل, fr: L’enfant déclaré abandonné}
+      answer: {ar: 'لا يكفل إلا طفل دون 18 سنة صدر حكم بأنه مهمل.', fr: 'Seul un enfant de moins de 18 ans déclaré abandonné par jugement peut être recueilli.'}
+      body:
+        ar: 'لا يكفل إلا طفل دون 18 سنة صدر حكم بأنه مهمل: مجهول الأبوين، أو يتيم لا وسائل له، أو أبواه عاجزان أو منحرفان. يطلب وكيل الملك هذا الحكم، وإذا كان الطفل مجهول الأبوين تعلق المحكمة حكما تمهيديا ثلاثة أشهر قبل أن تصرح بإهماله.'
+        fr: 'Seul un enfant de moins de 18 ans déclaré abandonné par jugement peut être recueilli : de parents inconnus, orphelin sans ressources, ou dont les parents sont incapables ou défaillants. Le procureur demande ce jugement ; si les parents sont inconnus, le tribunal affiche un jugement préparatoire pendant trois mois avant de déclarer l’abandon.'
+      cites: [/ma/loi/15-01/art_1, /ma/loi/15-01/art_4, /ma/loi/15-01/art_6]
+    - title: {ar: من يكفل, fr: Qui peut recueillir}
+      answer: {ar: 'يكفل زوجان مسلمان أو امرأة مسلمة، راشدان، لهما الوسائل، ولم يحكم عليهما في جريمة ماسة بالأخلاق أو ضد الأطفال.', fr: 'Peuvent recueillir un couple musulman ou une femme musulmane, majeurs, ayant les moyens, sans condamnation pour atteinte aux mœurs ou contre des enfants.'}
+      body:
+        ar: 'زوجان مسلمان أو امرأة مسلمة: راشدان، صالحان للكفالة أخلاقيا واجتماعيا، لهما وسائل كافية، لم يحكم عليهما في جريمة ماسة بالأخلاق أو ضد الأطفال، سليمان من كل مرض معد، ولا نزاع بينهما وبين الطفل أو والديه. وتسند الكفالة أيضا للمؤسسات العمومية والجمعيات المعترف لها بالمنفعة العامة.'
+        fr: 'Un couple musulman ou une femme musulmane : majeurs, aptes moralement et socialement, avec des moyens suffisants, jamais condamnés pour atteinte aux mœurs ou contre des enfants, sans maladie contagieuse, et sans litige avec l’enfant ou ses parents. Les établissements publics et associations d’utilité publique peuvent aussi recevoir la kafala.'
+      cites: [/ma/loi/15-01/art_9, /ma/loi/15-01/art_10, /ma/loi/15-01/art_11]
+      note:
+        ar: 'إذا تجاوز الطفل اثنتي عشرة سنة، لا تتم كفالته إلا بموافقته.'
+        fr: 'Un enfant de plus de douze ans ne peut être recueilli qu’avec son accord.'
+        cites: [/ma/loi/15-01/art_12]
+    - title: {ar: الطلب, fr: La demande}
+      answer: {ar: 'يقدم الطلب إلى القاضي المكلف بشؤون القاصرين لمكان إقامة الطفل.', fr: 'La demande va au juge des tutelles du lieu où vit l’enfant.'}
+      body:
+        ar: 'يقدم الطلب إلى القاضي المكلف بشؤون القاصرين لمحل إقامة الطفل، مرفقا بما يثبت الشروط وبنسخة من رسم ولادة الطفل.'
+        fr: 'La demande est adressée au juge des tutelles du lieu de résidence de l’enfant, avec les pièces prouvant les conditions et une copie de l’acte de naissance de l’enfant.'
+      cites: [/ma/loi/15-01/art_14, /ma/loi/15-01/art_15]
+      papers: checklists/kafala
+    - title: {ar: البحث, fr: L’enquête}
+      answer: {ar: 'تتحقق لجنة من الشروط ببحث يأمر به القاضي.', fr: 'Une commission vérifie les conditions par une enquête que le juge ordonne.'}
+      body:
+        ar: 'يجري القاضي بحثا بواسطة لجنة تضم ممثلي النيابة العامة والأوقاف والسلطة المحلية والسلطة المكلفة بالطفولة، للتأكد من الشروط.'
+        fr: 'Le juge fait mener une enquête par une commission (parquet, Habous, autorité locale, autorité chargée de l’enfance) pour vérifier les conditions.'
+      cites: [/ma/loi/15-01/art_16]
+    - title: {ar: الأمر بالكفالة, fr: L’ordonnance de kafala}
+      answer: {ar: 'يصدر القاضي أمرا بالكفالة، وينفذ خلال 15 يوما بتسليم الطفل.', fr: 'Le juge rend l’ordonnance de kafala, exécutée dans les 15 jours par la remise de l’enfant.'}
+      body:
+        ar: 'يصدر القاضي أمرا بإسناد الكفالة، ويعين الكافل مقدما عن المكفول. الأمر قابل للاستئناف ونافذ رغم الطعن، وينفذ خلال خمسة عشر يوما بمحضر تسليم.'
+        fr: 'Le juge rend une ordonnance de kafala et nomme le kafil tuteur de l’enfant. Elle est susceptible d’appel mais exécutoire malgré le recours, et exécutée dans les quinze jours par un procès-verbal de remise.'
+      cites: [/ma/loi/15-01/art_17, /ma/loi/15-01/art_18]
+      delay: {on_day: true, days: 15, from: {ar: من صدور الأمر, fr: de l’ordonnance}}
+    - title: {ar: الحالة المدنية, fr: L’état civil}
+      answer: {ar: 'تكتب الكفالة في طرة رسم ولادة الطفل، ولا تظهر في النسخ التي تسلم للكافل أو المكفول.', fr: 'La kafala est portée en marge de l’acte de naissance, et n’apparaît pas sur les copies remises au kafil ou à l’enfant.'}
+      body:
+        ar: 'يشار إلى الكفالة بطرة رسم ولادة الطفل، ولا يشار إليها في النسخ التي تسلم للكافل أو المكفول.'
+        fr: 'La kafala est mentionnée en marge de l’acte de naissance de l’enfant, mais pas sur les copies remises au kafil ou à l’enfant.'
+      cites: [/ma/loi/15-01/art_21, /ma/loi/36-21/art_26]
+    - title: {ar: ما يترتب عن الكفالة, fr: Ce qu’entraîne la kafala}
+      answer: {ar: 'يتكفل الكافل بالنفقة والحضانة إلى الرشد، ولا يسافر بالطفل للإقامة خارج المغرب إلا بإذن القاضي.', fr: 'Le kafil assure l’entretien et la garde jusqu’à la majorité ; il ne part vivre à l’étranger avec l’enfant qu’avec l’autorisation du juge.'}
+      body:
+        ar: 'يتحمل الكافل النفقة والحضانة والرعاية إلى بلوغ سن الرشد، وتستمر نفقة البنت إلى زواجها، ويستفيد من التعويضات المخولة للوالدين. وإذا أراد أن يهب للمكفول أو يوصي له، يسهر القاضي على ذلك. والسفر بالطفل للإقامة الدائمة خارج المغرب يحتاج إذن القاضي.'
+        fr: 'Le kafil assure entretien, garde et soins jusqu’à la majorité ; pour une fille, la pension dure jusqu’à son mariage ; il bénéficie des allocations des parents. Une donation ou un legs à l’enfant passe par le juge. Partir vivre à l’étranger avec l’enfant exige l’autorisation du juge.'
+      cites: [/ma/loi/15-01/art_22, /ma/loi/15-01/art_24, /ma/loi/15-01/art_23, /ma/loi/15-01/art_2]
+    - title: {ar: التتبع والإلغاء, fr: Le suivi et l’annulation}
+      answer: {ar: 'يتتبع القاضي الكفالة، وله أن يلغيها بعد الاستماع إلى الكافل.', fr: 'Le juge suit la kafala et peut y mettre fin après avoir entendu le kafil.'}
+      body:
+        ar: 'يتتبع القاضي تنفيذ الكفالة، وله أن يأمر بإلغائها. منذ يوليوز 2026 يستمع القاضي إلى الكافل قبل الإلغاء، إلا عند الضرورة.'
+        fr: 'Le juge suit l’exécution de la kafala et peut l’annuler. Depuis juillet 2026, il entend le kafil avant l’annulation, sauf nécessité.'
+      cites: [/ma/loi/15-01/art_19, /ma/loi/50-26/art_1, /ma/loi/15-01/art_25]
+  ends: {office: court, paper: {ar: 'أمر القاضي بإسناد الكفالة، ومحضر تسليم الطفل', fr: 'L’ordonnance de kafala et le procès-verbal de remise de l’enfant'}, cites: [/ma/loi/15-01/art_17, /ma/loi/15-01/art_18]}
+  next: [tools/support]
+
+- key: heirs
+  title: {ar: بعد الوفاة, fr: Après un décès}
+  lead:
+    ar: 'ما يقع بعد وفاة أحد أفراد الأسرة: التصريح بالوفاة، والعدة، ورسم الإراثة، وتصفية التركة وقسمتها.'
+    fr: 'Ce qui suit le décès d’un proche : la déclaration, la retraite de la veuve, l’acte d’hérédité, la liquidation et le partage.'
+  day: {ar: 'يوم الوفاة', fr: 'Le jour du décès'}
+  steps:
+    - title: {ar: التصريح بالوفاة, fr: Déclarer le décès}
+      answer: {ar: 'يتمم التصريح بالوفاة خلال 30 يوما من اليوم الموالي لها.', fr: 'La déclaration du décès se complète dans les 30 jours à partir du lendemain.'}
+      body:
+        ar: 'يتمم التصريح بالوفاة داخل ثلاثين يوما من اليوم الموالي لها، ويرسمها ضابط الحالة المدنية خلال ستين يوما.'
+        fr: 'La déclaration du décès est complétée dans les trente jours à partir du lendemain ; l’officier d’état civil l’inscrit dans les soixante jours.'
+      cites: [/ma/decret/2-22-04/art_40, /ma/loi/36-21/art_20]
+      delay: {on_day: true, rolls: true, days: 30, from: {ar: من اليوم الموالي للوفاة, fr: du lendemain du décès}}
+    - title: {ar: عدة الوفاة, fr: La retraite de la veuve}
+      answer: {ar: 'عدة الأرملة غير الحامل أربعة أشهر وعشرة أيام، وعدة الحامل إلى الوضع.', fr: 'La retraite de la veuve non enceinte dure 4 mois et 10 jours ; enceinte, jusqu’à l’accouchement.'}
+      body:
+        ar: 'عدة المتوفى عنها غير الحامل أربعة أشهر وعشرة أيام كاملة، وعدة الحامل تنتهي بوضع حملها. وتعتد في منزل الزوجية أو في منزل آخر يخصص لها.'
+        fr: 'La retraite de la veuve non enceinte dure quatre mois et dix jours révolus ; celle de la veuve enceinte prend fin à l’accouchement. Elle l’observe au domicile conjugal ou dans un autre logement qui lui est réservé.'
+      cites: [/ma/loi/70-03/art_132, /ma/loi/70-03/art_133, /ma/loi/70-03/art_131]
+      delay: {on_day: true, months: 4, days: 10, from: {ar: 'من يوم الوفاة', fr: 'du jour du décès'}}
+    - title: {ar: ما يخرج من التركة أولا, fr: Ce qui sort d’abord de la succession}
+      answer: {ar: 'تؤدى من التركة نفقات التجهيز والديون، ثم الوصية في حدود الثلث، ثم يقسم الباقي.', fr: 'On paie d’abord les frais funéraires et les dettes, puis le testament dans la limite du tiers ; le reste se partage.'}
+      body:
+        ar: 'تخرج من التركة على الترتيب: الحقوق المتعلقة بعين التركة، ثم نفقات تجهيز الميت، ثم ديونه، ثم الوصية في حدود الثلث، ثم المواريث. ولا وصية لوارث إلا إذا أجازها باقي الورثة.'
+        fr: 'Sortent de la succession, dans l’ordre : les droits attachés aux biens eux-mêmes, les frais funéraires, les dettes, le testament dans la limite du tiers, puis les parts d’héritage. Pas de legs à un héritier sans l’accord des autres héritiers.'
+      cites: [/ma/loi/70-03/art_322, /ma/loi/70-03/art_277, /ma/loi/70-03/art_280]
+    - title: {ar: الورثة وأنصبتهم, fr: Les héritiers et leurs parts}
+      answer: {ar: 'يحدد الكتاب السادس من يرث وكم؛ ولأولاد الابن أو البنت المتوفى قبل أصله وصية واجبة.', fr: 'Le livre VI dit qui hérite et combien ; les enfants d’un fils ou d’une fille prédécédé ont un legs obligatoire.'}
+      body:
+        ar: 'يحدد الكتاب السادس من المدونة الورثة وأنصبتهم. ويستحق أولاد الابن أو البنت الذي توفي قبل أصله وصية واجبة في حدود الثلث.'
+        fr: 'Le livre VI du Code fixe les héritiers et leurs parts. Les enfants d’un fils ou d’une fille décédé avant son parent ont droit à un legs obligatoire dans la limite du tiers.'
+      cites: [/ma/loi/70-03/art_334, /ma/loi/70-03/art_369, /ma/loi/70-03/art_370]
+      tool: tools/inheritance
+    - title: {ar: الإراثة والإحصاء, fr: L’acte d’hérédité et l’inventaire}
+      answer: {ar: 'يحرر العدلان رسم الإراثة، ولكل وارث نسخة تبين نصيبه.', fr: 'Les adouls dressent l’acte d’hérédité ; chaque héritier en reçoit une copie avec sa part.'}
+      body:
+        ar: 'لكل وارث الحق في أن يتسلم من العدلين نسخة من الإراثة ونسخة من إحصاء التركة تبين نصيبه. وإذا كان بين الورثة قاصر لا وصي له أو غائب، يأمر القاضي المكلف بشؤون القاصرين بالإجراءات اللازمة لحفظ التركة.'
+        fr: 'Chaque héritier peut obtenir des adouls une copie de l’acte d’hérédité et de l’inventaire, avec sa part. S’il y a parmi les héritiers un mineur sans tuteur ou un absent, le juge des tutelles ordonne les mesures de conservation.'
+      cites: [/ma/loi/70-03/art_394, /ma/loi/70-03/art_374, /ma/loi/70-03/art_373]
+    - title: {ar: التصفية والقسمة, fr: La liquidation et le partage}
+      answer: {ar: 'لا يتصرف أي وارث في التركة قبل تصفيتها، ثم يأخذ كل واحد نصيبه.', fr: 'Aucun héritier ne dispose des biens avant la liquidation ; ensuite chacun reçoit sa part.'}
+      body:
+        ar: 'لا يتصرف أي وارث في التركة قبل تصفيتها إلا لضرورة مستعجلة. وتعين المحكمة مصفيا يتفق عليه الورثة عند الاقتضاء. وبعد أداء الديون والوصية، يتسلم الورثة الباقي كل حسب نصيبه، ولكل منهم أن يطلب فرز حصته.'
+        fr: 'Aucun héritier ne dispose des biens avant la liquidation, sauf urgence. Le tribunal nomme au besoin un liquidateur choisi par les héritiers. Après les dettes et le testament, chacun reçoit sa part et peut demander qu’elle soit séparée.'
+      cites: [/ma/loi/70-03/art_376, /ma/loi/70-03/art_375, /ma/loi/70-03/art_393, /ma/loi/70-03/art_395]
+  ends: {office: act, paper: {ar: 'رسم الإراثة: لكل وارث نسخة تبين نصيبه', fr: 'L’acte d’hérédité : chaque héritier en a une copie avec sa part'}, cites: [/ma/loi/70-03/art_394]}
+  next: [tools/inheritance]

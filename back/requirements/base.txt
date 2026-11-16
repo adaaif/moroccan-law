@@ -1,0 +1,57 @@
+# Django 6.0 (requires Python 3.12+)
+Django==6.0.9
+djangorestframework==3.18.3
+djangorestframework-simplejwt==5.5.1
+
+# Database: PostgreSQL in production, SQLite allowed in dev and tests
+psycopg[binary]==3.3.1
+dj-database-url==2.3.0
+
+# Time zones: the zones' rules are read from this package, never from the machine's own files (config/settings/base.py)
+tzdata==2026.6
+
+# CORS (the Vite dev server runs on another port)
+django-cors-headers==4.7.0
+
+# Environment and config
+python-decouple==3.8
+python-dotenv==1.2.4
+
+# The pipeline: PDF pages (PDFium), page images, OCR through Claude, text comparison
+pypdfium2==5.14.0
+Pillow==13.0.0
+anthropic==1.15.0
+rapidfuzz==3.14.6
+
+# Word export of chosen articles
+python-docx==1.2.0
+
+# A topic's content as people read and review it (journeys, checklists, corrections read on a page)
+PyYAML==6.0.2
+
+# ma-text + ma-cite (Rust, ../crates): built by maturin; run pip from back/ (the path is relative to it)
+../crates/ma-py
+
+# The letters (a code, a reset link, the discussion's notices): Resend, through Anymail
+django-anymail[resend]==15.0
+
+# Sign-in with Google: Google's signed ID token checked against its public keys
+google-auth==2.62.1
+
+# The assistants' MCP server: the official Python SDK, served by uvicorn (law-mcp)
+mcp==2.3.0
+uvicorn[standard]==0.54.0
+
+# The shared cache: request limits, hourly figures, the answers kept by generation
+redis==5.2.1
+hiredis==3.5.0
+
+# Search by meaning: a local model run with ONNX Runtime, vectors in pgvector.
+numpy==2.5.4
+
+# The network operator of an address for the day of reading's operator ceiling (apps/corpus/services/operators.py):
+# DB-IP's free ASN database, MaxMind's format, read locally.
+maxminddb==2.6.2
+onnxruntime==1.31.0
+tokenizers==0.23.3
+pgvector==0.5.1

@@ -1,0 +1,16 @@
+[package]
+name = "ma-py"
+description = "Python bindings (module ma_law) for ma-text and ma-cite."
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[lib]
+name = "ma_law"
+crate-type = ["cdylib"]
+
+[dependencies]
+ma-text = { path = "../ma-text" }
+ma-cite = { path = "../ma-cite" }
+pyo3 = { version = "0.30", features = ["extension-module", "abi3-py312"] }

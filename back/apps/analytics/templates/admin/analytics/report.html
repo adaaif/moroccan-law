@@ -1,0 +1,195 @@
+{% extends "admin/base_site.html" %}{% load figures l10n %}
+{% comment %}The counts' report (apps/analytics/admin.py): every figure comes from apps/analytics/services/report.py, as
+built; this page only lays them out. The admin's own colour variables, so it follows its light and dark themes; left
+to right inside the Arabic admin; plain tables, and a bar for a share.{% endcomment %}
+
+{% block extrastyle %}{{ block.super }}
+<style>
+  .r-page { direction: ltr; text-align: left; display: flex; flex-direction: column; gap: 26px; max-width: 1100px; }
+  .r-page h1 { margin: 0; font-size: 22px; }
+  .r-page h2 { margin: 0 0 8px; padding: 0; font-size: 17px; font-weight: 700; color: var(--body-fg); background: none; text-transform: none; letter-spacing: 0; }
+  .r-page h3 { margin: 12px 0 6px; font-size: 13px; font-weight: 600; color: var(--body-fg); text-transform: none; }
+  .r-page p { margin: 0 0 6px; }
+  .r-note { font-size: 12px; color: var(--body-quiet-color); }
+  .r-tabs { display: flex; gap: 6px; }
+  .r-tabs a { border: 1px solid var(--hairline-color); border-radius: 999px; padding: 4px 12px; font-size: 13px; text-decoration: none; }
+  .r-tabs a[aria-current="page"] { border-color: var(--link-fg); font-weight: 700; }
+  .r-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); gap: 8px 24px; align-items: start; }
+  .r-wrap { overflow-x: auto; min-width: 0; }
+  .r-page table { border-collapse: collapse; font-size: 13px; width: auto; }
+  .r-page th { text-align: left; font-weight: 600; color: var(--body-quiet-color); background: none; padding: 3px 8px; white-space: nowrap; }
+  .r-page td { padding: 3px 8px; border-top: 1px solid var(--hairline-color); white-space: nowrap; vertical-align: middle; }
+  .r-page td.r-key { white-space: normal; word-break: break-all; min-width: 180px; max-width: 420px; }
+  .r-n { text-align: right; font-variant-numeric: tabular-nums; }
+  .r-q { color: var(--body-quiet-color); }
+  .r-bar { display: inline-block; width: 80px; height: 6px; background: var(--hairline-color); border-radius: 3px; vertical-align: middle; }
+  .r-bar i { display: block; height: 6px; border-radius: 3px; background: var(--link-fg); }
+  .r-good { color: #0f7b5f; font-weight: 600; } .r-needs { color: #a15c07; font-weight: 600; } .r-poor { color: #b42318; font-weight: 600; }
+</style>
+{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block breadcrumbs %}<div class="breadcrumbs"><a href="{% url 'admin:index' %}">Admin</a> › What readers do</div>{% endblock %}
+
+{% block content %}{% localize off %}{% with p=r.period %}
+<div class="r-page">
+  <header>
+    <h1>What readers do</h1>
+    <p>The {{ p.days }} days from {{ p.first|date:"Y-m-d" }} to {{ p.last|date:"Y-m-d" }} (Morocco's days, yesterday the last), beside the {{ p.days }} before, {{ p.before_first|date:"Y-m-d" }} to {{ p.before_last|date:"Y-m-d" }}.</p>
+    <p class="r-note">Counts of tasks, never of people: no address, account or visitor is kept. In a breakdown of readers (country, how they came, language, screen, how long since they last came) a group under 5 is said «{{ fewer }}». A change is in % of the period before; a share's change in points.</p>
+    <nav class="r-tabs" aria-label="Period">{% for d in choices %}<a href="?days={{ d }}"{% if d == p.days %} aria-current="page"{% endif %}>{{ d }} days</a>{% endfor %}</nav>
+  </header>
+
+  {% with c=r.come %}
+  <section>
+    <h2>Do people come, and do they come back?</h2>
+    <div class="r-cols">
+      <div class="r-wrap"><table>
+        <thead><tr><th></th><th class="r-n">these days</th><th class="r-n">before</th><th class="r-n">change</th></tr></thead>
+        <tbody>
+          <tr><td>Readers (a phone a day)</td><td class="r-n">{{ c.readers.now|num }}</td><td class="r-n r-q">{{ c.readers.before|num }}</td><td class="r-n">{{ c.readers.change|change }}</td></tr>
+          <tr><td>Visits</td><td class="r-n">{{ c.visits.now|num }}</td><td class="r-n r-q">{{ c.visits.before|num }}</td><td class="r-n">{{ c.visits.change|change }}</td></tr>
+          <tr><td>Returning visits</td><td class="r-n">{{ c.returning.now|pct }}</td><td class="r-n r-q">{{ c.returning.before|pct }}</td><td class="r-n">{{ c.returning.points|points }}</td></tr>
+          <tr><td>Visits from a phone that keeps nothing</td><td class="r-n">{{ c.nostore.now|num }}</td><td class="r-n r-q">{{ c.nostore.before|num }}</td><td class="r-n">{{ c.nostore.change|change }}</td></tr>
+          <tr><td>Assistants' calls</td><td class="r-n">{{ c.calls.now|num }}</td><td class="r-n r-q">{{ c.calls.before|num }}</td><td class="r-n">{{ c.calls.change|change }}</td></tr>
+        </tbody>
+      </table>
+      <p class="r-note">A reader is a phone on its first visit of a day, added up over the days: one phone on three days is three. A visit returns when its phone had opened the site before. Assistants (their calls to /mcp, every origin) are more than half of the use.</p></div>
+      <div class="r-wrap"><h3>How long since the phone last came</h3>{% include "admin/analytics/groups.html" with rows=c.back head="since" unit="visits" %}</div>
+    </div>
+    <h3>By day, each beside the same weekday before</h3>
+    <div class="r-wrap"><table>
+      <thead><tr><th>day</th><th class="r-n">readers</th><th class="r-n">before</th><th class="r-n">change</th><th class="r-n">visits</th><th class="r-n">before</th><th class="r-n">assistants' calls</th><th class="r-n">before</th></tr></thead>
+      <tbody>{% for d in c.days %}<tr><td>{{ d.weekday }} {{ d.day|date:"Y-m-d" }}</td><td class="r-n">{{ d.readers.now|num }}</td><td class="r-n r-q">{{ d.readers.before|num }}</td><td class="r-n">{{ d.readers.change|change }}</td><td class="r-n">{{ d.visits.now|num }}</td><td class="r-n r-q">{{ d.visits.before|num }}</td><td class="r-n">{{ d.calls.now|num }}</td><td class="r-n r-q">{{ d.calls.before|num }}</td></tr>{% endfor %}</tbody>
+    </table></div>
+  </section>
+  {% endwith %}
+
+  <section>
+    <h2>How do they arrive?</h2>
+    <div class="r-wrap">{% include "admin/analytics/groups.html" with rows=r.arrive.sources head="the first page came from" unit="visits" %}</div>
+    <p class="r-note">search: a search engine; assistant: a chat assistant's link; social: a social network or a messenger; site: another site; direct: none of these.</p>
+  </section>
+
+  {% with x=r.read %}
+  <section>
+    <h2>What do they read?</h2>
+    <p>Pages shown: <b>{{ x.pages.now|num }}</b> <span class="r-q">(before {{ x.pages.before|num }})</span> {{ x.pages.change|change }}</p>
+    <div class="r-cols">
+      <div class="r-wrap"><h3>The {{ x.paths|length }} pages most shown</h3><table>
+        <thead><tr><th>address</th><th class="r-n">shown</th><th class="r-n">before</th><th class="r-n">change</th></tr></thead>
+        <tbody>{% for g in x.paths %}<tr><td class="r-key"><a href="{{ site }}{{ g.key }}" target="_blank" rel="noopener">{{ g.key }}</a></td><td class="r-n">{{ g.now|num }}</td><td class="r-n r-q">{{ g.before|num }}</td><td class="r-n">{{ g.change|change }}</td></tr>
+        {% empty %}<tr><td colspan="4">No page counted.</td></tr>{% endfor %}</tbody>
+      </table></div>
+      <div class="r-wrap"><h3>By kind of page</h3>{% include "admin/analytics/groups.html" with rows=x.kinds head="kind" unit="shown" %}
+      <h3>By language</h3>{% include "admin/analytics/groups.html" with rows=x.langs head="language" unit="shown" %}
+      <h3>By screen</h3>{% include "admin/analytics/groups.html" with rows=x.screens head="screen" unit="shown" %}</div>
+    </div>
+  </section>
+  {% endwith %}
+
+  <section>
+    <h2>From where?</h2>
+    <div class="r-wrap">{% include "admin/analytics/groups.html" with rows=r.where.countries head="country" unit="visits" %}</div>
+    <p class="r-note">The country Cloudflare saw for each visit's first page; XX when it said none. The ten most seen.</p>
+  </section>
+
+  {% with s=r.search.site a=r.search.assistants %}
+  <section>
+    <h2>Does search answer?</h2>
+    <div class="r-wrap"><table>
+      <thead><tr><th></th><th class="r-n">the site</th><th class="r-n">before</th><th class="r-n">change</th><th class="r-n">assistants</th><th class="r-n">before</th><th class="r-n">change</th></tr></thead>
+      <tbody>
+        <tr><td>Searches</td><td class="r-n">{{ s.searches.now|num }}</td><td class="r-n r-q">{{ s.searches.before|num }}</td><td class="r-n">{{ s.searches.change|change }}</td><td class="r-n">{{ a.searches.now|num }}</td><td class="r-n r-q">{{ a.searches.before|num }}</td><td class="r-n">{{ a.searches.change|change }}</td></tr>
+        <tr><td>With no result</td><td class="r-n">{{ s.empty.now|pct }}</td><td class="r-n r-q">{{ s.empty.before|pct }}</td><td class="r-n">{{ s.empty.points|points }}</td><td class="r-n">{{ a.empty.now|pct }}</td><td class="r-n r-q">{{ a.empty.before|pct }}</td><td class="r-n">{{ a.empty.points|points }}</td></tr>
+        <tr><td>With an answer opened</td><td class="r-n">{{ s.opened.now|pct }}</td><td class="r-n r-q">{{ s.opened.before|pct }}</td><td class="r-n">{{ s.opened.points|points }}</td><td class="r-n">{{ a.opened.now|pct }}</td><td class="r-n r-q">{{ a.opened.before|pct }}</td><td class="r-n">{{ a.opened.points|points }}</td></tr>
+        <tr><td>Median place of the first answer opened</td><td class="r-n">{{ s.rank.now|num }}</td><td class="r-n r-q">{{ s.rank.before|num }}</td><td></td><td class="r-n">{{ a.rank.now|num }}</td><td class="r-n r-q">{{ a.rank.before|num }}</td><td></td></tr>
+        <tr><td>«Found it»</td><td class="r-n">{{ s.found.now|num }}</td><td class="r-n r-q">{{ s.found.before|num }}</td><td class="r-n">{{ s.found.change|change }}</td><td class="r-n">{{ a.found.now|num }}</td><td class="r-n r-q">{{ a.found.before|num }}</td><td class="r-n">{{ a.found.change|change }}</td></tr>
+        <tr><td>«Did not find it»</td><td class="r-n">{{ s.not_found.now|num }}</td><td class="r-n r-q">{{ s.not_found.before|num }}</td><td class="r-n">{{ s.not_found.change|change }}</td><td class="r-n">{{ a.not_found.now|num }}</td><td class="r-n r-q">{{ a.not_found.before|num }}</td><td class="r-n">{{ a.not_found.change|change }}</td></tr>
+      </tbody>
+    </table></div>
+    <p class="r-note">From the search log. Place 0 is the citation's card, 1 the first text.</p>
+  </section>
+  {% endwith %}
+
+  {% with t=r.tools %}
+  <section>
+    <h2>Are tools finished?</h2>
+    <p>Tools opened: <b>{{ t.all.opened.now|num }}</b> <span class="r-q">(before {{ t.all.opened.before|num }})</span> {{ t.all.opened.change|change }}; reaching a result: <b>{{ t.all.finished.now|pct }}</b> <span class="r-q">(before {{ t.all.finished.before|pct }})</span> {{ t.all.finished.points|points }}.
+      «Did this help?»: yes <b>{{ t.helped.yes.now|num }}</b> <span class="r-q">(before {{ t.helped.yes.before|num }})</span>, no <b>{{ t.helped.no.now|num }}</b> <span class="r-q">(before {{ t.helped.no.before|num }})</span>.</p>
+    <div class="r-wrap"><table>
+      <thead><tr><th>tool</th><th class="r-n">opened</th><th class="r-n">before</th><th class="r-n">answered</th><th class="r-n">result</th><th>result ÷ opened</th><th class="r-n">before</th></tr></thead>
+      <tbody>{% for g in t.tools %}<tr><td class="r-key"><a href="{{ site }}{{ g.path }}" target="_blank" rel="noopener">{{ g.path }}</a></td><td class="r-n">{{ g.opened.now|num }}</td><td class="r-n r-q">{{ g.opened.before|num }}</td><td class="r-n">{{ g.answered.now|num }}</td><td class="r-n">{{ g.result.now|num }}</td><td><span class="r-bar"><i style="width:{{ g.finished.now|width }}%"></i></span> {{ g.finished.now|pct }}</td><td class="r-n r-q">{{ g.finished.before|pct }}</td></tr>
+      {% empty %}<tr><td colspan="7">No tool opened.</td></tr>{% endfor %}</tbody>
+    </table></div>
+    <p class="r-note">An opening counts once at each step it reached. The {{ t.tools|length }} tools most opened.</p>
+  </section>
+  {% endwith %}
+
+  <section>
+    <h2>Is it fast on a phone?</h2>
+    {% for screen, rows in r.speed.items %}
+    <h3>{% if screen == 'phone' %}Phones{% else %}Desks{% endif %}</h3>
+    <div class="r-wrap"><table>
+      <thead><tr><th>kind of page</th><th class="r-n">measures</th><th class="r-n">LCP</th><th class="r-n">INP</th><th class="r-n">CLS</th><th class="r-n">TTFB</th></tr></thead>
+      <tbody>{% for g in rows %}<tr><td>{{ g.kind }}</td><td class="r-n">{{ g.measures.now|num }} <span class="r-q">({{ g.measures.before|num }})</span></td>
+        {% for m in g.speeds %}<td class="r-n">{% if m.now is None %}—{% else %}<span class="{% if m.band == 'good' %}r-good{% elif m.band == 'poor' %}r-poor{% else %}r-needs{% endif %}" title="{{ m.band }}">{{ m.now|num }}</span> {{ m.band }}{% endif %} <span class="r-q">({{ m.before|num }})</span></td>{% endfor %}</tr>
+      {% empty %}<tr><td colspan="6">No measure.</td></tr>{% endfor %}</tbody>
+    </table></div>
+    {% endfor %}
+    <p class="r-note">Each figure is the median of the days' 75th percentiles, a day counted as often as it had measures; the period before in brackets. LCP, INP and TTFB in ms. web.dev's thresholds, good up to and poor past: LCP {{ thresholds.lcp.0 }} and {{ thresholds.lcp.1 }} ms, INP {{ thresholds.inp.0 }} and {{ thresholds.inp.1 }} ms, CLS {{ thresholds.cls.0 }} and {{ thresholds.cls.1 }}, TTFB {{ thresholds.ttfb.0 }} and {{ thresholds.ttfb.1 }} ms.</p>
+  </section>
+
+  {% with b=r.breaks %}
+  <section>
+    <h2>What breaks?</h2>
+    <p>App errors: <b>{{ b.totals.app_error.now|num }}</b> <span class="r-q">(before {{ b.totals.app_error.before|num }})</span> {{ b.totals.app_error.change|change }};
+      failed API calls: <b>{{ b.totals.api_failed.now|num }}</b> <span class="r-q">(before {{ b.totals.api_failed.before|num }})</span> {{ b.totals.api_failed.change|change }};
+      missing pages: <b>{{ b.totals.page_missing.now|num }}</b> <span class="r-q">(before {{ b.totals.page_missing.before|num }})</span> {{ b.totals.page_missing.change|change }}.</p>
+    <div class="r-cols">
+      {% for name, rows in b.kinds.items %}<div class="r-wrap"><h3>{% if name == 'app_error' %}App errors{% elif name == 'api_failed' %}Failed API calls{% else %}Missing pages{% endif %}, by kind of page</h3><table>
+        <thead><tr><th></th><th class="r-n">count</th><th class="r-n">before</th><th class="r-n">change</th></tr></thead>
+        <tbody>{% for g in rows %}<tr><td>{{ g.key }}</td><td class="r-n">{{ g.now|num }}</td><td class="r-n r-q">{{ g.before|num }}</td><td class="r-n">{{ g.change|change }}</td></tr>
+        {% empty %}<tr><td colspan="4">None.</td></tr>{% endfor %}</tbody>
+      </table></div>{% endfor %}
+    </div>
+    <h3>The addresses that led nowhere most</h3>
+    <div class="r-wrap"><table>
+      <thead><tr><th>address</th><th class="r-n">count</th><th class="r-n">before</th><th class="r-n">change</th></tr></thead>
+      <tbody>{% for g in b.missing %}<tr><td class="r-key">{{ g.key }}</td><td class="r-n">{{ g.now|num }}</td><td class="r-n r-q">{{ g.before|num }}</td><td class="r-n">{{ g.change|change }}</td></tr>
+      {% empty %}<tr><td colspan="4">None.</td></tr>{% endfor %}</tbody>
+    </table></div>
+  </section>
+  {% endwith %}
+
+  {% with m=r.machines %}
+  <section>
+    <h2>Who else reads?</h2>
+    <p>Machines' share of all requests: <b>{{ m.share.now|pct }}</b> <span class="r-q">(before {{ m.share.before|pct }})</span> {{ m.share.points|points }}.</p>
+    <div class="r-wrap">{% include "admin/analytics/groups.html" with rows=m.families head="family" unit="requests" %}</div>
+    <p class="r-note">From the web server's log, counted each night by family of user agent.</p>
+  </section>
+  {% endwith %}
+
+  <section>
+    <h2>Before 16 Nov 2026</h2>
+    {% with o=r.past %}{% if o %}
+    <div class="r-wrap"><table>
+      <thead><tr><th>{{ o.first|date:"Y-m-d" }} to {{ o.last|date:"Y-m-d" }}</th><th class="r-n">count</th></tr></thead>
+      <tbody>
+        <tr><td>Pages people were shown</td><td class="r-n">{{ o.pages|num }}</td></tr>
+        <tr><td>Readers (a person a day in one country: one seen in two countries is counted twice)</td><td class="r-n">{{ o.readers|num }}</td></tr>
+        <tr><td>People's requests</td><td class="r-n">{{ o.people|num }}</td></tr>
+        <tr><td>Machines' requests</td><td class="r-n">{{ o.machines|num }}</td></tr>
+        <tr><td>Assistants' calls</td><td class="r-n">{{ o.calls|num }}</td></tr>
+        <tr><td>Tools opened</td><td class="r-n">{{ o.tools|num }}</td></tr>
+        <tr><td>Readers by country</td><td class="r-key">{% for g in o.countries %}{{ g.key }} {{ g.n|num }}{% if not forloop.last %} · {% endif %}{% empty %}—{% endfor %}</td></tr>
+        <tr><td>Calls by assistant</td><td class="r-key">{% for g in o.assistants %}{{ g.key|default:"—" }} {{ g.n|num }}{% if not forloop.last %} · {% endif %}{% empty %}—{% endfor %}</td></tr>
+      </tbody>
+    </table></div>
+    <p class="r-note">The request log's day totals, kept when it was removed (without its cities), and the topics' tool counter.</p>
+    {% else %}<p>Not brought in yet (manage.py import_past_counts).</p>{% endif %}{% endwith %}
+  </section>
+</div>
+{% endwith %}{% endlocalize %}{% endblock %}

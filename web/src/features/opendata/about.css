@@ -1,0 +1,98 @@
+/* «عن «قانون»» (31 Oct 2026). Loaded with the page, never in the first load. The head as the library's rooms have it;
+   then the page's one picture: a page of the Bulletin as printed, cut where an article stands and the article lit in the
+   source's violet, beside the same article on the site, in the law's type, with its stamp. Every colour a token. */
+
+.ab { display: flex; flex-direction: column; gap: 44px; }
+.ab a { text-decoration: none; }
+.ab a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.ab-head { display: flex; flex-direction: column; gap: 10px; padding-bottom: 24px; border-bottom: 4px double var(--color-ink); }
+/* The wordmark above the title (9 Nov 2026), in the source's violet. */
+.ab-mark { align-self: flex-start; height: 9rem; margin-bottom: 6px; color: var(--color-stamp); }
+.ab-head h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.ab-head .lead { margin: 0; max-width: 46ch; font-family: var(--font-law); font-size: clamp(1.5rem, 1.25rem + 0.9vw, 2rem); line-height: 1.55;
+  color: var(--color-ink); text-wrap: pretty; }
+.ab-head .lead:lang(fr) { line-height: 1.45; }
+.ab-demo { align-self: flex-start; margin: 4px 0 0; max-width: 72ch; padding: 8px 14px; border-radius: var(--radius-control);
+  background: var(--color-amended-wash); color: var(--color-amended); font-size: var(--text-meta); line-height: 1.6; }
+.ab-part h2, .ab-end h2 { margin: 0; font-size: var(--text-h2); line-height: 1.2; font-weight: 700; color: var(--color-ink); }
+.ab-part p { margin: 6px 0 0; max-width: 60ch; color: var(--color-ink-soft); text-wrap: pretty; }
+
+/* ── The page and its article ─────────────────────────────────────────────────────────────────────────────────────── */
+.ab-specimen { display: flex; flex-direction: column; gap: 18px; }
+.ab-pair { display: grid; gap: 20px; margin-inline: -16px; padding: 22px 16px; background: var(--color-sheet); }
+@media (min-width: 640px) { .ab-pair { margin-inline: 0; padding: 30px 32px; border-radius: var(--radius-card); } }
+@media (min-width: 900px) { .ab-pair { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 40px; align-items: start; } }
+.ab-tag { display: block; margin-bottom: 10px; font-size: var(--text-meta); font-weight: 700; color: var(--color-ink-soft); }
+.ab-printed { margin: 0; display: flex; flex-direction: column; }
+/* The paper: the page cut where the article stands, as it came from the press. */
+.ab-crop { position: relative; display: block; overflow: hidden; aspect-ratio: var(--ratio); border-radius: 4px; background: #fbfaf7;
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--color-ink) 18%, transparent), 0 10px 28px -12px color-mix(in srgb, var(--color-ink) 30%, transparent); }
+.ab-crop img { position: absolute; height: auto; max-width: none; mix-blend-mode: multiply; }
+/* The article lit, as the page viewer lights it. */
+.ab-lit { position: absolute; inset-inline: 0; bottom: 0; background: color-mix(in srgb, var(--color-stamp) 13%, transparent);
+  border-top: 2px solid color-mix(in srgb, var(--color-stamp) 60%, transparent); pointer-events: none; }
+.ab-crop:hover .ab-lit { background: color-mix(in srgb, var(--color-stamp) 18%, transparent); }
+.ab-printed figcaption { margin-top: 10px; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ab-ours { display: flex; flex-direction: column; min-width: 0; }
+.ab-ours article { display: flex; flex-direction: column; gap: 8px; padding-inline-start: 18px; border-inline-start: 3px solid var(--color-stamp-line); }
+.ab-ours .ab-text { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ab-ours h3 { margin: 0; font-family: var(--font-law); font-size: 1.875rem; line-height: 1.2; font-weight: 700; color: var(--color-stamp); }
+.ab-body { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.85; color: var(--color-ink); white-space: pre-line; }
+.ab-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 14px; }
+.ab-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--color-stamp); }
+@media (prefers-reduced-motion: no-preference) {
+  .ab-lit { animation: ab-light 900ms ease-out 500ms both; transform-origin: bottom; }
+}
+@keyframes ab-light { from { opacity: 0; } }
+
+/* ── The four steps, each with its figure ─────────────────────────────────────────────────────────────────────────── */
+.ab-steps { display: flex; flex-direction: column; gap: 18px; }
+.ab-steps ol { display: grid; gap: 0; margin: 0 -16px; padding: 4px 16px; list-style: none; background: var(--color-sheet); }
+@media (min-width: 640px) { .ab-steps ol { margin-inline: 0; padding: 8px 32px; border-radius: var(--radius-card); } }
+@media (min-width: 1024px) { .ab-steps ol { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; padding: 30px 32px; } }
+.ab-steps li { display: flex; flex-direction: column; gap: 6px; padding: 22px 0; border-top: 1px solid var(--color-rule-soft); }
+.ab-steps li:first-child { border-top: 0; }
+@media (min-width: 1024px) { .ab-steps li { padding: 0; border-top: 0; } }
+.ab-steps .n { font-family: var(--font-law); font-size: 2.25rem; line-height: 1; font-weight: 700; color: var(--color-stamp); }
+.ab-steps h3 { margin: 0; font-size: var(--text-lead); line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.ab-steps li > p { margin: 0; line-height: 1.75; color: var(--color-ink); text-wrap: pretty; }
+.ab-steps dl { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: auto 0 0; padding-top: 12px; }
+.ab-steps dl div { display: flex; flex-direction: column-reverse; }
+.ab-steps dt { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ab-steps dd { margin: 0; font-size: var(--text-h3); line-height: 1.3; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--color-ink); }
+.ab-on { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── Who wrote what ───────────────────────────────────────────────────────────────────────────────────────────────── */
+.ab-who { display: flex; flex-direction: column; gap: 18px; }
+.ab-who ul { display: flex; flex-direction: column; margin: 0 -16px; padding: 4px 16px; list-style: none; background: var(--color-sheet); }
+@media (min-width: 640px) { .ab-who ul { margin-inline: 0; padding: 6px 32px; border-radius: var(--radius-card); } }
+.ab-who li { display: grid; gap: 4px 28px; padding: 18px 0; border-top: 1px solid var(--color-rule-soft); }
+.ab-who li:first-child { border-top: 0; }
+@media (min-width: 900px) { .ab-who li { grid-template-columns: 12rem minmax(0, 1fr) 13rem; align-items: start; } }
+.ab-who h3 { margin: 0; font-size: var(--text-lead); line-height: 1.5; font-weight: 700; color: var(--color-ink); }
+.ab-who li p { margin: 0; max-width: 64ch; line-height: 1.8; color: var(--color-ink); text-wrap: pretty; }
+/* Its state: the Bulletin's authority in violet, what is unofficial or unreviewed in amber, the rest in ink. */
+.ab-state { justify-self: start; align-self: start; padding: 3px 12px; border-radius: 14px; font-size: var(--text-meta); font-weight: 600; line-height: 1.6;
+  color: var(--color-ink); background: var(--color-paper); }
+.ab-who li[data-w="law"] .ab-state { color: var(--color-stamp); background: var(--color-wash); }
+.ab-who li[data-w="translated"] .ab-state, .ab-who li[data-w="topics"] .ab-state, .ab-who li[data-w="blog"] .ab-state,
+.ab-who li[data-w="talk"] .ab-state { color: var(--color-amended); background: var(--color-amended-wash); }
+/* The two places a link lands on (#ab-who from the footer, #ab-tools from a tool): a little air above them. */
+#ab-who, #ab-tools { scroll-margin-top: 16px; }
+
+/* ── What is yours, and how to write ──────────────────────────────────────────────────────────────────────────────── */
+.ab-end { display: grid; gap: 36px; }
+@media (min-width: 1024px) { .ab-end { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: start; } }
+.ab-end section { display: flex; flex-direction: column; gap: 12px; }
+.ab-end section > p { margin: 0; max-width: 60ch; line-height: 1.8; color: var(--color-ink); }
+.ab-rows { display: flex; flex-direction: column; margin: 0; padding: 0 16px; list-style: none; background: var(--color-sheet); border-radius: var(--radius-card); }
+.ab-rows li + li { border-top: 1px solid var(--color-rule-soft); }
+.ab-end p.ab-cite { font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* How an article's source mark reads (from the library, 9 Nov 2026: LB1 of the every-code review). */
+.ab-marks { margin: 4px 0 0; display: flex; flex-direction: column; gap: 10px; max-width: 70ch; }
+.ab-marks div { display: flex; gap: 12px; }
+.ab-marks dt { flex: none; width: 1.25em; font-weight: 600; color: var(--color-ink-soft); }
+.ab-marks dt.p { color: var(--color-stamp); }
+.ab-marks dt.c { color: var(--color-amended); }
+.ab-marks dd { margin: 0; }

@@ -1,0 +1,36 @@
+# /ma/loi/17-99 as Adala's consolidation prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/loi/17-99
+document: sources/road/adala_17_99_ar.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [20], wrong: '.1 بأن يؤدي', right: '1. بأن يؤدي'}      # p. 17: the page prints «1.», the number before its dot
+  - {arts: [20], wrong: '.2 بأن يصرح', right: '2. بأن يصرح'}      # p. 17: the page prints «2.», the number before its dot
+  - {arts: [20], wrong: '.3 بأن يوجه', right: '3. بأن يوجه'}      # p. 17: the page prints «3.», the number before its dot
+  - {arts: [20], wrong: '.4 بأن يصبح', right: '4. بأن يصبح'}      # p. 17: the page prints «4.», the number before its dot
+  - {arts: [20], wrong: '.5 بأن يشعر', right: '5. بأن يشعر'}      # p. 17: the page prints «5.», the number before its dot
+  - {arts: [20], wrong: "أحكام البند\n5) أعلاه", right: 'أحكام البند 5) أعلاه'}      # p. 17: «البند 5)» is one phrase; the line break made «5)» open a list item
+  - {arts: [36], wrong: '.1 في حالة إغفال', right: '1. في حالة إغفال'}      # p. 25: the page prints «1.», the number before its dot
+  - {arts: [36], wrong: '.2 في حالة عدم', right: '2. في حالة عدم'}      # p. 25: the page prints «2.», the number before its dot
+  - {arts: [36], wrong: '.3 في حالة وقوع', right: '3. في حالة وقوع'}      # p. 25: the page prints «3.», the number before its dot
+  - {arts: [120], wrong: 'العربات ذات التي تحدد مبلغ القسط الذي تلزم بمقابله مقاولة التأمين  محرك أن يعرض الأمر على الهيئة وإعادة التأمين', right: 'العربات ذات محرك أن يعرض الأمر على الهيئة التي تحدد مبلغ القسط الذي تلزم بمقابله مقاولة التأمين وإعادة التأمين'}      # p. 50: the paragraph's last two lines put back in order («ذات محرك أن يعرض الأمر على الهيئة التي تحدد …»)
+  - {arts: [123], wrong: '.1 المسؤولية المدنية لمالك', right: '1. المسؤولية المدنية لمالك'}      # p. 52: the page prints «1.», the number before its dot
+  - {arts: [123], wrong: '.2 المسؤولية المدنية للناقل', right: '2. المسؤولية المدنية للناقل'}      # p. 52: the page prints «2.», the number before its dot
+  - {arts: [124], wrong: '.1 مكتتب العقد', right: '1. مكتتب العقد'}      # p. 52: the page prints «1.», the number before its dot
+  - {arts: [124], wrong: '.2 السائق؛', right: '2. السائق؛'}      # p. 52: the page prints «2.», the number before its dot
+  - {arts: [124], wrong: '.3 الممثلون القانونيون', right: '3. الممثلون القانونيون'}      # p. 52: the page prints «3.», the number before its dot
+  - {arts: [124], wrong: '.4 أجراء أو مأمورو المؤمن', right: '4. أجراء أو مأمورو المؤمن'}      # p. 52: the page prints «4.», the number before its dot
+  - {arts: [124], wrong: 'العقد وملاك العربة', right: 'العقد ومالك العربة'}      # p. 52: «ومالك», one owner, not «وملاك»
+  - {arts: [131], wrong: '.1 كل من خالف', right: '1. كل من خالف'}      # p. 54: the page prints «1.», the number before its dot
+  - {arts: [131], wrong: '.2 كل مؤمن له', right: '2. كل مؤمن له'}      # p. 54: the page prints «2.», the number before its dot
+  - {arts: [134], wrong: '.1 مالك العربة المشار', right: '1. مالك العربة المشار'}      # p. 56: the page prints «1.», the number before its dot
+  - {arts: [134], wrong: '.2 الممثلون القانونين', right: '2. الممثلون القانونين'}      # p. 56: the page prints «2.», the number before its dot
+  - {arts: [134], wrong: '.3 أجراء أو مأمورو مالك', right: '3. أجراء أو مأمورو مالك'}      # p. 56: the page prints «3.», the number before its dot
+  - {arts: [134], wrong: '.4 في حالة سرقة', right: '4. في حالة سرقة'}      # p. 56: the page prints «4.», the number before its dot
+  - {arts: [134], wrong: 'ومشارك وهم', right: 'ومشاركوهم'}      # p. 56: one word
+  - {arts: [148], wrong: '.1 أن يكونوا قد أبرموا اتفاقا', right: '1. أن يكونوا قد أبرموا اتفاقا'}      # p. 61: the page prints «1.», the number before its dot
+  - {arts: [148], wrong: '.2 أن يكونوا قد أبرموا صلحا', right: '2. أن يكونوا قد أبرموا صلحا'}      # p. 61: the page prints «2.», the number before its dot
+notes:
+  - {art: 20, page: 17, what: 'Every numbered item of Adala''s 17.99 is stored «.1 …» where the page prints «1. …» (Word''s list numbers read backwards); fixed above for the cited articles only, the rest of the code has the same defect and is better put right where Adala''s file is read.'}
+  - {art: 20, page: 17, what: 'Item 4 reads «بأن يصبح للمؤمن» on Adala''s page (likely a slip for «يصرح»); kept as Adala prints it. The 5-day limit of item 5 reads right on the page and on the site: «وعلى أبعد تقدير خلال الخمسة (5) أيام الموالية لوقوعه».'}
+  - {art: 134, page: 56, what: 'Adala prints «وبصفه عامة» and «الممثلون القانونين»; kept as printed.'}
+checked: [20, 36, 120, 123, 124, 126, 128, 130, 131, 132, 134, 148]

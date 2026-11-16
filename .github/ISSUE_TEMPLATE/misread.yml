@@ -1,0 +1,36 @@
+name: A word of the law read wrong
+description: The site shows a word, a number or a passage that the printed Bulletin does not print.
+labels: ["the law's words"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The printed page decides: never memory, never another site. One issue for one place in one text.
+  - type: input
+    id: address
+    attributes:
+      label: The article's address
+      placeholder: https://3adala.com/ma/loi/65-99/art_563
+    validations:
+      required: true
+  - type: textarea
+    id: shown
+    attributes:
+      label: What the site shows
+      description: The words concerned, copied from the site.
+    validations:
+      required: true
+  - type: textarea
+    id: printed
+    attributes:
+      label: What the page prints
+      description: The same words as you read them on the page's image.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: The Bulletin's issue and page
+      placeholder: BO 5167, page 3969 (the Arabic edition)
+    validations:
+      required: true

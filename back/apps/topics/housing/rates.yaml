@@ -1,0 +1,62 @@
+# The figures the housing tools read (H10–H13 of the housing plan): each set by a law or a decree, in force from a date,
+# with the article that sets it. `open: true`: the rent tool, shown, as chosen, before a professional's review (20 Oct
+# 2026), reads them.
+
+- key: revision
+  open: true
+  title: {ar: 'مراجعة الوجيبة الكرائية', fr: 'Révision du loyer'}
+  unit: {ar: بالمائة, fr: en %}
+  rows:
+    # Homes 8%, professional premises 10%, every three years at most; up to 50% set by the court on a rent of 400 DH a
+    # month or less (67.12). Commercial, industrial and craft premises: 10% under law 07.03, kept for them by 67.12 art 75.
+    - {from: '2014-02-28', values: {home: 8, professional: 10, commercial: 10, years: 3, small_rent: 400, small_cap: 50,
+                                    claim_months: 3, appeal_days: 30},
+       cites: [/ma/loi/67-12/art_32, /ma/loi/67-12/art_34, /ma/loi/67-12/art_35, /ma/loi/67-12/art_37,
+               /ma/loi/67-12/art_38, /ma/loi/67-12/art_75, /ma/loi/7-03/art_4, /ma/loi/7-03/art_5]}
+
+- key: deposit
+  open: true
+  title: {ar: 'الضمانة', fr: 'La garantie'}
+  rows:
+    - {from: '2014-02-28', values: {max_months: 2, return_months: 1}, cites: [/ma/loi/67-12/art_20]}
+
+- key: eviction
+  title: {ar: 'الإفراغ', fr: 'L’éviction'}
+  rows:
+    # 67.12: notice of two months at least, landlord owner for 18 months to take back to live in, one year of rent
+    # plus proven moving costs when the notice is validated, at least a year of rent for a false reason.
+    - {from: '2014-02-28', values: {notice_months: 2, owned_months: 18, indemnity_months: 12, false_reason_months: 12,
+                                    return_months: 2},
+       cites: [/ma/loi/67-12/art_46, /ma/loi/67-12/art_49, /ma/loi/67-12/art_50, /ma/loi/67-12/art_51,
+               /ma/loi/67-12/art_52]}
+
+- key: shop
+  title: {ar: 'كراء المحل التجاري', fr: 'Le bail commercial'}
+  rows:
+    # 49.16: notice of 15 days (arrears, ruin) or three months (the other grounds); renewal after two years.
+    - {from: '2017-02-11', values: {shop_short_days: 15, shop_long_months: 3, shop_years: 2, shop_lapse_months: 6,
+                                    shop_rebuild_years_rent: 3},
+       cites: [/ma/loi/49-16/art_4, /ma/loi/49-16/art_9, /ma/loi/49-16/art_26]}
+
+- key: offplan
+  title: {ar: 'البيع في طور الإنجاز', fr: 'Vente en l’état futur d’achèvement'}
+  unit: {ar: بالمائة من الثمن, fr: en % du prix}
+  rows:
+    - {from: '2016-02-18', values: {reservation: 5, preliminary: 5, preliminary_alone: 10, start: 10, works: 60, keys: 20,
+                                    penalty_month: 1, penalty_year: 10, rescission_works: 15, rescission: 20, extension_months: 6,
+                                    register_above: 50, withdraw_months: 1, refund_days: 7},
+       cites: [/ma/code/doc/art_618-3-quater, /ma/code/doc/art_618-6, /ma/code/doc/art_618-7,
+               /ma/code/doc/art_618-10, /ma/code/doc/art_618-12, /ma/code/doc/art_618-14]}
+
+- key: aid
+  title: {ar: 'الدعم المباشر للسكن', fr: 'Aide directe au logement'}
+  unit: {ar: بالدرهم, fr: en dirhams}
+  rows:
+    - {from: '2024-01-01', values: {low_price: 300000, low_aid: 100000, high_price: 700000, high_aid: 70000,
+                                    years: 5, deed_days: 30},
+       cites: [/ma/decret/2-23-350/art_2, /ma/decret/2-23-350/art_6, /ma/loi/50-22/art_8, /ma/loi/55-23/art_10]}
+    - {from: '2026-10-01', values: {low_price: 300000, low_aid: 100000, high_price: 700000, high_aid: 70000,
+                                    years: 5, deed_days: 60, release_days: 30},
+       note: {ar: 'ستون يوما لإبرام العقد النهائي منذ المرسوم 2.26.578', fr: 'Soixante jours pour l’acte définitif depuis le décret 2.26.578'},
+       cites: [/ma/decret/2-23-350/art_2, /ma/decret/2-23-350/art_6, /ma/decret/2-23-350/art_6-bis, /ma/loi/50-22/art_8,
+               /ma/loi/55-23/art_10, /ma/loi/50-25/art_8]}

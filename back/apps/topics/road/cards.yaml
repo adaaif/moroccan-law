@@ -1,0 +1,21 @@
+# The road's practice cards (R10 of the road plan; Q3: written by a person, approved in batches). No model writes a
+# card (row 8 of the decisions): each is written by a person from one article, and a batch reaches readers once a
+# person has checked it (`manage.py approve_topic road cards/<batch> --by …`). Never the official exam nor a copy of
+# it; nothing taken from a private bank, an app or NARSA's Perminou.
+#
+# A batch, and a card's three kinds: «who goes first?» on a scene's still (`scene`, `at` in ms), «what does this sign
+# require?» (`sign`), «how much, how many points, how long?» from the code's figures. The answer is the article.
+#   - key: batch-1
+#     title: {ar: …, fr: …}
+#     cards:
+#       - key: right-priority
+#         kind: scene                       # scene | sign | figure
+#         scene: priority                   # web/src/topics/road/scenes/data.ts
+#         at: 1900
+#         question: {ar: …, fr: …}
+#         choices: [{ar: …, fr: …}, …]       # the first is right; the page shuffles them
+#         quote: {ar: …, fr: …}             # the article's own words that answer it
+#         cites: [/ma/decret/2-10-420/art_36]
+- key: batch-1
+  title: {ar: 'الدفعة الأولى', fr: 'Premier lot'}
+  cards: []

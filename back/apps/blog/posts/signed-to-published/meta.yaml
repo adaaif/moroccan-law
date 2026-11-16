@@ -1,0 +1,15 @@
+# «من التوقيع إلى الجريدة: كم ينتظر القانون؟»: the blog's eighth post (B3 of the blog-first-post review, built 31 Oct 2026
+# in the order chosen). Counted from the live database on 31 Oct 2026: each text's signature as its title prints it,
+# against the day of the issue that first published it.
+slug: signed-to-published
+number: 8
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+title:
+  ar: "من التوقيع إلى الجريدة: كم ينتظر القانون؟"
+  fr: "De la signature au Bulletin : combien de temps attend une loi ?"
+lead:
+  ar: "نصف القوانين يُنشر في 18 يوما أو أقل بعد ظهير تنفيذه. لكن القوانين التي توافق على اتفاقية دولية تنتظر أكثر، وانتظر أحدها ثماني سنوات ونصفا. قسنا المدة بين التوقيع والنشر لكل نص منذ 1956."
+  fr: "La moitié des lois paraissent dans les 18 jours qui suivent leur dahir de promulgation. Celles qui approuvent un accord international attendent davantage, l’une huit ans et demi. Nous avons mesuré le délai entre signature et publication de chaque texte depuis 1956."

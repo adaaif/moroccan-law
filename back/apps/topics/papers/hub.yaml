@@ -1,0 +1,402 @@
+# The papers topic's page (the papers review, 27 Oct 2026: what a reader needs to understand their papers under
+# Moroccan law). One question first, since the office, the limits and the papers depend on where the reader does them:
+# in Morocco (the commune, the DGSN), at a consulate (law 36.21 arts 4 and 7, decree 2.20.521 art. 8), or as a foreigner
+# (law 02.03). Then the doors in the stages a paper lives through, each led by the national identity card drawn small
+# (`marks: card`) with the one figure the law sets for it where the photo sits, or its pictogram. Written from the texts
+# as the site holds them on 27 Oct 2026: 04.20 and decree 2.20.521 (the card), 36.21 and decree 2.22.04 (civil status),
+# decree 2.08.310 as changed by 2.26.551 (the passport), dahir 1.58.250 (nationality), law 55.19 and its decrees,
+# decrees 2.22.047 and 2.22.048 (legalisation, certified copies), the criminal procedure 22.01 (the criminal record),
+# 72.18, 09.08, 02.03 and decree 2.09.607, the tax code's stamp duties (arts 250, 252). Nothing here reaches a reader
+# before a person checks it.
+doors_title: {ar: شنو خاصك فالوراق؟, fr: 'De quel papier avez-vous besoin ?'}
+marks: card
+stages:
+  - {key: card, title: {ar: البطاقة الوطنية, fr: La carte nationale}, doors: [card-first, card-valid, card-renew, card-lost, card-child, card-abroad]}
+  - {key: civil, title: {ar: الحالة المدنية, fr: L’état civil}, doors: [birth, error, name, naming, copies, abroad-marriage, death]}
+  - {key: travel, title: {ar: 'الباسبور والجنسية', fr: 'Le passeport et la nationalité'}, doors: [passport, nationality-mother, nationality-spouse, nationality-proof]}
+  - {key: counter, title: {ar: 'فالإدارة: حقوقك فالشباك', fr: 'À l’administration : vos droits au guichet'}, doors: [counter-copies, counter-wait, counter-refused, legalize]}
+  - {key: record, title: {ar: السجل العدلي, fr: Le casier judiciaire}, doors: [record, rehab]}
+  - {key: data, title: {ar: 'المعطيات ديالك والأجانب', fr: 'Vos données, et les étrangers'}, doors: [data, register, foreigner-stay]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [licence, marry, kafala], links: true}
+
+# The band: the moment a paper is suddenly missing. Its acts are the lost-card journey's first answers. No number is shown:
+# a lost card is declared at a police station or a gendarmerie, not by a call.
+urgent:
+  title: {ar: ضاعت ليك البطاقة ولا الباسبور؟, fr: 'Carte ou passeport perdu ?'}
+  lead: {ar: 'شنو كيقول القانون من النهار الأول', fr: 'Ce que dit la loi dès le premier jour'}
+  to: journeys/card-lost
+  tone: deep
+  acts: {journey: card-lost, steps: [0, 1, 2]}
+
+learn: [pages/counter, journeys/card-first, pages/copies, pages/nationality, pages/beliefs]
+
+# What people believe, and what the law says, each card leading to the page that answers it.
+beliefs:
+  - claim: {ar: عقد الازدياد كيتسالا من بعد 3 شهور, fr: 'L’extrait de naissance expire après 3 mois'}
+    truth: {ar: 'الـ3 شهور مكتوبة غير لملف أول بطاقة وطنية؛ والبطاقة نفسها كتعفيك من عقد الازدياد.', fr: 'Les 3 mois ne valent que pour le dossier de la première carte ; la carte elle-même dispense de l’extrait.'}
+    to: pages/beliefs
+  - claim: {ar: خاصني نصحح الإمضاء ونجيب نسخة مطابقة للأصل لكل ملف, fr: 'Il faut légaliser et certifier conformes toutes les pièces'}
+    truth: {ar: 'القانون 55.19 كيمنع الإدارة تطلبهم منك فملف القرار الإداري؛ النسخة المطابقة غير مرة وحدة إلا شكات، وبتعليل.', fr: 'La loi 55.19 l’interdit pour un dossier de décision administrative ; la copie conforme une seule fois en cas de doute, motivée.'}
+    to: pages/beliefs
+  - claim: {ar: البطاقة ما كتتبدلش حتى تسالي, fr: 'On ne change la carte qu’à son expiration'}
+    truth: {ar: 'بدلتي السكنى؟ خاصك تجددها، وإلا غرامة من 200 حتى 300 درهم.', fr: 'Un changement d’adresse oblige à la renouveler, sinon 200 à 300 DH d’amende.'}
+    to: pages/beliefs
+  - claim: {ar: الباسبور القديم ما بقاش صالح مع الجديد, fr: 'L’ancien passeport ne vaut plus avec le nouveau'}
+    truth: {ar: 'الباسبور اللي عندك كيبقى صالح حتى تسالي مدتو.', fr: 'Votre passeport reste valable jusqu’à son expiration.'}
+    to: pages/beliefs
+  - claim: {ar: ولد المغربية من أب أجنبي ماشي مغربي, fr: 'L’enfant d’une Marocaine et d’un étranger n’est pas marocain'}
+    truth: {ar: 'مغربي: كل من تزاد من أب مغربي ولا أم مغربية.', fr: 'Il l’est : est marocain l’enfant né d’un père ou d’une mère marocains.'}
+    to: pages/beliefs
+  - claim: {ar: الإدارة تقدر تبقى ساكتة على الطلب ديالي, fr: 'L’administration peut ne jamais répondre'}
+    truth: {ar: '60 يوم على الأكثر، والرفض بالتعليل، وعندك 30 يوم للطعن.', fr: '60 jours au plus, un refus motivé, et 30 jours pour le recours.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in: what people meet most first (the card, the counter, copies), then civil status
+# and nationality, then the criminal record, the data, the foreigners and the changes.
+waves:
+  1: [journeys/card-first, journeys/card-renew, journeys/card-lost, pages/counter, pages/copies, pages/beliefs, tools/card, tools/counter, checklists/card-first, checklists/card-renew]
+  2: [journeys/correct, journeys/name, journeys/appeal, pages/passport, pages/nationality, pages/card, pages/legalize, tools/clock, tools/names, checklists/card-abroad, checklists/card-marital]
+  3: [journeys/record, journeys/spouse, journeys/abroad-marriage, pages/data, pages/foreigners, tools/rehab, reform/passport-2026, reform/naturalisation-2023, reform/high-commission-2026]
+
+# The one question: where the reader does their papers. Each answer names its law and its office, three figures with
+# their articles, and leads with its own door; it is kept on the phone.
+profile:
+  question: {ar: فين كتقضي الوراق ديالك؟, fr: 'Où faites-vous vos papiers ?'}
+  options:
+    - key: morocco
+      first: card-first
+      main: true
+      label: {ar: فالمغرب, fr: Au Maroc}
+      law: {ar: 'البطاقة الوطنية عند الأمن الوطني (القانون 04.20)، والحالة المدنية فالجماعة ديالك (القانون 36.21)، وكل إدارة ملزمة بالقانون 55.19 فاش كتطلب منك الوراق.', fr: 'La carte nationale auprès de la Sûreté nationale (loi 04.20), l’état civil à votre commune (loi 36.21), et chaque administration tenue par la loi 55.19 quand elle vous demande des pièces.'}
+      facts:
+        - {value: {ar: '16 عام', fr: '16 ans'}, label: {ar: 'البطاقة الوطنية واجبة من هاد السن', fr: 'la carte nationale est obligatoire à cet âge'}, cites: [/ma/loi/4-20/art_2]}
+        - {value: {ar: '30 يوم', fr: '30 jours'}, label: {ar: 'باش تصرح بالولادة ولا الوفاة، من النهار اللي من بعد', fr: 'pour déclarer une naissance ou un décès, dès le lendemain'}, cites: [/ma/decret/2-22-04/art_40]}
+        - {value: {ar: '60 يوم', fr: '60 jours'}, label: {ar: 'أقصى أجل باش تجاوبك الإدارة على طلب', fr: 'au plus pour que l’administration réponde à une demande'}, cites: [/ma/loi/55-19/art_16]}
+    - key: abroad
+      first: card-abroad
+      main: true
+      label: {ar: فالقنصلية (ساكن فالخارج), fr: 'Au consulat (à l’étranger)'}
+      law: {ar: 'القنصلية هي مكتب الحالة المدنية ديالك والقنصل ضابطها (القانون 36.21، المادتان 4 و7)، والبطاقة الوطنية كتطلبها فالقنصلية ولا فالمغرب.', fr: 'Le consulat est votre bureau d’état civil et le consul son officier (loi 36.21, arts 4 et 7) ; la carte se demande au consulat ou au Maroc.'}
+      facts:
+        - {value: {ar: '1 عام', fr: '1 an'}, label: {ar: 'باش تصرح بالولادة ولا الوفاة فالخارج', fr: 'pour déclarer une naissance ou un décès à l’étranger'}, cites: [/ma/decret/2-22-04/art_40]}
+        - {value: {ar: 'التسجيل', fr: 'L’inscription'}, label: {ar: 'شهادة التسجيل القنصلي كتعوض شهادة السكنى فملف البطاقة', fr: 'le certificat d’immatriculation consulaire remplace le certificat de résidence'}, cites: [/ma/decret/2-20-521/art_8]}
+        - {value: {ar: '0 درهم', fr: '0 DH'}, label: {ar: 'تمبر الباسبور لولاد الجالية اللي تحت 18 عام', fr: 'de timbre pour le passeport des enfants de la diaspora de moins de 18 ans'}, cites: [/ma/code/cgi/art_250]}
+    - key: foreigner
+      first: foreigner-stay
+      main: true
+      label: {ar: أنا أجنبي فالمغرب, fr: 'Étranger au Maroc'}
+      law: {ar: 'إقامتك بالقانون 02.03: بطاقة التسجيل من عام حتى 10 سنين، وبطاقة الإقامة؛ والولادة والوفاة اللي وقعو فالمغرب تقدر تسجلهم فالحالة المدنية (القانون 36.21، المادة 1).', fr: 'Votre séjour relève de la loi 02.03 : la carte d’immatriculation, d’un à dix ans, et la carte de résidence ; une naissance ou un décès au Maroc peut être inscrit à l’état civil (loi 36.21, art. 1).'}
+      facts:
+        - {value: {ar: '90 يوم', fr: '90 jours'}, label: {ar: 'باش تطلب سند الإقامة إلا ما كانتش عليك فيزا، ولا قبل ما تسالي الفيزا', fr: 'pour demander un titre de séjour sans visa, ou avant la fin du visa'}, cites: [/ma/decret/2-09-607/art_1]}
+        - {value: {ar: '4 سنين', fr: '4 ans'}, label: {ar: 'ديال الإقامة باش تطلب بطاقة الإقامة؛ وزوج المغربية ولا زوجة المغربي كياخدها', fr: 'de séjour pour demander la carte de résidence ; le conjoint d’un Marocain la reçoit'}, cites: [/ma/loi/2-03/art_16, /ma/loi/2-03/art_17]}
+        - {value: {ar: '100 درهم', fr: '100 DH'}, label: {ar: 'تمبر وثائق الإقامة على كل عام من مدتها', fr: 'de timbre par année de validité du titre de séjour'}, cites: [/ma/code/cgi/art_252]}
+      to: pages/foreigners
+
+events:
+  # The card.
+  - key: card-first
+    mark: {value: '16', unit: {ar: عام, fr: ans}}
+    words: [لاكارط ناسيونال, لاكارط, البطاقة الوطنية, بطاقة التعريف, الكارط ناسيونال, نخرج لاكارط, ندير لاكارط, ندير البطاقة الوطنية, carte nationale, cnie, cin, carte d'identité, la carte nationale, lakarte, la carte nationale, البطاقة الوطنية أول مرة, première carte nationale, شحال من تصويرة, تصاور البطاقة, صور البطاقة, عقد الازدياد للبطاقة, عقد الازدياد ديال البطاقة, وراق البطاقة]
+    means:
+      نسخة موجزة من رسم الولادة. ويجب ألا تتجاوز مدة صلاحية الوثيقتين الأخيرتين ثلاثة أشهر: [عقد الازدياد للبطاقة, عقد الازدياد ديال البطاقة, وراق البطاقة]
+      يجب على كل مواطن مغربي يبلغ 16 سنة شمسية كاملة أن يتوفر على البطاقة الوطنية: [لاكارط ناسيونال, لاكارط, نخرج لاكارط, ندير لاكارط, ندير البطاقة الوطنية, carte nationale, cnie, cin, carte d'identité, la carte nationale, lakarte, البطاقة الوطنية أول مرة, première carte nationale]
+      أربع صور فوتوغرافية للتعريف: [شحال من تصويرة, تصاور البطاقة, صور البطاقة]
+    title: {ar: بغيت ندير البطاقة الوطنية أول مرة, fr: 'Ma première carte nationale'}
+    lead: {ar: 'واجبة من 16 عام: الحالة المدنية، شهادة السكنى، 4 تصاور، والتمبر', fr: 'Obligatoire à 16 ans : l’état civil, la résidence, 4 photos, le timbre'}
+    to: journeys/card-first
+  - key: card-valid
+    mark: {value: '10', unit: {ar: سنين, fr: ans}}
+    words: [فوقاش كتسالي البطاقة, صلاحية البطاقة, البطاقة سالات, سالات لاكارط, durée de validité carte, validité cnie, expiration carte nationale, شحال كتبقى صالحة]
+    means:
+      مدة صلاحيتها: [فوقاش كتسالي البطاقة, صلاحية البطاقة, durée de validité carte, validité cnie, expiration carte nationale, شحال كتبقى صالحة]
+      انتهاء صلاحية البطاقة الوطنية للتعريف الإلكترونية: [البطاقة سالات, سالات لاكارط]
+    title: {ar: 'فوقاش كتسالي البطاقة ديالي؟', fr: 'Quand ma carte expire-t-elle ?'}
+    lead: {ar: '10 سنين، و7 على الأكثر قبل 12 عام', fr: '10 ans ; 7 au plus avant 12 ans'}
+    to: tools/card
+  - key: card-renew
+    mark: {value: '7', unit: {ar: حالات, fr: cas}}
+    words: [بدلت السكنى, بدلت العنوان, بدلت الدار, تجديد البطاقة, نجدد لاكارط, نزيد زوجة فالبطاقة, زوجة فالبطاقة, أرملة فالبطاقة, changement d'adresse carte, renouveler la carte, renouvellement cnie, ajouter épouse carte, تجديد لاكارط, لتجديد لاكارط, وراق التجديد]
+    means:
+      يجب تجديد البطاقة الوطنية للتعريف الإلكترونية: [بدلت السكنى, بدلت العنوان, بدلت الدار, تجديد البطاقة, نجدد لاكارط, changement d'adresse carte, renouveler la carte, renouvellement cnie]
+      العبارة الاختيارية «زوجة» أو «أرملة» أو «أرمل»: [نزيد زوجة فالبطاقة, زوجة فالبطاقة, أرملة فالبطاقة, ajouter épouse carte]
+    title: {ar: 'بدلت السكنى ولا تزوجت: خاصني نبدل البطاقة؟', fr: 'Déménagé ou marié : dois-je changer de carte ?'}
+    lead: {ar: 'سبع حالات كتلزمك تجددها، وإلا غرامة', fr: 'Sept cas obligent à la renouveler, sinon une amende'}
+    to: journeys/card-renew
+  - key: card-lost
+    icon: idcard
+    words: [ضاعت ليا البطاقة, ضاعت ليا لاكارط, فقدان البطاقة, فقدان البطاقة الوطنية, ضياع البطاقة, ضياع البطاقة الوطنية, سرقة البطاقة, سرقة البطاقة الوطنية, تسرقات ليا لاكارط, تسرقات ليا البطاقة, سرقو ليا لاكارط, سرقو ليا البطاقة, تقطعات البطاقة, البطاقة تخسرات, carte perdue, carte volée, perte carte nationale, dya3at lia la carte, dya3at la carte, dya3at lia, tsr9at la carte]
+    means:
+      ضياع البطاقة الوطنية للتعريف الإلكترونية أو سرقتها أو تعرضها للتلف: [ضاعت ليا البطاقة, ضاعت ليا لاكارط, تسرقات ليا البطاقة, سرقو ليا لاكارط, سرقو ليا البطاقة, تقطعات البطاقة, البطاقة تخسرات, carte perdue, carte volée, perte carte nationale]
+    title: {ar: ضاعت ليا البطاقة ولا تسرقات, fr: 'Ma carte est perdue ou volée'}
+    lead: {ar: 'التصريح، الإلغاء، والتجديد ببصماتك من جديد', fr: 'La déclaration, l’annulation, le renouvellement avec vos empreintes'}
+    to: journeys/card-lost
+  - key: card-abroad
+    icon: foreign
+    for: [abroad]
+    words: [البطاقة فالقنصلية, لاكارط فالقنصلية, البطاقة الوطنية فالخارج, شهادة التسجيل القنصلي, cnie consulat, carte nationale à l'étranger, cnie à l'étranger]
+    means:
+      المغاربة المقيمين بالخارج بالمصالح المختصة لدى البعثات الدبلوماسية والقنصلية: [البطاقة فالقنصلية, لاكارط فالقنصلية, البطاقة الوطنية فالخارج, cnie consulat, carte nationale à l'étranger, cnie à l'étranger]
+      شهادة التسجيل القنصلي: [شهادة التسجيل القنصلي]
+    title: {ar: 'ساكن فالخارج: البطاقة فالقنصلية', fr: 'À l’étranger : la carte au consulat'}
+    lead: {ar: 'بشهادة التسجيل القنصلي عوض شهادة السكنى', fr: 'Avec l’immatriculation consulaire au lieu de la résidence'}
+    to: checklists/card-abroad
+  - key: card-child
+    mark: {value: '12', unit: {ar: عام, fr: ans}}
+    words: [بطاقة لولدي, بطاقة للصغير, بطاقة الطفل, لاكارط للولد الصغير, carte pour enfant, carte nationale mineur, cnie enfant]
+    means:
+      إصدار البطاقة الوطنية للتعريف الإلكترونية للقاصر: [بطاقة لولدي, بطاقة للصغير, بطاقة الطفل, لاكارط للولد الصغير, carte pour enfant, carte nationale mineur, cnie enfant]
+    title: {ar: بطاقة وطنية لولدي قبل 16 عام, fr: 'Une carte pour mon enfant avant 16 ans'}
+    lead: {ar: 'ممكنة بطلبك، وكتبدل فاش يكمل 12 عام', fr: 'Possible à votre demande ; à renouveler à ses 12 ans'}
+    to: pages/card
+  # Civil status.
+  - key: birth
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [نسجل ولدي, نسجل بنتي, تزاد ليا ولد, تزادت ليا بنت, التصريح بالولادة, déclarer une naissance, déclaration de naissance, ما سجلتش الولد, ما سجلتش البنت, تسجيل متأخر, فات الأجل ديال التسجيل]
+    title: {ar: تزاد ليك ولد ولا بنت, fr: 'Une naissance'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:journeys/birth
+  - key: error
+    mark: {value: '15', unit: {ar: يوم, fr: jours}}
+    words: [غلط فعقد الازدياد, غلط فالحالة المدنية, غلط فالسمية, تاريخ الازدياد غالط, نصحح عقد الازدياد, تصحيح الحالة المدنية, erreur acte de naissance, rectification état civil, ghalat f smiya, rectifier une erreur, erreur dans l'acte, ghalat f smiya f]
+    means:
+      تصحيح الأخطاء المادية: [غلط فعقد الازدياد, غلط فالحالة المدنية, غلط فالسمية, نصحح عقد الازدياد, erreur acte de naissance, rectification état civil, ghalat f smiya]
+      مشوبة بأخطاء جوهرية: [تاريخ الازدياد غالط, تصحيح الحالة المدنية]
+    title: {ar: كاين غلط فعقد الازدياد ديالي, fr: 'Une erreur dans mon acte de naissance'}
+    lead: {ar: 'الغلط المادي بإذن فـ15 يوم، والجوهري عند المحكمة', fr: 'L’erreur matérielle autorisée en 15 jours, la substantielle au tribunal'}
+    to: journeys/correct
+  - key: name
+    icon: quote
+    words: [بغيت نبدل سميتي, نبدل سميتي, نبدل الكنية, تغيير الاسم العائلي, تغيير الاسم الشخصي, نبدل السمية, changer de prénom, changer de nom de famille, changement de nom, سميتي بالفرنسية غالطة, سميتي بتيفيناغ, مكتوبة غالطة بالفرنسية, سميتي مكتوبة غالطة]
+    means:
+      تغيير الأسماء العائلية: [نبدل الكنية, تغيير الاسم العائلي, changer de nom de famille, changement de nom]
+      يطلب تغيير اسمه الشخصي: [نبدل سميتي, تغيير الاسم الشخصي, نبدل السمية, changer de prénom]
+      بحروف تيفيناغ والحروف اللاتينية: [سميتي بالفرنسية غالطة, سميتي بتيفيناغ]
+    title: {ar: بغيت نبدل سميتي ولا الكنية, fr: 'Changer de prénom ou de nom'}
+    lead: {ar: 'السمية بحكم، والكنية بمرسوم من بعد اللجنة العليا', fr: 'Le prénom par jugement, le nom par décret après la Haute commission'}
+    to: journeys/name
+  - key: naming
+    icon: tag
+    words: [شنو نسمي ولدي, سمية مقبولة, السمية رفضوها, رفضو السمية, سمية مركبة, السمية الأمازيغية, prénom refusé, prénom autorisé, prénom amazigh]
+    means:
+      الاسم الشخصي الذي اختاره من يقدم التصريح بالولادة: [شنو نسمي ولدي, سمية مقبولة, سمية مركبة, prénom autorisé]
+      عدم استيفاء الإسم الشخصي المختار للمعايير: [السمية رفضوها, رفضو السمية, السمية الأمازيغية, prénom refusé, prénom amazigh]
+    title: {ar: 'واش هاد السمية مقبولة؟', fr: 'Ce prénom est-il accepté ?'}
+    lead: {ar: 'القواعد اللي كتبها القانون، وشكون كيقرر', fr: 'Les règles que la loi écrit, et qui décide'}
+    to: tools/names
+  - key: copies
+    icon: papers
+    words: [نسخة من عقد الازدياد, عقد الازدياد, نسخة كاملة, نسخة موجزة, الدفتر العائلي, لافاميل, الكناش, extrait d'acte de naissance, copie intégrale, livret de famille, عقد الازدياد من الأنترنت]
+    means:
+      تسلم نسخة من الرسم الإلكتروني للحالة المدنية أو نسخة كاملة أو موجزة: [نسخة من عقد الازدياد, عقد الازدياد, نسخة كاملة, نسخة موجزة, extrait d'acte de naissance, copie intégrale, عقد الازدياد من الأنترنت]
+      الدفتر العائلي الإلكتروني: [الدفتر العائلي, لافاميل, الكناش, livret de famille]
+    title: {ar: بغيت عقد الازدياد ولا الدفتر العائلي, fr: 'Un extrait d’acte ou le livret de famille'}
+    lead: {ar: 'شكون يقدر يطلبهم، فين، وبلا تمبر', fr: 'Qui peut les demander, où, et sans timbre'}
+    to: pages/copies
+  - key: abroad-marriage
+    icon: foreign
+    words: [تزوجت فالخارج, نسجل الزواج فالحالة المدنية, زواج مدني فالخارج, transcription du mariage, mariage à l'étranger, mariage civil étranger]
+    means:
+      عقد زواج المغاربة المقيمين بالخارج في حالة إبرامه طبقا للقانون المحلي لبلد الإقامة: [تزوجت فالخارج, زواج مدني فالخارج, transcription du mariage, mariage à l'étranger, mariage civil étranger, نسجل الزواج فالحالة المدنية]
+    title: {ar: 'تزوجت فالخارج: نسجلو فالحالة المدنية', fr: 'Marié à l’étranger : l’inscrire à l’état civil'}
+    lead: {ar: 'بلا أجل، فالقنصلية ولا فأي مكتب', fr: 'Sans délai, au consulat ou dans tout bureau'}
+    to: journeys/abroad-marriage
+  - key: death
+    icon: papers
+    words: [نصرح بالوفاة, التصريح بالوفاة, رسم الوفاة, déclarer un décès, acte de décès]
+    title: {ar: مات ليك شي حد, fr: 'Un décès'}
+    lead: {ar: 'التصريح فـ30 يوم، فموضوع الأسرة', fr: 'La déclaration en 30 jours, dans le thème de la famille'}
+    to: family:journeys/heirs
+  # The passport and nationality.
+  - key: passport
+    mark: {value: '5', unit: {ar: سنين, fr: ans}}
+    words: [الباسبور, باسبور, جواز السفر, الباسبور الجديد, الباسبور القديم, passeport, passeport biométrique, nouveau passeport, passport, passport jdid, passport l9dim, paspor]
+    means:
+      جواز السفر البيومتري: [الباسبور, باسبور, جواز السفر, الباسبور الجديد, الباسبور القديم, passeport, passeport biométrique, nouveau passeport, passport]
+    title: {ar: بغيت باسبور, fr: 'Un passeport'}
+    lead: {ar: '5 سنين، 500 درهم، والنموذج الجديد ديال 2026', fr: '5 ans, 500 DH, le nouveau modèle de 2026'}
+    to: pages/passport
+  - key: nationality-mother
+    icon: foreign
+    words: [ولدي من أب أجنبي, ولد المغربية, الجنسية من الأم, جوج جنسيات, الجنسية المزدوجة, nationalité par la mère, double nationalité, jinsiya mn lom, الجنسية عن طريق الأم, عن طريق الأم, نتخلى على الجنسية, التخلي عن الجنسية, renoncer à la nationalité, maghribiya mn lom]
+    means:
+      المأذون له بموجب مرسوم في التخلي عن الجنسية المغربية: [نتخلى على الجنسية, التخلي عن الجنسية, renoncer à la nationalité]
+      يعتبر مغربيا الولد المولود من أب مغربي أو أم مغربية: [ولدي من أب أجنبي, ولد المغربية, الجنسية من الأم, nationalité par la mère, jinsiya mn lom]
+      الاحتفاظ فقط بجنسية أحد أبويه: [جوج جنسيات, الجنسية المزدوجة, double nationalité]
+    title: {ar: ولدي من أب أجنبي ولا أم أجنبية, fr: 'Mon enfant d’un parent étranger'}
+    lead: {ar: 'مغربي بالأم ولا بالأب، والاختيار بين 18 و20 عام', fr: 'Marocain par la mère ou le père ; le choix entre 18 et 20 ans'}
+    to: pages/nationality
+  - key: nationality-spouse
+    mark: {value: '5', unit: {ar: سنين, fr: ans}}
+    words: [مراتي أجنبية, الجنسية بالزواج, الجنسية المغربية للزوجة, التجنيس, naturalisation, nationalité par mariage, épouse étrangère nationalité, الجنسية عن طريق الزواج, عن طريق الزواج]
+    means:
+      اكتساب الجنسية المغربية عن طريق الزواج: [مراتي أجنبية, الجنسية بالزواج, الجنسية المغربية للزوجة, nationalité par mariage, épouse étrangère nationalité]
+      اكتساب الجنسية المغربية عن طريق التجنيس: [التجنيس, naturalisation]
+    title: {ar: 'مراتي أجنبية وبغات الجنسية', fr: 'Mon épouse étrangère veut la nationalité'}
+    lead: {ar: '5 سنين ديال الإقامة معا فالمغرب، وتصريح لوزير العدل', fr: '5 ans de vie commune au Maroc, une déclaration au ministre de la Justice'}
+    to: journeys/spouse
+  - key: nationality-proof
+    icon: papers
+    words: [شهادة الجنسية, نثبت الجنسية, certificat de nationalité, prouver la nationalité]
+    means:
+      شهادة الجنسية المغربية: [شهادة الجنسية, نثبت الجنسية, certificat de nationalité, prouver la nationalité]
+    title: {ar: طلبو مني شهادة الجنسية, fr: 'On me demande un certificat de nationalité'}
+    lead: {ar: 'شكون كيعطيها، وفاش كتغني عليها البطاقة', fr: 'Qui la délivre, et quand la carte en dispense'}
+    to: pages/nationality
+  # At the administration: law 55.19.
+  - key: counter-copies
+    mark: {value: '1', unit: {ar: نسخة, fr: copie}}
+    words: [نصحح الإمضاء للإدارة, نسخة مطابقة للأصل, طلبو مني نصحح الإمضاء, طلبو مني نسخة مطابقة, copie certifiée conforme, légalisation exigée, نسخ كثيرة, جوج نسخ من الملف, طلبو مني عقد الازدياد, وعندي البطاقة, كيطلبو مني ورقة, ورقة جديدة, كل مرة كيطلبو]
+    means:
+      تعفي البطاقة الوطنية للتعريف الإلكترونية من الإدلاء بالوثائق: [طلبو مني عقد الازدياد, وعندي البطاقة]
+      عدم مطالبة المرتفق بتصحيح الإمضاء: [نصحح الإمضاء للإدارة, طلبو مني نصحح الإمضاء, légalisation exigée]
+      عدم مطالبة المرتفق بالإدلاء بنسخ مطابقة لأصول الوثائق: [نسخة مطابقة للأصل, طلبو مني نسخة مطابقة, copie certifiée conforme]
+      عدم مطالبة المرتفق بأكثر من نسخة واحدة: [نسخ كثيرة, جوج نسخ من الملف]
+    title: {ar: 'طلبو مني نصحح الإمضاء ولا نسخة مطابقة', fr: 'On exige légalisation ou copie conforme'}
+    lead: {ar: 'القانون 55.19: لا تصحيح، لا نسخة مطابقة، نسخة وحدة', fr: 'Loi 55.19 : ni légalisation, ni copie conforme, une seule copie'}
+    to: pages/counter
+  - key: counter-wait
+    mark: {value: '60', unit: {ar: يوم, fr: jours}}
+    words: [الإدارة ما جاوباتنيش, ما جاوبونيش, ماشي جاوبو على الطلب, طولو عليا, délai de réponse administration, l'administration ne répond pas, سكوت الإدارة, وصل الإيداع, ما عطاونيش وصل, réponse de l'administration, délai de l'administration]
+    means:
+      الآجال القصوى لدراسة طلبات المرتفقين: [الإدارة ما جاوباتنيش, ما جاوبونيش, ماشي جاوبو على الطلب, طولو عليا, délai de réponse administration, l'administration ne répond pas]
+      سكوت الإدارة: [سكوت الإدارة]
+      وصل يسلم للمرتفق فورا: [وصل الإيداع, ما عطاونيش وصل]
+    title: {ar: الإدارة ما جاوباتنيش, fr: 'L’administration ne m’a pas répondu'}
+    lead: {ar: '60 يوم على الأكثر، من نهار الملف الكامل', fr: '60 jours au plus, dès le dossier complet'}
+    to: tools/counter
+  - key: counter-refused
+    mark: {value: '30', unit: {ar: يوم, fr: jours}}
+    words: [رفضو الطلب ديالي, رفضو بلا تعليل, نطعن فالرفض, طعن إداري, refus de l'administration, recours administratif, refus non motivé]
+    means:
+      تعليل الإدارة لقراراتها السلبية: [رفضو بلا تعليل, refus non motivé]
+      طعن: [نطعن فالرفض, طعن إداري, recours administratif, رفضو الطلب ديالي, refus de l'administration]
+    title: {ar: رفضو الطلب ديالي, fr: 'Ma demande est refusée'}
+    lead: {ar: 'الرفض بالتعليل، و30 يوم للطعن', fr: 'Un refus motivé, et 30 jours pour le recours'}
+    to: journeys/appeal
+  - key: legalize
+    icon: seal
+    words: [فين نصحح الإمضاء, تصحيح الإمضاء, المصادقة على الإمضاء, نطابق نسخة, مطابقة النسخة للأصل, légalisation de signature, copie conforme commune, المقاطعة رفضات تصحح]
+    means:
+      الإشهاد على صحة الإمضاء: [فين نصحح الإمضاء, تصحيح الإمضاء, المصادقة على الإمضاء, légalisation de signature, المقاطعة رفضات تصحح]
+      الإشهاد على مطابقة نسخ الوثائق لأصولها: [نطابق نسخة, مطابقة النسخة للأصل, copie conforme commune]
+    title: {ar: بغيت نصحح الإمضاء ولا نطابق نسخة, fr: 'Légaliser une signature ou certifier une copie'}
+    lead: {ar: 'فالجماعة ولا المقاطعة، وفاش ما خاصكش', fr: 'À la commune ou l’arrondissement, et quand il n’en faut pas'}
+    to: pages/legalize
+  # The criminal record.
+  - key: record
+    icon: scales
+    words: [السجل العدلي, فيش السوابق, البطاقة رقم 3, بطاقة السوابق, لافيش, casier judiciaire, bulletin n°3, extrait du casier]
+    means:
+      البطاقة رقم 3 للسجل العدلي: [السجل العدلي, فيش السوابق, البطاقة رقم 3, بطاقة السوابق, لافيش, casier judiciaire, bulletin n°3, extrait du casier]
+    title: {ar: طلبو مني السجل العدلي, fr: 'On me demande le casier judiciaire'}
+    lead: {ar: 'البطاقة رقم 3: فين، شكون، وشنو فيها', fr: 'Le bulletin n° 3 : où, qui, ce qu’il contient'}
+    to: journeys/record
+  - key: rehab
+    mark: {value: '6', unit: {ar: شهور, fr: mois}}
+    words: [رد الاعتبار, يتمسح الحكم, نمسح السوابق, حكم قديم, réhabilitation, effacer casier judiciaire]
+    means:
+      رد الاعتبار: [رد الاعتبار, يتمسح الحكم, نمسح السوابق, حكم قديم, réhabilitation, effacer casier judiciaire]
+    title: {ar: 'عندي حكم قديم: فوقاش يتمسح؟', fr: 'Une ancienne condamnation : quand s’efface-t-elle ?'}
+    lead: {ar: 'رد الاعتبار بقوة القانون: من 6 شهور حتى 10 سنين', fr: 'La réhabilitation de plein droit : de 6 mois à 10 ans'}
+    to: tools/rehab
+  # Data and foreigners.
+  - key: data
+    icon: data
+    words: [المعطيات ديالي, المعطيات الشخصية, صورو ليا البطاقة, خلاو عندهم البطاقة, données personnelles, photocopie carte identité, droit d'accès données, نصحح المعطيات, يقرا الشريحة, الشريحة ديال البطاقة, puce de la carte]
+    means:
+      استغلال المعطيات المضمنة بالرقاقة: [يقرا الشريحة, الشريحة ديال البطاقة, puce de la carte]
+      المعطيات ذات الطابع الشخصي: [المعطيات ديالي, المعطيات الشخصية, données personnelles, droit d'accès données]
+      الحق في التصحيح: [نصحح المعطيات]
+      استغلال المعطيات المضمنة بالرقاقة الإلكترونية: [صورو ليا البطاقة, خلاو عندهم البطاقة, photocopie carte identité]
+    title: {ar: شكون يقدر يقرا ولا يحتفظ بالمعطيات ديالي؟, fr: 'Qui peut lire ou garder mes données ?'}
+    lead: {ar: 'الرقاقة ديال البطاقة، وحقك تعرف وتصحح', fr: 'La puce de la carte, votre droit de savoir et de corriger'}
+    to: pages/data
+  - key: register
+    icon: list
+    words: [السجل الوطني للسكان, المعرف الرقمي, المعرف المدني والاجتماعي, registre national de la population, identifiant numérique]
+    means:
+      السجل الوطني للسكان: [السجل الوطني للسكان, registre national de la population]
+      المعرف المدني والاجتماعي الرقمي: [المعرف الرقمي, المعرف المدني والاجتماعي, identifiant numérique]
+    title: {ar: 'المعرف الرقمي والسجل الوطني للسكان', fr: 'L’identifiant numérique et le registre de la population'}
+    lead: {ar: 'رقم واحد لكل واحد، ومن عند الولادة', fr: 'Un seul numéro par personne, dès la naissance'}
+    to: pages/data
+  - key: foreigner-stay
+    mark: {value: '90', unit: {ar: يوم, fr: jours}}
+    words: [بطاقة الإقامة, سند الإقامة, بطاقة التسجيل للأجانب, أنا أجنبي, carte de séjour, titre de séjour, carte d'immatriculation, carte de résidence, يطلب الإقامة, أجل طلب الإقامة, الأجنبي يطلب]
+    means:
+      سندات الإقامة: [سند الإقامة, titre de séjour, أنا أجنبي]
+      بطاقة الإقامة: [بطاقة الإقامة, carte de séjour, carte de résidence]
+      بطاقة التسجيل: [بطاقة التسجيل للأجانب, carte d'immatriculation]
+    title: {ar: 'أنا أجنبي وبغيت نقيم فالمغرب', fr: 'Étranger, je veux résider au Maroc'}
+    lead: {ar: 'بطاقة التسجيل، بطاقة الإقامة، والطعن فـ15 يوم', fr: 'La carte d’immatriculation, la carte de résidence, le recours en 15 jours'}
+    to: pages/foreigners
+  # Elsewhere.
+  - key: licence
+    icon: licence
+    words: [رخصة السياقة, البيرمي, permis de conduire]
+    title: {ar: رخصة السياقة, fr: 'Le permis de conduire'}
+    lead: {ar: 'فموضوع الطريق', fr: 'Dans le thème de la route'}
+    to: road:pages/licence
+  - key: marry
+    icon: contract
+    words: [وراق الزواج, ملف الزواج, dossier de mariage]
+    title: {ar: وراق الزواج, fr: 'Les papiers du mariage'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:journeys/marry
+  - key: kafala
+    icon: child
+    words: [وراق الكفالة, dossier kafala]
+    title: {ar: 'الكفالة: الوراق والحالة المدنية', fr: 'La kafala : papiers et état civil'}
+    lead: {ar: 'فموضوع الأسرة', fr: 'Dans le thème de la famille'}
+    to: family:journeys/kafala
+
+tools:
+  # «بطاقتي» (the card): a birth date and the card's date in, its last valid day, the age-16 duty, the renewals art. 13
+  # names, the fines, what to bring and the stamp. It waits for a person's check.
+  - key: card
+    icon: idcard
+    words: [فوقاش كتسالي البطاقة, شحال باقي فالبطاقة, البطاقة ديالي صالحة, validité de ma carte]
+    means: مدة صلاحيتها
+    tool: true
+    title: {ar: البطاقة ديالي, fr: 'Ma carte'}
+    lead: {ar: 'فوقاش كتسالي، فوقاش خاصك تجددها، وشحال', fr: 'Quand elle expire, quand la renouveler, combien'}
+    cites: [/ma/decret/2-20-521/art_1, /ma/loi/4-20/art_2, /ma/loi/4-20/art_13, /ma/loi/4-20/art_15, /ma/code/cgi/art_252]
+  # The civil-status clock: a birth or death, in Morocco or abroad, a request for a material error's correction or for a
+  # late inscription → the last day the texts leave.
+  - key: clock
+    icon: clock
+    words: [آخر أجل للتصريح بالولادة, آخر أجل للتصريح بالوفاة, délai de déclaration naissance, délai déclaration décès]
+    means: أجل تتميم التصريح بالولادة أو الوفاة
+    tool: true
+    title: {ar: آجال الحالة المدنية, fr: 'Les délais de l’état civil'}
+    lead: {ar: 'من النهار ديال الولادة ولا الوفاة ولا الطلب', fr: 'Dès le jour de la naissance, du décès ou de la demande'}
+    cites: [/ma/decret/2-22-04/art_40, /ma/decret/2-22-04/art_41, /ma/loi/36-21/art_51]
+  # The administration's counter (law 55.19): the day the file was complete → the day it must answer, the 30 days to
+  # appeal, the 15 days the higher authority has.
+  - key: counter
+    icon: clock
+    words: [شحال خاص الإدارة تجاوب, الإدارة طولات, آجال الإدارة, délai administration 60 jours]
+    means: الآجال القصوى لدراسة طلبات المرتفقين
+    tool: true
+    title: {ar: الإدارة ما جاوباتش, fr: 'L’administration n’a pas répondu'}
+    lead: {ar: 'نهار الملف الكامل: آخر نهار للجواب، والطعن', fr: 'Le jour du dossier complet : réponse, recours'}
+    cites: [/ma/loi/55-19/art_10, /ma/loi/55-19/art_16, /ma/loi/55-19/art_21, /ma/loi/55-19/art_19, /ma/loi/55-19/art_20, /ma/loi/55-19/art_31]
+  # «واش هاد السمية مقبولة؟»: the rules of art. 34 a machine can check (two names at most, no title, no number), the rest
+  # said as the officer's and the High Commission's.
+  - key: names
+    icon: tag
+    words: [واش السمية مقبولة, نختار سمية, prénom accepté]
+    means: الاسم الشخصي الذي اختاره من يقدم التصريح بالولادة
+    tool: true
+    title: {ar: 'واش هاد السمية مقبولة؟', fr: 'Ce prénom est-il accepté ?'}
+    lead: {ar: 'القواعد اللي كيكتبها القانون، وشكون كيقرر فالباقي', fr: 'Les règles écrites, et qui décide du reste'}
+    cites: [/ma/loi/36-21/art_34, /ma/decret/2-22-04/art_33, /ma/loi/36-21/art_19]
+  # When a sentence is wiped from card no. 3: rehabilitation by law (22.01 art. 688, 689) or a request (art. 692).
+  - key: rehab
+    icon: scales
+    words: [فوقاش يتمسح الحكم, رد الاعتبار شحال, quand la réhabilitation]
+    means: يكتسب المحكوم عليه رد الاعتبار بقوة القانون
+    tool: true
+    title: {ar: 'فوقاش يتمسح الحكم؟', fr: 'Quand la condamnation s’efface-t-elle ?'}
+    lead: {ar: 'رد الاعتبار بقوة القانون، ولا بطلب', fr: 'La réhabilitation de plein droit, ou sur demande'}
+    cites: [/ma/loi/22-01/art_688, /ma/loi/22-01/art_689, /ma/loi/22-01/art_692, /ma/loi/22-01/art_667, /ma/loi/22-01/art_702]

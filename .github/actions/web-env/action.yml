@@ -1,0 +1,57 @@
+# The web's environment: Node, the locked packages in web/node_modules, and, for the smoke, Playwright's headless
+# Chromium. Packages are installed without their install scripts: none of the web's needs one (the only package that
+# has one, @swc/core, checks for its native build, which arrives as a platform package), and a script is code from
+# the registry that runs before any check.
+name: Web environment
+description: Node with npm's cache, npm ci of web/package-lock.json, and Playwright's headless Chromium when asked.
+inputs:
+  node-version:
+    description: The Node version.
+    required: true
+  browser:
+    description: "'true' to install Playwright's headless Chromium too, cached by Playwright's version in the lock."
+    required: false
+    default: 'false'
+runs:
+  using: composite
+  steps:
+    - name: Node, with npm's downloads cached by the lock
+      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: npm
+        cache-dependency-path: web/package-lock.json
+
+    - name: The locked packages
+      shell: bash
+      working-directory: web
+      run: npm ci --ignore-scripts --no-audit --no-fund
+
+    - name: Playwright's version
+      id: playwright
+      if: inputs.browser == 'true'
+      shell: bash
+      run: |
+        version=$(node -p "require('./web/package-lock.json').packages['node_modules/playwright-core'].version")
+        echo "version=$version" >> "$GITHUB_OUTPUT"
+
+    - name: Chromium for that version, if an earlier run fetched it
+      id: browser
+      if: inputs.browser == 'true'
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      with:
+        path: ~/.cache/ms-playwright
+        key: playwright-headless-shell-${{ runner.os }}-${{ steps.playwright.outputs.version }}
+
+    # Headless Chromium alone: tools/ci/smoke.sh launches the browser headless, which needs no full Chromium.
+    - name: Chromium and the system libraries it needs
+      if: inputs.browser == 'true' && steps.browser.outputs.cache-hit != 'true'
+      shell: bash
+      working-directory: web
+      run: node_modules/.bin/playwright install --with-deps --only-shell chromium
+
+    - name: The system libraries Chromium needs (the browser came from the cache)
+      if: inputs.browser == 'true' && steps.browser.outputs.cache-hit == 'true'
+      shell: bash
+      working-directory: web
+      run: node_modules/.bin/playwright install-deps chromium

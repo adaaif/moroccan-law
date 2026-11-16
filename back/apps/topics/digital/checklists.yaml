@@ -1,0 +1,87 @@
+# The digital topic's lists (the digital review): each list is what an article names, item by item. Ticks stay on
+# the reader's phone.
+
+- key: complaint
+  title: {ar: 'ما تضمنه الشكاية على ما وقع فالأنترنت', fr: 'Ce que porte la plainte sur ce qui s’est passé en ligne'}
+  lead:
+    ar: 'ما يطلبه قانون المسطرة الجنائية في الشكاية: المادة 40 أمام وكيل الملك، والمادة 92 حين ينصب المشتكي نفسه طرفا مدنيا أمام قاضي التحقيق.'
+    fr: 'Ce que demande le code de procédure pénale : l’article 40 devant le procureur, l’article 92 quand le plaignant se constitue partie civile devant le juge d’instruction.'
+  cites: [/ma/loi/22-01/art_40, /ma/loi/22-01/art_92]
+  items:
+    - label: {ar: 'اسمك العائلي والشخصي ومهنتك وعنوانك ورقم بطاقتك', fr: 'Vos nom, prénom, profession, adresse et numéro de carte'}
+      cites: [/ma/loi/22-01/art_92]
+    - label: {ar: 'رقم هاتفك أو عنوانك الإلكتروني، ليخبرك وكيل الملك بالمآل', fr: 'Votre téléphone ou courriel, pour que le procureur vous informe de la suite'}
+      cites: [/ma/loi/22-01/art_40]
+    - label: {ar: 'وقائع القضية وتاريخ ومكان ارتكابها', fr: 'Les faits, leur date et leur lieu'}
+      cites: [/ma/loi/22-01/art_92]
+    - label: {ar: 'اسم المشتكى به ومهنته وعنوانه إن عرفتها', fr: 'Le nom, la profession et l’adresse du mis en cause, si vous les connaissez'}
+      cites: [/ma/loi/22-01/art_92]
+    - label: {ar: 'الأدلة والمستندات التي تدعم الشكاية', fr: 'Les preuves et pièces qui l’appuient'}
+      cites: [/ma/loi/22-01/art_92]
+    - label: {ar: 'في القذف والسب: داخل ستة أشهر من النشر، والشكاية شرط للمتابعة', fr: 'Pour la diffamation et l’injure : dans les six mois de la publication, la plainte étant nécessaire'}
+      when: {ar: '6 أشهر', fr: '6 mois'}
+      cites: [/ma/loi/88-13/art_99, /ma/loi/88-13/art_101]
+
+- key: data-request
+  title: {ar: 'طلبك لشركة على معطياتك', fr: 'Votre demande à une entreprise sur vos données'}
+  lead:
+    ar: 'ما تقوله المواد 7 و8 و9 من القانون 09.08 عن طلب الولوج والتصحيح والتعرض.'
+    fr: 'Ce que disent les articles 7, 8 et 9 de la loi 09.08 sur les demandes d’accès, de rectification et d’opposition.'
+  cites: [/ma/loi/9-08/art_7, /ma/loi/9-08/art_8, /ma/loi/9-08/art_9]
+  items:
+    - label: {ar: 'ما يثبت هويتك', fr: 'Un justificatif d’identité'}
+      cites: [/ma/loi/9-08/art_7]
+    - label: {ar: 'الحق الذي تطلبه: الولوج، أو التصحيح أو المسح، أو التعرض', fr: 'Le droit demandé : accès, rectification ou effacement, opposition'}
+      cites: [/ma/loi/9-08/art_7, /ma/loi/9-08/art_8, /ma/loi/9-08/art_9]
+    - label: {ar: 'المعطيات المعنية، وما هو غير صحيح فيها إن طلبت التصحيح', fr: 'Les données concernées, et ce qui y est inexact si vous demandez une rectification'}
+      cites: [/ma/loi/9-08/art_8]
+    - label: {ar: 'السبب المشروع إن تعرضت؛ ولا سبب يلزم للتعرض على الإشهار', fr: 'Le motif légitime si vous vous opposez ; aucun pour refuser la prospection'}
+      cites: [/ma/loi/9-08/art_9]
+    - label: {ar: 'تاريخ التوصل بالطلب: منه تحسب الأيام العشرة الكاملة للتصحيح', fr: 'La date de réception : de là courent les dix jours francs de rectification'}
+      when: {ar: '10 أيام', fr: '10 jours'}
+      cites: [/ma/loi/9-08/art_8]
+
+- key: info-request
+  title: {ar: 'طلب الحصول على المعلومات', fr: 'La demande d’accès à l’information'}
+  lead:
+    ar: 'البيانات التي تعددها المادة 14 من القانون 31.13؛ والطلب على نموذج لجنة الحق في الحصول على المعلومات.'
+    fr: 'Les mentions de l’article 14 de la loi 31.13 ; la demande se fait sur le modèle de la commission.'
+  cites: [/ma/loi/31-13/art_14]
+  items:
+    - label: {ar: 'اسمك الشخصي والعائلي', fr: 'Vos nom et prénom'}
+      cites: [/ma/loi/31-13/art_14]
+    - label: {ar: 'عنوانك الشخصي', fr: 'Votre adresse'}
+      cites: [/ma/loi/31-13/art_14]
+    - label: {ar: 'رقم بطاقتك الوطنية، أو رقم وثيقة الإقامة للأجنبي', fr: 'Le numéro de votre carte, ou du titre de séjour pour un étranger'}
+      cites: [/ma/loi/31-13/art_14, /ma/loi/31-13/art_4]
+    - label: {ar: 'بريدك الإلكتروني عند الاقتضاء', fr: 'Votre courriel, le cas échéant'}
+      cites: [/ma/loi/31-13/art_14]
+    - label: {ar: 'المعلومات التي تريد الحصول عليها', fr: 'Les informations voulues'}
+      cites: [/ma/loi/31-13/art_14]
+    - label: {ar: 'الإيداع مقابل وصل، أو بالبريد أو البريد الإلكتروني مقابل إشعار بالتوصل: منه يبدأ الأجل', fr: 'Le dépôt contre récépissé, ou l’envoi postal ou électronique avec accusé : le délai court de là'}
+      when: {ar: '20 يوم عمل', fr: '20 jours ouvrables'}
+      cites: [/ma/loi/31-13/art_14, /ma/loi/31-13/art_16]
+
+- key: company-duties
+  title: {ar: 'واجبات من يعالج المعطيات', fr: 'Les obligations de qui traite des données'}
+  lead:
+    ar: 'ما يلزم به القانون 09.08 المسؤول عن المعالجة، كل واجب بمادته.'
+    fr: 'Ce qu’impose la loi 09.08 au responsable de traitement, chaque obligation avec son article.'
+  cites: [/ma/loi/9-08/art_3, /ma/loi/9-08/art_12]
+  items:
+    - label: {ar: 'غاية محددة ومعلنة، ومعطيات ملائمة وغير مفرطة، ومدة حفظ لا تتجاوز الضروري', fr: 'Une finalité déterminée et déclarée, des données adéquates et non excessives, une conservation limitée au nécessaire'}
+      cites: [/ma/loi/9-08/art_3]
+    - label: {ar: 'رضى الشخص المعني، إلا في الحالات التي يعددها القانون', fr: 'Le consentement de la personne, sauf les cas que la loi énumère'}
+      cites: [/ma/loi/9-08/art_4]
+    - label: {ar: 'إخبار الشخص عند الجمع بهويتك وبالغاية وبحقوقه', fr: 'Informer la personne lors de la collecte de votre identité, de la finalité et de ses droits'}
+      cites: [/ma/loi/9-08/art_5]
+    - label: {ar: 'التصريح المسبق لدى اللجنة الوطنية، والإذن المسبق للمعطيات الحساسة', fr: 'La déclaration préalable à la CNDP, et l’autorisation préalable pour les données sensibles'}
+      cites: [/ma/loi/9-08/art_12, /ma/loi/9-08/art_14]
+    - label: {ar: 'الاستجابة للولوج والتصحيح (عشرة أيام كاملة) والتعرض', fr: 'Répondre aux demandes d’accès, de rectification (dix jours francs) et d’opposition'}
+      cites: [/ma/loi/9-08/art_7, /ma/loi/9-08/art_8, /ma/loi/9-08/art_9]
+    - label: {ar: 'لا رسائل إشهارية بلا رضى مسبق', fr: 'Pas de prospection sans consentement préalable'}
+      cites: [/ma/loi/9-08/art_10]
+    - label: {ar: 'إجراءات تقنية وتنظيمية لحماية المعطيات', fr: 'Des mesures techniques et organisationnelles de sécurité'}
+      cites: [/ma/loi/9-08/art_23]
+    - label: {ar: 'لا نقل إلى الخارج إلا لدولة تضمن حماية كافية', fr: 'Aucun transfert à l’étranger hors d’un pays offrant une protection suffisante'}
+      cites: [/ma/loi/9-08/art_43]

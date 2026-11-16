@@ -1,0 +1,16 @@
+# «وزارة التعليم بأسمائها»: the blog's twenty-sixth post (S19 of the first-principles review, 6 Nov 2026: «Yes»;
+# built 7 Nov 2026). Every name the education portfolio signed under in the Bulletin since independence, read from the
+# authority of each text and counted (figures.json, manage.py blog_figures ministry). Offices, never persons.
+slug: ministry
+number: 26
+status: draft
+date: null
+counted_on: 2026-11-07
+since: 1956
+min_texts: 3
+title:
+  ar: "وزارة التعليم: 24 اسما منذ 1956"
+  fr: "Le ministère de l’Éducation : 24 noms depuis 1956"
+lead:
+  ar: "وقّعت الوزارة المكلفة بالتعليم 27.942 نصا في الجريدة الرسمية منذ 1956، تحت 24 اسما. انقسمت سنة 1968 ثلاث وزارات، للابتدائي والثانوي والعالي، ثم اجتمعت، ثم انقسمت. وأطول أسمائها، من 2017 إلى 2021: «وزارة التربية الوطنية والتكوين المهني والتعليم العالي والبحث العلمي»."
+  fr: "Le ministère chargé de l’enseignement a signé 27 942 textes au Bulletin officiel depuis 1956, sous 24 noms. Il s’est scindé en 1968 en trois ministères, du primaire, du secondaire et du supérieur, puis réuni, puis scindé à nouveau. Son plus long nom, de 2017 à 2021 : « ministère de l’Éducation nationale, de la Formation professionnelle, de l’Enseignement supérieur et de la Recherche scientifique »."

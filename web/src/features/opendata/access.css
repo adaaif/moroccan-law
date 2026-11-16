@@ -1,0 +1,283 @@
+/* Access on request (16 Nov 2026): the programme's page, the request's form, the terms and «وصولي», on library.css's
+   rooms. Rows and rules, like a ledger; every colour a token. */
+
+.ax-line { margin: 6px 0 0; font-size: var(--text-lead); line-height: 1.5; font-weight: 600; color: var(--color-stamp); }
+.ax-small { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ax-small a, .ax-standing a, .ax-unproven a, .ax-tick small a { font-weight: 600; color: var(--color-stamp); }
+.ax-mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9375rem; }
+.ax-links { display: flex; flex-wrap: wrap; gap: 0 20px; }
+.ax-links a { display: inline-flex; align-items: center; min-height: 44px; }
+.ax-free { margin: 0; font-size: var(--text-lead); font-weight: 700; color: var(--color-in-force); }
+.ax-tag { display: inline-flex; align-items: center; min-height: 32px; padding: 0 12px; border-radius: 999px; background: var(--color-chip);
+  font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ax-error { margin: 0; font-size: var(--text-meta); line-height: 1.5; color: var(--color-repealed); }
+.ax-alert { display: flex; flex-direction: column; gap: 4px; }
+.ax-alert p { margin: 0; line-height: 1.6; color: var(--color-repealed); }
+
+/* ── Where a request stands ───────────────────────────────────────────────────────────────────────────────────────── */
+.ax-standing { margin: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; line-height: 1.7; color: var(--color-ink); }
+.ax-standing q { display: block; align-self: stretch; padding: 10px 14px; border-inline-start: 3px solid var(--color-stamp-line);
+  background: var(--color-wash); font-weight: 600; quotes: "«" "»"; white-space: pre-wrap; }
+.ax-standing a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ── The programme's page ─────────────────────────────────────────────────────────────────────────────────────────── */
+.ax-door { align-self: end; }
+.ax-door dd { font-weight: 600; text-align: start; }
+.lb-rows .ax-rowhead { font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+
+/* The steps and the terms, numbered in the margin as the law numbers its articles. */
+.ax-steps, .ax-terms { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-rule); }
+.ax-steps { counter-reset: step; }
+.ax-terms { counter-reset: term; }
+.ax-steps li, .ax-terms li { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--color-rule-soft);
+  line-height: 1.75; color: var(--color-ink); text-wrap: pretty; }
+.ax-steps li { counter-increment: step; }
+.ax-terms li { counter-increment: term; padding: 16px 0; font-size: var(--text-lead); }
+.ax-steps li::before, .ax-terms li::before { font-family: var(--font-law); font-size: 1.5rem; line-height: 1.15; font-weight: 600; color: var(--color-stamp);
+  font-variant-numeric: tabular-nums; }
+.ax-steps li::before { content: counter(step); }
+.ax-terms li::before { content: counter(term); }
+.ax-terms li:target { background: var(--color-wash); }
+
+.ax-list { margin: 0; padding-inline-start: 1.2em; display: flex; flex-direction: column; gap: 4px; line-height: 1.7; color: var(--color-ink-soft); }
+.ax-reasons { margin: 0; display: flex; flex-direction: column; }
+.ax-reasons div { display: grid; gap: 2px; padding: 8px 0; border-top: 1px solid var(--color-rule-soft); }
+.ax-reasons div:first-child { padding-top: 0; border-top: 0; }
+.ax-reasons dt { font-weight: 700; color: var(--color-ink); }
+.ax-reasons dd { margin: 0; line-height: 1.6; color: var(--color-ink-soft); }
+
+/* The three sizes: a ledger of their numbers; on a phone each size is its own block of three lines. */
+.ax-table { border-radius: var(--radius-card); background: var(--color-sheet); overflow: hidden; }
+.ax-table table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.ax-table caption { padding: 16px 20px 6px; text-align: start; font-weight: 700; color: var(--color-ink); }
+.ax-table th, .ax-table td { padding: 12px 20px; border-top: 1px solid var(--color-rule-soft); text-align: start; vertical-align: top; }
+.ax-table thead th { border-top: 0; font-size: var(--text-meta); font-weight: 600; color: var(--color-ink-soft); }
+.ax-table thead th:not(:first-child), .ax-table td { text-align: end; }
+.ax-table tbody th { font-weight: 400; }
+.ax-table tbody th b { display: block; font-weight: 700; color: var(--color-ink); }
+.ax-table tbody th span { display: block; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ax-table td { font-weight: 700; color: var(--color-ink); }
+.ax-table td.agreed { text-align: center; font-weight: 600; color: var(--color-ink-soft); }
+@media (max-width: 639px) {
+  .ax-table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .ax-table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr); padding: 12px 16px; border-top: 1px solid var(--color-rule-soft); }
+  .ax-table th, .ax-table td { padding: 3px 0; border: 0; }
+  .ax-table td { display: flex; justify-content: space-between; gap: 12px; }
+  .ax-table td::before { content: attr(data-label); font-weight: 400; color: var(--color-ink-soft); }
+  .ax-table td.agreed { justify-content: flex-start; }
+  .ax-table td.agreed::before { content: none; }
+}
+
+/* An example to copy: the command as typed, wrapped where it must be; the copy gives it whole. */
+.ax-example { flex: 1 1 100%; min-width: 0; display: flex; align-items: flex-start; gap: 8px; }
+.ax-example .lb-code { flex: 1; min-width: 0; margin: 0; white-space: pre-wrap; }
+
+/* The edition: its record, its hash, the hashes before it. */
+.ax-edition { max-width: 30rem; }
+.ax-hash { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 16px 20px; border-radius: var(--radius-card); background: var(--color-sheet); }
+.ax-hash .what { flex: 1 1 16rem; min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.ax-hash .sub { font-size: var(--text-meta); line-height: 1.5; color: var(--color-ink-soft); }
+.ax-hash code, .ax-earlier code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; overflow-wrap: anywhere; text-align: left; }
+.ax-hash code { flex: 1 1 100%; order: 3; padding: 10px 12px; border-radius: var(--radius-control); background: var(--color-paper); font-size: 0.9375rem; color: var(--color-ink); }
+.ax-earlier h3 { margin: 0 0 6px; font-size: var(--text-body); font-weight: 700; }
+.ax-earlier ul { margin: 0; padding: 0; list-style: none; }
+.ax-earlier li { display: grid; gap: 2px 16px; padding: 8px 0; border-top: 1px solid var(--color-rule-soft); font-size: var(--text-meta); color: var(--color-ink-soft); }
+@media (min-width: 640px) { .ax-earlier li { grid-template-columns: 11rem minmax(0, 1fr); } }
+.ax-holders { display: flex; flex-direction: column; gap: 10px; padding: 16px 20px; border-radius: var(--radius-card); background: var(--color-sheet); }
+
+/* ── The form ─────────────────────────────────────────────────────────────────────────────────────────────────────── */
+.ax.lb { gap: 26px; }
+.ax-unproven { margin: 0; padding: 14px 16px; border-radius: var(--radius-control); background: var(--color-amended-wash); line-height: 1.7; color: var(--color-ink); }
+.ax-form { display: flex; flex-direction: column; }
+.ax-group { display: flex; flex-direction: column; gap: 14px; padding: 22px 0; border-top: 1px solid var(--color-rule); }
+.ax-group > h2 { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.ax-group > h2 small { font-size: var(--text-meta); font-weight: 400; color: var(--color-ink-soft); }
+.ax-group h3 { margin: 0; font-size: var(--text-body); font-weight: 700; }
+.ax-fieldset { margin: 0; padding: 0; border: 0; min-width: 0; display: flex; flex-direction: column; gap: 10px; }
+.ax-legend { margin: 0 0 4px; padding: 0; font-size: var(--text-meta); line-height: 1.5; font-weight: 500; color: var(--color-ink-soft); }
+.ax-choices { display: flex; flex-wrap: wrap; gap: 8px; }
+.ax-choices.stacked { flex-direction: column; }
+.ax-choices label { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 16px; border: 1px solid var(--color-field); border-radius: var(--radius-control);
+  background: var(--color-sheet); line-height: 1.45; color: var(--color-ink); cursor: pointer; }
+.ax-choices input { flex: none; width: 18px; height: 18px; margin: 0; accent-color: var(--color-stamp); }
+.ax-choices label:has(input:checked) { border-color: var(--color-stamp); background: var(--color-wash); box-shadow: inset 0 0 0 1px var(--color-stamp); font-weight: 600; }
+.ax-choices label:has(input:focus-visible) { outline: 3px solid var(--color-stamp); outline-offset: 2px; }
+.ax-tick { display: flex; align-items: flex-start; gap: 12px; min-height: 44px; padding: 6px 0; cursor: pointer; }
+.ax-tick input { flex: none; width: 20px; height: 20px; margin: 3px 0 0; accent-color: var(--color-stamp); }
+.ax-tick > span { display: flex; flex-direction: column; gap: 2px; line-height: 1.6; }
+.ax-tick b { font-weight: 600; color: var(--color-ink); }
+.ax-tick small { font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ax-tick small a { display: inline-flex; align-items: center; min-height: 32px; }
+.ax-textarea, .ax-input { width: 100%; border: 1px solid var(--color-field); border-radius: var(--radius-control); background: var(--color-sheet); font: inherit;
+  font-size: var(--text-body); color: var(--color-ink); }
+.ax-textarea { min-height: 9rem; padding: 12px 16px; line-height: 1.7; resize: vertical; }
+.ax-input { height: 48px; padding: 0 16px; }
+.ax-textarea:focus-visible, .ax-input:focus-visible { outline: none; border-color: var(--color-stamp); box-shadow: 0 0 0 4px var(--color-wash); }
+.ax-textarea.bad { border-color: var(--color-repealed); }
+.ax-under { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.ax-count { margin: 0; flex: none; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ax-count.low { color: var(--color-amended); font-weight: 600; }
+.ax-consent { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; padding: 16px 18px; border-inline-start: 3px solid var(--color-stamp-line);
+  border-start-end-radius: var(--radius-control); border-end-end-radius: var(--radius-control); background: var(--color-sheet); }
+.ax-consent > p:not(.ax-error) { margin: 0; line-height: 1.75; color: var(--color-ink-soft); }
+.ax-send { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 22px; border-top: 1px solid var(--color-rule); }
+.ax-send > a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--color-stamp); }
+
+/* ── «وصولي» (/data/access): the head says where the account stands; then titles on rules, rows under them. One block
+   may be set apart: what needs the person now (a question to answer, the first key to make). On a desk the API's reads
+   sit in a side column beside the key. ─────────────────────────────────────────────────────────────────────────── */
+.ax-me .ax-stand { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.ax-me .ax-stand h1 { margin-bottom: 4px; }
+.ax-mark { --tone: var(--color-ink-soft); margin: 0; display: inline-flex; align-items: center; gap: 8px; font-size: 0.9375rem; line-height: 1.4;
+  font-weight: 700; color: var(--tone); }
+.ax-mark i { flex: none; width: 9px; height: 9px; border-radius: 50%; background: var(--tone); }
+.ax-mark[data-tone="live"] { --tone: var(--color-in-force); }
+.ax-mark[data-tone="wait"] { --tone: var(--color-amended); }
+.ax-mark[data-tone="ask"] { --tone: var(--color-stamp); }
+.ax-mark[data-tone="no"] { --tone: var(--color-repealed); }
+.ax-say { margin: 0; max-width: 60ch; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink); text-wrap: pretty; }
+.ax-say.ax-held { font-weight: 600; }
+.ax-acts { margin: 4px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 22px; }
+.ax-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: none; font: inherit; font-weight: 600;
+  color: var(--color-stamp); text-align: start; cursor: pointer; }
+.ax-me a.ax-link:hover, .ax-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ax-link:disabled { cursor: wait; opacity: 0.6; }
+/* A change request beside the live access: its own word and sentence, under a soft rule. */
+.ax-change-line { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; padding-top: 10px; border-top: 1px solid var(--color-rule-soft);
+  align-self: stretch; }
+.ax-change-line p:not(.ax-mark) { margin: 0; max-width: 60ch; line-height: 1.65; color: var(--color-ink); }
+
+/* The body: one column (45 rem at most); on a desk with the API, the reads beside it. */
+.ax-grid { display: flex; flex-direction: column; gap: 32px; }
+.ax-main { display: flex; flex-direction: column; gap: 34px; min-width: 0; max-width: 45rem; }
+@media (max-width: 767px) { .ax-main { gap: 28px; } }
+@media (min-width: 1024px) {
+  .ax-grid:not(.one) { display: grid; grid-template-columns: minmax(0, 45rem) 300px; justify-content: space-between; gap: 48px; align-items: start; }
+  .ax-grid:not(.one) .ax-phone { display: none; }
+}
+
+/* A part: its title on a 2 px rule, what it holds under it. */
+.ax-part { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.ax-part > header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; padding-bottom: 6px; border-bottom: 2px solid var(--color-ink); }
+.ax-part > header h2 { margin: 0; font-size: var(--text-lead); line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.ax-part-aside { margin-inline-start: auto; font-size: 0.9375rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ax-rows { margin: 0; padding: 0; list-style: none; }
+.ax-rows > li { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; min-height: 56px; padding: 8px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.ax-rows > li > .what { flex: 1 1 12rem; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ax-key-name { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; }
+.ax-key-name b { font-weight: 700; color: var(--color-ink); overflow-wrap: anywhere; }
+.ax-key-name code, .ax-file code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.9375rem; color: var(--color-ink-soft); }
+.ax-rows small { font-size: 0.875rem; line-height: 1.5; color: var(--color-ink-soft); }
+.ax-rows .ax-confirm { flex: 1 1 100%; }
+/* A file: its name at the line's start, its size beside it, «تحميل» at the end. */
+.ax-file code { flex: 0 1 auto; min-width: 0; color: var(--color-ink); overflow-wrap: anywhere; }
+.ax-file .size { font-size: 0.875rem; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+/* The button, not the size: the size reads left to right, and its own «end» would be the wrong side on an Arabic page. */
+.ax-file > button { margin-inline-start: auto; }
+.ax-file .ax-alert { flex: 1 1 100%; }
+.ax-small a { font-weight: 600; color: var(--color-stamp); }
+
+/* What needs the person now: the one block set apart, on the sheet, its edge in the stamp's ink. */
+.ax-now { display: flex; flex-direction: column; gap: 10px; padding: 16px 18px; border-inline-start: 4px solid var(--color-stamp); background: var(--color-sheet);
+  border-start-end-radius: var(--radius-control); border-end-end-radius: var(--radius-control); }
+@media (min-width: 640px) { .ax-now { padding: 20px 24px; } }
+.ax-now > h2, .ax-now > h3 { margin: 0; font-size: var(--text-lead); line-height: 1.4; font-weight: 700; color: var(--color-ink); }
+.ax-now > q { display: block; padding: 4px 0; font-size: var(--text-lead); line-height: 1.7; font-weight: 600; color: var(--color-ink); quotes: "«" "»";
+  white-space: pre-wrap; overflow-wrap: anywhere; }
+.ax-label { font-size: var(--text-meta); font-weight: 600; color: var(--color-ink); }
+.ax-label span { font-weight: 400; color: var(--color-ink-soft); }
+
+/* A key: made, shown once, its first call; the small form that makes one. */
+.ax-make { display: flex; flex-direction: column; gap: 6px; }
+.ax-make .row { display: flex; flex-wrap: wrap; gap: 8px; }
+.ax-make .ax-input { flex: 1 1 12rem; min-width: 0; width: auto; }
+.ax-second { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
+.ax-keys-acts:empty { display: none; }
+.ax-fresh { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border: 2px solid var(--color-stamp); border-radius: var(--radius-control); background: var(--color-wash); }
+.ax-fresh > b { font-size: var(--text-lead); }
+.ax-fresh code.key { padding: 10px 12px; border-radius: 8px; background: var(--color-sheet); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 1rem;
+  overflow-wrap: anywhere; text-align: left; color: var(--color-ink); user-select: all; }
+.ax-fresh > p:not(.ax-small) { margin: 0; font-weight: 600; line-height: 1.6; }
+.ax-fresh .lb-code { padding: 10px 12px; border-radius: 8px; background: var(--color-sheet); }
+.ax-confirm { display: flex; flex-direction: column; gap: 10px; padding: 12px 14px; border-inline-start: 3px solid var(--color-repealed); background: var(--color-sheet); }
+.ax-confirm p { margin: 0; line-height: 1.6; }
+.ax-danger { min-height: 44px; padding: 0 18px; border: 1px solid var(--color-repealed); border-radius: var(--radius-control); background: var(--color-sheet);
+  color: var(--color-repealed); font: inherit; font-weight: 600; cursor: pointer; }
+.ax-danger:hover { background: var(--color-repealed); color: var(--color-sheet); }
+.ax-danger:disabled { cursor: wait; opacity: 0.6; }
+.ax-me .lb-code { display: block; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.875rem; line-height: 1.6; color: var(--color-ink);
+  overflow-wrap: anywhere; text-align: left; }
+
+/* Use: today against the limits, the minute beside them; 30 days of bars, left to right in both languages. */
+.ax-meters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; align-items: end; }
+@media (min-width: 640px) { .ax-meters { grid-template-columns: repeat(2, minmax(0, 1fr)) auto; gap: 12px 28px; } }
+.ax-meter { display: grid; gap: 4px; min-width: 0; }
+.ax-meter .what { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ax-meter .n { color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ax-meter .n b { font-size: var(--text-lead); color: var(--color-ink); }
+.ax-meter .bar { display: block; direction: ltr; height: 8px; border-radius: 4px; background: var(--color-chip); overflow: hidden; }
+.ax-meter .bar i { display: block; height: 100%; min-width: 2px; border-radius: 4px; background: var(--color-chart-1); }
+.ax-minute { grid-column: 1 / -1; margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+@media (min-width: 640px) { .ax-minute { grid-column: auto; max-width: 12rem; padding-bottom: 2px; } }
+.ax-chart { margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.ax-chart figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; font-weight: 600; }
+.ax-chart figcaption span { font-size: var(--text-meta); font-weight: 400; color: var(--color-ink-soft); }
+.ax-bars { position: relative; display: flex; flex-direction: column; gap: 4px; padding-top: 22px; }
+.ax-bars svg { display: block; width: 100%; height: 72px; border-bottom: 1px solid var(--color-rule); }
+.ax-bars rect.on { fill: var(--color-chart-1); }
+.ax-bars rect.off { fill: var(--color-rule); }
+.ax-bars .top { position: absolute; top: 0; left: 0; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.ax-bars .ends { display: flex; justify-content: space-between; gap: 12px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ax-numbers summary, .ax-sent summary, .ax-fold summary { display: flex; align-items: center; gap: 8px; min-height: 44px; padding-block: 10px; line-height: 1.5;
+  font-weight: 600; color: var(--color-stamp); cursor: pointer; list-style: none; }
+.ax-numbers summary::-webkit-details-marker, .ax-sent summary::-webkit-details-marker, .ax-fold summary::-webkit-details-marker { display: none; }
+/* A chevron after the words says the fold opens, and turns when it is open. */
+.ax-numbers summary::after, .ax-sent summary::after, .ax-fold summary::after { content: ""; flex: none; width: 7px; height: 7px; border: solid currentColor;
+  border-width: 0 2px 2px 0; transform: translateY(-2px) rotate(45deg); }
+.ax-numbers[open] summary::after, .ax-sent[open] summary::after, .ax-fold[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.ax-numbers table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.ax-numbers th, .ax-numbers td { padding: 6px 0; border-top: 1px solid var(--color-rule-soft); text-align: start; font-size: var(--text-meta); }
+.ax-numbers thead th { border-top: 0; color: var(--color-ink-soft); font-weight: 600; }
+.ax-numbers td, .ax-numbers thead th:not(:first-child) { text-align: end; }
+.ax-numbers tbody th { font-weight: 400; }
+.ax-fold > .ax-rows { border-top: 1px solid var(--color-rule-soft); }
+.ax-pre { margin: 0; max-height: 22rem; overflow: auto; padding: 12px 14px; border-radius: var(--radius-control); background: var(--color-sheet);
+  font-size: var(--text-meta); line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+/* The foot, quietly: each row a line under a soft rule. */
+.ax-foot { display: flex; flex-direction: column; border-top: 1px solid var(--color-rule); }
+.ax-foot > * { border-bottom: 1px solid var(--color-rule-soft); }
+.ax-foot-row { display: flex; align-items: center; width: 100%; min-height: 48px; padding: 0; border: 0; background: none; font: inherit; font-weight: 600;
+  color: var(--color-stamp); text-align: start; cursor: pointer; }
+.ax-foot-row:hover { text-decoration: underline; text-underline-offset: 3px; }
+.ax-foot-row.danger { color: var(--color-repealed); font-weight: 500; }
+.ax-terms-line { margin: 0; padding: 12px 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); }
+.ax-terms-line a { font-weight: 600; color: var(--color-stamp); }
+.ax-end { display: flex; flex-direction: column; gap: 8px; }
+.ax-end .ax-confirm { margin: 10px 0; }
+.ax-sent dl { margin: 0 0 10px; }
+.ax-sent dl div { display: grid; gap: 2px 16px; padding: 8px 0; border-top: 1px solid var(--color-rule-soft); }
+@media (min-width: 640px) { .ax-sent dl div { grid-template-columns: 9rem minmax(0, 1fr); } }
+.ax-sent dt { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.ax-sent dd { margin: 0; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+.ax-answer { display: flex; flex-direction: column; gap: 8px; }
+
+/* Asking for a change, opened at the foot. */
+.ax-change { display: flex; flex-direction: column; gap: 16px; padding: 16px 0 20px; }
+.ax-change > h2 { margin: 0; font-size: var(--text-lead); font-weight: 700; color: var(--color-ink); }
+.ax-size { display: flex; flex-direction: column; gap: 0; }
+.ax-size small { font-size: 0.875rem; font-weight: 400; color: var(--color-ink-soft); }
+
+/* The API beside the key, on a desk only. */
+.ax-side { display: none; }
+@media (min-width: 1024px) {
+  .ax-side { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+  .ax-side > h2 { margin: 0; padding-bottom: 6px; border-bottom: 2px solid var(--color-ink); font-size: var(--text-lead); line-height: 1.4; font-weight: 700; }
+}
+.ax-reads { margin: 0; padding: 0; list-style: none; }
+.ax-reads li { display: flex; flex-direction: column; gap: 2px; padding: 8px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.ax-reads li > span:first-child { font-size: 0.9375rem; font-weight: 600; color: var(--color-ink); }
+.ax-reads .addr { display: flex; align-items: baseline; gap: 6px; text-align: left; }
+.ax-reads code { min-width: 0; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.875rem; color: var(--color-ink-soft); overflow-wrap: anywhere; }
+.ax-shape { margin: 0; padding: 10px 12px; border-radius: 8px; background: var(--color-sheet); font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875rem; line-height: 1.6; color: var(--color-ink); text-align: left; white-space: pre; overflow-x: auto; }

@@ -1,0 +1,1679 @@
+{
+ "about": "Tax questions in Darija, Arabic, French and Latin letters (the tax review, T21, 26 Oct 2026), written with the doors' words: tuning, not test.",
+ "checked": "owner-provisional",
+ "questions": [
+  {
+   "q": "شحال كيقطعو ليا من الأجرة",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "شحال الضريبة على الأجر",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "الضريبة على الأجرة ديالي شحال",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "جدول الضريبة على الدخل 2026",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "جدول حساب الضريبة على الدخل",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "سعر الضريبة على الدخل",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "الشريحة المعفاة من الضريبة على الدخل",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "barème impôt sur le revenu 2026",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "barème IR maroc",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "tranche exonérée impôt sur le revenu",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "taux marginal IR 37%",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "chhal daribat 3la salaire",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "latin",
+   "theme": "salary"
+  },
+  {
+   "q": "dariba 3la l2ojra",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "latin",
+   "theme": "salary"
+  },
+  {
+   "q": "المصاريف المهنية فالأجرة",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "شحال كينقصو المصاريف المهنية من الأجر",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "خصم المصاريف المرتبطة بالوظيفة أو العمل",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "نسبة المصاريف المهنية 35 في المائة",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "frais professionnels 35% salaire",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "déduction frais professionnels IR",
+   "expect": [
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "شنو كيدخل فالأجر الخاضع للضريبة",
+   "expect": [
+    "/ma/code/cgi/art_56",
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "واش التعويضات فيها الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_56",
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "indemnités exonérées impôt sur le revenu",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "prime exonérée IR",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "واش الأجير خاصو يصرح بالدخل",
+   "expect": [
+    "/ma/code/cgi/art_86"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "عندي غير مشغل واحد واش نصرح",
+   "expect": [
+    "/ma/code/cgi/art_86"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "الإعفاء من الإقرار بالدخل الإجمالي",
+   "expect": [
+    "/ma/code/cgi/art_86"
+   ],
+   "lang": "arabic",
+   "theme": "salary"
+  },
+  {
+   "q": "المشغل كيحجز الضريبة من الأجرة",
+   "expect": [
+    "/ma/code/cgi/art_156"
+   ],
+   "lang": "darija",
+   "theme": "salary"
+  },
+  {
+   "q": "retenue à la source sur salaire employeur",
+   "expect": [
+    "/ma/code/cgi/art_156"
+   ],
+   "lang": "french",
+   "theme": "salary"
+  },
+  {
+   "q": "شحال كينقص على الدراري فالضريبة",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "darija",
+   "theme": "children"
+  },
+  {
+   "q": "الأولاد والضريبة على الدخل",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "darija",
+   "theme": "children"
+  },
+  {
+   "q": "الخصم على الزوجة والأولاد",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "darija",
+   "theme": "children"
+  },
+  {
+   "q": "الخصم عن الأعباء العائلية",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "arabic",
+   "theme": "children"
+  },
+  {
+   "q": "مبلغ الخصم عن كل شخص يعوله الخاضع للضريبة",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "arabic",
+   "theme": "children"
+  },
+  {
+   "q": "réduction pour charges de famille",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "french",
+   "theme": "children"
+  },
+  {
+   "q": "déduction enfants à charge impôt",
+   "expect": [
+    "/ma/code/cgi/art_74"
+   ],
+   "lang": "french",
+   "theme": "children"
+  },
+  {
+   "q": "واش المعاش فيه الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "الضريبة على المعاش ديال التقاعد",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "معاش الضمان الاجتماعي معفي من الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "إعفاء معاشات أنظمة التقاعد الأساسي",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "arabic",
+   "theme": "pension"
+  },
+  {
+   "q": "المعاشات والإيرادات العمرية المعفاة",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "arabic",
+   "theme": "pension"
+  },
+  {
+   "q": "pension de retraite exonérée 2026",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "french",
+   "theme": "pension"
+  },
+  {
+   "q": "retraite CNSS impôt exonération",
+   "expect": [
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "french",
+   "theme": "pension"
+  },
+  {
+   "q": "الإسقاط على المعاش التكميلي",
+   "expect": [
+    "/ma/code/cgi/art_60"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "abattement forfaitaire pensions 70%",
+   "expect": [
+    "/ma/code/cgi/art_60"
+   ],
+   "lang": "french",
+   "theme": "pension"
+  },
+  {
+   "q": "pension étrangère réduction 80%",
+   "expect": [
+    "/ma/code/cgi/art_76"
+   ],
+   "lang": "french",
+   "theme": "pension"
+  },
+  {
+   "q": "تخفيض الضريبة على معاشات التقاعد ذات المصدر الأجنبي",
+   "expect": [
+    "/ma/code/cgi/art_76"
+   ],
+   "lang": "arabic",
+   "theme": "pension"
+  },
+  {
+   "q": "الضريبة على الكراء ديال الدار",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "darija",
+   "theme": "rent"
+  },
+  {
+   "q": "كنكري دار شحال الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "darija",
+   "theme": "rent"
+  },
+  {
+   "q": "شحال كينقص من الكراء فالضريبة",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "darija",
+   "theme": "rent"
+  },
+  {
+   "q": "تحديد إجمالي الدخل العقاري",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "arabic",
+   "theme": "rent"
+  },
+  {
+   "q": "إسقاط 40 في المائة على الدخل العقاري",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "arabic",
+   "theme": "rent"
+  },
+  {
+   "q": "revenus fonciers abattement 40%",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "french",
+   "theme": "rent"
+  },
+  {
+   "q": "taux libératoire loyer 20%",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "french",
+   "theme": "rent"
+  },
+  {
+   "q": "option taux libératoire revenus fonciers",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "french",
+   "theme": "rent"
+  },
+  {
+   "q": "الحجز فالمنبع على الكراء ديال الشركة",
+   "expect": [
+    "/ma/code/cgi/art_160"
+   ],
+   "lang": "darija",
+   "theme": "rent"
+  },
+  {
+   "q": "retenue à la source revenus fonciers société locataire",
+   "expect": [
+    "/ma/code/cgi/art_160-bis"
+   ],
+   "lang": "french",
+   "theme": "rent"
+  },
+  {
+   "q": "الحجز في المنبع برسم الدخول العقارية",
+   "expect": [
+    "/ma/code/cgi/art_160-bis"
+   ],
+   "lang": "arabic",
+   "theme": "rent"
+  },
+  {
+   "q": "dariba 3la lkra dyal dar",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "latin",
+   "theme": "rent"
+  },
+  {
+   "q": "kanakri dar chhal dariba",
+   "expect": [
+    "/ma/code/cgi/art_64"
+   ],
+   "lang": "latin",
+   "theme": "rent"
+  },
+  {
+   "q": "شنو هو الدخل العقاري",
+   "expect": [
+    "/ma/code/cgi/art_61"
+   ],
+   "lang": "darija",
+   "theme": "rent"
+  },
+  {
+   "q": "الضريبة على الفوائد ديال البنك",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "savings"
+  },
+  {
+   "q": "الضريبة على الأرباح ديال الأسهم",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "savings"
+  },
+  {
+   "q": "impôt sur les dividendes maroc",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "savings"
+  },
+  {
+   "q": "taux intérêts placements personnes physiques",
+   "expect": [
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "savings"
+  },
+  {
+   "q": "إعفاء فوائد مخطط الادخار السكني",
+   "expect": [
+    "/ma/code/cgi/art_68"
+   ],
+   "lang": "arabic",
+   "theme": "savings"
+  },
+  {
+   "q": "مخطط الادخار في الأسهم الإعفاء",
+   "expect": [
+    "/ma/code/cgi/art_68"
+   ],
+   "lang": "arabic",
+   "theme": "savings"
+  },
+  {
+   "q": "plan épargne logement exonération intérêts",
+   "expect": [
+    "/ma/code/cgi/art_68"
+   ],
+   "lang": "french",
+   "theme": "savings"
+  },
+  {
+   "q": "PEA exonération 5 ans",
+   "expect": [
+    "/ma/code/cgi/art_68"
+   ],
+   "lang": "french",
+   "theme": "savings"
+  },
+  {
+   "q": "رسم السكن شكون كيخلصو",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_20"
+   ],
+   "lang": "darija",
+   "theme": "housing"
+  },
+  {
+   "q": "واش الكاري كيخلص رسم السكن",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_20"
+   ],
+   "lang": "darija",
+   "theme": "housing"
+  },
+  {
+   "q": "الطاكس ديال الدار",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_20"
+   ],
+   "lang": "darija",
+   "theme": "housing"
+  },
+  {
+   "q": "إسقاط 75 في المائة السكن الرئيسي رسم السكن",
+   "expect": [
+    "/ma/loi/47-06/art_24"
+   ],
+   "lang": "arabic",
+   "theme": "housing"
+  },
+  {
+   "q": "سعر رسم السكن",
+   "expect": [
+    "/ma/loi/47-06/art_27"
+   ],
+   "lang": "arabic",
+   "theme": "housing"
+  },
+  {
+   "q": "taxe d'habitation barème",
+   "expect": [
+    "/ma/loi/47-06/art_27"
+   ],
+   "lang": "french",
+   "theme": "housing"
+  },
+  {
+   "q": "taux taxe habitation maroc",
+   "expect": [
+    "/ma/loi/47-06/art_27"
+   ],
+   "lang": "french",
+   "theme": "housing"
+  },
+  {
+   "q": "taxe d'habitation abattement 75% habitation principale",
+   "expect": [
+    "/ma/loi/47-06/art_24"
+   ],
+   "lang": "french",
+   "theme": "housing"
+  },
+  {
+   "q": "رسم الخدمات الجماعية شحال",
+   "expect": [
+    "/ma/loi/47-06/art_36"
+   ],
+   "lang": "darija",
+   "theme": "housing"
+  },
+  {
+   "q": "taxe de services communaux taux 10,5%",
+   "expect": [
+    "/ma/loi/47-06/art_36"
+   ],
+   "lang": "french",
+   "theme": "housing"
+  },
+  {
+   "q": "tasse dyal dar chkon kikhlsha",
+   "expect": [
+    "/ma/loi/47-06/art_19",
+    "/ma/loi/47-06/art_20"
+   ],
+   "lang": "latin",
+   "theme": "housing"
+  },
+  {
+   "q": "الضريبة على الأراضي غير المبنية",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "darija",
+   "theme": "land"
+  },
+  {
+   "q": "شحال الضريبة على أرض ما مبنياش",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "darija",
+   "theme": "land"
+  },
+  {
+   "q": "عندي أرض فالمدينة ما بنيتهاش",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "darija",
+   "theme": "land"
+  },
+  {
+   "q": "سعر الرسم على الأراضي الحضرية غير المبنية",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "arabic",
+   "theme": "land"
+  },
+  {
+   "q": "أجل الإقرار بالأراضي الحضرية غير المبنية",
+   "expect": [
+    "/ma/loi/47-06/art_46",
+    "/ma/loi/47-06/art_47"
+   ],
+   "lang": "arabic",
+   "theme": "land"
+  },
+  {
+   "q": "taxe sur les terrains urbains non bâtis tarif",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "french",
+   "theme": "land"
+  },
+  {
+   "q": "TNB maroc prix m2",
+   "expect": [
+    "/ma/loi/47-06/art_45"
+   ],
+   "lang": "french",
+   "theme": "land"
+  },
+  {
+   "q": "TNB déclaration avant 1er mars",
+   "expect": [
+    "/ma/loi/47-06/art_46",
+    "/ma/loi/47-06/art_47"
+   ],
+   "lang": "french",
+   "theme": "land"
+  },
+  {
+   "q": "الفينييت ديال الطوموبيل شحال",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "darija",
+   "theme": "car"
+  },
+  {
+   "q": "شحال الفينييت ديال 6 خيول مازوط",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "darija",
+   "theme": "car"
+  },
+  {
+   "q": "الضريبة على السيارات",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "darija",
+   "theme": "car"
+  },
+  {
+   "q": "تعريفة الضريبة الخصوصية السنوية على المركبات",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "arabic",
+   "theme": "car"
+  },
+  {
+   "q": "أجل أداء الضريبة الخصوصية السنوية على المركبات",
+   "expect": [
+    "/ma/code/cgi/art_261"
+   ],
+   "lang": "arabic",
+   "theme": "car"
+  },
+  {
+   "q": "vignette auto maroc prix",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "french",
+   "theme": "car"
+  },
+  {
+   "q": "tarif vignette diesel 8 CV",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "french",
+   "theme": "car"
+  },
+  {
+   "q": "taxe spéciale annuelle sur les véhicules tarif",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "french",
+   "theme": "car"
+  },
+  {
+   "q": "vignette voiture électrique exonérée",
+   "expect": [
+    "/ma/code/cgi/art_260"
+   ],
+   "lang": "french",
+   "theme": "car"
+  },
+  {
+   "q": "lvinyit chhal",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "latin",
+   "theme": "car"
+  },
+  {
+   "q": "vignette tomobil chhal",
+   "expect": [
+    "/ma/code/cgi/art_262"
+   ],
+   "lang": "latin",
+   "theme": "car"
+  },
+  {
+   "q": "بعت دار شحال الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "darija",
+   "theme": "sell"
+  },
+  {
+   "q": "الضريبة على بيع الدار",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "darija",
+   "theme": "sell"
+  },
+  {
+   "q": "الربح العقاري شحال",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "darija",
+   "theme": "sell"
+  },
+  {
+   "q": "الربح العقاري السكن الرئيسي معفي",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "darija",
+   "theme": "sell"
+  },
+  {
+   "q": "بعت الدار اللي ساكن فيها واش فيها الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "darija",
+   "theme": "sell"
+  },
+  {
+   "q": "إعفاء الربح المحقق من تفويت السكن الرئيسي",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "إعفاء التفويتات التي لا تتجاوز 140000 درهم",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "الحد الأدنى للضريبة على الأرباح العقارية 3 في المائة",
+   "expect": [
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "تحديد الربح العقاري المفروضة عليه الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_65"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "مصاريف الاقتناء 15 في المائة",
+   "expect": [
+    "/ma/code/cgi/art_65"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "أجل الإقرار بالأرباح العقارية",
+   "expect": [
+    "/ma/code/cgi/art_83"
+   ],
+   "lang": "arabic",
+   "theme": "sell"
+  },
+  {
+   "q": "plus-value immobilière taux 20%",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "french",
+   "theme": "sell"
+  },
+  {
+   "q": "impôt vente appartement maroc",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "french",
+   "theme": "sell"
+  },
+  {
+   "q": "cotisation minimale profit foncier 3%",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "french",
+   "theme": "sell"
+  },
+  {
+   "q": "plus-value cession logement principal exonération",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "french",
+   "theme": "sell"
+  },
+  {
+   "q": "exonération habitation principale 5 ans",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "french",
+   "theme": "sell"
+  },
+  {
+   "q": "ba3t dar chhal dariba",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "latin",
+   "theme": "sell"
+  },
+  {
+   "q": "واجبات التسجيل فشراء دار",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "darija",
+   "theme": "buy"
+  },
+  {
+   "q": "شريت شقة شحال التسجيل",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "darija",
+   "theme": "buy"
+  },
+  {
+   "q": "شحال كنخلصو على تسجيل العقد",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "darija",
+   "theme": "buy"
+  },
+  {
+   "q": "الواجبات النسبية للتسجيل",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "arabic",
+   "theme": "buy"
+  },
+  {
+   "q": "سعر واجبات التسجيل على الأراضي العارية",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "arabic",
+   "theme": "buy"
+  },
+  {
+   "q": "آجال التسجيل",
+   "expect": [
+    "/ma/code/cgi/art_128"
+   ],
+   "lang": "arabic",
+   "theme": "buy"
+  },
+  {
+   "q": "droits d'enregistrement achat appartement 4%",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "french",
+   "theme": "buy"
+  },
+  {
+   "q": "droits d'enregistrement terrain nu 5%",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "french",
+   "theme": "buy"
+  },
+  {
+   "q": "délai enregistrement acte 30 jours",
+   "expect": [
+    "/ma/code/cgi/art_128"
+   ],
+   "lang": "french",
+   "theme": "buy"
+  },
+  {
+   "q": "هبة دار للولد واش فيها الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_63",
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "darija",
+   "theme": "gift"
+  },
+  {
+   "q": "الصدقة بين الأب والولد",
+   "expect": [
+    "/ma/code/cgi/art_63",
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "darija",
+   "theme": "gift"
+  },
+  {
+   "q": "التسجيل على الهبة بين الأصول والفروع",
+   "expect": [
+    "/ma/code/cgi/art_133"
+   ],
+   "lang": "arabic",
+   "theme": "gift"
+  },
+  {
+   "q": "donation entre parents exonération profit foncier",
+   "expect": [
+    "/ma/code/cgi/art_63"
+   ],
+   "lang": "french",
+   "theme": "gift"
+  },
+  {
+   "q": "vente bien hérité prix acquisition",
+   "expect": [
+    "/ma/code/cgi/art_65"
+   ],
+   "lang": "french",
+   "theme": "gift"
+  },
+  {
+   "q": "المقاول الذاتي شحال كيخلص الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "darija",
+   "theme": "own"
+  },
+  {
+   "q": "الضريبة على المقاول الذاتي",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "darija",
+   "theme": "own"
+  },
+  {
+   "q": "شروط نظام المقاول الذاتي",
+   "expect": [
+    "/ma/code/cgi/art_42-ter"
+   ],
+   "lang": "arabic",
+   "theme": "own"
+  },
+  {
+   "q": "سقف رقم معاملات المقاول الذاتي",
+   "expect": [
+    "/ma/code/cgi/art_42-ter"
+   ],
+   "lang": "arabic",
+   "theme": "own"
+  },
+  {
+   "q": "المساهمة المهنية الموحدة",
+   "expect": [
+    "/ma/code/cgi/art_40"
+   ],
+   "lang": "arabic",
+   "theme": "own"
+  },
+  {
+   "q": "معامل المساهمة المهنية الموحدة",
+   "expect": [
+    "/ma/code/cgi/art_40"
+   ],
+   "lang": "arabic",
+   "theme": "own"
+  },
+  {
+   "q": "auto-entrepreneur impôt taux 1%",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "french",
+   "theme": "own"
+  },
+  {
+   "q": "auto entrepreneur client 80000 retenue",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "french",
+   "theme": "own"
+  },
+  {
+   "q": "contribution professionnelle unique coefficient",
+   "expect": [
+    "/ma/code/cgi/art_40",
+    "/ma/code/cgi/art_41"
+   ],
+   "lang": "french",
+   "theme": "own"
+  },
+  {
+   "q": "CPU maroc taux",
+   "expect": [
+    "/ma/code/cgi/art_40",
+    "/ma/code/cgi/art_41"
+   ],
+   "lang": "french",
+   "theme": "own"
+  },
+  {
+   "q": "déclaration trimestrielle auto-entrepreneur",
+   "expect": [
+    "/ma/code/cgi/art_82-bis"
+   ],
+   "lang": "french",
+   "theme": "own"
+  },
+  {
+   "q": "auto entrepreneur chhal kikhlas",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_42-bis"
+   ],
+   "lang": "latin",
+   "theme": "own"
+  },
+  {
+   "q": "تأخرت فالخلاص ديال الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_208"
+   ],
+   "lang": "darija",
+   "theme": "late"
+  },
+  {
+   "q": "الذعيرة على التأخر فأداء الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_208"
+   ],
+   "lang": "darija",
+   "theme": "late"
+  },
+  {
+   "q": "ذعيرة التأخير في التصريح الضريبي",
+   "expect": [
+    "/ma/code/cgi/art_184"
+   ],
+   "lang": "darija",
+   "theme": "late"
+  },
+  {
+   "q": "نسيت نصرح بالدخل",
+   "expect": [
+    "/ma/code/cgi/art_184"
+   ],
+   "lang": "darija",
+   "theme": "late"
+  },
+  {
+   "q": "الجزاءات المترتبة على الأداء المتأخر للضرائب",
+   "expect": [
+    "/ma/code/cgi/art_208"
+   ],
+   "lang": "arabic",
+   "theme": "late"
+  },
+  {
+   "q": "الجزاءات عن عدم إيداع الإقرارات أو إيداعها خارج الأجل",
+   "expect": [
+    "/ma/code/cgi/art_184"
+   ],
+   "lang": "arabic",
+   "theme": "late"
+  },
+  {
+   "q": "majoration de retard paiement impôt",
+   "expect": [
+    "/ma/code/cgi/art_208"
+   ],
+   "lang": "french",
+   "theme": "late"
+  },
+  {
+   "q": "pénalité 10% retard paiement",
+   "expect": [
+    "/ma/code/cgi/art_208"
+   ],
+   "lang": "french",
+   "theme": "late"
+  },
+  {
+   "q": "majoration dépôt tardif déclaration 5% 15%",
+   "expect": [
+    "/ma/code/cgi/art_184"
+   ],
+   "lang": "french",
+   "theme": "late"
+  },
+  {
+   "q": "الجزاءات عن الأداء المتأخر لرسم السكن",
+   "expect": [
+    "/ma/loi/47-06/art_147"
+   ],
+   "lang": "arabic",
+   "theme": "late"
+  },
+  {
+   "q": "توصلت برسالة من الضرائب",
+   "expect": [
+    "/ma/code/cgi/art_220"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "توصلت بإشعار بالتصحيح",
+   "expect": [
+    "/ma/code/cgi/art_220"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "كيفاش نشكي على الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_235"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "الضريبة غالطة كيفاش نتظلم",
+   "expect": [
+    "/ma/code/cgi/art_235"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "كيفاش نسترجع الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_241-bis"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "خلصت الضريبة بزاف كيفاش نرجعها",
+   "expect": [
+    "/ma/code/cgi/art_241-bis"
+   ],
+   "lang": "darija",
+   "theme": "notice"
+  },
+  {
+   "q": "المسطرة العادية لتصحيح الضرائب",
+   "expect": [
+    "/ma/code/cgi/art_220"
+   ],
+   "lang": "arabic",
+   "theme": "notice"
+  },
+  {
+   "q": "حق التظلم وأجله",
+   "expect": [
+    "/ma/code/cgi/art_235"
+   ],
+   "lang": "arabic",
+   "theme": "notice"
+  },
+  {
+   "q": "الطعن القضائي في قرارات اللجنة المحلية لتقدير الضريبة",
+   "expect": [
+    "/ma/code/cgi/art_242"
+   ],
+   "lang": "arabic",
+   "theme": "notice"
+  },
+  {
+   "q": "notification de redressement délai réponse 30 jours",
+   "expect": [
+    "/ma/code/cgi/art_220"
+   ],
+   "lang": "french",
+   "theme": "notice"
+  },
+  {
+   "q": "procédure normale de rectification",
+   "expect": [
+    "/ma/code/cgi/art_220"
+   ],
+   "lang": "french",
+   "theme": "notice"
+  },
+  {
+   "q": "réclamation fiscale délai 6 mois",
+   "expect": [
+    "/ma/code/cgi/art_235"
+   ],
+   "lang": "french",
+   "theme": "notice"
+  },
+  {
+   "q": "restitution impôt sur le revenu retenu à la source",
+   "expect": [
+    "/ma/code/cgi/art_241-bis"
+   ],
+   "lang": "french",
+   "theme": "notice"
+  },
+  {
+   "q": "آخر أجل للتصريح بالدخل",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "إمتى نصرح بالدخل ديالي",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "التصريح بالدخل الإجمالي قبل فاتح مارس",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "darija",
+   "theme": "declare"
+  },
+  {
+   "q": "الإقرار السنوي بمجموع الدخل",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "arabic",
+   "theme": "declare"
+  },
+  {
+   "q": "déclaration annuelle revenu global date limite",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "french",
+   "theme": "declare"
+  },
+  {
+   "q": "déclaration IR avant 1er mars",
+   "expect": [
+    "/ma/code/cgi/art_82"
+   ],
+   "lang": "french",
+   "theme": "declare"
+  },
+  {
+   "q": "ساكن فالخارج واش نخلص الضريبة فالمغرب",
+   "expect": [
+    "/ma/code/cgi/art_23"
+   ],
+   "lang": "darija",
+   "theme": "abroad"
+  },
+  {
+   "q": "مغاربة العالم والضريبة",
+   "expect": [
+    "/ma/code/cgi/art_23"
+   ],
+   "lang": "darija",
+   "theme": "abroad"
+  },
+  {
+   "q": "الموطن الضريبي في المغرب 183 يوما",
+   "expect": [
+    "/ma/code/cgi/art_23"
+   ],
+   "lang": "arabic",
+   "theme": "abroad"
+  },
+  {
+   "q": "domicile fiscal maroc 183 jours",
+   "expect": [
+    "/ma/code/cgi/art_23"
+   ],
+   "lang": "french",
+   "theme": "abroad"
+  },
+  {
+   "q": "MRE impôt sur le revenu maroc",
+   "expect": [
+    "/ma/code/cgi/art_23"
+   ],
+   "lang": "french",
+   "theme": "abroad"
+  },
+  {
+   "q": "سعر الضريبة على الشركات",
+   "expect": [
+    "/ma/code/cgi/art_19"
+   ],
+   "lang": "arabic",
+   "theme": "company"
+  },
+  {
+   "q": "taux impôt sur les sociétés 2026",
+   "expect": [
+    "/ma/code/cgi/art_19"
+   ],
+   "lang": "french",
+   "theme": "company"
+  },
+  {
+   "q": "IS maroc 20% 35%",
+   "expect": [
+    "/ma/code/cgi/art_19"
+   ],
+   "lang": "french",
+   "theme": "company"
+  },
+  {
+   "q": "السعر العادي للضريبة على القيمة المضافة",
+   "expect": [
+    "/ma/code/cgi/art_99"
+   ],
+   "lang": "arabic",
+   "theme": "company"
+  },
+  {
+   "q": "taux TVA maroc",
+   "expect": [
+    "/ma/code/cgi/art_99"
+   ],
+   "lang": "french",
+   "theme": "company"
+  },
+  {
+   "q": "TVA 20% taux normal",
+   "expect": [
+    "/ma/code/cgi/art_99"
+   ],
+   "lang": "french",
+   "theme": "company"
+  },
+  {
+   "q": "شحال الضريبة على القيمة المضافة",
+   "expect": [
+    "/ma/code/cgi/art_99"
+   ],
+   "lang": "darija",
+   "theme": "company"
+  },
+  {
+   "q": "cotisation minimale IS",
+   "expect": [
+    "/ma/code/cgi/art_144"
+   ],
+   "lang": "french",
+   "theme": "company"
+  },
+  {
+   "q": "قانون المالية 2027",
+   "expect": [
+    "/ma/projet-loi/60-26",
+    "/ma/projet-loi/60-26/art_7"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "مشروع قانون المالية 2027",
+   "expect": [
+    "/ma/projet-loi/60-26",
+    "/ma/projet-loi/60-26/art_7"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "PLF 2027",
+   "expect": [
+    "/ma/projet-loi/60-26",
+    "/ma/projet-loi/60-26/art_7"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "loi de finances 2027",
+   "expect": [
+    "/ma/projet-loi/60-26",
+    "/ma/projet-loi/60-26/art_7"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "projet de loi de finances 2027 impôt sur le revenu",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "الضريبة على الدخل 2027",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_247"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "barème IR 2027",
+   "expect": [
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_247",
+    "/ma/projet-loi/60-26/art_7"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "شحال غادي نربح",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_247"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "شحال غادي نربح فالأجرة بالمشروع الجديد",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "الإعفاء ديال 10.000 درهم",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "واش الأجرة تحت 10000 درهم معفية",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "الشريحة المعفية 60.000 درهم",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73",
+    "/ma/code/cgi/art_247"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "المصاريف المهنية 45%",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "frais professionnels 45%",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_59"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "التعويضات فـ2031 غادي تولي فيها الضريبة",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_57"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "كأس العالم 2030 الإعفاء الضريبي",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/projet-loi/60-26/art_6"
+   ],
+   "lang": "arabic",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "exonération FIFA 2030",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/projet-loi/60-26/art_6"
+   ],
+   "lang": "french",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "التسجيل فالرسم المهني 2027 بلا ما نخلص اللي فات",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_247"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "تسجيل عقد عرفي قديم بلا ذعيرة",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_133",
+    "/ma/code/cgi/art_135"
+   ],
+   "lang": "darija",
+   "theme": "bill-2027"
+  },
+  {
+   "q": "tawsi3 ldariba 3la dkhel 2027",
+   "expect": [
+    "/ma/projet-loi/60-26/art_7",
+    "/ma/code/cgi/art_73"
+   ],
+   "lang": "latin",
+   "theme": "bill-2027"
+  }
+ ]
+}

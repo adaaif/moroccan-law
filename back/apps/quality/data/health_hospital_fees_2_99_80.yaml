@@ -1,0 +1,11 @@
+# Decree 2.99.80 on the fees of the public hospitals as Adala's PDF prints it, where the PDF's text layer turns three
+# list numbers around («-1» for «1-»). The cited article (art. 2) was read against the page's image on 27 Oct 2026
+# (the health review, S4): its words read as printed.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_hospital_fees_2_99_80.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-99-80
+document: sources/adala/hospital_fees_2_99_80.pdf
+read_on: '2026-10-27'
+fixes:
+  - {arts: [2], wrong: "-1 الأشخاص", right: "1- الأشخاص"}   # list number turned, p. 2
+  - {arts: [2], wrong: "-2 الأشخاص", right: "2- الأشخاص"}   # list number turned, p. 2
+  - {arts: [2], wrong: "-3 يمكن", right: "3- يمكن"}   # list number turned, p. 2

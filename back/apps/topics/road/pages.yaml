@@ -1,0 +1,302 @@
+# The road topic's pages (R5, R12, R14, R15, R17 of the road plan): facts, each on its articles, and the official
+# services by name and link (`links`: cited and linked, never copied, never logged into). A page says whom it is for
+# (`for`). What is a service's practice rather than the law is said to be the service's.
+
+- key: points
+  for: [probation, driver, two-wheels, pro]
+  title: {ar: 'رخصة السياقة بالنقط', fr: 'Le permis à points'}
+  lead:
+    ar: '20 نقطة خلال الفترة الاختبارية، ثم 30. تخصم النقط بعد أداء الغرامة أو بحكم نهائي، وترجع مع الزمن بلا مخالفة.'
+    fr: '20 points pendant la période probatoire, puis 30. Les points sont retirés après paiement de l’amende ou condamnation définitive, et reviennent avec le temps sans infraction.'
+  sections:
+    - title: {ar: الرصيد, fr: Le solde}
+      facts:
+        - text: {ar: 'تخضع رخص الأصناف «أ1» و«أ» و«ب» لفترة اختبارية مدتها سنتان، برصيد 20 نقطة. وعند انتهائها يصبح الرصيد 30 نقطة. ورخص السياقة النهائية المسلمة قبل دخول القانون حيز التنفيذ تعتبر رخصا بعد الفترة الاختبارية.', fr: 'Les permis A1, A et B passent une période probatoire de deux ans avec 20 points ; ensuite le solde est de 30 points. Les permis définitifs délivrés avant l’entrée en vigueur de la loi comptent comme des permis après période probatoire.'}
+          cites: [/ma/loi/52-05/art_23, /ma/loi/52-05/art_27, /ma/loi/52-05/art_308]
+        - text: {ar: 'لا تخصم النقط إلا بعد أداء الغرامة التصالحية والجزافية، أو بعد حكم نهائي. والأداء اعتراف بالمخالفة. ويشمل الخصم في آن واحد كل أصناف الرخصة.', fr: 'Les points ne sont retirés qu’après paiement de l’amende transactionnelle ou condamnation définitive ; payer vaut reconnaissance de l’infraction. Le retrait touche à la fois toutes les catégories du permis.'}
+          cites: [/ma/loi/52-05/art_28]
+        - text: {ar: 'يخبر السائق برسالة مضمونة عند أول خصم، وعند فقدان نصف الرصيد أو أكثر، وعند فقدان أكثر من الثلثين خلال الفترة الاختبارية.', fr: 'Le conducteur est informé par lettre recommandée au premier retrait, quand il a perdu la moitié du solde ou plus, et quand il en a perdu plus des deux tiers en période probatoire.'}
+          cites: [/ma/loi/52-05/art_30]
+    - title: {ar: 'شحال كتخصم كل مخالفة', fr: 'Combien de points par infraction'}
+      table:
+        head: [{ar: المخالفة, fr: L’infraction}, {ar: النقط, fr: Points}]
+        rows:
+          - [{ar: 'القتل غير العمدي مع ظروف التشديد', fr: 'Homicide involontaire avec circonstances aggravantes'}, '14']
+          - [{ar: 'السياقة تحت تأثير الكحول أو المخدرات، أو رفض الاختبار', fr: 'Conduite sous l’effet de l’alcool ou de stupéfiants, ou refus du test'}, '6']
+          - [{ar: 'عدم التوقف بعد حادثة', fr: 'Délit de fuite'}, '6']
+          - [{ar: 'تجاوز السرعة بـ50 كلم/س أو أكثر', fr: 'Excès de vitesse de 50 km/h ou plus'}, '6']
+          - [{ar: 'عدم الوقوف بعلامة قف أو بالضوء الأحمر', fr: 'Stop ou feu rouge non respecté'}, '4']
+          - [{ar: 'تجاوز السرعة بـ30 إلى أقل من 50 كلم/س', fr: 'Excès de vitesse de 30 à moins de 50 km/h'}, '4']
+          - [{ar: 'السير في الاتجاه الممنوع', fr: 'Circulation en sens interdit'}, '4']
+          - [{ar: 'التجاوز غير القانوني', fr: 'Dépassement irrégulier'}, '4']
+          - [{ar: 'عدم الخضوع للمراقبة التقنية', fr: 'Défaut de contrôle technique'}, '3']
+          - [{ar: 'عدم احترام حق الأسبقية', fr: 'Refus de priorité'}, '2']
+          - [{ar: 'تجاوز السرعة بأكثر من 20 دون أن يتجاوز 30 كلم/س', fr: 'Excès de vitesse de plus de 20 sans dépasser 30 km/h'}, '2']
+          - [{ar: 'الدراجة النارية بدون خوذة معتمدة', fr: 'Deux-roues sans casque homologué'}, '2']
+          - [{ar: 'عدم استعمال حزام السلامة', fr: 'Ceinture non attachée'}, '1']
+          - [{ar: 'طفل أقل من 10 سنوات في المقعد الأمامي', fr: 'Enfant de moins de 10 ans à l’avant'}, '1']
+          - [{ar: 'الهاتف ممسوكا باليد أثناء السياقة', fr: 'Téléphone tenu en main en conduisant'}, '1']
+      cites: [/ma/loi/52-05/art_99]
+      facts:
+        - text: {ar: 'إذا تعددت المخالفات المرتكبة في آن واحد: 8 نقط على الأكثر للمخالفات، و10 للجنح، و14 إذا كانت بينها جنحة واحدة، و16 إذا كان بينها القتل أو الجروح مع ظروف التشديد.', fr: 'Plusieurs infractions à la fois : 8 points au plus pour des contraventions, 10 pour des délits, 14 s’il y a un délit parmi elles, 16 s’il y a un homicide ou des blessures avec circonstances aggravantes.'}
+          cites: [/ma/loi/52-05/art_100]
+    - title: {ar: 'كيفاش كترجع النقط', fr: 'Comment les points reviennent'}
+      facts:
+        - text: {ar: 'سنة بلا مخالفة يعاقب عليها بخصم النقط: ترجع 4 نقط. سنتان، والرصيد أقل من 8: يرفع إلى 12. ثلاث سنوات: يرجع الرصيد كاملا.', fr: 'Un an sans infraction à points : 4 points reviennent. Deux ans, avec un solde sous 8 : il remonte à 12. Trois ans : le solde est complet.'}
+          cites: [/ma/loi/52-05/art_35]
+        - text: {ar: 'دورة في التربية على السلامة الطرقية ترجع 4 نقط مرة واحدة، دون تجاوز الحد الأقصى؛ وفي الفترة الاختبارية أيضا. ومن فقد أكثر من ثلثي نقطه خلال الفترة الاختبارية وجب عليه الخضوع لهذه الدورة. والدورة بمقابل، بتعريفة يحددها قرار.', fr: 'Un stage de sensibilisation à la sécurité routière rend 4 points une fois, sans dépasser le maximum ; en période probatoire aussi. Qui a perdu plus des deux tiers de ses points en période probatoire doit suivre ce stage. Le stage est payant, au tarif fixé par arrêté.'}
+          cites: [/ma/loi/52-05/art_33, /ma/loi/52-05/art_35, /ma/loi/52-05/art_26, /ma/decret/2-10-376/art_3]
+    - title: {ar: 'إلا تقادو النقط', fr: 'Quand il n’y a plus de points'}
+      facts:
+        - text: {ar: 'تلغى الرخصة بقوة القانون عند نفاد رصيدها. وإذا وقع ذلك عند الأداء للعون، احتفظ بالرخصة مقابل وصل يخول السياقة 120 ساعة؛ وإلا أمرت الإدارة برسالة بتسليمها داخل شهر.', fr: 'Le permis est annulé de plein droit quand le solde est épuisé. Si cela arrive en payant l’agent, celui-ci garde le permis contre un récépissé qui permet de conduire 120 heures ; sinon l’administration ordonne par lettre de le remettre dans le mois.'}
+          cites: [/ma/loi/52-05/art_22, /ma/loi/52-05/art_31, /ma/loi/52-05/art_32]
+        - text: {ar: 'لا يجتاز امتحانا جديدا إلا بعد ستة أشهر من تسليم الرخصة، وبعد دورة في التربية على السلامة الطرقية؛ وسنتين إذا نفد الرصيد من جديد داخل خمس سنوات.', fr: 'Un nouvel examen n’est possible que six mois après la remise du permis et après un stage de sécurité routière ; deux ans si le solde s’épuise de nouveau dans les cinq ans.'}
+          cites: [/ma/loi/52-05/art_24, /ma/loi/52-05/art_34]
+  links:
+    - name: {ar: 'رصيد النقط والمخالفات المسجلة', fr: 'Solde de points et infractions enregistrées'}
+      url: https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+
+- key: licence
+  for: [learner, probation]
+  title: {ar: 'رخصة السياقة: الأصناف، السن، الامتحان', fr: 'Le permis : catégories, âge, examen'}
+  lead:
+    ar: 'لكل مركبة صنفها، ولكل صنف سنه. يمر المترشح بالفحص الطبي ومؤسسة تعليم السياقة، ثم الاختبار النظري فالتطبيقي.'
+    fr: 'Chaque véhicule a sa catégorie, chaque catégorie son âge. Le candidat passe la visite médicale et l’auto-école, puis l’épreuve théorique et la pratique.'
+  sections:
+    - title: {ar: 'الأصناف والسن', fr: 'Catégories et âges'}
+      table:
+        head: [{ar: الصنف, fr: Catégorie}, {ar: المركبات, fr: Véhicules}, {ar: السن الأدنى, fr: Âge minimum}]
+        rows:
+          - ['AM', {ar: 'الدراجة بمحرك والدراجة رباعية العجلات الخفيفة', fr: 'Cyclomoteur, quadricycle léger à moteur'}, '14']
+          - ['A1', {ar: 'الدراجات النارية الخفيفة', fr: 'Motocyclettes légères'}, '16']
+          - ['A', {ar: 'الدراجات النارية', fr: 'Motocyclettes'}, '18']
+          - ['B', {ar: 'السيارات حتى ثمانية مقاعد زيادة على السائق، والبضائع حتى 3.500 كلغ', fr: 'Voitures jusqu’à huit places outre le conducteur ; marchandises jusqu’à 3 500 kg'}, '18']
+          - ['C', {ar: 'البضائع فوق 3.500 كلغ', fr: 'Marchandises au-delà de 3 500 kg'}, '21']
+          - ['D', {ar: 'نقل أكثر من ثمانية أشخاص', fr: 'Transport de plus de huit personnes'}, '21']
+      cites: [/ma/loi/52-05/art_7, /ma/loi/52-05/art_11]
+      facts:
+        - text: {ar: 'رخصة «أ» تقبل للصنفين «أ1» و«أم»، ورخصة «ب» أو «أ1» تقبل للصنف «أم».', fr: 'Le permis A vaut aussi pour A1 et AM ; le permis B ou A1 vaut pour AM.'}
+          cites: [/ma/loi/52-05/art_8]
+        - text: {ar: 'للحصول على «ج» أو «د»: رخصة «ب» بعد الفترة الاختبارية ورصيد لا يقل عن 12 نقطة.', fr: 'Pour C ou D : un permis B après période probatoire et un solde d’au moins 12 points.'}
+          cites: [/ma/loi/52-05/art_11]
+    - title: {ar: 'الطريق للبيرمي', fr: 'Le chemin du permis'}
+      facts:
+        - text: {ar: 'فحص طبي مسبق وشهادة طبية تودع مع الترشيح؛ وتعليم السياقة في مؤسسة مرخص لها بعقد مكتوب.', fr: 'Une visite médicale préalable et un certificat déposé avec la candidature ; l’apprentissage dans un établissement autorisé, avec un contrat écrit.'}
+          cites: [/ma/loi/52-05/art_12, /ma/loi/52-05/art_11, /ma/decret/2-10-432/art_3]
+        - text: {ar: 'اختبار نظري في المعارف، ثم اختبار تطبيقي في القدرات والسلوك. ومترشحو «أم» معفون من الاختبار التطبيقي. ولا يجتاز التطبيقي إلا من نجح في النظري.', fr: 'Une épreuve théorique de connaissances, puis une épreuve pratique d’aptitudes et de comportement. Les candidats AM sont dispensés de la pratique. On ne passe la pratique qu’après avoir réussi la théorie.'}
+          cites: [/ma/loi/52-05/art_10, /ma/decret/2-10-311/art_7]
+        - text: {ar: 'يجتاز المترشح الاختبار النظري، حسب اختياره، بالعربية أو بالدارجة المغربية أو بالأمازيغية أو بالفرنسية. والاختبار سمعي بصري على شكل أسئلة متعددة الاختيارات.', fr: 'Le candidat passe l’épreuve théorique, à son choix, en arabe, en darija marocaine, en amazighe ou en français. L’épreuve est audiovisuelle, sous forme de questions à choix multiples.'}
+          cites: [/ma/decret/2-10-311/art_3, /ma/arrete/2709-10/art_4]
+        - text: {ar: 'ملف الترشيح صالح لامتحانين؛ والرسوب في الثاني يلغي الملف.', fr: 'Le dossier de candidature vaut pour deux examens ; un échec au second l’annule.'}
+          cites: [/ma/decret/2-10-311/art_7]
+    - title: {ar: 'من بعد الامتحان', fr: 'Après l’examen'}
+      facts:
+        - text: {ar: 'فترة اختبارية مدتها سنتان برصيد 20 نقطة، ولا تتجاوز خلالها 90 كلم في الساعة ولو في الطريق السيار.', fr: 'Deux ans de période probatoire avec 20 points, sans jamais dépasser 90 km/h, même sur autoroute.'}
+          cites: [/ma/loi/52-05/art_23, /ma/decret/2-10-420/art_16]
+        - text: {ar: 'مدة صلاحية الحامل عشر سنوات، ويجدد داخل الثلاثة أشهر الموالية لانصرامها بشهادة طبية. والفحص الطبي كل عشر سنوات، وكل سنتين بعد 65 سنة. وعلى التأخير 200 درهم و10% عن كل شهر.', fr: 'La carte vaut dix ans ; elle se renouvelle dans les trois mois qui suivent, avec un certificat médical. La visite médicale a lieu tous les dix ans, tous les deux ans après 65 ans. En retard : 200 dirhams et 10 % par mois.'}
+          cites: [/ma/loi/52-05/art_38, /ma/loi/52-05/art_14, /ma/loi/52-05/art_118]
+  links:
+    - name: {ar: 'الحصول على رخصة السياقة لأول مرة', fr: 'Obtenir son permis pour la première fois'}
+      url: https://khadamatnarsa.ma/fr/services/obtention-de-mon-permis-de-conduire-1ere-fois
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'تجديد أو تبديل رخصة السياقة', fr: 'Renouveler ou échanger son permis'}
+      url: https://khadamatnarsa.ma/fr/services/echange-de-mon-permis-de-conduire
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+
+- key: insurance
+  title: {ar: 'التأمين على المركبات', fr: 'L’assurance des véhicules'}
+  lead:
+    ar: 'التأمين على المسؤولية المدنية إجباري لكل مركبة برية ذات محرك، ويغطي الأضرار اللاحقة بالغير، لا السائق نفسه.'
+    fr: 'L’assurance de responsabilité civile est obligatoire pour tout véhicule terrestre à moteur ; elle couvre les dommages causés aux tiers, pas le conducteur lui-même.'
+  sections:
+    - title: {ar: 'الإجبار', fr: 'L’obligation'}
+      facts:
+        - text: {ar: 'يجب على كل من يمكن أن تثار مسؤوليته المدنية بسبب مركبة برية ذات محرك أن يغطيها بعقد تأمين. ولا يمكن لمقاولة معتمدة أن ترفض ضمان مالك مركبة خاضع للإجبار.', fr: 'Quiconque peut voir sa responsabilité civile engagée par un véhicule terrestre à moteur doit la couvrir par un contrat d’assurance. Une entreprise agréée ne peut refuser d’assurer un propriétaire soumis à l’obligation.'}
+          cites: [/ma/loi/17-99/art_120, /ma/loi/17-99/art_128]
+        - text: {ar: 'لا يقل الضمان عن 50 مليون درهم عن كل مركبة وكل واقعة، و25 مليونا لمركبة ذات عجلتين لا تتجاوز قوتها حصانين.', fr: 'La garantie n’est pas inférieure à 50 millions de dirhams par véhicule et par sinistre ; 25 millions pour un deux-roues de deux chevaux fiscaux au plus.'}
+          cites: [/ma/loi/17-99/art_123]
+        - text: {ar: 'لا يشمل الإجبار الأضرار اللاحقة بمكتتب العقد ومالك المركبة ومن يقودها بإذنهما، ولا بالأجراء أثناء العمل.', fr: 'L’obligation ne couvre pas les dommages du souscripteur, du propriétaire et de celui qui conduit avec leur accord, ni des salariés au travail.'}
+          cites: [/ma/loi/17-99/art_124]
+    - title: {ar: 'الشهادة والعقوبات', fr: 'L’attestation et les sanctions'}
+      facts:
+        - text: {ar: 'يدلي كل سائق بالوثيقة التي تثبت التأمين. ومن لم يقدمها يعاقب بغرامة من 200 إلى 400 درهم، وتوقف المركبة.', fr: 'Tout conducteur présente le document qui prouve l’assurance ; à défaut, amende de 200 à 400 dirhams, et le véhicule est immobilisé.'}
+          cites: [/ma/loi/17-99/art_126, /ma/loi/17-99/art_130, /ma/loi/52-05/art_103]
+        - text: {ar: 'السياقة بدون تأمين عن قصد: الحبس من شهر إلى ستة أشهر وغرامة من 1.200 إلى 6.000 درهم أو إحداهما، والإيداع في المحجز.', fr: 'Conduire sciemment sans assurance : un à six mois de prison et 1 200 à 6 000 dirhams d’amende, ou l’une des deux, et la fourrière.'}
+          cites: [/ma/loi/17-99/art_131, /ma/loi/52-05/art_111]
+    - title: {ar: 'بعد الحادثة', fr: 'Après un accident'}
+      facts:
+        - text: {ar: 'يصرح المؤمن له بالحادثة لمؤمنه داخل خمسة أيام على الأكثر. وتتقادم الدعاوى الناتجة عن عقد التأمين بمرور سنتين.', fr: 'L’assuré déclare le sinistre à son assureur dans les cinq jours au plus. Les actions nées du contrat d’assurance se prescrivent par deux ans.'}
+          cites: [/ma/loi/17-99/art_20, /ma/loi/17-99/art_36]
+        - text: {ar: 'إذا كان المسؤول مجهولا أو غير مؤمن وعاجزا عن الأداء، يعوض صندوق ضمان حوادث السير الأضرار البدنية.', fr: 'Si le responsable est inconnu, ou non assuré et insolvable, le Fonds de garantie des accidents de la circulation indemnise les dommages corporels.'}
+          cites: [/ma/loi/17-99/art_134]
+  links:
+    - name: {ar: 'شكاية ضد مقاولة تأمين', fr: 'Réclamation contre une entreprise d’assurance'}
+      url: https://reclamation-assurance.acaps.ma
+      note: {ar: هيئة مراقبة التأمينات والاحتياط الاجتماعي, fr: ACAPS}
+
+- key: two-wheels
+  for: [two-wheels, learner]
+  title: {ar: 'الموطور والتروتينيت', fr: 'Deux-roues et trottinettes'}
+  lead:
+    ar: 'الدراجات بمحرك والتروتينيت لهم قواعد خاصة منذ 24 غشت 2026: الخوذة، والسرعة، والطريق.'
+    fr: 'Les deux-roues motorisés et les trottinettes ont des règles propres depuis le 24 août 2026 : le casque, la vitesse, la route.'
+  sections:
+    - title: {ar: 'الخوذة والسماعات', fr: 'Le casque et les écouteurs'}
+      facts:
+        - text: {ar: 'يضع سائقو وراكبو الدراجات بمحرك والدراجات النارية خوذات واقية مربوطة ومصادق عليها، وكذلك سائقو الدراجات العادية ومركبات التنقل الشخصي بمحرك.', fr: 'Conducteurs et passagers de cyclomoteurs et de motos portent un casque attaché et homologué ; de même les cyclistes et les utilisateurs d’engins de déplacement personnel motorisés.'}
+          cites: [/ma/decret/2-10-420/art_110]
+        - text: {ar: 'يمنع استعمال السماعات على كل سائق دراجة، بمحرك أو بدونه.', fr: 'Les écouteurs sont interdits à tout conducteur de deux- ou trois-roues, avec ou sans moteur.'}
+          cites: [/ma/decret/2-10-420/art_9]
+    - title: {ar: 'التروتينيت', fr: 'La trottinette'}
+      facts:
+        - text: {ar: 'لا يتجاوز سائق مركبة التنقل الشخصي بمحرك 25 كيلومترا في الساعة، ولا يسير خارج التجمعات العمرانية إلا في الممرات الخاصة بالدراجات.', fr: 'L’utilisateur d’un engin de déplacement personnel motorisé ne dépasse pas 25 km/h et ne circule hors agglomération que sur les pistes cyclables.'}
+          cites: [/ma/decret/2-10-420/art_19, /ma/decret/2-10-420/art_112]
+    - title: {ar: 'الرخصة', fr: 'Le permis'}
+      facts:
+        - text: {ar: 'الدراجة بمحرك تساق بصنف «أم» من 14 سنة، بالاختبار النظري وحده؛ ورخصة «ب» أو «أ1» تقبل لها.', fr: 'Le cyclomoteur se conduit avec la catégorie AM dès 14 ans, avec la seule épreuve théorique ; le permis B ou A1 vaut pour elle.'}
+          cites: [/ma/loi/52-05/art_7, /ma/loi/52-05/art_11, /ma/loi/52-05/art_10, /ma/loi/52-05/art_8]
+        - text: {ar: 'الدراجة النارية بدون خوذة معتمدة: نقطتان من الرصيد.', fr: 'Moto sans casque homologué : deux points de moins.'}
+          cites: [/ma/loi/52-05/art_99]
+
+- key: rules
+  title: {ar: 'قواعد السير الأساسية', fr: 'Les règles essentielles de circulation'}
+  lead:
+    ar: 'السرعة والأسبقية والتجاوز والراجلون، كما يحددها مرسوم قواعد السير 2.10.420 في صيغته إلى 24 غشت 2026.'
+    fr: 'La vitesse, la priorité, le dépassement et les piétons, tels que le décret 2-10-420 les fixe dans sa version au 24 août 2026.'
+  sections:
+    - title: {ar: السرعة, fr: La vitesse}
+      table:
+        head: [{ar: 'الطريق', fr: 'La route'}, {ar: 'السرعة القصوى (حتى 3.500 كلغ)', fr: 'Vitesse maximale (jusqu’à 3 500 kg)'}]
+        rows:
+          - [{ar: 'داخل التجمعات العمرانية', fr: 'En agglomération'}, '60']
+          - [{ar: 'خارج التجمعات العمرانية', fr: 'Hors agglomération'}, '100']
+          - [{ar: 'الطريق السيار', fr: 'Autoroute'}, '120']
+          - [{ar: 'الفترة الاختبارية، في كل الطرق', fr: 'Période probatoire, partout'}, '90']
+          - [{ar: 'التروتينيت بمحرك', fr: 'Trottinette à moteur'}, '25']
+      cites: [/ma/decret/2-10-420/art_15, /ma/decret/2-10-420/art_17, /ma/decret/2-10-420/art_18, /ma/decret/2-10-420/art_16, /ma/decret/2-10-420/art_19]
+      facts:
+        - text: {ar: 'في الطريق السيار، لا تقل السرعة في السير العادي عن 60 كيلومترا في الساعة.', fr: 'Sur autoroute, en marche normale, la vitesse ne descend pas sous 60 km/h.'}
+          cites: [/ma/decret/2-10-420/art_18]
+    - title: {ar: الأسبقية, fr: La priorité}
+      facts:
+        - text: {ar: 'في تقاطع طريقين لهما نفس الأولوية، يسمح السائق القادم من اليسار بمرور الآخر.', fr: 'À l’intersection de deux routes de même priorité, le conducteur venant de gauche laisse passer l’autre.'}
+          cites: [/ma/decret/2-10-420/art_36]
+        - text: {ar: 'عند علامة قف، يتوقف السائق في حدود القارعة، ثم يسمح بالمرور للمركبات الأخرى.', fr: 'Au stop, le conducteur s’arrête à la limite de la chaussée, puis laisse passer les autres véhicules.'}
+          cites: [/ma/decret/2-10-420/art_38]
+        - text: {ar: 'قبل التوغل في ملتقى دوراني معلن عنه بالعلامة الملائمة، يفسح السائق المجال لمن هو داخل الملتقى.', fr: 'Avant d’entrer dans un carrefour giratoire signalé par le panneau approprié, le conducteur cède le passage à ceux qui y circulent.'}
+          cites: [/ma/decret/2-10-420/art_78]
+        - text: {ar: 'في ممرات الراجلين، يفسح السائقون المرور للراجلين المتوغلين فيها، ويمنع الوقوف والتوقف عليها.', fr: 'Aux passages piétons, les conducteurs laissent passer les piétons engagés ; l’arrêt et le stationnement y sont interdits.'}
+          cites: [/ma/decret/2-10-420/art_87]
+    - title: {ar: 'التجاوز', fr: 'Le dépassement'}
+      facts:
+        - text: {ar: 'لا يتجاوز السائق إلا إذا تأكد أنه يستطيع ذلك دون خطر، ويبتعد بمتر على الأقل عن مستعمل الطريق الذي يتجاوزه، ولا يقترب جانبيا من راجل أو دراجة.', fr: 'Le conducteur ne dépasse qu’après s’être assuré qu’il peut le faire sans danger, s’écarte d’au moins un mètre de l’usager dépassé, et ne serre pas un piéton ou un cycliste.'}
+          cites: [/ma/decret/2-10-420/art_27]
+    - title: {ar: 'داخل المركبة', fr: 'Dans le véhicule'}
+      facts:
+        - text: {ar: 'حزام السلامة إجباري للسائق وللراكب الأمامي داخل المدينة، ولكل الركاب خارجها. ويمنع إركاب طفل أقل من عشر سنوات في المقاعد الأمامية.', fr: 'La ceinture est obligatoire pour le conducteur et le passager avant en ville, pour tous les passagers hors agglomération. Un enfant de moins de dix ans ne s’assoit pas à l’avant.'}
+          cites: [/ma/decret/2-10-420/art_7, /ma/decret/2-10-420/art_8]
+        - text: {ar: 'يمنع استعمال الهاتف الممسوك باليد أثناء السير.', fr: 'Le téléphone tenu en main est interdit en circulant.'}
+          cites: [/ma/decret/2-10-420/art_9]
+        - text: {ar: 'عند العطب، أضواء الاستغاثة ومعدة التشوير القبلي على 50 مترا على الأقل.', fr: 'En panne, les feux de détresse et le dispositif de pré-signalisation à 50 mètres au moins.'}
+          cites: [/ma/decret/2-10-420/art_94-bis]
+
+- key: where
+  title: {ar: 'فين نمشي؟', fr: 'Où aller ?'}
+  lead:
+    ar: 'الخدمات الرسمية للطريق، وكل خدمة بالمادة التي تحدد أجلها. «قانون» يربط بها، ولا يدخل باسمك ولا يبحث في ملفك.'
+    fr: 'Les services officiels de la route, chacun avec l’article qui fixe son délai. 3adala renvoie vers eux ; il ne s’y connecte jamais et ne consulte aucun dossier.'
+  sections:
+    - title: {ar: 'المخالفات والنقط', fr: 'Infractions et points'}
+      facts:
+        - text: {ar: 'رصيد النقط والمخالفات المسجلة وصورة الرادار وأداء مخالفات الرادار: موقع المخالفات الطرقية للوكالة الوطنية للسلامة الطرقية.', fr: 'Solde de points, infractions enregistrées, photo du radar, paiement des amendes radar : le site Infractions routières de la NARSA.'}
+          cites: [/ma/loi/52-05/art_30, /ma/loi/52-05/art_222]
+        - text: {ar: 'أداء الغرامة التصالحية داخل ثلاثين يوما: الخزينة العامة للمملكة. والغرامة التي صدر بها حكم: بوابة الغرامات لوزارة العدل.', fr: 'Payer l’amende transactionnelle dans les trente jours : la Trésorerie générale du Royaume. Une amende prononcée par jugement : le portail des amendes du ministère de la Justice.'}
+          cites: [/ma/loi/52-05/art_221, /ma/loi/52-05/art_227]
+        - text: {ar: 'تعيين السائق داخل 30 يوما من الإشعار، والمنازعة فيه: خدمات الوكالة.', fr: 'Désigner le conducteur dans les 30 jours de l’avis, ou le contester : les services de la NARSA.'}
+          cites: [/ma/loi/52-05/art_142, /ma/loi/52-05/art_230]
+    - title: {ar: 'الرخصة والمركبة', fr: 'Permis et véhicule'}
+      facts:
+        - text: {ar: 'نقل ملكية مركبة داخل 30 يوما، وتصريح البائع داخل 15 يوما: منصة نقل الملكية للوكالة.', fr: 'Mutation d’un véhicule dans les 30 jours, déclaration du vendeur dans les 15 jours : la plateforme de mutation de la NARSA.'}
+          cites: [/ma/loi/52-05/art_59]
+        - text: {ar: 'المراقبة التقنية ومراكزها: خدمات الوكالة وخريطتها.', fr: 'Le contrôle technique et ses centres : les services de la NARSA et leur carte.'}
+          cites: [/ma/loi/52-05/art_66]
+    - title: {ar: 'التأمين', fr: 'L’assurance'}
+      facts:
+        - text: {ar: 'شكاية ضد مقاولة تأمين: منصة هيئة مراقبة التأمينات والاحتياط الاجتماعي.', fr: 'Une réclamation contre un assureur : la plateforme de l’ACAPS.'}
+          cites: [/ma/loi/17-99/art_120]
+  links:
+    - name: {ar: 'المخالفات الطرقية ورصيد النقط', fr: 'Infractions routières et solde de points'}
+      url: https://infractionsroutieres.narsa.gov.ma/InfractionsRoutieres/
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'أداء الغرامات التصالحية', fr: 'Paiement des amendes transactionnelles'}
+      url: https://www.tgr.gov.ma
+      note: {ar: الخزينة العامة للمملكة, fr: Trésorerie générale du Royaume}
+    - name: {ar: 'أداء الغرامات المحكوم بها', fr: 'Paiement des amendes judiciaires'}
+      url: https://amendes.justice.gov.ma
+      note: {ar: وزارة العدل, fr: Ministère de la Justice}
+    - name: {ar: 'تعيين السائق', fr: 'Désignation du conducteur'}
+      url: https://khadamatnarsa.ma/fr/declaration
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'المنازعة في إشعار', fr: 'Réclamation contre un avis'}
+      url: https://khadamatnarsa.ma/fr/reclamation
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'نقل ملكية المركبة', fr: 'Mutation du véhicule'}
+      url: https://www.mutationvehicule.ma
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'خريطة مراكز المراقبة التقنية', fr: 'Carte des centres de contrôle technique'}
+      url: https://khadamatnarsa.ma/fr/carte-interactive
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+    - name: {ar: 'شكاية ضد مقاولة تأمين', fr: 'Réclamation contre un assureur'}
+      url: https://reclamation-assurance.acaps.ma
+      note: {ar: هيئة مراقبة التأمينات والاحتياط الاجتماعي, fr: ACAPS}
+
+- key: numbers
+  title: {ar: 'شحال كيموتو فطرقنا؟', fr: 'Combien de morts sur nos routes ?'}
+  lead:
+    ar: 'أرقام الوكالة الوطنية للسلامة الطرقية، سنة بسنة، ولكل رقم تقريره وصفحته.'
+    fr: 'Les chiffres de la NARSA, année par année, chacun avec son rapport et sa page.'
+  series: [deaths]
+  links:
+    - name: {ar: 'دراسات وإحصائيات الوكالة', fr: 'Études et statistiques de la NARSA'}
+      url: https://www.narsa.ma/fr/etudes-et-stats
+      note: {ar: الوكالة الوطنية للسلامة الطرقية, fr: NARSA}
+
+# On foot (V2 of the road tools review): 26.1 % of the road's dead in 2025 were pedestrians (series.yaml). The
+# walker's own chapter of decree 2.10.420 (arts 116–124), the drivers' duties toward them (13, 126–128), the light
+# (72), the tram (103) and the fine (law 52.05 art. 187, its settlement art. 219).
+- key: walking
+  for: [walker]
+  title: {ar: 'على رجليك: الراجل في الطريق', fr: 'À pied : le piéton sur la route'}
+  lead: {ar: 'أين تمشي، وأين تعبر، وما على السائق نحوك.', fr: 'Où marcher, où traverser, et ce que le conducteur vous doit.'}
+  sections:
+    - title: {ar: 'أين تمشي', fr: 'Où marcher'}
+      facts:
+        - text: {ar: 'حيث توجد بجانب القارعة طوارات أو أماكن للراجلين، يستعملها الراجلون ويتجنبون السير على القارعة.', fr: 'Là où des trottoirs ou des espaces pour piétons bordent la chaussée, les piétons les empruntent et évitent la chaussée.'}
+          cites: [/ma/decret/2-10-420/art_116]
+        - text: {ar: 'إذا لم يمكنهم إلا السير على القارعة، يسيرون أقرب ما يمكن من إحدى حافاتها، قرب الحافة اليسرى في اتجاه سيرهم ما لم يمس ذلك بسلامتهم.', fr: 'S’ils ne peuvent marcher que sur la chaussée, ils se tiennent au plus près d’un bord, le bord gauche dans leur sens de marche sauf si leur sécurité en souffre.'}
+          cites: [/ma/decret/2-10-420/art_117]
+    - title: {ar: 'أين تعبر', fr: 'Où traverser'}
+      tool: tools/scenes
+      facts:
+        - text: {ar: 'يستعمل الراجلون الممرات المخصصة لهم إذا وجدت على أقل من 50 مترا، ويراعون الرؤية والمسافة وسرعة المركبات.', fr: 'Les piétons empruntent les passages prévus pour eux s’il y en a à moins de 50 mètres, en tenant compte de la visibilité, de la distance et de la vitesse des véhicules.'}
+          cites: [/ma/decret/2-10-420/art_118]
+        - text: {ar: 'يعبرون القارعة عموديا على محورها.', fr: 'Ils traversent la chaussée perpendiculairement à son axe.'}
+          cites: [/ma/decret/2-10-420/art_119, /ma/decret/2-10-420/art_120]
+        - text: {ar: 'إذا نظم العبور شرطي أو إشارة ضوئية أو صوتية، لا يعبرون إلا بالإشارة التي تسمح بذلك: الأحمر يمنع التوغل في القارعة، والأخضر يسمح به، ووميضه يعلن نهاية السماح.', fr: 'Quand un agent ou un signal lumineux ou sonore règle la traversée, ils ne traversent qu’au signal qui le permet : le rouge interdit de s’engager, le vert le permet, et son clignotement en annonce la fin.'}
+          cites: [/ma/decret/2-10-420/art_121, /ma/decret/2-10-420/art_72]
+        - text: {ar: 'يمنع السير على مسطحة الترامواي؛ تعبر من الممرات المخصصة للراجلين بعد التأكد من خلوها، ولا تعبر سكة منظمة بضوء أحمر وامض ما دام مشتعلا.', fr: 'Il est interdit de marcher sur la plateforme du tramway ; on la traverse aux passages piétons, une fois libre, et jamais tant qu’un feu rouge clignotant règle la traversée d’une voie.'}
+          cites: [/ma/decret/2-10-420/art_103, /ma/decret/2-10-420/art_124]
+    - title: {ar: 'ما على السائق نحوك', fr: 'Ce que le conducteur vous doit'}
+      facts:
+        - text: {ar: 'يخفض السائقون السرعة عند الاقتراب من ممرات الراجلين، وللراجل الذي دخل الممر أسبقية المرور.', fr: 'Les conducteurs ralentissent à l’approche des passages piétons ; le piéton engagé a la priorité.'}
+          cites: [/ma/decret/2-10-420/art_126]
+        - text: {ar: 'يمنع التجاوز عند الاقتراب من الممرات؛ وقرب سيارة متوقفة، يخفض السائق السرعة ولا يتجاوز إلا بعد التأكد من عدم وجود راجلين يعبرون.', fr: 'Il est interdit de dépasser à l’approche d’un passage ; près d’un véhicule arrêté, on ralentit et on ne dépasse qu’après s’être assuré qu’aucun piéton ne traverse.'}
+          cites: [/ma/decret/2-10-420/art_127, /ma/decret/2-10-420/art_128]
+        - text: {ar: '30 كيلومترا في الساعة عند مقابلة جماعة من الراجلين أو تجاوزها.', fr: '30 km/h quand on croise ou dépasse un groupe de piétons.'}
+          cites: [/ma/decret/2-10-420/art_13]
+    - title: {ar: 'المخالفة', fr: 'L’infraction'}
+      tool: tools/fine
+      facts:
+        - text: {ar: 'يعاقب على مخالفة قواعد سير الراجلين بغرامة من 20 إلى 50 درهما، والغرامة التصالحية 25 درهما داخل 30 يوما.', fr: 'Enfreindre les règles de circulation des piétons est puni d’une amende de 20 à 50 dirhams ; l’amende transactionnelle est de 25 dirhams dans les 30 jours.'}
+          cites: [/ma/loi/52-05/art_187, /ma/loi/52-05/art_219]

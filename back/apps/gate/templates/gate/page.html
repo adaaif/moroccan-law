@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>«قانون» · كلمة السر</title>
+<style>
+  @font-face { font-family: "Readex Pro"; font-weight: 300 700; font-display: swap;
+               src: url("/fonts/readex-pro-arabic.woff2") format("woff2");
+               unicode-range: U+0020-0040, U+005B-0060, U+007B-007E, U+00A0, U+00AB, U+00BB, U+0600-06FF, U+200C-200F, U+2010-2026; }
+  @font-face { font-family: "Readex Pro"; font-weight: 300 700; font-display: swap;
+               src: url("/fonts/readex-pro-latin.woff2") format("woff2"); unicode-range: U+0041-005A, U+0061-007A, U+00C0-00FF, U+0152-0153; }
+  @font-face { font-family: "Markazi Text"; font-weight: 400 700; font-display: swap;
+               src: url("/fonts/markazi-text-arabic.woff2") format("woff2"); unicode-range: U+0600-06FF, U+00AB, U+00BB; }
+  :root { --ink: #1e1b2c; --ink-soft: #5d586e; --paper: #f4f2ee; --sheet: #fff; --rule: #e4e0da; --field: #8a8597;
+          --stamp: #5b3a9e; --on-stamp: #fff; --repealed: #b42318; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink: #ece9f4; --ink-soft: #b2adc3; --paper: #13111a; --sheet: #1c1925; --rule: #2f2b3c; --field: #6e6880;
+            --stamp: #b9a5f3; --on-stamp: #13111a; --repealed: #f0796d; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px 16px;
+         background: var(--paper); color: var(--ink); font: 400 16px/1.7 "Readex Pro", system-ui, sans-serif; }
+  main { width: 100%; max-width: 400px; background: var(--sheet); border-radius: 18px; padding: 32px 24px;
+         display: flex; flex-direction: column; gap: 18px; }
+  .name { font: 700 48px/1 "Markazi Text", serif; color: var(--stamp); margin: 0; }
+  p { margin: 0; }
+  .fr { color: var(--ink-soft); font-size: 14px; }
+  label { display: flex; flex-direction: column; gap: 6px; font-weight: 500; }
+  input { font: inherit; min-height: 48px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--field);
+          background: var(--sheet); color: var(--ink); direction: ltr; text-align: left; }
+  input:focus-visible, button:focus-visible { outline: 3px solid var(--stamp); outline-offset: 2px; }
+  button { font: 600 16px "Readex Pro", system-ui, sans-serif; min-height: 48px; border: 0; border-radius: 10px;
+           background: var(--stamp); color: var(--on-stamp); cursor: pointer; }
+  .error { color: var(--repealed); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="name">قانون</h1>
+  <p>«قانون» مفتوح لعدد محدود من القراء الآن. اكتب كلمة السر للدخول.</p>
+  <p class="fr" lang="fr" dir="ltr">«3adala» est ouvert à quelques lecteurs pour l’instant. Saisissez le mot de passe pour entrer.</p>
+  <form method="post" action="/gate/">
+    <input type="hidden" name="next" value="{{ next }}">
+    <label><span>كلمة السر · <span lang="fr">Mot de passe</span></span>
+      <input type="password" name="password" autocomplete="current-password" required autofocus dir="ltr">
+    </label>
+    {% if error == 'wrong' %}
+    <p class="error" role="alert">كلمة السر غير صحيحة. · <span lang="fr">Mot de passe incorrect.</span></p>
+    {% elif error == 'wait' %}
+    <p class="error" role="alert">محاولات كثيرة. أعد بعد عشر دقائق. · <span lang="fr">Trop d’essais : réessayez dans dix minutes.</span></p>
+    {% endif %}
+    <p style="margin-top:14px"><button type="submit" style="width:100%">ادخل · <span lang="fr">Entrer</span></button></p>
+  </form>
+</main>
+</body>
+</html>

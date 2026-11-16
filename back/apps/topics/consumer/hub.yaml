@@ -1,0 +1,391 @@
+# The consumer topic's page (D1–D5 of the consumer plan, 24 Oct 2026): how the reader bought first, since a right
+# depends on the channel (withdrawing exists at a distance and at the door, never in a shop); then the doors by what
+# happened, in the words people use, each leading to a journey or a page; the beliefs the law contradicts; the tools.
+# A door's `means` is the law's own phrase for its words: a question that is one of them is searched as that phrase
+# first (S2). Written from law 31.08 as the SGG consolidated it (to law 78.20), decree 2.12.503 and the 2014 orders from
+# Adala, and the DOC's articles on hidden defects, as the site holds them on 24 Oct 2026.
+doors_title: {ar: شنو وقع ليك؟, fr: 'Que vous arrive-t-il ?'}
+# The consumer-receipt review (26 Oct 2026): a door's `mark` is the number the law sets for it, drawn on a price
+# tag (`marks: tag`): 7 days to withdraw, a year of guarantee, 3,000 dirhams for a written date, 4 % at most; a door no
+# single number governs carries its pictogram on the same tag. The doors stand in the life of a purchase (`stages`):
+# before buying, paying, after, when it goes wrong; another topic's doors as links at the end. All in view, no fold.
+marks: tag
+stages:
+  - {key: before, title: {ar: قبل ما تشري, fr: 'Avant d’acheter'}, doors: [price, tied, clause]}
+  - {key: paying, title: {ar: فاش كتخلص, fr: 'Au moment de payer'}, doors: [invoice, credit, default, home-loan]}
+  - {key: after, title: {ar: من بعد ما شريتي, fr: 'Après l’achat'}, doors: [defect, online, no-return, late, door, subscription]}
+  - {key: wrong, title: {ar: إلا ما تحلاتش, fr: 'Si ça ne s’arrange pas'}, doors: [complain, bank, bills, internet, unsafe]}
+  - {key: elsewhere, title: {ar: فمواضيع أخرى, fr: 'Dans d’autres thèmes'}, doors: [used-car, insurance, offplan], links: true}
+learn: [pages/beliefs, journeys/defect, journeys/online, journeys/credit, pages/where]
+# What people believe, and what the law says (D3 of the plan): short cards under the doors, each leading to the page.
+beliefs:
+  - claim: {ar: لا ترد ولا تستبدل, fr: Ni reprise ni échange}
+    truth: {ar: 'إلا كان فيها عيب، الضمان القانوني باقي، وهاد الورقة ما كتحيدوش.', fr: 'En cas de vice, la garantie légale demeure ; cette mention ne l’écarte pas.'}
+    to: pages/beliefs
+  - claim: {ar: الضمان عام من الفاتورة, fr: La garantie, un an après la facture}
+    truth: {ar: 'من التسليم ماشي من الفاتورة، وما يقدر حتى شرط يقصرها.', fr: 'À partir de la livraison, pas de la facture, et aucune clause ne la raccourcit.'}
+    to: pages/beliefs
+  - claim: {ar: أونلاين ديما نقدر نرجعها, fr: En ligne, on peut toujours renvoyer}
+    truth: {ar: 'سبعة أيام كاملة من التسلم، و30 بلا تأكيد مكتوب، ومن بعد غير الضمان.', fr: 'Sept jours francs dès la réception, trente sans confirmation, ensuite la garantie seulement.'}
+    to: pages/beliefs
+  - claim: {ar: البنك هو اللي كيقرر شحال كندين ليه, fr: La banque décide de ce que je dois}
+    truth: {ar: 'إلا وقفتي، القانون كيحدد: 4 % على الأكثر، وبلا مصاريف جزافية.', fr: 'En cas d’impayé, la loi plafonne : 4 % au plus, aucun forfait.'}
+    to: pages/beliefs
+  - claim: {ar: سنيت، ما بقا ما يدار, fr: J’ai signé, c’est fini}
+    truth: {ar: 'سبعة أيام بعد البيع فالدار ولا قبول الكريدي، والشرط التعسفي باطل.', fr: 'Sept jours après une vente à domicile ou un crédit, et la clause abusive est nulle.'}
+    to: pages/beliefs
+
+# The order a reviewer opens the topic in (R1 of the plan): what people meet most, then credit and contracts, then the
+# sectors and the prices the state sets.
+waves:
+  1: [journeys/online, journeys/defect, journeys/late, pages/where, tools/receipt, tools/return, tools/guarantee, tools/late, tools/where]
+  2: [journeys/credit, journeys/home-loan, journeys/door, journeys/clause, journeys/prices, journeys/subscription, pages/beliefs, checklists/invoice, checklists/offer, tools/credit, tools/clause]
+  3: [pages/bank, pages/bills, pages/safety, pages/numbers, series/bank-complaints, series/mediation, rates/sugar, tools/prices, tools/letters, reform/prices-2022, reform/bags-2023, reform/medicines-2026, reform/federations-2024, reform/court-2020]
+
+profile:
+  question: {ar: كيفاش شريتي؟, fr: 'Comment avez-vous acheté ?'}
+  options:
+    - key: shop
+      first: defect
+      main: true
+      label: {ar: فحانوت, fr: En magasin}
+      law: {ar: 'فالحانوت ما كاينش حق التراجع (المادة 36 كتخص البيع عن بعد)، ولكن الضمان القانوني لعيوب الشيء المبيع سنة بعد التسليم للمنقولات (المادة 65)، والفاتورة حق (المادة 4)، والثمن المكتوب هو الثمن الإجمالي (المادة 5).', fr: 'En magasin, pas de droit de rétractation (l’article 36 vise la vente à distance), mais la garantie légale des vices dure un an après la livraison pour un meuble (art. 65), la facture est un droit (art. 4) et le prix affiché est le prix total (art. 5).'}
+      facts:
+        - {value: {ar: '1 عام', fr: '1 an'}, label: {ar: 'الضمان القانوني من يوم التسليم، وما كيتقصرش', fr: 'la garantie légale dès la livraison, jamais raccourcie'}, cites: [/ma/loi/31-08/art_65]}
+        - {value: {ar: 'الفاتورة', fr: 'La facture'}, label: {ar: 'حقك: فيها التاريخ والثمن وكيفية الأداء', fr: 'un droit : date, prix et mode de paiement'}, cites: [/ma/loi/31-08/art_4, /ma/decret/2-12-503/art_25]}
+        - {value: {ar: 'لا تراجع', fr: 'Pas de rétractation'}, label: {ar: 'فالحانوت؛ التراجع غير عن بعد وخارج المحلات', fr: 'en magasin ; elle n’existe qu’à distance et hors établissement'}, cites: [/ma/loi/31-08/art_36, /ma/loi/31-08/art_49]}
+      to: journeys/defect
+    - key: online
+      first: online
+      main: true
+      label: {ar: أونلاين ولا فالأنستغرام, fr: En ligne ou sur les réseaux}
+      law: {ar: 'البيع عن بعد: سبعة أيام كاملة للتراجع من تسلم السلعة، أو ثلاثون يوما إلا ما وصلكش تأكيد مكتوب (المادة 36)، والرد داخل 15 يوما (المادة 37)، والطلبية داخل 30 يوما (المادة 39).', fr: 'Vente à distance : sept jours francs pour vous rétracter dès la réception, trente sans confirmation écrite (art. 36) ; remboursement sous 15 jours (art. 37) ; commande exécutée sous 30 jours (art. 39).'}
+      facts:
+        - {value: {ar: '7 أيام', fr: '7 jours'}, label: {ar: 'للتراجع من تسلم السلعة، بلا تبرير', fr: 'pour se rétracter dès la réception, sans motif'}, cites: [/ma/loi/31-08/art_36, /ma/loi/31-08/art_203]}
+        - {value: {ar: '30 يوما', fr: '30 jours'}, label: {ar: 'إلا ما وصلك تأكيد مكتوب', fr: 'sans confirmation écrite'}, cites: [/ma/loi/31-08/art_36]}
+        - {value: {ar: '15 يوما', fr: '15 jours'}, label: {ar: 'باش يرجع ليك المبلغ كاملا', fr: 'pour être remboursé en entier'}, cites: [/ma/loi/31-08/art_37]}
+      to: journeys/online
+    - key: door
+      first: door
+      main: true
+      label: {ar: بائع جا لعندي, fr: Un vendeur est venu chez moi}
+      law: {ar: 'البيع خارج المحلات: عقد مكتوب باستمارة للتراجع (المادة 47)، سبعة أيام من الطلبية (المادة 49)، وما تخلص والو قبل ما يسالي الأجل (المادة 50).', fr: 'Vente hors établissement : contrat écrit avec un formulaire de rétractation (art. 47), sept jours dès la commande (art. 49), rien à payer avant la fin du délai (art. 50).'}
+      facts:
+        - {value: {ar: '7 أيام', fr: '7 jours'}, label: {ar: 'للتراجع من الطلبية، بالاستمارة', fr: 'pour se rétracter dès la commande, par le formulaire'}, cites: [/ma/loi/31-08/art_49, /ma/loi/31-08/art_203]}
+        - {value: {ar: '0 درهم', fr: '0 DH'}, label: {ar: 'قبل ما يفوت أجل التراجع', fr: 'avant la fin du délai de rétractation'}, cites: [/ma/loi/31-08/art_50]}
+        - {value: {ar: '15 يوما', fr: '15 jours'}, label: {ar: 'باش يرجع ليك ما خلصتي إلا تراجعتي', fr: 'pour rendre ce qui a été payé après la rétractation'}, cites: [/ma/loi/31-08/art_50]}
+      to: journeys/door
+    - key: credit
+      first: credit
+      main: true
+      label: {ar: بالكريدي ولا بالتقسيط, fr: À crédit ou en plusieurs fois}
+      law: {ar: 'القرض الاستهلاكي: عرض مسبق (المادة 77)، سبعة أيام للتراجع من قبول العرض (المادة 85)، والتسديد المبكر بلا تعويض (المادة 103)، وما كيطالبك المقرض بأكثر من 4 % إلا توقفتي (المادتان 104 و105).', fr: 'Crédit à la consommation : offre préalable (art. 77), sept jours pour vous rétracter après l’acceptation (art. 85), remboursement anticipé sans indemnité (art. 103), et pas plus de 4 % réclamés en cas de défaillance (art. 104 et 105).'}
+      facts:
+        - {value: {ar: '7 أيام', fr: '7 jours'}, label: {ar: 'للتراجع من قبول العرض', fr: 'pour se rétracter après l’acceptation'}, cites: [/ma/loi/31-08/art_85]}
+        - {value: {ar: 'بلا تعويض', fr: 'Sans indemnité'}, label: {ar: 'التسديد المبكر فأي وقت', fr: 'le remboursement anticipé, à tout moment'}, cites: [/ma/loi/31-08/art_103]}
+        - {value: '4%', label: {ar: 'أقصى ما يطالبك به المقرض إلا توقفتي', fr: 'le plus que réclame le prêteur en cas de défaillance'}, cites: [/ma/loi/31-08/art_104, /ma/loi/31-08/art_105]}
+      to: journeys/credit
+    - key: home-loan
+      first: home-loan
+      label: {ar: كريدي ديال الدار, fr: Un prêt immobilier}
+      law: {ar: 'القرض العقاري: العرض كيبقى 15 يوما، وما تقبلوش حتى تفوت 10 أيام (المادة 120)، والبيع رهين بالحصول على القرض (المادة 127).', fr: 'Crédit immobilier : l’offre est maintenue 15 jours et ne s’accepte qu’après 10 jours (art. 120) ; la vente dépend de l’obtention du prêt (art. 127).'}
+      facts:
+        - {value: {ar: '10 أيام', fr: '10 jours'}, label: {ar: 'قبل ما تقبل العرض', fr: 'avant de pouvoir accepter l’offre'}, cites: [/ma/loi/31-08/art_120]}
+        - {value: {ar: '15 يوما', fr: '15 jours'}, label: {ar: 'كيبقى العرض صالح', fr: 'de validité de l’offre'}, cites: [/ma/loi/31-08/art_120]}
+        - {value: '2%', label: {ar: 'أقصى تعويض على التسديد المبكر', fr: 'l’indemnité maximale de remboursement anticipé'}, cites: [/ma/loi/31-08/art_132]}
+      to: journeys/home-loan
+    - key: subscription
+      first: subscription
+      label: {ar: اشتراك (أنترنيت، صالة، مدرسة), fr: 'Un abonnement (internet, salle, école)'}
+      law: {ar: 'المورد خاصو يذكرك كتابة شهرا قبل نهاية العقد ولا تجديدو؛ وإلا ما ذكركش والعقد كيتجدد بوحدو، تقدر تنهيه فأي وقت بلا غرامة (المادة 7).', fr: 'Le fournisseur doit vous rappeler par écrit un mois avant la fin ou la reconduction ; s’il ne le fait pas et que le contrat se reconduit seul, vous pouvez y mettre fin à tout moment sans pénalité (art. 7).'}
+      facts:
+        - {value: {ar: '1 شهر', fr: '1 mois'}, label: {ar: 'قبل الأجل: التذكير المكتوب بالتجديد', fr: 'avant le terme : le rappel écrit de la reconduction'}, cites: [/ma/loi/31-08/art_7]}
+        - {value: {ar: 'بلا غرامة', fr: 'Sans pénalité'}, label: {ar: 'تحبسو متى بغيتي إلا تجدد بلا تذكير', fr: 'l’arrêter à tout moment s’il se reconduit sans rappel'}, cites: [/ma/loi/31-08/art_7]}
+        - {value: {ar: 'نسخة', fr: 'Une copie'}, label: {ar: 'من العقد لك، والشك كيتفسر لصالحك', fr: 'du contrat pour vous ; le doute s’interprète en votre faveur'}, cites: [/ma/loi/31-08/art_8, /ma/loi/31-08/art_9]}
+      to: journeys/subscription
+    - key: bill
+      first: bills
+      label: {ar: فاتورة (الما، الضو، التيليفون), fr: 'Une facture (eau, électricité, téléphone)'}
+      law: {ar: 'المفوض ليهم تسيير مرفق عام ملزمين بالتزامات المورد (المادة 2)، والفاتورة خاصها تبين الثمن الإجمالي (المادتان 4 و5)، والشروط التعسفية باطلة (المادة 19).', fr: 'Les délégataires d’un service public sont tenus des obligations du fournisseur (art. 2) ; la facture doit montrer le prix total (art. 4 et 5) ; les clauses abusives sont nulles (art. 19).'}
+      facts:
+        - {value: {ar: 'المورد', fr: 'Le fournisseur'}, label: {ar: 'المفوض ليه فالما والضو ملزم بالتزامات المورد', fr: 'le délégataire de l’eau et de l’électricité en a les obligations'}, cites: [/ma/loi/31-08/art_2]}
+        - {value: {ar: 'الفاتورة', fr: 'La facture'}, label: {ar: 'مفصلة: كل خدمة وثمنها والمبلغ الإجمالي', fr: 'détaillée : chaque service, son prix, le total'}, cites: [/ma/loi/31-08/art_4, /ma/loi/31-08/art_5]}
+        - {value: {ar: '0 درهم', fr: '0 DH'}, label: {ar: 'رقم تتبع الشكايات بلا رسوم إضافية', fr: 'le numéro de suivi des réclamations, sans surcoût'}, cites: [/ma/loi/31-08/art_32]}
+      to: pages/bills
+
+events:
+  - key: defect
+    mark: {value: '1', unit: {ar: عام, fr: 'an'}}
+    icon: broken
+    words: [شريت حاجة وطلعات خاسرة, وطلعات خاسرة, حاجة خاسرة, طلعات خاسرة, خاسرة, خسر ليا, خسرات ليا, تخسر ليا, فيها عيب, عيب فالسلعة, الضمانة, الضمان, الكارانتي, لاكارانتي, garantie, produit défectueux, ma garantie, vice caché, عيب خفي, رجع ليا فلوسي, بغيت نبدلها, ne me rembourse, mon retour, التاجر الإلكتروني, vente en ligne, site de vente, بلا ما نطلبها, sans commande, المنتوج ما كاينش, رجعو ليا الفلوس, آجال كاملة, المبرمة عن بعد, مصاريف الإرجاع, frais de retour, nrje3, chritha online, للقرض العقاري, العرض المسبق, الأبونمو, تجدد بلا, بلا ما يعلموني, العيب الخفي, service après-vente, après-vente, caution, mention manuscrite, option d’achat, القرض المجاني, crédit gratuit]
+    means:
+      الضمان القانوني لعيوب الشيء المبيع: [شريت حاجة وطلعات خاسرة, وطلعات خاسرة, حاجة خاسرة, طلعات خاسرة, خاسرة, فيها عيب, عيب فالسلعة, الضمانة, الضمان, vice caché, عيب خفي, produit défectueux]
+      الضمان التعاقدي: [الكارانتي, لاكارانتي, garantie, ma garantie, garantie constructeur]
+      الخدمة بعد البيع: [الصيانة, الإصلاح, السافي, service après-vente, sav, réparation]
+    title: {ar: شريت حاجة وطلعات خاسرة, fr: 'Ce que j’ai acheté est défectueux'}
+    lead: {ar: 'الضمان القانوني سنة بعد التسليم، وما يقدرش يقصرها حتى عقد (المادة 65)', fr: 'La garantie légale dure un an après la livraison, et aucun contrat ne la raccourcit (art. 65)'}
+    to: journeys/defect
+    for: [shop, online, door, credit]
+  - key: online
+    mark: {value: '7', unit: {ar: أيام, fr: 'jours'}}
+    icon: parcel
+    words: [طلبت أونلاين, شريت أونلاين, بغيت نرجعها, نرجع السلعة, نرجع الكوموند, حق التراجع, التراجع, جوميا, الأنستغرام, الفيسبوك, البيع عن بعد, achat en ligne, retour produit, droit de rétractation, rétractation, commande en ligne, نرجع داكشي اللي شريت, ne me rembourse pas, remboursement après retour, ما رجعش ليا الفلوس, online]
+    means:
+      حق التراجع: [بغيت نرجعها, نرجع السلعة, نرجع الكوموند, حق التراجع, التراجع, retour produit, droit de rétractation, rétractation, نرجع داكشي اللي شريت]
+      يرد إلى المستهلك المبلغ المدفوع كاملا: [ne me rembourse pas, remboursement après retour, ما رجعش ليا الفلوس]
+      العقد المبرم عن بعد: [طلبت أونلاين, شريت أونلاين, جوميا, الأنستغرام, الفيسبوك, البيع عن بعد, achat en ligne, commande en ligne, vente à distance]
+    title: {ar: طلبت أونلاين وبغيت نرجعها, fr: 'J’ai commandé en ligne et je veux renvoyer'}
+    lead: {ar: 'سبعة أيام كاملة من نهار وصلاتك، و30 إلا ما وصلك تأكيد مكتوب', fr: 'Sept jours francs dès la réception, trente sans confirmation écrite'}
+    to: journeys/online
+    for: [online]
+  - key: no-return
+    icon: quote
+    words: [لا ترد ولا تستبدل, ترد ولا تستبدل, لا ترد, reprise ni échange, ni reprise, البضاعة لا ترد ولا تستبدل, السلعة المباعة لا ترد, ni repris ni échangé, ni reprise ni échange, ما كيرجعوش السلعة, نرجع سلعة, ما عجباتنيش, فالحانوت, العقد بالفرنسية, langue étrangère, traduction arabe]
+    means: الضمان القانوني لعيوب الشيء المبيع
+    title: {ar: 'كتبو ليا «لا ترد ولا تستبدل»', fr: '« Ni reprise ni échange »'}
+    lead: {ar: 'هاد الورقة ما كتحيدش الضمان القانوني إلا كان عيب', fr: 'Cette mention n’ôte pas la garantie légale en cas de vice'}
+    to: pages/beliefs
+  - key: late
+    mark: {value: '3.000', unit: {ar: درهم, fr: 'DH'}}
+    icon: clock
+    words: [الطلبية ما وصلاتش, جابوش ليا السلعة, ما وصلاتش, ما وصلاتنيش الطلبية, تعطلات الطلبية, تأخر التسليم, الليفريزون تعطلات, retard de livraison, commande non livrée, pas livré, الأثاث ما وصلش, ما جابوش ليا السلعة, الطلبية تعطلات, نلغي الطلبية, نلغيها, أجل التسليم, date de livraison, 3000 dirhams, المنتوج ما كاينش, ما كاينش فالستوك, produit indisponible]
+    means:
+      عدم توفر المنتوج: [المنتوج ما كاينش, ما كاينش فالستوك, produit indisponible]
+      آجال التسليم: [الطلبية ما وصلاتش, جابوش ليا السلعة, ما وصلاتش, ما وصلاتنيش الطلبية, تعطلات الطلبية, تأخر التسليم, الليفريزون تعطلات, retard de livraison, commande non livrée, pas livré]
+    title: {ar: الطلبية ما وصلاتش فالوقت, fr: 'Ma commande n’arrive pas'}
+    lead: {ar: 'فوق 3.000 درهم الأجل مكتوب؛ وسبعة أيام من بعدو تقدر تفسخ بلا محكمة', fr: 'Au-delà de 3 000 DH, la date est écrite ; sept jours après, vous pouvez résoudre sans juge'}
+    to: journeys/late
+    for: [shop, online, door]
+  - key: door
+    mark: {value: '7', unit: {ar: أيام, fr: 'jours'}}
+    icon: doorbell
+    words: [بائع جا للدار, جا لعندي للدار, سنيت فالدار, البيع فالدار, البيع خارج المحل, المعرض, البيع فالمعرض, vendeur à domicile, démarchage, vente à domicile, foire, démarchage à domicile]
+    means: البيع خارج المحلات التجارية
+    title: {ar: بائع جا للدار وسنيت, fr: 'Un vendeur est venu et j’ai signé'}
+    lead: {ar: 'سبعة أيام للتراجع من الطلبية، وما تخلص والو قبل', fr: 'Sept jours dès la commande pour vous rétracter, et rien à payer avant'}
+    to: journeys/door
+    for: [door]
+  - key: credit
+    mark: {value: '7', unit: {ar: أيام, fr: 'jours'}}
+    icon: card
+    words: [خديت كريدي, crédit consommation, الكريدي قبل الوقت, الكريدي, كريدي الاستهلاك, القرض الاستهلاكي, نتراجع على الكريدي, crédit à la consommation, crédit conso, rétractation crédit, نخلص الكريدي قبل الوقت, remboursement anticipé, التقسيط, البيع بالتقسيط, القرض المجاني, crédit gratuit]
+    means:
+      القرض الاستهلاكي: [خديت كريدي, crédit consommation, الكريدي, كريدي الاستهلاك, crédit à la consommation, crédit conso, التقسيط, البيع بالتقسيط]
+      الحق في التراجع: [نتراجع على الكريدي, rétractation crédit]
+      التسديد المبكر: [نخلص الكريدي قبل الوقت, remboursement anticipé]
+    title: {ar: خديت كريدي وبغيت نتراجع, fr: 'J’ai pris un crédit et je veux me rétracter'}
+    lead: {ar: 'سبعة أيام من قبول العرض، والتسديد المبكر بلا تعويض', fr: 'Sept jours après l’acceptation de l’offre, et le remboursement anticipé sans indemnité'}
+    to: journeys/credit
+    for: [credit]
+  - key: default
+    mark: {value: '4%', unit: {ar: الأقصى, fr: 'au plus'}}
+    icon: card
+    words: [ما قدرتش نخلص الأقساط, نخلص الأقساط, نخلص الكريدي, retard crédit, ما قدرتش نخلص الكريدي, تعطلت فالخلاص, البنك بغا يزيد عليا, فوائد التأخير, غرامة التأخير, impayés crédit, pénalités de retard crédit, défaillance emprunteur, délai de grâce]
+    means:
+      التوقف عن الأداء: [ما قدرتش نخلص الأقساط, نخلص الأقساط, نخلص الكريدي, ما قدرتش نخلص الكريدي, تعطلت فالخلاص, impayés crédit, défaillance emprunteur]
+      فوائد عن التأخير: [فوائد التأخير, غرامة التأخير, pénalités de retard crédit, البنك بغا يزيد عليا]
+    title: {ar: ما قدرتش نخلص الأقساط, fr: 'Je n’arrive plus à payer les mensualités'}
+    lead: {ar: 'ما كيطالبك المقرض بأكثر من 4 %، والقاضي يقدر يمهلك إلا تطردتي من الخدمة', fr: 'Le prêteur ne peut réclamer plus de 4 %, et le juge peut accorder un délai après un licenciement'}
+    to: journeys/credit
+    for: [credit]
+  - key: home-loan
+    mark: {value: '10', unit: {ar: أيام, fr: 'jours'}}
+    icon: home
+    words: [كريدي ديال الدار, القرض العقاري, كريدي السكن, crédit immobilier, prêt immobilier, عرض القرض العقاري, العرض المسبق للقرض العقاري, للقرض العقاري]
+    means: القرض العقاري
+    title: {ar: كريدي ديال الدار, fr: 'Un prêt pour un logement'}
+    lead: {ar: 'العرض كيبقى 15 يوما، وما كتقبلو حتى تفوت 10', fr: 'L’offre tient 15 jours, et ne s’accepte qu’après 10'}
+    to: journeys/home-loan
+    for: [home-loan, credit]
+  - key: subscription
+    mark: {value: '1', unit: {ar: شهر قبل, fr: 'mois avant'}}
+    icon: repeat
+    words: [الأبونمو تجدد بوحدو, الاشتراك تجدد, التجديد الضمني, نحبس الأبونمو, نفسخ الاشتراك, abonnement renouvelé, reconduction tacite, résilier abonnement, la salle de sport, تجدد بلا ما يعلموني, بلا ما يعلموني, الأبونمو ديال]
+    means:
+      عقود الاشتراك محددة المدة: [الأبونمو تجدد بوحدو, الاشتراك تجدد, abonnement renouvelé, la salle de sport]
+      التجديد الضمني للعقد: [التجديد الضمني, reconduction tacite, تجدد بلا ما يعلموني, بلا ما يعلموني]
+    title: {ar: الأبونمو تجدد بوحدو, fr: 'Mon abonnement s’est renouvelé seul'}
+    lead: {ar: 'إلا ما ذكركش كتابة شهرا قبل، تقدر تحبسو فأي وقت بلا غرامة', fr: 'Sans rappel écrit un mois avant, vous pouvez arrêter à tout moment sans pénalité'}
+    to: journeys/subscription
+    for: [subscription, bill]
+  - key: clause
+    mark: {value: '17', unit: {ar: نوعا, fr: 'types'}}
+    icon: clause
+    words: [شرط تعسفي, الشرط ماشي معقول, الشرط التعسفي, شرط فالعقد ماشي معقول, شرط ظالم, العقد فيه شرط, clause abusive, clauses abusives, contrat abusif]
+    means: الشرط التعسفي
+    title: {ar: كاين شرط فالعقد ماشي معقول, fr: 'Une clause du contrat me paraît injuste'}
+    lead: {ar: 'الشرط التعسفي باطل، والباقي من العقد كيبقى (المادة 19)', fr: 'La clause abusive est nulle, le reste du contrat demeure (art. 19)'}
+    to: journeys/clause
+  - key: invoice
+    icon: papers
+    words: [الفاتورة واجبة, ما بغاش يعطيني الفاتورة, بلا فاتورة, لافاكتورة, donner une facture, refuse facture, ticket de caisse, facture obligatoire]
+    means: فاتورة
+    title: {ar: ما بغاش يعطيني الفاتورة, fr: 'Il refuse de me donner une facture'}
+    lead: {ar: 'الفاتورة حق، وفيها التاريخ والثمن وكيفية الأداء (المادة 4)', fr: 'La facture est un droit, avec la date, le prix et le mode de paiement (art. 4)'}
+    to: checklists/invoice
+    for: [shop, online, door]
+  - key: price
+    icon: tag
+    words: [الثمن ماشي مكتوب, الثمن مكتوب, ثمن مختلف فالكاس, الأسعار, إشهار الأسعار, affichage des prix, prix non affiché, prix différent en caisse, الصولد, التخفيضات, soldes, réduction, الضريبة على القيمة, الثمن المكتوب, prix affiché, البيع بالتخفيض, abus de faiblesse, الهدية مع الشراء, cadeau avec achat, المسابقات الإشهارية, الإشهار الكاذب, publicité mensongère, prix du sucre, ثمن السكر, السكر]
+    means:
+      الإعلام بالأسعار: [الثمن ماشي مكتوب, الثمن مكتوب, ثمن مختلف فالكاس, الأسعار, إشهار الأسعار, affichage des prix, prix non affiché, prix différent en caisse]
+      البيع بالتخفيض: [الصولد, التخفيضات, soldes, réduction]
+    title: {ar: الثمن ماشي مكتوب, fr: 'Le prix n’est pas affiché'}
+    lead: {ar: 'الثمن المكتوب هو الثمن الإجمالي بالضريبة وكل المصاريف (المادة 5)', fr: 'Le prix affiché est le prix total, taxes et frais compris (art. 5)'}
+    to: journeys/prices
+    for: [shop, online]
+  - key: tied
+    icon: tied
+    words: [ما بغاش يبيع ليا, بغاش يبيع ليا, يبيع ليا, رفض يبيع ليا, إلا شريت معاها, البيع المشروط, ما كيبيعش بوحدو, refus de vente, vente liée, vente subordonnée, رفض البيع, refuse de vendre]
+    means:
+      الامتناع عن بيع: [ما بغاش يبيع ليا, بغاش يبيع ليا, يبيع ليا, رفض يبيع ليا, refus de vente]
+      تعليق بيع: [إلا شريت معاها, البيع المشروط, ما كيبيعش بوحدو, vente liée, vente subordonnée]
+    title: {ar: ما بغاش يبيع ليا إلا شريت معاها, fr: 'Il ne vend qu’avec autre chose'}
+    lead: {ar: 'الرفض بلا سبب مقبول والبيع المشروط ممنوعين (المادة 57)', fr: 'Le refus sans motif et la vente liée sont interdits (art. 57)'}
+    to: journeys/prices
+    for: [shop, online]
+  - key: bills
+    icon: bolt
+    words: [فاتورة الماء, فاتورة الضو, فاتورة الماء والضو, الفاتورة غالية, لاريدال, ليديك, فاتورة التيليفون, facture eau électricité, facture trop élevée]
+    means:
+      الفاتورة: [فاتورة الماء, فاتورة الضو, فاتورة الماء والضو, الفاتورة غالية, فاتورة التيليفون, facture eau électricité, facture trop élevée]
+      تسيير مرفق عام: [لاريدال, ليديك, المكتب الوطني للكهرباء]
+    title: {ar: فاتورة الماء والضو, fr: 'La facture d’eau et d’électricité'}
+    lead: {ar: 'المفوض ليهم ملزمين بالتزامات المورد، وفين تشكي', fr: 'Les délégataires ont les obligations du fournisseur, et où réclamer'}
+    to: pages/bills
+    for: [bill, subscription]
+  - key: internet
+    icon: wifi
+    words: [الأنترنيت ضعيف, الأنترنيت مقطوع, الريزو, الكونيكسيون, اتصالات المغرب, أورونج, إنوي, internet lent, réclamation opérateur, coupure internet]
+    means:
+      الاتصالات: [الأنترنيت ضعيف, الأنترنيت مقطوع, الريزو, الكونيكسيون, internet lent, réclamation opérateur, coupure internet]
+    title: {ar: الأنترنيت ضعيف وكنخلص, fr: 'Internet ne marche pas et je paie'}
+    lead: {ar: 'المتعهد أولا، ومن بعد الوكالة الوطنية لتقنين المواصلات', fr: 'L’opérateur d’abord, puis l’ANRT'}
+    to: pages/bills
+    for: [bill, subscription]
+  - key: bank
+    icon: bank
+    words: [البنك, شكاية على البنك, مشكل مع البنك, الحساب البنكي, الوسيط البنكي, réclamation banque, médiateur bancaire, problème banque]
+    means:
+      المقرض: [البنك, مشكل مع البنك, problème banque]
+      الوساطة البنكية: [شكاية على البنك, الوسيط البنكي, réclamation banque, médiateur bancaire]
+    title: {ar: البنك, fr: 'La banque'}
+    lead: {ar: 'البنك أولا، ومن بعد بنك المغرب والوساطة البنكية', fr: 'La banque d’abord, puis Bank Al-Maghrib et la médiation bancaire'}
+    to: pages/bank
+    for: [credit, home-loan]
+  - key: unsafe
+    icon: food
+    words: [ماكلة فاسدة, منتوج فاسد, منتوج خطير, الغش, الغش فالسلعة, سلعة مزورة, تاريخ الصلاحية, produit dangereux, aliment avarié, fraude, contrefaçon, date de péremption, سلامة المنتوجات, الالتزام العام بالسلامة]
+    means:
+      سلامة المنتوجات والخدمات: [منتوج خطير, produit dangereux]
+      السلامة الصحية للمنتجات الغذائية: [ماكلة فاسدة, منتوج فاسد, aliment avarié, تاريخ الصلاحية, date de péremption]
+      الزجر عن الغش في البضائع: [الغش, الغش فالسلعة, سلعة مزورة, fraude, contrefaçon]
+    title: {ar: ماكلة فاسدة ولا سلعة خطيرة, fr: 'Un aliment avarié, un produit dangereux'}
+    lead: {ar: 'سلامة المنتوجات (24.09)، والسلامة الصحية للغذاء (28.07)، والغش (13.83)', fr: 'Sécurité des produits (24-09), sécurité sanitaire des aliments (28-07), fraudes (13-83)'}
+    to: pages/safety
+  - key: complain
+    icon: megaphone
+    words: [بغيت نشكي, شكاية, نشكي على حانوت, نشكي على شركة, جمعية حماية المستهلك, réclamation, porter plainte consommateur, association consommateur, tribunal compétent, litige consommateur, association de consommateurs, الباحثين, مخالفات حماية المستهلك, تعريف المستهلك, المستهلك والمورد, qui est le consommateur]
+    means:
+      جمعيات حماية المستهلك: [جمعية حماية المستهلك, association consommateur]
+      الدعاوى القضائية: [بغيت نشكي, شكاية, porter plainte consommateur]
+    title: {ar: بغيت نشكي, fr: 'Je veux réclamer'}
+    lead: {ar: 'المورد أولا، ومن بعد الإدارة، والجمعيات، والمحكمة ديال مدينتك', fr: 'Le fournisseur d’abord, puis l’administration, les associations, le tribunal de votre ville'}
+    to: pages/where
+  - key: used-car
+    icon: car
+    words: [شريت طوموبيل مستعملة, طوموبيل مستعملة, voiture d’occasion]
+    title: {ar: شريت طوموبيل مستعملة, fr: 'J’ai acheté une voiture d’occasion'}
+    lead: {ar: 'نقل الملكية والآجال، فموضوع الطريق', fr: 'La mutation et ses délais, dans le thème de la route'}
+    to: road:journeys/used-car
+  - key: insurance
+    icon: insurance
+    words: [لاسورانس, التأمين, assurance]
+    title: {ar: لاسورانس, fr: 'L’assurance'}
+    lead: {ar: 'تأمين المركبات، فموضوع الطريق', fr: 'L’assurance des véhicules, dans le thème de la route'}
+    to: road:pages/insurance
+  - key: offplan
+    icon: home
+    words: [شريت دار فالتصميم, شريت شقة على التصميم, VEFA, vente sur plan]
+    title: {ar: شريت دار قبل ما تتبنى, fr: 'J’achète un logement sur plan'}
+    lead: {ar: 'بيع العقار في طور الإنجاز، فموضوع السكن', fr: 'La vente en l’état futur d’achèvement, dans le thème du logement'}
+    to: housing:journeys/offplan
+
+# The tools run on the reader's phone; `tool: true` ones wait for a person's check (checked.yaml: tools/<key>), unless
+# `open: true` shows one before, with a note that no professional has reviewed it yet.
+tools:
+  # The purchase's rights as a receipt (the bold piece of the consumer-receipt review): where it was bought, what,
+  # its price and day; the rights it gives printed with their dates and articles, kept on the phone. It waits for a
+  # person's check like the work's new tools (C2 «wait» of the work-counted review).
+  - key: receipt
+    icon: receipt
+    words: [فاتورة حقوقي, شريت, شريت حاجة, j'ai acheté]
+    tool: true
+    title: {ar: فاتورة حقوقي, fr: 'Le ticket de mes droits'}
+    lead: {ar: 'كل شرية بحقوقها وآجالها، مطبوعة كتوصيل', fr: 'Chaque achat avec ses droits et ses délais, imprimés comme un ticket'}
+  - key: return
+    icon: back
+    words: [واش نقدر نرجعها, من يوم نرجع, باش نرجع, شحال عندي باش نرجع, شحال من يوم نرجع, آخر أجل للتراجع, délai de rétractation, combien de jours pour retourner]
+    means: حق التراجع
+    tool: true
+    open: true            # call K5 of the consumer plan (24 Oct 2026): shown before a professional's review
+    title: {ar: واش نقدر نرجعها؟, fr: 'Puis-je la renvoyer ?'}
+    lead: {ar: 'فين شريتي ونهار وصلاتك: آخر نهار للتراجع وشحال باقي', fr: 'Où vous avez acheté et le jour de la réception : le dernier jour pour vous rétracter'}
+    for: [online, door, credit, shop]
+  - key: guarantee
+    icon: insurance
+    words: [الضمان ديالي باقي, شحال باقي فالضمان, الضمانة باقية, واش الكارانتي باقية, garantie encore valable, fin de garantie]
+    means: الضمان القانوني لعيوب الشيء المبيع
+    tool: true
+    open: true            # K5, as the return
+    title: {ar: الضمان ديالي باقي؟, fr: 'Ma garantie court-elle encore ?'}
+    lead: {ar: 'نهار التسليم، وضمان المحل، وأيام الإصلاح: آخر نهار ديال كل ضمان', fr: 'La livraison, la garantie du magasin, les jours en réparation : le dernier jour de chaque garantie'}
+    for: [shop, online, door, credit]
+  - key: late
+    icon: clock
+    words: [الطلبية تعطلات, شحال نتسنى الطلبية, إمتى نقدر نفسخ, retard de livraison délai]
+    means: آجال التسليم
+    tool: true
+    title: {ar: الطلبية تعطلات, fr: 'La commande est en retard'}
+    lead: {ar: 'النهار اللي تقدر تفسخ فيه، وآخر أجل للرد، ونهار الفوائد', fr: 'Le jour où vous pouvez résoudre, le dernier jour du remboursement, le jour des intérêts'}
+    for: [shop, online, door]
+  - key: credit
+    icon: card
+    words: [حساب الكريدي, شحال يقدر يطالبني البنك, التعويض على التأخير, indemnité de retard crédit]
+    means: التوقف عن الأداء
+    tool: true
+    title: {ar: الكريدي, fr: 'Le crédit'}
+    lead: {ar: 'آخر نهار للتراجع، والتسديد المبكر، وأكثر ما يقدر يطالبك به المقرض', fr: 'Le dernier jour pour vous rétracter, le remboursement anticipé, le plus que le prêteur peut réclamer'}
+    for: [credit, home-loan]
+  - key: where
+    icon: megaphone
+    words: [شكون نشكي ليه, فين نشكي بالتاجر, فين نشكي بالحانوت, où réclamer]
+    tool: true
+    title: {ar: شكون نشكي ليه؟, fr: 'Auprès de qui réclamer ?'}
+    lead: {ar: 'حسب القطاع: الباب الأول، والخدمة الرسمية، والمادة، وشنو تجيب معاك', fr: 'Selon le secteur : la première porte, le service officiel, l’article, ce qu’il faut apporter'}
+  - key: clause
+    icon: clause
+    words: [واش هاد الشرط تعسفي, الشروط التعسفية, est-ce une clause abusive]
+    means: الشرط التعسفي
+    tool: true
+    title: {ar: واش هاد الشرط تعسفي؟, fr: 'Cette clause est-elle abusive ?'}
+    lead: {ar: 'الأنواع اللي ذكرات المادة 18، وشنو كيقول القانون على كل نوع', fr: 'Les sortes que cite l’article 18, et ce que dit la loi de chacune'}
+  - key: prices
+    icon: tag
+    words: [ثمن السكر, شحال ثمن السكر, الثمن اللي حددات الدولة, prix du sucre, prix réglementé]
+    means: الأسعار القصوى
+    tool: true
+    title: {ar: الثمن اللي حددات الدولة, fr: 'Les prix fixés par l’État'}
+    lead: {ar: 'السكر: الثمن الأقصى عند الخروج من المعمل، بالقرار ديالو', fr: 'Le sucre : le prix maximum sortie d’usine, avec son arrêté'}
+  - key: letters
+    icon: letter
+    words: [رسالة التراجع, نموذج رسالة, نكتب للمورد, lettre de rétractation, modèle de lettre]
+    tool: true
+    title: {ar: رسائل كتذكر القانون, fr: 'Des lettres qui citent la loi'}
+    lead: {ar: 'التراجع، والفسخ على التأخير، وطلب الضمان: كتعمرها فالتيليفون، و«قانون» ما كيصيفط والو', fr: 'Rétractation, résolution pour retard, demande de garantie : à remplir sur le téléphone, 3adala n’envoie rien'}
+  - key: numbers
+    icon: numbers
+    words: [شحال من شكاية على البنوك, شكايات البنوك, réclamations bancaires, statistiques réclamations]
+    to: pages/numbers
+    title: {ar: 'شحال من شكاية على البنوك؟', fr: 'Combien de réclamations contre les banques ?'}
+    lead: {ar: 'أرقام بنك المغرب والوساطة البنكية بمصادرها', fr: 'Les chiffres de Bank Al-Maghrib et de la médiation, avec leurs sources'}

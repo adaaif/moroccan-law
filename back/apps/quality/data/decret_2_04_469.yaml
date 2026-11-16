@@ -1,0 +1,9 @@
+# /akn/ma/act/decret/2-04-469 as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned around
+# («ثالثة» for «ثلاثة»), a word cut in two («ج سيم»), a letter moved («والي لز مه» for «ولا يلزمه»). Each was read
+# against the page's image on 20 Oct 2026 (T1 of the work plan): the 1 articles the work topic cites.
+# Applied by `manage.py apply_page_reading apps/quality/data/decret_2_04_469.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-04-469
+document: sources/adala/notice_2_04_469.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [1], wrong: ثالثة أشهر, right: ثلاثة أشهر}   # turn, p. 2

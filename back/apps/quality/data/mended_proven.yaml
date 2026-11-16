@@ -1,0 +1,111 @@
+# FX2 of the mended-Bulletin review (2 Nov 2026): the words the Bulletin stories read against their printed pages
+# (their «المصادر», kept outside the repository), put right in the page readings and in the texts that hold them.
+#     apply_page_reading apps/quality/data/mended_proven.yaml
+# Amounts such as «(50 0)» were copied in the order the eye sees them; read from the right, the page prints «(0 50)».
+text: /ma/dahir/1-60-138
+document: issues/bo_ar/BO_2512_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_1, art_2], wrong: مكتب التنبخ, right: مكتب التبغ}     # art_1 until mend_articles gives article 1 back
+pages:
+  - {index: 2, wrong: يمنع ماسكو الكيف, right: يمنح ماسكو الكيف}
+  - {index: 2, wrong: مكتب التنبخ, right: مكتب التبغ}
+---
+text: /ma/dahir/1940-12-06/bo1467-1
+document: issues/bo_ar/BO_1467_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_8], wrong: في ظرف النهرين الموالين, right: في ظرف الشهرين الموالين}
+pages:
+  - {index: 2, wrong: في ظرف النهرين الموالين, right: في ظرف الشهرين الموالين}
+---
+text: /ma/dahir/1919-11-17/bo342-4
+document: issues/bo_ar/BO_342_ar.pdf
+read_on: "2026-11-02"
+title:
+  - {wrong: ضبط درع الكيف, right: ضبط زرع الكيف}
+pages:
+  - {index: 3, wrong: ضبط درع الكيف, right: ضبط زرع الكيف}
+  - {index: 3, wrong: بلانWait, right: بلان}
+---
+issue: {edition: general_ar, number: 1}
+document: issues/bo_ar/BO_1_ar.pdf
+read_on: "2026-11-02"
+pages:
+  - {index: 0, wrong: ثمن النسخة عشرون سانتيم, right: ثمن الصحيفة عشرون صانتيم}
+---
+issue: {edition: general_ar, number: 30}
+document: issues/bo_ar/BO_30_ar.pdf
+read_on: "2026-11-02"
+pages:
+  - {index: 7, wrong: الحيزة ٠٫٣٥, right: الخبزة ٠٫٣٥}
+  - {index: 7, wrong: الحدام ٢٫٥٠, right: الخدام ٢٫٥٠}
+  - {index: 7, wrong: ٢٫٥٠ التجار ٧٫٥٠, right: ٢٫٥٠ النجار ٧٫٥٠}
+  - {index: 7, wrong: المحمال ٣, right: الحمال ٣}
+---
+issue: {edition: general_ar, number: 266}
+document: issues/bo_ar/BO_266_ar.pdf
+read_on: "2026-11-02"
+pages:
+  - {index: 4, wrong: وبتجديد الاوقاف المسماة عندهم بهكذا ش, right: وبتدبير الاوقاف المسماة عندهم بهكداش}
+---
+text: /ma/arrete/1942-04-10/bo1537-9
+document: issues/bo_ar/BO_1537_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_1], wrong: (50 0), right: (0 50)}
+  - {eids: [art_1], wrong: الدقيق الكاشر, right: الدقيق الكاشير}
+pages:
+  - {index: 4, wrong: (50 0), right: (0 50)}
+  - {index: 4, wrong: الدقيق الكاشر, right: الدقيق الكاشير}
+---
+text: /ma/arrete/1942-04-10/bo1537-10
+document: issues/bo_ar/BO_1537_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_1], wrong: (50 0), right: (0 50)}
+---
+text: /ma/arrete/1942-04-10/bo1537-11
+document: issues/bo_ar/BO_1537_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_1], wrong: (25 0), right: (0 25)}
+  - {eids: [art_1], wrong: الدقيق الكاشر, right: الدقيق الكاشير}
+pages:
+  - {index: 5, wrong: (50 0), right: (0 50)}
+  - {index: 5, wrong: (25 0), right: (0 25)}
+  - {index: 5, wrong: الدقيق الكاشر, right: الدقيق الكاشير}
+---
+text: /ma/dahir/1953-09-11/bo2133-1
+document: issues/bo_ar/BO_2133_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_3], wrong: وابقاها المجلسين على, right: وابقاها المجلس على}
+pages:
+  - {index: 1, wrong: وابقاها المجلسين على, right: وابقاها المجلس على}
+---
+text: /ma/dahir/1915-06-28/bo112-2
+document: issues/bo_ar/BO_112_ar.pdf
+read_on: "2026-11-02"
+fixes:
+  - {eids: [art_7], wrong: الظهير الشريف بغرامة تتراوح, right: الظهير الشريف بذعيرة تتراوح}
+pages:
+  - {index: 4, wrong: الظهير الشريف بغرامة تتراوح, right: الظهير الشريف بذعيرة تتراوح}
+---
+text: /ma/dahir/1944-03-03/bo1636-13
+document: issues/bo_ar/BO_1636_ar.pdf
+read_on: "2026-11-02"
+title:
+  - {wrong: المثاريح الحصوصية, right: المشاريع الخصوصية}
+---
+text: /ma/dahir/1943-04-30/bo1592-6
+document: issues/bo_ar/BO_1592_ar.pdf
+read_on: "2026-11-02"
+signed_on: "1943-03-31"
+---
+# The census repeal's heading, read on BO 1635 p. 182 (FX7): stored as «ظهير شريف» alone. The heading prints
+# «الاعلانات المتعلقة على الحيطان» where article 1 prints «المعلقة»: the Bulletin's own words, kept.
+text: /ma/dahir/1944-02-25/bo1635-4
+document: issues/bo_ar/BO_1635_ar.pdf
+read_on: "2026-11-02"
+title_is: ظهير شريف تلغى بموجبه الظهائر الشريفة المورخة بـ 11 رجب عام 1360 الموافق 5 غشت 1941 المتعلقة باحصاء عدد اليهود والظهير الشريف المورخ بفاتح جمادى الثانية 1361 الموافق 16 يونيو 1942 الصادر في زجر من يمزق الاعلانات المتعلقة على الحيطان باسم الحكومة او تحت مراقبتها وكذلك في زجر المظاهرات التي تقام ضد الوطن او ضد الحكومة كما يبطل بمقتضاه مايترتب على بعض العقوبات

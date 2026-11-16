@@ -1,0 +1,16 @@
+# The DOC as Adala's PDF prints it, where the PDF's text layer misreads it: a ligature turned
+# around, a word cut in two, a stretching stroke read as «م», a passage out of order. Each was read against the page's
+# image on 20 Oct 2026 (H1–H2 of the housing plan), in the articles the housing topic cites (6 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/doc_1913.yaml`; a reload of the text applies them again.
+text: /ma/code/doc
+document: sources/adala/doc_1913.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [573], wrong: في الفصل .533 ويسوغ, right: في الفصل 533. ويسوغ}   # moved (period before the number), p. 126
+  - {arts: ['618-3-bis'], wrong: العقاري الأصمملي للعقار, right: العقاري الأصلي للعقار}   # stroke, p. 136
+  - {arts: ['618-3-bis'], wrong: ملكية العقار ؛  الواردة على العقار  غير المحفظ مع تحديد الحقوق العينية والتحملات والارتفاقات, right: ملكية العقار غير المحفظ مع تحديد الحقوق العينية والتحملات والارتفاقات الواردة على العقار؛}   # moved, p. 136
+  - {arts: ['618-3-bis'], wrong: استرجاع الأقسماط المؤداة, right: استرجاع الأقساط المؤداة}   # stroke, p. 137
+  - {arts: ['618-3-quater'], wrong: المشتري وصال بالإيداع, right: المشتري وصلا بالإيداع}   # turn, p. 138
+  - {arts: ['618-18'], wrong: الموالية لتاريخ هما, right: الموالية لتاريخهما}   # split, p. 142
+  - {arts: ['618-19'], wrong: في الفصل .618-12 يقوم, right: في الفصل 618-12. يقوم}   # moved (period before the number), p. 143
+  - {arts: [642], wrong: على العين المكتراة، ما, right: على العين المكتراة، ما لم يقض العقد أو العرف بخلاف ذلك.}   # missing (end of the article, before footnote 201), p. 149

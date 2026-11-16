@@ -1,0 +1,41 @@
+# The land-registration dahir of 12 Aug 1913 as Adala's PDF prints it, where our text misreads it: a ligature turned
+# around («فال» for «فلا», «الثالثة» for «الثلاثة», «تقييد الحق» for «تقييد لاحق»), a word cut in two («الا ستي ناف»),
+# a footnote number glued into the text, a number's comma or dot moved, two passages out of the page's order, a line
+# dropped (art. 37's end) and a paragraph dropped (art. 65 bis's fine). Each was read against the page's image on
+# 26 Oct 2026 (the land review, M16), in the articles the land topic cites (26 corrected).
+# Applied by `manage.py apply_page_reading apps/quality/data/land_registration_1913.yaml`; a reload of the text applies them again.
+# Not corrected: the list markers the text layer turned around («.1» for «1.», «-1» for «1-»), as in the other Adala texts.
+text: /ma/code/land-registration
+document: sources/adala/land_registration_1913.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [7], wrong: والأشغال الطب غرافية, right: والأشغال الطبغرافية}   # split, p. 6
+  - {arts: [13], wrong: نفس البيان ات المذكورة, right: نفس البيانات المذكورة}   # split, p. 8
+  - {arts: [18], wrong: المعين للتحديد 15 بعشرين يوما, right: المعين للتحديد بعشرين يوما}   # footnote 15 glued, p. 11
+  - {arts: [19], wrong: عمليات التحديد .17 وينتدب, right: عمليات التحديد. وينتدب}   # footnote 17 glued, p. 12
+  - {arts: [20], wrong: وأعمال الب حث المفيدة, right: وأعمال البحث المفيدة}   # split, p. 13
+  - {arts: [21], wrong: وعددها وو صف حدود, right: وعددها ووصف حدود}   # split, p. 14
+  - {arts: [21], wrong: امتنع و ا عنه, right: امتنعوا عنه}   # split, p. 14
+  - {arts: [22], wrong: فال يتم إنجازها, right: فلا يتم إنجازها}   # turn, p. 14
+  - {arts: [23], wrong: المقررة في الفصل ،21 فإن, right: المقررة في الفصل 21، فإن}   # moved, p. 15
+  - {arts: [23], wrong: تحديد تكميلي الحق ينتج, right: تحديد تكميلي لاحق ينتج}   # turn, p. 15
+  - {arts: [25], wrong: المساح الطب غرا في المنتدب, right: المساح الطبغرافي المنتدب}   # split, p. 16
+  - {arts: [25], wrong: إجراء التحديد .23 تضمن, right: إجراء التحديد. تضمن}   # footnote 23 glued, p. 16
+  - {arts: [30, 32], wrong: خلال الثالثة أشهر, right: خلال الثلاثة أشهر}   # turn, pp. 18, 20
+  - {arts: [31], wrong: إذا أزلا طالب التحفيظ, right: إذا أزال طالب التحفيظ}   # turn, p. 19
+  - {arts: [37], wrong: التي تتطلب حال دون, right: التي تتطلب حلا دون}   # turn, p. 21
+  - {arts: [37], wrong: طبقا للفصل ،84 أو تنازل, right: طبقا للفصل 84، أو تنازل}   # moved, p. 22
+  - {arts: [37], wrong: الحقوق المحكوم بها، وفق الشروط, right: الحقوق المحكوم بها، وفق الشروط والشكليات المنصوص عليها في الفصل 83.}   # line dropped, p. 22
+  - {arts: [37-bis, 41, 96], wrong: الا ستي ناف, right: الاستيناف}   # split, pp. 22, 24, 47
+  - {arts: [37-bis, 96], wrong: الا ستين افية, right: الاستينافية}   # split, pp. 22, 47
+  - {arts: [47], wrong: القرار الا ستين افي, right: القرار الاستينافي}   # split, p. 26
+  - {arts: [52], wrong: تأسيس رسم عقاري52 يتضمن, right: تأسيس رسم عقاري يتضمن}   # footnote 52 glued, p. 32
+  - {arts: [52], wrong: المجاورة والمال صقة له, right: المجاورة والملاصقة له}   # turn and split, p. 32
+  - {arts: [65-bis], wrong: الشهر الأول الذي يلي تاريخ انقضاء, right: 'إذا لم يطلب التقييد بالرسم العقاري ولم تؤد رسوم المحافظة العقارية داخل الأجل المقرر أعلاه، فإن طالب التقييد يلزم بأداء غرامة تساوي خمسة في المائة من مبلغ الرسوم المستحقة، وذلك عن الشهر الأول الذي يلي تاريخ انقضاء'}   # paragraph dropped (printed small at the foot of p. 37, continued on p. 38)
+  - {arts: [72], wrong: للطلب شكال وجوهرا, right: للطلب شكلا وجوهرا}   # turn, p. 40
+  - {arts: [73], wrong: وصفته وأهليت ه محققة, right: وصفته وأهليته محققة}   # split, p. 40
+  - {arts: [83], wrong: 'يمكن لصاحب حق أثناء مسطرة التحفيظ أن يطلب نشره بالجريدة الرسمية بعد  وقع إنشاؤه أو تغييره أو الإقرار به إيداع الوثائق', right: 'يمكن لصاحب حق وقع إنشاؤه أو تغييره أو الإقرار به أثناء مسطرة التحفيظ أن يطلب نشره بالجريدة الرسمية بعد إيداع الوثائق'}   # out of order, p. 42
+  - {arts: [84], wrong: 'في الرتبة التي عينت له إذا سمحت  يقيد الحق المذكور عند التحفيظ بالرسم العقاري إجراءات المسطرة بذلك', right: 'يقيد الحق المذكور عند التحفيظ بالرسم العقاري في الرتبة التي عينت له إذا سمحت إجراءات المسطرة بذلك'}   # out of order, p. 43
+  - {arts: [89], wrong: بالمحافظة العقارية وب كل الوسائل, right: بالمحافظة العقارية وبكل الوسائل}   # split, p. 46
+  - {arts: [97], wrong: المذكور في الفصل.73 والكل, right: "المذكور في الفصل 73.\nوالكل"}   # moved, a new paragraph on the page, p. 48
+  - {arts: [100], wrong: أو في تقييد الحق, right: أو في تقييد لاحق}   # turn, p. 48

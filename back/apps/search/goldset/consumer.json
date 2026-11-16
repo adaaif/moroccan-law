@@ -1,0 +1,709 @@
+{
+  "about": "Consumer questions (S1 of the consumer plan, 24 Oct 2026): what a buyer types, in Darija, MSA, French and Darija in Latin letters, written for the goldset the way people ask, each with the articles that answer it (any of them). The plan's bar: 80 % in the top 3, measured before the topic is called done.",
+  "questions": [
+    {
+      "q": "شحال عندي من نهار باش نرجع حاجة شريتها أونلاين؟",
+      "expect": [
+        "/ma/loi/31-08/art_36"
+      ],
+      "lang": "darija",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "واش نقدر نرجع سلعة شريتها فالحانوت إلا ما عجباتنيش؟",
+      "expect": [
+        "/ma/loi/31-08/art_36",
+        "/ma/loi/31-08/art_65"
+      ],
+      "lang": "darija",
+      "theme": "withdrawal",
+      "note": "no withdrawal in a shop: art 36 is the distance rule; the guarantee is 65"
+    },
+    {
+      "q": "البضاعة المباعة لا ترد ولا تستبدل واش قانوني",
+      "expect": [
+        "/ma/loi/31-08/art_65",
+        "/ma/code/doc/art_571"
+      ],
+      "lang": "darija",
+      "theme": "guarantee"
+    },
+    {
+      "q": "شحال مدة الضمان القانوني على الأجهزة فالمغرب",
+      "expect": [
+        "/ma/loi/31-08/art_65"
+      ],
+      "lang": "msa",
+      "theme": "guarantee"
+    },
+    {
+      "q": "délai de garantie légale au Maroc pour un appareil",
+      "expect": [
+        "/ma/loi/31-08/art_65"
+      ],
+      "lang": "fr",
+      "theme": "guarantee"
+    },
+    {
+      "q": "الطلبية تعطلات أكثر من سيمانة واش نقدر نلغيها",
+      "expect": [
+        "/ma/loi/31-08/art_13",
+        "/ma/loi/31-08/art_14"
+      ],
+      "lang": "darija",
+      "theme": "late"
+    },
+    {
+      "q": "le vendeur ne me rembourse pas après mon retour",
+      "expect": [
+        "/ma/loi/31-08/art_37"
+      ],
+      "lang": "fr",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "remboursement après rétractation combien de jours",
+      "expect": [
+        "/ma/loi/31-08/art_37"
+      ],
+      "lang": "fr",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "واش البنك يقدر يطلب مني غرامة إلا خلصت الكريدي قبل الوقت",
+      "expect": [
+        "/ma/loi/31-08/art_103"
+      ],
+      "lang": "darija",
+      "theme": "credit"
+    },
+    {
+      "q": "remboursement anticipé crédit à la consommation pénalité",
+      "expect": [
+        "/ma/loi/31-08/art_103"
+      ],
+      "lang": "fr",
+      "theme": "credit"
+    },
+    {
+      "q": "فوائد التأخير في القرض الاستهلاكي",
+      "expect": [
+        "/ma/loi/31-08/art_104",
+        "/ma/loi/31-08/art_105"
+      ],
+      "lang": "msa",
+      "theme": "credit"
+    },
+    {
+      "q": "شحال عندي باش نتراجع على الكريدي",
+      "expect": [
+        "/ma/loi/31-08/art_85"
+      ],
+      "lang": "darija",
+      "theme": "credit"
+    },
+    {
+      "q": "délai de réflexion crédit immobilier",
+      "expect": [
+        "/ma/loi/31-08/art_120"
+      ],
+      "lang": "fr",
+      "theme": "home-loan"
+    },
+    {
+      "q": "العرض المسبق للقرض العقاري",
+      "expect": [
+        "/ma/loi/31-08/art_117",
+        "/ma/loi/31-08/art_118",
+        "/ma/loi/31-08/art_120"
+      ],
+      "lang": "msa",
+      "theme": "home-loan"
+    },
+    {
+      "q": "الأبونمو ديال الأنترنيت تجدد بلا ما يعلموني",
+      "expect": [
+        "/ma/loi/31-08/art_7"
+      ],
+      "lang": "darija",
+      "theme": "subscription"
+    },
+    {
+      "q": "résilier un abonnement après reconduction tacite",
+      "expect": [
+        "/ma/loi/31-08/art_7"
+      ],
+      "lang": "fr",
+      "theme": "subscription"
+    },
+    {
+      "q": "شرط تعسفي في العقد",
+      "expect": [
+        "/ma/loi/31-08/art_15",
+        "/ma/loi/31-08/art_18",
+        "/ma/loi/31-08/art_19"
+      ],
+      "lang": "msa",
+      "theme": "clause"
+    },
+    {
+      "q": "une clause abusive est-elle nulle",
+      "expect": [
+        "/ma/loi/31-08/art_19"
+      ],
+      "lang": "fr",
+      "theme": "clause"
+    },
+    {
+      "q": "liste des clauses abusives",
+      "expect": [
+        "/ma/loi/31-08/art_18"
+      ],
+      "lang": "fr",
+      "theme": "clause"
+    },
+    {
+      "q": "واش الثمن المكتوب فيه الضريبة على القيمة المضافة",
+      "expect": [
+        "/ma/loi/31-08/art_5"
+      ],
+      "lang": "darija",
+      "theme": "prices"
+    },
+    {
+      "q": "prix affiché TTC obligatoire",
+      "expect": [
+        "/ma/loi/31-08/art_5"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "واش الفاتورة واجبة على التاجر",
+      "expect": [
+        "/ma/loi/31-08/art_4"
+      ],
+      "lang": "darija",
+      "theme": "prices"
+    },
+    {
+      "q": "le commerçant refuse de donner une facture",
+      "expect": [
+        "/ma/loi/31-08/art_4"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "رفض البيع للمستهلك بدون سبب",
+      "expect": [
+        "/ma/loi/31-08/art_57"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "vente liée interdite",
+      "expect": [
+        "/ma/loi/31-08/art_57"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "شروط البيع بالتخفيض",
+      "expect": [
+        "/ma/loi/31-08/art_53",
+        "/ma/loi/31-08/art_54"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "soldes ancien prix barré",
+      "expect": [
+        "/ma/loi/31-08/art_54"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "بائع جا للدار وسنيت عقد بغيت نتراجع",
+      "expect": [
+        "/ma/loi/31-08/art_49",
+        "/ma/loi/31-08/art_47"
+      ],
+      "lang": "darija",
+      "theme": "door"
+    },
+    {
+      "q": "démarchage à domicile délai de rétractation",
+      "expect": [
+        "/ma/loi/31-08/art_49"
+      ],
+      "lang": "fr",
+      "theme": "door"
+    },
+    {
+      "q": "شنو خاص يكون فالعقد ديال البيع خارج المحل",
+      "expect": [
+        "/ma/loi/31-08/art_48"
+      ],
+      "lang": "darija",
+      "theme": "door"
+    },
+    {
+      "q": "المعلومات التي يجب أن يقدمها التاجر الإلكتروني",
+      "expect": [
+        "/ma/loi/31-08/art_29"
+      ],
+      "lang": "msa",
+      "theme": "online"
+    },
+    {
+      "q": "informations obligatoires site de vente en ligne",
+      "expect": [
+        "/ma/loi/31-08/art_29"
+      ],
+      "lang": "fr",
+      "theme": "online"
+    },
+    {
+      "q": "وصلاتني سلعة بلا ما نطلبها وبغاو نخلص",
+      "expect": [
+        "/ma/loi/31-08/art_33"
+      ],
+      "lang": "darija",
+      "theme": "online"
+    },
+    {
+      "q": "produit envoyé sans commande paiement",
+      "expect": [
+        "/ma/loi/31-08/art_33"
+      ],
+      "lang": "fr",
+      "theme": "online"
+    },
+    {
+      "q": "délai de livraison commande en ligne 30 jours",
+      "expect": [
+        "/ma/loi/31-08/art_39"
+      ],
+      "lang": "fr",
+      "theme": "online"
+    },
+    {
+      "q": "المنتوج ما كاينش ورجعو ليا الفلوس شحال من نهار",
+      "expect": [
+        "/ma/loi/31-08/art_40"
+      ],
+      "lang": "darija",
+      "theme": "online"
+    },
+    {
+      "q": "استغلال ضعف أو جهل المستهلك",
+      "expect": [
+        "/ma/loi/31-08/art_59"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "abus de faiblesse du consommateur",
+      "expect": [
+        "/ma/loi/31-08/art_59"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "البيع الهرمي ممنوع",
+      "expect": [
+        "/ma/loi/31-08/art_58"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "المسابقات الإشهارية من أجل الربح",
+      "expect": [
+        "/ma/loi/31-08/art_60",
+        "/ma/loi/31-08/art_61"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "الإشهار الكاذب عقوبة",
+      "expect": [
+        "/ma/loi/31-08/art_21",
+        "/ma/loi/31-08/art_174"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "publicité mensongère sanction",
+      "expect": [
+        "/ma/loi/31-08/art_21",
+        "/ma/loi/31-08/art_174"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "contenu du bon de garantie",
+      "expect": [
+        "/ma/loi/31-08/art_72",
+        "/ma/loi/31-08/art_71"
+      ],
+      "lang": "fr",
+      "theme": "guarantee"
+    },
+    {
+      "q": "الضمان التعاقدي",
+      "expect": [
+        "/ma/loi/31-08/art_66",
+        "/ma/loi/31-08/art_67"
+      ],
+      "lang": "msa",
+      "theme": "guarantee"
+    },
+    {
+      "q": "مدة الإصلاح كتزاد فالضمان",
+      "expect": [
+        "/ma/loi/31-08/art_73"
+      ],
+      "lang": "darija",
+      "theme": "guarantee"
+    },
+    {
+      "q": "service après-vente obligations",
+      "expect": [
+        "/ma/loi/31-08/art_69",
+        "/ma/loi/31-08/art_70"
+      ],
+      "lang": "fr",
+      "theme": "guarantee"
+    },
+    {
+      "q": "جمعية حماية المستهلك ترفع دعوى قضائية",
+      "expect": [
+        "/ma/loi/31-08/art_157"
+      ],
+      "lang": "msa",
+      "theme": "where"
+    },
+    {
+      "q": "association de consommateurs action en justice",
+      "expect": [
+        "/ma/loi/31-08/art_157",
+        "/ma/loi/31-08/art_158"
+      ],
+      "lang": "fr",
+      "theme": "where"
+    },
+    {
+      "q": "المحكمة المختصة في نزاع بين المستهلك والمورد",
+      "expect": [
+        "/ma/loi/31-08/art_202"
+      ],
+      "lang": "msa",
+      "theme": "where"
+    },
+    {
+      "q": "tribunal compétent litige consommateur",
+      "expect": [
+        "/ma/loi/31-08/art_202"
+      ],
+      "lang": "fr",
+      "theme": "where"
+    },
+    {
+      "q": "العقد بالفرنسية بلا ترجمة للعربية",
+      "expect": [
+        "/ma/loi/31-08/art_206"
+      ],
+      "lang": "darija",
+      "theme": "clause"
+    },
+    {
+      "q": "contrat en langue étrangère traduction arabe obligatoire",
+      "expect": [
+        "/ma/loi/31-08/art_206"
+      ],
+      "lang": "fr",
+      "theme": "clause"
+    },
+    {
+      "q": "آجال قانون حماية المستهلك آجال كاملة",
+      "expect": [
+        "/ma/loi/31-08/art_203"
+      ],
+      "lang": "msa",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "les exceptions au droit de rétractation",
+      "expect": [
+        "/ma/loi/31-08/art_38"
+      ],
+      "lang": "fr",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "العقود المبرمة عن بعد",
+      "expect": [
+        "/ma/loi/31-08/art_25",
+        "/ma/loi/31-08/art_26"
+      ],
+      "lang": "msa",
+      "theme": "online"
+    },
+    {
+      "q": "qui est le consommateur au sens de la loi 31-08",
+      "expect": [
+        "/ma/loi/31-08/art_2"
+      ],
+      "lang": "fr",
+      "theme": "where"
+    },
+    {
+      "q": "تعريف المستهلك والمورد",
+      "expect": [
+        "/ma/loi/31-08/art_2"
+      ],
+      "lang": "msa",
+      "theme": "where"
+    },
+    {
+      "q": "الكفيل في القرض الاستهلاكي",
+      "expect": [
+        "/ma/loi/31-08/art_144",
+        "/ma/loi/31-08/art_146",
+        "/ma/loi/31-08/art_147"
+      ],
+      "lang": "msa",
+      "theme": "credit"
+    },
+    {
+      "q": "caution crédit mention manuscrite",
+      "expect": [
+        "/ma/loi/31-08/art_144"
+      ],
+      "lang": "fr",
+      "theme": "credit"
+    },
+    {
+      "q": "طردوني من الخدمة وما قدرتش نخلص الكريدي",
+      "expect": [
+        "/ma/loi/31-08/art_149",
+        "/ma/loi/31-08/art_111"
+      ],
+      "lang": "darija",
+      "theme": "credit"
+    },
+    {
+      "q": "délai de grâce du juge crédit licenciement",
+      "expect": [
+        "/ma/loi/31-08/art_149"
+      ],
+      "lang": "fr",
+      "theme": "credit"
+    },
+    {
+      "q": "الكمبيالات في عمليات القرض الاستهلاكي باطلة",
+      "expect": [
+        "/ma/loi/31-08/art_150"
+      ],
+      "lang": "msa",
+      "theme": "credit"
+    },
+    {
+      "q": "شحال ثمن السكر",
+      "expect": [
+        "/ma/arrete/2889-25/art_1",
+        "/ma/arrete/3243-23/art_1",
+        "/ma/arrete/2900-24/art_1"
+      ],
+      "lang": "darija",
+      "theme": "prices",
+      "note": "sugar: the latest restatement of order 1964.06 art 1"
+    },
+    {
+      "q": "prix du sucre au Maroc arrêté",
+      "expect": [
+        "/ma/arrete/2889-25/art_1",
+        "/ma/arrete/3243-23/art_1",
+        "/ma/arrete/2900-24/art_1"
+      ],
+      "lang": "fr",
+      "theme": "prices"
+    },
+    {
+      "q": "سلامة المنتوجات والخدمات الالتزام العام",
+      "expect": [
+        "/ma/loi/24-09/art_4",
+        "/ma/loi/24-09/art_5"
+      ],
+      "lang": "msa",
+      "theme": "safety"
+    },
+    {
+      "q": "rappel d’un produit dangereux",
+      "expect": [
+        "/ma/loi/24-09/art_36",
+        "/ma/loi/24-09/art_28"
+      ],
+      "lang": "fr",
+      "theme": "safety"
+    },
+    {
+      "q": "عقوبة الغش في البضائع",
+      "expect": [
+        "/ma/loi/13-83/art_1"
+      ],
+      "lang": "msa",
+      "theme": "safety"
+    },
+    {
+      "q": "fraude sur les marchandises sanction",
+      "expect": [
+        "/ma/loi/13-83/art_1"
+      ],
+      "lang": "fr",
+      "theme": "safety"
+    },
+    {
+      "q": "ماكلة فاسدة فالسوق",
+      "expect": [
+        "/ma/loi/28-07/art_4",
+        "/ma/loi/28-07/art_10"
+      ],
+      "lang": "darija",
+      "theme": "safety"
+    },
+    {
+      "q": "واش خاص التاجر يكتب أجل التسليم",
+      "expect": [
+        "/ma/loi/31-08/art_12",
+        "/ma/decret/2-12-503/art_28"
+      ],
+      "lang": "darija",
+      "theme": "late"
+    },
+    {
+      "q": "seuil de 3000 dirhams date de livraison",
+      "expect": [
+        "/ma/decret/2-12-503/art_28",
+        "/ma/loi/31-08/art_12"
+      ],
+      "lang": "fr",
+      "theme": "late"
+    },
+    {
+      "q": "الهدية مع الشراء ممنوعة",
+      "expect": [
+        "/ma/loi/31-08/art_56",
+        "/ma/arrete/4-14/art_1"
+      ],
+      "lang": "msa",
+      "theme": "prices"
+    },
+    {
+      "q": "مصاريف الإرجاع شكون كيخلصها",
+      "expect": [
+        "/ma/loi/31-08/art_36",
+        "/ma/loi/31-08/art_41"
+      ],
+      "lang": "darija",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "frais de retour en cas de rétractation",
+      "expect": [
+        "/ma/loi/31-08/art_36",
+        "/ma/loi/31-08/art_41"
+      ],
+      "lang": "fr",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "العيب الخفي فسخ البيع ورد الثمن",
+      "expect": [
+        "/ma/code/doc/art_556",
+        "/ma/code/doc/art_549"
+      ],
+      "lang": "msa",
+      "theme": "guarantee"
+    },
+    {
+      "q": "vice caché résolution de la vente",
+      "expect": [
+        "/ma/code/doc/art_556",
+        "/ma/code/doc/art_549"
+      ],
+      "lang": "fr",
+      "theme": "guarantee"
+    },
+    {
+      "q": "واش نقدر نختار شركة التأمين ديال الكريدي",
+      "expect": [
+        "/ma/loi/31-08/art_82"
+      ],
+      "lang": "darija",
+      "theme": "credit"
+    },
+    {
+      "q": "taux effectif global mention obligatoire contrat de crédit",
+      "expect": [
+        "/ma/loi/31-08/art_143"
+      ],
+      "lang": "fr",
+      "theme": "credit"
+    },
+    {
+      "q": "القرض المجاني شروط الإشهار",
+      "expect": [
+        "/ma/loi/31-08/art_101",
+        "/ma/loi/31-08/art_102"
+      ],
+      "lang": "msa",
+      "theme": "credit"
+    },
+    {
+      "q": "location avec option d’achat crédit consommateur",
+      "expect": [
+        "/ma/loi/31-08/art_74",
+        "/ma/loi/31-08/art_106"
+      ],
+      "lang": "fr",
+      "theme": "credit"
+    },
+    {
+      "q": "صلاحيات الباحثين في مخالفات حماية المستهلك",
+      "expect": [
+        "/ma/loi/31-08/art_166",
+        "/ma/loi/31-08/art_169"
+      ],
+      "lang": "msa",
+      "theme": "where"
+    },
+    {
+      "q": "chhal 3andi mn nhar bach nrje3 chi haja chritha online",
+      "expect": [
+        "/ma/loi/31-08/art_36"
+      ],
+      "lang": "darija-latin",
+      "theme": "withdrawal"
+    },
+    {
+      "q": "garantie dyal tlifoun chhal katb9a",
+      "expect": [
+        "/ma/loi/31-08/art_65"
+      ],
+      "lang": "darija-latin",
+      "theme": "guarantee"
+    }
+  ]
+}

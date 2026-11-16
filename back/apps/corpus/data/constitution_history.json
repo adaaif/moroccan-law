@@ -1,0 +1,30 @@
+{
+ "about": "The constitutions' short history (C4 of the constitution review, 25 Oct 2026): six chapters drawn only from the texts themselves, each claim linked to its article ([words](art_N), relative to that constitution; (preamble) its preamble; () the text). Drafted by Claude from the texts on the site; «checked» names who read it against them, and stays empty until a person has: the page then says it is a draft and is not indexed.",
+ "checked": "",
+ "chapters": {
+  "1962": {
+   "ar": "أول دستور للمملكة بعد الاستقلال، في 110 فصول. برلمانه مجلسان، مجلس النواب ومجلس المستشارين [(الباب الثالث)](art_36)، وفيه غرفة دستورية بالمجلس الأعلى [(الباب العاشر)](art_100). وفي فصله الثالث: «ونظام الحزب الوحيد ممنوع بالمغرب» [(الفصل 3)](art_3).",
+   "fr": "Première constitution du Royaume après l'indépendance, en 110 articles. Le Parlement compte deux chambres, la Chambre des représentants et la Chambre des conseillers [(titre III)](art_36), et une chambre constitutionnelle siège à la Cour suprême [(titre X)](art_100). Son article 3 interdit le parti unique [(article 3)](art_3)."
+  },
+  "1970": {
+   "ar": "ألغى ظهيره دستور 1962 [(الفصل الثاني من الظهير)](). صار البرلمان مجلسا واحدا، مجلس النواب [(الباب الثالث)](art_36). وبقي نافذا سنة ونصف سنة.",
+   "fr": "Son dahir abroge la constitution de 1962 [(article 2 du dahir)](). Le Parlement n'a plus qu'une chambre, la Chambre des représentants [(titre III)](art_36). Elle reste en vigueur un an et demi."
+  },
+  "1972": {
+   "ar": "ألغى دستور 1970 [(الفصل 103)](art_103)، وأبقى البرلمان مجلسا واحدا [(الباب الثالث)](art_36). وبقي نافذا عشرين سنة، أطول من أي دستور قبله أو بعده إلى اليوم.",
+   "fr": "Elle abroge la constitution de 1970 [(article 103)](art_103) et garde une seule chambre [(titre III)](art_36). Elle reste en vigueur vingt ans, plus longtemps qu'aucune autre jusqu'à aujourd'hui."
+  },
+  "1992": {
+   "ar": "مراجعة نُشر نصها كاملا. يؤكد تصديرها تشبث المملكة «بحقوق الإنسان كما هي متعارف عليها عالميا» [(التصدير)](preamble)، ويقوم بها مجلس دستوري [(الباب السادس)](art_76)، ومجلس اقتصادي واجتماعي [(الباب التاسع)](art_91).",
+   "fr": "Une révision publiée en entier. Son préambule réaffirme l'attachement du Royaume aux droits de l'homme tels qu'ils sont universellement reconnus [(préambule)](preamble) ; elle institue un Conseil constitutionnel [(titre VI)](art_76) et un Conseil économique et social [(titre IX)](art_91)."
+  },
+  "1996": {
+   "ar": "عاد البرلمان مجلسين، مجلس النواب ومجلس المستشارين [(الباب الثالث)](art_36)، وأُحدث المجلس الأعلى للحسابات [(الباب العاشر)](art_96).",
+   "fr": "Le Parlement retrouve deux chambres, la Chambre des représentants et la Chambre des conseillers [(titre III)](art_36), et la Cour des comptes est instituée [(titre X)](art_96)."
+  },
+  "2011": {
+   "ar": "نسخ دستور 1996 [(الفصل 180)](art_180)، في 180 فصلا بعد 108، منها باب للحريات والحقوق الأساسية في 22 فصلا [(الباب الثاني)](art_19). الأمازيغية لغة رسمية إلى جانب العربية [(الفصل 5)](art_5)، ويعين الملك رئيس الحكومة «من الحزب السياسي الذي تصدر انتخابات أعضاء مجلس النواب» [(الفصل 47)](art_47)، وتنظر محكمة دستورية في دستورية القوانين [(الباب الثامن)](art_129).",
+   "fr": "Elle abroge la constitution de 1996 [(article 180)](art_180), en 180 articles au lieu de 108, dont un titre de 22 articles sur les libertés et droits fondamentaux [(titre II)](art_19). L'amazighe est langue officielle aux côtés de l'arabe [(article 5)](art_5), le Roi nomme le Chef du gouvernement au sein du parti arrivé en tête des élections à la Chambre des représentants [(article 47)](art_47), et une Cour constitutionnelle contrôle la constitutionnalité des lois [(titre VIII)](art_129)."
+  }
+ }
+}

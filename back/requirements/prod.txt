@@ -1,0 +1,4 @@
+# The server's own packages, beside base.txt (deploy/deploy.sh installs both).
+-r base.txt
+
+gunicorn==23.0.0

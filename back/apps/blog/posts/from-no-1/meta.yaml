@@ -1,0 +1,100 @@
+# «الجريدة الرسمية من العدد 1 في صورة واحدة»: the blog's first post (B1 of the blog-first-post review, chosen on 31 Oct
+# 2026, «سبعون سنة» from 1956 until BH8 of the posts-from-No.-1 review, 6 Nov 2026, took it back to the Arabic edition's No.
+# 1; its old address, /blog/seventy-years, leads here). The counts are in figures.json (manage.py blog_figures
+# from-no-1); what is here was read on the Bulletin's pages, each with the issue it was read in.
+slug: from-no-1
+number: 1
+status: draft            # a person checks the figures on their pages and signs the post before it is published
+date: null               # the day it is published
+counted_on: 2026-11-06
+span: [1913, 2025]       # the Arabic edition's No. 1 (1 February 1913) to the last whole year
+title:
+  ar: الجريدة الرسمية من العدد 1 في صورة واحدة
+  fr: Le Bulletin officiel depuis son numéro 1, en une image
+lead:
+  ar: من عددها الأول، في فاتح فبراير 1913، إلى آخر 2025، صدر من الجريدة الرسمية بالعربية 7.643 عددا في 388.988 صفحة. وضعنا كل عدد في مكانه من سنته، فظهر ما لا يراه من يقرأ عددا واحدا.
+  fr: De son premier numéro, le 1er février 1913, à la fin de 2025, le Bulletin officiel en arabe a publié 7 643 numéros, soit 388 988 pages. Nous avons posé chaque numéro à sa place dans son année, et ce qu’on ne voit pas en lisant un numéro à la fois est apparu.
+
+# The masthead of 6 January 1956 (issue 2254) prints «السنة الخامسة والاربعون»; that of 26 October 2026 (7555),
+# «السنة الخامسة عشرة بعد المائة»: the Bulletin was founded in 1912. The Arabic No. 1 prints «السنة الاولى».
+founded: 1912
+
+# The Arabic edition's No. 1, read on its first page (BO 1, 7 pages): «رباط الفتح في 23 صفر 1331 … الموافق 1 يبراير
+# 1913», «للدولة المغربية الشريفة المحمية», «ثمن الصحيفة عشرون صانتيم», and its contents («فهرسة الجريدة الرسمية»): «كيفية
+# نصر الجلالة الشريفة مولاي يوسف اعزه الله», «نص ظهير شريف بتأسيس الوزارة المخزنية», «تقييد اسماء الموظفين بالادارة
+# المخزنية», «ضابط لبيع الاملاك». Its No. 2 prints «الموافق 16 مايو سنة 1913» (BO 2, page 1), No. 3 «23 مايو».
+first:
+  issue: '1'
+  date: 1913-02-01
+  hijri: 23 صفر 1331
+  pages: 7
+  of: {ar: للدولة المغربية الشريفة المحمية, fr: de l’État chérifien protégé}
+  contents:
+    - {ar: كيفية نصر الجلالة الشريفة مولاي يوسف, fr: la proclamation de Sa Majesté Moulay Youssef}
+    - {ar: ظهير شريف بتأسيس الوزارة المخزنية, fr: un dahir créant le ministère makhzénien}
+    - {ar: أسماء الموظفين بالإدارة المخزنية, fr: les noms des fonctionnaires de l’administration makhzénienne}
+    - {ar: ضابط لبيع الأملاك, fr: une règle de vente des biens}
+  second: {issue: '2', date: 1913-05-16}
+# The French edition came first: its No. 1 is dated 1 November 1912, and its numbers 1 to 14 came out before the Arabic
+# No. 1 (14 on 31 January 1913). Its texts the Arabic edition never printed (1912–1925) are translated into Arabic by
+# AI and marked so; the post draws them apart, never inside the Arabic counts (BH6).
+french:
+  first: {issue: '1', date: 1912-11-01}
+  before: 14
+
+# The days it came out, as the issues' dates show them (regular issues; a «bis» comes out on any day). The first issues
+# of 1913 came out on no fixed day (1 February a Saturday, 16 May a Friday); from July 1913 a Friday. Each change below
+# is the first of a run of regular issues on the new day, its masthead's date read (BO 74 «الموافق 28 شتنبر»; BO 357
+# «2 مارس 1920»; BO 884 «4 أكتوبر سنة 1929»).
+weekdays:
+  - {from: 1913-02-01, issue: '1', days: [5]}           # Friday, from No. 9 (4 July 1913)
+  - {from: 1914-09-28, issue: '74', days: [1]}          # Monday
+  - {from: 1920-03-02, issue: '357', days: [2]}         # Tuesday
+  - {from: 1929-10-04, issue: '884', days: [5]}         # Friday
+  - {from: 1964-03-25, issue: '2682', days: [3]}        # Wednesday; the masthead of 1970 prints «تصدر يوم الأربعاء»
+  - {from: 1996-01-08, issue: '4341', days: [1, 4]}     # Monday and Thursday
+
+# The price of an issue as its masthead prints it («ثمن الصحيفة», then «ثمن النسخة»), from the first issue that prints it,
+# each change read on the masthead beside the one before (6 Nov 2026). BO 1409 (27 October 1939) still prints «فرنك
+# واحد» between issues at a franc and a half: an old plate, not a price. After 2000 the masthead no longer carries it;
+# issue 5676's back page (23 October 2008) reads 10 dirhams at the Official Press.
+prices:
+  - {from: 1913-02-01, issue: '1', price: 20, unit: centime}      # «عشرون صانتيم»
+  - {from: 1920-08-24, issue: '382', price: 50, unit: centime}    # «خمسون سانتيم» (381: «عشرون سنتيم»)
+  - {from: 1926-07-13, issue: '716', price: 1, unit: franc}       # «فرنك واحد»
+  - {from: 1938-03-11, issue: '1324', price: 1.5, unit: franc}    # «فرنك ونصف»
+  - {from: 1941-08-29, issue: '1505', price: 3, unit: franc}
+  - {from: 1945-09-14, issue: '1716', price: 6, unit: franc}
+  - {from: 1946-04-12, issue: '1746', price: 8, unit: franc}
+  - {from: 1948-04-30, issue: '1853', price: 12, unit: franc}     # 1852 (23 April) still 8
+  - {from: 1949-01-07, issue: '1889', price: 16, unit: franc}
+  - {from: 1950-11-03, issue: '1984', price: 25, unit: franc}     # 1983 (27 October) still 16
+  - {from: 1951-12-07, issue: '2041', price: 35, unit: franc}
+  - {from: 1956-12-07, issue: '2302', price: 80, unit: franc}
+  - {from: 1960-06-17, issue: '2486', price: 0.80, unit: dirham}
+  - {from: 1962-01-05, issue: '2567', price: 1.20, unit: dirham}
+  - {from: 1975-04-16, issue: '3259', price: 1.50, unit: dirham}
+  - {from: 1981-01-07, issue: '3558', price: 2, unit: dirham}
+  - {from: 1986-01-01, issue: '3818', price: 3, unit: dirham}
+  - {from: 1990-12-19, issue: '4077', price: 5, unit: dirham}
+  - {from: 1996-01-03, issue: '4340', price: 10, unit: dirham}
+price_last_read: {date: 2008-10-23, issue: '5676'}
+# The masthead of 23 October 2025 (7450): a year of the general edition, in Morocco.
+subscription: {date: 2025-10-23, issue: '7450', price: 250, unit: dirham}
+
+# Report issues whose file has no text layer to match: looked at on their pages.
+reports_read:
+  - 6813-bis   # page 2: «تقرير حول أنشطة المجلس الأعلى للحسابات برسم سنة 2018», 2,640 pages
+
+# What the thickest issues carry, read on their first pages.
+issues:
+  6813-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2018, fr: Rapport de la Cour des comptes pour 2018}
+  6705-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنتي 2016 و2017, fr: Rapport de la Cour des comptes pour 2016 et 2017}
+  6228-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2012, fr: Rapport de la Cour des comptes pour 2012}
+  6344-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2013, fr: Rapport de la Cour des comptes pour 2013}
+  6447-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2014, fr: Rapport de la Cour des comptes pour 2014}
+  6557-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2015, fr: Rapport de la Cour des comptes pour 2015}
+  6116-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2011, fr: Rapport de la Cour des comptes pour 2011}
+  7407-bis: {ar: خمسة قرارات لتصنيف المطاعم ومؤسسات الإيواء السياحية, fr: Cinq arrêtés de classement des restaurants et hébergements touristiques}
+  6032-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2010, fr: Rapport de la Cour des comptes pour 2010}
+  5932-bis: {ar: تقرير المجلس الأعلى للحسابات برسم سنة 2009, fr: Rapport de la Cour des comptes pour 2009}

@@ -1,0 +1,34 @@
+# Law 12.90 on urbanism as the SGG's consolidated PDF prints it, where our text misreads it: a ligature turned around,
+# a word cut in two, a stretching stroke read as «م» or lost, moved letters («مالك» for «ملاك»), a dropped letter, and a
+# note and headings glued to an article's end. Each was read against the page's image on 26 Oct 2026 (
+# the land review, M16), in the articles the land topic cites (18 corrected).
+# Art. 78 is left as it stands: the page prints «84 ساعة» (law 25.90's art. 71-3, the same rule, prints 48).
+# Applied by `manage.py apply_page_reading apps/quality/data/urbanism_12_90.yaml`; a reload of the text applies them again.
+text: /ma/loi/12-90
+document: sources/sgg_consolidated/12_90.pdf
+read_on: '2026-10-26'
+fixes:
+  - {arts: [1], wrong: "العمرانية.\nرقم 113.14 المتعلق بالجماعات الصادر بتنفيذه الظهير الشريف رقم 1.15.85 الصادر في 20 من رمضان 1436 (7 يوليو 2015)، ج.ر. عدد ،6380 بتاريخ 6 شوال 1436 (23 يوليو 2015)، ص : .6708 نطاق تطبيق مخطط توجيه التهيئة العمرانية وتعريفه", right: "العمرانية."}   # a note and a heading glued, p. 2
+  - {arts: [19], wrong: "الأماكن الشجرة", right: "الأماكن المشجرة"}   # stroke, p. 8
+  - {arts: [19], wrong: "كامل ساحات المخصصة للتظاهرات الثقافية والف لكل ويرة", right: "كالمساحات المخصصة للتظاهرات الثقافية والفلكلورية"}   # turn and split, p. 8
+  - {arts: [19], wrong: "وما لسافات الفاصلة", right: "والمسافات الفاصلة"}   # turn, p. 9
+  - {arts: [22], wrong: "عمال بالبندين", right: "عملا بالبندين"}   # turn, p. 10
+  - {arts: [22], wrong: "فعال القطاع", right: "فعلا القطاع"}   # turn, p. 10
+  - {arts: [28], wrong: "يستعيد مالك الأراضي", right: "يستعيد ملاك الأراضي"}   # moved, p. 12
+  - {arts: [29, 32], wrong: "مشمولا تها", right: "مشمولاتها"}   # split, pp. 12, 13
+  - {arts: [31], wrong: "التهيئة.\nقرارات تخطيط حدود الطرق العامة - قرارات تخطيط حدود الطرق العامة المعينة فيها الأراضي المراد نزع ملكيتها لما تستوجبه العملية", right: "التهيئة."}   # a heading glued, p. 13
+  - {arts: [37], wrong: "برضى مالكها", right: "برضى ملاكها"}   # moved, p. 15
+  - {arts: [38], wrong: "لمالك الأراضي المجاورة", right: "لملاك الأراضي المجاورة"}   # moved, p. 15
+  - {arts: [38], wrong: "امل صروفات", right: "المصروفات"}   # turn and split, p. 15
+  - {arts: [38], wrong: "عمال بأحكام", right: "عملا بأحكام"}   # turn, p. 15
+  - {arts: [38], wrong: "على مالك الأراضي المجاورة", right: "على ملاك الأراضي المجاورة"}   # moved, p. 15
+  - {arts: [40], wrong: "عمال بالتشريع", right: "عملا بالتشريع"}   # turn, p. 16
+  - {arts: [46], wrong: "وبا لمساحة", right: "وبالمساحة"}   # split, p. 18
+  - {arts: [49], wrong: "شأنه.\nالاستعانة بالمهندس المعماري والمهمة المسندة إليه", right: "شأنه."}   # a heading glued, p. 19
+  - {arts: [53], wrong: "وما لكت وبة المعمارية", right: "والمكتوبة المعمارية"}   # turn and split, p. 20
+  - {arts: [54], wrong: "ذلك.\nتنظيم الورش (تممت أحكام الباب الثالث بالفصل الثاني المكرر بموجب المادة الثانية من القانون رقم 66.12 الصادر بتنفيذه الظهير الشريف رقم 1.16.124 المتعلق بمراقبة وزجر المخالفات يف مجال التعمير والبناء بتاريخ 21 من ذي القعدة 1437 (25 أغسطس 2016)، ج.ر. عدد 6501 بتاريخ 17 من ذي الحجة 1437 (19 سبتمبر 2016)، ص : 6631)", right: "ذلك."}   # a heading and its note glued, p. 21
+  - {arts: [55], wrong: "المذكور تان", right: "المذكورتان"}   # split, p. 22
+  - {arts: [55], wrong: "المقرر تين", right: "المقررتين"}   # split, p. 22
+  - {arts: [64], wrong: "غير قابلة الست قبا لها", right: "غير قابلة لاستقبالها"}   # turn and split, p. 25
+  - {arts: [66], wrong: "بمطابقتها للأصل", right: "بمطابقتهما للأصل"}   # letter dropped, p. 26
+  - {arts: [76], wrong: "بالعالم التاريخية", right: "بالمعالم التاريخية"}   # stroke, p. 29

@@ -1,0 +1,84 @@
+/* «على كل قانون يصوّت عليه البرلمان» (the twenty-first post). Paper, counted: one sheet for the law Parliament voted, in
+   violet with its seal; the decrees and the ministers' orders that follow it as plain sheets in ink and in grey, each
+   with its folded corner. The King's texts «بمثابة قانون» are ink in the chart; the years without a House stand on a pale
+   band. The reading track is the reader's own time. */
+
+.pl { --pl-voted: var(--color-stamp); --pl-dfl: var(--color-ink); --pl-rdl: color-mix(in srgb, var(--color-ink) 55%, transparent); --pl-dlaw: var(--kc-rest); }
+
+/* ── One law, and the sheets that follow it ───────────────────────────────────────────────────────────────────── */
+.pl-hero { margin: 0 -16px; padding: 24px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 18px; }
+@media (min-width: 640px) { .pl-hero { margin: 0 auto; width: 100%; max-width: var(--bp-fig); border-radius: var(--radius-card); padding: 32px 32px 24px; } }
+.pl-kicker { margin: 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.2rem); line-height: 1.25; text-wrap: balance; }
+.bp:lang(fr) .pl-kicker { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(1.35rem, 1.15rem + 0.9vw, 1.8rem); }
+.pl-row { display: flex; flex-direction: column; gap: 8px; }
+.pl-row-label { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+.pl-row-label b { font-size: 1.2rem; }
+.pl-row-label span { font-size: var(--text-meta); color: var(--color-ink-soft); }
+.pl-row.is-law .pl-row-label b { color: var(--pl-voted); }
+.pl-sheets { display: flex; flex-wrap: wrap; gap: 7px; }
+.pl-sheet { --w: 22px; display: block; inline-size: var(--w); block-size: calc(var(--w) * 1.33); position: relative; background: var(--color-sheet);
+  border: 1.5px solid currentColor; clip-path: polygon(0 0, 72% 0, 100% 21%, 100% 100%, 0 100%); color: var(--color-ink);
+  background-image: linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor), linear-gradient(currentColor, currentColor);
+  background-size: 62% 1.5px, 62% 1.5px, 40% 1.5px; background-position: 18% 42%, 18% 59%, 18% 76%; background-repeat: no-repeat; }
+/* The folded corner: a small triangle drawn over the cut. */
+.pl-sheet::after { content: ''; position: absolute; top: -1.5px; right: -1.5px; inline-size: 28%; block-size: 21%; background: color-mix(in srgb, currentColor 35%, var(--color-sheet));
+  clip-path: polygon(0 0, 0 100%, 100% 100%); }
+.is-law .pl-sheet { --w: 64px; color: var(--pl-voted); border-width: 2.5px; }
+.is-law .pl-sheet::before { content: ''; position: absolute; inline-size: 18px; block-size: 18px; border-radius: 50%; background: var(--pl-voted); right: 14%; bottom: 10%; }
+.is-decree .pl-sheet { --w: 26px; }
+.is-order .pl-sheet { --w: 17px; color: var(--color-ink-soft); border-width: 1.2px; }
+@media (min-width: 640px) { .is-decree .pl-sheet { --w: 34px; } .is-order .pl-sheet { --w: 23px; } .is-law .pl-sheet { --w: 76px; } }
+.pl-hero-more { margin: 4px 0 0; font-family: var(--font-law); font-size: 1.25rem; line-height: 1.65; max-width: 60ch; text-wrap: pretty; }
+.bp:lang(fr) .pl-hero-more { font-family: "Source Serif 4", Georgia, serif; font-size: 1.08rem; }
+.pl-share-row { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.pl-share { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 18px 8px 16px; border: 0; border-radius: 999px;
+  background: var(--color-ink); color: var(--color-sheet); font: inherit; font-weight: 600; cursor: pointer; }
+.pl-share:disabled { opacity: 0.6; }
+.pl-stamp { vertical-align: middle; }
+
+/* ── Who made the laws ────────────────────────────────────────────────────────────────────────────────────────── */
+.pl-legend { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.pl-legend li { display: inline-flex; align-items: center; gap: 7px; }
+.pl-legend i { inline-size: 12px; block-size: 12px; border-radius: 2px; }
+i.pl-voted { background: var(--pl-voted); } i.pl-dfl { background: var(--pl-dfl); } i.pl-rdl { background: var(--pl-rdl); } i.pl-dlaw { background: var(--pl-dlaw); }
+.pl-hands svg { display: block; overflow: visible; -webkit-user-select: none; user-select: none; touch-action: pan-y; cursor: pointer; }
+.pl-hands svg:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 4px; border-radius: 4px; }
+.pl-hands rect.pl-voted { fill: var(--pl-voted); } .pl-hands rect.pl-dfl { fill: var(--pl-dfl); } .pl-hands rect.pl-rdl { fill: var(--pl-rdl); } .pl-hands rect.pl-dlaw { fill: var(--pl-dlaw); }
+.pl-band rect { fill: color-mix(in srgb, var(--color-ink) 6%, transparent); }
+.pl-band text { font-family: var(--font-ui); font-size: 14px; font-weight: 600; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.pl-legend i.pl-band-key { background: color-mix(in srgb, var(--color-ink) 9%, transparent); box-shadow: inset 0 0 0 1px var(--color-rule); }
+.pl-grid { stroke: var(--color-rule-soft); stroke-width: 1; }
+.pl-axis { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.pl-mark { font-family: var(--font-ui); font-size: 14px; font-weight: 700; fill: var(--pl-voted); font-variant-numeric: tabular-nums;
+  paint-order: stroke; stroke: var(--color-sheet); stroke-width: 4px; stroke-linejoin: round; }
+.pl-pick { stroke: var(--color-ink); stroke-width: 1; stroke-dasharray: 2 3; }
+.pl-quote { margin: 0; padding-inline-start: 14px; border-inline-start: 3px solid var(--pl-dfl); font-family: var(--font-law); font-size: 1.35rem; line-height: 1.75;
+  text-wrap: pretty; text-align: right; }
+.pl-quote.is-small { font-size: 1.18rem; }
+.pl-src, .pl-note { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); line-height: 1.7; }
+.pl-consts { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.pl-consts li { display: flex; flex-direction: column; gap: 6px; }
+.pl-const-head { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+.pl-const-year { font-weight: 300; font-size: 1.6rem; line-height: 1; color: var(--color-ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.pl-const-head span { font-size: var(--text-meta); color: var(--color-ink-soft); }
+
+/* ── Reading the law ──────────────────────────────────────────────────────────────────────────────────────────── */
+.pl-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.pl-chips button { min-height: 44px; padding: 6px 16px; border-radius: 999px; border: 1.5px solid var(--color-rule); background: var(--color-paper); color: var(--color-ink);
+  font: inherit; font-weight: 600; cursor: pointer; }
+.pl-chips button.is-on { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-sheet); }
+.pl-read { display: flex; flex-direction: column; gap: 6px; padding-top: 14px; }
+.pl-track { position: relative; block-size: 34px; border-radius: 6px; background: var(--color-paper); overflow: hidden; }
+.pl-seg { position: absolute; top: 0; bottom: 0; transition: left 420ms cubic-bezier(0.3, 0, 0.2, 1), width 420ms cubic-bezier(0.3, 0, 0.2, 1); }
+.pl-seg.is-laws { background: var(--pl-voted); } .pl-seg.is-decrees { background: var(--pl-dfl); } .pl-seg.is-orders { background: var(--pl-dlaw); }
+@media (prefers-reduced-motion: reduce) { .pl-seg { transition: none; } }
+.pl-ticks { position: relative; block-size: 20px; }
+.pl-ticks span { position: absolute; top: 0; transform: translateX(-50%); font-size: 14px; color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.pl-ticks span:first-child { transform: none; }
+.pl-ticks span:last-child { transform: translateX(-100%); }
+.pl-ticks-unit { margin: 0; font-size: 14px; color: var(--color-ink-soft); }
+.pl-layers { margin: 6px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.pl-layers li { display: grid; grid-template-columns: 14px minmax(0, 1fr) auto; align-items: baseline; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--color-rule-soft); }
+.pl-layers i { inline-size: 12px; block-size: 12px; border-radius: 2px; align-self: center; }
+.pl-layers .is-laws i { background: var(--pl-voted); } .pl-layers .is-decrees i { background: var(--pl-dfl); } .pl-layers .is-orders i { background: var(--pl-dlaw); }
+.pl-layers b { font-variant-numeric: tabular-nums; }

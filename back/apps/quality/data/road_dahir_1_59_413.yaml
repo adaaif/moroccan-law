@@ -1,0 +1,9 @@
+# /ma/dahir/1-59-413 (penal code) as Adala's consolidation prints it, read against the page images on 20 Oct 2026 (the road topic's cited articles).
+text: /ma/dahir/1-59-413
+document: samples/adala/adala_89.pdf
+read_on: '2026-10-20'
+fixes:
+  - {arts: [431], wrong: 'من ثالثة أشهر', right: 'من ثلاثة أشهر'}      # p. 137: «ثلاثة», Adala's «لا» read as «ال»
+  - {arts: [431], wrong: 'أو كافال أو', right: 'أو كافلا أو'}      # p. 137: «كافلا»
+notes: []
+checked: [431]

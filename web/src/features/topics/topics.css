@@ -1,0 +1,66 @@
+/* The topics page (drawn again on 30 Oct 2026). Loaded with the page, never in the first load. An arcade: each
+   topic a bay, its arch standing on a threshold in the topic's colour with its name beside it like a door's plaque;
+   under it what happens to people there, in their words, each with the line that answers it. Every colour a token;
+   the topic's own as --t. */
+
+.tp { gap: 28px; }
+.tp-head { display: flex; flex-direction: column; gap: 8px; }
+.tp-head h1 { margin: 0; font-size: var(--text-h1); line-height: 1.15; font-weight: 700; color: var(--color-ink); }
+.tp-head p { margin: 0; max-width: 58ch; font-size: var(--text-lead); line-height: 1.6; color: var(--color-ink-soft); }
+
+.tp-arcade { display: grid; grid-template-columns: minmax(0, 1fr); gap: 44px 40px; }
+@media (min-width: 720px) { .tp-arcade { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1080px) { .tp-arcade { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px 44px; } }
+
+.tp-bay { display: flex; min-width: 0; flex-direction: column; scroll-margin-top: 84px; }
+
+/* The twelve arches as the page's index, a phone's and a tablet's: one row to swipe, each to its bay. */
+.tp-jump { margin: 0 -16px; }
+.tp-jump ul { display: flex; gap: 4px; margin: 0; padding: 2px 16px 6px; overflow-x: auto; list-style: none; scroll-snap-type: x proximity;
+  scrollbar-width: none; }
+.tp-jump ul::-webkit-scrollbar { display: none; }
+.tp-jump li { flex-shrink: 0; scroll-snap-align: start; }
+.tp-jump a { display: flex; width: 68px; flex-direction: column; align-items: center; gap: 4px; padding-top: 4px; text-align: center;
+  font-size: var(--text-meta); line-height: 1.25; color: var(--color-ink); text-decoration: none; }
+.tp-jump a span { min-height: 2.5em; }
+.tp-jump a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 2px; border-radius: 6px; }
+@media (min-width: 640px) { .tp-jump { margin-inline: -24px; } .tp-jump ul { padding-inline: 24px; } }
+@media (min-width: 1080px) { .tp-jump { display: none; } }
+
+/* The door: the arch on its threshold, the name beside it. */
+.tp-door { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: end; gap: 0 16px; padding-bottom: 0;
+  border-bottom: 3px solid color-mix(in srgb, var(--t) 45%, transparent); color: var(--color-ink); text-decoration: none; }
+@media (min-width: 720px) { .tp-door { grid-template-columns: 112px minmax(0, 1fr); gap: 0 18px; } }
+.tp-door .arch { display: block; width: 100%; height: auto; margin-bottom: -1px; transition: transform 220ms ease-out; transform-origin: 50% 100%; }
+.tp-door:hover .arch { transform: translateY(-3px); }
+.tp-door[aria-busy] .arch { animation: tp-wait 900ms ease-in-out infinite alternate; }
+@keyframes tp-wait { to { opacity: 0.55; } }
+@media (prefers-reduced-motion: reduce) { .tp-door .arch { transition: none; } .tp-door:hover .arch { transform: none; } .tp-door[aria-busy] .arch { animation: none; } }
+.tp-door .nm { display: flex; min-width: 0; flex-direction: column; gap: 4px; padding-bottom: 12px; }
+.tp-door h2 { margin: 0; font-size: var(--text-h3); line-height: 1.2; font-weight: 700; color: var(--color-ink); text-wrap: balance; }
+@media (min-width: 720px) { .tp-door h2 { font-size: var(--text-h2); } }
+.tp-door:hover h2 { color: color-mix(in srgb, var(--t) 70%, var(--color-ink)); }
+.tp-door .n { font-size: var(--text-meta); font-weight: 600; color: color-mix(in srgb, var(--t) 72%, var(--color-ink)); }
+.tp-door:focus-visible, .tp-bay a:focus-visible { outline: 3px solid var(--color-stamp); outline-offset: 3px; border-radius: 6px; }
+
+/* What happens to people there: the moment in their words, the line that answers it, its figures in bold. */
+.tp-moments { margin: 0; padding: 0; list-style: none; }
+.tp-moments li + li { border-top: 1px solid var(--color-rule); }
+.tp-moments a { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; color: var(--color-ink); text-decoration: none; }
+.tp-moments a > b { font-size: var(--text-lead); line-height: 1.45; font-weight: 600; }
+.tp-moments a > span { font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-soft); display: -webkit-box; -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; overflow: hidden; }
+.tp-moments a > span b { font-weight: 700; color: var(--color-ink); }
+.tp-moments a:hover > b { color: color-mix(in srgb, var(--t) 70%, var(--color-ink)); }
+@media (max-width: 719px) { .tp-moments li:nth-child(n+4) { display: none; } }
+
+/* The day its law changes next: people's saffron, as on the home's doors. */
+.tp-next { display: flex; align-items: baseline; gap: 10px; padding: 12px 0; border-top: 1px solid var(--color-rule); color: var(--color-ink);
+  text-decoration: none; font-size: 0.9375rem; line-height: 1.55; }
+.tp-next .dot { flex-shrink: 0; width: 10px; height: 10px; border-radius: 50%; background: var(--color-people-fill); transform: translateY(-1px); }
+.tp-next b { font-weight: 700; color: var(--color-people); }
+.tp-next:hover > span:last-child { color: var(--color-ink-soft); }
+
+.tp-more { align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; font-weight: 600;
+  color: color-mix(in srgb, var(--t) 72%, var(--color-ink)); }
+.tp-more:hover { color: var(--color-ink); }

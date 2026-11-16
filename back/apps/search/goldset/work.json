@@ -1,0 +1,766 @@
+{
+ "about": "Work questions (T4 of the work plan, 20 Oct 2026): what a worker or an employer types, in MSA, Darija and French, with the article that must come back (a list: any of them). The first 44 were written from the doors' own words; E16 of the work-counted review (26 Oct 2026) adds 64 in the words workers use (Darija, French, Darija in Latin letters, standard Arabic), each with the articles the work folder cites for it, owner-provisional until a lawyer reads them. Not taken from any private question bank. The bar: 80% in the top 3, as the road's and the family's.",
+ "questions": [
+  {
+   "q": "التعويض عن الفصل",
+   "expect": [
+    "/ma/loi/65-99/art_52",
+    "/ma/loi/65-99/art_53"
+   ]
+  },
+  {
+   "q": "indemnité de licenciement",
+   "expect": [
+    "/ma/loi/65-99/art_52",
+    "/ma/loi/65-99/art_53"
+   ]
+  },
+  {
+   "q": "شحال التعويض عن الفصل",
+   "expect": [
+    "/ma/loi/65-99/art_52",
+    "/ma/loi/65-99/art_53"
+   ]
+  },
+  {
+   "q": "أجل الإخطار",
+   "expect": "/ma/loi/65-99/art_43"
+  },
+  {
+   "q": "préavis",
+   "expect": "/ma/loi/65-99/art_43"
+  },
+  {
+   "q": "الفصل التعسفي",
+   "expect": [
+    "/ma/loi/65-99/art_40",
+    "/ma/loi/65-99/art_41"
+   ]
+  },
+  {
+   "q": "الاستماع للأجير قبل الفصل",
+   "expect": "/ma/loi/65-99/art_62"
+  },
+  {
+   "q": "السميك",
+   "expect": "/ma/decret/2-25-983"
+  },
+  {
+   "q": "SMIG",
+   "expect": "/ma/decret/2-25-983"
+  },
+  {
+   "q": "الحد الأدنى للأجر في الفلاحة",
+   "expect": "/ma/decret/2-25-983"
+  },
+  {
+   "q": "الساعات الإضافية",
+   "expect": [
+    "/ma/loi/65-99/art_196",
+    "/ma/loi/65-99/art_201"
+   ]
+  },
+  {
+   "q": "heures supplémentaires",
+   "expect": [
+    "/ma/loi/65-99/art_196",
+    "/ma/loi/65-99/art_201"
+   ]
+  },
+  {
+   "q": "الزيادة عن الساعات الإضافية",
+   "expect": "/ma/loi/65-99/art_201"
+  },
+  {
+   "q": "العطلة السنوية المؤدى عنها",
+   "expect": "/ma/loi/65-99/art_231"
+  },
+  {
+   "q": "الكونجي",
+   "expect": "/ma/loi/65-99/art_231"
+  },
+  {
+   "q": "congé payé",
+   "expect": "/ma/loi/65-99/art_231"
+  },
+  {
+   "q": "إجازة الولادة",
+   "expect": [
+    "/ma/loi/65-99/art_152",
+    "/ma/loi/65-99/art_154"
+   ]
+  },
+  {
+   "q": "congé de maternité",
+   "expect": [
+    "/ma/loi/65-99/art_152",
+    "/ma/loi/65-99/art_154"
+   ]
+  },
+  {
+   "q": "ساعة الرضاعة",
+   "expect": "/ma/loi/65-99/art_161"
+  },
+  {
+   "q": "ورقة الأداء",
+   "expect": "/ma/loi/65-99/art_370"
+  },
+  {
+   "q": "البيلتان",
+   "expect": "/ma/loi/65-99/art_370"
+  },
+  {
+   "q": "bulletin de paie",
+   "expect": "/ma/loi/65-99/art_370"
+  },
+  {
+   "q": "شهادة الشغل",
+   "expect": "/ma/loi/65-99/art_72"
+  },
+  {
+   "q": "certificat de travail",
+   "expect": "/ma/loi/65-99/art_72"
+  },
+  {
+   "q": "توصيل تصفية كل حساب",
+   "expect": "/ma/loi/65-99/art_73"
+  },
+  {
+   "q": "solde de tout compte",
+   "expect": "/ma/loi/65-99/art_73"
+  },
+  {
+   "q": "الاستقالة",
+   "expect": "/ma/loi/65-99/art_34"
+  },
+  {
+   "q": "الديميسيون",
+   "expect": "/ma/loi/65-99/art_34"
+  },
+  {
+   "q": "démission",
+   "expect": "/ma/loi/65-99/art_34"
+  },
+  {
+   "q": "فترة الاختبار",
+   "expect": "/ma/loi/65-99/art_13"
+  },
+  {
+   "q": "période d'essai",
+   "expect": "/ma/loi/65-99/art_13"
+  },
+  {
+   "q": "فترة التجربة",
+   "expect": "/ma/loi/65-99/art_13"
+  },
+  {
+   "q": "عقد الشغل محدد المدة",
+   "expect": "/ma/loi/65-99/art_16"
+  },
+  {
+   "q": "حادثة شغل",
+   "expect": "/ma/loi/18-12"
+  },
+  {
+   "q": "accident du travail",
+   "expect": "/ma/loi/18-12"
+  },
+  {
+   "q": "التعويض عن فقدان الشغل",
+   "expect": "/ma/dahir/1-72-184/art_46-bis"
+  },
+  {
+   "q": "الشوماج",
+   "expect": "/ma/dahir/1-72-184/art_46-bis"
+  },
+  {
+   "q": "راتب الشيخوخة",
+   "expect": "/ma/dahir/1-72-184/art_53"
+  },
+  {
+   "q": "العمال المنزليين",
+   "expect": "/ma/loi/19-12"
+  },
+  {
+   "q": "الإضراب",
+   "expect": "/ma/loi-organique/97-15"
+  },
+  {
+   "q": "grève",
+   "expect": "/ma/loi-organique/97-15"
+  },
+  {
+   "q": "مفتش الشغل",
+   "expect": [
+    "/ma/loi/65-99/art_530",
+    "/ma/loi/65-99/art_532"
+   ]
+  },
+  {
+   "q": "المقاول الذاتي",
+   "expect": "/ma/loi/114-13"
+  },
+  {
+   "q": "مدونة الشغل",
+   "expect": "/ma/loi/65-99"
+  },
+  {
+   "q": "طردوني من الخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_63",
+    "/ma/loi/65-99/art_65",
+    "/ma/loi/65-99/art_41"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "جراو عليا من الخدمة بلا سبب",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_41",
+    "/ma/loi/65-99/art_63"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "المشغل طردني شنو ندير",
+   "expect": [
+    "/ma/loi/65-99/art_41",
+    "/ma/loi/65-99/art_65",
+    "/ma/loi/65-99/art_532"
+   ],
+   "lang": "darija",
+   "theme": "dismissal"
+  },
+  {
+   "q": "شحال عندي من وقت باش نمشي للمحكمة على الطرد",
+   "expect": [
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "darija",
+   "theme": "dismissal-delay"
+  },
+  {
+   "q": "أجل رفع دعوى الفصل التعسفي",
+   "expect": [
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "ar",
+   "theme": "dismissal-delay"
+  },
+  {
+   "q": "délai pour contester un licenciement",
+   "expect": [
+    "/ma/loi/65-99/art_65"
+   ],
+   "lang": "fr",
+   "theme": "dismissal-delay"
+  },
+  {
+   "q": "تعويض الطرد التعسفي",
+   "expect": [
+    "/ma/loi/65-99/art_41"
+   ],
+   "lang": "darija",
+   "theme": "damages"
+  },
+  {
+   "q": "licenciement abusif indemnité",
+   "expect": [
+    "/ma/loi/65-99/art_41",
+    "/ma/loi/65-99/art_59"
+   ],
+   "lang": "fr",
+   "theme": "damages"
+  },
+  {
+   "q": "شحال كيعطيو على كل عام فالطرد",
+   "expect": [
+    "/ma/loi/65-99/art_53",
+    "/ma/loi/65-99/art_41"
+   ],
+   "lang": "darija",
+   "theme": "severance"
+  },
+  {
+   "q": "واش عندي الحق فالتعويض إلا طردوني بسبب خطأ جسيم",
+   "expect": [
+    "/ma/loi/65-99/art_39",
+    "/ma/loi/65-99/art_61",
+    "/ma/loi/65-99/art_52"
+   ],
+   "lang": "darija",
+   "theme": "serious-fault"
+  },
+  {
+   "q": "faute grave licenciement sans indemnité",
+   "expect": [
+    "/ma/loi/65-99/art_39",
+    "/ma/loi/65-99/art_61"
+   ],
+   "lang": "fr",
+   "theme": "serious-fault"
+  },
+  {
+   "q": "خاص المشغل يسمع ليا قبل ما يطردني",
+   "expect": [
+    "/ma/loi/65-99/art_62"
+   ],
+   "lang": "darija",
+   "theme": "hearing"
+  },
+  {
+   "q": "ma3ndich l7a9 f ta3wid ila tradouni",
+   "expect": [
+    "/ma/loi/65-99/art_52",
+    "/ma/loi/65-99/art_53",
+    "/ma/loi/65-99/art_41"
+   ],
+   "lang": "arabizi",
+   "theme": "severance"
+  },
+  {
+   "q": "tradouni mn lkhdma",
+   "expect": [
+    "/ma/loi/65-99/art_35",
+    "/ma/loi/65-99/art_41",
+    "/ma/loi/65-99/art_63"
+   ],
+   "lang": "arabizi",
+   "theme": "dismissal"
+  },
+  {
+   "q": "وقعت توصيل تصفية كل حساب واش نقدر نرجع فيه",
+   "expect": [
+    "/ma/loi/65-99/art_75",
+    "/ma/loi/65-99/art_73"
+   ],
+   "lang": "darija",
+   "theme": "receipt"
+  },
+  {
+   "q": "reçu pour solde de tout compte dénoncer",
+   "expect": [
+    "/ma/loi/65-99/art_75",
+    "/ma/loi/65-99/art_73"
+   ],
+   "lang": "fr",
+   "theme": "receipt"
+  },
+  {
+   "q": "شهادة العمل ما بغاش يعطيهالي",
+   "expect": [
+    "/ma/loi/65-99/art_72"
+   ],
+   "lang": "darija",
+   "theme": "certificate"
+  },
+  {
+   "q": "certificat de travail délai",
+   "expect": [
+    "/ma/loi/65-99/art_72"
+   ],
+   "lang": "fr",
+   "theme": "certificate"
+  },
+  {
+   "q": "الشهرية ما خلصونيش شهرين",
+   "expect": [
+    "/ma/loi/65-99/art_362",
+    "/ma/loi/65-99/art_363",
+    "/ma/loi/65-99/art_382"
+   ],
+   "lang": "darija",
+   "theme": "unpaid"
+  },
+  {
+   "q": "شحال السميك",
+   "expect": [
+    "/ma/decret/2-25-983/art_1",
+    "/ma/loi/65-99/art_356"
+   ],
+   "lang": "darija",
+   "theme": "minimum"
+  },
+  {
+   "q": "شحال السميك فالفلاحة",
+   "expect": [
+    "/ma/decret/2-25-983/art_2",
+    "/ma/loi/65-99/art_356"
+   ],
+   "lang": "darija",
+   "theme": "minimum-farm"
+  },
+  {
+   "q": "salaire minimum au Maroc 2026",
+   "expect": [
+    "/ma/decret/2-25-983/art_1",
+    "/ma/loi/65-99/art_356"
+   ],
+   "lang": "fr",
+   "theme": "minimum"
+  },
+  {
+   "q": "bulletin de paie obligatoire",
+   "expect": [
+    "/ma/loi/65-99/art_370"
+   ],
+   "lang": "fr",
+   "theme": "payslip"
+  },
+  {
+   "q": "الساعات الزايدة",
+   "expect": [
+    "/ma/loi/65-99/art_201"
+   ],
+   "lang": "darija",
+   "theme": "overtime"
+  },
+  {
+   "q": "شحال كيخلصو الساعات الإضافية بالليل",
+   "expect": [
+    "/ma/loi/65-99/art_201"
+   ],
+   "lang": "darija",
+   "theme": "overtime"
+  },
+  {
+   "q": "majoration heures supplémentaires",
+   "expect": [
+    "/ma/loi/65-99/art_201"
+   ],
+   "lang": "fr",
+   "theme": "overtime"
+  },
+  {
+   "q": "prime d'ancienneté pourcentage",
+   "expect": [
+    "/ma/loi/65-99/art_350"
+   ],
+   "lang": "fr",
+   "theme": "seniority"
+  },
+  {
+   "q": "شحال منحة الأقدمية من بعد خمس سنين",
+   "expect": [
+    "/ma/loi/65-99/art_350"
+   ],
+   "lang": "darija",
+   "theme": "seniority"
+  },
+  {
+   "q": "كيخلصوني أقل من السميك",
+   "expect": [
+    "/ma/loi/65-99/art_360",
+    "/ma/loi/65-99/art_356"
+   ],
+   "lang": "darija",
+   "theme": "below-minimum"
+  },
+  {
+   "q": "المشغل ما صرحش بيا فالضمان",
+   "expect": [
+    "/ma/dahir/1-72-184/art_15",
+    "/ma/dahir/1-72-184/art_19"
+   ],
+   "lang": "darija",
+   "theme": "not-declared"
+  },
+  {
+   "q": "ما مصرحش بيا فالكنوس شنو ندير",
+   "expect": [
+    "/ma/dahir/1-72-184/art_15",
+    "/ma/dahir/1-72-184/art_16",
+    "/ma/loi/65-99/art_18"
+   ],
+   "lang": "darija",
+   "theme": "not-declared"
+  },
+  {
+   "q": "employeur ne me déclare pas à la cnss",
+   "expect": [
+    "/ma/dahir/1-72-184/art_15"
+   ],
+   "lang": "fr",
+   "theme": "not-declared"
+  },
+  {
+   "q": "شحال من نهار كيصرحو فالشهر فالضمان",
+   "expect": [
+    "/ma/dahir/1-72-184/art_19"
+   ],
+   "lang": "darija",
+   "theme": "days"
+  },
+  {
+   "q": "الشوماج ديال الضمان",
+   "expect": [
+    "/ma/dahir/1-72-184/art_46-bis",
+    "/ma/dahir/1-72-184/art_46-ter"
+   ],
+   "lang": "darija",
+   "theme": "ipe"
+  },
+  {
+   "q": "indemnité pour perte d'emploi conditions",
+   "expect": [
+    "/ma/dahir/1-72-184/art_46-bis",
+    "/ma/dahir/1-72-184/art_46-ter"
+   ],
+   "lang": "fr",
+   "theme": "ipe"
+  },
+  {
+   "q": "شحال كتعطيني الكنوس فالتقاعد",
+   "expect": [
+    "/ma/dahir/1-72-184/art_53",
+    "/ma/dahir/1-72-184/art_55",
+    "/ma/decret/2-25-265/art_1"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "شحال خاصني من نهار باش ناخد التقاعد",
+   "expect": [
+    "/ma/dahir/1-72-184/art_53"
+   ],
+   "lang": "darija",
+   "theme": "pension"
+  },
+  {
+   "q": "retraite cnss 1320 jours",
+   "expect": [
+    "/ma/dahir/1-72-184/art_53",
+    "/ma/decret/2-25-265/art_1"
+   ],
+   "lang": "fr",
+   "theme": "pension"
+  },
+  {
+   "q": "sin dial tta9a3od f lmaghrib",
+   "expect": [
+    "/ma/loi/65-99/art_526",
+    "/ma/dahir/1-72-184/art_53"
+   ],
+   "lang": "arabizi",
+   "theme": "retire-age"
+  },
+  {
+   "q": "شحال من نهار ديال الكونجي فالعام",
+   "expect": [
+    "/ma/loi/65-99/art_231"
+   ],
+   "lang": "darija",
+   "theme": "leave"
+  },
+  {
+   "q": "congé annuel payé combien de jours",
+   "expect": [
+    "/ma/loi/65-99/art_231"
+   ],
+   "lang": "fr",
+   "theme": "leave"
+  },
+  {
+   "q": "كونجي الزواج شحال من نهار",
+   "expect": [
+    "/ma/loi/65-99/art_274"
+   ],
+   "lang": "darija",
+   "theme": "family-leave"
+  },
+  {
+   "q": "عطلة الوفاة فالخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_274"
+   ],
+   "lang": "darija",
+   "theme": "family-leave"
+  },
+  {
+   "q": "كونجي الولادة شحال",
+   "expect": [
+    "/ma/loi/65-99/art_152"
+   ],
+   "lang": "darija",
+   "theme": "maternity"
+  },
+  {
+   "q": "congé de maternité durée",
+   "expect": [
+    "/ma/loi/65-99/art_152"
+   ],
+   "lang": "fr",
+   "theme": "maternity"
+  },
+  {
+   "q": "واش يقدر المشغل يطرد المرا الحاملة",
+   "expect": [
+    "/ma/loi/65-99/art_159"
+   ],
+   "lang": "darija",
+   "theme": "maternity-protection"
+  },
+  {
+   "q": "ساعة الرضاعة فالخدمة",
+   "expect": [
+    "/ma/loi/65-99/art_161"
+   ],
+   "lang": "darija",
+   "theme": "nursing"
+  },
+  {
+   "q": "كونجي الأب فالولادة",
+   "expect": [
+    "/ma/loi/65-99/art_269"
+   ],
+   "lang": "darija",
+   "theme": "paternity"
+  },
+  {
+   "q": "تصابت فالخدمة شنو ندير",
+   "expect": [
+    "/ma/loi/18-12/art_14",
+    "/ma/loi/18-12/art_19",
+    "/ma/loi/18-12/art_3"
+   ],
+   "lang": "darija",
+   "theme": "accident"
+  },
+  {
+   "q": "accident de travail que faire",
+   "expect": [
+    "/ma/loi/18-12/art_14",
+    "/ma/loi/18-12/art_15",
+    "/ma/loi/18-12/art_3"
+   ],
+   "lang": "fr",
+   "theme": "accident"
+  },
+  {
+   "q": "حادثة شغل فالطريق للخدمة",
+   "expect": [
+    "/ma/loi/18-12/art_3",
+    "/ma/loi/18-12/art_1"
+   ],
+   "lang": "darija",
+   "theme": "accident-trajet"
+  },
+  {
+   "q": "شكون كيخلص الدوا فحادثة الشغل",
+   "expect": [
+    "/ma/loi/18-12/art_37"
+   ],
+   "lang": "darija",
+   "theme": "accident-costs"
+  },
+  {
+   "q": "بغيت نستاقل واش خاصني نخدم الإخطار",
+   "expect": [
+    "/ma/loi/65-99/art_34",
+    "/ma/loi/65-99/art_43"
+   ],
+   "lang": "darija",
+   "theme": "resign"
+  },
+  {
+   "q": "démission préavis",
+   "expect": [
+    "/ma/loi/65-99/art_43",
+    "/ma/loi/65-99/art_34"
+   ],
+   "lang": "fr",
+   "theme": "resign"
+  },
+  {
+   "q": "الخدامة فالدار شحال خاصها تشد",
+   "expect": [
+    "/ma/loi/19-12/art_19"
+   ],
+   "lang": "darija",
+   "theme": "domestic-pay"
+  },
+  {
+   "q": "شحال من ساعة كتخدم الخدامة فالدار",
+   "expect": [
+    "/ma/loi/19-12/art_13"
+   ],
+   "lang": "darija",
+   "theme": "domestic-hours"
+  },
+  {
+   "q": "travailleuse domestique salaire minimum",
+   "expect": [
+    "/ma/loi/19-12/art_19"
+   ],
+   "lang": "fr",
+   "theme": "domestic-pay"
+  },
+  {
+   "q": "حارس الأمن شحال من ساعة خاصو يخدم",
+   "expect": [
+    "/ma/loi/32-26/art_1",
+    "/ma/loi/65-99/art_193",
+    "/ma/loi/65-99/art_184"
+   ],
+   "lang": "darija",
+   "theme": "guards"
+  },
+  {
+   "q": "فترة التجربة شحال",
+   "expect": [
+    "/ma/loi/65-99/art_14",
+    "/ma/loi/65-99/art_13"
+   ],
+   "lang": "darija",
+   "theme": "trial"
+  },
+  {
+   "q": "période d'essai durée",
+   "expect": [
+    "/ma/loi/65-99/art_14"
+   ],
+   "lang": "fr",
+   "theme": "trial"
+  },
+  {
+   "q": "شروط الإضراب فالشركة",
+   "expect": [
+    "/ma/loi-organique/97-15/art_12",
+    "/ma/loi-organique/97-15/art_13"
+   ],
+   "lang": "darija",
+   "theme": "strike"
+  },
+  {
+   "q": "واش نقدر نشتكي عند مفتش الشغل",
+   "expect": [
+    "/ma/loi/65-99/art_532"
+   ],
+   "lang": "darija",
+   "theme": "inspector"
+  },
+  {
+   "q": "ما عنديش كونطرا مكتوبة",
+   "expect": [
+    "/ma/loi/65-99/art_18",
+    "/ma/loi/65-99/art_15"
+   ],
+   "lang": "darija",
+   "theme": "no-contract"
+  },
+  {
+   "q": "شحال من وقت عندي باش نطالب بالخلصة",
+   "expect": [
+    "/ma/loi/65-99/art_395"
+   ],
+   "lang": "darija",
+   "theme": "prescription"
+  }
+ ],
+ "checked": "owner-provisional"
+}

@@ -1,0 +1,58 @@
+# The papers and checks of the consumer topic (J2, J1 of the consumer plan): each list is what an article names,
+# item by item. A check (`verdict`) says which of the article's mentions the paper in hand misses, each with its
+# article: it reads the paper against the law, never decides a case. Ticks stay on the reader's phone.
+
+- key: invoice
+  title: {ar: 'ما يجب أن تتضمنه الفاتورة أو تذكرة الصندوق', fr: 'Ce que doit indiquer la facture ou le ticket de caisse'}
+  lead:
+    ar: 'لكل مستهلك اشترى الحق في فاتورة أو مخالصة أو تذكرة صندوق (المادة 4)، ويحدد المرسوم 2.12.503 ما تتضمنه.'
+    fr: 'Tout consommateur qui achète a droit à une facture, une quittance ou un ticket de caisse (art. 4) ; le décret 2-12-503 en fixe les mentions.'
+  cites: [/ma/loi/31-08/art_4, /ma/decret/2-12-503/art_25]
+  items:
+    - label: {ar: التعريف بالمورد, fr: L’identification du fournisseur}
+      cites: [/ma/decret/2-12-503/art_25]
+    - label: {ar: 'السلع أو المنتوجات أو الخدمات', fr: 'Les produits ou services'}
+      cites: [/ma/decret/2-12-503/art_25]
+    - label: {ar: 'تاريخ العملية ومكانها', fr: 'La date et le lieu de l’opération'}
+      note: {ar: 'وتاريخ التسليم عند الاقتضاء: هو الذي يبدأ منه الضمان القانوني', fr: 'et la date de livraison le cas échéant : c’est d’elle que part la garantie légale'}
+      cites: [/ma/decret/2-12-503/art_25, /ma/loi/31-08/art_65]
+    - label: {ar: 'الكمية، أو الكشف المفصل للخدمة', fr: 'La quantité, ou le détail de la prestation'}
+      cites: [/ma/decret/2-12-503/art_25]
+    - label: {ar: 'سعر كل سلعة أو خدمة، والمبلغ الإجمالي بكل الرسوم والضريبة', fr: 'Le prix de chaque article et le total toutes taxes comprises'}
+      cites: [/ma/decret/2-12-503/art_25, /ma/loi/31-08/art_5]
+    - label: {ar: كيفيات الأداء, fr: Le mode de paiement}
+      cites: [/ma/decret/2-12-503/art_25]
+    - label: {ar: 'أجل التسليم، إذا تجاوز الثمن 3.000 درهم ولم يكن التسليم فوريا', fr: 'Le délai de livraison, au-delà de 3 000 DH si la livraison n’est pas immédiate'}
+      when: {ar: 'في البيع الذي لا يسلم فيه الشيء في الحين', fr: 'quand le bien n’est pas remis sur-le-champ'}
+      cites: [/ma/loi/31-08/art_12, /ma/decret/2-12-503/art_28]
+  verdict:
+    ok: {ar: 'الورقة تتضمن ما يفرضه المرسوم، وهي التي تثبت تاريخ الشراء وثمنه.', fr: 'Le document contient ce qu’exige le décret ; c’est lui qui prouve la date et le prix.'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها، وهي من البيانات التي يفرضها المرسوم 2.12.503 (المادة 25):', fr: 'Vous n’avez pas coché ces mentions, que le décret 2-12-503 exige (art. 25) :'}
+
+- key: offer
+  title: {ar: 'ما يجب أن يقوله العرض في البيع عن بعد', fr: 'Ce que doit dire une offre de vente à distance'}
+  lead:
+    ar: 'قبل أن تطلب أونلاين أو بالهاتف: ما يفرضه القانون على العرض (المادة 29). والمورد هو من يثبت أنه قدمه (المادة 34).'
+    fr: 'Avant de commander en ligne ou par téléphone : ce que la loi exige de l’offre (art. 29). C’est au fournisseur de prouver qu’il l’a fait (art. 34).'
+  cites: [/ma/loi/31-08/art_29, /ma/loi/31-08/art_34]
+  items:
+    - label: {ar: 'المميزات الأساسية للمنتوج أو الخدمة', fr: 'Les caractéristiques essentielles du produit ou du service'}
+      cites: [/ma/loi/31-08/art_29]
+    - label: {ar: 'اسم المورد وتسميته التجارية وهاتفه وبريده الإلكتروني وعنوانه', fr: 'Le nom, la dénomination commerciale, le téléphone, le courriel et l’adresse du fournisseur'}
+      cites: [/ma/loi/31-08/art_29]
+    - label: {ar: 'رقم السجل التجاري، إن كان التاجر السيبراني خاضعا له', fr: 'Le numéro au registre du commerce, si le cybercommerçant y est soumis'}
+      when: {ar: 'لمن يبيع على الإنترنت في إطار نشاط تجاري', fr: 'pour qui vend sur internet à titre commercial'}
+      cites: [/ma/loi/31-08/art_29, /ma/loi/31-08/art_25]
+    - label: {ar: 'أجل التسليم ومصاريفه', fr: 'Le délai et les frais de livraison'}
+      cites: [/ma/loi/31-08/art_29]
+    - label: {ar: 'وجود حق التراجع', fr: 'L’existence du droit de rétractation'}
+      cites: [/ma/loi/31-08/art_29, /ma/loi/31-08/art_36]
+    - label: {ar: 'كيفيات الأداء والتسليم', fr: 'Les modalités de paiement et de livraison'}
+      cites: [/ma/loi/31-08/art_29]
+    - label: {ar: 'مدة صلاحية العرض وثمنه', fr: 'La durée de validité de l’offre et son prix'}
+      cites: [/ma/loi/31-08/art_29]
+    - label: {ar: 'الشروط التعاقدية، تقبل صراحة قبل تأكيد الطلبية', fr: 'Les conditions contractuelles, acceptées expressément avant la confirmation'}
+      cites: [/ma/loi/31-08/art_30]
+  verdict:
+    ok: {ar: 'العرض يذكر ما تفرضه المادتان 29 و30.', fr: 'L’offre indique ce qu’exigent les articles 29 et 30.'}
+    missing: {ar: 'هذه البيانات لم تعلّم عليها، والقانون يفرضها في العرض (المورد الذي يخالفها يعاقب بغرامة من 1.200 إلى 10.000 درهم، المادة 177):', fr: 'Vous n’avez pas coché ces mentions, que la loi exige de l’offre (amende de 1 200 à 10 000 DH, art. 177) :'}

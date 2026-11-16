@@ -1,0 +1,8 @@
+# Joint order 1251.25 of the ministers of the interior and of health (the model of the death certificate) as BO 7482
+# (12 Feb 2026) prints it. Read against the page image on 2026-10-27 (the health review, S4): art. 1, the article
+# the health topic cites. It reads as printed: nothing to put right.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_death_certificate_1251_25.yaml`; a reload of the text applies them again.
+text: /ma/arrete/1251-25
+document: issues/bo_ar/BO_7482_ar.pdf
+read_on: '2026-10-27'
+fixes: []

@@ -1,0 +1,74 @@
+# The land topic's pages (M15 of the land review): what people believe beside what the law says, and which office
+# does what. Every fact names its articles, as the site holds them on 26 Oct 2026.
+
+- key: beliefs
+  title: {ar: 'ما يقال، وما يقوله القانون', fr: 'Ce qu’on entend, et ce que dit la loi'}
+  lead:
+    ar: 'جمل تتردد عن الأرض والبناء، وكل واحدة بجانب ما تقوله النصوص في حالاتها.'
+    fr: 'Des phrases qu’on entend sur la terre et la construction, chacune à côté de ce que disent les textes dans ses cas.'
+  sections:
+    - title: {ar: '«حزت الأرض عشر سنين، ولات ديالي»', fr: '« Dix ans sur la terre, elle est à moi »'}
+      facts:
+        - text: {ar: 'تكسب الحيازة المستوفية لشروطها ملكية العقار غير المحفظ إذا استمرت عشر سنوات كاملة والمالك حاضر عالم ساكت بلا مانع ولا عذر، وأربعين سنة بين الأقارب غير الشركاء الذين ليس بينهم عداوة.', fr: 'La possession qui remplit ses conditions donne la propriété d’un immeuble non immatriculé après dix années pleines, le propriétaire présent, informé et silencieux sans empêchement ni excuse ; quarante ans entre parents non copropriétaires sans inimitié.'}
+          cites: [/ma/loi/39-08/art_250, /ma/loi/39-08/art_251]
+        - text: {ar: 'ولا تكتسب بالحيازة أملاك الدولة العامة والخاصة، ولا الأملاك المحبسة، ولا أملاك الجماعات السلالية، ولا أملاك الجماعات المحلية، ولا العقارات المحفظة.', fr: 'Ne s’acquièrent pas par la possession : le domaine public et privé de l’État, les biens habous, les biens des collectivités ethniques, ceux des collectivités locales, les immeubles immatriculés.'}
+          cites: [/ma/loi/39-08/art_261]
+    - title: {ar: '«عقد المحامي كافي»', fr: '« L’acte de l’avocat suffit »'}
+      facts:
+        - text: {ar: 'منذ 16 يوليوز 2026، يحرر كل تصرف ينقل ملكية العقار أو ينشئ حقا عينيا عليه، والوعد بالبيع العقاري، والوكالات الخاصة بها، بمحرر رسمي تحت طائلة البطلان، ما لم ينص مقتضى خاص على خلاف ذلك. وحذف القانون 41.25 المحرر الثابت التاريخ الذي يحرره المحامي.', fr: 'Depuis le 16 juillet 2026, tout acte qui transfère la propriété d’un immeuble ou crée un droit réel, la promesse de vente immobilière et leurs procurations s’établissent par acte authentique, à peine de nullité, sauf disposition particulière. La loi 41.25 a supprimé l’acte à date certaine rédigé par un avocat.'}
+          cites: [/ma/loi/39-08/art_4, /ma/loi/41-25/art_1]
+        - text: {ar: 'وفي العقار المحفظ، لا ينتج البيع أثره، ولو بين الطرفين، إلا من تاريخ تقييده بالرسم العقاري.', fr: 'Pour un immeuble immatriculé, la vente ne produit d’effet, même entre les parties, qu’à compter de son inscription au titre foncier.'}
+          cites: [/ma/code/land-registration/art_67]
+    - title: {ar: '«الرسم العقاري يتطعن فيه بحال أي عقد»', fr: '« Un titre foncier se conteste comme un contrat »'}
+      facts:
+        - text: {ar: 'الرسم العقاري نهائي ولا يقبل الطعن، وهو نقطة الانطلاق الوحيدة للحقوق العينية المترتبة على العقار وقت تحفيظه. ولا تقام دعوى في العقار بسبب حق أضر به التحفيظ؛ للمتضرر في حالة التدليس دعوى شخصية بالتعويض على المدلس.', fr: 'Le titre foncier est définitif et inattaquable ; il est le seul point de départ des droits réels sur l’immeuble au jour de l’immatriculation. Aucune action réelle pour un droit lésé par l’immatriculation ; en cas de dol, la victime a une action personnelle en dommages contre son auteur.'}
+          cites: [/ma/code/land-registration/art_62, /ma/code/land-registration/art_64]
+        - text: {ar: 'أما التقييدات اللاحقة فيمكن إبطالها إذا تضرر صاحب الحق بسبب تدليس أو زور، شريطة أن ترفع الدعوى داخل أربع سنوات من تاريخ التقييد.', fr: 'Les inscriptions postérieures peuvent être annulées si le titulaire a été lésé par un dol ou un faux, à condition d’agir dans les quatre ans de l’inscription.'}
+          cites: [/ma/loi/39-08/art_2]
+    - title: {ar: '«إلا ما جاوبونيش على الرخصة نبقى نتسنى»', fr: '« Sans réponse au permis, j’attends »'}
+      facts:
+        - text: {ar: 'في حالة سكوت رئيس مجلس الجماعة، تعتبر رخصة البناء مسلمة عند انقضاء شهرين من تاريخ إيداع الطلب.', fr: 'Si le président du conseil communal se tait, le permis de construire est réputé accordé deux mois après le dépôt de la demande.'}
+          cites: [/ma/loi/12-90/art_48]
+        - text: {ar: 'وتسقط الرخصة، صريحة كانت أو ضمنية، إذا مرت سنة دون الشروع في أشغال الأسس.', fr: 'Le permis, exprès ou tacite, tombe si les travaux des fondations n’ont pas commencé dans l’année.'}
+          cites: [/ma/loi/12-90/art_49]
+    - title: {ar: '«الدولة تقدر تاخذ الأرض بلا تعويض»', fr: '« L’État peut prendre la terre sans indemnité »'}
+      facts:
+        - text: {ar: 'لا يحكم بنزع الملكية إلا إذا أعلنت المنفعة العامة، ولا يجرى إلا وفق الكيفيات التي يقررها القانون 7.81.', fr: 'L’expropriation n’est prononcée qu’après déclaration d’utilité publique et ne se fait que selon les formes de la loi 7.81.'}
+          cites: [/ma/loi/7-81/art_1]
+        - text: {ar: 'ويحدد التعويض حسب قيمة العقار يوم صدور قرار نزع الملكية، ولا يشمل إلا الضرر الحالي والمحقق الناشئ مباشرة عنه.', fr: 'L’indemnité est fixée selon la valeur de l’immeuble au jour de la décision d’expropriation et ne couvre que le préjudice actuel et certain qui en découle directement.'}
+          cites: [/ma/loi/7-81/art_20]
+    - title: {ar: '«أرض الجموع غير للرجال»', fr: '« La terre collective, c’est pour les hommes »'}
+      facts:
+        - text: {ar: 'يتمتع أعضاء الجماعات السلالية، ذكورا وإناثا، بالانتفاع بأملاك الجماعة التي ينتمون إليها، ويوزع الانتفاع بينهم ذكورا وإناثا.', fr: 'Les membres des collectivités ethniques, hommes et femmes, jouissent des biens de leur collectivité, et la jouissance se répartit entre eux, hommes et femmes.'}
+          cites: [/ma/loi/62-17/art_6, /ma/loi/62-17/art_16]
+
+- key: offices
+  title: {ar: 'شكون كيدير شنو', fr: 'Qui fait quoi'}
+  lead:
+    ar: 'الإدارات والمحاكم التي تذكرها نصوص الأرض والبناء، وما تختص به كل واحدة.'
+    fr: 'Les administrations et les juridictions que citent les textes sur la terre et la construction, et ce dont chacune est chargée.'
+  sections:
+    - title: {ar: 'المحافظ على الأملاك العقارية', fr: 'Le conservateur de la propriété foncière'}
+      facts:
+        - text: {ar: 'يتلقى مطلب التحفيظ مقابل وصل، وينشر ملخصه ويعلن تاريخ التحديد، ويقيد الحقوق في الرسم العقاري.', fr: 'Il reçoit la réquisition contre récépissé, en publie l’extrait, annonce la date du bornage et inscrit les droits au titre foncier.'}
+          cites: [/ma/code/land-registration/art_13, /ma/code/land-registration/art_17, /ma/code/land-registration/art_66]
+    - title: {ar: 'رئيس مجلس الجماعة', fr: 'Le président du conseil communal'}
+      facts:
+        - text: {ar: 'يسلم رخصة البناء، ورخصة السكن أو شهادة المطابقة بعد معاينة الأشغال.', fr: 'Il délivre le permis de construire, puis le permis d’habiter ou le certificat de conformité après constat des travaux.'}
+          cites: [/ma/loi/12-90/art_41, /ma/loi/12-90/art_55]
+    - title: {ar: 'الوكالة الحضرية', fr: 'L’agence urbaine'}
+      facts:
+        - text: {ar: 'تسلم مذكرة المعلومات التعميرية داخل يومين مفتوحين من الطلب: ما تخصص له الأرض في وثيقة التعمير.', fr: 'Elle délivre la note de renseignements urbanistiques dans les deux jours ouvrables de la demande : l’affectation du terrain dans le document d’urbanisme.'}
+          cites: [/ma/decret/2-18-577/art_6, /ma/decret/2-18-577/art_7]
+    - title: {ar: 'المحكمة الابتدائية', fr: 'Le tribunal de première instance'}
+      facts:
+        - text: {ar: 'تبت في التعرضات على مطالب التحفيظ بعد أن يوجه إليها المحافظ الملف، ورئيسها يأذن بعرض ثمن الشفعة وإيداعه.', fr: 'Il juge les oppositions aux réquisitions une fois le dossier transmis par le conservateur ; son président autorise l’offre et la consignation du prix de la préemption.'}
+          cites: [/ma/code/land-registration/art_29, /ma/loi/39-08/art_306]
+    - title: {ar: 'المحكمة الإدارية', fr: 'Le tribunal administratif'}
+      facts:
+        - text: {ar: 'يودع لديها نازع الملكية طلب الحكم بنقل الملكية وتحديد التعويض، وطلب الإذن بالحيازة.', fr: 'L’expropriant y dépose la demande de transfert de propriété et de fixation de l’indemnité, et celle d’envoi en possession.'}
+          cites: [/ma/loi/7-81/art_18]
+    - title: {ar: 'مجلس الوصاية الإقليمي', fr: 'Le conseil de tutelle provincial'}
+      facts:
+        - text: {ar: 'يطعن أمامه في مقررات جماعة النواب المتعلقة بتوزيع الانتفاع داخل ثلاثين يوما من تبليغها.', fr: 'On y conteste les décisions de la jemâa des naibs sur la répartition de la jouissance, dans les trente jours de leur notification.'}
+          cites: [/ma/loi/62-17/art_16]

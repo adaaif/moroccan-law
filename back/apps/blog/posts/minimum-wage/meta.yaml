@@ -1,0 +1,60 @@
+# «الحد الأدنى للأجر، مرسوما بعد مرسوم»: the blog's sixth post (B10 of the blog-first-post review, built 31 Oct 2026 in
+# the order chosen). The amounts were read in each decree's articles as the corpus holds them (31 Oct 2026); the figures
+# (manage.py blog_figures minimum-wage) tie each decree to its issue, page and article.
+# Before 1960 (BH5 and BH14 of the posts-from-No.-1 review, 6 Nov 2026), to read when the post goes back to 1936: the old
+# Bulletin says «أقل الأجرة», never «الحد الأدنى للأجر». The dahir of 18 June 1936 «يتعلق باقل الاجرة التي تدفع للعملة
+# والمستخدمين» is printed in BO 1238 (17 July 1936, the file's eighth page, under the Resident General's visa) and was
+# never cut as a text of its own; dahirs amending it: three in 1937, one in 1938, one in 1952 (their titles name it).
+slug: minimum-wage
+number: 6
+status: draft
+date: null
+counted_on: 2026-10-31
+title:
+  ar: الحد الأدنى للأجر، مرسوما بعد مرسوم
+  fr: Le salaire minimum, décret après décret
+lead:
+  ar: من 80 فرنكا و80 سنتيما للساعة في 1960 إلى 17,92 درهما في 2026. قرأنا كل نص رفع الحد الأدنى للأجر منذ الاستقلال، مبلغا بمبلغ، في الصناعة والتجارة وفي الفلاحة.
+  fr: De 80 francs 80 de l’heure en 1960 à 17,92 dirhams en 2026. Nous avons lu chaque texte qui a relevé le salaire minimum depuis l’indépendance, montant par montant, dans l’industrie et le commerce, et dans l’agriculture.
+
+# Every raise, as its articles print it: «hourly» outside agriculture (industry, commerce, liberal professions), in
+# dirhams an hour; «daily» in agriculture, in dirhams a day (francs divided by 100). «from» is the day the article says
+# it applies; «from_published» marks a step whose article, as read, names no day (the issue's day is used).
+# Read by a person in the corpus's text; to be checked again on the pages before publishing.
+steps:
+  - {decree: '', issue: '2258', from: 1956-02-01, hourly_raise_francs: 10, daily_francs: 300, note: {ar: زيادة 10 فرنكات في الساعة؛ وفي الفلاحة من 230 إلى 300 فرنك في اليوم, fr: hausse de 10 francs de l’heure ; en agriculture de 230 à 300 francs par jour}}
+  - {decree: 1-60-039, from: 1959-11-01, daily: 3.68, note: {ar: 368 فرنكا في اليوم في مجموع أنحاء المغرب, fr: 368 francs par jour dans tout le Maroc}}
+  - {decree: 2-59-1986, from_published: true, hourly: 0.808, zones: [0.808, 0.79, 0.712, 0.693], note: {ar: "أربع مناطق، من 80,80 فرنكا إلى 69,30 فرنكا للساعة", fr: "quatre zones, de 80,80 à 69,30 francs de l’heure"}}
+  - {decree: 2-73-685, from_published: true, hourly: 1.15}
+  - {decree: 2-75-292, from: 1975-06-01, hourly: 1.27, daily: 6.60}
+  - {decree: 2-77-52, from: 1977-01-01, hourly: 1.40, daily: 7.25}
+  - {decree: 2-79-689, from_published: true, hourly: 1.96}
+  - {decree: 2-81-355, from: 1981-05-01, hourly: 2.36, daily: 12.20}
+  - {decree: 2-82-361, from: 1982-05-01, hourly: 2.72, daily: 14.00}
+  - {decree: 2-83-604, from: 1983-08-01, hourly: 3.26, daily: 16.80}
+  - {decree: 2-85-58, from: 1985-01-01, hourly: 3.58, daily: 18.48}
+  - {decree: 2-90-349, from: 1990-05-01, hourly: 5.22, daily: 27.03}
+  - {decree: 2-91-33, from: 1991-01-01, hourly: 6.00, daily: 31.08}
+  - {decree: 2-92-316, from: 1992-05-01, hourly: 6.60, daily: 34.18}
+  - {decree: 2-94-343, from: 1994-07-01, hourly: 7.26, daily: 37.60}
+  - {decree: 2-96-678, from: 1996-07-01, hourly: 7.98, daily: 41.36}
+  - {decree: 2-00-525, from: 2000-07-01, hourly: 8.78, daily: 45.50}
+  - {decree: 2-04-421, from_published: true, hourly: 9.22, daily: 47.77}
+  - {decree: 2-04-421, from: 2004-07-01, hourly: 9.66, daily: 50.00}
+  - {decree: 2-08-292, from: 2008-07-01, hourly: 10.14, daily: 52.50, note: {ar: "وفي النسيج والألبسة 9,90 درهما", fr: "9,90 dirhams dans le textile et l’habillement"}}
+  - {decree: 2-08-292, from: 2009-07-01, hourly: 10.64, daily: 55.12}
+  - {decree: 2-11-247, from: 2011-07-01, hourly: 11.70, daily: 60.63}
+  - {decree: 2-11-247, from: 2012-07-01, hourly: 12.24, daily: 63.39}
+  - {decree: 2-14-343, from: 2014-07-01, hourly: 12.85, daily: 66.56}
+  - {decree: 2-14-343, from: 2015-07-01, hourly: 13.46, daily: 69.73}
+  - {decree: 2-19-424, from: 2019-07-01, hourly: 14.13, daily: 73.22}
+  - {decree: 2-19-424, from: 2020-07-01, hourly: 14.81, daily: 76.70}
+  - {decree: 2-22-606, from: 2022-09-01, hourly: 15.55, daily: 84.37}
+  - {decree: 2-23-799, from: 2023-09-01, hourly: 16.29, daily: 88.58}
+  - {decree: 2-24-1122, from: 2025-01-01, hourly: 17.10}
+  - {decree: 2-24-1122, from: 2025-04-01, daily: 93.00}
+  - {decree: 2-25-983, from: 2026-01-01, hourly: 17.92}
+  - {decree: 2-25-983, from: 2026-04-01, daily: 97.44}
+
+# A year's work outside agriculture: 2,288 hours (article 184 of the Labour Code, law 65.99), a twelfth of it a month.
+hours_a_year: 2288

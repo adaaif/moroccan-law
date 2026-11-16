@@ -1,0 +1,91 @@
+{
+  "dates": {
+    "title": "Les dates que fixe la loi",
+    "lead": "À partir du jour de l’événement, chaque délai avec sa date et son article.",
+    "what": "Que s’est-il passé ?",
+    "when": "Quel jour ?",
+    "event": {
+      "birth": "Une naissance",
+      "death": "Un décès",
+      "marriageAbroad": "Un mariage conclu à l’étranger selon la loi locale",
+      "divorce": "Un divorce constaté par les adouls",
+      "dues": "Le tribunal a fixé les droits du divorce",
+      "shiqaq": "Une demande de divorce pour discorde",
+      "grounds": "Une demande de divorce pour une autre cause",
+      "nafaqaCase": "Une demande de pension alimentaire",
+      "nafaqaStopped": "La pension des enfants n’est plus payée",
+      "kafala": "L’ordonnance de kafala",
+      "supportRefused": "Le refus de l’aide sociale directe"
+    },
+    "deadline": {
+      "declareBirth": "Compléter la déclaration de naissance",
+      "declareBirthAbroad": "Si la naissance a eu lieu à l’étranger",
+      "birthGrant": "Demander la prime de naissance",
+      "declareDeath": "Compléter la déclaration de décès",
+      "widowIddah": "Fin de la retraite de la veuve non enceinte",
+      "consulate": "Déposer une copie de l’acte au consulat",
+      "deedToWife": "Remise de l’acte de divorce à l’épouse",
+      "summary": "Envoi de l’extrait à l’état civil par le tribunal",
+      "iddahMonths": "Fin de la retraite pour celle qui n’a pas ses règles",
+      "deposit": "Dépôt des droits par le mari au greffe",
+      "shiqaqJudgment": "Délai maximum du jugement",
+      "groundsJudgment": "Délai maximum du jugement",
+      "nafaqaJudgment": "Délai maximum du jugement de la pension",
+      "abandonment": "Au-delà, l’arrêt relève de l’abandon de famille",
+      "kafalaExecution": "Exécution de l’ordonnance et remise de l’enfant",
+      "kafalaRecord": "Envoi de l’ordonnance à l’officier d’état civil",
+      "complaint": "Déposer la réclamation"
+    },
+    "words": {
+      "iddahCycles": "Pour celle qui a ses règles : trois périodes de pureté complètes, qui ne se comptent pas en jours (art. 136).",
+      "iddahPregnant": "Enceinte : la retraite prend fin à l’accouchement (art. 133).",
+      "widowPregnant": "Veuve enceinte : la retraite prend fin à l’accouchement (art. 133).",
+      "deposit": "Faute de dépôt dans le délai, il est réputé renoncer au divorce (art. 86).",
+      "summary": "C’est au tribunal de le faire, pas aux époux."
+    },
+    "rule": "Les jours se comptent à partir du lendemain de l’événement, les mois à la même date du mois voulu. Si le dernier jour d’un délai de naissance ou de décès est férié, il est reporté au premier jour ouvrable (décret 2.22.04, art. 40).",
+    "file": "dates"
+  },
+  "support": {
+    "title": "L’aide directe pour les enfants",
+    "lead": "Le montant que fixe le décret 2.23.1067 pour une famille éligible. L’éligibilité elle-même dépend du registre social unifié, pas de «3adala».",
+    "year": "Année",
+    "children": "Les enfants de moins de 21 ans, de l’aîné au plus jeune",
+    "childrenLead": "L’annexe compte «les trois premiers enfants» à un montant et du quatrième au sixième à un montant plus bas. «3adala» lit l’ordre à partir de l’aîné ; le calcul de l’Agence fait foi.",
+    "child": "Enfant {{n}}",
+    "status": {
+      "schooled": "Scolarisé, moins de 6 ans ou handicapé",
+      "notSchooled": "Non scolarisé"
+    },
+    "level": {
+      "none": "Pas dans une école publique",
+      "primary": "Primaire ou collège public",
+      "upper": "Lycée public"
+    },
+    "disabled": "En situation de handicap",
+    "orphan": "Orphelin de père",
+    "add": "Ajouter un enfant",
+    "remove": "Retirer",
+    "monthly": "Chaque mois",
+    "line": {
+      "first": "{{n}} × {{amount}} DH pour les trois premiers enfants",
+      "later": "{{n}} × {{amount}} DH du quatrième au sixième",
+      "supplement": "{{n}} × {{amount}} DH d’aide complémentaire",
+      "floor": "Porté à 500 DH, le minimum versé à une famille (décret, art. 2)",
+      "flat": "Aide forfaitaire : aucun enfant de moins de 21 ans (loi 58.23, art. 4)"
+    },
+    "september": "En septembre de chaque année, en plus",
+    "septemberLine": "{{n}} × {{amount}} DH à la rentrée scolaire",
+    "septemberNote": "Ne compte pas dans le total mensuel.",
+    "birth": "Prime de naissance : 2 000 DH pour la première, 1 000 DH pour la deuxième, à demander dans les six mois.",
+    "noCumul": "Un même enfant ne cumule pas cette aide et les allocations familiales (loi 58.23, art. 5).",
+    "eligibility": "L’éligibilité dépend de l’inscription au registre social unifié et du seuil fixé par un texte réglementaire (loi 58.23, art. 3).",
+    "dh": "{{amount}} DH",
+    "supplementNote": "L’aide complémentaire est due pour chaque enfant handicapé et chaque orphelin de père, trois au plus, selon la ligne de l’annexe «moins de 6 ans ou scolarisé».",
+    "periods": {
+      "2023": "Depuis décembre 2023",
+      "2025": "En 2025",
+      "2026": "En 2026"
+    }
+  }
+}

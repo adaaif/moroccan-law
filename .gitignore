@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+back/.venv
+back/db.sqlite3*
+back/media/
+back/staticfiles/
+.pytest_cache/
+.ruff_cache/
+# Test, lint and coverage reports (tools/ci/)
+back/.reports/
+
+# Web
+web/node_modules
+web/dist/
+web/dist-ssr/
+web/*.tsbuildinfo
+
+# Rust
+crates/target/
+
+# Settings and secrets: every .env file but the documented examples, and any *.local file. Keep secrets outside the
+# working tree (for example under ~/.config/law/); these lines only stop an accident.
+.env*
+!.env.example
+*.local
+
+# The corpus (PDFs, page images, OCR output), what readers send (voices, pictures), a local database's files and the
+# meaning model's folder: outside git, often links to a larger disk.
+/data
+/uploads
+/pg/
+/models
+
+# Working folders that never belong in the repository: logs, scratch scripts.
+.logs/
+web/e2e/.*-tmp.mjs
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store

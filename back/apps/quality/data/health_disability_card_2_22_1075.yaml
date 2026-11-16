@@ -1,0 +1,8 @@
+# Decree 2.22.1075 (the card of a person in a situation of disability) as BO 7376 (6 Feb 2025) prints it. The five
+# articles the health topic cites (arts 1–5, p. 1026) were read word by word against the page image on 27 Oct 2026
+# (the health review, S4): every one reads as printed. Kept so the reading is on record.
+# Applied by `manage.py apply_page_reading apps/quality/data/health_disability_card_2_22_1075.yaml`; a reload of the text applies them again.
+text: /ma/decret/2-22-1075
+document: issues/bo_ar/BO_7376_ar.pdf
+read_on: '2026-10-27'
+fixes: []

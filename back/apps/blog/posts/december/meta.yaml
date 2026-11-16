@@ -1,0 +1,16 @@
+# «دجنبر، شهر الأعداد المكررة، ومارس، شهر القوانين»: the blog's fifth post (B4 of the blog-first-post review, built 31 Oct
+# 2026 in the order chosen). The counts are in figures.json: every issue with its month, its masthead's Hijri date, its
+# pages and its texts by kind, counted from the live database on 31 Oct 2026.
+slug: december
+number: 5
+status: draft
+date: null
+counted_on: 2026-11-01
+span: [1956, 2025]
+hijri_since: 1996        # the Hijri months compared over the twice-a-week Bulletin only
+title:
+  ar: دجنبر، شهر الأعداد المكررة، ومارس، شهر القوانين
+  fr: Décembre, le mois des numéros bis ; mars, celui des lois
+lead:
+  ar: بين 1996 و2025 نشرت الجريدة الرسمية في دجنبر 21.643 صفحة، أكثر من أي شهر، و26 عددا مكررا. أما القوانين فتُنشر أكثر في مارس، وأقل في أكتوبر، الشهر الذي تُفتتح فيه دورة البرلمان. ورمضان لا يغيّر شيئا يُذكر.
+  fr: De 1996 à 2025, le Bulletin officiel a publié en décembre 21 643 pages, plus que tout autre mois, et 26 numéros bis. Les lois, elles, paraissent surtout en mars, et le moins en octobre, le mois où s’ouvre la session du Parlement. Le ramadan ne change presque rien.

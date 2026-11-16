@@ -1,0 +1,133 @@
+/* «قانون بالأرقام», what every post shares (31 Oct 2026). Loaded with a post, never in the first load.
+   The post reads like the Bulletin it counts: a running head over a double rule as its mastheads have, the headline and
+   the prose in the law's type (Markazi; Source Serif 4 in French), the charts and their words in the interface's
+   (Readex Pro). One bold thing: the seventy piles of paper, each issue a sheet in the Bulletin's paper tones, its
+   «bis» issues in the source's violet. Everything else is quiet: grey bars, the violet where a figure is named, ink
+   for what the reader picked. Every colour a token; the piles' own tones lift at night. */
+
+.bp {
+  --bp-sheet-a: #ddd6c9;
+  --bp-sheet-b: #c6bdad;
+  --bp-bis-a: #5b3a9e;
+  --bp-bis-b: #8064c4;
+  --bp-bar: #cdc6ba;
+  /* Kinds in a bar (`Legend`): four colours told apart by colour-blind readers too (validated against the sheet, every
+     pair), and the rest in grey. */
+  --kc-1: #5b3a9e;
+  --kc-2: #93540a;
+  --kc-3: #0b8a62;
+  --kc-4: #2f86c8;
+  --kc-rest: #b9b6c6;
+  --bp-col: 41rem;
+  --bp-fig: 52rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--color-ink);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .bp { --bp-sheet-a: #4e495b; --bp-sheet-b: #3b3747; --bp-bis-a: #b9a5f3; --bp-bis-b: #8f76de; --bp-bar: #4a4558;
+    --kc-1: #8a4fc6; --kc-2: #a3540e; --kc-3: #16975f; --kc-4: #3f9ad2; --kc-rest: #5d596b; }
+}
+:root[data-theme='dark'] .bp { --bp-sheet-a: #4e495b; --bp-sheet-b: #3b3747; --bp-bis-a: #b9a5f3; --bp-bis-b: #8f76de; --bp-bar: #4a4558;
+  --kc-1: #8a4fc6; --kc-2: #a3540e; --kc-3: #16975f; --kc-4: #3f9ad2; --kc-rest: #5d596b; }
+.kc-1 { background: var(--kc-1); }
+.kc-2 { background: var(--kc-2); }
+.kc-3 { background: var(--kc-3); }
+.kc-4 { background: var(--kc-4); }
+.kc-rest { background: var(--kc-rest); }
+.bp-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 12px; padding: 0; list-style: none; font-size: var(--text-meta); color: var(--color-ink); }
+.bp-legend li { display: inline-flex; align-items: center; gap: 6px; }
+.bp-legend i { display: inline-block; width: 14px; height: 14px; border-radius: 4px; }
+
+.bp a { color: var(--color-stamp); }
+.bp a:focus-visible, .bp [tabindex]:focus-visible, .bp button:focus-visible, .bp summary:focus-visible {
+  outline: 3px solid var(--color-stamp); outline-offset: 3px; border-radius: 4px;
+}
+
+/* ── The head: a running line and a double rule, as the Bulletin's masthead ─────────────────────────────────────── */
+.bp-head { display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: var(--bp-fig); margin-inline: auto; }
+.bp-running { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; padding-bottom: 8px;
+  border-bottom: 4px double var(--color-ink); font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+.bp-running b { color: var(--color-ink); font-weight: 700; }
+.bp-head h1 { margin: 6px 0 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(2.6rem, 1.7rem + 3.4vw, 4.6rem);
+  line-height: 1.04; text-wrap: balance; letter-spacing: 0; }
+.bp-lead { margin: 0; max-width: 34em; font-family: var(--font-law); font-size: clamp(1.45rem, 1.3rem + 0.6vw, 1.8rem); line-height: 1.55; text-wrap: pretty; }
+/* A draft is a dashed ink line (HM43 of the hard-moment review): amber is kept for time and deadlines. */
+.bp-draft { align-self: flex-start; margin: 0; max-width: 64ch; padding: 2px 14px; border-inline-start: 3px dashed var(--color-ink-soft);
+  color: var(--color-ink-soft); font-size: var(--text-meta); line-height: 1.6; }
+
+/* French reads in Source Serif 4, as French law does on the site. */
+.bp:lang(fr) .bp-head h1, .bp:lang(fr) .bp-lead, .bp:lang(fr) .bp-p, .bp:lang(fr) .bp-sec h2 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+.bp:lang(fr) .bp-head h1 { font-weight: 600; font-size: clamp(2.2rem, 1.5rem + 2.8vw, 3.8rem); line-height: 1.08; }
+.bp:lang(fr) .bp-lead { font-size: clamp(1.2rem, 1.1rem + 0.4vw, 1.4rem); line-height: 1.5; }
+
+/* ── The picture ──────────────────────────────────────────────────────────────────────────────────────────────── */
+.bp-hero { margin: 0 -16px; padding: 22px 16px 18px; background: var(--color-sheet); display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 640px) { .bp-hero { margin: 0; padding: 28px 30px 22px; border-radius: var(--radius-card); } }
+.bp-hero-words, .bp-hero-foot { display: flex; flex-direction: column; gap: 6px; max-width: var(--bp-fig); }
+.bp-piles { display: flex; flex-direction: column; gap: 8px; }
+.bp-piles-plot { position: relative; width: 100%; cursor: crosshair; touch-action: pan-y; border-radius: 4px; }
+.bp-piles-plot canvas, .bp-piles-plot svg { position: absolute; inset: 0; display: block; }
+.bp-piles-plot svg { pointer-events: none; overflow: visible; }
+.bp-piles-plot text { font-family: var(--font-ui); font-size: 14px; font-weight: 500; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+.bp-piles-plot text.is-soft { font-weight: 400; fill: var(--color-ink-soft); }
+.bp-leader { stroke: var(--color-ink-soft); stroke-width: 1; stroke-dasharray: 2 3; }
+
+/* ── The prose ────────────────────────────────────────────────────────────────────────────────────────────────── */
+.bp-sec { display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: var(--bp-col); margin-inline: auto; }
+.bp-sec h2 { margin: 12px 0 0; font-family: var(--font-law); font-weight: 700; font-size: clamp(1.9rem, 1.6rem + 1vw, 2.4rem); line-height: 1.15; text-wrap: balance; }
+.bp:lang(fr) .bp-sec h2 { font-weight: 600; font-size: clamp(1.6rem, 1.4rem + 0.8vw, 2rem); }
+.bp-p { margin: 0; font-family: var(--font-law); font-size: var(--text-law); line-height: 1.85; text-wrap: pretty; }
+.bp:lang(fr) .bp-p { font-size: 1.125rem; line-height: 1.75; }
+
+/* ── A chart ──────────────────────────────────────────────────────────────────────────────────────────────────── */
+.bp-fig { display: flex; flex-direction: column; gap: 8px; margin: 10px 0; padding: 20px 16px 16px; background: var(--color-sheet);
+  margin-inline: -16px; }
+@media (min-width: 640px) { .bp-fig { margin-inline: 0; padding: 24px 26px 18px; border-radius: var(--radius-card); } }
+@media (min-width: 1100px) { .bp-sec .bp-fig { width: var(--bp-fig); margin-inline: calc((var(--bp-col) - var(--bp-fig)) / 2); } }
+.bp-q { margin: 0; font-size: var(--text-lead); line-height: 1.45; font-weight: 600; text-wrap: balance; }
+.bp-unit { margin: 0; font-size: var(--text-meta); line-height: 1.6; color: var(--color-ink-soft); max-width: 70ch; }
+.bp-pick { margin: 0; min-height: 1.6em; font-size: var(--text-body); line-height: 1.6; font-variant-numeric: tabular-nums; }
+.bp-pick a { font-weight: 600; white-space: nowrap; }
+.bp-so { margin: 4px 0 0; font-size: var(--text-body); line-height: 1.7; max-width: 70ch; }
+.bp-so b { font-weight: 700; }
+.bp-src { margin: 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-plot { width: 100%; }
+.bp-plot svg { display: block; overflow: visible; touch-action: pan-y; }
+.bp-plot rect { fill: var(--bp-bar); }
+.bp-plot rect.is-hi { fill: var(--color-stamp); }
+.bp-plot rect.is-picked { fill: var(--color-ink); }
+/* The French edition's own texts, apart from the Arabic bar under them: /bo's translation band, dashed. */
+.bp-plot rect.is-over { fill: var(--color-amended-wash); stroke: var(--color-amended); stroke-width: 1; stroke-dasharray: 2 2; }
+.bp-legend i.bp-key-ar { background: var(--bp-bar); border-radius: 2px; }
+.bp-legend i.bp-key-fr { background: var(--color-amended-wash); border: 1px dashed var(--color-amended); border-radius: 2px; }
+.bp-plot text { font-family: var(--font-ui); font-size: 14px; fill: var(--color-ink); font-variant-numeric: tabular-nums; }
+.bp-plot text.is-strong { font-weight: 600; }
+.bp-plot text.is-soft { fill: var(--color-ink-soft); }
+.bp-axis { stroke: var(--color-ink); stroke-width: 1; }
+.bp-mark { stroke: var(--color-ink); stroke-width: 2; }
+.bp-axis-row { display: flex; justify-content: space-between; gap: 12px; font-size: var(--text-meta); color: var(--color-ink-soft); font-variant-numeric: tabular-nums; }
+
+.bp-table { margin-top: 4px; font-size: var(--text-meta); }
+.bp-table summary { display: inline-flex; align-items: center; min-height: 44px; cursor: pointer; font-weight: 600; color: var(--color-stamp); }
+.bp-table-scroll { max-height: 22rem; overflow: auto; border-top: 1px solid var(--color-rule); }
+.bp-table table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.bp-table th, .bp-table td { padding: 6px 10px; text-align: start; border-bottom: 1px solid var(--color-rule-soft); white-space: nowrap; }
+.bp-table thead th { position: sticky; top: 0; background: var(--color-sheet); font-weight: 600; color: var(--color-ink-soft); }
+
+/* Four small charts, a kind of text each. */
+.bp-multi { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px 22px; }
+.bp-multi figure { margin: 0; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.bp-multi figcaption { font-size: var(--text-body); font-weight: 600; }
+@media (max-width: 767px) { .bp-multi { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ── How it was counted ───────────────────────────────────────────────────────────────────────────────────────── */
+.bp-method { width: 100%; max-width: var(--bp-col); margin: 10px auto 0; padding-top: 22px; border-top: 4px double var(--color-ink);
+  display: flex; flex-direction: column; gap: 12px; }
+.bp-method h2 { margin: 0; font-size: var(--text-h3); font-weight: 700; }
+.bp-method ul { margin: 0; padding-inline-start: 1.1rem; display: flex; flex-direction: column; gap: 8px; font-size: var(--text-meta); line-height: 1.75; }
+.bp-get { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; margin: 4px 0 0; font-size: var(--text-meta); color: var(--color-ink-soft); }
+.bp-get a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
