@@ -119,7 +119,8 @@ function Item({ i, f, fresh }: { i: NewsItem; f: Followed; fresh: boolean }) {
       <li className={`flex flex-col gap-1 rounded-card px-3 py-2.5 ${fresh ? 'bg-people-wash' : 'bg-paper'}`}>
         <span className="text-meta text-ink-soft">{fresh ? <b className="text-people">{t('pages:follow.new')} · </b> : null}{longDate(i.on, i18n.language)}</span>
         <Link to={f.path} lang={lang} className="text-body leading-snug text-ink no-underline hover:text-stamp">{i.text[lang] || i.text.ar}</Link>
-        <a href={i.source.url} target="_blank" rel="noreferrer" lang={lang} className="self-start text-meta">{i.source.name[lang] || i.source.name.ar}</a>
+        {i.source?.url ? <a href={i.source.url} target="_blank" rel="noreferrer" lang={lang} className="self-start text-meta">{i.source.name[lang] || i.source.name.ar}</a>
+          : i.source ? <span lang={lang} className="self-start text-meta text-ink-soft">{i.source.name[lang] || i.source.name.ar}</span> : null}
       </li>
     );
   }

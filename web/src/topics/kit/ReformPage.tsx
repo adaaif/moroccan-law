@@ -55,7 +55,8 @@ export default function ReformPage({ slug }: { slug: string }) {
               <time dateTime={e.date} className="w-28 shrink-0 text-meta font-semibold text-ink-soft">{longDate(e.date, lang)}</time>
               <div className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <p lang={lang} className="m-0 text-body">{pick(e.text, lang)}</p>
-                <a href={e.source.url} target="_blank" rel="noreferrer" className="self-start text-meta">{pick(e.source.name, lang)}</a>
+                {e.source?.url ? <a href={e.source.url} target="_blank" rel="noreferrer" className="self-start text-meta">{pick(e.source.name, lang)}</a>
+                  : e.source ? <span className="self-start text-meta text-ink-soft">{pick(e.source.name, lang)}</span> : null}
                 <Cites cites={e.cites} />
               </div>
             </li>

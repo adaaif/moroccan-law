@@ -17,10 +17,11 @@ export type NewsItem = {
   kind: 'new_text';
   text: { path: string; title: string; type: string; date: string; issue: string };
 } | {
-  /** A dated line of a topic's reform record (F12 of the family plan), with its official page. */
+  /** A dated line of a topic's reform record (F12 of the family plan), with its official page when it has one (a
+   *  date the law itself sets has none; a Bulletin issue may be named with no address). */
   kind: 'reform';
   text: { ar: string; fr: string };
-  source: { name: { ar: string; fr: string }; url: string };
+  source?: { name: { ar: string; fr: string }; url?: string } | null;
 });
 
 export type News = {

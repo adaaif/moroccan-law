@@ -144,7 +144,10 @@ export type Claim = Section & { mark: 'as' | 'if' | 'later' | 'not' | 'other'; m
 export type Source = { name: Named; url: string; file?: string; sha256?: string };
 export type Reform = Base & {
   stage: string; checked_on: string; line: Named; stages: { key: string; label: Named }[];
-  timeline: { date: string; text: Named; source: Source; cites?: Cite[]; short?: Named }[];
+  /** A date the law itself sets (an entry into force, a last day) has no page of its own: its articles (`cites`) are
+   *  its source, so `source` may be absent. A source may also be named with no address (a Bulletin issue by its
+   *  number): it is then said, not linked. */
+  timeline: { date: string; text: Named; source?: { name: Named; url?: string }; cites?: Cite[]; short?: Named }[];
   groups?: { key: string; label: Named }[];
   questions?: { n: number; group: string; subject: Named; answer?: Named; cites?: Cite[] }[];
   rumours?: { claim: Named; truth: Named; cites?: Cite[] }[];

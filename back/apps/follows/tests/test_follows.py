@@ -83,6 +83,10 @@ def test_a_topics_reform_is_followed_by_its_dated_record(settings):
     assert what['kind'] == 'reform' and what['name']['ar'] == 'إصلاح مدونة الأسرة'
     items = news.items(what)
     assert items[0]['key'] == 'reform:2026-10-16' and items[-1]['key'] == 'reform:2023-09-26'
+    # A date the law itself sets has no page of its own: the line is still news, with no link.
+    plates = news.items(news.describe('/topics/road/reform/registration-2026'))
+    assert [i['key'] for i in plates][-1] == 'reform:2026-08-03' and plates[-1]['source']['url'].startswith('https://')
+    assert plates[0]['key'] == 'reform:2027-01-01' and plates[0]['source'] is None
     settings.SHOW_DRAFTS = False
     with pytest.raises(Refused):
         news.describe('/topics/family/reform')

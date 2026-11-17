@@ -115,7 +115,7 @@ def items(what: dict, known: dict | None = None) -> list[dict]:
     if what['kind'] == 'reform':
         slug, _, rest = what['path'].removeprefix('/topics/').partition('/')
         reform = kit.page(slug, 'reform', rest.removeprefix('reform/') if rest.startswith('reform/') else 'reform') or {}
-        return [{'key': f"reform:{e['date']}", 'kind': 'reform', 'on': e['date'], 'text': e['text'], 'source': e['source']}
+        return [{'key': f"reform:{e['date']}", 'kind': 'reform', 'on': e['date'], 'text': e['text'], 'source': e.get('source')}
                 for e in sorted(reform.get('timeline') or [], key=lambda e: e['date'], reverse=True)]
     read = (known or {}).get('recent')
     if what['kind'] == 'where':

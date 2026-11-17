@@ -100,6 +100,18 @@ def test_helped_takes_only_a_reason_it_knows(api):
     assert not Helped.objects.exists()
 
 
+def test_every_dated_line_of_a_change_names_where_it_comes_from():
+    """A change's dated line names its official page, or, for a date the law itself sets (an entry into force, a last
+    day), the articles that set it: never neither. The page shows whichever it has: read without the check, a line
+    with no page broke seven changes' pages (17 Nov 2026)."""
+    kit.load.cache_clear()
+    bare = [(slug, key, line['date']) for slug in folders._folders() for key, change in kit.load(slug)['reform'].items()
+            for line in change.get('timeline') or [] if not line.get('source') and not line.get('cites')]
+    assert not bare, bare
+    assert any(not line.get('source') for slug in folders._folders() for change in kit.load(slug)['reform'].values()
+               for line in change.get('timeline') or []), 'no line without a page is left: the test below reads none'
+
+
 @pytest.mark.parametrize('slug', ['family', 'work'])
 def test_a_topic_folder_is_whole_in_both_languages(slug):
     """Every page it leads to exists, every citation is an article address, every sentence is in Arabic and French, and
