@@ -10,6 +10,8 @@ from pathlib import Path
 
 import yaml
 
+from config.inside import inside
+
 from apps.blog.services import (absent, agreements, ages, bulletin, deadlines, death, emergency, expropriation, ministry, mokri, parliament, speed, drinks, strike, cities, clock, constitutions, countries, errata, holidays, marquise, months, staples,
                                 wages, waits, words, writers)
 
@@ -52,16 +54,21 @@ def slugs() -> list[str]:
     return sorted(p.name for p in ROOT.iterdir() if (p / 'meta.yaml').exists())
 
 
+def _folder(slug: str) -> Path:
+    """A post's folder, under its present name; a slug that would leave the posts' folder names one that is not there."""
+    return inside(ROOT, MOVED.get(slug, slug)) or ROOT / '.none'
+
+
 @cache
 def meta(slug: str) -> dict | None:
-    path = ROOT / MOVED.get(slug, slug) / 'meta.yaml'
+    path = _folder(slug) / 'meta.yaml'
     return yaml.safe_load(path.read_text(encoding='utf-8')) if path.exists() else None
 
 
 @cache
 def figures(slug: str) -> dict | None:
     """A post's counted figures."""
-    path = ROOT / MOVED.get(slug, slug) / 'figures.json'
+    path = _folder(slug) / 'figures.json'
     return json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
 
 

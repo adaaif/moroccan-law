@@ -170,6 +170,7 @@ def fetch_document(url: str) -> dict:
     address = _public_address(host, port)
     path = (parts.path or '/') + (f'?{parts.query}' if parts.query else '')
     context, sock = ssl.create_default_context(), None
+    context.minimum_version = ssl.TLSVersion.TLSv1_2    # Python's default since 3.10, written so it stays
     try:
         sock = _connect(address, port, host, deadline, context)
         conn = http.client.HTTPSConnection(host, port, context=context)

@@ -9,7 +9,7 @@ from rest_framework.response import Response
 
 from apps.consolidation.models import Change
 from apps.consolidation.services import history
-from apps.corpus.api.views.answer import (CHUNK, OUTLINE_PER, WINDOW_MAX, Asked, asked_range, outline, text_answer,
+from apps.corpus.api.views.answer import (ASKED, CHUNK, OUTLINE_PER, WINDOW_MAX, Asked, asked_range, outline, text_answer,
                                           text_payload)
 from apps.corpus.api.views.base import PublicView, text_ref
 from apps.corpus.models import Article, Consolidation, Text, Version, latest_ids
@@ -73,7 +73,8 @@ class TextAt(PublicView):
         try:
             on, window, span = asked_range(request.query_params)
         except Asked as wrong:
-            return Response({'errors': [{'field': str(wrong), 'code': 'invalid'}]}, status=400)
+            field = next((name for name in ASKED if name == str(wrong)), ASKED[0])
+            return Response({'errors': [{'field': field, 'code': 'invalid'}]}, status=400)
         if (stop := reading.refused(request)) is not None:
             return stop
         if now != uri:

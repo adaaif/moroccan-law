@@ -21,7 +21,9 @@ _YEAR = re.compile(r'(?:^| )(1[89]\d\d|20[0-4]\d)(?: |$)')
 _FINANCE = re.compile(r'(?:^| )(?:قانون )?(?:ال)?ماليه(?: ل?سنه)? (\d{4})$|^(?:projet de )?loi de finances? (\d{4})$|^p?lf (\d{4})$')
 _BILL = re.compile(r'(?:^| )مشروع(?: |$)|^projet |^plf ')
 _FINANCE_TITLE = re.compile(r'قانون\s+(?:ال)?مالية(?:\s+رقم\s*[\d.]+)?\s+(?:لل|ل)سنة(?:\s+المالية)?\s+(\d{4})')
-_LETTERS = re.compile(r'^(?:[ء-ي]\s*[.\s]\s*){1,4}[ء-ي]\s*\.?$')
+# Between two letters: spaces, or one dot with spaces around it, written so a run of spaces is read one way only
+# («\s*[.\s]\s*» split it in every way: four such runs took minutes on 300 characters).
+_LETTERS = re.compile(r'^(?:[ء-ي](?:\s+(?:\.\s*)?|\.\s*)){1,4}[ء-ي]\s*\.?$')
 _LATIN = re.compile(r'^[A-Za-z][A-Za-z.]{1,7}$')
 _PROMULGATES = re.compile(r'بتنفيذ|promulgation')
 _NEWEST = re.compile(r'^(?:اخر عدد|العدد الاخير|اخر جريده|الجريده الرسميه اليوم|جريده اليوم|هذا الاسبوع|جديد الجريده الرسميه|'

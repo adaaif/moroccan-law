@@ -8,8 +8,9 @@ from apps.gate.services import gate
 
 def _next(request) -> str:
     target = request.POST.get('next') or request.GET.get('next') or '/'
-    ok = url_has_allowed_host_and_scheme(target, allowed_hosts={request.get_host()}, require_https=request.is_secure())
-    return target if ok and target.startswith('/') and not target.startswith('/gate/') else '/'
+    if not url_has_allowed_host_and_scheme(target, allowed_hosts={request.get_host()}, require_https=request.is_secure()):
+        return '/'
+    return target if target.startswith('/') and not target.startswith('/gate/') else '/'
 
 
 @csrf_exempt            # a shared password, not an account: there is no session to ride on

@@ -48,6 +48,9 @@ class Asked(ValueError):
     """A part of a text's request a reader may not ask; its field's name is the error's."""
 
 
+ASKED = ('on', 'window', 'from', 'count')     # the fields Asked names: the answer sends one of these, never an error's words
+
+
 def _number(params, name: str, lowest: int, highest: int | None = None) -> int | None:
     """A whole number a reader chose, in Western digits, within its bounds; None when it is not asked."""
     value = params.get(name)

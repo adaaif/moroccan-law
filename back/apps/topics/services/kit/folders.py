@@ -13,6 +13,7 @@ from django.conf import settings
 from django.core.cache import caches
 
 from apps.topics.services.kit.items import articles, cited_in_order, shown
+from config.inside import inside
 
 BASE = Path(__file__).resolve().parent.parent.parent
 KINDS = ('journeys', 'checklists', 'pages', 'reform', 'series', 'rates', 'cards')
@@ -20,7 +21,9 @@ log = logging.getLogger(__name__)
 
 
 def folder(slug: str) -> Path:
-    return BASE / slug.replace('-', '_')
+    """A topic's folder. A slug that would name a place outside the topics' own folder names one that is not there:
+    the address's converter already keeps a slug to letters, digits and dashes, and this holds for any other caller."""
+    return inside(BASE, slug.replace('-', '_')) or BASE / '.none'
 
 
 def load(slug: str) -> dict | None:

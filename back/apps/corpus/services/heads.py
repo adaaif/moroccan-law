@@ -83,7 +83,16 @@ def plain(s: str) -> str:
 
 
 def cut(s: str, n: int) -> str:
-    return s if len(s) <= n else re.sub(r'\s+\S*$', '', s[:n]) + '…'
+    """`s` in at most `n` characters, ending on a whole word."""
+    if len(s) <= n:
+        return s
+    head = s[:n]
+    words = head.split()
+    if head[-1:].isspace():
+        head = head.rstrip()
+    elif words and len(words[-1]) < len(head):           # a word cut short goes, with the space before it
+        head = head[:-len(words[-1])].rstrip()
+    return head + '…'
 
 
 def day_ar(d) -> str:

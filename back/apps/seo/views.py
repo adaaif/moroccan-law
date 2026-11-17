@@ -9,6 +9,7 @@ from django.http import FileResponse, Http404, HttpResponse
 from django.utils import timezone
 
 from apps.seo.services import indexnow
+from config.inside import inside
 
 # The crawlers that gather pages to train AI models are asked to keep away (C4 of the search-engines review: training no,
 # answers yes). The answering ones (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot) cite and
@@ -52,9 +53,10 @@ def sitemap_index(request):
 
 
 def sitemap(request, name):
-    if not re.fullmatch(r'[a-z]+-\d+\.xml', name):
+    path = inside(Path(settings.SITEMAPS_DIR) / 'sitemaps', name) if re.fullmatch(r'[a-z]{1,20}-\d{1,5}\.xml', name) else None
+    if path is None:
         raise Http404
-    return _file(Path(settings.SITEMAPS_DIR) / 'sitemaps' / name)
+    return _file(path)
 
 
 def indexnow_key(request):

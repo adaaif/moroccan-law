@@ -115,7 +115,8 @@ function write(path, html, tags, seed) {
   // Its words are on the page, so the app's code need not race the stylesheet for a slow line: without the shell's
   // modulepreloads a phone on 3G painted the family code at 2.4 s, not 3.4 (N5).
   // A page written with its head alone is still drawn by the app: it keeps the shell's modulepreloads.
-  const page = template.replace(/\s*<meta name="description"[^>]*>/, '').replace(html ? /\s*<link rel="modulepreload"[^>]*>/g : /$^/, '')
+  const shell = template.replace(/\s*<meta name="description"[^>]*>/, '');
+  const page = (html ? shell.replace(/\s*<link rel="modulepreload"[^>]*>/g, '') : shell)
     .replace(/<title>[^<]*<\/title>/, tags)
     .replace('<div id="root"></div>', `<div id="root" data-prerendered>${html}</div>${seed ? landingSeed(seed) : ''}${
       flags ? `<script type="application/json" id="flags">${JSON.stringify(flags)}</script>` : ''}`);

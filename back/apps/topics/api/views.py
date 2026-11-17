@@ -105,7 +105,7 @@ class Card(PublicView):
     def get(self, request, slug):
         from apps.topics.services.cards import card_path
         item = request.query_params.get('item', '')
-        if item and not re.fullmatch(r'[a-z]+/[a-z0-9-]+', item):
+        if item and not re.fullmatch(r'[a-z]{1,40}/[a-z0-9-]{1,80}', item):
             raise Http404
         path = card_path(slug, item)
         if path is None:

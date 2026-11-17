@@ -145,7 +145,7 @@ def test_a_page_without_the_bill_or_that_does_not_answer_leaves_the_law_for_late
     said, _ = run('--fetch')
     assert said.splitlines()[0] == '  013.26  not found'
     assert not Document.objects.exists()
-    assert not any(url.startswith('https://www.example.org') for url in chamber.asked)
+    assert not any(url.startswith('https://www.example.org/') for url in chamber.asked)
 
 
 @pytest.mark.parametrize('answer, err', [

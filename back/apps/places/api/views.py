@@ -38,7 +38,8 @@ class Mentions(PublicView):
         try:
             ask = finder.Ask.read(p)
         except ValueError as exc:
-            return Response({'errors': [{'field': str(exc), 'code': 'invalid'}]}, status=400)
+            field = next((name for name in finder.ASKED if name == str(exc)), finder.ASKED[0])
+            return Response({'errors': [{'field': field, 'code': 'invalid'}]}, status=400)
         found = generation.kept(['place-mentions', slug, *ask.key()], lambda: finder.mentions(slug, ask))
         if found is None:
             return Response({'errors': [{'field': 'slug', 'code': 'not_found'}]}, status=404)

@@ -136,6 +136,10 @@ def profile(slug: str) -> dict | None:
     }
 
 
+# The fields Ask.read refuses by name: an answer sends one of these, never an error's own words.
+ASKED = ('from', 'to', 'kind', 'type', 'with', 'after')
+
+
 @dataclass(frozen=True)
 class Ask:
     since: int | None = None

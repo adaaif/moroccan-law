@@ -16,6 +16,8 @@ from pathlib import Path
 
 from django.conf import settings
 
+from config.inside import inside
+
 # The format the export writes (the manifest's `format`, CHANGELOG.md). An edition of another format is not served.
 FORMAT = 2
 LICENCE = 'ODbL'
@@ -85,7 +87,8 @@ def find(name: str) -> Edition | None:
     """`latest` or a date: the edition, when it may be served."""
     if name == 'latest':
         return latest()
-    return read(root() / name) if DAY.fullmatch(name or '') else None
+    folder = inside(root(), name) if DAY.fullmatch(name or '') else None
+    return read(folder) if folder else None
 
 
 def record(edition: Edition, counts: dict) -> None:

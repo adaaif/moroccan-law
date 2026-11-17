@@ -83,8 +83,11 @@ def gregorian(folded: str) -> tuple[date, str] | None:
 
 _BIS = re.compile(r'(?<=\d)\s+ال(مكرر(?:ة)?)(?!\w)')
 # «ق 31.08», «ظ.ش 1.58.376»: the letter jurists write for «قانون» and «ظهير شريف» before a number.
-_LETTER = [(re.compile(r'(?<![\w.])ق\s*\.?\s+(?=\d{1,3}[.\-]\d{2}(?!\d))'), 'القانون رقم '),
-           (re.compile(r'(?<![\w.])ظ\s*\.?\s*(?:ش\s*\.?)?\s+(?=1[.\-]\d{2}[.\-]\d{1,3}(?!\d))'), 'الظهير الشريف رقم '),
+# After the letter: spaces, an optional dot, then at least one space. `_GAP` says it so a run of spaces is read one
+# way only («\s*\.?\s+» split it in every way, and «ظ» with 300 spaces took a fifth of a second).
+_GAP = r'(?:\s+(?:\.\s+)?|\.\s+)'
+_LETTER = [(re.compile(rf'(?<![\w.])ق{_GAP}(?=\d{{1,3}}[.\-]\d{{2}}(?!\d))'), 'القانون رقم '),
+           (re.compile(rf'(?<![\w.])ظ(?:\s*(?:\.\s*)?ش)?{_GAP}(?=1[.\-]\d{{2}}[.\-]\d{{1,3}}(?!\d))'), 'الظهير الشريف رقم '),
            # «n° 17-95», «رقم 17.95» and nothing else: the number word goes, a text's number alone is read as one.
            (re.compile(r'^\s*(?:n\s*°|n[o°]\.?|num[ée]ro|رقم|عدد)\s*(?=\d{1,3}(?:[.\-]\d{1,3}){1,2}\s*$)', re.I), '')]
 

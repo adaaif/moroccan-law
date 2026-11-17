@@ -212,7 +212,7 @@ def test_resolve_says_where_each_citation_stands(api, corpus):
 def test_a_code_not_in_the_corpus_is_always_said(api, corpus):
     # «مدونة الأسرة» is a code the corpus does not hold: said with where to read it (row 1 of the reader-experience review)…
     r = api.get('/api/search/', {'q': 'مدونة الأسرة'}).json()
-    assert r['jump']['state'] == 'not_in_corpus' and r['jump']['official'].startswith('https://adala.justice.gov.ma')
+    assert r['jump']['state'] == 'not_in_corpus' and r['jump']['official'].startswith('https://adala.justice.gov.ma/')
     # …also when other words come with it, which are searched on their own and come under it…
     r = api.get('/api/search/', {'q': 'عقود الكراء في قانون الالتزامات والعقود'}).json()
     assert r['jump']['state'] == 'not_in_corpus' and r['results'][0]['text']['path'] == '/ma/loi/12-26'

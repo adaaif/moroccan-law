@@ -10,6 +10,7 @@ from PIL import Image, ImageDraw
 
 from apps.corpus.services.cards import H, INK, INK_SOFT, MARGIN, PAPER, STYLE, W, _font, _lines, arch_points, mark
 from apps.topics.services import kit, topics
+from config.inside import inside
 
 # The web's topic colours (web/src/shared/design/app.css, `--color-t-<slug>`), light.
 COLOURS = {'family': '#c2417a', 'work': '#2f6fdb', 'housing': '#11806a', 'road': '#b86e00', 'consumer': '#a6338f',
@@ -98,7 +99,9 @@ def drawn(c: dict) -> Path:
     """The card's file, drawn once for what it shows (a blog post's too: apps/blog)."""
     slug = c['slug']
     key = hashlib.sha1(json.dumps([STYLE, DRAWING, c], ensure_ascii=False, sort_keys=True).encode(), usedforsecurity=False).hexdigest()
-    out = Path(settings.CORPUS_DIR) / 'cards' / 'topics' / f'{slug}-{key[:16]}.png'
+    out = inside(Path(settings.CORPUS_DIR) / 'cards' / 'topics', f'{slug}-{key[:16]}.png')
+    if out is None:                     # a slug is a topic's or «blog»: never a path
+        raise ValueError('slug')
     if not out.exists():
         out.parent.mkdir(parents=True, exist_ok=True)
         tmp = out.with_suffix('.tmp.png')
