@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { createElement } from 'react';
 import { renderToString } from 'react-dom/server';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { StaticRouter } from 'react-router-dom/server.js';
+import { StaticRouter } from 'react-router-dom';
 
 // /open-source drawn on the server, in Node, with no browser: the deploy draws its head from it (scripts/prerender.mjs),
 // so it must render without window, localStorage or matchMedia, and ask no word while drawing. The page's modules are

@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider, type QueryKey } from '@tanstack/react-query';
 import { renderToString } from 'react-dom/server';
 import { prerenderToNodeStream } from 'react-dom/static';
-import { StaticRouter } from 'react-router-dom/server';
+import { StaticRouter } from 'react-router-dom';
 import App from '@/app/App';
 import { drawn } from '@/shared/services/title';
 import '@/shared/locales/i18n';

@@ -21,8 +21,11 @@ TRAINING = ['GPTBot', 'ClaudeBot', 'CCBot', 'Google-Extended', 'Applebot-Extende
 # the measures' door (apps.analytics), where a crawler rendering a page is no reader and would only be dropped.
 # The discussion's own pages are not here: nginx says noindex on them, which a crawler only sees on a page it may
 # fetch (a blocked address can still show in results as a bare link, and on /people/ that is a name).
+# The Bulletin's printed pages one by one (/pages/<issue>/<page>, 430,056 addresses): a picture and no words, noindex
+# already, and every law's page links to dozens of them. On 16 and 17 Nov 2026 Applebot asked for 125,000 of them while
+# Googlebot had not yet read one law: a crawler's visits go to the law, not to learn «noindex» 430,000 times.
 CLOSED = ['/api/discussion/', '/api/explain/', '/api/media/', '/api/follows/', '/api/auth/', '/api/oauth/', '/admin/',
-          '/gate/', '/oauth/', '/mcp', '/api/measure/']
+          '/gate/', '/oauth/', '/mcp', '/api/measure/', '/pages/']
 
 
 def robots(request):

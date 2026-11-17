@@ -80,7 +80,7 @@
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-i18next": "^16.6.6",
-    "react-router-dom": "^6.30.6",
+    "react-router-dom": "^7.18.5",
     "web-vitals": "^6.2.3",
     "zustand": "^5.0.15"
   },
@@ -98,7 +98,7 @@
     "playwright": "^1.60.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.71.2",
+    "typescript-eslint": "^8.73.0",
     "vite": "^8.3.4"
   }
 }

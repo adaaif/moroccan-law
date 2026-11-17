@@ -41,7 +41,7 @@ def test_robots_opens_the_law_and_closes_peoples_words(api, settings):
     star = txt.split('# Crawlers that train')[0]
     assert 'User-agent: *\nAllow: /' in star
     for closed in ('/api/discussion/', '/api/explain/', '/api/media/', '/api/follows/', '/api/auth/', '/admin/', '/mcp',
-                   '/api/measure/'):
+                   '/api/measure/', '/pages/'):
         assert f'Disallow: {closed}\n' in star
     # The discussion's pages are crawlable, so their noindex is seen (nginx); the law's answers too, for rendering.
     assert 'Disallow: /discussion' not in txt and 'Disallow: /api/corpus' not in txt and 'Disallow: /api/\n' not in txt

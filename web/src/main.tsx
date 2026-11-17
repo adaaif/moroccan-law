@@ -73,7 +73,7 @@ const ready: Promise<boolean> = seed ? Promise.race([landingCode(window.location
 const mount = () => createRoot(root).render(
   <StrictMode>
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <BrowserRouter>
         <App />
       </BrowserRouter>
     </QueryClientProvider>

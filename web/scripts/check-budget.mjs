@@ -51,7 +51,13 @@ const rows = [
   // 146.3 since 16 Nov 2026 (/open-source): the first load carries its route and the footer's word that leads to it, in
   // both languages (about 90 bytes; the page, its words and its styles load apart), and the entry's list of chunk names
   // moved it 8 bytes over 146.2.
-  ['JavaScript at first load', [...entry, ...preloadJs].reduce((n, f) => n + gz(f), 0), 146.3 * 1024],
+  // 150.7 since 17 Nov 2026 (React Router 7.18): two advisories on the router (an open redirect through a backslash in
+  // <Link> and useNavigate, a constructor injected through the data router's hydration) are fixed in 7.18 only; the 6.x
+  // line gets no fix. The app was not exposed (the one address a reader can hand to navigate, the sign-in's return, is
+  // refused when it starts with «/\», and the data router is not used), but a line that is no longer mended is no
+  // place to stay. Version 7's router and <Link> weigh about 4.4 KB more at first load, whatever is imported from them
+  // (importing the core package directly changes nothing): 146.2 to 150.6.
+  ['JavaScript at first load', [...entry, ...preloadJs].reduce((n, f) => n + gz(f), 0), 150.7 * 1024],
   ['Stylesheet', css.reduce((n, f) => n + gz(f), 0), 15 * 1024],
   ['Fonts an Arabic page needs', fonts.reduce((n, f) => n + statSync(path.join(DIST, f)).size, 0), 75 * 1024],
 ];
