@@ -55,6 +55,17 @@ export const useReading = create<ReadingState>((set, get) => ({
 
 applyTheme(useReading.getState().theme);
 
+// Other tabs share preferences. Never write back here: that would echo storage events.
+if (typeof window !== 'undefined') {
+  window.addEventListener('storage', (event) => {
+    if (event.key !== STORAGE_KEY && event.key !== null) return;
+    try { if (event.storageArea !== window.localStorage) return; } catch { return; }
+    const preferences = load();
+    useReading.setState(preferences);
+    applyTheme(preferences.theme);
+  });
+}
+
 /** The law's text size, step by step: the article body, its line height. Markazi is small on its body, and larger
  *  Arabic reads faster on a screen (R15 of the for-everyone review). The middle step is the scale's `law` (P3 of
  *  the polish review: 21 px on a phone, 22 on a desk), set in Markazi 500 so the law is the loudest thing on its page (P5). */

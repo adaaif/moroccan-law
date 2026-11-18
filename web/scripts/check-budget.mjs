@@ -57,7 +57,9 @@ const rows = [
   // refused when it starts with «/\», and the data router is not used), but a line that is no longer mended is no
   // place to stay. Version 7's router and <Link> weigh about 4.4 KB more at first load, whatever is imported from them
   // (importing the core package directly changes nothing): 146.2 to 150.6.
-  ['JavaScript at first load', [...entry, ...preloadJs].reduce((n, f) => n + gz(f), 0), 150.7 * 1024],
+  // 151.2: the header theme toggle and cross-tab reading preferences add about 0.3 KB gzip;
+  // retain a small margin for lazy chunk hash changes. No new dependencies.
+  ['JavaScript at first load', [...entry, ...preloadJs].reduce((n, f) => n + gz(f), 0), 151.2 * 1024],
   ['Stylesheet', css.reduce((n, f) => n + gz(f), 0), 15 * 1024],
   ['Fonts an Arabic page needs', fonts.reduce((n, f) => n + statSync(path.join(DIST, f)).size, 0), 75 * 1024],
 ];

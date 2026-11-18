@@ -6,6 +6,7 @@
     "reload": "Recharger"
   },
   "nav": {
+    "nightMode": "Mode nuit",
     "account": "Mon compte",
     "signIn": "Connexion",
     "switchLanguage": "العربية",
