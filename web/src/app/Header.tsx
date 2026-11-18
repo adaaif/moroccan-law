@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useCanTalk, useRegistrationOpen } from '@/features/accounts/registration';
 import { applyLanguage } from '@/shared/locales/i18n';
+import { ThemeToggle } from './ThemeToggle';
 import { useSession } from '@/shared/stores/session';
 
 // A signed-in reader's menu (30 Oct 2026: its face, what is new, a moderator's count) comes after the page (R2, M10).
@@ -97,6 +98,7 @@ export function Header() {
             </svg>
             {following() ? <Suspense fallback={null}><FollowsDot /></Suspense> : null}
           </NavLink>}
+          <ThemeToggle />
           <button
             type="button"
             lang={other}
